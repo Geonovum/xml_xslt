@@ -12,6 +12,11 @@
             xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901"
             xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709"
             xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709"
+            xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709"
+            xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/v20190709"
+            xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901"
+            xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901"
+            xmlns:p="http://www.geostandaarden.nl/imow/pons/v20190901"
             xmlns="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901"
             xsi:schemaLocation="http://www.geostandaarden.nl/imow/0.98.1 https://raw.githubusercontent.com/Geonovum/xml_ow_xsd_0.98.1-kern/master/xsd/bestanden-ow/deelbestand-ow/v20190901/IMOW_Deelbestand_v0_9_8_2.xsd">
             <xsl:element name="sl:standBestand">
@@ -31,8 +36,7 @@
                         />
                     </xsl:element>
                     <xsl:element name="sl:objectTypen">
-                        <xsl:for-each
-                            select="document('manifest-ow.xml')//Modules/RegelingVersie/Bestand/naam">
+                        <xsl:for-each select="$documents">
                             <xsl:variable name="filename" select="."/>
                             <xsl:variable name="objectTypes"
                                 select="document($filename)//sl:standBestand/sl:inhoud/sl:objectTypen/sl:objectType"/>
@@ -44,8 +48,7 @@
                         </xsl:for-each>
                     </xsl:element>
                 </xsl:element>
-                <xsl:for-each
-                    select="document('manifest-ow.xml')//Modules/RegelingVersie/Bestand/naam">
+                <xsl:for-each select="$documents">
                     <xsl:variable name="filename" select="."/>
                     <xsl:for-each select="document($filename)//sl:standBestand/sl:stand">
                         <xsl:copy-of select="."/>
