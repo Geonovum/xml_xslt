@@ -8,7 +8,7 @@
     
     <xsl:output encoding="UTF-8"/>
     
-    <xsl:variable name="baseGUID" select="'73b15775-5471-447e-9723-5e7b377'"/>
+    <xsl:variable name="baseGUID" select="'e0b15a15-a171-4a1e-9a13-5e7bcdaa1'"/>
     
     <xsl:template match="/">
         <xsl:variable name="GML">
