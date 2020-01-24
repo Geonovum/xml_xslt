@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>	
+<schema elementFormDefault="qualified"
+  targetNamespace="https://standaarden.overheid.nl/stop/imop/geo/" version="0.98.2"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlsf="http://www.opengis.net/gmlsf">
+  <import namespace="http://www.w3.org/XML/1998/namespace"
+    schemaLocation="http://www.w3.org/2001/xml.xsd" />
+  <import namespace="http://www.opengis.net/gml/3.2"
+    schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd" />
+  <annotation>
+    <appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+      <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+    </appinfo>
+  </annotation>
+  <element name="Achtergronden">
+    <complexType>
+      <sequence>
+        <element maxOccurs="unbounded" minOccurs="1" ref="geo:Achtergrond" />
+      </sequence>
+      <attributeGroup ref="geo:agSchemaVersie" />
+    </complexType>
+  </element>
+  <!--  -->
+  <element name="Achtergrond">
+    <complexType>
+      <all>
+        <element maxOccurs="1" minOccurs="0" ref="geo:verwijzing" />
+        <element maxOccurs="1" minOccurs="0" ref="geo:beschrijving" />
+        <element ref="geo:actualiteit" />
+      </all>
+    </complexType>
+  </element>
+  <!--  -->
+  <element name="verwijzing" type="NMTOKEN" />
+  <element name="beschrijving" type="string" />
+  <element name="actualiteit" type="date" />
+  <!--  -->
+  <element name="GeoInformatie" substitutionGroup="gml:AbstractGML" type="geo:GeoInformatieType" />
+  <complexType name="GeoInformatieType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence maxOccurs="unbounded" minOccurs="0">
+          <element name="featureMember">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence>
+                    <element ref="gml:AbstractFeature" />
+                  </sequence>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+        <attribute name="id" />
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="Locatie" substitutionGroup="gml:AbstractFeature" type="geo:LocatieType" />
+  <complexType name="LocatieType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element maxOccurs="1" minOccurs="1" name="wId" type="string" />
+          <element maxOccurs="1" minOccurs="0" name="naam" type="string" />
+          <element maxOccurs="1" minOccurs="1" name="geometrie" type="gml:GeometryPropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="Wijzigingsindicatie" substitutionGroup="gml:AbstractFeature"
+    type="geo:WijzigingsindicatieType" />
+  <complexType name="WijzigingsindicatieType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element maxOccurs="1" minOccurs="1" name="locatie" type="gml:GeometryPropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!-- TYPES -->
+  <attributeGroup name="agSchemaVersie">
+    <attribute name="schemaversie" type="geo:dtSchemaVersie" use="optional" />
+  </attributeGroup>
+  <!--  -->
+  <simpleType name="dtSchemaVersie">
+    <restriction base="token" />
+  </simpleType>
+
+</schema>

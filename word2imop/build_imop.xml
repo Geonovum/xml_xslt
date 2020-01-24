@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<project basedir="." name="imop" default="word2imop">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+
+  <!-- properties voor de transformatie -->
+
+  <property name="input.dir" value="input"/>
+  <property name="output.dir" value="output"/>
+  <property name="temp.dir" value="temp"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${temp.dir}"/>
+    </delete>
+    <mkdir dir="${temp.dir}"/>
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${output.dir}"/>
+    </delete>
+    <mkdir dir="${output.dir}"/>
+  </target>
+
+  <!-- unzip word-bestanden -->
+
+  <target name="unzip" description="Unzip word-bestanden">
+    <unzip dest="${temp.dir}">
+      <fileset dir="${input.dir}">
+        <include name="**/*.docx"/>
+      </fileset>
+    </unzip>
+  </target>
+
+  <!-- transformeer van word naar imop -->
+
+  <target name="transform" description="Transformeer van word naar imop">
+    <xslt in="${temp.dir}/word/document.xml" out="${temp.dir}/resultaat.xml" style="word2imop.xsl" processor="trax" force="true"/>
+    <xslt in="${temp.dir}/resultaat.xml" out="${output.dir}/resultaat.xml" style="AKN.xsl" processor="trax" force="true"/>
+    <copy todir="${output.dir}/media" failonerror="false">
+      <fileset dir="${temp.dir}/word/media"/>
+    </copy>
+  </target>
+
+  <!-- totale transformatie van word naar imop -->
+
+  <target name="word2imop" depends="init,unzip,transform"/>
+
+</project>

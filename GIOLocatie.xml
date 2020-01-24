@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_1">
+            <wId>zeewaarts_gebied_1</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a101"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_2">
+            <wId>zeewaarts_gebied_2</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a102"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_3">
+            <wId>zeewaarts_gebied_3</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a103"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_4">
+            <wId>zeewaarts_gebied_4</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a104"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_5">
+            <wId>zeewaarts_gebied_5</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a105"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_6">
+            <wId>zeewaarts_gebied_6</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a106"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_7">
+            <wId>zeewaarts_gebied_7</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a107"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_8">
+            <wId>zeewaarts_gebied_8</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a108"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_9">
+            <wId>zeewaarts_gebied_9</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a109"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_10">
+            <wId>zeewaarts_gebied_10</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a110"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_11">
+            <wId>zeewaarts_gebied_11</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a111"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_12">
+            <wId>zeewaarts_gebied_12</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a112"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_13">
+            <wId>zeewaarts_gebied_13</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a113"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_14">
+            <wId>zeewaarts_gebied_14</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a114"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_15">
+            <wId>zeewaarts_gebied_15</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a115"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_16">
+            <wId>zeewaarts_gebied_16</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a116"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_17">
+            <wId>zeewaarts_gebied_17</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a117"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_18">
+            <wId>zeewaarts_gebied_18</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a118"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_19">
+            <wId>zeewaarts_gebied_19</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a119"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_20">
+            <wId>zeewaarts_gebied_20</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a120"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_21">
+            <wId>zeewaarts_gebied_21</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a121"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_22">
+            <wId>zeewaarts_gebied_22</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a122"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_23">
+            <wId>zeewaarts_gebied_23</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a123"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_24">
+            <wId>zeewaarts_gebied_24</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a124"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_25">
+            <wId>zeewaarts_gebied_25</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a125"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_26">
+            <wId>zeewaarts_gebied_26</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a126"/>
+        </Locatie>
+    </featureMember>
+    <featureMember>
+        <Locatie xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="zeewaarts_gebied_27">
+            <wId>zeewaarts_gebied_27</wId>
+            <geometrie xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="zeewaarts_gebied.gml#e0b15a15-a171-4a1e-9a13-5e7bcdaa1a127"/>
+        </Locatie>
+    </featureMember>
+</GeoInformatie>
