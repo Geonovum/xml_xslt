@@ -86,7 +86,7 @@
     <xsl:template name="check_eId">
         <xsl:param name="id"/>
         <xsl:variable name="node" select="$eId//node[@id eq $id]"/>
-        <xsl:variable name="count" select="if (count($eId//node[@id eq $node/@id]/parent::node/node[@eId eq $node/@eId]) gt 1) then concat('inst_',count($eId//node[@id eq $node/@id]/(.|preceding-sibling::node[@eId eq $node/@eId]))) else null"/>
+        <xsl:variable name="count" select="if (count($eId//node[@id eq $node/@id]/(parent::node,root())[1]/node[@eId eq $node/@eId]) gt 1) then concat('inst_',count($eId//node[@id eq $node/@id]/(.|preceding-sibling::node[@eId eq $node/@eId]))) else null"/>
         <node id="{$node/@id}" wId_eId="{$node/@wId_eId}">
             <xsl:attribute name="eId">
                 <xsl:value-of select="fn:string-join(($node/@eId,$count),'_')"/>
