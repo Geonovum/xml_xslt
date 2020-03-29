@@ -311,7 +311,7 @@
               <xsl:value-of select="fn:string-join(current-group()[1]/w:r[following-sibling::w:r[w:tab][1]]/w:t)"/>
             </xsl:element>
             <xsl:element name="Inhoud" namespace="{$tekst}">
-              <xsl:call-template name="group_adjacent">
+              <xsl:call-template name="group_starting_with">
                 <xsl:with-param name="group" select="current-group()"/>
               </xsl:call-template>
             </xsl:element>
@@ -319,7 +319,7 @@
         </xsl:when>
         <xsl:when test="$index gt count($section_lichaam_artikel_word)">
           <xsl:element name="Inhoud" namespace="{$tekst}">
-            <xsl:call-template name="group_adjacent">
+            <xsl:call-template name="group_starting_with">
               <xsl:with-param name="group" select="current-group()"/>
             </xsl:call-template>
           </xsl:element>
@@ -354,7 +354,7 @@
         </xsl:when>
         <xsl:when test="$index gt count($section_lichaam_vrijtekst_word)">
           <xsl:element name="FormeleInhoud" namespace="{$tekst}">
-            <xsl:call-template name="group_starting_with">
+            <xsl:call-template name="group_adjacent">
               <xsl:with-param name="group" select="current-group()"/>
             </xsl:call-template>
           </xsl:element>
