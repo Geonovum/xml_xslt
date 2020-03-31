@@ -233,14 +233,14 @@
         <xsl:choose>
           <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Titel']">
             <xsl:element name="RegelingOpschrift" namespace="{$tekst}">
-              <xsl:apply-templates select="current-group()/self::w:p[1]"/>
+              <xsl:apply-templates select="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Titel']"/>
             </xsl:element>
-            <xsl:variable name="aanhef" select="fn:subsequence(current-group()/self::w:p,2)"/>
+            <xsl:variable name="aanhef" select="current-group()/self::w:p[not(w:pPr/w:pStyle/@w:val='Titel')]"/>
             <xsl:choose>
               <xsl:when test="$aanhef">
                 <xsl:element name="Aanhef" namespace="{$tekst}">
                   <xsl:call-template name="group_adjacent">
-                    <xsl:with-param name="group" select="fn:subsequence(current-group()/self::w:p,2)"/>
+                    <xsl:with-param name="group" select="$aanhef"/>
                   </xsl:call-template>
                 </xsl:element>
               </xsl:when>
@@ -629,7 +629,7 @@
 
   <!-- range bewerken -->
 
-  <xsl:template match="w:r">
+  <xsl:template match="w:r[. ne '']">
     <xsl:choose>
       <xsl:when test="w:rPr">
         <xsl:call-template name="range">
