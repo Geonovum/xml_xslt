@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901"
+    xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709"
+    xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301"
+    xmlns:k="http://www.geostandaarden.nl/imow/kaartrecept/v20190901"
+    xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901 ../../xsd_kaart/bestanden-ow/deelbestand-ow/v20190901/IMOW_Deelbestand.xsd">
+    <sl:standBestand>
+        <sl:dataset>Gemeentestad</sl:dataset>
+        <sl:inhoud>
+            <sl:gebied>Gemeentestad</sl:gebied>
+            <sl:leveringsId>abc-20190221-0801</sl:leveringsId>
+            <sl:objectTypen>
+                <sl:objectType>Kaart</sl:objectType>
+            </sl:objectTypen>
+        </sl:inhoud>
+        <sl:stand>
+            <ow-dc:owObject>
+                <k:Kaart>
+                    <ow:status/>
+                    <k:identificatie>nl.imow-gm0037.kaart.20190001</k:identificatie>
+                    <k:kaartnaam>Uitoefenen van bedrijfstypen van categorie 2</k:kaartnaam>
+                    <k:kaartnummer>001</k:kaartnummer>
+                    <k:kaartuitsnede>
+                        <k:Kaartextent>
+                            <!-- schema beperkt het extent tot integers, terwijl voor RD New 3 decimalen is afgesproken? -->
+                            <k:minX>138097</k:minX>
+                            <k:maxX>139068</k:maxX>
+                            <k:minY>423863</k:minY>
+                            <k:maxY>424712</k:maxY>
+                        </k:Kaartextent>
+                    </k:kaartuitsnede>
+                    <k:kaartlagen>
+                        <k:Kaartlaag>
+                            <!-- niveau toeveogen ivm volgorde -->
+                            <k:identificatie>nl.imow-gm0037.kaartlaag.2019000001</k:identificatie>
+                            <k:naam>test</k:naam>
+                            <k:symbolisatieItems>
+                                <k:SymbolisatieItem>
+                                    <k:objecttype>Omgevingsnorm</k:objecttype>
+                                    <!-- meerdere filters wenselijk? -->
+                                    <k:filterattribuut>
+                                        <k:attribuut>groep</k:attribuut>
+                                        <k:waardediscreet>maatvoering bouwen</k:waardediscreet>
+                                    </k:filterattribuut>
+                                    <k:symboolcode>voh022</k:symboolcode>
+                                </k:SymbolisatieItem>
+                            </k:symbolisatieItems>
+                            <k:activiteitverbeelding>
+                                <rol-ref:ActiviteitRef type="simple"
+                                    xlink:href="nl.imow-gm0037.activiteit.2019000241"/>
+                                <!-- nl.imow-gm0037.gebied.2019000001 = 50EA019E-3C96-4631-A76C-35BCF4D7AB6D in Bedrijf_categorie_2.gml -->
+                            </k:activiteitverbeelding>
+                        </k:Kaartlaag>
+                        <k:Kaartlaag>
+                            <k:identificatie>nl.imow-gm0037.kaartlaag.2019000002</k:identificatie>
+                            <k:naam>wonen in een bedrijfswoning</k:naam>
+                            <k:symbolisatieItems>
+                                <k:SymbolisatieItem>
+                                    <k:objecttype>Activiteit</k:objecttype>
+                                    <k:filterattribuut>
+                                        <k:attribuut>naam</k:attribuut>
+                                        <k:waardediscreet>wonen in een bedrijfswoning</k:waardediscreet>
+                                    </k:filterattribuut>
+                                    <k:symboolcode>vsg003</k:symboolcode>
+                                </k:SymbolisatieItem>
+                            </k:symbolisatieItems>
+                            <k:activiteitverbeelding>
+                                <!-- meerdere locaties bij een activiteit, moet onderscheid daartussen mogelijk zijn? Dan moet een filterattribuut naar een locatieref kunnnen verwijzen?! -->
+                                <rol-ref:ActiviteitRef type="simple"
+                                    xlink:href="nl.imow-gm0037.activiteit.2019000242"/>
+                                <!-- nl.imow-gm0037.gebied.2019000001 = 50EA019E-3C96-4631-A76C-35BCF4D7AB6D in Bedrijf_categorie_2.gml en
+                                     nl.imow-gm0037.gebied.2019000004 = D28AF779-7EDD-4A88-8B11-809798F53636 in Centrumgebied.gml -->
+                            </k:activiteitverbeelding>
+                        </k:Kaartlaag>
+                        <k:Kaartlaag>
+                            <k:identificatie>nl.imow-gm0037.kaartlaag.2019000003</k:identificatie>
+                            <k:naam>aanleggen en instandhouden van nutsvoorzieningen</k:naam>
+                            <k:symbolisatieItems>
+                                <k:SymbolisatieItem>
+                                    <k:objecttype>Activiteit</k:objecttype>
+                                    <k:filterattribuut>
+                                        <k:attribuut>naam</k:attribuut>
+                                        <k:waardediscreet>aanleggen en instandhouden van nutsvoorzieningen</k:waardediscreet>
+                                    </k:filterattribuut>
+                                    <k:symboolcode>vsg028</k:symboolcode>
+                                </k:SymbolisatieItem>
+                            </k:symbolisatieItems>
+                            <k:activiteitverbeelding>
+                                <!-- zelfde activiteit ref als vorige, zou dat in 1 kaartlaag mogelijk moeten zijn? Dus meer symbolisatie items in 1 kaartlaag? Dat zou toch alleen werken als je onderscheid tussen de locaties kan maken die bij de activiteit zijn gerefereerd? -->
+                                <rol-ref:ActiviteitRef type="simple"
+                                    xlink:href="nl.imow-gm0037.activiteit.2019000242"/>
+                                <!-- nl.imow-gm0037.gebied.2019000001 = 50EA019E-3C96-4631-A76C-35BCF4D7AB6D in Bedrijf_categorie_2.gml en
+                                     nl.imow-gm0037.gebied.2019000004 =  D28AF779-7EDD-4A88-8B11-809798F53636 in Centrumgebied.gml -->
+                            </k:activiteitverbeelding>
+                        </k:Kaartlaag>
+                        <k:Kaartlaag>
+                            <k:identificatie>nl.imow-gm0037.kaartlaag.2019000004</k:identificatie>
+                            <k:naam>aanleggen en instandhouden van voorzieningen voor de waterhuishouding</k:naam>
+                            <k:symbolisatieItems>
+                                <k:SymbolisatieItem>
+                                    <k:objecttype>Activiteit</k:objecttype>
+                                    <k:filterattribuut>
+                                        <k:attribuut>naam</k:attribuut>
+                                        <k:waardediscreet>aanleggen en instandhouden van voorzieningen voor de waterhuishouding</k:waardediscreet>
+                                    </k:filterattribuut>
+                                    <k:symboolcode>vsg028</k:symboolcode>
+                                </k:SymbolisatieItem>
+                            </k:symbolisatieItems>
+                            <k:activiteitverbeelding>
+                                <rol-ref:ActiviteitRef type="simple"
+                                    xlink:href="nl.imow-gm0037.activiteit.2019000244"/>
+                                <!-- nl.imow-gm0037.gebied.2019000001 = 50EA019E-3C96-4631-A76C-35BCF4D7AB6D in Bedrijf_categorie_2.gml -->
+                            </k:activiteitverbeelding>
+                        </k:Kaartlaag>
+                        <k:Kaartlaag>
+                            <k:identificatie>nl.imow-gm0037.kaartlaag.2019000005</k:identificatie>
+                            <k:naam>exploiteren van inrichtingen</k:naam>
+                            <k:symbolisatieItems>
+                                <k:SymbolisatieItem>
+                                    <k:objecttype>Activiteit</k:objecttype>
+                                    <k:filterattribuut>
+                                        <k:attribuut>naam</k:attribuut>
+                                        <k:waardediscreet>exploiteren van inrichtingen</k:waardediscreet>
+                                    </k:filterattribuut>
+                                    <k:symboolcode>vsg026</k:symboolcode>
+                                </k:SymbolisatieItem>
+                            </k:symbolisatieItems>
+                            <k:activiteitverbeelding>
+                                <rol-ref:ActiviteitRef type="simple" xlink:href="nl.imow-gm0037.activiteit.2019000730"/>
+                            </k:activiteitverbeelding>
+                        </k:Kaartlaag>
+                        <k:Kaartlaag>
+                            <k:identificatie>nl.imow-gm0037.kaartlaag.2019000006</k:identificatie>
+                            <k:naam>exploiteren van risicovolle inrichtingen</k:naam>
+                            <k:symbolisatieItems>
+                                <k:SymbolisatieItem>
+                                    <k:objecttype>Activiteit</k:objecttype>
+                                    <k:filterattribuut>
+                                        <k:attribuut>naam</k:attribuut>
+                                        <k:waardediscreet>exploiteren van risicovolle inrichtingen</k:waardediscreet>
+                                    </k:filterattribuut>
+                                    <k:symboolcode>vsg026</k:symboolcode>
+                                </k:SymbolisatieItem>
+                            </k:symbolisatieItems>
+                            <k:activiteitverbeelding>
+                                <rol-ref:ActiviteitRef type="simple" xlink:href="nl.imow-gm0037.activiteit.2019000740"/>
+                            </k:activiteitverbeelding>
+                        </k:Kaartlaag>
+                        <k:Kaartlaag>
+                            <k:identificatie>nl.imow-gm0037.kaartlaag.2019000007</k:identificatie>
+                            <k:naam>opslagterrein</k:naam>
+                            <k:symbolisatieItems>
+                                <k:SymbolisatieItem>
+                                    <k:objecttype>Activiteit</k:objecttype>
+                                    <k:filterattribuut>
+                                        <k:attribuut>naam</k:attribuut>
+                                        <k:waardediscreet>opslagterrein</k:waardediscreet>
+                                    </k:filterattribuut>
+                                    <k:symboolcode>vsg026</k:symboolcode>
+                                </k:SymbolisatieItem>
+                            </k:symbolisatieItems>
+                            <k:activiteitverbeelding>
+                                <rol-ref:ActiviteitRef type="simple" xlink:href="nl.imow-gm0037.activiteit.2019000750"/>
+                            </k:activiteitverbeelding>
+                        </k:Kaartlaag>
+                        <k:Kaartlaag>
+                            <k:identificatie>nl.imow-gm0037.kaartlaag.2019000008</k:identificatie>
+                            <k:naam>exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg</k:naam>
+                            <k:symbolisatieItems>
+                                <k:SymbolisatieItem>
+                                    <k:objecttype>Activiteit</k:objecttype>
+                                    <k:filterattribuut>
+                                        <k:attribuut>naam</k:attribuut>
+                                        <k:waardediscreet>exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg</k:waardediscreet>
+                                    </k:filterattribuut>
+                                    <k:symboolcode>vsg109</k:symboolcode>
+                                </k:SymbolisatieItem>
+                            </k:symbolisatieItems>
+                            <k:activiteitverbeelding>
+                                <rol-ref:ActiviteitRef type="simple" xlink:href="nl.imow-gm0037.activiteit.2019000540"/>
+                            </k:activiteitverbeelding>
+                        </k:Kaartlaag>
+                        <k:Kaartlaag>
+                            <k:identificatie>nl.imow-gm0037.kaartlaag.2019000009</k:identificatie>
+                            <k:naam>exploiteren van een speelautomatenhal</k:naam>
+                            <k:symbolisatieItems>
+                                <k:SymbolisatieItem>
+                                    <k:objecttype>Activiteit</k:objecttype>
+                                    <k:filterattribuut>
+                                        <k:attribuut>naam</k:attribuut>
+                                        <k:waardediscreet>exploiteren van een speelautomatenhal</k:waardediscreet>
+                                    </k:filterattribuut>
+                                    <k:symboolcode>vag403</k:symboolcode>
+                                </k:SymbolisatieItem>
+                            </k:symbolisatieItems>
+                            <k:activiteitverbeelding>
+                                <rol-ref:ActiviteitRef type="simple" xlink:href="nl.imow-gm0037.activiteit.2019000660"/>
+                            </k:activiteitverbeelding>
+                        </k:Kaartlaag>
+                        <k:Kaartlaag>
+                            <k:identificatie>nl.imow-gm0037.kaartlaag.2019000010</k:identificatie>
+                            <k:naam>wonen in een bedrijfswoning</k:naam>
+                            <k:symbolisatieItems>
+                                <k:SymbolisatieItem>
+                                    <k:objecttype>Activiteit</k:objecttype>
+                                    <k:filterattribuut>
+                                        <k:attribuut>naam</k:attribuut>
+                                        <k:waardediscreet>wonen in een bedrijfswoning</k:waardediscreet>
+                                    </k:filterattribuut>
+                                    <k:symboolcode>vag424</k:symboolcode>
+                                </k:SymbolisatieItem>
+                            </k:symbolisatieItems>
+                            <k:activiteitverbeelding>
+                                <rol-ref:ActiviteitRef type="simple" xlink:href="nl.imow-gm0037.activiteit.2019000242"/>
+                            </k:activiteitverbeelding>
+                        </k:Kaartlaag>
+                        <!-- Achtergrond toevoegen zoals in GIO? (nog niet in schema)
+                        <Achtergrond>
+                            <bronactualiteit>2019-01-01</bronactualiteit>
+                            <bronbeschrijving>top10nl</bronbeschrijving>
+                            <brontype>achtergrond</brontype>
+                            <bronverwijzing>#50EA019E-3C96-4631-A76C-35BCF4D7AB6D</bronverwijzing>
+                            <nauwkeurigheid>10</nauwkeurigheid>
+                        </Achtergrond>-->
+                    </k:kaartlagen>
+                </k:Kaart>
+            </ow-dc:owObject>
+        </sl:stand>
+    </sl:standBestand>
+</ow-dc:owBestand>

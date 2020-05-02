@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+  targetNamespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" version="1.0.0"
+  xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
+  xmlns:imop="https://standaarden.overheid.nl/stop/imop/"
+  xmlns:lvbba="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+  xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:annotation>
+    <xs:documentation>LVBB-Aanlevering-schema</xs:documentation>
+    <xs:documentation>versie 1.0.0 uitgegeven op 03-04-2020</xs:documentation>
+    <xs:documentation>Veranderingen tov uitgeleverd 0.98-kern versie worden beschreven op
+      https://gitlab.com/koop/lvbb/bronhouderkoppelvlak.git/lvbba_xsd_Main_schema_lvbba_xsd.html </xs:documentation>
+  </xs:annotation>
+
+  <!-- xs:appinfo om geincludeerde STOP-versie vast te leggen -->
+  <xs:annotation>
+    <xs:appinfo>
+      <imop:STOPversie>1.0</imop:STOPversie>
+    </xs:appinfo>
+  </xs:annotation>
+
+  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/data/" schemaLocation="../stop/imop-data.xsd"/>
+  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/tekst/" schemaLocation="../stop/imop-tekst.xsd"/>
+
+  <!--
+    AANLEVEREN BESLUIT
+  -->
+  <xs:element name="AanleveringBesluit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" ref="lvbba:BesluitVersie" />
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="lvbba:RegelingVersieInformatie" />
+      </xs:sequence>
+      <xs:attributeGroup ref="lvbba:agSchemaversie" />
+    </xs:complexType>
+  </xs:element>
+
+  <!-- 
+    AANLEVEREN GENERIEK INFORMATIEOBJECT
+  -->
+  <xs:element name="AanleveringInformatieObject">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="lvbba:InformatieObjectVersie" />
+      </xs:choice>
+      <xs:attributeGroup ref="lvbba:agSchemaversie" />
+    </xs:complexType>
+  </xs:element>
+
+  <!--
+    INSTRUMENT SPECIFIEKE INCLUSIES
+  -->
+  <xs:element name="BesluitVersie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" ref="data:ExpressionIdentificatie" />
+        <xs:element maxOccurs="1" minOccurs="1" ref="data:BesluitMetadata" />
+        <xs:element maxOccurs="1" minOccurs="1" ref="data:Procedure" />
+        <xs:element maxOccurs="1" minOccurs="1" ref="data:ConsolidatieInformatie" />
+        <xs:choice>
+          <xs:element maxOccurs="1" minOccurs="1" ref="tekst:BesluitKlassiek" />
+          <xs:element maxOccurs="1" minOccurs="1" ref="tekst:BesluitCompact" />
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- 
+    OPVRAGEN INSTRUMENT DOOR BG
+  -->
+  <xs:element name="RegelingVersie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="lvbba:mgRegelingVersieInformatie" />
+        <xs:choice>
+          <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingKlassiek" />
+          <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingCompact" />
+          <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingTijdelijkdeel" />
+          <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingVrijetekst" />
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="lvbba:agSchemaversie" />
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="RegelingVersieInformatie">
+    <xs:complexType>
+      <xs:group ref="lvbba:mgRegelingVersieInformatie" />
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:group name="mgRegelingVersieInformatie">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="1" ref="data:ExpressionIdentificatie" />
+      <xs:element maxOccurs="1" minOccurs="1" ref="data:RegelingMetadata" />
+    </xs:sequence>
+  </xs:group>
+
+  <!--  -->
+  <xs:element name="InformatieObjectVersie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="data:ExpressionIdentificatie" />
+        <xs:element ref="data:InformatieObjectMetadata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- generiek -->
+  <xs:attributeGroup name="agSchemaversie">
+    <xs:attribute name="schemaversie" type="xs:token" use="required" />
+  </xs:attributeGroup>
+
+</xs:schema>

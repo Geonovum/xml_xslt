@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+   xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/LVBB-stop.xsd" 
+   schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/gm0037/2019/Bedrijf_categorie_2</FRBRWork>
+         <FRBRExpression>/join/id/regdata/gm0037/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</FRBRExpression>
+         <soortWork>/join/id/stop/work_003</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/join/id/stop/gemeente/gm0037</eindverantwoordelijke>
+         <maker>/join/id/stop/gemeente/gm0037</maker>
+         <noemer>Bedrijf_categorie_2</noemer>
+         <officieleTitel>Bedrijf_categorie_2</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Bedrijf_categorie_2.gml</bestandsnaam>
+                  <hash>49dc384ce6db961874413018dc6f286c99f76872e0e956fdfffe35f37bde999cbb6b3fc243cb6fb54b17789f987de86bb0a6f8f687aedd1f39075de94a98ed4f</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+         <featureMember>
+            <Locatie gml:id="Bedrijf_categorie_2">
+               <wId>Bedrijf_categorie_2</wId>
+               <naam>Bedrijf_categorie_2</naam>
+               <geometrie xlink:href="Bedrijf_categorie_2.gml#50EA019E-3C96-4631-A76C-35BCF4D7AB6D"></geometrie>
+            </Locatie>
+         </featureMember>
+      </GeoInformatie>
+   <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <bronactualiteit>2019-01-01</bronactualiteit>
+      <bronbeschrijving>top10nl</bronbeschrijving>
+      <brontype>achtergrond</brontype>
+      <bronverwijzing>#50EA019E-3C96-4631-A76C-35BCF4D7AB6D</bronverwijzing>
+      <nauwkeurigheid>10</nauwkeurigheid>
+   </Achtergrond>
+</InformatieObjectVersie>
+</AanleveringGIO>

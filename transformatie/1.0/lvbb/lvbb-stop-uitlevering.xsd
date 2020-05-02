@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+  targetNamespace="https://standaarden.overheid.nl/lvbb/stop/uitlevering/" version="1.0.0"
+  xmlns:cons="https://standaarden.overheid.nl/stop/imop/consolidatie/"
+  xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
+  xmlns:imop="https://standaarden.overheid.nl/stop/imop/"
+  xmlns:lvbbu="https://standaarden.overheid.nl/lvbb/stop/uitlevering/"
+  xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:annotation>
+    <xs:documentation>LVBB-Uitlevering-schema</xs:documentation>
+    <xs:documentation>versie 1.0.0 uitgegeven op 03-04-2020</xs:documentation>
+  </xs:annotation>
+
+  <!-- xs:appinfo om geincludeerde STOP-versie vast te leggen -->
+  <xs:annotation>
+    <xs:appinfo>
+      <imop:STOPversie>1.0</imop:STOPversie>
+    </xs:appinfo>
+  </xs:annotation>
+
+  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/data/" />
+  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/consolidatie/" />
+  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/tekst/" />
+
+  <!--
+    UITLEVEREN CONSOLIDATIE MET TOESTANDEN 
+  -->
+  <xs:element name="Consolidaties">
+    <!-- verzameling van alle consolidaties (Regelingen en (G)IOs -->
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="1" ref="lvbbu:Consolidatie" />
+      </xs:sequence>
+      <xs:attributeGroup ref="lvbbu:agSchemaversie" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Consolidatie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cons:ConsolidatieIdentificatie" />
+        <xs:element ref="cons:Toestanden" />
+        <xs:choice>
+          <!-- optioneel: meeleveren van alle Regelingversies en GIOs samen met de Toestanden -->
+          <xs:element maxOccurs="unbounded" minOccurs="0" ref="lvbbu:RegelingVersie" />
+          <xs:element maxOccurs="unbounded" minOccurs="0" ref="lvbbu:InformatieObjectVersie" />
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--
+    UITLEVEREN PROEFVERSIE
+  -->
+  <xs:element name="UitleveringProefversieBesluit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="data:ExpressionIdentificatie" />
+        <xs:element ref="data:Procedureverloop" />
+        <xs:element ref="cons:Proefversies" />
+        <xs:choice>
+          <!-- optioneel: meeleveren van alle Regelingversies of GIOs -->
+          <xs:element maxOccurs="unbounded" minOccurs="0" ref="lvbbu:RegelingVersie" />
+          <xs:element maxOccurs="unbounded" minOccurs="0" ref="lvbbu:InformatieObjectVersie" />
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="lvbbu:agSchemaversie" />
+    </xs:complexType>
+  </xs:element>
+
+  <!--
+    INSTRUMENT SPECIFIEKE INCLUSIES
+  -->
+  <xs:element name="RegelingVersie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="lvbbu:mgRegelingVersieInformatie" />
+        <xs:choice>
+          <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingKlassiek" />
+          <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingCompact" />
+          <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingTijdelijkdeel" />
+          <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingVrijetekst" />
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="lvbbu:agSchemaversie" />
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="RegelingVersieInformatie">
+    <xs:complexType>
+      <xs:group ref="lvbbu:mgRegelingVersieInformatie" />
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:group name="mgRegelingVersieInformatie">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="1" ref="data:ExpressionIdentificatie" />
+      <xs:element maxOccurs="1" minOccurs="1" ref="data:RegelingMetadata" />
+    </xs:sequence>
+  </xs:group>
+  <!--  -->
+  <xs:element name="InformatieObjectVersie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="data:ExpressionIdentificatie" />
+        <xs:element ref="data:InformatieObjectMetadata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  
+  <!--
+    LEVEREN OFFICIELE PUBLICATIE
+  -->
+  <xs:element name="OfficielePublicatie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="data:ExpressionIdentificatie" />
+        <xs:element ref="data:OfficielePublicatieMetadata" />
+        <xs:element ref="tekst:OfficielePublicatie" />
+      </xs:sequence>
+      <xs:attributeGroup ref="lvbbu:agSchemaversie" />
+    </xs:complexType>
+  </xs:element>
+
+  <!-- generiek -->
+  <xs:attributeGroup name="agSchemaversie">
+    <xs:attribute name="schemaversie" type="xs:token" use="required" />
+  </xs:attributeGroup>
+</xs:schema>

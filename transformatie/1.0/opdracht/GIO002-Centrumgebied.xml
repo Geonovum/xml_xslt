@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+   xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/LVBB-stop.xsd" 
+   schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/gm0037/2019/Centrumgebied</FRBRWork>
+         <FRBRExpression>/join/id/regdata/gm0037/2019/Centrumgebied/nld@2019-06-18;3520</FRBRExpression>
+         <soortWork>/join/id/stop/work_003</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/join/id/stop/gemeente/gm0037</eindverantwoordelijke>
+         <maker>/join/id/stop/gemeente/gm0037</maker>
+         <noemer>Centrumgebied</noemer>
+         <officieleTitel>Centrumgebied</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Centrumgebied.gml</bestandsnaam>
+                  <hash>3df50c0d31df3c143d047894f0708f038bddcaf4caa99a82bcd5bb9111c991fcc0c5e5294f46f76a850dd93662613cde4adbd3fd619449a6fd773290bd9fe6ed</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+         <featureMember>
+            <Locatie gml:id="Centrumgebied">
+               <wId>Centrumgebied</wId>
+               <naam>Centrumgebied</naam>
+               <geometrie xlink:href="Centrumgebied.gml#D28AF779-7EDD-4A88-8B11-809798F53636"/>
+            </Locatie>
+         </featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>top10nl</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+         <bronverwijzing>#D28AF779-7EDD-4A88-8B11-809798F53636</bronverwijzing>
+         <nauwkeurigheid>10</nauwkeurigheid>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+  targetNamespace="https://standaarden.overheid.nl/stop/imop/consolidatie/" version="1.0.0"
+  xmlns:cons="https://standaarden.overheid.nl/stop/imop/consolidatie/"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:annotation>
+    <xs:documentation>"Consolidatie-schema" van STOP. </xs:documentation>
+    <xs:documentation>Dit schema definieert de "consolidatie"-elementen voor de STOP-modules</xs:documentation>
+    <xs:documentation>versie 1.0.0 uitgegeven op 03-04-2020</xs:documentation>
+    <xs:documentation>Nieuw in STOP 1.0.0</xs:documentation>
+  </xs:annotation>
+
+  <!--
+  ================================================ 
+     Geldende regelgeving                               
+  ================================================ 
+  -->
+
+  <xs:element name="ConsolidatieIdentificatie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cons:FRBRWork"/>
+        <xs:element ref="cons:soortWork"/>
+        <xs:element ref="cons:isConsolidatieVan"/>
+        <xs:element maxOccurs="1" minOccurs="0" ref="cons:isTijdelijkDeelVan"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="cons:agSchemaVersie"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="isConsolidatieVan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cons:WorkIdentificatie"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="isTijdelijkDeelVan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cons:WorkIdentificatie"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="WorkIdentificatie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cons:FRBRWork"/>
+        <xs:element ref="cons:soortWork"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="FRBRExpression" type="cons:dtSTOPidentificatie"/>
+  <xs:element name="FRBRWork" type="cons:dtSTOPidentificatie"/>
+  <xs:element name="soortWork" type="cons:dtWaardeRef"/>
+
+  <!--
+  ================================================ 
+     Toestand, Proefversie
+  ================================================ 
+  -->
+
+  <xs:element name="Toestanden">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="cons:mgContext"/>
+        <xs:choice maxOccurs="unbounded" minOccurs="1">
+          <xs:element ref="cons:BekendeToestand"/>
+          <xs:element ref="cons:ToestandMetSamenloop"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="cons:agSchemaVersie"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="BekendeToestand">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="cons:mgToestandGeneriek"/>
+        <xs:group maxOccurs="1" minOccurs="1" ref="cons:mgToestandInhoud"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ToestandMetSamenloop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="cons:mgToestandGeneriek"/>
+        <xs:group maxOccurs="unbounded" minOccurs="0" ref="cons:mgToestandInhoud"/>
+        <xs:element ref="cons:samenloopstatus"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="mgToestandGeneriek">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="1" ref="cons:FRBRExpression"/>
+      <xs:element maxOccurs="unbounded" minOccurs="1" ref="cons:gerealiseerdeDoelen"/>
+      <xs:element maxOccurs="1" minOccurs="1" ref="cons:geldigheid"/>
+    </xs:sequence>
+  </xs:group>
+
+  <xs:element name="Proefversies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="cons:mgContext"/>
+        <xs:element maxOccurs="unbounded" minOccurs="1" ref="cons:Proefversie"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="cons:agSchemaVersie"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Proefversie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" ref="cons:gerealiseerdeDoelen"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="cons:instrumentVersie"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- 
+   ================================================ 
+   Proefconsolidatie 
+   ================================================
+  -->
+
+  <xs:element name="Proefconsolidaties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="cons:mgContext"/>
+        <xs:choice maxOccurs="unbounded" minOccurs="1">
+          <xs:element ref="cons:BekendeProefconsolidatie"/>
+          <xs:element ref="cons:ProefconsolidatiedMetSamenloop"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="cons:agSchemaVersie"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="BekendeProefconsolidatie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="cons:mgProefconsolidatieGeneriek"/>
+        <xs:group maxOccurs="1" minOccurs="1" ref="cons:mgToestandInhoud"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ProefconsolidatiedMetSamenloop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="cons:mgProefconsolidatieGeneriek"/>
+        <xs:group maxOccurs="unbounded" minOccurs="0" ref="cons:mgToestandInhoud"/>
+        <xs:element ref="cons:samenloopstatus"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="mgProefconsolidatieGeneriek">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="1" ref="cons:FRBRExpression"/>
+      <xs:element maxOccurs="unbounded" minOccurs="1" ref="cons:gerealiseerdeDoelen"/>
+    </xs:sequence>
+  </xs:group>
+
+  <xs:group name="mgToestandInhoud">
+    <xs:sequence>
+      <xs:element ref="cons:instrumentVersie"/>
+      <xs:element ref="cons:revisies" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:group>
+
+  <xs:element name="gerealiseerdeDoelen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="1" ref="cons:doel"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="instrumentVersie" type="cons:dtSTOPidentificatie"/>
+  <xs:element name="doel" type="cons:dtDoelidentificatie"/>
+
+  <xs:element name="samenloopstatus" type="cons:wlSamenloopstatus"/>
+
+  <xs:simpleType name="wlSamenloopstatus">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="nogNietOntvangen"/>
+      <xs:enumeration value="juridischOndoenlijk"/>
+      <xs:enumeration value="nietVoorgenomen"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="geldigheid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="1" ref="cons:Geldigheidsperiode"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Geldigheidsperiode">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="cons:juridischWerkendOp"/>
+        <xs:element ref="cons:geldigOp"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="juridischWerkendOp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" ref="cons:Periode"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="geldigOp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="cons:Periode"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Periode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" ref="cons:vanaf"/>
+        <xs:element maxOccurs="1" minOccurs="0" ref="cons:tot"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="vanaf" type="xs:date"/>
+  <xs:element name="tot" type="xs:date"/>
+  
+  <xs:element name="revisies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="1" ref="cons:revisie"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="revisie" type="cons:dtSTOPidentificatie"/>
+
+  <!--
+  ================================================ 
+     generiek                               
+  ================================================ 
+  -->
+  <!-- ag -->
+  <xs:attributeGroup name="agSchemaVersie">
+    <xs:attribute name="schemaversie" type="cons:dtSchemaVersie" use="optional"/>
+  </xs:attributeGroup>
+
+  <!-- mg -->
+  <xs:group name="mgContext">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="1" ref="cons:bekendOp"/>
+      <xs:element maxOccurs="1" minOccurs="0" ref="cons:ontvangenOp"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:element name="bekendOp" type="xs:date"/>
+  <xs:element name="ontvangenOp" type="xs:date"/>
+
+  <!-- datatypes -->
+  <xs:simpleType name="dtSchemaVersie">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="dtDoelidentificatie">
+    <xs:restriction base="cons:dtSTOPidentificatie"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="dtSTOPidentificatie">
+    <xs:restriction base="xs:anyURI"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="dtWaardeRef">
+    <xs:restriction base="xs:anyURI"/>
+  </xs:simpleType>
+
+</xs:schema>
