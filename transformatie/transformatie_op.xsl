@@ -3,9 +3,11 @@
   <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
   <xsl:strip-space elements="*"/>
 
+  <xsl:param name="file.config" select="replace(document-uri(),'template','config')"/>
+
   <!-- file.list bevat alle te verwerken bestanden -->
 
-  <xsl:param name="file.list" select="string('C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Bedrijf_categorie_2.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Centrumgebied.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO001-Bedrijf_categorie_2.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO002-Centrumgebied.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO003-Zone_A.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO004-Zone_B.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO005-Speelhal.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO006-Zuilichem_industriegebied_1.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO007-Zuilichem_industriegebied_2.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO008-Zuilichem_industriegebied_3.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Speelhal.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zone_A.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zone_B.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zuilichem_industriegebied_1.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zuilichem_industriegebied_2.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zuilichem_industriegebied_3.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/akn_nl_bill_gm0037_2019-12-01.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/manifest-ow.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/manifest.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/opdracht.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owActiviteiten-Gemeentestad.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owGebiedsaanwijzingen-Gemeentestad.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owLocaties-Gemeentestad.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owOmgevingsnormOmgevingswaarde.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owPons-Gemeentestad.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owRegeltekst-Gemeentestad.xml')"/>
+  <xsl:param name="file.list"/>
 
   <!-- stel manifest-bestand samen -->
 
@@ -101,6 +103,18 @@
   <xsl:template match="BeoogdeRegeling" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <xsl:choose>
       <xsl:when test="starts-with(instrumentVersie,'/akn/nl/act/')">
+        <xsl:result-document href="{$file.config}" method="xml">
+          <xsl:element name="BeoogdeRegeling">
+            <xsl:element name="DoelID">
+              <xsl:variable name="ID02" select="tokenize(instrumentVersie,'/')[6]"/>
+              <xsl:variable name="ID03" select="tokenize(doel,'/')[last()]"/>
+              <xsl:value-of select="fn:string-join(('','join','id','proces',$ID01,$ID02,$ID03),'/')"/>
+            </xsl:element>
+            <xsl:element name="WorkID">
+              <xsl:value-of select="tokenize(instrumentVersie,'/nld')[1]"/>
+            </xsl:element>
+          </xsl:element>
+        </xsl:result-document>
         <xsl:element name="{name()}" namespace="{namespace-uri()}">
           <xsl:apply-templates select="@*|node()"/>
         </xsl:element>
@@ -117,7 +131,7 @@
     <xsl:element name="doelen" namespace="{namespace-uri()}">
       <xsl:element name="{name()}" namespace="{namespace-uri()}">
         <xsl:variable name="ID02" select="tokenize(parent::BeoogdeRegeling/instrumentVersie,'/')[6]"/>
-        <xsl:variable name="ID03" select="tokenize(text(),'/')[last()]"/>
+        <xsl:variable name="ID03" select="tokenize(.,'/')[last()]"/>
         <xsl:value-of select="fn:string-join(('','join','id','proces',$ID01,$ID02,$ID03),'/')"/>
       </xsl:element>
     </xsl:element>

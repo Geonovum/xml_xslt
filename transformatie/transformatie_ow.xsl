@@ -3,7 +3,9 @@
   <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
   <xsl:strip-space elements="*"/>
 
-  <!-- file.list bevat alle te verwerken bestanden -->
+  <xsl:param name="file.config" select="replace(document-uri(),'template','config')"/>
+
+  <!-- doorgegeven parameters -->
 
   <xsl:param name="file.list" select="string('C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Bedrijf_categorie_2.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Centrumgebied.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO001-Bedrijf_categorie_2.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO002-Centrumgebied.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO003-Zone_A.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO004-Zone_B.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO005-Speelhal.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO006-Zuilichem_industriegebied_1.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO007-Zuilichem_industriegebied_2.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO008-Zuilichem_industriegebied_3.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Speelhal.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zone_A.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zone_B.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zuilichem_industriegebied_1.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zuilichem_industriegebied_2.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zuilichem_industriegebied_3.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/akn_nl_bill_gm0037_2019-12-01.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/manifest-ow.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/manifest.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/opdracht.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owActiviteiten-Gemeentestad.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owGebiedsaanwijzingen-Gemeentestad.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owLocaties-Gemeentestad.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owOmgevingsnormOmgevingswaarde.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owPons-Gemeentestad.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owRegeltekst-Gemeentestad.xml')"/>
 
@@ -489,13 +491,13 @@
 
   <xsl:template match="FRBRwork">
     <xsl:element name="WorkIDRegeling" namespace="{$xmlns}">
-      <xsl:apply-templates select="@*|node()"/>
+      <xsl:value-of select="document($file.config)//WorkID"/>
     </xsl:element>
   </xsl:template>
 
   <xsl:template match="FRBRExpression">
     <xsl:element name="DoelID" namespace="{$xmlns}">
-      <xsl:apply-templates select="@*|node()"/>
+      <xsl:value-of select="document($file.config)//DoelID"/>
     </xsl:element>
   </xsl:template>
 

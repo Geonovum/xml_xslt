@@ -5,7 +5,7 @@
    <domein>omgevingswet</domein>
    <Aanlevering>
       <WorkIDRegeling>/akn/nl/act/gm0037/2019/reg456</WorkIDRegeling>
-      <DoelID>/akn/nl/act/gm0037/2019/reg456/nld@2019-12-01</DoelID>
+      <DoelID>/join/id/proces/gm0037/2019/Instelling</DoelID>
       <Bestand>
          <naam>owActiviteiten-Gemeentestad.xml</naam>
          <objecttype>Activiteit</objecttype>
