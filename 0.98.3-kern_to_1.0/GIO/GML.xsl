@@ -48,15 +48,15 @@
     
     <xsl:template mode="GIO_root" match=".">
         <xsl:param name="GML"/>
-        <xsl:element name="AanleveringInformatieObject" namespace="https://standaarden.overheid.nl/lvbb/DSO-PI12">
+        <xsl:element name="AanleveringInformatieObject" namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
             <xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
             <xsl:attribute name="xsi:schemaLocation">https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd</xsl:attribute>
             <xsl:namespace name="geo">https://standaarden.overheid.nl/stop/imop/gio/</xsl:namespace>
             <xsl:namespace name="data">https://standaarden.overheid.nl/stop/imop/data/</xsl:namespace>
-            <xsl:namespace name="uit">https://standaarden.overheid.nl/lvbb/DSO-PI12</xsl:namespace>
+            <xsl:namespace name="uit">https://standaarden.overheid.nl/lvbb/stop/aanlevering/</xsl:namespace>
             <xsl:attribute name="schemaversie">1.0</xsl:attribute>
             
-            <xsl:copy select="/uit:AanleveringGIO/uit:InformatieObjectVersie[1]" copy-namespaces="no">
+            <xsl:element name="InformatieObjectVersie" namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
                 <xsl:copy-of select="/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:ExpressionIdentificatie[1]" copy-namespaces="no"/>
                 <xsl:copy select="/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:InformatieObjectMetadata[1]" copy-namespaces="no">
                     <xsl:copy-of select="data:eindverantwoordelijke" copy-namespaces="no"/>
@@ -66,6 +66,7 @@
                             <xsl:value-of select="data:officieleTitel"/>
                         </xsl:element>
                     </xsl:element>
+                    <xsl:copy-of select="data:officieleTitel" copy-namespaces="no"/>
                     <xsl:copy-of select="data:publicatieinstructie" copy-namespaces="no"/>
                     <xsl:element name="data:formaatInformatieobject" inherit-namespaces="no">/join/id/stop/informatieobject/gio_002</xsl:element>
                     <xsl:element name="data:soortenInformatieobject" inherit-namespaces="no">
@@ -74,7 +75,7 @@
                     <xsl:element name="data:heeftGeboorteregeling">TODO</xsl:element>
                     <xsl:copy-of select="data:heeftBestanden" copy-namespaces="no"/>
                 </xsl:copy>
-            </xsl:copy>
+            </xsl:element>
         </xsl:element>
     </xsl:template>
     
