@@ -54,7 +54,6 @@
             <xsl:value-of select="$GIO/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:ExpressionIdentificatie[1]/data:FRBRExpression[1]/text()"/>
         </xsl:element>
     </xsl:template>
-    
     <xsl:template mode="GIO_root" match=".">
         <xsl:param name="GML"/>
         <xsl:element name="AanleveringInformatieObject">
@@ -68,9 +67,19 @@
                         <xsl:value-of select="/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:ExpressionIdentificatie[1]/data:soortWork[1]/text()"/>
                     </xsl:element>
                 </xsl:element>
-                <xsl:element name="InformatieObjectMetadata">
-                    <xsl:element name="eindverantwoordelijke"></xsl:element>
-                    <xsl:element name="maker"></xsl:element>
+                <xsl:copy select="/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:InformatieObjectMetadata[1]" copy-namespaces="no">
+                    <xsl:copy-of select="data:eindverantwoordelijke" copy-namespaces="no"/>
+                    <xsl:copy-of select="data:maker" copy-namespaces="no"/>
+                    <xsl:element name="alternatieveTitels">
+                        <xsl:element name="alternatieveTitel">
+                            <xsl:value-of select="data:officieleTitel"/>
+                        </xsl:element>
+                    </xsl:element>
+                    <xsl:copy-of select="data:officieleTitel" copy-namespaces="no"/>
+                </xsl:copy>
+                
+<!--                <xsl:element name="InformatieObjectMetadata">
+                    
                     <xsl:element name="alternatieveTitels">
                         <xsl:element name="alternatieveTitel"></xsl:element>
                     </xsl:element>
@@ -87,7 +96,7 @@
                             </xsl:element>
                         </xsl:element>
                     </xsl:element>
-                </xsl:element>
+                </xsl:element>-->
             </xsl:element>
         </xsl:element>
     </xsl:template>
