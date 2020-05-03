@@ -31,8 +31,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
     xmlns:uit="https://standaarden.overheid.nl/lvbb/DSO-PI12"
+    
     xsi:schemaLocation="http://www.overheid.nl/imop/def# ../lvbb/LVBB-stop.xsd"
-    xmlns="https://standaarden.overheid.nl/lvbb/stop/">
+    >
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
     <xsl:strip-space elements="*"/>
     
@@ -45,65 +46,41 @@
     <xsl:param name="GMLbestanden" select="collection(concat($bron_folder, '?select=*.gml;recurse=yes'))"/>
     <xsl:param name="XMLbestanden" select="collection(concat($bron_folder, '?select=*.xml;recurse=yes'))"/>
     
-    <xsl:template mode="Work_Express" match="*">
-        <xsl:param name="GIO"/>
-        <xsl:element name="FRBRWork">
-            <xsl:value-of select="$GIO/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:ExpressionIdentificatie[1]/data:FRBRWork[1]/text()"/>
-        </xsl:element>
-        <xsl:element name="FRBRExpression">
-            <xsl:value-of select="$GIO/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:ExpressionIdentificatie[1]/data:FRBRExpression[1]/text()"/>
-        </xsl:element>
-    </xsl:template>
     <xsl:template mode="GIO_root" match=".">
         <xsl:param name="GML"/>
-        <xsl:element name="AanleveringInformatieObject">
+        <xsl:element name="AanleveringInformatieObject" namespace="https://standaarden.overheid.nl/lvbb/DSO-PI12">
+            <xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
+            <xsl:attribute name="xsi:schemaLocation">https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd</xsl:attribute>
             <xsl:namespace name="geo">https://standaarden.overheid.nl/stop/imop/gio/</xsl:namespace>
-            <xsl:element name="InformatieObjectVersie">
-                <xsl:element name="ExpressionIdentificatie">
-                    <xsl:apply-templates mode="Work_Express">
-                        <xsl:with-param name="GIO" select="/"></xsl:with-param>
-                    </xsl:apply-templates>
-                    <xsl:element name="soortWork">
-                        <xsl:value-of select="/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:ExpressionIdentificatie[1]/data:soortWork[1]/text()"/>
-                    </xsl:element>
-                </xsl:element>
+            <xsl:namespace name="data">https://standaarden.overheid.nl/stop/imop/data/</xsl:namespace>
+            <xsl:namespace name="uit">https://standaarden.overheid.nl/lvbb/DSO-PI12</xsl:namespace>
+            <xsl:attribute name="schemaversie">1.0</xsl:attribute>
+            
+            <xsl:copy select="/uit:AanleveringGIO/uit:InformatieObjectVersie[1]" copy-namespaces="no">
+                <xsl:copy-of select="/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:ExpressionIdentificatie[1]" copy-namespaces="no"/>
                 <xsl:copy select="/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:InformatieObjectMetadata[1]" copy-namespaces="no">
                     <xsl:copy-of select="data:eindverantwoordelijke" copy-namespaces="no"/>
                     <xsl:copy-of select="data:maker" copy-namespaces="no"/>
-                    <xsl:element name="alternatieveTitels">
-                        <xsl:element name="alternatieveTitel">
+                    <xsl:element name="data:alternatieveTitels" inherit-namespaces="no">
+                        <xsl:element name="data:alternatieveTitel" inherit-namespaces="no">
                             <xsl:value-of select="data:officieleTitel"/>
                         </xsl:element>
                     </xsl:element>
-                    <xsl:copy-of select="data:officieleTitel" copy-namespaces="no"/>
+                    <xsl:copy-of select="data:publicatieinstructie" copy-namespaces="no"/>
+                    <xsl:element name="data:formaatInformatieobject" inherit-namespaces="no">/join/id/stop/informatieobject/gio_002</xsl:element>
+                    <xsl:element name="data:soortenInformatieobject" inherit-namespaces="no">
+                        <xsl:copy-of select="data:soortInformatieobject" copy-namespaces="no"/>
+                    </xsl:element>
+                    <xsl:element name="data:heeftGeboorteregeling">TODO</xsl:element>
+                    <xsl:copy-of select="data:heeftBestanden" copy-namespaces="no"/>
                 </xsl:copy>
-                
-<!--                <xsl:element name="InformatieObjectMetadata">
-                    
-                    <xsl:element name="alternatieveTitels">
-                        <xsl:element name="alternatieveTitel"></xsl:element>
-                    </xsl:element>
-                    <xsl:element name="officieleTitel"></xsl:element>
-                    <xsl:element name="publicatieinstructie"></xsl:element>
-                    <xsl:element name="formaatInformatieobject"></xsl:element>
-                    <xsl:element name="soortenInformatieobject">
-                        <xsl:element name="soortInformatieobject"></xsl:element>
-                    </xsl:element>
-                    <xsl:element name="heeftGeboorteregeling"></xsl:element>
-                    <xsl:element name="heeftBestanden">
-                        <xsl:element name="heeftBestand">
-                            <xsl:element name="Bestand">
-                            </xsl:element>
-                        </xsl:element>
-                    </xsl:element>
-                </xsl:element>-->
-            </xsl:element>
+            </xsl:copy>
         </xsl:element>
     </xsl:template>
     
     <xsl:template mode="locaties" match="/geo:FeatureCollectionGeometrie/geo:featureMember">
-        <xsl:element name="geo:Locatie">
-            <xsl:element name="geo:geometrie">
+        <xsl:element name="geo:Locatie" namespace="https://standaarden.overheid.nl/stop/imop/geo/">
+            <xsl:element name="geo:geometrie" namespace="https://standaarden.overheid.nl/stop/imop/geo/">
                 <xsl:element name="basisgeo:Geometrie">
                     <xsl:variable name="gml_id" select="geo:Geometrie[1]/geo:id[1]/text()"/>
                     <xsl:attribute name="gml:id" select="concat('id-', $gml_id, '-xx')"/>
@@ -117,10 +94,19 @@
             </xsl:element>
         </xsl:element>
     </xsl:template>
+    
     <xsl:template mode="GML_root" match=".">
         <xsl:param name="GIO"/>
-        <xsl:element name="geo:GeoInformatieObjectVaststelling">
-            <xsl:element name="geo:context">
+        <xsl:element name="geo:GeoInformatieObjectVaststelling" namespace="https://standaarden.overheid.nl/stop/imop/geo/">
+            <xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
+            <xsl:attribute name="xsi:schemaLocation">https://standaarden.overheid.nl/stop/imop/geo/ ../stop/imop-geo.xsd http://www.geostandaarden.nl/basisgeometrie/1.0 ../xsd/basisgeometrie/basisgeometrie.xsd</xsl:attribute>
+            <xsl:namespace name="geo">https://standaarden.overheid.nl/stop/imop/geo/</xsl:namespace>
+            <xsl:namespace name="gio">https://standaarden.overheid.nl/stop/imop/gio/</xsl:namespace>
+            <xsl:namespace name="rsc">https://standaarden.overheid.nl/stop/imop/resources/</xsl:namespace>
+            <xsl:namespace name="basisgeo">http://www.geostandaarden.nl/basisgeometrie/1.0/</xsl:namespace>
+            <xsl:attribute name="schemaversie">1.0</xsl:attribute>
+            
+            <xsl:element name="geo:context"  namespace="https://standaarden.overheid.nl/stop/imop/geo/">
                 <xsl:element name="gio:GeografischeContext">
                     <xsl:element name="gio:achtergrondVerwijzing">
                         <xsl:value-of select="$GIO/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:Achtergrond[1]/data:bronbeschrijving[1]/text()"/>
@@ -130,15 +116,16 @@
                     </xsl:element>
                 </xsl:element>
             </xsl:element>
-            <xsl:element name="geo:vastgestelseVersie">
-                <xsl:element name="geo:GeoInformatieObjectVersie">
-                    <xsl:element name="geo:FRBRWork">
+            
+            <xsl:element name="geo:vastgesteldeVersie" namespace="https://standaarden.overheid.nl/stop/imop/geo/">
+                <xsl:element name="geo:GeoInformatieObjectVersie" namespace="https://standaarden.overheid.nl/stop/imop/geo/">
+                    <xsl:element name="geo:FRBRWork" namespace="https://standaarden.overheid.nl/stop/imop/geo/">
                         <xsl:value-of select="$GIO/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:ExpressionIdentificatie[1]/data:FRBRWork[1]/text()"/>
                     </xsl:element>
-                    <xsl:element name="geo:FRBRExpression">
+                    <xsl:element name="geo:FRBRExpression" namespace="https://standaarden.overheid.nl/stop/imop/geo/">
                         <xsl:value-of select="$GIO/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:ExpressionIdentificatie[1]/data:FRBRExpression[1]/text()"/>
                     </xsl:element>
-                    <xsl:element name="geo:locaties">
+                    <xsl:element name="geo:locaties" namespace="https://standaarden.overheid.nl/stop/imop/geo/">
                         <xsl:apply-templates mode="locaties"/>
                     </xsl:element>
                 </xsl:element>
