@@ -48,6 +48,7 @@
     
     <xsl:template mode="GIO_root" match=".">
         <xsl:param name="GML"/>
+        <xsl:param name="Besluit"/>
         <xsl:element name="AanleveringInformatieObject" namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
             <xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
             <xsl:attribute name="xsi:schemaLocation">https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd</xsl:attribute>
@@ -72,7 +73,9 @@
                     <xsl:element name="data:soortenInformatieobject" inherit-namespaces="no">
                         <xsl:copy-of select="data:soortInformatieobject" copy-namespaces="no"/>
                     </xsl:element>
-                    <xsl:element name="data:heeftGeboorteregeling">TODO</xsl:element>
+                    <xsl:element name="data:heeftGeboorteregeling">
+                        <xsl:value-of select="$Besluit/uit:AanleveringBesluit/uit:RegelingVersieInformatie[1]/data:ExpressionIdentificatie[1]/data:FRBRWork[1]/text()"/>
+                    </xsl:element>
                     <xsl:copy-of select="data:heeftBestanden" copy-namespaces="no"/>
                 </xsl:copy>
             </xsl:element>
@@ -136,6 +139,7 @@
     
     <xsl:template match="/" mode="GIO">
         <xsl:param name="GML"/>
+        <xsl:param name="Besluit"/>
         <!-- haal naam GIO bestand op -->
         <xsl:variable name="gio_bestand"
             select="fn:substring-after(base-uri(), concat(fn:substring($bron_folder, 9), '/'))"/>
@@ -143,6 +147,7 @@
         <xsl:result-document href="{$doel_folder}/{$gio_bestand}" method="xml" indent='yes'>
             <xsl:apply-templates mode="GIO_root">
                 <xsl:with-param name="GML" select="$GML"/>
+                <xsl:with-param name="Besluit" select="$Besluit"></xsl:with-param>
             </xsl:apply-templates>
         </xsl:result-document>
     </xsl:template>
@@ -161,6 +166,7 @@
     </xsl:template>
     
     <xsl:template match="/" mode="XML">
+        <xsl:param name="Besluit"/>
         <!-- naam van GML bestand uit heeftbestanden ophalen -->
         <xsl:variable name="GML_naam" select="/uit:AanleveringGIO/uit:InformatieObjectVersie[1]/data:InformatieObjectMetadata[1]/data:heeftBestanden[1]/data:heeftBestand[1]/data:Bestand[1]/data:bestandsnaam[1]/text()"/>
         <!-- match naam op collectie gml bestanden -->
@@ -169,11 +175,15 @@
         </xsl:apply-templates>
         <xsl:apply-templates select="." mode="GIO">
             <xsl:with-param name="GML" select="$GMLbestanden[fn:substring-after(base-uri(), concat(fn:substring($bron_folder, 9), '/'))=$GML_naam]"/>
+            <xsl:with-param name="Besluit" select="$Besluit"/>
         </xsl:apply-templates>
     </xsl:template>
     
     <!-- match op alle xml bestanden waarvan het root element een 'AanleveringGIO' is -->
     <xsl:template match="/">
-        <xsl:apply-templates select="$XMLbestanden[root()/element()/name()='AanleveringGIO']" mode="XML"/>
+        
+        <xsl:apply-templates select="$XMLbestanden[root()/element()/name()='AanleveringGIO']" mode="XML">
+            <xsl:with-param name="Besluit" select="$XMLbestanden[root()/element()/name()='AanleveringBesluit']"/>
+        </xsl:apply-templates>
     </xsl:template>
 </xsl:stylesheet>
