@@ -4225,8 +4225,8 @@
       </waarden>
    </waardelijst>
    <waardelijst>
-      <label>typegebiedsaanwijzing</label>
-      <titel>Typegebiedsaanwijzing</titel>
+      <label>type gebiedsaanwijzing</label>
+      <titel>TypeGebiedsaanwijzing</titel>
       <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typegebiedsaanwijzing</uri>
       <type>limitatief</type>
       <omschrijving>Waardelijst voor attribuut type, dat aangeeft welk type Gebiedsaanwijzing wordt geannoteerd</omschrijving>
@@ -4961,8 +4961,8 @@
       </waarden>
    </waardelijst>
    <waardelijst>
-      <label>externeveiligheidgroep</label>
-      <titel>Externeveiligheidgroep</titel>
+      <label>externe veiligheidgroep</label>
+      <titel>ExterneVeiligheidgroep</titel>
       <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Externeveiligheidgroep</uri>
       <type>limitatief</type>
       <omschrijving>Waardelijst voor attribuut groep bij het Gebiedsaanwijzingtype Externe veiligheid, dat zorgt voor filteren en weergave van de symbolisatie van Externe veiligheid op de kaart</omschrijving>
@@ -6907,8 +6907,8 @@
       </waarden>
    </waardelijst>
    <waardelijst>
-      <label>ruimtelijkgebruikgroep</label>
-      <titel>Ruimtelijkgebruikgroep</titel>
+      <label>ruimtelijk gebruikgroep</label>
+      <titel>RuimtelijkGebruikgroep</titel>
       <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Ruimtelijkgebruikgroep</uri>
       <type>limitatief</type>
       <omschrijving>Waardelijst voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik, dat zorgt voor filteren en weergave van de symbolisatie van Ruimtelijkgebruik op de kaart</omschrijving>
@@ -7343,8 +7343,8 @@
       </waarden>
    </waardelijst>
    <waardelijst>
-      <label>waterenwatersysteemgroep</label>
-      <titel>Waterenwatersysteemgroep</titel>
+      <label>water en watersysteemgroep</label>
+      <titel>WaterEnWatersysteemgroep</titel>
       <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Waterenwatersysteemgroep</uri>
       <type>limitatief</type>
       <omschrijving>Waardelijst voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem, dat zorgt voor filteren en weergave van de symbolisatie van WaterEnWatersysteem op de kaart</omschrijving>
@@ -7860,8 +7860,8 @@
       </waarden>
    </waardelijst>
    <waardelijst>
-      <label>typenorm</label>
-      <titel>Typenorm</titel>
+      <label>type norm</label>
+      <titel>TypeNorm</titel>
       <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typenorm</uri>
       <type>uitbreidbaar</type>
       <omschrijving>Waardelijst voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde</omschrijving>
