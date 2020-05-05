@@ -22,7 +22,7 @@
     </xs:documentation>
   </xs:annotation>
 
-  <xs:import namespace="http://www.geostandaarden.nl/basisgeometrie/1.0" schemaLocation="../xsd/basisgeometrie/basisgeometrie_lokaal.xsd"/>
+  <xs:import namespace="http://www.geostandaarden.nl/basisgeometrie/1.0" schemaLocation="../xsd/basisgeometrie/basisgeometrie.xsd"/>
   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <xs:import namespace="https://standaarden.overheid.nl/stop/imop/gio/" schemaLocation="../stop/imop-gio.xsd"/>
 

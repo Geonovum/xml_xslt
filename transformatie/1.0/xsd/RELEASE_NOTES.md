@@ -14,7 +14,12 @@ https://www.geostandaarden.nl/imow/
 
 ## Versies
 Alle schema's volgen de x.y.z. systematiek. 
-
+## Verbeteringen tussen v1.0.1 en v1.0
+	Foutmeldingen van Pons-schema hersteld (verkeerde verwijzing naar OWobject)
+	Kardinaliteitsaanpassingen bij activiteit 
+		Activiteitaanduiding kan nu meerdere keren voorkomen (t.o.v. één keer in 1.0), 
+		de onderliggende activiteitlocatieaanduiding en activiteitref maar één keer (t.o.v. meerdere keren in 1.0)
+	
 
 ## Verbeteringen tussen v1.0 en v0.98.3.1-kern
 	FormeleDivisie hernoemd naar Divisie (en FormeleInhoud vervangen door Divisietekst)

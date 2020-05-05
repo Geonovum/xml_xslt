@@ -129,8 +129,8 @@
                         <l:LocatieRef xlink:href="nl.imow-gm0037.gebied.2019000001"/>
                      </r:locatieaanduiding>
                   </r:ActiviteitLocatieaanduiding>
-                  <!-- deze activiteit heeft ook een regel vanuit art 2.11 lid 1 -->
                </r:activiteitaanduiding>
+               <!-- deze activiteit heeft ook een regel vanuit art 2.11 lid 1 -->
             </r:RegelVoorIedereen>
          </ow-dc:owObject>
       </sl:stand>
@@ -347,6 +347,8 @@
                         <l:LocatieRef xlink:href="nl.imow-gm0037.gebied.2019000001"/>
                      </r:locatieaanduiding>
                   </r:ActiviteitLocatieaanduiding>
+               </r:activiteitaanduiding>
+               <r:activiteitaanduiding>
                   <rol:ActiviteitRef xlink:href="nl.imow-gm0037.activiteit.2019000760"/>
                   <r:ActiviteitLocatieaanduiding>
                      <r:identificatie>nl.imow-gm0037.activiteitlocatieaanduiding.2019000012</r:identificatie>

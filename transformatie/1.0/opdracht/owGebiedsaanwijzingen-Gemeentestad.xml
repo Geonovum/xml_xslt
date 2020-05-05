@@ -26,7 +26,7 @@
          <ow-dc:owObject>
             <ga:Gebiedsaanwijzing>
                <ga:identificatie>nl.imow-gm0037.gebiedsaanwijzing.2019000001</ga:identificatie>
-               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:type/>
                <ga:naam>Bedrijf categorie 2</ga:naam>
                <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Bedrijf</ga:groep>
                <ga:locatieaanduiding>
@@ -39,7 +39,7 @@
          <ow-dc:owObject>
             <ga:Gebiedsaanwijzing>
                <ga:identificatie>nl.imow-gm0037.gebiedsaanwijzing.2019000002</ga:identificatie>
-               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:type/>
                <ga:naam>Centrumgebied</ga:naam>
                <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Centrumgebied</ga:groep>
                <ga:locatieaanduiding>

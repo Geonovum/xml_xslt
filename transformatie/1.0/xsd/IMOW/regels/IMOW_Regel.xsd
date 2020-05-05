@@ -150,9 +150,9 @@
       <xs:complexContent>
          <xs:extension base="r:JuridischeRegel">
             <xs:sequence>
-               <xs:element name="activiteitaanduiding" minOccurs="0" maxOccurs="1">
+               <xs:element name="activiteitaanduiding" minOccurs="0" maxOccurs="unbounded">
                   <xs:complexType>
-                     <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                     <xs:sequence minOccurs="1" maxOccurs="1">
                         <xs:choice>
                            <xs:element ref="rol:ActiviteitRef"/>
                         </xs:choice>

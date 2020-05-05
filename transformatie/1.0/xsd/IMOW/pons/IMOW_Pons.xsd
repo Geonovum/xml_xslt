@@ -28,7 +28,7 @@
    <xs:import namespace="http://www.geostandaarden.nl/imow/locatie"
       schemaLocation="../../IMOW/locatie/IMOW_Locatie.xsd"/>
    <xs:import namespace="http://www.geostandaarden.nl/imow/owobject"
-      schemaLocation="../../IMOW/opobject/IMOW_OWobject.xsd"/>
+      schemaLocation="../../IMOW/owobject/IMOW_OWobject.xsd"/>
    <xs:import namespace="http://www.w3.org/1999/xlink"
       schemaLocation="../../xlink/1.0.0/xlinks.xsd"/>
    <xs:element name="Pons" type="p:Pons" abstract="false">

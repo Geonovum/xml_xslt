@@ -30,7 +30,7 @@
                <rol:naam>ten hoogste twaalf maal per kalenderjaar overschreden stikstofdioxide uurgemiddelde</rol:naam>
                <!--GW: hier type norm toevoegen-->
                <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/TypeNorm</rol:type>
-               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/_g_m3</rol:eenheid>
+               <rol:eenheid/>
                <rol:normwaarde>
                   <rol:Normwaarde>
                      <rol:identificatie>nl.imow-gm0037.normwaarde.2019000001</rol:identificatie>
@@ -51,7 +51,7 @@
                <rol:naam>stikstofdioxide kalenderjaargemiddelde</rol:naam>
                <!--GW: hier type norm toevoegen-->
                <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/TypeNorm</rol:type>
-               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/_g_m3</rol:eenheid>
+               <rol:eenheid/>
                <rol:normwaarde>
                   <rol:Normwaarde>
                      <rol:identificatie>nl.imow-gm0037.normwaarde.2019000002</rol:identificatie>

@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<AanleveringGIO
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:gml="http://www.opengis.net/gml/3.2"
-   xmlns="https://standaarden.overheid.nl/lvbb/stop/"
-   xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/LVBB-stop.xsd" 
-   schemaversie="0.98.3-kern">
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
+                             schemaversie="1.0">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/gm0037/2019/Centrumgebied</FRBRWork>
@@ -15,35 +12,24 @@
       <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <eindverantwoordelijke>/join/id/stop/gemeente/gm0037</eindverantwoordelijke>
          <maker>/join/id/stop/gemeente/gm0037</maker>
-         <noemer>Centrumgebied</noemer>
+         <alternatieveTitels>
+            <alternatieveTitel>Centrumgebied</alternatieveTitel>
+         </alternatieveTitels>
          <officieleTitel>Centrumgebied</officieleTitel>
          <publicatieinstructie>TeConsolideren</publicatieinstructie>
-         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
-         <!-- Koppeling naar het gml-bestand -->
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+         <soortenInformatieobject>
+            <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         </soortenInformatieobject>
+         <heeftGeboorteregeling>/akn/nl/act/gm0037/2019/reg456</heeftGeboorteregeling>
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Centrumgebied.gml</bestandsnaam>
-                  <hash>3df50c0d31df3c143d047894f0708f038bddcaf4caa99a82bcd5bb9111c991fcc0c5e5294f46f76a850dd93662613cde4adbd3fd619449a6fd773290bd9fe6ed</hash>
+                  <hash>91c846c87e5e68dcfb7fc44431ff05346a19d5c5294123a214d00da6c722a6f60d3c204784374151d0231c46be3f7e7986b32258d974fea16a49795d800bd1f7</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
       </InformatieObjectMetadata>
-      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
-         <featureMember>
-            <Locatie gml:id="Centrumgebied">
-               <wId>Centrumgebied</wId>
-               <naam>Centrumgebied</naam>
-               <geometrie xlink:href="Centrumgebied.gml#D28AF779-7EDD-4A88-8B11-809798F53636"/>
-            </Locatie>
-         </featureMember>
-      </GeoInformatie>
-      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <bronactualiteit>2019-01-01</bronactualiteit>
-         <bronbeschrijving>top10nl</bronbeschrijving>
-         <brontype>achtergrond</brontype>
-         <bronverwijzing>#D28AF779-7EDD-4A88-8B11-809798F53636</bronverwijzing>
-         <nauwkeurigheid>10</nauwkeurigheid>
-      </Achtergrond>
    </InformatieObjectVersie>
-</AanleveringGIO>
+</AanleveringInformatieObject>

@@ -197,19 +197,25 @@
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="r:activiteitaanduiding">
+    <xsl:apply-templates select="@*|node()"/>
+  </xsl:template>
+
   <xsl:template match="r:activiteitaanduiding/rol-ref:ActiviteitRef">
     <xsl:variable name="ID00" select="@xlink:href"/>
     <xsl:variable name="ID03" select="count(.|preceding::rol-ref:ActiviteitRef)"/>
-    <xsl:element name="rol:ActiviteitRef" namespace="{$uri_new[14]}">
-      <xsl:attribute name="xlink:href" select="$ID00"/>
-    </xsl:element>
-    <xsl:element name="r:ActiviteitLocatieaanduiding" namespace="{$uri_new[13]}">
-      <xsl:element name="r:identificatie" namespace="{$uri_new[13]}">
-        <xsl:value-of select="concat('nl.imow-',$ID01,'.activiteitlocatieaanduiding.',$ID02,format-number($ID03,'000000'))"/>
+    <xsl:element name="r:activiteitaanduiding" namespace="{$uri_new[13]}">
+      <xsl:element name="rol:ActiviteitRef" namespace="{$uri_new[14]}">
+        <xsl:attribute name="xlink:href" select="$ID00"/>
       </xsl:element>
-      <xsl:apply-templates select="(ancestor::r:RegelVoorIedereen|ancestor::r:Omgevingswaarderegel|ancestor::r:Instructieregel)[1]/r:activiteitregelkwalificatie"/>
-      <xsl:element name="r:locatieaanduiding" namespace="{$uri_new[13]}">
-        <xsl:apply-templates select="$activiteit//rol:Activiteit[rol:identificatie=$ID00]/rol:locatieaanduiding/node()"/>
+      <xsl:element name="r:ActiviteitLocatieaanduiding" namespace="{$uri_new[13]}">
+        <xsl:element name="r:identificatie" namespace="{$uri_new[13]}">
+          <xsl:value-of select="concat('nl.imow-',$ID01,'.activiteitlocatieaanduiding.',$ID02,format-number($ID03,'000000'))"/>
+        </xsl:element>
+        <xsl:apply-templates select="(ancestor::r:RegelVoorIedereen|ancestor::r:Omgevingswaarderegel|ancestor::r:Instructieregel)[1]/r:activiteitregelkwalificatie"/>
+        <xsl:element name="r:locatieaanduiding" namespace="{$uri_new[13]}">
+          <xsl:apply-templates select="$activiteit//rol:Activiteit[rol:identificatie=$ID00]/rol:locatieaanduiding/node()"/>
+        </xsl:element>
       </xsl:element>
     </xsl:element>
   </xsl:template>
@@ -498,12 +504,6 @@
   <xsl:template match="FRBRExpression">
     <xsl:element name="DoelID" namespace="{$xmlns}">
       <xsl:value-of select="document($file.config)//DoelID"/>
-    </xsl:element>
-  </xsl:template>
-
-  <xsl:template match="element()">
-    <xsl:element name="{name()}" namespace="{$xmlns}">
-      <xsl:apply-templates select="@*|node()"/>
     </xsl:element>
   </xsl:template>
 

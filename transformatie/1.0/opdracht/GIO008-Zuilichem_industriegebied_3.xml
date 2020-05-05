@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<AanleveringGIO
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:gml="http://www.opengis.net/gml/3.2"
-   xmlns="https://standaarden.overheid.nl/lvbb/stop/"
-   xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/LVBB-stop.xsd" 
-   schemaversie="0.98.3-kern">
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
+                             schemaversie="1.0">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/gm0037/2019/Zuilichem_3</FRBRWork>
@@ -15,42 +12,24 @@
       <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <eindverantwoordelijke>/join/id/stop/gemeente/gm0037</eindverantwoordelijke>
          <maker>/tooi/id/gemeente/gm0037</maker>
-         <noemer>Zuilichem industriegebied 3</noemer>
+         <alternatieveTitels>
+            <alternatieveTitel>Zuilichem industriegebied 3</alternatieveTitel>
+         </alternatieveTitels>
          <officieleTitel>Zuilichem industriegebied 3</officieleTitel>
          <publicatieinstructie>TeConsolideren</publicatieinstructie>
-         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
-         <!-- Koppeling naar het gml-bestand -->
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+         <soortenInformatieobject>
+            <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         </soortenInformatieobject>
+         <heeftGeboorteregeling>/akn/nl/act/gm0037/2019/reg456</heeftGeboorteregeling>
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Zuilichem_industriegebied_3.gml</bestandsnaam>
-                  <hash>e7946ff575de2a9a6bc0c969e07867ae38f8c352a77f261828d19bf489ce7a89e799ad628b44646615acabf562d0b42be7b1b9e00088c7b3533cbc8c2ad6bd15</hash>
+                  <hash>f90cd36f28a1509412090da9e8bb83e0a5a427257987f1bdb932d4c770d33d3e028f58360ab7d1c0a6c1eb8a896c28facf79dc1b143500d653571f3eeda1b4b5</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
       </InformatieObjectMetadata>
-      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
-         <featureMember>
-            <Locatie gml:id="Zuilichem_industriegebied_13">
-               <wId>Zuilichem_industriegebied_13</wId>
-               <naam>maximum bouwhoogte bedrijfsgebouw 13 meter</naam>
-               <geometrie xlink:href="Zuilichem_industriegebied_3.gml#954BA8CC-6E90-4698-BEEC-005A65C63E98"></geometrie>
-            </Locatie>
-         </featureMember>
-         <featureMember>
-            <Locatie gml:id="Zuilichem_industriegebied_7">
-               <wId>Zuilichem_industriegebied_7</wId>
-               <naam>maximum bouwhoogte bedrijfsgebouw 7 meter</naam>
-               <geometrie xlink:href="Zuilichem_industriegebied_3.gml#EFAAD5E9-B181-4C22-9C3B-B290F4586D82"></geometrie>
-            </Locatie>
-         </featureMember>
-      </GeoInformatie>
-   <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-      <bronactualiteit>2019-01-01</bronactualiteit>
-      <bronbeschrijving>top10nl</bronbeschrijving>
-      <brontype>achtergrond</brontype>
-      <nauwkeurigheid>10</nauwkeurigheid>
-   </Achtergrond>
    </InformatieObjectVersie>
-</AanleveringGIO>
-   
+</AanleveringInformatieObject>

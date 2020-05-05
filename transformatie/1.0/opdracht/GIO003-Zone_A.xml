@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<AanleveringGIO
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:gml="http://www.opengis.net/gml/3.2"
-   xmlns="https://standaarden.overheid.nl/lvbb/stop/"
-   xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/LVBB-stop.xsd" 
-   schemaversie="0.98.3-kern">
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
+                             schemaversie="1.0">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/gm0037/2019/Zone_A</FRBRWork>
@@ -15,35 +12,24 @@
       <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <eindverantwoordelijke>/join/id/stop/gemeente/gm0037</eindverantwoordelijke>
          <maker>/join/id/stop/gemeente/gm0037</maker>
-         <noemer>Zone_A</noemer>
+         <alternatieveTitels>
+            <alternatieveTitel>Zone_A</alternatieveTitel>
+         </alternatieveTitels>
          <officieleTitel>Zone_A</officieleTitel>
          <publicatieinstructie>TeConsolideren</publicatieinstructie>
-         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
-         <!-- Koppeling naar het gml-bestand -->
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+         <soortenInformatieobject>
+            <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         </soortenInformatieobject>
+         <heeftGeboorteregeling>/akn/nl/act/gm0037/2019/reg456</heeftGeboorteregeling>
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Zone_A.gml</bestandsnaam>
-                  <hash>2b654f1b954af28a4a4dabc94df761acd362444cf532524e6bc6d0e77e47fc97bad7805e58ec76257e8f36b3fd2f9e72a150c12b32d0c6e3d79ef28972690652</hash>
+                  <hash>0747bf34a790295c48e84ddd8a581ea00119ad33df3c90be69f1e8a8d526c03140d2886e85957b00ed8295e1a55f0103be555b702f796225052d632a69844e25</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
       </InformatieObjectMetadata>
-      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
-         <featureMember>
-            <Locatie gml:id="Zone_A">
-               <wId>Zone_A</wId>
-               <naam>Zone_A</naam>
-               <geometrie xlink:href="Zone_A.gml#B3AF6AF7-5EFA-4A87-9C66-BFB046DD89AC"></geometrie>
-            </Locatie>
-         </featureMember>
-      </GeoInformatie>
-   <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-      <bronactualiteit>2019-01-01</bronactualiteit>
-      <bronbeschrijving>top10nl</bronbeschrijving>
-      <brontype>achtergrond</brontype>
-      <bronverwijzing>#B3AF6AF7-5EFA-4A87-9C66-BFB046DD89AC</bronverwijzing>
-      <nauwkeurigheid>10</nauwkeurigheid>
-   </Achtergrond>
-</InformatieObjectVersie>
-</AanleveringGIO>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>
