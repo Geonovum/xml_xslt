@@ -28,7 +28,7 @@
   <!-- maak input.list -->
 
   <path id="input.list">
-    <fileset dir="${input.dir}"/>
+    <fileset dir="${input.dir}" includes="*.xml"/>
   </path>
   <pathconvert property="file.list" refid="input.list" dirsep="/" pathsep=";"/>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" xmlns:k="http://www.geostandaarden.nl/imow/kaartrecept/v20190901" xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:p="http://www.geostandaarden.nl/imow/pons/v20190901" xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" xmlns:k="http://www.geostandaarden.nl/imow/kaartrecept/v20190901" xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:p="http://www.geostandaarden.nl/imow/pons/v20190901" xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst/v20190901" xmlns:vt-ref="http://www.geostandaarden.nl/imow/vrijetekst-ref/v20190901" version="2.0">
   <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
   <xsl:strip-space elements="*"/>
 
@@ -7,7 +7,7 @@
 
   <!-- doorgegeven parameters -->
 
-  <xsl:param name="file.list" select="string('C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Bedrijf_categorie_2.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Centrumgebied.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO001-Bedrijf_categorie_2.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO002-Centrumgebied.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO003-Zone_A.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO004-Zone_B.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO005-Speelhal.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO006-Zuilichem_industriegebied_1.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO007-Zuilichem_industriegebied_2.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO008-Zuilichem_industriegebied_3.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Speelhal.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zone_A.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zone_B.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zuilichem_industriegebied_1.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zuilichem_industriegebied_2.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/Zuilichem_industriegebied_3.gml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/akn_nl_bill_gm0037_2019-12-01.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/manifest-ow.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/manifest.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/opdracht.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owActiviteiten-Gemeentestad.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owGebiedsaanwijzingen-Gemeentestad.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owLocaties-Gemeentestad.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owOmgevingsnormOmgevingswaarde.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owPons-Gemeentestad.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owRegeltekst-Gemeentestad.xml')"/>
+  <xsl:param name="file.list" select="string('C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-aardkundige_waarden.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-agrarische_cultuurlandschappen.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-archeologisch_waardevolle_zones.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-beperken_bodembewerking.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-beschermingszone_drinkwaterwinning.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-bodemdaling_landelijk_gebied.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-bodemdaling_stedelijk_gebied.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-bovenlokaal_dagrecreatieterrein.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-eemland.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-experimenteerruimte.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-gelderse_vallei.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-geluidscontour_61_db_lden.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-gezonde_en_veilige_leefomgeving.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-groene_hart.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-grondwaterlichamen.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-historische_buitenplaatszones.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-historische_infrastructuur.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-hollandse_waterlinies.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-kernrandzone.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-militair_erfgoed.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-neder-germaanse_limes.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-overstroombaar_gebied.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-recreatietoervaartnet.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-recreatiewoningen.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-recreatiezone.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-regionale_kering.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-rivierengebied.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-stelling_van_amsterdam.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-stiltegebieden.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-utrechtse_heuvelrug.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-waterbergingsgebied.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-zoekgebied_drinkwater.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/GIO-zwemwater.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/manifest-ow.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/manifest.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/opdracht.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owGebiedsaanwijzing.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owHoofdlijn.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owLocatie.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/owVrijetekst.xml;C:/Users/g.wolbers/Desktop/transformatie/0.98.3-kern/opdracht/resultaat.xml')"/>
 
   <!-- alle namespaces -->
 
@@ -30,6 +30,17 @@
         <xsl:when test="document(concat('file:/',.))//r:Regeltekst" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901">
           <xsl:element name="file">
             <xsl:attribute name="name" select="string('regeltekst.xml')"/>
+            <xsl:element name="fullname">
+              <xsl:value-of select="."/>
+            </xsl:element>
+            <xsl:element name="name">
+              <xsl:value-of select="tokenize(.,'/')[last()]"/>
+            </xsl:element>
+          </xsl:element>
+        </xsl:when>
+        <xsl:when test="document(concat('file:/',.))//vt:FormeleDivisie" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901">
+          <xsl:element name="file">
+            <xsl:attribute name="name" select="string('vrijetekst.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="."/>
             </xsl:element>
@@ -104,6 +115,17 @@
             </xsl:element>
           </xsl:element>
         </xsl:when>
+        <xsl:when test="document(concat('file:/',.))//vt:Hoofdlijn" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901">
+          <xsl:element name="file">
+            <xsl:attribute name="name" select="string('kaart.xml')"/>
+            <xsl:element name="fullname">
+              <xsl:value-of select="."/>
+            </xsl:element>
+            <xsl:element name="name">
+              <xsl:value-of select="tokenize(.,'/')[last()]"/>
+            </xsl:element>
+          </xsl:element>
+        </xsl:when>
         <xsl:when test="document(concat('file:/',.))//Modules">
           <xsl:element name="file">
             <xsl:attribute name="name" select="string('manifest_ow.xml')"/>
@@ -121,26 +143,30 @@
 
   <!-- transformeer OW-bestanden -->
 
-  <xsl:param name="regeltekst" select="document(concat('file:/',$manifest/file[@name='regeltekst.xml']/fullname))"/>
-  <xsl:param name="activiteit" select="document(concat('file:/',$manifest/file[@name='activiteit.xml']/fullname))"/>
-  <xsl:param name="gebiedsaanwijzing" select="document(concat('file:/',$manifest/file[@name='gebiedsaanwijzing.xml']/fullname))"/>
-  <xsl:param name="normwaarde" select="document(concat('file:/',$manifest/file[@name='normwaarde.xml']/fullname))"/>
-  <xsl:param name="locatie" select="document(concat('file:/',$manifest/file[@name='locatie.xml']/fullname))"/>
-  <xsl:param name="pons" select="document(concat('file:/',$manifest/file[@name='pons.xml']/fullname))"/>
-  <xsl:param name="kaart" select="document(concat('file:/',$manifest/file[@name='kaart.xml']/fullname))"/>
-  <xsl:param name="manifest_ow" select="document(concat('file:/',$manifest/file[@name='manifest_ow.xml']/fullname))"/>
+  <xsl:param name="regeltekst" select="document(concat('file:/',($manifest/file[@name='regeltekst.xml']/fullname,'geen')[1]))"/>
+  <xsl:param name="vrijetekst" select="document(concat('file:/',($manifest/file[@name='vrijetekst.xml']/fullname,'geen')[1]))"/>
+  <xsl:param name="activiteit" select="document(concat('file:/',($manifest/file[@name='activiteit.xml']/fullname,'geen')[1]))"/>
+  <xsl:param name="gebiedsaanwijzing" select="document(concat('file:/',($manifest/file[@name='gebiedsaanwijzing.xml']/fullname,'geen')[1]))"/>
+  <xsl:param name="normwaarde" select="document(concat('file:/',($manifest/file[@name='normwaarde.xml']/fullname,'geen')[1]))"/>
+  <xsl:param name="locatie" select="document(concat('file:/',($manifest/file[@name='locatie.xml']/fullname,'geen')[1]))"/>
+  <xsl:param name="pons" select="document(concat('file:/',($manifest/file[@name='pons.xml']/fullname,'geen')[1]))"/>
+  <xsl:param name="kaart" select="document(concat('file:/',($manifest/file[@name='kaart.xml']/fullname,'geen')[1]))"/>
+  <xsl:param name="hoofdlijn" select="document(concat('file:/',($manifest/file[@name='hoofdlijn.xml']/fullname,'geen')[1]))"/>
+  <xsl:param name="manifest_ow" select="document(concat('file:/',($manifest/file[@name='manifest_ow.xml']/fullname,'geen')[1]))"/>
   <xsl:param name="ID01" select="tokenize(tokenize(($regeltekst//r:Regeltekst/r:identificatie)[1],'-')[2],'\.')[1]"/>
   <xsl:param name="ID02" select="substring(tokenize(tokenize(($regeltekst//r:Regeltekst/r:identificatie)[1],'-')[2],'\.')[3],1,4)"/>
 
   <xsl:template match="/">
     <xsl:call-template name="manifest"/>
     <xsl:call-template name="regeltekst"/>
+    <xsl:call-template name="vrijetekst"/>
     <xsl:call-template name="activiteit"/>
     <xsl:call-template name="gebiedsaanwijzing"/>
     <xsl:call-template name="normwaarde"/>
     <xsl:call-template name="locatie"/>
     <xsl:call-template name="pons"/>
     <xsl:call-template name="kaart"/>
+    <xsl:call-template name="hoofdlijn"/>
     <xsl:call-template name="manifest_ow"/>
   </xsl:template>
 
@@ -154,13 +180,7 @@
     </xsl:element>
   </xsl:template>
 
-  <!-- transformeer regeltekst -->
-
-  <xsl:template name="regeltekst">
-    <xsl:result-document href="regeltekst.xml" method="xml">
-      <xsl:apply-templates select="$regeltekst/node()"/>
-    </xsl:result-document>
-  </xsl:template>
+  <!-- transformeer generieke zaken -->
 
   <xsl:template match="owBestand" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901">
     <xsl:element name="ow-dc:owBestand" namespace="{$uri_new[1]}">
@@ -180,10 +200,32 @@
       <xsl:apply-templates select="node()"/>
     </xsl:element>
   </xsl:template>
+  
+  <xsl:template match="sl:objectType">
+    <xsl:element name="{name()}" namespace="{$uri_new[4]}">
+      <xsl:apply-templates select="@*"/>
+      <xsl:value-of select="replace(.,'Formele','')"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="@xlink:href">
+    <xsl:attribute name="xlink:href" select="replace(.,'formele','')"/>
+  </xsl:template>
+
+  <!-- transformeer regeltekst -->
+
+  <xsl:template name="regeltekst">
+    <xsl:if test="$regeltekst">
+      <xsl:result-document href="regeltekst.xml" method="xml">
+        <xsl:apply-templates select="$regeltekst/node()"/>
+      </xsl:result-document>
+    </xsl:if>
+  </xsl:template>
 
   <xsl:template match="r:RegelVoorIedereen|r:Omgevingswaarderegel|r:Instructieregel">
     <xsl:variable name="ID03" select="count(.|preceding::r:RegelVoorIedereen|preceding::r:Omgevingswaarderegel|preceding::r:Instructieregel)"/>
     <xsl:element name="{name()}" namespace="{$uri_new[13]}">
+      <xsl:apply-templates select="@*"/>
       <xsl:element name="r:identificatie" namespace="{$uri_new[13]}">
         <xsl:value-of select="concat('nl.imow-',$ID01,'.juridischeregel.',$ID02,format-number($ID03,'000000'))"/>
       </xsl:element>
@@ -226,17 +268,82 @@
     </xsl:element>
   </xsl:template>
 
+  <!-- transformeer vrijetekst -->
+
+  <xsl:template name="vrijetekst">
+    <xsl:if test="$vrijetekst">
+      <xsl:result-document href="vrijetekst.xml" method="xml">
+        <xsl:apply-templates select="$vrijetekst/node()"/>
+      </xsl:result-document>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template match="vt:FormeleDivisie">
+    <xsl:element name="vt:Divisie" namespace="{$uri_new[17]}">
+      <xsl:apply-templates select="@*|node()"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="vt:identificatie">
+    <xsl:element name="vt:identificatie" namespace="{$uri_new[17]}">
+      <xsl:value-of select="replace(.,'formele','')"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="vt:Tekstdeel">
+    <xsl:element name="vt:Tekstdeel" namespace="{$uri_new[17]}">
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="(ow:status,ow:procedurestatus,vt:identificatie,vt:idealisatie,vt:thema,vt:formeleDivisie,vt:hoofdlijnaanduiding,vt:kaartaanduiding,vt:locatieaanduiding,vt:gebiedsaanwijzing)"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="vt:idealisatie">
+    <xsl:element name="{name()}" namespace="{$uri_new[17]}">
+      <xsl:value-of select="$waardelijsten[label='idealisatie']/waarden/waarde[label=current()]/uri"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="vt:thema">
+    <xsl:variable name="thema" select="$waardelijsten[label='thema']/waarden/waarde[label=current()]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$thema">
+        <xsl:element name="vt:thema" namespace="{$uri_new[17]}">
+          <xsl:value-of select="$waardelijsten[label='thema']/waarden/waarde[label=current()]/uri"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('GW: waarde &quot;',current(),'&quot; ontbreekt in de waardelijst thema')"/>
+        </xsl:comment>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="vt:formeleDivisie">
+    <xsl:element name="vt:divisieaanduiding" namespace="{$uri_new[17]}">
+      <xsl:apply-templates select="@*|node()"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="vt-ref:FormeleDivisieRef">
+    <xsl:element name="vt:DivisieRef" namespace="{$uri_new[16]}">
+      <xsl:apply-templates select="@xlink:href"/>
+    </xsl:element>
+  </xsl:template>
+
   <!-- transformeer activiteit -->
 
   <xsl:template name="activiteit">
-    <xsl:result-document href="activiteit.xml" method="xml">
-      <xsl:apply-templates select="@*"/>
-      <xsl:apply-templates select="$activiteit/node()"/>
-    </xsl:result-document>
+    <xsl:if test="$activiteit">
+      <xsl:result-document href="activiteit.xml" method="xml">
+        <xsl:apply-templates select="$activiteit/node()"/>
+      </xsl:result-document>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="rol:Activiteit">
     <xsl:element name="{name()}" namespace="{$uri_new[15]}">
+      <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="(ow:status,ow:procedurestatus,rol:identificatie,rol:naam,rol:groep,rol:gerelateerdeActiviteit,rol:bovenliggendeActiviteit)"/>
     </xsl:element>
   </xsl:template>
@@ -250,9 +357,11 @@
   <!-- transformeer gebiedsaanwijzing -->
 
   <xsl:template name="gebiedsaanwijzing">
-    <xsl:result-document href="gebiedsaanwijzing.xml" method="xml">
-      <xsl:apply-templates select="$gebiedsaanwijzing/node()"/>
-    </xsl:result-document>
+    <xsl:if test="$gebiedsaanwijzing">
+      <xsl:result-document href="gebiedsaanwijzing.xml" method="xml">
+        <xsl:apply-templates select="$gebiedsaanwijzing/node()"/>
+      </xsl:result-document>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="ga:Gebiedsaanwijzing">
@@ -277,9 +386,11 @@
   <!-- transformeer normwaarde -->
 
   <xsl:template name="normwaarde">
-    <xsl:result-document href="normwaarde.xml" method="xml">
-      <xsl:apply-templates select="$normwaarde/node()"/>
-    </xsl:result-document>
+    <xsl:if test="$normwaarde">
+      <xsl:result-document href="normwaarde.xml" method="xml">
+        <xsl:apply-templates select="$normwaarde/node()"/>
+      </xsl:result-document>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="rol:Omgevingswaarde">
@@ -350,17 +461,21 @@
   <!-- transformeer locatie -->
 
   <xsl:template name="locatie">
-    <xsl:result-document href="locatie.xml" method="xml">
-      <xsl:apply-templates select="$locatie/node()"/>
-    </xsl:result-document>
+    <xsl:if test="$locatie">
+      <xsl:result-document href="locatie.xml" method="xml">
+        <xsl:apply-templates select="$locatie/node()"/>
+      </xsl:result-document>
+    </xsl:if>
   </xsl:template>
 
   <!-- transformeer pons -->
 
   <xsl:template name="pons">
-    <xsl:result-document href="pons.xml" method="xml">
-      <xsl:apply-templates select="$pons/node()"/>
-    </xsl:result-document>
+    <xsl:if test="$pons">
+      <xsl:result-document href="pons.xml" method="xml">
+        <xsl:apply-templates select="$pons/node()"/>
+      </xsl:result-document>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="p:Pons">
@@ -373,9 +488,11 @@
   <!-- transformeer kaart -->
 
   <xsl:template name="kaart">
-    <xsl:result-document href="kaart.xml" method="xml">
-      <xsl:apply-templates select="$kaart/node()"/>
-    </xsl:result-document>
+    <xsl:if test="$kaart">
+      <xsl:result-document href="kaart.xml" method="xml">
+        <xsl:apply-templates select="$kaart/node()"/>
+      </xsl:result-document>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="k:Kaart">
@@ -474,12 +591,31 @@
     </xsl:choose>
   </xsl:template>
 
+  <!-- transformeer hoofdlijn -->
+
+  <xsl:template name="hoofdlijn">
+    <xsl:if test="$hoofdlijn">
+      <xsl:result-document href="hoofdlijn.xml" method="xml">
+        <xsl:apply-templates select="$hoofdlijn/node()"/>
+      </xsl:result-document>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template match="vt:Hoofdlijn">
+    <xsl:element name="{name()}" namespace="{$uri_new[17]}">
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="(ow:status,ow:procedurestatus,vt:identificatie,vt:soort,vt:naam,vt:gerelateerdeHoofdlijn)"/>
+    </xsl:element>
+  </xsl:template>
+
   <!-- transformeer manifest-ow -->
 
   <xsl:template name="manifest_ow">
-    <xsl:result-document href="manifest_ow.xml" method="xml">
-      <xsl:apply-templates select="$manifest_ow/node()"/>
-    </xsl:result-document>
+    <xsl:if test="$manifest_ow">
+      <xsl:result-document href="manifest_ow.xml" method="xml">
+        <xsl:apply-templates select="$manifest_ow/node()"/>
+      </xsl:result-document>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="Modules">
