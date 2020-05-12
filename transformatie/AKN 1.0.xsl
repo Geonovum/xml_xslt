@@ -19,7 +19,7 @@
 
   <xsl:template match="element()" mode="eId">
     <xsl:variable name="index" select="fn:index-of($element,local-name())"/>
-    <xsl:variable name="count" select="if ($element_ref[$index] ne 'body') then fn:string-join(('o',string(count(.|preceding::*[local-name() eq $element[$index]])-count(ancestor::*[fn:index-of($element,local-name()) gt 0][1]/preceding::*[local-name() eq $element[$index]]))),'_') else null"/>
+    <xsl:variable name="count" select="if ($element_wId_eId[$index] eq 'onwaar') then fn:string-join(('o',string(count(.|preceding::*[local-name() eq $element[$index]])-count(ancestor::*[fn:index-of($element,local-name()) gt 0][1]/preceding::*[local-name() eq $element[$index]]))),'_') else null"/>
     <xsl:choose>
       <xsl:when test="$index gt 0">
         <node id="{generate-id()}" wId_eId="{$element_wId_eId[$index]}">

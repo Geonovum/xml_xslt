@@ -82,10 +82,10 @@
         <!-- BesluitMetadata -->
         <xsl:element name="BesluitMetadata" namespace="{$data}">
           <xsl:element name="eindverantwoordelijke" namespace="{$data}">
-            <xsl:value-of select="concat('/tooi/id/',$D12,'/',$D11)"/>
+            <xsl:value-of select="concat('/tooi/id/',$D11,'/',$D12)"/>
           </xsl:element>
           <xsl:element name="maker" namespace="{$data}">
-            <xsl:value-of select="concat('/tooi/id/',$D12,'/',$D11)"/>
+            <xsl:value-of select="concat('/tooi/id/',$D11,'/',$D12)"/>
           </xsl:element>
           <xsl:element name="officieleTitel" namespace="{$data}">
             <xsl:value-of select="$D04"/>
@@ -183,10 +183,10 @@
             <xsl:value-of select="$D07"/>
           </xsl:element>
           <xsl:element name="eindverantwoordelijke" namespace="{$data}">
-            <xsl:value-of select="concat('/tooi/id/',$D12,'/',$D11)"/>
+            <xsl:value-of select="concat('/tooi/id/',$D11,'/',$D12)"/>
           </xsl:element>
           <xsl:element name="maker" namespace="{$data}">
-            <xsl:value-of select="concat('/tooi/id/',$D12,'/',$D11)"/>
+            <xsl:value-of select="concat('/tooi/id/',$D11,'/',$D12)"/>
           </xsl:element>
           <xsl:element name="officieleTitel" namespace="{$data}">
             <xsl:value-of select="$D04"/>
