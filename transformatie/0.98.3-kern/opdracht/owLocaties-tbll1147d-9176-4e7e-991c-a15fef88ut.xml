@@ -1,0 +1,225 @@
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901" xmlns:g-ref="http://www.geostandaarden.nl/imow/geometrie-ref/v20190901" xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901" xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709" xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/v20190709" xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190709" xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709"> 
+	<sl:standBestand>
+		<sl:dataset>tbll1147d-9176-4e7e-991c-a15fef88ut</sl:dataset>
+		<sl:inhoud>
+			<sl:gebied>provincie Utrecht</sl:gebied>
+			<sl:leveringsId>tbll1147d-9176-4e7e-991c-a15fef88ut</sl:leveringsId>
+			<sl:objectTypen>
+				<sl:objectType>Gebied</sl:objectType>
+				<sl:objectType>Gebiedengroep</sl:objectType>
+			</sl:objectTypen>
+		</sl:inhoud>
+        <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000017">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000054</l:identificatie>
+            <l:noemer>Slaperdijk</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="t3a07ab10-5927-41ed-ac27-b6bdacda73d3"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000113">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000047</l:identificatie>
+            <l:noemer>Landelijk gebied</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="tbbdd60c1-1011-4788-b997-73544729a0be"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000048">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000058</l:identificatie>
+            <l:noemer>Strategische grondwatervoorraad</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="t7258679b-7568-4e1b-937e-aaa5f78e0844"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000029">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000040</l:identificatie>
+            <l:noemer>Boringsvrije zone</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="t9967356c-9f21-4121-b449-f71bb59ddbba"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000029">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000053</l:identificatie>
+            <l:noemer>Kwetsbare strategische grondwatervoorraad</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="t9968d3c5-068e-4a8a-bcbd-82bb703ae65c"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000030">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000043</l:identificatie>
+            <l:noemer>Matig kwetsbare strategische grondwatervoorraad</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="t29309e90-ae06-4d8e-abd0-6d39e118ac22"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000082">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000055</l:identificatie>
+            <l:noemer>Vrijwaringszone stiltegebied</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="te24a27f1-b656-4ffd-a44d-bb301a69522b"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000117">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000057</l:identificatie>
+            <l:noemer>Stedelijk gebied</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="t0cc35069-da1d-4d25-8cf7-4d9f0c1f6dda"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000059">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000056</l:identificatie>
+            <l:noemer>beperkingengebied met betrekking tot een provinciale weg</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="tbbe00736-bb1d-4555-b40b-f21fcc3d9bd0"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000032">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000063</l:identificatie>
+            <l:noemer>Waterwingebied Bethunepolder</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="ta4247fe6-2989-4f4c-a4af-23e35c86d5ca"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000107">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000045</l:identificatie>
+            <l:noemer>Concentratiegebied glastuinbouw</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="t15ef9c6c-35a7-43de-9a00-b4760918a1e7"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000029">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000049</l:identificatie>
+            <l:noemer>100-jaaraandachtsgebied</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="ta58f8f97-4519-4f69-a785-d45af0f2531c"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000081">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000062</l:identificatie>
+            <l:noemer>Stille kern</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="tcfbfb5d3-32b2-4766-a5b5-c9816555e76a"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000029">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000039</l:identificatie>
+            <l:noemer>Grondwaterbeschermingsgebied</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="tc12c5eae-f730-42fa-8524-c142db073228"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000029">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000061</l:identificatie>
+            <l:noemer>Waterwingebied</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="t2c79d6af-55ea-40ec-b16b-f1f0a5589edc"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000081">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000044</l:identificatie>
+            <l:noemer>Bufferzone stiltegebied</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="ta6c25732-be36-4f6d-b845-b6e0cfaa3cc2"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000062">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000059</l:identificatie>
+            <l:noemer>Weg in beheer bij de Provincie</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="t35b8b072-591d-4260-86a1-113c371457ff"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000081">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000060</l:identificatie>
+            <l:noemer>Stiltegebied</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="tf4fc6d89-1288-4e55-b06e-2e80447c84b1"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000111">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000042</l:identificatie>
+            <l:noemer>Recreatiewoningen</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="t59812232-d564-47ac-a74f-2d9c9f3e2a50"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <l:Gebied ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000117">
+            <l:identificatie>nl.imow-pv9926.gebied.2020000000051</l:identificatie>
+            <l:noemer>Kernrandzone</l:noemer>
+            <l:geometrie>
+                <g-ref:GeometrieRef xlink:href="t8af683c7-36bf-4fe3-9aed-7dd807693c01"/>
+            </l:geometrie>
+        </l:Gebied>
+    </ow-dc:owObject>
+</sl:stand>
+        <sl:stand>
+			<ow-dc:owObject>
+				<l:Gebied ow:regeltekstId="nl.imow-pv9930.regeltekst.art1P1">
+					<l:identificatie>nl.imow-pv26.gebied.plangebied</l:identificatie>
+					<l:noemer>provincie Utrecht</l:noemer>
+					<l:geometrie>
+						<g-ref:GeometrieRef xlink:href="t0000000000-0000-0000-000000009926"/>
+					</l:geometrie>
+				</l:Gebied>
+			</ow-dc:owObject>
+		</sl:stand>
+	</sl:standBestand>
+</ow-dc:owBestand>

@@ -2048,7 +2048,7 @@
     <Cell ss:Index="3" ss:StyleID="s111"/>
    </Row>
    <Row>
-    <Cell ss:StyleID="s108"><Data ss:Type="String">Waardelijst Adressaat  [limitatief]</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">Waardelijst Adressaat [limitatief]</Data></Cell>
     <Cell ss:Index="4" ss:StyleID="s167"><Data ss:Type="String">Waardelijst voor attribuut instructieregelTaakuitoefening, te gebruiken indien type Juridische regel = Instructieregel en de instructieregel gaat over taakuitoefening</Data></Cell>
     <Cell><Data ss:Type="String">TPOD-Standaard</Data></Cell>
    </Row>
@@ -2311,7 +2311,7 @@
     <Cell ss:Index="3" ss:StyleID="s111"/>
    </Row>
    <Row>
-    <Cell ss:StyleID="s108"><Data ss:Type="String">Waardelijst Idealisatie  [limitatief]</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">Waardelijst Idealisatie [limitatief]</Data></Cell>
     <Cell ss:Index="4" ss:StyleID="s167"><Data ss:Type="String">Waardelijst voor attribuut idealisatie, dat vastlegt op welke manier de begrenzing van Locatie geïnterpreteerd moet worden en door het bevoegd gezag bedoeld is.</Data></Cell>
     <Cell><Data ss:Type="String">TPOD-Standaard</Data></Cell>
    </Row>
@@ -2901,27 +2901,27 @@
     <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
    </Row>
    <Row ss:Hidden="1">
-    <Cell ss:Index="2" ss:StyleID="s118"><Data ss:Type="String">Geluid van activiteiten</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s118"><Data ss:Type="String">Geluid - geluid van activiteiten</Data></Cell>
     <Cell ss:StyleID="s234"/>
     <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
    </Row>
    <Row ss:Hidden="1">
-    <Cell ss:Index="2" ss:StyleID="s118"><Data ss:Type="String">Geluid van industrieterreinen</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s118"><Data ss:Type="String">Geluid - geluid van industrieterreinen</Data></Cell>
     <Cell ss:StyleID="s234"/>
     <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
    </Row>
    <Row ss:Hidden="1">
-    <Cell ss:Index="2" ss:StyleID="s118"><Data ss:Type="String">Geluid van luchthavens en luchtvaart</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s118"><Data ss:Type="String">Geluid - geluid van luchthavens en luchtvaart</Data></Cell>
     <Cell ss:StyleID="s234"/>
     <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
    </Row>
    <Row ss:Hidden="1">
-    <Cell ss:Index="2" ss:StyleID="s118"><Data ss:Type="String">Geluid van spoorwegen</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s118"><Data ss:Type="String">Geluid - geluid van spoorwegen</Data></Cell>
     <Cell ss:StyleID="s234"/>
     <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
    </Row>
    <Row ss:Hidden="1">
-    <Cell ss:Index="2" ss:StyleID="s118"><Data ss:Type="String">Geluid van wegen</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s118"><Data ss:Type="String">Geluid - geluid van wegen</Data></Cell>
     <Cell ss:StyleID="s236"/>
     <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
    </Row>
@@ -3091,21 +3091,6 @@
     <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
    </Row>
    <Row ss:Hidden="1">
-    <Cell ss:Index="2" ss:StyleID="s117"><Data ss:Type="String">Milieu  algemeen en overige milieuaspecten - lichthinder</Data></Cell>
-    <Cell ss:StyleID="s234"/>
-    <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
-   </Row>
-   <Row ss:Hidden="1">
-    <Cell ss:Index="2" ss:StyleID="s219"><Data ss:Type="String">Milieu  algemeen en overige milieuaspecten - trillingen</Data></Cell>
-    <Cell ss:StyleID="s234"/>
-    <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
-   </Row>
-   <Row ss:Hidden="1">
-    <Cell ss:Index="2" ss:StyleID="s219"><Data ss:Type="String">Milieu algemeen en overige aspecten - energie</Data></Cell>
-    <Cell ss:StyleID="s234"/>
-    <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
-   </Row>
-   <Row ss:Hidden="1">
     <Cell ss:Index="2" ss:StyleID="s221"><Data ss:Type="String">Milieu algemeen en overige milieuaspecten</Data></Cell>
     <Cell ss:StyleID="s234"/>
     <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
@@ -3117,6 +3102,21 @@
    </Row>
    <Row ss:Hidden="1">
     <Cell ss:Index="2" ss:StyleID="s219"><Data ss:Type="String">Milieu algemeen en overige milieuaspecten - algemeen</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
+   </Row>
+   <Row ss:Hidden="1">
+    <Cell ss:Index="2" ss:StyleID="s219"><Data ss:Type="String">Milieu algemeen en overige milieuaspecten - energie</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
+   </Row>
+   <Row ss:Hidden="1">
+    <Cell ss:Index="2" ss:StyleID="s117"><Data ss:Type="String">Milieu algemeen en overige milieuaspecten - lichthinder</Data></Cell>
+    <Cell ss:StyleID="s234"/>
+    <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
+   </Row>
+   <Row ss:Hidden="1">
+    <Cell ss:Index="2" ss:StyleID="s219"><Data ss:Type="String">Milieu algemeen en overige milieuaspecten - trillingen</Data></Cell>
     <Cell ss:StyleID="s234"/>
     <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
    </Row>
@@ -3431,7 +3431,7 @@
     <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
    </Row>
    <Row ss:Hidden="1">
-    <Cell ss:Index="2" ss:StyleID="s221"><Data ss:Type="String">Woon - en leefklimaat</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s221"><Data ss:Type="String">Woon- en leefklimaat</Data></Cell>
     <Cell ss:StyleID="s234"><Data ss:Type="String">Bijvoorbeeld voor visies en programma's</Data></Cell>
     <Cell ss:Index="5"><Data ss:Type="String">Praktijk</Data></Cell>
    </Row>
@@ -3439,7 +3439,7 @@
     <Cell ss:Index="3" ss:StyleID="s179"/>
    </Row>
    <Row>
-    <Cell ss:StyleID="s83"><Data ss:Type="String">Waardelijst TypeGebiedsaanwijzing [limitatief]</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Waardelijst Type Gebiedsaanwijzing [limitatief]</Data></Cell>
     <Cell ss:Index="4" ss:StyleID="s167"><Data ss:Type="String">Waardelijst voor attribuut type, dat aangeeft welk type Gebiedsaanwijzing wordt geannoteerd</Data></Cell>
     <Cell><Data ss:Type="String">TPOD-Standaard</Data></Cell>
    </Row>
@@ -3884,7 +3884,7 @@
     <Cell ss:Index="2" ss:StyleID="s108"/>
    </Row>
    <Row>
-    <Cell ss:StyleID="s105"><Data ss:Type="String">Externeveiligheidgroep [limitatief]</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Externe Veiligheidgroep [limitatief]</Data></Cell>
     <Cell ss:StyleID="s109"/>
     <Cell ss:StyleID="s99"/>
     <Cell ss:StyleID="s167"><Data ss:Type="String">Waardelijst voor attribuut groep bij het Gebiedsaanwijzingtype Externe veiligheid, dat zorgt voor filteren en weergave van de symbolisatie van Externe veiligheid op de kaart</Data></Cell>
@@ -5197,7 +5197,7 @@
     <Cell ss:StyleID="s110"/>
    </Row>
    <Row>
-    <Cell ss:StyleID="s105"><Data ss:Type="String">Ruimtelijkgebruikgroep [limitatief]</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Ruimtelijk Gebruikgroep [limitatief]</Data></Cell>
     <Cell ss:Index="4" ss:StyleID="s167"><Data ss:Type="String">Waardelijst voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik, dat zorgt voor filteren en weergave van de symbolisatie van Ruimtelijkgebruik op de kaart</Data></Cell>
     <Cell><Data ss:Type="String">TPOD-Standaard</Data></Cell>
    </Row>
@@ -5468,7 +5468,7 @@
     <Cell><Data ss:Type="String">vsh121</Data></Cell>
    </Row>
    <Row ss:Index="609">
-    <Cell ss:StyleID="s184"><Data ss:Type="String">WaterEnWatersysteemgroep [limitatief]</Data></Cell>
+    <Cell ss:StyleID="s184"><Data ss:Type="String">Water En Watersysteemgroep [limitatief]</Data></Cell>
     <Cell ss:Index="4" ss:StyleID="s167"><Data ss:Type="String">Waardelijst voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem, dat zorgt voor filteren en weergave van de symbolisatie van WaterEnWatersysteem op de kaart</Data></Cell>
     <Cell><Data ss:Type="String">TPOD-Standaard</Data></Cell>
    </Row>
@@ -5817,7 +5817,7 @@
     <Cell><Data ss:Type="String">vsh022</Data></Cell>
    </Row>
    <Row ss:Index="650">
-    <Cell ss:StyleID="s105"><Data ss:Type="String">TypeNorm [uitbreidbaar]</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Type Norm [uitbreidbaar]</Data></Cell>
     <Cell ss:StyleID="s108"/>
     <Cell ss:Index="4"><Data ss:Type="String">Waardelijst voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde</Data></Cell>
     <Cell><Data ss:Type="String">TPOD-Standaard</Data></Cell>

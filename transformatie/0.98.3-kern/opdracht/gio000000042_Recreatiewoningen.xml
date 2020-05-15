@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns="https://standaarden.overheid.nl/lvbb/stop/" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:xlink="http://www.w3.org/1999/xlink" schemaversie="0.98.3-kern">
+<InformatieObjectVersie>
+   <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/pv26/2020/Recreatiewoningen</FRBRWork>
+      <FRBRExpression>/join/id/regdata/pv26/2020/Recreatiewoningen/nld@2020-03-05;000000042</FRBRExpression>
+      <data:soortWork>/join/id/stop/work_007</data:soortWork>
+   </ExpressionIdentificatie>
+   <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+      <maker>/tooi/id/provincie/pv26</maker>
+      <noemer>Recreatiewoningen</noemer>
+      <officieleTitel></officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+      <!-- Koppeling naar het gml-bestand -->
+      <heeftBestanden>
+         <heeftBestand>
+            <Bestand>
+               <bestandsnaam>Recreatiewoningen.gml</bestandsnaam>
+               <hash>60e25028899a0f84524ade634e5b4855de43ee45bc790a8dc94e7a406581525242b91bc6bd3eb2c3f3b3780e62af9e9f964e6a27f825c0cc87fa97b99851eb8b</hash>
+            </Bestand>
+         </heeftBestand>
+      </heeftBestanden>
+   </InformatieObjectMetadata>
+   <GeoInformatie gml:id="d59812232-d564-47ac-a74f-2d9c9f3e2a50" xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+       <geo:featureMember>
+      <geo:Locatie gml:id="t59812232-d564-47ac-a74f-2d9c9f3e2a50">
+        <geo:wId>t59812232-d564-47ac-a74f-2d9c9f3e2a50</geo:wId>
+        <geo:naam>Recreatiewoningen</geo:naam>
+        <geo:geometrie
+          xlink:href="Recreatiewoningen.gml#t59812232-d564-47ac-a74f-2d9c9f3e2a50"
+         />
+      </geo:Locatie>
+    </geo:featureMember>
+   </GeoInformatie>
+   <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <bronactualiteit>2019-01-01</bronactualiteit>
+      <bronbeschrijving>TOP10NL</bronbeschrijving>
+      <brontype>achtergrond</brontype>
+   </Achtergrond>
+</InformatieObjectVersie>
+</AanleveringGIO>

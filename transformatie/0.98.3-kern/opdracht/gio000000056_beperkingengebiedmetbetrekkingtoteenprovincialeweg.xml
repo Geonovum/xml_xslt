@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns="https://standaarden.overheid.nl/lvbb/stop/" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:xlink="http://www.w3.org/1999/xlink" schemaversie="0.98.3-kern">
+<InformatieObjectVersie>
+   <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/pv26/2020/beperkingengebiedmetbetrekkingtoteenprovincialeweg</FRBRWork>
+      <FRBRExpression>/join/id/regdata/pv26/2020/beperkingengebiedmetbetrekkingtoteenprovincialeweg/nld@2020-03-05;000000056</FRBRExpression>
+      <data:soortWork>/join/id/stop/work_007</data:soortWork>
+   </ExpressionIdentificatie>
+   <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+      <maker>/tooi/id/provincie/pv26</maker>
+      <noemer>beperkingengebiedmetbetrekkingtoteenprovincialeweg</noemer>
+      <officieleTitel></officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+      <!-- Koppeling naar het gml-bestand -->
+      <heeftBestanden>
+         <heeftBestand>
+            <Bestand>
+               <bestandsnaam>beperkingengebiedmetbetrekkingtoteenprovincialeweg.gml</bestandsnaam>
+               <hash>812a9126e180d86bb5ec7f9a20cfd6e49f3b6c567d48a9c0a5eec277f13c0074bb24acf57d8bfdda0ad0417ed407901ac1b11a234f79b3d45ef988e06094f4e2</hash>
+            </Bestand>
+         </heeftBestand>
+      </heeftBestanden>
+   </InformatieObjectMetadata>
+   <GeoInformatie gml:id="dbbe00736-bb1d-4555-b40b-f21fcc3d9bd0" xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+       <geo:featureMember>
+      <geo:Locatie gml:id="tbbe00736-bb1d-4555-b40b-f21fcc3d9bd0">
+        <geo:wId>tbbe00736-bb1d-4555-b40b-f21fcc3d9bd0</geo:wId>
+        <geo:naam>beperkingengebiedmetbetrekkingtoteenprovincialeweg</geo:naam>
+        <geo:geometrie
+          xlink:href="beperkingengebiedmetbetrekkingtoteenprovincialeweg.gml#tbbe00736-bb1d-4555-b40b-f21fcc3d9bd0"
+         />
+      </geo:Locatie>
+    </geo:featureMember>
+   </GeoInformatie>
+   <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <bronactualiteit>2019-01-01</bronactualiteit>
+      <bronbeschrijving>TOP10NL</bronbeschrijving>
+      <brontype>achtergrond</brontype>
+   </Achtergrond>
+</InformatieObjectVersie>
+</AanleveringGIO>

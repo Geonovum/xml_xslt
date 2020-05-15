@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns="https://standaarden.overheid.nl/lvbb/stop/" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:xlink="http://www.w3.org/1999/xlink" schemaversie="0.98.3-kern">
+<InformatieObjectVersie>
+   <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/pv26/2020/Matigkwetsbarestrategischegrondwatervoorraad</FRBRWork>
+      <FRBRExpression>/join/id/regdata/pv26/2020/Matigkwetsbarestrategischegrondwatervoorraad/nld@2020-03-05;000000043</FRBRExpression>
+      <data:soortWork>/join/id/stop/work_007</data:soortWork>
+   </ExpressionIdentificatie>
+   <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+      <maker>/tooi/id/provincie/pv26</maker>
+      <noemer>Matigkwetsbarestrategischegrondwatervoorraad</noemer>
+      <officieleTitel></officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+      <!-- Koppeling naar het gml-bestand -->
+      <heeftBestanden>
+         <heeftBestand>
+            <Bestand>
+               <bestandsnaam>Matigkwetsbarestrategischegrondwatervoorraad.gml</bestandsnaam>
+               <hash>fb81a0905c0b20fb00141b975ac655644ef4e377a28c08fbbf6e01d7eb2978d8cedb6fd1bb67678ad4658d6460264d79627fe85fa713e3c885a4844dc9df955e</hash>
+            </Bestand>
+         </heeftBestand>
+      </heeftBestanden>
+   </InformatieObjectMetadata>
+   <GeoInformatie gml:id="d29309e90-ae06-4d8e-abd0-6d39e118ac22" xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+       <geo:featureMember>
+      <geo:Locatie gml:id="t29309e90-ae06-4d8e-abd0-6d39e118ac22">
+        <geo:wId>t29309e90-ae06-4d8e-abd0-6d39e118ac22</geo:wId>
+        <geo:naam>Matigkwetsbarestrategischegrondwatervoorraad</geo:naam>
+        <geo:geometrie
+          xlink:href="Matigkwetsbarestrategischegrondwatervoorraad.gml#t29309e90-ae06-4d8e-abd0-6d39e118ac22"
+         />
+      </geo:Locatie>
+    </geo:featureMember>
+   </GeoInformatie>
+   <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <bronactualiteit>2019-01-01</bronactualiteit>
+      <bronbeschrijving>TOP10NL</bronbeschrijving>
+      <brontype>achtergrond</brontype>
+   </Achtergrond>
+</InformatieObjectVersie>
+</AanleveringGIO>

@@ -1,0 +1,1892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901" xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901" xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709" xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/v20190709" xmlns:rkop="http://www.geostandaarden.nl/imow/regeltekstkoppelingop/v20190709" xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901">
+	<sl:standBestand>
+		<sl:dataset>provincie Utrecht</sl:dataset>
+		<sl:inhoud>
+			<sl:gebied>provincie Utrecht</sl:gebied>
+			<sl:leveringsId>tbll1147d-9176-4e7e-991c-a15fef88ut</sl:leveringsId>
+			<sl:objectTypen>
+				<sl:objectType>Regeltekst</sl:objectType>
+				<sl:objectType>RegelVoorIedereen</sl:objectType>
+			</sl:objectTypen>
+		</sl:inhoud>
+    <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.3__art_2.11__para_1">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000048</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.1__art_3.2__para_2">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000082</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.3__art_3.10__para_1">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000105</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.14">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000135</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.1__art_3.3">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000083</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.3__art_3.9__para_1">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000102</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.18">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000067</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.3__art_3.7__para_1">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000096</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.1__art_2.1__para_2">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000018</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.3__art_2.12__para_1">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000051</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.1__art_2.1__para_1">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000017</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.3__art_3.8__para_2">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000100</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.16__para_1">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000062</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.20__para_1">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000070</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.17__para_1">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000065</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.1__art_3.2__para_1">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000081</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.3__art_3.8__para_1">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000099</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.19">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000068</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.3__art_2.13__para_1">
+			<r:identificatie>nl.imow-pv9926.regeltekst.2020000000054</r:identificatie>
+		</r:Regeltekst>
+	</ow-dc:owObject>
+</sl:stand>
+    <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000048">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000049"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000048"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002148"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000135">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000056"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000135"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000026135"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000070">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000056"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000070"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002670"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000068">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000056"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000068"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002668"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000048">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000040"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000048"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002048"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000081">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000044"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000081"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002981"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000083">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000044"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000083"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002983"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000048">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000039"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000048"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000001948"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000051">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000039"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000051"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000001951"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000054">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000039"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000054"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000001954"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000017">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000054"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000017"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000001717"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000018">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000054"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000018"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000001718"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000081">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000062"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000081"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002881"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000083">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000062"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000083"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002883"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000081">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000081"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002781"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000096">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000096"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002796"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000099">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000099"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002799"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000102">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000102"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000027102"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000100">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000100"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000027100"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000105">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000105"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000027105"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000082">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000082"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002782"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000083">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000083"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002783"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000048">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000058"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000048"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000003848"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000082">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000055"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000082"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000003082"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000048">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000061"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000048"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000001848"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000051">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000061"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000051"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000001851"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000135">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000059"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000135"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000025135"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000062">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000059"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000062"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002562"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000065">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000059"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000065"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002565"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000067">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000059"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000067"/>
+			</r:artikelOfLid>
+			<r:gebiedsaanwijzing>
+				<ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv9926.gebiedsaanwijzing.2020000002567"/>
+			</r:gebiedsaanwijzing>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000051">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000039"/><l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000061"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000051"/>
+			</r:artikelOfLid>
+			<r:activiteitregelkwalificatie>meldingsplicht</r:activiteitregelkwalificatie>
+			<r:activiteitaanduiding>
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-pv9926.activiteit.2020000000007"/>
+			</r:activiteitaanduiding>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000070">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000056"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000070"/>
+			</r:artikelOfLid>
+			<r:activiteitregelkwalificatie>meldingsplicht</r:activiteitregelkwalificatie>
+			<r:activiteitaanduiding>
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-pv9926.activiteit.2020000000013"/>
+			</r:activiteitaanduiding>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000054">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000039"/><l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000061"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000054"/>
+			</r:artikelOfLid>
+			<r:activiteitregelkwalificatie>verbod</r:activiteitregelkwalificatie>
+			<r:activiteitaanduiding>
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-pv9926.activiteit.2020000000008"/>
+			</r:activiteitaanduiding>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000096">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000096"/>
+			</r:artikelOfLid>
+			<r:activiteitaanduiding>
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-pv9926.activiteit.2020000000014"/>
+			</r:activiteitaanduiding>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000102">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000102"/>
+			</r:artikelOfLid>
+			<r:activiteitregelkwalificatie>vergunningplicht</r:activiteitregelkwalificatie>
+			<r:activiteitaanduiding>
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-pv9926.activiteit.2020000000015"/>
+			</r:activiteitaanduiding>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000068">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000056"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000068"/>
+			</r:artikelOfLid>
+			<r:activiteitregelkwalificatie>vergunningplicht</r:activiteitregelkwalificatie>
+			<r:activiteitaanduiding>
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-pv9926.activiteit.2020000000010"/>
+			</r:activiteitaanduiding>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000068">
+			<r:idealisatie>exact</r:idealisatie>
+			<r:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000056"/>
+			</r:locatieaanduiding>
+			<r:artikelOfLid>
+				<r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000068"/>
+			</r:artikelOfLid>
+			<r:activiteitregelkwalificatie>vergunningplicht</r:activiteitregelkwalificatie>
+			<r:activiteitaanduiding>
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-pv9926.activiteit.2020000000036"/>
+			</r:activiteitaanduiding>
+		</r:RegelVoorIedereen>
+	</ow-dc:owObject>
+</sl:stand>
+    <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_1__art_1.1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000004</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000004">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000004"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.3__art_3.10__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000106</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000106">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000106"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_4__subchp_4.1__subsec_4.1.1__art_4.1__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000125</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000125">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000125"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.1__art_2.1__para_3">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000019</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000019">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000019"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.10__para_3">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000043</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000043">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000043"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_1__art_1.4">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000010</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000010">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000010"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.3__art_2.13__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000055</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000055">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000055"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.3__art_3.9__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000103</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000103">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000103"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.2__art_3.4__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000087</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000087">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000087"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.2__art_3.5__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000092</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000092">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000092"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.17__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000066</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000066">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000066"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.3__art_3.7__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000097</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000097">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000097"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.2__art_3.4__para_1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000086</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000086">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000086"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.2__art_3.5__para_1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000091</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000091">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000091"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_4__subchp_4.1__subsec_4.1.1__art_4.1__para_1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000124</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000124">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000124"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_4__subchp_4.1__subsec_4.1.1__art_4.2__para_1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000137</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000137">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000137"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.6__para_1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000032</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000032">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000032"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.15__para_1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000059</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000059">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000059"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.2__art_3.4__para_4">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000089</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000089">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000089"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.1__art_2.3__para_1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000026</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000026">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000026"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.3__art_2.11__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000049</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000049">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000049"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.20__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000071</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000071">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000071"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.1__art_2.2__para_3">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000024</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000024">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000024"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.1__art_2.3__para_3">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000028</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000028">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000028"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.2__art_3.11">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000107</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000107">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000107"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.1__art_2.1__para_4">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000020</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000020">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000020"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.8__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000037</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000037">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000037"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.8__para_1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000036</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000036">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000036"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_4__subchp_4.1__subsec_4.1.1__art_4.2__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000138</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000138">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000138"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_1__art_1.2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000008</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000008">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000008"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.1__art_2.2__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000023</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000023">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000023"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.5">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000030</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000030">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000030"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.3__art_2.12__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000052</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000052">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000052"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.16__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000063</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000063">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000063"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.10__para_1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000041</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000041">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000041"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.2__art_3.6">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000093</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000093">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000093"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.10__para_4">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000044</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000044">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000044"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.10__para_5">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000045</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000045">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000045"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.1__art_2.2__para_1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000022</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000022">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000022"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.3__subsec_3.3.1__art_3.13__para_1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000113</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000113">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000113"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.2__art_3.4__para_3">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000088</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000088">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000088"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.15__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000060</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000060">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000060"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.3__subsec_3.3.1__art_3.13__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000114</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000114">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000114"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.10__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000042</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000042">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000042"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.3__subsec_3.3.1__art_3.12">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000111</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000111">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000111"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.20__para_3">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000072</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000072">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000072"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_1__art_1.3">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000009</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000009">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000009"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.4__subsec_3.4.1__art_3.14__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000118</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000118">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000118"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.6__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000033</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000033">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000033"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.1__art_3.2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000080</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000080">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000080"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.20__para_5">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000075</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000075">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000075"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.2__subsec_2.2.1__art_2.20__para_4">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000073</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000073">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000073"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.4__subsec_3.4.1__art_3.14__para_1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000117</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000117">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000117"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.1__art_2.3__para_2">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000027</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000027">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000027"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.9">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000039</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000039">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000039"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.4">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000029</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000029">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000029"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.8__para_3">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000038</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000038">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000038"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_2__subchp_2.1__subsec_2.1.2__art_2.7">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000034</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000034">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000034"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.1__art_3.1">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000079</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000079">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000079"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand> <sl:stand>
+    <ow-dc:owObject>
+        <r:Regeltekst wIdRegeling="/akn/nl/act/pv26/2020/act3" wId="pv26_311__chp_3__subchp_3.1__subsec_3.1.3__art_3.8">
+            <r:identificatie>nl.imow-pv9926.regeltekst.2020000000098</r:identificatie>
+        </r:Regeltekst>
+    </ow-dc:owObject>
+</sl:stand>
+<sl:stand>
+    <ow-dc:owObject>
+        <r:RegelVoorIedereen ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000098">
+            <r:idealisatie>exact</r:idealisatie>
+            <r:thema>Algemeen</r:thema>
+            <r:locatieaanduiding>
+                <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+            </r:locatieaanduiding>
+            <r:artikelOfLid>
+                <r-ref:RegeltekstRef xlink:href="nl.imow-pv9926.regeltekst.2020000000098"/>
+            </r:artikelOfLid>
+        </r:RegelVoorIedereen>
+    </ow-dc:owObject>
+</sl:stand>
+	</sl:standBestand>
+</ow-dc:owBestand>

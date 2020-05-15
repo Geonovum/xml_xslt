@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190709" xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190801" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901" xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709" xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709" xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/v20190709" xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901">
+	<sl:standBestand>
+		<sl:dataset>provincie Utrecht</sl:dataset>
+		<sl:inhoud>
+			<sl:gebied>provincie Utrecht</sl:gebied>
+			<sl:leveringsId>tbll1147d-9176-4e7e-991c-a15fef88ut</sl:leveringsId>
+			<sl:objectTypen>
+				<sl:objectType>Gebiedsaanwijzing</sl:objectType>
+			</sl:objectTypen>
+		</sl:inhoud>
+        <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000048">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002148</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>100-jaaraandachtsgebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000049"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000135">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000026135</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>beperkingengebied met betrekking tot de provinciale weg</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000056"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000070">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002670</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>beperkingengebied met betrekking tot de provinciale weg</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000056"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000068">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002668</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>beperkingengebied met betrekking tot de provinciale weg</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000056"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000048">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002048</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>boringsvrije zone</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000040"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000081">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002981</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>bufferzone stiltegebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000044"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000083">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002983</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>bufferzone stiltegebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000044"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000048">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000001948</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>grondwaterbeschermingsgebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000039"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000051">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000001951</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>grondwaterbeschermingsgebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000039"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000054">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000001954</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>grondwaterbeschermingsgebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000039"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000017">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000001717</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>Slaperdijk</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000054"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000018">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000001718</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>Slaperdijk</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000054"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000081">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002881</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>stille kern</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000062"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000083">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002883</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>stille kern</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000062"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000081">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002781</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>stiltegebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000096">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002796</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>stiltegebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000099">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002799</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>stiltegebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000102">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000027102</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>stiltegebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000100">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000027100</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>stiltegebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000105">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000027105</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>stiltegebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000082">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002782</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>stiltegebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000083">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002783</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>stiltegebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000048">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000003848</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>strategische grondwatervoorraad</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000058"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000082">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000003082</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>vrijwaringszone stiltegebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000055"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000048">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000001848</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>waterwingebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000061"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000051">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000001851</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>waterwingebied</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000061"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000135">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000025135</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>weg in beheer bij de provincie</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000059"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000062">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002562</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>weg in beheer bij de provincie</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000059"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000065">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002565</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>weg in beheer bij de provincie</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000059"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000067">
+			<ga:identificatie>nl.imow-pv9926.gebiedsaanwijzing.2020000002567</ga:identificatie>
+			<ga:type>Functie</ga:type>
+			<ga:naam>weg in beheer bij de provincie</ga:naam>
+			<ga:groep></ga:groep>
+			<ga:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000059"/>
+			</ga:locatieaanduiding>
+		</ga:Gebiedsaanwijzing>
+	</ow-dc:owObject>
+</sl:stand>
+	</sl:standBestand>
+</ow-dc:owBestand>

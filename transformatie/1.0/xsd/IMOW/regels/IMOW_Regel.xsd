@@ -31,7 +31,7 @@
    <xs:import namespace="http://www.geostandaarden.nl/imow/datatypenalgemeen"
       schemaLocation="../../IMOW/datatypenalgemeen/IMOW_DatatypenAlgemeen.xsd"/>
    <xs:import namespace="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
-      schemaLocation="../../IMOW/gebiedsaanwijzing/IMOW_GebiedsAanwijzing.xsd"/>
+      schemaLocation="../../IMOW/gebiedsaanwijzing/IMOW_Gebiedsaanwijzing.xsd"/>
    <xs:import namespace="http://www.geostandaarden.nl/imow/kaart"
       schemaLocation="../../IMOW/kaart/IMOW_Kaart.xsd"/>
    <xs:import namespace="http://www.geostandaarden.nl/imow/locatie"

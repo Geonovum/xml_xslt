@@ -16,7 +16,7 @@
   <xsl:template match="geo:FeatureCollectionGeometrie">
     <xsl:element name="geo:GeoInformatieObjectVaststelling" namespace="{$ns_geo}">
       <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('https://standaarden.overheid.nl/stop/imop/geo/ ../stop/imop-geo.xsd')"/>
-      <xsl:namespace name="basisgeo" select="string('http://www.geostandaarden.nl/basisgeometrie/1.0/')"/>
+      <xsl:namespace name="basisgeo" select="string('http://www.geostandaarden.nl/basisgeometrie/1.0')"/>
       <xsl:namespace name="gio" select="string('https://standaarden.overheid.nl/stop/imop/gio/')"/>
       <xsl:namespace name="gml" select="string('http://www.opengis.net/gml/3.2')"/>
       <xsl:attribute name="schemaversie">1.0</xsl:attribute>
@@ -57,7 +57,7 @@
             <xsl:value-of select="$gml_id"/>
           </xsl:element>
           <xsl:element name="basisgeo:geometrie" namespace="{$ns_basisgeo}">
-            <xsl:copy-of select="geo:Geometrie[1]/geo:geometrie/node()"/>
+            <xsl:apply-templates select="geo:Geometrie[1]/geo:geometrie/node()"/>
           </xsl:element>
         </xsl:element>
       </xsl:element>
@@ -78,7 +78,18 @@
   </xsl:template>
 
   <xsl:template match="text()">
-    <xsl:copy-of select="."/>
+    <xsl:choose>
+      <xsl:when test="(normalize-space(.)='') and contains(.,'&#10;')">
+        <!-- lege tekst met een zachte return is indentation -->
+        <xsl:value-of select="fn:tokenize(.,'&#10;')[1]"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="myArray">
+          <xsl:value-of select="fn:tokenize(.,'\s+')"/>
+        </xsl:variable>
+        <xsl:value-of select="fn:concat($myArray,'')"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="comment()|processing-instruction()">
