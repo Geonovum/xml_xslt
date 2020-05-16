@@ -126,7 +126,7 @@
             </xsl:element>
           </xsl:element>
         </xsl:when>
-        <xsl:when test="document(concat('file:/',.))//Modules">
+        <xsl:when test="document(concat('file:/',.))//*:Modules">
           <xsl:element name="file">
             <xsl:attribute name="name" select="string('manifest_ow.xml')"/>
             <xsl:element name="fullname">
@@ -634,26 +634,26 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template match="Modules">
+  <xsl:template match="*:Modules">
     <xsl:element name="Aanleveringen" namespace="{$xmlns}">
       <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.geostandaarden.nl/bestanden-ow/manifest-ow ../xsd/bestanden-ow/generiek/manifest-ow.xsd')"/>
       <xsl:apply-templates select="node()"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="RegelingVersie">
+  <xsl:template match="*:RegelingVersie">
     <xsl:element name="Aanlevering" namespace="{$xmlns}">
       <xsl:apply-templates select="@*|node()"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="FRBRwork">
+  <xsl:template match="*:FRBRwork">
     <xsl:element name="WorkIDRegeling" namespace="{$xmlns}">
       <xsl:value-of select="document($file.config)//WorkID"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="FRBRExpression">
+  <xsl:template match="*:FRBRExpression">
     <xsl:element name="DoelID" namespace="{$xmlns}">
       <xsl:value-of select="document($file.config)//DoelID"/>
     </xsl:element>
