@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns="https://standaarden.overheid.nl/lvbb/stop/" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:xlink="http://www.w3.org/1999/xlink" schemaversie="0.98.3-kern">
+<InformatieObjectVersie>
+   <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/pv26/2020/Landelijkgebied</FRBRWork>
+      <FRBRExpression>/join/id/regdata/pv26/2020/Landelijkgebied/nld@2020-03-05;000000047</FRBRExpression>
+      <data:soortWork>/join/id/stop/work_007</data:soortWork>
+   </ExpressionIdentificatie>
+   <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+      <maker>/tooi/id/provincie/pv26</maker>
+      <noemer>Landelijkgebied</noemer>
+      <officieleTitel></officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+      <!-- Koppeling naar het gml-bestand -->
+      <heeftBestanden>
+         <heeftBestand>
+            <Bestand>
+               <bestandsnaam>Landelijkgebied.gml</bestandsnaam>
+               <hash>abd83cecd1c9348ca1af8036c82fb3f62bc909d56820b12c2293335c6d40ca01df2a27d40c0b205230746e876d88c6d61f25e865f3164906ff923ec8165b526c</hash>
+            </Bestand>
+         </heeftBestand>
+      </heeftBestanden>
+   </InformatieObjectMetadata>
+   <GeoInformatie gml:id="dbbdd60c1-1011-4788-b997-73544729a0be" xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+       <geo:featureMember>
+      <geo:Locatie gml:id="tbbdd60c1-1011-4788-b997-73544729a0be">
+        <geo:wId>tbbdd60c1-1011-4788-b997-73544729a0be</geo:wId>
+        <geo:naam>Landelijkgebied</geo:naam>
+        <geo:geometrie
+          xlink:href="Landelijkgebied.gml#tbbdd60c1-1011-4788-b997-73544729a0be"
+         />
+      </geo:Locatie>
+    </geo:featureMember>
+   </GeoInformatie>
+   <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <bronactualiteit>2019-01-01</bronactualiteit>
+      <bronbeschrijving>TOP10NL</bronbeschrijving>
+      <brontype>achtergrond</brontype>
+   </Achtergrond>
+</InformatieObjectVersie>
+</AanleveringGIO>

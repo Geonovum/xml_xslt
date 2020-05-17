@@ -2851,12 +2851,12 @@
                   },
                   {
                      "label": "geluid van activiteiten",
-                     "term": "GeluidVanActiviteiten",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/geluidvanactiviteiten/id/concept/GeluidVanActiviteiten",
+                     "term": "GeluidGeluidVanActiviteiten",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/GeluidGeluidVanActiviteiten",
                      "definitie": "",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/GeluidVanActiviteiten",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Geluid",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -2864,12 +2864,12 @@
                   },
                   {
                      "label": "geluid van industrieterreinen",
-                     "term": "GeluidVanIndustrieterreinen",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/geluidvanindustrieterreinen/id/concept/GeluidVanIndustrieterreinen",
+                     "term": "GeluidGeluidVanIndustrieterreinen",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/GeluidGeluidVanIndustrieterreinen",
                      "definitie": "",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/GeluidVanIndustrieterreinen",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Geluid",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -2877,12 +2877,12 @@
                   },
                   {
                      "label": "geluid van luchthavens en luchtvaart",
-                     "term": "GeluidVanLuchthavensEnLuchtvaart",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/geluidvanluchthavensenluchtvaart/id/concept/GeluidVanLuchthavensEnLuchtvaart",
+                     "term": "GeluidGeluidVanLuchthavensEnLuchtvaart",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/GeluidGeluidVanLuchthavensEnLuchtvaart",
                      "definitie": "",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/GeluidVanLuchthavensEnLuchtvaart",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Geluid",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -2890,12 +2890,12 @@
                   },
                   {
                      "label": "geluid van spoorwegen",
-                     "term": "GeluidVanSpoorwegen",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/geluidvanspoorwegen/id/concept/GeluidVanSpoorwegen",
+                     "term": "GeluidGeluidVanSpoorwegen",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/GeluidGeluidVanSpoorwegen",
                      "definitie": "",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/GeluidVanSpoorwegen",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Geluid",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -2903,12 +2903,12 @@
                   },
                   {
                      "label": "geluid van wegen",
-                     "term": "GeluidVanWegen",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/geluidvanwegen/id/concept/GeluidVanWegen",
+                     "term": "GeluidGeluidVanWegen",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/GeluidGeluidVanWegen",
                      "definitie": "",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/GeluidVanWegen",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Geluid",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -3344,45 +3344,6 @@
                      }
                   },
                   {
-                     "label": "lichthinder",
-                     "term": "MilieuAlgemeenEnOverigeMilieuaspectenLichthinder",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspectenLichthinder",
-                     "definitie": "",
-                     "toelichting": "",
-                     "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/MilieuAlgemeenEnOverigeMilieuaspecten",
-                     "symboolcode": {
-                        "exact": "",
-                        "indicatief": ""
-                     }
-                  },
-                  {
-                     "label": "trillingen",
-                     "term": "MilieuAlgemeenEnOverigeMilieuaspectenTrillingen",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspectenTrillingen",
-                     "definitie": "",
-                     "toelichting": "",
-                     "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/MilieuAlgemeenEnOverigeMilieuaspecten",
-                     "symboolcode": {
-                        "exact": "",
-                        "indicatief": ""
-                     }
-                  },
-                  {
-                     "label": "energie",
-                     "term": "MilieuAlgemeenEnOverigeAspectenEnergie",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigeaspecten/id/concept/MilieuAlgemeenEnOverigeAspectenEnergie",
-                     "definitie": "",
-                     "toelichting": "",
-                     "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/MilieuAlgemeenEnOverigeAspecten",
-                     "symboolcode": {
-                        "exact": "",
-                        "indicatief": ""
-                     }
-                  },
-                  {
                      "label": "milieu algemeen en overige milieuaspecten",
                      "term": "MilieuAlgemeenEnOverigeMilieuaspecten",
                      "uri": "http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspecten",
@@ -3412,6 +3373,45 @@
                      "label": "algemeen",
                      "term": "MilieuAlgemeenEnOverigeMilieuaspectenAlgemeen",
                      "uri": "http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspectenAlgemeen",
+                     "definitie": "",
+                     "toelichting": "",
+                     "bron": "Praktijk",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/MilieuAlgemeenEnOverigeMilieuaspecten",
+                     "symboolcode": {
+                        "exact": "",
+                        "indicatief": ""
+                     }
+                  },
+                  {
+                     "label": "energie",
+                     "term": "MilieuAlgemeenEnOverigeMilieuaspectenEnergie",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspectenEnergie",
+                     "definitie": "",
+                     "toelichting": "",
+                     "bron": "Praktijk",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/MilieuAlgemeenEnOverigeMilieuaspecten",
+                     "symboolcode": {
+                        "exact": "",
+                        "indicatief": ""
+                     }
+                  },
+                  {
+                     "label": "lichthinder",
+                     "term": "MilieuAlgemeenEnOverigeMilieuaspectenLichthinder",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspectenLichthinder",
+                     "definitie": "",
+                     "toelichting": "",
+                     "bron": "Praktijk",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/MilieuAlgemeenEnOverigeMilieuaspecten",
+                     "symboolcode": {
+                        "exact": "",
+                        "indicatief": ""
+                     }
+                  },
+                  {
+                     "label": "trillingen",
+                     "term": "MilieuAlgemeenEnOverigeMilieuaspectenTrillingen",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspectenTrillingen",
                      "definitie": "",
                      "toelichting": "",
                      "bron": "Praktijk",
@@ -4228,13 +4228,13 @@
                      }
                   },
                   {
-                     "label": "en leefklimaat",
+                     "label": "woon- en leefklimaat",
                      "term": "WoonEnLeefklimaat",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/woon/id/concept/WoonEnLeefklimaat",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/woonenleefklimaat/id/concept/WoonEnLeefklimaat",
                      "definitie": "",
                      "toelichting": "Bijvoorbeeld voor visies en programma's",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Woon",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WoonEnLeefklimaat",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4244,9 +4244,9 @@
             }
          },
          {
-            "label": "typegebiedsaanwijzing",
-            "titel": "Typegebiedsaanwijzing",
-            "uri": "http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typegebiedsaanwijzing",
+            "label": "type gebiedsaanwijzing",
+            "titel": "TypeGebiedsaanwijzing",
+            "uri": "http://standaarden.omgevingswet.overheid.nl/id/waardelijst/TypeGebiedsaanwijzing",
             "type": "limitatief",
             "omschrijving": "Waardelijst voor attribuut type, dat aangeeft welk type Gebiedsaanwijzing wordt geannoteerd",
             "toelichting": "",
@@ -4259,7 +4259,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een Juridische regel en de bijbehorende Locatie(s) gaan over een beperkingengebied als bedoeld in de Omgevingswet: een bij of krachtens de wet aangewezen gebied waar, vanwege de aanwezigheid van een werk of object, regels gelden over activiteiten die gevolgen hebben of kunnen hebben voor dat werk of object",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4272,7 +4272,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op de bescherming van de bodemkwaliteit",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4285,7 +4285,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op de bescherming en het tegengaan van verstoring van militaire gebieden en objecten",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4298,7 +4298,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op de bescherming en bevordering van de energievoorziening",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4311,7 +4311,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op de bescherming van cultureel erfgoed",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4324,7 +4324,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op het waarborgen van de veiligheid",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4337,7 +4337,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een Juridische regel en de bijbehorende Locatie(s) gaan over een functie: het gebruiksdoel of de bijzondere eigenschap die een onderdeel van de fysieke leefomgeving op een bepaalde locatie heeft",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4350,7 +4350,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op het tegengaan van geluidhinder",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4363,7 +4363,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op het tegengaan van geurhinder",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4376,7 +4376,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op de bescherming en de ontwikkeling van het landschap vanuit ander perspectief dan natuur en erfgoed",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4389,7 +4389,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op het waarborgen van de goede staat en instandhouding van leidingen",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4402,7 +4402,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op de bescherming van de kwaliteit van de buitenlucht",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4415,7 +4415,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op het kunnen verrichten van mijnbouwactiviteiten",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4428,7 +4428,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op de bescherming van natuur en landschap",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4441,7 +4441,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op de beheersing en ontwikkeling van recreatie",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4454,7 +4454,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op die vormen van ruimtelijk gebruik die niet onder een van de andere Gebiedsaanwijzingtypen te vatten zijn",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4467,7 +4467,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op beheer, onderhoud en ontwikkeling van verkeer en mobiliteit",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4480,7 +4480,7 @@
                      "definitie": "Object dat machineleesbaar maakt dat een gebied is aangewezen door regels of beleid, gericht op het beheer van water en watersystemen",
                      "toelichting": "",
                      "bron": "TPOD-Standaard",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typegebiedsaanwijzing",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeGebiedsaanwijzing",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -4992,9 +4992,9 @@
             }
          },
          {
-            "label": "externeveiligheidgroep",
-            "titel": "Externeveiligheidgroep",
-            "uri": "http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Externeveiligheidgroep",
+            "label": "externe veiligheidgroep",
+            "titel": "ExterneVeiligheidgroep",
+            "uri": "http://standaarden.omgevingswet.overheid.nl/id/waardelijst/ExterneVeiligheidgroep",
             "type": "limitatief",
             "omschrijving": "Waardelijst voor attribuut groep bij het Gebiedsaanwijzingtype Externe veiligheid, dat zorgt voor filteren en weergave van de symbolisatie van Externe veiligheid op de kaart",
             "toelichting": "",
@@ -5007,7 +5007,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Externe veiligheid dat een gebied rond een activiteit met externe veiligheidsrisico’s aanwijst waarbinnen zich bij een incident levensbedreigende gevolgen voor personen in een gebouw kunnen voordoen",
                      "toelichting": "",
                      "bron": "Besluit kwaliteit leefomgeving",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Externeveiligheid",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/ExterneVeiligheid",
                      "symboolcode": {
                         "exact": "vsg011",
                         "indicatief": "vsh011"
@@ -5020,7 +5020,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Externe veiligheid voor het aanwijzen van een gebied aan weerszijden van een buisleiding als bedoeld in artikel 3.101 van het Besluit activiteiten leefomgeving",
                      "toelichting": "",
                      "bron": "Besluit kwaliteit leefomgeving",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Externeveiligheid",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/ExterneVeiligheid",
                      "symboolcode": {
                         "exact": "vsg011",
                         "indicatief": "vsh011"
@@ -5033,7 +5033,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Externe veiligheid voor het aanwijzen van een gebied als bedoeld in de bijlagen VIII, IX en X Besluit kwaliteit leefomgeving",
                      "toelichting": "",
                      "bron": "Besluit kwaliteit leefomgeving",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Externeveiligheid",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/ExterneVeiligheid",
                      "symboolcode": {
                         "exact": "vsg011",
                         "indicatief": "vsh011"
@@ -5046,7 +5046,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Externe veiligheid dat een gebied rond een activiteit met externe veiligheidsrisico’s aanwijst waarbinnen het plaatsgebonden risico 1 op de 1.000.000 per jaar of hoger bedraagt",
                      "toelichting": "",
                      "bron": "Besluit kwaliteit leefomgeving",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Externeveiligheid",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/ExterneVeiligheid",
                      "symboolcode": {
                         "exact": "vsg012",
                         "indicatief": "vsh012"
@@ -5059,7 +5059,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Externe veiligheid voor het aanwijzen van een gebied als risicogebied externe veiligheid als bedoeld in artikel 5.16 Besluit kwaliteit leefomgeving",
                      "toelichting": "",
                      "bron": "Besluit kwaliteit leefomgeving",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Externeveiligheid",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/ExterneVeiligheid",
                      "symboolcode": {
                         "exact": "vsg011",
                         "indicatief": "vsh011"
@@ -5072,7 +5072,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Externe veiligheid voor het aanwijzen van een gebied als aandachtsgebied externe veiligheid als bedoeld in artikel 5.14 Besluit kwaliteit leefomgeving",
                      "toelichting": "",
                      "bron": "Besluit kwaliteit leefomgeving",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Externeveiligheid",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/ExterneVeiligheid",
                      "symboolcode": {
                         "exact": "vsg011",
                         "indicatief": "vsh011"
@@ -6958,9 +6958,9 @@
             }
          },
          {
-            "label": "ruimtelijkgebruikgroep",
-            "titel": "Ruimtelijkgebruikgroep",
-            "uri": "http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Ruimtelijkgebruikgroep",
+            "label": "ruimtelijk gebruikgroep",
+            "titel": "RuimtelijkGebruikgroep",
+            "uri": "http://standaarden.omgevingswet.overheid.nl/id/waardelijst/RuimtelijkGebruikgroep",
             "type": "limitatief",
             "omschrijving": "Waardelijst voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik, dat zorgt voor filteren en weergave van de symbolisatie van Ruimtelijkgebruik op de kaart",
             "toelichting": "",
@@ -6973,7 +6973,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar specifiek beleid geldt voor afvalstoffen",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg009",
                         "indicatief": "vsh009"
@@ -6986,7 +6986,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar restrictief beleid geldt voor bebouwing",
                      "toelichting": "Een gebied waarbinnen een restrictief beleid geldt voor bebouwing.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg030",
                         "indicatief": "vsh030"
@@ -6999,7 +6999,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar specifiek beleid geldt voor bedrijventerreinen",
                      "toelichting": "Aaneengesloten terrein voor de bedrijfsmatige uitoefening van industriële, logistieke, ambachtelijke en dienstverlenende activiteiten engroothandel met de daarbij horende voorzieningen, bedoeld voor de vestiging van meerdere bedrijven.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg028",
                         "indicatief": "vsh028"
@@ -7012,7 +7012,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar specifiek beleid geldt voor detailhandel",
                      "toelichting": "Detailhandel is het leveren van fysieke goederen voor persoonlijk gebruik aan de consument. Het is een sector die bestaat uit verschillende branches (zoals de levensmiddelenbranche, de modebranche, de wonenbranche enz.)",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg007",
                         "indicatief": "vsh007"
@@ -7025,7 +7025,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar specifiek beleid geldt gericht op de teelt of veredeling van gewassen, geheel of nagenoeg geheel met behulp van een glasopstand",
                      "toelichting": "Bedrijf gericht op de teelt of veredeling van gewassen geheel of nagenoeg geheel met behulp van een glasopstand van minimaal 2.500 m2.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg101",
                         "indicatief": "vsh101"
@@ -7038,7 +7038,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar specifiek beleid geldt voor industrieterreinen",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg028",
                         "indicatief": "vsh028"
@@ -7051,7 +7051,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar specifiek beleid geldt voor infrastructuur",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg021",
                         "indicatief": "vsh021"
@@ -7064,7 +7064,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar specifiek beleid geldt voor kantoren",
                      "toelichting": "Kantoor als een ruimtelijk zelfstandige eenheid.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg012",
                         "indicatief": "vsh012"
@@ -7077,7 +7077,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar specifiek beleid geldt voor landbouw",
                      "toelichting": "Agrarische cultuurgrond, met inbegrip van de agrarische bouwpercelen.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg001",
                         "indicatief": "vsh001"
@@ -7090,7 +7090,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied als behorend tot het landelijk gebied waar landbouw en natuur een belangrijke rol spelen",
                      "toelichting": "Gebied buiten de steden, waar landbouw en natuur een belangrijke rol spelen. Ook wel platteland genoemd.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg001",
                         "indicatief": "vsh001"
@@ -7103,7 +7103,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied als behorend tot het landelijk gebied met overwegend agrarische functies",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg001",
                         "indicatief": "vsh001"
@@ -7116,7 +7116,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied als behorend tot het landelijk gebied waar het landschap de belangrijkste rol speelt",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg015",
                         "indicatief": "vsh015"
@@ -7129,7 +7129,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied als behorend tot het landelijk gebied waar natuur de belangrijkste rol speelt",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg016",
                         "indicatief": "vsh016"
@@ -7142,7 +7142,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied als multifunctioneel gebied in de stadsrandzone met o.a. recreatief gebruik",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg009",
                         "indicatief": "vsh009"
@@ -7155,7 +7155,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar de menging van agrarische, natuur- en andere functies wordt nagestreefd",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg027",
                         "indicatief": "vsh027"
@@ -7168,7 +7168,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied voor de ontwikkeling van nieuwe landelijke functies",
                      "toelichting": "Gebied waar na afweging de ontwikkeling van landelijke functies mogelijk is.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg001",
                         "indicatief": "vsh001"
@@ -7181,7 +7181,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied voor de ontwikkeling van nieuwe stedelijke functies",
                      "toelichting": "Gebied buiten het (bestaand)stedelijk gebied waar na afweging nieuwe stedelijke functies mogelijk zijn, zoals woonwijken, bedrijventerreinen en andere stedelijke voorzieningen.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vaz225",
                         "indicatief": ""
@@ -7194,7 +7194,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied wanneer men het Gebiedsaanwijzingtype Ruimtelijkgebruik wil gebruiken maar geen van de andere groepen van toepassing is",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg030",
                         "indicatief": "vsh030"
@@ -7207,7 +7207,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar specifiek beleid geldt voor een specifiek type vollegrondsteelt",
                      "toelichting": "Gebied met een specifieke vollegrondsteelt, zoals bijvoorbeeld bollenteelt.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg001",
                         "indicatief": "vsh001"
@@ -7220,7 +7220,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van de bebouwde gebieden van dorpen en steden",
                      "toelichting": "De bebouwde gebieden van zowel dorpen als steden, als ook grote verharde oppervlakten, bijvoorbeeld: woonwijken, industrieterreinen, rijkswegen, complex van kassen van de glastuinbouw, etc",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsgt025",
                         "indicatief": "vsht026"
@@ -7233,7 +7233,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied dat behoort tot het stedelijk gebied maar buiten het centrum ligt",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg009",
                         "indicatief": "vsh009"
@@ -7246,7 +7246,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied dat tot het centrum van een dorp behoort",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg005",
                         "indicatief": "vsh005"
@@ -7259,7 +7259,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied dat tot het centrum van een stad behoort",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg005",
                         "indicatief": "vsh005"
@@ -7272,7 +7272,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied dat behoort tot het stedelijk gebied met overwegend woningen en veel groen",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg004",
                         "indicatief": "vsh004"
@@ -7285,7 +7285,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar specifiek beleid voor de veehouderij geldt",
                      "toelichting": "Gebied waar men veehouderij bedrijft, de tak van landbouw waarbij men vee houdt voor het verkrijgen van melk, eieren, vlees of bont.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsgt003",
                         "indicatief": "vsht004"
@@ -7298,7 +7298,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype Ruimtelijkgebruik voor het aanwijzen van een gebied waar specifiek beleid geldt voor water",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Ruimtelijkgebruik",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/RuimtelijkGebruik",
                      "symboolcode": {
                         "exact": "vsg022",
                         "indicatief": "vsh023"
@@ -7398,9 +7398,9 @@
             }
          },
          {
-            "label": "waterenwatersysteemgroep",
-            "titel": "Waterenwatersysteemgroep",
-            "uri": "http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Waterenwatersysteemgroep",
+            "label": "water en watersysteemgroep",
+            "titel": "WaterEnWatersysteemgroep",
+            "uri": "http://standaarden.omgevingswet.overheid.nl/id/waardelijst/WaterEnWatersysteemgroep",
             "type": "limitatief",
             "omschrijving": "Waardelijst voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem, dat zorgt voor filteren en weergave van de symbolisatie van WaterEnWatersysteem op de kaart",
             "toelichting": "",
@@ -7413,7 +7413,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied waaraan op grond van de Omgevingswet een functie voor waterstaatkundige doeleinden is toegedeeld, niet zijnde een oppervlaktewaterlichaam of onderdeel daarvan, dat dient ter verruiming van de bergingscapaciteit van een of meer watersystemen",
                      "toelichting": "Gebied waaraan op grond van de Omgevingswet een functie voor waterstaatkundige doeleinden is toegedeeld, niet zijnde een oppervlaktewaterlichaam of onderdeel daarvan, dat dient ter verruiming van de bergingscapaciteit van een of meer watersystemen en dat ook als bergingsgebied op de legger is opgenomen",
                      "bron": "Waterwet",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg023",
                         "indicatief": "vsh023"
@@ -7426,7 +7426,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied dat op grond van de Kaderrichtlijn Water is aangewezen als beschermd gebied",
                      "toelichting": "Voor de Kaderrichtlijn water (KRW) zijn beschermde gebieden aangewezen. In deze gebieden gelden aanvullende kwaliteitseisen. Waterbeheerders hebben de opgave om deze beschermde gebieden in te passen in hun waterbeheers- en stroomgebiedbeheersplannen. De beschermde gebieden zijn vastgelegd in het nationaal register beschermde gebieden. Hierin zijn de gebieden opgenomen voor het Nederlandse deel van de internationale stroomgebieddistricten Eems, Rijn, Maas en Schelde. Alleen beschermde gebieden op grond van communautaire regelgeving zijn opgenomen in het register. Het betreft de Natura2000 gebieden (Vogel- en habitatrichtlijn gebieden), zwemwaterlocaties, schelpdierwateren en waterlichamen waaruit onttrekking voor menselijke consumptie plaatsvindt. Het register beschermde gebieden wordt voortdurend gevolgd en bijgewerkt.",
                      "bron": "Waterwet",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg023",
                         "indicatief": "vsh023"
@@ -7439,7 +7439,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied als boringsvrije zone",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vag322",
                         "indicatief": "vah323"
@@ -7452,7 +7452,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een regionale kering die als zodanig geen directe waterkerende functie heeft, tenzij in geval van doorbraak of overstroming van een primaire waterkering",
                      "toelichting": "Regionale kering die als zodanig geen directe waterkerende functie heeft, tenzij in geval van doorbraak of overstroming van een primaire waterkering",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7465,7 +7465,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied waar beregeningsbeleid geldt",
                      "toelichting": "Begrenzing van de gebieden die het beregeningsbeleid van het waterschap vastleggen",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg029",
                         "indicatief": "vsh029"
@@ -7478,7 +7478,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied met duinen",
                      "toelichting": "Het gebied tussen duinvoet en het achterliggende gebied",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg002",
                         "indicatief": "vsh002"
@@ -7491,7 +7491,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied in de duinen voor het winnen van drinkwater",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg002",
                         "indicatief": "vsh002"
@@ -7504,7 +7504,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied waarvoor normen zijn gesteld omtrent frequentie en mate van toelaatbare wateroverlast",
                      "toelichting": "Gebied waarbij door de provincie normen zijn gesteld omtrent frequentie en mate van toelaatbare wateroverlast.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vag529",
                         "indicatief": "vag529"
@@ -7517,7 +7517,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied waar regels gelden voor de bescherming van de grondwaterkwaliteit in verband met de winning van drinkwater",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vag022",
                         "indicatief": "vag022"
@@ -7530,7 +7530,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van gebieden waarbinnen het zelfde grondwaterpeil geldt",
                      "toelichting": "Gebieden waarbinnen het zelfde grondwaterpeil geldt",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg029",
                         "indicatief": "vsh030"
@@ -7543,7 +7543,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied als intrekgebied",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vag522",
                         "indicatief": "vah523"
@@ -7556,7 +7556,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een waterkering in de vorm van een beschoeide of gemetselde oeverstrook, waaraan de schepen kunnen aanleggen",
                      "toelichting": "Type waterkering, beschoeide of gemetselde oeverstrook, waaraan de schepen kunnen aanleggen",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7569,7 +7569,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van het kustfundament",
                      "toelichting": "",
                      "bron": "Besluit kwaliteit leefomgeving",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg028",
                         "indicatief": "vsh028"
@@ -7582,7 +7582,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een oppervlaktewater dat een functie waternatuur heeft, op basis van bestaande of potentiële aquatische of semi-aquatische natuurwaarden",
                      "toelichting": "Een oppervlaktewater dat een functie waternatuur heeft, op basis van bestaande of potentiële aquatische of semi-aquatische natuurwaarden",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg023",
                         "indicatief": "vsh023"
@@ -7595,7 +7595,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een werkpad naast de watergang, gebied binnen de beschermingszone waar aanvullende regels gelden",
                      "toelichting": "Werkpad naast de watergang, gebied binnen de beschermingszone waar aanvullende regels gelden",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg021",
                         "indicatief": "vsh021"
@@ -7608,7 +7608,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied oppervaktewaterbeschermingsgebied",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg022",
                         "indicatief": "vsh022"
@@ -7621,7 +7621,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied als oppervlaktewaterbeheergebied",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg022",
                         "indicatief": "vsh022"
@@ -7634,7 +7634,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een samenhangend geheel van vrij aan het aardoppervlak voorkomend water, met de daarin aanwezige stoffen, alsmede de bijbehorende bodem, oevers en, voor zover uitdrukkelijk aangewezen krachtens deze wet, drogere oevergebieden, alsmede flora en fauna",
                      "toelichting": "Samenhangend geheel van vrij aan het aardoppervlak voorkomend water, met de daarin aanwezige stoffen, alsmede de bijbehorende bodem, oevers en, voor zover uitdrukkelijk aangewezen krachtens deze wet, drogere oevergebieden, alsmede flora en fauna",
                      "bron": "Waterwet",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7647,7 +7647,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een oppervlaktewaterlichaam met een overwegend belang voor het watersysteem",
                      "toelichting": "Oppervlaktewaterlichaam met een overwegend belang voor de watersysteem",
                      "bron": "Waterwet",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7660,7 +7660,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van de ruimte aan weerszijden van een oppervlaktewaterlichaam die nodig is voor toekomstige verbreding van dat oppervlaktewaterlichaam",
                      "toelichting": "De ruimte te weerszijden van een oppervlaktewaterlichaam die nodig is voor toekomstige verbreding van dat oppervlaktewaterlichaam",
                      "bron": "Waterwet",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7673,7 +7673,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een oppervlaktewaterlichaam met een beperkt belang voor de watersysteem",
                      "toelichting": "Oppervlaktewaterlichaam met een beperkt belang voor de watersysteem",
                      "bron": "Waterwet",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7686,7 +7686,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van alle overige oppervlaktewaterlichamen die onderdeel zijn van het watersysteem",
                      "toelichting": "Alle overige oppervlaktewaterlichamen die onderdeel zijn van het watersysteem",
                      "bron": "Waterwet",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7699,7 +7699,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied wanneer men het Gebiedsaanwijzingtype WaterEnWatersysteem wil gebruiken maar geen van de andere groepen van toepassing is",
                      "toelichting": "Overige gebieden waarvoor regels uit de waterschapsverordening van toepassing zijn",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg030",
                         "indicatief": "vsh030"
@@ -7712,7 +7712,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied met een vastgesteld peil: een cluster van afwateringsgebieden waarin één en hetzelfde peil wordt nagestreefd",
                      "toelichting": "Gebieden met een vastgesteld peil; een cluster van afwateringsgebieden waarin één en hetzelfde peil wordt nagestreefd",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vag224",
                         "indicatief": "vah225"
@@ -7725,7 +7725,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied waar regels gelden voor bescherming van toekomstige projecten",
                      "toelichting": "Regels voor bescherming van toekomstige projecten",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg030",
                         "indicatief": "vsh030"
@@ -7738,7 +7738,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied ls reserveringsgebied voor water en wataersystemen",
                      "toelichting": "",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg022",
                         "indicatief": "vsh022"
@@ -7751,7 +7751,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van gebieden bij naam of bijnaam",
                      "toelichting": "Voorbeelden zijn waddenzee en waddengebied",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg027",
                         "indicatief": "vsh027"
@@ -7764,7 +7764,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een water dat kan worden bevaren",
                      "toelichting": "Een water dat kan worden bevaren",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7777,7 +7777,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied dat dient ter verruiming van de bergingscapaciteit van een of meer watersystemen",
                      "toelichting": "Gebied voor waterstaatkundige doeleinden, niet zijnde een oppervlaktewaterlichaam of onderdeel daarvan, dat dient ter verruiming van de bergingscapaciteit van een of meer watersystemen en ook als bergingsgebied op de legger is opgenomen",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsgt129",
                         "indicatief": "vsht130"
@@ -7790,7 +7790,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van waterkerende en/of -scheidende, kunstmatige of natuurlijke hoogte of hooggelegen gronden, inclusief de daarin aanwezige waterkerende elementen",
                      "toelichting": "Een waterkerende en/of scheidende, kunstmatige of natuurlijke hoogte of hooggelegen gronden inclusief de daarin aanwezige waterkerende elementen",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7803,7 +7803,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een Waterkering niet zijnde een primaire of regionale waterkering",
                      "toelichting": "Waterkering niet zijnde primair of regionaal",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7816,7 +7816,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een waterkering die bescherming biedt tegen overstroming door water van een oppervlaktewaterlichaam waarvan de waterstand direct invloed ondergaat van hoge stormvloed, hoog opperwater van een van de grote rivieren, hoogwater van het Ijsselmeer of het Markermeer, of een combinatie daarvan, en van het Volkerak-Zoommeer, het Grevelingenmeer, het getijdedeel van de Hollandsche IJssel en de Veluwerandmeren",
                      "toelichting": "Waterkering die bescherming biedt tegen overstroming door water van een oppervlaktewaterlichaam waarvan de waterstand direct invloed ondergaat van hoge stormvloed, hoog opperwater van een van de grote rivieren, hoogwater van het Ijsselmeer of het Markermeer, of een combinatie daarvan, en van het Volkerak-Zoommeer, het Grevelingenmeer, het getijdedeel van de Hollandsche IJssel en de Veluwerandmeren.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7829,7 +7829,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van de ruimte aan weerszijden van en boven een waterkering die nodig is voor toekomstige verbetering van de waterkering",
                      "toelichting": "De ruimte te weerszijden van en boven een waterkering die nodig is voor toekomstige verbetering van de waterkering",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7842,7 +7842,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een waterkering, niet zijnde een primaire of overige waterkering, die bescherming biedt tegen overstroming door water van een oppervlaktewaterlichaam",
                      "toelichting": "Waterkering, niet zijnde een primaire of overige waterkering, die bescherming biedt tegen overstroming door water van een oppervlaktewaterlichaam",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vah424",
                         "indicatief": "vah425"
@@ -7855,7 +7855,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een oppervlaktewaterlichaam, bergingsgebied, waterkering of ondersteunend kunstwerk",
                      "toelichting": "Oppervlaktewaterlichaam, bergingsgebied, waterkering of ondersteunend kunstwerk",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7868,7 +7868,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied als samenhangend geheel van een of meer oppervlaktewaterlichamen en grondwaterlichamen, met bijbehorende bergingsgebieden, waterkeringen en ondersteunende kunstwerken",
                      "toelichting": "Samenhangend geheel van een of meer oppervlaktewaterlichamen en grondwaterlichamen, met bijbehorende bergingsgebieden, waterkeringen en ondersteunende kunstwerken",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7881,7 +7881,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied voor het winnen van drinkwater",
                      "toelichting": "Gebied aangewezen voor het winnen van drinkwater",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsgt122",
                         "indicatief": "vsht123"
@@ -7894,7 +7894,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied als exploitatiegebied voor een werk voor het zuiveren van stedelijk afvalwater",
                      "toelichting": "Werk voor het zuiveren van stedelijk afvalwater, in exploitatie bij een waterschap of gemeente, of een rechtspersoon die door het bestuur van een waterschap met de zuivering van stedelijk afvalwater is belast, met inbegrip van het bij dat werk behorende werk voor het transport van stedelijk afvalwater.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg024",
                         "indicatief": "vsh024"
@@ -7907,7 +7907,7 @@
                      "definitie": "Waarde voor attribuut groep bij het Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied als zwemlocatie als bedoeld in artikel 2.30 Omgevingswet",
                      "toelichting": "Zwemlocatie als bedoeld in artikel 2.30 van de Omgevingswet ter uitvoering van de zwemwaterrichtlijn.",
                      "bron": "Praktijk",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Waterenwatersysteem",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/WaterEnWatersysteem",
                      "symboolcode": {
                         "exact": "vsg022",
                         "indicatief": "vsh022"
@@ -7917,9 +7917,9 @@
             }
          },
          {
-            "label": "typenorm",
-            "titel": "Typenorm",
-            "uri": "http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typenorm",
+            "label": "type norm",
+            "titel": "TypeNorm",
+            "uri": "http://standaarden.omgevingswet.overheid.nl/id/waardelijst/TypeNorm",
             "type": "uitbreidbaar",
             "omschrijving": "Waardelijst voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde",
             "toelichting": "",
@@ -7932,7 +7932,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bouwaanduiding van waardelijst Omgevingsnormgroep",
                      "toelichting": "bijvoorbeeld voor aaneengebouwde woningen",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -7945,7 +7945,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bouwaanduiding van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -7958,7 +7958,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bouwaanduiding van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -7971,7 +7971,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bouwaanduiding van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -7984,7 +7984,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bouwaanduiding van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -7997,7 +7997,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bouwaanduiding van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8010,7 +8010,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bouwaanduiding van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8023,7 +8023,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bouwaanduiding van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8036,7 +8036,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bouwaanduiding van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8049,7 +8049,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bouwaanduiding van waardelijst Omgevingsnormgroep",
                      "toelichting": "bij voorbeeld voor twee-onder-een-kapwoningen",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8062,7 +8062,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bouwaanduiding van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8075,7 +8075,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8088,7 +8088,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8101,7 +8101,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8114,7 +8114,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bedrijvigheid van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8127,7 +8127,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bedrijvigheid van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8140,7 +8140,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bedrijvigheid van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8153,7 +8153,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bedrijvigheid van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8166,7 +8166,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bedrijvigheid van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8179,7 +8179,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde bedrijvigheid van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8192,7 +8192,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8205,7 +8205,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8218,7 +8218,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8231,7 +8231,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8244,7 +8244,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8257,7 +8257,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8270,7 +8270,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8283,7 +8283,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8296,7 +8296,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8309,7 +8309,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde parkeren van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8322,7 +8322,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde parkeren van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8335,7 +8335,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde parkeren van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8348,7 +8348,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde parkeren van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8361,7 +8361,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering infrastructuur van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8374,7 +8374,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering infrastructuur van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8387,7 +8387,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering infrastructuur van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8400,7 +8400,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering infrastructuur van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8413,7 +8413,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering infrastructuur van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8426,7 +8426,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8439,7 +8439,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8452,7 +8452,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8465,7 +8465,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "bedoeld voor zelfstandige woningen",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8478,7 +8478,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "bedoeld voor zelfstandige woningen",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8491,7 +8491,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "bedoeld voor zelfstandige woningen",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8504,7 +8504,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "bijvoorbeeld voor de eenheden in een gesplitste woning",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8517,7 +8517,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "bijvoorbeeld voor de eenheden in een gesplitste woning",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8530,7 +8530,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "bijvoorbeeld voor de eenheden in een gesplitste woning",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8543,7 +8543,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8556,7 +8556,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8569,7 +8569,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8582,7 +8582,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8595,7 +8595,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8608,7 +8608,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8621,7 +8621,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8634,7 +8634,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8647,7 +8647,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8660,7 +8660,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8673,7 +8673,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8686,7 +8686,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8699,7 +8699,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8712,7 +8712,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8725,7 +8725,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8738,7 +8738,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8751,7 +8751,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8764,7 +8764,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8777,7 +8777,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8790,7 +8790,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8803,7 +8803,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8816,7 +8816,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8829,7 +8829,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8842,7 +8842,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8855,7 +8855,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8868,7 +8868,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8881,7 +8881,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8894,7 +8894,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8907,7 +8907,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8920,7 +8920,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8933,7 +8933,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8946,7 +8946,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8959,7 +8959,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8972,7 +8972,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8985,7 +8985,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -8998,7 +8998,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9011,7 +9011,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9024,7 +9024,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9037,7 +9037,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9050,7 +9050,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9063,7 +9063,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9076,7 +9076,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9089,7 +9089,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9102,7 +9102,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9115,7 +9115,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9128,7 +9128,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9141,7 +9141,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9154,7 +9154,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9167,7 +9167,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9180,7 +9180,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9193,7 +9193,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""
@@ -9206,7 +9206,7 @@
                      "definitie": "Waarde voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde, te gebruiken in combinatie met waarde maatvoering bouwen van waardelijst Omgevingsnormgroep",
                      "toelichting": "",
                      "bron": "IMRO",
-                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Typenorm",
+                     "domein": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/TypeNorm",
                      "symboolcode": {
                         "exact": "",
                         "indicatief": ""

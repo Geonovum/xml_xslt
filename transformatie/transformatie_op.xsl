@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" version="2.0">
   <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
-  <xsl:strip-space elements="*"/>
 
   <xsl:param name="file.config" select="replace(document-uri(),'template','config')"/>
 
@@ -140,13 +139,108 @@
   <xsl:template match="Besluit" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
     <xsl:choose>
       <xsl:when test="Regeling">
+        <!-- regeling met WijzigArtikel en WijzigBijlage -->
         <xsl:element name="BesluitCompact" namespace="{namespace-uri()}">
           <xsl:apply-templates select="@*|node()"/>
         </xsl:element>
       </xsl:when>
-      <xsl:when test="NieuweRegeling">
+      <xsl:when test="NieuweRegeling/Lichaam//Artikel">
+        <!-- regeling met artikelstructuur -->
         <xsl:element name="BesluitKlassiek" namespace="{namespace-uri()}">
-          <xsl:apply-templates select="@*|node()"/>
+          <xsl:element name="RegelingKlassiek" namespace="{namespace-uri()}">
+            <xsl:attribute name="componentnaam" select="string('initieel_reg')"/>
+            <xsl:attribute name="wordt" select="NieuweRegeling/@wordt"/>
+            <xsl:apply-templates select="NieuweRegeling/node()"/>
+          </xsl:element>
+        </xsl:element>
+      </xsl:when>
+      <xsl:when test="NieuweRegeling/Lichaam/FormeleDivisie">
+        <!-- regeling met vrijetekststructuur -->
+        <xsl:element name="BesluitCompact" namespace="{namespace-uri()}">
+          <xsl:element name="RegelingOpschrift" namespace="{namespace-uri()}">
+            <xsl:attribute name="eId" select="string('eId')"/>
+            <xsl:attribute name="wId" select="string('wId')"/>
+            <xsl:element name="Al" namespace="{namespace-uri()}">
+              <xsl:value-of select="string('[regelingopschrift van het besluit]')"/>
+            </xsl:element>
+          </xsl:element>
+          <xsl:element name="Aanhef" namespace="{namespace-uri()}">
+            <xsl:attribute name="eId" select="string('eId')"/>
+            <xsl:attribute name="wId" select="string('wId')"/>
+            <xsl:element name="Al" namespace="{namespace-uri()}">
+              <xsl:value-of select="string('[optionele aanhef]')"/>
+            </xsl:element>
+          </xsl:element>
+          <xsl:element name="Lichaam" namespace="{namespace-uri()}">
+            <xsl:attribute name="eId" select="string('eId')"/>
+            <xsl:attribute name="wId" select="string('wId')"/>
+            <xsl:element name="WijzigArtikel" namespace="{namespace-uri()}">
+              <xsl:attribute name="eId" select="string('eId')"/>
+              <xsl:attribute name="wId" select="string('wId')"/>
+              <xsl:element name="Kop" namespace="{namespace-uri()}">
+                <xsl:element name="Label" namespace="{namespace-uri()}">
+                  <xsl:value-of select="string('Artikel')"/>
+                </xsl:element>
+                <xsl:element name="Nummer" namespace="{namespace-uri()}">
+                  <xsl:value-of select="string('I')"/>
+                </xsl:element>
+                <xsl:element name="Opschrift" namespace="{namespace-uri()}">
+                  <xsl:value-of select="string('[optioneel opschrift]')"/>
+                </xsl:element>
+              </xsl:element>
+              <xsl:element name="Wat" namespace="{namespace-uri()}">
+                <xsl:value-of select="string('[omschrijving wat er besloten wordt, met een verwijzing naar het WijzigBesluit]')"/>
+              </xsl:element>
+            </xsl:element>
+            <xsl:element name="Artikel" namespace="{namespace-uri()}">
+              <xsl:attribute name="eId" select="string('eId')"/>
+              <xsl:attribute name="wId" select="string('wId')"/>
+              <xsl:element name="Kop" namespace="{namespace-uri()}">
+                <xsl:element name="Label" namespace="{namespace-uri()}">
+                  <xsl:value-of select="string('Artikel')"/>
+                </xsl:element>
+                <xsl:element name="Nummer" namespace="{namespace-uri()}">
+                  <xsl:value-of select="string('II')"/>
+                </xsl:element>
+                <xsl:element name="Opschrift" namespace="{namespace-uri()}">
+                  <xsl:value-of select="string('[optioneel opschrift]')"/>
+                </xsl:element>
+              </xsl:element>
+              <xsl:element name="Inhoud" namespace="{namespace-uri()}">
+                <xsl:element name="Al" namespace="{namespace-uri()}">
+                  <xsl:value-of select="string('[artikel dat de inwerkingtreding vaststelt]')"/>
+                </xsl:element>
+              </xsl:element>
+            </xsl:element>
+          </xsl:element>
+          <xsl:element name="Sluiting" namespace="{namespace-uri()}">
+            <xsl:attribute name="eId" select="string('eId')"/>
+            <xsl:attribute name="wId" select="string('wId')"/>
+            <xsl:element name="Al" namespace="{namespace-uri()}">
+              <xsl:value-of select="string('[sluiting]')"/>
+            </xsl:element>
+          </xsl:element>
+          <xsl:element name="WijzigBijlage" namespace="{namespace-uri()}">
+            <xsl:attribute name="eId" select="string('eId')"/>
+            <xsl:attribute name="wId" select="string('wId')"/>
+            <xsl:element name="Kop" namespace="{namespace-uri()}">
+              <xsl:element name="Label" namespace="{namespace-uri()}">
+                <xsl:value-of select="string('Bijlage')"/>
+              </xsl:element>
+              <xsl:element name="Nummer" namespace="{namespace-uri()}">
+                <xsl:value-of select="string('I')"/>
+              </xsl:element>
+              <xsl:element name="Opschrift" namespace="{namespace-uri()}">
+                <xsl:value-of select="string('[optioneel opschrift]')"/>
+              </xsl:element>
+            </xsl:element>
+            <xsl:element name="RegelingVrijetekst" namespace="{namespace-uri()}">
+              <xsl:attribute name="componentnaam" select="string('initieel_reg')"/>
+              <xsl:attribute name="wordt" select="NieuweRegeling/@wordt"/>
+              <xsl:apply-templates select="NieuweRegeling/node()"/>
+            </xsl:element>
+          </xsl:element>
+          <xsl:apply-templates select="Nawerk/node()"/>
         </xsl:element>
       </xsl:when>
     </xsl:choose>
@@ -164,7 +258,7 @@
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="(IntIoRef|ExtIoRef|IntRef)/@doel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+  <xsl:template match="(IntIoRef|ExtIoRef|IntRef|ExtRef)/@doel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
     <xsl:attribute name="ref" select="."/>
   </xsl:template>
 
@@ -173,6 +267,32 @@
       <xsl:attribute name="eId" select="string('geen')"/>
       <xsl:attribute name="wId" select="string('geen')"/>
       <xsl:element name="{name()}" namespace="{namespace-uri()}">
+        <xsl:apply-templates select="@*|node()"/>
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="FormeleDivisie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+    <xsl:element name="Divisie" namespace="{namespace-uri()}">
+      <xsl:attribute name="eId" select="string('geen')"/>
+      <xsl:attribute name="wId" select="string('geen')"/>
+      <xsl:apply-templates select="node()"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="FormeleInhoud|Divisie/Inhoud" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+    <xsl:element name="Divisietekst" namespace="{namespace-uri()}">
+      <xsl:attribute name="eId" select="string('geen')"/>
+      <xsl:attribute name="wId" select="string('geen')"/>
+      <xsl:element name="Inhoud" namespace="{namespace-uri()}">
+        <xsl:apply-templates select="node()"/>
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="redactioneleTitel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+    <xsl:element name="alternatieveTitels" namespace="{namespace-uri()}">
+      <xsl:element name="alternatieveTitel" namespace="{namespace-uri()}">
         <xsl:apply-templates select="@*|node()"/>
       </xsl:element>
     </xsl:element>

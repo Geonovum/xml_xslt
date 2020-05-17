@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns="https://standaarden.overheid.nl/lvbb/stop/" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:xlink="http://www.w3.org/1999/xlink" schemaversie="0.98.3-kern">
+<InformatieObjectVersie>
+   <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/pv26/2020/Bufferzonestiltegebied</FRBRWork>
+      <FRBRExpression>/join/id/regdata/pv26/2020/Bufferzonestiltegebied/nld@2020-03-05;000000044</FRBRExpression>
+      <data:soortWork>/join/id/stop/work_007</data:soortWork>
+   </ExpressionIdentificatie>
+   <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+      <maker>/tooi/id/provincie/pv26</maker>
+      <noemer>Bufferzonestiltegebied</noemer>
+      <officieleTitel></officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+      <!-- Koppeling naar het gml-bestand -->
+      <heeftBestanden>
+         <heeftBestand>
+            <Bestand>
+               <bestandsnaam>Bufferzonestiltegebied.gml</bestandsnaam>
+               <hash>5c6ba1d9311d52cc06c4ad9e0783b80b573d611995c69dda5d01798e999bcbd50b758f3e792e7baa306ff1ae89eb1d8f46109a3c596ab4fbcf8e2ec9b21be40b</hash>
+            </Bestand>
+         </heeftBestand>
+      </heeftBestanden>
+   </InformatieObjectMetadata>
+   <GeoInformatie gml:id="da6c25732-be36-4f6d-b845-b6e0cfaa3cc2" xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+       <geo:featureMember>
+      <geo:Locatie gml:id="ta6c25732-be36-4f6d-b845-b6e0cfaa3cc2">
+        <geo:wId>ta6c25732-be36-4f6d-b845-b6e0cfaa3cc2</geo:wId>
+        <geo:naam>Bufferzonestiltegebied</geo:naam>
+        <geo:geometrie
+          xlink:href="Bufferzonestiltegebied.gml#ta6c25732-be36-4f6d-b845-b6e0cfaa3cc2"
+         />
+      </geo:Locatie>
+    </geo:featureMember>
+   </GeoInformatie>
+   <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <bronactualiteit>2019-01-01</bronactualiteit>
+      <bronbeschrijving>TOP10NL</bronbeschrijving>
+      <brontype>achtergrond</brontype>
+   </Achtergrond>
+</InformatieObjectVersie>
+</AanleveringGIO>

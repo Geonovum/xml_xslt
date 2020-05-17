@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" xmlns:k="http://www.geostandaarden.nl/imow/kaartrecept/v20190901" xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:p="http://www.geostandaarden.nl/imow/pons/v20190901" xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst/v20190901" xmlns:vt-ref="http://www.geostandaarden.nl/imow/vrijetekst-ref/v20190901" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" xmlns:k="http://www.geostandaarden.nl/imow/kaartrecept/v20190901" xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:p="http://www.geostandaarden.nl/imow/pons/v20190901" xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" xmlns:rkow="http://www.geostandaarden.nl/imow/owobject/v20190709" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst/v20190901" xmlns:vt-ref="http://www.geostandaarden.nl/imow/vrijetekst-ref/v20190901" version="2.0">
   <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
   <xsl:strip-space elements="*"/>
 
@@ -126,7 +126,7 @@
             </xsl:element>
           </xsl:element>
         </xsl:when>
-        <xsl:when test="document(concat('file:/',.))//Modules">
+        <xsl:when test="document(concat('file:/',.))//*:Modules">
           <xsl:element name="file">
             <xsl:attribute name="name" select="string('manifest_ow.xml')"/>
             <xsl:element name="fullname">
@@ -196,7 +196,7 @@
       <xsl:namespace name="{$ns_new[15]}" select="$uri_new[15]"/>
       <xsl:namespace name="{$ns_new[17]}" select="$uri_new[17]"/>
       <xsl:namespace name="{$ns_new[18]}" select="$uri_new[18]"/>
-      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.geostandaarden.nl/imow/1.0 ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
+      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
       <xsl:apply-templates select="node()"/>
     </xsl:element>
   </xsl:template>
@@ -237,6 +237,22 @@
     <xsl:element name="{name()}" namespace="{$uri_new[13]}">
       <xsl:value-of select="$waardelijsten[label='idealisatie']/waarden/waarde[label=current()]/uri"/>
     </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="r:thema">
+    <xsl:variable name="thema" select="$waardelijsten[label='thema']/waarden/waarde[label=current()]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$thema">
+        <xsl:element name="r:thema" namespace="{$uri_new[13]}">
+          <xsl:value-of select="$waardelijsten[label='thema']/waarden/waarde[label=current()]/uri"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('GW: waarde &quot;',current(),'&quot; ontbreekt in de waardelijst thema')"/>
+        </xsl:comment>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="r:activiteitaanduiding">
@@ -618,26 +634,26 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template match="Modules">
+  <xsl:template match="*:Modules">
     <xsl:element name="Aanleveringen" namespace="{$xmlns}">
-      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('https://www.geostandaarden.nl/imow ../xsd/bestanden-ow/generiek/manifest-ow.xsd')"/>
+      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.geostandaarden.nl/bestanden-ow/manifest-ow ../xsd/bestanden-ow/generiek/manifest-ow.xsd')"/>
       <xsl:apply-templates select="node()"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="RegelingVersie">
+  <xsl:template match="*:RegelingVersie">
     <xsl:element name="Aanlevering" namespace="{$xmlns}">
       <xsl:apply-templates select="@*|node()"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="FRBRwork">
+  <xsl:template match="*:FRBRwork">
     <xsl:element name="WorkIDRegeling" namespace="{$xmlns}">
       <xsl:value-of select="document($file.config)//WorkID"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="FRBRExpression">
+  <xsl:template match="*:FRBRExpression">
     <xsl:element name="DoelID" namespace="{$xmlns}">
       <xsl:value-of select="document($file.config)//DoelID"/>
     </xsl:element>
@@ -645,7 +661,7 @@
 
   <!-- vervallen attributen -->
 
-  <xsl:template match="@*[name()=('ow:regeltekstId','wIdRegeling')]">
+  <xsl:template match="@*[name()=('ow:regeltekstId','rkow:regeltekstId','wIdRegeling')]">
     <!-- doe niets -->
   </xsl:template>
 

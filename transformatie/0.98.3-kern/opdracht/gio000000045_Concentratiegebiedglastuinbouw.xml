@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns="https://standaarden.overheid.nl/lvbb/stop/" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:xlink="http://www.w3.org/1999/xlink" schemaversie="0.98.3-kern">
+<InformatieObjectVersie>
+   <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/pv26/2020/Concentratiegebiedglastuinbouw</FRBRWork>
+      <FRBRExpression>/join/id/regdata/pv26/2020/Concentratiegebiedglastuinbouw/nld@2020-03-05;000000045</FRBRExpression>
+      <data:soortWork>/join/id/stop/work_007</data:soortWork>
+   </ExpressionIdentificatie>
+   <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+      <maker>/tooi/id/provincie/pv26</maker>
+      <noemer>Concentratiegebiedglastuinbouw</noemer>
+      <officieleTitel></officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+      <!-- Koppeling naar het gml-bestand -->
+      <heeftBestanden>
+         <heeftBestand>
+            <Bestand>
+               <bestandsnaam>Concentratiegebiedglastuinbouw.gml</bestandsnaam>
+               <hash>54e337e796dc19e97608f142ecf4007ca7ac9fe42f599c0a2cb4889620e451eb1e9b7dedac16d599b54de6f08e2c8f22f7392fd2180cc9fbacf6adf9b19f0022</hash>
+            </Bestand>
+         </heeftBestand>
+      </heeftBestanden>
+   </InformatieObjectMetadata>
+   <GeoInformatie gml:id="d15ef9c6c-35a7-43de-9a00-b4760918a1e7" xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+       <geo:featureMember>
+      <geo:Locatie gml:id="t15ef9c6c-35a7-43de-9a00-b4760918a1e7">
+        <geo:wId>t15ef9c6c-35a7-43de-9a00-b4760918a1e7</geo:wId>
+        <geo:naam>Concentratiegebiedglastuinbouw</geo:naam>
+        <geo:geometrie
+          xlink:href="Concentratiegebiedglastuinbouw.gml#t15ef9c6c-35a7-43de-9a00-b4760918a1e7"
+         />
+      </geo:Locatie>
+    </geo:featureMember>
+   </GeoInformatie>
+   <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <bronactualiteit>2019-01-01</bronactualiteit>
+      <bronbeschrijving>TOP10NL</bronbeschrijving>
+      <brontype>achtergrond</brontype>
+   </Achtergrond>
+</InformatieObjectVersie>
+</AanleveringGIO>

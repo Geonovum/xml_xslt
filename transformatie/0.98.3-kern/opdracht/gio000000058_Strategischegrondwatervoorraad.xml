@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns="https://standaarden.overheid.nl/lvbb/stop/" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:xlink="http://www.w3.org/1999/xlink" schemaversie="0.98.3-kern">
+<InformatieObjectVersie>
+   <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/pv26/2020/Strategischegrondwatervoorraad</FRBRWork>
+      <FRBRExpression>/join/id/regdata/pv26/2020/Strategischegrondwatervoorraad/nld@2020-03-05;000000058</FRBRExpression>
+      <data:soortWork>/join/id/stop/work_007</data:soortWork>
+   </ExpressionIdentificatie>
+   <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+      <maker>/tooi/id/provincie/pv26</maker>
+      <noemer>Strategischegrondwatervoorraad</noemer>
+      <officieleTitel></officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+      <!-- Koppeling naar het gml-bestand -->
+      <heeftBestanden>
+         <heeftBestand>
+            <Bestand>
+               <bestandsnaam>Strategischegrondwatervoorraad.gml</bestandsnaam>
+               <hash>006d05db8b591ea9219fe41e8dca0fb0aeb079adc340b1a85d202236a67454f17235b919687b2275b105dfb2c6f806e3071837f9d07657f5a54b4a426a69340f</hash>
+            </Bestand>
+         </heeftBestand>
+      </heeftBestanden>
+   </InformatieObjectMetadata>
+   <GeoInformatie gml:id="d7258679b-7568-4e1b-937e-aaa5f78e0844" xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+       <geo:featureMember>
+      <geo:Locatie gml:id="t7258679b-7568-4e1b-937e-aaa5f78e0844">
+        <geo:wId>t7258679b-7568-4e1b-937e-aaa5f78e0844</geo:wId>
+        <geo:naam>Strategischegrondwatervoorraad</geo:naam>
+        <geo:geometrie
+          xlink:href="Strategischegrondwatervoorraad.gml#t7258679b-7568-4e1b-937e-aaa5f78e0844"
+         />
+      </geo:Locatie>
+    </geo:featureMember>
+   </GeoInformatie>
+   <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <bronactualiteit>2019-01-01</bronactualiteit>
+      <bronbeschrijving>TOP10NL</bronbeschrijving>
+      <brontype>achtergrond</brontype>
+   </Achtergrond>
+</InformatieObjectVersie>
+</AanleveringGIO>

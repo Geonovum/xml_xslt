@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<lvbb:publicatieOpdracht xmlns:lvbb="http://www.overheid.nl/2017/lvbb" 
+  xmlns:stop="http://www.overheid.nl/2017/stop"
+  xmlns:tns="http://www.logius.nl/digikoppeling/gb/2010/10"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <lvbb:idLevering>tbll1147d-9176-4e7e-991c-a15fef88ut</lvbb:idLevering>
+  <lvbb:publicatie>akn_nl_act_pv26_2020_act3.xml</lvbb:publicatie>
+  <lvbb:datumBekendmaking>2020-03-05</lvbb:datumBekendmaking>
+</lvbb:publicatieOpdracht>
+

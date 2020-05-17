@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190709" xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190801" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190801" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901" xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709" xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/v20190709" xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190709" xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709">
+	<sl:standBestand>
+		<sl:dataset>provincie Utrecht</sl:dataset>
+		<sl:inhoud>
+			<sl:gebied>provincie Utrecht</sl:gebied>
+			<sl:leveringsId>tbll1147d-9176-4e7e-991c-a15fef88ut</sl:leveringsId>
+			<sl:objectTypen>
+				<sl:objectType>Activiteit</sl:objectType>
+			</sl:objectTypen>
+		</sl:inhoud>
+        <sl:stand>
+	<ow-dc:owObject>
+		<rol:Activiteit ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000051">
+			<rol:identificatie>nl.imow-pv9926.activiteit.2020000000007</rol:identificatie>
+			<rol:naam>buitengebruikstelling van een boorgat </rol:naam>
+			<rol:groep>beperkingengebiedactiviteit m.b.t. grondwater</rol:groep>
+			<rol:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000039"/><l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000061"/>
+			</rol:locatieaanduiding>
+			<rol:bovenliggendeActiviteit>
+            <!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+				<!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 --> 
+			</rol:bovenliggendeActiviteit>
+		</rol:Activiteit>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<rol:Activiteit ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000070">
+			<rol:identificatie>nl.imow-pv9926.activiteit.2020000000013</rol:identificatie>
+			<rol:naam>verwijsborden plaatsen kort voor en tijdens een evenement</rol:naam>
+			<rol:groep>beperkingengebiedactiviteit</rol:groep>
+			<rol:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000056"/>
+			</rol:locatieaanduiding>
+			<rol:bovenliggendeActiviteit>
+            <!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+				<!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 --> 
+			</rol:bovenliggendeActiviteit>
+		</rol:Activiteit>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<rol:Activiteit ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000054">
+			<rol:identificatie>nl.imow-pv9926.activiteit.2020000000008</rol:identificatie>
+			<rol:naam>meststoffen op of in de bodem te brengen</rol:naam>
+			<rol:groep>beperkingengebiedactiviteit m.b.t. grondwater</rol:groep>
+			<rol:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000039"/><l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000061"/>
+			</rol:locatieaanduiding>
+			<rol:bovenliggendeActiviteit>
+            <!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+				<!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 --> 
+			</rol:bovenliggendeActiviteit>
+		</rol:Activiteit>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<rol:Activiteit ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000096">
+			<rol:identificatie>nl.imow-pv9926.activiteit.2020000000014</rol:identificatie>
+			<rol:naam>milieubelastende activiteiten met een verstorende werking op natuurlijke geluiden rond stiltegebieden</rol:naam>
+			<rol:groep>milieubelastende activiteit</rol:groep>
+			<rol:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</rol:locatieaanduiding>
+			<rol:bovenliggendeActiviteit>
+            <!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+				<!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 --> 
+			</rol:bovenliggendeActiviteit>
+		</rol:Activiteit>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<rol:Activiteit ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000102">
+			<rol:identificatie>nl.imow-pv9926.activiteit.2020000000015</rol:identificatie>
+			<rol:naam>Het gebruiken van een muziekinstrument of ander vergelijkbaar geluidsapparaat</rol:naam>
+			<rol:groep>milieubelastende activiteit</rol:groep>
+			<rol:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000060"/>
+			</rol:locatieaanduiding>
+			<rol:bovenliggendeActiviteit>
+            <!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+				<!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 --> 
+			</rol:bovenliggendeActiviteit>
+		</rol:Activiteit>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<rol:Activiteit ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000068">
+			<rol:identificatie>nl.imow-pv9926.activiteit.2020000000010</rol:identificatie>
+			<rol:naam>standplaats voor handel of bedrijf in te nemen en te hebben</rol:naam>
+			<rol:groep>beperkingengebiedactiviteit</rol:groep>
+			<rol:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000056"/>
+			</rol:locatieaanduiding>
+			<rol:bovenliggendeActiviteit>
+            <!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+				<!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 --> 
+			</rol:bovenliggendeActiviteit>
+		</rol:Activiteit>
+	</ow-dc:owObject>
+</sl:stand> <sl:stand>
+	<ow-dc:owObject>
+		<rol:Activiteit ow:regeltekstId="nl.imow-pv9926.regeltekst.2020000000068">
+			<rol:identificatie>nl.imow-pv9926.activiteit.2020000000036</rol:identificatie>
+			<rol:naam>b.	een verkooppunt voor het leveren van energie aan voertuigen of andere goederen in te richten en te hebben</rol:naam>
+			<rol:groep>beperkingengebiedactiviteit</rol:groep>
+			<rol:locatieaanduiding>
+				<l-ref:LocatieRef xlink:href="nl.imow-pv9926.gebied.2020000000056"/>
+			</rol:locatieaanduiding>
+			<rol:bovenliggendeActiviteit>
+            <!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+				<rol-ref:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+				<!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 --> 
+			</rol:bovenliggendeActiviteit>
+		</rol:Activiteit>
+	</ow-dc:owObject>
+</sl:stand>		
+	</sl:standBestand>
+</ow-dc:owBestand>

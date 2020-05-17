@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>provincie Utrecht</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>provincie Utrecht</sl:gebied>
+         <sl:leveringsId>tbll1147d-9176-4e7e-991c-a15fef88ut</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Activiteit</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv9926.activiteit.2020000000007</rol:identificatie>
+               <rol:naam>buitengebruikstelling van een boorgat </rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BeperkingengebiedactiviteitMBTGrondwater</rol:groep>
+               <rol:bovenliggendeActiviteit><!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+                  <!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 -->
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv9926.activiteit.2020000000013</rol:identificatie>
+               <rol:naam>verwijsborden plaatsen kort voor en tijdens een evenement</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Beperkingengebiedactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit><!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+                  <!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 -->
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv9926.activiteit.2020000000008</rol:identificatie>
+               <rol:naam>meststoffen op of in de bodem te brengen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BeperkingengebiedactiviteitMBTGrondwater</rol:groep>
+               <rol:bovenliggendeActiviteit><!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+                  <!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 -->
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv9926.activiteit.2020000000014</rol:identificatie>
+               <rol:naam>milieubelastende activiteiten met een verstorende werking op natuurlijke geluiden rond stiltegebieden</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit><!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+                  <!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 -->
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv9926.activiteit.2020000000015</rol:identificatie>
+               <rol:naam>Het gebruiken van een muziekinstrument of ander vergelijkbaar geluidsapparaat</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit><!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+                  <!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 -->
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv9926.activiteit.2020000000010</rol:identificatie>
+               <rol:naam>standplaats voor handel of bedrijf in te nemen en te hebben</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Beperkingengebiedactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit><!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+                  <!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 -->
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv9926.activiteit.2020000000036</rol:identificatie>
+               <rol:naam>b.	een verkooppunt voor het leveren van energie aan voertuigen of andere goederen in te richten en te hebben</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Beperkingengebiedactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit><!-- nl.imow-mn002.activiteit.MilieubelastendeActiviteitRijk gebruikt in eerste instantie. is dit nodig voor provincies? -->
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+                  <!-- onduidelijk waar deze vandaan moet komen. Eerder gebruikt; nl.imow-mn002.activiteit.FunctioneleStructuur0010 -->
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>
