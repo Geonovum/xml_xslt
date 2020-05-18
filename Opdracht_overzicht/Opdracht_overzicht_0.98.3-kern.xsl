@@ -26,7 +26,7 @@
                     </xsl:element>
                 </xsl:element>
                 <xsl:element name="UL">
-                    <xsl:element name="LI">Doelen: <xsl:for-each select="./*[local-name()='BesluitVersie']/*[local-name()='ConsolidatieInformatie']/*[local-name()='Tijdstempels']">
+                    <xsl:element name="LI">Doelen: <xsl:for-each select="./*[local-name()='BesluitVersie']/*[local-name()='BesluitDoel']/*[local-name()='BeoogdeRegelgeving']/*[local-name()='Tijdstempels']">
                             <xsl:element name="UL">
                                 <xsl:element name="LI">Doel: <xsl:value-of select="./*[local-name()='Tijdstempel']/*[local-name()='doel']//text()" />
                                 </xsl:element>
