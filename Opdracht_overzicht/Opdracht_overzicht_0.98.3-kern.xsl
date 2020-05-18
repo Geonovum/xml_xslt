@@ -110,18 +110,6 @@
                                                                         <xsl:element name="LI">Identificatie: <xsl:value-of select="$activiteit_ref"/>
                                                                         </xsl:element>
                                                                         <xsl:apply-templates select="collection(concat($folder, '?select=*.xml;recurse=yes'))/root()/element()//*[local-name()='identificatie'][text()=$activiteit_ref]/.." mode="activiteit"/>
-                                                                        <xsl:element name="LI">ActiviteitLocatieaanduiding: <xsl:element name="UL">
-                                                                                <xsl:element name="LI">Identificatie: <xsl:value-of select="./*[local-name()='ActiviteitLocatieaanduiding']/*[local-name()='identificatie']/text()"/>
-                                                                                </xsl:element>
-                                                                                <xsl:element name="LI">Activiteitregelkwalificatie: <xsl:value-of select="./*[local-name()='ActiviteitLocatieaanduiding']/*[local-name()='activiteitregelkwalificatie']/text()"/>
-                                                                                </xsl:element>
-                                                                                <xsl:element name="LI">Locatieaanduiding:<xsl:element name="UL">
-                                                                                        <xsl:attribute name="style" select="'background-color:#707070'"/>
-                                                                                        <xsl:apply-templates mode="locatie" select="./*[local-name()='ActiviteitLocatieaanduiding']/*[local-name()='locatieaanduiding']/*[local-name()='LocatieRef']"/>
-                                                                                    </xsl:element>
-                                                                                </xsl:element>
-                                                                            </xsl:element>
-                                                                        </xsl:element>
                                                                     </xsl:element>
                                                                 </xsl:element>
                                                                 <xsl:element name="br"/>
@@ -160,6 +148,11 @@
             <xsl:element name="LI">Naam: <xsl:value-of select="./*[local-name()='naam']" />
             </xsl:element>
             <xsl:element name="LI">Groep: <xsl:value-of select="./*[local-name()='groep']" />
+            </xsl:element>
+            <xsl:element name="LI">Locatieaanduiding:<xsl:element name="UL">
+                <xsl:attribute name="style" select="'background-color:#707070'"/>
+                <xsl:apply-templates mode="locatie" select="./*[local-name()='locatieaanduiding']/*[local-name()='LocatieRef']"/>
+            </xsl:element>
             </xsl:element>
             <xsl:variable name="bovenliggend" select="./*[local-name()='bovenliggendeActiviteit']/*[local-name()='ActiviteitRef']/@xlink:href"/>
             <xsl:element name="LI">Bovenliggende activiteit: <xsl:element name="UL">
