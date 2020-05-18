@@ -53,34 +53,26 @@
                                 </xsl:element>
                                 <xsl:element name="LI">Inhoud: <xsl:value-of select="./*[local-name()='Inhoud']"/>
                                 </xsl:element>
-<!--                                <xsl:element name="LI">
-                                    <xsl:variable name="inhoud" select="./*[local-name()='Inhoud']/*"/>
-                                    <xsl:copy>
-                                        <xsl:text disable-output-escaping="yes">&lt;![CDATA[</xsl:text>
-                                        <xsl:copy-of select="$inhoud"/>
-                                        <xsl:text disable-output-escaping="yes">]]&gt;</xsl:text>
-                                    </xsl:copy>
-                                </xsl:element>
--->                                    <xsl:element name="LI"><xsl:attribute name="style" select="'background-color:#cccccc'"/>Regeltekst(en): <xsl:variable name="ow_regeltekst" select="collection(concat($folder, '?select=*.xml;recurse=yes'))[root()/element()//*[local-name()='objectType']='Regeltekst']"/>
+                                    <xsl:element name="LI"><xsl:attribute name="style" select="'background-color:#cccccc'"/>Regeltekst(en): 
+                                        <xsl:variable name="ow_regeltekst" select="collection(concat($folder, '?select=*.xml;recurse=yes'))[root()/element()//*[local-name()='objectType']='Regeltekst']"/>
                                         <xsl:for-each select="$ow_regeltekst/root()/element()//*[@wId=$zoek_wId]/*[local-name()='identificatie']">
                                             <xsl:variable name="regel_id" select="./text()"/>
                                             <xsl:element name="UL">
-                                                
                                                 <xsl:element name="LI">
-                                                    <xsl:for-each select="$ow_regeltekst/root()/element()//*[@xlink:href=$regel_id]">
-                                                        Juridische regel: <xsl:value-of select="./../../local-name()"/>
+                                                    <xsl:for-each select="$ow_regeltekst/root()/element()//*[@xlink:href=$regel_id]/../..">
+                                                        Juridische regel: <xsl:value-of select="./local-name()"/>
                                                         <xsl:element name="UL">
                                                             <xsl:element name="LI">Identificatie: 
                                                                 <xsl:value-of select="$regel_id"/>
                                                             </xsl:element>
-                                                            <xsl:for-each select="./../../*[local-name()='locatieaanduiding']">
+                                                            <xsl:for-each select="./*[local-name()='locatieaanduiding']">
                                                                 <xsl:element name="LI">Locatieaanduiding:<xsl:element name="UL">
                                                                         <xsl:attribute name="style" select="'background-color:#707070'"/>
                                                                         <xsl:apply-templates mode="locatie" select="./*[local-name()='LocatieRef']"/>
                                                                     </xsl:element>
                                                                 </xsl:element>
                                                             </xsl:for-each>
-                                                            <xsl:for-each select="./../../*[local-name()='gebiedsaanwijzing']">
+                                                            <xsl:for-each select="./*[local-name()='gebiedsaanwijzing']">
                                                                 <xsl:element name="LI">Gebiedsaanwijzing:<xsl:element name="UL">
                                                                         <xsl:attribute name="style" select="'background-color:#909090'"/>
                                                                         <xsl:variable name="gebiedsaanwijzing_ref" select="./*[local-name()='GebiedsaanwijzingRef']/@xlink:href"/>
@@ -102,7 +94,7 @@
                                                                     </xsl:element>
                                                                 </xsl:element>
                                                             </xsl:for-each>
-                                                            <xsl:for-each select="./../../*[local-name()='activiteitaanduiding']">
+                                                            <xsl:for-each select="./*[local-name()='activiteitaanduiding']">
                                                                 <xsl:element name="LI">Activiteitaanduiding: <xsl:element name="UL">
                                                                         <xsl:attribute name="style" select="'background-color:#aaaaaa'"/>
                                                                         <xsl:variable name="activiteit_ref" select="./*[local-name()='ActiviteitRef']/@xlink:href"/>
