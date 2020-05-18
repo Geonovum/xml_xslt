@@ -26,7 +26,7 @@
                     </xsl:element>
                 </xsl:element>
                 <xsl:element name="UL">
-                    <xsl:element name="LI">Doelen: <xsl:for-each select="./*[local-name()='BesluitVersie']/*[local-name()='BesluitDoel']/*[local-name()='BeoogdeRegelgeving']/*[local-name()='Tijdstempels']">
+                    <xsl:element name="LI">Tijdstempels: <xsl:for-each select="./*[local-name()='BesluitVersie']/*[local-name()='BesluitDoel']/*[local-name()='BeoogdeRegelgeving']/*[local-name()='Tijdstempels']">
                             <xsl:element name="UL">
                                 <xsl:element name="LI">Doel: <xsl:value-of select="./*[local-name()='Tijdstempel']/*[local-name()='doel']//text()" />
                                 </xsl:element>
@@ -39,7 +39,11 @@
                                 <xsl:element name="LI">Datum: <xsl:value-of select="./*[local-name()='Tijdstempel']/*[local-name()='datum']//text()" />
                                 </xsl:element>
                             </xsl:element>
-                        </xsl:for-each>
+                        <xsl:element name="UL">
+                            <xsl:element name="LI">eId: <xsl:value-of select="./*[local-name()='Tijdstempel']/*[local-name()='eId']//text()" />
+                            </xsl:element>
+                        </xsl:element>
+                    </xsl:for-each>
                     </xsl:element>
                 </xsl:element>
                 <xsl:element name="UL">
