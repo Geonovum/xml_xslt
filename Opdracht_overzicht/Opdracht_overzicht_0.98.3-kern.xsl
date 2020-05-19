@@ -2,19 +2,27 @@
 <xsl:stylesheet version="2.0" xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/" xmlns:imop="https://standaarden.overheid.nl/lvbb/stop/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ogr="http://ogr.maptools.org/" xmlns:saxon="http://saxon.sf.net/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:g-ref="http://www.geostandaarden.nl/imow/geometrie-ref/v20190901" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" xmlns:g="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901" xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901" xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709" xmlns:rkow="http://www.geostandaarden.nl/imow/owobject/v20190709" xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/" xmlns:geo_stop="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.overheid.nl/imop/def# ../lvbb/LVBB-stop.xsd" xmlns="https://standaarden.overheid.nl/lvbb/stop/">
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
     <!-- Pad naar het setje bestanden van de opdracht -->
-    <xsl:param name="folder" select="'file:///F:/DSO/Geonovum/GitHub/xml_omgevingsplan_gemeentestad_0.98.3-kern/Opdracht'"/>
+    <xsl:param name="folder" select="'file:///\\\\tsclient/D/Geonovum/Omgevingsplan_Amsterdam_0.98.3-kern'"/>
     <!-- de naam van het root element van het OP bestand -->
     <xsl:param name="OP_root" select="'AanleveringBesluit'"/>
+    <xsl:function name="tekst:regeling" as="node()">
+        <xsl:param name="input"/>
+        <xsl:if test="$input/*[local-name()='BesluitVersie']/*[local-name()='Besluit']/child::node()[local-name()='NieuweRegeling']">
+            <xsl:sequence select="$input/*[local-name()='BesluitVersie']/*[local-name()='Besluit']/*[local-name()='NieuweRegeling']"/>
+        </xsl:if>
+        <xsl:if test="$input/*[local-name()='BesluitVersie']/*[local-name()='Besluit']/child::node()[local-name()='Regeling']">
+            <xsl:sequence select="$input/*[local-name()='BesluitVersie']/*[local-name()='Besluit']/*[local-name()='Regeling']/*[local-name()='WijzigBijlage']/*[local-name()='MaakInitieleRegeling']"/>
+        </xsl:if>
+    </xsl:function>
     <!-- template voor op bestand -->
     <xsl:template match="." mode="list">
+        <xsl:variable name="regeling" select="tekst:regeling(.)"/>
         <xsl:element name="LI" inherit-namespaces="yes" namespace="">
             <xsl:attribute name="style" select="'background-color:black;color:white'"/>
             <xsl:value-of select="./local-name()"/>
         </xsl:element>
         <xsl:element name="UL">
             <xsl:attribute name="style" select="'background-color:#eeeeee'"/>
-            <xsl:variable name="besluitversie" select="./*[local-name()='BesluitVersie']"/>
-            <xsl:variable name="regeling" select="./*[local-name()='BesluitVersie']/*[local-name()='Besluit']/*[local-name()='Regeling']/*[local-name()='WijzigBijlage']/*[local-name()='MaakInitieleRegeling']"/>
             <xsl:element name="LI">Regeling: 
                 <xsl:element name="UL">
                     <xsl:variable name="opschrift" select="$regeling/*[local-name()='RegelingOpschrift']/*[local-name()='Al']/text()"/>
