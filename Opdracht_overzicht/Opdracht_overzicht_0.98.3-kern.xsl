@@ -66,16 +66,8 @@
                                 </xsl:element>
                                 <xsl:element name="LI">Inhoud: <xsl:value-of select="./*[local-name()='Inhoud']"/>
                                 </xsl:element>
-<!--                                <xsl:element name="LI">
-                                    <xsl:variable name="inhoud" select="./*[local-name()='Inhoud']/*"/>
-                                    <xsl:copy>
-                                        <xsl:text disable-output-escaping="yes">&lt;![CDATA[</xsl:text>
-                                        <xsl:copy-of select="$inhoud"/>
-                                        <xsl:text disable-output-escaping="yes">]]&gt;</xsl:text>
-                                    </xsl:copy>
-                                </xsl:element>
--->                                    <xsl:element name="LI"><xsl:attribute name="style" select="'background-color:#cccccc'"/>Regeltekst(en): <xsl:variable name="ow_regeltekst" select="collection(concat($folder, '?select=*.xml;recurse=yes'))[root()/element()//*[local-name()='objectType']='Regeltekst']"/>
-                                        <xsl:for-each select="$ow_regeltekst/root()/element()//*[@wId=$zoek_wId]/*[local-name()='identificatie']">
+                                    <xsl:element name="LI"><xsl:attribute name="style" select="'background-color:#cccccc'"/>Regeltekst(en): <xsl:variable name="ow_regeltekst" select="collection(concat($folder, '?select=*.xml;recurse=yes'))[root()/element()//*[local-name()='objectType']='Regeltekst']"/>
+                                        <xsl:for-each select="$ow_regeltekst/root()/element()//*[contains(@wId,$zoek_wId)]/*[local-name()='identificatie']">
                                             <xsl:variable name="regel_id" select="./text()"/>
                                             <xsl:element name="UL">
                                                 
