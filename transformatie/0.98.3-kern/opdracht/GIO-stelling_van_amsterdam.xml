@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" schemaversie="0.98.3-kern" xsi:schemaLocation="http://www.overheid.nl/imop/def# ../lvbb/LVBB-stop.xsd">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/gio_013</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/gio_013/nld@2020-01-01</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Stelling van Amsterdam</noemer>
+         <officieleTitel>Stelling van Amsterdam</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>stelling_van_amsterdam.gml</bestandsnaam>
+                  <hash>e24049862e34b093dc8b412b74d67178345f92c5131491fec33d0003fc04e562b708afbde7db6a14082aa96dbf3f61474045b624ec72c5238e0a59c8e423c6f1</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+         <featureMember>
+            <Locatie gml:id="stelling_van_amsterdam">
+               <wId>stelling_van_amsterdam</wId>
+               <naam>Stelling van Amsterdam</naam>
+               <geometrie xlink:href="stelling_van_amsterdam.gml#278e60a7-7a45-445e-bc2e-8300b3928854"/>
+            </Locatie>
+         </featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2020-01-01</bronactualiteit>
+         <bronbeschrijving>top10nl</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+         <nauwkeurigheid>10</nauwkeurigheid>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

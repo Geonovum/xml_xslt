@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" schemaversie="0.98.3-kern" xsi:schemaLocation="http://www.overheid.nl/imop/def# ../lvbb/LVBB-stop.xsd">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/gio_001</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/gio_001/nld@2020-01-01</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Eemland</noemer>
+         <officieleTitel>Eemland</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>eemland.gml</bestandsnaam>
+                  <hash>bd14d2e8be6d410b6370ce20075365474de3d20c274087edcfddbfa5e73a7073296f1834c3c97c7f961853d6e7bdc5d40dfbdc6bce14810990f588e0dd864628</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+         <featureMember>
+            <Locatie gml:id="eemland">
+               <wId>eemland</wId>
+               <naam>Eemland</naam>
+               <geometrie xlink:href="eemland.gml#0a6b8e43-b2f8-410d-b901-93a5db42fdea"/>
+            </Locatie>
+         </featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2020-01-01</bronactualiteit>
+         <bronbeschrijving>top10nl</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+         <nauwkeurigheid>10</nauwkeurigheid>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

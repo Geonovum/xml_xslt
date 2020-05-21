@@ -258,6 +258,30 @@
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="Lichaam" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+    <!-- deze template kan weg als issue #83 afgehandeld is -->
+    <xsl:element name="Lichaam" namespace="{namespace-uri()}">
+      <xsl:apply-templates select="@*"/>
+      <xsl:choose>
+        <xsl:when test="count(FormeleDivisie|FormeleInhoud) gt 1">
+          <xsl:element name="Divisie" namespace="{namespace-uri()}">
+            <xsl:attribute name="eId" select="string('geen')"/>
+            <xsl:attribute name="wId" select="string('geen')"/>
+            <xsl:element name="Kop" namespace="{namespace-uri()}">
+              <xsl:element name="Opschrift" namespace="{namespace-uri()}">
+                <xsl:value-of select="string('[extra opschrift]')"/>
+              </xsl:element>
+            </xsl:element>
+            <xsl:apply-templates select="node()"/>
+          </xsl:element>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:apply-templates select="node()"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="(IntIoRef|ExtIoRef|IntRef|ExtRef)/@doel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
     <xsl:attribute name="ref" select="."/>
   </xsl:template>

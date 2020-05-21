@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" schemaversie="0.98.3-kern" xsi:schemaLocation="http://www.overheid.nl/imop/def# ../lvbb/LVBB-stop.xsd">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/gio_010</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/gio_010/nld@2020-01-01</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Recreatietoervaartnet</noemer>
+         <officieleTitel>Recreatietoervaartnet</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>recreatietoervaartnet.gml</bestandsnaam>
+                  <hash>51accc4376da0ead1ce56e4410830bb46e9529aca637f03a32ce67fc4166fbd834344136cf09d5eee951bd7adf945c0612ce082ef9e4ededc33f5fc39b2dbeb9</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+         <featureMember>
+            <Locatie gml:id="recreatietoervaartnet">
+               <wId>recreatietoervaartnet</wId>
+               <naam>Recreatietoervaartnet</naam>
+               <geometrie xlink:href="recreatietoervaartnet.gml#aab10b24-00b0-4ed4-9c82-883416187cee"/>
+            </Locatie>
+         </featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2020-01-01</bronactualiteit>
+         <bronbeschrijving>top10nl</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+         <nauwkeurigheid>10</nauwkeurigheid>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:g-ref="http://www.geostandaarden.nl/imow/geometrie-ref/v20190901"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709"
+                 xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901"
+                 xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901"
+                 xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901"
+                 xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst/v20190901"
+                 xmlns:vt-ref="http://www.geostandaarden.nl/imow/vrijetekst-ref/v20190901"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow https://register.geostandaarden.nl/xmlschema/tpod/v0.98.2-kern/bestanden-ow/deelbestand-ow/v20190901/IMOW_Deelbestand_v0_9_8_2.xsd">
+   <sl:standBestand>
+      <sl:dataset>OVPU-20191211</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Provincie Utrecht</sl:gebied>
+         <sl:leveringsId>/akn/nl/act/pv26/2019/OVPU-20191211/nld@2019-12-11</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebiedsaanwijzing</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000010">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000001</ga:identificatie>
+               <ga:type>Landschap</ga:type>
+               <ga:naam>Eemland</ga:naam>
+               <ga:groep>specifiek benoemd landschap</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000001"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000010">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000002</ga:identificatie>
+               <ga:type>Landschap</ga:type>
+               <ga:naam>Gelderse vallei</ga:naam>
+               <ga:groep>specifiek benoemd landschap</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000002"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000010">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000003</ga:identificatie>
+               <ga:type>Landschap</ga:type>
+               <ga:naam>Groene Hart</ga:naam>
+               <ga:groep>specifiek benoemd landschap</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000003"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000010">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000004</ga:identificatie>
+               <ga:type>Landschap</ga:type>
+               <ga:naam>Rivierengebied</ga:naam>
+               <ga:groep>specifiek benoemd landschap</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000004"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000011">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000005</ga:identificatie>
+               <ga:type>Erfgoed</ga:type>
+               <ga:naam>Hollandse waterlinies</ga:naam>
+               <ga:groep>linie</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000005"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000011">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000006</ga:identificatie>
+               <ga:type>Erfgoed</ga:type>
+               <ga:naam>Neder-Germaanse Limes</ga:naam>
+               <ga:groep>archeologie</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000006"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000021">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000007</ga:identificatie>
+               <ga:type>Ruimtelijk gebruik</ga:type>
+               <ga:naam>gezonde en veilige leefomgeving</ga:naam>
+               <ga:groep>overig</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000007"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000032">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000008</ga:identificatie>
+               <ga:type>Geluid</ga:type>
+               <ga:naam>Geluidscontour 61 dB Len</ga:naam>
+               <ga:groep>contour</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000008"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000032">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000009</ga:identificatie>
+               <ga:type>Geluid</ga:type>
+               <ga:naam>stiltegebied</ga:naam>
+               <ga:groep>stiltegebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000009"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000034">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000010</ga:identificatie>
+               <ga:type>Ruimtelijk gebruik</ga:type>
+               <ga:naam>recreatietoervaartnet</ga:naam>
+               <ga:groep>recreatiegebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000010"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000035">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000011</ga:identificatie>
+               <ga:type>Ruimtelijk gebruik</ga:type>
+               <ga:naam>recreatiewoningen</ga:naam>
+               <ga:groep>recreatiegebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000011"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000039">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000012</ga:identificatie>
+               <ga:type>Landschap</ga:type>
+               <ga:naam>aardkundige waarden</ga:naam>
+               <ga:groep>aardkundige waarden</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000012"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000039">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000013</ga:identificatie>
+               <ga:type>Erfgoed</ga:type>
+               <ga:naam>stelling van Amsterdam</ga:naam>
+               <ga:groep>linie</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000013"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000040">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000014</ga:identificatie>
+               <ga:type>Ruimtelijk gebruik</ga:type>
+               <ga:naam>duurzaam gebruik van de ondergrond</ga:naam>
+               <ga:groep>overig</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000014"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000042">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000015</ga:identificatie>
+               <ga:type>Water en watersysteem</ga:type>
+               <ga:naam>grondwaterlichamen</ga:naam>
+               <ga:groep>grondwaterdeelgebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000015"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000043">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000016</ga:identificatie>
+               <ga:type>Water en watersysteem</ga:type>
+               <ga:naam>beschermingszone drinkwaterwinning</ga:naam>
+               <ga:groep>grondwater</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000016"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000043">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000017</ga:identificatie>
+               <ga:type>Water en watersysteem</ga:type>
+               <ga:naam>zoekgebied drinkwater</ga:naam>
+               <ga:groep>grondwater</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000017"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000046">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000018</ga:identificatie>
+               <ga:type>Ruimtelijk gebruik</ga:type>
+               <ga:naam>klimaatadaptatie</ga:naam>
+               <ga:groep>overig</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000018"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000047">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000019</ga:identificatie>
+               <ga:type>Water en watersysteem</ga:type>
+               <ga:naam>waterbergingsgebied</ga:naam>
+               <ga:groep>waterberging</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000019"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000048">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000020</ga:identificatie>
+               <ga:type>Water en watersysteem</ga:type>
+               <ga:naam>overstroombaar gebied</ga:naam>
+               <ga:groep>overige gebieden</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000020"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000048">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000021</ga:identificatie>
+               <ga:type>Water en watersysteem</ga:type>
+               <ga:naam>regionale kering</ga:naam>
+               <ga:groep>waterkering regionaal</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000021"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000050">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000022</ga:identificatie>
+               <ga:type>Water en watersysteem</ga:type>
+               <ga:naam>zwemwater</ga:naam>
+               <ga:groep>overige gebieden</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000022"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000052">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000023</ga:identificatie>
+               <ga:type>Bodem</ga:type>
+               <ga:naam>beperken bodembewerking</ga:naam>
+               <ga:groep>bodembeheergebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000023"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000052">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000024</ga:identificatie>
+               <ga:type>Bodem</ga:type>
+               <ga:naam>bodemdaling landelijk gebied</ga:naam>
+               <ga:groep>bodembeheergebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000024"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000053">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000025</ga:identificatie>
+               <ga:type>Bodem</ga:type>
+               <ga:naam>bodemdaling stedelijk gebied</ga:naam>
+               <ga:groep>bodembeheergebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000025"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000056">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000026</ga:identificatie>
+               <ga:type>Ruimtelijk gebruik</ga:type>
+               <ga:naam>kernrandzone</ga:naam>
+               <ga:groep>landelijk gebied-stedelijk uitloopgebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000026"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000059">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000027</ga:identificatie>
+               <ga:type>Ruimtelijk gebruik</ga:type>
+               <ga:naam>recreatiezone</ga:naam>
+               <ga:groep>recreatiegebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000027"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000061">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000028</ga:identificatie>
+               <ga:type>Erfgoed</ga:type>
+               <ga:naam>militair erfgoed</ga:naam>
+               <ga:groep>cultuurhistorie</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000028"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000062">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000029</ga:identificatie>
+               <ga:type>Erfgoed</ga:type>
+               <ga:naam>agrarische cultuurlandschappen</ga:naam>
+               <ga:groep>cultuurhistorie</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000029"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000062">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000030</ga:identificatie>
+               <ga:type>Erfgoed</ga:type>
+               <ga:naam>archeologisch waardevolle zones</ga:naam>
+               <ga:groep>archeologie</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000030"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000062">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000031</ga:identificatie>
+               <ga:type>Erfgoed</ga:type>
+               <ga:naam>historische buitenplaatszones</ga:naam>
+               <ga:groep>buitenplaats</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000031"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000062">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000032</ga:identificatie>
+               <ga:type>Erfgoed</ga:type>
+               <ga:naam>historische infrastructuur</ga:naam>
+               <ga:groep>cultuurhistorie</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000032"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000028">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000033</ga:identificatie>
+               <ga:type>Ruimtelijk gebruik</ga:type>
+               <ga:naam>Experimenteerruimte</ga:naam>
+               <ga:groep>receatiegebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000033"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000066">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000034</ga:identificatie>
+               <ga:type>Landschap</ga:type>
+               <ga:naam>utrechtse heuvelrug</ga:naam>
+               <ga:groep>specifiek benoemd gebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000034"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000071">
+               <ga:identificatie>nl.imow-pv26.gebiedsaanwijzing.2019000035</ga:identificatie>
+               <ga:type>Ruimtelijk gebruik</ga:type>
+               <ga:naam>bovenlokaal dagrecreatieterrein</ga:naam>
+               <ga:groep>receatiegebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l-ref:LocatieRef xlink:href="nl.imow-pv26.gebied.2019000035"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>
