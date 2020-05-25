@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project basedir="." name="tpod" default="main">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+  <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"/>
+
+  <property name="input.dir" value="input"/>
+  <property name="output.dir" value="output"/>
+  <property name="temp.dir" value="temp"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete dir="${output.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${output.dir}"/>
+    <delete dir="${temp.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${temp.dir}"/>
+  </target>
+
+  <!-- unzip template -->
+
+  <target name="unzip" description="Unzip word-bestand">
+    <unzip dest="${temp.dir}/template">
+      <path>
+        <fileset dir="${input.dir}" includes="*.xlsx"/>
+      </path>
+    </unzip>
+  </target>
+
+  <!-- transformeer xml-bestanden -->
+
+  <target name="transform" description="Splits bestand">
+    <xslt basedir="${input.dir}" destdir="${temp.dir}" style="export.xsl" processor="trax" force="true">
+      <globmapper from="*.xml" to="manifest.txt"/>
+    </xslt>
+  </target>
+
+  <!-- zip bestand -->
+
+  <target name="zip" description="Zip bestand">
+    <zip basedir="${temp.dir}/template" destfile="${output.dir}/waardelijsten.xlsx"/>
+  </target>
+
+  <!-- totale transformatie -->
+
+  <target name="main" description="Totale transformatie" depends="init,unzip,transform,zip"/>
+
+</project>
