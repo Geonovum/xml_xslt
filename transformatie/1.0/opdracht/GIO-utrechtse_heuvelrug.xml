@@ -2,7 +2,7 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
-                             schemaversie="1.0">
+                             schemaversie="1.0.1">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/gio_034</FRBRWork>
@@ -26,7 +26,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>utrechtse_heuvelrug.gml</bestandsnaam>
-                  <hash>312fbaa44a1e7f4a58a5e22ea3a06f96730505ec7f8360dfdb4f373d178a812b0bbe1ff941c73d2b16bea9f93486d4337ffc859ad7a785c17c8e9f968f67173b</hash>
+                  <hash>5222f2c0782dcc897774d91ac0c3e3b243b9d15c8aa9a440d27ab8b833bae5f5707585eacf3ad330ba8d28e19db278562bc0b5af918c0da05715fff6f1e1f5fc</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

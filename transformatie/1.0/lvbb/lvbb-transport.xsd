@@ -6,10 +6,17 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <xs:annotation>
-    <xs:documentation>Wijzigingen tov 0.98.4</xs:documentation>
-    <xs:documentation>2020-02-12 - @version toegevoegd aan alle XSDs</xs:documentation>
-    <xs:documentation>2020-02-12 - breekPublicatieAfVerzoek, breekPublicatieAfOpdracht,
-      breekPublicatieAfVerzoekResultaat en benodigde types toegevoegd</xs:documentation>
+    <xs:documentation>Wijzigingen tov 1.0.0</xs:documentation>
+    <xs:documentation>2020-04-29 - in enumeratie van DirecteMutatieUitkomstCode de waarde "valide"
+      vervangen door "ok"</xs:documentation>
+    <xs:documentation>2020-05-04 - toegevoegd
+                                    * directeMutatieVerzoek,
+                                    * validatieDirecteMutatieVerzoek
+                                    * validatieDirecteMutatieGBVerzoek</xs:documentation>
+    <xs:documentation>
+      2020-05-17 - in enumeratie van DirecteMutatieVoortgangCode de waarde "mutatie-voltooid"
+      en "behandeling-afgebroken" toegevoegd
+    </xs:documentation>
   </xs:annotation>
 
   <xs:import namespace="http://www.logius.nl/digikoppeling/gb/2010/10" schemaLocation="gb-meta.xsd"/>
@@ -47,6 +54,19 @@
     <xs:annotation>
       <xs:documentation>Root element van een via Digikoppeling ebMS verzonden verzoek waarbij het
         opdrachtbestand voor een breekPublicatieAfOpdracht is bijgesloten.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="directeMutatieVerzoek" type="lvbbt:LeveringVerzoekType">
+    <xs:annotation>
+      <xs:documentation>Root element van een via Digikoppeling ebMS verzonden verzoek waarbij het
+        opdrachtbestand voor een directe mutatie opdracht is bijgesloten.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="validatieDirecteMutatieVerzoek" type="lvbbt:LeveringVerzoekType">
+    <xs:annotation>
+      <xs:documentation>Root element van een via Digikoppeling ebMS verzonden verzoek waarbij het
+        opdrachtbestand voor een validatieopdracht voor directe mutatie is
+        bijgesloten.</xs:documentation>
     </xs:annotation>
   </xs:element>
 
@@ -88,10 +108,18 @@
   <xs:element name="directeMutatieGBVerzoek" type="lvbbt:LeveringGBVerzoekType">
     <xs:annotation>
       <xs:documentation>Root element van een via Digikoppeling ebMS verzonden verzoek waarbij het
-        opdrachtbestand voor een directe mutatie opdracht via het Grote Berichten protocol opgehaald moet
-        worden.</xs:documentation>
+        opdrachtbestand voor een directe mutatie opdracht via het Grote Berichten protocol opgehaald
+        moet worden.</xs:documentation>
     </xs:annotation>
   </xs:element>
+  <xs:element name="validatieDirecteMutatieGBVerzoek" type="lvbbt:LeveringGBVerzoekType">
+    <xs:annotation>
+      <xs:documentation>Root element van een via Digikoppeling ebMS verzonden verzoek waarbij het
+        opdrachtbestand voor een validatieopdracht voor directe mutatie via het Grote Berichten
+        protocol opgehaald moet worden.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
   <xs:complexType name="LeveringGBVerzoekType">
     <xs:annotation>
       <xs:documentation>Element type voor alle leveringen via DIgikoppeling ebMS die van het Grote
@@ -259,29 +287,27 @@
     </xs:complexContent>
   </xs:complexType>
 
-  <xs:element name="validatieDirecteMutatieOpdracht" type="lvbbt:ValidatieDirecteMutatieOpdrachtType">
+  <xs:element name="validatieDirecteMutatieOpdracht"
+    type="lvbbt:ValidatieDirecteMutatieOpdrachtType">
     <xs:annotation>
-      <xs:documentation>
-        Root element van het opdracht.xml bestand waarmee een opdracht aan
-        LVBB wordt gegeven om een directe mutatie te valideren.
-      </xs:documentation>
+      <xs:documentation> Root element van het opdracht.xml bestand waarmee een opdracht aan LVBB
+        wordt gegeven om een directe mutatie te valideren. </xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="ValidatieDirecteMutatieOpdrachtType">
     <xs:annotation>
-      <xs:documentation> Beschrijving van een opdracht voor de LVBB om een directe mutatie te valideren. </xs:documentation>
+      <xs:documentation> Beschrijving van een opdracht voor de LVBB om een directe mutatie te
+        valideren. </xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="lvbbt:OpdrachtType">
         <xs:sequence>
-          <xs:element name="directeMutatie" type="xs:NCName" minOccurs="0" maxOccurs="1">
+          <xs:element maxOccurs="1" minOccurs="0" name="directeMutatie" type="xs:NCName">
             <xs:annotation>
-              <xs:documentation>
-                Naam van het bestand (evt inclusief het pad) in het gecomprimeerde
-                opdrachtbestand dat de directe mutatie bevat. Dit bestand kan weggelaten
-                worden als alleen OW-objecten gemuteerd worden. Er wordt onderscheid gemaakt
-                tussen hoofd- en kleine letters.
-              </xs:documentation>
+              <xs:documentation> Naam van het bestand (evt inclusief het pad) in het gecomprimeerde
+                opdrachtbestand dat de directe mutatie bevat. Dit bestand kan weggelaten worden als
+                alleen OW-objecten gemuteerd worden. Er wordt onderscheid gemaakt tussen hoofd- en
+                kleine letters. </xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -291,27 +317,24 @@
 
   <xs:element name="directeMutatieOpdracht" type="lvbbt:DirecteMutatieOpdrachtType">
     <xs:annotation>
-      <xs:documentation>
-        Root element van het opdracht.xml bestand waarmee een opdracht
-        aan LVBB wordt doorgegeven om een directe mutatie door te geven.
-      </xs:documentation>
+      <xs:documentation> Root element van het opdracht.xml bestand waarmee een opdracht aan LVBB
+        wordt doorgegeven om een directe mutatie door te geven. </xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="DirecteMutatieOpdrachtType">
     <xs:annotation>
-      <xs:documentation> Beschrijving van een opdracht voor de LVBB om een directe mutatie door te voeren. </xs:documentation>
+      <xs:documentation> Beschrijving van een opdracht voor de LVBB om een directe mutatie door te
+        voeren. </xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="lvbbt:OpdrachtType">
         <xs:sequence>
-          <xs:element name="directeMutatie" type="xs:NCName" minOccurs="0" maxOccurs="1">
+          <xs:element maxOccurs="1" minOccurs="0" name="directeMutatie" type="xs:NCName">
             <xs:annotation>
-              <xs:documentation>
-                Naam van het bestand (evt inclusief het pad) in het gecomprimeerde
-                opdrachtbestand dat de directe mutatie bevat. Dit bestand kan weggelaten
-                worden als alleen OW-objecten gemuteerd worden. Er wordt onderscheid gemaakt
-                tussen hoofd- en kleine letters.
-              </xs:documentation>
+              <xs:documentation> Naam van het bestand (evt inclusief het pad) in het gecomprimeerde
+                opdrachtbestand dat de directe mutatie bevat. Dit bestand kan weggelaten worden als
+                alleen OW-objecten gemuteerd worden. Er wordt onderscheid gemaakt tussen hoofd- en
+                kleine letters. </xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -869,39 +892,36 @@
     </xs:restriction>
   </xs:simpleType>
 
+
   <!--
   Antwoord voor opdracht tot validatie van de directe mutatie
   -->
-  <xs:element name="validatieDirecteMutatieVerzoekResultaat" type="lvbbt:ValidatieDirecteMutatieVerzoekResultaatType">
+  <xs:element name="validatieDirecteMutatieVerzoekResultaat"
+    type="lvbbt:ValidatieDirecteMutatieVerzoekResultaatType">
     <xs:annotation>
-      <xs:documentation>
-        Root element van het antwoord op een verzoek voor een opdracht tot validatie van een directe mutatie.
-      </xs:documentation>
+      <xs:documentation> Root element van het antwoord op een verzoek voor een opdracht tot
+        validatie van een directe mutatie. </xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:element name="validatieDirecteMutatieStatusVerzoekResultaat" type="lvbbt:ValidatieDirecteMutatieVerzoekResultaatType">
+  <xs:element name="validatieDirecteMutatieStatusVerzoekResultaat"
+    type="lvbbt:ValidatieDirecteMutatieVerzoekResultaatType">
     <xs:annotation>
-      <xs:documentation>
-        Root element van het antwoord op een verzoek voor de status van een
-        opdracht voor de validatie van een directe mutatie.
-      </xs:documentation>
+      <xs:documentation> Root element van het antwoord op een verzoek voor de status van een
+        opdracht voor de validatie van een directe mutatie. </xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="ValidatieDirecteMutatieVerzoekResultaatType">
     <xs:annotation>
-      <xs:documentation>
-        Beschrijving van het antwoord op een verzoek voor een opdracht tot validatie van een directe mutatie.
-      </xs:documentation>
+      <xs:documentation> Beschrijving van het antwoord op een verzoek voor een opdracht tot
+        validatie van een directe mutatie. </xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="lvbbt:VerzoekResultaatType">
         <xs:sequence>
           <xs:element minOccurs="0" name="verslag" type="lvbbt:ValidatieDirecteMutatieVerslagType">
             <xs:annotation>
-              <xs:documentation>
-                Verslag van de voortgang en uitkomst van de
-                opdracht tot validatie van een directe mutatie.
-              </xs:documentation>
+              <xs:documentation> Verslag van de voortgang en uitkomst van de opdracht tot validatie
+                van een directe mutatie. </xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -911,9 +931,8 @@
 
   <xs:complexType name="ValidatieDirecteMutatieVerslagType">
     <xs:annotation>
-      <xs:documentation>
-        Beschrijving van het verslag van de behandeling van een opdracht tot validatie van een directe mutatie.
-      </xs:documentation>
+      <xs:documentation> Beschrijving van het verslag van de behandeling van een opdracht tot
+        validatie van een directe mutatie. </xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="lvbbt:OpdrachtverslagType">
@@ -921,18 +940,14 @@
           <xs:choice>
             <xs:element name="uitkomst" type="lvbbt:ValidatieDirecteMutatieUitkomstCode">
               <xs:annotation>
-                <xs:documentation>
-                  Code het resultaat van de validatie aangeeft. Alleen aanwezig als
-                  de behandeling van de validatieopdracht volledig is afgerond.
-                </xs:documentation>
+                <xs:documentation> Code het resultaat van de validatie aangeeft. Alleen aanwezig als
+                  de behandeling van de validatieopdracht volledig is afgerond. </xs:documentation>
               </xs:annotation>
             </xs:element>
             <xs:element name="voortgang" type="lvbbt:ValidatieDirecteMutatieVoortgangCode">
               <xs:annotation>
-                <xs:documentation>
-                  Voortgang van de behandeling van de validatieopdracht. Alleen
-                  aanwezig als de validatieopdracht nog in behandeling is.
-                </xs:documentation>
+                <xs:documentation> Voortgang van de behandeling van de validatieopdracht. Alleen
+                  aanwezig als de validatieopdracht nog in behandeling is. </xs:documentation>
               </xs:annotation>
             </xs:element>
           </xs:choice>
@@ -943,31 +958,25 @@
 
   <xs:simpleType name="ValidatieDirecteMutatieUitkomstCode">
     <xs:annotation>
-      <xs:documentation>
-        Code die aangeeft of de behandeling van een opdracht tot validatie van een directe mutatie is geslaagd.
-      </xs:documentation>
+      <xs:documentation> Code die aangeeft of de behandeling van een opdracht tot validatie van een
+        directe mutatie is geslaagd. </xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="valide">
         <xs:annotation>
-          <xs:documentation>
-            De directe mutatie voldoet aan alle eisen die de LVBB er op
-            dit moment aan stelt.
-          </xs:documentation>
+          <xs:documentation> De directe mutatie voldoet aan alle eisen die de LVBB er op dit moment
+            aan stelt. </xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="niet-valide">
         <xs:annotation>
-          <xs:documentation>
-            De directe mutatie voldoet niet aan de eisen die de LVBB er
-            aan stelt.
+          <xs:documentation> De directe mutatie voldoet niet aan de eisen die de LVBB er aan stelt.
           </xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="opdracht-niet-valide">
         <xs:annotation>
-          <xs:documentation>
-            De opdracht voldoet niet aan de eisen die de LVBB er aan stelt.
+          <xs:documentation> De opdracht voldoet niet aan de eisen die de LVBB er aan stelt.
           </xs:documentation>
         </xs:annotation>
       </xs:enumeration>
@@ -976,10 +985,8 @@
 
   <xs:simpleType name="ValidatieDirecteMutatieVoortgangCode">
     <xs:annotation>
-      <xs:documentation>
-        Code die aangeeft hoe ver de behandeling van een opdracht tot validatie van een directe mutatie is
-        gevorderd.
-      </xs:documentation>
+      <xs:documentation> Code die aangeeft hoe ver de behandeling van een opdracht tot validatie van
+        een directe mutatie is gevorderd. </xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="opdracht-ontvangen">
@@ -989,9 +996,7 @@
       </xs:enumeration>
       <xs:enumeration value="validatie-voltooid">
         <xs:annotation>
-          <xs:documentation>
-            De validatie van de directe mutatie is voltooid.
-          </xs:documentation>
+          <xs:documentation> De validatie van de directe mutatie is voltooid. </xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
@@ -1002,34 +1007,29 @@
   -->
   <xs:element name="directeMutatieVerzoekResultaat" type="lvbbt:DirecteMutatieVerzoekResultaatType">
     <xs:annotation>
-      <xs:documentation>
-        Root element van het antwoord op een verzoek voor een opdracht voor een directe mutatie.
-      </xs:documentation>
+      <xs:documentation> Root element van het antwoord op een verzoek voor een opdracht voor een
+        directe mutatie. </xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:element name="directeMutatieStatusVerzoekResultaat" type="lvbbt:DirecteMutatieVerzoekResultaatType">
+  <xs:element name="directeMutatieStatusVerzoekResultaat"
+    type="lvbbt:DirecteMutatieVerzoekResultaatType">
     <xs:annotation>
-      <xs:documentation>
-        Root element van het antwoord op een verzoek voor de status van een
-        opdracht voor een directe mutatie.
-      </xs:documentation>
+      <xs:documentation> Root element van het antwoord op een verzoek voor de status van een
+        opdracht voor een directe mutatie. </xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="DirecteMutatieVerzoekResultaatType">
     <xs:annotation>
-      <xs:documentation>
-        Beschrijving van het antwoord op een verzoek voor een opdracht voor een directe mutatie.
-      </xs:documentation>
+      <xs:documentation> Beschrijving van het antwoord op een verzoek voor een opdracht voor een
+        directe mutatie. </xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="lvbbt:VerzoekResultaatType">
         <xs:sequence>
           <xs:element minOccurs="0" name="verslag" type="lvbbt:DirecteMutatieVerslagType">
             <xs:annotation>
-              <xs:documentation>
-                Verslag van de voortgang en uitkomst van de
-                opdracht voor een directe mutatie.
-              </xs:documentation>
+              <xs:documentation> Verslag van de voortgang en uitkomst van de opdracht voor een
+                directe mutatie. </xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -1039,9 +1039,8 @@
 
   <xs:complexType name="DirecteMutatieVerslagType">
     <xs:annotation>
-      <xs:documentation>
-        Beschrijving van het verslag van de behandeling van een opdracht voor een directe mutatie.
-      </xs:documentation>
+      <xs:documentation> Beschrijving van het verslag van de behandeling van een opdracht voor een
+        directe mutatie. </xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="lvbbt:OpdrachtverslagType">
@@ -1049,18 +1048,15 @@
           <xs:choice>
             <xs:element name="uitkomst" type="lvbbt:DirecteMutatieUitkomstCode">
               <xs:annotation>
-                <xs:documentation>
-                  Code het resultaat van de directe mutatie aangeeft. Alleen aanwezig als
-                  de behandeling van de mutatieopdracht volledig is afgerond.
+                <xs:documentation> Code het resultaat van de directe mutatie aangeeft. Alleen
+                  aanwezig als de behandeling van de mutatieopdracht volledig is afgerond.
                 </xs:documentation>
               </xs:annotation>
             </xs:element>
             <xs:element name="voortgang" type="lvbbt:DirecteMutatieVoortgangCode">
               <xs:annotation>
-                <xs:documentation>
-                  Voortgang van de behandeling van de directe mutatie. Alleen
-                  aanwezig als de mutatieopdracht nog in behandeling is.
-                </xs:documentation>
+                <xs:documentation> Voortgang van de behandeling van de directe mutatie. Alleen
+                  aanwezig als de mutatieopdracht nog in behandeling is. </xs:documentation>
               </xs:annotation>
             </xs:element>
           </xs:choice>
@@ -1071,31 +1067,24 @@
 
   <xs:simpleType name="DirecteMutatieUitkomstCode">
     <xs:annotation>
-      <xs:documentation>
-        Code die aangeeft of de behandeling van een opdracht voor een directe mutatie is geslaagd.
-      </xs:documentation>
+      <xs:documentation> Code die aangeeft of de behandeling van een opdracht voor een directe
+        mutatie is geslaagd. </xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:string">
-      <xs:enumeration value="valide">
+      <xs:enumeration value="ok">
         <xs:annotation>
-          <xs:documentation>
-            De directe mutatie voldoet aan alle eisen die de LVBB er op
-            dit moment aan stelt.
-          </xs:documentation>
+          <xs:documentation> De opdracht is met succes afgerond. </xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="niet-valide">
         <xs:annotation>
-          <xs:documentation>
-            De directe mutatie voldoet niet aan de eisen die de LVBB er
-            aan stelt.
+          <xs:documentation> De directe mutatie voldoet niet aan de eisen die de LVBB er aan stelt.
           </xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="opdracht-niet-valide">
         <xs:annotation>
-          <xs:documentation>
-            De opdracht voldoet niet aan de eisen die de LVBB er aan stelt.
+          <xs:documentation> De opdracht voldoet niet aan de eisen die de LVBB er aan stelt.
           </xs:documentation>
         </xs:annotation>
       </xs:enumeration>
@@ -1104,10 +1093,8 @@
 
   <xs:simpleType name="DirecteMutatieVoortgangCode">
     <xs:annotation>
-      <xs:documentation>
-        Code die aangeeft hoe ver de behandeling van een opdracht voor een directe mutatie is
-        gevorderd.
-      </xs:documentation>
+      <xs:documentation> Code die aangeeft hoe ver de behandeling van een opdracht voor een directe
+        mutatie is gevorderd. </xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:enumeration value="opdracht-ontvangen">
@@ -1117,9 +1104,17 @@
       </xs:enumeration>
       <xs:enumeration value="validatie-voltooid">
         <xs:annotation>
-          <xs:documentation>
-            De directe mutatie is voltooid.
-          </xs:documentation>
+          <xs:documentation> De directe mutatie is voltooid. </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mutatie-voltooid">
+        <xs:annotation>
+          <xs:documentation> De aangeleverde mutatie is uitgevoerd. </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="behandeling-afgebroken">
+        <xs:annotation>
+          <xs:documentation> De behandeling van de opdracht is afgebroken. </xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>

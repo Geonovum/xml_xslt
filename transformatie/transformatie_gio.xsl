@@ -19,7 +19,7 @@
   <xsl:template match="AanleveringGIO" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/">
     <xsl:element name="AanleveringInformatieObject" namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
       <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd')"/>
-      <xsl:attribute name="schemaversie" select="string('1.0')"/>
+      <xsl:attribute name="schemaversie" select="string('1.0.1')"/>
       <xsl:apply-templates select="/AanleveringGIO/InformatieObjectVersie[1]" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/"/>
     </xsl:element>
   </xsl:template>

@@ -2,7 +2,7 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
-                             schemaversie="1.0">
+                             schemaversie="1.0.1">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/gio_030</FRBRWork>
@@ -26,7 +26,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>archeologisch_waardevolle_zones.gml</bestandsnaam>
-                  <hash>94a628c6459d6e698cf86dc121e5e07dc5463364dc94411ee72c0adc8ba7a12b7286af9b4bc1e9bb04a1d522c168a4ee9fda266c7b3ac69b614de2e334c704bb</hash>
+                  <hash>375c12bbe663752a4921f1e45083c15e31db9cbff0cebd0c5daa447c658f31bbc4a9697958540b404f8139c5765601c3333dd01cf79b9b85f58f84b25d6a68e5</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

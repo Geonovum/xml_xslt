@@ -2,7 +2,7 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
-                             schemaversie="1.0">
+                             schemaversie="1.0.1">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/gio_032</FRBRWork>
@@ -26,7 +26,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>historische_infrastructuur.gml</bestandsnaam>
-                  <hash>948ae8bec63081a96255bc9a416218eca438867dcee0ad2087c14d04fe1d80a8cc9060dd51e5871e1040e303ffccb51c02ccf762905f80f0e38c1d8694d51035</hash>
+                  <hash>b7d19a85975b638757df4e9c69cde698c360f9cb6d1ec0a89f64a64e6db78d765b7650c5bfa80be71a05c230e02e8c45a777bf919ea0cc267667f7b5657474ff</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

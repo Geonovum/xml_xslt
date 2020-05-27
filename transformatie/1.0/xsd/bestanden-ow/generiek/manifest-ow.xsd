@@ -57,7 +57,7 @@
   </xs:element>
   <xs:element name="WorkIDRegeling" type="xs:anyURI">
     <xs:annotation>
-      <xs:documentation>Verwijzing naar Doel van het besluit.</xs:documentation>
+      <xs:documentation>Verwijzing naar WorkID van de Regeling.</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:element name="Bestand">
@@ -71,7 +71,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="naam" type="xs:NCName">
+  <xs:element name="naam" type="mow:naamType">
     <xs:annotation>
       <xs:documentation>Naam van het bestand; moet overeenkomen met de naam zoals in manifest.xml is opgenomen.</xs:documentation>
     </xs:annotation>
@@ -81,4 +81,10 @@
       <xs:documentation>Type van de objecten die in het bestand voorkomen. De toegestane waarde voor het objecttype is beschreven in de CIM-OW documentatie.</xs:documentation>
     </xs:annotation>
   </xs:element>
+  <!--Types-->
+  <xs:simpleType name="naamType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\c-[:]]*"/>
+    </xs:restriction>
+  </xs:simpleType>
 </xs:schema>

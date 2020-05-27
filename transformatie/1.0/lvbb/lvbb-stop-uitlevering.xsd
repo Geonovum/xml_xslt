@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema elementFormDefault="qualified"
-  targetNamespace="https://standaarden.overheid.nl/lvbb/stop/uitlevering/" version="1.0.0"
+  targetNamespace="https://standaarden.overheid.nl/lvbb/stop/uitlevering/" version="1.0.1"
   xmlns:cons="https://standaarden.overheid.nl/stop/imop/consolidatie/"
   xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
   xmlns:imop="https://standaarden.overheid.nl/stop/imop/"
@@ -10,19 +10,19 @@
 
   <xs:annotation>
     <xs:documentation>LVBB-Uitlevering-schema</xs:documentation>
-    <xs:documentation>versie 1.0.0 uitgegeven op 03-04-2020</xs:documentation>
+    <xs:documentation>versie 1.0.1 uitgegeven op 20-05-2020</xs:documentation>
   </xs:annotation>
 
   <!-- xs:appinfo om geincludeerde STOP-versie vast te leggen -->
   <xs:annotation>
     <xs:appinfo>
-      <imop:STOPversie>1.0</imop:STOPversie>
+      <imop:STOPversie>1.0.1</imop:STOPversie>
     </xs:appinfo>
   </xs:annotation>
 
-  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/data/" />
-  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/consolidatie/" />
-  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/tekst/" />
+  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/data/" schemaLocation="../stop/imop-data.xsd"/>
+  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/consolidatie/" schemaLocation="../stop/imop-consolidatie.xsd"/>
+  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/tekst/" schemaLocation="../stop/imop-tekst.xsd"/>
 
   <!--
     UITLEVEREN CONSOLIDATIE MET TOESTANDEN 

@@ -60,7 +60,7 @@
   <xsl:template match="AanleveringBesluit" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/">
     <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
       <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd')"/>
-      <xsl:attribute name="schemaversie" select="string('1.0')"/>
+      <xsl:attribute name="schemaversie" select="string('1.0.1')"/>
       <!-- geef informatie door aan AKN.xsl -->
       <xsl:processing-instruction name="akn">
         <xsl:value-of select="fn:string-join(($ID01,$ID02),'_')"/>
@@ -82,6 +82,12 @@
         <xsl:apply-templates select="."/>
       </xsl:for-each>
     </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="Procedure" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+    <xsl:for-each select="(Procedureverloop)">
+      <xsl:apply-templates select="."/>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="Procedureverloop" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">

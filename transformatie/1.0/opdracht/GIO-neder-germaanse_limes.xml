@@ -2,7 +2,7 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
-                             schemaversie="1.0">
+                             schemaversie="1.0.1">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/gio_006</FRBRWork>
@@ -26,7 +26,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>neder-germaanse_limes.gml</bestandsnaam>
-                  <hash>eea19412bac144728988ef653619f6f130df8491bf8245bb8c33a290d02e61d27f3ffbed07bc28b71d1518d18f9de31b515c70bfca53118826c31f890bcaa37c</hash>
+                  <hash>55c8649660fd1f6a5513e8c383c71541a2684759a57b17c14ed72f14755defec1b7631b40cd641cba02eff52c9c1a10f0a11b0b4a95276fc02adafd933798459</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

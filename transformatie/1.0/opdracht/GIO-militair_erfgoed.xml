@@ -2,7 +2,7 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
-                             schemaversie="1.0">
+                             schemaversie="1.0.1">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/gio_028</FRBRWork>
@@ -26,7 +26,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>militair_erfgoed.gml</bestandsnaam>
-                  <hash>767a391262a5a0c4f238ac9e71555eaf8fa8d9aa6426db2ac6ce3e101d58b495d255dda8ee58cc6489e20a893cba390931eddbaa5c5b6e20eeb56b61b2be1749</hash>
+                  <hash>b328532eefa1c3a4fc0b09e1d6914bc970cdb3a4e2fad044742f5d04c6097bf684a22d49d82edac075638114879710a03e9cca302a59e68bea30f2a3fd4f0af8</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

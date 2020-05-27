@@ -2,7 +2,7 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
-                             schemaversie="1.0">
+                             schemaversie="1.0.1">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/gio_009</FRBRWork>
@@ -26,7 +26,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>stiltegebieden.gml</bestandsnaam>
-                  <hash>2ae56219316b45d44707576a1e961b089771cec76912170a62294ceec74a8cb7baf427bd786e4baf66f8e6250ec1a63b0652591eb18e5f9bdc0bbd906577917a</hash>
+                  <hash>12d5647af037572a943e0bda32a4a3806174550ce7279f9b4afcedee81afe3a9def7701be7381a099bfd39e622e0046237491a47d5d42f34933b4ea102d7a3ad</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

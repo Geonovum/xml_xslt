@@ -2,7 +2,7 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
-                             schemaversie="1.0">
+                             schemaversie="1.0.1">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/gio_024</FRBRWork>
@@ -26,7 +26,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>bodemdaling_landelijk_gebied.gml</bestandsnaam>
-                  <hash>91c0e07937ca1c9ebe874ad61d08e5e9efeac1531f48f2085e08b0c55f985437784b738eb3e7705194a21e6ea56018d55322aaca9d0c2200bda19b27f5961e15</hash>
+                  <hash>890b62b74d7578c312d6f6529d4075566b7a1e92a16041fb99a23110cc515a1e041d774d8ccef5ed7b40d85748187a66a84a5d13e08f664d0cdf40250344b3af</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema elementFormDefault="qualified"
-  targetNamespace="https://standaarden.overheid.nl/stop/imop/resources/" version="1.0.0"
+  targetNamespace="https://standaarden.overheid.nl/stop/imop/resources/" version="1.0.1"
   xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
   xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
   xmlns:rsc="https://standaarden.overheid.nl/stop/imop/resources/"
   xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+  <xs:annotation>
+    <xs:documentation>"resources-schema" van STOP. </xs:documentation>
+    <xs:documentation>Dit schema definieert de elementen voor de STOP-modules voor resources</xs:documentation>
+    <xs:documentation>versie 1.0.1 uitgegeven op 20-05-2020</xs:documentation>
+  </xs:annotation>
+  
   <xs:element name="Waardelijst">
     <xs:complexType>
       <xs:sequence>
@@ -96,10 +102,9 @@
   <xs:attributeGroup name="agSchemaVersie">
     <xs:attribute name="schemaversie" type="rsc:dtSchemaVersie" use="optional" />
   </xs:attributeGroup>
+  
   <xs:simpleType name="dtSchemaVersie">
-    <xs:restriction base="xs:token">
-      <xs:pattern value="0\.98\..*|1.0.0" />
-    </xs:restriction>
+    <xs:restriction base="xs:token" />
   </xs:simpleType>
 
 </xs:schema>

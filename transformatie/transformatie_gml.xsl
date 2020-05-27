@@ -19,7 +19,7 @@
       <xsl:namespace name="basisgeo" select="string('http://www.geostandaarden.nl/basisgeometrie/1.0')"/>
       <xsl:namespace name="gio" select="string('https://standaarden.overheid.nl/stop/imop/gio/')"/>
       <xsl:namespace name="gml" select="string('http://www.opengis.net/gml/3.2')"/>
-      <xsl:attribute name="schemaversie">1.0</xsl:attribute>
+      <xsl:attribute name="schemaversie" select="string('1.0.1')"/>
       <xsl:variable name="GIO" select="$GIO_bestanden[contains(descendant::bestandsnaam,$input.file)][1]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
       <xsl:element name="geo:context" namespace="{$ns_geo}">
         <xsl:element name="gio:GeografischeContext" namespace="{$ns_gio}">
@@ -64,10 +64,16 @@
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="@gml:id|@srsName">
+    <!-- geef alleen door op het hoogste niveau -->
+    <xsl:if test="count(ancestor::gml:*) eq 1">
+      <xsl:copy-of select="."/>
+    </xsl:if>
+  </xsl:template>
+
   <!-- Algemene templates -->
 
   <xsl:template match="element()">
-    <xsl:variable name="test" select="."/>
     <xsl:element name="{name()}" namespace="{namespace-uri()}">
       <xsl:apply-templates select="@*|node()"/>
     </xsl:element>

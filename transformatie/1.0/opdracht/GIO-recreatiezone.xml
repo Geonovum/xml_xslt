@@ -2,7 +2,7 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
-                             schemaversie="1.0">
+                             schemaversie="1.0.1">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/gio_027</FRBRWork>
@@ -26,7 +26,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>recreatiezone.gml</bestandsnaam>
-                  <hash>10701e9ed5453b83ccab7e670440e8bc5e0a8c4b263121c7182f5ee5deb500696c910f6cced7f2f71e5bdc783b35751e4bb96487a63eb686f52683453ab57417</hash>
+                  <hash>a4e5aa914cc5f70c6aeadac9a892d8b0c53f2c92ff6252e6554b961ec31b15028da8a396f86d6ac1e775e2876105f181cc1c89357a9003bda121d0537dfa597e</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

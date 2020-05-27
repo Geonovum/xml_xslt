@@ -2,7 +2,7 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
-                             schemaversie="1.0">
+                             schemaversie="1.0.1">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/gio_007</FRBRWork>
@@ -26,7 +26,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>gezonde_en_veilige_leefomgeving.gml</bestandsnaam>
-                  <hash>7d628357c340a3b6b3fb67a1482cd34320f71074f3b36faac358e45b923e098296c6f09f275b9e16fb78451e0aa6a619d3601a9999b7e8e18f91130fc8c9135b</hash>
+                  <hash>1b5814f9632a0e99d97b8461373f13a799ceb58192afd711e5e82b604a7b5a05b5e96cc8e9beb987b9fa502f81ada9c8efca4cb81ac2d802e8912ad7c4b7294f</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

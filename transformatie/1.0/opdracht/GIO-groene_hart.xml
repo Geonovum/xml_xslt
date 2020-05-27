@@ -2,7 +2,7 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd"
-                             schemaversie="1.0">
+                             schemaversie="1.0.1">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/gio_003</FRBRWork>
@@ -26,7 +26,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>groene_hart.gml</bestandsnaam>
-                  <hash>e872d7cbcf851d92b260110e38a8508127acd853b1a56c14364ccb32d3d94875039d74bfc6f6573f3f5c5d663fdfab5c5d9018fa850b5bd895e97c823af66d48</hash>
+                  <hash>df26a3b716fd74392e412cb0b6a9cb9583bf86a03b0c7435f93743ce77d2177f86328faf18c5e2b3381fbb02e1c07f2178c7731d2b38da4c99e28cd3a6f3fe6d</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
