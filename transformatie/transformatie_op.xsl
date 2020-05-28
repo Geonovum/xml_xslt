@@ -60,7 +60,7 @@
   <xsl:template match="AanleveringBesluit" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/">
     <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
       <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/lvbb-stop-aanlevering.xsd')"/>
-      <xsl:attribute name="schemaversie" select="string('1.0')"/>
+      <xsl:attribute name="schemaversie" select="string('1.0.1')"/>
       <!-- geef informatie door aan AKN.xsl -->
       <xsl:processing-instruction name="akn">
         <xsl:value-of select="fn:string-join(($ID01,$ID02),'_')"/>
@@ -82,6 +82,12 @@
         <xsl:apply-templates select="."/>
       </xsl:for-each>
     </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="Procedure" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+    <xsl:for-each select="(Procedureverloop)">
+      <xsl:apply-templates select="."/>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="Procedureverloop" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
@@ -255,6 +261,30 @@
       <xsl:attribute name="componentnaam" select="string('initieel_reg')"/>
       <xsl:attribute name="wordt" select="@wordt"/>
       <xsl:apply-templates select="node()"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="Lichaam" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+    <!-- deze template kan weg als issue #83 afgehandeld is -->
+    <xsl:element name="Lichaam" namespace="{namespace-uri()}">
+      <xsl:apply-templates select="@*"/>
+      <xsl:choose>
+        <xsl:when test="count(FormeleDivisie|FormeleInhoud) gt 1">
+          <xsl:element name="Divisie" namespace="{namespace-uri()}">
+            <xsl:attribute name="eId" select="string('geen')"/>
+            <xsl:attribute name="wId" select="string('geen')"/>
+            <xsl:element name="Kop" namespace="{namespace-uri()}">
+              <xsl:element name="Opschrift" namespace="{namespace-uri()}">
+                <xsl:value-of select="string('[extra opschrift]')"/>
+              </xsl:element>
+            </xsl:element>
+            <xsl:apply-templates select="node()"/>
+          </xsl:element>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:apply-templates select="node()"/>
+        </xsl:otherwise>
+      </xsl:choose>
     </xsl:element>
   </xsl:template>
 

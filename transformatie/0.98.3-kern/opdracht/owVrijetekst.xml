@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:g-ref="http://www.geostandaarden.nl/imow/geometrie-ref/v20190901"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709"
+                 xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901"
+                 xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901"
+                 xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901"
+                 xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst/v20190901"
+                 xmlns:vt-ref="http://www.geostandaarden.nl/imow/vrijetekst-ref/v20190901"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow https://register.geostandaarden.nl/xmlschema/tpod/v0.98.2-kern/bestanden-ow/deelbestand-ow/v20190901/IMOW_Deelbestand_v0_9_8_2.xsd">
+   <sl:standBestand>
+      <sl:dataset>OVPU-20191211</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Provincie Utrecht</sl:gebied>
+         <sl:leveringsId>/akn/nl/act/pv26/2019/OVPU-20191211/nld@2019-12-11</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>FormeleDivisie</sl:objectType>
+            <sl:objectType>Tekstdeel</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_0">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000001</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000002</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000003</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_2__fdvs_2.2__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000004</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_2__fdvs_2.2__fdvs_o_2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000005</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_2__fdvs_2.2__fdvs_o_3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000006</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_2__fdvs_2.2__fdvs_o_4">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000007</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_2__fdvs_2.2__fdvs_o_5">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000008</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_2__fdvs_2.2__fdvs_o_6">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000009</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_2__fdvs_2.2__fdvs_o_6__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000010</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_2__fdvs_2.2__fdvs_o_6__fdvs_o_2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000011</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_2__fdvs_2.2__fdvs_o_7">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000012</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000013</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_3__fdvs_3.3__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000014</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_3__fdvs_3.3__fdvs_o_2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000015</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_3__fdvs_3.3__fdvs_o_3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000016</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_3__fdvs_3.3__fdvs_o_4">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000017</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_3__fdvs_3.3__fdvs_o_5">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000018</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_3__fdvs_3.3__fdvs_o_6">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000019</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_3__fdvs_3.3__fdvs_o_7">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000020</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000021</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_o_1__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000022</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_o_1__fdvs_o_2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000023</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_o_1__fdvs_o_3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000024</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_o_1__fdvs_o_4">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000025</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_o_1__fdvs_o_5">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000026</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_o_1__fdvs_o_6">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000027</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_o_1__fdvs_o_7">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000028</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000029</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.1__fdvs_4.1.1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000030</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.1__fdvs_4.1.1__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000031</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.1__fdvs_4.1.1__fdvs_o_3__fdvs_o_4">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000032</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.1__fdvs_4.1.2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000033</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.1__fdvs_4.1.2__fdvs_o_3__fdvs_o_2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000034</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.1__fdvs_4.1.2__fdvs_o_3__fdvs_o_3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000035</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000036</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000037</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.1__fdvs_o_1__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000038</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.1__fdvs_o_1__fdvs_o_2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000039</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.1__fdvs_o_3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000040</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.1__fdvs_o_3__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000041</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.1__fdvs_o_3__fdvs_o_2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000042</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.1__fdvs_o_3__fdvs_o_3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000043</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.1__fdvs_o_3__fdvs_o_4">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000044</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.1__fdvs_o_3__fdvs_o_5">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000045</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.2__fdvs_o_3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000046</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.2__fdvs_o_3__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000047</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.2__fdvs_o_3__fdvs_o_2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000048</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.2__fdvs_o_3__fdvs_o_3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000049</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.2__fdvs_o_3__fdvs_o_4">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000050</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000051</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.3__fdvs_o_3__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000052</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.2__fdvs_4.2.3__fdvs_o_3__fdvs_o_2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000053</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000054</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.3__fdvs_4.3.1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000055</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.3__fdvs_4.3.1__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000056</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.3__fdvs_4.3.1__fdvs_o_3__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000057</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.3__fdvs_4.3.1__fdvs_o_3__fdvs_o_2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000058</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.3__fdvs_4.3.1__fdvs_o_3__fdvs_o_3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000059</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.3__fdvs_4.3.2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000060</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.3__fdvs_4.3.2__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000061</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.3__fdvs_4.3.2__fdvs_o_3__fdvs_o_1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000062</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.3__fdvs_4.3.2__fdvs_o_3__fdvs_o_3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000063</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_4__fdvs_4.3__fdvs_4.3.2__fdvs_o_3__fdvs_o_5">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000064</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_5__fdvs_5.1">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000065</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_5__fdvs_5.1__fdvs_o_1__fdvs_2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000066</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_5__fdvs_5.2">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000067</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_5__fdvs_5.3">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000068</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_6">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000069</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_6__fdvs_6.5">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000070</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:FormeleDivisie wIdRegeling="/akn/nl/act/pv26/2019/OVPU-20191211" wId="pv26_1__fdvs_o_8">
+               <vt:identificatie>nl.imow-pv26.formeledivisie.2019000071</vt:identificatie>
+            </vt:FormeleDivisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000001">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000001</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Algemeen</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000001"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000002">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000002</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Algemeen</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000002"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000003">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000003</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Algemeen</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000003"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000004">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000004</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000001"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000004"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000005">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000005</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000002"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000005"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000006">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000006</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000003"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000006"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000007">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000007</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000004"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000007"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000008">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000008</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000005"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000008"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000009">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000009</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000006"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000009"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000001"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000010">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000010</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000010"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000002"/>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000003"/>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000004"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000011">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000011</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000011"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000005"/>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000006"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000012">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000009</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000007"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000012"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000013">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000012</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Algemeen</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000013"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000014">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000013</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000001"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000014"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000015">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000014</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000002"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000015"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000016">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000015</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000003"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000016"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000017">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000016</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000004"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000017"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000018">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000017</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000005"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000018"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000019">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000018</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000006"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000019"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000020">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000019</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000007"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000020"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000021">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000020</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000021"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000007"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000022">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000021</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Wonen</vt:thema>
+               <vt:thema>Milieu</vt:thema>
+               <vt:thema>Veiligheid</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000022"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000023">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000022</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Leefbaarheid</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000023"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000024">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000023</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Inclusieve samenleving</vt:thema>
+               <vt:thema>Wonen</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000024"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000025">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000024</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Cultuur</vt:thema>
+               <vt:thema>Recreatie</vt:thema>
+               <vt:thema>Landschap</vt:thema>
+               <vt:thema>Openbare ruimte</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000025"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000026">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000025</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Circulaire wereld</vt:thema>
+               <vt:thema>Grondstoffen</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000026"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000027">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000026</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Leefbaarheid</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000027"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000028">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000027</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Experimenteerruimte</vt:thema>
+               <vt:thema>Eiland van Schaikwijk</vt:thema>
+               <vt:thema>Utrecht Science Park</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000028"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000033"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000029">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000028</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000001"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000029"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000030">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000029</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Milieu</vt:thema>
+               <vt:thema>Gezondheid</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000030"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000031">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000030</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Stilte</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000031"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000032">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000031</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000032"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000008"/>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000009"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000033">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000032</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Recreatie</vt:thema>
+               <vt:thema>Toerisme</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000033"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000034">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000033</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000034"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000010"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000035">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000034</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000035"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000011"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000036">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000035</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Duurzaamheid</vt:thema>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000002"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000036"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000037">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000036</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Bodem</vt:thema>
+               <vt:thema>Water</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000037"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000038">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000037</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Grondwater</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000038"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000039">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000038</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Oppervlaktewater</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000039"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000012"/>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000013"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000040">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000039</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000040"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000014"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000041">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000040</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Bodem</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000041"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000042">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000041</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Grondwater</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000042"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000015"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000043">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000042</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Drinkwater</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000043"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000016"/>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000017"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000044">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000043</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Oppervlaktewater</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000044"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000045">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000044</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Grondwater</vt:thema>
+               <vt:thema>Bodem</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000045"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000046">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000045</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Klimaat</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000046"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000018"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000047">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000046</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Wateroverlast</vt:thema>
+               <vt:thema>Waterberging</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000047"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000019"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000048">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000047</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Overstromingen</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000048"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000020"/>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000021"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000049">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000048</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Droogte</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000049"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000050">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000049</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Hitte</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000050"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000022"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000051">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000050</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Bodemdaling</vt:thema>
+               <vt:thema>Veenweide</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000051"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000052">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000051</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000052"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000023"/>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000024"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000053">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000052</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000053"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000025"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000054">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000053</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:hoofdlijnaanduiding>
+                  <vt-ref:HoofdlijnRef xlink:href="nl.imow-pv26.hoofdlijn.2019000006"/>
+               </vt:hoofdlijnaanduiding>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000054"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000055">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000054</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Landschap</vt:thema>
+               <vt:thema>Aardkundige waarden</vt:thema>
+               <vt:thema>Leefklimaat</vt:thema>
+               <vt:thema>Stedelijk uitloopgebied</vt:thema>
+               <vt:thema>Recreatie</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000055"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000056">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000055</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000056"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000026"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000057">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000056</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Landschap</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000057"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000058">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000057</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Aardkundige waarden</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000058"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000059">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000058</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Kernrandzone</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000059"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000027"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000060">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000059</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Cultuurhistorie</vt:thema>
+               <vt:thema>Erfgoed</vt:thema>
+               <vt:thema>Cultuur</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000060"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000061">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000060</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000061"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000028"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000062">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000061</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000062"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000029"/>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000030"/>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000031"/>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000032"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000063">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000062</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Archeologie</vt:thema>
+               <vt:thema>Rijksmonumenten</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000063"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000064">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000063</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Cultuur</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000064"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000065">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000064</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Regio U16</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000065"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000066">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000065</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000066"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000034"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000067">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000066</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Regio Amersfoort</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000067"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000068">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000067</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Regio FoodValley</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000068"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000069">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000068</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Algemeen</vt:thema>
+               <vt:thema>Uitvoering</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000069"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000070">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000069</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:thema>Landschap</vt:thema>
+               <vt:thema>Cultuurhistorie</vt:thema>
+               <vt:thema>Landbouw</vt:thema>
+               <vt:thema>Natuur</vt:thema>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000070"/>
+               </vt:formeleDivisie>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel ow:regeltekstId="nl.imow-pv26.formeledivisie.2019000071">
+               <vt:identificatie>nl.imow-pv26.tekstdeel.2019000070</vt:identificatie>
+               <vt:idealisatie>exact</vt:idealisatie>
+               <vt:formeleDivisie>
+                  <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv26.formeledivisie.2019000071"/>
+               </vt:formeleDivisie>
+               <vt:gebiedsaanwijzing>
+                  <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-pv26.gebiedsaanwijzing.2019000035"/>
+               </vt:gebiedsaanwijzing>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

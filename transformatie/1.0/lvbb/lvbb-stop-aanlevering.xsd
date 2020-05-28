@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema elementFormDefault="qualified"
-  targetNamespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" version="1.0.0"
+  targetNamespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" version="1.0.1"
   xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
   xmlns:imop="https://standaarden.overheid.nl/stop/imop/"
   xmlns:lvbba="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
@@ -9,15 +9,15 @@
 
   <xs:annotation>
     <xs:documentation>LVBB-Aanlevering-schema</xs:documentation>
-    <xs:documentation>versie 1.0.0 uitgegeven op 03-04-2020</xs:documentation>
+    <xs:documentation>versie 1.0.1 uitgegeven op 20-05-2020</xs:documentation>
     <xs:documentation>Veranderingen tov uitgeleverd 0.98-kern versie worden beschreven op
-      https://gitlab.com/koop/lvbb/bronhouderkoppelvlak.git/lvbba_xsd_Main_schema_lvbba_xsd.html </xs:documentation>
+      https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/lvbba_xsd_Main_schema_lvbba_xsd.html </xs:documentation>
   </xs:annotation>
 
   <!-- xs:appinfo om geincludeerde STOP-versie vast te leggen -->
   <xs:annotation>
     <xs:appinfo>
-      <imop:STOPversie>1.0</imop:STOPversie>
+      <imop:STOPversie>1.0.1</imop:STOPversie>
     </xs:appinfo>
   </xs:annotation>
 
@@ -57,7 +57,7 @@
       <xs:sequence>
         <xs:element maxOccurs="1" minOccurs="1" ref="data:ExpressionIdentificatie" />
         <xs:element maxOccurs="1" minOccurs="1" ref="data:BesluitMetadata" />
-        <xs:element maxOccurs="1" minOccurs="1" ref="data:Procedure" />
+        <xs:element maxOccurs="1" minOccurs="1" ref="data:Procedureverloop" />
         <xs:element maxOccurs="1" minOccurs="1" ref="data:ConsolidatieInformatie" />
         <xs:choice>
           <xs:element maxOccurs="1" minOccurs="1" ref="tekst:BesluitKlassiek" />

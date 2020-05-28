@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema elementFormDefault="qualified"
-  targetNamespace="https://standaarden.overheid.nl/stop/imop/data/" version="1.0.0"
+  targetNamespace="https://standaarden.overheid.nl/stop/imop/data/" version="1.0.1"
   xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
   xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <xs:annotation>
     <xs:documentation>"Data-schema" van STOP. </xs:documentation>
     <xs:documentation>Dit schema definieert de "data"-elementen voor de STOP-modules</xs:documentation>
-    <xs:documentation>versie 1.0.0 uitgegeven op 03-04-2020</xs:documentation>
-    <xs:documentation>Veranderingen tov uitgeleverd 0.98-kern versie worden beschreven op <![CDATA[https://gitlab.com/koop/lvbb/bronhouderkoppelvlak.git/go/goto.html?to=stop&id=xsd%3Adata]]></xs:documentation>
+    <xs:documentation>versie 1.0.1 uitgegeven op 20-05-2020</xs:documentation>
+    <xs:documentation>Veranderingen tov uitgeleverd 0.98-kern versie worden beschreven op https://koop.gitlab.io/STOP/standaard/data_xsd_Main_schema_data_xsd.html </xs:documentation>
+    <xs:documentation>Veranderingen t.o.v uitgeleverde STOP 1.0 versies in de issue tracker op
+      https://gitlab.com/koop/STOP/standaard/-/issues </xs:documentation>
   </xs:annotation>
 
   <!--
@@ -314,13 +316,6 @@
      Procedure                                
   ================================================ 
   -->
-  <xs:element name="Procedure">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element maxOccurs="unbounded" minOccurs="0" ref="data:Procedureverloop" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
 
   <xs:element name="Procedureverloop">
     <xs:complexType>

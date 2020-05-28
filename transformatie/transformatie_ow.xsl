@@ -234,23 +234,39 @@
   </xsl:template>
 
   <xsl:template match="r:idealisatie">
-    <xsl:element name="{name()}" namespace="{$uri_new[13]}">
-      <xsl:value-of select="$waardelijsten[label='idealisatie']/waarden/waarde[label=current()]/uri"/>
-    </xsl:element>
-  </xsl:template>
-
-  <xsl:template match="r:thema">
-    <xsl:variable name="thema" select="$waardelijsten[label='thema']/waarden/waarde[label=current()]/uri"/>
+    <xsl:variable name="waarde" select="$waardelijsten[titel='Idealisatie']/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
     <xsl:choose>
-      <xsl:when test="$thema">
-        <xsl:element name="r:thema" namespace="{$uri_new[13]}">
-          <xsl:value-of select="$waardelijsten[label='thema']/waarden/waarde[label=current()]/uri"/>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{$uri_new[13]}">
+          <xsl:value-of select="$waarde"/>
         </xsl:element>
       </xsl:when>
       <xsl:otherwise>
         <xsl:comment>
-          <xsl:value-of select="concat('GW: waarde &quot;',current(),'&quot; ontbreekt in de waardelijst thema')"/>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;Idealisatie&quot;')"/>
         </xsl:comment>
+        <xsl:element name="{name()}" namespace="{$uri_new[13]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="r:thema">
+    <xsl:variable name="waarde" select="$waardelijsten[titel='Thema']/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{$uri_new[13]}">
+          <xsl:value-of select="$waarde"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;Thema&quot;')"/>
+        </xsl:comment>
+        <xsl:element name="{name()}" namespace="{$uri_new[13]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -279,9 +295,22 @@
   </xsl:template>
 
   <xsl:template match="r:activiteitregelkwalificatie">
-    <xsl:element name="{name()}" namespace="{$uri_new[13]}">
-      <xsl:value-of select="$waardelijsten[label='activiteitregelkwalificatie']/waarden/waarde[label=current()]/uri"/>
-    </xsl:element>
+    <xsl:variable name="waarde" select="$waardelijsten[titel='Activiteitregelkwalificatie']/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{$uri_new[13]}">
+          <xsl:value-of select="$waarde"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;Activiteitregelkwalificatie&quot;')"/>
+        </xsl:comment>
+        <xsl:element name="{name()}" namespace="{$uri_new[13]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!-- transformeer vrijetekst -->
@@ -314,23 +343,39 @@
   </xsl:template>
 
   <xsl:template match="vt:idealisatie">
-    <xsl:element name="{name()}" namespace="{$uri_new[17]}">
-      <xsl:value-of select="$waardelijsten[label='idealisatie']/waarden/waarde[label=current()]/uri"/>
-    </xsl:element>
-  </xsl:template>
-
-  <xsl:template match="vt:thema">
-    <xsl:variable name="thema" select="$waardelijsten[label='thema']/waarden/waarde[label=current()]/uri"/>
+    <xsl:variable name="waarde" select="$waardelijsten[titel='Idealisatie']/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
     <xsl:choose>
-      <xsl:when test="$thema">
-        <xsl:element name="vt:thema" namespace="{$uri_new[17]}">
-          <xsl:value-of select="$waardelijsten[label='thema']/waarden/waarde[label=current()]/uri"/>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{$uri_new[17]}">
+          <xsl:value-of select="$waarde"/>
         </xsl:element>
       </xsl:when>
       <xsl:otherwise>
         <xsl:comment>
-          <xsl:value-of select="concat('GW: waarde &quot;',current(),'&quot; ontbreekt in de waardelijst thema')"/>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;Idealisatie&quot;')"/>
         </xsl:comment>
+        <xsl:element name="{name()}" namespace="{$uri_new[17]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="vt:thema">
+    <xsl:variable name="waarde" select="$waardelijsten[titel='Thema']/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{$uri_new[17]}">
+          <xsl:value-of select="$waarde"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;Thema&quot;')"/>
+        </xsl:comment>
+        <xsl:element name="{name()}" namespace="{$uri_new[17]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -365,9 +410,22 @@
   </xsl:template>
 
   <xsl:template match="rol:Activiteit/rol:groep">
-    <xsl:element name="{name()}" namespace="{$uri_new[15]}">
-      <xsl:value-of select="$waardelijsten[label='activiteitengroep']/waarden/waarde[label=current()]/uri"/>
-    </xsl:element>
+    <xsl:variable name="waarde" select="$waardelijsten[titel='Activiteitengroep']/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{$uri_new[15]}">
+          <xsl:value-of select="$waarde"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;Activiteitengroep&quot;')"/>
+        </xsl:comment>
+        <xsl:element name="{name()}" namespace="{$uri_new[15]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!-- transformeer gebiedsaanwijzing -->
@@ -388,15 +446,42 @@
   </xsl:template>
 
   <xsl:template match="ga:type">
-    <xsl:element name="{name()}" namespace="{$uri_new[6]}">
-      <xsl:value-of select="$waardelijsten[titel='TypeGebiedsaanwijzing']/waarden/waarde[term=current()]/uri"/>
-    </xsl:element>
+    <xsl:variable name="waarde" select="$waardelijsten[titel='TypeGebiedsaanwijzing']/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{$uri_new[6]}">
+          <xsl:value-of select="$waarde"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;TypeGebiedsaanwijzing&quot;')"/>
+        </xsl:comment>
+        <xsl:element name="{name()}" namespace="{$uri_new[6]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="ga:groep">
-    <xsl:element name="{name()}" namespace="{$uri_new[6]}">
-      <xsl:value-of select="$waardelijsten[contains(titel,current()/preceding-sibling::ga:type)]/waarden/waarde[label=current()]/uri"/>
-    </xsl:element>
+    <xsl:variable name="groep" select="($waardelijsten[contains(lower-case(titel),lower-case(current()/preceding-sibling::ga:type))]|$waardelijsten[contains(lower-case(label),lower-case(current()/preceding-sibling::ga:type))])[1]"/>
+    <xsl:variable name="waarde" select="$groep/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{$uri_new[6]}">
+          <xsl:value-of select="$waarde"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;',$groep/titel,'&quot;')"/>
+        </xsl:comment>
+        <xsl:element name="{name()}" namespace="{$uri_new[6]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!-- transformeer normwaarde -->
@@ -413,7 +498,7 @@
     <xsl:element name="{name()}" namespace="{$uri_new[15]}">
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="(ow:status,ow:procedurestatus,rol:identificatie,rol:naam)"/>
-      <xsl:comment>GW: hier type norm toevoegen</xsl:comment>
+      <xsl:comment>Let op: hier type norm toevoegen</xsl:comment>
       <xsl:element name="rol:type" namespace="{$uri_new[15]}">
         <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/TypeNorm')"/>
       </xsl:element>
@@ -422,16 +507,29 @@
   </xsl:template>
 
   <xsl:template match="rol:Omgevingswaarde/rol:groep">
-    <xsl:element name="{name()}" namespace="{$uri_new[15]}">
-      <xsl:value-of select="$waardelijsten[label='omgevingswaardegroep']/waarden/waarde[label=current()]/uri"/>
-    </xsl:element>
+    <xsl:variable name="waarde" select="$waardelijsten[titel='Omgevingswaardegroep']/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{$uri_new[15]}">
+          <xsl:value-of select="$waarde"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;Omgevingswaardegroep&quot;')"/>
+        </xsl:comment>
+        <xsl:element name="{name()}" namespace="{$uri_new[15]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="rol:Omgevingsnorm">
     <xsl:element name="{name()}" namespace="{$uri_new[15]}">
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="(ow:status,ow:procedurestatus,rol:identificatie,rol:naam)"/>
-      <xsl:comment>GW: hier type norm toevoegen</xsl:comment>
+      <xsl:comment>Let op: hier type norm toevoegen</xsl:comment>
       <xsl:element name="rol:type" namespace="{$uri_new[15]}">
         <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/TypeNorm')"/>
       </xsl:element>
@@ -440,9 +538,22 @@
   </xsl:template>
 
   <xsl:template match="rol:Omgevingsnorm/rol:groep">
-    <xsl:element name="{name()}" namespace="{$uri_new[15]}">
-      <xsl:value-of select="$waardelijsten[label='omgevingsnormgroep']/waarden/waarde[label=current()]/uri"/>
-    </xsl:element>
+    <xsl:variable name="waarde" select="$waardelijsten[titel='Omgevingsnormgroep']/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{$uri_new[15]}">
+          <xsl:value-of select="$waarde"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;Omgevingsnormgroep&quot;')"/>
+        </xsl:comment>
+        <xsl:element name="{name()}" namespace="{$uri_new[15]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="rol:Normwaarde">
@@ -469,9 +580,22 @@
   </xsl:template>
 
   <xsl:template match="da:eenheid">
-    <xsl:element name="{fn:string-join(($ns_new[15],local-name()),':')}" namespace="{$uri_new[15]}">
-      <xsl:value-of select="$waardelijsten[label='eenheid']/waarden/waarde[label=current()]/uri"/>
-    </xsl:element>
+    <xsl:variable name="waarde" select="$waardelijsten[titel='Eenheid']/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$waarde">
+        <xsl:element name="{fn:string-join(($ns_new[15],local-name()),':')}" namespace="{$uri_new[15]}">
+          <xsl:value-of select="$waarde"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;Eenheid&quot;')"/>
+        </xsl:comment>
+        <xsl:element name="{fn:string-join(($ns_new[15],local-name()),':')}" namespace="{$uri_new[15]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!-- transformeer locatie -->

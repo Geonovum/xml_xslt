@@ -9,6 +9,9 @@
   
   <xsl:template match="Table">
     <xsl:element name="waardelijsten">
+      <xsl:element name="versie">
+        <xsl:value-of select="string('1.0.2')"/>
+      </xsl:element>
       <xsl:for-each-group select="Row" group-starting-with="Row[Cell[1][not(@ss:Index)]/Data]">
         <xsl:variable name="Row">
           <xsl:call-template name="check_row">
@@ -55,10 +58,26 @@
               </xsl:element>
               <xsl:element name="waarden">
                 <xsl:for-each select="fn:subsequence(current-group(),2)">
-                  <xsl:apply-templates select="self::Row[Cell/Data]">
+                  <xsl:apply-templates select="self::Row[Cell/Data]" mode="waarde">
                     <xsl:with-param name="waardelijst" select="$naam"/>
                   </xsl:apply-templates>
                 </xsl:for-each>
+              </xsl:element>
+              <xsl:element name="domeinen">
+                <xsl:choose>
+                  <xsl:when test="$naam='Thema'">
+                    <xsl:for-each-group select="fn:subsequence(current-group(),2)/self::Row[Cell/Data]" group-starting-with="self::Row[not(contains(Cell[@ss:Index=2]/Data,' - '))]">
+                      <xsl:apply-templates select="current-group()[1]" mode="domein">
+                        <xsl:with-param name="waardelijst" select="$naam"/>
+                      </xsl:apply-templates>
+                    </xsl:for-each-group>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:apply-templates select="current-group()[1]" mode="domein">
+                      <xsl:with-param name="waardelijst" select="$naam"/>
+                    </xsl:apply-templates>
+                  </xsl:otherwise>
+                </xsl:choose>
               </xsl:element>
             </xsl:element>
           </xsl:when>
@@ -67,7 +86,7 @@
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="Row">
+  <xsl:template match="Row" mode="waarde">
     <xsl:param name="waardelijst"/>
     <xsl:variable name="Row">
       <xsl:call-template name="check_row">
@@ -76,6 +95,11 @@
     </xsl:variable>
     <xsl:element name="waarde">
       <xsl:variable name="naam" select="normalize-space(replace(string-join($Row/Cell[@index=2]/Data/node(),''),' - ','_'))"/>
+      <xsl:variable name="term">
+        <xsl:call-template name="check_string">
+          <xsl:with-param name="string" select="$naam"/>
+        </xsl:call-template>
+      </xsl:variable>
       <xsl:variable name="domein">
         <xsl:choose>
           <xsl:when test="$waardelijst='Activiteitengroep'">
@@ -98,11 +122,6 @@
           </xsl:otherwise>
         </xsl:choose>
       </xsl:variable>
-      <xsl:variable name="term">
-        <xsl:call-template name="check_string">
-          <xsl:with-param name="string" select="$naam"/>
-        </xsl:call-template>
-      </xsl:variable>
       <xsl:element name="label">
         <xsl:value-of select="lower-case(tokenize($naam,'_')[last()])"/>
       </xsl:element>
@@ -124,13 +143,60 @@
       <xsl:element name="domein">
         <xsl:value-of select="concat('http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/',$domein)"/>
       </xsl:element>
+      <xsl:element name="specialisatie">
+        <xsl:if test="($waardelijst='Thema') and not($domein=$term)">
+          <xsl:value-of select="concat('http://standaarden.omgevingswet.overheid.nl/',lower-case($domein),'/id/concept/',$domein)"/>
+        </xsl:if>
+      </xsl:element>
       <xsl:element name="symboolcode">
-        <xsl:element name="exact">
-          <xsl:value-of select="normalize-space(string-join($Row/Cell[@index=8]/Data/node(),''))"/>
-        </xsl:element>
-        <xsl:element name="indicatief">
-          <xsl:value-of select="normalize-space(string-join($Row/Cell[@index=9]/Data/node(),''))"/>
-        </xsl:element>
+        <xsl:value-of select="normalize-space(string-join($Row/Cell[@index=8]/Data/node(),''))"/>
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="Row" mode="domein">
+    <xsl:param name="waardelijst"/>
+    <xsl:variable name="Row">
+      <xsl:call-template name="check_row">
+        <xsl:with-param name="current" select="."/>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:element name="domein">
+      <xsl:variable name="naam">
+        <xsl:choose>
+          <xsl:when test="$waardelijst='Activiteitengroep'">
+            <xsl:value-of select="string('Activiteit')"/>
+          </xsl:when>
+          <xsl:when test="ends-with($waardelijst,'groep')">
+            <xsl:value-of select="replace($waardelijst,'groep','')"/>
+          </xsl:when>
+          <xsl:when test="$waardelijst='Thema'">
+            <xsl:value-of select="$Row/Cell[@index=2]/Data"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="$waardelijst"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      <xsl:variable name="term">
+        <xsl:call-template name="check_string">
+          <xsl:with-param name="string" select="$naam"/>
+        </xsl:call-template>
+      </xsl:variable>
+      <xsl:element name="label">
+        <xsl:value-of select="lower-case(tokenize($naam,'_')[last()])"/>
+      </xsl:element>
+      <xsl:element name="term">
+        <xsl:value-of select="$term"/>
+      </xsl:element>
+      <xsl:element name="uri">
+        <xsl:value-of select="concat('http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/',$term)"/>
+      </xsl:element>
+      <xsl:element name="omschrijving">
+        <xsl:value-of select="normalize-space(string-join($Row/Cell[@index=4]/Data/node(),''))"/>
+      </xsl:element>
+      <xsl:element name="toelichting">
+        <xsl:value-of select="normalize-space(string-join($Row/Cell[@index=3]/Data/node(),''))"/>
       </xsl:element>
     </xsl:element>
   </xsl:template>

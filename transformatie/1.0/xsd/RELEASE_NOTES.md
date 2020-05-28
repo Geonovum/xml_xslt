@@ -1,8 +1,8 @@
 # Release notes
 
-Versie: Standaard v1.0 van 17 april  2020.
+Versie: Standaard v1.0.2 van 3 juni  2020.
 
-Gebaseerd op: CIMOW v1.0 van 17 april 2020.
+Gebaseerd op: CIMOW v1.0.2 van 14 mei 2020.
 
 Functionele wijzigingen staan in het CIMOW en het IMOW document opgesomd. Deze
 zorgen voor bijwerkingen van de 'OW' XSD's in de map /IMOW - Generieke schema's
@@ -14,6 +14,9 @@ https://www.geostandaarden.nl/imow/
 
 ## Versies
 Alle schema's volgen de x.y.z. systematiek. 
+## Verbeteringen tussen v1.0.2 en v1.0.1
+	manifest-OW aangepast om bestandsnamen te ondersteunen die beginnen met een cijfer.
+	
 ## Verbeteringen tussen v1.0.1 en v1.0
 	Foutmeldingen van Pons-schema hersteld (verkeerde verwijzing naar OWobject)
 	Kardinaliteitsaanpassingen bij activiteit 

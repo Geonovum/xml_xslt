@@ -14,8 +14,8 @@
     <xsl:value-of select="concat('&quot;','Toelichting','&quot;',';')"/>
     <xsl:value-of select="concat('&quot;','Bron','&quot;',';')"/>
     <xsl:value-of select="concat('&quot;','Domein','&quot;',';')"/>
-    <xsl:value-of select="concat('&quot;','Symboolcode exact','&quot;',';')"/>
-    <xsl:value-of select="concat('&quot;','Symboolcode indicatief','&quot;')"/>
+    <xsl:value-of select="concat('&quot;','Specialisatie van','&quot;',';')"/>
+    <xsl:value-of select="concat('&quot;','Symboolcode','&quot;',';')"/>
     <xsl:apply-templates select="waardelijsten/waardelijst"/>
   </xsl:template>
 
@@ -50,8 +50,8 @@
     <xsl:value-of select="concat('&quot;',toelichting,'&quot;',';')"/>
     <xsl:value-of select="concat('&quot;',bron,'&quot;',';')"/>
     <xsl:value-of select="concat('&quot;',domein,'&quot;',';')"/>
-    <xsl:value-of select="concat('&quot;',symboolcode/exact,'&quot;',';')"/>
-    <xsl:value-of select="concat('&quot;',symboolcode/indicatief,'&quot;')"/>
+    <xsl:value-of select="concat('&quot;',specialisatie,'&quot;',';')"/>
+    <xsl:value-of select="concat('&quot;',symboolcode,'&quot;',';')"/>
   </xsl:template>
 
 </xsl:stylesheet>
