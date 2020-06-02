@@ -3,6 +3,11 @@
     xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs" version="2.0">
     
+    <!-- Er zijn drie bestanden:
+        naam.gml -> Het oorspronkelijke gml bestand.
+        naam_temp.gml -> Het bestand waarin de nieuwe posLists staan, deze moeten in aantal gelijk zijn aan die uit naam.gml
+        naam_nieuw.gml -> Het bestand dat wordt gecreeerd met daarin de oude posLists uit naam.gml vervangen door de nieuwe poslLists uit naam_temp.gml
+    -->
     <!-- vervangt poslists in een gml bestand gml_naam.gml door de poslists die in een gml_naam_temp.gml staan
         Het oorspronkelijke bestand wordt niet overschreven, maar er wordt een bestand gml_naam_nieuw.gml gecreeerd.
         Voorwaarde is dat het gml_naam_temp.gml bestand evenveel poslists heeft als het bestand gml_naam.gml
