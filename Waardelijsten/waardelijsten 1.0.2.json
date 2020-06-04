@@ -4846,9 +4846,9 @@
             }
          },
          {
-            "label": "beperkingengebiedgoep",
-            "titel": "Beperkingengebiedgoep",
-            "uri": "http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Beperkingengebiedgoep",
+            "label": "beperkingengebiedgroep",
+            "titel": "Beperkingengebiedgroep",
+            "uri": "http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Beperkingengebiedgroep",
             "type": "limitatief",
             "omschrijving": "Waardelijst voor attribuut groep bij het Gebiedsaanwijzingtype Beperkingengebied, dat zorgt voor filteren en weergave van de symbolisatie van Beperkingengebied op de kaart.",
             "toelichting": "",
@@ -4857,12 +4857,12 @@
                   {
                      "label": "installatie in waterstaatswerk",
                      "term": "InstallatieInWaterstaatswerk",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/InstallatieInWaterstaatswerk",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/InstallatieInWaterstaatswerk",
                      "definitie": "Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege een installatie in een waterstaatswerk gelden.",
                      "toelichting": "",
                      "bron": "https://zoek.officielebekendmakingen.nl/stb-2016-156.html",
                      "domein": [
-                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep"
+                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep"
                      ],
                      "specialisatie": "",
                      "symboolcode": "vag222"
@@ -4870,12 +4870,12 @@
                   {
                      "label": "luchthaven",
                      "term": "Luchthaven",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/Luchthaven",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Luchthaven",
                      "definitie": "Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege een luchthaven gelden.",
                      "toelichting": "",
                      "bron": "https://zoek.officielebekendmakingen.nl/stb-2016-156.html",
                      "domein": [
-                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep"
+                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep"
                      ],
                      "specialisatie": "",
                      "symboolcode": "vag228"
@@ -4883,12 +4883,12 @@
                   {
                      "label": "molen",
                      "term": "Molen",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/Molen",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Molen",
                      "definitie": "Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege een molen gelden.",
                      "toelichting": "",
                      "bron": "",
                      "domein": [
-                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep"
+                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep"
                      ],
                      "specialisatie": "",
                      "symboolcode": "vag206"
@@ -4896,12 +4896,12 @@
                   {
                      "label": "overig",
                      "term": "Overig",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/Overig",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Overig",
                      "definitie": "Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege vanwege de aanwezigheid van een werk of object gelden, die niet vallen onder een van de overige waarden.",
                      "toelichting": "",
                      "bron": "https://www.geonovum.nl/geo-standaarden/omgevingswet/STOPTPOD",
                      "domein": [
-                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep"
+                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep"
                      ],
                      "specialisatie": "",
                      "symboolcode": "vag221"
@@ -4909,12 +4909,12 @@
                   {
                      "label": "spoorweg",
                      "term": "Spoorweg",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/Spoorweg",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Spoorweg",
                      "definitie": "Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege een spoorweg gelden.",
                      "toelichting": "",
                      "bron": "https://zoek.officielebekendmakingen.nl/stb-2016-156.html",
                      "domein": [
-                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep"
+                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep"
                      ],
                      "specialisatie": "",
                      "symboolcode": "vag215"
@@ -4922,12 +4922,12 @@
                   {
                      "label": "waterstaatswerk",
                      "term": "Waterstaatswerk",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/Waterstaatswerk",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Waterstaatswerk",
                      "definitie": "Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege een waterstaatswerk gelden.",
                      "toelichting": "",
                      "bron": "https://zoek.officielebekendmakingen.nl/stb-2016-156.html",
                      "domein": [
-                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep"
+                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep"
                      ],
                      "specialisatie": "",
                      "symboolcode": "vag220"
@@ -4935,12 +4935,12 @@
                   {
                      "label": "weg",
                      "term": "Weg",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/Weg",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Weg",
                      "definitie": "Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege een weg gelden.",
                      "toelichting": "",
                      "bron": "https://zoek.officielebekendmakingen.nl/stb-2016-156.html",
                      "domein": [
-                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep"
+                        "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep"
                      ],
                      "specialisatie": "",
                      "symboolcode": "vag214"
@@ -4950,10 +4950,10 @@
             "domeinen": {
                "domein": [
                   {
-                     "label": "beperkingengebiedgoep",
-                     "term": "Beperkingengebiedgoep",
-                     "uri": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep",
-                     "omschrijving": "Begrippen gerelateerd aan het inhoudelijke (thematische/sectorale) domein van beperkingengebiedgoep.",
+                     "label": "beperkingengebiedgroep",
+                     "term": "Beperkingengebiedgroep",
+                     "uri": "http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep",
+                     "omschrijving": "Begrippen gerelateerd aan het inhoudelijke (thematische/sectorale) domein van beperkingengebiedgroep.",
                      "toelichting": ""
                   }
                ]
