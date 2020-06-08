@@ -554,14 +554,24 @@
                 <xsl:choose>
                   <xsl:when test="position()=1">
                     <xsl:variable name="nummer" select="fn:tokenize(fn:string-join(current-group()/w:t),'\s+')"/>
-                    <xsl:if test="count($nummer) gt 1">
-                      <xsl:element name="Label" namespace="{$tekst}">
-                        <xsl:value-of select="fn:subsequence($nummer,1,count($nummer)-1)"/>
-                      </xsl:element>
-                    </xsl:if>
-                    <xsl:element name="Nummer" namespace="{$tekst}">
-                      <xsl:value-of select="$nummer[last()]"/>
-                    </xsl:element>
+                    <xsl:choose>
+                      <xsl:when test="count($nummer) eq 0">
+                        <!-- doe niets -->
+                      </xsl:when>
+                      <xsl:when test="count($nummer) eq 1">
+                        <xsl:element name="Nummer" namespace="{$tekst}">
+                          <xsl:value-of select="$nummer[last()]"/>
+                        </xsl:element>
+                      </xsl:when>
+                      <xsl:when test="count($nummer) gt 1">
+                        <xsl:element name="Label" namespace="{$tekst}">
+                          <xsl:value-of select="fn:subsequence($nummer,1,count($nummer)-1)"/>
+                        </xsl:element>
+                        <xsl:element name="Nummer" namespace="{$tekst}">
+                          <xsl:value-of select="$nummer[last()]"/>
+                        </xsl:element>
+                      </xsl:when>
+                    </xsl:choose>
                   </xsl:when>
                   <xsl:otherwise>
                     <xsl:element name="Opschrift" namespace="{$tekst}">
