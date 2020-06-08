@@ -334,8 +334,8 @@
     </xsl:for-each-group>
   </xsl:template>
 
-  <xsl:param name="section_lichaam_vrijtekst_word" select="('Divisiekop1','Divisiekop2','Divisiekop3','Divisiekop4','Divisiekop5','Divisiekop6','Divisiekop7')"/>
-  <xsl:param name="section_lichaam_vrijtekst_imop" select="('FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie')"/>
+  <xsl:param name="section_lichaam_vrijtekst_word" select="('Divisiekop1','Divisiekop2','Divisiekop3','Divisiekop4','Divisiekop5','Divisiekop6','Divisiekop7','Divisiekop8','Divisiekop9')"/>
+  <xsl:param name="section_lichaam_vrijtekst_imop" select="('FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie')"/>
 
   <xsl:template name="section_lichaam_vrijetekst">
     <xsl:param name="group"/>
@@ -369,8 +369,8 @@
     </xsl:for-each-group>
   </xsl:template>
 
-  <xsl:param name="section_bijlage_word" select="('Divisiekop1','Divisiekop2','Divisiekop3','Divisiekop4','Divisiekop5','Divisiekop6','Divisiekop7')"/>
-  <xsl:param name="section_bijlage_imop" select="('Bijlage','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie')"/>
+  <xsl:param name="section_bijlage_word" select="('Divisiekop1','Divisiekop2','Divisiekop3','Divisiekop4','Divisiekop5','Divisiekop6','Divisiekop7','Divisiekop8','Divisiekop9')"/>
+  <xsl:param name="section_bijlage_imop" select="('Bijlage','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie')"/>
 
   <xsl:template name="section_bijlage">
     <xsl:param name="group"/>
@@ -430,16 +430,8 @@
       <xsl:choose>
         <xsl:when test="current-grouping-key()='figuur'">
           <xsl:element name="Figuur" namespace="{$tekst}">
-            <xsl:for-each select="current-group()">
-              <xsl:choose>
-                <xsl:when test="self::w:p[w:r/w:drawing]">
-                  <xsl:apply-templates select="./w:r/w:drawing"/>
-                </xsl:when>
-                <xsl:otherwise>
-                  <xsl:apply-templates select="."/>
-                </xsl:otherwise>
-              </xsl:choose>
-            </xsl:for-each>
+            <xsl:apply-templates select="current-group()/w:r/w:drawing"/>
+            <xsl:apply-templates select="current-group()/self::w:p[not(w:r/w:drawing)]"/>
           </xsl:element>
         </xsl:when>
         <xsl:when test="current-grouping-key()='tabel'">
@@ -554,28 +546,37 @@
   <xsl:template match="w:p">
     <xsl:variable name="styleId" select="w:pPr/w:pStyle/@w:val"/>
     <xsl:choose>
-      <xsl:when test="$styleId=('Kop1','Kop2','Kop3','Kop4','Kop5','Kop6','Kop7','Divisiekop1','Divisiekop2','Divisiekop3','Divisiekop4','Divisiekop5','Divisiekop6','Divisiekop7')">
+      <xsl:when test="$styleId=('Kop1','Kop2','Kop3','Kop4','Kop5','Kop6','Kop7','Divisiekop1','Divisiekop2','Divisiekop3','Divisiekop4','Divisiekop5','Divisiekop6','Divisiekop7','Divisiekop8','Divisiekop9')">
         <xsl:element name="Kop" namespace="{$tekst}">
-          <xsl:for-each-group select="*" group-starting-with="w:r[w:tab][1]">
-            <xsl:choose>
-              <xsl:when test="position()=1">
-                <xsl:variable name="nummer" select="fn:tokenize(fn:string-join(current-group()/w:t),'\s+')"/>
-                <xsl:if test="count($nummer) gt 1">
-                  <xsl:element name="Label" namespace="{$tekst}">
-                    <xsl:value-of select="fn:subsequence($nummer,1,count($nummer)-1)"/>
-                  </xsl:element>
-                </xsl:if>
-                <xsl:element name="Nummer" namespace="{$tekst}">
-                  <xsl:value-of select="$nummer[last()]"/>
-                </xsl:element>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:element name="Opschrift" namespace="{$tekst}">
-                  <xsl:apply-templates select="current-group()"/>
-                </xsl:element>
-              </xsl:otherwise>
-            </xsl:choose>
-          </xsl:for-each-group>
+          <xsl:choose>
+            <xsl:when test="w:r[w:tab]">
+              <xsl:for-each-group select="*" group-starting-with="w:r[w:tab][1]">
+                <xsl:choose>
+                  <xsl:when test="position()=1">
+                    <xsl:variable name="nummer" select="fn:tokenize(fn:string-join(current-group()/w:t),'\s+')"/>
+                    <xsl:if test="count($nummer) gt 1">
+                      <xsl:element name="Label" namespace="{$tekst}">
+                        <xsl:value-of select="fn:subsequence($nummer,1,count($nummer)-1)"/>
+                      </xsl:element>
+                    </xsl:if>
+                    <xsl:element name="Nummer" namespace="{$tekst}">
+                      <xsl:value-of select="$nummer[last()]"/>
+                    </xsl:element>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:element name="Opschrift" namespace="{$tekst}">
+                      <xsl:apply-templates select="current-group()"/>
+                    </xsl:element>
+                  </xsl:otherwise>
+                </xsl:choose>
+              </xsl:for-each-group>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:element name="Opschrift" namespace="{$tekst}">
+                <xsl:apply-templates/>
+              </xsl:element>
+            </xsl:otherwise>
+          </xsl:choose>
         </xsl:element>
       </xsl:when>
       <xsl:when test="$styleId=('Lidmetnummering')">
@@ -613,6 +614,7 @@
       </xsl:when>
       <xsl:when test="$styleId=('Bijschrift')">
         <xsl:element name="Bijschrift" namespace="{$tekst}">
+          <xsl:attribute name="locatie" select="if (following::w:p[w:r/w:drawing]) then string('boven') else string('onder')"/>
           <xsl:apply-templates/>
         </xsl:element>
       </xsl:when>
@@ -713,7 +715,7 @@
           <xsl:variable name="index" select="position()"/>
           <xsl:element name="colspec" namespace="{$tekst}">
             <xsl:attribute name="colname" select="concat('col',$index)"/>
-            <xsl:attribute name="colwidth" select="@w:w"/>
+            <xsl:attribute name="colwidth" select="concat(@w:w,'*')"/>
           </xsl:element>
         </xsl:for-each>
         <xsl:variable name="thead" select="w:tr[w:trPr/w:tblHeader]"/>
@@ -830,10 +832,14 @@
     <xsl:choose>
       <xsl:when test="$imageId!=''">
         <xsl:variable name="imageName" select="document($relations,.)//*[@Id=$imageId]/@Target"/>
+        <!-- waarden in dxa, dat is 1/20 pt -->
         <xsl:element name="Illustratie" namespace="{$tekst}">
           <xsl:attribute name="naam" select="$imageName"/>
+          <xsl:attribute name="formaat" select="concat('image/',tokenize($imageName,'\.')[last()])"/>
           <xsl:attribute name="breedte" select="string(number((wp:anchor/wp:extent|wp:inline/a:graphic/a:graphicData/pic:pic/pic:spPr/a:xfrm/a:ext)[1]/@cx) div 635)"/>
           <xsl:attribute name="hoogte" select="string(number((wp:anchor/wp:extent|wp:inline/a:graphic/a:graphicData/pic:pic/pic:spPr/a:xfrm/a:ext)[1]/@cy) div 635)"/>
+          <xsl:attribute name="dpi" select="string('72')"/>
+          <xsl:attribute name="uitlijning" select="string('start')"/>
         </xsl:element>
       </xsl:when>
     </xsl:choose>
