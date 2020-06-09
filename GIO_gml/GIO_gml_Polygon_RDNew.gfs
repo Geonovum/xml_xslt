@@ -1,0 +1,14 @@
+<GMLFeatureClassList>
+    <GMLFeatureClass>
+        <Name>Polygon</Name>
+        <ElementPath>Geometrie</ElementPath>
+        <GeometryElementPath>geometrie</GeometryElementPath>
+        <SRSName>urn:ogc:def:crs:EPSG::28992</SRSName>
+        <PropertyDefn>
+            <Name>id</Name>
+            <ElementPath>id</ElementPath>
+            <Type>String</Type>
+            <Width>50</Width>
+        </PropertyDefn>
+    </GMLFeatureClass>
+</GMLFeatureClassList>
