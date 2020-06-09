@@ -1,0 +1,39 @@
+GMLFeatureClass
+    Name
+    ElementPath
+    GeomPropertyDefn
+        Name
+        ElementPath
+        Type
+        Nullable
+    GeometryName
+    GeometryElementPath
+    GeometryType
+    SRSName
+    DatasetSpecificInfo
+        FeatureCount
+        ExtraInfo
+            ExtentXMin
+            ExtentXMax
+            ExtentYMin
+            ExtentYMax
+    PropertyDefn
+        Name
+        Type (/ Untyped) 
+            String (Boolean, Date, Time, Datetime|->Width)
+            Integer (Short, Integer64|->Width)
+            Real (->Float|->Width|->Precision)
+            IntegerList
+            RealList
+            Complex
+            FeatureProperty
+            FeaturePropertyList
+        (Width)
+        (Float)
+        (Precision)
+        Subtype
+        Condition
+        Nullable
+        Unique
+        ElementPath
+        
