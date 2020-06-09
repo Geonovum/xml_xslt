@@ -50,14 +50,17 @@
       </xsl:for-each>
     </xsl:element>
     <xsl:for-each select="//domeinen/domein">
-      <xsl:element name="domein">
-        <xsl:variable name="test" select="."/>
-        <xsl:for-each select="(label,term,uri,omschrijving,toelichting)">
-          <xsl:element name="item">
-            <xsl:value-of select="./node()"/>
-          </xsl:element>
-        </xsl:for-each>
-      </xsl:element>
+      <xsl:sort select="term"/>
+      <xsl:if test="not(preceding::domeinen/domein[./term=current()/term])">
+        <xsl:element name="domein">
+          <xsl:variable name="test" select="."/>
+          <xsl:for-each select="(label,term,uri,omschrijving,toelichting)">
+            <xsl:element name="item">
+              <xsl:value-of select="./node()"/>
+            </xsl:element>
+          </xsl:for-each>
+        </xsl:element>
+      </xsl:if>
     </xsl:for-each>
   </xsl:param>
 
