@@ -8,8 +8,10 @@
 
   <!-- Vul hieronder de identifier voor het bevoegd gezag en het versienummer in. -->
 
-  <xsl:param name="wId_bg" select="tokenize(//processing-instruction('akn'),'_')[1]"/>
-  <xsl:param name="wId_versie" select="tokenize(//processing-instruction('akn'),'_')[2]"/>
+  <!--xsl:param name="wId_bg" select="tokenize(//processing-instruction('akn'),'_')[1]"/>
+  <xsl:param name="wId_versie" select="tokenize(//processing-instruction('akn'),'_')[2]"/-->
+  <xsl:param name="wId_bg" select="string('gm0297')"/>
+  <xsl:param name="wId_versie" select="string('1')"/>
 
   <!-- Variabelen eId en unique_eId bevatten een mapping van alle elementen in het voorbeeldbestand naar hun eId. -->
 
@@ -19,7 +21,7 @@
 
   <xsl:template match="element()" mode="eId">
     <xsl:variable name="index" select="fn:index-of($element,local-name())"/>
-    <xsl:variable name="count" select="if ($element_wId_eId[$index] eq 'onwaar') then fn:string-join(('o',string(count(.|preceding::*[local-name() eq $element[$index]])-count(ancestor::*[fn:index-of($element,local-name()) gt 0][1]/preceding::*[local-name() eq $element[$index]]))),'_') else null"/>
+    <xsl:variable name="count" select="if ($element_wId_eId[$index] eq 'onwaar') then fn:string-join(('o',string(count(.|preceding-sibling::*[local-name() eq $element[$index]]))),'_') else null"/>
     <xsl:choose>
       <xsl:when test="$index gt 0">
         <node id="{generate-id()}" wId_eId="{$element_wId_eId[$index]}">
