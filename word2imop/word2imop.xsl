@@ -30,14 +30,14 @@
   <!-- lees metadata regeling in -->
   <xsl:variable name="D04" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'officieleTitel')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D05" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'redactioneleTitel')]/w:tc[2]//w:t),'geen')[1]"/>
-  <xsl:variable name="D06" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'typeDocument')]/w:tc[2]//w:t),'geen')[1]"/>
-  <xsl:variable name="D07" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'versieDocument')]/w:tc[2]//w:t),'geen')[1]"/>
+  <xsl:variable name="D06" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'typeRegeling')]/w:tc[2]//w:t),'geen')[1]"/>
+  <xsl:variable name="D07" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'versieRegeling')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D08" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'overheidsdomein')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D09" select="tokenize((fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'onderwerpen')]/w:tc[2]//w:t),'geen')[1],'\|')"/>
   <xsl:variable name="D10" select="tokenize((fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'rechtsgebieden')]/w:tc[2]//w:t),'geen')[1],',\|')"/>
   <!-- lees metadata organisatie in -->
   <xsl:variable name="D11" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'typeOrganisatie')]/w:tc[2]//w:t),'geen')[1]"/>
-  <xsl:variable name="D12" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'idOrganisatie')]/w:tc[2]//w:t),'geen')[1]"/>
+  <xsl:variable name="D12" select="tokenize((fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'idOrganisatie')]/w:tc[2]//w:t),'geen')[1],'/')[last()]"/>
   <!-- lees metadata procedure in -->
   <xsl:variable name="tbl_proc" select="document($comments,.)/w:comments/w:comment/w:tbl[contains(fn:string-join(w:tr[1]/w:tc[1]//w:t),'Procedure')]"/>
   <xsl:variable name="P01" select="(fn:string-join($tbl_proc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'bekendOp')]/w:tc[2]//w:t),'geen')[1]"/>
@@ -60,7 +60,7 @@
   <xsl:template match="w:document">
     <xsl:element name="AanleveringBesluit" namespace="{$lvbb}">
       <xsl:attribute name="schemaversie" select="$D02"/>
-      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.overheid.nl/imop/def# ../stop/LVBB-stop.xsd')"/>
+      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.overheid.nl/2017/lvbb ../lvbb/LVBB-stop.xsd')"/>
       <!-- geef informatie door aan AKN.xsl -->
       <xsl:processing-instruction name="akn">
         <xsl:value-of select="fn:string-join(($D12,$D07),'_')"/>

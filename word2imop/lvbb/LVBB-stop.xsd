@@ -15,9 +15,9 @@
     </xs:appinfo>
   </xs:annotation>
   
-  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/geo/"/>
-  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
+  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/data/" schemaLocation="../stop/imop-data.xsd"/>
+  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/geo/" schemaLocation="../stop/imop-geo.xsd"/>
+  <xs:import namespace="https://standaarden.overheid.nl/stop/imop/tekst/" schemaLocation="../stop/imop-tekst.xsd"/>
 
   <!--
     AANLEVEREN BESLUIT
