@@ -60,7 +60,7 @@
   <xsl:template match="w:document">
     <xsl:element name="AanleveringBesluit" namespace="{$lvbb}">
       <xsl:attribute name="schemaversie" select="$D02"/>
-      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.overheid.nl/imop/def# ../stop/LVBB-stop.xsd')"/>
+      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.overheid.nl/2017/lvbb ../lvbb/LVBB-stop.xsd')"/>
       <!-- geef informatie door aan AKN.xsl -->
       <xsl:processing-instruction name="akn">
         <xsl:value-of select="fn:string-join(($D12,$D07),'_')"/>
