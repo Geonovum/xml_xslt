@@ -1,6 +1,6 @@
 <GMLFeatureClassList>
   <GMLFeatureClass>
-    <Name>GIO</Name>
+    <Name>Locatie</Name>
     <ElementPath>Locatie</ElementPath>
     <GeometryElementPath>geometrie|Geometrie|geometrie</GeometryElementPath>
     <GeometryName>geometrie|Geometrie@gml:id</GeometryName>
