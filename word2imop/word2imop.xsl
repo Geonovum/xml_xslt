@@ -21,6 +21,9 @@
   <xsl:param name="styles" select="concat($basedir,'styles.xml')"/>
   <xsl:param name="footnotes" select="concat($basedir,'footnotes.xml')"/>
 
+  <!-- lees relations in -->
+  <xsl:variable name="relationships" select="document($relations,.)/Relationships/Relationship" xpath-default-namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
+
   <!-- lees metadata besluit in -->
   <xsl:variable name="tbl_doc" select="document($comments,.)/w:comments/w:comment/w:tbl[contains(fn:string-join(w:tr[1]/w:tc[1]//w:t),'Document')]"/>
   <!-- lees metadata work in -->
@@ -30,13 +33,13 @@
   <!-- lees metadata regeling in -->
   <xsl:variable name="D04" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'officieleTitel')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D05" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'redactioneleTitel')]/w:tc[2]//w:t),'geen')[1]"/>
-  <xsl:variable name="D06" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'typeRegeling')]/w:tc[2]//w:t),'geen')[1]"/>
+  <xsl:variable name="D06" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'soortRegeling')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D07" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'versieRegeling')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D08" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'overheidsdomein')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D09" select="tokenize((fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'onderwerpen')]/w:tc[2]//w:t),'geen')[1],'\|')"/>
   <xsl:variable name="D10" select="tokenize((fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'rechtsgebieden')]/w:tc[2]//w:t),'geen')[1],',\|')"/>
   <!-- lees metadata organisatie in -->
-  <xsl:variable name="D11" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'typeOrganisatie')]/w:tc[2]//w:t),'geen')[1]"/>
+  <xsl:variable name="D11" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'soortOrganisatie')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D12" select="tokenize((fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'idOrganisatie')]/w:tc[2]//w:t),'geen')[1],'/')[last()]"/>
   <!-- lees metadata procedure in -->
   <xsl:variable name="tbl_proc" select="document($comments,.)/w:comments/w:comment/w:tbl[contains(fn:string-join(w:tr[1]/w:tc[1]//w:t),'Procedure')]"/>
@@ -426,7 +429,7 @@
 
   <xsl:template name="group_adjacent">
     <xsl:param name="group"/>
-    <xsl:for-each-group select="$group" group-adjacent="if (self::w:p[w:r/w:drawing]|self::w:p[contains(w:pPr/w:pStyle/@w:val,'Bijschrift')]) then 'figuur' else if (self::w:tbl|self::w:p[contains(w:pPr/w:pStyle/@w:val,'Tabeltitel')]) then 'tabel' else if (self::w:p[fn:ends-with(fn:string-join(w:r/w:t),':')][contains(following-sibling::*[1]/w:pPr/w:pStyle/@w:val,'Opsommingmetnummering')]|self::w:p[contains(w:pPr/w:pStyle/@w:val,'Opsomming')]) then 'lijst' else 'standaard'">
+    <xsl:for-each-group select="$group" group-adjacent="if (self::w:p[w:r/w:drawing]|self::w:p[contains(w:pPr/w:pStyle/@w:val,'Figuurbijschrift')]) then 'figuur' else if (self::w:tbl|self::w:p[contains(w:pPr/w:pStyle/@w:val,'Tabeltitel')]) then 'tabel' else if (self::w:p[fn:ends-with(fn:string-join(w:r/w:t),':')][contains(following-sibling::*[1]/w:pPr/w:pStyle/@w:val,'Opsommingmetnummering')]|self::w:p[contains(w:pPr/w:pStyle/@w:val,'Opsomming')]) then 'lijst' else 'standaard'">
       <xsl:choose>
         <xsl:when test="current-grouping-key()='figuur'">
           <xsl:element name="Figuur" namespace="{$tekst}">
@@ -622,7 +625,7 @@
           <xsl:apply-templates/>
         </xsl:element>
       </xsl:when>
-      <xsl:when test="$styleId=('Bijschrift')">
+      <xsl:when test="$styleId=('Figuurbijschrift')">
         <xsl:element name="Bijschrift" namespace="{$tekst}">
           <xsl:attribute name="locatie" select="if (following::w:p[w:r/w:drawing]) then string('boven') else string('onder')"/>
           <xsl:apply-templates/>
@@ -681,7 +684,20 @@
   </xsl:template>
 
   <xsl:template match="w:hyperlink">
-    <xsl:apply-templates/>
+    <xsl:variable name="id" select="@r:id"/>
+    <xsl:variable name="relationship" select="$relationships/self::Relationship[@Id=$id]" xpath-default-namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
+    <xsl:choose>
+      <xsl:when test="contains($relationship/@TargetMode,'External')">
+        <xsl:element name="ExtRef" namespace="{$tekst}">
+          <xsl:attribute name="doel" select="$relationship/@Target"/>
+          <xsl:attribute name="soort" select="string('URL')"/>
+          <xsl:apply-templates/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!--tekst doorgeven-->
@@ -846,8 +862,8 @@
         <xsl:element name="Illustratie" namespace="{$tekst}">
           <xsl:attribute name="naam" select="$imageName"/>
           <xsl:attribute name="formaat" select="concat('image/',tokenize($imageName,'\.')[last()])"/>
-          <xsl:attribute name="breedte" select="string(number((wp:anchor/wp:extent|wp:inline/a:graphic/a:graphicData/pic:pic/pic:spPr/a:xfrm/a:ext)[1]/@cx) div 635)"/>
-          <xsl:attribute name="hoogte" select="string(number((wp:anchor/wp:extent|wp:inline/a:graphic/a:graphicData/pic:pic/pic:spPr/a:xfrm/a:ext)[1]/@cy) div 635)"/>
+          <xsl:attribute name="breedte" select="string(round((wp:anchor/wp:extent|wp:inline/a:graphic/a:graphicData/pic:pic/pic:spPr/a:xfrm/a:ext)[1]/@cx div 635))"/>
+          <xsl:attribute name="hoogte" select="string(round((wp:anchor/wp:extent|wp:inline/a:graphic/a:graphicData/pic:pic/pic:spPr/a:xfrm/a:ext)[1]/@cy div 635))"/>
           <xsl:attribute name="dpi" select="string('72')"/>
           <xsl:attribute name="uitlijning" select="string('start')"/>
         </xsl:element>
