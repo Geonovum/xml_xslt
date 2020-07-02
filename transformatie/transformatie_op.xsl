@@ -132,13 +132,21 @@
     </xsl:choose>
   </xsl:template>
 
-  <xsl:template match="doel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+  <xsl:template match="BeoogdeRegeling/doel|BeoogdInformatieobject/doel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <xsl:element name="doelen" namespace="{namespace-uri()}">
       <xsl:element name="{name()}" namespace="{namespace-uri()}">
         <xsl:variable name="ID02" select="tokenize(parent::BeoogdeRegeling/instrumentVersie,'/')[6]"/>
         <xsl:variable name="ID03" select="tokenize(.,'/')[last()]"/>
         <xsl:value-of select="fn:string-join(('','join','id','proces',$ID01,$ID02,$ID03),'/')"/>
       </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="soortTijdstempel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+    <xsl:variable name="ID01" select="fn:index-of(('geldigTot','geldigVanaf','inwerkingtreding'),.)"/>
+    <xsl:variable name="ID02" select="('juridischWerkendVanaf','geldigVanaf','juridischWerkendVanaf')[$ID01]"/>
+    <xsl:element name="{name()}" namespace="{namespace-uri()}">
+      <xsl:value-of select="$ID02"/>
     </xsl:element>
   </xsl:template>
 

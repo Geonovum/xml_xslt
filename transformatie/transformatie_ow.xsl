@@ -313,6 +313,44 @@
     </xsl:choose>
   </xsl:template>
 
+  <xsl:template match="r:instructieregelInstrument">
+    <xsl:variable name="waarde" select="$waardelijsten[titel='Instrument']/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{$uri_new[13]}">
+          <xsl:value-of select="$waarde"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;Instrument&quot;')"/>
+        </xsl:comment>
+        <xsl:element name="{name()}" namespace="{$uri_new[13]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="r:instructieregelTaakuitoefening">
+    <xsl:variable name="waarde" select="$waardelijsten[titel='Adressaat']/waarden/waarde[lower-case(label)=lower-case(current())]/uri"/>
+    <xsl:choose>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{$uri_new[13]}">
+          <xsl:value-of select="$waarde"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment>
+          <xsl:value-of select="concat('Let op: waarde &quot;',current(),'&quot; ontbreekt in waardelijst &quot;Adressaat&quot;')"/>
+        </xsl:comment>
+        <xsl:element name="{name()}" namespace="{$uri_new[13]}">
+          <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
   <!-- transformeer vrijetekst -->
 
   <xsl:template name="vrijetekst">
