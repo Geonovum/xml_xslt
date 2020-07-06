@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/glastuinbouwniettoegestaan</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/glastuinbouwniettoegestaan/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Glastuinbouw niet toegestaan</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/glastuinbouwniettoegestaan/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Glastuinbouwniettoegestaan.gml</bestandsnaam>
+                  <hash>702764666beb3098acb1a1093d76ae47834299e3f3dd980560d6cb766e24925434424918021c278ee8f108d216ae95f3606cca8976820c7811e72b703a8fe52f</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="db406c887-7812-4957-a5ce-f62347e47d70">
+         <geo:featureMember>
+            <geo:Locatie gml:id="tb406c887-7812-4957-a5ce-f62347e47d70">
+               <geo:wId>tb406c887-7812-4957-a5ce-f62347e47d70</geo:wId>
+               <geo:naam>Glastuinbouw niet toegestaan</geo:naam>
+               <geo:geometrie xlink:href="Glastuinbouwniettoegestaan.gml#tb406c887-7812-4957-a5ce-f62347e47d70"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

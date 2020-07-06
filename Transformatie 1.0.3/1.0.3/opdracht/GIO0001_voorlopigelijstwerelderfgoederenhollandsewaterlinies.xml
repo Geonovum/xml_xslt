@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             schemaversie="1.0.3">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/voorlopigelijstwerelderfgoederenhollandsewaterlinies</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/voorlopigelijstwerelderfgoederenhollandsewaterlinies/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftGeboorteregeling>/akn/nl/act/pv26/2020/OVPU001</heeftGeboorteregeling>
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Voorlopigelijst-UNESCO-HollandseWaterlinies.gml</bestandsnaam>
+                  <hash>d39ed958aa9bb4d5374beee6e19a968af4ac9f97c3b0a2ee5f3d5dfd9eff8e74226afac167fda3232f1ca88ac126716fdbd0a6d0346142bb72d2b8b73b9190fa</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>(Voorlopige Lijst) Werelderfgoederen Hollandse Waterlinies</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/regdata/pv26/2020/voorlopigelijstwerelderfgoederenhollandsewaterlinies/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <naamInformatieObject>(Voorlopige Lijst) Werelderfgoederen Hollandse Waterlinies</naamInformatieObject>
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>

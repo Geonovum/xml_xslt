@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/landbouwontwikkelingsgebied</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/landbouwontwikkelingsgebied/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Landbouwontwikkelingsgebied</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/landbouwontwikkelingsgebied/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Landbouwontwikkelingsgebied.gml</bestandsnaam>
+                  <hash>4d5c64027ad3712aed89a8207db6480e6a29f9e5306ed19f9b6f40904094d3e9b1c94c5f0819bb88fe048ba02f18ff0269a0a407e51d87cc754eac70f02b2cb8</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="daa3a5279-c9b6-4c55-8198-dbc56b03d570">
+         <geo:featureMember>
+            <geo:Locatie gml:id="taa3a5279-c9b6-4c55-8198-dbc56b03d570">
+               <geo:wId>taa3a5279-c9b6-4c55-8198-dbc56b03d570</geo:wId>
+               <geo:naam>Landbouwontwikkelingsgebied</geo:naam>
+               <geo:geometrie xlink:href="Landbouwontwikkelingsgebied.gml#taa3a5279-c9b6-4c55-8198-dbc56b03d570"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

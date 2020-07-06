@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/beperkenbodembewerking</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/beperkenbodembewerking/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Beperken bodembewerking</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/beperkenbodembewerking/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Beperkenbodembewerking.gml</bestandsnaam>
+                  <hash>d47149cf0040bbb927e2f47b31de688b8d1e07bbcf7556194063d4823e2e119da47e908062d2eabe021613660d3d9c7799726966849bfef71f23afe9460c2c1b</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d28ef8f07-6a7c-4b0e-9951-fefba02dfa82">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t28ef8f07-6a7c-4b0e-9951-fefba02dfa82">
+               <geo:wId>t28ef8f07-6a7c-4b0e-9951-fefba02dfa82</geo:wId>
+               <geo:naam>Beperken bodembewerking</geo:naam>
+               <geo:geometrie xlink:href="Beperkenbodembewerking.gml#t28ef8f07-6a7c-4b0e-9951-fefba02dfa82"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

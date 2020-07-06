@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/ontgrondingeninfrastructuurenwaterstaatswerken</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/ontgrondingeninfrastructuurenwaterstaatswerken/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Ontgrondingen infrastructuur en waterstaatswerken</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/ontgrondingeninfrastructuurenwaterstaatswerken/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Ontgrondingeninfrastructuurenwaterstaatswerken.gml</bestandsnaam>
+                  <hash>2b50ce57b383fcb5c1674edc4d8796310166eda1921670b6bc50938d158b6db4e3b1cf8cfa45d9c4adbc6ae4415b6f2240dc7c535a08909e227606899cd8117e</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="dac865def-7b72-4b97-9505-591ec24c5157">
+         <geo:featureMember>
+            <geo:Locatie gml:id="tac865def-7b72-4b97-9505-591ec24c5157">
+               <geo:wId>tac865def-7b72-4b97-9505-591ec24c5157</geo:wId>
+               <geo:naam>Ontgrondingen infrastructuur en waterstaatswerken</geo:naam>
+               <geo:geometrie xlink:href="Ontgrondingeninfrastructuurenwaterstaatswerken.gml#tac865def-7b72-4b97-9505-591ec24c5157"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

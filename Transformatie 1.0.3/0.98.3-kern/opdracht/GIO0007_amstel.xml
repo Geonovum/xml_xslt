@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/amstel</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/amstel/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Amstel</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/amstel/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Amstel.gml</bestandsnaam>
+                  <hash>3280bc86ddfa4bd9b4531449d9c642018774259b1598624a028933c8e27cbbdd8bf29352644457e2869b6bd5fca7202a25cb313bfcf2e971fe9eaec98889a19d</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="ddef183e9-3bce-45ac-9a4c-94ed6f0db974">
+         <geo:featureMember>
+            <geo:Locatie gml:id="tdef183e9-3bce-45ac-9a4c-94ed6f0db974">
+               <geo:wId>tdef183e9-3bce-45ac-9a4c-94ed6f0db974</geo:wId>
+               <geo:naam>Amstel</geo:naam>
+               <geo:geometrie xlink:href="Amstel.gml#tdef183e9-3bce-45ac-9a4c-94ed6f0db974"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

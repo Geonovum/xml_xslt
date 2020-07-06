@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/landelijkgebied</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/landelijkgebied/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Landelijk gebied</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/landelijkgebied/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Landelijkgebied.gml</bestandsnaam>
+                  <hash>006fcea7a20de439bc1f42c4908e34bfaa23cd1b2c550edba7e0c52586db9fc5dac508e42b3c0eb8706ac4c096a4cee6b4fccc4e5c849d3fc1fefae42f37d885</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="deb528d28-cc0c-42db-85b2-35fce122ba02">
+         <geo:featureMember>
+            <geo:Locatie gml:id="teb528d28-cc0c-42db-85b2-35fce122ba02">
+               <geo:wId>teb528d28-cc0c-42db-85b2-35fce122ba02</geo:wId>
+               <geo:naam>Landelijk gebied</geo:naam>
+               <geo:geometrie xlink:href="Landelijkgebied.gml#teb528d28-cc0c-42db-85b2-35fce122ba02"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/vaarwegengemeenteamersfoort</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/vaarwegengemeenteamersfoort/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Vaarwegen Gemeente Amersfoort</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/vaarwegengemeenteamersfoort/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>VaarwegenGemeenteAmersfoort.gml</bestandsnaam>
+                  <hash>7f958d21f5be13fa7f362104e9199c4e38a88c32ccf51d6f184931765277a8fdd7d34c7c35ecdcdb41f999a3bca3faa2a641ead29e1adf83f965cfc085efe6b8</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d1d4fbe4a-b64b-4360-890f-0ec72342af86">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t1d4fbe4a-b64b-4360-890f-0ec72342af86">
+               <geo:wId>t1d4fbe4a-b64b-4360-890f-0ec72342af86</geo:wId>
+               <geo:naam>Vaarwegen Gemeente Amersfoort</geo:naam>
+               <geo:geometrie xlink:href="VaarwegenGemeenteAmersfoort.gml#t1d4fbe4a-b64b-4360-890f-0ec72342af86"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

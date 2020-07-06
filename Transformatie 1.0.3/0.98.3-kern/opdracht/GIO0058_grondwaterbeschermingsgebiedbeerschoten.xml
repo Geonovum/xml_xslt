@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/grondwaterbeschermingsgebiedbeerschoten</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/grondwaterbeschermingsgebiedbeerschoten/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Grondwaterbeschermingsgebied Beerschoten</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/grondwaterbeschermingsgebiedbeerschoten/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>GrondwaterbeschermingsgebiedBeerschoten.gml</bestandsnaam>
+                  <hash>f8afab1ef96ef4c126758c2c6beb02c0fc56dbc7bd7b8595a9e60ce10b8f64ec6c61b8c887da5a35610e50c0f93ecbe2af26be971cded0d017d2f94ae24f9c97</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d96eaf3f9-000a-40cd-b084-9047352c6fca">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t96eaf3f9-000a-40cd-b084-9047352c6fca">
+               <geo:wId>t96eaf3f9-000a-40cd-b084-9047352c6fca</geo:wId>
+               <geo:naam>Grondwaterbeschermingsgebied Beerschoten</geo:naam>
+               <geo:geometrie xlink:href="GrondwaterbeschermingsgebiedBeerschoten.gml#t96eaf3f9-000a-40cd-b084-9047352c6fca"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

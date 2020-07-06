@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/dempenoppervlaktewaterlichamen</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/dempenoppervlaktewaterlichamen/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Dempen oppervlaktewaterlichamen</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/dempenoppervlaktewaterlichamen/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Dempenoppervlaktewaterlichamen.gml</bestandsnaam>
+                  <hash>8659231412a3089e81f6b0a5b71c66bd202e286bb3a927287d9a1edac026eeb01cf63884bb0d0ebd7bffa14194551e1fc1f87c4db873a2e897f35dbe66b3856e</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="dce362d50-77f6-4c40-842d-9988a2e0631a">
+         <geo:featureMember>
+            <geo:Locatie gml:id="tce362d50-77f6-4c40-842d-9988a2e0631a">
+               <geo:wId>tce362d50-77f6-4c40-842d-9988a2e0631a</geo:wId>
+               <geo:naam>Dempen oppervlaktewaterlichamen</geo:naam>
+               <geo:geometrie xlink:href="Dempenoppervlaktewaterlichamen.gml#tce362d50-77f6-4c40-842d-9988a2e0631a"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

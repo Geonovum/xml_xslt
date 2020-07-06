@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/recreatiezone</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/recreatiezone/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Recreatiezone</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/recreatiezone/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Recreatiezone.gml</bestandsnaam>
+                  <hash>0ead5429cac6714dc6a883239aab6326bc16d56d8a885db847325778944e5e7849b48d8dfdc0cb992bc72c6091e4bfb8309ddf90d913871a885f0c63f14b76cd</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="df31dc5ae-708b-41fb-8161-6e3bc3b99a05">
+         <geo:featureMember>
+            <geo:Locatie gml:id="tf31dc5ae-708b-41fb-8161-6e3bc3b99a05">
+               <geo:wId>tf31dc5ae-708b-41fb-8161-6e3bc3b99a05</geo:wId>
+               <geo:naam>Recreatiezone</geo:naam>
+               <geo:geometrie xlink:href="Recreatiezone.gml#tf31dc5ae-708b-41fb-8161-6e3bc3b99a05"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

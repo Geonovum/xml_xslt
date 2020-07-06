@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/provincialevaarwegen</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/provincialevaarwegen/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Provinciale vaarwegen</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/provincialevaarwegen/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Provincialevaarwegen.gml</bestandsnaam>
+                  <hash>2f13d256b7c3937d972bdc3f224c3436ed15a54b54cd9a6349a7e7500895db0757551acb70306a7350114b2aced8abe8972e5640ba7d42f5ce641665323bef65</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d57648082-184a-479e-9e34-a4838f2a8384">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t57648082-184a-479e-9e34-a4838f2a8384">
+               <geo:wId>t57648082-184a-479e-9e34-a4838f2a8384</geo:wId>
+               <geo:naam>Provinciale vaarwegen</geo:naam>
+               <geo:geometrie xlink:href="Provincialevaarwegen.gml#t57648082-184a-479e-9e34-a4838f2a8384"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

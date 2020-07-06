@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/detailhandelbuitenbestaandwinkelgebied</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/detailhandelbuitenbestaandwinkelgebied/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Detailhandel buiten bestaand winkelgebied</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/detailhandelbuitenbestaandwinkelgebied/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Detailhandelbuitenbestaandwinkelgebied.gml</bestandsnaam>
+                  <hash>6a0ff2dccf42711c323b7a146e2a83aa1d4337f04628212642341e98949a2973ed11c78482e77487eae5637beafa0bb82f5f03e61eed419dec837f4c6642f637</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d7dd7b591-971d-4904-a9ac-2f535be49e12">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t7dd7b591-971d-4904-a9ac-2f535be49e12">
+               <geo:wId>t7dd7b591-971d-4904-a9ac-2f535be49e12</geo:wId>
+               <geo:naam>Detailhandel buiten bestaand winkelgebied</geo:naam>
+               <geo:geometrie xlink:href="Detailhandelbuitenbestaandwinkelgebied.gml#t7dd7b591-971d-4904-a9ac-2f535be49e12"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

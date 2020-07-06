@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/binnendebebouwdekom</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/binnendebebouwdekom/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Binnen de bebouwde kom</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/binnendebebouwdekom/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Binnendebebouwdekom.gml</bestandsnaam>
+                  <hash>d242453a7e10d8094dceb3812842d579f532c18f26b5b454c317eb929d3d63355f0baff2f5af0eb8c614c5a9d56ec4a1bc205bfe68045d73c5f7af98e578f05e</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d20399687-a160-4967-81b4-d22f8e469454">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t20399687-a160-4967-81b4-d22f8e469454">
+               <geo:wId>t20399687-a160-4967-81b4-d22f8e469454</geo:wId>
+               <geo:naam>Binnen de bebouwde kom</geo:naam>
+               <geo:geometrie xlink:href="Binnendebebouwdekom.gml#t20399687-a160-4967-81b4-d22f8e469454"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

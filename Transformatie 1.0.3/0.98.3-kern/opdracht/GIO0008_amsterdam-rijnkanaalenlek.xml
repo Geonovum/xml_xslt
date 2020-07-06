@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/amsterdam-rijnkanaalenlek</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/amsterdam-rijnkanaalenlek/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Amsterdam-Rijnkanaal en de Lek</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/amsterdam-rijnkanaalenlek/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Amsterdam-RijnkanaalenLek.gml</bestandsnaam>
+                  <hash>58a0cdfcf67a0acade4249edd6ae901d0cd184f27b4f963dfc07899a502085bd1b34b161932a19fe018b5860fd45babee95726198cf5e5b1745f3921f766f232</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d4ffb0329-bc99-4da3-934b-7c005d2b23e7">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t4ffb0329-bc99-4da3-934b-7c005d2b23e7">
+               <geo:wId>t4ffb0329-bc99-4da3-934b-7c005d2b23e7</geo:wId>
+               <geo:naam>Amsterdam-Rijnkanaal en de Lek</geo:naam>
+               <geo:geometrie xlink:href="Amsterdam-RijnkanaalenLek.gml#t4ffb0329-bc99-4da3-934b-7c005d2b23e7"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

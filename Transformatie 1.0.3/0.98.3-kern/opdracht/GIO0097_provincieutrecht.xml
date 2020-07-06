@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/provincieutrecht</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/provincieutrecht/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Provincie Utrecht</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/provincieutrecht/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>provincieUtrecht.gml</bestandsnaam>
+                  <hash>cb12e7b5a3ebdd8ce8a17b9293a1a2aa4dda3a618a2651581ce97d06bf3a075add53c95ad7e6214fc49c85cef4835d06bbdd1c3fd19ee3864f9d3f16823f770c</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="de992e160-391f-4a1a-a347-874f0ae6e441">
+         <geo:featureMember>
+            <geo:Locatie gml:id="te992e160-391f-4a1a-a347-874f0ae6e441">
+               <geo:wId>te992e160-391f-4a1a-a347-874f0ae6e441</geo:wId>
+               <geo:naam>Provincie Utrecht</geo:naam>
+               <geo:geometrie xlink:href="provincieUtrecht.gml#te992e160-391f-4a1a-a347-874f0ae6e441"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

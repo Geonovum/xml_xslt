@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/boringsvrijezonesoverig</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/boringsvrijezonesoverig/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Boringsvrije zones Bilthoven, Blokland, Bunnik, Cothen, De Meern, Eempolder, Leidsche Rijn, Lexmond-Noord, Linschoten, Nieuwegein, Vianen en Vianen-Panoven</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/boringsvrijezonesoverig/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Boringsvrijezonesoverig.gml</bestandsnaam>
+                  <hash>9e82fda6041df03d9e8b1a35534131fecc8eb13b49fb6952d52b334028defcab086808b0812606855a6aa954e29681f013d57547ea4f358263168da2f70326cd</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d6b597919-83a7-4d80-8974-9b02658af60e">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t6b597919-83a7-4d80-8974-9b02658af60e">
+               <geo:wId>t6b597919-83a7-4d80-8974-9b02658af60e</geo:wId>
+               <geo:naam>Boringsvrije zones Bilthoven, Blokland, Bunnik, Cothen, De Meern, Eempolder, Leidsche Rijn, Lexmond-Noord, Linschoten, Nieuwegein, Vianen en Vianen-Panoven</geo:naam>
+               <geo:geometrie xlink:href="Boringsvrijezonesoverig.gml#t6b597919-83a7-4d80-8974-9b02658af60e"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

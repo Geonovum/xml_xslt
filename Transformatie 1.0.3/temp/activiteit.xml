@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>provincie Utrecht</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>provincie Utrecht</sl:gebied>
+         <sl:leveringsId>OVPU001</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Activiteit</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000001</rol:identificatie>
+               <rol:naam>woonschip houden, afmeren, plaatsen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Ligplaatsactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000002</rol:identificatie>
+               <rol:naam>voorwerp anders dan woonschip of woonark afmeren, houden, plaatsen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Ligplaatsactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000003</rol:identificatie>
+               <rol:naam>(insteek)havens of aanlegplaatsen maken of houden </rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Ligplaatsactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000004</rol:identificatie>
+               <rol:naam>meststoffen aanbrengen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000005</rol:identificatie>
+               <rol:naam>lozen van regenwater</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000006</rol:identificatie>
+               <rol:naam>bouwactiviteiten verrichten</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000007</rol:identificatie>
+               <rol:naam>milieubelastende activiteiten uitvoeren</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000008</rol:identificatie>
+               <rol:naam>boom kappen of houtopstand vellen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Kapactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000009</rol:identificatie>
+               <rol:naam>uitweg naar een provinciale weg hebben, maken, veranderen of gebruik ervan  wijzigen</rol:naam>
+               <!--Let op: waarde "beperkingenbiedactiviteit m.b.t. een weg" ontbreekt in waardelijst "Activiteitengroep"-->
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000010</rol:identificatie>
+               <rol:naam>hebben, aanleggen, wijzigen of verwijderen van goten, duikers, peilbuizen, afrasteringen en andere werken</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Beperkingengebiedactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000011</rol:identificatie>
+               <rol:naam>borden, spandoeken, vlaggenmasten, handelsreclame, kunstuitingen, licht- of geluidgevende voorzieningen of vergelijkbare objecten te hebben, plaatsen of wijzigen </rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Reclameactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000012</rol:identificatie>
+               <rol:naam>verkooppunt of standplaats voor handel hebben of inrichten</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Standplaatsactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000013</rol:identificatie>
+               <rol:naam>evenement houden</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Evenementactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000014</rol:identificatie>
+               <rol:naam>gedenktekens plaatsen</rol:naam>
+               <!--Let op: waarde "beperkingenbiedactiviteit m.b.t. een weg" ontbreekt in waardelijst "Activiteitengroep"-->
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000015</rol:identificatie>
+               <rol:naam>maken van lasgaten en huisaansluitingen voor de watervoorziening, de energievoorziening of de telecommunicatie </rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/VerrichtenVanWerkenEnWerkzaamhedenactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000016</rol:identificatie>
+               <rol:naam>aanleggen, veranderen of verwijderen van kabels en leidingen en voorzieningen daarvoor</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/VerrichtenVanWerkenEnWerkzaamhedenactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000017</rol:identificatie>
+               <rol:naam>beplanting langs de provinciale weg hebben</rol:naam>
+               <!--Let op: waarde "beperkingenbiedactiviteit m.b.t. een weg" ontbreekt in waardelijst "Activiteitengroep"-->
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000018</rol:identificatie>
+               <rol:naam>verjagen van ganzen (grauwe gans, kolgans, brandgans)</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/FloraEnFaunaActiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000019</rol:identificatie>
+               <rol:naam>bestrijden (veld-) muizen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/FloraEnFaunaActiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000020</rol:identificatie>
+               <rol:naam>muziekinstrument of ander vergelijkbaar geluidsapparaat te gebruiken</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000021</rol:identificatie>
+               <rol:naam>vuurwerk gebruiken</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000022</rol:identificatie>
+               <rol:naam>airgun of andere knalapparatuur gebruiken</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000023</rol:identificatie>
+               <rol:naam>omroepinstallatie, sirene, hoorn of ander vergelijkbaar toestel bestemd voor het versterken of voortbrengen van geluid gebruiken</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-pv26.activiteit.2020000000024</rol:identificatie>
+               <rol:naam>exploiteren van zwemwater of zwemlocatie</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Recreatieactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit>
+                  <rol:ActiviteitRef xlink:href="nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

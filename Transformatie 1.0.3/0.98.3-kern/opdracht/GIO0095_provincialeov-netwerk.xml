@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/provincialeov-netwerk</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/provincialeov-netwerk/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Provinciale OV-netwerk</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/provincialeov-netwerk/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>ProvincialeOV-netwerk.gml</bestandsnaam>
+                  <hash>306f2a869ad7362f243e419f1f0ac3695f52dfd8440f73771da88b036a00e556ccd011387136aef7b1239a6afc4d57cdaf5cc90eb7d9a2818c39eb6222bda81b</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d61425b03-6e42-48e0-9319-1485ae45f85c">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t61425b03-6e42-48e0-9319-1485ae45f85c">
+               <geo:wId>t61425b03-6e42-48e0-9319-1485ae45f85c</geo:wId>
+               <geo:naam>Provinciale OV-netwerk</geo:naam>
+               <geo:geometrie xlink:href="ProvincialeOV-netwerk.gml#t61425b03-6e42-48e0-9319-1485ae45f85c"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

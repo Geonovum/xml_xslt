@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/luchtvaart</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/luchtvaart/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Luchtvaart</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/luchtvaart/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Luchtvaart.gml</bestandsnaam>
+                  <hash>98c3856548be5c5a6a3f70e6b2fcc0b477b2208078b920821c479d255eca79df53a3c76b176ba2a9ab5c2673180a0a3355c6180230202258418d06233ae2f0c7</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d7ac45f43-f3be-4721-8331-bea68a7fb5c3">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t7ac45f43-f3be-4721-8331-bea68a7fb5c3">
+               <geo:wId>t7ac45f43-f3be-4721-8331-bea68a7fb5c3</geo:wId>
+               <geo:naam>Luchtvaart</geo:naam>
+               <geo:geometrie xlink:href="Luchtvaart.gml#t7ac45f43-f3be-4721-8331-bea68a7fb5c3"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

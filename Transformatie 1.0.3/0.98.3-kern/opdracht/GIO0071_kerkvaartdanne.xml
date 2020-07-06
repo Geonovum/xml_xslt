@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/kerkvaartdanne</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/kerkvaartdanne/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Kerkvaart/Danne</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/kerkvaartdanne/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>KerkvaartDanne.gml</bestandsnaam>
+                  <hash>2a229c72c8be8e60254119bd0b124ffebb8dd346db089b9332876b4ad8dbd79af0f1baca5606e54fb19befeb2e1dfde7a5b632da60a1999a3fc9a4c832cdf015</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="db33a8413-af1b-45dc-8e96-f79cea66faa0">
+         <geo:featureMember>
+            <geo:Locatie gml:id="tb33a8413-af1b-45dc-8e96-f79cea66faa0">
+               <geo:wId>tb33a8413-af1b-45dc-8e96-f79cea66faa0</geo:wId>
+               <geo:naam>Kerkvaart/Danne</geo:naam>
+               <geo:geometrie xlink:href="KerkvaartDanne.gml#tb33a8413-af1b-45dc-8e96-f79cea66faa0"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

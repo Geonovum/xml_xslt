@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/reductielocatiesthematischestructuurvisiekantoren</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/reductielocatiesthematischestructuurvisiekantoren/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Reductielocaties Thematische Structuurvisie Kantoren</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/reductielocatiesthematischestructuurvisiekantoren/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Reductielocatiekantoor.gml</bestandsnaam>
+                  <hash>cf80f5f47cf81b77bf42f6ec7b07c96112bb752a19c654ee3faba01d1f9920d981ceab7a5bf7b0da929441139194b6a5fa2d5b886561c87c7691c3ea45ede3c7</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d6e79ae18-8985-4a77-8c95-f56ab33672b0">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t6e79ae18-8985-4a77-8c95-f56ab33672b0">
+               <geo:wId>t6e79ae18-8985-4a77-8c95-f56ab33672b0</geo:wId>
+               <geo:naam>Reductielocaties Thematische Structuurvisie Kantoren</geo:naam>
+               <geo:geometrie xlink:href="Reductielocatiekantoor.gml#t6e79ae18-8985-4a77-8c95-f56ab33672b0"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

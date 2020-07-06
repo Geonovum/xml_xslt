@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/aardkundigewaarden</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/aardkundigewaarden/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Aardkundige waarden</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/aardkundigewaarden/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Aardkundigewaarden.gml</bestandsnaam>
+                  <hash>e52b485909599546b29fb152361b0bd1f7bf6003708d463282741bed7797d4231b0c0bb9b1f3aec743dc8d4e31ead62e61608bebb058edee924d93f2be832f14</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d62cae652-544b-4901-9d26-9d1ce98463dc">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t62cae652-544b-4901-9d26-9d1ce98463dc">
+               <geo:wId>t62cae652-544b-4901-9d26-9d1ce98463dc</geo:wId>
+               <geo:naam>Aardkundige waarden</geo:naam>
+               <geo:geometrie xlink:href="Aardkundigewaarden.gml#t62cae652-544b-4901-9d26-9d1ce98463dc"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

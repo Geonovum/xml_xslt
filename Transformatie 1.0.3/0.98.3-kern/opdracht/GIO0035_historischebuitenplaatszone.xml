@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/historischebuitenplaatszone</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/historischebuitenplaatszone/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Historische buitenplaatszone</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/historischebuitenplaatszone/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>CHS-historischebuitenplaatszone.gml</bestandsnaam>
+                  <hash>01bb3974a541aa386587dbf066edbe2c97fe0536643023cd1644df2d138174af53d58dccec221adb91b0fc239a5db08f1bf38515b0103d8d459ed80ce21a2fba</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="db3912f0e-f947-43ad-8703-fac6650d5afd">
+         <geo:featureMember>
+            <geo:Locatie gml:id="tb3912f0e-f947-43ad-8703-fac6650d5afd">
+               <geo:wId>tb3912f0e-f947-43ad-8703-fac6650d5afd</geo:wId>
+               <geo:naam>Historische buitenplaatszone</geo:naam>
+               <geo:geometrie xlink:href="CHS-historischebuitenplaatszone.gml#tb3912f0e-f947-43ad-8703-fac6650d5afd"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

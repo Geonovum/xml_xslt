@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/grondwaterbeschermingsgebiedenamersfoort-bergdoornlangeraksoestduinenenwoerden</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/grondwaterbeschermingsgebiedenamersfoort-bergdoornlangeraksoestduinenenwoerden/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Grondwaterbeschermingsgebieden Amersfoort-Berg, Doorn, Langerak, Soestduinen en Woerden</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/grondwaterbeschermingsgebiedenamersfoort-bergdoornlangeraksoestduinenenwoerden/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>GrondwaterbeschermingsgebiedenAmersfoort-BergDoornLangerakSoestduinenenWoerden.gml</bestandsnaam>
+                  <hash>6c8e3470cc29a3cb69517e95c0dd3aa6fd7de2d5b4bfbe01ae98ac1490e2008a3fe81387b4f3d2a83447a7afdfebbce4b7e31d3e1fe6d8901edc2317968f1327</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="de30eb338-d6d6-4644-b1a0-dfed154ee8fb">
+         <geo:featureMember>
+            <geo:Locatie gml:id="te30eb338-d6d6-4644-b1a0-dfed154ee8fb">
+               <geo:wId>te30eb338-d6d6-4644-b1a0-dfed154ee8fb</geo:wId>
+               <geo:naam>Grondwaterbeschermingsgebieden Amersfoort-Berg, Doorn, Langerak, Soestduinen en Woerden</geo:naam>
+               <geo:geometrie xlink:href="GrondwaterbeschermingsgebiedenAmersfoort-BergDoornLangerakSoestduinenenWoerden.gml#te30eb338-d6d6-4644-b1a0-dfed154ee8fb"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

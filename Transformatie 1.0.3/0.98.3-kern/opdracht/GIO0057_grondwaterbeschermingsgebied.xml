@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/grondwaterbeschermingsgebied</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/grondwaterbeschermingsgebied/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Grondwaterbeschermingsgebied</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/grondwaterbeschermingsgebied/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Grondwaterbeschermingsgebied.gml</bestandsnaam>
+                  <hash>d5c64e66dab9929155bffd0c91bcf66a2f266666c4e224d29cf700cfee484dd16a6111ec23d0ef70eee454dc57851c0344237cbc56fbf6e8ac90c492cd8e032b</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d06b29194-ca3f-4759-be85-733a32912e73">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t06b29194-ca3f-4759-be85-733a32912e73">
+               <geo:wId>t06b29194-ca3f-4759-be85-733a32912e73</geo:wId>
+               <geo:naam>Grondwaterbeschermingsgebied</geo:naam>
+               <geo:geometrie xlink:href="Grondwaterbeschermingsgebied.gml#t06b29194-ca3f-4759-be85-733a32912e73"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>
