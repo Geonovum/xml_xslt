@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aanleveringWaarde xsi:schemaLocation="http://www.geostandaarden.nl/imow aanleveringWaarde.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <aanlevering>
+      <eindverantwoordelijke>gm0037</eindverantwoordelijke>
+      <datum>2020-03-16</datum>
+   </aanlevering>
+   <waardelijst>
+      <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema</uri>
+      <versie>0.98.3-kern</versie>
+      <waarde>
+         <label>[label]</label>
+         <definitie>[definitie]</definitie>
+         <toelichting>[toelichting]</toelichting>
+         <specialisatie>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Waarde</specialisatie>
+         <bron>https://aandeslagmetdeomgevingswet.nl/regelgeving/wet-regelgeving-rijk/besluit-bouwwerken-leefomgeving/</bron>
+         <symboolcode>[symboolcode]</symboolcode>
+         <startdatum>2020-03-16</startdatum>
+         <einddatum>2024-03-16</einddatum>
+      </waarde>
+   </waardelijst>
+</aanleveringWaarde>

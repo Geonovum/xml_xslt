@@ -4133,9 +4133,9 @@
       </domeinen>
    </waardelijst>
    <waardelijst>
-      <label>beperkingengebiedgoep</label>
-      <titel>Beperkingengebiedgoep</titel>
-      <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Beperkingengebiedgoep</uri>
+      <label>beperkingengebiedgroep</label>
+      <titel>Beperkingengebiedgroep</titel>
+      <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Beperkingengebiedgroep</uri>
       <type>limitatief</type>
       <omschrijving>Waardelijst voor attribuut groep bij het Gebiedsaanwijzingtype Beperkingengebied, dat zorgt voor filteren en weergave van de symbolisatie van Beperkingengebied op de kaart.</omschrijving>
       <toelichting/>
@@ -4143,87 +4143,87 @@
          <waarde>
             <label>installatie in waterstaatswerk</label>
             <term>InstallatieInWaterstaatswerk</term>
-            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/InstallatieInWaterstaatswerk</uri>
+            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/InstallatieInWaterstaatswerk</uri>
             <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege een installatie in een waterstaatswerk gelden.</definitie>
             <toelichting/>
             <bron>https://zoek.officielebekendmakingen.nl/stb-2016-156.html</bron>
-            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep</domein>
+            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep</domein>
             <specialisatie/>
             <symboolcode>vag222</symboolcode>
          </waarde>
          <waarde>
             <label>luchthaven</label>
             <term>Luchthaven</term>
-            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/Luchthaven</uri>
+            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Luchthaven</uri>
             <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege een luchthaven gelden.</definitie>
             <toelichting/>
             <bron>https://zoek.officielebekendmakingen.nl/stb-2016-156.html</bron>
-            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep</domein>
+            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep</domein>
             <specialisatie/>
             <symboolcode>vag228</symboolcode>
          </waarde>
          <waarde>
             <label>molen</label>
             <term>Molen</term>
-            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/Molen</uri>
+            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Molen</uri>
             <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege een molen gelden.</definitie>
             <toelichting/>
             <bron/>
-            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep</domein>
+            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep</domein>
             <specialisatie/>
             <symboolcode>vag206</symboolcode>
          </waarde>
          <waarde>
             <label>overig</label>
             <term>Overig</term>
-            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/Overig</uri>
+            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Overig</uri>
             <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege vanwege de aanwezigheid van een werk of object gelden, die niet vallen onder een van de overige waarden.</definitie>
             <toelichting/>
             <bron>https://www.geonovum.nl/geo-standaarden/omgevingswet/STOPTPOD</bron>
-            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep</domein>
+            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep</domein>
             <specialisatie/>
             <symboolcode>vag221</symboolcode>
          </waarde>
          <waarde>
             <label>spoorweg</label>
             <term>Spoorweg</term>
-            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/Spoorweg</uri>
+            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Spoorweg</uri>
             <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege een spoorweg gelden.</definitie>
             <toelichting/>
             <bron>https://zoek.officielebekendmakingen.nl/stb-2016-156.html</bron>
-            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep</domein>
+            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep</domein>
             <specialisatie/>
             <symboolcode>vag215</symboolcode>
          </waarde>
          <waarde>
             <label>waterstaatswerk</label>
             <term>Waterstaatswerk</term>
-            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/Waterstaatswerk</uri>
+            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Waterstaatswerk</uri>
             <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege een waterstaatswerk gelden.</definitie>
             <toelichting/>
             <bron>https://zoek.officielebekendmakingen.nl/stb-2016-156.html</bron>
-            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep</domein>
+            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep</domein>
             <specialisatie/>
             <symboolcode>vag220</symboolcode>
          </waarde>
          <waarde>
             <label>weg</label>
             <term>Weg</term>
-            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgoep/id/concept/Weg</uri>
+            <uri>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Weg</uri>
             <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Beperkingengebied voor het aanwijzen van een gebied waar beperkingen vanwege een weg gelden.</definitie>
             <toelichting/>
             <bron>https://zoek.officielebekendmakingen.nl/stb-2016-156.html</bron>
-            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep</domein>
+            <domein>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep</domein>
             <specialisatie/>
             <symboolcode>vag214</symboolcode>
          </waarde>
       </waarden>
       <domeinen>
          <domein>
-            <label>beperkingengebiedgoep</label>
-            <term>Beperkingengebiedgoep</term>
-            <uri>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgoep</uri>
-            <omschrijving>Begrippen gerelateerd aan het inhoudelijke (thematische/sectorale) domein van beperkingengebiedgoep.</omschrijving>
+            <label>beperkingengebiedgroep</label>
+            <term>Beperkingengebiedgroep</term>
+            <uri>http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebiedgroep</uri>
+            <omschrijving>Begrippen gerelateerd aan het inhoudelijke (thematische/sectorale) domein van beperkingengebiedgroep.</omschrijving>
             <toelichting/>
          </domein>
       </domeinen>

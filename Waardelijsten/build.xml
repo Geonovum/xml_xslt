@@ -19,7 +19,7 @@
 
   <!-- unzip template -->
 
-  <target name="unzip" description="Unzip word-bestand">
+  <target name="unzip" description="Unzip template">
     <unzip dest="${temp.dir}/template">
       <path>
         <fileset dir="${input.dir}" includes="*.xlsx"/>
