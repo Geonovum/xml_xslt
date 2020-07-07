@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/uitbreidingwoningbouwondervoorwaarden</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/uitbreidingwoningbouwondervoorwaarden/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Uitbreiding woningbouw onder voorwaarden</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/uitbreidingwoningbouwondervoorwaarden/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Uitbreidingwoningbouwenbedrijventerreinondervoorwaarde.gml</bestandsnaam>
+                  <hash>0e6dd5adc05cad4fbd3204829ad68345a48932fe8d4c6a029ce318bedbab68cce954376018306269bf69dc03406d25b8a19a93cd45ba8e91e499f4ecea73c7cb</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="dd2463ce9-edf5-483d-b97d-568a7789455e">
+         <geo:featureMember>
+            <geo:Locatie gml:id="td2463ce9-edf5-483d-b97d-568a7789455e">
+               <geo:wId>td2463ce9-edf5-483d-b97d-568a7789455e</geo:wId>
+               <geo:naam>Uitbreiding woningbouw onder voorwaarden</geo:naam>
+               <geo:geometrie xlink:href="Uitbreidingwoningbouwenbedrijventerreinondervoorwaarde.gml#td2463ce9-edf5-483d-b97d-568a7789455e"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

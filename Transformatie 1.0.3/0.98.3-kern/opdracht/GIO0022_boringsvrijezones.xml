@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/boringsvrijezones</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/boringsvrijezones/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Boringsvrije zones</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/boringsvrijezones/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Boringsvrijezones.gml</bestandsnaam>
+                  <hash>62c64607febaa7e4232a31cc5633622c02e8296daf17dd707cd8640a08eaeef461ec9c5dcf5549ecd3de0af939442ea86128495942a0669f04efb4f1d69c3632</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d4f9e552f-7556-4914-867b-39cb7e1b74f0">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t4f9e552f-7556-4914-867b-39cb7e1b74f0">
+               <geo:wId>t4f9e552f-7556-4914-867b-39cb7e1b74f0</geo:wId>
+               <geo:naam>Boringsvrije zones</geo:naam>
+               <geo:geometrie xlink:href="Boringsvrijezones.gml#t4f9e552f-7556-4914-867b-39cb7e1b74f0"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

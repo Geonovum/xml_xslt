@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- root -->
+    <xs:element name="aanleveringWaarde">
+        <xs:annotation>
+            <xs:documentation>Root-element voor een opdracht om een waarde aan te maken in de stelselcatalogus.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="aanlevering"/>
+                <xs:element maxOccurs="unbounded" ref="waardelijst"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- elementen -->
+    <xs:element name="aanlevering">
+        <xs:annotation>
+            <xs:documentation>Element aanlevering clustert de gegevens omtrent de aanlevering en de aanvrager.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="eindverantwoordelijke" type="BG-code"/>
+                <xs:element name="datum" type="xs:date"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="waardelijst">
+        <xs:annotation>
+            <xs:documentation>Element waardelijst clustert de gegevens omtrent de waardelijst.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="uri" type="xs:anyURI"/>
+                <xs:element name="versie" type="xs:string"/>
+                <xs:element maxOccurs="unbounded" ref="waarde"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="waarde">
+        <xs:annotation>
+            <xs:documentation>Binnen element waardelijst kunnen meerdere elementen waarde voorkomen. Verplichte elementen zijn label, definitie en domein. Elementen toelichting, bron, startdatum en einddatum zijn optioneel. De uri wordt afgeleid uit label, domein en eindverantwoordelijke.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="label" type="xs:string"/>
+                <xs:element name="definitie" type="xs:string"/>
+                <xs:element name="toelichting" minOccurs="0" type="xs:string"/>
+                <!-- specialisatie bevat een een verwijzing naar een bovenliggende waarde -->
+                <xs:element name="specialisatie" type="xs:anyURI"/>
+                <xs:element name="bron" minOccurs="0" type="xs:anyURI"/>
+                <xs:element name="symboolcode" minOccurs="0" type="xs:string"/>
+                <xs:element name="startdatum" minOccurs="0" type="xs:date"/>
+                <xs:element name="einddatum" minOccurs="0" type="xs:date"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    <!-- simpleTypes -->
+    <xs:simpleType name="BG-code">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(gm|pv|ws|mnre)[0-9]{1,4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/kantoren</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/kantoren/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Kantoren</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/kantoren/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Kantoren.gml</bestandsnaam>
+                  <hash>6b1ec2cf592c2cdc52e78b2a6ed78366676610a2a21a6b0a0953ffb33bbb508fbc65e6338b10a7a359cc8e9a50d92047d0f78105adfe3b7e782cbd3145ace714</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="dbf9928e6-f4cd-40b5-b9de-6bed0a3888da">
+         <geo:featureMember>
+            <geo:Locatie gml:id="tbf9928e6-f4cd-40b5-b9de-6bed0a3888da">
+               <geo:wId>tbf9928e6-f4cd-40b5-b9de-6bed0a3888da</geo:wId>
+               <geo:naam>Kantoren</geo:naam>
+               <geo:geometrie xlink:href="Kantoren.gml#tbf9928e6-f4cd-40b5-b9de-6bed0a3888da"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

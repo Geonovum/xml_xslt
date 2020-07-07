@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/overstroombaargebied</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/overstroombaargebied/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Overstroombaar gebied</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/overstroombaargebied/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Overstroombaargebied.gml</bestandsnaam>
+                  <hash>761ef60c1f0cfb27934bcf7a0699eb0bede9515aa7f15298e21af440c8165b1ae2c355435af7b7449ea804564e7df80ca9e2f08a4b0347fbc01e478f2c226767</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="dde5b7785-d134-4fe5-9255-091ecb9aa4a2">
+         <geo:featureMember>
+            <geo:Locatie gml:id="tde5b7785-d134-4fe5-9255-091ecb9aa4a2">
+               <geo:wId>tde5b7785-d134-4fe5-9255-091ecb9aa4a2</geo:wId>
+               <geo:naam>Overstroombaar gebied</geo:naam>
+               <geo:geometrie xlink:href="Overstroombaargebied.gml#tde5b7785-d134-4fe5-9255-091ecb9aa4a2"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

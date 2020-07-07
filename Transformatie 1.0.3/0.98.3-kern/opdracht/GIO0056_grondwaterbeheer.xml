@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/grondwaterbeheer</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/grondwaterbeheer/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Grondwaterbeheer</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/grondwaterbeheer/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Grondwaterbeheer.gml</bestandsnaam>
+                  <hash>5de7a21e94c8eb06e87817dd7035ed0c2c7d60f0bc954c0bfee0c56b5adf987b5529d2a946c121ea9b78c1f92ac31dfddce10d9a0b7818bf32f3fb8cdbc54529</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d7de109e9-ce78-4e40-87df-a9ec1a8350d3">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t7de109e9-ce78-4e40-87df-a9ec1a8350d3">
+               <geo:wId>t7de109e9-ce78-4e40-87df-a9ec1a8350d3</geo:wId>
+               <geo:naam>Grondwaterbeheer</geo:naam>
+               <geo:geometrie xlink:href="Grondwaterbeheer.gml#t7de109e9-ce78-4e40-87df-a9ec1a8350d3"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

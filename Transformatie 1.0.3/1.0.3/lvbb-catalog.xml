@@ -1,0 +1,6 @@
+<ns0:catalog xmlns:ns0="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <ns0:uri name="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" uri="lvbb/lvbb-stop-aanlevering.xsd"/>
+  <ns0:uri name="https://standaarden.overheid.nl/lvbb/stop/uitlevering/" uri="lvbb/lvbb-stop-uitlevering.xsd"/>
+  <ns0:uri name="http://www.overheid.nl/2017/lvbb" uri="lvbb/lvbb-transport.xsd"/>
+  <ns0:uri name="http://www.overheid.nl/2017/stop" uri="lvbb/stop_toevoeging.xsd"/>
+</ns0:catalog>

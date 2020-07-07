@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/boringsvrijezoneslangerakenlexmond</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/boringsvrijezoneslangerakenlexmond/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Boringsvrije zones Langerak en Lexmond</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/boringsvrijezoneslangerakenlexmond/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>BoringsvrijezonesLangerakenLexmond.gml</bestandsnaam>
+                  <hash>1efb906fc7c52dcc4a9d8925d9595bbb937db4b4820337f73cc910650c96cb833a9b98d35aa6e8a26510c0208096e40b768bcf0b1ef520d7a3ccdaed9e44c3aa</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d6b1883a6-d349-44a4-80bd-fd7ac0c6ec25">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t6b1883a6-d349-44a4-80bd-fd7ac0c6ec25">
+               <geo:wId>t6b1883a6-d349-44a4-80bd-fd7ac0c6ec25</geo:wId>
+               <geo:naam>Boringsvrije zones Langerak en Lexmond</geo:naam>
+               <geo:geometrie xlink:href="BoringsvrijezonesLangerakenLexmond.gml#t6b1883a6-d349-44a4-80bd-fd7ac0c6ec25"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

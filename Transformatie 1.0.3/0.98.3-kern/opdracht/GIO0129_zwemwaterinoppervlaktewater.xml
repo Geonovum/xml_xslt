@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/zwemwaterinoppervlaktewater</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/zwemwaterinoppervlaktewater/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Zwemlocatie</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/zwemwaterinoppervlaktewater/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Zwemwaterinoppervlaktewater.gml</bestandsnaam>
+                  <hash>17fdac598ffcbe3f78f5bd730d018bbffe7b9069a99845c33ccce6e3f42e4807cd5d69ea5365f0092e8b6d4fdd002ed11ae5ffca4506c5b9885f703f1334cd0e</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="d194c9f44-f5a2-4df1-b745-d7a2847a6d14">
+         <geo:featureMember>
+            <geo:Locatie gml:id="t194c9f44-f5a2-4df1-b745-d7a2847a6d14">
+               <geo:wId>t194c9f44-f5a2-4df1-b745-d7a2847a6d14</geo:wId>
+               <geo:naam>Zwemlocatie</geo:naam>
+               <geo:geometrie xlink:href="Zwemwaterinoppervlaktewater.gml#t194c9f44-f5a2-4df1-b745-d7a2847a6d14"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

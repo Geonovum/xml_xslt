@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/historischeinfrastructuur</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/historischeinfrastructuur/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Historische infrastructuur</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/historischeinfrastructuur/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>CHS-historischeinfrastructuur.gml</bestandsnaam>
+                  <hash>b466f0214846ff75f7b4f714ff555191c4d6b8fd4f1c0f6f824856b58cdf340155d323f691a0b86a1fc31337c571c5aab4c941145ec66cbd84a0e028b43e4923</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="db1fd1f01-b5de-4c00-a2f0-da8bd5662869">
+         <geo:featureMember>
+            <geo:Locatie gml:id="tb1fd1f01-b5de-4c00-a2f0-da8bd5662869">
+               <geo:wId>tb1fd1f01-b5de-4c00-a2f0-da8bd5662869</geo:wId>
+               <geo:naam>Historische infrastructuur</geo:naam>
+               <geo:geometrie xlink:href="CHS-historischeinfrastructuur.gml#tb1fd1f01-b5de-4c00-a2f0-da8bd5662869"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

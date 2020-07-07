@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD XML Catalogs V1.1//EN" "http://www.oasis-open.org/committees/entity/release/1.1/catalog.dtd">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+  <group id="versie-uri">
+    <uri name="https://standaarden.overheid.nl/stop/1.0.3/imop-consolidatie.xsd"
+      uri="imop-consolidatie.xsd" />
+    <uri name="https://standaarden.overheid.nl/stop/1.0.3/imop-data.xsd"
+      uri="imop-data.xsd" />
+    <uri name="https://standaarden.overheid.nl/stop/1.0.3/imop-geo.xsd"
+      uri="imop-geo.xsd" />
+    <uri name="https://standaarden.overheid.nl/stop/1.0.3/imop-gio.xsd"
+      uri="imop-gio.xsd" />
+    <uri name="https://standaarden.overheid.nl/stop/1.0.3/imop-resources.xsd"
+      uri="imop-resources.xsd" />
+    <uri name="https://standaarden.overheid.nl/stop/1.0.3/imop-tekst.xsd"
+      uri="imop-tekst.xsd" />
+  </group>
+
+  <group id="namespace">
+    <uri name="https://standaarden.overheid.nl/stop/imop/consolidatie/" uri="imop-consolidatie.xsd" />
+    <uri name="https://standaarden.overheid.nl/stop/imop/data/" uri="imop-data.xsd" />
+    <uri name="https://standaarden.overheid.nl/stop/imop/geo/" uri="imop-geo.xsd" />
+    <uri name="https://standaarden.overheid.nl/stop/imop/gio/" uri="imop-gio.xsd" />
+    <uri name="https://standaarden.overheid.nl/stop/imop/resources/" uri="imop-resources.xsd" />
+    <uri name="https://standaarden.overheid.nl/stop/imop/tekst/" uri="imop-tekst.xsd" />
+  </group>
+  
+</catalog>

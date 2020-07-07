@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/faunabeheereenheid</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/faunabeheereenheid/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Faunabeheereenheid</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/faunabeheereenheid/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Faunabeheereenheid.gml</bestandsnaam>
+                  <hash>3dffd4118eaf235165ceca1482d3a1852ea7a1f320927b88b3edfdc85a6cf7bc8ef8d757c6dd3a7ef4c0901ac2df5cfc1053c6a27be899f55abc8fb6bbf6b39c</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="da4b73510-b308-4216-a3ef-390a39190f50">
+         <geo:featureMember>
+            <geo:Locatie gml:id="ta4b73510-b308-4216-a3ef-390a39190f50">
+               <geo:wId>ta4b73510-b308-4216-a3ef-390a39190f50</geo:wId>
+               <geo:naam>Faunabeheereenheid</geo:naam>
+               <geo:geometrie xlink:href="Faunabeheereenheid.gml#ta4b73510-b308-4216-a3ef-390a39190f50"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>

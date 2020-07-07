@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/vaarwegenhdsr</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/vaarwegenhdsr/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <noemer>Vaarwegen HDSR</noemer>
+         <officieleTitel>/join/id/regdata/pv26/2020/vaarwegenhdsr/nld@2020-06-02</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>VaarwegenHDSR.gml</bestandsnaam>
+                  <hash>429c698bfd401747df3a4cc7349f6d1cdad5451a13a23d25f82e3fda3bf8e7bb2c1528df58667ef3b227002a18ec7684b19686c57ab02192df29598b53175f7c</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/"
+                     gml:id="de3f4ef85-f424-4454-97ca-2d6bb478633c">
+         <geo:featureMember>
+            <geo:Locatie gml:id="te3f4ef85-f424-4454-97ca-2d6bb478633c">
+               <geo:wId>te3f4ef85-f424-4454-97ca-2d6bb478633c</geo:wId>
+               <geo:naam>Vaarwegen HDSR</geo:naam>
+               <geo:geometrie xlink:href="VaarwegenHDSR.gml#te3f4ef85-f424-4454-97ca-2d6bb478633c"/>
+            </geo:Locatie>
+         </geo:featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>TOP10NL</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>
