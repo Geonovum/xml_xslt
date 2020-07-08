@@ -3,7 +3,8 @@
     <Name>Locatie</Name>
     <ElementPath>Locatie</ElementPath>
     <GeometryElementPath>geometrie|Geometrie|geometrie</GeometryElementPath>
-    <GeometryName>geometrie|Geometrie@gml:id</GeometryName>
+    <GeometryName>geometrie</GeometryName>
+    <GeometryType>6</GeometryType>
     <SRSName>urn:ogc:def:crs:EPSG::28992</SRSName>
     <PropertyDefn>
       <Name>gml_id</Name>
