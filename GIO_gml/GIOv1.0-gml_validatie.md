@@ -7,8 +7,9 @@ GIO gml geografische validatie voor versie 1.0
 - wijzig in het 'Validate_GIO-gml_v1.0.bat' het pad naar de ogr2ogr.exe en de ogrinfo.exe (is afhankelijk van lokale installatie)
 - dubbelklik 'Validate_GIO-gml_v1.0.bat' of run vanuit cmd shell
 
-IIn het bestand 'Validate_result.txt' staan alle bestanden, .
+In het bestand 'Validate_result.txt' staan alle bestanden, .
 "
+file: "Bedrijf_categorie_2.gml"
 INFO: Open of `Bedrijf_categorie_2'
       using driver `SQLite' successful.
 
@@ -46,6 +47,13 @@ id: String (0.0)
 "
 
 Bij fouten worden GEOS meldingen gegeven:
+Onder file:...
 GEOS warning: Ring Self-intersection at or near point 116356.19488068701 456951.24181609601
-OGRFeature(bodemdaling_landelijk):99
+
+Aan het eind van de lijst van de layer:
+OGRFeature(Bedrijf_categorie_2):1
   POLYGON : 2298 points, 2 inner rings (37 points, 441 points)
+
+Na de validatie blijven de SQLite bestanden in de folder achter, deze kunnen verwijderd worden.
+Na de validatie blijven de SQLite bestanden in de folder achter, deze kunnen verwijderd worden.
+Eventueel kunnen ze ook gebruikt worden voor verdere analyse met SQL statements.
