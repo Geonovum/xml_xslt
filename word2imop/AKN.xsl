@@ -8,10 +8,10 @@
 
     <!-- Vul hieronder de identifier voor het bevoegd gezag en het versienummer in. -->
 
-    <!--xsl:param name="wId_bg" select="tokenize(//processing-instruction('akn'),'_')[1]"/>
-    <xsl:param name="wId_versie" select="tokenize(//processing-instruction('akn'),'_')[2]"/-->
-    <xsl:param name="wId_bg" select="string('pv26')"/>
-    <xsl:param name="wId_versie" select="string('2')"/>
+    <xsl:param name="wId_bg" select="tokenize(//processing-instruction('akn'),'_')[1]"/>
+    <xsl:param name="wId_versie" select="tokenize(//processing-instruction('akn'),'_')[2]"/>
+    <!--xsl:param name="wId_bg" select="string('pv26')"/>
+    <xsl:param name="wId_versie" select="string('2')"/-->
 
     <!-- Variabelen eId en unique_eId bevatten een mapping van alle elementen in het voorbeeldbestand naar hun eId. -->
 
@@ -25,10 +25,10 @@
         <xsl:choose>
             <xsl:when test="$index gt 0">
                 <node id="{generate-id()}" wId_eId="{$element_wId_eId[$index]}">
-                    <!-- Een opsomming is genummerd als LiNummer ongelijk is aan vorige/volgende -->
+                    <!-- Een opsomming is genummerd als binnen Lijst onderliggende LiNummer onderling verschilt -->
                     <xsl:attribute name="eId">
                         <xsl:call-template name="check_string">
-                            <xsl:with-param name="string" select="fn:string-join(($element_ref[$index],(Kop/Nummer,LiNummer[. ne (preceding-sibling::Li/LiNummer,following-sibling::Li/LiNummer)[1]],LidNummer,$count)[1]),'_')"/>
+                            <xsl:with-param name="string" select="fn:string-join(($element_ref[$index],(Kop/Nummer,LiNummer[count(fn:distinct-values(ancestor::Lijst[1]/Li/LiNummer)) ne 1],LidNummer,$count)[1]),'_')"/>
                         </xsl:call-template>
                     </xsl:attribute>
                     <xsl:apply-templates select="element()" mode="eId"/>

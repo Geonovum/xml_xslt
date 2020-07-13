@@ -10,6 +10,8 @@
 
   <xsl:param name="wId_bg" select="tokenize(//processing-instruction('akn'),'_')[1]"/>
   <xsl:param name="wId_versie" select="tokenize(//processing-instruction('akn'),'_')[2]"/>
+  <!--xsl:param name="wId_bg" select="string('pv26')"/>
+  <xsl:param name="wId_versie" select="string('1-0')"/-->
 
   <!-- Variabelen eId en unique_eId bevatten een mapping van alle elementen in het voorbeeldbestand naar hun eId. -->
 
@@ -23,9 +25,10 @@
     <xsl:choose>
       <xsl:when test="$index gt 0">
         <node id="{generate-id()}" wId_eId="{$element_wId_eId[$index]}">
+          <!-- Een opsomming is genummerd als binnen Lijst onderliggende LiNummer onderling verschilt -->
           <xsl:attribute name="eId">
             <xsl:call-template name="check_string">
-              <xsl:with-param name="string" select="fn:string-join(($element_ref[$index],(Kop/Nummer,LiNummer,LidNummer,$count)[1]),'_')"/>
+              <xsl:with-param name="string" select="fn:string-join(($element_ref[$index],(Kop/Nummer,LiNummer[count(fn:distinct-values(ancestor::Lijst[1]/Li/LiNummer)) ne 1],LidNummer,$count)[1]),'_')"/>
             </xsl:call-template>
           </xsl:attribute>
           <xsl:apply-templates select="element()" mode="eId"/>
@@ -86,7 +89,11 @@
   <xsl:template name="check_eId">
     <xsl:param name="id"/>
     <xsl:variable name="node" select="$eId//node[@id eq $id]"/>
-    <xsl:variable name="count" select="if (count($eId//node[@id eq $node/@id]/(parent::node,root())[1]/node[@eId eq $node/@eId]) gt 1) then concat('inst_',count($eId//node[@id eq $node/@id]/(.|preceding-sibling::node[@eId eq $node/@eId]))) else null"/>
+    <!-- Controleer of element inst_volgnummer krijgt -->
+    <xsl:variable name="test_inst" select="count($eId//node[@id eq $node/@id]/(parent::node,root())[1]/node[@eId eq $node/@eId]) gt 1"/>
+    <!-- Controleer of element inst_1 krijgt -->
+    <xsl:variable name="test_inst1" select="$eId//node[@id eq $node/@id]/preceding-sibling::node[@eId eq $node/@eId]"/>
+    <xsl:variable name="count" select="if (($test_inst) and ($test_inst1)) then concat('inst',count($eId//node[@id eq $node/@id]/(.|preceding-sibling::node[@eId eq $node/@eId]))) else null"/>
     <node id="{$node/@id}" wId_eId="{$node/@wId_eId}">
       <xsl:attribute name="eId">
         <xsl:value-of select="fn:string-join(($node/@eId,$count),'_')"/>
