@@ -196,7 +196,7 @@
       <xsl:namespace name="{$ns_new[15]}" select="$uri_new[15]"/>
       <xsl:namespace name="{$ns_new[17]}" select="$uri_new[17]"/>
       <xsl:namespace name="{$ns_new[18]}" select="$uri_new[18]"/>
-      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
+      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
       <xsl:apply-templates select="node()"/>
     </xsl:element>
   </xsl:template>
@@ -798,7 +798,7 @@
 
   <xsl:template match="*:Modules">
     <xsl:element name="Aanleveringen" namespace="{$xmlns}">
-      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.geostandaarden.nl/bestanden-ow/manifest-ow ../xsd/bestanden-ow/generiek/manifest-ow.xsd')"/>
+      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/generiek/manifest-ow.xsd')"/>
       <xsl:apply-templates select="node()"/>
     </xsl:element>
   </xsl:template>
