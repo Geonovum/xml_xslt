@@ -1,0 +1,6 @@
+GML-bestand: file:/C:/Werkbestanden/Geonovum/geo-validatie/input/Agrarischebedrijven.gml
+FRBRWork: /join/id/regdata/pv26/2020/agrarischebedrijven
+
+Locatie: tc013b050-b395-42c2-8826-377e95ccbe05-0
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface

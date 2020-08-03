@@ -1,0 +1,6 @@
+GML-bestand: file:/C:/Werkbestanden/Geonovum/geo-validatie/input/BoringsvrijezoneWCBNieuwegein.gml
+FRBRWork: /join/id/regdata/pv26/2020/boringsvrijezonewcbnieuwegein
+
+Locatie: t0a024d3e-6667-469e-8c38-73bce48b2228-0
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface

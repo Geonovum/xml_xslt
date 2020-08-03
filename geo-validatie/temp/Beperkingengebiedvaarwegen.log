@@ -1,0 +1,6 @@
+GML-bestand: file:/C:/Werkbestanden/Geonovum/geo-validatie/input/Beperkingengebiedvaarwegen.gml
+FRBRWork: /join/id/regdata/pv26/2020/beperkingengebiedvaarwegen
+
+Locatie: t4ba0ba00-33d9-4fca-a466-d4eb79bdc76c-0
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface

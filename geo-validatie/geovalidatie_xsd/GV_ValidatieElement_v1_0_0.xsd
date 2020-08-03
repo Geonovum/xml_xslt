@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 sp1 (x64) (http://www.altova.com) by Kadaster (Kadaster) -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gve="http://www.kadaster.nl/schemas/geovalidaties/validatieelement" targetNamespace="http://www.kadaster.nl/schemas/geovalidaties/validatieelement" elementFormDefault="qualified" version="1.1.0">
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<!-- Generiek Geovalidatie element voor GML. Met 1 element die als (data) type een GML type van 3.2.1. gebruikt. -->
+	<element name="GeoValidatieElement" type="gve:GeoValidatieElementType"/>
+	<complexType name="GeoValidatieElementType">
+		<sequence>
+			<element ref="gml:AbstractGML" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+</schema>

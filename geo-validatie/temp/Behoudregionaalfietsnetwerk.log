@@ -1,0 +1,6 @@
+GML-bestand: file:/C:/Werkbestanden/Geonovum/geo-validatie/input/Behoudregionaalfietsnetwerk.gml
+FRBRWork: /join/id/regdata/pv26/2020/regionaalfietsnetwerk
+
+Locatie: ta1402184-9a5e-4b89-b3ed-7f1084be6aff-0
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface

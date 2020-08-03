@@ -1,0 +1,6 @@
+GML-bestand: file:/C:/Werkbestanden/Geonovum/geo-validatie/input/Aardkundigewaarden.gml
+FRBRWork: /join/id/regdata/pv26/2020/aardkundigewaarden
+
+Locatie: t745323bd-705f-45c2-a109-56e6c72f5ba6-0
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface

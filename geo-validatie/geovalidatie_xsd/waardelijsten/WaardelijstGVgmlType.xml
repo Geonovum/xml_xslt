@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../Crane-gc2html.xsl"?>
+<?Crane-gc2ods indentation Save with indentation?>
+<?Crane-gc2ods encoding UTF-8?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+   <Identification>
+      <ShortName>WaardelijstGVgeostandaard</ShortName>
+      <LongName>WaardelijstGVgeostandaard</LongName>
+      <Version>2018-11-01</Version>
+      <CanonicalUri>WaardelijstGVgeostandaard</CanonicalUri>
+      <CanonicalVersionUri>WaardelijstGVgeostandaard2018-11-01</CanonicalVersionUri>
+      <LocationUri>Www.kadaster.nl/geovalidaties/dso/waardelijsten/WaardelijstGVgeostandaard</LocationUri>
+   </Identification>
+   <ColumnSet>
+      <Column Id="Code" Use="required">
+         <ShortName>Code</ShortName>
+         <Data Type="String"/>
+      </Column>
+      <Column Id="Waarde" Use="required">
+         <ShortName>Waarde</ShortName>
+         <Data Type="String"/>
+      </Column>
+      <Column Id="DatumVanaf" Use="optional">
+         <ShortName>DatumVanaf</ShortName>
+         <Data Type="date"/>
+      </Column>
+      <Column Id="DatumTot" Use="optional">
+         <ShortName>DatumTot</ShortName>
+         <Data Type="date"/>
+      </Column>
+      <Column Id="Toelichting" Use="optional">
+         <ShortName>Toelichting</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="CodeKey">
+         <ShortName>key for column 'Code'</ShortName>
+         <ColumnRef Ref="Code"/>
+      </Key>
+      <Key Id="WaardeKey">
+         <ShortName>key for column 'Waarde'</ShortName>
+         <ColumnRef Ref="Waarde"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>Polygon</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>GML geometric property type = gml:SurfacePropertyType en GML geometric property value = gml:Polygon</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>2</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>Surface</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>GML geometric property type = gml:SurfacePropertyType en GML geometric property value = gml:Surface</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>3</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>MultiPolygon</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>GML geometric property type = gml:MultiSurfacePropertyType en GML geometric property value = gml:MultiPolygon</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>4</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>MultiSurface</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>GML geometric property type = gml:MultiSurfacePropertyType en GML geometric property value = gml:MultiSurface</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>5</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>Point</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>GML geometric property type = gml:PointPropertyType en GML geometric property value = gml:Point</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>6</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>Curve</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>GML geometric property type = gml:CurvePropertyType en GML geometric property value = gml:Curve met daarin gml:LineStringSegment</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>7</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>LinearRing</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>GML geometric property type = gml:SurfacePropertyType en GML geometric property value = gml:LinearRing</SimpleValue>
+         </Value>
+      </Row>          
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>8</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>MultiPoint</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>GML geometric property type = gml:MultiPointPropertyType en GML geometric property value = gml:MultiPoint</SimpleValue>
+         </Value>
+      </Row>   
+	  <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>9</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>MultiCurve</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>GML geometric property type = gml:MultiCurvePropertyType en GML geometric property value = gml:MultiCurve</SimpleValue>
+         </Value>
+      </Row>
+	  <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>10</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>Ring</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>GML geometric property type = gml:MultiSurfacePropertyType en GML geometric property value = gml:Ring</SimpleValue>
+         </Value>
+      </Row>
+	  <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>11</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>LineString</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>GML geometric property type = gml:CurvePropertyType en GML geometric property value = gml:LineString</SimpleValue>
+         </Value>
+      </Row>            
+   </SimpleCodeList>
+</gc:CodeList>

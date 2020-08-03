@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../Crane-gc2html.xsl"?>
+<?Crane-gc2ods indentation Save with indentation?>
+<?Crane-gc2ods encoding UTF-8?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+   <Identification>
+      <ShortName>WaardelijstGVcrsType</ShortName>
+      <LongName>WaardelijstGVcrsType</LongName>
+      <Version>2018-11-01</Version>
+      <CanonicalUri>WaardelijstGVcrsType</CanonicalUri>
+      <CanonicalVersionUri>WaardelijstGVcrsType2018-11-01</CanonicalVersionUri>
+      <LocationUri>Www.kadaster.nl/geovalidaties/dso/waardelijsten/WaardelijstGVcrsType</LocationUri>
+   </Identification>
+   <ColumnSet>
+      <Column Id="Code" Use="required">
+         <ShortName>Code</ShortName>
+         <Data Type="String"/>
+      </Column>
+      <Column Id="Waarde" Use="required">
+         <ShortName>Waarde</ShortName>
+         <Data Type="String"/>
+      </Column>
+      <Column Id="DatumVanaf" Use="optional">
+         <ShortName>DatumVanaf</ShortName>
+         <Data Type="date"/>
+      </Column>
+      <Column Id="DatumTot" Use="optional">
+         <ShortName>DatumTot</ShortName>
+         <Data Type="date"/>
+      </Column>
+      <Column Id="Toelichting" Use="optional">
+         <ShortName>Toelichting</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="CodeKey">
+         <ShortName>key for column 'Code'</ShortName>
+         <ColumnRef Ref="Code"/>
+      </Key>
+      <Key Id="WaardeKey">
+         <ShortName>key for column 'Waarde'</ShortName>
+         <ColumnRef Ref="Waarde"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>RD</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>Het crs type hiervan is EPSG::28992</SimpleValue>
+         </Value>
+      </Row>
+       <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>2</SimpleValue>
+         </Value>
+         <Value ColumnRef="Waarde">
+            <SimpleValue>ETRS89</SimpleValue>
+         </Value>
+         <Value ColumnRef="DatumVanaf">
+            <SimpleValue>2018-11-01</SimpleValue>
+         </Value>
+         <Value ColumnRef="Toelichting">
+            <SimpleValue>Het crs type hiervan is EPSG::4258</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

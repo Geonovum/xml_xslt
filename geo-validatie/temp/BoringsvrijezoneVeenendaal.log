@@ -1,0 +1,6 @@
+GML-bestand: file:/C:/Werkbestanden/Geonovum/geo-validatie/input/BoringsvrijezoneVeenendaal.gml
+FRBRWork: /join/id/regdata/pv26/2020/boringsvrijezoneveenendaal
+
+Locatie: t6a0e728d-da2a-4e4e-a907-00f2ca1ba608-0
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface
