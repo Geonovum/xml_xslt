@@ -28,7 +28,7 @@
          </xsl:result-document>
       </xsl:for-each>
       <!-- genereer het manifest-bestand -->
-      <xsl:result-document href="{fn:string-join(($dir,'manifest.xml'),'/')}" method="xml">
+      <xsl:result-document href="{fn:string-join(($dir,'manifest.xml'),'/')}" method="xml" indent="yes">
          <xsl:element name="gvmb:manifest">
             <xsl:namespace name="gvmb" select="string('http://www.kadaster.nl/schemas/geovalidaties/manifestbestand/v20181101')"/>
             <xsl:namespace name="gvt" select="string('http://www.kadaster.nl/schemas/geovalidaties/typen/v20181101')"/>
