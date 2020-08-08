@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-c26c3d5b-a08f-4a9b-ba6c-c0eaa62d35dc-xx">
+         <basisgeo:id>c26c3d5b-a08f-4a9b-ba6c-c0eaa62d35dc</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992"
+                              gml:id="id-c26c3d5b-a08f-4a9b-ba6c-c0eaa62d35dc">
+               <gml:surfaceMember>
+                  <gml:Polygon>
+                     <gml:exterior>
+                        <gml:LinearRing>
+                           <gml:posList>206832.568 609430.633 206768.863 609408.384 206762.217 609407.869 206761.899 609411.077 206760.787 609411.011 206757.84 609442.529 206757.657 609444.48 206754.964 609473.278 206754.78 609475.25 206752.466 609499.999 206751.913 609505.937 206751.726 609507.931 206748.826 609538.944 206748.641 609540.922 206745.721 609572.153 206745.536 609574.136 206742.865 609602.703 206742.91 609603.377 206748.061 609610.341 206748.821 609610.401 206776.451 609612.58 206809.636 609615.395 206810.411 609605.016 206814.848 609605.33 206815.389 609605.368 206816.237 609593.803 206817.376 609574.13 206818.243 609557.543 206819.373 609543.333 206820.722 609530.035 206823.112 609517.078 206824.39 609509.202 206826.157 609499.421 206827.301 609492.817 206828.534 609482.457 206829.804 609466.671 206830.969 609451.685 206832.568 609430.633</gml:posList>
+                        </gml:LinearRing>
+                     </gml:exterior>
+                  </gml:Polygon>
+               </gml:surfaceMember>
+            </gml:MultiSurface>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-903f7bc6-56d8-4382-ae01-28d0954926c3-xx">
+         <basisgeo:id>903f7bc6-56d8-4382-ae01-28d0954926c3</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992"
+                              gml:id="id-903f7bc6-56d8-4382-ae01-28d0954926c3">
+               <gml:surfaceMember>
+                  <gml:Polygon>
+                     <gml:exterior>
+                        <gml:LinearRing>
+                           <gml:posList>228454.011 559818.492 228454.3 559818.331 228454.446 559818.25 228457.456 559816.583 228460.839 559814.568 228464.154 559812.443 228465.675 559811.597 228465.764 559811.548 228466.295 559811.253 228466.744 559811.003 228467.235 559810.729 228466.678 559808.4 228466.475 559807.55 228465.709 559806.789 228464.328 559805.417 228463.38 559805.927 228463.048 559806.106 228462.755 559806.263 228460.878 559807.274 228459.737 559807.798 228457.532 559808.81 228455.873 559809.633 228454.235 559810.445 228451.667 559811.814 228450.99 559812.175 228446.432 559814.82 228441.99 559817.654 228440.929 559818.234 228440.495 559818.472 228440.267 559818.076 228440.214 559817.984 228437.466 559819.495 228442.732 559821.771 228442.025 559823.133 228441.505 559824.135 228441.472 559824.199 228440.638 559825.807 228443.617 559824.203 228444.03 559823.778 228444.885 559822.898 228446.887 559821.981 228449.495 559820.787 228454.011 559818.492</gml:posList>
+                        </gml:LinearRing>
+                     </gml:exterior>
+                  </gml:Polygon>
+               </gml:surfaceMember>
+            </gml:MultiSurface>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>

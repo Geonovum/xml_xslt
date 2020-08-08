@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lvbba:AanleveringInformatieObject schemaversie="1.0.3"
+    xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
+    xmlns:lvbba="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
+    <lvbba:InformatieObjectVersie>
+        <data:ExpressionIdentificatie>
+            <data:FRBRWork>/join/id/regdata/ws0664/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_drents_overijsselse_delta</data:FRBRWork>
+            <data:FRBRExpression>/join/id/regdata/ws0664/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_drents_overijsselse_delta/nld@2020-08-04</data:FRBRExpression>
+            <data:soortWork>/join/id/stop/work_010</data:soortWork>
+        </data:ExpressionIdentificatie>
+        <!-- data:InformatieObjectVersieMetadata is verplicht en bevat de heeftBestanden -->
+        <data:InformatieObjectVersieMetadata>
+            <data:heeftBestanden>
+                <data:heeftBestand>
+                    <data:Bestand>
+                        <data:bestandsnaam>ib_niet_aangewezen_oppervlaktewaterlichamen_drents_overijsselse_delta.gml</data:bestandsnaam>
+                        <data:hash>09a639e5f097d8a6585d49bdc9f1cd4ea7b3a1edaeea5e045eea85af51e9f6ea3567b4910df7689404e7d75bd7aca3b87caf2b612746891e8ecc106417344da2</data:hash>
+                    </data:Bestand>
+                </data:heeftBestand>
+            </data:heeftBestanden>
+            <!-- aangezien geboorteregeling aangeeft bij het intrekken van een regeling welke consolideerbare informatieobjejecten ook tegelijkertijd ingetrokken moeten worden, staat hier verwijzing naar AKN ID van Work Waterschapsverordening van betreffende BG. -->
+            <data:heeftGeboorteregeling>/akn/nl/act/ws0664/2020/Waterschapsverordening</data:heeftGeboorteregeling>
+        </data:InformatieObjectVersieMetadata>
+        <data:InformatieObjectMetadata>
+            <!-- data:naamInformatieObject is verplicht in 1.0.3  -->
+            <data:naamInformatieObject>Niet-aangewezen oppervlaktewaterlichamen waterschap Drents Overijsselse Delta</data:naamInformatieObject> <!-- moet de titel bevatten in mensleesbare vorm -->
+            <data:eindverantwoordelijke>/tooi/id/waterschap/ws0664</data:eindverantwoordelijke>
+            <data:formaatInformatieobject>/join/id/stop/informatieobject/gio_002</data:formaatInformatieobject>
+            <data:maker>/tooi/id/ministerie/mnre1034</data:maker>
+            <data:officieleTitel>/join/id/regdata/ws0664/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_drents_overijsselse_delta</data:officieleTitel> <!-- moet de join-id van de GIO bevatten (van het Work) -->
+            <data:publicatieinstructie>AlleenBekendTeMaken</data:publicatieinstructie>
+        </data:InformatieObjectMetadata>
+    </lvbba:InformatieObjectVersie>
+</lvbba:AanleveringInformatieObject>

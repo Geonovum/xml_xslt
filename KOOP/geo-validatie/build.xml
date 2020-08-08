@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="schematron" default="main">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+  <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"/>
+
+  <property name="input.dir" value="input"/>
+  <property name="output.dir" value="output"/>
+  <property name="temp.dir" value="temp"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete dir="${output.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${output.dir}"/>
+    <delete dir="${temp.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${temp.dir}"/>
+  </target>
+
+  <!-- stel manifest-bestand samen -->
+
+  <target name="manifest" description="Stel manifest-bestand samen">
+    <xslt basedir="${input.dir}" destdir="${temp.dir}" style="manifest.xsl" processor="trax" force="true">
+      <mapper type="glob" from="*.gml" to="*.log"/>
+    </xslt>
+  </target>
+
+  <!-- zip alle mappen -->
+
+  <target name="zip" description="Zip alle mappen">
+    <foreach target="zip.execute" param="dir.name">
+      <path>
+        <dirset dir="${temp.dir}" includes="*"/>
+      </path>
+    </foreach>
+  </target>
+
+  <target name="zip.execute">
+    <basename property="file.name" file="${dir.name}"/>
+    <zip basedir="${dir.name}" destfile="${output.dir}/${file.name}.zip"/>
+  </target>
+
+  <!-- totale transformatie -->
+
+  <target name="main" description="Totale transformatie" depends="init,manifest,zip"/>
+
+</project>

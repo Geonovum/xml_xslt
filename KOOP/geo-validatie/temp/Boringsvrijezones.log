@@ -1,0 +1,6 @@
+GML-bestand: file:/C:/Werkbestanden/Geonovum/geo-validatie/input/Boringsvrijezones.gml
+FRBRWork: /join/id/regdata/pv26/2020/boringsvrijezones
+
+Locatie: t5fd2469b-3f51-4644-9d85-8b2b2966ac68-0
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface

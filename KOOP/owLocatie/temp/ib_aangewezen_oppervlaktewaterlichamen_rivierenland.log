@@ -1,0 +1,14 @@
+GML-bestand: ib_aangewezen_oppervlaktewaterlichamen_rivierenland.gml
+FRBRWork: /join/id/regdata/ws0621/2020/ib_aangewezen_oppervlaktewaterlichamen_rivierenland
+
+Locatie: dc3f628d-3c89-4cf7-a084-29367608c1b1
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface
+
+Locatie: 8f5517b8-3d43-4ca7-b5b7-dfce60a15518
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface
+
+Locatie: 6e75aed9-b9cb-4b02-b328-7532c580840c
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface

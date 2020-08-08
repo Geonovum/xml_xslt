@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="20.1">
+    <meta>
+        <filters directoryPatterns="" filePatterns="owLocatie.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="owLocatie.xpr">
+        <file name="build.xml"/>
+        <file name="owLocatie.xsl"/>
+    </projectTree>
+</project>

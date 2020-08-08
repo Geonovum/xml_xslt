@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lvbba:AanleveringInformatieObject schemaversie="1.0.3"
+    xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
+    xmlns:lvbba="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
+    <lvbba:InformatieObjectVersie>
+        <data:ExpressionIdentificatie>
+            <data:FRBRWork>/join/id/regdata/ws0152/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_rijn_ijssel</data:FRBRWork>
+            <data:FRBRExpression>/join/id/regdata/ws0152/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_rijn_ijssel/nld@2020-08-04</data:FRBRExpression>
+            <data:soortWork>/join/id/stop/work_010</data:soortWork>
+        </data:ExpressionIdentificatie>
+        <!-- data:InformatieObjectVersieMetadata is verplicht en bevat de heeftBestanden -->
+        <data:InformatieObjectVersieMetadata>
+            <data:heeftBestanden>
+                <data:heeftBestand>
+                    <data:Bestand>
+                        <data:bestandsnaam>ib_niet_aangewezen_oppervlaktewaterlichamen_rijn_en_ijssel.gml</data:bestandsnaam>
+                        <data:hash>fb4578b1764470c6566f8323e58459b1eb34afcb105fd43dde863866f020ad4cb35735114296fd998a316264486770db9fae61b9960ab4f3aa4a9c2f9c5a63fb</data:hash>
+                    </data:Bestand>
+                </data:heeftBestand>
+            </data:heeftBestanden>
+            <!-- aangezien geboorteregeling aangeeft bij het intrekken van een regeling welke consolideerbare informatieobjejecten ook tegelijkertijd ingetrokken moeten worden, staat hier verwijzing naar AKN ID van Work Waterschapsverordening van betreffende BG. -->
+            <data:heeftGeboorteregeling>/akn/nl/act/ws0152/2020/Waterschapsverordening</data:heeftGeboorteregeling>
+        </data:InformatieObjectVersieMetadata>
+        <data:InformatieObjectMetadata>
+            <!-- data:naamInformatieObject is verplicht in 1.0.3  -->
+            <data:naamInformatieObject>Niet-aangewezen oppervlaktewaterlichamen waterschap Rijn en IJssel</data:naamInformatieObject> <!-- moet de titel bevatten in mensleesbare vorm -->
+            <data:eindverantwoordelijke>/tooi/id/waterschap/ws0152</data:eindverantwoordelijke>
+            <data:formaatInformatieobject>/join/id/stop/informatieobject/gio_002</data:formaatInformatieobject>
+            <data:maker>/tooi/id/ministerie/mnre1034</data:maker>
+            <data:officieleTitel>/join/id/regdata/ws0152/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_rijn_ijssel</data:officieleTitel> <!-- moet de join-id van de GIO bevatten (van het Work) -->
+            <data:publicatieinstructie>AlleenBekendTeMaken</data:publicatieinstructie>
+        </data:InformatieObjectMetadata>
+    </lvbba:InformatieObjectVersie>
+</lvbba:AanleveringInformatieObject>

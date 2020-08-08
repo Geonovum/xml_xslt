@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-18cc9708-c501-485e-8719-8bf3cad508c2-xx">
+         <basisgeo:id>18cc9708-c501-485e-8719-8bf3cad508c2</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992"
+                              gml:id="id-18cc9708-c501-485e-8719-8bf3cad508c2">
+               <gml:surfaceMember>
+                  <gml:Polygon>
+                     <gml:exterior>
+                        <gml:LinearRing>
+                           <gml:posList>252561.336 592760.579 252561.243 592760.431 252560.126 592758.646 252559.697 592758.721 252558.634 592758.908 252558.38 592759.042 252558.035 592759.223 252557.439 592759.538 252557.093 592759.72 252556.447 592760.604 252556.232 592762.766 252557.512 592765.967 252557.843 592766.795 252559.079 592769.161 252566.637 592783.637 252573.49 592797.023 252574.242 592798.492 252575.495 592800.998 252583.588 592817.186 252590.001 592830.372 252599.219 592849.129 252616.148 592883.87 252616.593 592884.784 252617.495 592886.934 252621.743 592897.065 252622.378 592897.903 252627.033 592904.048 252631.421 592898.012 252631.41 592897.954 252631.405 592897.928 252624.402 592884.226 252622.316 592880.144 252607.539 592851.522 252598.624 592834.038 252594.027 592823.648 252590.981 592816.763 252587.688 592810.19 252582.259 592799.351 252576.097 592786.423 252569.18 592773.111 252561.336 592760.579</gml:posList>
+                        </gml:LinearRing>
+                     </gml:exterior>
+                  </gml:Polygon>
+               </gml:surfaceMember>
+            </gml:MultiSurface>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>

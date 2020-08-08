@@ -1,0 +1,6 @@
+GML-bestand: file:/C:/Werkbestanden/Geonovum/geo-validatie/input/Bereikbaarheid.gml
+FRBRWork: /join/id/regdata/pv26/2020/bereikbaarheid
+
+Locatie: taacd9703-8131-463e-89f2-f890ec121ed7-0
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface

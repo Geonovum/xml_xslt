@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 sp1 (x64) (http://www.altova.com) by Kadaster (Kadaster) -->
+<xs:schema xmlns:gvt="http://www.kadaster.nl/schemas/geovalidaties/typen/v20181101" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.kadaster.nl/schemas/geovalidaties/typen/v20181101" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
+	<xs:element name="Waardelijst" type="gvt:Waardelijst" abstract="false">
+		<xs:annotation>
+			<xs:documentation source="http://www.imvertor.org/schema-info/technical-documentation">De toegestane waarden staan in een externe waardelijst. Voor iedere waardelijst is vastgesteld wat de bron is van deze waarden. Elementen met dit type mogen niet leeg gelaten worden.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="Waardelijst" abstract="false">
+		<xs:sequence>
+			<xs:element name="code" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="\S.*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="waarde" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="\S.*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

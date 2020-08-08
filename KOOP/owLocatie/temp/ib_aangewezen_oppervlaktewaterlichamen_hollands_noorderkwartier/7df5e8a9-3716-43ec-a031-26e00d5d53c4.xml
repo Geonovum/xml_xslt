@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-7df5e8a9-3716-43ec-a031-26e00d5d53c4-xx">
+         <basisgeo:id>7df5e8a9-3716-43ec-a031-26e00d5d53c4</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992"
+                              gml:id="id-7df5e8a9-3716-43ec-a031-26e00d5d53c4">
+               <gml:surfaceMember>
+                  <gml:Polygon>
+                     <gml:exterior>
+                        <gml:LinearRing>
+                           <gml:posList>113923.974 503870.018 113922.984 503869.656 113922.454 503871.17 113919.881 503878.525 113916.303 503892.315 113913.505 503904.534 113911.034 503915.323 113906.839 503934.673 113899.678 503967.706 113891.174 504007.604 113880.301 504055.481 113872.282 504091.811 113861.51 504140.478 113852.102 504181.73 113840.973 504232.131 113837.512 504247.36 113834.982 504258.494 113835.298 504258.559 113836.183 504258.741 113837.713 504257.722 113838.082 504257.477 113839.08 504255.225 113851.576 504200.725 113858.45 504170.613 113862.633 504152.286 113876.008 504091.577 113878.584 504079.436 113887.6 504036.939 113900.899 503976.131 113901.548 503973.162 113911.539 503927.907 113915.323 503910.303 113916.27 503905.895 113916.764 503903.79 113919.77 503890.991 113921.855 503880.417 113923.142 503874.103 113923.974 503870.018</gml:posList>
+                        </gml:LinearRing>
+                     </gml:exterior>
+                  </gml:Polygon>
+               </gml:surfaceMember>
+            </gml:MultiSurface>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>

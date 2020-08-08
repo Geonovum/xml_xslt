@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-0f958588-e7d5-4a43-922e-93b67cc6fffb-xx">
+         <basisgeo:id>0f958588-e7d5-4a43-922e-93b67cc6fffb</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992"
+                              gml:id="id-0f958588-e7d5-4a43-922e-93b67cc6fffb">
+               <gml:surfaceMember>
+                  <gml:Polygon>
+                     <gml:exterior>
+                        <gml:LinearRing>
+                           <gml:posList>128234.103 464839.66 128234.962 464839.627
+                                          128235.09 464839.65 128235.09 464840.25 128236.586
+                                          464840.388 128237.91 464840.51 128238.0 464839.99
+                                          128239.52 464840.25 128239.473 464840.834 128239.47
+                                          464840.87 128240.173 464839.712 128240.959 464838.417
+                                          128240.25 464835.65 128240.224 464835.726 128240.08
+                                          464836.14 128238.52 464835.95 128238.6 464835.34
+                                          128237.448 464835.207 128236.0 464835.04 128235.74
+                                          464835.56 128234.7 464835.4 128234.792 464834.804
+                                          128234.929 464833.912 128233.192 464833.395 128230.957
+                                          464832.729 128228.819 464832.289 128226.63 464831.84
+                                          128225.853 464831.68 128224.414 464831.384 128220.809
+                                          464831.031 128215.575 464830.94 128215.224 464830.934
+                                          128214.759 464834.655 128214.224 464838.935 128215.769
+                                          464839.47 128217.223 464839.866 128218.263 464840.15
+                                          128219.812 464840.394 128221.906 464840.724 128224.566
+                                          464841.042 128225.85 464841.195 128229.964 464841.365
+                                          128232.184 464841.273 128233.82 464841.004 128233.903
+                                          464840.99 128234.103 464839.66</gml:posList>
+                        </gml:LinearRing>
+                     </gml:exterior>
+                  </gml:Polygon>
+               </gml:surfaceMember>
+            </gml:MultiSurface>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>

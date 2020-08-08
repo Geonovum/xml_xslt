@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709"
+                 xmlns:g-ref="http://www.geostandaarden.nl/imow/geometrie-ref/v20190901"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709"
+                 xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901"
+                 xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901"
+                 xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901"
+                 xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst/v20190901"
+                 xmlns:vt-ref="http://www.geostandaarden.nl/imow/vrijetekst-ref/v20190901">
+	  <sl:standBestand>
+		    <sl:dataset>Bruidschat Rivierenland</sl:dataset>
+		    <sl:inhoud>
+			      <sl:gebied>Rivierenland</sl:gebied>
+			      <sl:leveringsId>ws0621</sl:leveringsId>
+			      <sl:objectTypen>
+				        <sl:objectType>Gebied</sl:objectType>
+				        <sl:objectType>Gebiedengroep</sl:objectType>
+			      </sl:objectTypen>
+		    </sl:inhoud>
+		    <sl:stand>
+			      <ow-dc:owObject>
+				        <l:Gebiedengroep>
+					          <l:identificatie>nl.imow-ws0621.gebiedengroep.aangewOppervlaktewaterlichamen</l:identificatie>
+					          <l:noemer>Aangewezen oppervlaktewaterlichamen</l:noemer>
+					          <l:groepselement>
+						            <l-ref:GebiedRef xlink:href="nl.imow-ws0621.gebied.2020000001"/>
+					          </l:groepselement>
+				        </l:Gebiedengroep>
+			      </ow-dc:owObject>
+		    </sl:stand>
+		    <sl:stand>
+			      <ow-dc:owObject>
+				        <l:Gebied>
+					          <l:identificatie>nl.imow-ws0621.gebied.2020000001</l:identificatie>
+					          <l:noemer>Aangewezen oppervlaktewaterlichamen</l:noemer>
+					          <l:geometrie>
+						            <g-ref:GeometrieRef xlink:href="119b5b6a-b84a-4ca7-8671-952a3c609acb"/>
+					          </l:geometrie>
+				        </l:Gebied>
+			      </ow-dc:owObject>
+		    </sl:stand>
+	  </sl:standBestand>
+</ow-dc:owBestand>

@@ -1,0 +1,6 @@
+GML-bestand: file:/C:/Werkbestanden/Geonovum/geo-validatie/input/Bufferluchtvaartterrein.gml
+FRBRWork: /join/id/regdata/pv26/2020/bufferluchtvaartterrein
+
+Locatie: tfe38ce0f-10be-4bb3-acbc-630128afd48c-0
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface

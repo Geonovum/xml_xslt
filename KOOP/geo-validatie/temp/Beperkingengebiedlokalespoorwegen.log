@@ -1,0 +1,6 @@
+GML-bestand: file:/C:/Werkbestanden/Geonovum/geo-validatie/input/Beperkingengebiedlokalespoorwegen.gml
+FRBRWork: /join/id/regdata/pv26/2020/beperkingengebiedlokalespoorwegen
+
+Locatie: t23d92b9e-0e80-4fdf-994f-36ae774c80af-0
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface

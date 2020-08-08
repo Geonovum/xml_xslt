@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>ws0372</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>ws0372</sl:gebied>
+         <sl:leveringsId>ws0372_2020-08-08</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebied</sl:objectType>
+            <sl:objectType>Gebiedengroep</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-ws0372.gebiedengroep.aangewOppervlaktewaterlichamen</l:identificatie>
+               <l:noemer>Aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Delfland</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-ws0372.gebied.2020000001"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0372.gebied.2020000002"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0372.gebied.2020000003"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0372.gebied.2020000004"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0372.gebied.2020000005"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0372.gebied.2020000006"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0372.gebied.2020000001</l:identificatie>
+               <l:noemer>Havengebied Delfshaven te Rotterdam</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="189e1a65-8db2-4514-b4c9-927d649335e3"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0372.gebied.2020000002</l:identificatie>
+               <l:noemer>Polderwatering</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="fc158c12-91a1-4172-aeff-83dd4d9ee522"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0372.gebied.2020000003</l:identificatie>
+               <l:noemer>Coolhaven</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b60323a2-351a-4efd-91bd-817413dcdf28"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0372.gebied.2020000004</l:identificatie>
+               <l:noemer>Delfshavense Schie van Coolhaven tot aan Schie-Schiekanaal</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="3f4f8992-6e6e-47b5-a294-0ca5daf26b02"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0372.gebied.2020000005</l:identificatie>
+               <l:noemer>Stadswateren van Schiedam</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="498be1a1-10f3-4936-a12b-d9968b610a9a"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0372.gebied.2020000006</l:identificatie>
+               <l:noemer>Schiedamsche Schie</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="17018893-1b0e-4a8f-942c-57a090bdc5aa"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gvmb:manifest xmlns:gvmb="http://www.kadaster.nl/schemas/geovalidaties/manifestbestand/v20181101"
+               xmlns:gvt="http://www.kadaster.nl/schemas/geovalidaties/typen/v20181101">
+   <gvmb:bestand>
+      <bestandsnaam>t6a0e728d-da2a-4e4e-a907-00f2ca1ba608-0.xml</bestandsnaam>
+      <geovalidatieconfiguratie>
+         <crs>
+            <gvt:code>1</gvt:code>
+            <gvt:waarde>RD</gvt:waarde>
+         </crs>
+         <geostandaard>
+            <gvt:code>1</gvt:code>
+            <gvt:waarde>GML321SF2</gvt:waarde>
+         </geostandaard>
+         <gmlType>
+            <gvt:code>4</gvt:code>
+            <gvt:waarde>MultiSurface</gvt:waarde>
+         </gmlType>
+      </geovalidatieconfiguratie>
+   </gvmb:bestand>
+</gvmb:manifest>

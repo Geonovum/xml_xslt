@@ -1,0 +1,6 @@
+GML-bestand: file:/C:/Werkbestanden/Geonovum/geo-validatie/input/Amsterdam-RijnkanaalenLek.gml
+FRBRWork: /join/id/regdata/pv26/2020/amsterdam-rijnkanaalenlek
+
+Locatie: t10c09e3a-8f55-480b-9abc-5ad7e19a098f-0
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project basedir="." name="tpod" default="main">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+  <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"/>
+
+  <property name="bron.dir" value="bron"/>
+  <property name="opdracht.dir" value="opdracht"/>
+  <property name="stap_1.dir" value="stap_1"/>
+  <property name="stap_2.dir" value="stap_2"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete dir="${opdracht.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${opdracht.dir}"/>
+    <delete dir="${stap_1.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${stap_1.dir}"/>
+    <delete dir="${stap_2.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${stap_2.dir}"/>
+  </target>
+
+  <!-- pas namespaces aan -->
+
+  <target name="namespace" description="Trek de namespace-uri's gelijk">
+    <xslt basedir="${bron.dir}" destdir="${stap_1.dir}" extension=".xml" style="namespace.xsl" processor="trax" force="true">
+      <include name="*.xml"/>
+    </xslt>
+  </target>
+
+  <target name="template" description="Maak de ow-bestanden">
+    <fileset dir="${bron.dir}" casesensitive="yes" id="gml">
+      <include name="**/*.gml"/>
+    </fileset>
+    <pathconvert pathsep="," property="gml.list" refid="gml"/>
+    <xslt in="template.xml" out="${stap_2.dir}/manifest-ow.xml" style="template.xsl" processor="trax" force="true">
+      <param name="base.dir" expression="${stap_1.dir}"/>
+      <param name="gml.list" expression="${gml.list}"/>
+    </xslt>
+    <copy todir="${opdracht.dir}">
+      <fileset refid="gml"/>
+    </copy>
+  </target>
+
+  <target name="regeltekstId" description="Voeg regeltekstId toe">
+    <xslt basedir="${stap_2.dir}" destdir="${opdracht.dir}" extension=".xml" style="regeltekstId.xsl" processor="trax" force="true">
+      <param name="base.dir" expression="${stap_2.dir}"/>
+    </xslt>
+  </target>
+
+  <!-- totale transformatie -->
+
+  <target name="main" description="Totale transformatie" depends="init,namespace,template,regeltekstId"/>
+
+</project>

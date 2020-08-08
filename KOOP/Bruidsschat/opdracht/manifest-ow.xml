@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Modules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.geostandaarden.nl/imow https://register.geostandaarden.nl/xmlschema/tpod/v0.98.3-kern/bestanden-ow/generiek/v20190901/manifest-ow.xsd">
+   <domein>omgevingswet</domein>
+   <RegelingVersie>
+      <FRBRwork>/akn/nl/act/ws0621/2020/WSV01</FRBRwork>
+      <FRBRExpression>/akn/nl/act/ws0621/2020/WSV01/nld@1-0</FRBRExpression>
+      <Bestand>
+         <naam>owRegeltekst.xml</naam>
+         <objecttype>Regeltekst</objecttype>
+         <objecttype>RegelVoorIedereen</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owActiviteit.xml</naam>
+         <objecttype>Activiteit</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owLocatie.xml</naam>
+         <objecttype>Gebied</objecttype>
+         <objecttype>Gebiedengroep</objecttype>
+      </Bestand>
+   </RegelingVersie>
+</Modules>

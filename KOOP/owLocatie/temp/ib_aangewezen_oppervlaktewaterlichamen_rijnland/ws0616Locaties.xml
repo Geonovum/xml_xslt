@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>ws0616</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>ws0616</sl:gebied>
+         <sl:leveringsId>ws0616_2020-08-08</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebied</sl:objectType>
+            <sl:objectType>Gebiedengroep</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-ws0616.gebiedengroep.aangewOppervlaktewaterlichamen</l:identificatie>
+               <l:noemer>Aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Rijnland</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-ws0616.gebied.2020000001"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0616.gebied.2020000002"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0616.gebied.2020000003"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0616.gebied.2020000004"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0616.gebied.2020000005"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0616.gebied.2020000006"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0616.gebied.2020000007"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0616.gebied.2020000008"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0616.gebied.2020000009"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0616.gebied.2020000001</l:identificatie>
+               <l:noemer>Gouwe en oostelijk deel Oude Rijn</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f79a7755-8819-4234-96ca-76655e258c9b"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0616.gebied.2020000002</l:identificatie>
+               <l:noemer>Vliet, Rijn-Schiekanaal, Oude Rijn tot uitwatering Katwijk met uitzondering van de singels in Leiden en een gedeelte van de Haarlemmertrekvaart</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8c406bfb-e7b0-4e3e-8b8f-85112c8abbae"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0616.gebied.2020000003</l:identificatie>
+               <l:noemer>Aarkanaal, Leidse Vaart en Drecht</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="9c6475f6-c7e4-4553-b4cd-caabd95856ef"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0616.gebied.2020000004</l:identificatie>
+               <l:noemer>Does en omliggende kanalen</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="40c10aac-fb72-4f6f-989f-86dbffe0433a"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0616.gebied.2020000005</l:identificatie>
+               <l:noemer>Trekvaart systeem</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="28d81f30-2ca0-4b8b-b82f-5a884c0f194a"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0616.gebied.2020000006</l:identificatie>
+               <l:noemer>Oostelijk deel Ringvaart Haarlemmermeer</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="08d20174-1f8d-4ae2-8bea-ef0423051c14"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0616.gebied.2020000007</l:identificatie>
+               <l:noemer>Westelijk deel Ringvaart Haarlemmermeer</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="987e92c0-f314-481f-8828-a6aecd511cf8"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0616.gebied.2020000008</l:identificatie>
+               <l:noemer>Noordelijk deel Ringvaart Haarlemmermeer</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ddaf4d58-f875-4592-a82d-93c9596f2c37"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0616.gebied.2020000009</l:identificatie>
+               <l:noemer>Spaarne, Mooie Nel en Liede</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="284fb0a8-b219-456a-b782-0deb31d72d20"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

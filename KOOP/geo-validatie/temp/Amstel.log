@@ -1,0 +1,6 @@
+GML-bestand: file:/C:/Werkbestanden/Geonovum/geo-validatie/input/Amstel.gml
+FRBRWork: /join/id/regdata/pv26/2020/amstel
+
+Locatie: ta7d4b91e-58b9-4f9a-a164-ae2cd24b5727-0
+srsName: urn:ogc:def:crs:EPSG::28992
+GML-type: MultiSurface
