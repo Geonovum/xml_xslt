@@ -4,8 +4,9 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"  
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"  
     xmlns:fn="http://www.w3.org/2005/xpath-functions"  
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math"
     xmlns:xlink="http://www.w3.org/1999/xlink" 
-    exclude-result-prefixes="xs xd"  
+    exclude-result-prefixes="xs xd math"  
     version="2.0">
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
     <xd:doc scope="stylesheet">
@@ -282,22 +283,131 @@
                     <xsl:attribute name="class">symbol_example</xsl:attribute>
                     <xsl:element name="td">
                         <xsl:choose>
+                            <!-- cross_fill -->
                             <xsl:when test="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Mark']/*[local-name()='WellKnownName']/text()='cross_fill'">
-                                <xsl:element name="span">
+                                <xsl:element name="svg">
                                     <xsl:variable name="size" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Size']/text()"/>
-                                    <xsl:variable name="color" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Mark']/*[local-name()='Fill']/*[local-name()='SvgParameter'][@name='fill']/text()"/>
-                                    <xsl:attribute name="style"><xsl:value-of select="$size"/>;line-height:0
-                                        <xsl:value-of select="concat('font-size:', $size, ';color:', $color)"/>
-                                    </xsl:attribute>
-                                    &#10010;
+                                    <xsl:variable name="size_svg" select="math:sqrt(((fn:number($size) div 2) * (fn:number($size) div 2)) * 2) * 2"/>
+                                    <xsl:attribute name="viewbox">0 0 24 24</xsl:attribute>
+                                    <xsl:attribute name="height"><xsl:value-of select="$size_svg"/></xsl:attribute>
+                                    <xsl:attribute name="width"><xsl:value-of select="$size_svg"/></xsl:attribute>
+                                    <xsl:element name="polygon">
+                                        <xsl:attribute name="x"><xsl:value-of select="(fn:number($size_svg) - fn:number($size)) div 2"/></xsl:attribute>
+                                        <xsl:attribute name="y"><xsl:value-of select="(fn:number($size_svg) - fn:number($size)) div 2"/></xsl:attribute>
+                                        <xsl:attribute name="points">10,0 14,0 14,10 24,10 24,14 14,14 14,24 10,24 10,14 0,14 0,10 10,10 10,0</xsl:attribute>
+                                        <xsl:attribute name="style">
+                                            <xsl:variable name="rotation" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Rotation']/text()"/>
+                                            <!-- SvgParameter of graphicFill -->
+                                            <xsl:variable name="style">
+                                                <xsl:choose>
+                                                    <xsl:when test="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Fill']/*[local-name() = 'SvgParameter']">
+                                                        <xsl:variable name="fill" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Fill']/*[local-name() = 'SvgParameter'][@name = 'fill']/text()"/>
+                                                        <xsl:variable name="fill-opacity" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Fill']/*[local-name() = 'SvgParameter'][@name = 'fill-opacity']/text()"/>
+                                                        <xsl:value-of select="concat('fill:', fn:replace(fn:replace(string(not($fill)),'true','#ffffff'),'false',string($fill)),';fill-opacity:', fn:replace(fn:replace(string(not($fill-opacity)),'true','1'),'false',string($fill-opacity)))" />
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:value-of select="'fill-opacity:0'"/>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                                <xsl:variable name="stroke" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke']/text()"/>
+                                                <xsl:variable name="stroke-opacity" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-opacity']/text()"/>
+                                                <xsl:variable name="stroke-width" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-width']/text()"/>
+                                                <xsl:variable name="stroke-linejoin" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-linejoin']/text()"/>
+                                                <xsl:variable name="stroke-dasharray" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-dasharray']/text()"/>
+                                                <xsl:variable name="stroke-linecap" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-linecap']/text()"/>
+                                                <xsl:value-of select="concat(';stroke:', $stroke, ';stroke-opacity:', $stroke-opacity, ';stroke-width:', $stroke-width, ';stroke-linejoin:', $stroke-linejoin, ';stroke-dasharray:', $stroke-dasharray, ';stroke-linecap:', $stroke-linecap, ';transform-origin: center;transform: rotate(',$rotation,'deg);')" />
+                                            </xsl:variable>
+                                            <xsl:value-of select="$style"/>
+                                        </xsl:attribute>
+                                    </xsl:element>
+                                </xsl:element>
+                            </xsl:when>
+                            <!-- Ster -->
+                            <xsl:when test="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Mark']/*[local-name()='WellKnownName']/text()='star'">
+                                <xsl:element name="svg">
+                                    <xsl:variable name="size" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Size']/text()"/>
+                                    <xsl:variable name="size_svg" select="math:sqrt(((fn:number($size) div 2) * (fn:number($size) div 2)) * 2) * 2"/>
+                                    <xsl:attribute name="viewbox">0 0 24 24</xsl:attribute>
+                                    <xsl:attribute name="height"><xsl:value-of select="$size_svg"/></xsl:attribute>
+                                    <xsl:attribute name="width"><xsl:value-of select="$size_svg"/></xsl:attribute>
+                                    <xsl:element name="polygon">
+                                        <xsl:attribute name="x"><xsl:value-of select="(fn:number($size_svg) - fn:number($size)) div 2"/></xsl:attribute>
+                                        <xsl:attribute name="y"><xsl:value-of select="(fn:number($size_svg) - fn:number($size)) div 2"/></xsl:attribute>
+                                        <xsl:attribute name="points">12,0 19,21 1,8 23,8 5,21 12,0</xsl:attribute>
+                                        <xsl:attribute name="style">
+                                            <xsl:variable name="rotation" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Rotation']/text()"/>
+                                            <!-- SvgParameter of graphicFill -->
+                                            <xsl:variable name="style">
+                                                <xsl:choose>
+                                                    <xsl:when test="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Fill']/*[local-name() = 'SvgParameter']">
+                                                        <xsl:variable name="fill" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Fill']/*[local-name() = 'SvgParameter'][@name = 'fill']/text()"/>
+                                                        <xsl:variable name="fill-opacity" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Fill']/*[local-name() = 'SvgParameter'][@name = 'fill-opacity']/text()"/>
+                                                        <xsl:value-of select="concat('fill:', fn:replace(fn:replace(string(not($fill)),'true','#ffffff'),'false',string($fill)),';fill-opacity:', fn:replace(fn:replace(string(not($fill-opacity)),'true','1'),'false',string($fill-opacity)))" />
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:value-of select="'fill-opacity:0'"/>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                                <xsl:variable name="stroke" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke']/text()"/>
+                                                <xsl:variable name="stroke-opacity" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-opacity']/text()"/>
+                                                <xsl:variable name="stroke-width" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-width']/text()"/>
+                                                <xsl:variable name="stroke-linejoin" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-linejoin']/text()"/>
+                                                <xsl:variable name="stroke-dasharray" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-dasharray']/text()"/>
+                                                <xsl:variable name="stroke-linecap" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-linecap']/text()"/>
+                                                <xsl:value-of select="concat(';stroke:', $stroke, ';stroke-opacity:', $stroke-opacity, ';stroke-width:', $stroke-width, ';stroke-linejoin:', $stroke-linejoin, ';stroke-dasharray:', $stroke-dasharray, ';stroke-linecap:', $stroke-linecap, ';transform-origin: center;transform: rotate(',$rotation,'deg);')" />
+                                            </xsl:variable>
+                                            <xsl:value-of select="$style"/>
+                                        </xsl:attribute>
+                                    </xsl:element>
+                                </xsl:element>
+                            </xsl:when>
+                            <!--<polygon x="4.970562748477139" y="4.970562748477139" points="12,0 19,21 1,8 23,8 5,21 12,0" style="fill:#000000;fill-opacity:1;stroke:#999999;stroke-opacity:0;stroke-width:1;stroke-linejoin:;stroke-dasharray:;stroke-linecap:;transform-origin: center;transform: rotate(0deg);"></polygon>-->
+                            <!-- Ster -->
+                            <xsl:when test="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Mark']/*[local-name()='WellKnownName']/text()='triangle'">
+                                <xsl:element name="svg">
+                                    <xsl:variable name="size" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Size']/text()"/>
+                                    <xsl:variable name="size_svg" select="math:sqrt(((fn:number($size) div 2) * (fn:number($size) div 2)) * 2) * 2"/>
+                                    <xsl:attribute name="viewbox">0 0 24 24</xsl:attribute>
+                                    <xsl:attribute name="height"><xsl:value-of select="$size_svg"/></xsl:attribute>
+                                    <xsl:attribute name="width"><xsl:value-of select="$size_svg"/></xsl:attribute>
+                                    <xsl:element name="polygon">
+                                        <xsl:attribute name="x"><xsl:value-of select="(fn:number($size_svg) - fn:number($size)) div 2"/></xsl:attribute>
+                                        <xsl:attribute name="y"><xsl:value-of select="(fn:number($size_svg) - fn:number($size)) div 2"/></xsl:attribute>
+                                        <xsl:attribute name="points">12,0 24,24 0,24 12,0</xsl:attribute>
+                                        <xsl:attribute name="style">
+                                            <xsl:variable name="rotation" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Rotation']/text()"/>
+                                            <!-- SvgParameter of graphicFill -->
+                                            <xsl:variable name="style">
+                                                <xsl:choose>
+                                                    <xsl:when test="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Fill']/*[local-name() = 'SvgParameter']">
+                                                        <xsl:variable name="fill" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Fill']/*[local-name() = 'SvgParameter'][@name = 'fill']/text()"/>
+                                                        <xsl:variable name="fill-opacity" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Fill']/*[local-name() = 'SvgParameter'][@name = 'fill-opacity']/text()"/>
+                                                        <xsl:value-of select="concat('fill:', fn:replace(fn:replace(string(not($fill)),'true','#ffffff'),'false',string($fill)),';fill-opacity:', fn:replace(fn:replace(string(not($fill-opacity)),'true','1'),'false',string($fill-opacity)))" />
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:value-of select="'fill-opacity:0'"/>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                                <xsl:variable name="stroke" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke']/text()"/>
+                                                <xsl:variable name="stroke-opacity" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-opacity']/text()"/>
+                                                <xsl:variable name="stroke-width" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-width']/text()"/>
+                                                <xsl:variable name="stroke-linejoin" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-linejoin']/text()"/>
+                                                <xsl:variable name="stroke-dasharray" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-dasharray']/text()"/>
+                                                <xsl:variable name="stroke-linecap" select="./*[local-name() = 'PointSymbolizer']/*[local-name() = 'Graphic']/*[local-name() = 'Mark']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-linecap']/text()"/>
+                                                <xsl:value-of select="concat(';stroke:', $stroke, ';stroke-opacity:', $stroke-opacity, ';stroke-width:', $stroke-width, ';stroke-linejoin:', $stroke-linejoin, ';stroke-dasharray:', $stroke-dasharray, ';stroke-linecap:', $stroke-linecap, ';transform-origin: center;transform: rotate(',$rotation,'deg);')" />
+                                            </xsl:variable>
+                                            <xsl:value-of select="$style"/>
+                                        </xsl:attribute>
+                                    </xsl:element>
                                 </xsl:element>
                             </xsl:when>
                             <!-- square -->
                             <xsl:when test="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Mark']/*[local-name()='WellKnownName']/text()='square'">
                                 <xsl:element name="svg">
                                     <xsl:variable name="size" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Size']/text()"/>
-                                    <xsl:attribute name="height"><xsl:value-of select="$size"/></xsl:attribute>
-                                    <xsl:attribute name="width"><xsl:value-of select="$size"/></xsl:attribute>
+                                    <xsl:variable name="size_svg" select="math:sqrt(((fn:number($size) div 2) * (fn:number($size) div 2)) * 2) * 2"/>
+                                    <xsl:attribute name="height"><xsl:value-of select="$size_svg"/></xsl:attribute>
+                                    <xsl:attribute name="width"><xsl:value-of select="$size_svg"/></xsl:attribute>
                                     <xsl:element name="rect">
                                         <xsl:variable name="rotation" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Rotation']/text()"/>
                                         <xsl:variable name="fill" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Mark']/*[local-name()='Fill']/*[local-name()='SvgParameter'][@name='fill']/text()"/>
@@ -305,10 +415,12 @@
                                         <xsl:variable name="stroke" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Mark']/*[local-name()='Stroke']/*[local-name()='SvgParameter'][@name='stroke']/text()"/>
                                         <xsl:variable name="stroke-opacity" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Mark']/*[local-name()='Stroke']/*[local-name()='SvgParameter'][@name='stroke-opacity']/text()"/>
                                         <xsl:variable name="stroke-width" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Mark']/*[local-name()='Stroke']/*[local-name()='SvgParameter'][@name='stroke-width']/text()"/>
+                                        <xsl:attribute name="x"><xsl:value-of select="(fn:number($size_svg) - fn:number($size)) div 2"/></xsl:attribute>
+                                        <xsl:attribute name="y"><xsl:value-of select="(fn:number($size_svg) - fn:number($size)) div 2"/></xsl:attribute>
                                         <xsl:attribute name="width"><xsl:value-of select="$size"/></xsl:attribute>
                                         <xsl:attribute name="height"><xsl:value-of select="$size"/></xsl:attribute>
                                         <xsl:attribute name="style">
-                                            <xsl:value-of select="concat('fill:', $fill, ';fill-opacity:', $fill-opacity,';stroke:', $stroke, ';stroke-opacity:', $stroke-opacity, ';stroke-width:', $stroke-width)"/></xsl:attribute>
+                                            <xsl:value-of select="concat('fill:', $fill, ';fill-opacity:', $fill-opacity,';stroke:', $stroke, ';stroke-opacity:', $stroke-opacity, ';stroke-width:', $stroke-width, ';transform-origin: center;transform: rotate(',$rotation,'deg);')"/></xsl:attribute>
                                     </xsl:element>
                                 </xsl:element>
                             </xsl:when>
@@ -334,29 +446,7 @@
                                 </xsl:element>
                             </xsl:when>
                         </xsl:choose>
-                        
-<!--                        <xsl:element name="svg">
-                            <xsl:attribute name="height">48</xsl:attribute>
-                            <xsl:attribute name="width">96</xsl:attribute>
-                            <xsl:variable name="point_type" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Mark']/*[local-name()='WellKnownName']/text()"/>
-                            
-                            <xsl:element name="{$point_type}">
-                                <!-\-<xsl:attribute name="points">15,15 15,50 100,50 100,15</xsl:attribute>-\->
-                                <xsl:attribute name="x1">0</xsl:attribute>
-                                <xsl:attribute name="x2">96</xsl:attribute>
-                                <xsl:attribute name="y1">24</xsl:attribute>
-                                <xsl:attribute name="y2">24</xsl:attribute>
-                                <xsl:attribute name="style">
-                                    <xsl:variable name="stroke" select="./*[local-name() = 'LineSymbolizer']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke']/text()"/>
-                                    <xsl:variable name="stroke-opacity" select="./*[local-name() = 'LineSymbolizer']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-opacity']/text()"/>
-                                    <xsl:variable name="stroke-width" select="./*[local-name() = 'LineSymbolizer']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-width']/text()"/>
-                                    <xsl:variable name="stroke-dasharray" select="./*[local-name() = 'LineSymbolizer']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-dasharray']/text()"/>
-                                    <xsl:variable name="stroke-linecap" select="./*[local-name() = 'LineSymbolizer']/*[local-name() = 'Stroke']/*[local-name() = 'SvgParameter'][@name = 'stroke-linecap']/text()"/>
-                                    <xsl:value-of select="concat('stroke:', $stroke, ';stroke-opacity:', $stroke-opacity, ';stroke-width:', $stroke-width, ';stroke-dasharray:', $stroke-dasharray, ';stroke-linecap:', $stroke-linecap)"/>
-                                </xsl:attribute>
-                            </xsl:element>
-                        </xsl:element>
--->                        <xsl:apply-templates select="." mode="prop_list">
+                        <xsl:apply-templates select="." mode="prop_list">
                             <xsl:with-param name="geom_type">PointSymbolizer</xsl:with-param>
                         </xsl:apply-templates>
                     </xsl:element>
