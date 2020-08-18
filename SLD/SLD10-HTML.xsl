@@ -19,7 +19,7 @@
         </xd:desc>
     </xd:doc>
     <xd:doc>
-        <xd:desc>Velk Featu</xd:desc>
+        <xd:desc>Loop alle FeatureTypeStyles </xd:desc>
     </xd:doc>
     <xsl:template match="/">
         <xsl:element name="html">
@@ -36,7 +36,7 @@
         </xsl:element>
     </xsl:template>
     <xd:doc>
-        <xd:desc/>
+        <xd:desc>Maak div en loop alle Rules</xd:desc>
     </xd:doc>
     <xsl:template match="." mode="div_tab">
         <xsl:element name="div">
@@ -361,8 +361,7 @@
                                     </xsl:element>
                                 </xsl:element>
                             </xsl:when>
-                            <!--<polygon x="4.970562748477139" y="4.970562748477139" points="12,0 19,21 1,8 23,8 5,21 12,0" style="fill:#000000;fill-opacity:1;stroke:#999999;stroke-opacity:0;stroke-width:1;stroke-linejoin:;stroke-dasharray:;stroke-linecap:;transform-origin: center;transform: rotate(0deg);"></polygon>-->
-                            <!-- Ster -->
+                            <!-- Driehoek -->
                             <xsl:when test="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Mark']/*[local-name()='WellKnownName']/text()='triangle'">
                                 <xsl:element name="svg">
                                     <xsl:variable name="size" select="./*[local-name()='PointSymbolizer']/*[local-name()='Graphic']/*[local-name()='Size']/text()"/>
