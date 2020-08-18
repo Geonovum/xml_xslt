@@ -63,11 +63,11 @@ body {
 .symbol_table{
     table-layout:fixed;
     border-collapse:collapse;
-    width:140px;
+    width:155px;
     border-spacing:0px;
     text-align:center
 }
 .symbol_example{
     height:60px;
-    vertical-align:central
+    vertical-align:middle;
 }
