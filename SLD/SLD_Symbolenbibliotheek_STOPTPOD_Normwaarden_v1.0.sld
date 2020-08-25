@@ -4,14 +4,14 @@
 <!--      STOP-TPOD Normwaardensymbolenlijst 1.0.0    -->
 <!--      Geonovum  2020                              -->
 <!-- ================================================ -->
-<sld:StyledLayerDescriptor
-    xmlns:se="http://www.opengis.net/se"
-    xmlns:ogc="http://www.opengis.net/ogc"
-    xmlns:sld="http://www.opengis.net/sld"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:dso="https://dso.org"
-    xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd"
+<sld:StyledLayerDescriptor 
+    xmlns:se="http://www.opengis.net/se" 
+    xmlns:ogc="http://www.opengis.net/ogc" 
+    xmlns:sld="http://www.opengis.net/sld" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dso="https://dso.org" 
+    xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" 
     version="1.1.0">
     <sld:NamedLayer>
         <se:Name>Normwaarden</se:Name>
@@ -34,6 +34,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt200</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#505050</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -55,6 +56,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt201</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#646464</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -76,6 +78,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt202</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#787878</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -97,6 +100,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt203</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#8c8c8c</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -118,6 +122,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt204</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#a0a0a0</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -139,6 +144,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt205</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#b4b4b4</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -160,6 +166,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt206</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#c8c8c8</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -181,6 +188,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt207</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#dcdcdc</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -208,6 +216,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt300</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#0000ff</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -229,6 +238,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt301</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#1e1eff</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -250,6 +260,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt302</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#3c3cff</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -271,6 +282,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt303</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#5a5aff</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -292,6 +304,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt304</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#7878ff</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -313,6 +326,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt305</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#9696ff</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -334,6 +348,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt306</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#b4b4ff</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -355,6 +370,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt307</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#d2d2ff</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -382,6 +398,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt400</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#005000</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -403,6 +420,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt401</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#007300</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -424,6 +442,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt402</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#009600</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -445,6 +464,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt403</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#00b900</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -466,6 +486,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt404</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#00dc00</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -487,6 +508,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt405</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#00ff00</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -508,6 +530,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt406</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#4bff4b</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -529,6 +552,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt407</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#96ff96</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -556,6 +580,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt500</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#960000</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -577,6 +602,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt501</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#b90000</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -598,6 +624,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt502</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#dc0000</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -619,6 +646,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt503</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#ff0000</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -640,6 +668,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt504</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#ff5050</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -661,6 +690,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt505</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#ff7878</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -682,6 +712,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt506</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#ffa0a0</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -703,6 +734,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt507</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#ffc8c8</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -730,6 +762,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt600</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#e1c300</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -751,6 +784,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt601</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#ebd700</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -772,6 +806,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt602</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#f5eb00</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -793,6 +828,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt603</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#ffff00</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -814,6 +850,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt604</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#ffff50</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -835,6 +872,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt605</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#ffff78</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -856,6 +894,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt606</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#ffffa0</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
@@ -877,6 +916,7 @@
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
+                        <se:Name>vsgt607</se:Name>
                         <se:Fill>
                             <se:SvgParameter name="fill">#ffffc8</se:SvgParameter>
                             <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
