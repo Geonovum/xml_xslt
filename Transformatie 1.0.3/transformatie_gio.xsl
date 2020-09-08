@@ -31,7 +31,10 @@
 
   <xsl:template match="ExpressionIdentificatie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/stop/imop/data/">
-      <xsl:apply-templates select="node()"/>
+      <xsl:apply-templates select="(FRBRWork,FRBRExpression)"/>
+      <xsl:element name="soortWork" namespace="{namespace-uri()}">
+        <xsl:value-of select="string('/join/id/stop/work_010')"/>
+      </xsl:element>
     </xsl:element>
   </xsl:template>
 
