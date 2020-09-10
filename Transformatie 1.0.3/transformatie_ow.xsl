@@ -286,7 +286,19 @@
         <xsl:element name="r:identificatie" namespace="{$uri_new[13]}">
           <xsl:value-of select="concat('nl.imow-',$ID01,'.activiteitlocatieaanduiding.',$ID02,format-number($ID03,'000000'))"/>
         </xsl:element>
-        <xsl:apply-templates select="(ancestor::r:RegelVoorIedereen|ancestor::r:Omgevingswaarderegel|ancestor::r:Instructieregel)[1]/r:activiteitregelkwalificatie"/>
+        <xsl:choose>
+          <xsl:when test="(ancestor::r:RegelVoorIedereen|ancestor::r:Omgevingswaarderegel|ancestor::r:Instructieregel)[1]/r:activiteitregelkwalificatie">
+            <xsl:apply-templates select="(ancestor::r:RegelVoorIedereen|ancestor::r:Omgevingswaarderegel|ancestor::r:Instructieregel)[1]/r:activiteitregelkwalificatie"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:comment>
+              <xsl:value-of select="concat('Let op: activiteitregelkwalificatie ontbreekt in de bovenliggende ',(ancestor::r:RegelVoorIedereen|ancestor::r:Omgevingswaarderegel|ancestor::r:Instructieregel)[1]/name())"/>
+            </xsl:comment>
+            <xsl:element name="r:activiteitregelkwalificatie" namespace="{$uri_new[13]}">
+              <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/onbekend')"/>
+            </xsl:element>
+          </xsl:otherwise>
+        </xsl:choose>
         <xsl:element name="r:locatieaanduiding" namespace="{$uri_new[13]}">
           <xsl:apply-templates select="$activiteit//rol:Activiteit[rol:identificatie=$ID00]/rol:locatieaanduiding/node()"/>
         </xsl:element>
@@ -819,6 +831,19 @@
     <xsl:element name="DoelID" namespace="{$xmlns}">
       <xsl:value-of select="document($file.config)//DoelID"/>
     </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="*:Bestand">
+    <xsl:choose>
+      <xsl:when test="*:objecttype=('Geometrie')">
+        <!-- doe niets -->
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:element name="Bestand" namespace="{$xmlns}">
+          <xsl:apply-templates select="node()"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!-- vervallen attributen -->
