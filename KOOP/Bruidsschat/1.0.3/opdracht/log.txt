@@ -1,0 +1,10 @@
+[Controle op ontbrekende juriconnectId's]
+Er zijn 2 fouten gevonden in de mapping tussen wId en juriconnectId:
+1: juriconnectId jci1.31:c:IBversiePP&artikel=2.34&lid=2 ontbreekt in de mapping.
+2: juriconnectId jci1.31:c:IBversiePP&artikel=2 ontbreekt in de mapping.
+
+[Controle op ontbrekende pseudo-activiteiten]
+Alle pseudo-activiteiten komen voor in owActiviteit.xml.
+
+[Controle op activiteiten die gekoppeld zijn aan artikelen met onderliggende leden]
+Er zijn geen activiteiten gevonden die niet opgenomen kunnen worden in owRegeltekst.xml, omdat het artikel onderliggende leden bevat.

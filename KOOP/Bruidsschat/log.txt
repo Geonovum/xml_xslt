@@ -1,7 +1,0 @@
-Er zijn 2 fouten gevonden in de mapping tussen wId en juriconnectId:
-juriconnectId jci1.31:c:IBversiePP&artikel=2.34&lid=2 ontbreekt in de mapping.
-juriconnectId jci1.31:c:IBversiePP&artikel=2 ontbreekt in de mapping.
-
-Alle pseudo-activiteiten komen voor in owActiviteit.xml.
-
-Alle pseudo-activiteiten komen voor in owActiviteit.xml.
