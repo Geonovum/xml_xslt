@@ -56,7 +56,7 @@
             <xsl:when test="$check/item">
                <xsl:value-of select="concat('Er zijn ',count($check/item),' fouten gevonden in de mapping tussen wId en juriconnectId:','&#10;')"/>
                <xsl:for-each select="$check/item">
-                  <xsl:value-of select="concat(position(),': juriconnectId ',.,' ontbreekt in de mapping.','&#10;')"/>
+                  <xsl:value-of select="concat(position(),': juriconnectId ''',.,''' ontbreekt in de mapping.','&#10;')"/>
                </xsl:for-each>
             </xsl:when>
             <xsl:otherwise>
@@ -68,7 +68,7 @@
          <xsl:variable name="check">
             <xsl:for-each select="fn:distinct-values($owRegeltekst[$wId2JuriconnectId//(artikel[not(lid)],lid)]/Annotatie/Activiteit)">
                <xsl:variable name="id" select="."/>
-               <xsl:if test="not(fn:index-of(fn:distinct-values($owActiviteit/self::rol:Activiteit/rol:identificatie),$id))">
+               <xsl:if test="not(fn:index-of(fn:distinct-values($owActiviteit/rol:identificatie),$id))">
                   <xsl:element name="item">
                      <xsl:value-of select="my:id($id)"/>
                   </xsl:element>
@@ -80,7 +80,7 @@
             <xsl:when test="$check/item">
                <xsl:value-of select="concat('Er zijn ',count($check/item),' pseudo-activiteiten gevonden die niet voorkomen in owActiviteit.xml:','&#10;')"/>
                <xsl:for-each select="$check/item">
-                  <xsl:value-of select="concat(position(),': Pseudo-activiteit ',.,' ontbreekt in owActiviteit.xml.','&#10;')"/>
+                  <xsl:value-of select="concat(position(),': Pseudo-activiteit ''',.,''' ontbreekt in owActiviteit.xml.','&#10;')"/>
                </xsl:for-each>
             </xsl:when>
             <xsl:otherwise>
@@ -107,11 +107,68 @@
             <xsl:when test="$check/item">
                <xsl:value-of select="concat('Er zijn ',count($check/item),' activiteiten gevonden die niet opgenomen kunnen worden in owRegeltekst.xml, omdat het artikel onderliggende leden bevat:','&#10;')"/>
                <xsl:for-each select="$check/item">
-                  <xsl:value-of select="concat(position(),': rol:Activiteit ',.,' ontbreekt in owRegeltekst.xml. De activiteit is gekoppeld aan artikel r:Regeltekst ',./@wId,'.','&#10;')"/>
+                  <xsl:value-of select="concat(position(),': rol:Activiteit ''',.,''' ontbreekt in owRegeltekst.xml. De activiteit is gekoppeld aan artikel r:Regeltekst ''',./@wId,'''.','&#10;')"/>
                </xsl:for-each>
             </xsl:when>
             <xsl:otherwise>
                <xsl:value-of select="concat('Er zijn geen activiteiten gevonden die niet opgenomen kunnen worden in owRegeltekst.xml, omdat het artikel onderliggende leden bevat.','&#10;')"/>
+            </xsl:otherwise>
+         </xsl:choose>
+         <xsl:value-of select="string('&#10;')"/>
+         <!-- controle op ontbrekende waarden in de waardelijsten -->
+         <xsl:variable name="check">
+            <xsl:for-each select="$owActiviteit">
+               <xsl:variable name="id" select="lower-case(rol:groep)"/>
+               <xsl:if test="not($waardelijsten[titel='Activiteitengroep']/waarden/waarde[lower-case(label)=$id])">
+                  <xsl:element name="item">
+                     <xsl:attribute name="id" select="my:id(rol:identificatie)"/>
+                     <xsl:value-of select="rol:groep"/>
+                  </xsl:element>
+               </xsl:if>
+            </xsl:for-each>
+         </xsl:variable>
+         <xsl:value-of select="concat('[Controle op ontbrekende waarden in de waardelijsten]','&#10;')"/>
+         <xsl:choose>
+            <xsl:when test="$check/item">
+               <xsl:value-of select="concat('Er zijn ',count($check/item),' waarden gevonden die ontbreken in de waardelijst ''Activiteitengroep'':','&#10;')"/>
+               <xsl:for-each select="$check/item">
+                  <xsl:value-of select="concat(position(),': waarde ''',.,''' ontbreekt in owActiviteit.xml. De waarde komt voor in rol:Activiteit ''',./@id,'''.','&#10;')"/>
+               </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of select="concat('Alle waarden komen voor in de waardelijsten.','&#10;')"/>
+            </xsl:otherwise>
+         </xsl:choose>
+         <xsl:value-of select="string('&#10;')"/>
+         <!-- controle op ontbrekende verwijzingen -->
+         <xsl:variable name="check">
+            <xsl:for-each select="$owActiviteit">
+               <xsl:variable name="ref" select="rol:locatieaanduiding/l:LocatieRef/@xlink:href"/>
+               <xsl:if test="not($owLocatie[l:identificatie=$ref])">
+                  <xsl:element name="item">
+                     <xsl:attribute name="id" select="my:id(rol:identificatie)"/>
+                     <xsl:value-of select="$ref"/>
+                  </xsl:element>
+               </xsl:if>
+               <xsl:variable name="ref" select="rol:bovenliggendeActiviteit/rol:ActiviteitRef/@xlink:href"/>
+               <xsl:if test="not($owActiviteit[rol:identificatie=$ref])">
+                  <xsl:element name="item">
+                     <xsl:attribute name="id" select="my:id(rol:identificatie)"/>
+                     <xsl:value-of select="$ref"/>
+                  </xsl:element>
+               </xsl:if>
+            </xsl:for-each>
+         </xsl:variable>
+         <xsl:value-of select="concat('[Controle op ontbrekende verwijzingen]','&#10;')"/>
+         <xsl:choose>
+            <xsl:when test="$check/item">
+               <xsl:value-of select="concat('Er zijn ',count($check/item),' verwijzingen gevonden die ontbreken in owActiviteit.xml:','&#10;')"/>
+               <xsl:for-each select="$check/item">
+                  <xsl:value-of select="concat(position(),': verwijzing ''',.,''' ontbreekt in rol:Activiteit ',./@id,'.','&#10;')"/>
+               </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of select="concat('Alle verwijzingen komen voor.','&#10;')"/>
             </xsl:otherwise>
          </xsl:choose>
       </xsl:result-document>
@@ -366,7 +423,7 @@
                <xsl:value-of select="$FRBRWork"/>
             </xsl:element>
             <xsl:element name="DoelID" namespace="{$namespace}">
-               <xsl:value-of select="string('DoelID')"/>
+               <xsl:value-of select="concat('/join/id/proces/',$idBevoegdGezag,'/2020/Bruidsschat-InstellingInitieleRegelingVersieDoorRijk')"/>
             </xsl:element>
             <xsl:element name="Bestand" namespace="{$namespace}">
                <xsl:element name="naam" namespace="{$namespace}">

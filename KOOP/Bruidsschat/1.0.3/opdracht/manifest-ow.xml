@@ -5,7 +5,7 @@
    <domein>omgevingswet</domein>
    <Aanlevering>
       <WorkIDRegeling>/akn/nl/act/ws0621/2020/WSV01</WorkIDRegeling>
-      <DoelID>DoelID</DoelID>
+      <DoelID>/join/id/proces/ws0621/2020/Bruidsschat-InstellingInitieleRegelingVersieDoorRijk</DoelID>
       <Bestand>
          <naam>owRegeltekst.xml</naam>
          <objecttype>Regeltekst</objecttype>
