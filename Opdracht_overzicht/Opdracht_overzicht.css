@@ -1,0 +1,27 @@
+.list{
+    background-color:black;
+    color:white
+}
+
+.sublist{
+    background-color:gray;
+    border-collapse:collapse
+}
+
+.orderlist{
+    text-align:left;
+    vertical-align:top;
+    border-collapse:collapse
+}
+
+.deflist{
+    background-color:#eeeeee;
+}
+
+.art_cell{
+    border-bottom:1px solid #cccccc;
+}
+
+table{
+    border-collapse:collapse;
+}
