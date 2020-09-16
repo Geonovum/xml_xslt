@@ -38,19 +38,42 @@
     <xsl:template match="." mode="Art_text">
         <xsl:element name="PRE" inherit-namespaces="yes" namespace="">
             <!--            <xsl:attribute name="rows">2</xsl:attribute><xsl:attribute name="cols">100</xsl:attribute>-->
-            <xsl:for-each select=".//*[local-name()='Al']/text()">
-                <xsl:copy select=".">
-                    <xsl:apply-templates select="./local-name()"/>
+            <xsl:for-each select=".//*[local-name()='Al']">
+                <xsl:copy>
+                    <xsl:apply-templates select="@*|node()"/>
                 </xsl:copy>
-                <!--<xsl:value-of select="concat(.,'&#13;&#10;')"/>-->
+                <xsl:value-of select="'&#13;&#10;'"/>
             </xsl:for-each>
-            <xsl:for-each select=".//*[local-name()='Wat']/text()">
-                <xsl:value-of select="concat(.,'&#13;&#10;')"/>
+            <xsl:for-each select=".//*[local-name()='Wat']">
+                <xsl:copy>
+                    <xsl:apply-templates select="@*|node()"/>
+                </xsl:copy>
             </xsl:for-each>
         </xsl:element>
     </xsl:template>
-    <xsl:template match="IntIoRef">
-        --test--
+    <xsl:template match="tekst:IntIoRef">
+        <xsl:element name="b">
+            <xsl:value-of select="./text()"/>
+        </xsl:element>
+        <xsl:element name="sup">
+        <xsl:value-of select="concat('(',./@eId,'|',./@wId,'|', ./@ref,') ')"/>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template match="tekst:ExtIoRef">
+        <xsl:element name="b">
+            <xsl:value-of select="./text()"/>
+        </xsl:element>
+        <xsl:element name="sup">
+            <xsl:value-of select="concat('(',./@eId,'|',./@wId,'|', ./@ref,') ')"/>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template match="tekst:IntRef">
+            <xsl:element name="b">
+                <xsl:value-of select="./text()"/>
+            </xsl:element>
+        <xsl:element name="sup">
+            <xsl:value-of select="concat('(', ./@ref,') ')"/>
+        </xsl:element>
     </xsl:template>
     <!-- template voor op bestand -->
     <xsl:template match="." mode="list">
