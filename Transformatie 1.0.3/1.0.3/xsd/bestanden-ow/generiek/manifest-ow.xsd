@@ -84,7 +84,7 @@
   <!--Types-->
   <xs:simpleType name="naamType">
     <xs:restriction base="xs:string">
-      <xs:pattern value="[\c-[:]]*"/>
+      <xs:pattern value="[0-9A-Za-z\._-]+"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>
