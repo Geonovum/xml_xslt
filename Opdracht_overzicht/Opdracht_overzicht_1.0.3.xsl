@@ -52,26 +52,36 @@
     </xsl:template>
     <xsl:template match=".[local-name()='IntIoRef']">
         <xsl:element name="b">
-            <xsl:value-of select="./text()"/>
+            <xsl:element name="ins">
+                <xsl:value-of select="./text()"/>
+            </xsl:element>
         </xsl:element>
         <xsl:element name="sup">
-        <xsl:value-of select="concat('(',./@eId,'|',./@wId,'|', ./@ref,') ')"/>
+            <xsl:element name="ins">
+                <xsl:value-of select="concat('(',./@eId,'|',./@wId,'|', ./@ref,') ')"/>
+            </xsl:element>
         </xsl:element>
     </xsl:template>
     <xsl:template match=".[local-name()='ExtIoRef']">
         <xsl:element name="b">
-            <xsl:value-of select="./text()"/>
+            <xsl:element name="ins">
+                <xsl:value-of select="./text()"/>
+            </xsl:element>
         </xsl:element>
         <xsl:element name="sup">
             <xsl:value-of select="concat('(',./@eId,'|',./@wId,'|', ./@ref,') ')"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match=".[local-name()='IntRef']">
-            <xsl:element name="b">
+        <xsl:element name="b">
+            <xsl:element name="ins">
                 <xsl:value-of select="./text()"/>
             </xsl:element>
+        </xsl:element>
         <xsl:element name="sup">
-            <xsl:value-of select="concat('(', ./@ref,') ')"/>
+            <xsl:element name="ins">
+                <xsl:value-of select="concat('(', ./@ref,') ')"/>
+            </xsl:element>
         </xsl:element>
     </xsl:template>
     <!-- template voor op bestand -->
@@ -176,24 +186,21 @@
                         <xsl:element name="TABLE" inherit-namespaces="yes" namespace="">
                             <xsl:for-each select="$Procedureverloop/*[local-name()='procedurestappen']/*[local-name()='Procedurestap']">
                                 <xsl:element name="TR" inherit-namespaces="yes" namespace="">
-                                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">soortStap:
-                                    </xsl:element>
-                                        <xsl:element name="TD" inherit-namespaces="yes" namespace="">
+                                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">soortStap:</xsl:element>
+                                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">
                                         <xsl:attribute name="class">art_cell</xsl:attribute>
                                         <xsl:value-of select="./*[local-name()='soortStap']"/>
                                     </xsl:element>
                                 </xsl:element>
                                 <xsl:element name="TR" inherit-namespaces="yes" namespace="">
-                                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">voltooidOp:
-                                    </xsl:element>
+                                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">voltooidOp:</xsl:element>
                                     <xsl:element name="TD" inherit-namespaces="yes" namespace="">
                                         <xsl:attribute name="class">art_cell</xsl:attribute>
                                         <xsl:value-of select="./*[local-name()='voltooidOp']"/>
                                     </xsl:element>
                                 </xsl:element>
                                 <xsl:element name="TR" inherit-namespaces="yes" namespace="">
-                                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">actor:
-                                    </xsl:element>
+                                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">actor:</xsl:element>
                                     <xsl:element name="TD" inherit-namespaces="yes" namespace="">
                                         <xsl:attribute name="class">art_cell</xsl:attribute>
                                         <xsl:value-of select="./*[local-name()='actor']"/>
@@ -355,97 +362,96 @@
                     <!-- TODO: Conditie, Hoofdstuk, Vervang, ... -->
                     <xsl:element name="UL" inherit-namespaces="yes" namespace="">
                         <xsl:element name="LI" inherit-namespaces="yes" namespace="">
-                            <xsl:attribute name="class">sublist</xsl:attribute>Artikelen: 
-                        </xsl:element>
-                            <xsl:for-each select="$regeling/*[local-name()='Lichaam']//*[local-name()='Artikel']">
-                                <xsl:element name="UL" inherit-namespaces="yes" namespace="">
-                                    <xsl:variable name="zoek_wId" select="./@wId"/>
-                                    <xsl:element name="LI" inherit-namespaces="yes" namespace="">
-                                        <xsl:value-of select="./*[local-name()='Kop']/*[local-name()='Label']/text()" />: <xsl:value-of select="./*[local-name()='Kop']/*[local-name()='Nummer']/text()" /> - <xsl:value-of select="./*[local-name()='Kop']/*[local-name()='Opschrift']/text()" />
-                                        <xsl:element name="UL" inherit-namespaces="yes" namespace="">
-                                            <xsl:element name="LI" inherit-namespaces="yes" namespace="">wId: <xsl:value-of select="$zoek_wId"/>
-                                            </xsl:element>
-                                            <!-- TODO: Gereserveerd, Inhoud, Lid of Vervallen -->
-                                            <xsl:for-each select="./*[local-name()!='Kop']">
-                                                <xsl:apply-templates select="."/>
-                                            </xsl:for-each>
-                                            <!--Inhoud: <xsl:value-of select=".//*[local-name()='Inhoud']"/>-->
-                                            <xsl:element name="LI" inherit-namespaces="yes" namespace="">
-                                                <xsl:attribute name="style" select="'background-color:#cccccc'"/>Regeltekst(en): <xsl:variable name="ow_regeltekst" select="collection(concat($folder, '?select=*.xml;recurse=yes'))[root()/element()//*[local-name()='objectType']='Regeltekst']"/>
-                                                <xsl:for-each select="$ow_regeltekst/root()/element()//*[contains(@wId,$zoek_wId)]/*[local-name()='identificatie']">
-                                                    <xsl:variable name="regel_id" select="./text()"/>
-                                                    <xsl:element name="UL" inherit-namespaces="yes" namespace="">
-                                                        <xsl:element name="LI" inherit-namespaces="yes" namespace="">Regeltekst: <xsl:value-of select="$regel_id"/>
-                                                            <xsl:element name="UL" inherit-namespaces="yes" namespace="">
-                                                                <xsl:element name="LI" inherit-namespaces="yes" namespace="">
-                                                                    <xsl:for-each select="$ow_regeltekst/root()/element()//*[@xlink:href=$regel_id]/../..">Juridische regel: <xsl:value-of select="./local-name()"/>
-                                                                        <xsl:element name="UL" inherit-namespaces="yes" namespace="">
-                                                                            <xsl:element name="LI" inherit-namespaces="yes" namespace="">Identificatie: <xsl:value-of select="./*[local-name()='identificatie']/text()"/>
-                                                                            </xsl:element>
-                                                                            <xsl:for-each select="./*[local-name()='locatieaanduiding']">
-                                                                                <xsl:element name="LI" inherit-namespaces="yes" namespace="">Locatieaanduiding:<xsl:element name="UL" inherit-namespaces="yes" namespace="">
-                                                                                        <xsl:attribute name="style" select="'background-color:#707070'"/>
-                                                                                        <xsl:apply-templates mode="locatie" select="./*[local-name()='LocatieRef']"/>
-                                                                                    </xsl:element>
-                                                                                </xsl:element>
-                                                                            </xsl:for-each>
-                                                                            <xsl:for-each select="./*[local-name()='gebiedsaanwijzing']">
-                                                                                <xsl:element name="LI" inherit-namespaces="yes" namespace="">Gebiedsaanwijzing:<xsl:element name="UL" inherit-namespaces="yes" namespace="">
-                                                                                        <xsl:attribute name="style" select="'background-color:#909090'"/>
-                                                                                        <xsl:variable name="gebiedsaanwijzing_ref" select="./*[local-name()='GebiedsaanwijzingRef']/@xlink:href"/>
-                                                                                        <xsl:variable name="ow_gebiedsaanwijzing" select="collection(concat($folder, '?select=*.xml;recurse=yes'))/root()/element()//*[local-name()='identificatie'][text()=$gebiedsaanwijzing_ref]"/>
-                                                                                        <xsl:element name="LI" inherit-namespaces="yes" namespace="">Identificatie: <xsl:value-of select="$gebiedsaanwijzing_ref"/>
-                                                                                        </xsl:element>
-                                                                                        <xsl:element name="LI" inherit-namespaces="yes" namespace="">Type: <xsl:value-of select="$ow_gebiedsaanwijzing/../*[local-name()='type']" />
-                                                                                        </xsl:element>
-                                                                                        <xsl:element name="LI" inherit-namespaces="yes" namespace="">Naam: <xsl:value-of select="$ow_gebiedsaanwijzing/../*[local-name()='naam']" />
-                                                                                        </xsl:element>
-                                                                                        <xsl:element name="LI" inherit-namespaces="yes" namespace="">Locatieaanduiding: <xsl:element name="UL" inherit-namespaces="yes" namespace="">
-                                                                                                <xsl:attribute name="style" select="'background-color:#707070'"/>
-                                                                                                <xsl:apply-templates mode="locatie" select="$ow_gebiedsaanwijzing/../*[local-name()='locatieaanduiding']/*[local-name()='LocatieRef']"/>
-                                                                                            </xsl:element>
-                                                                                        </xsl:element>
-                                                                                    </xsl:element>
-                                                                                </xsl:element>
-                                                                            </xsl:for-each>
-                                                                            <xsl:for-each select="./*[local-name()='activiteitaanduiding']">
-                                                                                <xsl:element name="LI" inherit-namespaces="yes" namespace="">Activiteitaanduiding: <xsl:element name="UL" inherit-namespaces="yes" namespace="">
-                                                                                        <xsl:attribute name="style" select="'background-color:#aaaaaa'"/>
-                                                                                        <xsl:variable name="activiteit_ref" select="./*[local-name()='ActiviteitRef']/@xlink:href"/>
-                                                                                        <xsl:element name="LI" inherit-namespaces="yes" namespace="">Identificatie: <xsl:value-of select="$activiteit_ref"/>
-                                                                                        </xsl:element>
-                                                                                        <xsl:apply-templates select="collection(concat($folder, '?select=*.xml;recurse=yes'))/root()/element()//*[local-name()='identificatie'][text()=$activiteit_ref]/.." mode="activiteit"/>
-                                                                                        <xsl:element name="LI" inherit-namespaces="yes" namespace="">ActiviteitLocatieaanduiding: <xsl:element name="UL" inherit-namespaces="yes" namespace="">
-                                                                                                <xsl:element name="LI" inherit-namespaces="yes" namespace="">Identificatie: <xsl:value-of select="./*[local-name()='ActiviteitLocatieaanduiding']/*[local-name()='identificatie']/text()"/>
-                                                                                                </xsl:element>
-                                                                                                <xsl:element name="LI" inherit-namespaces="yes" namespace="">Activiteitregelkwalificatie: <xsl:value-of select="./*[local-name()='ActiviteitLocatieaanduiding']/*[local-name()='activiteitregelkwalificatie']/text()"/>
-                                                                                                </xsl:element>
-                                                                                                <xsl:element name="LI" inherit-namespaces="yes" namespace="">Locatieaanduiding:<xsl:element name="UL" inherit-namespaces="yes" namespace="">
-                                                                                                        <xsl:attribute name="style" select="'background-color:#707070'"/>
-                                                                                                        <xsl:apply-templates mode="locatie" select="./*[local-name()='ActiviteitLocatieaanduiding']/*[local-name()='locatieaanduiding']/*[local-name()='LocatieRef']"/>
-                                                                                                    </xsl:element>
-                                                                                                </xsl:element>
-                                                                                            </xsl:element>
-                                                                                        </xsl:element>
-                                                                                    </xsl:element>
-                                                                                </xsl:element>
-                                                                                <xsl:element name="br" inherit-namespaces="yes" namespace=""/>
-                                                                            </xsl:for-each>
+                            <xsl:attribute name="class">sublist</xsl:attribute>Artikelen: </xsl:element>
+                        <xsl:for-each select="$regeling/*[local-name()='Lichaam']//*[local-name()='Artikel']">
+                            <xsl:element name="UL" inherit-namespaces="yes" namespace="">
+                                <xsl:variable name="zoek_wId" select="./@wId"/>
+                                <xsl:element name="LI" inherit-namespaces="yes" namespace="">
+                                    <xsl:value-of select="./*[local-name()='Kop']/*[local-name()='Label']/text()" />: <xsl:value-of select="./*[local-name()='Kop']/*[local-name()='Nummer']/text()" /> - <xsl:value-of select="./*[local-name()='Kop']/*[local-name()='Opschrift']/text()" />
+                                    <xsl:element name="UL" inherit-namespaces="yes" namespace="">
+                                        <xsl:element name="LI" inherit-namespaces="yes" namespace="">wId: <xsl:value-of select="$zoek_wId"/>
+                                        </xsl:element>
+                                        <!-- TODO: Gereserveerd, Inhoud, Lid of Vervallen -->
+                                        <xsl:for-each select="./*[local-name()!='Kop']">
+                                            <xsl:apply-templates select="."/>
+                                        </xsl:for-each>
+                                        <!--Inhoud: <xsl:value-of select=".//*[local-name()='Inhoud']"/>-->
+                                        <xsl:element name="LI" inherit-namespaces="yes" namespace="">
+                                            <xsl:attribute name="style" select="'background-color:#cccccc'"/>Regeltekst(en): <xsl:variable name="ow_regeltekst" select="collection(concat($folder, '?select=*.xml;recurse=yes'))[root()/element()//*[local-name()='objectType']='Regeltekst']"/>
+                                            <xsl:for-each select="$ow_regeltekst/root()/element()//*[contains(@wId,$zoek_wId)]/*[local-name()='identificatie']">
+                                                <xsl:variable name="regel_id" select="./text()"/>
+                                                <xsl:element name="UL" inherit-namespaces="yes" namespace="">
+                                                    <xsl:element name="LI" inherit-namespaces="yes" namespace="">Regeltekst: <xsl:value-of select="$regel_id"/>
+                                                        <xsl:element name="UL" inherit-namespaces="yes" namespace="">
+                                                            <xsl:element name="LI" inherit-namespaces="yes" namespace="">
+                                                                <xsl:for-each select="$ow_regeltekst/root()/element()//*[@xlink:href=$regel_id]/../..">Juridische regel: <xsl:value-of select="./local-name()"/>
+                                                                    <xsl:element name="UL" inherit-namespaces="yes" namespace="">
+                                                                        <xsl:element name="LI" inherit-namespaces="yes" namespace="">Identificatie: <xsl:value-of select="./*[local-name()='identificatie']/text()"/>
                                                                         </xsl:element>
-                                                                        <xsl:element name="br" inherit-namespaces="yes" namespace=""/>
-                                                                    </xsl:for-each>
-                                                                </xsl:element>
+                                                                        <xsl:for-each select="./*[local-name()='locatieaanduiding']">
+                                                                            <xsl:element name="LI" inherit-namespaces="yes" namespace="">Locatieaanduiding:<xsl:element name="UL" inherit-namespaces="yes" namespace="">
+                                                                                    <xsl:attribute name="style" select="'background-color:#707070'"/>
+                                                                                    <xsl:apply-templates mode="locatie" select="./*[local-name()='LocatieRef']"/>
+                                                                                </xsl:element>
+                                                                            </xsl:element>
+                                                                        </xsl:for-each>
+                                                                        <xsl:for-each select="./*[local-name()='gebiedsaanwijzing']">
+                                                                            <xsl:element name="LI" inherit-namespaces="yes" namespace="">Gebiedsaanwijzing:<xsl:element name="UL" inherit-namespaces="yes" namespace="">
+                                                                                    <xsl:attribute name="style" select="'background-color:#909090'"/>
+                                                                                    <xsl:variable name="gebiedsaanwijzing_ref" select="./*[local-name()='GebiedsaanwijzingRef']/@xlink:href"/>
+                                                                                    <xsl:variable name="ow_gebiedsaanwijzing" select="collection(concat($folder, '?select=*.xml;recurse=yes'))/root()/element()//*[local-name()='identificatie'][text()=$gebiedsaanwijzing_ref]"/>
+                                                                                    <xsl:element name="LI" inherit-namespaces="yes" namespace="">Identificatie: <xsl:value-of select="$gebiedsaanwijzing_ref"/>
+                                                                                    </xsl:element>
+                                                                                    <xsl:element name="LI" inherit-namespaces="yes" namespace="">Type: <xsl:value-of select="$ow_gebiedsaanwijzing/../*[local-name()='type']" />
+                                                                                    </xsl:element>
+                                                                                    <xsl:element name="LI" inherit-namespaces="yes" namespace="">Naam: <xsl:value-of select="$ow_gebiedsaanwijzing/../*[local-name()='naam']" />
+                                                                                    </xsl:element>
+                                                                                    <xsl:element name="LI" inherit-namespaces="yes" namespace="">Locatieaanduiding: <xsl:element name="UL" inherit-namespaces="yes" namespace="">
+                                                                                            <xsl:attribute name="style" select="'background-color:#707070'"/>
+                                                                                            <xsl:apply-templates mode="locatie" select="$ow_gebiedsaanwijzing/../*[local-name()='locatieaanduiding']/*[local-name()='LocatieRef']"/>
+                                                                                        </xsl:element>
+                                                                                    </xsl:element>
+                                                                                </xsl:element>
+                                                                            </xsl:element>
+                                                                        </xsl:for-each>
+                                                                        <xsl:for-each select="./*[local-name()='activiteitaanduiding']">
+                                                                            <xsl:element name="LI" inherit-namespaces="yes" namespace="">Activiteitaanduiding: <xsl:element name="UL" inherit-namespaces="yes" namespace="">
+                                                                                    <xsl:attribute name="style" select="'background-color:#aaaaaa'"/>
+                                                                                    <xsl:variable name="activiteit_ref" select="./*[local-name()='ActiviteitRef']/@xlink:href"/>
+                                                                                    <xsl:element name="LI" inherit-namespaces="yes" namespace="">Identificatie: <xsl:value-of select="$activiteit_ref"/>
+                                                                                    </xsl:element>
+                                                                                    <xsl:apply-templates select="collection(concat($folder, '?select=*.xml;recurse=yes'))/root()/element()//*[local-name()='identificatie'][text()=$activiteit_ref]/.." mode="activiteit"/>
+                                                                                    <xsl:element name="LI" inherit-namespaces="yes" namespace="">ActiviteitLocatieaanduiding: <xsl:element name="UL" inherit-namespaces="yes" namespace="">
+                                                                                            <xsl:element name="LI" inherit-namespaces="yes" namespace="">Identificatie: <xsl:value-of select="./*[local-name()='ActiviteitLocatieaanduiding']/*[local-name()='identificatie']/text()"/>
+                                                                                            </xsl:element>
+                                                                                            <xsl:element name="LI" inherit-namespaces="yes" namespace="">Activiteitregelkwalificatie: <xsl:value-of select="./*[local-name()='ActiviteitLocatieaanduiding']/*[local-name()='activiteitregelkwalificatie']/text()"/>
+                                                                                            </xsl:element>
+                                                                                            <xsl:element name="LI" inherit-namespaces="yes" namespace="">Locatieaanduiding:<xsl:element name="UL" inherit-namespaces="yes" namespace="">
+                                                                                                    <xsl:attribute name="style" select="'background-color:#707070'"/>
+                                                                                                    <xsl:apply-templates mode="locatie" select="./*[local-name()='ActiviteitLocatieaanduiding']/*[local-name()='locatieaanduiding']/*[local-name()='LocatieRef']"/>
+                                                                                                </xsl:element>
+                                                                                            </xsl:element>
+                                                                                        </xsl:element>
+                                                                                    </xsl:element>
+                                                                                </xsl:element>
+                                                                            </xsl:element>
+                                                                            <xsl:element name="br" inherit-namespaces="yes" namespace=""/>
+                                                                        </xsl:for-each>
+                                                                    </xsl:element>
+                                                                    <xsl:element name="br" inherit-namespaces="yes" namespace=""/>
+                                                                </xsl:for-each>
                                                             </xsl:element>
                                                         </xsl:element>
                                                     </xsl:element>
-                                                    <xsl:element name="br" inherit-namespaces="yes" namespace=""/>
-                                                </xsl:for-each>
-                                            </xsl:element>
+                                                </xsl:element>
+                                                <xsl:element name="br" inherit-namespaces="yes" namespace=""/>
+                                            </xsl:for-each>
                                         </xsl:element>
                                     </xsl:element>
                                 </xsl:element>
-                                <xsl:element name="br" inherit-namespaces="yes" namespace=""/>
-                            </xsl:for-each>
+                            </xsl:element>
+                            <xsl:element name="br" inherit-namespaces="yes" namespace=""/>
+                        </xsl:for-each>
                     </xsl:element>
                 </xsl:element>
             </xsl:element>
