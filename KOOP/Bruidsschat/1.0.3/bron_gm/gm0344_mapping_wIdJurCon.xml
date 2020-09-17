@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wId2JuriConnect>
     <ExpressionIdentificatie>
-        <FRBRWork>/akn/nl/act/gm0344/2020/OMGPLAN01</FRBRWork>
-        <FRBRExpression>/akn/nl/act/gm0344/2020/OMGPLAN01/nld@1-0</FRBRExpression>
+        <FRBRWork>/akn/nl/act/gm0344/2020/omgevingsplan</FRBRWork>
+        <FRBRExpression>/akn/nl/act/gm0344/2020/omgevingsplan/nld@1-0</FRBRExpression>
     </ExpressionIdentificatie>
     <Mapping>
         <wId>gm0344_1-0__chp_1__art_1.1</wId>
@@ -339,6 +339,10 @@
     <Mapping>
         <wId>gm0344_1-0__chp_22__subchp_22.2__subsec_22.2.7__subsec_22.2.7.2__art_22.30</wId>
         <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=22.30</juriconnectId>
+    </Mapping>
+    <Mapping>
+        <wId>gm0344_1-0__chp_22__subchp_22.2__subsec_22.2.7__subsec_22.2.7.2__art_22.30__para_1</wId>
+        <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=22.30&amp;lid=1</juriconnectId>
     </Mapping>
     <Mapping>
         <wId>gm0344_1-0__chp_22__subchp_22.2__subsec_22.2.7__subsec_22.2.7.2__art_22.31</wId>
@@ -1899,6 +1903,10 @@
     <Mapping>
         <wId>gm0344_1-0__chp_22__subchp_22.3__subsec_22.3.15__art_22.194__para_2</wId>
         <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=22.194&amp;lid=2</juriconnectId>
+    </Mapping>
+    <Mapping>
+        <wId>gm0344_1-0__chp_22__subchp_22.3__subsec_22.3.15__art_22.194__para_3</wId>
+        <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=22.194&amp;lid=3</juriconnectId>
     </Mapping>
     <Mapping>
         <wId>gm0344_1-0__chp_22__subchp_22.3__subsec_22.3.15__art_22.194__para_4</wId>

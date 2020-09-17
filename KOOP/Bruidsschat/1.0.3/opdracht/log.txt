@@ -1,7 +1,5 @@
 [Controle op ontbrekende juriconnectId's]
-Er zijn 2 fouten gevonden in de mapping tussen wId en juriconnectId:
-1: juriconnectId 'jci1.31:c:IBversiePP&artikel=2.34&lid=2' ontbreekt in de mapping.
-2: juriconnectId 'jci1.31:c:IBversiePP&artikel=2' ontbreekt in de mapping.
+Er zijn geen fouten gevonden in de mapping tussen wId en juriconnectId.
 
 [Controle op ontbrekende pseudo-activiteiten]
 Alle pseudo-activiteiten komen voor in owActiviteit.xml.
@@ -13,6 +11,5 @@ Er zijn geen activiteiten gevonden die niet opgenomen kunnen worden in owRegelte
 Alle waarden komen voor in de waardelijsten.
 
 [Controle op ontbrekende verwijzingen]
-Er zijn 2 verwijzingen gevonden die ontbreken:
-1: verwijzing '' ontbreekt in rol:Activiteit nl.imow-ws0621.activiteit.ActInWaterschapsVerordWs.
-2: verwijzing 'nl.imow-mn002.activiteit.ActInWaterschapsVerord' ontbreekt in rol:Activiteit nl.imow-ws0621.activiteit.ActInWaterschapsVerordWs.
+Er zijn 1 verwijzingen gevonden die ontbreken in owActiviteit.xml:
+1: verwijzing 'nl.imow-mnre1034.activiteit.ActInWaterschapsverordening' ontbreekt in rol:Activiteit nl.imow-ws0636.activiteit.ActInWaterschapsVerordWs.

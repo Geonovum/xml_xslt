@@ -1,755 +1,759 @@
 <?xml version="1.0" encoding="utf-8"?>
 <wId2JuriConnect>
    <ExpressionIdentificatie>
-      <FRBRWork>/akn/nl/act/ws0621/2020/WSV01</FRBRWork>
-      <FRBRExpression>/akn/nl/act/ws0621/2020/WSV01/nld@1-0</FRBRExpression>
+      <FRBRWork>/akn/nl/act/ws0636/2020/waterschapsverordening</FRBRWork>
+      <FRBRExpression>/akn/nl/act/ws0636/2020/waterschapsverordening/nld@1-0</FRBRExpression>
    </ExpressionIdentificatie>
    <Mapping>
-      <wId>ws0621_1-0__chp_1__subchp_1.1__art_1.1</wId>
+      <wId>ws0636_1-0__chp_1__subchp_1.1__art_1.1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=1.1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_1__subchp_1.1__art_1.1__para_1</wId>
+      <wId>ws0636_1-0__chp_1__subchp_1.1__art_1.1__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=1.1&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_1__subchp_1.1__art_1.1__para_2</wId>
+      <wId>ws0636_1-0__chp_1__subchp_1.1__art_1.1__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=1.1&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_1__subchp_1.2__art_1.2</wId>
+      <wId>ws0636_1-0__chp_1__subchp_1.2__art_1.2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=1.2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_1__subchp_1.2__art_1.2__para_1</wId>
+      <wId>ws0636_1-0__chp_1__subchp_1.2__art_1.2__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=1.2&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_1__subchp_1.2__art_1.2__para_2</wId>
+      <wId>ws0636_1-0__chp_1__subchp_1.2__art_1.2__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=1.2&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_1__subchp_1.2__art_1.2__para_3</wId>
+      <wId>ws0636_1-0__chp_1__subchp_1.2__art_1.2__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=1.2&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.4</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.4</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.4</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.4__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.4__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.4&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.4__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.4__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.4&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.5</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.5</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.5</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.5__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.5__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.5&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.5__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.5__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.5&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.6</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.6</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.6</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.7</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.7</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.7</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.7__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.7__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.7&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.7__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.7__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.7&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.8</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.8</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.8</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.8__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.8__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.8&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.8__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.8__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.8&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.9</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.9</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.9</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.1__art_2.10</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.1__art_2.10</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.10</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.11</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.11</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.11</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.11__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.11__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.11&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.11__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.11__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.11&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.12</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.12</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.12</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.12__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.12__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.12&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.12__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.12__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.12&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.12__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.12__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.12&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.13</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.13</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.13</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.13__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.13__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.13&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.13__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.13__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.13&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.13__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.13__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.13&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.14</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.14</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.14</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.14__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.14__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.14&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.14__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.14__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.14&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.2__art_2.14__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.2__art_2.14__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.14&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.3__art_2.15</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.3__art_2.15</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.15</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.3__art_2.15__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.3__art_2.15__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.15&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.3__art_2.15__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.3__art_2.15__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.15&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.3__art_2.15__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.3__art_2.15__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.15&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.3__art_2.16</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.3__art_2.16</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.16</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.3__art_2.16__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.3__art_2.16__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.16&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.3__art_2.16__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.3__art_2.16__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.16&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.17</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.17</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.17</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.17__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.17__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.17&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.17__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.17__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.17&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.17__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.17__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.17&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.18</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.18</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.18</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.18__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.18__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.18&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.18__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.18__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.18&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.18__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.18__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.18&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.19</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.19</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.19</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.19__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.19__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.19&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.19__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.19__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.19&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.19__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.19__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.19&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.20</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.20</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.20</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.20__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.20__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.20&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.4__art_2.20__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.4__art_2.20__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.20&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.5__art_2.21</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.5__art_2.21</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.21</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.5__art_2.21__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.5__art_2.21__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.21&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.5__art_2.21__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.5__art_2.21__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.21&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.5__art_2.21__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.5__art_2.21__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.21&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.5__art_2.22</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.5__art_2.22</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.22</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.5__art_2.22__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.5__art_2.22__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.22&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.5__art_2.22__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.5__art_2.22__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.22&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.6__art_2.23</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.6__art_2.23</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.23</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.6__art_2.24</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.6__art_2.24</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.24</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.6__art_2.24__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.6__art_2.24__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.24&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.6__art_2.24__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.6__art_2.24__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.24&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.6__art_2.24__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.6__art_2.24__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.24&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.6__art_2.25</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.6__art_2.25</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.25</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.6__art_2.26</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.6__art_2.26</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.26</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.6__art_2.27</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.6__art_2.27</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.27</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.6__art_2.28</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.6__art_2.28</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.28</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.6__art_2.28__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.6__art_2.28__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.28&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.6__art_2.28__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.6__art_2.28__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.28&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.6__art_2.28__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.6__art_2.28__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.28&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.7__art_2.29</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.7__art_2.29</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.29</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.7__art_2.30</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.7__art_2.30</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.30</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.7__art_2.31</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.7__art_2.31</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.31</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.7__art_2.31__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.7__art_2.31__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.31&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.7__art_2.31__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.7__art_2.31__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.31&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.7__art_2.31__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.7__art_2.31__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.31&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.7__art_2.31__para_4</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.7__art_2.31__para_4</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.31&amp;lid=4</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.32</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.32</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.32</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.32__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.32__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.32&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.32__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.32__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.32&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.33</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.33</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.33</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.33__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.33__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.33&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.33__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.33__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.33&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.33__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.33__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.33&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.34</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.34</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.34</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.34__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.34__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.34&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.34__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.34__para_2</wId>
+      <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.34&amp;lid=2</juriconnectId>
+   </Mapping>
+   <Mapping>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.34__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.34&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.35</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.35</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.35</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.35__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.35__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.35&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.35__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.35__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.35&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.8__art_2.35__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.8__art_2.35__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.35&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.9__art_2.36</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.9__art_2.36</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.36</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.9__art_2.37</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.9__art_2.37</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.37</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.10__art_2.38</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.10__art_2.38</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.38</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.10__art_2.39</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.10__art_2.39</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.39</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.10__art_2.40</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.10__art_2.40</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.40</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.10__art_2.41</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.10__art_2.41</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.41</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.10__art_2.42</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.10__art_2.42</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.42</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.10__art_2.42__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.10__art_2.42__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.42&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.10__art_2.42__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.10__art_2.42__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.42&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.10__art_2.42__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.10__art_2.42__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.42&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.11__art_2.43</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.11__art_2.43</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.43</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.11__art_2.43__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.11__art_2.43__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.43&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.11__art_2.43__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.11__art_2.43__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.43&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.12__art_2.44</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.12__art_2.44</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.44</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.12__art_2.45</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.12__art_2.45</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.45</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.46</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.46</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.46</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.46__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.46__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.46&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.46__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.46__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.46&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.46__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.46__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.46&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.46__para_4</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.46__para_4</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.46&amp;lid=4</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.47</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.47</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.47</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.47__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.47__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.47&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.47__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.47__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.47&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.47__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.47__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.47&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.47__para_4</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.47__para_4</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.47&amp;lid=4</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.48</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.48</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.48</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.48__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.48__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.48&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.48__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.48__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.48&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.49</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.49</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.49</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.49__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.49__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.49&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.49__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.49__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.49&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.49__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.49__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.49&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.50</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.50</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.50</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.50__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.50__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.50&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.50__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.50__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.50&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.50__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.50__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.50&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.50__para_4</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.50__para_4</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.50&amp;lid=4</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.51</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.51</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.51</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.51__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.51__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.51&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.51__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.51__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.51&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.51__para_3</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.51__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.51&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.52</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.52</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.52</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.52__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.52__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.52&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.13__art_2.52__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.13__art_2.52__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.52&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.14__art_2.53</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.14__art_2.53</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.53</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.15__art_2.54</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.15__art_2.54</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.54</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.15__art_2.55</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.15__art_2.55</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.55</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.15__art_2.55__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.15__art_2.55__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.55&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.15__art_2.55__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.15__art_2.55__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.55&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.15__art_2.56</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.15__art_2.56</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.56</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.15__art_2.56__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.15__art_2.56__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.56&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.15__art_2.56__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.15__art_2.56__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.56&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.16__art_2.57</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.16__art_2.57</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.57</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.16__art_2.58</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.16__art_2.58</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.58</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.16__art_2.58__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.16__art_2.58__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.58&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.16__art_2.58__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.16__art_2.58__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.58&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.17__art_2.59</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.17__art_2.59</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.59</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.18__art_2.60</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.18__art_2.60</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.60</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.19__art_2.61</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.19__art_2.61</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.61</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.19__art_2.61__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.19__art_2.61__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.61&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.19__art_2.61__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.19__art_2.61__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.61&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.19__art_2.62</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.19__art_2.62</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.62</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.19__art_2.62__para_1</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.19__art_2.62__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.62&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.19__art_2.62__para_2</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.19__art_2.62__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.62&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.20__art_2.63</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.20__art_2.63</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.63</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.20__art_2.64</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.20__art_2.64</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.64</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_2__subchp_2.20__art_2.65</wId>
+      <wId>ws0636_1-0__chp_2__subchp_2.20__art_2.65</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=2.65</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.1</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.1__para_1</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.1__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.1&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.1__para_2</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.1__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.1&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.2</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.3</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.3__para_1</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.3__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.3&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.3__para_2</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.3__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.3&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.4</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.4</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.4</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.5</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.5</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.5</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.5__para_1</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.5__para_1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.5&amp;lid=1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.5__para_2</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.5__para_2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.5&amp;lid=2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.5__para_3</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.5__para_3</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.5&amp;lid=3</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.5__para_4</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.5__para_4</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.5&amp;lid=4</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.1__art_3.5__para_5</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.1__art_3.5__para_5</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.5&amp;lid=5</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_3__subchp_3.2__art_3.6</wId>
+      <wId>ws0636_1-0__chp_3__subchp_3.2__art_3.6</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=3.6</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_4__subchp_4.1__art_4.1</wId>
+      <wId>ws0636_1-0__chp_4__subchp_4.1__art_4.1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=4.1</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_4__subchp_4.1__art_4.2</wId>
+      <wId>ws0636_1-0__chp_4__subchp_4.1__art_4.2</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=4.2</juriconnectId>
    </Mapping>
    <Mapping>
-      <wId>ws0621_1-0__chp_5__art_5.1</wId>
+      <wId>ws0636_1-0__chp_5__art_5.1</wId>
       <juriconnectId>jci1.31:c:IBversiePP&amp;artikel=5.1</juriconnectId>
    </Mapping>
 </wId2JuriConnect>

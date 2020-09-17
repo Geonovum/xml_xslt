@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
                  xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
                  xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
@@ -12,13 +12,12 @@
                  xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
                  xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <sl:standBestand>
-      <sl:dataset>ws0636</sl:dataset>
+      <sl:dataset>Cognitatie functionele structuur</sl:dataset>
       <sl:inhoud>
-         <sl:gebied>ws0636</sl:gebied>
-         <sl:leveringsId>ws0636_2020-09-17</sl:leveringsId>
+         <sl:gebied>Nederland</sl:gebied>
+         <sl:leveringsId>Cognitatie20200910153559</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Activiteit</sl:objectType>
          </sl:objectTypen>
@@ -29,6 +28,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.BepgebWtswerkBeheerWaterschap</rol:identificatie>
                <rol:naam>Beperkingengebiedactiviteit met betrekking tot een waterstaatswerk in beheer bij het waterschap</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BeperkingengebiedactiviteitMBTEenWaterstaatswerk</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.ActInWaterschapsVerordWs"/>
                </rol:bovenliggendeActiviteit>
@@ -41,6 +43,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenBijCalamiteitenoefeningen</rol:identificatie>
                <rol:naam>Afvalwater, afkomstig van een calamiteitenoefening, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -53,6 +58,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenUitGemeentRiool</rol:identificatie>
                <rol:naam>Afvalwater, afkomstig van een gemeentelijke voorziening voor inzameling en transport van afvalwater, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -65,6 +73,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.ActInWaterschapsVerordWs</rol:identificatie>
                <rol:naam>Activiteit gereguleerd in waterschapsverordening De Stichtse Rijnlanden</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Overig</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href=""/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-mnre1034.activiteit.ActInWaterschapsverordening"/>
                </rol:bovenliggendeActiviteit>
@@ -77,6 +88,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenMakenBetonmortelWs</rol:identificatie>
                <rol:naam>Afvalwater, afkomstig van het maken van betonmortel of het uitwassen van beton, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -89,6 +103,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenReinigenBouwwerk</rol:identificatie>
                <rol:naam>Afvalwater, afkomstig van het reinigen, conserveren, bouwen, renoveren of slopen van bouwwerken, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -101,6 +118,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenSchoonmDrinkwaterLeid</rol:identificatie>
                <rol:naam>Afvalwater, afkomstig van het schoonmaken van drinkwaterleidingen, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -113,6 +133,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenVanafVaartuigen</rol:identificatie>
                <rol:naam>Afvalwater, afkomstig van vaartuigen of andere drijvende werktuigen bij spoelen of scheiden van zand of grind, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -125,6 +148,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.AndereLozingenBSWv</rol:identificatie>
                <rol:naam>Andere lozingen, bedoeld in afdeling 2.19 van de waterschapsverordening, op een oppervlaktwaterlichaam of een zuiveringtechnisch werk</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -137,6 +163,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.Asverstrooiing</rol:identificatie>
                <rol:naam>Asverstrooiing op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -149,6 +178,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenKoelwater</rol:identificatie>
                <rol:naam>Koelwater, niet afkomstig van een milieubelastende activiteit die is aangewezen in hoofdstuk 3 van het Besluit activiteiten leefomgeving, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -161,6 +193,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.OntrekkenGrondwater</rol:identificatie>
                <rol:naam>Onttrekken van grondwater en infiltreren van water</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Wateronttrekkingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.Wateronttrekkingsact"/>
                </rol:bovenliggendeActiviteit>
@@ -173,6 +208,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.OnttrekkenOppervlaktewater</rol:identificatie>
                <rol:naam>Onttrekken van oppervlaktewater</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Wateronttrekkingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.Wateronttrekkingsact"/>
                </rol:bovenliggendeActiviteit>
@@ -185,6 +223,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenSpuiwaterRecrVisvijver</rol:identificatie>
                <rol:naam>Spuiwater uit recreatieve visvijvers, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -197,6 +238,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenOntgravenWaterbeheerder</rol:identificatie>
                <rol:naam>Stoffen die vrijkomen bij ontgravingen, bagger- of andere werkzaamheden door de waterbeheerder, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -209,6 +253,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs</rol:identificatie>
                <rol:naam>Lozingsactiviteit gereguleerd in de waterschapsverordening</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.ActInWaterschapsVerordWs"/>
                </rol:bovenliggendeActiviteit>
@@ -221,6 +268,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.Wateronttrekkingsact</rol:identificatie>
                <rol:naam>Wateronttrekkingsactiviteit gereguleerd in de waterschapsverordening</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Wateronttrekkingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.ActInWaterschapsVerordWs"/>
                </rol:bovenliggendeActiviteit>
@@ -233,6 +283,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenOpslaanInerteGoederen</rol:identificatie>
                <rol:naam>Afvalwater, afkomstig van het opslaan en overslaan van inerte goederen, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -245,6 +298,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenOpslaanAndersDanInert</rol:identificatie>
                <rol:naam>Afvalwater, afkomstig van het opslaan of overslaan van andere dan inerte goederen, lozen op een oppervlakteaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -257,6 +313,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenTelenGewassenWs</rol:identificatie>
                <rol:naam>Afvalwater, afkomstig van het telen, kweken, spoelen of sorteren van gewassen, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -269,6 +328,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenNietIndVoedselbereiding</rol:identificatie>
                <rol:naam>Afvalwater, afkomstig van niet-industriële voedselbereiding, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -281,6 +343,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenAfvlHemelwater</rol:identificatie>
                <rol:naam>Afvloeiend hemelwater, niet afkomstig van een bodembeschermende voorziening, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -293,6 +358,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenGrondwaterSanering</rol:identificatie>
                <rol:naam>Grondwater, afkomstig van een sanering of ontwatering, lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>
@@ -305,6 +373,9 @@
                <rol:identificatie>nl.imow-ws0636.activiteit.LozenHuishoudelijkAfvalw</rol:identificatie>
                <rol:naam>Huishoudelijk afvalwater lozen op een oppervlaktewaterlichaam</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Lozingsactiviteit</rol:groep>
+               <rol:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rol:locatieaanduiding>
                <rol:bovenliggendeActiviteit>
                   <rol:ActiviteitRef xlink:href="nl.imow-ws0636.activiteit.LozenOppwaterZuivertBeheerWs"/>
                </rol:bovenliggendeActiviteit>

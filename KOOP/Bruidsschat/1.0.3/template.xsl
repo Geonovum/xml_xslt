@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:my="functions" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie">
+<xsl:stylesheet xmlns:my="functions" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie">
    <xsl:output method="xml" version="1.0" indent="yes" encoding="UTF-8" standalone="yes"/>
    <xsl:strip-space elements="*"/>
 
@@ -118,8 +118,8 @@
          <!-- controle op ontbrekende waarden in de waardelijsten -->
          <xsl:variable name="check">
             <xsl:for-each select="$owActiviteit">
-               <xsl:variable name="id" select="lower-case(rol:groep)"/>
-               <xsl:if test="not($waardelijsten[titel='Activiteitengroep']/waarden/waarde[lower-case(label)=$id])">
+               <xsl:variable name="id" select="rol:groep"/>
+               <xsl:if test="not($waardelijsten[titel='Activiteitengroep']/waarden/waarde[uri=$id])">
                   <xsl:element name="item">
                      <xsl:attribute name="id" select="my:id(rol:identificatie)"/>
                      <xsl:value-of select="rol:groep"/>
@@ -143,13 +143,6 @@
          <!-- controle op ontbrekende verwijzingen -->
          <xsl:variable name="check">
             <xsl:for-each select="$owActiviteit">
-               <xsl:variable name="ref" select="rol:locatieaanduiding/l:LocatieRef/@xlink:href"/>
-               <xsl:if test="not($owLocatie[l:identificatie=$ref])">
-                  <xsl:element name="item">
-                     <xsl:attribute name="id" select="my:id(rol:identificatie)"/>
-                     <xsl:value-of select="$ref"/>
-                  </xsl:element>
-               </xsl:if>
                <xsl:variable name="ref" select="rol:bovenliggendeActiviteit/rol:ActiviteitRef/@xlink:href"/>
                <xsl:if test="not($owActiviteit[rol:identificatie=$ref])">
                   <xsl:element name="item">
@@ -203,7 +196,10 @@
                   <xsl:variable name="id.regeltekst" select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'regeltekst',concat('2020',fn:format-number(count((.,preceding::artikel[not(lid)],preceding::lid)),'000000'))),'.')),'-')"/>
                   <xsl:variable name="id.juridischeregel" select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'juridischeregel',concat('2020',fn:format-number(count((.,preceding::artikel[not(lid)],preceding::lid)),'000000'))),'.')),'-')"/>
                   <!-- de eerste gebiedengroep in owLocatie moet het ambtsgebied zijn -->
+                  <!--
                   <xsl:variable name="id.locatie" select="$owLocatie/self::l:Gebiedengroep[1]/l:identificatie"/>
+                  -->
+                  <xsl:variable name="id.locatie" select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'gebied','ambtsgebied'),'.')),'-')"/>
                   <xsl:element name="sl:stand">
                      <xsl:element name="ow-dc:owObject">
                         <xsl:element name="r:Regeltekst">
@@ -329,7 +325,7 @@
                               <xsl:value-of select="rol:naam"/>
                            </xsl:element>
                            <xsl:element name="rol:groep">
-                              <xsl:value-of select="($waardelijsten[titel='Activiteitengroep']/waarden/waarde[lower-case(label)=lower-case(current()/rol:groep)]/uri,'http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Onbekend')[1]"/>
+                              <xsl:value-of select="($waardelijsten[titel='Activiteitengroep']/waarden/waarde[uri=current()/rol:groep]/uri,'http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Onbekend')[1]"/>
                            </xsl:element>
                            <xsl:element name="rol:bovenliggendeActiviteit">
                               <xsl:element name="rol:ActiviteitRef">
@@ -344,8 +340,8 @@
          </xsl:element>
       </xsl:result-document>
 
-      <!-- owLocatie -->
-      <xsl:result-document encoding="UTF-8" href="owLocatie.xml" indent="yes" method="xml" version="1.0">
+      <!-- owRegelingsgebied -->
+      <xsl:result-document encoding="UTF-8" href="owRegelingsgebied.xml" indent="yes" method="xml" version="1.0">
          <xsl:element name="ow-dc:owBestand">
             <xsl:copy-of select="//namespace::*"/>
             <xsl:attribute name="xsi:schemaLocation" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
@@ -361,52 +357,27 @@
                      <xsl:value-of select="$idLevering"/>
                   </xsl:element>
                   <xsl:element name="sl:objectTypen">
-                     <xsl:for-each select="('Gebied','Gebiedengroep')">
+                     <xsl:for-each select="('Regelingsgebied')">
                         <xsl:element name="sl:objectType">
                            <xsl:value-of select="."/>
                         </xsl:element>
                      </xsl:for-each>
                   </xsl:element>
                </xsl:element>
-               <xsl:for-each select="$owLocatie">
-                  <xsl:variable name="id.locatie" select="my:id(l:identificatie)"/>
-                  <xsl:element name="sl:stand">
-                     <xsl:element name="ow-dc:owObject">
-                        <xsl:choose>
-                           <xsl:when test="self::l:Gebied">
-                              <xsl:element name="l:Gebied">
-                                 <xsl:element name="l:identificatie">
-                                    <xsl:value-of select="$id.locatie"/>
-                                 </xsl:element>
-                                 <xsl:element name="l:noemer">
-                                    <xsl:value-of select="l:noemer"/>
-                                 </xsl:element>
-                                 <xsl:element name="l:geometrie">
-                                    <xsl:element name="l:GeometrieRef">
-                                       <xsl:attribute name="xlink:href" select="l:geometrie/l:GeometrieRef/@xlink:href"/>
-                                    </xsl:element>
-                                 </xsl:element>
-                              </xsl:element>
-                           </xsl:when>
-                           <xsl:when test="self::l:Gebiedengroep">
-                              <xsl:element name="l:Gebiedengroep">
-                                 <xsl:element name="l:identificatie">
-                                    <xsl:value-of select="$id.locatie"/>
-                                 </xsl:element>
-                                 <xsl:element name="l:noemer">
-                                    <xsl:value-of select="l:noemer"/>
-                                 </xsl:element>
-                                 <xsl:element name="l:groepselement">
-                                    <xsl:element name="l:GebiedRef">
-                                       <xsl:attribute name="xlink:href" select="my:id(l:groepselement/l:GebiedRef/@xlink:href)"/>
-                                    </xsl:element>
-                                 </xsl:element>
-                              </xsl:element>
-                           </xsl:when>
-                        </xsl:choose>
+               <xsl:element name="sl:stand">
+                  <xsl:element name="ow-dc:owObject">
+                     <xsl:element name="rg:Regelingsgebied">
+                        <xsl:element name="rg:identificatie">
+                           <xsl:value-of select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'regelingsgebied','2020000001'),'.')),'-')"/>
+                        </xsl:element>
+                        <xsl:element name="rg:locatieaanduiding">
+                           <xsl:element name="l:LocatieRef">
+                              <xsl:attribute name="xlink:href" select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'gebied','ambtsgebied'),'.')),'-')"/>
+                           </xsl:element>
+                        </xsl:element>
                      </xsl:element>
                   </xsl:element>
-               </xsl:for-each>
+               </xsl:element>
             </xsl:element>
          </xsl:element>
       </xsl:result-document>
@@ -447,9 +418,9 @@
             </xsl:element>
             <xsl:element name="Bestand" namespace="{$namespace}">
                <xsl:element name="naam" namespace="{$namespace}">
-                  <xsl:value-of select="string('owLocatie.xml')"/>
+                  <xsl:value-of select="string('owRegelingsgebied.xml')"/>
                </xsl:element>
-               <xsl:for-each select="('Gebied','Gebiedengroep')">
+               <xsl:for-each select="('Regelingsgebied')">
                   <xsl:element name="objecttype" namespace="{$namespace}">
                      <xsl:value-of select="."/>
                   </xsl:element>

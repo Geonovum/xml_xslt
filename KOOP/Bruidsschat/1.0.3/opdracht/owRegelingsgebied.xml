@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
                  xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
                  xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
@@ -12,37 +12,25 @@
                  xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
                  xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
    <sl:standBestand>
-      <sl:dataset>Bruidschat Rivierenland</sl:dataset>
+      <sl:dataset>ws0636</sl:dataset>
       <sl:inhoud>
-         <sl:gebied>Rivierenland</sl:gebied>
-         <sl:leveringsId>ws0621</sl:leveringsId>
+         <sl:gebied>ws0636</sl:gebied>
+         <sl:leveringsId>ws0636_2020-09-17</sl:leveringsId>
          <sl:objectTypen>
-            <sl:objectType>Gebied</sl:objectType>
-            <sl:objectType>Gebiedengroep</sl:objectType>
+            <sl:objectType>Regelingsgebied</sl:objectType>
          </sl:objectTypen>
       </sl:inhoud>
       <sl:stand>
          <ow-dc:owObject>
-            <l:Gebiedengroep>
-               <l:identificatie>nl.imow-ws0621.gebiedengroep.aangewOppervlaktewaterlichamen</l:identificatie>
-               <l:noemer>Aangewezen oppervlaktewaterlichamen</l:noemer>
-               <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-ws0621.gebied.2020000001"/>
-               </l:groepselement>
-            </l:Gebiedengroep>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0621.gebied.2020000001</l:identificatie>
-               <l:noemer>Aangewezen oppervlaktewaterlichamen</l:noemer>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="119b5b6a-b84a-4ca7-8671-952a3c609acb"/>
-               </l:geometrie>
-            </l:Gebied>
+            <rg:Regelingsgebied>
+               <rg:identificatie>nl.imow-ws0636.regelingsgebied.2020000001</rg:identificatie>
+               <rg:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-ws0636.gebied.ambtsgebied"/>
+               </rg:locatieaanduiding>
+            </rg:Regelingsgebied>
          </ow-dc:owObject>
       </sl:stand>
    </sl:standBestand>
