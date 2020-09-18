@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-8197960a-ff85-4234-9be5-8eace11ddafc-xx">
+         <basisgeo:id>8197960a-ff85-4234-9be5-8eace11ddafc</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992"
+                              gml:id="id-8197960a-ff85-4234-9be5-8eace11ddafc">
+               <gml:surfaceMember>
+                  <gml:Polygon>
+                     <gml:exterior>
+                        <gml:LinearRing>
+                           <gml:posList>108783.229 527440.02 108783.184 527440.001 108783.142 527439.983 108782.731 527439.989 108781.935 527440.042 108778.721 527440.629 108776.745 527440.989 108777.197 527442.94 108778.544 527448.756 108779.241 527448.444 108781.656 527447.364 108783.087 527446.795 108783.644 527446.084 108783.792 527445.831 108783.925 527445.571 108783.996 527445.412 108784.044 527445.304 108784.148 527445.031 108784.179 527444.934 108784.237 527444.752 108784.261 527444.66 108784.311 527444.469 108784.369 527444.183 108784.411 527443.893 108784.424 527443.749 108784.438 527443.602 108784.448 527443.31 108784.444 527443.125 108784.442 527443.018 108784.435 527442.926 108784.421 527442.726 108784.383 527442.436 108784.364 527442.331 108784.33 527442.148 108784.297 527442.011 108784.261 527441.864 108784.24 527441.792 108784.228 527441.753 108784.177 527441.584 108784.087 527441.334 108783.841 527440.802 108783.731 527440.563 108783.71 527440.517 108783.679 527440.448 108783.664 527440.424 108783.612 527440.341 108783.532 527440.243 108783.499 527440.211 108783.441 527440.156 108783.345 527440.086 108783.339 527440.081 108783.229 527440.02</gml:posList>
+                        </gml:LinearRing>
+                     </gml:exterior>
+                  </gml:Polygon>
+               </gml:surfaceMember>
+            </gml:MultiSurface>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>

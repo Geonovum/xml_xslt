@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-20cd591d-9122-4b11-a771-c52322f1bb37-xx">
+         <basisgeo:id>20cd591d-9122-4b11-a771-c52322f1bb37</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992"
+                              gml:id="id-20cd591d-9122-4b11-a771-c52322f1bb37">
+               <gml:surfaceMember>
+                  <gml:Polygon>
+                     <gml:exterior>
+                        <gml:LinearRing>
+                           <gml:posList>230449.429 564785.823 230450.051 564785.711 230450.218 564785.681 230450.096 564785.288 230450.719 564783.95 230450.5 564782.914 230450.03 564780.685 230446.71 564767.755 230444.734 564760.059 230443.052 564751.744 230443.06 564751.328 230443.077 564750.44 230441.205 564745.781 230440.974 564745.206 230438.597 564745.721 230438.093 564745.83 230434.953 564746.51 230436.708 564754.613 230439.538 564765.466 230442.158 564774.429 230443.654 564779.055 230445.084 564783.474 230445.932 564786.029 230446.212 564785.95 230446.819 564785.777 230446.905 564786.108 230446.947 564786.271 230447.317 564786.204 230448.063 564786.07 230448.319 564786.024 230448.661 564785.962 230449.429 564785.823</gml:posList>
+                        </gml:LinearRing>
+                     </gml:exterior>
+                  </gml:Polygon>
+               </gml:surfaceMember>
+            </gml:MultiSurface>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>

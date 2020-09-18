@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>ws0662</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>ws0662</sl:gebied>
+         <sl:leveringsId>ws0662_2020-09-18</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebied</sl:objectType>
+            <sl:objectType>Gebiedengroep</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-ws0662.gebiedengroep.aangewOppervlaktewaterlichamen</l:identificatie>
+               <l:noemer>Aangewezen oppervlaktewaterlichamen waterschap Vallei en Veluwe</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000001"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000002"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000003"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000004"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000005"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000006"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000007"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000008"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000009"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000010"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000011"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000012"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000013"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-ws0662.gebiedengroep.nietAangewOppervlaktewaterlichamen</l:identificatie>
+               <l:noemer>Niet-aangewezen oppervlaktewaterlichamen waterschap Vallei en Veluwe</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000014"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000001</l:identificatie>
+               <l:noemer>Valleikanaal</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="aa1a25d1-bb1a-49d8-b569-5fcc3fe4c902"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000002</l:identificatie>
+               <l:noemer>De Grote Wetering</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8a274ebf-e61d-4381-94a7-d80ce25a2318"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000003</l:identificatie>
+               <l:noemer>Eem en havens van Amersfoort</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ad4ffe16-9708-47fd-9f8b-d2c5decc479f"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000004</l:identificatie>
+               <l:noemer>Arkervaart en haven van Nijkerk</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="98a55f38-9a24-4084-bb36-257a27883ab9"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000005</l:identificatie>
+               <l:noemer>Toevoerkanaal en Uitvliet (bij Terwolde)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="c76f4d21-881a-4005-a1f5-e1e28e3faddc"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000006</l:identificatie>
+               <l:noemer>De Oude IJssel bij Zutphen</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="e250d54c-4d77-4202-817c-9eabe5750bb6"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000007</l:identificatie>
+               <l:noemer>De Waa in Hattem</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="59298138-9044-499a-af4c-8d06f4e72f59"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000008</l:identificatie>
+               <l:noemer>Stadsgracht Elburg</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="53fb5e12-0978-4f83-92be-ce9af85dcb18"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000009</l:identificatie>
+               <l:noemer>Uitvliet Gelderse gracht</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="e2caee27-654e-4432-b0e8-5b027dbc3eda"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000010</l:identificatie>
+               <l:noemer>Noordermerkkanaal</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ec57be03-195b-43e7-8602-3dd1b2c55d2d"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000011</l:identificatie>
+               <l:noemer>Uitvliet Polder Hattem</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="eb7ba301-0f8f-46f3-9f4a-00757ba36416"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000012</l:identificatie>
+               <l:noemer>Het Apeldoorns kanaal</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="13860211-002e-4994-8e46-8d72f96de22c"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000013</l:identificatie>
+               <l:noemer>Havenkanaal Elburg</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="43855e1f-5a15-4f51-8638-57e69bb1efc0"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0662.gebied.2020000014</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8dd5400b-7b4d-45cb-8361-9bc28e3c5839"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

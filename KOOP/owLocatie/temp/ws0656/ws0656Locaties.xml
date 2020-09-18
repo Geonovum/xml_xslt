@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>ws0656</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>ws0656</sl:gebied>
+         <sl:leveringsId>ws0656_2020-09-18</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebied</sl:objectType>
+            <sl:objectType>Gebiedengroep</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-ws0656.gebiedengroep.aangewOppervlaktewaterlichamen</l:identificatie>
+               <l:noemer>Aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Schieland en de Krimpenerwaard</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-ws0656.gebied.2020000001"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0656.gebied.2020000002"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0656.gebied.2020000003"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0656.gebied.2020000004"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0656.gebied.2020000005"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0656.gebied.2020000006"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-ws0656.gebiedengroep.nietAangewOppervlaktewaterlichamen</l:identificatie>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-ws0656.gebied.2020000007"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0656.gebied.2020000001</l:identificatie>
+               <l:noemer>Rotte</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="72551760-5072-4491-9e58-56399bdb6c67"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0656.gebied.2020000002</l:identificatie>
+               <l:noemer>Noorderkanaal</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b85dcee5-4f54-4dca-95c5-75a6d34ce4e5"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0656.gebied.2020000003</l:identificatie>
+               <l:noemer>Ringvaart ZPP</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="89fa6925-e897-4e84-acf9-7b3221d5e807"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0656.gebied.2020000004</l:identificatie>
+               <l:noemer>Hennipsloot</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ad3bc09e-0027-4c92-ad7b-bf74c70e9a66"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0656.gebied.2020000005</l:identificatie>
+               <l:noemer>Vaart Bleiswijk</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="92e593ed-bd1b-4ab5-9892-ed112ba8f759"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0656.gebied.2020000006</l:identificatie>
+               <l:noemer>Boezemsingel</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="deb4f57b-2062-4ce0-bc5a-3e81bbba3c1e"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0656.gebied.2020000007</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="e9504d18-87ff-4be8-a675-dad73afeb37b"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

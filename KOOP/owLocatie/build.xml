@@ -20,8 +20,8 @@
   <!-- stel bestand owLocatie samen -->
 
   <target name="owLocatie" description="Stel bestand owLocatie samen">
-    <xslt basedir="${input.dir}" destdir="${temp.dir}" style="owLocatie.xsl" processor="trax" force="true">
-      <mapper type="glob" from="*.gml" to="*.log"/>
+    <xslt in="template.xml" out="${temp.dir}/log.txt" style="owLocatie.xsl" processor="trax" force="true">
+      <param name="input.dir" expression="${input.dir}"/>
     </xslt>
   </target>
 

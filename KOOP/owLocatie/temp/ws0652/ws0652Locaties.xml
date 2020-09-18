@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>ws0652</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>ws0652</sl:gebied>
+         <sl:leveringsId>ws0652_2020-09-18</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebied</sl:objectType>
+            <sl:objectType>Gebiedengroep</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-ws0652.gebiedengroep.aangewOppervlaktewaterlichamen</l:identificatie>
+               <l:noemer>Aangewezen oppervlaktewaterlichamen waterschap Brabantse Delta</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000001"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000002"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000003"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000004"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000005"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000006"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000007"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000008"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000009"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000010"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000011"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000012"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000013"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000014"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000015"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000016"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000017"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000018"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000019"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000020"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000021"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000022"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000023"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000024"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-ws0652.gebiedengroep.nietAangewOppervlaktewaterlichamen</l:identificatie>
+               <l:noemer>Niet-aangewezen oppervlaktewaterlichamen waterschap Brabantse Delta</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000025"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000001</l:identificatie>
+               <l:noemer>Haven van Roosendaal</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="78d851fe-3b77-4470-9182-64323c79b533"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000002</l:identificatie>
+               <l:noemer>Aa of Weerijs</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="d679f60b-8dc1-433a-b6ee-512b68db019a"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000003</l:identificatie>
+               <l:noemer>Bovenmark</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="864d27ff-3459-4bdf-8bf7-87196c8116a2"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000004</l:identificatie>
+               <l:noemer>Oude Leij benedenstrooms van de kruising met de N282 (Oude Rijksweg)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0dce4fbf-e823-4522-828f-3946a6761c89"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000005</l:identificatie>
+               <l:noemer>Mark-Vliet kanaal</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="4c476a6e-a952-490c-90f0-3bc99156c028"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000006</l:identificatie>
+               <l:noemer>Steenbergsche Vliet</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="30eb0607-c2c2-4b45-9156-f7871c680b7a"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000007</l:identificatie>
+               <l:noemer>De Baak (onderdeel Kruislandse Kreken)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="d9e6ff05-572f-419f-ae49-e470c0745b3f"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000008</l:identificatie>
+               <l:noemer>Vloedspui en Haven van Hooge Zwaluwe</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="dc17f424-03ce-4f22-ae36-ac4c6f0719de"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000009</l:identificatie>
+               <l:noemer>Mark</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="592763ed-b9ea-49bb-8ae4-5ba3808ecbbf"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000010</l:identificatie>
+               <l:noemer>Singels Breda</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ff3f590d-a0d6-473f-b76c-bbe34d268011"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000011</l:identificatie>
+               <l:noemer>Gat van den Ham</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8ef44035-e242-4e4c-99c3-3b977692e31d"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000012</l:identificatie>
+               <l:noemer>Zuiderafwateringskanaal</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0070d0b1-6450-43ca-b6eb-37b7981794dc"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000013</l:identificatie>
+               <l:noemer>Kerkvaart</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8742f26c-d5dd-4dcc-929d-21c0b0529e59"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000014</l:identificatie>
+               <l:noemer>Steenbergsche Haven</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0c0905bf-ff39-401e-9fb9-0bbe89656874"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000015</l:identificatie>
+               <l:noemer>De Beek (onderdeel Kruislandse Kreken)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="85d3a32f-c645-4eba-adf5-d4252b0e975b"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000016</l:identificatie>
+               <l:noemer>Markkanaal</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="251cdbfe-7f73-47d2-9997-cab0215686e9"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000017</l:identificatie>
+               <l:noemer>Capelsche Haven</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="39d43044-dece-4082-a462-82a5c39fd0ca"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000018</l:identificatie>
+               <l:noemer>Dintel</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8692d9c9-6235-45c5-931d-2cdf5c7eacf7"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000019</l:identificatie>
+               <l:noemer>Mark</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="6805c12c-871a-484c-bea5-475ce5281260"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000020</l:identificatie>
+               <l:noemer>Waalwijksche Haven</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="81d0058e-4e14-4bd6-86b8-436b897fcb28"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000021</l:identificatie>
+               <l:noemer>Oude Maasje</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ecc03556-1576-4e8e-a227-11e38965db7a"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000022</l:identificatie>
+               <l:noemer>Donge</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ef243001-1f63-4b35-87c0-8f8dbcbad60e"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000023</l:identificatie>
+               <l:noemer>Roode vaart ten noorden van Zevenbergen</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="32f8052a-d94d-4a05-b33a-3ce10d2e27aa"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000024</l:identificatie>
+               <l:noemer>Dintel</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="40d45d53-3cb9-4d0c-b805-c99b0d6d7228"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0652.gebied.2020000025</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="1c917fcc-b869-4338-9271-e9b2dc849720"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

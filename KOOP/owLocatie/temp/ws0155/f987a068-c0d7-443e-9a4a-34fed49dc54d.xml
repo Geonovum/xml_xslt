@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-f987a068-c0d7-443e-9a4a-34fed49dc54d-xx">
+         <basisgeo:id>f987a068-c0d7-443e-9a4a-34fed49dc54d</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992"
+                              gml:id="id-f987a068-c0d7-443e-9a4a-34fed49dc54d">
+               <gml:surfaceMember>
+                  <gml:Polygon>
+                     <gml:exterior>
+                        <gml:LinearRing>
+                           <gml:posList>129907.807 479702.024 129908.369 479701.058
+                                          129908.969 479697.131 129907.371 479693.752 129907.064
+                                          479693.478 129906.376 479692.863 129852.019 479701.201
+                                          129851.975 479700.914 129851.933 479700.645 129849.052
+                                          479701.066 129846.185 479701.486 129847.367 479702.599
+                                          129851.109 479706.122 129849.21 479709.464 129847.838
+                                          479711.878 129849.984 479711.554 129853.56 479711.013
+                                          129853.498 479710.62 129853.481 479710.508 129901.931
+                                          479702.942 129907.807 479702.024</gml:posList>
+                        </gml:LinearRing>
+                     </gml:exterior>
+                  </gml:Polygon>
+               </gml:surfaceMember>
+            </gml:MultiSurface>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>
