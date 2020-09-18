@@ -39,7 +39,7 @@
                               </xsl:otherwise>
                            </xsl:choose>
                         </xsl:attribute>
-                        <xsl:attribute name="gio-noemer" select="$gio[data:ExpressionIdentificatie/data:FRBRWork=current()]//data:InformatieObjectMetadata/data:naamInformatieObject"/>
+                        <xsl:attribute name="gio-naam" select="$gio[data:ExpressionIdentificatie/data:FRBRWork=current()]//data:InformatieObjectMetadata/data:naamInformatieObject"/>
                      </xsl:element>
                   </xsl:when>
                   <xsl:when test="self::geo:Locatie">
@@ -97,9 +97,9 @@
                               <xsl:element name="l:identificatie">
                                  <xsl:value-of select="current-group()[1]/@gio-id"/>
                               </xsl:element>
-                              <xsl:if test="current-group()[1]/@gio-noemer ne ''">
+                              <xsl:if test="current-group()[1]/@gio-naam ne ''">
                                  <xsl:element name="l:noemer">
-                                    <xsl:value-of select="current-group()[1]/@gio-noemer"/>
+                                    <xsl:value-of select="current-group()[1]/@gio-naam"/>
                                  </xsl:element>
                               </xsl:if>
                               <xsl:element name="l:groepselement">
@@ -159,7 +159,7 @@
                   <xsl:value-of select="concat('[GIO ',current()/@index,']','&#10;')"/>
                   <xsl:value-of select="concat('FRBRWork: ',current()/@id,'&#10;')"/>
                   <xsl:value-of select="concat('id: ',current()/@gio-id,'&#10;')"/>
-                  <xsl:value-of select="concat('noemer: ',current()/@gio-noemer,'&#10;')"/>
+                  <xsl:value-of select="concat('naam: ',current()/@gio-naam,'&#10;')"/>
                </xsl:when>
                <xsl:when test="self::locatie">
                   <xsl:value-of select="concat('[GML ',current()/@index,']','&#10;')"/>

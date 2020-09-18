@@ -1,9 +1,131 @@
+[BG ws0152]
+
+[GIO 1]
+FRBRWork: /join/id/regdata/ws0152/2020/ib_aangewezen_oppervlaktewaterlichamen_rijn_ijssel
+id: nl.imow-ws0152.gebiedengroep.aangewOppervlaktewaterlichamen
+naam: Aangewezen oppervlaktewaterlichamen waterschap Rijn en IJssel
+[GML 1]
+id: 69e64af4-f469-4037-bfc1-df55ed2621f2
+naam: Zevenaarse Wetering
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 2]
+id: 4dbcb140-d70e-4738-ad49-571630fb246a
+naam: Wijde Wetering
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 3]
+id: 80003de4-7c50-4782-ba1b-29d5ee8ea88f
+naam: Oude IJssel
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 4]
+id: c8fb3e49-ff18-4620-8d47-acadd819599e
+naam: Aastrang
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 5]
+id: 59a8c7a8-6bff-4cee-9bf1-21c6cade8f9b
+naam: Keizersbeek
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 6]
+id: 4c5738fa-2523-4318-a3da-31e5e4505c10
+naam: Didamse Wetering
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 7]
+id: 23fef111-be45-470d-96c1-f0cbb1deccf3
+naam: Wehlse Beek
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 8]
+id: 20d0b924-fc09-460f-a006-fbb8c14a7673
+naam: Oosterwijkse Vloed
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 9]
+id: e6c940c9-a3d1-46ba-9afe-76984c8d9619
+naam: Stroomkanaal Hackfort
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 10]
+id: cd8ed553-68df-45ce-9d5a-e218172e6d52
+naam: Vierakkerselaak
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 11]
+id: e1717bb2-16d6-4ac9-b953-5cd12361bc92
+naam: Eefse Beek
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 12]
+id: 67a52637-39b0-428a-b415-a4e3ecf44f84
+naam: Dommerbeek
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 13]
+id: 6e06b497-0893-48d2-9b56-e3f3b921470b
+naam: Molenbeek
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 14]
+id: 969d5596-8d9c-4e82-85f2-70f498cfac74
+naam: Barchemse Veengoot
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 15]
+id: c357021d-3b62-48d7-81d1-6d40770d6a62
+naam: Grote Waterleiding
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 16]
+id: c5365b3d-ca38-458d-9675-f28ce7a13e1b
+naam: Bolksbeek
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 17]
+id: ce60a869-aa04-4731-af62-627b0e1f3e77
+naam: Zuidelijk Afwateringskanaal
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 18]
+id: 827f5dbc-30c3-4812-88e3-1b5c33af86ea
+naam: Elsbeek
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 19]
+id: 67c209ff-7828-47ff-8b68-9aae39669bfd
+naam: Oude Schipbeek
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 20]
+id: 06218394-bf42-4c1f-9bcf-29c45b46449e
+naam: Nieuwe Waterleiding
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 21]
+id: 08432c3b-0ef9-44ef-b157-5f6681dadf1b
+naam: Meibeek
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+
+[GIO 2]
+FRBRWork: /join/id/regdata/ws0152/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_rijn_ijssel
+id: nl.imow-ws0152.gebiedengroep.nietAangewOppervlaktewaterlichamen
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap Rijn en IJssel
+[GML 22]
+id: 86980ae1-588a-4562-9b3c-f57c049c4b4a
+naam: [geen]
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+
 [BG ws0155]
 
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0155/2020/ib_aangewezen_oppervlaktewaterlichamen_amstel_gooi_en_vecht
 id: nl.imow-ws0155.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap Amstel, Gooi en Vecht
+naam: Aangewezen oppervlaktewaterlichamen waterschap Amstel, Gooi en Vecht
 [GML 1]
 id: 0f66ed4e-42bd-4dc2-97e1-e8504231cceb
 naam: Kromme Mijdrecht
@@ -298,131 +420,9 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0155/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_amstel_gooi_en_vecht
 id: nl.imow-ws0155.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap Amstel, Gooi en Vecht
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap Amstel, Gooi en Vecht
 [GML 59]
 id: db76702b-8686-4388-9336-4542563a1e25
-naam: [geen]
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-
-[BG ws0152]
-
-[GIO 1]
-FRBRWork: /join/id/regdata/ws0152/2020/ib_aangewezen_oppervlaktewaterlichamen_rijn_ijssel
-id: nl.imow-ws0152.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap Rijn en IJssel
-[GML 1]
-id: 69e64af4-f469-4037-bfc1-df55ed2621f2
-naam: Zevenaarse Wetering
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 2]
-id: 4dbcb140-d70e-4738-ad49-571630fb246a
-naam: Wijde Wetering
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 3]
-id: 80003de4-7c50-4782-ba1b-29d5ee8ea88f
-naam: Oude IJssel
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 4]
-id: c8fb3e49-ff18-4620-8d47-acadd819599e
-naam: Aastrang
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 5]
-id: 59a8c7a8-6bff-4cee-9bf1-21c6cade8f9b
-naam: Keizersbeek
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 6]
-id: 4c5738fa-2523-4318-a3da-31e5e4505c10
-naam: Didamse Wetering
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 7]
-id: 23fef111-be45-470d-96c1-f0cbb1deccf3
-naam: Wehlse Beek
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 8]
-id: 20d0b924-fc09-460f-a006-fbb8c14a7673
-naam: Oosterwijkse Vloed
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 9]
-id: e6c940c9-a3d1-46ba-9afe-76984c8d9619
-naam: Stroomkanaal Hackfort
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 10]
-id: cd8ed553-68df-45ce-9d5a-e218172e6d52
-naam: Vierakkerselaak
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 11]
-id: e1717bb2-16d6-4ac9-b953-5cd12361bc92
-naam: Eefse Beek
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 12]
-id: 67a52637-39b0-428a-b415-a4e3ecf44f84
-naam: Dommerbeek
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 13]
-id: 6e06b497-0893-48d2-9b56-e3f3b921470b
-naam: Molenbeek
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 14]
-id: 969d5596-8d9c-4e82-85f2-70f498cfac74
-naam: Barchemse Veengoot
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 15]
-id: c357021d-3b62-48d7-81d1-6d40770d6a62
-naam: Grote Waterleiding
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 16]
-id: c5365b3d-ca38-458d-9675-f28ce7a13e1b
-naam: Bolksbeek
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 17]
-id: ce60a869-aa04-4731-af62-627b0e1f3e77
-naam: Zuidelijk Afwateringskanaal
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 18]
-id: 827f5dbc-30c3-4812-88e3-1b5c33af86ea
-naam: Elsbeek
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 19]
-id: 67c209ff-7828-47ff-8b68-9aae39669bfd
-naam: Oude Schipbeek
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 20]
-id: 06218394-bf42-4c1f-9bcf-29c45b46449e
-naam: Nieuwe Waterleiding
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-[GML 21]
-id: 08432c3b-0ef9-44ef-b157-5f6681dadf1b
-naam: Meibeek
-srsName: urn:ogc:def:crs:EPSG::28992
-type: MultiSurface
-
-[GIO 2]
-FRBRWork: /join/id/regdata/ws0152/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_rijn_ijssel
-id: nl.imow-ws0152.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap Rijn en IJssel
-[GML 22]
-id: 86980ae1-588a-4562-9b3c-f57c049c4b4a
 naam: [geen]
 srsName: urn:ogc:def:crs:EPSG::28992
 type: MultiSurface
@@ -432,7 +432,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0372/2020/ib_aangewezen_oppervlaktewaterlichamen_delfland
 id: nl.imow-ws0372.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Delfland
+naam: Aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Delfland
 [GML 1]
 id: 189e1a65-8db2-4514-b4c9-927d649335e3
 naam: Havengebied Delfshaven te Rotterdam
@@ -467,7 +467,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0372/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_delfland
 id: nl.imow-ws0372.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Delfland
+naam: Niet-aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Delfland
 [GML 7]
 id: 60e93a1e-6e63-4edb-a2ef-4ea689b4cd5f
 naam: [geen]
@@ -479,7 +479,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0539/2020/ib_aangewezen_oppervlaktewaterlichamen_de_dommel
 id: nl.imow-ws0539.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap De Dommel
+naam: Aangewezen oppervlaktewaterlichamen waterschap De Dommel
 [GML 1]
 id: d8e96962-a436-41e3-a1d3-b2c3bb0377f2
 naam: Eindhovens Kanaal
@@ -539,7 +539,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0539/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_de_dommel
 id: nl.imow-ws0539.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap De Dommel
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap De Dommel
 [GML 12]
 id: 9bd6b08e-932f-499d-b17a-bea2a40a66d3
 naam: [geen]
@@ -551,7 +551,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0616/2020/ib_aangewezen_oppervlaktewaterlichamen_rijnland
 id: nl.imow-ws0616.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Rijnland
+naam: Aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Rijnland
 [GML 1]
 id: f79a7755-8819-4234-96ca-76655e258c9b
 naam: Gouwe en oostelijk deel Oude Rijn
@@ -601,7 +601,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0616/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_rijnland
 id: nl.imow-ws0616.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Rijnland
+naam: Niet-aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Rijnland
 [GML 10]
 id: 2cf12d22-cbfd-4375-9edd-c2a22e253528
 naam: [geen]
@@ -613,7 +613,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0621/2020/ib_aangewezen_oppervlaktewaterlichamen_rivierenland
 id: nl.imow-ws0621.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap Rivierenland
+naam: Aangewezen oppervlaktewaterlichamen waterschap Rivierenland
 [GML 1]
 id: dc3f628d-3c89-4cf7-a084-29367608c1b1
 naam: Linge (mond Kanaal van Steenenhoek tot Boven Merwede)
@@ -633,7 +633,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0621/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_rivierenland
 id: nl.imow-ws0621.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap Rivierenland
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap Rivierenland
 [GML 4]
 id: fc32dc17-be53-4616-a71f-827c82a032ef
 naam: [geen]
@@ -645,7 +645,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0636/2020/ib_aangewezen_oppervlaktewaterlichamen_stichtse_rijnlanden
 id: nl.imow-ws0636.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen Hoogheemraadschap De Stichtse Rijnlanden
+naam: Aangewezen oppervlaktewaterlichamen Hoogheemraadschap De Stichtse Rijnlanden
 [GML 1]
 id: 84443d8c-0666-4850-9fa0-48a2865fed88
 naam: Maalvliet gemaal de Tol (Machine wetering de Tol)
@@ -755,7 +755,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0636/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_stichtse_rijnlanden
 id: nl.imow-ws0636.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen Hoogheemraadschap De Stichtse Rijnlanden
+naam: Niet-aangewezen oppervlaktewaterlichamen Hoogheemraadschap De Stichtse Rijnlanden
 [GML 22]
 id: aad511c3-b16e-4034-8ee0-bbabc97f7b25
 naam: [geen]
@@ -767,7 +767,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0646/2020/ib_aangewezen_oppervlaktewaterlichamen _hunze_aas
 id: nl.imow-ws0646.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap Hunze en Aa's
+naam: Aangewezen oppervlaktewaterlichamen waterschap Hunze en Aa's
 [GML 1]
 id: 7528a8ed-6d26-49d4-9ad2-637aa135d79a
 naam: Scholtenskanaal
@@ -907,7 +907,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0646/2020/ib_niet_aangewezen_oppervlaktewaterlichamen _hunze_aas
 id: nl.imow-ws0646.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap Hunze en Aa's
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap Hunze en Aa's
 [GML 28]
 id: 8004565f-86cb-43ae-bef9-7639cd108b18
 naam: [geen]
@@ -919,7 +919,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0647/2020/ib_aangewezen_oppervlaktewaterlichamen_noorderzijlvest
 id: nl.imow-ws0647.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap Noorderzijlvest
+naam: Aangewezen oppervlaktewaterlichamen waterschap Noorderzijlvest
 [GML 1]
 id: 4b2b4eca-17f5-4ac4-b7fd-2f93a176d62d
 naam: Grote Masloot
@@ -1819,7 +1819,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0647/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_noorderzijlvest
 id: nl.imow-ws0647.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap Noorderzijlvest
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap Noorderzijlvest
 [GML 180]
 id: 22202562-ecf3-4e56-bd29-dc21ebf529cb
 naam: [geen]
@@ -1831,7 +1831,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0650/2020/ib_aangewezen_oppervlaktewaterlichamen_zuiderzeeland
 id: nl.imow-ws0650.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap Zuiderzeeland
+naam: Aangewezen oppervlaktewaterlichamen waterschap Zuiderzeeland
 [GML 1]
 id: ccd539c3-20c8-4860-80ae-4ab5ef427889
 naam: Hoge Vaart
@@ -1941,7 +1941,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0650/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_zuiderzeeland
 id: nl.imow-ws0650.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap Zuiderzeeland
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap Zuiderzeeland
 [GML 22]
 id: 81658d36-e1ba-486a-b779-8c2d1e2c3a23
 naam: [geen]
@@ -1953,7 +1953,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0651/2020/ib_aangewezen_oppervlaktewaterlichamen _hollands_noorderkwartier
 id: nl.imow-ws0651.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen Hoogheemraadschap Hollands Noorderkwartier
+naam: Aangewezen oppervlaktewaterlichamen Hoogheemraadschap Hollands Noorderkwartier
 [GML 1]
 id: ef8ea91a-e933-4932-9fc4-ea119b0695e1
 naam: Kanaal Alkmaar (Omval) â€“ Kolhorn
@@ -2673,7 +2673,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0651/2020/ib_niet_aangewezen_oppervlaktewaterlichamen _hollands_noorderkwartier
 id: nl.imow-ws0651.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen Hoogheemraadschap Hollands Noorderkwartier
+naam: Niet-aangewezen oppervlaktewaterlichamen Hoogheemraadschap Hollands Noorderkwartier
 [GML 144]
 id: 773325da-6cf8-497b-9416-8f113a6a0b68
 naam: [geen]
@@ -2685,7 +2685,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0652/2020/ib_aangewezen_oppervlaktewaterlichamen_brabantse_delta
 id: nl.imow-ws0652.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap Brabantse Delta
+naam: Aangewezen oppervlaktewaterlichamen waterschap Brabantse Delta
 [GML 1]
 id: 78d851fe-3b77-4470-9182-64323c79b533
 naam: Haven van Roosendaal
@@ -2810,7 +2810,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0652/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_brabantse_delta
 id: nl.imow-ws0652.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap Brabantse Delta
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap Brabantse Delta
 [GML 25]
 id: 1c917fcc-b869-4338-9271-e9b2dc849720
 naam: [geen]
@@ -2822,7 +2822,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0653/2020/ib_aangewezen_oppervlaktewaterlichamen _fryslan
 id: nl.imow-ws0653.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen Wetterskip Fryslân
+naam: Aangewezen oppervlaktewaterlichamen Wetterskip Fryslân
 [GML 1]
 id: 736d6664-5694-429b-b331-6e5899b1c2be
 naam: Oude Drait
@@ -4057,7 +4057,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0653/2020/ib_niet_aangewezen_oppervlaktewaterlichamen _fryslan
 id: nl.imow-ws0653.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen Wetterskip Fryslân
+naam: Niet-aangewezen oppervlaktewaterlichamen Wetterskip Fryslân
 [GML 247]
 id: e9c6e7e5-537a-4aee-9729-3903f81d539f
 naam: [geen]
@@ -4069,7 +4069,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0654/2020/ib_aangewezen_oppervlaktewaterlichamen_aa_en_maas
 id: nl.imow-ws0654.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap Aa en Maas
+naam: Aangewezen oppervlaktewaterlichamen waterschap Aa en Maas
 [GML 1]
 id: cbb3de54-87f9-4324-be3f-38ce464a79cf
 naam: Dieze
@@ -4209,7 +4209,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0654/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_aa_en_maas
 id: nl.imow-ws0654.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap Aa en Maas
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap Aa en Maas
 [GML 28]
 id: 15c7101b-50b9-46a0-b799-a1d0f0311505
 naam: [geen]
@@ -4221,7 +4221,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0655/2020/ib_aangewezen_oppervlaktewaterlichamen _hollandse_delta
 id: nl.imow-ws0655.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap Hollandse Delta
+naam: Aangewezen oppervlaktewaterlichamen waterschap Hollandse Delta
 [GML 1]
 id: 4afc9a4e-edda-48b4-ba33-01e1ecd93ed2
 naam: Devel
@@ -4276,7 +4276,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0655/2020/ib_niet_aangewezen_oppervlaktewaterlichamen _hollandse_delta
 id: nl.imow-ws0655.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap Hollandse Delta
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap Hollandse Delta
 [GML 11]
 id: 7be7925a-f0ec-4972-88bf-55ac7931e8a7
 naam: [geen]
@@ -4288,7 +4288,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0656/2020/ib_aangewezen_oppervlaktewaterlichamen_schieland_Krimpenerwaard
 id: nl.imow-ws0656.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Schieland en de Krimpenerwaard
+naam: Aangewezen oppervlaktewaterlichamen Hoogheemraadschap van Schieland en de Krimpenerwaard
 [GML 1]
 id: 72551760-5072-4491-9e58-56399bdb6c67
 naam: Rotte
@@ -4323,7 +4323,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0656/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_schieland_Krimpenerwaard/nld@2020-08-04
 id: nl.imow-ws0656.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: 
+naam: 
 [GML 7]
 id: e9504d18-87ff-4be8-a675-dad73afeb37b
 naam: [geen]
@@ -4335,7 +4335,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0662/2020/ib_aangewezen_oppervlaktewaterlichamen_vallei_veluwe
 id: nl.imow-ws0662.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap Vallei en Veluwe
+naam: Aangewezen oppervlaktewaterlichamen waterschap Vallei en Veluwe
 [GML 1]
 id: aa1a25d1-bb1a-49d8-b569-5fcc3fe4c902
 naam: Valleikanaal
@@ -4405,7 +4405,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0662/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_vallei_veluwe
 id: nl.imow-ws0662.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap Vallei en Veluwe
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap Vallei en Veluwe
 [GML 14]
 id: 8dd5400b-7b4d-45cb-8361-9bc28e3c5839
 naam: [geen]
@@ -4417,7 +4417,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0663/2020/ib_aangewezen_oppervlaktewaterlichamen_vechtstromen
 id: nl.imow-ws0663.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap Vechtstromen
+naam: Aangewezen oppervlaktewaterlichamen waterschap Vechtstromen
 [GML 1]
 id: 40c6dcb3-e744-497a-9406-f44b87dfef55
 naam: Verlengde Hoogeveensche Vaart
@@ -4487,7 +4487,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0663/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_vechtstromen
 id: nl.imow-ws0663.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap Vechtstromen
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap Vechtstromen
 [GML 14]
 id: 6e3128e1-f09c-4481-a29b-e9b5042a574f
 naam: [geen]
@@ -4499,7 +4499,7 @@ type: MultiSurface
 [GIO 1]
 FRBRWork: /join/id/regdata/ws0664/2020/ib_aangewezen_oppervlaktewaterlichamen_drents_overijsselse_delta
 id: nl.imow-ws0664.gebiedengroep.aangewOppervlaktewaterlichamen
-noemer: Aangewezen oppervlaktewaterlichamen waterschap Drents Overijsselse Delta
+naam: Aangewezen oppervlaktewaterlichamen waterschap Drents Overijsselse Delta
 [GML 1]
 id: 002401d6-b335-4917-b659-1120bfc12c20
 naam: Beilervaart
@@ -4624,7 +4624,7 @@ type: MultiSurface
 [GIO 2]
 FRBRWork: /join/id/regdata/ws0664/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_drents_overijsselse_delta
 id: nl.imow-ws0664.gebiedengroep.nietAangewOppervlaktewaterlichamen
-noemer: Niet-aangewezen oppervlaktewaterlichamen waterschap Drents Overijsselse Delta
+naam: Niet-aangewezen oppervlaktewaterlichamen waterschap Drents Overijsselse Delta
 [GML 25]
 id: 8434b3cd-36a4-4d59-8a18-205d5bd71c59
 naam: [geen]
