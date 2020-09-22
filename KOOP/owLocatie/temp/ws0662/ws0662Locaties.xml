@@ -17,7 +17,7 @@
       <sl:dataset>ws0662</sl:dataset>
       <sl:inhoud>
          <sl:gebied>ws0662</sl:gebied>
-         <sl:leveringsId>ws0662_2020-09-18</sl:leveringsId>
+         <sl:leveringsId>ws0662_2020-09-22</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Gebied</sl:objectType>
             <sl:objectType>Gebiedengroep</sl:objectType>
@@ -49,7 +49,7 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-ws0662.gebiedengroep.nietAangewOppervlaktewaterlichamen</l:identificatie>
+               <l:identificatie>nl.imow-ws0662.gebiedengroep.nietaangewOppvlaktewaterlichamen</l:identificatie>
                <l:noemer>Niet-aangewezen oppervlaktewaterlichamen waterschap Vallei en Veluwe</l:noemer>
                <l:groepselement>
                   <l:GebiedRef xlink:href="nl.imow-ws0662.gebied.2020000014"/>
