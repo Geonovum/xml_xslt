@@ -1,3 +1,9 @@
+.kop{
+    background-color:#777777;
+    color:white;
+    font-size:larger;
+}
+
 .list{
     background-color:black;
     color:white
@@ -5,7 +11,7 @@
 
 .sublist{
     background-color:gray;
-    border-collapse:collapse
+    display:block;
 }
 
 .orderlist{
@@ -18,8 +24,18 @@
     background-color:#eeeeee;
 }
 
+.regeltekst_list{
+    background-color:#999999;
+    border-collapse:collapse;
+}
+
+.regeltekst{
+    background-color:#cccccc;
+}
+
 .art_cell{
     border-bottom:1px solid #cccccc;
+    word-wrap:normal;
 }
 
 table{
