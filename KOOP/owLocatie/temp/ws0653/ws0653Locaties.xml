@@ -17,7 +17,7 @@
       <sl:dataset>ws0653</sl:dataset>
       <sl:inhoud>
          <sl:gebied>ws0653</sl:gebied>
-         <sl:leveringsId>ws0653_2020-09-18</sl:leveringsId>
+         <sl:leveringsId>ws0653_2020-09-22</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Gebied</sl:objectType>
             <sl:objectType>Gebiedengroep</sl:objectType>
@@ -282,7 +282,7 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-ws0653.gebiedengroep.nietAangewOppervlaktewaterlichamen</l:identificatie>
+               <l:identificatie>nl.imow-ws0653.gebiedengroep.nietaangewOppvlaktewaterlichamen</l:identificatie>
                <l:noemer>Niet-aangewezen oppervlaktewaterlichamen Wetterskip Fryslân</l:noemer>
                <l:groepselement>
                   <l:GebiedRef xlink:href="nl.imow-ws0653.gebied.2020000247"/>

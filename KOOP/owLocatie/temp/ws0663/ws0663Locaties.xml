@@ -17,7 +17,7 @@
       <sl:dataset>ws0663</sl:dataset>
       <sl:inhoud>
          <sl:gebied>ws0663</sl:gebied>
-         <sl:leveringsId>ws0663_2020-09-18</sl:leveringsId>
+         <sl:leveringsId>ws0663_2020-09-22</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Gebied</sl:objectType>
             <sl:objectType>Gebiedengroep</sl:objectType>
@@ -49,7 +49,7 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-ws0663.gebiedengroep.nietAangewOppervlaktewaterlichamen</l:identificatie>
+               <l:identificatie>nl.imow-ws0663.gebiedengroep.nietaangewOppvlaktewaterlichamen</l:identificatie>
                <l:noemer>Niet-aangewezen oppervlaktewaterlichamen waterschap Vechtstromen</l:noemer>
                <l:groepselement>
                   <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000014"/>

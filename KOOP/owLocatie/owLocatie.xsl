@@ -32,7 +32,7 @@
                                  <xsl:value-of select="concat('nl.imow-',$gio-eindverantwoordelijke,'.gebiedengroep.aangewOppervlaktewaterlichamen')"/>
                               </xsl:when>
                               <xsl:when test="contains(fn:tokenize(current(),'/')[7],'ib_niet_aangewezen')">
-                                 <xsl:value-of select="concat('nl.imow-',$gio-eindverantwoordelijke,'.gebiedengroep.nietAangewOppervlaktewaterlichamen')"/>
+                                 <xsl:value-of select="concat('nl.imow-',$gio-eindverantwoordelijke,'.gebiedengroep.nietaangewOppvlaktewaterlichamen')"/>
                               </xsl:when>
                               <xsl:otherwise>
                                  <xsl:value-of select="concat('nl.imow-',$gio-eindverantwoordelijke,'.gebiedengroep.onbekend')"/>
