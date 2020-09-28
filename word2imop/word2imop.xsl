@@ -7,7 +7,7 @@
   <!-- namespaces -->
   <xsl:param name="data" select="string('https://standaarden.overheid.nl/stop/imop/data/')"/>
   <xsl:param name="eigen" select="string('https://www.eigen.nl/')"/>
-  <xsl:param name="lvbb" select="string('https://standaarden.overheid.nl/lvbb/stop/')"/>
+  <xsl:param name="lvbb" select="string('https://standaarden.overheid.nl/lvbb/stop/aanlevering/')"/>
   <xsl:param name="tekst" select="string('https://standaarden.overheid.nl/stop/imop/tekst/')"/>
 
   <!-- scheidingsteken in paden -->
@@ -32,7 +32,7 @@
   <xsl:variable name="D03" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'versieTPOD')]/w:tc[2]//w:t),'geen')[1]"/>
   <!-- lees metadata regeling in -->
   <xsl:variable name="D04" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'officieleTitel')]/w:tc[2]//w:t),'geen')[1]"/>
-  <xsl:variable name="D05" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'redactioneleTitel')]/w:tc[2]//w:t),'geen')[1]"/>
+  <xsl:variable name="D05" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'citeertitel')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D06" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'soortRegeling')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D07" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'versieRegeling')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D08" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'overheidsdomein')]/w:tc[2]//w:t),'geen')[1]"/>
@@ -45,25 +45,26 @@
   <xsl:variable name="tbl_proc" select="document($comments,.)/w:comments/w:comment/w:tbl[contains(fn:string-join(w:tr[1]/w:tc[1]//w:t),'Procedure')]"/>
   <xsl:variable name="P01" select="(fn:string-join($tbl_proc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'bekendOp')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="P02" select="(fn:string-join($tbl_proc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'ontvangenOp')]/w:tc[2]//w:t),'geen')[1]"/>
-  <xsl:variable name="P03">
-    <xsl:for-each select="for $index in 4 to 14 return ($tbl_proc//w:tr[$index]/w:tc[2]//w:t,'geen')[1]">
+  <xsl:variable name="P03" select="(fn:string-join($tbl_proc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'inWerkingOp')]/w:tc[2]//w:t),'geen')[1]"/>
+  <xsl:variable name="P04">
+    <xsl:for-each select="for $index in 5 to 15 return $index">
       <xsl:element name="item">
-        <xsl:value-of select="."/>
+        <xsl:attribute name="stap" select="$tbl_proc//w:tr[current()]/w:tc[1]//w:t"/>
+        <xsl:attribute name="datum" select="($tbl_proc//w:tr[current()]/w:tc[2]//w:t,'geen')[1]"/>
       </xsl:element>
     </xsl:for-each>
   </xsl:variable>
 
   <!-- belangrijke identifiers -->
   <xsl:variable name="ID_bill_work" select="concat('/akn/nl/bill/',$D12,'/',format-date(current-date(),'[Y0001]'),'/',$D01)"/>
-  <xsl:variable name="ID_bill_expression" select="concat('/akn/nl/bill/',$D12,'/',format-date(current-date(),'[Y0001]'),'/',$D01,'/nld@',format-date(current-date(),'[Y0001]-[M01]-[D01]'))"/>
+  <xsl:variable name="ID_bill_expression" select="concat('/akn/nl/bill/',$D12,'/',format-date(current-date(),'[Y0001]'),'/',$D01,'/nld@',format-date(current-date(),'[Y0001]-[M01]-[D01]'),';',$D07)"/>
   <xsl:variable name="ID_act_work" select="concat('/akn/nl/act/',$D12,'/',format-date(current-date(),'[Y0001]'),'/',$D01)"/>
-  <xsl:variable name="ID_act_expression" select="concat('/akn/nl/act/',$D12,'/',format-date(current-date(),'[Y0001]'),'/',$D01,'/nld@',format-date(current-date(),'[Y0001]-[M01]-[D01]'))"/>
+  <xsl:variable name="ID_act_expression" select="concat('/akn/nl/act/',$D12,'/',format-date(current-date(),'[Y0001]'),'/',$D01,'/nld@',format-date(current-date(),'[Y0001]-[M01]-[D01]'),';',$D07)"/>
 
   <!-- bouw het document op -->
   <xsl:template match="w:document">
     <xsl:element name="AanleveringBesluit" namespace="{$lvbb}">
       <xsl:attribute name="schemaversie" select="$D02"/>
-      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.overheid.nl/2017/lvbb ../lvbb/LVBB-stop.xsd')"/>
       <!-- geef informatie door aan AKN.xsl -->
       <xsl:processing-instruction name="akn">
         <xsl:value-of select="fn:string-join(($D12,$D07),'_')"/>
@@ -93,14 +94,18 @@
           <xsl:element name="officieleTitel" namespace="{$data}">
             <xsl:value-of select="$D04"/>
           </xsl:element>
-          <xsl:element name="redactioneleTitel" namespace="{$data}">
-            <xsl:value-of select="$D05"/>
-          </xsl:element>
-          <xsl:element name="overheidsdomein" namespace="{$data}">
-            <xsl:variable name="overheidsdomein" select="('geen','belastingen','bouwen, wonen en leefomgeving','cultuur, sport, vrije tijd','werk- en loopbaan','economie en ondernemen','familie, jeugd en gezin','financiën','gezondheid en zorg','immigratie, integratie en inburgering','internationale- en ontwikkelingssamenwerking','landbouw, natuur en voedsel','milieu, ruimte en water','onderwijs en wetenschap','openbare orde en veiligheid','overheid, bestuur en koninkrijk','defensie','subsidies, uitkeringen en toeslagen','verkeer en vervoer','rechtspraak')"/>
-            <xsl:variable name="overheidsdomeinID" select="('/tooi/def/concept/c_bed49b60','/tooi/def/concept/c_3708ac5e','/tooi/def/concept/c_c70d3447','/tooi/def/concept/c_30e85e85','/tooi/def/concept/c_9fbcfc19','/tooi/def/concept/c_6bdc2b89','/tooi/def/concept/c_dfcf3a97','/tooi/def/concept/c_c95f4dd4','/tooi/def/concept/c_56a74243','/tooi/def/concept/c_33cf4691','/tooi/def/concept/c_67671688','/tooi/def/concept/c_86b84a9d','/tooi/def/concept/c_a058394a','/tooi/def/concept/c_e8ff69cb','/tooi/def/concept/c_fd285f2b','/tooi/def/concept/c_1c504a92','/tooi/def/concept/c_17f08b1f','/tooi/def/concept/c_9153c2b4','/tooi/def/concept/c_49cf6ea2')"/>
-            <xsl:value-of select="$overheidsdomeinID[fn:index-of($overheidsdomein,$D08)]"/>
-          </xsl:element>
+          <xsl:if test="normalize-space($D05) ne ''">
+            <xsl:element name="heeftCiteertitelInformatie" namespace="{$data}">
+              <xsl:element name="CiteertitelInformatie" namespace="{$data}">
+                <xsl:element name="citeertitel" namespace="{$data}">
+                  <xsl:value-of select="$D05"/>
+                </xsl:element>
+                <xsl:element name="isOfficieel" namespace="{$data}">
+                  <xsl:value-of select="string('true')"/>
+                </xsl:element>
+              </xsl:element>
+            </xsl:element>
+          </xsl:if>
           <xsl:element name="onderwerpen" namespace="{$data}">
             <xsl:for-each select="$D09">
               <xsl:element name="onderwerp" namespace="{$data}">
@@ -115,41 +120,41 @@
               </xsl:element>
             </xsl:for-each>
           </xsl:element>
-        </xsl:element>
-        <!-- Procedure -->
-        <xsl:element name="Procedure" namespace="{$data}">
-          <xsl:element name="Procedureverloop" namespace="{$data}">
-            <xsl:element name="bekendOp" namespace="{$data}">
-              <xsl:value-of select="$P01"/>
-            </xsl:element>
-            <xsl:element name="ontvangenOp" namespace="{$data}">
-              <xsl:value-of select="$P02"/>
-            </xsl:element>
-            <xsl:element name="soortProcedure" namespace="{$data}">
-              <xsl:value-of select="string('/join/id/stop/proceduretype_definitief')"/>
-            </xsl:element>
-            <xsl:element name="procedurestappen" namespace="{$data}">
-              <xsl:for-each select="$P03/item">
-                <xsl:if test=". ne 'geen'">
-                  <xsl:element name="Procedurestap" namespace="{$data}">
-                    <xsl:element name="soortStap" namespace="{$data}">
-                      <xsl:value-of select="fn:format-number(position(),'/join/id/stop/procedure/stap_000')"/>
-                    </xsl:element>
-                    <xsl:element name="voltooidOp" namespace="{$data}">
-                      <xsl:value-of select="."/>
-                    </xsl:element>
-                  </xsl:element>
-                </xsl:if>
-              </xsl:for-each>
-            </xsl:element>
+          <xsl:element name="soortProcedure" namespace="{$data}">
+            <xsl:value-of select="string('/join/id/stop/proceduretype_definitief')"/>
           </xsl:element>
         </xsl:element>
-        <!-- BesluitDoel -->
-        <xsl:element name="BesluitDoel" namespace="{$data}">
+        <!-- Procedure -->
+        <xsl:element name="Procedureverloop" namespace="{$data}">
+          <xsl:element name="bekendOp" namespace="{$data}">
+            <xsl:value-of select="$P01"/>
+          </xsl:element>
+          <xsl:element name="ontvangenOp" namespace="{$data}">
+            <xsl:value-of select="$P02"/>
+          </xsl:element>
+          <xsl:element name="procedurestappen" namespace="{$data}">
+            <xsl:for-each select="$P04/item">
+              <xsl:if test="@datum ne 'geen'">
+                <xsl:element name="Procedurestap" namespace="{$data}">
+                  <xsl:element name="soortStap" namespace="{$data}">
+                    <xsl:value-of select="@stap"/>
+                  </xsl:element>
+                  <xsl:element name="voltooidOp" namespace="{$data}">
+                    <xsl:value-of select="@datum"/>
+                  </xsl:element>
+                </xsl:element>
+              </xsl:if>
+            </xsl:for-each>
+          </xsl:element>
+        </xsl:element>
+        <!-- ConsolidatieInformatie -->
+        <xsl:element name="ConsolidatieInformatie" namespace="{$data}">
           <xsl:element name="BeoogdeRegelgeving" namespace="{$data}">
             <xsl:element name="BeoogdeRegeling" namespace="{$data}">
-              <xsl:element name="doel" namespace="{$data}">
-                <xsl:value-of select="concat('/akn/ontology/event/nl/',$D12,'/sync/Instelling')"/>
+              <xsl:element name="doelen" namespace="{$data}">
+                <xsl:element name="doel" namespace="{$data}">
+                  <xsl:value-of select="concat('/join/id/proces/',$D12,'/',format-date(current-date(),'[Y0001]'),'/Instelling')"/>
+                </xsl:element>
               </xsl:element>
               <xsl:element name="instrumentVersie" namespace="{$data}">
                 <xsl:value-of select="$ID_act_expression"/>
@@ -157,11 +162,41 @@
               <xsl:element name="eId" namespace="{$data}"/>
             </xsl:element>
           </xsl:element>
+          <xsl:element name="Tijdstempels" namespace="{$data}">
+            <xsl:element name="Tijdstempel" namespace="{$data}">
+              <xsl:element name="doel" namespace="{$data}">
+                <xsl:value-of select="string('/join/id/proces/pv26/2020/Instelling')"/>
+              </xsl:element>
+              <xsl:element name="soortTijdstempel" namespace="{$data}">
+                <xsl:value-of select="string('juridischWerkendVanaf')"/>
+              </xsl:element>
+              <xsl:element name="datum" namespace="{$data}">
+                <xsl:value-of select="$P03"/>
+              </xsl:element>
+              <xsl:element name="eId" namespace="{$data}">
+                <xsl:value-of select="string('art_II')"/>
+              </xsl:element>
+            </xsl:element>
+          </xsl:element>
         </xsl:element>
-        <!-- alleen w:body is van belang -->
-        <xsl:element name="Besluit" namespace="{$tekst}">
-          <xsl:apply-templates select="w:body"/>
-        </xsl:element>
+        <!-- BesluitKlassiek, BesluitCompact -->
+        <xsl:choose>
+          <xsl:when test="fn:tokenize($D06,'/')[last()]=('regelingtype_001','regelingtype_002')">
+            <!-- Rijksregelingen kunnen BesluitKlassiek gebruiken -->
+          </xsl:when>
+          <xsl:when test="fn:tokenize($D06,'/')[last()]=('regelingtype_003','regelingtype_004','regelingtype_005')">
+            <!-- Regelingen met artikelstructuur -->
+            <xsl:call-template name="besluit_compact">
+              <xsl:with-param name="type" select="string('RegelingCompact')"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="fn:tokenize($D06,'/')[last()]=('regelingtype_006','regelingtype_007','regelingtype_008','regelingtype_009','regelingtype_010')">
+            <!-- Regelingen met vrijetekststructuur -->
+            <xsl:call-template name="besluit_compact">
+              <xsl:with-param name="type" select="string('RegelingVrijetekst')"/>
+            </xsl:call-template>
+          </xsl:when>
+        </xsl:choose>
       </xsl:element>
       <!-- RegelingVersieInformatie -->
       <xsl:element name="RegelingVersieInformatie" namespace="{$lvbb}">
@@ -177,13 +212,16 @@
             <xsl:value-of select="string('/join/id/stop/work_019')"/>
           </xsl:element>
         </xsl:element>
+        <!-- RegelingVersieMetadata -->
+        <xsl:element name="RegelingVersieMetadata" namespace="{$data}">
+          <xsl:element name="versienummer" namespace="{$data}">
+            <xsl:value-of select="$D07"/>
+          </xsl:element>
+        </xsl:element>
         <!-- RegelingMetadata -->
         <xsl:element name="RegelingMetadata" namespace="{$data}">
           <xsl:element name="soortRegeling" namespace="{$data}">
             <xsl:value-of select="$D06"/>
-          </xsl:element>
-          <xsl:element name="versienummer" namespace="{$data}">
-            <xsl:value-of select="$D07"/>
           </xsl:element>
           <xsl:element name="eindverantwoordelijke" namespace="{$data}">
             <xsl:value-of select="concat('/tooi/id/',$D11,'/',$D12)"/>
@@ -194,13 +232,22 @@
           <xsl:element name="officieleTitel" namespace="{$data}">
             <xsl:value-of select="$D04"/>
           </xsl:element>
-          <xsl:element name="redactioneleTitel" namespace="{$data}">
-            <xsl:value-of select="$D05"/>
-          </xsl:element>
-          <xsl:element name="overheidsdomein" namespace="{$data}">
-            <xsl:variable name="overheidsdomein" select="('geen','belastingen','bouwen, wonen en leefomgeving','cultuur, sport, vrije tijd','werk- en loopbaan','economie en ondernemen','familie, jeugd en gezin','financiën','gezondheid en zorg','immigratie, integratie en inburgering','internationale- en ontwikkelingssamenwerking','landbouw, natuur en voedsel','milieu, ruimte en water','onderwijs en wetenschap','openbare orde en veiligheid','overheid, bestuur en koninkrijk','defensie','subsidies, uitkeringen en toeslagen','verkeer en vervoer','rechtspraak')"/>
-            <xsl:variable name="overheidsdomeinID" select="('/tooi/def/concept/c_bed49b60','/tooi/def/concept/c_3708ac5e','/tooi/def/concept/c_c70d3447','/tooi/def/concept/c_30e85e85','/tooi/def/concept/c_9fbcfc19','/tooi/def/concept/c_6bdc2b89','/tooi/def/concept/c_dfcf3a97','/tooi/def/concept/c_c95f4dd4','/tooi/def/concept/c_56a74243','/tooi/def/concept/c_33cf4691','/tooi/def/concept/c_67671688','/tooi/def/concept/c_86b84a9d','/tooi/def/concept/c_a058394a','/tooi/def/concept/c_e8ff69cb','/tooi/def/concept/c_fd285f2b','/tooi/def/concept/c_1c504a92','/tooi/def/concept/c_17f08b1f','/tooi/def/concept/c_9153c2b4','/tooi/def/concept/c_49cf6ea2')"/>
-            <xsl:value-of select="$overheidsdomeinID[fn:index-of($overheidsdomein,$D08)]"/>
+          <xsl:if test="normalize-space($D05) ne ''">
+            <xsl:element name="heeftCiteertitelInformatie" namespace="{$data}">
+              <xsl:element name="CiteertitelInformatie" namespace="{$data}">
+                <xsl:element name="citeertitel" namespace="{$data}">
+                  <xsl:value-of select="$D05"/>
+                </xsl:element>
+                <xsl:element name="isOfficieel" namespace="{$data}">
+                  <xsl:value-of select="string('true')"/>
+                </xsl:element>
+              </xsl:element>
+            </xsl:element>
+          </xsl:if>
+          <xsl:element name="overheidsdomeinen" namespace="{$data}">
+            <xsl:element name="overheidsdomein" namespace="{$data}">
+              <xsl:value-of select="$D08"/>
+            </xsl:element>
           </xsl:element>
           <xsl:element name="onderwerpen" namespace="{$data}">
             <xsl:for-each select="$D09">
@@ -221,6 +268,81 @@
     </xsl:element>
   </xsl:template>
 
+  <xsl:template name="besluit_compact">
+    <xsl:param name="type" select="string('RegelingCompact')"/>
+    <xsl:element name="BesluitCompact" namespace="{$tekst}">
+      <xsl:element name="RegelingOpschrift" namespace="{$tekst}">
+        <xsl:element name="Al" namespace="{$tekst}">
+          <xsl:value-of select="string('[regelingopschrift van het besluit]')"/>
+        </xsl:element>
+      </xsl:element>
+      <xsl:element name="Aanhef" namespace="{$tekst}">
+        <xsl:element name="Al" namespace="{$tekst}">
+          <xsl:value-of select="string('[optionele aanhef]')"/>
+        </xsl:element>
+      </xsl:element>
+      <xsl:element name="Lichaam" namespace="{$tekst}">
+        <xsl:element name="WijzigArtikel" namespace="{$tekst}">
+          <xsl:element name="Kop" namespace="{$tekst}">
+            <xsl:element name="Label" namespace="{$tekst}">
+              <xsl:value-of select="string('Artikel')"/>
+            </xsl:element>
+            <xsl:element name="Nummer" namespace="{$tekst}">
+              <xsl:value-of select="string('I')"/>
+            </xsl:element>
+            <xsl:element name="Opschrift" namespace="{$tekst}">
+              <xsl:value-of select="string('[optioneel opschrift]')"/>
+            </xsl:element>
+          </xsl:element>
+          <xsl:element name="Wat" namespace="{$tekst}">
+            <xsl:value-of select="string('[omschrijving wat er besloten wordt, met een verwijzing naar de WijzigBijlage]')"/>
+          </xsl:element>
+        </xsl:element>
+        <xsl:element name="Artikel" namespace="{$tekst}">
+          <xsl:element name="Kop" namespace="{$tekst}">
+            <xsl:element name="Label" namespace="{$tekst}">
+              <xsl:value-of select="string('Artikel')"/>
+            </xsl:element>
+            <xsl:element name="Nummer" namespace="{$tekst}">
+              <xsl:value-of select="string('II')"/>
+            </xsl:element>
+            <xsl:element name="Opschrift" namespace="{$tekst}">
+              <xsl:value-of select="string('[optioneel opschrift]')"/>
+            </xsl:element>
+          </xsl:element>
+          <xsl:element name="Inhoud" namespace="{$tekst}">
+            <xsl:element name="Al" namespace="{$tekst}">
+              <xsl:value-of select="string('[artikel dat de inwerkingtreding vaststelt]')"/>
+            </xsl:element>
+          </xsl:element>
+        </xsl:element>
+      </xsl:element>
+      <xsl:element name="Sluiting" namespace="{$tekst}">
+        <xsl:element name="Al" namespace="{$tekst}">
+          <xsl:value-of select="string('[sluiting]')"/>
+        </xsl:element>
+      </xsl:element>
+      <xsl:element name="WijzigBijlage" namespace="{$tekst}">
+        <xsl:element name="Kop" namespace="{$tekst}">
+          <xsl:element name="Label" namespace="{$tekst}">
+            <xsl:value-of select="string('Bijlage')"/>
+          </xsl:element>
+          <xsl:element name="Nummer" namespace="{$tekst}">
+            <xsl:value-of select="string('I')"/>
+          </xsl:element>
+          <xsl:element name="Opschrift" namespace="{$tekst}">
+            <xsl:value-of select="string('[optioneel opschrift]')"/>
+          </xsl:element>
+        </xsl:element>
+        <xsl:element name="{$type}" namespace="{$tekst}">
+          <xsl:attribute name="componentnaam" select="string('initieel_reg')"/>
+          <xsl:attribute name="wordt" select="$ID_act_expression"/>
+          <xsl:apply-templates select="w:body"/>
+        </xsl:element>
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="*">
     <!--xsl:comment><xsl:value-of select="concat('GW: ',name())"/></xsl:comment-->
     <xsl:apply-templates/>
@@ -228,66 +350,61 @@
 
   <!-- maak het document aan -->
   <xsl:template match="w:body">
-    <xsl:element name="NieuweRegeling" namespace="{$tekst}">
-      <xsl:attribute name="FRBRwork" select="$ID_act_work"/>
-      <xsl:attribute name="componentnaam" select="string('main')"/>
-      <xsl:attribute name="wordt" select="$ID_act_expression"/>
-      <xsl:for-each-group select="*" group-starting-with="w:p[w:pPr/w:pStyle/@w:val=('Kop1','Divisiekop1')][1]">
-        <xsl:choose>
-          <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Titel']">
-            <xsl:element name="RegelingOpschrift" namespace="{$tekst}">
-              <xsl:apply-templates select="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Titel']"/>
-            </xsl:element>
-            <xsl:variable name="aanhef" select="current-group()/self::w:p[not(w:pPr/w:pStyle/@w:val='Titel')]"/>
+    <xsl:for-each-group select="*" group-starting-with="w:p[w:pPr/w:pStyle/@w:val=('Kop1','Divisiekop1')][1]">
+      <xsl:choose>
+        <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Titel']">
+          <xsl:element name="RegelingOpschrift" namespace="{$tekst}">
+            <xsl:apply-templates select="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Titel']"/>
+          </xsl:element>
+          <xsl:variable name="aanhef" select="current-group()/self::w:p[not(w:pPr/w:pStyle/@w:val='Titel')]"/>
+          <xsl:choose>
+            <xsl:when test="$aanhef">
+              <xsl:element name="Aanhef" namespace="{$tekst}">
+                <xsl:call-template name="group_adjacent">
+                  <xsl:with-param name="group" select="$aanhef"/>
+                </xsl:call-template>
+              </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+              <!-- hier kan eventueel een standaard aanhef -->
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:when>
+        <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Kop1']">
+          <xsl:for-each-group select="current-group()" group-starting-with="w:p[w:pPr/w:pStyle/@w:val='Divisiekop1'][1]">
             <xsl:choose>
-              <xsl:when test="$aanhef">
-                <xsl:element name="Aanhef" namespace="{$tekst}">
-                  <xsl:call-template name="group_adjacent">
-                    <xsl:with-param name="group" select="$aanhef"/>
-                  </xsl:call-template>
-                </xsl:element>
-              </xsl:when>
-              <xsl:otherwise>
-                <!-- hier kan eventueel een standaard aanhef -->
-              </xsl:otherwise>
-            </xsl:choose>
-          </xsl:when>
-          <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Kop1']">
-            <xsl:for-each-group select="current-group()" group-starting-with="w:p[w:pPr/w:pStyle/@w:val='Divisiekop1'][1]">
-              <xsl:choose>
-                <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Kop1']">
-                  <xsl:element name="Lichaam" namespace="{$tekst}">
-                    <!-- section_lichaam_artikel plaatst de artikelstructuur -->
-                    <xsl:call-template name="section_lichaam_artikel">
-                      <xsl:with-param name="group" select="current-group()"/>
-                      <xsl:with-param name="index" select="1"/>
-                    </xsl:call-template>
-                  </xsl:element>
-                </xsl:when>
-                <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Divisiekop1']">
-                  <!-- section_bijlage plaatst de vrijtekststructuur -->
-                  <xsl:call-template name="section_bijlage">
+              <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Kop1']">
+                <xsl:element name="Lichaam" namespace="{$tekst}">
+                  <!-- section_lichaam_artikel plaatst de artikelstructuur -->
+                  <xsl:call-template name="section_lichaam_artikel">
                     <xsl:with-param name="group" select="current-group()"/>
                     <xsl:with-param name="index" select="1"/>
                   </xsl:call-template>
-                </xsl:when>
-              </xsl:choose>
-            </xsl:for-each-group>
-          </xsl:when>
-          <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Divisiekop1']">
-            <xsl:for-each-group select="current-group()" group-starting-with="w:p[w:pPr/w:pStyle/@w:val='Divisiekop1'][1]">
-              <xsl:element name="Lichaam" namespace="{$tekst}">
-                <!-- section_lichaam_vrijetekst plaatst de artikelstructuur -->
-                <xsl:call-template name="section_lichaam_vrijetekst">
+                </xsl:element>
+              </xsl:when>
+              <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Divisiekop1']">
+                <!-- section_bijlage plaatst de vrijtekststructuur -->
+                <xsl:call-template name="section_bijlage">
                   <xsl:with-param name="group" select="current-group()"/>
                   <xsl:with-param name="index" select="1"/>
                 </xsl:call-template>
-              </xsl:element>
-            </xsl:for-each-group>
-          </xsl:when>
-        </xsl:choose>
-      </xsl:for-each-group>
-    </xsl:element>
+              </xsl:when>
+            </xsl:choose>
+          </xsl:for-each-group>
+        </xsl:when>
+        <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Divisiekop1']">
+          <xsl:for-each-group select="current-group()" group-starting-with="w:p[w:pPr/w:pStyle/@w:val='Divisiekop1'][1]">
+            <xsl:element name="Lichaam" namespace="{$tekst}">
+              <!-- section_lichaam_vrijetekst plaatst de artikelstructuur -->
+              <xsl:call-template name="section_lichaam_vrijetekst">
+                <xsl:with-param name="group" select="current-group()"/>
+                <xsl:with-param name="index" select="1"/>
+              </xsl:call-template>
+            </xsl:element>
+          </xsl:for-each-group>
+        </xsl:when>
+      </xsl:choose>
+    </xsl:for-each-group>
   </xsl:template>
 
   <xsl:param name="section_lichaam_artikel_word" select="('Kop1','Kop2','Kop3','Kop4','Kop5','Kop6','Lidmetnummering')"/>
