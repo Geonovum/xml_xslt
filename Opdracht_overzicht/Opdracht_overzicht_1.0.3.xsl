@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/" xmlns:imop="https://standaarden.overheid.nl/lvbb/stop/" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ogr="http://ogr.maptools.org/" xmlns:saxon="http://saxon.sf.net/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:g-ref="http://www.geostandaarden.nl/imow/geometrie-ref/v20190901" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" xmlns:g="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901" xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901" xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709" xmlns:rkow="http://www.geostandaarden.nl/imow/owobject/v20190709" xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/" xmlns:geo_stop="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.overheid.nl/imop/def# ../lvbb/LVBB-stop.xsd" xmlns="https://standaarden.overheid.nl/lvbb/stop/">
+<xsl:stylesheet version="2.0" 
+    xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" 
+    xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/" 
+    xmlns:imop="https://standaarden.overheid.nl/lvbb/stop/" 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+    xmlns:ogr="http://ogr.maptools.org/" 
+    xmlns:saxon="http://saxon.sf.net/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901" 
+    xmlns:gml="http://www.opengis.net/gml/3.2" 
+    xmlns:g-ref="http://www.geostandaarden.nl/imow/geometrie-ref/v20190901" 
+    xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" 
+    xmlns:g="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" 
+    xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709" 
+    xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709" 
+    xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" 
+    xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" 
+    xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901" 
+    xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901" 
+    xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709" 
+    xmlns:rkow="http://www.geostandaarden.nl/imow/owobject/v20190709" 
+    xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" 
+    xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901" 
+    xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" 
+    xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" 
+    xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/" 
+    xmlns:geo_stop="https://standaarden.overheid.nl/stop/imop/geo/" 
+    xmlns:fn="http://www.w3.org/2005/xpath-functions" 
+    xmlns:lvbb="http://www.overheid.nl/2017/lvbb" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xsi:schemaLocation="http://www.overheid.nl/imop/def# ../lvbb/LVBB-stop.xsd" 
+    xmlns="https://standaarden.overheid.nl/lvbb/stop/">
+    
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
     <!-- Pad naar het setje bestanden van de opdracht -->
-    <xsl:param name="folder" select="'file:///F:/DSO/Geonovum/GitHub/xml_omgevingsplan_gemeentestad_1.0/opdracht'"/>
+    <xsl:param name="folder" select="'file:///F:/DSO/Geonovum/GitHub/xml_omgevingsplan_gemeentestad_1.0/opdracht_ri'"/>
     <!-- de naam van het root element van het OP bestand -->
     <xsl:param name="OP_root" select="'AanleveringBesluit'"/>
     <!-- functie om het besluit op te halen, compact of klassiek -->
@@ -361,19 +393,31 @@
     <!-- Artikel tekst opmaak -->
     <xsl:template match="." mode="Art_text">
         <xsl:element name="PRE" inherit-namespaces="yes" namespace="">
-            <xsl:for-each select=".//*[local-name()='Al']">
-                <xsl:copy>
+            <xsl:apply-templates select=".//*[local-name()='Al']" mode="refs"/>
+<!--            <xsl:for-each select=".//*[local-name()='Al']">
+                <xsl:copy >
                     <xsl:apply-templates select="@*|node()" mode="refs"/>
                 </xsl:copy>
                 <xsl:value-of select="'&#13;&#10;'"/>
             </xsl:for-each>
-            <xsl:for-each select=".//*[local-name()='Wat']">
+-->            <xsl:for-each select=".//*[local-name()='Wat']">
                 <xsl:copy>
                     <xsl:apply-templates select="@*|node()" mode="refs"/>
                 </xsl:copy>
             </xsl:for-each>
         </xsl:element>
     </xsl:template>
+    <!-- Al -->
+    <xsl:template match="text()" mode="refs">
+        <xsl:value-of select="."/>
+    </xsl:template>
+    <!-- LidNummer -->
+    <xsl:template match=".[local-name()='LidNummer']" mode="refs">
+        <xsl:value-of select="./text()"/>
+    </xsl:template>
+
+    <!-- refs -->
+    <!-- IntIoRef -->
     <xsl:template match=".[local-name()='IntIoRef']" mode="refs">
         <xsl:element name="b">
             <xsl:element name="ins">
@@ -386,16 +430,43 @@
             </xsl:element>
         </xsl:element>
     </xsl:template>
+    <!-- ExtIoRef -->
     <xsl:template match=".[local-name()='ExtIoRef']" mode="refs">
         <xsl:element name="b">
             <xsl:element name="ins">
-                <xsl:value-of select="./text()"/>
+                <xsl:element name="TABLE">
+                    <xsl:element name="TR">
+                        <xsl:element name="TD">eId</xsl:element>
+                        <xsl:element name="TD">
+                            <xsl:value-of select="./@eId"/>
+                        </xsl:element>
+                    </xsl:element>
+                    <xsl:element name="TR">
+                        <xsl:element name="TD">wId</xsl:element>
+                        <xsl:element name="TD">                            
+                            <xsl:value-of select="./@wId"/>
+                        </xsl:element>
+                    </xsl:element>
+                    <xsl:element name="TR">
+                        <xsl:element name="TD">ref</xsl:element>
+                        <xsl:element name="TD">
+                            <xsl:value-of select="./@ref"/>
+                        </xsl:element>
+                    </xsl:element>
+                    <xsl:element name="TR">
+                        <xsl:element name="TD">tekst</xsl:element>
+                        <xsl:element name="TD">
+                            <xsl:value-of select="./text()"/>
+                        </xsl:element>
+                    </xsl:element>
+                </xsl:element>
             </xsl:element>
         </xsl:element>
         <xsl:element name="sup">
             <xsl:value-of select="concat('(',./@eId,'|',./@wId,'|', ./@ref,') ')"/>
         </xsl:element>
     </xsl:template>
+    <!-- IntRef -->
     <xsl:template match=".[local-name()='IntRef']" mode="refs">
         <xsl:element name="b">
             <xsl:element name="ins">
@@ -408,7 +479,20 @@
             </xsl:element>
         </xsl:element>
     </xsl:template>
-
+    <!-- ExtRef -->
+    <xsl:template match=".[local-name()='ExtRef']" mode="refs">
+        <xsl:element name="b">
+            <xsl:element name="ins">
+                <xsl:value-of select="./text()"/>
+            </xsl:element>
+        </xsl:element>
+        <xsl:element name="sup">
+            <xsl:element name="ins">
+                <xsl:value-of select="concat('(', ./@ref,') ')"/>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    
     <!-- RegelingCompact -->
     <!-- Lichaam -->
     <xsl:template match=".[local-name()='Lichaam']" mode="structuur">
@@ -502,8 +586,37 @@
                 <xsl:attribute name="class">sublist</xsl:attribute>
                 Begrippenlijst
             </xsl:element>
+            <xsl:apply-templates select="./child::*[local-name()!='Kop']" mode="structuur"/>
         </xsl:element>
-        <xsl:apply-templates select="./child::*[local-name()!='Kop']" mode="structuur"/>
+    </xsl:template>
+    
+    <!-- Begrip -->
+    <xsl:template match=".[local-name()='Begrip']" mode="structuur">
+        <xsl:element name="TABLE" inherit-namespaces="yes" namespace="">
+            <xsl:element name="TR" inherit-namespaces="yes" namespace="">
+                <xsl:element name="TD" inherit-namespaces="yes" namespace="">
+                    Begrip
+                </xsl:element>
+                <xsl:apply-templates select="./child::*[local-name()!='Kop']" mode="structuur"/>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    
+    <!-- Term -->
+    <xsl:template match=".[local-name()='Term']" mode="structuur">
+        <xsl:element name="TD" inherit-namespaces="yes" namespace="">
+            Term:
+        </xsl:element>
+        <xsl:element name="TD" inherit-namespaces="yes" namespace="">
+                <xsl:apply-templates select="@*|node()" mode="refs"/>
+        </xsl:element>
+    </xsl:template>
+
+    <!-- Definitie -->
+    <xsl:template match=".[local-name()='Definitie']" mode="structuur">
+        <xsl:element name="TD" inherit-namespaces="yes" namespace="">
+                <xsl:apply-templates select="@*|node()" mode="refs"/>
+        </xsl:element>
     </xsl:template>
     
     <!-- Alles onder Lichaam, kop plaatsen en volgende niveau tot Artikel -->
@@ -551,7 +664,7 @@
                                 <xsl:element name="LI" inherit-namespaces="yes" namespace="">Regeltekst: <xsl:value-of select="$regel_id"/>
                                     <xsl:element name="UL" inherit-namespaces="yes" namespace="">
                                         <xsl:element name="LI" inherit-namespaces="yes" namespace="">
-                                            <xsl:for-each select="$ow_regeltekst/root()/element()//*[@xlink:href=$regel_id]/../..">Juridische regel: <xsl:value-of select="./local-name()"/>
+                                            <xsl:for-each select="$ow_regeltekst/root()/element()//*[@xlink:href=$regel_id]/../..">Juridische regel: <xsl:value-of select="./local-name()"/><xsl:value-of select="concat(' (',.//*[local-name()='RegeltekstRef']/../local-name(),')')"/>
                                                 <xsl:element name="UL" inherit-namespaces="yes" namespace="">
                                                     <xsl:element name="LI" inherit-namespaces="yes" namespace="">Identificatie: <xsl:value-of select="./*[local-name()='identificatie']/text()"/>
                                                     </xsl:element>
