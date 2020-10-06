@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<waardelijsten>
+   <versie>1.0.4</versie>
+   <waardelijst>
+      <titel>Activiteitengroep</titel>
+      <waarden>
+         <waarde>
+            <label>planologische gebruiksactiviteit</label>
+            <definitie>Waarde voor attribuut groep bij het object Activiteit voor het vastleggen van een gebied waar regels gelden over de planologische aspecten van het gebruik van gronden en bouwwerken; aspecten die geen betrekking hebben op het bouwen en instandhouden van bouwwerken.</definitie>
+            <symboolcode>vag423</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Thema</titel>
+      <waarden>
+         <waarde>
+            <label>bouwwerken_duurzaamheid</label>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Eenheid</titel>
+      <waarden>
+         <waarde>
+            <label>graad (hoek)</label>
+         </waarde>
+         <waarde>
+            <label>bouwlaag (hoogte)</label>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Bodemgroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Bodem voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Defensiegroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Defensie voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Energievoorzieninggroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Energievoorziening voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Erfgoedgroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Erfgoed voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>ExterneVeiligheidgroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype ExterneVeiligheid voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Geluidgroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Geluid voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Geurgroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Geur voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Landschapgroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Landschap voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Leidinggroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Leiding voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Luchtgroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Lucht voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Mijnbouwgroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Mijnbouw voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Natuurgroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Natuur voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Recreatiegroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Recreatie voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>RuimtelijkGebruikgroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype RuimtelijkGebruik voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>Verkeergroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype Verkeer voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+   <waardelijst>
+      <titel>WaterEnWatersysteemgroep</titel>
+      <waarden>
+         <waarde>
+            <label>maatregelengebied</label>
+            <definitie>Waarde voor attribuut groep bij Gebiedsaanwijzingtype WaterEnWatersysteem voor het aanwijzen van een gebied waarvoor een programma maatregelen bevat om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken.</definitie>
+            <symboolcode>vag523</symboolcode>
+         </waarde>
+      </waarden>
+   </waardelijst>
+</waardelijsten>
