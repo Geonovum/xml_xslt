@@ -165,7 +165,7 @@
           <xsl:element name="Tijdstempels" namespace="{$data}">
             <xsl:element name="Tijdstempel" namespace="{$data}">
               <xsl:element name="doel" namespace="{$data}">
-                <xsl:value-of select="string('/join/id/proces/pv26/2020/Instelling')"/>
+                <xsl:value-of select="concat('/join/id/proces/',$D12,'/',format-date(current-date(),'[Y0001]'),'/Instelling')"/>
               </xsl:element>
               <xsl:element name="soortTijdstempel" namespace="{$data}">
                 <xsl:value-of select="string('juridischWerkendVanaf')"/>
