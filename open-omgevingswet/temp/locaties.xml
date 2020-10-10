@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<locaties>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200001</id>
+      <noemer>ambtsgebied</noemer>
+      <bestandsnaam>ambtsgebied.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/ambtsgebied/nld@2020-08-19;3520</FRBRExpression>
+      <guid>b53ede01-3339-45f2-84ac-f1f039c98b58</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200002</id>
+      <noemer>bebouwingscontour houtkap</noemer>
+      <bestandsnaam>ambtsgebied.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/ambtsgebied/nld@2020-08-19;3520</FRBRExpression>
+      <guid>b53ede01-3339-45f2-84ac-f1f039c98b58</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200003</id>
+      <noemer>beschermde laanstructuur</noemer>
+      <bestandsnaam>laanstructuur.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/laanstructuur/nld@2020-08-19;3520</FRBRExpression>
+      <guid>d96b4661-e894-45df-b2bb-b62ff9e770db</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200004</id>
+      <noemer>beschermingszone 0-5 meter tot de laanstructuur</noemer>
+      <bestandsnaam>beschermingszonelaanstructuur1.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/beschermingszonelaanstructuur1/nld@2020-08-19;3520</FRBRExpression>
+      <guid>ec7277af-89c5-48f0-9652-fc16cfb79f0d</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200005</id>
+      <noemer>beschermingszone 5-8 meter tot de laanstructuur</noemer>
+      <bestandsnaam>beschermingszonelaanstructuur2.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/beschermingszonelaanstructuur2/nld@2020-08-19;3520</FRBRExpression>
+      <guid>1b711dd8-e2a2-4eec-9ad0-7a2bcdfe42d3</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200006</id>
+      <noemer>beschermingszone 8-10 meter tot de laanstructuur</noemer>
+      <bestandsnaam>beschermingszonelaanstructuur3.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/beschermingszonelaanstructuur3/nld@2020-08-19;3520</FRBRExpression>
+      <guid>7ca89ddf-1049-4584-9f03-3f62c48d334a</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200007</id>
+      <noemer>gestapelde bouw</noemer>
+      <bestandsnaam>gestapeld.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/gestapeld/nld@2020-08-19;3520</FRBRExpression>
+      <guid>a69cdb5b-119b-41be-8f34-2f2b3bb81a13</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200008</id>
+      <noemer>licht</noemer>
+      <bestandsnaam>licht.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/licht/nld@2020-08-19;3520</FRBRExpression>
+      <guid>fbfbb2d2-23cf-4019-9672-ca47be358aa6</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200009</id>
+      <noemer>lichtaandachtsgebied</noemer>
+      <bestandsnaam>lichtaandachtsgebied.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/lichtaandachtsgebied/nld@2020-08-19;3520</FRBRExpression>
+      <guid>12504e0a-36a8-4485-8302-5c17aa091fdf</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200010</id>
+      <noemer>meldingszone waardevol groen</noemer>
+      <bestandsnaam>meldingszonewaardevolgroen.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/meldingszonewaardevolgroen/nld@2020-08-19;3520</FRBRExpression>
+      <guid>45fdae21-9cfc-40ee-b644-b505dda7d2b8, 7500c3e8-f425-449f-8735-9b381a9ad1b7, 62baf6fa-b4df-4964-9934-5b9113463a9a</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200011</id>
+      <noemer>ontwikkellocatie</noemer>
+      <bestandsnaam>ontwikkellocatie.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/ontwikkellocatie/nld@2020-08-19;3520</FRBRExpression>
+      <guid>97592cd6-589a-47a9-8245-99f360f0e6bc</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200012</id>
+      <noemer>openbaar gebied</noemer>
+      <bestandsnaam>openbaargebied.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/openbaargebied/nld@2020-08-19;3520</FRBRExpression>
+      <guid>5e43b2aa-3c5c-4eca-98e1-5d98e3c9997d</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200013</id>
+      <noemer>speelveld</noemer>
+      <bestandsnaam>speelveld.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/verkeervervoer/nld@2020-08-19;3520</FRBRExpression>
+      <guid>3bd9d431-eadf-4ddb-90ac-724b6224f110</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200014</id>
+      <noemer>sportveld</noemer>
+      <bestandsnaam>speelveld.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/verkeervervoer/nld@2020-08-19;3520</FRBRExpression>
+      <guid>3bd9d431-eadf-4ddb-90ac-724b6224f110</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200015</id>
+      <noemer>waardevol groen</noemer>
+      <bestandsnaam>waardevolgroen.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/waardevolgroen/nld@2020-08-19;3520</FRBRExpression>
+      <guid>0205f43e-deba-48cc-b0f4-b718589f82f9, 99e41ac5-8400-40e3-92f1-fd6ab306bb55, 690853fa-f0af-45bf-9876-d31181e045dd</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200016</id>
+      <noemer>woongebied</noemer>
+      <bestandsnaam>woongebieden.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/woongebieden/nld@2020-08-19;3520</FRBRExpression>
+      <guid>937c1973-8325-4f72-ab44-6d0b83b82bf0</guid>
+   </locatie>
+   <locatie>
+      <id>nl.imow-gm0355.gebiedengroep.20200017</id>
+      <noemer>zelfbouwlocatie</noemer>
+      <bestandsnaam>zelfbouwlocatie.gml</bestandsnaam>
+      <FRBRExpression>/join/id/regdata/gm0355/2020/zelfbouwlocatie/nld@2020-08-19;3520</FRBRExpression>
+      <guid>498dc584-5100-4739-9606-7d55a7f2a29b</guid>
+   </locatie>
+</locaties>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             schemaversie="1.0.3">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/gm0355/2020/openbaargebied</FRBRWork>
+         <FRBRExpression>/join/id/regdata/gm0355/2020/openbaargebied/nld@2020-10-10</FRBRExpression>
+         <soortWork>/join/id/stop/work_010</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftGeboorteregeling>/akn/nl/act/gm0355/2020/OPZEI001/nld@2020-10-01;1</heeftGeboorteregeling>
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>openbaargebied.gml</bestandsnaam>
+                  <hash>7b1f756946a641a4c4d4e0e76cd019e6e96573ce2197b0b6db89668ac34ea366c80e5c0af448c1829e006561758b964fb344042cedbccbe5a2253cb2b95f4d7f</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/gemeente/gm0355</eindverantwoordelijke>
+         <maker>/tooi/id/gemeente/gm0355</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>openbaar gebied</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/regdata/gm0355/2020/openbaargebied/nld@2020-10-10</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <naamInformatieObject>openbaar gebied</naamInformatieObject>
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>/akn/nl/act/gm0355/2020/OPZEI001</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Gemeente Zeist</sl:gebied>
+         <sl:leveringsId>/akn/nl/act/gm0355/2020/OPZEI001-20201010</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Omgevingsnorm</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200001</rol:identificatie>
+               <rol:naam>minimum afstand hoofdgebouw tot rooilijn zelfbouwlocatie</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000010001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>3</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200017"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200002</rol:identificatie>
+               <rol:naam>maximum afstand rooilijn zelfbouwlocatie</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000020001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>20</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200017"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200003</rol:identificatie>
+               <rol:naam>minimum afstand hoofdgebouw tot de zijdelingse perceelgrens zelfbouwlocatie</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000030001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>2,75</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200017"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200004</rol:identificatie>
+               <rol:naam>maximale goothoogte zelfbouwlocatie</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumGoothoogte</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000040001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>7</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200017"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200005</rol:identificatie>
+               <rol:naam>maximale goothoogte</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumGoothoogte</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000050001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>3</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200016"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200006</rol:identificatie>
+               <rol:naam>maximale bouwhoogte</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000060001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>11</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200017"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200007</rol:identificatie>
+               <rol:naam>maximum bouwhoogte</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000070001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>4,5</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200016"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200008</rol:identificatie>
+               <rol:naam>maximum bouwhoogte aangebouwd bijbehorend bouwwerk</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</rol:type>
+               <!--Let op: eenheid '' is niet gevonden in waardelijst 'Eenheid'.-->
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000080001</rol:identificatie>
+                     <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200016"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200009</rol:identificatie>
+               <rol:naam>maximale oppervlakte hoofdgebouw inclusief bijbehorende bouwwerken zelfbouwlocatie vrijstaande woning</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBebouwdeOppervlakte</rol:type>
+               <!--Let op: eenheid 'm2' is niet gevonden in waardelijst 'Eenheid'.-->
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000090001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>225</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200017"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200010</rol:identificatie>
+               <rol:naam>maximale oppervlakte hoofdgebouw inclusief bijbehorende bouwwerken zelfbouwlocatie overig</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBebouwdeOppervlakte</rol:type>
+               <!--Let op: eenheid '%' is niet gevonden in waardelijst 'Eenheid'.-->
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000100001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>60</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200017"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200011</rol:identificatie>
+               <rol:naam>maximale diepte erkers en ingangspartijen woongebieden</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumDiepte</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000110001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>1.5</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200016"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200012</rol:identificatie>
+               <rol:naam>gezamelijk maximum oppervlak erkers en ingangspartijen per woning</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumOppervlakte</rol:type>
+               <!--Let op: eenheid 'm2' is niet gevonden in waardelijst 'Eenheid'.-->
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000120001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>6</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200016"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200013</rol:identificatie>
+               <rol:naam>maximum aantal woningen ontwikkellocatie: 60</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumAantalWoningen</rol:type>
+               <!--Let op: eenheid '' is niet gevonden in waardelijst 'Eenheid'.-->
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000130001</rol:identificatie>
+                     <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200011"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200014</rol:identificatie>
+               <rol:naam>minimum % van de woningen in het segment sociale huur en/of sociale koop ontwikkellocatie: 25</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MinimumAantalWoningen</rol:type>
+               <!--Let op: eenheid '' is niet gevonden in waardelijst 'Eenheid'.-->
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000140001</rol:identificatie>
+                     <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200011"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200015</rol:identificatie>
+               <rol:naam>minimum % van de woningen in het segment geliberaliseerde woningen voor middenhuur ontwikkellocatie: 35</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MinimumAantalWoningen</rol:type>
+               <!--Let op: eenheid '' is niet gevonden in waardelijst 'Eenheid'.-->
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000150001</rol:identificatie>
+                     <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200011"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200016</rol:identificatie>
+               <rol:naam>minimum afstand voorgevelrooilijn bijbehorende bouwwerken bij vrijstaande woningen</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000160001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>7,5</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200016"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200017</rol:identificatie>
+               <rol:naam>maximale gezamenlijke oppervlakte van bijbehorende bouwwerken bij vrijstaande woningen</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBebouwdeOppervlakte</rol:type>
+               <!--Let op: eenheid '' is niet gevonden in waardelijst 'Eenheid'.-->
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000170001</rol:identificatie>
+                     <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200016"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200018</rol:identificatie>
+               <rol:naam>maximum bouwhoogte erkers en ingangspartijen</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</rol:type>
+               <!--Let op: eenheid '' is niet gevonden in waardelijst 'Eenheid'.-->
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000180001</rol:identificatie>
+                     <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200016"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200019</rol:identificatie>
+               <rol:naam>maximum bouwhoogte lichtmast</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000190001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>16</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200008"/>
+                        <!--Let op: locatie 'sport' ontbreekt in owLocatie.xml.-->
+                        <l:LocatieRef xlink:href="onbekend"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200020</rol:identificatie>
+               <rol:naam>maximum oppervlak bedrijf aan huis</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumOppervlakte</rol:type>
+               <!--Let op: eenheid 'm2' is niet gevonden in waardelijst 'Eenheid'.-->
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000200001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>30</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200016"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0355.omgevingsnorm.20200021</rol:identificatie>
+               <rol:naam>maximaal percentage bedrijf aan huis</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumOppervlakte</rol:type>
+               <!--Let op: eenheid '%' is niet gevonden in waardelijst 'Eenheid'.-->
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/onbekend</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0355.normwaarde.202000210001</rol:identificatie>
+                     <rol:kwantitatieveWaarde>30</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0355.gebiedengroep.20200016"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             schemaversie="1.0.3">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/gm0355/2020/ambtsgebied</FRBRWork>
+         <FRBRExpression>/join/id/regdata/gm0355/2020/ambtsgebied/nld@2020-10-10</FRBRExpression>
+         <soortWork>/join/id/stop/work_010</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftGeboorteregeling>/akn/nl/act/gm0355/2020/OPZEI001/nld@2020-10-01;1</heeftGeboorteregeling>
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>ambtsgebied.gml</bestandsnaam>
+                  <hash>1e4bb4dd67ddb78ff95795f713bb4515398a275473d84e4244e4712ffce2640990a202dd2f54ac04ab1d7ce96c979b99694da382fc7d2a068ad21e20903bce3f</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/gemeente/gm0355</eindverantwoordelijke>
+         <maker>/tooi/id/gemeente/gm0355</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>bebouwingscontour houtkap</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/regdata/gm0355/2020/ambtsgebied/nld@2020-10-10</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <naamInformatieObject>bebouwingscontour houtkap</naamInformatieObject>
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>

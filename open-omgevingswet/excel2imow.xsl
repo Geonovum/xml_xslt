@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
   <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
   <xsl:strip-space elements="*"/>
 
-  <xsl:param name="temp.dir" select="string('file:/C:/Werkbestanden/Geonovum/open-omgevingswet/temp')"/>
-  <xsl:param name="output.dir" select="string('file:/C:/Werkbestanden/Geonovum/open-omgevingswet/output')"/>
+  <xsl:param name="input.dir" select="string('file:/C:/Werkbestanden/Geonovum/open-omgevingswet/input')"/>
+  <xsl:param name="temp.dir" select="string('file:/C:/Werkbestanden/Geonovum/open-omgevingswet/output')"/>
 
-  <xsl:param name="besluit" select="document(concat($temp.dir,'/besluit.xml'))/AanleveringBesluit" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
-  <xsl:param name="excel" select="document(concat($temp.dir,'/excel.xml'))/Workbook" xpath-default-namespace="urn:schemas-microsoft-com:office:spreadsheet"/>
+  <xsl:param name="besluit" select="collection(concat($input.dir,'/op?select=*.xml'))/AanleveringBesluit" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
+  <xsl:param name="excel" select="collection(concat($input.dir,'/ow?select=*.xml'))/Workbook" xpath-default-namespace="urn:schemas-microsoft-com:office:spreadsheet"/>
   <xsl:param name="waardelijsten" select="document('waardelijsten 1.0.3.xml')/waardelijsten"/>
   <xsl:param name="OIN" select="document('OIN.xml')"/>
 
   <xsl:param name="ID01" select="string($besluit//RegelingMetadata/eindverantwoordelijke)" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-  <xsl:param name="ID02" select="fn:tokenize(($besluit//FRBRWork)[2],'/')[last()]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+  <xsl:param name="ID02" select="string(($besluit//ExpressionIdentificatie/FRBRWork)[2])" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
   <xsl:param name="ID03" select="fn:tokenize($ID01,'/')[last()]"/>
 
   <!-- temp_regelteksten is nodig om te controleren of er artikelen en onderliggende leden zijn geannoteerd -->
@@ -147,15 +147,18 @@
         <xsl:element name="groep">
           <xsl:value-of select="lower-case(normalize-space(($row/cell[3]/data,'onbekend')[1]))" xpath-default-namespace=""/>
         </xsl:element>
-        <xsl:element name="waarde">
+        <xsl:element name="type">
           <xsl:value-of select="lower-case(normalize-space(($row/cell[4]/data,'onbekend')[1]))" xpath-default-namespace=""/>
         </xsl:element>
-        <xsl:if test="$row/cell[5]/data">
+        <xsl:element name="waarde">
+          <xsl:value-of select="lower-case(normalize-space(($row/cell[5]/data,'onbekend')[1]))" xpath-default-namespace=""/>
+        </xsl:element>
+        <xsl:if test="$row/cell[5]/data" xpath-default-namespace="">
           <xsl:element name="eenheid">
-            <xsl:value-of select="lower-case(normalize-space($row/cell[5]/data))" xpath-default-namespace=""/>
+            <xsl:value-of select="lower-case(normalize-space($row/cell[6]/data))" xpath-default-namespace=""/>
           </xsl:element>
         </xsl:if>
-        <xsl:for-each select="fn:tokenize(($row/cell[6]/data,'onbekend')[1],'[,;]')" xpath-default-namespace="">
+        <xsl:for-each select="fn:tokenize(($row/cell[7]/data,'onbekend')[1],'[,;]')" xpath-default-namespace="">
           <xsl:element name="locatie">
             <xsl:value-of select="lower-case(normalize-space(.))"/>
           </xsl:element>
@@ -169,7 +172,7 @@
     <xsl:for-each-group select="$temp_normen/norm" group-by="./id">
       <!-- hier controle regelteksten -->
       <xsl:if test="$regelteksten/regeltekst[norm=current-group()[1]/id]">
-        <xsl:copy-of select="current-group()[1]"/>
+        <xsl:copy-of select="current-group()"/>
       </xsl:if>
     </xsl:for-each-group>
   </xsl:param>
@@ -227,13 +230,16 @@
       </xsl:variable>
       <xsl:variable name="id" select="lower-case(normalize-space($row/cell[1]/data))" xpath-default-namespace=""/>
       <xsl:variable name="gml.filename" select="lower-case(normalize-space(($row/cell[3]/data,'onbekend')[1]))" xpath-default-namespace=""/>
-      <xsl:variable name="gml.file" select="document(concat($temp.dir,'/gml/',$gml.filename))/geo:GeoInformatieObjectVaststelling" xpath-default-namespace=""/>
+      <xsl:variable name="gml.file" select="document(concat($input.dir,'/gml/',$gml.filename))/geo:GeoInformatieObjectVaststelling" xpath-default-namespace=""/>
       <xsl:element name="locatie">
         <xsl:element name="noemer">
           <xsl:value-of select="$id"/>
         </xsl:element>
         <xsl:element name="bestandsnaam">
           <xsl:value-of select="$gml.filename"/>
+        </xsl:element>
+        <xsl:element name="FRBRExpression">
+          <xsl:value-of select="$gml.file//geo:FRBRExpression"/>
         </xsl:element>
         <xsl:for-each select="$gml.file//basisgeo:id">
           <xsl:element name="guid">
@@ -262,11 +268,13 @@
     <xsl:call-template name="owOmgevingsnorm"/>
     <xsl:call-template name="owGebiedsaanwijzing"/>
     <xsl:call-template name="owLocatie"/>
+    <xsl:call-template name="owRegelingsgebied"/>
+    <xsl:call-template name="opLocatie"/>
   </xsl:template>
 
   <xsl:template name="owRegeltekst">
     <xsl:if test="$regelteksten/regeltekst">
-      <xsl:result-document href="{concat($output.dir,'/owRegeltekst.xml')}" method="xml">
+      <xsl:result-document href="{concat($temp.dir,'/ow/owRegeltekst.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:copy-of select="root()/ow-dc:owBestand/(@*|namespace::*)"/>
           <xsl:element name="sl:standBestand">
@@ -317,7 +325,8 @@
                       </xsl:element>
                     </xsl:element>
                     <xsl:for-each select="$node/thema">
-                      <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel='Thema']/waarden/waarde[label=string(current())]/uri,'http://standaarden.omgevingswet.overheid.nl/onbekend')[1]"/>
+                      <!-- controle uitbreiden met term en alles lower-case -->
+                      <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel='Thema']/waarden/waarde[(label=string(current())) or (lower-case(term)=string(current()))]/uri,'http://standaarden.omgevingswet.overheid.nl/onbekend')[1]"/>
                       <xsl:if test="fn:ends-with($uri,'onbekend')">
                         <xsl:comment><xsl:value-of select="concat('Let op: thema ''',string(current()),''' is niet gevonden in waardelijst ''Thema''.')"/></xsl:comment>
                       </xsl:if>
@@ -379,7 +388,7 @@
                               </xsl:element>
                               <xsl:choose>
                                 <xsl:when test="$node/activiteitregelkwalificatie">
-                                  <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel='Activiteitregelkwalificatie']/waarden/waarde[label=$node/activiteitregelkwalificatie]/uri,'onbekend')[1]"/>
+                                  <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel='Activiteitregelkwalificatie']/waarden/waarde[(label=$node/activiteitregelkwalificatie) or (lower-case(term)=$node/activiteitregelkwalificatie)]/uri,'onbekend')[1]"/>
                                   <xsl:if test="$uri='onbekend'">
                                     <xsl:comment><xsl:value-of select="concat('Let op: activiteitregelkwalificatie ''',$node/activiteitregelkwalificatie,''' is niet gevonden in waardelijst ''Activiteitregelkwalificatie''.')"/></xsl:comment>
                                   </xsl:if>
@@ -452,7 +461,7 @@
 
   <xsl:template name="owActiviteit">
     <xsl:if test="$activiteiten/activiteit">
-      <xsl:result-document href="{concat($output.dir,'/owActiviteit.xml')}" method="xml">
+      <xsl:result-document href="{concat($temp.dir,'/ow/owActiviteit.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:copy-of select="root()/ow-dc:owBestand/(@*|namespace::*)"/>
           <xsl:element name="sl:standBestand">
@@ -486,7 +495,7 @@
                     </xsl:element>
                     <xsl:choose>
                       <xsl:when test="$node/groep">
-                        <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel='Activiteitengroep']/waarden/waarde[label=$node/groep]/uri,'http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/onbekend')[1]"/>
+                        <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel='Activiteitengroep']/waarden/waarde[(label=$node/groep) or (lower-case(term)=$node/groep)]/uri,'http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/onbekend')[1]"/>
                         <xsl:if test="fn:ends-with($uri,'onbekend')">
                           <xsl:comment><xsl:value-of select="concat('Let op: activiteitengroep ''',$node/groep,''' is niet gevonden in waardelijst ''Activiteitengroep''.')"/></xsl:comment>
                         </xsl:if>
@@ -532,7 +541,7 @@
 
   <xsl:template name="owOmgevingsnorm">
     <xsl:if test="$normen/norm">
-      <xsl:result-document href="{concat($output.dir,'/owOmgevingsnorm.xml')}" method="xml">
+      <xsl:result-document href="{concat($temp.dir,'/ow/owOmgevingsnorm.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:copy-of select="root()/ow-dc:owBestand/(@*|namespace::*)"/>
           <xsl:element name="sl:standBestand">
@@ -552,8 +561,7 @@
                 </xsl:element>
               </xsl:element>
             </xsl:element>
-            <xsl:for-each select="$normen/norm">
-              <xsl:variable name="node" select="."/>
+            <xsl:for-each-group select="$normen/norm" group-by="./id">
               <xsl:variable name="index_norm" select="position()"/>
               <xsl:element name="sl:stand">
                 <xsl:element name="ow-dc:owObject">
@@ -562,13 +570,13 @@
                       <xsl:value-of select="concat('nl.imow-',$ID03,'.omgevingsnorm.',fn:format-date(current-date(),'[Y0000]'),fn:format-number($index_norm,'0000'))"/>
                     </xsl:element>
                     <xsl:element name="rol:naam">
-                      <xsl:value-of select="($node/naam,'onbekend')[1]"/>
+                      <xsl:value-of select="(current-group()[1]/naam,'onbekend')[1]"/>
                     </xsl:element>
                     <xsl:choose>
-                      <xsl:when test="($node/id|$node/naam)">
-                        <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel='TypeNorm']/waarden/waarde[(term=$node/id) or (label=$node/naam)]/uri,'http://standaarden.omgevingswet.overheid.nl/onbekend')[1]"/>
+                      <xsl:when test="current-group()[1]/type">
+                        <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel='TypeNorm']/waarden/waarde[(lower-case(term)=current-group()[1]/type) or (label=current-group()[1]/type)]/uri,'http://standaarden.omgevingswet.overheid.nl/onbekend')[1]"/>
                         <xsl:if test="fn:ends-with($uri,'onbekend')">
-                          <xsl:comment><xsl:value-of select="concat('Let op: type norm ''',$node/id,''' en naam norm ''',$node/naam,''' zijn niet gevonden in waardelijst ''TypeNorm''.')"/></xsl:comment>
+                          <xsl:comment><xsl:value-of select="concat('Let op: type norm ''',current-group()[1]/type,''' is niet gevonden in waardelijst ''TypeNorm''.')"/></xsl:comment>
                         </xsl:if>
                         <xsl:element name="rol:type">
                           <xsl:value-of select="$uri"/>
@@ -581,61 +589,65 @@
                         </xsl:element>
                       </xsl:otherwise>
                     </xsl:choose>
-                    <xsl:if test="$node/eenheid">
-                      <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel='Eenheid']/waarden/waarde[label=$node/eenheid]/uri,'http://standaarden.omgevingswet.overheid.nl/onbekend')[1]"/>
+                    <xsl:if test="current-group()[1]/eenheid">
+                      <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel='Eenheid']/waarden/waarde[label=current-group()[1]/eenheid]/uri,'http://standaarden.omgevingswet.overheid.nl/onbekend')[1]"/>
                       <xsl:if test="fn:ends-with($uri,'onbekend')">
-                        <xsl:comment><xsl:value-of select="concat('Let op: eenheid ''',$node/eenheid,''' is niet gevonden in waardelijst ''Eenheid''.')"/></xsl:comment>
+                        <xsl:comment><xsl:value-of select="concat('Let op: eenheid ''',current-group()[1]/eenheid,''' is niet gevonden in waardelijst ''Eenheid''.')"/></xsl:comment>
                       </xsl:if>
                       <xsl:element name="rol:eenheid">
                         <xsl:value-of select="$uri"/>
                       </xsl:element>
                     </xsl:if>
-                    <xsl:for-each select="$node/waarde">
+                    <xsl:if test="current-group()/waarde">
                       <xsl:element name="rol:normwaarde">
-                        <xsl:element name="rol:Normwaarde">
-                          <xsl:element name="rol:identificatie">
-                            <xsl:value-of select="concat('nl.imow-',$ID03,'.normwaarde.',fn:format-date(current-date(),'[Y0000]'),fn:format-number($index_norm,'0000'))"/>
-                          </xsl:element>
-                          <xsl:choose>
-                            <xsl:when test="contains($node/waarde,'regeltekst')">
-                              <xsl:element name="rol:waardeInRegeltekst">
-                                <xsl:value-of select="$node/waarde"/>
-                              </xsl:element>
-                            </xsl:when>
-                            <xsl:otherwise>
-                              <xsl:element name="rol:kwantitatieveWaarde">
-                                <xsl:value-of select="$node/waarde"/>
-                              </xsl:element>
-                            </xsl:otherwise>
-                          </xsl:choose>
-                          <xsl:if test="$node/locatie">
-                            <xsl:element name="rol:locatieaanduiding">
-                              <xsl:for-each select="$node/locatie">
-                                <xsl:variable name="index_locatie" select="fn:index-of($locaties/locatie/noemer,.)"/>
-                                <xsl:choose>
-                                  <xsl:when test="$index_locatie gt 0">
-                                    <xsl:element name="l:LocatieRef">
-                                      <xsl:attribute name="xlink:href" select="concat('nl.imow-',$ID03,'.gebiedengroep.',fn:format-date(current-date(),'[Y0000]'),fn:format-number($index_locatie,'0000'))"/>
-                                    </xsl:element>
-                                  </xsl:when>
-                                  <xsl:otherwise>
-                                    <xsl:comment><xsl:value-of select="concat('Let op: locatie ''',string(current()),''' ontbreekt in owLocatie.xml.')"/></xsl:comment>
-                                    <xsl:element name="l:LocatieRef">
-                                      <xsl:attribute name="xlink:href" select="string('onbekend')"/>
-                                    </xsl:element>
-                                  </xsl:otherwise>
-                                </xsl:choose>
-                              </xsl:for-each>
+                        <xsl:for-each select="current-group()">
+                          <xsl:variable name="node" select="."/>
+                          <xsl:variable name="index_waarde" select="position()"/>
+                          <xsl:element name="rol:Normwaarde">
+                            <xsl:element name="rol:identificatie">
+                              <xsl:value-of select="concat('nl.imow-',$ID03,'.normwaarde.',fn:format-date(current-date(),'[Y0000]'),fn:format-number($index_norm,'0000'),fn:format-number($index_waarde,'0000'))"/>
                             </xsl:element>
-                          </xsl:if>
-                        </xsl:element>
+                            <xsl:choose>
+                              <xsl:when test="contains($node/waarde,'regeltekst')">
+                                <xsl:element name="rol:waardeInRegeltekst">
+                                  <xsl:value-of select="$node/waarde"/>
+                                </xsl:element>
+                              </xsl:when>
+                              <xsl:otherwise>
+                                <xsl:element name="rol:kwantitatieveWaarde">
+                                  <xsl:value-of select="$node/waarde"/>
+                                </xsl:element>
+                              </xsl:otherwise>
+                            </xsl:choose>
+                            <xsl:if test="$node/locatie">
+                              <xsl:element name="rol:locatieaanduiding">
+                                <xsl:for-each select="$node/locatie">
+                                  <xsl:variable name="index_locatie" select="fn:index-of($locaties/locatie/noemer,.)"/>
+                                  <xsl:choose>
+                                    <xsl:when test="$index_locatie gt 0">
+                                      <xsl:element name="l:LocatieRef">
+                                        <xsl:attribute name="xlink:href" select="concat('nl.imow-',$ID03,'.gebiedengroep.',fn:format-date(current-date(),'[Y0000]'),fn:format-number($index_locatie,'0000'))"/>
+                                      </xsl:element>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                      <xsl:comment><xsl:value-of select="concat('Let op: locatie ''',string(current()),''' ontbreekt in owLocatie.xml.')"/></xsl:comment>
+                                      <xsl:element name="l:LocatieRef">
+                                        <xsl:attribute name="xlink:href" select="string('onbekend')"/>
+                                      </xsl:element>
+                                    </xsl:otherwise>
+                                  </xsl:choose>
+                                </xsl:for-each>
+                              </xsl:element>
+                            </xsl:if>
+                          </xsl:element>
+                        </xsl:for-each>
                       </xsl:element>
-                    </xsl:for-each>
+                    </xsl:if>
                     <xsl:choose>
-                      <xsl:when test="$node/groep">
-                        <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel='Omgevingsnormgroep']/waarden/waarde[label=$node/groep]/uri,'http://standaarden.omgevingswet.overheid.nl/onbekend')[1]"/>
+                      <xsl:when test="current-group()[1]/groep">
+                        <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel='Omgevingsnormgroep']/waarden/waarde[(label=current-group()[1]/groep) or (lower-case(term)=current-group()[1]/groep)]/uri,'http://standaarden.omgevingswet.overheid.nl/onbekend')[1]"/>
                         <xsl:if test="fn:ends-with($uri,'onbekend')">
-                          <xsl:comment><xsl:value-of select="concat('Let op: omgevingsnormgroep ''',$node/groep,''' is niet gevonden in waardelijst ''Omgevingsnormgroep''.')"/></xsl:comment>
+                          <xsl:comment><xsl:value-of select="concat('Let op: omgevingsnormgroep ''',current-group()[1]/groep,''' is niet gevonden in waardelijst ''Omgevingsnormgroep''.')"/></xsl:comment>
                         </xsl:if>
                         <xsl:element name="rol:groep">
                           <xsl:value-of select="$uri"/>
@@ -651,7 +663,7 @@
                   </xsl:element>
                 </xsl:element>
               </xsl:element>
-            </xsl:for-each>
+            </xsl:for-each-group>
           </xsl:element>
         </xsl:element>
       </xsl:result-document>
@@ -660,7 +672,7 @@
 
   <xsl:template name="owGebiedsaanwijzing">
     <xsl:if test="$gebiedsaanwijzingen/gebiedsaanwijzing">
-      <xsl:result-document href="{concat($output.dir,'/owGebiedsaanwijzing.xml')}" method="xml">
+      <xsl:result-document href="{concat($temp.dir,'/ow/owGebiedsaanwijzing.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:copy-of select="root()/ow-dc:owBestand/(@*|namespace::*)"/>
           <xsl:element name="sl:standBestand">
@@ -711,7 +723,7 @@
                     </xsl:element>
                     <xsl:choose>
                       <xsl:when test="$node/groep">
-                        <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel=concat($node/type,'groep')]/waarden/waarde[label=$node/groep]/uri,'http://standaarden.omgevingswet.overheid.nl/onbekend')[1]"/>
+                        <xsl:variable name="uri" select="($waardelijsten/waardelijst[titel=concat($node/type,'groep')]/waarden/waarde[(label=$node/groep) or (lower-case(term)=$node/groep)]/uri,'http://standaarden.omgevingswet.overheid.nl/onbekend')[1]"/>
                         <xsl:if test="fn:ends-with($uri,'onbekend')">
                           <xsl:comment><xsl:value-of select="concat('Let op: groep ''',$node/groep,''' is niet gevonden in waardelijst ''',concat($node/type,'groep'),'''.')"/></xsl:comment>
                         </xsl:if>
@@ -758,7 +770,7 @@
 
   <xsl:template name="owLocatie">
     <xsl:if test="$locaties/locatie">
-      <xsl:result-document href="{concat($output.dir,'/owLocatie.xml')}" method="xml">
+      <xsl:result-document href="{concat($temp.dir,'/ow/owLocatie.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:copy-of select="root()/ow-dc:owBestand/(@*|namespace::*)"/>
           <xsl:element name="sl:standBestand">
@@ -828,6 +840,82 @@
               </xsl:for-each>
             </xsl:for-each>
           </xsl:element>
+        </xsl:element>
+      </xsl:result-document>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="owRegelingsgebied">
+    <xsl:variable name="node" select="$locaties/locatie[noemer='ambtsgebied'][1]"/>
+    <xsl:variable name="index_locatie" select="fn:index-of($locaties/locatie/noemer,'ambtsgebied')"/>
+    <xsl:if test="$node">
+      <xsl:result-document href="{concat($temp.dir,'/ow/owRegelingsgebied.xml')}" method="xml">
+        <xsl:element name="ow-dc:owBestand">
+          <xsl:copy-of select="root()/ow-dc:owBestand/(@*|namespace::*)"/>
+          <xsl:element name="sl:standBestand">
+            <xsl:element name="sl:dataset">
+              <xsl:value-of select="$ID02"/>
+            </xsl:element>
+            <xsl:element name="sl:inhoud">
+              <xsl:element name="sl:gebied">
+                <xsl:value-of select="$OIN/lijst/item[BG=$ID01]/naam"/>
+              </xsl:element>
+              <xsl:element name="sl:leveringsId">
+                <xsl:value-of select="fn:string-join(($ID02,fn:format-date(current-date(),'[Y0000][M00][D00]')),'-')"/>
+              </xsl:element>
+              <xsl:element name="sl:objectTypen">
+                <xsl:element name="sl:objectType">
+                  <xsl:value-of select="string('Regelingsgebied')"/>
+                </xsl:element>
+              </xsl:element>
+            </xsl:element>
+            <xsl:element name="sl:stand">
+              <xsl:element name="ow-dc:owObject">
+                <xsl:element name="rg:Regelingsgebied">
+                  <xsl:element name="rg:identificatie">
+                    <xsl:value-of select="concat('nl.imow-',$ID03,'.regelingsgebied.',fn:format-date(current-date(),'[Y0000]'),'0001')"/>
+                  </xsl:element>
+                  <xsl:element name="rg:locatieaanduiding">
+                    <xsl:element name="l:LocatieRef">
+                      <xsl:attribute name="xlink:href" select="concat('nl.imow-',$ID03,'.gebiedengroep.',fn:format-date(current-date(),'[Y0000]'),fn:format-number($index_locatie,'0000'))"/>
+                    </xsl:element>
+                  </xsl:element>
+                </xsl:element>
+              </xsl:element>
+            </xsl:element>
+          </xsl:element>
+        </xsl:element>
+      </xsl:result-document>
+    </xsl:if>
+  </xsl:template>
+
+  <!-- maak een tijdelijk bestand van alle gebiedengroepen -->
+
+  <xsl:template name="opLocatie">
+    <xsl:if test="$locaties/locatie">
+      <xsl:result-document href="{concat($temp.dir,'/locaties.xml')}" method="xml">
+        <xsl:element name="locaties">
+          <xsl:for-each select="$locaties/locatie">
+            <xsl:variable name="node" select="."/>
+            <xsl:variable name="index" select="position()"/>
+            <xsl:element name="locatie">
+              <xsl:element name="id">
+                <xsl:value-of select="concat('nl.imow-',$ID03,'.gebiedengroep.',fn:format-date(current-date(),'[Y0000]'),fn:format-number($index,'0000'))"/>
+              </xsl:element>
+              <xsl:element name="noemer">
+                <xsl:value-of select="($node/noemer,'onbekend')[1]"/>
+              </xsl:element>
+              <xsl:element name="bestandsnaam">
+                <xsl:value-of select="($node/bestandsnaam,'onbekend')[1]"/>
+              </xsl:element>
+              <xsl:element name="FRBRExpression">
+                <xsl:value-of select="($node/FRBRExpression,'onbekend')[1]"/>
+              </xsl:element>
+              <xsl:element name="guid">
+                <xsl:value-of select="(fn:string-join($node/guid,', '),'onbekend')[1]"/>
+              </xsl:element>
+            </xsl:element>
+          </xsl:for-each>
         </xsl:element>
       </xsl:result-document>
     </xsl:if>

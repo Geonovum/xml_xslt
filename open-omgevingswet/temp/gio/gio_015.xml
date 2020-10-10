@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             schemaversie="1.0.3">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/gm0355/2020/waardevolgroen</FRBRWork>
+         <FRBRExpression>/join/id/regdata/gm0355/2020/waardevolgroen/nld@2020-10-10</FRBRExpression>
+         <soortWork>/join/id/stop/work_010</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftGeboorteregeling>/akn/nl/act/gm0355/2020/OPZEI001/nld@2020-10-01;1</heeftGeboorteregeling>
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>waardevolgroen.gml</bestandsnaam>
+                  <hash>2fac11688339ad17a9001ac64bfc686dcbdffa8d26cc884bf889e68c53dfb2b9e81fe91f9977de6c914a3c1a40272c673fb10dc3875a6fc610b17b74d88758cc</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/gemeente/gm0355</eindverantwoordelijke>
+         <maker>/tooi/id/gemeente/gm0355</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>waardevol groen</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/regdata/gm0355/2020/waardevolgroen/nld@2020-10-10</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <naamInformatieObject>waardevol groen</naamInformatieObject>
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>

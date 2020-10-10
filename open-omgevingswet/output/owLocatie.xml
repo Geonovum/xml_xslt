@@ -8,16 +8,17 @@
                  xmlns:l="http://www.geostandaarden.nl/imow/locatie"
                  xmlns:p="http://www.geostandaarden.nl/imow/pons"
                  xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied"
                  xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
                  xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
    <sl:standBestand>
-      <sl:dataset>OPVLI001</sl:dataset>
+      <sl:dataset>/akn/nl/act/gm0355/2020/OPZEI001</sl:dataset>
       <sl:inhoud>
-         <sl:gebied>Gemeente Vlissingen</sl:gebied>
-         <sl:leveringsId>OPVLI001-20201002</sl:leveringsId>
+         <sl:gebied>Gemeente Zeist</sl:gebied>
+         <sl:leveringsId>/akn/nl/act/gm0355/2020/OPZEI001-20201010</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Gebiedengroep</sl:objectType>
             <sl:objectType>Gebied</sl:objectType>
@@ -26,10 +27,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200001</l:identificatie>
                <l:noemer>ambtsgebied</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000010001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000010001"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -37,9 +38,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000010001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000010001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="a6e403e7-6c25-4c19-8a78-a26f5ba2726f"/>
+                  <l:GeometrieRef xlink:href="b53ede01-3339-45f2-84ac-f1f039c98b58"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -47,12 +48,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200002</l:identificatie>
-               <l:noemer>referentiepunten scheepswerf ksg</l:noemer>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200002</l:identificatie>
+               <l:noemer>bebouwingscontour houtkap</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000020001"/>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000020002"/>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000020003"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000020001"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -60,29 +59,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000020001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000020001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="gml:id=&#34;id.8c23f796cdcd4561a4f8ae98bd8f1212&#34;"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000020002</l:identificatie>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="gml:id=&#34;id.2119bacd-30ae-4a9e-a952-609fb563bea9&#34;"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000020003</l:identificatie>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="gml:id=&#34;id.15201dab-2cbf-4034-aeca-bd01bd8dd265&#34;"/>
+                  <l:GeometrieRef xlink:href="b53ede01-3339-45f2-84ac-f1f039c98b58"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -90,10 +69,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200003</l:identificatie>
-               <l:noemer>vlissingen - scheldewijk</l:noemer>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200003</l:identificatie>
+               <l:noemer>beschermde laanstructuur</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000030001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000030001"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -101,9 +80,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000030001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000030001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="a6e403e7-6c25-4c19-8a78-a26f5ba2726f"/>
+                  <l:GeometrieRef xlink:href="d96b4661-e894-45df-b2bb-b62ff9e770db"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -111,10 +90,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200004</l:identificatie>
-               <l:noemer>vlissingen - timmerplein</l:noemer>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200004</l:identificatie>
+               <l:noemer>beschermingszone 0-5 meter tot de laanstructuur</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000040001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000040001"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -122,9 +101,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000040001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000040001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="1b718a6d-c699-4555-bcc8-18ed94a3baf3"/>
+                  <l:GeometrieRef xlink:href="ec7277af-89c5-48f0-9652-fc16cfb79f0d"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -132,10 +111,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200005</l:identificatie>
-               <l:noemer>industrieterrein</l:noemer>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200005</l:identificatie>
+               <l:noemer>beschermingszone 5-8 meter tot de laanstructuur</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000050001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000050001"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -143,9 +122,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000050001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000050001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="00014799-43f0-41a3-b425-4b675c587159"/>
+                  <l:GeometrieRef xlink:href="1b711dd8-e2a2-4eec-9ad0-7a2bcdfe42d3"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -153,11 +132,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200006</l:identificatie>
-               <l:noemer>geluidaandachtsgebied industrie</l:noemer>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200006</l:identificatie>
+               <l:noemer>beschermingszone 8-10 meter tot de laanstructuur</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000060001"/>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000060002"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000060001"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -165,19 +143,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000060001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000060001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="a46791e2-7ecd-48b3-ba6c-a6f4fa613555"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000060002</l:identificatie>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="a46791e2-ba6c-7ecd-48b3-a6f4fa613555"/>
+                  <l:GeometrieRef xlink:href="7ca89ddf-1049-4584-9f03-3f62c48d334a"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -185,10 +153,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200007</l:identificatie>
-               <l:noemer>standaardwaarde geluidaandachtsggebied 50 lden/40lnight</l:noemer>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200007</l:identificatie>
+               <l:noemer>gestapelde bouw</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000070001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000070001"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -196,9 +164,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000070001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000070001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="4ded9774-2545-4580-b895-c7f7c0c44465"/>
+                  <l:GeometrieRef xlink:href="a69cdb5b-119b-41be-8f34-2f2b3bb81a13"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -206,10 +174,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200008</l:identificatie>
-               <l:noemer>grenswaarde geluidaandachtsggebied 55 lden/45lnight</l:noemer>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200008</l:identificatie>
+               <l:noemer>licht</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000080001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000080001"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -217,9 +185,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000080001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000080001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="fdaf2d69-c387-460a-b538-f1f425f292af"/>
+                  <l:GeometrieRef xlink:href="fbfbb2d2-23cf-4019-9672-ca47be358aa6"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -227,10 +195,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200009</l:identificatie>
-               <l:noemer>zeelandtoren</l:noemer>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200009</l:identificatie>
+               <l:noemer>lichtaandachtsgebied</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000090001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000090001"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -238,9 +206,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000090001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000090001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="D591C0F6-9C12-4A69-9972-8A6D783B487F"/>
+                  <l:GeometrieRef xlink:href="12504e0a-36a8-4485-8302-5c17aa091fdf"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -248,10 +216,12 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200010</l:identificatie>
-               <l:noemer>scheepswerf ksg</l:noemer>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200010</l:identificatie>
+               <l:noemer>meldingszone waardevol groen</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000100001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000100001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000100002"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000100003"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -259,9 +229,29 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000100001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000100001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="90D94797-FF9C-4B8B-8D3A-386CDF7C54F0"/>
+                  <l:GeometrieRef xlink:href="45fdae21-9cfc-40ee-b644-b505dda7d2b8"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0355.gebied.202000100002</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="7500c3e8-f425-449f-8735-9b381a9ad1b7"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0355.gebied.202000100003</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="62baf6fa-b4df-4964-9934-5b9113463a9a"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -269,10 +259,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200011</l:identificatie>
-               <l:noemer>rustig woongebied</l:noemer>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200011</l:identificatie>
+               <l:noemer>ontwikkellocatie</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000110001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000110001"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -280,9 +270,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000110001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000110001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="a6e403e7-6c25-4c19-8a78-a26f5ba2726f"/>
+                  <l:GeometrieRef xlink:href="97592cd6-589a-47a9-8245-99f360f0e6bc"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -290,10 +280,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200012</l:identificatie>
-               <l:noemer>gemengd gebied</l:noemer>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200012</l:identificatie>
+               <l:noemer>openbaar gebied</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000120001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000120001"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -301,9 +291,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000120001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000120001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="058D48F7-D5F3-4DAD-A676-82E5ECCCAB28"/>
+                  <l:GeometrieRef xlink:href="5e43b2aa-3c5c-4eca-98e1-5d98e3c9997d"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -311,10 +301,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200013</l:identificatie>
-               <l:noemer>timmerfabriek</l:noemer>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200013</l:identificatie>
+               <l:noemer>speelveld</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0718.gebied.202000130001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000130001"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -322,9 +312,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0718.gebied.202000130001</l:identificatie>
+               <l:identificatie>nl.imow-gm0355.gebied.202000130001</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="3CF6A397-CF59-45DA-A566-966E111E5140"/>
+                  <l:GeometrieRef xlink:href="3bd9d431-eadf-4ddb-90ac-724b6224f110"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -332,10 +322,107 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0718.gebiedengroep.20200014</l:identificatie>
-               <l:noemer>windaandachtsgebied</l:noemer>
-               <!--Let op: voor deze gebiedengroep is geen gml beschikbaar.-->
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200014</l:identificatie>
+               <l:noemer>sportveld</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000140001"/>
+               </l:groepselement>
             </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0355.gebied.202000140001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="3bd9d431-eadf-4ddb-90ac-724b6224f110"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200015</l:identificatie>
+               <l:noemer>waardevol groen</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000150001"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000150002"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000150003"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0355.gebied.202000150001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0205f43e-deba-48cc-b0f4-b718589f82f9"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0355.gebied.202000150002</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="99e41ac5-8400-40e3-92f1-fd6ab306bb55"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0355.gebied.202000150003</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="690853fa-f0af-45bf-9876-d31181e045dd"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200016</l:identificatie>
+               <l:noemer>woongebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000160001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0355.gebied.202000160001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="937c1973-8325-4f72-ab44-6d0b83b82bf0"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0355.gebiedengroep.20200017</l:identificatie>
+               <l:noemer>zelfbouwlocatie</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0355.gebied.202000170001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0355.gebied.202000170001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="498dc584-5100-4739-9606-7d55a7f2a29b"/>
+               </l:geometrie>
+            </l:Gebied>
          </ow-dc:owObject>
       </sl:stand>
    </sl:standBestand>

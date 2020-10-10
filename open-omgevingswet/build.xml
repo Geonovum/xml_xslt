@@ -22,50 +22,81 @@
     <mkdir dir="${output.dir}"/>
   </target>
 
-  <target name="copy" description="Kopieer bestanden">
-    <copy tofile="${temp.dir}/excel.xml">
-      <fileset dir="${input.dir}/ow">
-        <include name="*.xml"/>
-      </fileset>
-    </copy>
-    <copy tofile="${temp.dir}/besluit.xml">
-      <fileset dir="${input.dir}/op">
-        <include name="*.xml"/>
-      </fileset>
-    </copy>
-    <copy todir="${temp.dir}/gml">
-      <fileset dir="${input.dir}/gml"/>
-    </copy>
-  </target>
-
   <!-- maak hash-code -->
 
   <target name="checksum" description="Maak hash-codes">
-    <foreach target="checksum.execute" param="file.fullname">
+    <foreach target="checksum.execute" param="gml.fullname">
       <path>
-        <fileset dir="${temp.dir}/gml"/>
+        <fileset dir="${input.dir}/gml"/>
       </path>
     </foreach>
   </target>
 
   <target name="checksum.execute">
-    <basename property="file.name" file="${file.fullname}"/>
-    <checksum file="${file.fullname}" algorithm="SHA-512" property="file.checksum"/>
-    <xslt in="template.xml" out="${temp.dir}/checksum/${file.name}.xml" style="checksum.xsl" processor="trax" force="true">
-      <param name="file.name" expression="${file.name}"/>
-      <param name="file.fullname" expression="${file.fullname}"/>
-      <param name="file.checksum" expression="${file.checksum}"/>
+    <basename property="gml.name" file="${gml.fullname}"/>
+    <checksum file="${gml.fullname}" algorithm="SHA-512" property="gml.checksum"/>
+    <xslt in="template.xml" out="${temp.dir}/checksum/${gml.name}.xml" style="checksum.xsl" processor="trax" force="true">
+      <param name="file.name" expression="${gml.name}"/>
+      <param name="file.fullname" expression="${gml.fullname}"/>
+      <param name="file.checksum" expression="${gml.checksum}"/>
     </xslt>
   </target>
 
   <!-- transformeer van excel naar imow -->
 
-  <target name="transform" description="Transformeer van excel naar imop">
-    <xslt in="template.xml" out="${temp.dir}/log.xml" style="excel2imow.xsl" processor="trax" force="true"/>
+  <target name="transform-ow" description="Transformeer van excel naar imow">
+    <xslt in="template.xml" out="log.xml" style="excel2imow.xsl" processor="trax" force="true">
+      <param name="input.dir" expression="${input.dir}"/>
+      <param name="temp.dir" expression="${temp.dir}"/>
+    </xslt>
+  </target>
+
+  <!-- maak de gio's en voeg ze toe aan het besluit -->
+
+  <target name="transform-op" description="Maak de gio's en voeg ze toe aan het besluit">
+    <xslt basedir="${input.dir}/op" destdir="${temp.dir}/op" style="besluit2imop.xsl" extension=".xml" processor="trax" force="true">
+      <param name="temp.dir" expression="${temp.dir}"/>
+    </xslt>
+    <xslt basedir="${temp.dir}/op" destdir="${output.dir}" style="AKN 1.0.xsl" extension=".xml" processor="trax" force="true"/>
+  </target>
+
+  <!-- maak de manifest-bestanden -->
+
+  <target name="manifest" description="Maak de manifest-bestanden">
+    <fileset id="filelist_ow.id" dir="${temp.dir}/ow"/>
+    <fileset id="filelist_op.id" dir="${temp.dir}/op"/>
+    <fileset id="filelist_gio.id" dir="${temp.dir}/gio"/>
+    <fileset id="filelist_lvbb.id" dir="${temp.dir}/lvbb"/>
+    <fileset id="filelist_gml.id" dir="${input.dir}/gml"/>
+    <pathconvert property="filelist_ow.fullname" refid="filelist_ow.id" dirsep="/" pathsep=";"/>
+    <pathconvert property="filelist_op.fullname" refid="filelist_op.id" dirsep="/" pathsep=";"/>
+    <pathconvert property="filelist_gio.fullname" refid="filelist_gio.id" dirsep="/" pathsep=";"/>
+    <pathconvert property="filelist_lvbb.fullname" refid="filelist_lvbb.id" dirsep="/" pathsep=";"/>
+    <pathconvert property="filelist_gml.fullname" refid="filelist_gml.id" dirsep="/" pathsep=";"/>
+    <xslt in="template.xml" out="log.xml" style="manifest.xsl" processor="trax" force="true">
+      <param name="filelist.ow" expression="${filelist_ow.fullname}"/>
+      <param name="filelist.op" expression="${filelist_op.fullname}"/>
+      <param name="filelist.gio" expression="${filelist_gio.fullname}"/>
+      <param name="filelist.lvbb" expression="${filelist_lvbb.fullname}"/>
+      <param name="filelist.gml" expression="${filelist_gml.fullname}"/>
+      <param name="temp.dir" expression="${temp.dir}"/>
+      <param name="output.dir" expression="${output.dir}"/>
+    </xslt>
+  </target>
+
+  <!-- kopieer de bestanden -->
+
+  <target name="copy" description="Kopieer de bestanden">
+    <copy todir="${output.dir}">
+      <fileset dir="${temp.dir}/gio"/>
+      <fileset dir="${input.dir}/gml"/>
+      <fileset dir="${temp.dir}/lvbb"/>
+      <fileset dir="${temp.dir}/ow"/>
+    </copy>
   </target>
 
   <!-- totale transformatie van word naar imop -->
 
-  <target name="excel2imow" depends="init,copy,checksum,transform"/>
+  <target name="excel2imow" depends="init,checksum,transform-ow,transform-op,manifest,copy"/>
 
 </project>
