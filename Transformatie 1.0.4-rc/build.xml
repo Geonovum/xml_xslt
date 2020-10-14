@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project basedir="." name="tpod" default="main">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+  <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"/>
+
+  <property name="input.dir" value="1.0.3/opdracht"/>
+  <property name="output.dir" value="1.0.4-rc/opdracht"/>
+  <property name="temp.dir" value="temp"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete dir="${output.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${output.dir}"/>
+    <delete dir="${temp.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${temp.dir}"/>
+  </target>
+
+  <!-- kopieer bestanden naar 1.0.4-rc/opdracht -->
+
+  <target name="copy" description="Kopieer bestanden">
+    <copy todir="${output.dir}">
+      <fileset dir="${input.dir}"/>
+    </copy>
+  </target>
+
+  <!-- maak input.list -->
+
+  <path id="input.list">
+    <fileset dir="${input.dir}" includes="*.xml"/>
+  </path>
+  <pathconvert property="file.list" refid="input.list" dirsep="/" pathsep=";"/>
+
+  <!-- transformeer OP-bestanden -->
+
+  <target name="OP" description="Transformeer OP-bestanden">
+    <xslt in="template.xml" out="${temp.dir}/manifest.xml" style="transformatie_op.xsl" processor="trax" force="true">
+      <param name="file.list" expression="${file.list}"/>
+    </xslt>
+    <xmltask source="${temp.dir}/manifest.xml">
+      <call path="manifest/file[contains(@name,'besluit.xml')]">
+        <param name="tofile.name" path="name/text()"/>
+        <actions>
+          <copy file="${temp.dir}/besluit.xml" tofile="${output.dir}/@{tofile.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+  </target>
+
+  <!-- transformeer OW-bestanden -->
+
+  <target name="OW" description="Transformeer OW-bestanden">
+    <xslt in="template.xml" out="${temp.dir}/manifest.xml" style="transformatie_ow.xsl" processor="trax" force="true">
+      <param name="file.list" expression="${file.list}"/>
+    </xslt>
+    <xmltask source="${temp.dir}/manifest.xml">
+      <call path="manifest/file">
+        <param name="file.name" path="@name"/>
+        <param name="tofile.name" path="name/text()"/>
+        <actions>
+          <copy file="${temp.dir}/@{file.name}" tofile="${output.dir}/@{tofile.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+  </target>
+
+  <!-- transformeer GIO-bestanden -->
+
+  <target name="GIO" description="Transformeer GIO-bestanden">
+    <xslt in="template.xml" out="${temp.dir}/manifest.xml" style="transformatie_gio.xsl" processor="trax" force="true">
+      <param name="input.dir" expression="${basedir}\${input.dir}"/>
+      <param name="output.dir" expression="${basedir}\${output.dir}"/>
+      <param name="temp.dir" expression="${basedir}\${temp.dir}"/>
+    </xslt>
+  </target>
+
+  <!-- totale transformatie -->
+
+  <target name="main" description="Totale transformatie" depends="init,copy,OP,OW,GIO"/>
+
+</project>

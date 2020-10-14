@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>Gemeente Leiden</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Gemeente Leiden</sl:gebied>
+         <sl:leveringsId>OVILEI001-001</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Hoofdlijn</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-gm0546.hoofdlijn.20200001</vt:identificatie>
+               <vt:soort>Visie</vt:soort>
+               <vt:naam>Visie Leiden</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-gm0546.hoofdlijn.20200002</vt:identificatie>
+               <vt:soort>Opgaven vertaald naar de ruimte</vt:soort>
+               <vt:naam>Groen/blauw</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-gm0546.hoofdlijn.20200003</vt:identificatie>
+               <vt:soort>Opgaven vertaald naar de ruimte</vt:soort>
+               <vt:naam>Mobiliteit</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-gm0546.hoofdlijn.20200004</vt:identificatie>
+               <vt:soort>Opgaven vertaald naar de ruimte</vt:soort>
+               <vt:naam>Duurzame verstedelijking</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-gm0546.hoofdlijn.20200005</vt:identificatie>
+               <vt:soort>Opgaven vertaald naar de ruimte</vt:soort>
+               <vt:naam>Infra</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-gm0546.hoofdlijn.20200006</vt:identificatie>
+               <vt:soort>Visie</vt:soort>
+               <vt:naam>Conclusie</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-gm0546.hoofdlijn.20200007</vt:identificatie>
+               <vt:soort>Uitwerking per gebied</vt:soort>
+               <vt:naam>Leefmilieus</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-gm0546.hoofdlijn.20200008</vt:identificatie>
+               <vt:soort>Leefmilieus</vt:soort>
+               <vt:naam>Hoogstedelijk en dynamisch in 2040</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-gm0546.hoofdlijn.20200009</vt:identificatie>
+               <vt:soort>Leefmilieus</vt:soort>
+               <vt:naam>Stads en Levendig in 2040</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-gm0546.hoofdlijn.20200010</vt:identificatie>
+               <vt:soort>Opgaven vertaald naar de ruimte</vt:soort>
+               <vt:naam>Groen &amp; Luw in 2040</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-gm0546.hoofdlijn.20200011</vt:identificatie>
+               <vt:soort>Ontwikkelperspectief</vt:soort>
+               <vt:naam>Zuid-West in 2040</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>
