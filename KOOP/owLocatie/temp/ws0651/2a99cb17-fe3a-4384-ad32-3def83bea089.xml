@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-2a99cb17-fe3a-4384-ad32-3def83bea089-xx">
+         <basisgeo:id>2a99cb17-fe3a-4384-ad32-3def83bea089</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992"
+                         gml:id="id-2a99cb17-fe3a-4384-ad32-3def83bea089">
+               <gml:exterior>
+                  <gml:LinearRing>
+                     <gml:posList>125437.462 511626.86 125436.323 511627.507 125434.857
+                                    511631.315 125434.659 511632.622 125432.634 511635.631 125431.68
+                                    511639.271 125430.192 511642.083 125429.885 511644.395
+                                    125429.513 511645.741 125428.812 511645.807 125427.586
+                                    511648.783 125427.575 511649.946 125426.853 511651.073
+                                    125426.404 511652.452 125424.433 511656.516 125425.302
+                                    511655.846 125426.871 511652.903 125428.729 511649.181
+                                    125429.867 511646.373 125431.04 511643.288 125433.155 511638.636
+                                    125438.203 511628.832 125440.624 511624.984 125442.032
+                                    511622.375 125443.04 511620.461 125444.556 511617.887 125445.668
+                                    511615.198 125446.003 511611.863 125446.095 511610.225
+                                    125446.434 511608.524 125447.142 511606.036 125448.741
+                                    511600.548 125449.311 511598.401 125448.338 511598.736
+                                    125445.545 511608.044 125445.184 511610.724 125444.373
+                                    511612.063 125442.325 511618.557 125442.258 511620.038
+                                    125441.776 511620.673 125439.697 511621.701 125437.462
+                                    511626.86</gml:posList>
+                  </gml:LinearRing>
+               </gml:exterior>
+            </gml:Polygon>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-e2ffddb5-7762-470e-8b18-0a9970abd8ad-xx">
+         <basisgeo:id>e2ffddb5-7762-470e-8b18-0a9970abd8ad</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992"
+                         gml:id="id-e2ffddb5-7762-470e-8b18-0a9970abd8ad">
+               <gml:exterior>
+                  <gml:LinearRing>
+                     <gml:posList>107938.069 527533.434 107937.945 527533.457 107937.864
+                                    527533.472 107938.463 527537.398 107939.004 527540.946
+                                    107940.099 527540.787 107940.999 527540.657 107940.465
+                                    527537.189 107939.819 527532.991 107939.506 527530.959 107939.34
+                                    527529.878 107938.957 527527.386 107938.828 527527.405
+                                    107938.485 527527.453 107937.685 527527.564 107937.487
+                                    527527.589 107937.497 527527.68 107937.498 527527.684 107937.48
+                                    527527.683 107937.378 527527.675 107937.352 527527.696 107937.32
+                                    527527.731 107937.316 527527.735 107937.312 527527.743
+                                    107937.288 527527.789 107937.274 527527.848 107938.069
+                                    527533.434</gml:posList>
+                  </gml:LinearRing>
+               </gml:exterior>
+            </gml:Polygon>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>

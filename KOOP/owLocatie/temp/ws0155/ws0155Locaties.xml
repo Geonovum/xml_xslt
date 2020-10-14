@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>ws0155</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>ws0155</sl:gebied>
+         <sl:leveringsId>ws0155_2020-10-14</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebied</sl:objectType>
+            <sl:objectType>Gebiedengroep</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-ws0155.gebiedengroep.aangewOppervlaktewaterlichamen</l:identificatie>
+               <l:noemer>Aangewezen oppervlaktewaterlichamen waterschap Amstel, Gooi en Vecht</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000001"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000002"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000003"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000004"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000005"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000006"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000007"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000008"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000009"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000010"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000011"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000012"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000013"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000014"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000015"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000016"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000017"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000018"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000019"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000020"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000021"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000022"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000023"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000024"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000025"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000026"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000027"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000028"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-ws0155.gebiedengroep.nietaangewOppvlaktewaterlichamen</l:identificatie>
+               <l:noemer>Niet-aangewezen oppervlaktewaterlichamen waterschap Amstel, Gooi en Vecht</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-ws0155.gebied.2020000029"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000001</l:identificatie>
+               <l:noemer>Heulsloot</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="3b692691-2ed5-47c1-92ab-57129715b788"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000002</l:identificatie>
+               <l:noemer>Geuzensloot</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="cb4ae36c-dade-44f4-aace-348d536eab19"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000003</l:identificatie>
+               <l:noemer>Kromme Mijdrecht</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="bab931f8-be97-4f5b-bfdc-bb2caa904f53"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000004</l:identificatie>
+               <l:noemer>Oude Waver</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="d12bde6b-85c6-495f-967d-085af9cc2681"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000005</l:identificatie>
+               <l:noemer>Muidertrekvaart</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ec16af25-d4a5-4f78-a16d-0ca84dbc42ad"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000006</l:identificatie>
+               <l:noemer>Winkel</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8b7868a1-14b1-4a3d-af4c-1195de440636"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000007</l:identificatie>
+               <l:noemer>Weespertrekvaart</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="89d13f8f-5acc-4deb-bdd8-71388484c699"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000008</l:identificatie>
+               <l:noemer>Holendrecht</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="4770db82-069b-4125-ac28-a5fb8ae9c377"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000009</l:identificatie>
+               <l:noemer>Naardertrekvaart</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="76955eeb-3c28-432b-9749-477fb34ecfee"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000010</l:identificatie>
+               <l:noemer>Abcoudermeer</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="54e71ff6-c633-4c6f-9eab-a4d7941de5fd"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000011</l:identificatie>
+               <l:noemer>Bullewijk</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="58d7b25d-a406-4ca6-94a7-0f07fc55dae1"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000012</l:identificatie>
+               <l:noemer>Smalweesp</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="00250cc8-94b0-4d5f-bb46-af631ed8fb69"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000013</l:identificatie>
+               <l:noemer>Gaasp</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ff8bc2ee-3fbb-472c-93b2-8d2b42c34eca"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000014</l:identificatie>
+               <l:noemer>Ringvaart Waterschap Groot-Mijdrecht</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="cd50f2a4-81df-46c5-980a-dc98255fedac"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000015</l:identificatie>
+               <l:noemer>Geer</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="9294a950-00f9-4967-9ebd-a2b4acfc3f96"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000016</l:identificatie>
+               <l:noemer>Angstel (Abcoude-Loenersloot)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="e444379b-5d4a-4e66-8e02-39c4e6b13848"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000017</l:identificatie>
+               <l:noemer>Grote Heijcop</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b231e53a-4ce3-4e41-b0d2-51c72b2f7b04"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000018</l:identificatie>
+               <l:noemer>Bijleveld</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="13e77324-bbe0-4b3a-b2b3-a6b9d377b5c5"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000019</l:identificatie>
+               <l:noemer>Naarder Vestinggrachten</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="6300d9ce-1a91-4ecf-a856-59312f3e644d"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000020</l:identificatie>
+               <l:noemer>Grecht</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b08f632b-e1df-4945-8bc3-4eb711544057"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000021</l:identificatie>
+               <l:noemer>Gein</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="63f30bf0-c351-4605-b9ba-8207db304968"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000022</l:identificatie>
+               <l:noemer>Nieuwe Wetering</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="37ebd683-5936-4092-b416-c4441c8e1446"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000023</l:identificatie>
+               <l:noemer>Karnemelksloot</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="bebc9615-f3ef-4b7d-9c1c-9ef7259fb572"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000024</l:identificatie>
+               <l:noemer>Danne</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b559ded4-9398-41ca-8cb3-4bf3994fef10"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000025</l:identificatie>
+               <l:noemer>Grachten en boezemwateren Amsterdam</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="a6fd3ddf-c7e6-4871-9f3c-c5aff1cc7bd8"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000026</l:identificatie>
+               <l:noemer>Kerkvaart</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="513a3ae1-742d-443b-8e96-97efc25547f4"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000027</l:identificatie>
+               <l:noemer>Waver</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="9a7e633a-38ea-4394-aae0-db797393e213"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000028</l:identificatie>
+               <l:noemer>Heinoomsvaart</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="70cf25ef-8394-48eb-94f6-8680734d9c41"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0155.gebied.2020000029</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="B345F1A1-FBFA-49F4-90BC-D0E41B5B691F"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

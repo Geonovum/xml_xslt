@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-52042e6d-233c-4360-9d97-e50b6c514a4c-xx">
+         <basisgeo:id>52042e6d-233c-4360-9d97-e50b6c514a4c</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992"
+                         gml:id="id-52042e6d-233c-4360-9d97-e50b6c514a4c">
+               <gml:exterior>
+                  <gml:LinearRing>
+                     <gml:posList>114096.582 503683.489 114096.548 503683.451 114096.497
+                                    503683.414 114096.44 503683.389 114096.378 503683.376 114096.316
+                                    503683.376 114096.254 503683.389 114096.197 503683.414
+                                    114096.146 503683.451 114096.104 503683.498 114096.073
+                                    503683.552 114096.054 503683.612 114096.047 503683.674
+                                    114096.054 503683.736 114096.073 503683.796 114096.104 503683.85
+                                    114096.146 503683.897 114096.197 503683.934 114096.255 503683.96
+                                    114096.318 503683.973 114096.382 503683.972 114096.444
+                                    503683.958 114096.502 503683.931 114096.551 503683.894
+                                    114096.592 503683.848 114096.625 503683.786 114096.641
+                                    503683.735 114096.647 503683.674 114096.641 503683.612
+                                    114096.621 503683.552 114096.582 503683.489</gml:posList>
+                  </gml:LinearRing>
+               </gml:exterior>
+            </gml:Polygon>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>ws0663</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>ws0663</sl:gebied>
+         <sl:leveringsId>ws0663_2020-10-14</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebied</sl:objectType>
+            <sl:objectType>Gebiedengroep</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-ws0663.gebiedengroep.aangewOppervlaktewaterlichamen</l:identificatie>
+               <l:noemer>Aangewezen oppervlaktewaterlichamen waterschap Vechtstromen</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000001"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000002"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000003"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000004"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000005"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000006"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000007"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000008"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000009"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000010"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000011"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-ws0663.gebiedengroep.nietaangewOppvlaktewaterlichamen</l:identificatie>
+               <l:noemer>Niet-aangewezen oppervlaktewaterlichamen waterschap Vechtstromen</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-ws0663.gebied.2020000012"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0663.gebied.2020000001</l:identificatie>
+               <l:noemer>Binnengracht (westelijk deel)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="53b291e8-c3df-4ac1-b702-d84fac5f5037"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0663.gebied.2020000002</l:identificatie>
+               <l:noemer>Verlengde Hoogeveensche Vaart</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="a9834a3e-b827-4745-a3c7-bc539a56f0a2"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0663.gebied.2020000003</l:identificatie>
+               <l:noemer>Elsbeek</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="e8b31a7e-ec29-44a0-9730-a3d2e208e75a"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0663.gebied.2020000004</l:identificatie>
+               <l:noemer>Verbindingskanaal en Buitengracht te Coevorden</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="53120049-c0c1-47a7-871d-031204ecc4df"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0663.gebied.2020000005</l:identificatie>
+               <l:noemer>Lateraalkanaal</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="e1dda16e-a4d4-4f30-9c61-02c87621e0c6"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0663.gebied.2020000006</l:identificatie>
+               <l:noemer>Linderbeek</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="1e6e5ed0-7281-496e-ad90-353f14948d96"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0663.gebied.2020000007</l:identificatie>
+               <l:noemer>Kanaal Almelo-De Haandrik (Overijsselsch Kanaal)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="6822704d-41f9-4717-b957-6a48e8eba84b"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0663.gebied.2020000008</l:identificatie>
+               <l:noemer>Coevorden-Vechtkanaal</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f18218a4-b723-4a76-98b4-c324dc7c057d"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0663.gebied.2020000009</l:identificatie>
+               <l:noemer>Velt en Vecht, kanalen</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="3d97375b-8294-4d98-9764-10b2ec42051c"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0663.gebied.2020000010</l:identificatie>
+               <l:noemer>Bladderswijk (Oranjekanaal) en Bargermeerkanaal</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="847646f8-da23-4502-be0f-25d6af0ce6da"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0663.gebied.2020000011</l:identificatie>
+               <l:noemer>Bornsche Beek</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="5a2639e4-4d73-4a34-8756-d03cfb98cdf3"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-ws0663.gebied.2020000012</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="aefefce5-37e4-446e-8054-d702fff1aebb"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>
