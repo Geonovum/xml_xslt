@@ -117,7 +117,7 @@
         </xsl:when>
         <xsl:when test="document(concat('file:/',.))//vt:Hoofdlijn" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901">
           <xsl:element name="file">
-            <xsl:attribute name="name" select="string('kaart.xml')"/>
+            <xsl:attribute name="name" select="string('hoofdlijn.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="."/>
             </xsl:element>
