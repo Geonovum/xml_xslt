@@ -1,0 +1,53 @@
+
+waardelijsten {
+    font-family: arial;
+    color: black;
+    width: 100%;
+    margin-left: 40px;
+    }
+
+waardelijsten:before{
+    color: white;
+    font-weight: 400;
+    font-size:21px;
+    line-height: 33.9833px;
+    background-color: #39870c;
+    content:'IMOW waardelijsten'
+    }
+
+waardelijst, waardelijst label {
+    display: block;
+    margin-left: 10px;
+    }
+
+waardelijst label {
+    color: white;
+    font-family: arial;
+    font-weight: 400;
+    background-color: rgb(137, 137, 137);
+    }
+
+titel, uri, type, omschrijving, toelichting, waarden{
+    display:block;
+    margin-left: 20px
+    }
+
+waarden waarde, waarde label{
+    display:block;
+    margin-left: 20px;
+    }
+
+waarde label{
+    color:black;
+    background-color: rgb(229, 229, 229);
+    }
+
+term, waarde uri, definitie, waarde toelichting, bron, domein, symboolcode{
+    display:block;
+    margin-left: 30px
+    }
+
+symboolcode::before {
+    content: 'Symboolcode: '
+    }
+        
