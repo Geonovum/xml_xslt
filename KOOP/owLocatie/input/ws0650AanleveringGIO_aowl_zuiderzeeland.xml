@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lvbba:AanleveringInformatieObject schemaversie="1.0.3"
+    xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
+    xmlns:lvbba="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
+    <lvbba:InformatieObjectVersie>
+        <data:ExpressionIdentificatie>
+            <data:FRBRWork>/join/id/regdata/ws0650/2020/ib_aangewezen_oppervlaktewaterlichamen_zuiderzeeland</data:FRBRWork>
+            <data:FRBRExpression>/join/id/regdata/ws0650/2020/ib_aangewezen_oppervlaktewaterlichamen_zuiderzeeland/nld@2020-09-08</data:FRBRExpression>
+            <data:soortWork>/join/id/stop/work_010</data:soortWork>
+        </data:ExpressionIdentificatie>
+        <!-- data:InformatieObjectVersieMetadata is verplicht en bevat de heeftBestanden -->
+        <data:InformatieObjectVersieMetadata>
+            <data:heeftBestanden>
+                <data:heeftBestand>
+                    <data:Bestand>
+                        <data:bestandsnaam>ib_aangewezen_oppervlaktewaterlichamen_zuiderzeeland.gml</data:bestandsnaam>
+                        <data:hash></data:hash>
+                    </data:Bestand>
+                </data:heeftBestand>
+            </data:heeftBestanden>
+            <!-- aangezien geboorteregeling aangeeft bij het intrekken van een regeling welke consolideerbare informatieobjejecten ook tegelijkertijd ingetrokken moeten worden, staat hier verwijzing naar AKN ID van Work Waterschapsverordening van betreffende BG. -->
+            <data:heeftGeboorteregeling>/akn/nl/act/ws0650/2020/waterschapsverordening</data:heeftGeboorteregeling>
+        </data:InformatieObjectVersieMetadata>
+        <data:InformatieObjectMetadata>
+            <!-- data:naamInformatieObject is verplicht in 1.0.3  -->
+            <data:naamInformatieObject>Aangewezen oppervlaktewaterlichamen waterschap Zuiderzeeland</data:naamInformatieObject> <!-- moet de titel bevatten in mensleesbare vorm -->
+            <data:eindverantwoordelijke>/tooi/id/waterschap/ws0650</data:eindverantwoordelijke>
+            <data:formaatInformatieobject>/join/id/stop/informatieobject/gio_002</data:formaatInformatieobject>
+            <data:maker>/tooi/id/ministerie/mnre1034</data:maker>
+            <data:officieleTitel>/join/id/regdata/ws0650/2020/ib_aangewezen_oppervlaktewaterlichamen_zuiderzeeland</data:officieleTitel> <!-- moet de join-id van de GIO bevatten (van het Work) -->
+            <data:publicatieinstructie>TeConsolideren</data:publicatieinstructie>
+        </data:InformatieObjectMetadata>
+    </lvbba:InformatieObjectVersie>
+</lvbba:AanleveringInformatieObject>
