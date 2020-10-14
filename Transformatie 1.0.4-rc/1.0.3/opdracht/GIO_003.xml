@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+  schemaversie="1.0.3">
+  <InformatieObjectVersie>
+    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch</FRBRWork>
+      <FRBRExpression>/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch/nld@2020-08-20</FRBRExpression>
+      <soortWork>/join/id/stop/work_010</soortWork>
+    </ExpressionIdentificatie>
+    <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <heeftGeboorteregeling>/akn/nl/act/gm0546/2020/OVILEI001</heeftGeboorteregeling>
+      <heeftBestanden>
+        <heeftBestand>
+          <Bestand>
+            <bestandsnaam>003_1_hoogstedelijk_en_dynamisch.gml</bestandsnaam>
+            <hash>8dafd4ff7eb950324c31bda049446a9c847ef4265757babbd7a14b30e30a905683ad4c4a672c0249b905c198dc411016f5abf5d3a05608eadeeeac87b14b6c01</hash>
+          </Bestand>
+        </heeftBestand>
+      </heeftBestanden>
+    </InformatieObjectVersieMetadata>
+    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/gemeente/gm0546</eindverantwoordelijke>
+      <maker>/tooi/id/gemeente/gm0546</maker>
+      <alternatieveTitels>
+        <alternatieveTitel>1 Hoogstedelijk en dynamisch</alternatieveTitel>
+      </alternatieveTitels>
+      <officieleTitel>/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch</officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <naamInformatieObject>1 Hoogstedelijk en dynamisch</naamInformatieObject>
+      <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+    </InformatieObjectMetadata>
+  </InformatieObjectVersie>
+</AanleveringInformatieObject>

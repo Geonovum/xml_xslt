@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+  xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+  xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+  xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+  xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+  xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+  xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+  xmlns:p="http://www.geostandaarden.nl/imow/pons"
+  xmlns:r="http://www.geostandaarden.nl/imow/regels"
+  xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+  xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+  <sl:standBestand>
+    <sl:dataset>Gemeente Leiden</sl:dataset>
+    <sl:inhoud>
+      <sl:gebied>Gemeente Leiden</sl:gebied>
+      <sl:leveringsId>OVILEI001-001</sl:leveringsId>
+      <sl:objectTypen>
+        <sl:objectType>Gebied</sl:objectType>
+      </sl:objectTypen>
+    </sl:inhoud>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0546.gebied.20200001</l:identificatie>
+          <l:noemer>Gemeente Leiden</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="4b46ca74-3840-4ce1-91b6-abf749802f6c"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0546.gebied.20200002</l:identificatie>
+          <l:noemer>Ontwikkelperspectief Zuidwest</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="c890087a-1b9d-4bc2-8a84-6b8f9a638805"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0546.gebied.20200003</l:identificatie>
+          <l:noemer>1 Hoogstedelijk en dynamisch</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="439b737f-f9c6-4e07-871f-e486ad0fff53"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0546.gebied.20200004</l:identificatie>
+          <l:noemer>2 Stads en levendig</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="fa5a51ce-79df-4cde-8f02-5b5cbaca4860"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0546.gebied.20200005</l:identificatie>
+          <l:noemer>3 Groen en luw</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="e8dafb1b-adb6-4c23-a6b0-e1d275cfcee5"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+  </sl:standBestand>
+</ow-dc:owBestand>
