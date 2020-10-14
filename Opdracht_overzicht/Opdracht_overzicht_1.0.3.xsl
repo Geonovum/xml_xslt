@@ -75,7 +75,7 @@
                 <xsl:element name="link" inherit-namespaces="yes" namespace="">
                     <xsl:attribute name="rel">stylesheet</xsl:attribute>
                     <xsl:attribute name="type">text/css</xsl:attribute>
-                    <xsl:attribute name="href">F:\DSO\Geonovum\GitHub\xml_xslt\Opdracht_overzicht\Opdracht_overzicht.css</xsl:attribute>
+                    <xsl:attribute name="href">Opdracht_overzicht.css</xsl:attribute>
                 </xsl:element>
             </xsl:element>
             <xsl:element name="body" namespace="">
@@ -283,16 +283,17 @@
                         <xsl:element name="TD" inherit-namespaces="yes" namespace="">RegelingOpschrift: </xsl:element>
                         <xsl:element name="TD" inherit-namespaces="yes" namespace="">
                             <xsl:attribute name="class">art_cell</xsl:attribute>
-                            <xsl:apply-templates select="$besluit/*[local-name()='RegelingOpschrift']" mode="Art_text"/>
+                            <xsl:apply-templates select="$besluit/*[local-name()='RegelingOpschrift']/*" mode="Al_text"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="TR" inherit-namespaces="yes" namespace="">
                         <xsl:element name="TD" inherit-namespaces="yes" namespace="">Aanhef: </xsl:element>
                         <xsl:element name="TD" inherit-namespaces="yes" namespace="">
                             <xsl:attribute name="class">art_cell</xsl:attribute>
-                            <xsl:apply-templates select="$besluit/*[local-name()='Aanhef']" mode="Art_text"/>
+                            <xsl:apply-templates select="$besluit/*[local-name()='Aanhef']/*" mode="Aanhef"/>
                         </xsl:element>
                     </xsl:element>
+                    <!-- Artikelen van het besluit -->
                     <xsl:for-each select="$besluit/*[local-name()='Lichaam']/child::*">
                         <xsl:element name="TR" inherit-namespaces="yes" namespace="">
                             <xsl:element name="TD" inherit-namespaces="yes" namespace="">
@@ -305,11 +306,12 @@
                             </xsl:element>
                         </xsl:element>
                     </xsl:for-each>
+                    <!-- Sluiting -->
                     <xsl:element name="TR" inherit-namespaces="yes" namespace="">
                         <xsl:element name="TD" inherit-namespaces="yes" namespace="">Sluiting: </xsl:element>
                         <xsl:element name="TD" inherit-namespaces="yes" namespace="">
                             <xsl:attribute name="class">art_cell</xsl:attribute>
-                            <xsl:apply-templates select="$besluit/*[local-name()='Sluiting']" mode="Art_text"/>
+                            <xsl:apply-templates select="$besluit/*[local-name()='Sluiting']/*" mode="Art_text"/>
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
@@ -362,25 +364,29 @@
     <xsl:template match="." mode="ExpressionIdentificatie">
         <xsl:element name="UL" inherit-namespaces="yes" namespace="">
             <xsl:element name="LI" inherit-namespaces="yes" namespace="">
-                <xsl:attribute name="class">sublist</xsl:attribute>ExpressionIdentificatie:
+                <xsl:attribute name="class">sublist</xsl:attribute>
+                <xsl:value-of select="'ExpressionIdentificatie:'"/> 
             </xsl:element>
             <xsl:element name="TABLE" inherit-namespaces="yes" namespace="">
                 <xsl:element name="TR" inherit-namespaces="yes" namespace="">
-                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">FRBRWork: 
+                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">
+                        <xsl:value-of select="'FRBRWork: '"/> 
                     </xsl:element>
                     <xsl:element name="TD" inherit-namespaces="yes" namespace="">
                         <xsl:value-of select="./*[local-name()='ExpressionIdentificatie']/*[local-name()='FRBRWork']"/>
                     </xsl:element>
                 </xsl:element>
                 <xsl:element name="TR" inherit-namespaces="yes" namespace="">
-                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">FRBRExpression: 
+                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">
+                        <xsl:value-of select="'FRBRExpression:'"/> 
                     </xsl:element>
                     <xsl:element name="TD" inherit-namespaces="yes" namespace="">
                         <xsl:value-of select="./*[local-name()='ExpressionIdentificatie']/*[local-name()='FRBRExpression']"/>
                     </xsl:element>
                 </xsl:element>
                 <xsl:element name="TR" inherit-namespaces="yes" namespace="">
-                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">soortWork: 
+                    <xsl:element name="TD" inherit-namespaces="yes" namespace="">
+                        <xsl:value-of select="'soortWork: '"/> 
                     </xsl:element>
                     <xsl:element name="TD" inherit-namespaces="yes" namespace="">
                         <xsl:value-of select="./*[local-name()='ExpressionIdentificatie']/*[local-name()='soortWork']"/>
@@ -390,32 +396,62 @@
         </xsl:element>
     </xsl:template>
     
+    <!-- Aanhef -->
+    <xsl:template match="." mode="Aanhef">
+        <xsl:apply-templates select="." mode="Al_text"/>
+    </xsl:template>
+    
     <!-- Artikel tekst opmaak -->
     <xsl:template match="." mode="Art_text">
-        <xsl:element name="PRE" inherit-namespaces="yes" namespace="">
-            <xsl:apply-templates select=".//*[local-name()='Al']" mode="refs"/>
-<!--            <xsl:for-each select=".//*[local-name()='Al']">
+        <xsl:apply-templates select="./*[local-name()='Al']" mode="Al_text"/>
+        <xsl:apply-templates select="./*[local-name()='Wat']" mode="Al_text"/>
+        <xsl:apply-templates select="./*[local-name()='Inhoud']" mode="Al_text"/>
+        <!--            <xsl:for-each select=".//*[local-name()='Al']">
                 <xsl:copy >
                     <xsl:apply-templates select="@*|node()" mode="refs"/>
                 </xsl:copy>
                 <xsl:value-of select="'&#13;&#10;'"/>
             </xsl:for-each>
--->            <xsl:for-each select=".//*[local-name()='Wat']">
+            <xsl:for-each select=".//*[local-name()='Wat']">
                 <xsl:copy>
                     <xsl:apply-templates select="@*|node()" mode="refs"/>
                 </xsl:copy>
-            </xsl:for-each>
+            </xsl:for-each>-->
+    </xsl:template>
+    
+    <!-- Al -->
+    <xsl:template match=".[local-name()='Al' or local-name()='Wat']" mode="Al_text">
+        <xsl:element name="PRE" inherit-namespaces="yes" namespace="">
+                <xsl:if test="self::text()">
+                    <xsl:apply-templates select="." mode="al"/>
+                </xsl:if>
+                <xsl:if test="self::node()">
+                <xsl:apply-templates select="." mode="refs"/>
+                </xsl:if>
         </xsl:element>
     </xsl:template>
-    <!-- Al -->
-    <xsl:template match="text()" mode="refs">
-        <xsl:value-of select="."/>
+    
+    <!-- text -->
+    <xsl:template match="text()" mode="al">
+            <xsl:value-of select="."/>
     </xsl:template>
+<!--    <!-\- Wat -\->
+    <xsl:template match=".[local-name()='Wat']" mode="refs">
+        <xsl:copy>
+            <xsl:apply-templates select="@*|node()" mode="refs"/>
+        </xsl:copy>
+    </xsl:template>-->
+
     <!-- LidNummer -->
     <xsl:template match=".[local-name()='LidNummer']" mode="refs">
-        <xsl:value-of select="./text()"/>
+            <xsl:value-of select="./text()"/>
     </xsl:template>
 
+    <!-- Nummer -->
+    <xsl:template match=".[local-name()='Nummer']" mode="refs">
+        <xsl:value-of select="./text()"/>-
+    </xsl:template>
+    
     <!-- refs -->
     <!-- IntIoRef -->
     <xsl:template match=".[local-name()='IntIoRef']" mode="refs">
@@ -542,40 +578,40 @@
         <xsl:element name="UL" inherit-namespaces="yes" namespace="">
             <xsl:element name="LI" inherit-namespaces="yes" namespace="">
                 <xsl:attribute name="class">sublist</xsl:attribute>
-                Vervang
+                <xsl:value-of select="concat(./*[local-name()='Nummer'],' - Vervang')"/>
             </xsl:element>
         </xsl:element>
-        <xsl:apply-templates select="./child::*[local-name()!='Kop']" mode="structuur"/>
+        <xsl:apply-templates select="./*[local-name()!='Kop' and local-name()!='Nummer']" mode="structuur"/>
     </xsl:template>
     <!-- VervangKop -->
     <xsl:template match=".[local-name()='VervangKop']" mode="structuur">
         <xsl:element name="UL" inherit-namespaces="yes" namespace="">
             <xsl:element name="LI" inherit-namespaces="yes" namespace="">
                 <xsl:attribute name="class">sublist</xsl:attribute>
-                VervangKop
+                <xsl:value-of select="concat(./*[local-name()='Nummer'],' - VervangKop')"/>
             </xsl:element>
         </xsl:element>
-        <xsl:apply-templates select="./child::*[local-name()!='Kop']" mode="structuur"/>
+        <xsl:apply-templates select="./*[local-name()!='Kop' and local-name()!='Nummer']" mode="structuur"/>
     </xsl:template>
     <!-- Verwijder -->
     <xsl:template match=".[local-name()='Verwijder']" mode="structuur">
         <xsl:element name="UL" inherit-namespaces="yes" namespace="">
             <xsl:element name="LI" inherit-namespaces="yes" namespace="">
                 <xsl:attribute name="class">sublist</xsl:attribute>
-                Verwijder
+                <xsl:value-of select="concat(./*[local-name()='Nummer'],' - Verwijder')"/>
             </xsl:element>
         </xsl:element>
-        <xsl:apply-templates select="./child::*[local-name()!='Kop']" mode="structuur"/>
+        <xsl:apply-templates select="./*[local-name()!='Kop' and local-name()!='Nummer']" mode="structuur"/>
     </xsl:template>
     <!-- VoegToe -->
     <xsl:template match=".[local-name()='VoegToe']" mode="structuur">
         <xsl:element name="UL" inherit-namespaces="yes" namespace="">
             <xsl:element name="LI" inherit-namespaces="yes" namespace="">
                 <xsl:attribute name="class">sublist</xsl:attribute>
-                VoegToe
+                <xsl:value-of select="concat(./*[local-name()='Nummer'],' - VoegToe')"/>
             </xsl:element>
         </xsl:element>
-        <xsl:apply-templates select="./child::*[local-name()!='Kop']" mode="structuur"/>
+        <xsl:apply-templates select="./*[local-name()!='Kop' and local-name()!='Nummer']" mode="structuur"/>
     </xsl:template>
     
     <!-- Inhoud -->
@@ -593,10 +629,13 @@
     <!-- Begrip -->
     <xsl:template match=".[local-name()='Begrip']" mode="structuur">
         <xsl:element name="TABLE" inherit-namespaces="yes" namespace="">
+            <xsl:attribute name="class">begrip</xsl:attribute>
             <xsl:element name="TR" inherit-namespaces="yes" namespace="">
                 <xsl:element name="TD" inherit-namespaces="yes" namespace="">
-                    Begrip
+                    <xsl:value-of select="./@wijzigactie"/>
                 </xsl:element>
+            </xsl:element>
+            <xsl:element name="TR" inherit-namespaces="yes" namespace="">
                 <xsl:apply-templates select="./child::*[local-name()!='Kop']" mode="structuur"/>
             </xsl:element>
         </xsl:element>
@@ -605,10 +644,7 @@
     <!-- Term -->
     <xsl:template match=".[local-name()='Term']" mode="structuur">
         <xsl:element name="TD" inherit-namespaces="yes" namespace="">
-            Term:
-        </xsl:element>
-        <xsl:element name="TD" inherit-namespaces="yes" namespace="">
-                <xsl:apply-templates select="@*|node()" mode="refs"/>
+            Term: <xsl:apply-templates select="@*|node()" mode="refs"/>
         </xsl:element>
     </xsl:template>
 
@@ -629,29 +665,19 @@
         </xsl:element>
     </xsl:template>
 
-
     <!-- Artikel -->
     <xsl:template match=".[local-name()='Artikel']" mode="structuur">
         <xsl:element name="UL" inherit-namespaces="yes" namespace="">
             <xsl:variable name="zoek_wId" select="./@wId"/>
             <xsl:element name="LI" inherit-namespaces="yes" namespace="">
-                <xsl:value-of select="./*[local-name()='Kop']/*[local-name()='Label']/text()" />: <xsl:value-of select="./*[local-name()='Kop']/*[local-name()='Nummer']/text()" /> - <xsl:value-of select="./*[local-name()='Kop']/*[local-name()='Opschrift']/text()" />
+                <xsl:value-of select="./*[local-name()='Kop']/*[local-name()='Label']/text()" /> 
+                <xsl:value-of select="./*[local-name()='Kop']/*[local-name()='Nummer']" /> - 
+                <xsl:value-of select="./*[local-name()='Kop']/*[local-name()='Opschrift']/text()" />
                 <xsl:element name="UL" inherit-namespaces="yes" namespace="">
                     <xsl:element name="LI" inherit-namespaces="yes" namespace="">wId: <xsl:value-of select="$zoek_wId"/>
                     </xsl:element>
-                    <!-- TODO: Gereserveerd, Inhoud, Lid of Vervallen -->
-                    <xsl:for-each select="./*[local-name()!='Kop']">
-                        <xsl:element name="TABLE" inherit-namespaces="yes" namespace="">
-                            <xsl:element name="TR" inherit-namespaces="yes" namespace="">
-                                <xsl:element name="TD" inherit-namespaces="yes" namespace="">Inhoud: </xsl:element>
-                                <xsl:element name="TD" inherit-namespaces="yes" namespace="">
-                                    <xsl:attribute name="class">art_cell</xsl:attribute>
-                                    <xsl:apply-templates select="." mode="Art_text"/>
-                                </xsl:element>
-                            </xsl:element>
-                        </xsl:element>
-                    </xsl:for-each>
-                    <!--Inhoud: <xsl:value-of select=".//*[local-name()='Inhoud']"/>-->
+                    <!-- Alle elementen onder Artikel: Gereserveerd, Inhoud, Lid of Vervallen -->
+                    <xsl:apply-templates select="./*[local-name()!='Kop']" mode="artikel"/>
                     <!-- Regelteksten -->
                     <xsl:element name="LI" inherit-namespaces="yes" namespace="">
                         <xsl:attribute name="class" select="'regeltekst_list'"/>Regeltekst(en): 
@@ -730,7 +756,21 @@
             </xsl:element>
         </xsl:element>
     </xsl:template>
-        
+    <!-- Alle elementen onder Artikel: Gereserveerd, Inhoud, Lid of Vervallen -->
+    <xsl:template match="." mode="artikel">
+        <xsl:element name="TABLE" inherit-namespaces="yes" namespace="">
+            <xsl:element name="TR" inherit-namespaces="yes" namespace="">
+                <xsl:element name="TD" inherit-namespaces="yes" namespace="">
+                    <xsl:value-of select="./local-name()"/>
+                </xsl:element>
+                <xsl:element name="TD" inherit-namespaces="yes" namespace="">
+                    <xsl:attribute name="class">art_cell</xsl:attribute>
+                    <xsl:apply-templates select="." mode="Art_text"/>
+                </xsl:element>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    
     <!-- locatie -->
     <xsl:template match="." mode="locatie">
         <xsl:variable name="loc_ref" select="./@xlink:href"/>
