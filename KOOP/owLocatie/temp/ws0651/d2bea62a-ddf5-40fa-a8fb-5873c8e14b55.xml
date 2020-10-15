@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-d2bea62a-ddf5-40fa-a8fb-5873c8e14b55-xx">
+         <basisgeo:id>d2bea62a-ddf5-40fa-a8fb-5873c8e14b55</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992"
+                         gml:id="id-d2bea62a-ddf5-40fa-a8fb-5873c8e14b55">
+               <gml:exterior>
+                  <gml:LinearRing>
+                     <gml:posList>115905.867 520823.349 115905.993 520823.276 115906.079
+                                    520823.158 115906.109 520823.016 115906.079 520822.874
+                                    115905.993 520822.756 115905.867 520822.683 115905.722
+                                    520822.668 115905.584 520822.713 115905.476 520822.81 115905.417
+                                    520822.943 115905.417 520823.089 115905.476 520823.222
+                                    115905.584 520823.319 115905.722 520823.364 115905.867
+                                    520823.349</gml:posList>
+                  </gml:LinearRing>
+               </gml:exterior>
+            </gml:Polygon>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>

@@ -5,7 +5,7 @@
     <lvbba:InformatieObjectVersie>
         <data:ExpressionIdentificatie>
             <data:FRBRWork>/join/id/regdata/ws0616/2020/ib_aangewezen_oppervlaktewaterlichamen_rijnland</data:FRBRWork>
-            <data:FRBRExpression>/join/id/regdata/ws0616/2020/ib_aangewezen_oppervlaktewaterlichamen_rijnland/nld@2020-08-04</data:FRBRExpression>
+            <data:FRBRExpression>/join/id/regdata/ws0616/2020/ib_aangewezen_oppervlaktewaterlichamen_rijnland/nld@2020-09-08</data:FRBRExpression>
             <data:soortWork>/join/id/stop/work_010</data:soortWork>
         </data:ExpressionIdentificatie>
         <!-- data:InformatieObjectVersieMetadata is verplicht en bevat de heeftBestanden -->
@@ -14,12 +14,12 @@
                 <data:heeftBestand>
                     <data:Bestand>
                         <data:bestandsnaam>ib_aangewezen_oppervlaktewaterlichamen_rijnland.gml</data:bestandsnaam>
-                        <data:hash>b1987a21d2899f3b0cbcbf9be8ba26526a4af9244a997e1e8c434bfa02d9de5b3dc98bf348b519b60a79d3baf3496ba65e2fa10f9d57f017af1a6f4a5520df1e</data:hash>
+                        <data:hash></data:hash>
                     </data:Bestand>
                 </data:heeftBestand>
             </data:heeftBestanden>
             <!-- aangezien geboorteregeling aangeeft bij het intrekken van een regeling welke consolideerbare informatieobjejecten ook tegelijkertijd ingetrokken moeten worden, staat hier verwijzing naar AKN ID van Work Waterschapsverordening van betreffende BG. -->
-            <data:heeftGeboorteregeling>/akn/nl/act/ws0616/2020/Waterschapsverordening</data:heeftGeboorteregeling>
+            <data:heeftGeboorteregeling>/akn/nl/act/ws0616/2020/waterschapsverordening</data:heeftGeboorteregeling>
         </data:InformatieObjectVersieMetadata>
         <data:InformatieObjectMetadata>
             <!-- data:naamInformatieObject is verplicht in 1.0.3  -->
@@ -28,7 +28,7 @@
             <data:formaatInformatieobject>/join/id/stop/informatieobject/gio_002</data:formaatInformatieobject>
             <data:maker>/tooi/id/ministerie/mnre1034</data:maker>
             <data:officieleTitel>/join/id/regdata/ws0616/2020/ib_aangewezen_oppervlaktewaterlichamen_rijnland</data:officieleTitel> <!-- moet de join-id van de GIO bevatten (van het Work) -->
-            <data:publicatieinstructie>AlleenBekendTeMaken</data:publicatieinstructie>
+            <data:publicatieinstructie>TeConsolideren</data:publicatieinstructie>
         </data:InformatieObjectMetadata>
     </lvbba:InformatieObjectVersie>
 </lvbba:AanleveringInformatieObject>

@@ -17,7 +17,7 @@
       <sl:dataset>ws0616</sl:dataset>
       <sl:inhoud>
          <sl:gebied>ws0616</sl:gebied>
-         <sl:leveringsId>ws0616_2020-09-22</sl:leveringsId>
+         <sl:leveringsId>ws0616_2020-10-14</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Gebied</sl:objectType>
             <sl:objectType>Gebiedengroep</sl:objectType>
@@ -57,9 +57,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0616.gebied.2020000001</l:identificatie>
-               <l:noemer>Gouwe en oostelijk deel Oude Rijn</l:noemer>
+               <l:noemer>Aarkanaal, Leidse Vaart en Drecht</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="f79a7755-8819-4234-96ca-76655e258c9b"/>
+                  <l:GeometrieRef xlink:href="7c6eb0ba-2eba-4c6f-a9a6-deadb0afb56d"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -68,9 +68,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0616.gebied.2020000002</l:identificatie>
-               <l:noemer>Vliet, Rijn-Schiekanaal, Oude Rijn tot uitwatering Katwijk met uitzondering van de singels in Leiden en een gedeelte van de Haarlemmertrekvaart</l:noemer>
+               <l:noemer>Spaarne, Mooie Nel en Liede</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="8c406bfb-e7b0-4e3e-8b8f-85112c8abbae"/>
+                  <l:GeometrieRef xlink:href="363ef61f-d44f-433e-bf25-2595a1380a40"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -79,9 +79,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0616.gebied.2020000003</l:identificatie>
-               <l:noemer>Aarkanaal, Leidse Vaart en Drecht</l:noemer>
+               <l:noemer>Oostelijk deel Ringvaart Haarlemmermeer</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="9c6475f6-c7e4-4553-b4cd-caabd95856ef"/>
+                  <l:GeometrieRef xlink:href="d1461311-fd73-4a73-8076-7ca8f9ba78a6"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -90,9 +90,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0616.gebied.2020000004</l:identificatie>
-               <l:noemer>Does en omliggende kanalen</l:noemer>
+               <l:noemer>Westelijk deel Ringvaart Haarlemmermeer</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="40c10aac-fb72-4f6f-989f-86dbffe0433a"/>
+                  <l:GeometrieRef xlink:href="c4eb8c94-760e-42fe-b8ae-097e27841f5d"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -101,9 +101,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0616.gebied.2020000005</l:identificatie>
-               <l:noemer>Trekvaart systeem</l:noemer>
+               <l:noemer>Does en omliggende kanalen</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="28d81f30-2ca0-4b8b-b82f-5a884c0f194a"/>
+                  <l:GeometrieRef xlink:href="f033377f-4c63-4227-a767-e2da9374f720"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -112,9 +112,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0616.gebied.2020000006</l:identificatie>
-               <l:noemer>Oostelijk deel Ringvaart Haarlemmermeer</l:noemer>
+               <l:noemer>Gouwe en oostelijk deel Oude Rijn</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="08d20174-1f8d-4ae2-8bea-ef0423051c14"/>
+                  <l:GeometrieRef xlink:href="4fb2330f-09cd-4682-b923-2b579de0a690"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -123,9 +123,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0616.gebied.2020000007</l:identificatie>
-               <l:noemer>Westelijk deel Ringvaart Haarlemmermeer</l:noemer>
+               <l:noemer>Vliet, Rijn-Schiekanaal, Oude Rijn tot uitwatering Katwijk met uitzondering van de singels in Leiden en een gedeelte van de Haarlemmertrekvaart</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="987e92c0-f314-481f-8828-a6aecd511cf8"/>
+                  <l:GeometrieRef xlink:href="91a23947-103e-4893-b817-4a06cd670314"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -134,9 +134,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0616.gebied.2020000008</l:identificatie>
-               <l:noemer>Noordelijk deel Ringvaart Haarlemmermeer</l:noemer>
+               <l:noemer>Trekvaart systeem</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="ddaf4d58-f875-4592-a82d-93c9596f2c37"/>
+                  <l:GeometrieRef xlink:href="4d36dcd0-34de-4dff-b40f-62cf0fc4aa43"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -145,9 +145,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0616.gebied.2020000009</l:identificatie>
-               <l:noemer>Spaarne, Mooie Nel en Liede</l:noemer>
+               <l:noemer>Noordelijk deel Ringvaart Haarlemmermeer</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="284fb0a8-b219-456a-b782-0deb31d72d20"/>
+                  <l:GeometrieRef xlink:href="e551e919-f65e-4e19-ac5a-9429d4d6d597"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -157,7 +157,7 @@
             <l:Gebied>
                <l:identificatie>nl.imow-ws0616.gebied.2020000010</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="2cf12d22-cbfd-4375-9edd-c2a22e253528"/>
+                  <l:GeometrieRef xlink:href="168b7872-47d7-4abf-b8d8-8784004e30eb"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>

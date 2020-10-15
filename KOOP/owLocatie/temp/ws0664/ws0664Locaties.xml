@@ -17,7 +17,7 @@
       <sl:dataset>ws0664</sl:dataset>
       <sl:inhoud>
          <sl:gebied>ws0664</sl:gebied>
-         <sl:leveringsId>ws0664_2020-09-22</sl:leveringsId>
+         <sl:leveringsId>ws0664_2020-10-14</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Gebied</sl:objectType>
             <sl:objectType>Gebiedengroep</sl:objectType>
@@ -45,14 +45,6 @@
                   <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000014"/>
                   <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000015"/>
                   <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000016"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000017"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000018"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000019"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000020"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000021"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000022"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000023"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000024"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -63,7 +55,7 @@
                <l:identificatie>nl.imow-ws0664.gebiedengroep.nietaangewOppvlaktewaterlichamen</l:identificatie>
                <l:noemer>Niet-aangewezen oppervlaktewaterlichamen waterschap Drents Overijsselse Delta</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000025"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0664.gebied.2020000017"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -72,9 +64,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000001</l:identificatie>
-               <l:noemer>Beilervaart</l:noemer>
+               <l:noemer>Drentsche Hoofdvaart</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="002401d6-b335-4917-b659-1120bfc12c20"/>
+                  <l:GeometrieRef xlink:href="b2933e81-ab72-410d-846e-b6527fd4c8bc"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -83,9 +75,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000002</l:identificatie>
-               <l:noemer>Linthorst Homankanaal</l:noemer>
+               <l:noemer>Hoogeveensche Vaart</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="94d0f1eb-1c66-4259-8a14-87b52812494b"/>
+                  <l:GeometrieRef xlink:href="79db26a8-b288-402c-bb47-99ac4088c38a"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -94,9 +86,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000003</l:identificatie>
-               <l:noemer>Drentsche Hoofdvaart</l:noemer>
+               <l:noemer>Verlengde Hoogeveensche Vaart</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="70ccc5a5-4ed3-4a4e-837e-7a231059fe58"/>
+                  <l:GeometrieRef xlink:href="bc450c11-e153-4494-a184-a49313b9ef6e"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -105,9 +97,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000004</l:identificatie>
-               <l:noemer>Ganzendiep</l:noemer>
+               <l:noemer>Havens te Zwolle</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="8bb338be-911e-40d3-bf72-9751dc6c893d"/>
+                  <l:GeometrieRef xlink:href="e55a7e17-ce7e-43fc-96c2-aef3bd23058f"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -116,9 +108,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000005</l:identificatie>
-               <l:noemer>Goot</l:noemer>
+               <l:noemer>Beilervaart</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="35ec2989-be81-4d80-b99b-14361662a06b"/>
+                  <l:GeometrieRef xlink:href="62346340-c75d-4144-8376-9d42a0d68b81"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -127,9 +119,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000006</l:identificatie>
-               <l:noemer>Havens Deventer</l:noemer>
+               <l:noemer>Meppelerdiep</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="2d3da0d1-f146-44a1-8367-57b9a4dc536c"/>
+                  <l:GeometrieRef xlink:href="7bdd6940-a266-495a-b84b-c3a975dffa72"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -138,9 +130,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000007</l:identificatie>
-               <l:noemer>Hoogeveensche Vaart</l:noemer>
+               <l:noemer>Vecht, vanaf stuw Vechterweerd tot het Zwarte Water</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="559fa356-1c9c-4bb9-b87c-11852622ec85"/>
+                  <l:GeometrieRef xlink:href="ee2298b6-8d5e-4cc3-8c45-6c062c707f1e"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -149,9 +141,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000008</l:identificatie>
-               <l:noemer>Verlengde Hoogeveensche Vaart</l:noemer>
+               <l:noemer>Havens Deventer</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="1359242d-e9a5-429a-9a90-4a2cd06e593b"/>
+                  <l:GeometrieRef xlink:href="60642933-e6fd-4f94-8232-0730df16d49a"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -160,9 +152,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000009</l:identificatie>
-               <l:noemer>Mallegat</l:noemer>
+               <l:noemer>Oranjekanaal</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="69ae6a0a-b5ee-4b75-a322-4dc765cea645"/>
+                  <l:GeometrieRef xlink:href="76836541-54ff-429b-91be-189fe412ec1c"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -171,9 +163,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000010</l:identificatie>
-               <l:noemer>Meppelerdiep</l:noemer>
+               <l:noemer>Venerietekanaal</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="f10df8f4-9216-4e37-bbfe-9d68f99bc1d7"/>
+                  <l:GeometrieRef xlink:href="47bdf28a-6355-4dc1-9d04-910a911e6b22"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -182,9 +174,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000011</l:identificatie>
-               <l:noemer>Oranjekanaal</l:noemer>
+               <l:noemer>Ganzendiep</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="45da3862-0bbc-4841-ab90-12c3d434ad22"/>
+                  <l:GeometrieRef xlink:href="0f4b2230-95f3-40f4-af56-8ffff22444b7"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -193,9 +185,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000012</l:identificatie>
-               <l:noemer>Stadsgrachten Zwolle</l:noemer>
+               <l:noemer>Haven van Vollenhove</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="71373d7a-6657-4a0e-a508-28c65ccf0bdd"/>
+                  <l:GeometrieRef xlink:href="3112401a-0dba-4640-9ca9-664901cb8ce0"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -204,9 +196,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000013</l:identificatie>
-               <l:noemer>Haven van Vollenhove</l:noemer>
+               <l:noemer>Mallegat</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="c5e75eba-fca0-4f3d-8d8e-75d87b41301b"/>
+                  <l:GeometrieRef xlink:href="2ab721d9-3ffb-462d-8a4e-8da91531247c"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -215,9 +207,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000014</l:identificatie>
-               <l:noemer>Vecht, vanaf stuw Vechterweerd tot het Zwarte Water</l:noemer>
+               <l:noemer>Stadsgrachten Zwolle</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="671901ec-a2f4-4c18-b138-5b1769ee8473"/>
+                  <l:GeometrieRef xlink:href="0d42bbd4-7db9-4ad5-9b80-7b45cc91f93f"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -226,9 +218,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000015</l:identificatie>
-               <l:noemer>Venerietekanaal</l:noemer>
+               <l:noemer>Linthorst Homankanaal</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="ef0725e9-2b4d-469e-825a-0b34e425b6d9"/>
+                  <l:GeometrieRef xlink:href="952e2cc9-1d96-48b0-b484-29e53367492d"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -237,9 +229,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000016</l:identificatie>
-               <l:noemer>Noord Willemskanaal</l:noemer>
+               <l:noemer>Goot</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="0cd8bbe3-6bef-4e24-89d0-6c883b845d91"/>
+                  <l:GeometrieRef xlink:href="c50725cd-00ff-46d5-945d-dd8772b4f760"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -248,96 +240,8 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0664.gebied.2020000017</l:identificatie>
-               <l:noemer>Velt en Vecht, kanalen</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="46469df5-d4a8-4956-9ca4-74c1b4e634d5"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0664.gebied.2020000018</l:identificatie>
-               <l:noemer>Drentsche Hoofdvaart</l:noemer>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="89ed4f10-b74d-49e5-a594-180f4804e96b"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0664.gebied.2020000019</l:identificatie>
-               <l:noemer>Noord Willemskanaal</l:noemer>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="84cb2e0a-e4a3-44f2-a99b-f55b746af200"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0664.gebied.2020000020</l:identificatie>
-               <l:noemer>Verlengde Hoogeveensche Vaart</l:noemer>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="71c5e8f4-6e1e-4b7f-9b52-eb6cb104e035"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0664.gebied.2020000021</l:identificatie>
-               <l:noemer>Velt en Vecht, kanalen</l:noemer>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="7c218ce6-9f4f-4aa7-98ce-ab82a1ff383d"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0664.gebied.2020000022</l:identificatie>
-               <l:noemer>Mallegat</l:noemer>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="772e03e4-964b-4fe4-a472-edb6e1ce9a75"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0664.gebied.2020000023</l:identificatie>
-               <l:noemer>Linde</l:noemer>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="ccc59584-4297-4796-a84b-7610616f5f20"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0664.gebied.2020000024</l:identificatie>
-               <l:noemer>Havens te Zwolle</l:noemer>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="8285bc24-314a-4fd1-ba8a-8fa72eab0306"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0664.gebied.2020000025</l:identificatie>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="8434b3cd-36a4-4d59-8a18-205d5bd71c59"/>
+                  <l:GeometrieRef xlink:href="15447afa-6b66-4216-b9b0-6a2f9ee89e60"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>

@@ -17,7 +17,7 @@
       <sl:dataset>ws0621</sl:dataset>
       <sl:inhoud>
          <sl:gebied>ws0621</sl:gebied>
-         <sl:leveringsId>ws0621_2020-09-22</sl:leveringsId>
+         <sl:leveringsId>ws0621_2020-10-14</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Gebied</sl:objectType>
             <sl:objectType>Gebiedengroep</sl:objectType>
@@ -53,7 +53,7 @@
                <l:identificatie>nl.imow-ws0621.gebied.2020000001</l:identificatie>
                <l:noemer>Linge (mond Kanaal van Steenenhoek tot Boven Merwede)</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="dc3f628d-3c89-4cf7-a084-29367608c1b1"/>
+                  <l:GeometrieRef xlink:href="372a8684-5204-4d03-9e4b-3041caf413a4"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -62,9 +62,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0621.gebied.2020000002</l:identificatie>
-               <l:noemer>Merwedekanaal</l:noemer>
+               <l:noemer>Haven te Vianen</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="8f5517b8-3d43-4ca7-b5b7-dfce60a15518"/>
+                  <l:GeometrieRef xlink:href="d976efd3-0df8-482d-91aa-a3acc68fdee7"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -73,9 +73,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0621.gebied.2020000003</l:identificatie>
-               <l:noemer>Haven te Vianen</l:noemer>
+               <l:noemer>Merwedekanaal</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="6e75aed9-b9cb-4b02-b328-7532c580840c"/>
+                  <l:GeometrieRef xlink:href="e999ef91-ee78-431a-b840-a21ee0c00c70"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -85,7 +85,7 @@
             <l:Gebied>
                <l:identificatie>nl.imow-ws0621.gebied.2020000004</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="fc32dc17-be53-4616-a71f-827c82a032ef"/>
+                  <l:GeometrieRef xlink:href="8fff0026-5c94-467e-ab1d-c533e8b93649"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>

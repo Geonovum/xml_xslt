@@ -17,7 +17,7 @@
       <sl:dataset>ws0652</sl:dataset>
       <sl:inhoud>
          <sl:gebied>ws0652</sl:gebied>
-         <sl:leveringsId>ws0652_2020-09-22</sl:leveringsId>
+         <sl:leveringsId>ws0652_2020-10-14</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Gebied</sl:objectType>
             <sl:objectType>Gebiedengroep</sl:objectType>
@@ -51,8 +51,6 @@
                   <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000020"/>
                   <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000021"/>
                   <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000022"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000023"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000024"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -63,7 +61,7 @@
                <l:identificatie>nl.imow-ws0652.gebiedengroep.nietaangewOppvlaktewaterlichamen</l:identificatie>
                <l:noemer>Niet-aangewezen oppervlaktewaterlichamen waterschap Brabantse Delta</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000025"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0652.gebied.2020000023"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -74,7 +72,7 @@
                <l:identificatie>nl.imow-ws0652.gebied.2020000001</l:identificatie>
                <l:noemer>Haven van Roosendaal</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="78d851fe-3b77-4470-9182-64323c79b533"/>
+                  <l:GeometrieRef xlink:href="798116f7-540b-4a3d-8287-bbc818a133a9"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -83,9 +81,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000002</l:identificatie>
-               <l:noemer>Aa of Weerijs</l:noemer>
+               <l:noemer>Waalwijksche Haven</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="d679f60b-8dc1-433a-b6ee-512b68db019a"/>
+                  <l:GeometrieRef xlink:href="b7b4cdca-b2ab-4142-addd-ed41a408292b"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -94,9 +92,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000003</l:identificatie>
-               <l:noemer>Bovenmark</l:noemer>
+               <l:noemer>Aa of Weerijs</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="864d27ff-3459-4bdf-8bf7-87196c8116a2"/>
+                  <l:GeometrieRef xlink:href="31d5c06d-a3a1-445b-8006-3109ff5344b9"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -105,9 +103,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000004</l:identificatie>
-               <l:noemer>Oude Leij benedenstrooms van de kruising met de N282 (Oude Rijksweg)</l:noemer>
+               <l:noemer>Gat van den Ham</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="0dce4fbf-e823-4522-828f-3946a6761c89"/>
+                  <l:GeometrieRef xlink:href="bf82fe1c-df11-4a27-853f-d0c92b45738b"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -116,9 +114,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000005</l:identificatie>
-               <l:noemer>Mark-Vliet kanaal</l:noemer>
+               <l:noemer>Donge</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="4c476a6e-a952-490c-90f0-3bc99156c028"/>
+                  <l:GeometrieRef xlink:href="a81d96ca-2435-4003-a18b-5418756e0f82"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -127,9 +125,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000006</l:identificatie>
-               <l:noemer>Steenbergsche Vliet</l:noemer>
+               <l:noemer>Steenbergsche Haven</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="30eb0607-c2c2-4b45-9156-f7871c680b7a"/>
+                  <l:GeometrieRef xlink:href="ad3cc3e3-c296-4a77-b26c-a6527deccefe"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -138,9 +136,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000007</l:identificatie>
-               <l:noemer>De Baak (onderdeel Kruislandse Kreken)</l:noemer>
+               <l:noemer>Markkanaal</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="d9e6ff05-572f-419f-ae49-e470c0745b3f"/>
+                  <l:GeometrieRef xlink:href="ceafc920-f474-4205-a1c0-b0053f020e77"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -149,9 +147,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000008</l:identificatie>
-               <l:noemer>Vloedspui en Haven van Hooge Zwaluwe</l:noemer>
+               <l:noemer>De Beek (onderdeel Kruislandse Kreken)</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="dc17f424-03ce-4f22-ae36-ac4c6f0719de"/>
+                  <l:GeometrieRef xlink:href="8b7db016-41a3-4778-bcd5-508f4148dc57"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -160,9 +158,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000009</l:identificatie>
-               <l:noemer>Mark</l:noemer>
+               <l:noemer>Singels Breda</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="592763ed-b9ea-49bb-8ae4-5ba3808ecbbf"/>
+                  <l:GeometrieRef xlink:href="0b6b87b9-9863-46c1-baaa-39b50a22fc2d"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -171,9 +169,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000010</l:identificatie>
-               <l:noemer>Singels Breda</l:noemer>
+               <l:noemer>De Baak (onderdeel Kruislandse Kreken)</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="ff3f590d-a0d6-473f-b76c-bbe34d268011"/>
+                  <l:GeometrieRef xlink:href="45e504af-4c35-4ec3-99e8-7d7978cf9906"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -182,9 +180,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000011</l:identificatie>
-               <l:noemer>Gat van den Ham</l:noemer>
+               <l:noemer>Mark-Vliet kanaal</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="8ef44035-e242-4e4c-99c3-3b977692e31d"/>
+                  <l:GeometrieRef xlink:href="b48e07d8-97f9-407f-936d-fb6734e6d176"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -193,9 +191,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000012</l:identificatie>
-               <l:noemer>Zuiderafwateringskanaal</l:noemer>
+               <l:noemer>Vloedspui en Haven van Hooge Zwaluwe</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="0070d0b1-6450-43ca-b6eb-37b7981794dc"/>
+                  <l:GeometrieRef xlink:href="9688c27a-3d00-4405-ac26-053f2b30dca4"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -204,9 +202,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000013</l:identificatie>
-               <l:noemer>Kerkvaart</l:noemer>
+               <l:noemer>Steenbergsche Vliet</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="8742f26c-d5dd-4dcc-929d-21c0b0529e59"/>
+                  <l:GeometrieRef xlink:href="0bebad3e-2316-4b29-b196-98b1e9caeb4f"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -215,9 +213,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000014</l:identificatie>
-               <l:noemer>Steenbergsche Haven</l:noemer>
+               <l:noemer>Kerkvaart</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="0c0905bf-ff39-401e-9fb9-0bbe89656874"/>
+                  <l:GeometrieRef xlink:href="b8f5df19-072d-4369-9488-960b661eb235"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -226,9 +224,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000015</l:identificatie>
-               <l:noemer>De Beek (onderdeel Kruislandse Kreken)</l:noemer>
+               <l:noemer>Oude Leij benedenstrooms van de kruising met de N282 (Oude Rijksweg)</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="85d3a32f-c645-4eba-adf5-d4252b0e975b"/>
+                  <l:GeometrieRef xlink:href="c140e63a-16eb-4d39-841b-130d05048ebe"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -237,9 +235,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000016</l:identificatie>
-               <l:noemer>Markkanaal</l:noemer>
+               <l:noemer>Mark</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="251cdbfe-7f73-47d2-9997-cab0215686e9"/>
+                  <l:GeometrieRef xlink:href="ff3900f5-2215-41b4-94c4-0591221fe155"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -248,9 +246,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000017</l:identificatie>
-               <l:noemer>Capelsche Haven</l:noemer>
+               <l:noemer>Zuiderafwateringskanaal</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="39d43044-dece-4082-a462-82a5c39fd0ca"/>
+                  <l:GeometrieRef xlink:href="23d95b37-5797-4863-a6ca-77679edaada5"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -259,9 +257,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000018</l:identificatie>
-               <l:noemer>Dintel</l:noemer>
+               <l:noemer>Bovenmark</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="8692d9c9-6235-45c5-931d-2cdf5c7eacf7"/>
+                  <l:GeometrieRef xlink:href="18fe4e33-e8e4-407f-8eeb-96d152cf2ebe"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -270,9 +268,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000019</l:identificatie>
-               <l:noemer>Mark</l:noemer>
+               <l:noemer>Oude Maasje</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="6805c12c-871a-484c-bea5-475ce5281260"/>
+                  <l:GeometrieRef xlink:href="edd89450-4594-4252-97f3-b80d33bc416e"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -281,9 +279,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000020</l:identificatie>
-               <l:noemer>Waalwijksche Haven</l:noemer>
+               <l:noemer>Capelsche Haven</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="81d0058e-4e14-4bd6-86b8-436b897fcb28"/>
+                  <l:GeometrieRef xlink:href="6039b41f-f678-4f4a-9b27-832b446e32d2"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -292,9 +290,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000021</l:identificatie>
-               <l:noemer>Oude Maasje</l:noemer>
+               <l:noemer>Dintel</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="ecc03556-1576-4e8e-a227-11e38965db7a"/>
+                  <l:GeometrieRef xlink:href="aac59741-2992-4095-9ed5-901e7a029c82"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -303,9 +301,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000022</l:identificatie>
-               <l:noemer>Donge</l:noemer>
+               <l:noemer>Roode vaart ten noorden van Zevenbergen</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="ef243001-1f63-4b35-87c0-8f8dbcbad60e"/>
+                  <l:GeometrieRef xlink:href="b2658636-f5a7-40c7-9ee9-96898f38f133"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -314,30 +312,8 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0652.gebied.2020000023</l:identificatie>
-               <l:noemer>Roode vaart ten noorden van Zevenbergen</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="32f8052a-d94d-4a05-b33a-3ce10d2e27aa"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0652.gebied.2020000024</l:identificatie>
-               <l:noemer>Dintel</l:noemer>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="40d45d53-3cb9-4d0c-b805-c99b0d6d7228"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0652.gebied.2020000025</l:identificatie>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="1c917fcc-b869-4338-9271-e9b2dc849720"/>
+                  <l:GeometrieRef xlink:href="7872582a-6305-42d8-96d2-a4e7a8a1000e"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>

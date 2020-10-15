@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basisgeo:FeatureCollectionGeometrie xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+                                     xmlns:gml="http://www.opengis.net/gml/3.2">
+   <basisgeo:featureMember>
+      <basisgeo:Geometrie xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                          xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+                          gml:id="id-8f7e441c-5697-4d05-9d0b-36f98c12eb47-xx">
+         <basisgeo:id>8f7e441c-5697-4d05-9d0b-36f98c12eb47</basisgeo:id>
+         <basisgeo:geometrie>
+            <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992"
+                              gml:id="id-8f7e441c-5697-4d05-9d0b-36f98c12eb47">
+               <gml:surfaceMember>
+                  <gml:Polygon>
+                     <gml:exterior>
+                        <gml:LinearRing>
+                           <gml:posList>186869.594 557912.129 186866.177 557913.354
+                                          186861.57 557913.515 186856.43 557906.692 186856.647
+                                          557902.318 186859.641 557898.601 186859.996 557894.229
+                                          186858.736 557883.641 186857.912 557849.311 186863.126
+                                          557848.687 186867.059 557847.63 186870.978 557846.55
+                                          186874.501 557842.666 186877.796 557831.989 186881.805
+                                          557813.767 186884.126 557798.092 186890.609 557789.628
+                                          186894.601 557789.048 186905.793 557792.075 186928.745
+                                          557703.102 186927.364 557705.173 186924.948 557707.244
+                                          186920.346 557709.315 186915.744 557710.236 186910.106
+                                          557709.2 186896.3 557702.067 186890.564 557699.346
+                                          186880.884 557695.049 186871.564 557693.553 186861.301
+                                          557695.225 186857.068 557696.659 186853.883 557698.638
+                                          186848.784 557702.757 186843.971 557708.553 186839.195
+                                          557719.112 186836.589 557730.302 186832.332 557744.751
+                                          186822.54 557783.007 186820.021 557794.108 186818.253
+                                          557806.978 186816.825 557830.553 186816.34 557846.916
+                                          186816.644 557852.194 186820.079 557891.354 186826.464
+                                          557998.784 186827.223 558004.543 186829.801 558021.679
+                                          186869.594 557912.129</gml:posList>
+                        </gml:LinearRing>
+                     </gml:exterior>
+                  </gml:Polygon>
+               </gml:surfaceMember>
+            </gml:MultiSurface>
+         </basisgeo:geometrie>
+      </basisgeo:Geometrie>
+   </basisgeo:featureMember>
+</basisgeo:FeatureCollectionGeometrie>

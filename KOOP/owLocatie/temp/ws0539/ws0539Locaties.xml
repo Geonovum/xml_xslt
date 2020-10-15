@@ -17,7 +17,7 @@
       <sl:dataset>ws0539</sl:dataset>
       <sl:inhoud>
          <sl:gebied>ws0539</sl:gebied>
-         <sl:leveringsId>ws0539_2020-09-22</sl:leveringsId>
+         <sl:leveringsId>ws0539_2020-10-14</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Gebied</sl:objectType>
             <sl:objectType>Gebiedengroep</sl:objectType>
@@ -37,9 +37,6 @@
                   <l:GebiedRef xlink:href="nl.imow-ws0539.gebied.2020000006"/>
                   <l:GebiedRef xlink:href="nl.imow-ws0539.gebied.2020000007"/>
                   <l:GebiedRef xlink:href="nl.imow-ws0539.gebied.2020000008"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0539.gebied.2020000009"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0539.gebied.2020000010"/>
-                  <l:GebiedRef xlink:href="nl.imow-ws0539.gebied.2020000011"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -50,7 +47,7 @@
                <l:identificatie>nl.imow-ws0539.gebiedengroep.nietaangewOppvlaktewaterlichamen</l:identificatie>
                <l:noemer>Niet-aangewezen oppervlaktewaterlichamen waterschap De Dommel</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-ws0539.gebied.2020000012"/>
+                  <l:GebiedRef xlink:href="nl.imow-ws0539.gebied.2020000009"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -61,7 +58,7 @@
                <l:identificatie>nl.imow-ws0539.gebied.2020000001</l:identificatie>
                <l:noemer>Eindhovens Kanaal</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="d8e96962-a436-41e3-a1d3-b2c3bb0377f2"/>
+                  <l:GeometrieRef xlink:href="fc62872f-8d72-446c-80a2-782e772dea3d"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -72,7 +69,7 @@
                <l:identificatie>nl.imow-ws0539.gebied.2020000002</l:identificatie>
                <l:noemer>Nieuwe Leij</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="d29dbde5-45a4-44b8-ac4f-f6d5fa09cf3c"/>
+                  <l:GeometrieRef xlink:href="e626d49e-3c92-40bb-b851-d12655f3a649"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -83,7 +80,7 @@
                <l:identificatie>nl.imow-ws0539.gebied.2020000003</l:identificatie>
                <l:noemer>Voortse Stroom</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="37d38084-5e92-4e00-8693-baad681ad3bd"/>
+                  <l:GeometrieRef xlink:href="74cf1e96-c29e-4ccc-8984-698c5bad4397"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -92,9 +89,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0539.gebied.2020000004</l:identificatie>
-               <l:noemer>Essche Stroom</l:noemer>
+               <l:noemer>Groote Aa</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="5670e2de-9d4e-4f55-8e81-f1fd6d7b751b"/>
+                  <l:GeometrieRef xlink:href="65790642-dadc-44f2-b981-052afd5c5914"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -103,9 +100,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0539.gebied.2020000005</l:identificatie>
-               <l:noemer>Dommel</l:noemer>
+               <l:noemer>Essche Stroom</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="a9bf9255-e30b-4c3a-8d54-1877b437d50d"/>
+                  <l:GeometrieRef xlink:href="0c2f8394-efa3-457d-8d44-952a663c9e0c"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -114,9 +111,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0539.gebied.2020000006</l:identificatie>
-               <l:noemer>Groote Aa</l:noemer>
+               <l:noemer>Afwateringskanaal Dommel</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="93f519a2-c7ec-44b5-8258-f2c80d36e8e2"/>
+                  <l:GeometrieRef xlink:href="876c791d-851c-4500-937d-22e94c17a299"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -127,7 +124,7 @@
                <l:identificatie>nl.imow-ws0539.gebied.2020000007</l:identificatie>
                <l:noemer>Beatrixkanaal</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="631afe11-209d-4d57-b78e-672a6fa1f885"/>
+                  <l:GeometrieRef xlink:href="23929bbb-6a53-4e49-8175-b11c0f06fdaa"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -136,9 +133,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0539.gebied.2020000008</l:identificatie>
-               <l:noemer>Afwateringskanaal Dommel</l:noemer>
+               <l:noemer>Dommel</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="eb348f37-275c-41dc-bac6-cfeddf8ee944"/>
+                  <l:GeometrieRef xlink:href="def0b236-8a81-4f24-9381-acab995bd38c"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -147,41 +144,8 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0539.gebied.2020000009</l:identificatie>
-               <l:noemer>Eindhovens Kanaal</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="625fbaaa-7fff-44b3-99bd-60cf8e9ef43a"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0539.gebied.2020000010</l:identificatie>
-               <l:noemer>Eindhovens Kanaal</l:noemer>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="405a190b-1ed6-40ef-ab8f-f91400bd3e77"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0539.gebied.2020000011</l:identificatie>
-               <l:noemer>Eindhovens Kanaal</l:noemer>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="5070cc56-f8b7-47a1-be18-414f384509b8"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-ws0539.gebied.2020000012</l:identificatie>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="9bd6b08e-932f-499d-b17a-bea2a40a66d3"/>
+                  <l:GeometrieRef xlink:href="3cf83526-bf9c-4918-ac5b-cccfa11c54ea"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>

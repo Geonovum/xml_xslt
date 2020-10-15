@@ -17,7 +17,7 @@
       <sl:dataset>ws0636</sl:dataset>
       <sl:inhoud>
          <sl:gebied>ws0636</sl:gebied>
-         <sl:leveringsId>ws0636_2020-09-22</sl:leveringsId>
+         <sl:leveringsId>ws0636_2020-10-14</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Gebied</sl:objectType>
             <sl:objectType>Gebiedengroep</sl:objectType>
@@ -69,9 +69,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000001</l:identificatie>
-               <l:noemer>Maalvliet gemaal de Tol (Machine wetering de Tol)</l:noemer>
+               <l:noemer>Galecopper Wetering</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="84443d8c-0666-4850-9fa0-48a2865fed88"/>
+                  <l:GeometrieRef xlink:href="c50b959c-81d3-402d-8414-f901e5a5e8ea"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -80,9 +80,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000002</l:identificatie>
-               <l:noemer>Gekanaliseerde Hollandse IJssel</l:noemer>
+               <l:noemer>Caspergauwse Wetering</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="9d7dd4fd-88a3-494d-b44f-e675c7b9732a"/>
+                  <l:GeometrieRef xlink:href="44004dd8-afc5-480b-9110-343586e5ff05"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -91,9 +91,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000003</l:identificatie>
-               <l:noemer>Maalvliet de Koekkoek</l:noemer>
+               <l:noemer>Merwedekanaal (benoorden de Lek)</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="b05101e5-7ba7-4c9d-83b6-eaf4240f51df"/>
+                  <l:GeometrieRef xlink:href="b775c9b5-ff8b-4269-8d4b-cc5287b6063c"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -102,9 +102,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000004</l:identificatie>
-               <l:noemer>Kromme Rijn</l:noemer>
+               <l:noemer>Dubbele Wiericke</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="f0174b93-3bf0-48f3-8090-9fe3226ff33d"/>
+                  <l:GeometrieRef xlink:href="7202d081-e992-4c47-8c94-11fe8aa5507a"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -113,9 +113,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000005</l:identificatie>
-               <l:noemer>Caspergauwse Wetering</l:noemer>
+               <l:noemer>Gekanaliseerde Hollandse IJssel</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="e5bc87e8-e23b-46e1-a422-b46dbfa7b5e7"/>
+                  <l:GeometrieRef xlink:href="cdae223a-a788-4d95-9aec-4fa23d956248"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -124,9 +124,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000006</l:identificatie>
-               <l:noemer>Hakswetering</l:noemer>
+               <l:noemer>Haarrijn</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="5b4de8fb-5a8e-4580-bf39-14109da05aac"/>
+                  <l:GeometrieRef xlink:href="72656a95-4c00-4c19-8c07-486b117c8e74"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -135,9 +135,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000007</l:identificatie>
-               <l:noemer>Maalvliet de Keulevaart</l:noemer>
+               <l:noemer>Maalvliet de Koekkoek</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="a2243227-d357-4d51-8546-b20336983da5"/>
+                  <l:GeometrieRef xlink:href="b6175b4f-ec4d-478a-b4c1-6e95aeadbd9e"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -146,9 +146,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000008</l:identificatie>
-               <l:noemer>Enkele Wiericke</l:noemer>
+               <l:noemer>Hakswetering</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="ee4424b2-884f-4b9a-9fb4-515eeeab8d03"/>
+                  <l:GeometrieRef xlink:href="70c7ef31-0f1c-4938-8400-f368e65d3b98"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -157,9 +157,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000009</l:identificatie>
-               <l:noemer>Dubbele Wiericke</l:noemer>
+               <l:noemer>Zilveren schaats Utrecht</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="740f2f39-48a5-4c97-a470-4b6d8cc10f82"/>
+                  <l:GeometrieRef xlink:href="b07ba35d-457d-4ec7-b86d-8c8a4478e540"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -168,9 +168,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000010</l:identificatie>
-               <l:noemer>Oude Rijn</l:noemer>
+               <l:noemer>Nieuwe Gracht</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="358e335a-24a9-462c-a3f5-ab8ff387e070"/>
+                  <l:GeometrieRef xlink:href="410d06f5-c049-4f2f-903f-1b793903c33b"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -179,9 +179,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000011</l:identificatie>
-               <l:noemer>Maalvliet de Pleyt</l:noemer>
+               <l:noemer>Enkele Wiericke</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="0bb67458-59f2-4ed1-af46-881a392359cd"/>
+                  <l:GeometrieRef xlink:href="e4525261-8fdd-4e91-abe5-38e190d540db"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -190,9 +190,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000012</l:identificatie>
-               <l:noemer>Leidsche Rijn</l:noemer>
+               <l:noemer>Maalvliet gemaal de Tol (Machine wetering de Tol)</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="11de2bf1-097d-4040-ae9b-a4fa5d135226"/>
+                  <l:GeometrieRef xlink:href="6d4ccc3d-e586-4bf4-aeac-423a290e2794"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -201,9 +201,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000013</l:identificatie>
-               <l:noemer>Bijleveld</l:noemer>
+               <l:noemer>Leidsche Rijn</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="f76cccd1-8311-4500-862a-896eeb21ccd0"/>
+                  <l:GeometrieRef xlink:href="c6088703-d8df-4971-850c-d01cd2d85628"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -214,7 +214,7 @@
                <l:identificatie>nl.imow-ws0636.gebied.2020000014</l:identificatie>
                <l:noemer>Maalvliet voor gemaal Bijleveld</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="92ac8ddb-73b3-4d51-a319-1a06e86c72fc"/>
+                  <l:GeometrieRef xlink:href="db607b2a-64f4-4e60-90c9-d334e8d68cd1"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -223,9 +223,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000015</l:identificatie>
-               <l:noemer>Merwedekanaal (benoorden de Lek)</l:noemer>
+               <l:noemer>Bijleveld</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="b04b3a70-6d7a-49b1-a3ec-864bdad89b1c"/>
+                  <l:GeometrieRef xlink:href="c8997b27-511a-43c7-a4bc-c3972e8326ec"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -234,9 +234,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000016</l:identificatie>
-               <l:noemer>Haarrijn</l:noemer>
+               <l:noemer>Oude Rijn</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="622a5776-8a75-45b4-8fe1-67e9c78a3373"/>
+                  <l:GeometrieRef xlink:href="e93cfb51-0707-4809-829b-f2a96d6b094b"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -245,9 +245,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000017</l:identificatie>
-               <l:noemer>Nieuwe Gracht</l:noemer>
+               <l:noemer>Vaartsche Rijn en Oude Gracht</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="713ddfe6-d465-4c9a-9e65-7c8da3b84e4b"/>
+                  <l:GeometrieRef xlink:href="6b8d74f8-82f8-44d2-a969-153724507917"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -256,9 +256,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000018</l:identificatie>
-               <l:noemer>Vaartsche Rijn en Oude Gracht</l:noemer>
+               <l:noemer>Kruisvaart</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="ac8e4675-2d94-4a2b-a36b-03ee20061c51"/>
+                  <l:GeometrieRef xlink:href="fbb914bb-0327-4574-aa27-b3dda5164a0a"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -267,9 +267,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000019</l:identificatie>
-               <l:noemer>Kruisvaart</l:noemer>
+               <l:noemer>Kromme Rijn</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="aee9fe1b-c008-4e8c-9b8b-4071f592dca9"/>
+                  <l:GeometrieRef xlink:href="bee07e4a-9665-477e-afd5-5588d9042d44"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -278,9 +278,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000020</l:identificatie>
-               <l:noemer>Zilveren schaats Utrecht</l:noemer>
+               <l:noemer>Maalvliet de Keulevaart</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="608472dd-0e30-4e28-aef1-0924931bb6b4"/>
+                  <l:GeometrieRef xlink:href="d2f2b651-712b-4257-9359-b2cd1402c343"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -289,9 +289,9 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000021</l:identificatie>
-               <l:noemer>Galecopper Wetering</l:noemer>
+               <l:noemer>Maalvliet de Pleyt</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="b24e69f2-a15c-45a4-a1a1-888a46b6e95d"/>
+                  <l:GeometrieRef xlink:href="f9f4c011-9675-4c41-9eea-999652c0de5b"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -301,7 +301,7 @@
             <l:Gebied>
                <l:identificatie>nl.imow-ws0636.gebied.2020000022</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="aad511c3-b16e-4034-8ee0-bbabc97f7b25"/>
+                  <l:GeometrieRef xlink:href="16aaca17-0c16-4d4f-9e89-7ee770c2b39e"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
