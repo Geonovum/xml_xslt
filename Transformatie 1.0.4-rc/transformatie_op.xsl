@@ -199,7 +199,7 @@
   <xsl:template match="IntRef" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
     <xsl:variable name="id" select="@ref"/>
     <xsl:variable name="context" select="./ancestor::element()[fn:index-of($context.list,name()) gt 0][1]"/>
-    <xsl:variable name="node" select="$context//element()[@eId=$id][1]"/>
+    <xsl:variable name="node" select="($context//element()[@eId=$id])[1]"/>
     <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
       <xsl:apply-templates select="@*"/>
       <xsl:choose>
