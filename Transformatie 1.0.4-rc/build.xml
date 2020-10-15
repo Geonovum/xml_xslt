@@ -65,6 +65,35 @@
     </xmltask>
   </target>
 
+  <!-- transformeer GML-bestanden -->
+
+  <target name="GML" description="Transformeer GML-bestanden">
+    <xslt basedir="${input.dir}" includes="*.gml" destdir="${temp.dir}" extension=".gml" style="transformatie_gml.xsl" processor="trax" force="true"/>
+    <copy todir="${output.dir}">
+      <fileset dir="${temp.dir}" includes="*.gml"/>
+    </copy>
+  </target>
+
+  <!-- maak hash-code -->
+
+  <target name="checksum" description="Maak hash-codes">
+    <foreach target="checksum.execute" param="file.fullname">
+      <path>
+        <fileset dir="${temp.dir}"/>
+      </path>
+    </foreach>
+  </target>
+
+  <target name="checksum.execute">
+    <basename property="file.name" file="${file.fullname}"/>
+    <checksum file="${file.fullname}" algorithm="SHA-512" property="file.checksum"/>
+    <xslt in="template.xml" out="${temp.dir}/checksum/${file.name}.xml" style="checksum.xsl" processor="trax" force="true">
+      <param name="file.name" expression="${file.name}"/>
+      <param name="file.fullname" expression="${file.fullname}"/>
+      <param name="file.checksum" expression="${file.checksum}"/>
+    </xslt>
+  </target>
+
   <!-- transformeer GIO-bestanden -->
 
   <target name="GIO" description="Transformeer GIO-bestanden">
@@ -77,6 +106,6 @@
 
   <!-- totale transformatie -->
 
-  <target name="main" description="Totale transformatie" depends="init,copy,OP,OW,GIO"/>
+  <target name="main" description="Totale transformatie" depends="init,copy,OP,OW,GML,checksum,GIO"/>
 
 </project>

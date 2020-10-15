@@ -14,8 +14,16 @@
 
   <xsl:param name="GIO_bestanden" select="collection(concat($input, '?select=*.xml'))/root()[AanleveringInformatieObject]" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
   <xsl:param name="RegelingVersieInformatie" select="document(fn:string-join(($temp,'besluit.xml'),'/'))/AanleveringBesluit/RegelingVersieInformatie" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
+  <xsl:param name="hash" select="collection(concat($temp,'/checksum','?select=*.xml'))"/>
 
   <!-- match op alle xml bestanden waarvan het root element een 'AanleveringInformatieObject' is -->
+
+  <xsl:template match="hash" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+    <xsl:variable name="GML" select="string(parent::Bestand/bestandsnaam)"/>
+    <xsl:element name="{name()}" namespace="{namespace-uri()}">
+      <xsl:value-of select="$hash/file[name=$GML]/checksum" xpath-default-namespace=""/>
+    </xsl:element>
+  </xsl:template>
 
   <xsl:template match="/" mode="GIO">
     <xsl:variable name="GIO" select="tokenize(document-uri(),'/')[last()]"/>

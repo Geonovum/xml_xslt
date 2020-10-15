@@ -8,9 +8,9 @@
                     <entry>
                         <String>catalogs.v5</String>
                         <String-array>
-                            <String>file:/C:/Werkbestanden/Geonovum/Transformatie%201.0.4/1.0.4/lvbb/lvbb-catalog.xml</String>
-                            <String>file:/C:/Werkbestanden/Geonovum/Transformatie%201.0.4/1.0.4/stop/stop-catalog.xml</String>
-                            <String>file:/C:/Werkbestanden/Geonovum/Transformatie%201.0.4/1.0.4/extern/extern-catalog.xml</String>
+                            <String>file:/C:/Werkbestanden/Geonovum/Transformatie%201.0.4/1.0.4-rc/lvbb/lvbb-catalog.xml</String>
+                            <String>file:/C:/Werkbestanden/Geonovum/Transformatie%201.0.4/1.0.4-rc/extern/extern-catalog.xml</String>
+                            <String>file:/C:/Werkbestanden/Geonovum/Transformatie%201.0.4/1.0.4-rc/stop/stop-catalog.xml</String>
                         </String-array>
                     </entry>
                     <entry>
