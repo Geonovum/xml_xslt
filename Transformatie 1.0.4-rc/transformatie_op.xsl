@@ -10,6 +10,10 @@
 
   <xsl:param name="waardelijsten" select="document('waardelijsten OP 1.0.4.xml')//Waardelijst"/>
 
+  <!-- lijst om te bepalen in welke context een IntRef zit -->
+
+  <xsl:param name="context.list" select="('BesluitCompact','BesluitKlassiek','RegelingCompact','RegelingKlassiek','RegelingTijdelijkdeel','RegelingVrijetekst')"></xsl:param>
+
   <!-- stel manifest-bestand samen -->
 
   <xsl:param name="manifest">
@@ -193,7 +197,9 @@
   </xsl:template>
 
   <xsl:template match="IntRef" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <xsl:variable name="node" select="root()//element()[@eId=current()/@ref]"/>
+    <xsl:variable name="id" select="@ref"/>
+    <xsl:variable name="context" select="./ancestor::element()[fn:index-of($context.list,name()) gt 0][1]"/>
+    <xsl:variable name="node" select="($context//element()[@eId=$id][1],'geen')[1]"/>
     <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
       <xsl:apply-templates select="@*"/>
       <xsl:attribute name="scope" select="local-name($node)"/>
