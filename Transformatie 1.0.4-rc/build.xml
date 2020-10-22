@@ -53,6 +53,7 @@
   <target name="OP" description="Transformeer OP-bestanden">
     <xslt in="template.xml" out="${temp.dir}/manifest.xml" style="transformatie_op.xsl" processor="trax" force="true">
       <param name="file.list" expression="${file.list}"/>
+      <param name="base.dir" expression="${base.dir}"/>
     </xslt>
     <xmltask source="${temp.dir}/manifest.xml">
       <call path="manifest/file[contains(@name,'besluit.xml')]">
