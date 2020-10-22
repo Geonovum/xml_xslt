@@ -25,15 +25,28 @@
     </copy>
   </target>
 
-  <!-- maak input.list -->
+  <!-- maak parameters -->
 
   <path id="input.list">
     <fileset dir="${input.dir}" includes="*.xml"/>
   </path>
-  <pathconvert property="file.list" refid="input.list" dirsep="/" pathsep=";" targetos="windows">
-    <map from="${basedir}" to="file:/${basedir}"/>
-  </pathconvert>
-  <pathconvert property="file.list" refid="input.list" dirsep="/" pathsep=";" targetos="unix"/>
+  <path id="basedir" path="${basedir}"/>
+
+  <if>
+    <os family="unix"/>
+    <then>
+      <pathconvert property="base.dir" refid="basedir" dirsep="/" targetos="unix"/>
+      <pathconvert property="file.list" refid="input.list" dirsep="/" pathsep=";" targetos="unix"/>
+    </then>
+    <else>
+      <pathconvert property="base.dir" refid="basedir" dirsep="/" targetos="windows">
+        <map from="${basedir}" to="file:/${basedir}"/>
+      </pathconvert>
+      <pathconvert property="file.list" refid="input.list" dirsep="/" pathsep=";" targetos="windows">
+        <map from="${basedir}" to="file:/${basedir}"/>
+      </pathconvert>
+    </else>
+  </if>
 
   <!-- transformeer OP-bestanden -->
 
@@ -101,9 +114,9 @@
 
   <target name="GIO" description="Transformeer GIO-bestanden">
     <xslt in="template.xml" out="${temp.dir}/manifest.xml" style="transformatie_gio.xsl" processor="trax" force="true">
-      <param name="input.dir" expression="${basedir}\${input.dir}"/>
-      <param name="output.dir" expression="${basedir}\${output.dir}"/>
-      <param name="temp.dir" expression="${basedir}\${temp.dir}"/>
+      <param name="input.dir" expression="${base.dir}/${input.dir}"/>
+      <param name="output.dir" expression="${base.dir}/${output.dir}"/>
+      <param name="temp.dir" expression="${base.dir}/${temp.dir}"/>
     </xslt>
   </target>
 

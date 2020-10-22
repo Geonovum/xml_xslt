@@ -8,13 +8,9 @@
   <xsl:param name="output.dir"/>
   <xsl:param name="temp.dir"/>
 
-  <xsl:param name="input" select="fn:string-join(('file:',tokenize($input.dir,'\\')),'/')"/>
-  <xsl:param name="output" select="fn:string-join(('file:',tokenize($output.dir,'\\')),'/')"/>
-  <xsl:param name="temp" select="fn:string-join(('file:',tokenize($temp.dir,'\\')),'/')"/>
-
-  <xsl:param name="GIO_bestanden" select="collection(concat($input, '?select=*.xml'))/root()[AanleveringInformatieObject]" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
-  <xsl:param name="RegelingVersieInformatie" select="document(fn:string-join(($temp,'besluit.xml'),'/'))/AanleveringBesluit/RegelingVersieInformatie" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
-  <xsl:param name="hash" select="collection(concat($temp,'/checksum','?select=*.xml'))"/>
+  <xsl:param name="GIO_bestanden" select="collection(concat($input.dir, '?select=*.xml'))/root()[AanleveringInformatieObject]" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
+  <xsl:param name="RegelingVersieInformatie" select="document(concat($temp.dir,'/besluit.xml'))/AanleveringBesluit/RegelingVersieInformatie" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
+  <xsl:param name="hash" select="collection(concat($temp.dir,'/checksum','?select=*.xml'))"/>
 
   <!-- match op alle xml bestanden waarvan het root element een 'AanleveringInformatieObject' is -->
 
@@ -27,7 +23,7 @@
 
   <xsl:template match="/" mode="GIO">
     <xsl:variable name="GIO" select="tokenize(document-uri(),'/')[last()]"/>
-    <xsl:result-document href="{concat($output,'/',$GIO)}" method="xml" indent='yes'>
+    <xsl:result-document href="{concat($output.dir,'/',$GIO)}" method="xml" indent='yes'>
       <xsl:apply-templates select="node()"/>
     </xsl:result-document>
   </xsl:template>
