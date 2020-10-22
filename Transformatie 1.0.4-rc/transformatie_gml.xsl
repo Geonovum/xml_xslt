@@ -3,10 +3,6 @@
   <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
   <xsl:strip-space elements="*"/>
 
-  <!-- Pad naar het setje bestanden van de opdracht -->
-  <xsl:param name="input.file" select="tokenize(document-uri(),'/')[last()]"/>
-  <xsl:param name="input.dir" select="replace(document-uri(),$input.file,'')"/>
-
   <xsl:template match="geo:GeoInformatieObjectVaststelling">
     <xsl:element name="{name()}">
       <xsl:copy-of select="@*|namespace::*"/>
@@ -19,7 +15,6 @@
   <!-- Algemene templates -->
 
   <xsl:template match="/">
-    <xsl:variable name="test" select="."/>
     <xsl:apply-templates/>
   </xsl:template>
 

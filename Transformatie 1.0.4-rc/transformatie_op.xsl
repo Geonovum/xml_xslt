@@ -4,8 +4,8 @@
 
   <!-- file.list bevat alle te verwerken bestanden -->
 
-  <xsl:param name="file.list" select="string('C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO001-Bedrijf_categorie_2.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO002-Centrumgebied.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO003-Zone_A.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO004-Zone_B.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO005-Speelhal.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO006-Bouwhoogte.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO007-Welstand.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO008-Zuilichem.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO009-Zaltbommel.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/akn_nl_bill_gm0297-3520-01.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/manifest-ow.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/manifest.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/opdracht.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owActiviteiten-Gemeentestad.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owGebiedsaanwijzingen-Gemeentestad.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owKaart.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owLocaties-Gemeentestad.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owOmgevingsnormOmgevingswaarde.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owPons-Gemeentestad.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owRegelingsgebied.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owRegeltekst-Gemeentestad.xml')"/>
-  <xsl:param name="base.dir"></xsl:param>
+  <xsl:param name="file.list"/>
+  <xsl:param name="base.dir"/>
 
   <!-- waardelijsten -->
 
