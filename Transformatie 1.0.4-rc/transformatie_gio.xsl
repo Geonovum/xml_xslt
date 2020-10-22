@@ -39,6 +39,7 @@
   <xsl:template match="AanleveringInformatieObject" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
     <xsl:comment>Voor validatie is het noodzakelijk om ook de catalogi van de gepubliceerde versie 1.0.4-rc te laden.</xsl:comment>
     <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
+      <xsl:namespace name="geo" select="string('https://standaarden.overheid.nl/stop/imop/geo/')"/>
       <xsl:attribute name="schemaversie" select="string('1.0.4-rc')"/>
       <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4-rc/lvbb-stop-aanlevering.xsd')"/>
       <xsl:apply-templates select="node()"/>
@@ -50,6 +51,32 @@
   <xsl:template match="officieleTitel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/stop/imop/data/">
       <xsl:value-of select="(root()//FRBRWork[1],.)[1]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+    </xsl:element>
+  </xsl:template>
+
+  <!-- FeatureTypeStyle -->
+
+  <xsl:template match="FeatureTypeStyle" xpath-default-namespace="http://www.opengis.net/se">
+    <xsl:element name="FeatureTypeStyle" namespace="http://www.opengis.net/se">
+      <xsl:attribute name="version" select="string('1.1.0')"></xsl:attribute>
+      <xsl:element name="FeatureTypeName" namespace="http://www.opengis.net/se">
+        <xsl:value-of select="string('geo:Locatie')"/>
+      </xsl:element>
+      <xsl:apply-templates select="element()"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="Rule" xpath-default-namespace="http://www.opengis.net/se">
+    <xsl:element name="Rule" namespace="http://www.opengis.net/se">
+      <xsl:apply-templates select="(Name,PolygonSymbolizer/Description)" xpath-default-namespace="http://www.opengis.net/se"/>
+      <xsl:apply-templates select="Filter" xpath-default-namespace="http://www.opengis.net/ogc"/>
+      <xsl:apply-templates select="PolygonSymbolizer" xpath-default-namespace="http://www.opengis.net/se"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PolygonSymbolizer" xpath-default-namespace="http://www.opengis.net/se">
+    <xsl:element name="PolygonSymbolizer" namespace="http://www.opengis.net/se">
+      <xsl:apply-templates select="element() except Description" xpath-default-namespace="http://www.opengis.net/se"/>
     </xsl:element>
   </xsl:template>
 

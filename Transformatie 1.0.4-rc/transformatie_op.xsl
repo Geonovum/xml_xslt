@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0">
   <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
 
   <!-- file.list bevat alle te verwerken bestanden -->
 
-  <xsl:param name="file.list"/>
+  <xsl:param name="file.list" select="string('C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO001-Bedrijf_categorie_2.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO002-Centrumgebied.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO003-Zone_A.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO004-Zone_B.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO005-Speelhal.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO006-Bouwhoogte.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO007-Welstand.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO008-Zuilichem.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/GIO009-Zaltbommel.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/akn_nl_bill_gm0297-3520-01.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/manifest-ow.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/manifest.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/opdracht.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owActiviteiten-Gemeentestad.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owGebiedsaanwijzingen-Gemeentestad.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owKaart.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owLocaties-Gemeentestad.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owOmgevingsnormOmgevingswaarde.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owPons-Gemeentestad.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owRegelingsgebied.xml;C:/Werkbestanden/Geonovum/Transformatie 1.0.4/1.0.3/opdracht/owRegeltekst-Gemeentestad.xml')"/>
 
   <!-- waardelijsten -->
 
   <xsl:param name="waardelijsten" select="document('waardelijsten OP 1.0.4.xml')//Waardelijst"/>
 
-  <!-- lijst om te bepalen in welke context een IntRef zit -->
-
-  <xsl:param name="context.list" select="('BesluitCompact','BesluitKlassiek','RegelingCompact','RegelingKlassiek','RegelingTijdelijkdeel','RegelingVrijetekst')"></xsl:param>
+  <!-- lijst om te bepalen in welke context elementen zitten -->
+  <xsl:param name="regeling.list" select="('RegelingCompact','RegelingKlassiek','RegelingTijdelijkdeel','RegelingVrijetekst')"/>
+  <xsl:param name="context.list" select="('BesluitCompact','BesluitKlassiek','RegelingCompact','RegelingKlassiek','RegelingTijdelijkdeel','RegelingVrijetekst')"/>
 
   <!-- stel manifest-bestand samen -->
 
   <xsl:param name="manifest">
     <xsl:for-each select="tokenize($file.list,';')">
+      <xsl:variable name="fullname" select="."/>
       <xsl:choose>
-        <xsl:when test="document(concat('file:/',.))/AanleveringBesluit" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
+        <xsl:when test="document($fullname)/AanleveringBesluit" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
           <xsl:element name="file">
             <xsl:attribute name="name" select="string('besluit.xml')"/>
             <xsl:element name="fullname">
-              <xsl:value-of select="."/>
+              <xsl:value-of select="$fullname"/>
             </xsl:element>
             <xsl:element name="name">
-              <xsl:value-of select="tokenize(.,'/')[last()]"/>
+              <xsl:value-of select="tokenize($fullname,'/')[last()]"/>
             </xsl:element>
           </xsl:element>
         </xsl:when>
-        <xsl:when test="document(concat('file:/',.))/lvbb:publicatieOpdracht">
+        <xsl:when test="document($fullname)/lvbb:publicatieOpdracht">
           <xsl:element name="file">
             <xsl:attribute name="name" select="string('opdracht.xml')"/>
             <xsl:element name="fullname">
-              <xsl:value-of select="."/>
+              <xsl:value-of select="$fullname"/>
             </xsl:element>
             <xsl:element name="name">
-              <xsl:value-of select="tokenize(.,'/')[last()]"/>
+              <xsl:value-of select="tokenize($fullname,'/')[last()]"/>
             </xsl:element>
           </xsl:element>
         </xsl:when>
@@ -47,7 +48,7 @@
 
   <!-- transformeer OP-bestanden -->
 
-  <xsl:param name="besluit" select="document(concat('file:/',$manifest/file[@name='besluit.xml']/fullname))"/>
+  <xsl:param name="besluit" select="document($manifest/file[@name='besluit.xml']/fullname)"/>
   <xsl:param name="ID01" select="$besluit//RegelingMetadata/soortRegeling" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
   <xsl:param name="ID02" select="tokenize($besluit//RegelingMetadata/(eindverantwoordelijke,maker)[1],'/')[4]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
   <xsl:param name="ID03" select="$waardelijsten[WaardelijstInfo/id='/join/id/stop/soortregeling']/Waarde[id=$ID01]/label" xpath-default-namespace=""/>
@@ -217,6 +218,8 @@
 
   <!-- enkele controles die nu in de validatie zijn opgenomen -->
 
+  <!-- controle of BeoogdeRegeling/eId en BeoogdInformatieobject/eId correct zijn opgebouwd -->
+
   <xsl:template match="BeoogdeRegeling/eId" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <xsl:variable name="eId" select="root()//(WijzigArtikel,BesluitKlassiek)[1]/@eId" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
     <xsl:element name="eId" namespace="https://standaarden.overheid.nl/stop/imop/data/">
@@ -226,12 +229,17 @@
 
   <xsl:template match="BeoogdInformatieobject/eId" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <xsl:variable name="join" select="ancestor::BeoogdInformatieobject/instrumentVersie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-    <xsl:variable name="eId" select="root()//ExtIoRef[@ref=$join]/@eId" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
-    <xsl:variable name="component" select="root()//(RegelingCompact,RegelingKlassiek,RegelingTijdelijkdeel,RegelingVrijetekst)[1]/@componentnaam" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
+    <xsl:variable name="eId" select="root()//element()[fn:index-of($regeling.list,name()) gt 0][1]//ExtIoRef[@ref=$join]/@eId" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
+    <xsl:variable name="component" select="root()//element()[fn:index-of($regeling.list,name()) gt 0][1]/@componentnaam" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
     <xsl:element name="eId" namespace="https://standaarden.overheid.nl/stop/imop/data/">
       <xsl:choose>
         <xsl:when test="count($eId) gt 1">
           <xsl:comment><xsl:text>Er zijn meer elementen ExtIoRef met dezelfde join.</xsl:text></xsl:comment>
+          <xsl:value-of select="."/>
+        </xsl:when>
+        <xsl:when test="not($eId)">
+          <xsl:comment><xsl:text>Er is geen element ExtIoRef met dezelfde join.</xsl:text></xsl:comment>
+          <!-- hier controle op regelingsgebied -->
           <xsl:value-of select="."/>
         </xsl:when>
         <xsl:when test="$component and $eId">
@@ -244,18 +252,34 @@
     </xsl:element>
   </xsl:template>
 
+  <!-- controle of officieleTitel overeenkomt met RegelingOpschrift -->
+
   <xsl:template match="RegelingMetadata/officieleTitel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
-    <xsl:variable name="titel" select="root()//(RegelingCompact,RegelingKlassiek,RegelingTijdelijkdeel,RegelingVrijetekst)[1]/RegelingOpschrift" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
+    <xsl:variable name="titel" select="root()//element()[fn:index-of($regeling.list,name()) gt 0][1]/RegelingOpschrift" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
     <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/stop/imop/data/">
-      <xsl:value-of select="($titel,.)[1]"/>
+      <xsl:value-of select="normalize-space(($titel,.)[1])"/>
     </xsl:element>
   </xsl:template>
 
   <xsl:template match="BesluitMetadata/officieleTitel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <xsl:variable name="titel" select="root()//(BesluitCompact,BesluitKlassiek)[1]/RegelingOpschrift" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
     <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/stop/imop/data/">
-      <xsl:value-of select="($titel,.)[1]"/>
+      <xsl:value-of select="normalize-space(($titel,.)[1])"/>
     </xsl:element>
+  </xsl:template>
+
+  <!-- controle of alternatieveTitel gelijk is aan officieleTitel -->
+
+  <xsl:template match="alternatieveTitels" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+    <xsl:variable name="officieleTitel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+      <xsl:apply-templates select="(ancestor::BesluitMetadata,ancestor::RegelingMetadata)[1]/officieleTitel"/>
+    </xsl:variable>
+    <xsl:variable name="alternatieveTitels" select="alternatieveTitel[normalize-space(.) ne normalize-space($officieleTitel)]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+    <xsl:if test="$alternatieveTitels">
+      <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/stop/imop/data/">
+        <xsl:apply-templates select="$alternatieveTitels"/>
+      </xsl:element>
+    </xsl:if>
   </xsl:template>
 
   <!-- Algemene templates -->
