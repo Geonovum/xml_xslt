@@ -12,8 +12,8 @@
   <xsl:param name="waardelijsten" select="document(concat($base.dir,'/waardelijsten OP 1.0.4.xml'))//Waardelijst"/>
 
   <!-- lijst om te bepalen in welke context elementen zitten -->
-  <xsl:param name="regeling.list" select="('RegelingCompact','RegelingKlassiek','RegelingTijdelijkdeel','RegelingVrijetekst')"/>
-  <xsl:param name="context.list" select="('BesluitCompact','BesluitKlassiek','RegelingCompact','RegelingKlassiek','RegelingTijdelijkdeel','RegelingVrijetekst')"/>
+  <xsl:param name="regeling.list" select="('RegelingCompact','RegelingKlassiek','RegelingMutatie','RegelingTijdelijkdeel','RegelingVrijetekst')"/>
+  <xsl:param name="context.list" select="('BesluitCompact','BesluitKlassiek','RegelingCompact','RegelingKlassiek','RegelingMutatie','RegelingTijdelijkdeel','RegelingVrijetekst')"/>
 
   <!-- stel manifest-bestand samen -->
 
