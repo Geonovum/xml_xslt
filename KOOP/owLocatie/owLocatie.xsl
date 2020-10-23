@@ -140,7 +140,7 @@
          </xsl:result-document>
          <!-- genereer de afzonderlijke gml-bestanden -->
          <xsl:for-each select="$locaties/locatie">
-            <xsl:result-document href="{fn:string-join(($gio-eindverantwoordelijke,concat(current()/@id,'.xml')),'/')}" method="xml" indent="yes">
+            <xsl:result-document href="{fn:string-join(($gio-eindverantwoordelijke,concat(current()/@id,'.gml')),'/')}" method="xml" indent="yes">
                <xsl:element name="basisgeo:FeatureCollectionGeometrie">
                   <xsl:namespace name="basisgeo" select="string('http://www.geostandaarden.nl/basisgeometrie/1.0')"/>
                   <xsl:namespace name="gml" select="string('http://www.opengis.net/gml/3.2')"/>
