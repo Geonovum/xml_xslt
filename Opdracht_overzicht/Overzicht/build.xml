@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project basedir="." name="tpod" default="main">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+  <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"/>
+
+  <property name="css.dir" value="css"/>
+  <property name="opdracht.dir" value="opdracht"/>
+  <property name="resultaat.dir" value="resultaat"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete dir="${resultaat.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${resultaat.dir}"/>
+  </target>
+
+  <!-- kopieer css naar resultaalt -->
+  
+  <target name="copy" description="Kopieer css">
+    <copy todir="${resultaat.dir}">
+      <fileset dir="${css.dir}"/>
+    </copy>
+  </target>
+
+  <!-- transformeer naar html -->
+
+  <target name="html" description="Transformeer html-bestanden">
+    <xslt in="template.xml" out="${resultaat.dir}/overzicht.html" style="Overzicht.xsl" processor="trax" force="true">
+      <param name="opdracht.dir" expression="${basedir}\${opdracht.dir}"/>
+    </xslt>
+  </target>
+
+  <!-- totale transformatie -->
+
+  <target name="main" description="Totale transformatie" depends="init,copy,html"/>
+
+</project>
