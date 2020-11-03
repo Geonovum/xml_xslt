@@ -15,18 +15,27 @@
     <mkdir dir="${resultaat.dir}"/>
   </target>
 
-  <!-- kopieer css naar resultaalt -->
+  <!-- kopieer css en media naar resultaat -->
   
-  <target name="copy" description="Kopieer css">
+  <target name="copy" description="Kopieer css en media">
     <copy todir="${resultaat.dir}">
       <fileset dir="${css.dir}"/>
+    </copy>
+    <copy todir="${resultaat.dir}/media">
+      <fileset dir="${opdracht.dir}">
+        <include name="*.png"/>
+        <include name="*.jpeg"/>
+      </fileset>
     </copy>
   </target>
 
   <!-- transformeer naar html -->
 
   <target name="html" description="Transformeer html-bestanden">
-    <xslt in="template.xml" out="${resultaat.dir}/overzicht.html" style="Overzicht.xsl" processor="trax" force="true">
+    <xslt in="template.xml" out="${resultaat.dir}/overzicht.html" style="overzicht.xsl" processor="trax" force="true">
+      <param name="opdracht.dir" expression="${basedir}\${opdracht.dir}"/>
+    </xslt>
+    <xslt in="template.xml" out="${resultaat.dir}/regeling.html" style="regeling.xsl" processor="trax" force="true">
       <param name="opdracht.dir" expression="${basedir}\${opdracht.dir}"/>
     </xslt>
   </target>

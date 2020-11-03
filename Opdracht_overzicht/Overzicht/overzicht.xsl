@@ -25,7 +25,6 @@
     </xsl:for-each>
   </xsl:param>
 
-  <xsl:param name="check" select="('Artikel','Lid','Divisie')"/>
   <xsl:param name="waardelijsten" select="document('waardelijsten OP 1.0.4.xml')//Waardelijst"/>
 
   <xsl:template match="/">
@@ -40,7 +39,6 @@
       <body>
         <script type="text/javascript">function ShowHide(obj){var tbody = obj.parentNode.getElementsByTagName("tbody")[0];var old = tbody.style.display;tbody.style.display = (old == "none"?"":"none");}</script>
         <h1>AanleveringBesluit</h1>
-        <xsl:apply-templates select="$besluit//(BesluitCompact|BesluitKlassiek)/RegelingOpschrift" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
         <xsl:apply-templates select="$besluit/BesluitVersie" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
         <xsl:apply-templates select="$besluit//(BesluitCompact|BesluitKlassiek)//(RegelingCompact|RegelingKlassiek|RegelingTijdelijkdeel|RegelingVrijetekst|RegelingMutatie)" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
       </body>
@@ -227,7 +225,7 @@
           <col width="175px"/>
           <col width="auto"/>
         </colgroup>
-        <thead>
+        <thead onclick="ShowHide(this)">
           <tr>
             <th colspan="2"><p class="titel"><xsl:value-of select="./local-name()"/></p></th>
           </tr>
@@ -488,145 +486,6 @@
         </tbody>
       </table>
     </div>
-  </xsl:template>
-
-  
-
-  <!-- algemeen -->
-  
-  <xsl:template match="element()">
-    <!--xsl:element name="{name()}">
-      <xsl:apply-templates select="./node()"/>
-    </xsl:element-->
-  </xsl:template>
-
-  <xsl:template match="text()">
-    <xsl:copy-of select="."/>
-  </xsl:template>
-
-  <!-- container -->
-  
-  <xsl:template match="Divisie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <xsl:apply-templates select="*"/>
-  </xsl:template>
-  
-  <xsl:template match="Inhoud" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <xsl:apply-templates select="*"/>
-  </xsl:template>
-
-  <xsl:template match="RegelingOpschrift" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <xsl:for-each select="./p">
-      <h1><xsl:apply-templates select="./node()"/></h1>
-    </xsl:for-each>
-  </xsl:template>
-
-  <!-- block -->
-  
-  <xsl:template match="Al" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <p class="standaard"><xsl:apply-templates select="./node()"/></p>
-  </xsl:template>
-  
-  <xsl:template match="Kop" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <xsl:variable name="class" select="lower-case((fn:reverse(ancestor::element()[fn:index-of($check,name()) gt 0]))[1])"/>
-    <xsl:variable name="level" select="count(ancestor::element()[fn:index-of($check,name()) gt 0])"/>
-    <xsl:variable name="id" select="generate-id(.)"/>
-    <p class="{fn:string-join((fn:string-join(('kop',$level),'_'),$class),' ')}" id="{$id}"><xsl:apply-templates select="./element()"/></p>
-  </xsl:template>
-  
-  <xsl:template match="Opschrift" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <xsl:apply-templates select="./node()"/>
-  </xsl:template>
-  
-  <xsl:template match="Tussenkop" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <p class="tussenkop"><xsl:apply-templates select="./node()"/></p>
-  </xsl:template>
-  
-  <!-- opsomming -->
-  
-  <xsl:template match="Lijst" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <div class="nummering">
-      <xsl:apply-templates select="*"/>
-    </div>
-  </xsl:template>
-  
-  <xsl:template match="Lijstaanhef" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <p class="standaard"><xsl:value-of select="./node()"/></p>
-  </xsl:template>
-  
-  <xsl:template match="Li" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <div class="item">
-      <xsl:apply-templates select="*"/>
-    </div>
-  </xsl:template>
-  
-  <xsl:template match="LiNr" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <div class="nummer"><p class="standaard"><xsl:value-of select="."/></p></div>
-  </xsl:template>
-  
-  <!-- inline -->
-  
-  <xsl:template match="Inline" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <span class="{./@class}"><xsl:apply-templates select="./node()"/></span>
-  </xsl:template>
-  
-  <!-- tabel -->
-  
-  <xsl:template match="table" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <table class="{./@class}">
-      <xsl:apply-templates select="*"/>
-    </table>
-  </xsl:template>
-  
-  <xsl:template match="table/title" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <caption class="{ancestor::table[1]/@class}">
-      <xsl:apply-templates select="./node()"/>
-    </caption>
-  </xsl:template>
-  
-  <xsl:template match="tgroup" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <xsl:variable name="tablewidth" select="sum(./colspec/@colwidth)"/>
-    <colgroup>
-      <xsl:for-each select="./colspec" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-        <col style="{concat('width: ',./@colwidth div $tablewidth * 100,'%')}"/>
-      </xsl:for-each>
-    </colgroup>
-    <xsl:apply-templates select="./thead"/>
-    <xsl:apply-templates select="./tbody"/>
-  </xsl:template>
-  
-  <xsl:template match="thead" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <thead class="{ancestor::table[1]/@class}">
-      <xsl:apply-templates select="*"/>
-    </thead>
-  </xsl:template>
-  
-  <xsl:template match="tbody" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <tbody class="{ancestor::table[1]/@class}">
-      <xsl:apply-templates select="*"/>
-    </tbody>
-  </xsl:template>
-  
-  <xsl:template match="row" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <tr class="{ancestor::table[1]/@class}">
-      <xsl:apply-templates select="*"/>
-    </tr>
-  </xsl:template>
-  
-  <xsl:template match="entry" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <xsl:variable name="colspan" select="number(substring(./@nameend,4))-number(substring(./@namest,4))+1"/>
-    <xsl:variable name="rowspan" select="number(./@morerows)+1"/>
-    <xsl:choose>
-      <xsl:when test="ancestor::thead" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-        <th class="{ancestor::table[1]/@class}" colspan="{$colspan}" rowspan="{$rowspan}" style="{concat('text-align:',./@align)}">
-          <xsl:apply-templates select="*"/>
-        </th>
-      </xsl:when>
-      <xsl:when test="ancestor::tbody" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-        <td class="{ancestor::table[1]/@class}" colspan="{$colspan}" rowspan="{$rowspan}" style="{concat('text-align:',./@align)}">
-          <xsl:apply-templates select="*"/>
-        </td>
-      </xsl:when>
-    </xsl:choose>
   </xsl:template>
 
 </xsl:stylesheet>
