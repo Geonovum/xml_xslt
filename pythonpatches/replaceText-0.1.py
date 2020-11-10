@@ -1,5 +1,5 @@
 """ 
-python3 replace-0.1.py
+python3 replaceText-0.1.py
 
 In de folder path wordt in elke .gml en .xml file de tekst orgString vervangen door newString.
 De gepatch-te files gaan naar een nieuw gemaakte subdir new.
