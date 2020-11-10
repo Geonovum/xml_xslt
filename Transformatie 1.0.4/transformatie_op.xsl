@@ -232,6 +232,16 @@
     </xsl:choose>
   </xsl:template>
 
+  <!-- zet lege Kop om naar &nbsp; -->
+
+  <xsl:template match="Kop[normalize-space(fn:string-join((Label,Nummer,Opschrift),''))='']" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+    <xsl:element name="Kop" namespace="{namespace-uri()}">
+      <xsl:element name="Opschrift" namespace="{namespace-uri()}">
+        <xsl:value-of select="string('&#160;')"/>
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
   <!-- enkele controles die nu in de validatie zijn opgenomen -->
 
   <!-- controle of BeoogdeRegeling/eId en BeoogdInformatieobject/eId correct zijn opgebouwd -->
