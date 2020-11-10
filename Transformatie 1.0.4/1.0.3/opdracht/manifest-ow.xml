@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Aanleveringen xmlns="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow ../xsd/bestanden-ow/generiek/manifest-ow.xsd">
+   <domein>omgevingswet</domein>
+   <Aanlevering>
+      <WorkIDRegeling>/akn/nl/act/pv26/2020/OVPU001</WorkIDRegeling>
+      <DoelID>/join/id/proces/pv26/2020/InstellingOmgevingsverordening</DoelID>
+      <!-- OP-bestanden -->
+      <Bestand>
+         <naam>owRegeltekst.xml</naam>
+         <objecttype>Regeltekst</objecttype>
+         <objecttype>RegelVoorIedereen</objecttype>
+         <objecttype>Instructieregel</objecttype>
+         <objecttype>Omgevingswaarderegel</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owLocatie.xml</naam>
+         <objecttype>Gebiedengroep</objecttype>
+         <objecttype>Gebied</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owActiviteit.xml</naam>
+         <objecttype>Activiteit</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owGebiedsaanwijzing.xml</naam>
+         <objecttype>Gebiedsaanwijzing</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owRegelingsgebied.xml</naam>
+         <objecttype>Regelingsgebied</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owOmgevingsnormOmgevingswaarde.xml</naam>
+         <objecttype>Omgevingsnorm</objecttype>
+         <objecttype>Omgevingswaarde</objecttype>
+      </Bestand>
+   </Aanlevering>
+</Aanleveringen>
