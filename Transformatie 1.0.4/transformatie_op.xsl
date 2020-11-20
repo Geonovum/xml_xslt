@@ -50,8 +50,8 @@
   <!-- transformeer OP-bestanden -->
 
   <xsl:param name="besluit" select="document($manifest/file[@name='besluit.xml']/fullname)"/>
-  <xsl:param name="ID01" select="$besluit//RegelingMetadata/soortRegeling" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-  <xsl:param name="ID02" select="tokenize($besluit//RegelingMetadata/(eindverantwoordelijke,maker)[1],'/')[4]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+  <xsl:param name="ID01" select="($besluit//RegelingMetadata/soortRegeling)[1]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+  <xsl:param name="ID02" select="tokenize(($besluit//RegelingMetadata/(eindverantwoordelijke,maker))[1],'/')[4]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
   <xsl:param name="ID03" select="$waardelijsten[WaardelijstInfo/id='/join/id/stop/soortregeling']/Waarde[id=$ID01]/label" xpath-default-namespace=""/>
 
   <xsl:template match="/">
@@ -254,7 +254,7 @@
   </xsl:template>
 
   <xsl:template match="BeoogdInformatieobject/eId" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
-    <xsl:variable name="join" select="ancestor::BeoogdInformatieobject/instrumentVersie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+    <xsl:variable name="join" select="string(ancestor::BeoogdInformatieobject/instrumentVersie)" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
     <xsl:variable name="eId" select="root()//element()[fn:index-of($regeling.list,name()) gt 0][1]//ExtIoRef[@ref=$join]/@eId" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
     <xsl:variable name="component" select="root()//element()[fn:index-of($regeling.list,name()) gt 0][1]/@componentnaam" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
     <xsl:element name="eId" namespace="https://standaarden.overheid.nl/stop/imop/data/">
