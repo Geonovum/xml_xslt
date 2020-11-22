@@ -1,7 +1,8 @@
 """
 Aanpassen alle files voor versie
 zie nwVersie
-
+Deze funtie kan uitgecommend worden, zie "correctSchemaVersion(filename) #aan/uit"
+LET OP: files worden overschreven
 """
 
 import re
@@ -23,7 +24,7 @@ def sha512(fileName):
 class Globals : #do not use for inheritance or instances
    xmlDoc = None
    path = None
-   nwVersie = "1.0.3"
+   nwVersie = "1.0.4"
 
 def firstElementInNodeList(nodeList) :
    for node in nodeList :
@@ -75,16 +76,44 @@ for file in os.listdir(Globals.path):
     if m : 
       #versie
       if ( (m.group(2) == "gml") or (m.group(2) == "xml") ) :
+         #print(filename)
          Globals.xmlDoc = xml.dom.minidom.parse(filename)
          topEl = Globals.xmlDoc.documentElement
-         #hash
-         correctSchemaVersion(filename)
+         
+         #correctSchemaVersion(filename) #aan/uit
+
+         #selecteer GIOs
          if (topEl.localName == "AanleveringInformatieObject" and Globals.xmlDoc.getElementsByTagName("heeftBestanden") and Globals.xmlDoc.getElementsByTagName("Bestand") ) :  
             heeftBestanden = Globals.xmlDoc.getElementsByTagName("heeftBestanden")[0] #just one
             for bestand in heeftBestanden.getElementsByTagName("Bestand") :
-               bestandsnaam = bestand.getElementsByTagName("bestandsnaam")[0]
-               #print(bestandsnaam.firstChild.data)
-               hash = sha512(Globals.path + bestandsnaam.firstChild.data)
+               #gml doc
+               gmlFile = Globals.path + bestand.getElementsByTagName("bestandsnaam")[0].firstChild.data
+               print("'" + gmlFile + "'")
+               gmlDoc = xml.dom.minidom.parse(gmlFile)
+               topElgml = gmlDoc.documentElement
+               #gml krijgt <FRBRWork> vd GIO
+               fRBRWorkText = topEl.getElementsByTagName("FRBRWork")[0].firstChild.data
+               #nw element voor gml
+               fRBRparent = topElgml.getElementsByTagName("geo:GeoInformatieObjectVersie")[0]
+               frbrwEl = topElgml.getElementsByTagName("geo:FRBRWork")[0]
+               newWork = gmlDoc.createElement("geo:FRBRWork")
+               newWorkText = gmlDoc.createTextNode(fRBRWorkText)
+               newWork.appendChild(newWorkText)
+               fRBRparent.replaceChild(newWork, frbrwEl)
+               #gml krijgt <FRBRExpression> vd GIO
+               fRBRWorkText = topEl.getElementsByTagName("FRBRExpression")[0].firstChild.data
+               #nw element voor gml
+               frbreEl = topElgml.getElementsByTagName("geo:FRBRExpression")[0]
+               newWork = gmlDoc.createElement("geo:FRBRExpression")
+               newWorkText = gmlDoc.createTextNode(fRBRWorkText)
+               newWork.appendChild(newWorkText)
+               fRBRparent.replaceChild(newWork, frbreEl)
+               #wegschrijven
+               with open(gmlFile, 'w', encoding = 'utf-8') as f:
+                  f.write(gmlDoc.toxml())#toxml
+               
+               #maak dan hash en zet hem in de GIO
+               hash = sha512(gmlFile)
                #print(hash)
                hashEl = bestand.getElementsByTagName("hash")[0]
                newHash = Globals.xmlDoc.createElement("hash")
