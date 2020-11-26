@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             schemaversie="1.0.3">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/energie</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/energie/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_010</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftGeboorteregeling>/akn/nl/act/pv26/2020/OVPU001</heeftGeboorteregeling>
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Energie.gml</bestandsnaam>
+                  <hash>1a04d7388221ede2be41a470153567801f0c3bbc1671ba07749361890c850851a1f7206cd5adae7b59be404d8e42ac02137047380110b86e0513963ae410381d</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>Energie</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/regdata/pv26/2020/energie</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <naamInformatieObject>Energie</naamInformatieObject>
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             schemaversie="1.0.3">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/verbodvarendontgassen</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/verbodvarendontgassen/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_010</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftGeboorteregeling>/akn/nl/act/pv26/2020/OVPU001</heeftGeboorteregeling>
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Verbodvarendontgassen.gml</bestandsnaam>
+                  <hash>748ef0c63fb0df71337b6b746309cbdcc8cc49af69445ca9977829516fe66c5645408674f69ef1c4d7f3ea2ce0a79df85077472b543f143ad9259b09c3e49d58</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>Verbod varend ontgassen</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/regdata/pv26/2020/verbodvarendontgassen</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <naamInformatieObject>Verbod varend ontgassen</naamInformatieObject>
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>

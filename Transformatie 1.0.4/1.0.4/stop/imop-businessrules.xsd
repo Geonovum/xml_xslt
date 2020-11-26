@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:br="https://standaarden.overheid.nl/stop/imop/businessrules/"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           targetNamespace="https://standaarden.overheid.nl/stop/imop/businessrules/"
+           version="1.0.4">
+   <xs:annotation>
+      <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br">"Businessrules-schema" van STOP.</xs:documentation>
+      <xs:documentation>Dit schema definieert de "Businessrules" elementen voor de STOP</xs:documentation>
+      <xs:documentation>Versie 1.0.4</xs:documentation>
+      <xs:documentation>Documentatie op https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br</xs:documentation>
+   </xs:annotation>
+   <!-- TOEKENNING VAN SCHEMA AAN INSTANCES -->
+   <xs:element name="Schemata">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:Schemata"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element ref="br:versie"/>
+            <xs:element maxOccurs="unbounded" name="Documenttype">
+               <xs:annotation>
+                  <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:Schemata:Documenttype"/>
+               </xs:annotation>
+               <xs:complexType>
+                  <xs:sequence>
+                     <xs:group ref="br:mgDocumenttype"/>
+                     <xs:element maxOccurs="1" minOccurs="1" ref="br:implementatie"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:sequence>
+         <xs:attributeGroup ref="br:agSchemaVersie"/>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="localName" type="xs:NCName">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:localName"/>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="namespace" type="xs:anyURI">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:namespace"/>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="implementatie">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:implementatie"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="1" ref="br:Schema"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="Schema">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:Schema"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="1" ref="br:type"/>
+            <xs:element maxOccurs="1" minOccurs="1" ref="br:locatie"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="type" type="br:schematypes">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:type"/>
+      </xs:annotation>
+   </xs:element>
+   <xs:simpleType name="schematypes">
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="schematron"/>
+         <xs:enumeration value="XML-schema"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:element name="locatie" type="xs:anyURI">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:locatie"/>
+      </xs:annotation>
+   </xs:element>
+   <!-- SPECIFICATIE VAN BUSINESS RULES -->
+   <xs:element name="BusinessRules">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:BusinessRules"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" ref="br:versie"/>
+            <xs:element maxOccurs="unbounded" minOccurs="1" ref="br:BusinessRuleGroep"/>
+         </xs:sequence>
+         <xs:attributeGroup ref="br:agSchemaVersie"/>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="BusinessRuleGroep">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:BusinessRuleGroep"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" ref="br:groepsnaam"/>
+            <xs:element maxOccurs="1" minOccurs="1" ref="br:id"/>
+            <xs:element maxOccurs="1" minOccurs="1" ref="br:geldtVoor"/>
+            <xs:element maxOccurs="1" minOccurs="1" ref="br:geldendeBusinessRules"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="groepsnaam" type="xs:string">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:groepsnaam"/>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="id" type="br:idType">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:id"/>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="geldtVoor">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:geldtVoor"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:choice>
+            <xs:element maxOccurs="unbounded" minOccurs="1" name="Documenttype">
+               <xs:annotation>
+                  <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:geldtVoor:Documenttype"/>
+               </xs:annotation>
+               <xs:complexType>
+                  <xs:group ref="br:mgDocumenttype"/>
+               </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="unbounded" minOccurs="1" ref="br:Regelingtype"/>
+         </xs:choice>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="Regelingtype">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:Regelingtype"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="1" ref="br:soortRegeling"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="soortRegeling" type="xs:token">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:soortRegeling"/>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="geldendeBusinessRules">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:geldendeBusinessRules"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="1" ref="br:BusinessRule"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="BusinessRule">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:BusinessRule"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="1" ref="br:code"/>
+            <xs:element maxOccurs="1" minOccurs="1" ref="br:ernst"/>
+            <xs:element maxOccurs="1" minOccurs="1" ref="br:regel"/>
+            <xs:element maxOccurs="1" minOccurs="0" ref="br:melding"/>
+            <xs:element maxOccurs="1" minOccurs="0" ref="br:documentatie"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="code" type="br:dtCode">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:code"/>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="ernst" type="br:dtErnst">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:ernst"/>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="regel" type="xs:string">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:regel"/>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="melding">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:melding"/>
+      </xs:annotation>
+      <xs:complexType mixed="true">
+         <xs:choice>
+            <xs:element maxOccurs="unbounded" minOccurs="0" ref="br:var"/>
+         </xs:choice>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="var">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:var"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:attribute name="naam" use="required"/>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="documentatie">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:documentatie"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="1" ref="br:link"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="link">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:link"/>
+      </xs:annotation>
+      <xs:complexType mixed="true">
+         <xs:attribute name="href" type="xs:anyURI"/>
+      </xs:complexType>
+   </xs:element>
+   <!-- GENERIEK -->
+   <xs:element name="versie" type="xs:token">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.0.4/go/go.html?id=xsd:br:versie"/>
+      </xs:annotation>
+   </xs:element>
+   <xs:attributeGroup name="agSchemaVersie">
+      <xs:attribute name="schemaversie" use="required"/>
+   </xs:attributeGroup>
+   <xs:group name="mgDocumenttype">
+      <xs:sequence>
+         <xs:element maxOccurs="1" minOccurs="1" ref="br:localName"/>
+         <xs:element maxOccurs="1" minOccurs="1" ref="br:namespace"/>
+      </xs:sequence>
+   </xs:group>
+   <xs:simpleType name="dtErnst">
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="fout"/>
+         <xs:enumeration value="waarschuwing"/>
+         <xs:enumeration value="informatief"/>
+         <xs:enumeration value="ontraden"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="dtCode">
+      <xs:restriction base="xs:ID">
+         <xs:pattern value="[A-Z]{4}[0-9]{4,5}"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="idType">
+      <xs:restriction base="xs:ID">
+         <xs:pattern value="\c+"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

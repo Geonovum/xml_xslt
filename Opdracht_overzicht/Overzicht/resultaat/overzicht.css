@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* algemeen */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 98%;
+  width: 98%;
+  margin: 1%;
+  word-break: break-word;
+}
+p {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  line-height: 14pt;
+}
+
+/* specifiek */
+
+h1 {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  line-height: 21pt;
+  margin: 0pt 0mm 14pt 0mm;
+}
+h2 {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  line-height: 14pt;
+  margin: 28pt 0mm 14pt 0mm;
+}
+div.content {
+  margin: 21pt 0mm 14pt 0mm;
+}
+
+/* tabel */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  background-color: black;
+  padding: 5px 2mm 5px 2mm;
+}
+td {
+  padding: 5px 2mm 5px 0mm;
+}
+tr {
+  border-bottom: 1px solid black;
+}
+table table tr:last-child {
+  border-bottom: none;
+}
+p.titel {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold;
+  font-size: 9pt;
+  color: white;
+  line-height: 14pt;
+  text-align: left;
+}
+p.naam {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  line-height: 14pt;
+}
+p.waarde {
+  font-family: 'Courier', monospace;
+  font-size: 9pt;
+  line-height: 14pt;
+}
+span.label {
+  font-weight: bold;
+  color: red;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             schemaversie="1.0.3">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/boringsvrijezonesoverig</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/boringsvrijezonesoverig/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_010</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftGeboorteregeling>/akn/nl/act/pv26/2020/OVPU001</heeftGeboorteregeling>
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Boringsvrijezonesoverig.gml</bestandsnaam>
+                  <hash>264ae540084cfffbb026bf5adc00e203f090e7b201cb89540ec3465c6a662c65028f036f664664ae21310bb163a2c7bc0326f59cb6fea631ff2c48fe9181c00b</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>Boringsvrije zones Bilthoven, Blokland, Bunnik, Cothen, De Meern, Eempolder, Leidsche Rijn, Lexmond-Noord, Linschoten, Nieuwegein, Vianen en Vianen-Panoven</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/regdata/pv26/2020/boringsvrijezonesoverig</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <naamInformatieObject>Boringsvrije zones Bilthoven, Blokland, Bunnik, Cothen, De Meern, Eempolder, Leidsche Rijn, Lexmond-Noord, Linschoten, Nieuwegein, Vianen en Vianen-Panoven</naamInformatieObject>
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>

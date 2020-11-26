@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="20.1">
+    <meta>
+        <filters directoryPatterns="" filePatterns="Overzicht.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="Overzicht.xpr">
+        <file name="build.xml"/>
+        <file name="overzicht.xsl"/>
+        <file name="template.xml"/>
+    </projectTree>
+</project>

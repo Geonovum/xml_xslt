@@ -3,7 +3,7 @@
    <xsl:output method="text" version="1.0"/>
    <xsl:strip-space elements="*"/>
 
-   <xsl:param name="input.dir" select="string('file:/C:/Werkbestanden/Geonovum/KOOP/owLocatie/input')"/>
+   <xsl:param name="input.dir"/>
 
    <xsl:param name="gio" select="collection(concat($input.dir,'?select=*.xml;recurse=yes'))//lvbba:InformatieObjectVersie"/>
    <xsl:param name="bg-unique" select="fn:distinct-values($gio//data:eindverantwoordelijke)"/>

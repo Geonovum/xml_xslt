@@ -7,7 +7,7 @@
 
   <xsl:param name="waardelijsten">
     <!-- waardelijsten bevat een platte weergave van de waardelijsten -->
-    <xsl:for-each select="document('waardelijsten 1.0.3.xml')//element()[ancestor::waardelijst][not(descendant::element())]">
+    <xsl:for-each select="document('waardelijsten 1.0.5.xml')//element()[ancestor::waardelijst][not(descendant::element())]">
       <xsl:element name="{name()}">
         <xsl:attribute name="path" select="fn:string-join((ancestor::waardelijst/titel,(parent::domein,parent::waarde)[1]/term,(parent::domein,parent::waarde)[1]/label),'/')"/>
         <xsl:attribute name="context" select="(parent::domein,parent::waarde,parent::waardelijst)[1]/name()"/>
@@ -20,8 +20,8 @@
     <!-- mutatie bevat een platte weergave van de mutaties -->
     <xsl:for-each select="//waarde">
       <xsl:variable name="waardelijst" select="ancestor::waardelijst/titel"/>
-      <xsl:variable name="term" select="my:check_string(lower-case(label))"/>
-      <xsl:variable name="label" select="tokenize(lower-case(label),'_')[last()]"/>
+      <xsl:variable name="term" select="my:check_string(lower-case(./label))"/>
+      <xsl:variable name="label" select="tokenize(lower-case(./label),'_')[last()]"/>
       <xsl:variable name="path" select="fn:string-join(($waardelijst,$term,$label),'/')"/>
       <xsl:variable name="domein">
         <xsl:choose>
@@ -33,7 +33,7 @@
           </xsl:when>
           <xsl:when test="$waardelijst='Thema'">
             <!-- let op: label is een combinatie tussen [hoofdthema]_[subthema] -->
-            <xsl:value-of select="my:check_string(tokenize($label,'_')[1])"/>
+            <xsl:value-of select="my:check_string(tokenize(./label,'_')[1])"/>
           </xsl:when>
           <xsl:otherwise>
             <xsl:value-of select="my:check_string($waardelijst)"/>
@@ -58,17 +58,17 @@
       <xsl:element name="definitie">
         <xsl:attribute name="path" select="$path"/>
         <xsl:attribute name="context" select="string('waarde')"/>
-        <xsl:value-of select="normalize-space(definitie)"/>
+        <xsl:value-of select="normalize-space(./definitie)"/>
       </xsl:element>
       <xsl:element name="toelichting">
         <xsl:attribute name="path" select="$path"/>
         <xsl:attribute name="context" select="string('waarde')"/>
-        <xsl:value-of select="normalize-space(toelichting)"/>
+        <xsl:value-of select="normalize-space(./toelichting)"/>
       </xsl:element>
       <xsl:element name="bron">
         <xsl:attribute name="path" select="$path"/>
         <xsl:attribute name="context" select="string('waarde')"/>
-        <xsl:value-of select="normalize-space(bron)"/>
+        <xsl:value-of select="normalize-space(./bron)"/>
       </xsl:element>
       <xsl:element name="domein">
         <xsl:attribute name="path" select="$path"/>
@@ -85,8 +85,8 @@
       <xsl:element name="symboolcode">
         <xsl:attribute name="path" select="$path"/>
         <xsl:attribute name="context" select="string('waarde')"/>
-        <xsl:attribute name="id" select="normalize-space(symboolcode)"/>
-        <xsl:value-of select="normalize-space(symboolcode)"/>
+        <xsl:attribute name="id" select="normalize-space(./symboolcode)"/>
+        <xsl:value-of select="normalize-space(./symboolcode)"/>
       </xsl:element>
     </xsl:for-each>
   </xsl:param>
@@ -94,16 +94,20 @@
   <xsl:variable name="nieuw">
     <xsl:for-each select="$waardelijsten/element()">
       <xsl:variable name="id" select="@path"/>
+      <xsl:variable name="context" select="@context"/>
+      <xsl:variable name="name" select="name()"/>
       <!-- als een bestaande waarde voorkomt in mutatie, dan deze overnemen -->
-      <xsl:copy-of select="($mutatie[@path=$id][. ne ''],.)"/>
+      <xsl:copy-of select="($mutatie/element()[@path=$id][@context=$context][name()=$name][. ne ''],.)[1]"/>
     </xsl:for-each>
     <xsl:for-each select="$mutatie/element()">
       <xsl:variable name="id" select="@path"/>
+      <xsl:variable name="name" select="name()"/>
       <!-- als een mutatie niet voorkomt in bestaande waarden, dan deze toevoegen -->
-      <xsl:if test="not($waardelijsten[@path=$id][@context='waarde'])">
+      <xsl:if test="not($waardelijsten/element()[@path=$id][@context='waarde'][name()=$name])">
         <xsl:copy-of select="."/>
       </xsl:if>
     </xsl:for-each>
+    <!-- hier zou nog een check moeten of er bij thema een nieuw domein toegevoegd moet worden -->
   </xsl:variable>
 
   <xsl:template match="waardelijsten">
