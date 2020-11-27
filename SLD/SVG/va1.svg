@@ -1,0 +1,12 @@
+<!-- Vervangt 1-op-1 de PNG -->
+
+<svg viewBox="0 0 48 48" height="48px" width="48px" transform="rotate(0),scale(1)">
+<g id="va1" fill="none" stroke="#000000" stroke-width="2">
+    <path d="M1 7 l48 0" />
+    <path d="M1 15 l48 0" />
+    <path d="M1 23 l48 0" />
+    <path d="M1 31 l48 0" />
+    <path d="M1 39 l48 0" />
+    <path d="M1 47 l48 0" />
+</g>
+</svg>
