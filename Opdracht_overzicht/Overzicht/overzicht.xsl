@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst" xmlns:xlink="http://www.w3.org/1999/xlink" exclude-result-prefixes="#all">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:k="http://www.geostandaarden.nl/imow/kaart" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst" xmlns:xlink="http://www.w3.org/1999/xlink" exclude-result-prefixes="#all">
   <xsl:output method="xhtml" encoding="UTF-8" indent="no" omit-xml-declaration="yes" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
   <xsl:strip-space elements="*"/>
 
@@ -15,6 +15,7 @@
   <xsl:param name="divisies" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//vt:Divisie"/>
   <xsl:param name="tekstdelen" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//vt:Tekstdeel"/>
   <xsl:param name="hoofdlijnaanduidingen" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//vt:Hoofdlijn"/>
+  <xsl:param name="kaarten" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//k:Kaart"/>
   <xsl:param name="gml">
     <xsl:for-each select="collection(concat('file:/',$opdracht.dir,'?select=*.gml;recurse=yes'))">
       <xsl:element name="Locatie">
@@ -236,7 +237,7 @@
               <td><p class="naam"><xsl:value-of select="./local-name()"/></p></td>
               <td>
                 <xsl:choose>
-                  <xsl:when test="./self::r:artikelOfLid|./self::vt:divisieaanduiding|./self::rol:bovenliggendeActiviteit">
+                  <xsl:when test="./self::r:artikelOfLid|./self::vt:divisieaanduiding|./self::rol:bovenliggendeActiviteit|./self::k:gebiedsaanwijzingweergave">
                     <xsl:for-each select="./element()/@xlink:href">
                       <p class="waarde"><xsl:value-of select="."/></p>
                     </xsl:for-each>
@@ -321,6 +322,31 @@
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./vt:HoofdlijnRef/@xlink:href"/>
                     <xsl:for-each select="$hoofdlijnaanduidingen[vt:identificatie=$id]">
+                      <xsl:call-template name="object">
+                        <xsl:with-param name="current" select="."/>
+                      </xsl:call-template>
+                    </xsl:for-each>
+                  </xsl:when>
+                  <xsl:when test="./self::vt:kaartaanduiding">
+                    <xsl:attribute name="style" select="string('padding: 0pt;')"/>
+                    <xsl:variable name="id" select="./k:KaartRef/@xlink:href"/>
+                    <xsl:for-each select="$kaarten[k:identificatie=$id]">
+                      <xsl:call-template name="object">
+                        <xsl:with-param name="current" select="."/>
+                      </xsl:call-template>
+                    </xsl:for-each>
+                  </xsl:when>
+                  <xsl:when test="./self::k:uitsnede">
+                    <xsl:attribute name="style" select="string('padding: 0pt;')"/>
+                    <xsl:for-each select="./k:Kaartextent">
+                      <xsl:call-template name="object">
+                        <xsl:with-param name="current" select="."/>
+                      </xsl:call-template>
+                    </xsl:for-each>
+                  </xsl:when>
+                  <xsl:when test="./self::k:kaartlagen">
+                    <xsl:attribute name="style" select="string('padding: 0pt;')"/>
+                    <xsl:for-each select="./k:Kaartlaag">
                       <xsl:call-template name="object">
                         <xsl:with-param name="current" select="."/>
                       </xsl:call-template>
