@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<project basedir="." name="imop" default="imop2word">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+
+  <!-- properties voor de transformatie -->
+
+  <property name="input.dir" value="opdracht"/>
+  <property name="template.dir" value="sjabloon"/>
+  <property name="output.dir" value="word"/>
+  <property name="temp.dir" value="temp"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${temp.dir}"/>
+    </delete>
+    <mkdir dir="${temp.dir}"/>
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${output.dir}"/>
+    </delete>
+    <mkdir dir="${output.dir}"/>
+  </target>
+
+  <!-- unzip word-sjabloon -->
+
+  <target name="unzip" description="Unzip word-sjabloon">
+    <unzip dest="${temp.dir}/unzip">
+      <fileset dir="${template.dir}">
+        <include name="**/*.docx"/>
+      </fileset>
+    </unzip>
+  </target>
+
+  <!-- transformeer van imop naar word -->
+
+  <target name="transform" description="Transformeer van imop naar word">
+    <xslt in="template.xml" out="${temp.dir}/log.txt" style="imop2word.xsl" processor="trax" force="true"/>
+    <copy todir="${temp.dir}/unzip/word/media" failonerror="false">
+      <fileset dir="${input.dir}">
+        <include name="**/*.jpeg"/>
+        <include name="**/*.png"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <!-- zip word-bestand -->
+
+  <target name="zip" description="Zip word-bestand">
+    <zip basedir="${temp.dir}/unzip" destfile="${output.dir}/resultaat.docx"/>
+  </target>
+
+  <!-- totale transformatie van imop naar word -->
+
+  <target name="imop2word" depends="init,unzip,transform,zip"/>
+
+</project>
