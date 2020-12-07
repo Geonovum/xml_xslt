@@ -7,7 +7,8 @@
 
    <xsl:param name="element"
       select="('gml:CompositeCurve', 'gml:CompositeSurface', 'gml:Curve', 'gml:LinearRing', 'gml:LineString', 'gml:MultiSurface', 'gml:OrientableCurve', 'gml:OrientableSurface', 'gml:Point', 'gml:Polygon', 'gml:PolyhedralSurface', 'gml:Ring', 'gml:Shell', 'gml:Surface', 'gml:Tin', 'gml:Triangle', 'gml:TriangulatedSurface')"/>
-   <xsl:param name="GUID" select="uuid:randomUUID()"/>
+   <!--<xsl:param name="GUID" select="uuid:randomUUID()"/>-->
+   <xsl:param name="GUID" select="/geo:FeatureCollection/geo:featureMember[1]/geo:INPUT[1]/geo:id[1]"/>
 
    <xsl:template match="geo:FeatureCollection">
       <xsl:element name="geo:FeatureCollectionGeometrie">

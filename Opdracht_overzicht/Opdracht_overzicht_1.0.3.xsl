@@ -34,7 +34,7 @@
     
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
     <!-- Pad naar het setje bestanden van de opdracht -->
-    <xsl:param name="folder" select="'file:///F:/DSO/Geonovum/GitHub/xml_omgevingsplan_gemeentestad_1.0/opdracht_ri'"/>
+    <xsl:param name="folder" select="'file:///F:/DSO/Geonovum/GitHub/xml_omgevingsplan_gemeentestad_1.0/opdracht'"/>
     <!-- de naam van het root element van het OP bestand -->
     <xsl:param name="OP_root" select="'AanleveringBesluit'"/>
     <!-- functie om het besluit op te halen, compact of klassiek -->
@@ -80,7 +80,7 @@
             </xsl:element>
             <xsl:element name="body" namespace="">
                 <xsl:element name="UL" namespace="">
-                    <xsl:apply-templates mode="list" select="collection(concat($folder, '?select=*.xml;recurse=yes'))/*[local-name()=$OP_root]"/>
+                    <xsl:apply-templates select="collection(concat($folder, '?select=*.xml;recurse=yes'))/*[local-name()=$OP_root]" mode="list"/>
                 </xsl:element>
             </xsl:element>
         </xsl:element>
