@@ -18,14 +18,14 @@ polygon << QPointF( 1, 1 )
 polygon << QPointF( -1, 1 ) 
 polygon << QPointF( -1, -1 )
 """
-#Diamond (werkt niet)
-"""
+#Diamond
+#"""
 polygon << QPointF( -1, 0 ) 
 polygon << QPointF( 0, 1 )
 polygon << QPointF( 1, 0 ) 
 polygon << QPointF( 0, -1 ) 
 polygon << QPointF( -1, 0 )
-"""
+#"""
 #Pentagon
 """
 polygon << QPointF( -0.9511, -0.3090 )
@@ -105,7 +105,7 @@ polygon << QPointF( 0, -1 )
 polygon << QPointF( 0, 0 ) << QPointF( -1, 1 ) << QPointF( -1, -1 ) << QPointF( 0, 0 )
 """
 #CrossFill
-#"""
+"""
 polygon << QPointF( -1, -0.2 )
 polygon << QPointF( -1, -0.2 )
 polygon << QPointF( -1, 0.2 )
@@ -120,10 +120,14 @@ polygon << QPointF( 0.2, -1 )
 polygon << QPointF( -0.2, -1 )
 polygon << QPointF( -0.2, -0.2 )
 polygon << QPointF( -1, -0.2 )
-#"""
+"""
 #Circle - ?
-"""
-"""
+#"""
+painter = QPainter()
+painter.setPen(QPen(Qt.green,  8, Qt.SolidLine))
+painter.setBrush(QBrush(Qt.red, Qt.SolidPattern))
+painter.drawEllipse(40, 40, 400, 400)
+#"""
 
 mem_layer = QgsVectorLayer("Polygon?crs=epsg:28992", "temp_layer", "memory")
 mem_layer_provider = mem_layer.dataProvider()
