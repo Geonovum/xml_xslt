@@ -455,7 +455,7 @@
   </xsl:template>
 
   <xsl:param name="section_lichaam_vrijtekst_word" select="('Divisiekop1','Divisiekop2','Divisiekop3','Divisiekop4','Divisiekop5','Divisiekop6','Divisiekop7','Divisiekop8','Divisiekop9')"/>
-  <xsl:param name="section_lichaam_vrijtekst_imop" select="('FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie','FormeleDivisie')"/>
+  <xsl:param name="section_lichaam_vrijtekst_imop" select="('Divisie','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie')"/>
 
   <xsl:template name="section_lichaam_vrijetekst">
     <xsl:param name="group"/>
@@ -473,10 +473,15 @@
           </xsl:element>
         </xsl:when>
         <xsl:when test="$index gt count($section_lichaam_vrijtekst_word)">
-          <xsl:element name="FormeleInhoud" namespace="{$tekst}">
-            <xsl:call-template name="group_adjacent">
-              <xsl:with-param name="group" select="current-group()"/>
-            </xsl:call-template>
+          <xsl:element name="Divisietekst" namespace="{$tekst}">
+            <xsl:element name="Kop" namespace="{$tekst}">
+              <xsl:element name="Opschrift" namespace="{$tekst}"/>
+            </xsl:element>
+            <xsl:element name="Inhoud" namespace="{$tekst}">
+              <xsl:call-template name="group_adjacent">
+                <xsl:with-param name="group" select="current-group()"/>
+              </xsl:call-template>
+            </xsl:element>
           </xsl:element>
         </xsl:when>
         <xsl:otherwise>
@@ -508,10 +513,15 @@
           </xsl:element>
         </xsl:when>
         <xsl:when test="$index gt count($section_bijlage_word)">
-          <xsl:element name="Inhoud" namespace="{$tekst}">
-            <xsl:call-template name="group_starting_with">
-              <xsl:with-param name="group" select="current-group()"/>
-            </xsl:call-template>
+          <xsl:element name="Divisietekst" namespace="{$tekst}">
+            <xsl:element name="Kop" namespace="{$tekst}">
+              <xsl:element name="Opschrift" namespace="{$tekst}"/>
+            </xsl:element>
+            <xsl:element name="Inhoud" namespace="{$tekst}">
+              <xsl:call-template name="group_starting_with">
+                <xsl:with-param name="group" select="current-group()"/>
+              </xsl:call-template>
+            </xsl:element>
           </xsl:element>
         </xsl:when>
         <xsl:otherwise>
