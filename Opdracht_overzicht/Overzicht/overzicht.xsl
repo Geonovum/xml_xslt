@@ -18,11 +18,47 @@
   <xsl:param name="kaarten" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//k:Kaart"/>
   <xsl:param name="gml">
     <xsl:for-each select="collection(concat('file:/',$opdracht.dir,'?select=*.gml;recurse=yes'))">
-      <xsl:element name="Locatie">
-        <xsl:attribute name="bestand" select="fn:tokenize(fn:document-uri(.),'/')[last()]"/>
-        <xsl:attribute name="join-id" select="./descendant::geo:FRBRExpression"/>
-        <xsl:attribute name="geo-id" select="fn:string-join(./descendant::basisgeo:id,', ')"/>
-      </xsl:element>
+      <xsl:variable name="bestand"><xsl:value-of select="fn:tokenize(fn:document-uri(.),'/')[last()]"/></xsl:variable>
+      <xsl:variable name="gio" select="./descendant::geo:GeoInformatieObjectVersie"/>
+      <xsl:choose>
+        <xsl:when test="$gio//geo:Locatie/geo:kwantitatieveNormwaarde">
+          <xsl:for-each-group select="$gio//geo:Locatie" group-by="(geo:kwantitatieveNormwaarde,geo:kwantitatieveNormwaarde)">
+            <xsl:element name="gio">
+              <xsl:element name="Waarde">
+                <xsl:element name="norm"><xsl:value-of select="$gio/geo:normlabel"/></xsl:element>
+                <xsl:element name="waarde"><xsl:value-of select="current-grouping-key()"/></xsl:element>
+                <xsl:element name="eenheid"><xsl:value-of select="$gio/geo:eenheidlabel"/></xsl:element>
+              </xsl:element>
+              <xsl:for-each select="current-group()">
+                <xsl:variable name="locatie" select="."/>
+                <xsl:element name="Locatie">
+                  <xsl:if test="$locatie/geo:naam">
+                    <xsl:element name="naam"><xsl:value-of select="$locatie/geo:naam"/></xsl:element>
+                  </xsl:if>
+                  <xsl:element name="geo-id"><xsl:value-of select="$locatie//basisgeo:id"/></xsl:element>
+                  <xsl:element name="join-id"><xsl:value-of select="$gio/geo:FRBRExpression"/></xsl:element>
+                  <xsl:element name="bestand"><xsl:value-of select="$bestand"/></xsl:element>
+                </xsl:element>
+              </xsl:for-each>
+            </xsl:element>
+          </xsl:for-each-group>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:element name="gio">
+            <xsl:for-each select="$gio//geo:Locatie">
+              <xsl:variable name="locatie" select="."/>
+              <xsl:element name="Locatie">
+                <xsl:if test="$locatie/geo:naam">
+                  <xsl:element name="naam"><xsl:value-of select="$locatie/geo:naam"/></xsl:element>
+                </xsl:if>
+                <xsl:element name="geo-id"><xsl:value-of select="$locatie//basisgeo:id"/></xsl:element>
+                <xsl:element name="join-id"><xsl:value-of select="$gio/geo:FRBRExpression"/></xsl:element>
+                <xsl:element name="bestand"><xsl:value-of select="$bestand"/></xsl:element>
+              </xsl:element>
+            </xsl:for-each>
+          </xsl:element>
+        </xsl:otherwise>
+      </xsl:choose>
     </xsl:for-each>
   </xsl:param>
 
@@ -61,7 +97,7 @@
       <div class="content">
         <table>
           <colgroup>
-            <col width="175px"/>
+            <col width="165px"/>
             <col width="auto"/>
           </colgroup>
           <thead onclick="ShowHide(this)">
@@ -111,7 +147,7 @@
       <div class="content">
         <table>
           <colgroup>
-            <col width="175px"/>
+            <col width="165px"/>
             <col width="auto"/>
           </colgroup>
           <thead onclick="ShowHide(this)">
@@ -174,7 +210,7 @@
         <xsl:attribute name="style" select="string('padding: 0pt;')"/>
         <table>
           <colgroup>
-            <col width="175px"/>
+            <col width="165px"/>
             <col width="auto"/>
           </colgroup>
           <tbody>
@@ -223,7 +259,7 @@
     <xsl:for-each select="$current/self::element()">
       <table>
         <colgroup>
-          <col width="175px"/>
+          <col width="165px"/>
           <col width="auto"/>
         </colgroup>
         <thead onclick="ShowHide(this)">
@@ -237,19 +273,17 @@
               <td><p class="naam"><xsl:value-of select="./local-name()"/></p></td>
               <td>
                 <xsl:choose>
-                  <xsl:when test="./self::r:artikelOfLid|./self::vt:divisieaanduiding|./self::rol:bovenliggendeActiviteit|./self::k:gebiedsaanwijzingweergave">
+                  <xsl:when test="./self::r:artikelOfLid|./self::vt:divisieaanduiding|./self::k:gebiedsaanwijzingweergave">
                     <xsl:for-each select="./element()/@xlink:href">
                       <p class="waarde"><xsl:value-of select="."/></p>
                     </xsl:for-each>
                   </xsl:when>
                   <xsl:when test="./self::l:geometrie">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
-                    <xsl:for-each select="./l:GeometrieRef/@xlink:href">
-                      <xsl:variable name="id" select="string(.)"/>
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="$gml/Locatie[contains(@geo-id,$id)]"/>
-                      </xsl:call-template>
-                    </xsl:for-each>
+                    <xsl:variable name="id" select="./l:GeometrieRef/@xlink:href"/>
+                    <xsl:call-template name="object">
+                      <xsl:with-param name="current" select="$gml/gio/Locatie[geo-id=$id]"/>
+                    </xsl:call-template>
                   </xsl:when>
                   <xsl:when test="./self::r:locatieaanduiding|./self::rol:locatieaanduiding|./self::ga:locatieaanduiding|./self::vt:locatieaanduiding">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
@@ -281,6 +315,23 @@
                       <xsl:call-template name="object">
                         <xsl:with-param name="current" select="."/>
                       </xsl:call-template>
+                    </xsl:for-each>
+                  </xsl:when>
+                  <xsl:when test="./self::rol:gerelateerdeActiviteit|./self::rol:bovenliggendeActiviteit">
+                    <xsl:attribute name="style" select="string('padding: 0pt;')"/>
+                    <xsl:variable name="activiteit-id" select="./rol:ActiviteitRef/@xlink:href"/>
+                    <xsl:for-each select="$activiteit-id">
+                      <xsl:variable name="id" select="string(.)"/>
+                      <xsl:choose>
+                        <xsl:when test="$activiteiten[rol:identificatie=$id]">
+                          <xsl:call-template name="object">
+                            <xsl:with-param name="current" select="$activiteiten[rol:identificatie=$id]"/>
+                          </xsl:call-template>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <p class="waarde"><xsl:value-of select="$id"/></p>
+                        </xsl:otherwise>
+                      </xsl:choose>
                     </xsl:for-each>
                   </xsl:when>
                   <xsl:when test="./self::r:gebiedsaanwijzing|./self::vt:gebiedsaanwijzing">
@@ -317,6 +368,22 @@
                         <xsl:with-param name="current" select="."/>
                       </xsl:call-template>
                     </xsl:for-each>
+                  </xsl:when>
+                  <xsl:when test="./self::rol:kwantitatieveWaarde">
+                    <xsl:attribute name="style" select="string('padding: 0pt;')"/>
+                    <xsl:variable name="locatie-id" select="$current//l:LocatieRef/@xlink:href"/>
+                    <xsl:variable name="gebied-id" select="$locaties[l:identificatie=$locatie-id]//l:GeometrieRef/@xlink:href"/>
+                    <xsl:variable name="waarde" select="$gml/gio[Locatie/geo-id=$gebied-id]/Waarde"/>
+                    <xsl:choose>
+                      <xsl:when test="$waarde">
+                        <xsl:call-template name="object">
+                          <xsl:with-param name="current" select="$waarde"/>
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <p class="waarde"><xsl:value-of select="string(.)"/></p>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </xsl:when>
                   <xsl:when test="./self::vt:hoofdlijnaanduiding">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
@@ -368,7 +435,7 @@
     <div class="content">
       <table>
         <colgroup>
-          <col width="175px"/>
+          <col width="165px"/>
           <col width="auto"/>
         </colgroup>
         <thead onclick="ShowHide(this)">
@@ -398,7 +465,7 @@
     <div class="content">
       <table>
         <colgroup>
-          <col width="175px"/>
+          <col width="165px"/>
           <col width="auto"/>
         </colgroup>
         <thead onclick="ShowHide(this)">
@@ -428,7 +495,7 @@
     <div class="content">
       <table>
         <colgroup>
-          <col width="175px"/>
+          <col width="165px"/>
           <col width="auto"/>
         </colgroup>
         <thead onclick="ShowHide(this)">
@@ -458,7 +525,7 @@
     <div class="content">
       <table>
         <colgroup>
-          <col width="175px"/>
+          <col width="165px"/>
           <col width="auto"/>
         </colgroup>
         <thead onclick="ShowHide(this)">
@@ -488,7 +555,7 @@
     <div class="content">
       <table>
         <colgroup>
-          <col width="175px"/>
+          <col width="165px"/>
           <col width="auto"/>
         </colgroup>
         <thead onclick="ShowHide(this)">
