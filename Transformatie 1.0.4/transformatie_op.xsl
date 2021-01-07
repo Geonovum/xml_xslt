@@ -232,14 +232,10 @@
     </xsl:choose>
   </xsl:template>
 
-  <!-- zet lege Kop om naar &nbsp; -->
+  <!-- wis lege Kop -->
 
   <xsl:template match="Kop[normalize-space(fn:string-join((Label,Nummer,Opschrift),''))='']" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <xsl:element name="Kop" namespace="{namespace-uri()}">
-      <xsl:element name="Opschrift" namespace="{namespace-uri()}">
-        <xsl:value-of select="string('&#160;')"/>
-      </xsl:element>
-    </xsl:element>
+    <!-- doe niets -->
   </xsl:template>
 
   <!-- enkele controles die nu in de validatie zijn opgenomen -->
@@ -321,7 +317,15 @@
   </xsl:template>
 
   <xsl:template match="text()">
-    <xsl:copy-of select="."/>
+    <xsl:choose>
+      <xsl:when test="(normalize-space(.)='') and contains(.,'&#10;')">
+        <!-- lege tekst met een zachte return is indentation -->
+        <xsl:value-of select="fn:tokenize(.,'&#10;')[1]"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:copy-of select="."/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="comment()|processing-instruction()">
