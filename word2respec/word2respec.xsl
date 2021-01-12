@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:wx="http://schemas.microsoft.com/office/word/2006/auxHint" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:bin="http://expath.org/ns/binary" xmlns:wx="http://schemas.microsoft.com/office/word/2006/auxHint" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <xsl:output method="html" encoding="UTF-8" indent="no"/>
 
   <xsl:param name="base.dir" select="string('C:\Werkbestanden\Geonovum\word2respec')"/>
@@ -136,8 +136,8 @@
           <xsl:attribute name="class" select="string('remove')"/>
         </xsl:element>
         <xsl:element name="script">
+          <xsl:attribute name="src" select="string('js/config.js')"/>
           <xsl:attribute name="class" select="string('remove')"/>
-          <xsl:text>var respecConfig={&#10;    specStatus: "GN-VV",&#10;    specType: "IM",&#10;    editors: [{&#10;        name: "[name]",&#10;        company: "[company]",&#10;        companyURL: "[companyURL]",&#10;        mailto: "[mailto]"&#10;    }],&#10;    authors: [{&#10;        name: "[name]",&#10;        company: "[company]",&#10;        companyURL: "[companyURL]",&#10;        mailto: "[mailto]"&#10;    }],&#10;    previousPublishDate: "2020-01-01",&#10;    previousStatus: "GN-CV",&#10;    shortName: "[shortName]",&#10;    github: "https://github.com/Geonovum/whitepaper-standaarden",&#10;    };</xsl:text>
         </xsl:element>
         <xsl:element name="link">
           <xsl:attribute name="rel" select="string('stylesheet')"/>
@@ -392,33 +392,145 @@
     </xsl:choose>
   </xsl:template>
 
+  <!--routine om elementen in w:rPr af te splitsen-->
   <xsl:template name="range">
     <xsl:param name="node"/>
     <xsl:param name="index"/>
-    <xsl:variable name="styleId" select="('b','i','u','sup','sub')"/>
     <xsl:choose>
-      <xsl:when test="$index gt count($styleId)">
-        <xsl:apply-templates select="$node/node()"/>
-      </xsl:when>
-      <xsl:when test="$node/w:rPr[(*[local-name() eq $styleId[$index]]) or (w:vertAlign[starts-with(@w:val,$styleId[$index])])]">
-        <xsl:element name="{$styleId[$index]}">
-          <xsl:call-template name="range">
-            <xsl:with-param name="node" select="$node"/>
-            <xsl:with-param name="index" select="$index+1"/>
-          </xsl:call-template>
-        </xsl:element>
+      <xsl:when test="w:rPr/*[$index]">
+        <xsl:choose>
+          <xsl:when test="name($node/w:rPr/*[$index])='w:rStyle'">
+            <xsl:variable name="styleId" select="$node/w:rPr/w:rStyle/@w:val"/>
+            <xsl:variable name="styleName" select="document($styles, .)/w:styles/w:style[@w:styleId=$styleId]/w:name/@w:val"/>
+            <!-- hier kan een choose op basis van styleName -->
+            <xsl:call-template name="range">
+              <xsl:with-param name="node" select="$node"/>
+              <xsl:with-param name="index" select="$index+1"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="name($node/w:rPr/*[$index])='w:highlight'">
+            <!-- geldt alleen binnen alinea -->
+            <xsl:choose>
+              <xsl:when test="$node/ancestor::w:p/w:r[not(w:rPr/w:highlight)]">
+                <xsl:element name="span">
+                  <xsl:attribute name="style" select="concat('background-color: ',$node/w:rPr/w:highlight/@w:val,';')"/>
+                  <xsl:call-template name="range">
+                    <xsl:with-param name="node" select="$node"/>
+                    <xsl:with-param name="index" select="$index+1"/>
+                  </xsl:call-template>
+                </xsl:element>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:call-template name="range">
+                  <xsl:with-param name="node" select="$node"/>
+                  <xsl:with-param name="index" select="$index+1"/>
+                </xsl:call-template>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:when>
+          <xsl:when test="name($node/w:rPr/*[$index])='w:color'">
+            <xsl:element name="span">
+              <xsl:attribute name="style" select="concat('color: #',$node/w:rPr/w:color/@w:val,';')"/>
+              <xsl:call-template name="range">
+                <xsl:with-param name="node" select="$node"/>
+                <xsl:with-param name="index" select="$index+1"/>
+              </xsl:call-template>
+            </xsl:element>
+          </xsl:when>
+          <!--xsl:when test="name(w:rPr/*[$index]) = 'w:rFonts'">
+            <xsl:call-template name="range">
+              <xsl:with-param name="node" select="$node"/>
+              <xsl:with-param name="index" select="$index+1"/>
+            </xsl:call-template>
+          </xsl:when-->
+          <xsl:when test="name($node/w:rPr/*[$index])='w:b'">
+            <xsl:element name="b">
+              <xsl:call-template name="range">
+                <xsl:with-param name="node" select="$node"/>
+                <xsl:with-param name="index" select="$index+1"/>
+              </xsl:call-template>
+            </xsl:element>
+          </xsl:when>
+          <xsl:when test="name($node/w:rPr/*[$index])='w:i'">
+            <xsl:element name="i">
+              <xsl:call-template name="range">
+                <xsl:with-param name="node" select="$node"/>
+                <xsl:with-param name="index" select="$index+1"/>
+              </xsl:call-template>
+            </xsl:element>
+          </xsl:when>
+          <xsl:when test="name($node/w:rPr/*[$index])='w:u'">
+            <xsl:element name="u">
+              <xsl:call-template name="range">
+                <xsl:with-param name="node" select="$node"/>
+                <xsl:with-param name="index" select="$index+1"/>
+              </xsl:call-template>
+            </xsl:element>
+          </xsl:when>
+          <xsl:when test="name($node/w:rPr/*[$index])='w:vertAlign'">
+            <xsl:element name="{fn:substring($node/w:rPr/w:vertAlign/@w:val,1,3)}">
+              <xsl:call-template name="range">
+                <xsl:with-param name="node" select="$node"/>
+                <xsl:with-param name="index" select="$index+1"/>
+              </xsl:call-template>
+            </xsl:element>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:call-template name="range">
+              <xsl:with-param name="node" select="$node"/>
+              <xsl:with-param name="index" select="$index+1"/>
+            </xsl:call-template>
+          </xsl:otherwise>
+        </xsl:choose>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:call-template name="range">
-          <xsl:with-param name="node" select="$node"/>
-          <xsl:with-param name="index" select="$index+1"/>
-        </xsl:call-template>
+        <xsl:apply-templates/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
 
+  <!-- velden bewerken -->
+
   <xsl:template match="w:instrText">
     <!-- tekst niet plaatsen -->
+  </xsl:template>
+
+  <!-- nootverwijzingen toevoegen -->
+
+  <xsl:template match="w:footnoteReference">
+    <xsl:variable name="footnoteId" select="@w:id"/>
+    <xsl:variable name="footnote" select="document($footnotes,.)//w:footnote[@w:id=$footnoteId]"/>
+    <xsl:variable name="index" select="count(.|preceding::w:footnoteReference)"/>
+    <xsl:element name="span">
+      <xsl:attribute name="class" select="string('noot')"/>
+      <xsl:number value="$index" format="[1]"/>
+      <xsl:element name="span">
+        <xsl:attribute name="class" select="string('noottekst')"/>
+        <xsl:for-each select="$footnote/w:p">
+          <xsl:apply-templates select="./node()"/>
+          <xsl:element name="br"/>
+        </xsl:for-each>
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
+  <!-- eindnootverwijzingen toevoegen -->
+
+  <xsl:template match="w:endnoteReference">
+    <xsl:variable name="endnoteId" select="@w:id"/>
+    <xsl:variable name="endnote" select="document($endnotes,.)//w:endnote[@w:id=$endnoteId]"/>
+    <xsl:variable name="index" select="count(.|preceding::w:endnoteReference)"/>
+    <xsl:element name="span">
+      <xsl:attribute name="class" select="string('noot')"/>
+      <xsl:number value="$index" format="[i]"/>
+      <xsl:element name="span">
+        <xsl:attribute name="class" select="string('noottekst')"/>
+        <xsl:for-each select="$endnote/w:p">
+          <xsl:apply-templates select="./node()"/>
+          <xsl:element name="br"/>
+        </xsl:for-each>
+      </xsl:element>
+    </xsl:element>
   </xsl:template>
 
   <!-- tekens -->
@@ -683,16 +795,23 @@
           </xsl:when>
           <xsl:otherwise>
             <!-- controleer of w:tbl een achtergrond heeft -->
+            <xsl:variable name="tblLook" select="ancestor::w:tbl[1]/w:tblPr/w:tblLook"/>
+            <xsl:variable name="tcLook" select="(ancestor::w:tr[1]/w:trPr/w:cnfStyle,self::w:tc[1]/w:tcPr/w:cnfStyle)"/>
             <xsl:variable name="cnfStyle">
-              <xsl:analyze-string select="w:tcPr/w:cnfStyle/@w:val" regex="[01]">
-                <xsl:matching-substring>
-                  <val><xsl:value-of select="."/></val>
-                </xsl:matching-substring>
-              </xsl:analyze-string>
+              <w:tcStylePr w:type="firstRow"><xsl:value-of select="$tblLook/@w:firstRow and sum($tcLook/@w:firstRow)"/></w:tcStylePr>
+              <w:tcStylePr w:type="lastRow"><xsl:value-of select="$tblLook/@w:lastRow and sum($tcLook/@w:lastRow)"/></w:tcStylePr>
+              <w:tcStylePr w:type="firstCol"><xsl:value-of select="$tblLook/@w:firstColumn and sum($tcLook/@w:firstColumn)"/></w:tcStylePr>
+              <w:tcStylePr w:type="lastCol"><xsl:value-of select="$tblLook/@w:lastColumn and sum($tcLook/@w:lastColumn)"/></w:tcStylePr>
+              <w:tcStylePr w:type="band1Vert"><xsl:value-of select="$tblLook/@w:noVBand and sum($tcLook/@w:oddVBand)"/></w:tcStylePr>
+              <w:tcStylePr w:type="band1Horz"><xsl:value-of select="$tblLook/@w:noHBand and sum($tcLook/@w:oddHBand)"/></w:tcStylePr>
             </xsl:variable>
-            <xsl:variable name="tblBackground" select="($style,ancestor::w:tbl[1])[1]/w:tblPr/w:tblBorders/w:insideV"/>
+            <xsl:variable name="tblBackground" select="$style/w:tblStylePr[@w:type=$cnfStyle/*[.=true()]/@w:type[1]]/w:tcPr/w:shd/@w:fill"/>
             <xsl:choose>
               <xsl:when test="$tblBackground">
+                <xsl:call-template name="props">
+                  <xsl:with-param name="outputstring" select="concat($outputstring,' background-color: #',$tblBackground,';')"/>
+                  <xsl:with-param name="index" select="$index+1"/>
+                </xsl:call-template>
               </xsl:when>
               <xsl:otherwise>
                 <xsl:call-template name="props">
