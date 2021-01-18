@@ -7,6 +7,7 @@
 
   <property name="css.dir" value="css"/>
   <property name="input.dir" value="input"/>
+  <property name="js.dir" value="js"/>
   <property name="media.dir" value="media"/>
   <property name="output.dir" value="output"/>
   <property name="unzip.dir" value="unzip"/>
@@ -42,6 +43,7 @@
 
   <target name="transform" description="Transformeer van word naar respec">
     <xslt in="${unzip.dir}/word/document.xml" out="${output.dir}/resultaat.html" style="word2respec.xsl" processor="trax" force="true"/>
+    <copy todir="${output.dir}/js" file="${input.dir}/config.js" failonerror="false"/>
     <copy todir="${output.dir}/media" failonerror="false">
       <fileset dir="${unzip.dir}/word/media"/>
     </copy>

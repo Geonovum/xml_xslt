@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="SLD_1.0.css"?>
 <!-- ================================================ -->
-<!--      STOP-TPOD Vlaksymbolenlijst 1.0.0           -->
-<!--      Geonovum  2020                              -->
+<!--      STOP-TPOD Vlaksymbolenlijst 1.1.0           -->
+<!--      Geonovum  2021                              -->
 <!-- ================================================ -->
 <sld:StyledLayerDescriptor 
     xmlns:se="http://www.opengis.net/se" 
