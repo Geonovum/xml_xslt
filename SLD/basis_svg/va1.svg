@@ -1,11 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<svg viewBox="0 0 48 48" height="48px" width="48px" transform="rotate(0),scale(1)">
-<g id="va1" fill="none" stroke="#000000" stroke-width="2">
-    <path d="M1 7 l48 0" />
-    <path d="M1 15 l48 0" />
-    <path d="M1 23 l48 0" />
-    <path d="M1 31 l48 0" />
-    <path d="M1 39 l48 0" />
-    <path d="M1 47 l48 0" />
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    viewBox="0 0 48 48">
+    <title>Raster horizontaal</title>
+    <g id="va1" fill="none" stroke="#000000" stroke-width="2">
+        <path d="M0 7 L48 7"/>
+        <path d="M0 15 L48 15"/>
+        <path d="M0 23 L48 23"/>
+        <path d="M0 31 L48 31"/>
+        <path d="M0 39 L48 39"/>
+        <path d="M0 47 L48 47"/>
+    </g>
 </svg>
