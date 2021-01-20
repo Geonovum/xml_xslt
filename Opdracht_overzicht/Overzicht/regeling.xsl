@@ -223,10 +223,11 @@
   </xsl:template>
 
   <xsl:template match="tgroup" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+    <xsl:variable name="default" select="100 div count(./colspec)"/>
     <xsl:variable name="col">
       <xsl:for-each select="./colspec" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
         <xsl:element name="width">
-          <xsl:value-of select="fn:tokenize(./@colwidth,'\*')[1]"/>
+          <xsl:value-of select="(fn:tokenize(./@colwidth,'\*')[1],$default)[1]"/>
         </xsl:element>
       </xsl:for-each>
     </xsl:variable>

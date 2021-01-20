@@ -83,3 +83,7 @@ span.label {
   font-weight: bold;
   color: red;
 }
+span.error {
+  font-weight: bold;
+  color: red;
+}

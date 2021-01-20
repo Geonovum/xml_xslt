@@ -281,41 +281,61 @@
                   <xsl:when test="./self::l:geometrie">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./l:GeometrieRef/@xlink:href"/>
-                    <xsl:call-template name="object">
-                      <xsl:with-param name="current" select="$gml/gio/Locatie[geo-id=$id]"/>
-                    </xsl:call-template>
+                    <xsl:choose>
+                      <xsl:when test="$gml/gio/Locatie[geo-id=$id]">
+                        <xsl:call-template name="object">
+                          <xsl:with-param name="current" select="$gml/gio/Locatie[geo-id=$id]"/>
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </xsl:when>
                   <xsl:when test="./self::r:locatieaanduiding|./self::rol:locatieaanduiding|./self::ga:locatieaanduiding|./self::vt:locatieaanduiding">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./l:LocatieRef/@xlink:href"/>
-                    <xsl:for-each select="$locaties[l:identificatie=$id]">
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="."/>
-                      </xsl:call-template>
-                    </xsl:for-each>
+                    <xsl:choose>
+                      <xsl:when test="$locaties[l:identificatie=$id]">
+                        <xsl:call-template name="object">
+                          <xsl:with-param name="current" select="$locaties[l:identificatie=$id]"/>
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </xsl:when>
                   <xsl:when test="./self::l:groepselement">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./l:GebiedRef/@xlink:href"/>
-                    <xsl:for-each select="$locaties[l:identificatie=$id]">
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="."/>
-                      </xsl:call-template>
-                    </xsl:for-each>
+                    <xsl:choose>
+                      <xsl:when test="$locaties[l:identificatie=$id]">
+                        <xsl:call-template name="object">
+                          <xsl:with-param name="current" select="$locaties[l:identificatie=$id]"/>
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </xsl:when>
                   <xsl:when test="./self::r:activiteitaanduiding">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./rol:ActiviteitRef/@xlink:href"/>
-                    <xsl:for-each select="$activiteiten[rol:identificatie=$id]">
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="."/>
-                      </xsl:call-template>
-                    </xsl:for-each>
-                    <xsl:for-each select="./r:ActiviteitLocatieaanduiding">
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="."/>
-                      </xsl:call-template>
-                    </xsl:for-each>
+                    <xsl:choose>
+                      <xsl:when test="$activiteiten[rol:identificatie=$id]">
+                        <xsl:call-template name="object">
+                          <xsl:with-param name="current" select="$activiteiten[rol:identificatie=$id]"/>
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                      </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:call-template name="object">
+                      <xsl:with-param name="current" select="./r:ActiviteitLocatieaanduiding"/>
+                    </xsl:call-template>
                   </xsl:when>
                   <xsl:when test="./self::rol:gerelateerdeActiviteit|./self::rol:bovenliggendeActiviteit">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
@@ -337,37 +357,50 @@
                   <xsl:when test="./self::r:gebiedsaanwijzing|./self::vt:gebiedsaanwijzing">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./ga:GebiedsaanwijzingRef/@xlink:href"/>
-                    <xsl:for-each select="$gebiedsaanwijzingen[ga:identificatie=$id]">
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="."/>
-                      </xsl:call-template>
-                    </xsl:for-each>
+                    <xsl:choose>
+                      <xsl:when test="$gebiedsaanwijzingen[ga:identificatie=$id]">
+                        <xsl:call-template name="object">
+                          <xsl:with-param name="current" select="$gebiedsaanwijzingen[ga:identificatie=$id]"/>
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </xsl:when>
                   <xsl:when test="./self::r:omgevingsnormaanduiding">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./rol:OmgevingsnormRef/@xlink:href"/>
-                    <xsl:for-each select="$omgevingsnormaanduidingen[rol:identificatie=$id]">
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="."/>
-                      </xsl:call-template>
-                    </xsl:for-each>
+                    <xsl:choose>
+                      <xsl:when test="$omgevingsnormaanduidingen[rol:identificatie=$id]">
+                        <xsl:call-template name="object">
+                          <xsl:with-param name="current" select="$omgevingsnormaanduidingen[rol:identificatie=$id]"/>
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </xsl:when>
                   <xsl:when test="./self::r:omgevingswaardeaanduiding">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./rol:OmgevingswaardeRef/@xlink:href"/>
-                    <xsl:for-each select="$omgevingswaardeaanduidingen[rol:identificatie=$id]">
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="."/>
-                      </xsl:call-template>
-                    </xsl:for-each>
+                    <xsl:choose>
+                      <xsl:when test="$omgevingswaardeaanduidingen[rol:identificatie=$id]">
+                        <xsl:call-template name="object">
+                          <xsl:with-param name="current" select="$omgevingswaardeaanduidingen[rol:identificatie=$id]"/>
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </xsl:when>
                   <xsl:when test="./self::rol:normwaarde">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
-                    <xsl:for-each select="./rol:Normwaarde">
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="."/>
-                      </xsl:call-template>
-                    </xsl:for-each>
+                    <xsl:call-template name="object">
+                      <xsl:with-param name="current" select="./rol:Normwaarde"/>
+                    </xsl:call-template>
                   </xsl:when>
                   <xsl:when test="./self::rol:kwantitatieveWaarde">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
@@ -388,36 +421,42 @@
                   <xsl:when test="./self::vt:hoofdlijnaanduiding">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./vt:HoofdlijnRef/@xlink:href"/>
-                    <xsl:for-each select="$hoofdlijnaanduidingen[vt:identificatie=$id]">
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="."/>
-                      </xsl:call-template>
-                    </xsl:for-each>
+                    <xsl:choose>
+                      <xsl:when test="$hoofdlijnaanduidingen[vt:identificatie=$id]">
+                        <xsl:call-template name="object">
+                          <xsl:with-param name="current" select="$hoofdlijnaanduidingen[vt:identificatie=$id]"/>
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </xsl:when>
                   <xsl:when test="./self::vt:kaartaanduiding">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./k:KaartRef/@xlink:href"/>
-                    <xsl:for-each select="$kaarten[k:identificatie=$id]">
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="."/>
-                      </xsl:call-template>
-                    </xsl:for-each>
+                    <xsl:choose>
+                      <xsl:when test="$kaarten[k:identificatie=$id]">
+                        <xsl:call-template name="object">
+                          <xsl:with-param name="current" select="$kaarten[k:identificatie=$id]"/>
+                        </xsl:call-template>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </xsl:when>
                   <xsl:when test="./self::k:uitsnede">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
-                    <xsl:for-each select="./k:Kaartextent">
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="."/>
-                      </xsl:call-template>
-                    </xsl:for-each>
+                    <xsl:call-template name="object">
+                      <xsl:with-param name="current" select="./k:Kaartextent"/>
+                    </xsl:call-template>
                   </xsl:when>
                   <xsl:when test="./self::k:kaartlagen">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
-                    <xsl:for-each select="./k:Kaartlaag">
-                      <xsl:call-template name="object">
-                        <xsl:with-param name="current" select="."/>
-                      </xsl:call-template>
-                    </xsl:for-each>
+                    <xsl:call-template name="object">
+                      <xsl:with-param name="current" select="./k:Kaartlaag"/>
+                    </xsl:call-template>
                   </xsl:when>
                   <xsl:otherwise>
                     <p class="waarde"><xsl:value-of select="string(.)"/></p>
