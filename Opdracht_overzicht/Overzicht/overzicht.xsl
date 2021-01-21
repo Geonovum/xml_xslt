@@ -288,7 +288,7 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
@@ -302,7 +302,7 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
@@ -316,7 +316,7 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
@@ -330,7 +330,7 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
                       </xsl:otherwise>
                     </xsl:choose>
                     <xsl:call-template name="object">
@@ -364,7 +364,7 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
@@ -378,7 +378,7 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
@@ -392,7 +392,7 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
@@ -428,7 +428,7 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
@@ -442,7 +442,7 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="string('onbekend')"/></span></p>
+                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
