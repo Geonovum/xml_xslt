@@ -27,6 +27,7 @@
   <!-- bouw het document op -->
 
   <xsl:param name="consolidatie" select="collection(concat($opdracht.dir,'?select=*.xml'))//Consolidatie" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/uitlevering/"/>
+  <xsl:param name="bookmarks" select="fn:distinct-values($consolidatie//(IntRef,IntIoRef)/@ref)" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
 
   <xsl:template match="/">
     <!-- maak core.xml -->
@@ -121,6 +122,7 @@
   </xsl:template>
 
   <xsl:template match="Lichaam//Kop[normalize-space(.) ne '']" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+    <xsl:variable name="bookmark_id" select="fn:index-of($bookmarks,parent::element()/@eId)"/>
     <xsl:variable name="parent" select="fn:index-of(('Hoofdstuk','Afdeling','Paragraaf','Subparagraaf','Subsubparagraaf','Artikel'),parent::element()/name())"/>
     <xsl:variable name="style" select="('heading 1','heading 2','heading 3','heading 4','heading 5','heading 6')"/>
     <xsl:element name="w:p">
@@ -129,6 +131,15 @@
           <xsl:attribute name="w:val" select="($styles/self::w:style)[@w:type='paragraph'][w:name/@w:val=$style[$parent]]/@w:styleId"/>
         </xsl:element>
       </xsl:element>
+      <xsl:if test="$bookmark_id gt 0">
+        <xsl:element name="w:bookmarkStart">
+          <xsl:attribute name="w:name" select="format-number($bookmark_id,'ID0000')"/>
+          <xsl:attribute name="w:id" select="$bookmark_id"/>
+        </xsl:element>
+        <xsl:element name="w:bookmarkEnd">
+          <xsl:attribute name="w:id" select="$bookmark_id"/>
+        </xsl:element>
+      </xsl:if>
       <xsl:element name="w:r">
         <xsl:element name="w:t">
           <xsl:value-of select="fn:string-join((Label,Nummer),' ')"/>
@@ -381,6 +392,21 @@
     <!-- doe niets -->
   </xsl:template>
 
+  <xsl:template match="IntRef|IntIoRef" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+    <xsl:variable name="bookmark_id" select="fn:index-of($bookmarks,./@ref)"/>
+    <xsl:element name="w:hyperlink">
+      <xsl:attribute name="w:anchor" select="format-number($bookmark_id,'ID0000')"/>
+      <xsl:element name="w:r">
+        <xsl:element name="w:rPr">
+          <xsl:element name="w:rStyle">
+            <xsl:attribute name="w:val" select="($styles/self::w:style)[@w:type='character'][w:name/@w:val='Hyperlink']/@w:styleId"/>
+          </xsl:element>
+        </xsl:element>
+        <xsl:apply-templates/>
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="ExtRef" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
     <xsl:element name="w:hyperlink">
       <xsl:attribute name="r:id" select="generate-id(.)"/>
@@ -393,6 +419,29 @@
         <xsl:apply-templates/>
       </xsl:element>
     </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="ExtIoRef" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+    <xsl:variable name="bookmark_id" select="fn:index-of($bookmarks,./@wId)"/>
+    <xsl:choose>
+      <xsl:when test="$bookmark_id gt 0">
+        <xsl:element name="w:bookmarkStart">
+          <xsl:attribute name="w:name" select="format-number($bookmark_id,'ID0000')"/>
+          <xsl:attribute name="w:id" select="$bookmark_id"/>
+        </xsl:element>
+        <xsl:element name="w:r">
+          <xsl:apply-templates/>
+        </xsl:element>
+        <xsl:element name="w:bookmarkEnd">
+          <xsl:attribute name="w:id" select="$bookmark_id"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:element name="w:r">
+          <xsl:apply-templates/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="(Al|Bijschrift|Lijstaanhef|Opschrift|Term|title|Tussenkop)/text()" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
