@@ -13,7 +13,7 @@ Dus als je Gebied.gml wilt openen, moet je het gekopieerde GIO_gml_Locatie_RDNew
 
 
 ## Voor elke GIO via gml_registry.xml
-Het is moeglijk om er voor zorgen dat elke GIO vanzelf goed geopend word.
+Het is mogelijk om er voor zorgen dat elke GIO vanzelf goed geopend word.
 In de folder {installatie folder OSGeo4W64}\share\gdal staat het bestand 'gml_registry.xml'.
 Hierin kunnen verwijzingen naar gfs bestanden opgenomen worden op basis van de namespace van de toepassing.
 
