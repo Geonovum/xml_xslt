@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+
+
+  #menu
+  {
+	 overflow : auto;
+   margin: 0;
+   padding: 0;
+  }
+  #menu li
+  {
+	 z-index: 10;
+   height: 40;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   float: left;
+  }
+  #menu li a 
+  {
+   z-index: 10;
+   display: block;
+   margin: 0 1px 0 0;
+   padding: 4px 10px;
+   background: black;
+   color: white;
+   text-align: center;
+  }
+  #menu li span 
+  {
+   z-index: 10;
+   display: block;
+   margin: 0 1px 0 0;
+   padding: 4px 10px;
+   background: black;
+   color: white;
+   text-align: center;
+  }
+  #menu  li ul span:hover
+  {
+   background: green;
+	 cursor: pointer;
+  }
+  #menu ul
+  {
+   z-index: 10;
+	 position: absolute;
+   visibility: hidden;
+   margin: 0;
+   padding: 0;
+   background: grey;
+   border: 1px solid white;
+  }
+  #menu ul span 
+  {
+   z-index: 10;
+   position: relative;
+   display: block;
+   margin: 0;
+   padding: 2px 2px;
+   text-align: left;
+   background: darkgrey;
+   color: white;
+  }
+  #menu ul :hover
+  {
+   background: #FF000;
+  }
+
+.verticaal{
+		writing-mode: vertical-lr;
+}
+  
+.horizontaal{
+  writing-mode: horizontal-tb;
+}
+.highLight{
+		font-weight: bold;
+		cursor: pointer;
+		color: blue;
+}
+
+.link{
+		color: blue;
+		cursor: pointer;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 170px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+:target {
+    border: 2px solid #D4D4D4;
+    background-color: orange;
+    color: white;
+ }
+
+.entry{
+		
+}
+
+.owFields{
+		display: none;
+}
+
+
+.kaderGroen{
+  border: solid;
+  border-color: #1b5b30;;
+  border-width: 2px;
+	border-radius: 5px;
+	padding-inline: 5px 5px;
+}
+
+.fs70{
+font-size: 70%;		
+}
+
+
+
+.divMain{
+  width: 1600px;
+  border: dotted;
+  border-color: #00FF00;
+  border-width: 2px;
+	background-color: #e6fbe2;
+}
+
+.divOW{
+  position: absolute;
+  left: 800px;
+  width: 8000px;
+	height: 8000px;
+  border: solid;
+  border-color: #000000;
+  border-width: 5px;
+	background-color: #e6fbe2;
+}
+.divOP{
+  position: absolute;
+  left: 0px;
+  width: 800px;
+  border: solid;
+  border-color: #0000FF;
+  border-width: 2px;
+	background-color: #eef2fd;
+}
+
+.gridRelaties{
+display: grid;		
+visibility : visible		
+}
+
+
+.divLinks0{
+  left: 0px;
+  width: 770px;
+  border: solid;
+	border-radius: 10px;
+	padding-inline: 5px 5px;
+  border-color: #0000FF;
+  border-width: 2px;
+	background-color: #eef2fd;
+}
+
+.art{
+  left: 0px;
+  width: 770px;
+  border: solid;
+	border-radius: 10px;
+	padding-inline: 5px 5px;
+  border-color: #0000FF;
+  border-width: 2px;
+	background-color: #eef2fd;
+}
+.regeltekst{
+}
+iframe {
+    border: 1px solid black;
+    width: 100%;
+    height: 800px;
+}
+
+.owTable {
+  width: 500px;
+  border: solid;
+  border-color: #1b5b30;
+};
+
+
+.owObject{
+}
+
+.td{
+  width: 500px;
+	left: 10px;
+  border: solid;
+  border-color: #1b5b30;
+ 	background-color: #FFFFFF;
+}
+
+.owObjectContent{
+}
+
+iframe {
+    border: 1px solid black;
+    width: 100%;
+}
+
+
+.objectTitel{
+	font-weight: bold;
+  cursor: pointer;
+	color: blue;
+}
+
+
+.default{
+		font-weight: normal;
+		cursor: pointer;
+		color: blue;
+}
+
+.error{
+		color: red;¨
+}

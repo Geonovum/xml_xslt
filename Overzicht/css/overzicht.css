@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+.divLinks0{
+  left: 0px;
+  width: 600px;
+  border: solid;
+  border-color: #FF0000;
+  border-width: 2px;
+}
+.divSVG{
+  left: 500px;
+  width: 300px;
+  position: absolute;
+  border: solid;
+  border-color: #00FF00;
+  border-width: 2px;
+}
+.divLinks1{
+  display : 'none';
+  left: 0px;
+  width: 600px;
+  border: solid;
+  border-color: #0000FF;
+  border-width: 2px;
+}
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
