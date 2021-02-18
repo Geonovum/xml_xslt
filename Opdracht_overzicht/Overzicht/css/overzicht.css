@@ -83,7 +83,13 @@ span.label {
   font-weight: bold;
   color: red;
 }
-span.error {
+
+/*  error */
+
+table.error:not(:first-child) {
+  border-top: 1px solid black;
+}
+table.error p {
   font-weight: bold;
   color: red;
 }

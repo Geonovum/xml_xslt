@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<AanleveringInformatieObject schemaversie="1.0.3" xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering/ ../lvbb/lvbb-stop-aanlevering.xsd">
+  <InformatieObjectVersie>
+    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/gm0855/2020/standpltsOpenTijd</FRBRWork>
+      <FRBRExpression>/join/id/regdata/gm0855/2020/standpltsOpenTijd/nld@2020-01-02;6</FRBRExpression>
+      <soortWork>/join/id/stop/work_010</soortWork>
+    </ExpressionIdentificatie>
+    <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <heeftBestanden>
+        <heeftBestand>
+          <Bestand>
+            <bestandsnaam>standpltsOpenTijd.gml</bestandsnaam>
+            <hash>1a43978272fe21e420e892d97ab263126a93f4efe0126f615fbc565cd628d245347271a4d21329a8e985b4869dbcf77e766638dd081327738dac07463b5a3474</hash>
+          </Bestand>
+        </heeftBestand>
+      </heeftBestanden>
+      <heeftGeboorteregeling>/akn/nl/act/gm0855/2020/VNG15</heeftGeboorteregeling>
+    </InformatieObjectVersieMetadata>
+    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/gemeente/gm0855</eindverantwoordelijke>
+      <maker>/tooi/id/gemeente/gm0855</maker>
+      <officieleTitel>/join/id/regdata/gm0855/2020/standpltsOpenTijd</officieleTitel>
+      <naamInformatieObject>Openingstijden standplaats</naamInformatieObject>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+    </InformatieObjectMetadata>
+  </InformatieObjectVersie>
+</AanleveringInformatieObject>

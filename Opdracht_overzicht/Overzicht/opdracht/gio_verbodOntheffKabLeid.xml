@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<AanleveringInformatieObject schemaversie="1.0.3" xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering/ ../lvbb/lvbb-stop-aanlevering.xsd">
+  <InformatieObjectVersie>
+    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/gm0855/2020/verbodOntheffKabLeid</FRBRWork>
+      <FRBRExpression>/join/id/regdata/gm0855/2020/verbodOntheffKabLeid/nld@2020-01-02;6</FRBRExpression>
+      <soortWork>/join/id/stop/work_010</soortWork>
+    </ExpressionIdentificatie>
+    <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <heeftBestanden>
+        <heeftBestand>
+          <Bestand>
+            <bestandsnaam>verbodOntheffKabLeid.gml</bestandsnaam>
+            <hash>184406dcb2d9e4e9f0867d078016d1cf53a3a6d8a4f489ddb356fb1cd3cf0f08882b3717904ef06939c7bed8362a29852e0fe3fd2891332f52ccf4fdccdaf1f3</hash>
+          </Bestand>
+        </heeftBestand>
+      </heeftBestanden>
+      <heeftGeboorteregeling>/akn/nl/act/gm0855/2020/VNG15</heeftGeboorteregeling>
+    </InformatieObjectVersieMetadata>
+    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/gemeente/gm0855</eindverantwoordelijke>
+      <maker>/tooi/id/gemeente/gm0855</maker>
+      <officieleTitel>/join/id/regdata/gm0855/2020/verbodOntheffKabLeid</officieleTitel>
+      <naamInformatieObject>verbodsgebied ontheffing kabels en leidingen</naamInformatieObject>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+    </InformatieObjectMetadata>
+  </InformatieObjectVersie>
+</AanleveringInformatieObject>

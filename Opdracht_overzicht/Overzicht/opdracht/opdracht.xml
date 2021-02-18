@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<lvbb:publicatieOpdracht xmlns:lvbb="http://www.overheid.nl/2017/lvbb">
-   <lvbb:idLevering>OVPU001-test01w</lvbb:idLevering>
-   <lvbb:idBevoegdGezag>00000001001797864000</lvbb:idBevoegdGezag>
-   <lvbb:idAanleveraar>00000001001797864000</lvbb:idAanleveraar>
-   <lvbb:publicatie>OVPU001.xml</lvbb:publicatie>
-   <lvbb:datumBekendmaking>2020-06-23</lvbb:datumBekendmaking>
-</lvbb:publicatieOpdracht>
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet versie 76 -->
+<publicatieOpdracht xmlns="http://www.overheid.nl/2017/lvbb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.overheid.nl/2017/lvbb ../lvbb/lvbb-transport.xsd">
+  <idLevering>VNG15VNG15CascoTilburg015</idLevering>
+  <idBevoegdGezag>00000001001172773000</idBevoegdGezag>
+  <idAanleveraar>00000003560458830000</idAanleveraar>
+  <publicatie>besluit.xml</publicatie>
+  <datumBekendmaking>2020-12-24</datumBekendmaking>
+</publicatieOpdracht>

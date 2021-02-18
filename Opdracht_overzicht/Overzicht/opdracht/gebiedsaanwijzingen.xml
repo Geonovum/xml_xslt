@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<ow-dc:owBestand xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:op="http://www.geostandaarden.nl/imow/opobject" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+  <sl:standBestand>
+    <sl:dataset>VNG15CascoTilburg</sl:dataset>
+    <sl:inhoud>
+      <sl:gebied>Tilburg</sl:gebied>
+      <sl:leveringsId>VNG15CascoTilburg015</sl:leveringsId>
+      <sl:objectTypen>
+        <sl:objectType>Gebiedsaanwijzing</sl:objectType>
+      </sl:objectTypen>
+    </sl:inhoud>
+    <sl:stand>
+      <ow-dc:owObject>
+        <ga:Gebiedsaanwijzing>
+          <ga:identificatie>nl.imow-gm0855.gebiedsaanwijzing.VNG15archeolVerwgebied</ga:identificatie>
+          <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Erfgoed</ga:type>
+          <ga:naam>archeologisch verwachtingswaardegebied</ga:naam>
+          <ga:groep>http://standaarden.omgevingswet.overheid.nl/erfgoed/id/concept/Archeologie</ga:groep>
+          <ga:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15archeolVerwGebied"/>
+          </ga:locatieaanduiding>
+        </ga:Gebiedsaanwijzing>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <ga:Gebiedsaanwijzing>
+          <ga:identificatie>nl.imow-gm0855.gebiedsaanwijzing.VNG15beperkgebLeidingen</ga:identificatie>
+          <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Beperkingengebied</ga:type>
+          <ga:naam>beperkingengebied leidingen</ga:naam>
+          <ga:groep>http://standaarden.omgevingswet.overheid.nl/beperkingengebiedgroep/id/concept/Overig</ga:groep>
+          <ga:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15beperkgebLeidingen"/>
+          </ga:locatieaanduiding>
+        </ga:Gebiedsaanwijzing>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <ga:Gebiedsaanwijzing>
+          <ga:identificatie>nl.imow-gm0855.gebiedsaanwijzing.VNG15landschelemAardkwrdgeb</ga:identificatie>
+          <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Erfgoed</ga:type>
+          <ga:naam>bijzondere landschapselementen en aardkundige waardengebieden</ga:naam>
+          <ga:groep>http://standaarden.omgevingswet.overheid.nl/erfgoed/id/concept/AardkundigWaardevolGebied</ga:groep>
+          <ga:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15bijzLandschapselem"/>
+            <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15aardkundWaardengebied"/>
+          </ga:locatieaanduiding>
+        </ga:Gebiedsaanwijzing>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <ga:Gebiedsaanwijzing>
+          <ga:identificatie>nl.imow-gm0855.gebiedsaanwijzing.VNG15standplaatsengebied</ga:identificatie>
+          <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Verkeer</ga:type>
+          <ga:naam>standplaatsengebied</ga:naam>
+          <ga:groep>http://standaarden.omgevingswet.overheid.nl/verkeer/id/concept/Weg</ga:groep>
+          <ga:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15standplaatsengebied"/>
+          </ga:locatieaanduiding>
+        </ga:Gebiedsaanwijzing>
+      </ow-dc:owObject>
+    </sl:stand>
+  </sl:standBestand>
+</ow-dc:owBestand>

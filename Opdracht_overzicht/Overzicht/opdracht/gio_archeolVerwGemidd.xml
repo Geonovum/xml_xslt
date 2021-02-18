@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<AanleveringInformatieObject schemaversie="1.0.3" xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering/ ../lvbb/lvbb-stop-aanlevering.xsd">
+  <InformatieObjectVersie>
+    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/gm0855/2020/archeolVerwGemidd</FRBRWork>
+      <FRBRExpression>/join/id/regdata/gm0855/2020/archeolVerwGemidd/nld@2020-01-02;6</FRBRExpression>
+      <soortWork>/join/id/stop/work_010</soortWork>
+    </ExpressionIdentificatie>
+    <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <heeftBestanden>
+        <heeftBestand>
+          <Bestand>
+            <bestandsnaam>archeolVerwGemidd.gml</bestandsnaam>
+            <hash>2bbb43f897db7489cc154f80b1a40701849b82c29f5a3f0bdad1c77dc72aca7be6703b4d406f410258fd935f6dcd7da58aee964135ed4af50e74d8989edd6421</hash>
+          </Bestand>
+        </heeftBestand>
+      </heeftBestanden>
+      <heeftGeboorteregeling>/akn/nl/act/gm0855/2020/VNG15</heeftGeboorteregeling>
+    </InformatieObjectVersieMetadata>
+    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/gemeente/gm0855</eindverantwoordelijke>
+      <maker>/tooi/id/gemeente/gm0855</maker>
+      <officieleTitel>/join/id/regdata/gm0855/2020/archeolVerwGemidd</officieleTitel>
+      <naamInformatieObject>archeologisch verwachtingswaardegebied gemiddeld</naamInformatieObject>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+    </InformatieObjectMetadata>
+  </InformatieObjectVersie>
+</AanleveringInformatieObject>

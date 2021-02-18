@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<AanleveringInformatieObject schemaversie="1.0.3" xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering/ ../lvbb/lvbb-stop-aanlevering.xsd">
+  <InformatieObjectVersie>
+    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/gm0855/2020/standpltsStabMiddel</FRBRWork>
+      <FRBRExpression>/join/id/regdata/gm0855/2020/standpltsStabMiddel/nld@2020-01-02;6</FRBRExpression>
+      <soortWork>/join/id/stop/work_010</soortWork>
+    </ExpressionIdentificatie>
+    <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <heeftBestanden>
+        <heeftBestand>
+          <Bestand>
+            <bestandsnaam>standpltsStabMiddel.gml</bestandsnaam>
+            <hash>60e8e12dbeb2e35f2608d43ba11e6c4d908cf98fe70240a3d2fe525425e98bdc0d2f53e9f32060d9def18ab74992540145f8a0069f6f07b4f124fe9a0d4dce13</hash>
+          </Bestand>
+        </heeftBestand>
+      </heeftBestanden>
+      <heeftGeboorteregeling>/akn/nl/act/gm0855/2020/VNG15</heeftGeboorteregeling>
+    </InformatieObjectVersieMetadata>
+    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/gemeente/gm0855</eindverantwoordelijke>
+      <maker>/tooi/id/gemeente/gm0855</maker>
+      <officieleTitel>/join/id/regdata/gm0855/2020/standpltsStabMiddel</officieleTitel>
+      <naamInformatieObject>Stabiliteit en verplaatsbaarheid fysieke middelen op standplaats</naamInformatieObject>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+    </InformatieObjectMetadata>
+  </InformatieObjectVersie>
+</AanleveringInformatieObject>

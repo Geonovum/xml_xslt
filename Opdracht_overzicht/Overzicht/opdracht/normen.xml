@@ -1,0 +1,641 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<ow-dc:owBestand xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+  <sl:standBestand>
+    <sl:dataset>VNG15CascoTilburg</sl:dataset>
+    <sl:inhoud>
+      <sl:gebied>Tilburg</sl:gebied>
+      <sl:leveringsId>VNG15CascoTilburg015</sl:leveringsId>
+      <sl:objectTypen>
+        <sl:objectType>Omgevingsnorm</sl:objectType>
+      </sl:objectTypen>
+    </sl:inhoud>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15gravenDiepArcheologisch</rol:identificatie>
+          <rol:naam>Maximum diepte graafwerkzaamheden in gebied met archeologische verwachtingen</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumDiepte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Centimeter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15xce3557ex19f7dd1bc119ae6</rol:identificatie>
+              <rol:kwantitatieveWaarde>20</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15xce3557ex19f7dd1bc119ae6"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15234926f3a286174f87d1198f</rol:identificatie>
+              <rol:kwantitatieveWaarde>40</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15234926f3a286174f87d1198f"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG1557847cae2ff62168254f29ae</rol:identificatie>
+              <rol:kwantitatieveWaarde>100</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG1557847cae2ff62168254f29ae"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15x863xx5x739833675f6x3bba</rol:identificatie>
+              <rol:kwantitatieveWaarde>60</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15x863xx5x739833675f6x3bba"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15x2exaf786a11d2xcx92x1b8a</rol:identificatie>
+              <rol:kwantitatieveWaarde>80</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15x2exaf786a11d2xcx92x1b8a"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15gravenOppArcheologisch</rol:identificatie>
+          <rol:naam>Maximum oppervlakte graafwerkzaamheden in gebied met archeologische verwachtingen</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumOppervlakte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/VierkanteMeter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG158db5372475b2ae41x5e91eb4</rol:identificatie>
+              <rol:kwantitatieveWaarde>10</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG158db5372475b2ae41x5e91eb4"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15x9e2cd64x8fbd1d89e3c3e6c</rol:identificatie>
+              <rol:kwantitatieveWaarde>25</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15x9e2cd64x8fbd1d89e3c3e6c"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15x8xd6176caa24dc2x4ba6b86</rol:identificatie>
+              <rol:kwantitatieveWaarde>200</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15x8xd6176caa24dc2x4ba6b86"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15db9e8dbf58x645fd9d2f5c3e</rol:identificatie>
+              <rol:kwantitatieveWaarde>100</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15db9e8dbf58x645fd9d2f5c3e"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15f4abx8fxb383x49aec515441</rol:identificatie>
+              <rol:kwantitatieveWaarde>50</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15f4abx8fxb383x49aec515441"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15lozenHvlhdVuilwtrrio</rol:identificatie>
+          <rol:naam>Maximum hoeveelheid te lozen grondwater in vuilwaterriool per tijdseenheid</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumVolume</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/KubiekeMeter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG155a53d96e862638a1bx2949x6</rol:identificatie>
+              <rol:kwantitatieveWaarde>10</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG155a53d96e862638a1bx2949x6"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Waterkwaliteit</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15lozenIjzerSchwtrrio</rol:identificatie>
+          <rol:naam>Emissiegrenswaarde ijzer bij lozen grondwater in schoonwaterriool</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumVolume</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/MilligramPerLiter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15cdf5181193a2x9f3c5aad376</rol:identificatie>
+              <rol:kwantitatieveWaarde>5</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15cdf5181193a2x9f3c5aad376"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Waterkwaliteit</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15lozenOnopgelStofSchwtrrio</rol:identificatie>
+          <rol:naam>Emissiegrenswaarde onopgeloste stoffen bij lozen grondwater in schoonwaterriool</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumVolume</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/MilligramPerLiter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15181baa484a1fecb28c914db8</rol:identificatie>
+              <rol:kwantitatieveWaarde>50</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15181baa484a1fecb28c914db8"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Waterkwaliteit</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15lozenOnopgelStofVuilwtrrio</rol:identificatie>
+          <rol:naam>Emissiegrenswaarde onopgeloste stoffen bij lozen grondwater in vuilwaterriool</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumVolume</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/MilligramPerLiter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15x8e765cb9ac3e2cxadb7b15b</rol:identificatie>
+              <rol:kwantitatieveWaarde>300</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15x8e765cb9ac3e2cxadb7b15b"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Waterkwaliteit</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15lozenTijdVuilwtrrio</rol:identificatie>
+          <rol:naam>Maximum tijdsduur lozen grondwater in vuilwaterriool</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumLengte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Uur</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15291daf9fxa8b837a7c2d5xd7</rol:identificatie>
+              <rol:kwantitatieveWaarde>672</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15291daf9fxa8b837a7c2d5xd7"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Waterkwaliteit</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15reclameBoodschap</rol:identificatie>
+          <rol:naam>Inhoud reclameboodschap</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15c58b3cf87c28e1x1a6954b4a</rol:identificatie>
+              <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15c58b3cf87c28e1x1a6954b4a"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15reclbordAfstand</rol:identificatie>
+          <rol:naam>Onderlinge afstand reclamebord</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumLengte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15769x98x68f6f7xcebffx1x84</rol:identificatie>
+              <rol:kwantitatieveWaarde>10</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15769x98x68f6f7xcebffx1x84"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15reclbordMaxBreed</rol:identificatie>
+          <rol:naam>Maximum breedte reclamebord</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBreedte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG155abd41a4fd71xa972971a74d</rol:identificatie>
+              <rol:kwantitatieveWaarde>5</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG155abd41a4fd71xa972971a74d"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15reclbordMaxHoog</rol:identificatie>
+          <rol:naam>Maximum hoogte reclamebord</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumHoogte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG155bc1fb93f38b2684fxbf2218</rol:identificatie>
+              <rol:kwantitatieveWaarde>3</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG155bc1fb93f38b2684fxbf2218"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15spandoekAfstand</rol:identificatie>
+          <rol:naam>Onderlinge afstand spandoeken</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MinimumLengte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15614fax749e5b1e2c7xc8f915</rol:identificatie>
+              <rol:kwantitatieveWaarde>10</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15614fax749e5b1e2c7xc8f915"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15spandoekBelemmUitzicht</rol:identificatie>
+          <rol:naam>Belemmering uitzicht door spandoek</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG153xd64d14axeba1xdxde16867</rol:identificatie>
+              <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG153xd64d14axeba1xdxde16867"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15spandoekHoogteMaaiveld</rol:identificatie>
+          <rol:naam>Mimimum hoogte spandoek boven maaiveld</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MinimumHoogte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15c1bbb6xd23f8a4x32ax9x987</rol:identificatie>
+              <rol:kwantitatieveWaarde>5</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15c1bbb6xd23f8a4x32ax9x987"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15spandoekMateriaal</rol:identificatie>
+          <rol:naam>Materiaal van spandoeken</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15cx643x2xad6abe2ff1698777</rol:identificatie>
+              <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15cx643x2xad6abe2ff1698777"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15standpltsMiddelBreed</rol:identificatie>
+          <rol:naam>Maximum breedte fysieke middelen op standplaats</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBreedte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG156792adbed8fd249x72e4cfdc</rol:identificatie>
+              <rol:kwantitatieveWaarde>4</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG156792adbed8fd249x72e4cfdc"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15standpltsMiddelHoog</rol:identificatie>
+          <rol:naam>Maximum hoogte fysieke middelen op standplaats</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumHoogte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15d587c9bx87cexc9ccf4453d7</rol:identificatie>
+              <rol:kwantitatieveWaarde>3</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15d587c9bx87cexc9ccf4453d7"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15standpltsMiddelLang</rol:identificatie>
+          <rol:naam>Maximum lengte fysieke middelen op standplaats</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumLengte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15xb99e79e84758d97c2f73125</rol:identificatie>
+              <rol:kwantitatieveWaarde>6</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15xb99e79e84758d97c2f73125"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15standpltsMinAfstAfval</rol:identificatie>
+          <rol:naam>Mimimum afstand tot standplaats waarbinnnen afvalstoffen verwijderd dienen te worden</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MinimumLengte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG158f28a17d4351xe97c9xd334d</rol:identificatie>
+              <rol:kwantitatieveWaarde>10</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG158f28a17d4351xe97c9xd334d"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15standpltsMinAfstGeur</rol:identificatie>
+          <rol:naam>Mimimum afstand tot bebebouwing i.v.m. geurhinder van standplaats</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MinimumLengte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15d4aa66db29x8b6522d2xdafd</rol:identificatie>
+              <rol:kwantitatieveWaarde>20</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15d4aa66db29x8b6522d2xdafd"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Geur</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15standpltsOpenTijd</rol:identificatie>
+          <rol:naam>Openingstijden standplaats</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15a24dxaxab6c12b7xae847297</rol:identificatie>
+              <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15a24dxaxab6c12b7xae847297"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15standpltsStabMiddel</rol:identificatie>
+          <rol:naam>Stabiliteit en verplaatsbaarheid fysieke middelen op standplaats</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG153abc136b641xf12a8378891f</rol:identificatie>
+              <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG153abc136b641xf12a8378891f"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15uitstallingMaxBreed</rol:identificatie>
+          <rol:naam>Maximum breedte uitstalling</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBreedte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15aa173f82412d8x83f8c6fab7</rol:identificatie>
+              <rol:kwantitatieveWaarde>6</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15aa173f82412d8x83f8c6fab7"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15uitstallingMaxDiep</rol:identificatie>
+          <rol:naam>Maximum diepte uitstalling</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumDiepte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15b7476991x33118959584c4x6</rol:identificatie>
+              <rol:kwantitatieveWaarde>2</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15b7476991x33118959584c4x6"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15uitstallingMaxHoog</rol:identificatie>
+          <rol:naam>Maximum hoogte uitstalling</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumHoogte</rol:type>
+          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15ee289xddba8d9ba8bc31a396</rol:identificatie>
+              <rol:kwantitatieveWaarde>2</rol:kwantitatieveWaarde>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15ee289xddba8d9ba8bc31a396"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15uitstallingOpenTijd</rol:identificatie>
+          <rol:naam>Openeningstijden uitstalling</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG155f6x7x8e5db9e1e2986x9f5x</rol:identificatie>
+              <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG155f6x7x8e5db9e1e2986x9f5x"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15uitstallingPlaats</rol:identificatie>
+          <rol:naam>Plaatsen van uitstalling</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15663db988f78a491668787342</rol:identificatie>
+              <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15663db988f78a491668787342"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15uitstallingVerankering</rol:identificatie>
+          <rol:naam>Verankering uitstalling</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15af778d394xdxb1cba4491f97</rol:identificatie>
+              <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15af778d394xdxb1cba4491f97"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rol:Omgevingsnorm>
+          <rol:identificatie>nl.imow-gm0855.omgevingsnorm.VNG15uitstallingVerkoop</rol:identificatie>
+          <rol:naam>Verkoop vanaf uitstalling</rol:naam>
+          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Maatvoering</rol:type>
+          <rol:normwaarde>
+            <rol:Normwaarde>
+              <rol:identificatie>nl.imow-gm0855.normwaarde.VNG15a75fx76x39bxa195542ef3b8</rol:identificatie>
+              <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
+              <rol:locatieaanduiding>
+                <l:LocatieRef xlink:href="nl.imow-gm0855.gebied.VNG15a75fx76x39bxa195542ef3b8"/>
+              </rol:locatieaanduiding>
+            </rol:Normwaarde>
+          </rol:normwaarde>
+          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+        </rol:Omgevingsnorm>
+      </ow-dc:owObject>
+    </sl:stand>
+  </sl:standBestand>
+</ow-dc:owBestand>

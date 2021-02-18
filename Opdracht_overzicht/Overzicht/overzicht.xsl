@@ -7,7 +7,7 @@
   <xsl:param name="besluit" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))/AanleveringBesluit" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
   <xsl:param name="regelteksten" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//r:Regeltekst"/>
   <xsl:param name="regels" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//(r:Instructieregel,r:Omgevingswaarderegel,r:RegelVoorIedereen)"/>
-  <xsl:param name="locaties" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//(l:Gebiedengroep,l:Gebied)"/>
+  <xsl:param name="locaties" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//(l:Gebiedengroep,l:Gebied,l:Lijnengroep,l:Lijn,l:Puntengroep,l:Punt)"/>
   <xsl:param name="activiteiten" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//rol:Activiteit"/>
   <xsl:param name="gebiedsaanwijzingen" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//ga:Gebiedsaanwijzing"/>
   <xsl:param name="omgevingsnormaanduidingen" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//rol:Omgevingsnorm"/>
@@ -205,6 +205,7 @@
 
   <xsl:template name="waarde">
     <xsl:param name="current"/>
+    <xsl:variable name="test" select="$current/name()"/>
     <xsl:choose>
       <xsl:when test="$current/self::element()|$current/self::attribute()|$current/element()">
         <xsl:attribute name="style" select="string('padding: 0pt;')"/>
@@ -221,9 +222,6 @@
                 </td>
                 <td>
                   <xsl:choose>
-                    <xsl:when test="./@xlink:href">
-                      <p class="waarde"><xsl:value-of select="./@xlink:href"/></p>
-                    </xsl:when>
                     <xsl:when test="self::element()">
                       <xsl:call-template name="waarde">
                         <xsl:with-param name="current" select="text(),element(),attribute()"/>
@@ -252,6 +250,26 @@
         </xsl:choose>
       </xsl:when>
     </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="error">
+    <xsl:param name="message"/>
+    <table class="error">
+      <colgroup>
+        <col width="165px"/>
+        <col width="auto"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="naam"><xsl:value-of select="string('error')"/></p>
+          </td>
+          <td>
+            <p class="waarde"><xsl:value-of select="$message"/></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </xsl:template>
 
   <xsl:template name="object">
@@ -288,23 +306,29 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
+                        <xsl:call-template name="error">
+                          <xsl:with-param name="message" select="concat($id,' verwijst niet naar een object')"/>
+                        </xsl:call-template>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
                   <xsl:when test="./self::r:locatieaanduiding|./self::rol:locatieaanduiding|./self::ga:locatieaanduiding|./self::vt:locatieaanduiding">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
-                    <xsl:variable name="id" select="./l:LocatieRef/@xlink:href"/>
-                    <xsl:choose>
-                      <xsl:when test="$locaties[l:identificatie=$id]">
-                        <xsl:call-template name="object">
-                          <xsl:with-param name="current" select="$locaties[l:identificatie=$id]"/>
-                        </xsl:call-template>
-                      </xsl:when>
-                      <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
-                      </xsl:otherwise>
-                    </xsl:choose>
+                    <xsl:for-each select="./l:LocatieRef/@xlink:href">
+                      <xsl:variable name="id" select="."/>
+                      <xsl:choose>
+                        <xsl:when test="$locaties[l:identificatie=$id]">
+                          <xsl:call-template name="object">
+                            <xsl:with-param name="current" select="$locaties[l:identificatie=$id]"/>
+                          </xsl:call-template>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:call-template name="error">
+                            <xsl:with-param name="message" select="concat($id,' verwijst niet naar een object')"/>
+                          </xsl:call-template>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </xsl:for-each>
                   </xsl:when>
                   <xsl:when test="./self::l:groepselement">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
@@ -316,7 +340,9 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
+                        <xsl:call-template name="error">
+                          <xsl:with-param name="message" select="concat($id,' verwijst niet naar een object')"/>
+                        </xsl:call-template>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
@@ -330,7 +356,9 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
+                        <xsl:call-template name="error">
+                          <xsl:with-param name="message" select="concat($id,' verwijst niet naar een object')"/>
+                        </xsl:call-template>
                       </xsl:otherwise>
                     </xsl:choose>
                     <xsl:call-template name="object">
@@ -364,7 +392,9 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
+                        <xsl:call-template name="error">
+                          <xsl:with-param name="message" select="concat($id,' verwijst niet naar een object')"/>
+                        </xsl:call-template>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
@@ -378,7 +408,9 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
+                        <xsl:call-template name="error">
+                          <xsl:with-param name="message" select="concat($id,' verwijst niet naar een object')"/>
+                        </xsl:call-template>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
@@ -392,7 +424,9 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
+                        <xsl:call-template name="error">
+                          <xsl:with-param name="message" select="concat($id,' verwijst niet naar een object')"/>
+                        </xsl:call-template>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
@@ -428,7 +462,9 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
+                        <xsl:call-template name="error">
+                          <xsl:with-param name="message" select="concat($id,' verwijst niet naar een object')"/>
+                        </xsl:call-template>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>
@@ -442,7 +478,9 @@
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
-                        <p class="waarde"><span class="error"><xsl:value-of select="concat($id,' verwijst niet naar een object')"/></span></p>
+                        <xsl:call-template name="error">
+                          <xsl:with-param name="message" select="concat($id,' verwijst niet naar een object')"/>
+                        </xsl:call-template>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:when>

@@ -1,0 +1,620 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<ow-dc:owBestand xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+  <sl:standBestand>
+    <sl:dataset>VNG15CascoTilburg</sl:dataset>
+    <sl:inhoud>
+      <sl:gebied>Tilburg</sl:gebied>
+      <sl:leveringsId>VNG15CascoTilburg015</sl:leveringsId>
+      <sl:objectTypen>
+        <sl:objectType>Gebied</sl:objectType>
+        <sl:objectType>Lijn</sl:objectType>
+      </sl:objectTypen>
+    </sl:inhoud>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG153xd64d14axeba1xdxde16867</l:identificatie>
+          <l:noemer>waarde staat in regeltekst</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="841f9204-94b7-414c-80ad-3a7ad88c0e7c"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15cdf5181193a2x9f3c5aad376</l:identificatie>
+          <l:noemer>5</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="c587922c-7232-4c8d-b162-f5c668a2adc6"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15181baa484a1fecb28c914db8</l:identificatie>
+          <l:noemer>50</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="af3a6c0c-810c-4359-b079-a6f97a70d9b9"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15x8e765cb9ac3e2cxadb7b15b</l:identificatie>
+          <l:noemer>300</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="cdfdbe9f-9a19-439c-8e41-3ca48bffe713"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15c58b3cf87c28e1x1a6954b4a</l:identificatie>
+          <l:noemer>waarde staat in regeltekst</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="2cba73c1-2a5d-47d9-a094-b734b5517581"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15cx643x2xad6abe2ff1698777</l:identificatie>
+          <l:noemer>waarde staat in regeltekst</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="b71d03b3-e81e-4a9e-be0d-23e33dc4feb2"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG156792adbed8fd249x72e4cfdc</l:identificatie>
+          <l:noemer>4</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="952dfc70-a0f3-44da-a0bf-f084de0864d5"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG155abd41a4fd71xa972971a74d</l:identificatie>
+          <l:noemer>5</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="2d2c56a3-2ec3-4f87-ac64-324aaffde8b1"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15aa173f82412d8x83f8c6fab7</l:identificatie>
+          <l:noemer>6</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="df847f68-0754-43e3-89ad-3f4e8a352165"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG1557847cae2ff62168254f29ae</l:identificatie>
+          <l:noemer>100</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="fee053e9-ecc6-471c-8aec-7798410b0046"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15xce3557ex19f7dd1bc119ae6</l:identificatie>
+          <l:noemer>20</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="86501d0c-245b-4c71-bd0f-89d88057efbc"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15234926f3a286174f87d1198f</l:identificatie>
+          <l:noemer>40</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="918573cd-8931-40fa-b576-3780649b6862"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15x863xx5x739833675f6x3bba</l:identificatie>
+          <l:noemer>60</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="889916ab-afdd-48ff-ac31-152d1950dbbe"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15x2exaf786a11d2xcx92x1b8a</l:identificatie>
+          <l:noemer>80</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="a76dd5aa-3488-496e-92e3-9ac797f18d45"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15b7476991x33118959584c4x6</l:identificatie>
+          <l:noemer>2</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="4d16b0b3-6165-450f-85b1-bc59de4b8bed"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG155a53d96e862638a1bx2949x6</l:identificatie>
+          <l:noemer>10</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="de95238e-3f3b-47d8-bc8c-be6b8d167926"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15d587c9bx87cexc9ccf4453d7</l:identificatie>
+          <l:noemer>3</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="2762840d-c26f-4aab-a9c7-4c4c93d625fb"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG155bc1fb93f38b2684fxbf2218</l:identificatie>
+          <l:noemer>3</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="d83eb961-79cd-4b62-bdea-ce8caab5b1e0"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15ee289xddba8d9ba8bc31a396</l:identificatie>
+          <l:noemer>2</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="04a35396-60aa-4f02-9619-de0f6c3474ad"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15xb99e79e84758d97c2f73125</l:identificatie>
+          <l:noemer>6</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="22e6f3b8-dc84-4035-bc19-50cd055a9efa"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG158db5372475b2ae41x5e91eb4</l:identificatie>
+          <l:noemer>10</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="e5b19fb5-0f4d-471d-ae21-be52e3d38f0a"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15db9e8dbf58x645fd9d2f5c3e</l:identificatie>
+          <l:noemer>100</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="431ecfcd-0601-4db6-8e8f-a117faa43aed"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15x8xd6176caa24dc2x4ba6b86</l:identificatie>
+          <l:noemer>200</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="04edeb0f-2e71-4dc1-9843-8f30d8b15871"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15x9e2cd64x8fbd1d89e3c3e6c</l:identificatie>
+          <l:noemer>25</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="4c715f5a-89de-4775-9836-0196837da148"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15f4abx8fxb383x49aec515441</l:identificatie>
+          <l:noemer>50</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="3c5f5554-6698-4cc4-86e3-7adf9dbb1b4d"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15291daf9fxa8b837a7c2d5xd7</l:identificatie>
+          <l:noemer>672</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="1552652a-0f8e-478b-853a-6b7069be7dcd"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15d4aa66db29x8b6522d2xdafd</l:identificatie>
+          <l:noemer>20</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="93adf469-0c41-449e-96ca-c4cb7e5c2fab"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG158f28a17d4351xe97c9xd334d</l:identificatie>
+          <l:noemer>10</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="92a6bfab-0bd6-4c39-a4cf-b9ddbbdc9675"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15c1bbb6xd23f8a4x32ax9x987</l:identificatie>
+          <l:noemer>5</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="a66e6d00-f3fe-4c7d-bc68-65d542362ed4"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15769x98x68f6f7xcebffx1x84</l:identificatie>
+          <l:noemer>10</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="6c96d984-d183-4ceb-bf42-1677f90ffbfb"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15614fax749e5b1e2c7xc8f915</l:identificatie>
+          <l:noemer>10</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="ac88aae3-8e1f-4691-96af-961de193a7cb"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG155f6x7x8e5db9e1e2986x9f5x</l:identificatie>
+          <l:noemer>waarde staat in regeltekst</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="e145a09f-a50b-410e-a8cb-d7a91492156c"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15a24dxaxab6c12b7xae847297</l:identificatie>
+          <l:noemer>waarde staat in regeltekst</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="3cf073fd-f64a-4e6a-a61f-b21468ffcbf6"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15663db988f78a491668787342</l:identificatie>
+          <l:noemer>waarde staat in regeltekst</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="1d6fd54e-f1e1-4e0f-b5a0-2f0a4dccb729"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG153abc136b641xf12a8378891f</l:identificatie>
+          <l:noemer>waarde staat in regeltekst</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="568ccae8-1145-4833-9a66-c41bf4b140dd"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15af778d394xdxb1cba4491f97</l:identificatie>
+          <l:noemer>waarde staat in regeltekst</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="310f193f-7bb0-4091-aa02-3c840bb03191"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15a75fx76x39bxa195542ef3b8</l:identificatie>
+          <l:noemer>waarde staat in regeltekst</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="cbd3edca-0731-4e12-825a-777d4717ef35"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15aardkundWaardengebied</l:identificatie>
+          <l:noemer>aardkundige waardengebied</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="e6313673-a04e-4364-bb99-6b2fc761e48f"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15ambtsgebied</l:identificatie>
+          <l:noemer>ambtsgebied</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="b17b393f-d26c-4c5e-bb77-3b8f6d912702"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15archeolVerwGebied</l:identificatie>
+          <l:noemer>archeologisch verwachtingswaardegebied</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="5f24d4e4-6438-4b9a-b261-5ea4634cb383"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15archeolVerwGemidd</l:identificatie>
+          <l:noemer>archeologisch verwachtingswaardegebied gemiddeld</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="dcf95f76-5193-46ff-9214-95e88440a6d9"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15archeolVerwHoog</l:identificatie>
+          <l:noemer>archeologisch verwachtingswaardegebied hoog</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="9a3888da-a8a4-44a7-8bf3-063ffbba20ab"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15archeolVerwLaag</l:identificatie>
+          <l:noemer>archeologisch verwachtingswaardegebied laag</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="1d7d16a6-e8f0-4cd8-bdca-3205736a9b90"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15archeolVerwZeerHoog</l:identificatie>
+          <l:noemer>archeologisch verwachtingswaardegebied zeer hoog</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="6452e8ac-bb8d-4344-99ba-b138de504b0a"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15archeolVerwZeerLaag</l:identificatie>
+          <l:noemer>archeologisch verwachtingswaardegebied zeer laag</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="2fdaeb8f-c74f-43de-b6e2-eaf2a24b3182"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15beperkgebLeidingen</l:identificatie>
+          <l:noemer>beperkingengebied leidingen</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="b3be6322-3c8f-4b15-8f03-52a094b61940"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15bijzLandschapselem</l:identificatie>
+          <l:noemer>bijzondere landschapselementen</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="272a6860-1c52-4c6b-966d-5de1d49b3df8"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15historischCentrum</l:identificatie>
+          <l:noemer>historisch stadscentrum</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="8dd1aa7c-f9dd-4bc6-baa5-191be44a1d33"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15specVergunningReclame</l:identificatie>
+          <l:noemer>specifiek vergunningplichtgebied reclame</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="c9c663bd-e127-43b5-ab9d-0a9310d4c168"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15standplaatsbeperkgebied</l:identificatie>
+          <l:noemer>standplaatsenbeperkgebied</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="e7f0ea34-f964-48bf-ba15-c4634009692b"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15standplaatsengebied</l:identificatie>
+          <l:noemer>standplaatsengebied</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="a8a603bf-7e01-486b-970d-d7587d095d11"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15standplaatsverbodgebied</l:identificatie>
+          <l:noemer>standplaatsenverbodgebied</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="0523cd84-1a58-4713-8702-b723ffe3646b"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15teeltGewassen</l:identificatie>
+          <l:noemer>teelt van gewassen</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="b175ec80-9b9f-40a6-af9c-0614612d8d0f"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+          <l:identificatie>nl.imow-gm0855.gebied.VNG15verbodOntheffKabLeid</l:identificatie>
+          <l:noemer>verbodsgebied ontheffing kabels en leidingen</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="60cf66c8-e114-4e75-a392-8bfb35c883b7"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Lijn>
+          <l:identificatie>nl.imow-gm0855.lijn.VNG15windhaag</l:identificatie>
+          <l:noemer>windhaag</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="ec074893-ae98-4251-b420-6f89bc17241d"/>
+          </l:geometrie>
+        </l:Lijn>
+      </ow-dc:owObject>
+    </sl:stand>
+  </sl:standBestand>
+</ow-dc:owBestand>

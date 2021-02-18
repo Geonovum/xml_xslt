@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<AanleveringInformatieObject schemaversie="1.0.3" xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering/ ../lvbb/lvbb-stop-aanlevering.xsd">
+  <InformatieObjectVersie>
+    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/gm0855/2020/ambtsgebied</FRBRWork>
+      <FRBRExpression>/join/id/regdata/gm0855/2020/ambtsgebied/nld@2020-01-02;6</FRBRExpression>
+      <soortWork>/join/id/stop/work_010</soortWork>
+    </ExpressionIdentificatie>
+    <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <heeftBestanden>
+        <heeftBestand>
+          <Bestand>
+            <bestandsnaam>ambtsgebied.gml</bestandsnaam>
+            <hash>418094a02e5266dbcc02cdd70667af56bd5328c4724e15bc3b491ab06386ae66fe0a0349f564384089c80063349e6c0fa8ff7006de5bac189513575ebb3bcfec</hash>
+          </Bestand>
+        </heeftBestand>
+      </heeftBestanden>
+      <heeftGeboorteregeling>/akn/nl/act/gm0855/2020/VNG15</heeftGeboorteregeling>
+    </InformatieObjectVersieMetadata>
+    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/gemeente/gm0855</eindverantwoordelijke>
+      <maker>/tooi/id/gemeente/gm0855</maker>
+      <officieleTitel>/join/id/regdata/gm0855/2020/ambtsgebied</officieleTitel>
+      <naamInformatieObject>ambtsgebied</naamInformatieObject>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+    </InformatieObjectMetadata>
+  </InformatieObjectVersie>
+</AanleveringInformatieObject>
