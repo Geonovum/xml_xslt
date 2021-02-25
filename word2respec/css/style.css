@@ -156,12 +156,14 @@ th {
   height: 16pt;
   padding: 3.5px 1.5mm 3.5px 1.5mm;
   vertical-align: top;
+  word-wrap: break-word;
 }
 td {
   border: 1px solid black;
   height: 16pt;
   padding: 3.5px 1.5mm 3.5px 1.5mm;
   vertical-align: top;
+  word-wrap: break-word;
 }
 table p {
   font-family: 'Calibri', sans-serif;
@@ -174,6 +176,8 @@ table p {
 img {
   display: block;
   margin: 16pt 0mm 16pt 0mm;
-  max-height: 100%;
   max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }

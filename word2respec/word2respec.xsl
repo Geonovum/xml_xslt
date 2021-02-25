@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:bin="http://expath.org/ns/binary" xmlns:wx="http://schemas.microsoft.com/office/word/2006/auxHint" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:bin="http://expath.org/ns/binary" xmlns:wx="http://schemas.microsoft.com/office/word/2006/auxHint" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:asvg="http://schemas.microsoft.com/office/drawing/2016/SVG/main">
   <xsl:output method="html" encoding="UTF-8" indent="no"/>
 
   <xsl:param name="base.dir" select="string('C:\Werkbestanden\Geonovum\word2respec')"/>
@@ -359,7 +359,7 @@
 
   <!-- hyperlink -->
 
-  <xsl:template match="w:hyperlink">
+  <xsl:template match="w:hyperlink[@r:id]">
     <xsl:variable name="id" select="@r:id"/>
     <xsl:variable name="relationship" select="document($relations,.)//Relationship[@Id=$id]" xpath-default-namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
     <xsl:choose>
@@ -367,6 +367,22 @@
         <xsl:element name="a">
           <xsl:attribute name="href" select="$relationship/@Target"/>
           <xsl:attribute name="target" select="string('_blank')"/>
+          <xsl:apply-templates/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="w:hyperlink[@w:anchor]">
+    <xsl:variable name="id" select="@w:anchor"/>
+    <xsl:variable name="heading" select="$TOC/heading[text/w:bookmarkStart/@w:name=$id]"/>
+    <xsl:choose>
+      <xsl:when test="$heading">
+        <xsl:element name="a">
+          <xsl:attribute name="href" select="concat('#',$heading/@id)"/>
           <xsl:apply-templates/>
         </xsl:element>
       </xsl:when>
@@ -858,7 +874,7 @@
   <!-- illustraties toevoegen -->
 
   <xsl:template match="w:drawing">
-    <xsl:variable name="imageId" select=".//a:graphic//@r:embed"/>
+    <xsl:variable name="imageId" select=".//a:graphic/(descendant::asvg:svgBlip/@r:embed,descendant::a:blip/@r:embed)[1]"/>
     <xsl:choose>
       <xsl:when test="$imageId!=''">
         <xsl:variable name="imageName" select="document($relations,.)//*[@Id=$imageId]/@Target"/>
