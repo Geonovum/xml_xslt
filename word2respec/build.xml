@@ -23,7 +23,7 @@
       <fileset dir="${output.dir}"/>
     </delete>
     <mkdir dir="${output.dir}"/>
-    <copy todir="${output.dir}/media">
+    <copy todir="${output.dir}/media" failonerror="false">
       <fileset dir="${media.dir}"/>
     </copy>
     <copy file="${css.dir}/style.css" todir="${output.dir}"/>
