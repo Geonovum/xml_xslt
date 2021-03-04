@@ -195,10 +195,6 @@
                   <xsl:variable name="id" select="."/>
                   <xsl:variable name="id.regeltekst" select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'regeltekst',concat('2020',fn:format-number(count((.,preceding::artikel[not(lid)],preceding::lid)),'000000'))),'.')),'-')"/>
                   <xsl:variable name="id.juridischeregel" select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'juridischeregel',concat('2020',fn:format-number(count((.,preceding::artikel[not(lid)],preceding::lid)),'000000'))),'.')),'-')"/>
-                  <!-- de eerste gebiedengroep in owLocatie moet het ambtsgebied zijn -->
-                  <!--
-                  <xsl:variable name="id.locatie" select="$owLocatie/self::l:Gebiedengroep[1]/l:identificatie"/>
-                  -->
                   <xsl:variable name="id.locatie" select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'gebied','ambtsgebied'),'.')),'-')"/>
                   <xsl:element name="sl:stand">
                      <xsl:element name="ow-dc:owObject">
@@ -229,61 +225,36 @@
                                  <xsl:attribute name="xlink:href" select="$id.locatie"/>
                               </xsl:element>
                            </xsl:element>
-                        </xsl:element>
-                     </xsl:element>
-                  </xsl:element>
-                  <xsl:if test="$owRegeltekst[@juriconnectId=$id/@juriconnectId]">
-                     <xsl:for-each select="$owRegeltekst[@juriconnectId=$id/@juriconnectId]/Annotatie">
-                        <xsl:element name="sl:stand">
-                           <xsl:element name="ow-dc:owObject">
-                              <xsl:element name="r:RegelVoorIedereen">
-                                 <xsl:element name="r:identificatie">
-                                    <xsl:value-of select="$id.juridischeregel"/>
-                                 </xsl:element>
-                                 <xsl:element name="r:idealisatie">
-                                    <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact')"/>
-                                 </xsl:element>
-                                 <xsl:element name="r:artikelOfLid">
-                                    <xsl:element name="r:RegeltekstRef">
-                                       <xsl:attribute name="xlink:href" select="$id.regeltekst"/>
-                                    </xsl:element>
-                                 </xsl:element>
-                                 <xsl:element name="r:locatieaanduiding">
-                                    <xsl:element name="l:LocatieRef">
-                                       <!-- Britt vraagt na of de locatie in pseudo-owLocaties.xml leidend is of in pseudo-owRegeltekst.xml -->
-                                       <xsl:attribute name="xlink:href" select="my:id(Locatie)"/>
-                                    </xsl:element>
-                                 </xsl:element>
-                                 <xsl:choose>
-                                    <xsl:when test="Activiteit">
-                                       <xsl:variable name="id.activiteit" select="Activiteit"/>
-                                       <xsl:variable name="index.activiteit" select="count(.|preceding::Activiteit)"/>
-                                       <xsl:element name="r:activiteitaanduiding">
-                                          <xsl:element name="rol:ActiviteitRef">
-                                             <xsl:attribute name="xlink:href" select="my:id($id.activiteit)"/>
+                           <xsl:for-each select="$owRegeltekst[@juriconnectId=$id/@juriconnectId]/Annotatie">
+                              <xsl:choose>
+                                 <xsl:when test="Activiteit">
+                                    <xsl:variable name="id.activiteit" select="Activiteit"/>
+                                    <xsl:variable name="index.activiteit" select="count(.|preceding::Activiteit)"/>
+                                    <xsl:element name="r:activiteitaanduiding">
+                                       <xsl:element name="rol:ActiviteitRef">
+                                          <xsl:attribute name="xlink:href" select="my:id($id.activiteit)"/>
+                                       </xsl:element>
+                                       <xsl:element name="r:ActiviteitLocatieaanduiding">
+                                          <xsl:element name="r:identificatie">
+                                             <xsl:value-of select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'activiteitlocatieaanduiding',concat('2020',fn:format-number($index.activiteit,'000000'))),'.')),'-')"/>
                                           </xsl:element>
-                                          <xsl:element name="r:ActiviteitLocatieaanduiding">
-                                             <xsl:element name="r:identificatie">
-                                                <xsl:value-of select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'activiteitlocatieaanduiding',concat('2020',fn:format-number($index.activiteit,'000000'))),'.')),'-')"/>
-                                             </xsl:element>
-                                             <xsl:element name="r:activiteitregelkwalificatie">
-                                                <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/AndersGeduid')"/>
-                                             </xsl:element>
-                                             <xsl:element name="r:locatieaanduiding">
-                                                <xsl:element name="l:LocatieRef">
-                                                   <xsl:attribute name="xlink:href" select="my:id($owActiviteit[rol:identificatie=$id.activiteit]/rol:locatieaanduiding/l:LocatieRef/@xlink:href)"/>
-                                                </xsl:element>
+                                          <xsl:element name="r:activiteitregelkwalificatie">
+                                             <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/AndersGeduid')"/>
+                                          </xsl:element>
+                                          <xsl:element name="r:locatieaanduiding">
+                                             <xsl:element name="l:LocatieRef">
+                                                <xsl:attribute name="xlink:href" select="my:id($owActiviteit[rol:identificatie=$id.activiteit]/rol:locatieaanduiding/l:LocatieRef/@xlink:href)"/>
                                              </xsl:element>
                                           </xsl:element>
                                        </xsl:element>
-                                    </xsl:when>
-                                    <!-- Hier eventueel andere objecten toevoegen -->
-                                 </xsl:choose>
-                              </xsl:element>
-                           </xsl:element>
+                                    </xsl:element>
+                                 </xsl:when>
+                                 <!-- Hier eventueel andere objecten toevoegen -->
+                              </xsl:choose>
+                           </xsl:for-each>
                         </xsl:element>
-                     </xsl:for-each>
-                  </xsl:if>
+                     </xsl:element>
+                  </xsl:element>
                </xsl:for-each>
             </xsl:element>
          </xsl:element>
