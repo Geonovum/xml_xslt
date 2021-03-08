@@ -3,8 +3,7 @@
     <Name>Locatie</Name>
     <ElementPath>Locatie</ElementPath>
     <GeometryElementPath>geometrie|Geometrie|geometrie</GeometryElementPath>
-    <GeometryName>geometrie</GeometryName>
-    <GeometryType>6</GeometryType>
+    <GeometryName>geometrie|Geometrie@gml:id</GeometryName>
     <SRSName>urn:ogc:def:crs:EPSG::28992</SRSName>
     <PropertyDefn>
       <Name>gml_id</Name>
@@ -18,6 +17,12 @@
       <Type>String</Type>
       <Width>50</Width>
     </PropertyDefn>
+    <PropertyDefn>
+      <Name>Naam</Name>
+      <ElementPath>naam</ElementPath>
+      <Type>String</Type>
+      <Width>255</Width>
+    </PropertyDefn>  
     <PropertyDefn>
       <Name>groepID</Name>
       <ElementPath>groepID</ElementPath>
