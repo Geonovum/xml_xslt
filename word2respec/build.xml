@@ -42,7 +42,9 @@
   <!-- transformeer van word naar respec -->
 
   <target name="transform" description="Transformeer van word naar respec">
-    <xslt in="${unzip.dir}/word/document.xml" out="${output.dir}/resultaat.html" style="word2respec.xsl" processor="trax" force="true"/>
+    <xslt in="${unzip.dir}/word/document.xml" out="${output.dir}/resultaat.html" style="word2respec.xsl" processor="trax" force="true">
+      <param name="base.dir" expression="${basedir}"/>
+    </xslt>
     <copy todir="${output.dir}/js" file="${input.dir}/config.js" failonerror="false"/>
     <copy todir="${output.dir}/media" failonerror="false">
       <fileset dir="${unzip.dir}/word/media"/>

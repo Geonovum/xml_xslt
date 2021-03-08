@@ -21,6 +21,18 @@
   <xsl:param name="styles" select="concat($basedir,'styles.xml')"/>
   <xsl:param name="footnotes" select="concat($basedir,'footnotes.xml')"/>
 
+  <!-- lees stijlen in -->
+
+  <xsl:param name="headings" select="document($styles,.)//w:style[fn:matches(w:name/@w:val,'heading\s[1-7]')]/@w:styleId"/>
+  <xsl:param name="heading_1" select="$headings[1]" as="xs:string"/>
+  <xsl:param name="heading_2" select="$headings[2]" as="xs:string"/>
+  <xsl:param name="heading_3" select="$headings[3]" as="xs:string"/>
+  <xsl:param name="heading_4" select="$headings[4]" as="xs:string"/>
+  <xsl:param name="heading_5" select="$headings[5]" as="xs:string"/>
+  <xsl:param name="heading_6" select="$headings[6]" as="xs:string"/>
+  <xsl:param name="heading_7" select="$headings[7]" as="xs:string"/>
+  <xsl:param name="heading" select="translate($headings[1],'1','#')"/>
+
   <!-- lees relations in -->
   <xsl:variable name="relationships" select="document($relations,.)/Relationships/Relationship" xpath-default-namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
 
@@ -41,6 +53,7 @@
   <!-- lees metadata organisatie in -->
   <xsl:variable name="D11" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'soortOrganisatie')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D12" select="tokenize((fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'idOrganisatie')]/w:tc[2]//w:t),'geen')[1],'/')[last()]"/>
+  <xsl:variable name="D13" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'soortBestuursorgaan')]/w:tc[2]//w:t),'geen')[1]"/>
   <!-- lees metadata procedure in -->
   <xsl:variable name="tbl_proc" select="document($comments,.)/w:comments/w:comment/w:tbl[contains(fn:string-join(w:tr[1]/w:tc[1]//w:t),'Procedure')]"/>
   <xsl:variable name="P01" select="(fn:string-join($tbl_proc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'bekendOp')]/w:tc[2]//w:t),'geen')[1]"/>
@@ -64,7 +77,8 @@
   <!-- bouw het document op -->
   <xsl:template match="w:document">
     <xsl:element name="AanleveringBesluit" namespace="{$lvbb}">
-      <xsl:attribute name="schemaversie" select="$D02"/>
+      <xsl:attribute name="schemaversie" select="string('1.0.4')"/>
+      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd')"/>
       <!-- geef informatie door aan AKN.xsl -->
       <xsl:processing-instruction name="akn">
         <xsl:value-of select="fn:string-join(($D12,$D07),'_')"/>
@@ -90,6 +104,9 @@
           </xsl:element>
           <xsl:element name="maker" namespace="{$data}">
             <xsl:value-of select="concat('/tooi/id/',$D11,'/',$D12)"/>
+          </xsl:element>
+          <xsl:element name="soortBestuursorgaan" namespace="https://standaarden.overheid.nl/stop/imop/data/">
+            <xsl:value-of select="$D13"/>
           </xsl:element>
           <xsl:element name="officieleTitel" namespace="{$data}">
             <xsl:value-of select="$D04"/>
@@ -183,6 +200,9 @@
         <xsl:choose>
           <xsl:when test="fn:tokenize($D06,'/')[last()]=('regelingtype_001','regelingtype_002')">
             <!-- Rijksregelingen kunnen BesluitKlassiek gebruiken -->
+            <xsl:call-template name="besluit_klassiek">
+              <xsl:with-param name="type" select="string('RegelingKlassiek')"/>
+            </xsl:call-template>
           </xsl:when>
           <xsl:when test="fn:tokenize($D06,'/')[last()]=('regelingtype_003','regelingtype_004','regelingtype_005')">
             <!-- Regelingen met artikelstructuur -->
@@ -264,6 +284,27 @@
             </xsl:for-each>
           </xsl:element>
         </xsl:element>
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template name="besluit_klassiek">
+    <xsl:param name="type" select="string('RegelingKlassiek')"/>
+    <xsl:element name="BesluitKlassiek" namespace="{$tekst}">
+      <xsl:element name="RegelingOpschrift" namespace="{$tekst}">
+        <xsl:element name="Al" namespace="{$tekst}">
+          <xsl:value-of select="string('[regelingopschrift van de regeling]')"/>
+        </xsl:element>
+      </xsl:element>
+      <xsl:element name="Aanhef" namespace="{$tekst}">
+        <xsl:element name="Al" namespace="{$tekst}">
+          <xsl:value-of select="string('[optionele aanhef]')"/>
+        </xsl:element>
+      </xsl:element>
+      <xsl:element name="{$type}" namespace="{$tekst}">
+        <xsl:attribute name="componentnaam" select="string('initieel_reg')"/>
+        <xsl:attribute name="wordt" select="$ID_act_expression"/>
+        <xsl:apply-templates select="w:body"/>
       </xsl:element>
     </xsl:element>
   </xsl:template>
@@ -350,7 +391,7 @@
 
   <!-- maak het document aan -->
   <xsl:template match="w:body">
-    <xsl:for-each-group select="*" group-starting-with="w:p[w:pPr/w:pStyle/@w:val=('Kop1','Divisiekop1')][1]">
+    <xsl:for-each-group select="*" group-starting-with="w:p[w:pPr/w:pStyle/@w:val=($heading_1,'Divisiekop1')][1]">
       <xsl:choose>
         <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Titel']">
           <xsl:element name="RegelingOpschrift" namespace="{$tekst}">
@@ -370,10 +411,10 @@
             </xsl:otherwise>
           </xsl:choose>
         </xsl:when>
-        <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Kop1']">
+        <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val=$heading_1]">
           <xsl:for-each-group select="current-group()" group-starting-with="w:p[w:pPr/w:pStyle/@w:val='Divisiekop1'][1]">
             <xsl:choose>
-              <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Kop1']">
+              <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val=$heading_1]">
                 <xsl:element name="Lichaam" namespace="{$tekst}">
                   <!-- section_lichaam_artikel plaatst de artikelstructuur -->
                   <xsl:call-template name="section_lichaam_artikel">
@@ -395,7 +436,7 @@
         <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Divisiekop1']">
           <xsl:for-each-group select="current-group()" group-starting-with="w:p[w:pPr/w:pStyle/@w:val='Divisiekop1'][1]">
             <xsl:element name="Lichaam" namespace="{$tekst}">
-              <!-- section_lichaam_vrijetekst plaatst de artikelstructuur -->
+              <!-- section_lichaam_vrijetekst plaatst de vrijtekststructuur -->
               <xsl:call-template name="section_lichaam_vrijetekst">
                 <xsl:with-param name="group" select="current-group()"/>
                 <xsl:with-param name="index" select="1"/>
@@ -407,7 +448,7 @@
     </xsl:for-each-group>
   </xsl:template>
 
-  <xsl:param name="section_lichaam_artikel_word" select="('Kop1','Kop2','Kop3','Kop4','Kop5','Kop6','Lidmetnummering')"/>
+  <xsl:param name="section_lichaam_artikel_word" select="($heading_1,$heading_2,$heading_3,$heading_4,$heading_5,$heading_6,'Lidmetnummering')"/>
   <xsl:param name="section_lichaam_artikel_imop" select="('Hoofdstuk','Afdeling','Paragraaf','Subparagraaf','Subsubparagraaf','Artikel','Lid')"/>
 
   <xsl:template name="section_lichaam_artikel">
@@ -416,7 +457,7 @@
     <xsl:for-each-group select="$group" group-starting-with="w:p[w:pPr/w:pStyle/@w:val=$section_lichaam_artikel_word[$index]]">
       <xsl:variable name="styleId" select="(current-group()[1]/w:pPr/w:pStyle/@w:val,'Geen')[1]"/>
       <xsl:choose>
-        <xsl:when test="$styleId=fn:format-number($index,'Kop#')">
+        <xsl:when test="$styleId=fn:format-number($index,$heading)">
           <xsl:element name="{$section_lichaam_artikel_imop[$index]}" namespace="{$tekst}">
             <xsl:apply-templates select="current-group()[1]"/>
             <xsl:call-template name="section_lichaam_artikel">
@@ -460,11 +501,12 @@
   <xsl:template name="section_lichaam_vrijetekst">
     <xsl:param name="group"/>
     <xsl:param name="index"/>
-    <xsl:for-each-group select="$group" group-starting-with="w:p[w:pPr/w:pStyle/@w:val=$section_bijlage_word[$index]]">
+    <xsl:for-each-group select="$group" group-starting-with="w:p[w:pPr/w:pStyle/@w:val=$section_lichaam_vrijtekst_word[$index]]">
       <xsl:variable name="styleId" select="(current-group()[1]/w:pPr/w:pStyle/@w:val,'Geen')[1]"/>
       <xsl:choose>
         <xsl:when test="$styleId=fn:format-number($index,'Divisiekop#')">
           <xsl:element name="{$section_lichaam_vrijtekst_imop[$index]}" namespace="{$tekst}">
+            <xsl:attribute name="eigen:niveau" namespace="{$eigen}" select="$index"/>
             <xsl:apply-templates select="current-group()[1]"/>
             <xsl:call-template name="section_lichaam_vrijetekst">
               <xsl:with-param name="group" select="fn:subsequence(current-group(),2)"/>
@@ -474,9 +516,6 @@
         </xsl:when>
         <xsl:when test="$index gt count($section_lichaam_vrijtekst_word)">
           <xsl:element name="Divisietekst" namespace="{$tekst}">
-            <xsl:element name="Kop" namespace="{$tekst}">
-              <xsl:element name="Opschrift" namespace="{$tekst}"/>
-            </xsl:element>
             <xsl:element name="Inhoud" namespace="{$tekst}">
               <xsl:call-template name="group_adjacent">
                 <xsl:with-param name="group" select="current-group()"/>
@@ -505,6 +544,7 @@
       <xsl:choose>
         <xsl:when test="$styleId=fn:format-number($index,'Divisiekop#')">
           <xsl:element name="{$section_bijlage_imop[$index]}" namespace="{$tekst}">
+            <xsl:attribute name="eigen:niveau" namespace="{$eigen}" select="$index"/>
             <xsl:apply-templates select="current-group()[1]"/>
             <xsl:call-template name="section_bijlage">
               <xsl:with-param name="group" select="fn:subsequence(current-group(),2)"/>
@@ -514,9 +554,6 @@
         </xsl:when>
         <xsl:when test="$index gt count($section_bijlage_word)">
           <xsl:element name="Divisietekst" namespace="{$tekst}">
-            <xsl:element name="Kop" namespace="{$tekst}">
-              <xsl:element name="Opschrift" namespace="{$tekst}"/>
-            </xsl:element>
             <xsl:element name="Inhoud" namespace="{$tekst}">
               <xsl:call-template name="group_starting_with">
                 <xsl:with-param name="group" select="current-group()"/>
@@ -676,7 +713,7 @@
   <xsl:template match="w:p">
     <xsl:variable name="styleId" select="w:pPr/w:pStyle/@w:val"/>
     <xsl:choose>
-      <xsl:when test="$styleId=('Kop1','Kop2','Kop3','Kop4','Kop5','Kop6','Kop7','Divisiekop1','Divisiekop2','Divisiekop3','Divisiekop4','Divisiekop5','Divisiekop6','Divisiekop7','Divisiekop8','Divisiekop9')">
+      <xsl:when test="$styleId=($heading_1,$heading_2,$heading_3,$heading_4,$heading_5,$heading_6,$heading_7,'Divisiekop1','Divisiekop2','Divisiekop3','Divisiekop4','Divisiekop5','Divisiekop6','Divisiekop7','Divisiekop8','Divisiekop9')">
         <xsl:element name="Kop" namespace="{$tekst}">
           <xsl:choose>
             <xsl:when test="w:r[w:tab]">
@@ -816,7 +853,7 @@
     <xsl:choose>
       <xsl:when test="contains($relationship/@TargetMode,'External')">
         <xsl:element name="ExtRef" namespace="{$tekst}">
-          <xsl:attribute name="doel" select="$relationship/@Target"/>
+          <xsl:attribute name="ref" select="$relationship/@Target"/>
           <xsl:attribute name="soort" select="string('URL')"/>
           <xsl:apply-templates/>
         </xsl:element>
