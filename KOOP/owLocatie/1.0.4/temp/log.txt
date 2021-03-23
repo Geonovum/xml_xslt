@@ -1,0 +1,129 @@
+[BG ws0651]
+
+[GIO 1]
+FRBRWork: /join/id/regdata/ws0651/2020/ib_niet_aangewezen_oppervlaktewaterlichamen_hollands_noorderkwartier
+id: nl.imow-ws0651.gebiedengroep.nietaangewOppvlaktewaterlichamen
+naam: Niet-aangewezen oppervlaktewaterlichamen Hoogheemraadschap Hollands Noorderkwartier
+[GML 1]
+id: 3ec4b23d-91ef-4767-81fb-68293f9f8655
+naam: [geen]
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+
+[BG ws0654]
+
+[GIO 1]
+FRBRWork: /join/id/regdata/ws0654/2020/ib_aangewezen_oppervlaktewaterlichamen_aa_en_maas
+id: nl.imow-ws0654.gebiedengroep.aangewOppervlaktewaterlichamen
+naam: Aangewezen oppervlaktewaterlichamen waterschap Aa en Maas
+[GML 1]
+id: 2dc7f843-f918-47ed-9a55-b045c57ddf4a
+naam: Oude Zuid-Willemsvaart
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 2]
+id: eae2c2db-0bda-468f-8860-5b7f7f0a432b
+naam: Hoefgraaf
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 3]
+id: 8e1a8c5b-6f6f-4ffb-bd53-9bdc1c8d4289
+naam: Stadsdommel
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 4]
+id: d56cd0d9-2fdb-48d1-8546-c710829967bf
+naam: Rietveldenhaven
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 5]
+id: 6c83c2c4-3cbf-4d59-be81-a37b28e27075
+naam: Dieze
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 6]
+id: 7753aa92-fd68-4e39-aadd-5e50a3e3ce8f
+naam: Hertogswetering, Ossermeer tot Gewande
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 7]
+id: b4d519a6-185c-438c-9335-60287efeb6c7
+naam: Aa door stedelijk gebied Veghel
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 8]
+id: 6c7db125-6d93-4b72-8514-b48be3bf7295
+naam: Industriehaven te Helmond
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 9]
+id: 7e643d95-3e4c-4449-9159-1cae37426e54
+naam: Industriehavens s-Hertogenbosch
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 10]
+id: c652609b-7f6d-4304-888c-7e338470ad3e
+naam: Traverse door Helmond
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 11]
+id: e54b3c81-2f95-457d-ac14-ec35669b355f
+naam: Hertogswetering, Grave tot Ossermeer
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 12]
+id: f6c5710c-884e-4637-8c4c-ca95dc1b2d46
+naam: Gekanaliseerde Dieze, Zuid-Willemsvaart
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 13]
+id: 8c8f376b-b5eb-44da-a249-a4eb53617feb
+naam: Stads-Aa
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 14]
+id: 1b6c82bf-df49-475a-9bdc-e16a85beb54a
+naam: Aa van Gemert tot Veghel
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 15]
+id: 84a6458d-de26-45ed-b4cd-2303bc493111
+naam: Drongelens Kanaal
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 16]
+id: 81f03c4d-42f1-41d7-b583-2219a0f91b5c
+naam: Oude Maasje
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 17]
+id: 989e4dc8-a3c3-413d-aabf-54c458cb6d28
+naam: Kraaijenbergse Plassen
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 18]
+id: aab4e7f0-ccdc-4bfb-a17b-524899f80b9c
+naam: Teeffelensche Wetering
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 19]
+id: c1d87db9-b2ef-4c31-90da-bd0f3b4caeb9
+naam: Eindhovens Kanaal
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 20]
+id: b28327f0-4e5c-40a2-8c0b-ae3ecd75056b
+naam: Haven Noord of Burgemeester van Veldhuizenhaven
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 21]
+id: e43ac6b1-441a-4b16-a62e-124259f2b305
+naam: Aa benedenstrooms Veghel tot Den Bosch
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+[GML 22]
+id: 4f183a91-8fb6-4c5a-a22d-ab06e8489bf2
+naam: Koningsvliet
+srsName: urn:ogc:def:crs:EPSG::28992
+type: MultiSurface
+
