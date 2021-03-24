@@ -1,0 +1,21 @@
+<GMLFeatureClassList>
+  <GMLFeatureClass>
+    <Name>Locatie</Name>
+    <ElementPath>Locatie</ElementPath>
+    <GeometryElementPath>geometrie|Geometrie|geometrie</GeometryElementPath>
+    <GeometryName>geometry</GeometryName>
+    <SRSName>urn:ogc:def:crs:EPSG::28992</SRSName>
+    <PropertyDefn>
+      <Name>Naam</Name>
+      <ElementPath>naam</ElementPath>
+      <Type>String</Type>
+      <Width>255</Width>
+    </PropertyDefn>
+    <PropertyDefn>
+      <Name>id</Name>
+      <ElementPath>geometrie|Geometrie|id</ElementPath>
+      <Type>String</Type>
+      <Width>50</Width>
+    </PropertyDefn>
+  </GMLFeatureClass>
+</GMLFeatureClassList>
