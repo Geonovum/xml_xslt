@@ -39,35 +39,6 @@ cd $sourceDir
     for svg in *.svg; do
         [ -f "$svg" ] || break
         filename="${svg%.*}"
-        /c/Program\ Files/GIMP\ 2/bin/gimp-console-2.10.exe -b '
-            (
-                let*
-                (
-                    image
-                    (
-                        car
-                        (
-                            file-svg-load RUN-NONINTERACTIVE $svg $svg $resolution $width $height
-                        )
-                    )
-                    drawable 
-					(
-						car 
-							(
-								gimp-image-get-active-layer image
-							)
-						)
-					)
-                )
-                (
-                    gimp-image-convert-indexed image CONVERT-DITHER-NONE CONVERT-PALETTE-GENERATE 0 FALSE TRUE
-                )
-                (
-					gimp-file-save RUN-NONINTERACTIVE image drawable "$targetHoog/$filename.png" "$targetHoog/$filename.png"
-				)
-            )' -b '
-		    (
-			     gimp-quit 0
-		    )' 
+        /c/Program\ Files/GIMP\ 2/bin/gimp-console-2.10.exe -b '(let*(image(car(file-svg-load RUN-NONINTERACTIVE "$svg" $svg $resolution $width $height))drawable(car(gimp-image-get-active-layer image)))(gimp-image-convert-indexed image CONVERT-DITHER-NONE CONVERT-PALETTE-GENERATE 0 FALSE TRUE)(gimp-file-save RUN-NONINTERACTIVE image drawable $target/$filename.png $target/$filename.png ))' -b '(gimp-quit 0)' 
     done
 cd -
