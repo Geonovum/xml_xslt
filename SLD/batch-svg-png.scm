@@ -19,7 +19,7 @@
   "Bert Verhees"                          ;author
   ""
   "2021-03-26"                              ;date created
-  ""                                        ;image type that the script works on
+  ""                                        
   SF-VALUE "Resolution" "96"
   SF-VALUE "Width" "24"
   SF-VALUE "Height" "24"
