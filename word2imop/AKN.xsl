@@ -10,8 +10,8 @@
 
     <xsl:param name="wId_bg" select="tokenize(//processing-instruction('akn'),'_')[1]"/>
     <xsl:param name="wId_versie" select="tokenize(//processing-instruction('akn'),'_')[2]"/>
-    <!--xsl:param name="wId_bg" select="string('pv26')"/>
-    <xsl:param name="wId_versie" select="string('2')"/-->
+    <!--xsl:param name="wId_bg" select="string('gm0479')"/>
+    <xsl:param name="wId_versie" select="string('1')"/-->
 
     <!-- Variabelen eId en unique_eId bevatten een mapping van alle elementen in het voorbeeldbestand naar hun eId. -->
 
@@ -125,6 +125,7 @@
                     </xsl:choose>
                 </xsl:attribute>
             </xsl:if>
+            <xsl:apply-templates select="namespace::*"/>
             <xsl:apply-templates select="@*">
                 <xsl:with-param name="id" select="$id"/>
             </xsl:apply-templates>
