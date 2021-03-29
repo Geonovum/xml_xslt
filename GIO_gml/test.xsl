@@ -6,17 +6,12 @@
     version="2.0">
     <xsl:output method="text"/>
 
-    <xsl:param name="src" select="'F:/DSO/Geonovum/GitHub/xml_xslt/GML-bestandenBrittBruidschat'"/>
-    <xsl:param name="valid" select="'valid'"/>
-    <xsl:param name="file" select="'Zinkassengebied_Boxtel.gml'"/>
+    <xsl:param name="valid.file" select="'F:/DSO/Geonovum/GitHub/xml_xslt/GML-bestandenBrittBruidschat/valid/Zinkassengebied_Boxtel.gml'"/>
     
     <xsl:template match="/">
-        <xsl:message select="$valid"/>
-        <xsl:message select="$file"/>
-        <xsl:value-of select="concat($src,'&#xa;')"/>
-        <xsl:value-of select="concat($valid,'&#xa;')"/>
-        <xsl:value-of select="concat($file,'&#xa;')"/>
-        <xsl:variable name="bestand" select="collection(concat('file:/',$src,'/',$valid,'?select=',$file))"/>
-        <xsl:value-of select="$bestand"/>
+        <xsl:message terminate="no"><xsl:value-of select="$valid.file"/></xsl:message>
+        <xsl:value-of select="concat($valid.file,'&#xa;')"/>
+        <xsl:variable name="bestand" select="document(concat('file:/',$valid.file))"/>
+        <xsl:value-of select="string(./element()/local-name())"/>
     </xsl:template>
 </xsl:stylesheet>

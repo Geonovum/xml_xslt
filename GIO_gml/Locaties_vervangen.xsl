@@ -11,9 +11,10 @@
     version="2.0">
     <xsl:output method="xml" version="1.0" indent="yes" encoding="UTF-8" standalone="yes"/>
 
-    <xsl:param name="valid.dir" select="string('F:\DSO\Geonovum\GitHub\xml_xslt\GML-bestandenBrittBruidschat\valid')"/>
-    <xsl:param name="bestand_naam" select="tokenize(base-uri(),'/')[last()]"/>
-    <xsl:param name="valide_bestand" select="collection(concat('file:/', $valid.dir, '?select=', $bestand_naam))"/>
+    <xsl:param name="valid.file" select="string('F:\DSO\Geonovum\GitHub\xml_xslt\GML-bestandenBrittBruidschat\valid')"/>
+    <!--<xsl:param name="file" select="tokenize(base-uri(),'/')[last()]"/>-->
+    <xsl:variable name="valide_bestand" select="document(concat('file:/',$valid.file))"/>
+    <!--<xsl:param name="valide_bestand" select="collection(concat('file:/', $valid.dir, '?select=', $bestand_naam))"/>-->
     
     <!--Identity template, kopieer alle inhoud -->
     <xsl:template match="@*|node()">
