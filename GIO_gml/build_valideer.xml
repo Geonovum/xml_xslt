@@ -8,7 +8,7 @@
     <property name="result.dir" value="result"/>
     <property name="ogr2ogr" value="D:/Apps/QGIS/OSGeo4W64/bin/ogr2ogr.exe"/>
     <property name="src" value="F:/DSO/Geonovum/GitHub/xml_xslt/GML-bestandenBrittBruidschat"/>
-    <property name="gfs" value="F:/DSO/Geonovum/GitHub/xml_xslt/GIO_gml/GIO_test.gfs"></property>
+    <property name="gfs" value="F:/DSO/Geonovum/GitHub/xml_xslt/GIO_gml/GIO_gml_valideer.gfs"></property>
     
     <!-- controleeren of gml valide is volgens GIO schema -->
     <target name="xml_valide_loop">
@@ -18,6 +18,7 @@
             </path>
         </foreach>
     </target>
+    
     <target name="xml_valide">
         <xmlvalidate lenient="no" warn="yes" classname="org.apache.xerces.parsers.SAXParser" failonerror="no">
             <fileset dir="${src}" includes="*.gml"/>
