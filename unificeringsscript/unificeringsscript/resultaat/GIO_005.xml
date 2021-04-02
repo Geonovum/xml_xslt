@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+  schemaversie="1.0.3">
+  <InformatieObjectVersie>
+    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/gm0546/2020/3_groen_en_luw</FRBRWork>
+      <FRBRExpression>/join/id/regdata/gm0546/2020/3_groen_en_luw/nld@2020-08-20</FRBRExpression>
+      <soortWork>/join/id/stop/work_010</soortWork>
+    </ExpressionIdentificatie>
+    <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <heeftGeboorteregeling>/akn/nl/act/gm0546/2020/OVILEI001</heeftGeboorteregeling>
+      <heeftBestanden>
+        <heeftBestand>
+          <Bestand>
+            <bestandsnaam>005_3_groen_en_luw.gml</bestandsnaam>
+            <hash>29455399e78f3d42d0ef290a13d3506975cf8c5866a1f92031d009d71baa90122eb982bca25ac0f1a9fa3e921853e422253fbd4e1e7c51ec99a963dfbb853ec8</hash>
+          </Bestand>
+        </heeftBestand>
+      </heeftBestanden>
+    </InformatieObjectVersieMetadata>
+    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/gemeente/gm0546</eindverantwoordelijke>
+      <maker>/tooi/id/gemeente/gm0546</maker>
+      <alternatieveTitels>
+        <alternatieveTitel>3 Groen en luw</alternatieveTitel>
+      </alternatieveTitels>
+      <officieleTitel>/join/id/regdata/gm0546/2020/3_groen_en_luw</officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <naamInformatieObject>3 Groen en luw</naamInformatieObject>
+      <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+    </InformatieObjectMetadata>
+  </InformatieObjectVersie>
+</AanleveringInformatieObject>

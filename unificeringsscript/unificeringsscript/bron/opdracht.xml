@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lvbb:publicatieOpdracht xmlns:lvbb="http://www.overheid.nl/2017/lvbb">
+   <lvbb:idLevering>OVILEI001-001</lvbb:idLevering>
+   <lvbb:idBevoegdGezag>00000001002311112000</lvbb:idBevoegdGezag>
+   <lvbb:idAanleveraar>00000001002311112000</lvbb:idAanleveraar>
+   <lvbb:publicatie>OVILEI001.xml</lvbb:publicatie>
+   <lvbb:datumBekendmaking>2020-09-01</lvbb:datumBekendmaking>
+</lvbb:publicatieOpdracht>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>Gemeente Leiden</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Gemeente Leiden</sl:gebied>
+         <sl:leveringsId>OVILEI001-001</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Divisie</sl:objectType>
+            <sl:objectType>Tekstdeel</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Divisie wId="gm0546_1__div_o_1">
+               <vt:identificatie>nl.imow-gm0546.divisie.20200001</vt:identificatie>
+            </vt:Divisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel>
+               <vt:identificatie>nl.imow-gm0546.tekstdeel.20200001</vt:identificatie>
+               <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+               <vt:divisieaanduiding>
+                  <vt:DivisieRef xlink:href="nl.imow-gm0546.divisie.20200001"/>
+               </vt:divisieaanduiding>
+               <vt:hoofdlijnaanduiding>
+                  <vt:HoofdlijnRef xlink:href="nl.imow-gm0546.hoofdlijn.20200001"><!--Visie|Visie Leiden--></vt:HoofdlijnRef>
+               </vt:hoofdlijnaanduiding>
+               <vt:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0546.gebied.20200001"/>
+               </vt:locatieaanduiding>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Divisie wId="gm0546_1__div_o_1__div_i">
+               <vt:identificatie>nl.imow-gm0546.divisie.20200002</vt:identificatie>
+            </vt:Divisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel>
+               <vt:identificatie>nl.imow-gm0546.tekstdeel.20200002</vt:identificatie>
+               <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/klimaatadaptatie/id/concept/Klimaatadaptatie</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/biodiversiteit/id/concept/Biodiversiteit</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/gezondheid/id/concept/Gezondheid</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/recreatieentoerisme/id/concept/RecreatieEnToerisme</vt:thema>
+               <vt:divisieaanduiding>
+                  <vt:DivisieRef xlink:href="nl.imow-gm0546.divisie.20200002"/>
+               </vt:divisieaanduiding>
+               <vt:hoofdlijnaanduiding>
+                  <vt:HoofdlijnRef xlink:href="nl.imow-gm0546.hoofdlijn.20200002"><!--Opgaven vertaald naar de ruimte|Groen/blauw--></vt:HoofdlijnRef>
+               </vt:hoofdlijnaanduiding>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Divisie wId="gm0546_1__div_o_1__div_ii">
+               <vt:identificatie>nl.imow-gm0546.divisie.20200003</vt:identificatie>
+            </vt:Divisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel>
+               <vt:identificatie>nl.imow-gm0546.tekstdeel.20200003</vt:identificatie>
+               <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurWegen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/gezondheid/id/concept/Gezondheid</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/duurzaamheid/id/concept/Duurzaamheid</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurFietsinfrastructuurEnWandelpaden</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurWegen</vt:thema>
+               <vt:divisieaanduiding>
+                  <vt:DivisieRef xlink:href="nl.imow-gm0546.divisie.20200003"/>
+               </vt:divisieaanduiding>
+               <vt:hoofdlijnaanduiding>
+                  <vt:HoofdlijnRef xlink:href="nl.imow-gm0546.hoofdlijn.20200003"><!--Opgaven vertaald naar de ruimte|Mobiliteit--></vt:HoofdlijnRef>
+               </vt:hoofdlijnaanduiding>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Divisie wId="gm0546_1__div_o_1__div_iii">
+               <vt:identificatie>nl.imow-gm0546.divisie.20200004</vt:identificatie>
+            </vt:Divisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel>
+               <vt:identificatie>nl.imow-gm0546.tekstdeel.20200004</vt:identificatie>
+               <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesVoorzieningen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/gezondheid/id/concept/Gezondheid</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesWonen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFuncties</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesVoorzieningen</vt:thema>
+               <vt:divisieaanduiding>
+                  <vt:DivisieRef xlink:href="nl.imow-gm0546.divisie.20200004"/>
+               </vt:divisieaanduiding>
+               <vt:hoofdlijnaanduiding>
+                  <vt:HoofdlijnRef xlink:href="nl.imow-gm0546.hoofdlijn.20200004"><!--Opgaven vertaald naar de ruimte|Duurzame Verstedelijking--></vt:HoofdlijnRef>
+               </vt:hoofdlijnaanduiding>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Divisie wId="gm0546_1__div_o_1__div_iv">
+               <vt:identificatie>nl.imow-gm0546.divisie.20200005</vt:identificatie>
+            </vt:Divisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel>
+               <vt:identificatie>nl.imow-gm0546.tekstdeel.20200005</vt:identificatie>
+               <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurLeidingen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurLeidingen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurKabelsEnLeidingen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/bodem/id/concept/Bodem</vt:thema>
+               <vt:divisieaanduiding>
+                  <vt:DivisieRef xlink:href="nl.imow-gm0546.divisie.20200005"/>
+               </vt:divisieaanduiding>
+               <vt:hoofdlijnaanduiding>
+                  <vt:HoofdlijnRef xlink:href="nl.imow-gm0546.hoofdlijn.20200005"><!--Opgaven vertaald naar de ruimte|Infra--></vt:HoofdlijnRef>
+               </vt:hoofdlijnaanduiding>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Divisie wId="gm0546_1__div_o_1__div_o_5">
+               <vt:identificatie>nl.imow-gm0546.divisie.20200006</vt:identificatie>
+            </vt:Divisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel>
+               <vt:identificatie>nl.imow-gm0546.tekstdeel.20200006</vt:identificatie>
+               <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+               <vt:divisieaanduiding>
+                  <vt:DivisieRef xlink:href="nl.imow-gm0546.divisie.20200006"/>
+               </vt:divisieaanduiding>
+               <vt:hoofdlijnaanduiding>
+                  <vt:HoofdlijnRef xlink:href="nl.imow-gm0546.hoofdlijn.20200006"><!--Visie|Conclusie--></vt:HoofdlijnRef>
+               </vt:hoofdlijnaanduiding>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Divisie wId="gm0546_1__div_o_1__div_o_6">
+               <vt:identificatie>nl.imow-gm0546.divisie.20200007</vt:identificatie>
+            </vt:Divisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel>
+               <vt:identificatie>nl.imow-gm0546.tekstdeel.20200007</vt:identificatie>
+               <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+               <vt:divisieaanduiding>
+                  <vt:DivisieRef xlink:href="nl.imow-gm0546.divisie.20200007"/>
+               </vt:divisieaanduiding>
+               <vt:hoofdlijnaanduiding>
+                  <vt:HoofdlijnRef xlink:href="nl.imow-gm0546.hoofdlijn.20200007"><!--Uitwerking per gebied|Leefmilieus--></vt:HoofdlijnRef>
+               </vt:hoofdlijnaanduiding>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Divisie wId="gm0546_1__div_o_1__div_o_6__div_o_1">
+               <vt:identificatie>nl.imow-gm0546.divisie.20200008</vt:identificatie>
+            </vt:Divisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel>
+               <vt:identificatie>nl.imow-gm0546.tekstdeel.20200008</vt:identificatie>
+               <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurWegen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesVoorzieningen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/economischvestigingsklimaat/id/concept/EconomischVestigingsklimaat</vt:thema>
+               <vt:divisieaanduiding>
+                  <vt:DivisieRef xlink:href="nl.imow-gm0546.divisie.20200008"/>
+               </vt:divisieaanduiding>
+               <vt:hoofdlijnaanduiding>
+                  <vt:HoofdlijnRef xlink:href="nl.imow-gm0546.hoofdlijn.20200008"><!--Leefmilieus|Hoogstedelijk en dynamisch in 2040--></vt:HoofdlijnRef>
+               </vt:hoofdlijnaanduiding>
+               <vt:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0546.gebied.20200003"/>
+               </vt:locatieaanduiding>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Divisie wId="gm0546_1__div_o_1__div_o_6__div_o_2">
+               <vt:identificatie>nl.imow-gm0546.divisie.20200009</vt:identificatie>
+            </vt:Divisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel>
+               <vt:identificatie>nl.imow-gm0546.tekstdeel.20200009</vt:identificatie>
+               <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurFietsinfrastructuurEnWandelpaden</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesVoorzieningen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesWonen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurWegen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/klimaat/id/concept/Klimaat</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/klimaatadaptatie/id/concept/Klimaatadaptatie</vt:thema>
+               <vt:divisieaanduiding>
+                  <vt:DivisieRef xlink:href="nl.imow-gm0546.divisie.20200009"/>
+               </vt:divisieaanduiding>
+               <vt:hoofdlijnaanduiding>
+                  <vt:HoofdlijnRef xlink:href="nl.imow-gm0546.hoofdlijn.20200009"><!--Leefmilieus|Stads en Levendig in 2040--></vt:HoofdlijnRef>
+               </vt:hoofdlijnaanduiding>
+               <vt:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0546.gebied.20200004"/>
+               </vt:locatieaanduiding>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Divisie wId="gm0546_1__div_o_1__div_o_6__div_o_3">
+               <vt:identificatie>nl.imow-gm0546.divisie.20200010</vt:identificatie>
+            </vt:Divisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel>
+               <vt:identificatie>nl.imow-gm0546.tekstdeel.20200010</vt:identificatie>
+               <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/landschap/id/concept/Landschap</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurWegen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurFietsinfrastructuurEnWandelpaden</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesVoorzieningen</vt:thema>
+               <vt:thema>http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesWonen</vt:thema>
+               <vt:divisieaanduiding>
+                  <vt:DivisieRef xlink:href="nl.imow-gm0546.divisie.20200010"/>
+               </vt:divisieaanduiding>
+               <vt:hoofdlijnaanduiding>
+                  <vt:HoofdlijnRef xlink:href="nl.imow-gm0546.hoofdlijn.20200010"><!--Opgaven vertaald naar de ruimte|Groen & Luw in 2040--></vt:HoofdlijnRef>
+               </vt:hoofdlijnaanduiding>
+               <vt:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0546.gebied.20200005"/>
+               </vt:locatieaanduiding>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Divisie wId="gm0546_1__div_o_1__div_o_7__div_o_1">
+               <vt:identificatie>nl.imow-gm0546.divisie.20200011</vt:identificatie>
+            </vt:Divisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel>
+               <vt:identificatie>nl.imow-gm0546.tekstdeel.20200011</vt:identificatie>
+               <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+               <vt:divisieaanduiding>
+                  <vt:DivisieRef xlink:href="nl.imow-gm0546.divisie.20200011"/>
+               </vt:divisieaanduiding>
+               <vt:hoofdlijnaanduiding>
+                  <vt:HoofdlijnRef xlink:href="nl.imow-gm0546.hoofdlijn.20200011"><!--Ontwikkelperspectief|Zuid-West in 2040--></vt:HoofdlijnRef>
+               </vt:hoofdlijnaanduiding>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Divisie wId="gm0546_1__div_o_1__div_o_7">
+               <vt:identificatie>nl.imow-gm0546.divisie.20200012</vt:identificatie>
+            </vt:Divisie>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Tekstdeel>
+               <vt:identificatie>nl.imow-gm0546.tekstdeel.20200012</vt:identificatie>
+               <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+               <vt:divisieaanduiding>
+                  <vt:DivisieRef xlink:href="nl.imow-gm0546.divisie.20200012"/>
+               </vt:divisieaanduiding>
+               <vt:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0546.gebied.20200002"/>
+               </vt:locatieaanduiding>
+            </vt:Tekstdeel>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

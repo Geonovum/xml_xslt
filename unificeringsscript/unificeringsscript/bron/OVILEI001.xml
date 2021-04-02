@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringBesluit xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                    schemaversie="1.0.3">
+   <BesluitVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/akn/nl/bill/gm0546/2020/OVILEI001</FRBRWork>
+         <FRBRExpression>/akn/nl/bill/gm0546/2020/OVILEI001/nld@2020-08-19</FRBRExpression>
+         <soortWork>/join/id/stop/work_003</soortWork>
+      </ExpressionIdentificatie>
+      <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/gemeente/gm0546</eindverantwoordelijke>
+         <maker>/tooi/id/gemeente/gm0546</maker>
+         <officieleTitel>Besluit Concept Omgevingsvisie Leiden</officieleTitel>
+         <heeftCiteertitelInformatie>
+            <CiteertitelInformatie>
+               <citeertitel>Besluit Concept Omgevingsvisie Leiden</citeertitel>
+               <isOfficieel>true</isOfficieel>
+            </CiteertitelInformatie>
+         </heeftCiteertitelInformatie>
+         <onderwerpen>
+            <onderwerp>/tooi/def/concept/c_cfc7d5ab</onderwerp>
+         </onderwerpen>
+         <rechtsgebieden>
+            <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied>
+         </rechtsgebieden>
+         <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
+         <informatieobjectRefs>
+            <informatieobjectRef>/join/id/regdata/gm0546/2020/gemeente_leiden/nld@2020-08-20</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0546/2020/ontwikkelperspectief_zuidwest/nld@2020-08-20</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch/nld@2020-08-20</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0546/2020/2_stads_en_levendig/nld@2020-08-20</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0546/2020/3_groen_en_luw/nld@2020-08-20</informatieobjectRef>
+         </informatieobjectRefs>
+      </BesluitMetadata>
+      <Procedureverloop xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bekendOp>2020-08-11</bekendOp>
+         <ontvangenOp>2020-08-11</ontvangenOp>
+         <procedurestappen>
+            <Procedurestap>
+               <soortStap>/join/id/stop/procedure/stap_003</soortStap>
+               <voltooidOp>2020-08-11</voltooidOp>
+            </Procedurestap>
+         </procedurestappen>
+      </Procedureverloop>
+      <ConsolidatieInformatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <BeoogdeRegelgeving>
+            <BeoogdeRegeling>
+               <doelen>
+                  <doel>/join/id/proces/gm0546/2020/InstellingOmgevingsvisie</doel>
+               </doelen>
+               <instrumentVersie>/akn/nl/act/gm0546/2020/OVILEI001/nld@2020-08-19;1</instrumentVersie>
+               <eId>art_I</eId>
+            </BeoogdeRegeling>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0546/2020/InstellingOmgevingsvisie</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0546/2020/gemeente_leiden/nld@2020-08-20</instrumentVersie>
+               <eId>!initieel_reg#cmp_1__content_o_1__list_o_1__item_o_1__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0546/2020/InstellingOmgevingsvisie</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0546/2020/ontwikkelperspectief_zuidwest/nld@2020-08-20</instrumentVersie>
+               <eId>!initieel_reg#cmp_1__content_o_1__list_o_1__item_o_2__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0546/2020/InstellingOmgevingsvisie</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch/nld@2020-08-20</instrumentVersie>
+               <eId>!initieel_reg#cmp_1__content_o_1__list_o_1__item_o_3__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0546/2020/InstellingOmgevingsvisie</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0546/2020/2_stads_en_levendig/nld@2020-08-20</instrumentVersie>
+               <eId>!initieel_reg#cmp_1__content_o_1__list_o_1__item_o_4__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0546/2020/InstellingOmgevingsvisie</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0546/2020/3_groen_en_luw/nld@2020-08-20</instrumentVersie>
+               <eId>!initieel_reg#cmp_1__content_o_1__list_o_1__item_o_5__ref_o_1</eId>
+            </BeoogdInformatieobject>
+         </BeoogdeRegelgeving>
+         <Tijdstempels>
+            <Tijdstempel>
+               <doel>/join/id/proces/gm0546/2020/InstellingOmgevingsvisie</doel>
+               <soortTijdstempel>juridischWerkendVanaf</soortTijdstempel>
+               <datum>2021-01-01</datum>
+               <eId>art_II</eId>
+            </Tijdstempel>
+         </Tijdstempels>
+      </ConsolidatieInformatie>
+      <BesluitCompact xmlns="https://standaarden.overheid.nl/stop/imop/tekst/">
+         <RegelingOpschrift eId="longTitle" wId="longTitle">
+            <Al>Besluit Concept Omgevingsvisie Leiden</Al>
+         </RegelingOpschrift>
+         <Aanhef eId="formula_1" wId="formula_1">
+            <Al>Het besluit betreft een concept of test om te achterhalen hoe de tekst gestructureerd moet worden en welke annotaties zinvol zijn.</Al>
+         </Aanhef>
+         <Lichaam eId="body" wId="body">
+            <WijzigArtikel eId="art_I" wId="gm0546_1__art_I">
+               <Kop>
+                  <Label>Artikel</Label>
+                  <Nummer>I</Nummer>
+               </Kop>
+               <Wat>'Concept Omgevingsvisie Leiden', zie <IntRef ref="cmp_I">bijlage I</IntRef>.</Wat>
+            </WijzigArtikel>
+            <Artikel eId="art_II" wId="gm0546_1__art_II">
+               <Kop>
+                  <Label>Artikel</Label>
+                  <Nummer>II</Nummer>
+               </Kop>
+               <Inhoud>
+                  <Al>'Concept Omgevingsvisie Leiden' treedt in werking op 1 januari 2021.</Al>
+               </Inhoud>
+            </Artikel>
+         </Lichaam>
+         <Sluiting eId="formula_2" wId="formula_2">
+            <Al>Sluiting bij het 'Besluit Concept Omgevingsvisie Leiden'.</Al>
+         </Sluiting>
+         <WijzigBijlage eId="cmp_I" wId="gm0546_1__cmp_I">
+            <Kop>
+               <Label>Bijlage</Label>
+               <Nummer>I</Nummer>
+            </Kop>
+            <RegelingVrijetekst componentnaam="initieel_reg"
+                                wordt="/akn/nl/act/gm0546/2020/OVILEI001/nld@2020-08-19;1">
+               <RegelingOpschrift eId="longTitle" wId="longTitle">
+                  <Al>Concept Omgevingsvisie Leiden</Al>
+               </RegelingOpschrift>
+               <Lichaam eId="body" wId="body">
+                  <Divisie eId="div_o_1" wId="gm0546_1__div_o_1">
+                     <Kop>
+                        <Opschrift>Heel de stad</Opschrift>
+                     </Kop>
+                     <Divisietekst eId="div_o_1__content_o_1" wId="gm0546_1__div_o_1__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
+                        <Kop>
+                           <Opschrift/>
+                        </Kop>
+                        <Inhoud>
+                           <Al>
+                              <IntIoRef eId="div_o_1__content_o_1__ref_o_1"
+                                        wId="gm0546_1__div_o_1__content_o_1__ref_o_1"
+                                        ref="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_1__ref_o_1">Leiden</IntIoRef> is een internationale kennisstad (City of Science) en historische cultuurstad die volop groeit. Leiden maakt onderdeel uit van een verstedelijkte en succesvolle regio van ongeveer 300.000 inwoners, waarbinnen Leiden de kernstad vormt. In Leiden zal, gezien de beperkte ruimte binnen de stadgrenzen, de goede bereikbaarheid en de aanwezige voorzieningen, vooral ruimte zijn voor stedelijke leefmilieus. Daarbij wil Leiden een groene en duurzame stad zijn. En een inclusieve stad voor iedereen en met iedereen.</Al>
+                           <Figuur eId="div_o_1__content_o_1__img_o_1"
+                                   wId="gm0546_1__div_o_1__content_o_1__img_o_1">
+                              <Illustratie naam="image1.jpeg"
+                                           formaat="image/jpeg"
+                                           breedte="7937"
+                                           hoogte="5613"
+                                           dpi="72"
+                                           uitlijning="start"/>
+                              <Bijschrift locatie="boven">Integrale visie</Bijschrift>
+                           </Figuur>
+                           <Al>Vanuit de verschillende opgaven komen vier ruimtelijke hoofdopgaven naar voren voor Leiden; Er dient gezamenlijk aan deze opgaven ontworpen te worden omdat er onderlinge relaties tussen de opgaven aanwezig zijn.</Al>
+                        </Inhoud>
+                     </Divisietekst>
+                     <Divisie eId="div_o_1__div_i" wId="gm0546_1__div_o_1__div_i">
+                        <Kop>
+                           <Nummer>i.</Nummer>
+                           <Opschrift>Groen/water</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="div_o_1__div_i__content_o_1"
+                                      wId="gm0546_1__div_o_1__div_i__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
+                           <Kop>
+                              <Opschrift/>
+                           </Kop>
+                           <Inhoud>
+                              <Al>Om de grote opgaven op het gebied van klimaatadaptie, biodiversiteit, gezondheid en ruimte voor groene recreatiemogelijkheden in en rondom de stad het hoofd te bieden heeft Leiden niet voldoende aan de huidige groen-blauwstructuur in de stad. De druk op het huidige groen wordt vanuit de verstedelijkings- en verdichtingsopgave ook nog groter dan deze nu is. Vanuit verschillende doelstellingen voor de stad worden er dus ruimteclaims op het groen en blauw gelegd. Dit alles bij elkaar maakt het een stedelijke opgave op een nieuwe stedelijke groen-blauw structuur te ontwerpen waarin alle opgave een plek krijgen.</Al>
+                              <Al>(ook een kaart van)</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="div_o_1__div_ii" wId="gm0546_1__div_o_1__div_ii">
+                        <Kop>
+                           <Nummer>ii.</Nummer>
+                           <Opschrift>Mobiliteit</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="div_o_1__div_ii__content_o_1"
+                                      wId="gm0546_1__div_o_1__div_ii__content_o_1">
+                           <Kop>
+                              <Opschrift/>
+                           </Kop>
+                           <Inhoud>
+                              <Al>Omdat de stad stevig verdicht wordt komt er meer druk op het huidige verkeersnetwerk. Zo leidt de groei van het aantal woningen, werkfuncties en recreatiebehoefte tot meer verkeersbewegingen en een grotere behoefte aan verkeersruimte. Dit vraagt om aanpassingen van het systeem terwijl het systeem in de huidige situatie al onder druk staat. Vanuit verschillende sectorale doelstellingen is er tegelijkertijd behoefte om anders om te gaan met mobiliteit in de stad. Zo is het voor de gezondheid van de inwoners van de stad is het belangrijk om de gezonde keuze te stimuleren en goed te faciliteren. Vanuit de gezondheid van inwoners is het ook van belang de uitstoot van fijnstof en uitlaatgassen te beperken. Vanuit duurzaamheidsoogpunt is het de opgave de duurzame manier van verplaatsen te stimuleren ipv de niet duurzame (wandelen, fiets, OV en elektrische auto). Verder is in de verdichtende stad de druk op de openbare ruimte groot, terwijl zeker in historische delen van de stad de ruimte beperkt is. De auto (met name de stilstaande auto) neemt in de stad onevenredig veel ruimte in op straat. Dit vraagt om meer ruimte-efficiënte vervoersmogelijkheden (wandelen fietsen ov en daarna pas de auto). Vanuit de reiziger is de behoefte om zo snel en comfortabel mogelijk de reis van deur-naar-deur af te leggen. Dat kan door de verschillende vervoerswijzen naadloos op elkaar aan te laten sluiten en bijvoorbeeld de ‘first- en last mile’ goed te faciliteren. Vanuit meerdere doelstellingen is het dus een opgave het verkeersysteem als geheel anders in te gaan richten in 2040.</Al>
+                              <Al>(ook een kaart van)</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="div_o_1__div_iii" wId="gm0546_1__div_o_1__div_iii">
+                        <Kop>
+                           <Nummer>iii.</Nummer>
+                           <Opschrift>Duurzame Verstedelijking</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="div_o_1__div_iii__content_o_1"
+                                      wId="gm0546_1__div_o_1__div_iii__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
+                           <Kop>
+                              <Opschrift/>
+                           </Kop>
+                           <Inhoud>
+                              <Al>In de moderne stad is er veel vraag naar gemengde stedelijke milieus, met een hoogwaardige openbare ruimte en op goed bereikbare locaties. In de huidige stad zijn grote delen ontworpen vanuit het idee van het scheiden van functies. Richting de toekomst zijn gemengde gebieden in trek bij bedrijven en bewoners en het is dus ook van economische belang om gemengde gebieden te realiseren.<br/>Een andere doelstelling is het ontwikkelen van een inclusieve stad, een stad waarbij functies en voorzieningen nabij zijn en er plek is voor álle inwoners. Dit vraagt voldoende woningaanbod, ook voor lagere inkomens en voor specifieke doelgroepen. En het vraagt om nabijheid en toegankelijkheid van voorzieningen. In de monofunctionele delen van de stad is het aanbod aan voorzieningen beperkt. Het is niet zomaar mogelijk voorzieningen en functies te spreiden over de stad, er is wel economisch draagvlak nodig voor bepaalde voorzieningen. Dit vraagt soms om verdichting en menging. Vanuit verdichting is er ook een opgave meer te mengen, de ruimte in de stad is beperkt vanwege onder andere beschermd stadsgezicht .</Al>
+                              <Al>(ook een kaart van)</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="div_o_1__div_iv" wId="gm0546_1__div_o_1__div_iv">
+                        <Kop>
+                           <Nummer>iv.</Nummer>
+                           <Opschrift>Infra</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="div_o_1__div_iv__content_o_1"
+                                      wId="gm0546_1__div_o_1__div_iv__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
+                           <Kop>
+                              <Opschrift/>
+                           </Kop>
+                           <Inhoud>
+                              <Al>De stad kan niet functioneren zonder vitale infrastructuur zoals drinkwaterleidingen, riolering en een data- en elektriciteitsnetwerk. De ruimtelijke impact van deze netwerken en systemen in de stad is groot, zowel boven- als ondergronds, en wordt in de toekomst groter. Al deze netwerken en systemen staan onder druk of hebben een opgave richting 2040. De riolering is deels verouderd, de energietransitie maakt het noodzakelijk om (grotendeels) van het aardgas af te gaan. De ruimte in de bodem is beperkt en plaatselijk moeten er keuzes worden gemaakt: ruimte voor wortels van bomen of ruimte voor een warmteleiding? Het toenemende gebruik van elektriciteit zorgt voor plaatselijke overbelasting van het netwerk en de klimaatverandering zorgt ervoor dat waterleiding soms te ondiep liggen (i.v.m. toename van aantal hete dagen) of dat meer ruimte voor waterberging nodig is. Het is een stedelijke ruimtelijke hoofdopgave om de vitale infrastructuur om Leiden leefbaar te houden klaar te maken voor 2040.<br/>(ook een kaart van)</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="div_o_1__div_o_5" wId="gm0546_1__div_o_1__div_o_5">
+                        <Kop>
+                           <Opschrift>Conclusie</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="div_o_1__div_o_5__content_o_1"
+                                      wId="gm0546_1__div_o_1__div_o_5__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
+                           <Kop>
+                              <Opschrift/>
+                           </Kop>
+                           <Inhoud>
+                              <Al>Het samenbrengen van deze ruimtelijk opgaven tot een samenhangend geheel is geen ontwerpopgave op een blanco vel papier (tabula rasa). Alles dient ingepast worden in de bestaande stad en binnen de bestaande waarden van de stad. Rekening houdend met deze waarden tekent zich een ruimtelijke hoofdstructuur voor Leiden af welke het speelveld vormt voor de verdere ontwikkeling van de stad. Dit speelveld bestaat uit drie type leefmilieus met elke en ander profiel en andere mate van functiemenging, een nieuwe groen- blauwstructuur, een nieuw verkeerssysteem en nieuwe nieuwe netwerken met vitale infrastructuur.</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="div_o_1__div_o_6" wId="gm0546_1__div_o_1__div_o_6">
+                        <Kop>
+                           <Opschrift>De drie leefmilieus</Opschrift>
+                        </Kop>
+                        <Divisie eId="div_o_1__div_o_6__div_o_1"
+                                 wId="gm0546_1__div_o_1__div_o_6__div_o_1">
+                           <Kop>
+                              <Opschrift>
+                                 <IntIoRef eId="div_o_1__div_o_6__div_o_1__ref_o_1"
+                                           wId="gm0546_1__div_o_1__div_o_6__div_o_1__ref_o_1"
+                                           ref="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_3__ref_o_1">Leefmilieu Hoogstedelijk en dynamisch</IntIoRef> in 2040 (kaart 1)</Opschrift>
+                           </Kop>
+                           <Divisietekst eId="div_o_1__div_o_6__div_o_1__content_o_1"
+                                         wId="gm0546_1__div_o_1__div_o_6__div_o_1__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
+                              <Kop>
+                                 <Opschrift/>
+                              </Kop>
+                              <Inhoud>
+                                 <Al>Binnen dit leefmilieu zijn de belangrijkste functies op het gebied van kennis en cultuur te vinden. Dit zijn ook de ‘vaandeldragers’ waarmee de stad Leiden zich binnen de Randstad profileert (innovatiedistrict Bio Science Park – stationsgebied – historische cultuur-binnenstad). Het is het meest dynamische en stedelijke deel van Leiden: hier is de reuring! Veel verschillende mensen gebruiken het gebied op veel verschillende momenten om verschillende redenen. Evenementen en toeristische / culturele activiteiten geven kleur aan dit deel van stad.<br/>In dit deel van de stad wonen relatief veel kenniswerkers, creatievelingen, studenten en expats. Het gebied biedt, als onderdeel van de inclusieve stad ook ruimte aan de andere doelgroepen zoals sociale woningbouw, kwetsbare groepen en ouderen. Kennis en cultuur-functies zijn gebaat bij het ontmoeten: voor de uitwisseling van kennis, de bijdrage aan de innovatie en het creatieve proces is het belangrijk dat mensen elkaar op een ongedwongen, soms zelfs toevallige, manier kunnen ontmoeten en flexibel kunnen werken. Daarom bevinden zich hier ook hotels, cafés en restaurants en overige leisure functies en natuurlijk wordt er ook gewoond. Het gebied is aantrekkelijk door de aanwezigheid van beleefbaar erfgoed en hoogwaardig ingerichte openbare ruimten, parkjes en de grachten (groen en blauw). Verplaatsingen binnen het gebied zijn te voet, per fiets of met het openbaar vervoer. De auto heeft een ondergeschikte functie. Delen van dit gebied zijn autoluw of autovrij. Zo ontstaat in dit dichtbebouwde stedelijk gebied meer ruimte voor voetgangers, fietsers en ruimte en draagvlak voor het openbaar vervoer. Deelsystemen maken verplaatsen makkelijker.<br/>Het gebied heeft geen harde grenzen maar is via diverse robuuste en aantrekkelijke routes verbonden met de omliggende wijken en het omliggende landschap. De druk op de ruimte in het gebied is groot; de dichtheid is relatief hoog, de bebouwing compact met openbare straten en privé binnen gebieden/hofjes/balkons. De hoge dichtheid zorgt voor extra draagvlak voor zowel OV als de voorzieningen die het gebied levendig maken. De meeste voorzieningen zijn geclusterd langs doorlopende straten en historische routes en altijd nabij binnen het gebied. De economie is primair gericht op kennis (en met name Bio &amp; Life Science), cultuur, leisure en toerisme. Daar waar mogelijk zijn werk, wonen en voorzieningen veelal gemengd, naast elkaar en/of boven elkaar. Menging kan niet overal, bijvoorbeeld rond laboratoria op het Bio Science Park is wonen niet overal mogelijk.<br/>De belangrijkste grotere ruimtelijke dragers van het groen en blauw in dit gebied zijn de Oude Rijn, het Singelpark. Verdichting vindt plaats buiten de ‘beschermd stadsgezicht’-gebieden.<br/>Binnen het leefmilieu verschillen Bio Science Park, stationsgebied, binnenstad en Lammenschanscampus onderling, bijvoorbeeld wat betreft de programmatische mix, de verhouding historisch-nieuw en ruimtelijke vertaling. Wel vormen deze gebieden samen het hoogstedelijke en hoogdynamische hart van de stad.</Al>
+                                 <Figuur eId="div_o_1__div_o_6__div_o_1__content_o_1__img_o_1"
+                                         wId="gm0546_1__div_o_1__div_o_6__div_o_1__content_o_1__img_o_1">
+                                    <Illustratie naam="image2.jpeg"
+                                                 formaat="image/jpeg"
+                                                 breedte="7937"
+                                                 hoogte="5611"
+                                                 dpi="72"
+                                                 uitlijning="start"/>
+                                    <Bijschrift locatie="boven">Kaart 1</Bijschrift>
+                                 </Figuur>
+                              </Inhoud>
+                           </Divisietekst>
+                        </Divisie>
+                        <Divisie eId="div_o_1__div_o_6__div_o_2"
+                                 wId="gm0546_1__div_o_1__div_o_6__div_o_2">
+                           <Kop>
+                              <Opschrift>
+                                 <IntIoRef eId="div_o_1__div_o_6__div_o_2__ref_o_1"
+                                           wId="gm0546_1__div_o_1__div_o_6__div_o_2__ref_o_1"
+                                           ref="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_4__ref_o_1">Leefmilieu Stads en levendig</IntIoRef> in 2040 (kaart 2)</Opschrift>
+                           </Kop>
+                           <Divisietekst eId="div_o_1__div_o_6__div_o_2__content_o_1"
+                                         wId="gm0546_1__div_o_1__div_o_6__div_o_2__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
+                              <Kop>
+                                 <Opschrift/>
+                              </Kop>
+                              <Inhoud>
+                                 <Al>Gebieden in dit leefmilieu kenmerken zich door hun aantrekkelijke ligging direct grenzend aan het centrum van Leiden. In de gebieden wordt veel gewoond maar door de nabijheid van het centrum zijn de huishoudens stedelijk georiënteerd. In de gebieden wordt ook veel gewerkt, in huis, in de horeca en in de buurtgebonden bedrijvigheid. Dit leefmilieu biedt ruimte aan een mix van functies en een mix van doelgroepen/ huishoudens. Deze mix kan per buurt wel verschillen.<br/>De meeste verplaatsingen worden gedaan per fiets en te voet. De verbindingen met het centrum zijn via een fijnmazig langzaamverkeersnetwerk goed in orde. De belangrijkste fietsverbindingen tussen de gebieden en de binnenstad zijn de historische invalswegen van Leiden. Langs deze wegen liggen de meeste voorzieningen zodat de voorzieningen overal in het gebied nabij zijn.<br/>Grote delen van dit gebied lenen zich voor verdere verdichting en verstedelijking. In dit gebied wordt dan ook een aanzienlijk deel van de woningbouwopgave ingepast. Intensivering leidt dit ook steeds tot kwaliteitsverbetering. Verdichting vindt veelal plaats buiten de beschermd stadsgezicht-gebieden.<br/>De gemakkelijkste vervoerskeuze vanuit het gebied naar de binnenstad is met te voet of met de fiets, met de auto zijn de verbindingen naar de Leidse ring goed in orde. De goede bereikbaarheid met openbaar vervoer leent zich voor de gewenste autoluwe verstedelijking, passend bij de groene en duurzame stad die Leiden wil zijn.</Al>
+                                 <Al>De openbare ruimte en het groen/water nodigen uit tot gebruik. Deze plekken geven lucht en ruimte in de verder verdichtende stad. Door en langs de buurten loopt de stedelijke hoofdgroen-blauwstructuur (onder andere Singelpark en tweede groene ring) zodat de wijken via groene routes goed verbonden zijn met het buitengebied. Ook dragen deze structuren bij aan recreatiemogelijkheden en opgaven rond klimaatadaptatie.</Al>
+                                 <Figuur eId="div_o_1__div_o_6__div_o_2__content_o_1__img_o_1"
+                                         wId="gm0546_1__div_o_1__div_o_6__div_o_2__content_o_1__img_o_1">
+                                    <Illustratie naam="image3.jpeg"
+                                                 formaat="image/jpeg"
+                                                 breedte="7937"
+                                                 hoogte="5603"
+                                                 dpi="72"
+                                                 uitlijning="start"/>
+                                    <Bijschrift locatie="boven">Kaart 2</Bijschrift>
+                                 </Figuur>
+                              </Inhoud>
+                           </Divisietekst>
+                        </Divisie>
+                        <Divisie eId="div_o_1__div_o_6__div_o_3"
+                                 wId="gm0546_1__div_o_1__div_o_6__div_o_3">
+                           <Kop>
+                              <Opschrift>
+                                 <IntIoRef eId="div_o_1__div_o_6__div_o_3__ref_o_1"
+                                           wId="gm0546_1__div_o_1__div_o_6__div_o_3__ref_o_1"
+                                           ref="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_5__ref_o_1">Leefmilieu Groen en luw</IntIoRef> in 2040 (kaart 3)</Opschrift>
+                           </Kop>
+                           <Divisietekst eId="div_o_1__div_o_6__div_o_3__content_o_1"
+                                         wId="gm0546_1__div_o_1__div_o_6__div_o_3__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
+                              <Kop>
+                                 <Opschrift/>
+                              </Kop>
+                              <Inhoud>
+                                 <Al>De wijken aan de randen van de stad profiteren van zowel de ligging op fietsafstand van de binnenstad als de ligging aan de grote landschappen. Stad én buitengebied zijn nabij. De grote kracht van deze gebieden is de relatieve rust, het groene karakter (zowel openbaar groen als privétuinen) en het relatief grote aandeel eengezinswoningen. Het zijn de wat meer traditionele woonwijken, met een centraal gelegen voorzieningencentrum en wijk(sport)park. Naast de woongebieden bevinden zich hier ook de meer traditionele bedrijventerreinen met de dienstverlenende bedrijfsfuncties die niet goed mengbaar zijn met wonen.<br/>De auto heeft hier een belangrijke rol. De wijken liggen aan de belangrijke invalswegen van de stad. Via de Leidse ring zijn de verbindingen naar andere wijken met de auto goed op orde. De fietsroutes tussen deze wijken en de binnenstad / stations / andere wijken zijn direct en aantrekkelijk. Waar mogelijk maken zij gebruik van de historische routes die stad en ommeland al sinds jaar en dag met elkaar verbinden. Barrières als grote infrastructuur en water worden waar nodig beter oversteekbaar. Openbaar vervoer (bus, MAAS) verbindt de wijk(centra) met de binnenstad en het station.<br/>Het wijkwinkelcentrum vormt, samen met het goed toegankelijke wijk(sport)park, het hart van de wijk. Historische routes, (water)structuren en bijzondere plekken geven meer kleur aan de openbare ruimte. De tweede groene ring in de stad (naast het Singelpark)<br/>In deze wijken wonen relatief veel gezinnen. Extra (gestapelde) woningen voor oudere doelgroepen en kleinere huishoudens kunnen de bestaande woningvoorraad aanvullen. De groeiende groep ouderen kan zo binnen de wijk (en het sociale netwerk) doorstromen.</Al>
+                                 <Figuur eId="div_o_1__div_o_6__div_o_3__content_o_1__img_o_1"
+                                         wId="gm0546_1__div_o_1__div_o_6__div_o_3__content_o_1__img_o_1">
+                                    <Illustratie naam="image4.jpeg"
+                                                 formaat="image/jpeg"
+                                                 breedte="7937"
+                                                 hoogte="5605"
+                                                 dpi="72"
+                                                 uitlijning="start"/>
+                                    <Bijschrift locatie="boven">Kaart 3</Bijschrift>
+                                 </Figuur>
+                              </Inhoud>
+                           </Divisietekst>
+                        </Divisie>
+                     </Divisie>
+                     <Divisie eId="div_o_1__div_o_7" wId="gm0546_1__div_o_1__div_o_7">
+                        <Kop>
+                           <Opschrift>Gebieden binnen de stad (met soms overlappende leefmilieu’s) (Voorbeeld vastgesteld <IntIoRef eId="div_o_1__div_o_7__ref_o_1"
+                                        wId="gm0546_1__div_o_1__div_o_7__ref_o_1"
+                                        ref="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_2__ref_o_1">ontwikkelperspectief Zuidwest</IntIoRef>)</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="div_o_1__div_o_7__content_o_1"
+                                      wId="gm0546_1__div_o_1__div_o_7__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
+                           <Kop>
+                              <Opschrift/>
+                           </Kop>
+                           <Inhoud>
+                              <Al>Klein stukje tekst over zuidwest in visie verder verwijzen naar document <ExtRef ref="https://www.ruimtelijkeplannen.nl/documents/NL.IMRO.0546.OP00001-0201/t_NL.IMRO.0546.OP00001-0201.pdf"
+                                         soort="URL">https://www.ruimtelijkeplannen.nl/documents/NL.IMRO.0546.OP00001-0201/t_NL.IMRO.0546.OP00001-0201.pdf</ExtRef>
+                              </Al>
+                           </Inhoud>
+                        </Divisietekst>
+                        <Divisie eId="div_o_1__div_o_7__div_o_1"
+                                 wId="gm0546_1__div_o_1__div_o_7__div_o_1">
+                           <Kop>
+                              <Opschrift>Visie voor Leiden Zuidwest in 2040</Opschrift>
+                           </Kop>
+                           <Divisietekst eId="div_o_1__div_o_7__div_o_1__content_o_1"
+                                         wId="gm0546_1__div_o_1__div_o_7__div_o_1__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
+                              <Kop>
+                                 <Opschrift/>
+                              </Kop>
+                              <Inhoud>
+                                 <Al>In 2040 is Leiden Zuidwest een aantrekkelijke wijk waar mensen prettig wonen, werken en recreëren. In deze wijk kunnen mensen modern in het groen wonen maar ook wonen en werken in een stedelijke gebied en recreëren in het landschap. Een aantal bijzondere plekken geeft Zuidwest extra karakter en maakt het ook voor mensen van buiten het gebied aantrekkelijk om er naar toe te gaan. Dit zijn zowel bruisende stedelijke plekken, als mooie rustige plekken aan de historische landschappelijke structuren. Met name de sportvoorzieningen, de lokale centra en de scholen hebben een wijkoverstijgende functie. De karakteristieke kwaliteiten uit verschillende perioden zijn versterkt en zichtbaar gemaakt in het gebied.</Al>
+                                 <Al>In 2040 is Zuidwest een voorloper op het gebied van gezond &amp; duurzaam leven. Centraal daarbij staat het groen in Zuidwest. Het groen is herkenbaar onderverdeeld in (1) een robuust blauw-groen netwerk door het gebied, (2) buurtparken en (3) gebruikt groen aan huis. Het groen en het water zijn dragende kwaliteiten die bijdragen aan meerdere doelen. Het groen zorgt voor een natuurlijke en gezonde omgeving en nodigt uit tot beweging: lopen en fietsen, maar ook spelen en sporten. Tegelijk brengt het groen rust en zijn er groene plekken waar mensen elkaar ontmoeten en in contact komen met een rijk leven van planten en dieren. Het groen maakt het gebied klimaatrobuust. Doordat de wijk geen aardgas meer gebruikt, zet Zuidwest zich in voor een schone lucht en een stabiel klimaat.<br/>Leiden Zuidwest is in 2040 een wijk waarin inwoners zich met elkaar verbonden voelen en naar elkaar om kijken. Het is een inclusieve wijk waarin iedereen prettig en gezond kan wonen en meedoet. Het is een dynamische woonwijk waar mensen werken en naar school gaan.<br/>In 2040 is Zuidwest goed met haar omgeving verbonden door nieuwe verbindingen en slimme mobiliteitsconcepten. De prioriteit ligt bij de fietser, de voetganger en het openbaar vervoer. Doordat straten en lanen meer een plek worden om aangenaam te verblijven, wordt het aantrekkelijker om je als voetganger en fietser door het gebied te verplaatsen. Met de voortschrijdende techniek zijn er slimme en schone vervoersconcepten. In 2040 is de openbare ruimte en het OV-systeem zo ingericht, dat speciale doelgroepen zich gemakkelijk kunnen verplaatsen.</Al>
+                                 <Figuur eId="div_o_1__div_o_7__div_o_1__content_o_1__img_o_1"
+                                         wId="gm0546_1__div_o_1__div_o_7__div_o_1__content_o_1__img_o_1">
+                                    <Illustratie naam="image5.png"
+                                                 formaat="image/png"
+                                                 breedte="7937"
+                                                 hoogte="9836"
+                                                 dpi="72"
+                                                 uitlijning="start"/>
+                                 </Figuur>
+                                 <Al>Zie document zuidwest voor contouren</Al>
+                              </Inhoud>
+                           </Divisietekst>
+                        </Divisie>
+                     </Divisie>
+                  </Divisie>
+               </Lichaam>
+               <Bijlage eId="cmp_1" wId="gm0546_1__cmp_1">
+                  <Kop>
+                     <Label>Bijlage</Label>
+                     <Nummer>1</Nummer>
+                     <Opschrift>Overzicht informatieobjecten</Opschrift>
+                  </Kop>
+                  <Divisietekst eId="cmp_1__content_o_1" wId="gm0546_1__cmp_1__content_o_1">
+                     <Kop>
+                        <Opschrift/>
+                     </Kop>
+                     <Inhoud>
+                        <Begrippenlijst eId="cmp_1__content_o_1__list_o_1"
+                                        wId="gm0546_1__cmp_1__content_o_1__list_o_1">
+                           <Begrip eId="cmp_1__content_o_1__list_o_1__item_o_1"
+                                   wId="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_1">
+                              <Term>Gemeente Leiden</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              wId="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0546/2020/gemeente_leiden/nld@2020-08-20">/join/id/regdata/gm0546/2020/gemeente_leiden/nld@2020-08-20</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_1__content_o_1__list_o_1__item_o_2"
+                                   wId="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_2">
+                              <Term>Ontwikkelperspectief Zuidwest</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_1__content_o_1__list_o_1__item_o_2__ref_o_1"
+                                              wId="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_2__ref_o_1"
+                                              ref="/join/id/regdata/gm0546/2020/ontwikkelperspectief_zuidwest/nld@2020-08-20">/join/id/regdata/gm0546/2020/ontwikkelperspectief_zuidwest/nld@2020-08-20</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_1__content_o_1__list_o_1__item_o_3"
+                                   wId="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_3">
+                              <Term>1 Hoogstedelijk en dynamisch</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_1__content_o_1__list_o_1__item_o_3__ref_o_1"
+                                              wId="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_3__ref_o_1"
+                                              ref="/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch/nld@2020-08-20">/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch/nld@2020-08-20</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_1__content_o_1__list_o_1__item_o_4"
+                                   wId="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_4">
+                              <Term>2 Stads en levendig</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_1__content_o_1__list_o_1__item_o_4__ref_o_1"
+                                              wId="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_4__ref_o_1"
+                                              ref="/join/id/regdata/gm0546/2020/2_stads_en_levendig/nld@2020-08-20">/join/id/regdata/gm0546/2020/2_stads_en_levendig/nld@2020-08-20</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_1__content_o_1__list_o_1__item_o_5"
+                                   wId="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_5">
+                              <Term>3 Groen en luw</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_1__content_o_1__list_o_1__item_o_5__ref_o_1"
+                                              wId="gm0546_1__cmp_1__content_o_1__list_o_1__item_o_5__ref_o_1"
+                                              ref="/join/id/regdata/gm0546/2020/3_groen_en_luw/nld@2020-08-20">/join/id/regdata/gm0546/2020/3_groen_en_luw/nld@2020-08-20</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                        </Begrippenlijst>
+                     </Inhoud>
+                  </Divisietekst>
+               </Bijlage>
+            </RegelingVrijetekst>
+         </WijzigBijlage>
+      </BesluitCompact>
+   </BesluitVersie>
+   <RegelingVersieInformatie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/akn/nl/act/gm0546/2020/OVILEI001</FRBRWork>
+         <FRBRExpression>/akn/nl/act/gm0546/2020/OVILEI001/nld@2020-08-19;1</FRBRExpression>
+         <soortWork>/join/id/stop/work_019</soortWork>
+      </ExpressionIdentificatie>
+      <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <versienummer>1</versienummer>
+      </RegelingVersieMetadata>
+      <RegelingMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <soortRegeling>/join/id/stop/regelingtype_006</soortRegeling>
+         <eindverantwoordelijke>/tooi/id/gemeente/gm0546</eindverantwoordelijke>
+         <maker>/tooi/id/gemeente/gm0546</maker>
+         <officieleTitel>Concept Omgevingsvisie Leiden</officieleTitel>
+         <heeftCiteertitelInformatie>
+            <CiteertitelInformatie>
+               <citeertitel>Concept Omgevingsvisie Leiden</citeertitel>
+               <isOfficieel>true</isOfficieel>
+            </CiteertitelInformatie>
+         </heeftCiteertitelInformatie>
+         <alternatieveTitels>
+            <alternatieveTitel>Leiden</alternatieveTitel>
+         </alternatieveTitels>
+         <overheidsdomeinen>
+            <overheidsdomein>/tooi/def/concept/c_bed49b60</overheidsdomein>
+         </overheidsdomeinen>
+         <onderwerpen>
+            <onderwerp>/tooi/def/concept/c_cfc7d5ab</onderwerp>
+         </onderwerpen>
+         <rechtsgebieden>
+            <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied>
+         </rechtsgebieden>
+      </RegelingMetadata>
+   </RegelingVersieInformatie>
+</AanleveringBesluit>

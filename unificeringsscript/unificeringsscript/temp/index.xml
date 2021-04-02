@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+   <file type="gml.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/001_gemeente_leiden.gml</fullname>
+      <name>001_gemeente_leiden.gml</name>
+      <guid>
+         <org>4b46ca74-3840-4ce1-91b6-abf749802f6c</org>
+      </guid>
+   </file>
+   <file type="gml.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/002_ontwikkelperspectief_zuidwest.gml</fullname>
+      <name>002_ontwikkelperspectief_zuidwest.gml</name>
+      <guid>
+         <org>c890087a-1b9d-4bc2-8a84-6b8f9a638805</org>
+      </guid>
+   </file>
+   <file type="gml.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/003_1_hoogstedelijk_en_dynamisch.gml</fullname>
+      <name>003_1_hoogstedelijk_en_dynamisch.gml</name>
+      <guid>
+         <org>439b737f-f9c6-4e07-871f-e486ad0fff53</org>
+      </guid>
+   </file>
+   <file type="gml.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/004_2_stads_en_levendig.gml</fullname>
+      <name>004_2_stads_en_levendig.gml</name>
+      <guid>
+         <org>fa5a51ce-79df-4cde-8f02-5b5cbaca4860</org>
+      </guid>
+   </file>
+   <file type="gml.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/005_3_groen_en_luw.gml</fullname>
+      <name>005_3_groen_en_luw.gml</name>
+      <guid>
+         <org>e8dafb1b-adb6-4c23-a6b0-e1d275cfcee5</org>
+      </guid>
+   </file>
+   <file type="gio.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/GIO_001.xml</fullname>
+      <name>GIO_001.xml</name>
+   </file>
+   <file type="gio.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/GIO_002.xml</fullname>
+      <name>GIO_002.xml</name>
+   </file>
+   <file type="gio.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/GIO_003.xml</fullname>
+      <name>GIO_003.xml</name>
+   </file>
+   <file type="gio.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/GIO_004.xml</fullname>
+      <name>GIO_004.xml</name>
+   </file>
+   <file type="gio.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/GIO_005.xml</fullname>
+      <name>GIO_005.xml</name>
+   </file>
+   <file type="besluit.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/OVILEI001.xml</fullname>
+      <name>OVILEI001.xml</name>
+   </file>
+   <file type="manifest_ow.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/manifest-ow.xml</fullname>
+      <name>manifest-ow.xml</name>
+   </file>
+   <file type="opdracht.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/opdracht.xml</fullname>
+      <name>opdracht.xml</name>
+   </file>
+   <file type="vrijetekst.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/owDivisie.xml</fullname>
+      <name>owDivisie.xml</name>
+   </file>
+   <file type="hoofdlijn.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/owHoofdlijn.xml</fullname>
+      <name>owHoofdlijn.xml</name>
+   </file>
+   <file type="locatie.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/owLocatie.xml</fullname>
+      <name>owLocatie.xml</name>
+   </file>
+   <file type="regelingsgebied.xml">
+      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/owRegelingsgebied.xml</fullname>
+      <name>owRegelingsgebied.xml</name>
+   </file>
+</index>

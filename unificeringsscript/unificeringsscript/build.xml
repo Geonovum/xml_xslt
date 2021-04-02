@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project basedir="." name="tpod" default="main">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+  <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask" classpath="xmltask.jar"/>
+
+  <property name="input.dir" value="bron"/>
+  <property name="output.dir" value="resultaat"/>
+  <property name="temp.dir" value="temp"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete dir="${output.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${output.dir}"/>
+    <delete dir="${temp.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${temp.dir}"/>
+  </target>
+
+  <!-- kopieer bestanden naar resultaat -->
+
+  <target name="copy" description="Kopieer bestanden">
+    <copy todir="${output.dir}">
+      <fileset dir="${input.dir}"/>
+    </copy>
+  </target>
+
+  <!-- maak parameters -->
+
+  <path id="input.list">
+    <fileset dir="${input.dir}" includes="*.xml *.gml"/>
+  </path>
+  <path id="basedir" path="${basedir}"/>
+
+  <if>
+    <os family="unix"/>
+    <then>
+      <pathconvert property="base.dir" refid="basedir" dirsep="/" targetos="unix"/>
+      <pathconvert property="file.list" refid="input.list" dirsep="/" pathsep=";" targetos="unix"/>
+    </then>
+    <else>
+      <pathconvert property="base.dir" refid="basedir" dirsep="/" targetos="windows">
+        <map from="${basedir}" to="file:/${basedir}"/>
+      </pathconvert>
+      <pathconvert property="file.list" refid="input.list" dirsep="/" pathsep=";" targetos="windows">
+        <map from="${basedir}" to="file:/${basedir}"/>
+      </pathconvert>
+    </else>
+  </if>
+  
+
+  <target name="index" description="Creëert een index van de soorten bestanden waaruit de dataset bestaat.">
+    <xslt in="template.xml" out="${temp.dir}/index.xml" style="index.xsl" processor="trax" force="true">
+      <param name="file.list" expression="${file.list}"/>
+      <param name="base.dir" expression="${base.dir}"/>
+    </xslt>
+  </target>
+
+  <target name="guids" description="Creëert een juiste aantal guids benodigd en verwerkt die in GML-bestanden en referenties.">
+    <var name="guids.list" value=""/>
+    <var name="locationfile.list" value=""/>
+    <var name="gmlfile.list" value=""/>
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/file/guid">
+        <actions>
+          <java jar="uuidgen.jar" fork="true" outputproperty="guid">
+            <arg value="-q"/>
+          </java>
+          <var name="guids.list" value="${guids.list};${guid}"/>
+        </actions>
+      </call>
+      <call path="index/file[contains(@type,'gml.xml')]">
+        <actions>
+          <param name="gmlFile" value="name/text()"/>
+          <var name="gmlfile.list" value="${gmlfile.list};@{gmlFile}"/>
+        </actions>
+      </call>
+      <call path="index/file[contains(@type,'location.xml')]">
+        <actions>
+          <param name="locationFile" path="name/text()"/>
+          <var name="locationfile.list" value="${locationfile.list};@{locationFile}"/>
+        </actions>
+      </call>
+    </xmltask>
+<!--    <xslt in="template.xml" out="${temp.dir}/index.xml" style="guids.xsl" processor="trax" force="true">
+      <param name="guids.list" expression="${guids.list}"/>
+      <param name="locationfile.list" expression="${locationfile.list}"/>
+      <param name="gmlfile.list" expression="${gmlfile.list}"/>
+      <param name="base.dir" expression="${base.dir}"/>
+    </xslt>
+-->    <echo message="${guids.list}"></echo>
+    <echo message="${gmlfile.list}"></echo>
+    <echo message="${locationfile.list}"></echo>
+  </target>
+
+
+
+  <!-- totale transformatie -->
+
+  <target name="main" description="Totale transformatie" depends="init, copy, index, guids"/>
+
+</project>
