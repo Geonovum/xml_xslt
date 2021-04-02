@@ -5,8 +5,10 @@ Het werkt wel in MINGW64 (een POSIX-shell die in Windows geïnstalleerd kan word
 <br />
 Hoe werkt het?
 <br />
-Eerst het bestand plaatsen in de directory waar Gimp zoekt naar bestanden, deze kan achterhaald worden door te kijken in Gimp -> Edit -> Preferences
-Nadat het bestand in deze directory is geplaatst moet Gimp worden gevraagd om de scripts te lezen. Dit gebeurd door Filters -> Script-Fu -> Scripts-Refresh 
+Eerst het bestand plaatsen in de directory waar Gimp zoekt naar bestanden, 
+deze kan achterhaald worden door te kijken in Gimp -> Edit -> Preferences
+Nadat het bestand in deze directory is geplaatst moet Gimp worden gevraagd om de scripts te lezen. 
+Dit gebeurd door Filters -> Script-Fu -> Scripts-Refresh 
 <br />
 Indien dit niet juist is gebeurd dan komen er foutmeldingen als de scripts worden aangeroepen.
 <br />
