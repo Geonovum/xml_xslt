@@ -77,15 +77,5 @@
         </l:Gebied>
       </ow-dc:owObject>
     </sl:stand>
-    <sl:stand>
-      <ow-dc:owObject>
-        <l:Gebiedengroep>
-          <l:identificatie></l:identificatie>
-          <l:groepselement>
-            <l:GebiedRef xlink:href=""/>
-          </l:groepselement>
-        </l:Gebiedengroep>
-      </ow-dc:owObject>
-    </sl:stand>
   </sl:standBestand>
 </ow-dc:owBestand>

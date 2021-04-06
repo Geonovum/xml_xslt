@@ -1,39 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
+   <guids gmlfile="001_gemeente_leiden.gml">
+      <guid>
+         <org>4b46ca74-3840-4ce1-91b6-abf749802f6c</org>
+         <new>693bf27e-0e6b-4bc9-bcd1-48fcbc7b5144</new>
+      </guid>
+      <guid>
+         <org>4b46ca74-3840-4ce1-91b6-abf74980aaaa</org>
+         <new>eb049d59-b679-49b6-9f0e-15a92f363190</new>
+      </guid>
+   </guids>
    <file type="gml.xml">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/001_gemeente_leiden.gml</fullname>
       <name>001_gemeente_leiden.gml</name>
-      <guid>
-         <org>4b46ca74-3840-4ce1-91b6-abf749802f6c</org>
-      </guid>
+      <guids>
+         <guid>
+            <org>4b46ca74-3840-4ce1-91b6-abf749802f6c</org>
+            <new>734936af-f1d4-429f-a901-dcec1480d00f</new>
+         </guid>
+         <guid>
+            <org>4b46ca74-3840-4ce1-91b6-abf74980aaaa</org>
+            <new>fba52fd9-9b12-486f-9e67-943baaf2bcc6</new>
+         </guid>
+      </guids>
    </file>
+   <guids gmlfile="002_ontwikkelperspectief_zuidwest.gml">
+      <guid>
+         <org>c890087a-1b9d-4bc2-8a84-6b8f9a638805</org>
+         <new>b3ce85f0-163e-4348-a7f1-475fefad502d</new>
+      </guid>
+   </guids>
    <file type="gml.xml">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/002_ontwikkelperspectief_zuidwest.gml</fullname>
       <name>002_ontwikkelperspectief_zuidwest.gml</name>
-      <guid>
-         <org>c890087a-1b9d-4bc2-8a84-6b8f9a638805</org>
-      </guid>
+      <guids>
+         <guid>
+            <org>c890087a-1b9d-4bc2-8a84-6b8f9a638805</org>
+            <new>991743f5-0ec7-4d98-a113-f774e7101bb5</new>
+         </guid>
+      </guids>
    </file>
+   <guids gmlfile="003_1_hoogstedelijk_en_dynamisch.gml">
+      <guid>
+         <org>439b737f-f9c6-4e07-871f-e486ad0fff53</org>
+         <new>fd01a781-efb5-4760-83f6-b0a43c748af7</new>
+      </guid>
+   </guids>
    <file type="gml.xml">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/003_1_hoogstedelijk_en_dynamisch.gml</fullname>
       <name>003_1_hoogstedelijk_en_dynamisch.gml</name>
-      <guid>
-         <org>439b737f-f9c6-4e07-871f-e486ad0fff53</org>
-      </guid>
+      <guids>
+         <guid>
+            <org>439b737f-f9c6-4e07-871f-e486ad0fff53</org>
+            <new>2a5cbe62-a1e4-4b4c-8e36-4d3f94be5460</new>
+         </guid>
+      </guids>
    </file>
+   <guids gmlfile="004_2_stads_en_levendig.gml">
+      <guid>
+         <org>fa5a51ce-79df-4cde-8f02-5b5cbaca4860</org>
+         <new>0bea8d7d-7460-41f4-b130-e7d61873107c</new>
+      </guid>
+   </guids>
    <file type="gml.xml">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/004_2_stads_en_levendig.gml</fullname>
       <name>004_2_stads_en_levendig.gml</name>
-      <guid>
-         <org>fa5a51ce-79df-4cde-8f02-5b5cbaca4860</org>
-      </guid>
+      <guids>
+         <guid>
+            <org>fa5a51ce-79df-4cde-8f02-5b5cbaca4860</org>
+            <new>174e153a-3695-43f8-8e3b-7ef8132eb23a</new>
+         </guid>
+      </guids>
    </file>
+   <guids gmlfile="005_3_groen_en_luw.gml">
+      <guid>
+         <org>e8dafb1b-adb6-4c23-a6b0-e1d275cfcee5</org>
+         <new>117a77fc-c16f-42f5-9a1f-10a872f02dc4</new>
+      </guid>
+   </guids>
    <file type="gml.xml">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/005_3_groen_en_luw.gml</fullname>
       <name>005_3_groen_en_luw.gml</name>
-      <guid>
-         <org>e8dafb1b-adb6-4c23-a6b0-e1d275cfcee5</org>
-      </guid>
+      <guids>
+         <guid>
+            <org>e8dafb1b-adb6-4c23-a6b0-e1d275cfcee5</org>
+            <new>d3faaa19-5056-481a-9b6e-1b1d0fd3672a</new>
+         </guid>
+      </guids>
    </file>
    <file type="gio.xml">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/GIO_001.xml</fullname>
@@ -78,6 +131,23 @@
    <file type="locatie.xml">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/owLocatie.xml</fullname>
       <name>owLocatie.xml</name>
+      <guids>
+         <guid>
+            <org>4b46ca74-3840-4ce1-91b6-abf749802f6c</org>
+         </guid>
+         <guid>
+            <org>c890087a-1b9d-4bc2-8a84-6b8f9a638805</org>
+         </guid>
+         <guid>
+            <org>439b737f-f9c6-4e07-871f-e486ad0fff53</org>
+         </guid>
+         <guid>
+            <org>fa5a51ce-79df-4cde-8f02-5b5cbaca4860</org>
+         </guid>
+         <guid>
+            <org>e8dafb1b-adb6-4c23-a6b0-e1d275cfcee5</org>
+         </guid>
+      </guids>
    </file>
    <file type="regelingsgebied.xml">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/owRegelingsgebied.xml</fullname>

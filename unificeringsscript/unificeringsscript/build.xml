@@ -7,6 +7,7 @@
   <property name="input.dir" value="bron"/>
   <property name="output.dir" value="resultaat"/>
   <property name="temp.dir" value="temp"/>
+  <property name="work.dir" value="temp"/>
 
   <!-- initialiseer mappen -->
 
@@ -56,44 +57,48 @@
     </xslt>
   </target>
 
-  <target name="guids" description="Creëert een juiste aantal guids benodigd en verwerkt die in GML-bestanden en referenties.">
-    <var name="guids.list" value=""/>
-    <var name="locationfile.list" value=""/>
-    <var name="gmlfile.list" value=""/>
+  <target name="guidse" description="Creëert een juiste aantal guids benodigd en verwerkt die in GML-bestanden en referenties.">
     <xmltask source="${temp.dir}/index.xml">
-      <call path="index/file/guid">
+      <call path="index/file[contains(@type,'gml.xml') or contains(@type,'locatie.xml')]">
+        <param name="file.name" path="name/text()"/>
+        <param name="oldGUID" path="guid/org/text()"/>
+        <param name="newGUID" path="guid/new/text()"/>
         <actions>
-          <java jar="uuidgen.jar" fork="true" outputproperty="guid">
-            <arg value="-q"/>
-          </java>
-          <var name="guids.list" value="${guids.list};${guid}"/>
-        </actions>
-      </call>
-      <call path="index/file[contains(@type,'gml.xml')]">
-        <actions>
-          <param name="gmlFile" value="name/text()"/>
-          <var name="gmlfile.list" value="${gmlfile.list};@{gmlFile}"/>
-        </actions>
-      </call>
-      <call path="index/file[contains(@type,'location.xml')]">
-        <actions>
-          <param name="locationFile" path="name/text()"/>
-          <var name="locationfile.list" value="${locationfile.list};@{locationFile}"/>
+          <xslt in="${output.dir}/@{file.name}" out="${temp.dir}/@{file.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
+            <param name="oldGUID" expression="@{oldGUID}"/>
+            <param name="newGUID" expression="@{newGUID}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{file.name}" tofile="${output.dir}/@{file.name}"/>
         </actions>
       </call>
     </xmltask>
-<!--    <xslt in="template.xml" out="${temp.dir}/index.xml" style="guids.xsl" processor="trax" force="true">
-      <param name="guids.list" expression="${guids.list}"/>
-      <param name="locationfile.list" expression="${locationfile.list}"/>
-      <param name="gmlfile.list" expression="${gmlfile.list}"/>
-      <param name="base.dir" expression="${base.dir}"/>
-    </xslt>
--->    <echo message="${guids.list}"></echo>
-    <echo message="${gmlfile.list}"></echo>
-    <echo message="${locationfile.list}"></echo>
   </target>
 
-
+  <target name="guids" description="Creëert een juiste aantal guids benodigd en verwerkt die in GML-bestanden en referenties.">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/guids/guid">
+        <param name="file.name" path="../@gmlfile"/>
+        <param name="oldGUID" path="org/text()"/>
+        <param name="newGUID" path="new/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{file.name}" out="${temp.dir}/@{file.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
+            <param name="oldGUID" expression="@{oldGUID}"/>
+            <param name="newGUID" expression="@{newGUID}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{file.name}" tofile="${output.dir}/@{file.name}"/>
+        </actions>
+        <param name="file.name2" path="/index/file/guids/guid[org=@{oldGUID}]"/>
+        <actions>
+          <xslt in="${output.dir}/@{file.name2}" out="${temp.dir}/@{file.name2}" extension=".gml" style="guids.xsl" processor="trax" force="true">
+            <param name="oldGUID" expression="@{oldGUID}"/>
+            <param name="newGUID" expression="@{newGUID}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{file.name2}" tofile="${output.dir}/@{file.name2}"/>
+        </actions>
+      </call>
+    </xmltask>
+  </target>
+  
 
   <!-- totale transformatie -->
 
