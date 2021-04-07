@@ -30,7 +30,6 @@
     <xsl:param name="newGUID"/>
 
 
-    <!--  identity template  -->
     <xsl:template match="@*|node()">
         <xsl:copy>
             <xsl:apply-templates select="@*|node()"/>

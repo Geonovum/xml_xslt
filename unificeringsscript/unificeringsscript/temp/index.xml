@@ -1,155 +1,325 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
-   <guids gmlfile="001_gemeente_leiden.gml">
-      <guid>
+   <owids/>
+   <guids>
+      <guid gmlfile="001_gemeente_leiden.gml" locatiefile="owLocatie.xml">
          <org>4b46ca74-3840-4ce1-91b6-abf749802f6c</org>
-         <new>693bf27e-0e6b-4bc9-bcd1-48fcbc7b5144</new>
+         <new>c65c3002-cebf-4e03-9db8-a2e61c9a8bfd</new>
       </guid>
-      <guid>
+      <guid gmlfile="001_gemeente_leiden.gml" locatiefile="owLocatie.xml">
          <org>4b46ca74-3840-4ce1-91b6-abf74980aaaa</org>
-         <new>eb049d59-b679-49b6-9f0e-15a92f363190</new>
+         <new>a9b2154d-a6dd-4ed9-9431-dad6dd61ae34</new>
       </guid>
    </guids>
-   <file type="gml.xml">
+   <file type="gml.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/001_gemeente_leiden.gml</fullname>
       <name>001_gemeente_leiden.gml</name>
-      <guids>
-         <guid>
-            <org>4b46ca74-3840-4ce1-91b6-abf749802f6c</org>
-            <new>734936af-f1d4-429f-a901-dcec1480d00f</new>
-         </guid>
-         <guid>
-            <org>4b46ca74-3840-4ce1-91b6-abf74980aaaa</org>
-            <new>fba52fd9-9b12-486f-9e67-943baaf2bcc6</new>
-         </guid>
-      </guids>
    </file>
-   <guids gmlfile="002_ontwikkelperspectief_zuidwest.gml">
-      <guid>
+   <owids/>
+   <guids>
+      <guid gmlfile="002_ontwikkelperspectief_zuidwest.gml"
+            locatiefile="owLocatie.xml">
          <org>c890087a-1b9d-4bc2-8a84-6b8f9a638805</org>
-         <new>b3ce85f0-163e-4348-a7f1-475fefad502d</new>
+         <new>772a1781-3116-4243-af7e-a068da0166cd</new>
       </guid>
    </guids>
-   <file type="gml.xml">
+   <file type="gml.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/002_ontwikkelperspectief_zuidwest.gml</fullname>
       <name>002_ontwikkelperspectief_zuidwest.gml</name>
-      <guids>
-         <guid>
-            <org>c890087a-1b9d-4bc2-8a84-6b8f9a638805</org>
-            <new>991743f5-0ec7-4d98-a113-f774e7101bb5</new>
-         </guid>
-      </guids>
    </file>
-   <guids gmlfile="003_1_hoogstedelijk_en_dynamisch.gml">
-      <guid>
+   <owids/>
+   <guids>
+      <guid gmlfile="003_1_hoogstedelijk_en_dynamisch.gml"
+            locatiefile="owLocatie.xml">
          <org>439b737f-f9c6-4e07-871f-e486ad0fff53</org>
-         <new>fd01a781-efb5-4760-83f6-b0a43c748af7</new>
+         <new>b95b94d8-736f-4934-83dd-238f4becaaf0</new>
       </guid>
    </guids>
-   <file type="gml.xml">
+   <file type="gml.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/003_1_hoogstedelijk_en_dynamisch.gml</fullname>
       <name>003_1_hoogstedelijk_en_dynamisch.gml</name>
-      <guids>
-         <guid>
-            <org>439b737f-f9c6-4e07-871f-e486ad0fff53</org>
-            <new>2a5cbe62-a1e4-4b4c-8e36-4d3f94be5460</new>
-         </guid>
-      </guids>
    </file>
-   <guids gmlfile="004_2_stads_en_levendig.gml">
-      <guid>
+   <owids/>
+   <guids>
+      <guid gmlfile="004_2_stads_en_levendig.gml" locatiefile="owLocatie.xml">
          <org>fa5a51ce-79df-4cde-8f02-5b5cbaca4860</org>
-         <new>0bea8d7d-7460-41f4-b130-e7d61873107c</new>
+         <new>7762c4ff-64cb-4517-ae73-aefa6d1cf6b2</new>
       </guid>
    </guids>
-   <file type="gml.xml">
+   <file type="gml.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/004_2_stads_en_levendig.gml</fullname>
       <name>004_2_stads_en_levendig.gml</name>
-      <guids>
-         <guid>
-            <org>fa5a51ce-79df-4cde-8f02-5b5cbaca4860</org>
-            <new>174e153a-3695-43f8-8e3b-7ef8132eb23a</new>
-         </guid>
-      </guids>
    </file>
-   <guids gmlfile="005_3_groen_en_luw.gml">
-      <guid>
+   <owids/>
+   <guids>
+      <guid gmlfile="005_3_groen_en_luw.gml" locatiefile="owLocatie.xml">
          <org>e8dafb1b-adb6-4c23-a6b0-e1d275cfcee5</org>
-         <new>117a77fc-c16f-42f5-9a1f-10a872f02dc4</new>
+         <new>2c2f2eb8-0d4a-46eb-93bb-e5084e6dd3ab</new>
       </guid>
    </guids>
-   <file type="gml.xml">
+   <file type="gml.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/005_3_groen_en_luw.gml</fullname>
       <name>005_3_groen_en_luw.gml</name>
-      <guids>
-         <guid>
-            <org>e8dafb1b-adb6-4c23-a6b0-e1d275cfcee5</org>
-            <new>d3faaa19-5056-481a-9b6e-1b1d0fd3672a</new>
-         </guid>
-      </guids>
    </file>
-   <file type="gio.xml">
+   <owids/>
+   <file type="gio.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/GIO_001.xml</fullname>
       <name>GIO_001.xml</name>
    </file>
-   <file type="gio.xml">
+   <owids/>
+   <file type="gio.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/GIO_002.xml</fullname>
       <name>GIO_002.xml</name>
    </file>
-   <file type="gio.xml">
+   <owids/>
+   <file type="gio.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/GIO_003.xml</fullname>
       <name>GIO_003.xml</name>
    </file>
-   <file type="gio.xml">
+   <owids/>
+   <file type="gio.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/GIO_004.xml</fullname>
       <name>GIO_004.xml</name>
    </file>
-   <file type="gio.xml">
+   <owids/>
+   <file type="gio.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/GIO_005.xml</fullname>
       <name>GIO_005.xml</name>
    </file>
-   <file type="besluit.xml">
+   <owids/>
+   <file type="besluit.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/OVILEI001.xml</fullname>
       <name>OVILEI001.xml</name>
    </file>
-   <file type="manifest_ow.xml">
+   <owids/>
+   <file type="manifest_ow.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/manifest-ow.xml</fullname>
       <name>manifest-ow.xml</name>
    </file>
-   <file type="opdracht.xml">
+   <owids/>
+   <owids/>
+   <file type="opdracht.xml" ow="false">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/opdracht.xml</fullname>
       <name>opdracht.xml</name>
    </file>
-   <file type="vrijetekst.xml">
+   <owids>
+      <owid sourcefile="owDivisie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.divisie.20200001</org>
+         <new>nl.imow-gm0546.divisie.2020000104072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.divisie.20200002</org>
+         <new>nl.imow-gm0546.divisie.2020000204072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.divisie.20200003</org>
+         <new>nl.imow-gm0546.divisie.2020000304072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.divisie.20200004</org>
+         <new>nl.imow-gm0546.divisie.2020000404072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.divisie.20200005</org>
+         <new>nl.imow-gm0546.divisie.2020000504072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.divisie.20200006</org>
+         <new>nl.imow-gm0546.divisie.2020000604072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.divisie.20200007</org>
+         <new>nl.imow-gm0546.divisie.2020000704072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.divisie.20200008</org>
+         <new>nl.imow-gm0546.divisie.2020000804072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.divisie.20200009</org>
+         <new>nl.imow-gm0546.divisie.2020000904072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.divisie.20200010</org>
+         <new>nl.imow-gm0546.divisie.2020001004072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.divisie.20200011</org>
+         <new>nl.imow-gm0546.divisie.2020001104072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.divisie.20200012</org>
+         <new>nl.imow-gm0546.divisie.2020001204072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <org>nl.imow-gm0546.tekstdeel.20200001</org>
+         <new>nl.imow-gm0546.tekstdeel.2020000104072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <org>nl.imow-gm0546.tekstdeel.20200002</org>
+         <new>nl.imow-gm0546.tekstdeel.2020000204072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <org>nl.imow-gm0546.tekstdeel.20200003</org>
+         <new>nl.imow-gm0546.tekstdeel.2020000304072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <org>nl.imow-gm0546.tekstdeel.20200004</org>
+         <new>nl.imow-gm0546.tekstdeel.2020000404072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <org>nl.imow-gm0546.tekstdeel.20200005</org>
+         <new>nl.imow-gm0546.tekstdeel.2020000504072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <org>nl.imow-gm0546.tekstdeel.20200006</org>
+         <new>nl.imow-gm0546.tekstdeel.2020000604072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <org>nl.imow-gm0546.tekstdeel.20200007</org>
+         <new>nl.imow-gm0546.tekstdeel.2020000704072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <org>nl.imow-gm0546.tekstdeel.20200008</org>
+         <new>nl.imow-gm0546.tekstdeel.2020000804072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <org>nl.imow-gm0546.tekstdeel.20200009</org>
+         <new>nl.imow-gm0546.tekstdeel.2020000904072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <org>nl.imow-gm0546.tekstdeel.20200010</org>
+         <new>nl.imow-gm0546.tekstdeel.2020001004072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <org>nl.imow-gm0546.tekstdeel.20200011</org>
+         <new>nl.imow-gm0546.tekstdeel.2020001104072021052528</new>
+      </owid>
+      <owid sourcefile="owDivisie.xml">
+         <org>nl.imow-gm0546.tekstdeel.20200012</org>
+         <new>nl.imow-gm0546.tekstdeel.2020001204072021052528</new>
+      </owid>
+   </owids>
+   <file type="vrijetekst.xml" ow="true">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/owDivisie.xml</fullname>
       <name>owDivisie.xml</name>
    </file>
-   <file type="hoofdlijn.xml">
+   <owids>
+      <owid sourcefile="owHoofdlijn.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.hoofdlijn.20200001</org>
+         <new>nl.imow-gm0546.hoofdlijn.2020000104072021052528</new>
+      </owid>
+      <owid sourcefile="owHoofdlijn.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.hoofdlijn.20200002</org>
+         <new>nl.imow-gm0546.hoofdlijn.2020000204072021052528</new>
+      </owid>
+      <owid sourcefile="owHoofdlijn.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.hoofdlijn.20200003</org>
+         <new>nl.imow-gm0546.hoofdlijn.2020000304072021052528</new>
+      </owid>
+      <owid sourcefile="owHoofdlijn.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.hoofdlijn.20200004</org>
+         <new>nl.imow-gm0546.hoofdlijn.2020000404072021052528</new>
+      </owid>
+      <owid sourcefile="owHoofdlijn.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.hoofdlijn.20200005</org>
+         <new>nl.imow-gm0546.hoofdlijn.2020000504072021052528</new>
+      </owid>
+      <owid sourcefile="owHoofdlijn.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.hoofdlijn.20200006</org>
+         <new>nl.imow-gm0546.hoofdlijn.2020000604072021052528</new>
+      </owid>
+      <owid sourcefile="owHoofdlijn.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.hoofdlijn.20200007</org>
+         <new>nl.imow-gm0546.hoofdlijn.2020000704072021052528</new>
+      </owid>
+      <owid sourcefile="owHoofdlijn.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.hoofdlijn.20200008</org>
+         <new>nl.imow-gm0546.hoofdlijn.2020000804072021052528</new>
+      </owid>
+      <owid sourcefile="owHoofdlijn.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.hoofdlijn.20200009</org>
+         <new>nl.imow-gm0546.hoofdlijn.2020000904072021052528</new>
+      </owid>
+      <owid sourcefile="owHoofdlijn.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.hoofdlijn.20200010</org>
+         <new>nl.imow-gm0546.hoofdlijn.2020001004072021052528</new>
+      </owid>
+      <owid sourcefile="owHoofdlijn.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.hoofdlijn.20200011</org>
+         <new>nl.imow-gm0546.hoofdlijn.2020001104072021052528</new>
+      </owid>
+   </owids>
+   <file type="hoofdlijn.xml" ow="true">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/owHoofdlijn.xml</fullname>
       <name>owHoofdlijn.xml</name>
    </file>
-   <file type="locatie.xml">
+   <owids>
+      <owid sourcefile="owLocatie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <referencefile>owRegelingsgebied.xml</referencefile>
+         <org>nl.imow-gm0546.gebied.20200001</org>
+         <new>nl.imow-gm0546.gebied.2020000104072021052528</new>
+      </owid>
+      <owid sourcefile="owLocatie.xml">
+         <org>nl.imow-gm0546.gebied.202000011</org>
+         <new>nl.imow-gm0546.gebied.20200001104072021052528</new>
+      </owid>
+      <owid sourcefile="owLocatie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.gebied.20200002</org>
+         <new>nl.imow-gm0546.gebied.2020000204072021052528</new>
+      </owid>
+      <owid sourcefile="owLocatie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.gebied.20200003</org>
+         <new>nl.imow-gm0546.gebied.2020000304072021052528</new>
+      </owid>
+      <owid sourcefile="owLocatie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.gebied.20200004</org>
+         <new>nl.imow-gm0546.gebied.2020000404072021052528</new>
+      </owid>
+      <owid sourcefile="owLocatie.xml">
+         <referencefile>owDivisie.xml</referencefile>
+         <org>nl.imow-gm0546.gebied.20200005</org>
+         <new>nl.imow-gm0546.gebied.2020000504072021052528</new>
+      </owid>
+   </owids>
+   <file type="locatie.xml" ow="true">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/owLocatie.xml</fullname>
       <name>owLocatie.xml</name>
-      <guids>
-         <guid>
-            <org>4b46ca74-3840-4ce1-91b6-abf749802f6c</org>
-         </guid>
-         <guid>
-            <org>c890087a-1b9d-4bc2-8a84-6b8f9a638805</org>
-         </guid>
-         <guid>
-            <org>439b737f-f9c6-4e07-871f-e486ad0fff53</org>
-         </guid>
-         <guid>
-            <org>fa5a51ce-79df-4cde-8f02-5b5cbaca4860</org>
-         </guid>
-         <guid>
-            <org>e8dafb1b-adb6-4c23-a6b0-e1d275cfcee5</org>
-         </guid>
-      </guids>
    </file>
-   <file type="regelingsgebied.xml">
+   <owids>
+      <owid sourcefile="owRegelingsgebied.xml">
+         <org>nl.imow-gm0546.regelingsgebied.2020000001</org>
+         <new>nl.imow-gm0546.regelingsgebied.202000000104072021052528</new>
+      </owid>
+   </owids>
+   <file type="regelingsgebied.xml" ow="true">
       <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/unificeringsscript/unificeringsscript/bron/owRegelingsgebied.xml</fullname>
       <name>owRegelingsgebied.xml</name>
    </file>

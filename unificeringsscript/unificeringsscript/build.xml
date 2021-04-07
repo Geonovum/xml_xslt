@@ -48,7 +48,7 @@
       </pathconvert>
     </else>
   </if>
-  
+
 
   <target name="index" description="Creëert een index van de soorten bestanden waaruit de dataset bestaat.">
     <xslt in="template.xml" out="${temp.dir}/index.xml" style="index.xsl" processor="trax" force="true">
@@ -57,51 +57,67 @@
     </xslt>
   </target>
 
-  <target name="guidse" description="Creëert een juiste aantal guids benodigd en verwerkt die in GML-bestanden en referenties.">
-    <xmltask source="${temp.dir}/index.xml">
-      <call path="index/file[contains(@type,'gml.xml') or contains(@type,'locatie.xml')]">
-        <param name="file.name" path="name/text()"/>
-        <param name="oldGUID" path="guid/org/text()"/>
-        <param name="newGUID" path="guid/new/text()"/>
-        <actions>
-          <xslt in="${output.dir}/@{file.name}" out="${temp.dir}/@{file.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
-            <param name="oldGUID" expression="@{oldGUID}"/>
-            <param name="newGUID" expression="@{newGUID}"/>
-          </xslt>
-          <copy file="${temp.dir}/@{file.name}" tofile="${output.dir}/@{file.name}"/>
-        </actions>
-      </call>
-    </xmltask>
-  </target>
-
   <target name="guids" description="Creëert een juiste aantal guids benodigd en verwerkt die in GML-bestanden en referenties.">
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/guids/guid">
-        <param name="file.name" path="../@gmlfile"/>
+        <param name="gmlfile.name" path="@gmlfile"/>
+        <param name="locatiefile.name" path="@locatiefile"/>
         <param name="oldGUID" path="org/text()"/>
         <param name="newGUID" path="new/text()"/>
         <actions>
-          <xslt in="${output.dir}/@{file.name}" out="${temp.dir}/@{file.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
+          <xslt in="${output.dir}/@{gmlfile.name}" out="${temp.dir}/@{gmlfile.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
             <param name="oldGUID" expression="@{oldGUID}"/>
             <param name="newGUID" expression="@{newGUID}"/>
           </xslt>
-          <copy file="${temp.dir}/@{file.name}" tofile="${output.dir}/@{file.name}"/>
-        </actions>
-        <param name="file.name2" path="/index/file/guids/guid[org=@{oldGUID}]"/>
-        <actions>
-          <xslt in="${output.dir}/@{file.name2}" out="${temp.dir}/@{file.name2}" extension=".gml" style="guids.xsl" processor="trax" force="true">
+          <copy file="${temp.dir}/@{gmlfile.name}" tofile="${output.dir}/@{gmlfile.name}"/>
+          <xslt in="${output.dir}/@{locatiefile.name}" out="${temp.dir}/@{locatiefile.name}" extension=".xml" style="guids.xsl" processor="trax" force="true">
             <param name="oldGUID" expression="@{oldGUID}"/>
             <param name="newGUID" expression="@{newGUID}"/>
           </xslt>
-          <copy file="${temp.dir}/@{file.name2}" tofile="${output.dir}/@{file.name2}"/>
+          <copy file="${temp.dir}/@{locatiefile.name}" tofile="${output.dir}/@{locatiefile.name}"/>
         </actions>
       </call>
     </xmltask>
   </target>
-  
+
+  <target name="owids" description="Verandert owids door er een datum/tijd string achter te zetten.">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/owids/owid">
+        <param name="owfile.name" path="@sourcefile"/>
+        <param name="oldOWId" path="org/text()"/>
+        <param name="newOWId" path="new/text()"/>
+        <actions>
+          <echo message="----------   ROUND 1:@{owfile.name}      @{oldOWId}"/>
+          <xslt in="${output.dir}/@{owfile.name}" out="${temp.dir}/@{owfile.name}" extension=".xml" style="owids.xsl" processor="trax" force="true">
+            <param name="oldOWId" expression="@{oldOWId}"/>
+            <param name="newOWId" expression="@{newOWId}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{owfile.name}" tofile="${output.dir}/@{owfile.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/owids/owid/referencefile">
+        <param name="referencefile.name" path="text()"/>
+        <param name="owfile.name" path="../@sourcefile"/>
+        <param name="oldOWId" path="../org/text()"/>
+        <param name="newOWId" path="../new/text()"/>
+        <actions>
+          <echo message="----------   ROUND 2:@{owfile.name}   @{referencefile.name}     @{oldOWId}"/>
+          <xslt in="${output.dir}/@{referencefile.name}" out="${temp.dir}/@{referencefile.name}" extension=".xml" style="owids.xsl" processor="trax" force="true">
+            <param name="oldOWId" expression="@{oldOWId}"/>
+            <param name="newOWId" expression="@{newOWId}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{referencefile.name}" tofile="${output.dir}/@{referencefile.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    
+  </target>
 
   <!-- totale transformatie -->
 
-  <target name="main" description="Totale transformatie" depends="init, copy, index, guids"/>
+  <target name="main" description="Totale transformatie" depends="init, copy, index, guids, owids"/>
 
 </project>

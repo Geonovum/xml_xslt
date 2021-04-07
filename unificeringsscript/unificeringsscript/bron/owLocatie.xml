@@ -36,6 +36,17 @@
     <sl:stand>
       <ow-dc:owObject>
         <l:Gebied>
+          <l:identificatie>nl.imow-gm0546.gebied.202000011</l:identificatie>
+          <l:noemer>Gemeente Leiden</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="4b46ca74-3840-4ce1-91b6-abf74980aaaa"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
           <l:identificatie>nl.imow-gm0546.gebied.20200002</l:identificatie>
           <l:noemer>Ontwikkelperspectief Zuidwest</l:noemer>
           <l:geometrie>

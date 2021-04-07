@@ -14,6 +14,8 @@
     <xsl:param name="file.list" as="xs:string*"/>
     <xsl:param name="base.dir"/>
 
+    <xsl:variable name="dateTime" select="format-dateTime(current-dateTime(), '[M01][D01][Y0001][h01][m01][s01]')"/>
+
     <xsl:template match="/">
         <xsl:call-template name="index"/>
     </xsl:template>
@@ -31,19 +33,142 @@
     <!-- stel index-bestand samen -->
     <xsl:param name="index">
         <xsl:message select="$file.list"/>
-        <xsl:variable name="pos1" select="position()"/>
         <xsl:for-each select="tokenize($file.list, ';')">
             <xsl:variable name="fullname" select="."/>
+            <xsl:variable name="pos1" select="position()"/>
+            <!-- OW-Ids -->
+            <xsl:element name="owids">
+                <xsl:for-each select="document($fullname)//r:Regeltekst/r:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//vt:Divisie/vt:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//rol:Activiteit/rol:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//ga:Gebiedsaanwijzing/ga:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//rol:Normwaarde/rol:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//l:Gebied/l:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//l:Gebiedengroep/l:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//l:Lijn/l:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//l:Lijnengroep/l:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//l:Punt/l:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//l:Puntengroep/l:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//l:Locatie/l:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//p:Pons/p:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//k:Kaart/k:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//rg:Regelingsgebied/rg:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//vt:Hoofdlijn/vt:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//vt:Tekstdeel/vt:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:for-each>
+            </xsl:element>
             <xsl:choose>
-                <!-- GML -->
+                <!-- GUIDS -->
                 <xsl:when test="document($fullname)//geo:GeoInformatieObjectVaststelling">
-                    <xsl:element name="guids" >
-                        <xsl:attribute name="gmlfile" select="tokenize($fullname, '/')[last()]"/>
+                    <xsl:element name="guids">
                         <xsl:for-each select="document($fullname)//geo:GeoInformatieObjectVaststelling/descendant::basisgeo:id">
                             <xsl:variable name="pos2" select="position()"/>
                             <xsl:element name="guid">
+                                <xsl:attribute name="gmlfile" select="tokenize($fullname, '/')[last()]"/>
+                                <xsl:variable name="orgGUID" select="text()"/>
+                                <xsl:for-each select="tokenize($file.list, ';')">
+                                    <xsl:variable name="locatiefullname" select="."/>
+                                    <xsl:choose>
+                                        <xsl:when test="document($locatiefullname)//l:Gebied//l:GeometrieRef[@xlink:href = $orgGUID]">
+                                            <xsl:attribute name="locatiefile" select="tokenize($locatiefullname, '/')[last()]"/>
+                                        </xsl:when>
+                                        <xsl:when test="document($locatiefullname)//l:Lijn//l:GeometrieRef[@xlink:href = $orgGUID]">
+                                            <xsl:attribute name="locatiefile" select="tokenize($locatiefullname, '/')[last()]"/>
+                                        </xsl:when>
+                                        <xsl:when test="document($locatiefullname)//l:Punt//l:GeometrieRef[@xlink:href = $orgGUID]">
+                                            <xsl:attribute name="locatiefile" select="tokenize($locatiefullname, '/')[last()]"/>
+                                        </xsl:when>
+                                        <xsl:when test="document($locatiefullname)//l:Locatie//l:GeometrieRef[@xlink:href = $orgGUID]">
+                                            <xsl:attribute name="locatiefile" select="tokenize($locatiefullname, '/')[last()]"/>
+                                        </xsl:when>
+                                    </xsl:choose>
+                                </xsl:for-each>
                                 <xsl:element name="org">
-                                    <xsl:value-of select="text()"/>
+                                    <xsl:value-of select="$orgGUID"/>
                                 </xsl:element>
                                 <xsl:element name="new">
                                     <xsl:value-of select="foo:generateGuid($pos1 + $pos2)"/>
@@ -56,270 +181,167 @@
             <xsl:choose>
                 <!-- BESLUIT -->
                 <xsl:when test="document($fullname)/aanlevering:AanleveringBesluit">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('besluit.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'besluit.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'false'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <!-- OPDRACHT -->
                 <xsl:when test="document($fullname)/lvbb:publicatieOpdracht">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('opdracht.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'opdracht.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'false'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <!-- GML -->
                 <xsl:when test="document($fullname)//geo:GeoInformatieObjectVaststelling">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('gml.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                        <xsl:element name="guids">
-                            <xsl:for-each select="document($fullname)//geo:GeoInformatieObjectVaststelling/descendant::basisgeo:id">
-                                <xsl:variable name="pos2" select="position()"/>
-                                <xsl:element name="guid">
-                                    <xsl:element name="org">
-                                        <xsl:value-of select="text()"/>
-                                    </xsl:element>
-                                    <xsl:element name="new">
-                                        <xsl:value-of select="foo:generateGuid($pos1 + $pos2)"/>
-                                    </xsl:element>
-                                </xsl:element>
-                            </xsl:for-each>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'gml.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'false'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <!-- GIO -->
                 <xsl:when test="document($fullname)//aanlevering:AanleveringInformatieObject">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('gio.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'gio.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'false'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <!-- OW       -->
                 <xsl:when test="document($fullname)//r:Regeltekst">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('regeltekst.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'regeltekst.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//vt:Divisie">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('vrijetekst.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'vrijetekst.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//rol:Activiteit">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('activiteit.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'activiteit.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//ga:Gebiedsaanwijzing">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('gebiedsaanwijzing.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'gebiedsaanwijzing.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//rol:Normwaarde">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('normwaarde.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'normwaarde.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//l:Gebied">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('locatie.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                        <xsl:element name="guids">
-                            <xsl:for-each select="document($fullname)//l:Gebied/descendant::l:GeometrieRef">
-                                <xsl:element name="guid">
-                                    <xsl:element name="org">
-                                        <xsl:value-of select="@xlink:href"/>
-                                    </xsl:element>
-                                </xsl:element>
-                            </xsl:for-each>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'locatie.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//l:Gebiedengroep">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('locatie.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'locatie.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//l:Lijn">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('locatie.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                        <xsl:element name="guids">
-                            <xsl:for-each select="document($fullname)//l:Lijn/descendant::l:GeometrieRef">
-                                <xsl:element name="guid">
-                                    <xsl:element name="org">
-                                        <xsl:value-of select="@xlink:href"/>
-                                    </xsl:element>
-                                </xsl:element>
-                            </xsl:for-each>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'locatie.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//l:Lijnengroep">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('locatie.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'locatie.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//l:Punt">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('locatie.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                        <xsl:element name="guids">
-                            <xsl:for-each select="document($fullname)//l:Punt/descendant::l:GeometrieRef">
-                                <xsl:element name="guid">
-                                    <xsl:element name="org">
-                                        <xsl:value-of select="@xlink:href"/>
-                                    </xsl:element>
-                                </xsl:element>
-                            </xsl:for-each>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'locatie.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//l:Puntengroep">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('locatie.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'locatie.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//l:Locatie">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('locatie.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                        <xsl:element name="guids">
-                            <xsl:for-each select="document($fullname)//l:Locatie/descendant::l:GeometrieRef">
-                                <xsl:element name="guid">
-                                    <xsl:element name="org">
-                                        <xsl:value-of select="@xlink:href"/>
-                                    </xsl:element>
-                                </xsl:element>
-                            </xsl:for-each>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'locatie.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//p:Pons">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('pons.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'pons.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//k:Kaart">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('kaart.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'kaart.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//rg:Regelingsgebied">
-                    <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('regelingsgebied.xml')"/>
-                        <xsl:element name="fullname">
-                            <xsl:value-of select="$fullname"/>
-                        </xsl:element>
-                        <xsl:element name="name">
-                            <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
-                        </xsl:element>
-                    </xsl:element>
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'regelingsgebied.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="document($fullname)//vt:Hoofdlijn">
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'hoofdlijn.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="document($fullname)//vt:Tekstdeel">
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'tekstdeel.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'true'"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="document($fullname)//Aanleveringen" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">
+                    <xsl:call-template name="file">
+                        <xsl:with-param name="type" select="'manifest_ow.xml'"></xsl:with-param>
+                        <xsl:with-param name="fullname" select="$fullname"></xsl:with-param>
+                        <xsl:with-param name="ow" select="'false'"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="document($fullname)//lvbb:publicatieOpdracht">
                     <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('hoofdlijn.xml')"/>
+                        <xsl:attribute name="type" select="'opdracht.xml'"/>
+                        <xsl:attribute name="ow" select="'false'"/>
                         <xsl:element name="fullname">
                             <xsl:value-of select="$fullname"/>
                         </xsl:element>
@@ -328,9 +350,10 @@
                         </xsl:element>
                     </xsl:element>
                 </xsl:when>
-                <xsl:when test="document($fullname)//Aanleveringen" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">
+                <xsl:when test="document($fullname)//lvbb:validatieOpdracht">
                     <xsl:element name="file">
-                        <xsl:attribute name="type" select="string('manifest_ow.xml')"/>
+                        <xsl:attribute name="type" select="'opdracht.xml'"/>
+                        <xsl:attribute name="ow" select="'false'"/>
                         <xsl:element name="fullname">
                             <xsl:value-of select="$fullname"/>
                         </xsl:element>
@@ -345,19 +368,75 @@
 
     <xsl:function name="foo:generateGuid">
         <xsl:param name="seed" as="xs:integer"/>
-        <xsl:value-of
-            select="
-                translate(
-                translate(
-                translate(
-                unparsed-text(
-                concat('https://uuidgen.org/api/v/4?x=', string($seed)
-                )
-                ), '[', ''
-                ), ']', ''
-                ), '&quot;', '')"
-        />
+        <xsl:value-of select="translate(translate(translate(unparsed-text(concat('https://uuidgen.org/api/v/4?x=', string($seed))), '[', ''), ']', ''), '&quot;', '')"/>
     </xsl:function>
+
+    <xsl:function name="foo:generateOWId">
+        <xsl:param name="owId" as="xs:string"/>
+        <!-- max length 4th part of Id has a max-length of 32-->
+        <xsl:variable name="maxLength" select="32 - string-length(tokenize($owId, '\.')[4])"/>
+        <xsl:choose>
+            <xsl:when test="$maxLength > 13">
+                <xsl:variable name="dateString" select="$dateTime"/>
+                <xsl:value-of select="concat(tokenize($owId, '\.')[1], '.', tokenize($owId, '\.')[2], '.', tokenize($owId, '\.')[3], '.', tokenize($owId, '\.')[4], $dateString)"/>
+            </xsl:when>
+            <xsl:when test="$maxLength > 0 and $maxLength &lt; 14">
+                <xsl:variable name="dateString" select="substring($dateTime, 14 - $maxLength)"/>
+                <xsl:value-of select="concat(tokenize($owId, '\.')[1], '.', tokenize($owId, '\.')[2], '.', tokenize($owId, '\.')[3], '.', tokenize($owId, '\.')[4], $dateString)"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="concat(tokenize($owId, '\.')[1], '.', tokenize($owId, '\.')[2], '.', tokenize($owId, '\.')[3], '.', tokenize($owId, '\.')[4])"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+
+    <xsl:template name="references">
+        <xsl:param name="orgOWId"/>
+        <xsl:for-each select="tokenize($file.list, ';')">
+            <xsl:variable name="referencefullname" select="."/>
+            <xsl:for-each select="document($referencefullname)//@xlink:href">
+                <xsl:if test="$orgOWId = string(.)">
+                    <xsl:element name="referencefile">
+                        <xsl:value-of select="tokenize($referencefullname, '/')[last()]"/>
+                    </xsl:element>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:for-each>
+    </xsl:template>
+    
+   <xsl:template name="owid">
+       <xsl:param name="parent" as="node()"/>
+       <xsl:param name="fullname"/>
+       <xsl:element name="owid">
+           <xsl:attribute name="sourcefile" select="tokenize($fullname, '/')[last()]"/>
+           <xsl:variable name="orgOWId" select="$parent/text()"/>
+           <xsl:call-template name="references">
+               <xsl:with-param name="orgOWId" select="$orgOWId"/>
+           </xsl:call-template>
+           <xsl:element name="org">
+               <xsl:value-of select="$orgOWId"/>
+           </xsl:element>
+           <xsl:element name="new">
+               <xsl:value-of select="foo:generateOWId($parent/text())"/>
+           </xsl:element>
+       </xsl:element>
+   </xsl:template>
+
+    <xsl:template name="file">
+        <xsl:param name="type" as="xs:string"/>
+        <xsl:param name="fullname" as="xs:string"/>
+        <xsl:param name="ow" as="xs:string"></xsl:param>
+        <xsl:element name="file">
+            <xsl:attribute name="type" select="$type"/>
+            <xsl:attribute name="ow" select="$ow"/>
+            <xsl:element name="fullname">
+                <xsl:value-of select="$fullname"/>
+            </xsl:element>
+            <xsl:element name="name">
+                <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
 
 
 </xsl:stylesheet>
