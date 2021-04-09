@@ -8,12 +8,12 @@
          <soortWork>/join/id/stop/work_010</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/04082021054208</data:heeftGeboorteregeling>
+         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/04092021125420</data:heeftGeboorteregeling>
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>004_2_stads_en_levendig.gml</bestandsnaam>
-                  <hash>a8bff171c41992711a13635d97376718e5befeee55e6269c7494911f56ed08b99ab8251b55d05647838402e2fcd01e559dfd2ea7183388ea9e4a8cb9f3fb55ab</hash>
+                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">9eaf3b00640c7fc3c714fe2c8eee64809cce88a439a7189ed05207c656347d0594d6b8817dbe8903cfa026fa53915016f5cc16249ce8f50795f122f6b2a5016b</data:hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

@@ -8,12 +8,12 @@
          <soortWork>/join/id/stop/work_010</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/04082021054208</data:heeftGeboorteregeling>
+         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/04092021125420</data:heeftGeboorteregeling>
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>003_1_hoogstedelijk_en_dynamisch.gml</bestandsnaam>
-                  <hash>8dafd4ff7eb950324c31bda049446a9c847ef4265757babbd7a14b30e30a905683ad4c4a672c0249b905c198dc411016f5abf5d3a05608eadeeeac87b14b6c01</hash>
+                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">5b209f4e6a8ba9f19909bfa15cb213cf68e70668a5fd09935092ccd94c4d4a837ac9aeacb187608da6731a82b48864788d7b5ab2e7a36508d448d6c3e1d6b5bd</data:hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

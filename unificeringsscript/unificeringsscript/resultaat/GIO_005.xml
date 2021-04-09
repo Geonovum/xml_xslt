@@ -8,12 +8,12 @@
          <soortWork>/join/id/stop/work_010</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/04082021054208</data:heeftGeboorteregeling>
+         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/04092021125420</data:heeftGeboorteregeling>
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>005_3_groen_en_luw.gml</bestandsnaam>
-                  <hash>29455399e78f3d42d0ef290a13d3506975cf8c5866a1f92031d009d71baa90122eb982bca25ac0f1a9fa3e921853e422253fbd4e1e7c51ec99a963dfbb853ec8</hash>
+                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">c7a19096ad37f3a353343559302c44e8fd619f0f5c96e464275eea063aa90f072cf7c02ba16325650380b7d9837216a585259249ff1632296dddc35445861e81</data:hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

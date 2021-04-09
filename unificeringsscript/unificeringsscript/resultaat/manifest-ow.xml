@@ -4,7 +4,7 @@
                xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/generiek/manifest-ow.xsd">
   <domein>omgevingswet</domein>
   <Aanlevering>
-      <manifest-ow:WorkIDRegeling xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">/akn/nl/act/gm0546/2020/04082021054208</manifest-ow:WorkIDRegeling>
+      <manifest-ow:WorkIDRegeling xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">/akn/nl/act/gm0546/2020/04092021125420</manifest-ow:WorkIDRegeling>
       <DoelID>/join/id/proces/gm0546/2020/InstellingOmgevingsvisie</DoelID>
       <Bestand>
          <naam>owDivisie.xml</naam>

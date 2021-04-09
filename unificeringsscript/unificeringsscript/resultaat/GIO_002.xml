@@ -8,12 +8,12 @@
          <soortWork>/join/id/stop/work_010</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/04082021054208</data:heeftGeboorteregeling>
+         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/04092021125420</data:heeftGeboorteregeling>
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>002_ontwikkelperspectief_zuidwest.gml</bestandsnaam>
-                  <hash>1dce4b5843e5b295a675707602062db4e92edb8b64195221bbc6da853e54456c0a37e231d0942fc648e0b0d43f27bcb4fc2e7410efc7b2a6093d445bc45b139f</hash>
+                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">23adf172c474802a9bb90b328a7f2603737713614a3dd9c4f498d27fa6615510bb0d31edae4dfccb254b8b7e103425e55ab6fdc293c899a65a7bca90aad5b3dd</data:hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

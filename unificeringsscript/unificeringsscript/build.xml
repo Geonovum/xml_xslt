@@ -224,6 +224,30 @@
     </target>
     
     
+  <target name="checksum_gio" description="Gebruikt de informatie van de interne ANT checksum functionaliteit.">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/file[contains(@type,'gio.xml')]">
+        <param name="giofile.name" path="name/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{giofile.name}" out="${temp.dir}/@{giofile.name}" extension=".xml" style="checksum_hash.xsl" processor="trax" force="true">
+            <param name="temp.dir" expression="${temp.dir}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{giofile.name}" tofile="${output.dir}/@{giofile.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+  </target>
+  
+  <!-- maak hash-code -->
+  
+  <target name="checksum" description="Maak hash-codes">
+    <foreach target="checksum.execute" param="file.fullname">
+      <path>
+        <fileset dir="${temp.dir}"/>
+      </path>
+    </foreach>
+  </target>
+  
   <target name="checksum.execute">
     <basename property="file.name" file="${file.fullname}"/>
     <checksum file="${file.fullname}" algorithm="SHA-512" property="file.checksum"/>
@@ -233,46 +257,10 @@
       <param name="file.checksum" expression="${file.checksum}"/>
     </xslt>
   </target>
-  
-  <target name="checksum" description="Maak hash-codes">
-    <foreach target="checksum.execute" param="file.fullname">
-      <path>
-        <fileset dir="${temp.dir}" casesensitive="yes">
-          <patternset id="non.test.sources">
-            <include name="**/*.gml"/>
-          </patternset>
-        </fileset>
-      </path>
-    </foreach>
-  </target>
-  
-  <target name="checksum_gio" description="Gebruikt de informatie van de interne ANT checksum functionaliteit.">
-    <xmltask source="${temp.dir}/index.xml">
-      <call path="index/file[contains(@type,'gio.xml')]">
-        <param name="giofile.name" path="name/text()"/>
-        <actions>
-          <echo message="@{giofile.name}"></echo>
-          <propertyregex property="gmlfile.name" input="@{giofile.name}"
-            regexp="([^#]*)#([^#]*)"
-            select="\1"
-            override="true" />
-          <echo message="${temp.dir}"></echo>
-          <echo message="${gmlfile.name}"></echo>
-          <checksum file="${temp.dir}/${gmlfile.name}" algorithm="SHA-512" property="file.checksum"/>
-          <echo message="${file.checksum}"></echo>
-          <xslt in="${output.dir}/@{giofile.name}" out="${temp.dir}/@{giofile.name}" extension=".xml" style="checksum_hash.xsl" processor="trax" force="true">
-            <param name="file.checksum" expression="${file.checksum}"/>
-          </xslt>
-          <copy file="${temp.dir}/@{giofile.name}" tofile="${output.dir}/@{giofile.name}"/>
-        </actions>
-      </call>
-    </xmltask>
-  </target>
-  
     
   <!-- totale transformatie -->
 
     <target name="main" description="Totale transformatie" 
-      depends="init, copy, index, guids, owids, leveringid_opdrachtparameters, doelids, besluitregelingids, checksum_gio"/>
+      depends="init, copy, index, guids, owids, leveringid_opdrachtparameters, doelids, besluitregelingids, checksum, checksum_gio"/>
 
 </project>
