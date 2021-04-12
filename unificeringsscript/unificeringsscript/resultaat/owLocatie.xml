@@ -17,7 +17,7 @@
       <sl:dataset>Gemeente Leiden</sl:dataset>
       <sl:inhoud>
          <sl:gebied>Gemeente Leiden</sl:gebied>
-         <sl:leveringsId>OVILEI001-001-04092021125420</sl:leveringsId>
+         <sl:leveringsId>OVILEI001-001-20210412040520</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Gebied</sl:objectType>
          </sl:objectTypen>
@@ -25,10 +25,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0546.gebied.2020000104092021125420</l:identificatie>
+               <l:identificatie>nl.imow-gm0546.gebied.2020000120210412040520</l:identificatie>
                <l:noemer>Gemeente Leiden</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="b7be6b7b-c4b3-b6a6-b67e-b717bb4341e6"/>
+                  <l:GeometrieRef xlink:href="3c333fb3-913e-33b8-b8c3-fc4b3b1e6433"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -36,10 +36,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0546.gebied.20200001104092021125420</l:identificatie>
+               <l:identificatie>nl.imow-gm0546.gebied.20200001120210412040520</l:identificatie>
                <l:noemer>Gemeente Leiden</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="202cf8f2-552d-2f15-950c-80df295d8888"/>
+                  <l:GeometrieRef xlink:href="e7e2cb8e-c1e7-ec5a-ba72-b7c8eb17bbbb"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -47,10 +47,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0546.gebied.2020000204092021125420</l:identificatie>
+               <l:identificatie>nl.imow-gm0546.gebied.2020000220210412040520</l:identificatie>
                <l:noemer>Ontwikkelperspectief Zuidwest</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="e9c889ec-c8c3-48e0-9c94-4898cc479988"/>
+                  <l:GeometrieRef xlink:href="f9e779b3-c7e2-47f4-9394-979ae39c9978"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -58,10 +58,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0546.gebied.2020000304092021125420</l:identificatie>
+               <l:identificatie>nl.imow-gm0546.gebied.2020000320210412040520</l:identificatie>
                <l:noemer>1 Hoogstedelijk en dynamisch</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="3c39acac-c362-320a-aaec-23a20a0ccc9c"/>
+                  <l:GeometrieRef xlink:href="37b8575a-abe4-3115-958a-1394371aaa87"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -69,10 +69,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0546.gebied.2020000404092021125420</l:identificatie>
+               <l:identificatie>nl.imow-gm0546.gebied.2020000420210412040520</l:identificatie>
                <l:noemer>2 Stads en levendig</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="18989cb8-a721-4b28-b1f2-9b9bb8b84b8f"/>
+                  <l:GeometrieRef xlink:href="f0e0e97b-571f-471b-9f2f-e3e730704902"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
@@ -80,10 +80,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm0546.gebied.2020000504092021125420</l:identificatie>
+               <l:identificatie>nl.imow-gm0546.gebied.2020000520210412040520</l:identificatie>
                <l:noemer>3 Groen en luw</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="20a4bd8d-4ad7-47a7-47d0-28aaa07b7220"/>
+                  <l:GeometrieRef xlink:href="893c6e8e-c3ec-41b6-cced-883b23161883"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>

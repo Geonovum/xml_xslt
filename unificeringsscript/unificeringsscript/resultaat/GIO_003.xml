@@ -3,17 +3,17 @@
                              schemaversie="1.0.3">
   <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <FRBRWork>/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch</FRBRWork>
-         <FRBRExpression>/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch/nld@2020-08-20</FRBRExpression>
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch20210412040520</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch20210412040520/nld@2020-08-20</data:FRBRExpression>
          <soortWork>/join/id/stop/work_010</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/04092021125420</data:heeftGeboorteregeling>
+         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/OVILEI00120210412040520</data:heeftGeboorteregeling>
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>003_1_hoogstedelijk_en_dynamisch.gml</bestandsnaam>
-                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">5b209f4e6a8ba9f19909bfa15cb213cf68e70668a5fd09935092ccd94c4d4a837ac9aeacb187608da6731a82b48864788d7b5ab2e7a36508d448d6c3e1d6b5bd</data:hash>
+                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">c1464915a8b0808c825066c09d1dee75ffc4b6ce73bfc89ec44fc0b2720fb769e305d23bb47ded7a68e77f81ebf99226f05c120ebc6099ba0364ec74809028f9</data:hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

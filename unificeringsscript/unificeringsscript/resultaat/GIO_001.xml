@@ -3,17 +3,17 @@
                              schemaversie="1.0.3">
   <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <FRBRWork>/join/id/regdata/gm0546/2020/gemeente_leiden</FRBRWork>
-         <FRBRExpression>/join/id/regdata/gm0546/2020/gemeente_leiden/nld@2020-08-20</FRBRExpression>
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/gemeente_leiden20210412040520</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/gemeente_leiden20210412040520/nld@2020-08-20</data:FRBRExpression>
          <soortWork>/join/id/stop/work_010</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/04092021125420</data:heeftGeboorteregeling>
+         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/OVILEI00120210412040520</data:heeftGeboorteregeling>
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>001_gemeente_leiden.gml</bestandsnaam>
-                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">6845b55df6909ba79caadc70424d2f2360122f76d291946cf009fef3c3a8bc7e12387a78b2f4a2b7dde6043c72b2c4c7f33dab6e79d7e181a13a07a94b2133aa</data:hash>
+                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">a4cd3585b99ae57830ca8ac5dac51b5cfc78ca2d09de41eb0f1f5fdf51d277d1ed1269be2e489b31373405c2e83ebb1d73039aab6cc1a7d178597ee692fcaecf</data:hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

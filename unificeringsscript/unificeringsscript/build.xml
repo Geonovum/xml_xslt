@@ -147,7 +147,7 @@
   
   <target name="doelids" description="Verandert Doelids door er een datum/tijd string achter te zetten.">
     <xmltask source="${temp.dir}/index.xml">
-      <call path="index/file[contains(@type,'manifest_ow.xml')]">
+      <call path="index/file[contains(@type,'manifest-ow.xml')]">
         <param name="file.name" path="name/text()"/>
         <param name="doelId" path="../doelId/text()"/>
         <actions>
@@ -184,12 +184,16 @@
           <param name="besluitFrbrExpression" path="besluitId/FRBRExpression/text()"/>
           <param name="regelingFrbrWork" path="regelingId/FRBRWork/text()"/>
           <param name="regelingFrbrExpression" path="regelingId/FRBRExpression/text()"/>
+          <param name="wordt" path="besluit/versies/wordt/text()"/>
+          <param name="instrumentversie" path="besluit/instrumentversie/text()"/>
           <actions>
             <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
               <param name="besluitFrbrWork" expression="@{besluitFrbrWork}"/>
               <param name="besluitFrbrExpression" expression="@{besluitFrbrExpression}"/>
               <param name="regelingFrbrWork" expression="@{regelingFrbrWork}"/>
               <param name="regelingFrbrExpression" expression="@{regelingFrbrExpression}"/>
+              <param name="wordt" expression="@{wordt}"/>
+              <param name="instrumentversie" expression="@{instrumentversie}"/>
             </xslt>
             <copy file="${temp.dir}/@{besluit.name}" tofile="${output.dir}/@{besluit.name}"/>
             <xslt in="${output.dir}/@{manifest-ow.name}" out="${temp.dir}/@{manifest-ow.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
@@ -197,6 +201,8 @@
               <param name="besluitFrbrExpression" expression="@{besluitFrbrExpression}"/>
               <param name="regelingFrbrWork" expression="@{regelingFrbrWork}"/>
               <param name="regelingFrbrExpression" expression="@{regelingFrbrExpression}"/>
+              <param name="wordt" expression="@{wordt}"/>
+              <param name="instrumentversie" expression="@{instrumentversie}"/>
             </xslt>
             <copy file="${temp.dir}/@{manifest-ow.name}" tofile="${output.dir}/@{manifest-ow.name}"/>
           </actions>
@@ -210,18 +216,59 @@
           <param name="besluitFrbrExpression" path="../besluitId/FRBRExpression/text()"/>
           <param name="regelingFrbrWork" path="../regelingId/FRBRWork/text()"/>
           <param name="regelingFrbrExpression" path="../regelingId/FRBRExpression/text()"/>
+          <param name="wordt" path="../besluit/versies/wordt/text()"/>
+          <param name="instrumentversie" path="../besluit/instrumentversie/text()"/>
           <actions>
             <xslt in="${output.dir}/@{giofile.name}" out="${temp.dir}/@{giofile.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
               <param name="besluitFrbrWork" expression="@{besluitFrbrWork}"/>
               <param name="besluitFrbrExpression" expression="@{besluitFrbrExpression}"/>
               <param name="regelingFrbrWork" expression="@{regelingFrbrWork}"/>
               <param name="regelingFrbrExpression" expression="@{regelingFrbrExpression}"/>
+              <param name="wordt" expression="@{wordt}"/>
+              <param name="instrumentversie" expression="@{instrumentversie}"/>
             </xslt>
             <copy file="${temp.dir}/@{giofile.name}" tofile="${output.dir}/@{giofile.name}"/>
           </actions>
         </call>
       </xmltask>
     </target>
+  
+  <target name="informatieobjectRefs" description="Vervangt de GIO-objctrefs in besluit, gio's en gml's">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/besluit/informatieobjectRef">
+        <param name="besluit.name" path="../../file[contains(@type,'besluit.xml')]/name/text()"/>
+        <param name="oldIoRefId" path="oldIoRefId/text()"/>
+        <param name="newIoRefId" path="newIoRefId/text()"/>
+        <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
+        <param name="newIoWorkId" path="newIoWorkId/text()"/>
+        <param name="gmlFile" path="gml/text()"/>
+        <param name="gioFile" path="gio/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
+            <param name="oldIoRefId" expression="@{oldIoRefId}"/>
+            <param name="newIoRefId" expression="@{newIoRefId}"/>
+            <param name="oldIoWorkId" expression="@{oldIoWorkId}"/>
+            <param name="newIoWorkId" expression="@{newIoWorkId}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{besluit.name}" tofile="${output.dir}/@{besluit.name}"/>
+          <xslt in="${output.dir}/@{gmlFile}" out="${temp.dir}/@{gmlFile}" extension=".gml" style="informatieobjectRefs.xsl" processor="trax" force="true">
+            <param name="oldIoRefId" expression="@{oldIoRefId}"/>
+            <param name="newIoRefId" expression="@{newIoRefId}"/>
+            <param name="oldIoWorkId" expression="@{oldIoWorkId}"/>
+            <param name="newIoWorkId" expression="@{newIoWorkId}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{gmlFile}" tofile="${output.dir}/@{gmlFile}"/>
+          <xslt in="${output.dir}/@{gioFile}" out="${temp.dir}/@{gioFile}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
+            <param name="oldIoRefId" expression="@{oldIoRefId}"/>
+            <param name="newIoRefId" expression="@{newIoRefId}"/>
+            <param name="oldIoWorkId" expression="@{oldIoWorkId}"/>
+            <param name="newIoWorkId" expression="@{newIoWorkId}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{gioFile}" tofile="${output.dir}/@{gioFile}"/>
+        </actions>
+      </call>
+    </xmltask>
+  </target>
     
     
   <target name="checksum_gio" description="Gebruikt de informatie van de interne ANT checksum functionaliteit.">
@@ -261,6 +308,6 @@
   <!-- totale transformatie -->
 
     <target name="main" description="Totale transformatie" 
-      depends="init, copy, index, guids, owids, leveringid_opdrachtparameters, doelids, besluitregelingids, checksum, checksum_gio"/>
+      depends="init, copy, index, guids, owids, leveringid_opdrachtparameters, doelids, besluitregelingids, informatieobjectRefs, checksum, checksum_gio"/>
 
 </project>

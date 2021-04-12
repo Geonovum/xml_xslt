@@ -23,17 +23,16 @@
     xmlns:aanlevering="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
     xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" 
     xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
+    xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
     
     xmlns:foo="http://whatever"
     >
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
     
-    <xsl:param name="besluitFrbrWork"/>
-    <xsl:param name="besluitFrbrExpression"/>
-    <xsl:param name="regelingFrbrWork"/>
-    <xsl:param name="regelingFrbrExpression"/>
-    <xsl:param name="wordt"/>
-    <xsl:param name="instrumentversie"/>
+    <xsl:param name="oldIoRefId"/>
+    <xsl:param name="newIoRefId"/>
+    <xsl:param name="oldIoWorkId"/>
+    <xsl:param name="newIoWorkId"/>
     
     <xsl:template match="@*|node()">
         <xsl:copy>
@@ -41,52 +40,40 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template match="@wordt">
-        <xsl:attribute name="wordt">
-            <xsl:value-of select="$wordt"/>
-        </xsl:attribute>
-    </xsl:template>
-
-    <xsl:template match="data:BeoogdeRegelgeving/data:BeoogdeRegeling/data:instrumentVersie">
+    <xsl:template match="data:BeoogdInformatieobject/data:instrumentVersie[text()=$oldIoRefId]">
         <xsl:element name="data:instrumentVersie">
-            <xsl:value-of select="$instrumentversie"/>
+            <xsl:value-of select="$newIoRefId"/>
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="data:heeftGeboorteregeling">
-        <xsl:element name="data:heeftGeboorteregeling">
-            <xsl:value-of select="$regelingFrbrWork"/>
-        </xsl:element>
-    </xsl:template>
-    
-    <xsl:template match="manifest-ow:WorkIDRegeling">
-        <xsl:element name="manifest-ow:WorkIDRegeling">
-            <xsl:value-of select="$regelingFrbrWork"/>
-        </xsl:element>
-    </xsl:template>
-    
-    <xsl:template match="aanlevering:BesluitVersie/data:ExpressionIdentificatie/data:FRBRWork">
-        <xsl:element name="data:FRBRWork">
-            <xsl:value-of select="$besluitFrbrWork"/>
+    <xsl:template match="data:informatieobjectRefs/data:informatieobjectRef[text()=$oldIoRefId]">
+        <xsl:element name="data:informatieobjectRef">
+            <xsl:value-of select="$newIoRefId"/>
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="aanlevering:BesluitVersie/data:ExpressionIdentificatie/data:FRBRExpression">
+    <xsl:template match="data:FRBRExpression[text()=$oldIoRefId]">
         <xsl:element name="data:FRBRExpression">
-            <xsl:value-of select="$besluitFrbrExpression"/>
+            <xsl:value-of select="$newIoRefId"/>
         </xsl:element>
     </xsl:template>
-    
-    <xsl:template match="aanlevering:RegelingVersieInformatie/data:ExpressionIdentificatie/data:FRBRWork">
+
+    <xsl:template match="geo:FRBRExpression[text()=$oldIoRefId]">
+        <xsl:element name="geo:FRBRExpression">
+            <xsl:value-of select="$newIoRefId"/>
+        </xsl:element>
+    </xsl:template>
+
+    <xsl:template match="data:FRBRWork[text()=$oldIoWorkId]">
         <xsl:element name="data:FRBRWork">
-            <xsl:value-of select="$regelingFrbrWork"/>
+            <xsl:value-of select="$newIoWorkId"/>
         </xsl:element>
     </xsl:template>
     
-    <xsl:template match="aanlevering:RegelingVersieInformatie/data:ExpressionIdentificatie/data:FRBRExpression">
-        <xsl:element name="data:FRBRExpression">
-            <xsl:value-of select="$regelingFrbrExpression"/>
+    <xsl:template match="geo:FRBRWork[text()=$oldIoWorkId]">
+        <xsl:element name="geo:FRBRWork">
+            <xsl:value-of select="$newIoWorkId"/>
         </xsl:element>
     </xsl:template>
-    
+
 </xsl:stylesheet>

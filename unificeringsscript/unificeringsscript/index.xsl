@@ -14,7 +14,7 @@
     <xsl:param name="file.list" as="xs:string*"/>
     <xsl:param name="base.dir"/>
 
-    <xsl:variable name="dateTime" select="format-dateTime(current-dateTime(), '[M01][D01][Y0001][h01][m01][s01]')"/>
+    <xsl:variable name="dateTime" select="format-dateTime(current-dateTime(), '[Y0001][M01][D01][h01][m01][s01]')"/>
 
     <xsl:template match="/">
         <xsl:call-template name="index"/>
@@ -60,6 +60,54 @@
                     <xsl:element name="FRBRExpression">
                         <xsl:value-of select="foo:generateFRBRExpression(document($fullname)//aanlevering:RegelingVersieInformatie/data:ExpressionIdentificatie/data:FRBRExpression/text())"/>
                     </xsl:element>
+                </xsl:element>
+                <xsl:element name="besluit">
+                    <xsl:element name="versies">
+                        <xsl:element name="wordt">
+                            <xsl:value-of select="foo:generateFRBRExpression(document($fullname)//@wordt)"/>
+                        </xsl:element>
+                    </xsl:element>
+                    <xsl:element name="instrumentversie">
+                        <xsl:value-of select="foo:generateFRBRExpression(document($fullname)//data:ConsolidatieInformatie/data:BeoogdeRegelgeving/data:BeoogdeRegeling/data:instrumentVersie)"/>
+                    </xsl:element>
+                    <xsl:for-each select="document($fullname)//data:informatieobjectRefs/data:informatieobjectRef">
+                        <xsl:element name="informatieobjectRef">
+                            <xsl:variable name="oldIoRefId" select="text()"/>
+                            <xsl:variable name="oldIoWorkId" select="concat('/', tokenize($oldIoRefId, '/')[2], '/', tokenize($oldIoRefId, '/')[3], '/', tokenize($oldIoRefId, '/')[4], '/', tokenize($oldIoRefId, '/')[5], '/', tokenize($oldIoRefId, '/')[6], '/', tokenize($oldIoRefId, '/')[7])"/>
+                            <xsl:element name="gio">
+                                <xsl:for-each select="tokenize($file.list, ';')">
+                                    <xsl:variable name="giofullname" select="."/>
+                                    <xsl:for-each select="document($giofullname)//aanlevering:AanleveringInformatieObject">
+                                        <xsl:if test="descendant::data:FRBRExpression/text() = $oldIoRefId">
+                                            <xsl:value-of select="tokenize($giofullname, '/')[last()]"/>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                </xsl:for-each>
+                            </xsl:element>
+                            <xsl:element name="gml">
+                                <xsl:for-each select="tokenize($file.list, ';')">
+                                    <xsl:variable name="giofullname" select="."/>
+                                    <xsl:for-each select="document($giofullname)//geo:GeoInformatieObjectVaststelling">
+                                        <xsl:if test="descendant::geo:FRBRExpression/text() = $oldIoRefId">
+                                            <xsl:value-of select="tokenize($giofullname, '/')[last()]"/>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                </xsl:for-each>
+                            </xsl:element>
+                            <xsl:element name="oldIoWorkId">
+                                <xsl:value-of select="$oldIoWorkId"/>
+                            </xsl:element>
+                            <xsl:element name="newIoWorkId">
+                                <xsl:value-of select="foo:generateFRBRWork($oldIoWorkId)"/>
+                            </xsl:element>
+                            <xsl:element name="oldIoRefId">
+                                <xsl:value-of select="$oldIoRefId"/>
+                            </xsl:element>
+                            <xsl:element name="newIoRefId">
+                                <xsl:value-of select="foo:generateFRBRExpression($oldIoRefId)"/>
+                            </xsl:element>
+                        </xsl:element>
+                    </xsl:for-each>
                 </xsl:element>
             </xsl:if>
             <!-- Levering Ids -->
@@ -416,19 +464,21 @@
     <xsl:function name="foo:generateDoelId">
         <xsl:param name="oldId" as="xs:string"/>
         <xsl:value-of
-            select="concat('/', tokenize($oldId, '/')[2], '/', tokenize($oldId, '/')[3], '/', tokenize($oldId, '/')[4], '/', tokenize($oldId, '/')[5], '/', tokenize($oldId, '/')[6], '/', $dateTime)"/>
+            select="concat('/', tokenize($oldId, '/')[2], '/', tokenize($oldId, '/')[3], '/', tokenize($oldId, '/')[4], '/', tokenize($oldId, '/')[5], '/', tokenize($oldId, '/')[6], '/', concat(tokenize($oldId, '/')[7], $dateTime))"
+        />
     </xsl:function>
 
     <xsl:function name="foo:generateFRBRWork">
         <xsl:param name="oldId" as="xs:string"/>
         <xsl:value-of
-            select="concat('/', tokenize($oldId, '/')[2], '/', tokenize($oldId, '/')[3], '/', tokenize($oldId, '/')[4], '/', tokenize($oldId, '/')[5], '/', tokenize($oldId, '/')[6], '/', $dateTime)"/>
+            select="concat('/', tokenize($oldId, '/')[2], '/', tokenize($oldId, '/')[3], '/', tokenize($oldId, '/')[4], '/', tokenize($oldId, '/')[5], '/', tokenize($oldId, '/')[6], '/', concat(tokenize($oldId, '/')[7], $dateTime))"
+        />
     </xsl:function>
 
     <xsl:function name="foo:generateFRBRExpression">
         <xsl:param name="oldId" as="xs:string"/>
         <xsl:value-of
-            select="concat('/', tokenize($oldId, '/')[2], '/', tokenize($oldId, '/')[3], '/', tokenize($oldId, '/')[4], '/', tokenize($oldId, '/')[5], '/', tokenize($oldId, '/')[6], '/', $dateTime, '/', tokenize($oldId, '/')[8])"
+            select="concat('/', tokenize($oldId, '/')[2], '/', tokenize($oldId, '/')[3], '/', tokenize($oldId, '/')[4], '/', tokenize($oldId, '/')[5], '/', tokenize($oldId, '/')[6], '/', concat(tokenize($oldId, '/')[7], $dateTime), '/', tokenize($oldId, '/')[8])"
         />
     </xsl:function>
 

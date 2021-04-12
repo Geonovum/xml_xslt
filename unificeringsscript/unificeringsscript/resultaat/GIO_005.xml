@@ -3,17 +3,17 @@
                              schemaversie="1.0.3">
   <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <FRBRWork>/join/id/regdata/gm0546/2020/3_groen_en_luw</FRBRWork>
-         <FRBRExpression>/join/id/regdata/gm0546/2020/3_groen_en_luw/nld@2020-08-20</FRBRExpression>
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/3_groen_en_luw20210412040520</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/3_groen_en_luw20210412040520/nld@2020-08-20</data:FRBRExpression>
          <soortWork>/join/id/stop/work_010</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/04092021125420</data:heeftGeboorteregeling>
+         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/OVILEI00120210412040520</data:heeftGeboorteregeling>
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>005_3_groen_en_luw.gml</bestandsnaam>
-                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">c7a19096ad37f3a353343559302c44e8fd619f0f5c96e464275eea063aa90f072cf7c02ba16325650380b7d9837216a585259249ff1632296dddc35445861e81</data:hash>
+                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">d2199f2a7ef9d16235238e50ac88fe5ceeebd4d3d3565ee4ab96da630d8f11a5b78bd0bcf32dd3750db0f76ecf2b5c6cd81a241fdc714b3c99bc0e50e49486c8</data:hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

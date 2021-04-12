@@ -3,17 +3,17 @@
                              schemaversie="1.0.3">
   <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <FRBRWork>/join/id/regdata/gm0546/2020/2_stads_en_levendig</FRBRWork>
-         <FRBRExpression>/join/id/regdata/gm0546/2020/2_stads_en_levendig/nld@2020-08-20</FRBRExpression>
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/2_stads_en_levendig20210412040520</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/2_stads_en_levendig20210412040520/nld@2020-08-20</data:FRBRExpression>
          <soortWork>/join/id/stop/work_010</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/04092021125420</data:heeftGeboorteregeling>
+         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/OVILEI00120210412040520</data:heeftGeboorteregeling>
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>004_2_stads_en_levendig.gml</bestandsnaam>
-                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">9eaf3b00640c7fc3c714fe2c8eee64809cce88a439a7189ed05207c656347d0594d6b8817dbe8903cfa026fa53915016f5cc16249ce8f50795f122f6b2a5016b</data:hash>
+                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">e8115a3ecb0db27b0420ffb6c3f1ca9f6349838fec79961df0b1d4cd1c84ccd038207a743fc15d9b95e62327118584fa059b94718872f09fd57790af4767c8c0</data:hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
