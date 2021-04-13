@@ -11,7 +11,7 @@
       <sl:dataset>Gemeente Leiden</sl:dataset>
       <sl:inhoud>
          <sl:gebied>Gemeente Leiden</sl:gebied>
-         <sl:leveringsId>OVILEI001-001-20210412040520</sl:leveringsId>
+         <sl:leveringsId>OVILEI001-001-20210413050147</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Regelingsgebied</sl:objectType>
          </sl:objectTypen>
@@ -20,9 +20,9 @@
          <ow-dc:owObject>
         <!--Met het Regelingsgebied geef je het gebied aan waar de regeling van toepassing is (in dit geval Gemeente Leiden)-->
             <rg:Regelingsgebied>
-               <rg:identificatie>nl.imow-gm0546.regelingsgebied.202000000120210412040520</rg:identificatie>
+               <rg:identificatie>nl.imow-gm0546.regelingsgebied.202000000120210413050147</rg:identificatie>
                <rg:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm0546.gebied.2020000120210412040520"/> 
+                  <l:LocatieRef xlink:href="nl.imow-gm0546.gebied.2020000120210413050147"/> 
                </rg:locatieaanduiding>
             </rg:Regelingsgebied>
          </ow-dc:owObject>
