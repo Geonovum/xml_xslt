@@ -3,8 +3,8 @@
                     schemaversie="1.0.3">
    <BesluitVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0546/2020/OVILEI00120210412040520</data:FRBRWork>
-         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0546/2020/OVILEI00120210412040520/nld@2020-08-19</data:FRBRExpression>
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0546/2020/OVILEI00120210413050147</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0546/2020/OVILEI00120210413050147/nld@2020-08-19</data:FRBRExpression>
          <soortWork>/join/id/stop/work_003</soortWork>
       </ExpressionIdentificatie>
       <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -25,11 +25,11 @@
          </rechtsgebieden>
          <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
          <informatieobjectRefs>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/gemeente_leiden20210412040520/nld@2020-08-20</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/ontwikkelperspectief_zuidwest20210412040520/nld@2020-08-20</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch20210412040520/nld@2020-08-20</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/2_stads_en_levendig20210412040520/nld@2020-08-20</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/3_groen_en_luw20210412040520/nld@2020-08-20</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/gemeente_leiden20210413050147/nld@2020-08-20</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/ontwikkelperspectief_zuidwest20210413050147/nld@2020-08-20</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch20210413050147/nld@2020-08-20</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/2_stads_en_levendig20210413050147/nld@2020-08-20</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/3_groen_en_luw20210413050147/nld@2020-08-20</data:informatieobjectRef>
          </informatieobjectRefs>
       </BesluitMetadata>
       <Procedureverloop xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -46,44 +46,44 @@
          <BeoogdeRegelgeving>
             <BeoogdeRegeling>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0546/2020/InstellingOmgevingsvisie20210412040520</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0546/2020/InstellingOmgevingsvisie20210413050147</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/OVILEI00120210412040520/nld@2020-08-19;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/OVILEI00120210413050147/nld@2020-08-19;1</data:instrumentVersie>
                <eId>art_I</eId>
             </BeoogdeRegeling>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0546/2020/InstellingOmgevingsvisie20210412040520</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0546/2020/InstellingOmgevingsvisie20210413050147</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/gemeente_leiden20210412040520/nld@2020-08-20</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/gemeente_leiden20210413050147/nld@2020-08-20</data:instrumentVersie>
                <eId>!initieel_reg#cmp_1__content_o_1__list_o_1__item_o_1__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0546/2020/InstellingOmgevingsvisie20210412040520</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0546/2020/InstellingOmgevingsvisie20210413050147</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/ontwikkelperspectief_zuidwest20210412040520/nld@2020-08-20</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/ontwikkelperspectief_zuidwest20210413050147/nld@2020-08-20</data:instrumentVersie>
                <eId>!initieel_reg#cmp_1__content_o_1__list_o_1__item_o_2__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0546/2020/InstellingOmgevingsvisie20210412040520</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0546/2020/InstellingOmgevingsvisie20210413050147</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch20210412040520/nld@2020-08-20</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/1_hoogstedelijk_en_dynamisch20210413050147/nld@2020-08-20</data:instrumentVersie>
                <eId>!initieel_reg#cmp_1__content_o_1__list_o_1__item_o_3__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0546/2020/InstellingOmgevingsvisie20210412040520</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0546/2020/InstellingOmgevingsvisie20210413050147</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/2_stads_en_levendig20210412040520/nld@2020-08-20</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/2_stads_en_levendig20210413050147/nld@2020-08-20</data:instrumentVersie>
                <eId>!initieel_reg#cmp_1__content_o_1__list_o_1__item_o_4__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0546/2020/InstellingOmgevingsvisie20210412040520</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0546/2020/InstellingOmgevingsvisie20210413050147</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/3_groen_en_luw20210412040520/nld@2020-08-20</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0546/2020/3_groen_en_luw20210413050147/nld@2020-08-20</data:instrumentVersie>
                <eId>!initieel_reg#cmp_1__content_o_1__list_o_1__item_o_5__ref_o_1</eId>
             </BeoogdInformatieobject>
          </BeoogdeRegelgeving>
@@ -130,7 +130,7 @@
                <Nummer>I</Nummer>
             </Kop>
             <RegelingVrijetekst componentnaam="initieel_reg"
-                                wordt="/akn/nl/act/gm0546/2020/OVILEI00120210412040520/nld@2020-08-19;1">
+                                wordt="/akn/nl/act/gm0546/2020/OVILEI00120210413050147/nld@2020-08-19;1">
                <RegelingOpschrift eId="longTitle" wId="longTitle">
                   <Al>Concept Omgevingsvisie Leiden</Al>
                </RegelingOpschrift>
@@ -452,8 +452,8 @@
    </BesluitVersie>
    <RegelingVersieInformatie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/OVILEI00120210412040520</data:FRBRWork>
-         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/OVILEI00120210412040520/nld@2020-08-19;1</data:FRBRExpression>
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/OVILEI00120210413050147</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0546/2020/OVILEI00120210413050147/nld@2020-08-19;1</data:FRBRExpression>
          <soortWork>/join/id/stop/work_019</soortWork>
       </ExpressionIdentificatie>
       <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">

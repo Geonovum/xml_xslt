@@ -74,26 +74,30 @@
                         <xsl:element name="informatieobjectRef">
                             <xsl:variable name="oldIoRefId" select="text()"/>
                             <xsl:variable name="oldIoWorkId" select="concat('/', tokenize($oldIoRefId, '/')[2], '/', tokenize($oldIoRefId, '/')[3], '/', tokenize($oldIoRefId, '/')[4], '/', tokenize($oldIoRefId, '/')[5], '/', tokenize($oldIoRefId, '/')[6], '/', tokenize($oldIoRefId, '/')[7])"/>
-                            <xsl:element name="gio">
-                                <xsl:for-each select="tokenize($file.list, ';')">
-                                    <xsl:variable name="giofullname" select="."/>
-                                    <xsl:for-each select="document($giofullname)//aanlevering:AanleveringInformatieObject">
-                                        <xsl:if test="descendant::data:FRBRExpression/text() = $oldIoRefId">
-                                            <xsl:value-of select="tokenize($giofullname, '/')[last()]"/>
-                                        </xsl:if>
-                                    </xsl:for-each>
+                            <xsl:for-each select="tokenize($file.list, ';')">
+                                <xsl:variable name="giofullname" select="."/>
+                                <xsl:for-each select="document($giofullname)//aanlevering:AanleveringInformatieObject">
+                                    <xsl:if test="descendant::data:FRBRExpression/text() = $oldIoRefId">
+                                        <xsl:element name="gio">
+                                            <xsl:element name="file">
+                                                <xsl:value-of select="tokenize($giofullname, '/')[last()]"/>
+                                            </xsl:element>
+                                        </xsl:element>
+                                    </xsl:if>
                                 </xsl:for-each>
-                            </xsl:element>
-                            <xsl:element name="gml">
-                                <xsl:for-each select="tokenize($file.list, ';')">
-                                    <xsl:variable name="giofullname" select="."/>
-                                    <xsl:for-each select="document($giofullname)//geo:GeoInformatieObjectVaststelling">
-                                        <xsl:if test="descendant::geo:FRBRExpression/text() = $oldIoRefId">
-                                            <xsl:value-of select="tokenize($giofullname, '/')[last()]"/>
-                                        </xsl:if>
-                                    </xsl:for-each>
+                            </xsl:for-each>
+                            <xsl:for-each select="tokenize($file.list, ';')">
+                                <xsl:variable name="gmlfullname" select="."/>
+                                <xsl:for-each select="document($gmlfullname)//geo:GeoInformatieObjectVaststelling">
+                                    <xsl:if test="descendant::geo:FRBRExpression/text() = $oldIoRefId">
+                                        <xsl:element name="gml">
+                                            <xsl:element name="file">
+                                                <xsl:value-of select="tokenize($gmlfullname, '/')[last()]"/>
+                                            </xsl:element>
+                                        </xsl:element>
+                                    </xsl:if>
                                 </xsl:for-each>
-                            </xsl:element>
+                            </xsl:for-each>
                             <xsl:element name="oldIoWorkId">
                                 <xsl:value-of select="$oldIoWorkId"/>
                             </xsl:element>
@@ -234,6 +238,30 @@
                         <xsl:with-param name="fullname" select="$fullname"/>
                     </xsl:call-template>
                 </xsl:for-each>
+                <xsl:for-each select="document($fullname)//r:Instructieregel/r:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."/>
+                        <xsl:with-param name="fullname" select="$fullname"/>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//r:JuridischeRegel/r:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."/>
+                        <xsl:with-param name="fullname" select="$fullname"/>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//r:Omgevingswaarderegel/r:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."/>
+                        <xsl:with-param name="fullname" select="$fullname"/>
+                    </xsl:call-template>
+                </xsl:for-each>
+                <xsl:for-each select="document($fullname)//r:RegelVoorIedereen/r:identificatie">
+                    <xsl:call-template name="owid">
+                        <xsl:with-param name="parent" select="."/>
+                        <xsl:with-param name="fullname" select="$fullname"/>
+                    </xsl:call-template>
+                </xsl:for-each>
             </xsl:element>
             <!-- GUIDS -->
             <xsl:if test="document($fullname)//geo:GeoInformatieObjectVaststelling">
@@ -304,6 +332,34 @@
             </xsl:if>
             <!-- OW       -->
             <xsl:if test="document($fullname)//r:Regeltekst">
+                <xsl:call-template name="file">
+                    <xsl:with-param name="type" select="'regeltekst.xml'"/>
+                    <xsl:with-param name="fullname" select="$fullname"/>
+                    <xsl:with-param name="ow" select="'true'"/>
+                </xsl:call-template>
+            </xsl:if>
+            <xsl:if test="document($fullname)//r:Instructieregel">
+                <xsl:call-template name="file">
+                    <xsl:with-param name="type" select="'regeltekst.xml'"/>
+                    <xsl:with-param name="fullname" select="$fullname"/>
+                    <xsl:with-param name="ow" select="'true'"/>
+                </xsl:call-template>
+            </xsl:if>
+            <xsl:if test="document($fullname)//r:JuridischeRegel">
+                <xsl:call-template name="file">
+                    <xsl:with-param name="type" select="'regeltekst.xml'"/>
+                    <xsl:with-param name="fullname" select="$fullname"/>
+                    <xsl:with-param name="ow" select="'true'"/>
+                </xsl:call-template>
+            </xsl:if>
+            <xsl:if test="document($fullname)//r:Omgevingswaarderegel">
+                <xsl:call-template name="file">
+                    <xsl:with-param name="type" select="'regeltekst.xml'"/>
+                    <xsl:with-param name="fullname" select="$fullname"/>
+                    <xsl:with-param name="ow" select="'true'"/>
+                </xsl:call-template>
+            </xsl:if>
+            <xsl:if test="document($fullname)//r:RegelVoorIedereen">
                 <xsl:call-template name="file">
                     <xsl:with-param name="type" select="'regeltekst.xml'"/>
                     <xsl:with-param name="fullname" select="$fullname"/>
