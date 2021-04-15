@@ -6,26 +6,25 @@
                  xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
                  xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied"
                  xmlns:l="http://www.geostandaarden.nl/imow/locatie"
-                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
-  <sl:standBestand>
-      <sl:dataset>Gemeente Leiden</sl:dataset>
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>provincie Utrecht</sl:dataset>
       <sl:inhoud>
-         <sl:gebied>Gemeente Leiden</sl:gebied>
-         <sl:leveringsId>OVILEI001-001-20210414074722</sl:leveringsId>
+         <sl:gebied>provincie Utrecht</sl:gebied>
+         <sl:leveringsId>OVPU001</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Regelingsgebied</sl:objectType>
          </sl:objectTypen>
       </sl:inhoud>
       <sl:stand>
-         <ow-dc:owObject>
-        <!--Met het Regelingsgebied geef je het gebied aan waar de regeling van toepassing is (in dit geval Gemeente Leiden)-->
+         <ow-dc:owObject><!--Met het Regelingsgebied geef je het gebied aan waar de regeling van toepassing is (in dit geval Omgevingsverordening Utrecht)-->
             <rg:Regelingsgebied>
-               <rg:identificatie>nl.imow-gm0546.regelingsgebied.202000000120210414074722</rg:identificatie>
+               <rg:identificatie>nl.imow-pv26.regelingsgebied.202000000120210415052124</rg:identificatie>
                <rg:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm0546.gebied.2020000120210414074722"/> 
+                  <l:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied20210415052124"/>
                </rg:locatieaanduiding>
             </rg:Regelingsgebied>
          </ow-dc:owObject>
       </sl:stand>
-  </sl:standBestand>
+   </sl:standBestand>
 </ow-dc:owBestand>
