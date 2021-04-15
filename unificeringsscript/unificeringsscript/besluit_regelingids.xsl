@@ -32,7 +32,6 @@
     <xsl:param name="besluitFrbrExpression"/>
     <xsl:param name="regelingFrbrWork"/>
     <xsl:param name="regelingFrbrExpression"/>
-    <xsl:param name="wordt"/>
     <xsl:param name="instrumentversie"/>
     
     <xsl:template match="@*|node()">
@@ -41,12 +40,6 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template match="@wordt">
-        <xsl:attribute name="wordt">
-            <xsl:value-of select="$wordt"/>
-        </xsl:attribute>
-    </xsl:template>
-
     <xsl:template match="data:BeoogdeRegelgeving/data:BeoogdeRegeling/data:instrumentVersie">
         <xsl:element name="data:instrumentVersie">
             <xsl:value-of select="$instrumentversie"/>
