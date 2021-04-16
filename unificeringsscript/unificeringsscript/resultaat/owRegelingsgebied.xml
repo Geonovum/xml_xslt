@@ -19,9 +19,9 @@
       <sl:stand>
          <ow-dc:owObject><!--Met het Regelingsgebied geef je het gebied aan waar de regeling van toepassing is (in dit geval Omgevingsverordening Utrecht)-->
             <rg:Regelingsgebied>
-               <rg:identificatie>nl.imow-pv26.regelingsgebied.202000000120210416032337</rg:identificatie>
+               <rg:identificatie>nl.imow-pv26.regelingsgebied.2020000001</rg:identificatie>
                <rg:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied20210416032337"/>
+                  <l:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
                </rg:locatieaanduiding>
             </rg:Regelingsgebied>
          </ow-dc:owObject>

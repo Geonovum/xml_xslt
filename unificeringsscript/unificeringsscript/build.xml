@@ -308,6 +308,7 @@
         <param name="giofile.name" path="name/text()"/>
         <actions>
           <xslt in="${output.dir}/@{giofile.name}" out="${temp.dir}/@{giofile.name}" extension=".xml" style="checksum_hash.xsl" processor="trax" force="true">
+            <classpath location="saxon9he.jar"/>
             <param name="temp.dir" expression="${temp.dir}"/>
           </xslt>
           <copy file="${temp.dir}/@{giofile.name}" tofile="${output.dir}/@{giofile.name}"/>
