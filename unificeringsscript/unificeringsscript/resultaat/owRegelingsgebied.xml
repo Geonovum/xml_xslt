@@ -11,7 +11,7 @@
       <sl:dataset>provincie Utrecht</sl:dataset>
       <sl:inhoud>
          <sl:gebied>provincie Utrecht</sl:gebied>
-         <sl:leveringsId>OVPU001</sl:leveringsId>
+         <sl:leveringsId>OVPU001-test01w-20210416034243</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Regelingsgebied</sl:objectType>
          </sl:objectTypen>
@@ -19,9 +19,9 @@
       <sl:stand>
          <ow-dc:owObject><!--Met het Regelingsgebied geef je het gebied aan waar de regeling van toepassing is (in dit geval Omgevingsverordening Utrecht)-->
             <rg:Regelingsgebied>
-               <rg:identificatie>nl.imow-pv26.regelingsgebied.2020000001</rg:identificatie>
+               <rg:identificatie>nl.imow-pv26.regelingsgebied.202000000120210416034243</rg:identificatie>
                <rg:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+                  <l:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied20210416034243"/>
                </rg:locatieaanduiding>
             </rg:Regelingsgebied>
          </ow-dc:owObject>
