@@ -77,7 +77,7 @@
         <script type="text/javascript">function ShowHide(obj){var tbody = obj.parentNode.getElementsByTagName("tbody")[0];var old = tbody.style.display;tbody.style.display = (old == "none"?"":"none");}</script>
         <h1>AanleveringBesluit</h1>
         <xsl:apply-templates select="$besluit/BesluitVersie" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
-        <xsl:apply-templates select="$besluit//(BesluitCompact|BesluitKlassiek)//(RegelingCompact|RegelingKlassiek|RegelingTijdelijkdeel|RegelingVrijetekst|RegelingMutatie)" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
+        <xsl:apply-templates select="$besluit/RegelingVersieInformatie" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
       </body>
     </html>
   </xsl:template>
@@ -88,11 +88,18 @@
     <xsl:apply-templates select="BesluitMetadata" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
     <xsl:apply-templates select="Procedureverloop" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
     <xsl:apply-templates select="ConsolidatieInformatie/BeoogdeRegelgeving" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+    <xsl:apply-templates select="ConsolidatieInformatie/Intrekkingen" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
     <xsl:apply-templates select="ConsolidatieInformatie/Tijdstempels" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
   </xsl:template>
 
-  <xsl:template match="RegelingCompact|RegelingKlassiek|RegelingTijdelijkdeel|RegelingVrijetekst|RegelingMutatie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+  <xsl:template match="RegelingVersieInformatie" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
     <h2>Regeling</h2>
+    <xsl:apply-templates select="ExpressionIdentificatie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+    <xsl:apply-templates select="RegelingMetadata" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+    <xsl:apply-templates select="$besluit//(BesluitCompact|BesluitKlassiek)//(RegelingCompact|RegelingKlassiek|RegelingTijdelijkdeel|RegelingVrijetekst|RegelingMutatie)" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
+  </xsl:template>
+
+  <xsl:template match="RegelingCompact|RegelingKlassiek|RegelingTijdelijkdeel|RegelingVrijetekst|RegelingMutatie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
     <xsl:if test=".//Artikel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
       <div class="content">
         <table>
@@ -628,6 +635,36 @@
     </div>
   </xsl:template>
 
+  <xsl:template match="ConsolidatieInformatie/Intrekkingen" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+    <div class="content">
+      <table>
+        <colgroup>
+          <col width="165px"/>
+          <col width="auto"/>
+        </colgroup>
+        <thead onclick="ShowHide(this)">
+          <tr>
+            <th colspan="2"><p class="titel"><xsl:value-of select="./name()"/></p></th>
+          </tr>
+        </thead>
+        <tbody>
+          <xsl:for-each select="element()" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+            <tr>
+              <td>
+                <p class="naam"><xsl:value-of select="./name()"/></p>
+              </td>
+              <td>
+                <xsl:call-template name="waarde">
+                  <xsl:with-param name="current" select="text(),element()"/>
+                </xsl:call-template>
+              </td>
+            </tr>
+          </xsl:for-each>
+        </tbody>
+      </table>
+    </div>
+  </xsl:template>
+
   <xsl:template match="ConsolidatieInformatie/Tijdstempels" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <div class="content">
       <table>
@@ -658,4 +695,34 @@
     </div>
   </xsl:template>
 
+  <xsl:template match="RegelingMetadata" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+    <div class="content">
+      <table>
+        <colgroup>
+          <col width="165px"/>
+          <col width="auto"/>
+        </colgroup>
+        <thead onclick="ShowHide(this)">
+          <tr>
+            <th colspan="2"><p class="titel"><xsl:value-of select="./name()"/></p></th>
+          </tr>
+        </thead>
+        <tbody>
+          <xsl:for-each select="soortRegeling,eindverantwoordelijke,maker,officieleTitel,heeftCiteertitelInformatie//citeertitel,onderwerpen/onderwerp,rechtsgebieden/rechtsgebied" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+            <tr>
+              <td>
+                <p class="naam"><xsl:value-of select="./name()"/></p>
+              </td>
+              <td>
+                <xsl:call-template name="waarde">
+                  <xsl:with-param name="current" select="text(),element()"/>
+                </xsl:call-template>
+              </td>
+            </tr>
+          </xsl:for-each>
+        </tbody>
+      </table>
+    </div>
+  </xsl:template>
+  
 </xsl:stylesheet>
