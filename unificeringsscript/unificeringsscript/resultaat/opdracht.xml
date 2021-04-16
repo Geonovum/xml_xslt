@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<lvbb:publicatieOpdracht xmlns:lvbb="http://www.overheid.nl/2017/lvbb">
-   <lvbb:idLevering>OVPU001-test01w-20210416034243</lvbb:idLevering>
-   <lvbb:idBevoegdGezag>00000001001797864000</lvbb:idBevoegdGezag>
-   <lvbb:idAanleveraar>00000001001797864000</lvbb:idAanleveraar>
-   <lvbb:publicatie>OVPU001.xml</lvbb:publicatie>
-   <lvbb:datumBekendmaking>2021-04-17</lvbb:datumBekendmaking>
-</lvbb:publicatieOpdracht>
