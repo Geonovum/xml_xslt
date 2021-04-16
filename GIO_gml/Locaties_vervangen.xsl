@@ -10,10 +10,11 @@
     exclude-result-prefixes="xs"
     version="2.0">
     <xsl:output method="xml" version="1.0" indent="yes" encoding="UTF-8" standalone="yes"/>
-
-    <xsl:param name="valid.dir" select="string('F:\DSO\Geonovum\GitHub\xml_xslt\GML-bestandenBrittBruidschat\valid')"/>
-    <xsl:param name="bestand_naam" select="tokenize(base-uri(),'/')[last()]"/>
-    <xsl:param name="valide_bestand" select="collection(concat('file:/', $valid.dir, '?select=', $bestand_naam))"/>
+    
+    <!-- de folder waar de valide gml's staan -->
+    <xsl:param name="valid.file" select="string('F:\DSO\Geonovum\GitHub\xml_xslt\GML-bestandenBrittBruidschat\valid')"/>
+    <!-- valide gml's ophalen -->
+    <xsl:variable name="valide_bestand" select="document(concat('file:/',$valid.file))"/>
     
     <!--Identity template, kopieer alle inhoud -->
     <xsl:template match="@*|node()">
@@ -38,17 +39,20 @@
         </xsl:copy>
     </xsl:template>
     
+    <!-- alle geometrie uit valide gml kopieren -->
     <xsl:template match="@*|node()" mode="next">
         <xsl:copy copy-namespaces="no">
             <xsl:apply-templates select="@*|node()" mode="next"/>
         </xsl:copy>
     </xsl:template>
-
+    
+    <!-- srsName overnemen -->
     <xsl:template match="@srsName" mode="next">
         <xsl:param name="srsName"/>
         <xsl:attribute name="srsName" select="$srsName"/>
     </xsl:template>
     
+    <!-- gml:id overnemen -->
     <xsl:template match="@gml:id" mode="next">
         <xsl:param name="gml_id"/>
         <xsl:if test="$gml_id">

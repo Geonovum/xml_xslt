@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="." name="valide_gml" default="main">
+<project basedir="." name="valide_gml" default="xml_valide">
     <taskdef resource="net/sf/antcontrib/antlib.xml"/>
     
     <!-- variabelen definieren -->
@@ -8,14 +8,24 @@
     <property name="result.dir" value="result"/>
     <property name="ogr2ogr" value="D:/Apps/QGIS/OSGeo4W64/bin/ogr2ogr.exe"/>
     <property name="src" value="F:/DSO/Geonovum/GitHub/xml_xslt/GML-bestandenBrittBruidschat"/>
-    <property name="gfs" value="F:/DSO/Geonovum/GitHub/xml_xslt/GIO_gml/GIO_test.gfs"></property>
+    <property name="gfs" value="F:/DSO/Geonovum/GitHub/xml_xslt/GIO_gml/GIO_gml_valideer.gfs"></property>
     
     <!-- controleeren of gml valide is volgens GIO schema -->
+    <target name="xml_valide_loop">
+        <foreach target="xml_valide" param="file">
+            <path id="input">
+                <fileset dir="${src}" includes="*.gml"/>
+            </path>
+        </foreach>
+    </target>
+    
     <target name="xml_valide">
-        <xmlvalidate file="">
-            <xmlcatalog id="">
-                <catalogpath path="F:/DSO/Geonovum/GitLab/1.0.4/bronhouderkoppelvlak/schema/extern/extern-catalog.xml" >
-                </catalogpath>
+        <xmlvalidate lenient="no" warn="yes" classname="org.apache.xerces.parsers.SAXParser" failonerror="no">
+            <fileset dir="${src}" includes="*.gml"/>
+            <xmlcatalog id="allCatalogs">
+                <catalogpath path="file:/F:/DSO/Geonovum/GitLab/1.0.4/bronhouderkoppelvlak/schema/lvbb/lvbb-catalog.xml"/>
+                <catalogpath path="file:/F:/DSO/Geonovum/GitLab/1.0.4/bronhouderkoppelvlak/schema/stop/stop-catalog.xml"/>
+                <catalogpath path="file:/F:/DSO/Geonovum/GitLab/1.0.4/bronhouderkoppelvlak/schema/extern/extern-catalog.xml"/>
             </xmlcatalog>
         </xmlvalidate>
     </target>
@@ -43,33 +53,33 @@
     <!-- gml bestand valideren en resultaat in valid folder zetten -->
     <target name="bron_valideer" description="Valideren van bronbestanden">
         <basename property="file.name" file="${file}"/>
-        <exec dir="${src}" executable="${ogr2ogr}" failonerror="no">
+        <exec dir="${src}" executable="${ogr2ogr}" failonerror="false" resultproperty="exec.fail">
             <arg line="-f GML"/>
             <arg line="${src}/${valid.dir}/${file.name}"/>
             <arg line="${src}/${file.name}"/>
             <arg line="-oo GFS_TEMPLATE=${gfs}"/>
-            <arg line="-dialect sqlite -sql 'select ST_MakeValid(SnapToGrid(geometry,0.001)) as geometry, Naam, id from Locatie'"/>
+            <arg line="-dialect sqlite -sql 'select ST_MakeValid(SnapToGrid(geometry,0.001)) as geometry, id from Locatie'"/>
             <arg line="-dsco PREFIX=geo"/>
             <arg line="-dsco FORMAT=GML3.2"/>
             <arg line="-dsco WRITE_FEATURE_BOUNDED_BY=no"/>
             <arg line="-dsco GML_FEATURE_COLLECTION=NO"/>
             <arg line="-dsco XSISCHEMA=OFF"/>
         </exec>
+        <echo message="${exec.fail}"/>
         <!-- Locaties terugzetten -->
-        <echo message="${src}"/>
-        <echo message="${valid.dir}"/>
-        <echo message="${file.name}"/>
+        <echo message="${file}"/>
+        <echo message="${src}/${result.dir}/${file.name}"/>
+        <echo message="${src}/${valid.dir}/${file.name}"/>
         
-        <xslt in="${src}/${file.name}" out="${src}/${result.dir}/${file.name}" style="test.xsl" processor="trax" force="true">
-            <param name="src" expression="${src}"/>
-            <param name="valid" expression="${valid.dir}"/>
-            <param name="file" expression="${file.name}"/>
+        <!--  -->
+        <xslt in="${file}" out="${src}/${result.dir}/${file.name}" style="Locaties_vervangen.xsl" processor="trax" force="true" failonerror="false">
+            <param name="valid.file" expression="${src}/${valid.dir}/${file.name}"/>
         </xslt>
-        
-<!--        <xslt in="${src}/${file.name}" out="${src}/${result.dir}/${file.name}" style="Locaties_vervangen.xsl" processor="trax" force="true">
-            <param name="valide" expression="${src}/${valid.dir}"/>
-        </xslt>-->
     </target>
      
-     <target name="main" depends="init, loop"></target>
+     <target name="opruimen" description="Verwijderen tijdelijke bestanden">
+         <!--<delete dir="${src}/${valid.dir}" failonerror="no" includeemptydirs="true"/>-->
+     </target>
+     
+     <target name="main" depends="init, loop, opruimen"></target>
 </project>

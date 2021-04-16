@@ -4,8 +4,8 @@
   <taskdef resource="net/sf/antcontrib/antlib.xml"/>
   <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"/>
 
-  <property name="input.dir" value="1.0.3/opdracht"/>
-  <property name="output.dir" value="1.0.4/opdracht"/>
+  <property name="input.dir" value="bron"/>
+  <property name="output.dir" value="resultaat"/>
   <property name="temp.dir" value="temp"/>
 
   <!-- initialiseer mappen -->
