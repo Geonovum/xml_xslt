@@ -38,19 +38,19 @@
     
     <xsl:template match="basisgeo:id[text()=$oldGUID]">
         <xsl:element name="basisgeo:id">
-            <xsl:value-of select="translate(.,$oldGUID,$newGUID)"/>
+            <xsl:value-of select="replace(.,$oldGUID,$newGUID)"/>
         </xsl:element>
     </xsl:template>
     
     <xsl:template match="@gml:id[contains(.,$oldGUID)]">
         <xsl:attribute name="gml:id">
-            <xsl:value-of select="translate(.,$oldGUID,$newGUID)"/>
+            <xsl:value-of select="replace(.,$oldGUID,$newGUID)"/>
         </xsl:attribute>
     </xsl:template>
     
     <xsl:template match="@xlink:href[contains(.,$oldGUID)]">
         <xsl:attribute name="xlink:href">
-            <xsl:value-of select="translate(.,$oldGUID,$newGUID)"/>
+            <xsl:value-of select="replace(.,$oldGUID,$newGUID)"/>
         </xsl:attribute>
     </xsl:template>
 

@@ -26,9 +26,9 @@
     >
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
     
-    <xsl:param name="oldId"/>
     <xsl:param name="newId"/>
     
+    <!-- Datum voor template datum-bekendmaking -->
     <xsl:variable name="date" select="format-dateTime(current-dateTime() + xs:dayTimeDuration('P1D'), '[Y0001]-[M01]-[D01]')"/>
     
     <!-- ********   LET OP EN LEES DIT !!!!! ********** -->
@@ -60,7 +60,7 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template match="sl:leveringsId[text()=$oldId]">
+    <xsl:template match="sl:leveringsId">
         <xsl:element name="sl:leveringsId">
             <xsl:value-of select="$newId"/>
         </xsl:element>
@@ -72,7 +72,7 @@
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="lvbb:idLevering[text()=$oldId]">
+    <xsl:template match="lvbb:idLevering">
         <xsl:element name="lvbb:idLevering">
             <xsl:value-of select="$newId"/>
         </xsl:element>
