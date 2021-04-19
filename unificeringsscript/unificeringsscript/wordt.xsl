@@ -38,6 +38,7 @@
     </xsl:template>
     
     <xsl:template match="@wordt[.=$oldWordt]">
+        <xsl:message select="$oldWordt"></xsl:message>
         <xsl:attribute name="wordt">
             <xsl:value-of select="$newWordt"/>
         </xsl:attribute>

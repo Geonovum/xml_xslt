@@ -22,6 +22,7 @@
     xmlns:lvbb="http://www.overheid.nl/2017/lvbb"
     xmlns:aanlevering="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
     xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" 
+    xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
     xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
     xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
     
@@ -40,6 +41,21 @@
         </xsl:copy>
     </xsl:template>
     
+    <xsl:template match="tekst:ExtIoRef[text()=$oldIoRefId]">
+        <xsl:element name="tekst:ExtIoRef">
+            <xsl:attribute name="wId">
+                <xsl:value-of select="@wId"/>
+            </xsl:attribute>
+            <xsl:attribute name="eId">
+                <xsl:value-of select="@eId"/>
+            </xsl:attribute>
+            <xsl:attribute name="ref">
+                <xsl:value-of select="$newIoRefId"/>
+            </xsl:attribute>
+            <xsl:value-of select="$newIoRefId"/>
+        </xsl:element>
+    </xsl:template>
+
     <xsl:template match="data:BeoogdInformatieobject/data:instrumentVersie[text()=$oldIoRefId]">
         <xsl:element name="data:instrumentVersie">
             <xsl:value-of select="$newIoRefId"/>
@@ -75,5 +91,5 @@
             <xsl:value-of select="$newIoWorkId"/>
         </xsl:element>
     </xsl:template>
-
+    
 </xsl:stylesheet>
