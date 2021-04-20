@@ -86,7 +86,7 @@
         </xsl:element>
     </xsl:template>
     
-    <xsl:template match="data:officieleTitel[text()=$oldIoWorkId]">
+    <xsl:template match="data:InformatieObjectMetadata/data:officieleTitel[text()=$oldIoWorkId]">
         <xsl:element name="data:officieleTitel">
             <xsl:value-of select="$newIoWorkId"/>
         </xsl:element>
