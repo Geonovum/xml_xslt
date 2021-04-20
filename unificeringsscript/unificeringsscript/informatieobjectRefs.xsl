@@ -86,6 +86,12 @@
         </xsl:element>
     </xsl:template>
     
+    <xsl:template match="data:officieleTitel[text()=$oldIoWorkId]">
+        <xsl:element name="data:officieleTitel">
+            <xsl:value-of select="$newIoWorkId"/>
+        </xsl:element>
+    </xsl:template>
+        
     <xsl:template match="geo:FRBRWork[text()=$oldIoWorkId]">
         <xsl:element name="geo:FRBRWork">
             <xsl:value-of select="$newIoWorkId"/>
