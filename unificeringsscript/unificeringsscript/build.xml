@@ -127,6 +127,38 @@
         </actions>
       </call>
     </xmltask>
+    <!-- bovenliggende activiteiten -->
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/bovenliggendeActiviteitRelatie">
+        <param name="sourceFileName" path="name/text()"/>
+        <param name="bovenliggendeActiviteitIdLokaalAanwezig"  path="bovenliggendeActiviteitIdLokaalAanwezig/text()"/>
+        <param name="dateTime"  path="../dateTime/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{sourceFileName}" out="${temp.dir}/@{sourceFileName}" extension=".xml" style="activiteit.xsl" processor="trax" force="true">
+            <classpath location="saxon9he.jar"/>
+            <param name="dateTime" expression="@{dateTime}"/>
+            <param name="lokaleActiviteitRelatie" expression="@{bovenliggendeActiviteitIdLokaalAanwezig}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{sourceFileName}" tofile="${output.dir}/@{sourceFileName}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <!-- gerelateerde activiteiten -->
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/gerelateerdeActiviteitRelatie">
+        <param name="sourceFileName" path="name/text()"/>
+        <param name="gerelateerdeActiviteitIdLokaalAanwezig"  path="gerelateerdeActiviteitIdLokaalAanwezig/text()"/>
+        <param name="dateTime"  path="../dateTime/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{sourceFileName}" out="${temp.dir}/@{sourceFileName}" extension=".xml" style="activiteit.xsl" processor="trax" force="true">
+            <classpath location="saxon9he.jar"/>
+            <param name="dateTime" expression="@{dateTime}"/>
+            <param name="lokaleActiviteitRelatie" expression="@{gerelateerdeActiviteitIdLokaalAanwezig}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{sourceFileName}" tofile="${output.dir}/@{sourceFileName}"/>
+        </actions>
+      </call>
+    </xmltask>
   </target>
 
   <target name="leveringid_opdrachtparameters" description="Verandert leveringid en enkele andere parameters in opdracht en ow-bestanden door er een datum/tijd string achter te zetten.">

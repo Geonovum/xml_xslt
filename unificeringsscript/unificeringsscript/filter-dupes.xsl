@@ -5,6 +5,8 @@
     version="2.0">
     
     <xsl:key name="owFile" match="file" use="name"/>
+    <xsl:key name="bovenliggendeActiviteit" match="bovenliggendeActiviteitRelatie" use="bovenliggendeActiviteitIdLokaalAanwezig"/>
+    <xsl:key name="gerelateerdeActiviteit" match="gerelateerdeActiviteitRelatie" use="gerelateerdeActiviteitIdLokaalAanwezig"/>
     
     <xsl:template match="@*|node()">
         <xsl:copy>
@@ -20,5 +22,9 @@
     -->
     <xsl:template match="file[not(generate-id() = generate-id(key('owFile', name)[1]))]">
     </xsl:template>
-
+    <xsl:template match="bovenliggendeActiviteitRelatie[not(generate-id() = generate-id(key('bovenliggendeActiviteit', bovenliggendeActiviteitIdLokaalAanwezig)[1]))]">
+    </xsl:template>
+    <xsl:template match="gerelateerdeActiviteitRelatie[not(generate-id() = generate-id(key('gerelateerdeActiviteit', gerelateerdeActiviteitIdLokaalAanwezig)[1]))]">
+    </xsl:template>
+    
 </xsl:stylesheet>
