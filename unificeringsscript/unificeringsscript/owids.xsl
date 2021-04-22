@@ -65,6 +65,12 @@
         </xsl:element>
     </xsl:template>
     <!-- Locatie -->
+    <xsl:template match="l:Ambtsgebied/l:identificatie">
+        <xsl:element name="l:identificatie">
+            <xsl:value-of select="text()"/>
+        </xsl:element>
+    </xsl:template>
+    <!-- Locatie -->
     <xsl:template match="l:identificatie">
         <xsl:element name="l:identificatie">
             <xsl:value-of select="foo:generateOWId(text())"/>
