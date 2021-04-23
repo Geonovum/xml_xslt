@@ -19,9 +19,9 @@
     </xsl:template>
 
     <!-- maak manifest-bestand waarin is aangegeven wat de functie van een bestand is -->
-    
+
     <xsl:variable name="dateTime" select="format-dateTime(current-dateTime(), '[Y0001][M01][D01][h01][m01][s01]')"/>
-    
+
     <xsl:template name="index">
         <xsl:element name="index">
             <xsl:for-each select="$index/*">
@@ -89,7 +89,7 @@
                                 <xsl:for-each select="document($giofullname)//data:FRBRExpression">
                                     <xsl:if test="text() = $oldIoRefId">
                                         <xsl:element name="gio">
-                                                <xsl:value-of select="tokenize($giofullname, '/')[last()]"/>
+                                            <xsl:value-of select="tokenize($giofullname, '/')[last()]"/>
                                         </xsl:element>
                                     </xsl:if>
                                 </xsl:for-each>
@@ -99,7 +99,7 @@
                                 <xsl:for-each select="document($gmlfullname)//geo:FRBRExpression">
                                     <xsl:if test="text() = $oldIoRefId">
                                         <xsl:element name="gml">
-                                                <xsl:value-of select="tokenize($gmlfullname, '/')[last()]"/>
+                                            <xsl:value-of select="tokenize($gmlfullname, '/')[last()]"/>
                                         </xsl:element>
                                     </xsl:if>
                                 </xsl:for-each>
@@ -387,7 +387,6 @@
                     <xsl:with-param name="ow" select="'true'"/>
                 </xsl:call-template>
             </xsl:if>
-
             <xsl:if test="document($fullname)//Aanleveringen" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">
                 <xsl:call-template name="file">
                     <xsl:with-param name="type" select="'manifest-ow.xml'"/>
@@ -418,6 +417,42 @@
                         <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
                     </xsl:element>
                 </xsl:element>
+            </xsl:if>
+            <xsl:if test="document($fullname)//rol:Activiteit/rol:bovenliggendeActiviteit or document($fullname)//rol:Activiteit/rol:gerelateerdeActiviteit">
+                <xsl:for-each select="document($fullname)//rol:Activiteit">
+                    <xsl:variable name="bovenligendeActiviteitId" select="rol:bovenliggendeActiviteit/rol:ActiviteitRef/@xlink:href"/>
+                    <xsl:for-each select="tokenize($file.list, ';')">
+                        <xsl:variable name="activiteitBestand" select="."/>
+                        <xsl:for-each select="document($activiteitBestand)//rol:Activiteit">
+                            <xsl:if test="$bovenligendeActiviteitId = rol:identificatie/text()">
+                                <xsl:element name="bovenliggendeActiviteitRelatie">
+                                    <xsl:element name="name">
+                                        <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
+                                    </xsl:element>
+                                    <xsl:element name="bovenliggendeActiviteitIdLokaalAanwezig">
+                                        <xsl:value-of select="$bovenligendeActiviteitId"/>
+                                    </xsl:element>
+                                </xsl:element>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:for-each>
+                    <xsl:variable name="gerelateerdeActiviteitId" select="rol:gerelateerdeActiviteit/rol:ActiviteitRef/@xlink:href"/>
+                    <xsl:for-each select="tokenize($file.list, ';')">
+                        <xsl:variable name="activiteitBestand" select="."/>
+                        <xsl:for-each select="document($activiteitBestand)//rol:Activiteit">
+                            <xsl:if test="$gerelateerdeActiviteitId = rol:identificatie/text()">
+                                <xsl:element name="gerelateerdeActiviteitRelatie">
+                                    <xsl:element name="name">
+                                        <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
+                                    </xsl:element>
+                                    <xsl:element name="gerelateerdeActiviteitIdLokaalAanwezig">
+                                        <xsl:value-of select="$gerelateerdeActiviteitId"/>
+                                    </xsl:element>
+                                </xsl:element>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:for-each>
+                </xsl:for-each>
             </xsl:if>
         </xsl:for-each>
     </xsl:param>
@@ -474,6 +509,5 @@
             </xsl:element>
         </xsl:element>
     </xsl:template>
-
 
 </xsl:stylesheet>

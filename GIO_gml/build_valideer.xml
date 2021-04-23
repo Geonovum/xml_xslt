@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="." name="valide_gml" default="xml_valide">
+<project basedir="." name="valide_gml" default="main">
+
     <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+    <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"/>
     
     <!-- variabelen definieren -->
     <property name="valid.dir" value="valid"/>
@@ -8,27 +10,9 @@
     <property name="result.dir" value="result"/>
     <property name="ogr2ogr" value="D:/Apps/QGIS/OSGeo4W64/bin/ogr2ogr.exe"/>
     <property name="src" value="F:/DSO/Geonovum/GitHub/xml_xslt/GML-bestandenBrittBruidschat"/>
-    <property name="gfs" value="F:/DSO/Geonovum/GitHub/xml_xslt/GIO_gml/GIO_gml_valideer.gfs"></property>
-    
-    <!-- controleeren of gml valide is volgens GIO schema -->
-    <target name="xml_valide_loop">
-        <foreach target="xml_valide" param="file">
-            <path id="input">
-                <fileset dir="${src}" includes="*.gml"/>
-            </path>
-        </foreach>
-    </target>
-    
-    <target name="xml_valide">
-        <xmlvalidate lenient="no" warn="yes" classname="org.apache.xerces.parsers.SAXParser" failonerror="no">
-            <fileset dir="${src}" includes="*.gml"/>
-            <xmlcatalog id="allCatalogs">
-                <catalogpath path="file:/F:/DSO/Geonovum/GitLab/1.0.4/bronhouderkoppelvlak/schema/lvbb/lvbb-catalog.xml"/>
-                <catalogpath path="file:/F:/DSO/Geonovum/GitLab/1.0.4/bronhouderkoppelvlak/schema/stop/stop-catalog.xml"/>
-                <catalogpath path="file:/F:/DSO/Geonovum/GitLab/1.0.4/bronhouderkoppelvlak/schema/extern/extern-catalog.xml"/>
-            </xmlcatalog>
-        </xmlvalidate>
-    </target>
+    <property name="gfs" value="F:/DSO/Geonovum/GitHub/xml_xslt/GIO_gml/GIO_gml_valideer.gfs"/>
+    <property name="geo" value="F:/DSO/Geonovum/GitLab/1.0.4/bronhouderkoppelvlak/schema/stop/imop-geo.xsd"/>
+    <property name="gio" value="F:/DSO/Geonovum/GitLab/1.0.4/bronhouderkoppelvlak/schema/stop/imop-gio.xsd"/>
     
     <!-- initialiseren: folders aanmaken -->
     <target name="init" description="initialiseren">
@@ -41,15 +25,62 @@
         <mkdir dir="${src}/${result.dir}"/>
     </target>
     
-    <!-- alle gml bestanden doorlopen en voor elk bestand bron_valideer uitvoeren -->
-    <target name="loop">
-        <foreach target="bron_valideer" param="file">
+    <!-- doorlopen alle gml bestanden in src -->
+    <target name="gml_loop">
+        <foreach target="root_element" param="file">
             <path id="input">
                 <fileset dir="${src}" includes="*.gml"/>
             </path>
         </foreach>
     </target>
-
+    
+    <!-- Root elementnaam ophalen-->
+    <target name="root_element" description="check namespaces">
+        <xmltask source="${file}">
+            <call path="/" target="root_element_naam" buffer="/">
+                <param name="rootName" path="local-name(/node())" value="local-name(/node())"/>
+            </call>
+        </xmltask>
+    </target>
+    
+    <!-- Naam root element controleren -->
+    <target name="root_element_naam">
+        <if>
+            <contains string="${rootName}" substring="GeoInformatieObjectVaststelling"/>
+            <then>
+                <echo>GIO-GML: ${rootName}</echo>
+                <antcall target="xml_valide" inheritall="true"/>
+                <!-- Uitvoeren volgende controles -->
+            </then>
+            <else>
+                <echo>Geen GIO-GML, root: ${rootName}</echo>
+                <basename file="${file}" property="base"/>
+                <dirname file="${file}" property="dir"/>
+                <rename src="${file}" dest="${dir}/[INVALID]${base}"/>
+            </else>
+        </if>
+    </target>
+    
+    <!-- XML via catalog valideren -->
+    <target name="xml_valide">
+        <echo file="${src}/${check.dir}/validatie.txt" level="warn">${file}:&#10;</echo>
+        <schemavalidate file="${file}" warn="true" failonerror="no"  fullchecking="true">
+                <schema namespace="https://standaarden.overheid.nl/stop/imop/geo/" file="${geo}"/>
+                <schema namespace="https://standaarden.overheid.nl/stop/imop/gio/" file="${gio}"/>
+        </schemavalidate>
+        <echo message="${error}">${error}</echo>
+        <antcall target="bron_valideer" inheritall=""/>
+    </target>
+    
+    <!-- alle gml bestanden doorlopen en voor elk bestand bron_valideer uitvoeren -->
+<!--    <target name="loop">
+        <foreach target="bron_valideer" param="file">
+            <path id="input">
+                <fileset dir="${src}" includes="*.gml"/>
+            </path>
+        </foreach>
+    </target>-->
+    
     <!-- gml bestand valideren en resultaat in valid folder zetten -->
     <target name="bron_valideer" description="Valideren van bronbestanden">
         <basename property="file.name" file="${file}"/>
@@ -65,7 +96,7 @@
             <arg line="-dsco GML_FEATURE_COLLECTION=NO"/>
             <arg line="-dsco XSISCHEMA=OFF"/>
         </exec>
-        <echo message="${exec.fail}"/>
+        <echo message="${exec.fail}">${exec.fail}</echo>
         <!-- Locaties terugzetten -->
         <echo message="${file}"/>
         <echo message="${src}/${result.dir}/${file.name}"/>
@@ -81,5 +112,6 @@
          <!--<delete dir="${src}/${valid.dir}" failonerror="no" includeemptydirs="true"/>-->
      </target>
      
-     <target name="main" depends="init, loop, opruimen"></target>
+     <target name="main" depends="init,gml_loop"/>
+     
 </project>
