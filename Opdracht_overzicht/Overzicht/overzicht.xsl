@@ -769,7 +769,7 @@
           </tr>
         </thead>
         <tbody>
-          <xsl:for-each select="soortRegeling,eindverantwoordelijke,maker,officieleTitel,heeftCiteertitelInformatie//citeertitel,onderwerpen/onderwerp,rechtsgebieden/rechtsgebied" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
+          <xsl:for-each select="soortRegeling,eindverantwoordelijke,maker,officieleTitel,heeftCiteertitelInformatie//citeertitel,overheidsdomeinen/overheidsdomein,onderwerpen/onderwerp,rechtsgebieden/rechtsgebied" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
             <tr>
               <td>
                 <p class="naam"><xsl:value-of select="./name()"/></p>
