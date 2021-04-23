@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+  xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  schemaversie="1.0.4"
+  xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+  <InformatieObjectVersie>
+    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/gm0479/2021/beperkingengebied_magneetveldzone</FRBRWork>
+      <FRBRExpression>/join/id/regdata/gm0479/2021/beperkingengebied_magneetveldzone/nld@2021-03-27;1</FRBRExpression>
+      <soortWork>/join/id/stop/work_010</soortWork>
+    </ExpressionIdentificatie>
+    <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <heeftGeboorteregeling>/akn/nl/act/gm0479/2021/ZAAN0001</heeftGeboorteregeling>
+      <heeftBestanden>
+        <heeftBestand>
+          <Bestand>
+            <bestandsnaam>beperkingengebied_magneetveldzone.gml</bestandsnaam>
+            <hash>bc3bd12b983896511eec9bf5f14cf6a7d2334df750bdccdf0517d71324a5dd3659261b7ae3efced1dbd072c866b632fe3bf4ecc96b8e128b39f73ff20474104e</hash>
+          </Bestand>
+        </heeftBestand>
+      </heeftBestanden>
+    </InformatieObjectVersieMetadata>
+    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/gemeente/gm0479</eindverantwoordelijke>
+      <maker>/tooi/id/gemeente/gm0479</maker>
+      <alternatieveTitels>
+        <alternatieveTitel>beperkingengebied magneetveldzone</alternatieveTitel>
+      </alternatieveTitels>
+      <officieleTitel>/join/id/regdata/gm0479/2021/beperkingengebied_magneetveldzone</officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <naamInformatieObject>beperkingengebied magneetveldzone</naamInformatieObject>
+      <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+    </InformatieObjectMetadata>
+  </InformatieObjectVersie>
+</AanleveringInformatieObject>

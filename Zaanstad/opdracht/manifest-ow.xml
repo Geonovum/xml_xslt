@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Aanleveringen xmlns="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/generiek/manifest-ow.xsd">
+  <domein>omgevingswet</domein>
+  <Aanlevering>
+    <WorkIDRegeling>/akn/nl/act/gm0479/2021/ZAAN0001</WorkIDRegeling>
+    <DoelID>/join/id/proces/gm0479/2021/Instelling</DoelID>
+    <Bestand>
+      <naam>owRegeltekst.xml</naam>
+      <objecttype>Regeltekst</objecttype>
+      <objecttype>RegelVoorIedereen</objecttype>
+    </Bestand>
+    <Bestand>
+      <naam>owLocatie.xml</naam>
+      <objecttype>Ambtsgebied</objecttype>
+      <objecttype>Gebied</objecttype>
+    </Bestand>
+    <Bestand>
+      <naam>owActiviteit.xml</naam>
+      <objecttype>Activiteit</objecttype>
+    </Bestand>
+    <Bestand>
+      <naam>owRegelingsgebied.xml</naam>
+      <objecttype>Regelingsgebied</objecttype>
+    </Bestand>
+  </Aanlevering>
+</Aanleveringen>

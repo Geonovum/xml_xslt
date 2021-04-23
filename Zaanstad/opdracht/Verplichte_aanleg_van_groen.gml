@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<geo:GeoInformatieObjectVaststelling xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0"
+  xmlns:gio="https://standaarden.overheid.nl/stop/imop/gio/"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/geo/ https://standaarden.overheid.nl/stop/1.0.4/imop-geo.xsd"
+  schemaversie="1.0.4">
+  <geo:context>
+    <gio:GeografischeContext>
+      <gio:achtergrondVerwijzing>TOP10NL</gio:achtergrondVerwijzing>
+      <gio:achtergrondActualiteit>2019-01-01</gio:achtergrondActualiteit>
+    </gio:GeografischeContext>
+  </geo:context>
+  <geo:vastgesteldeVersie>
+    <geo:GeoInformatieObjectVersie>
+      <geo:FRBRWork>/join/id/regdata/gm0479/2021/Verplichte_aanleg_van_groen</geo:FRBRWork>
+      <geo:FRBRExpression>/join/id/regdata/gm0479/2021/Verplichte_aanleg_van_groen/nld@2021-03-27;1</geo:FRBRExpression>
+      <geo:locaties>
+        <geo:Locatie>
+          <geo:geometrie>
+            <basisgeo:Geometrie gml:id="id-86a432ce-ef24-48d2-b8af-2602dab9586e-xx">
+              <basisgeo:id>86a432ce-ef24-48d2-b8af-2602dab9586e</basisgeo:id>
+              <basisgeo:geometrie>
+                <gml:MultiSurface gml:id="id-86a432ce-ef24-48d2-b8af-2602dab9586e-0" srsName="urn:ogc:def:crs:EPSG::28992">
+                  <gml:surfaceMember>
+                    <gml:Surface>
+                      <gml:patches>
+                        <gml:PolygonPatch>
+                          <gml:exterior>
+                            <gml:LinearRing>
+                              <gml:posList>113487.88 502854.163 113487.706 502853.869</gml:posList>
+                            </gml:LinearRing>
+                          </gml:exterior>
+                        </gml:PolygonPatch>
+                      </gml:patches>
+                    </gml:Surface>
+                  </gml:surfaceMember>
+                  <gml:surfaceMember>
+                    <gml:Surface>
+                      <gml:patches>
+                        <gml:PolygonPatch>
+                          <gml:exterior>
+                            <gml:LinearRing>
+                              <gml:posList>113492.542 502862.688 113490.268 502858.2 113487.88 502854.163</gml:posList>
+                            </gml:LinearRing>
+                          </gml:exterior>
+                        </gml:PolygonPatch>
+                      </gml:patches>
+                    </gml:Surface>
+                  </gml:surfaceMember>
+                  <gml:surfaceMember>
+                    <gml:Surface>
+                      <gml:patches>
+                        <gml:PolygonPatch>
+                          <gml:exterior>
+                            <gml:LinearRing>
+                              <gml:posList>113487.88 502854.163 113490.268 502858.2 113492.542 502862.688 113494.484 502867.28 113496.061 502872.01 113497.094 502875.847 113497.985 502879.72 113477.807 502881.153 113478.024 502884.145 113478.597 502892.065 113478.694 502893.431 113477.679 502893.477 113477.982 502897.556 113472.992 502897.904 113474.137 502883.189 113476.569 502883.402 113476.89 502879.842 113476.728 502879.818 113479.462 502854.696 113474.288 502854.207 113474.18 502854.172 113474.065 502854.099 113473.981 502854.008 113473.922 502853.896 113473.733 502853.453 113473.49 502853.006 113473.22 502852.608 113472.904 502852.226 113472.566 502851.889 113472.163 502851.558 113471.777 502851.298 113471.335 502851.059 113471.149 502850.972 113470.543 502850.752 113469.923 502850.609 113469.285 502850.542 113468.645 502850.552 113457.082 502852.337 113445.982 502854.061 113445.937 502853.775 113445.691 502853.813 113445.724 502854.031 113443.976 502854.303 113444.02 502853.934 113444.978 502848.266 113472.722 502844.091 113476.644 502844.202 113480.263 502845.9 113481.093 502846.51 113483.118 502848.231 113484.737 502849.886 113486.359 502851.872 113487.706 502853.869 113487.88 502854.163</gml:posList>
+                            </gml:LinearRing>
+                          </gml:exterior>
+                        </gml:PolygonPatch>
+                      </gml:patches>
+                    </gml:Surface>
+                  </gml:surfaceMember>
+                  <gml:surfaceMember>
+                    <gml:Surface>
+                      <gml:patches>
+                        <gml:PolygonPatch>
+                          <gml:exterior>
+                            <gml:LinearRing>
+                              <gml:posList>113454.326 502936.199 113462.316 502936.291 113462.261 502944.099 113456.622 502944.098 113452.47 502944.097 113452.497 502940.138 113452.524 502936.178 113454.326 502936.199</gml:posList>
+                            </gml:LinearRing>
+                          </gml:exterior>
+                        </gml:PolygonPatch>
+                      </gml:patches>
+                    </gml:Surface>
+                  </gml:surfaceMember>
+                  <gml:surfaceMember>
+                    <gml:Surface>
+                      <gml:patches>
+                        <gml:PolygonPatch>
+                          <gml:exterior>
+                            <gml:LinearRing>
+                              <gml:posList>113468.184 503036.677 113465.973 503015.424 113463.732 503015.038 113463.741 503014.979 113455.138 503013.565 113454.585 503016.914 113451.051 503016.357 113451.572 503013.058 113445.577 503012.064 113445.604 503011.903 113443.293 503011.52 113447.588 503021.429 113448.815 503023.457 113450.384 503025.549 113452.015 503027.323 113453.937 503029.037 113454.035 503028.923 113454.994 503029.734 113454.896 503029.847 113457.52 503031.822 113459.882 503033.374 113462.23 503034.627 113464.816 503035.718 113467.371 503036.53 113468.184 503036.677</gml:posList>
+                            </gml:LinearRing>
+                          </gml:exterior>
+                        </gml:PolygonPatch>
+                      </gml:patches>
+                    </gml:Surface>
+                  </gml:surfaceMember>
+                  <gml:surfaceMember>
+                    <gml:Surface>
+                      <gml:patches>
+                        <gml:PolygonPatch>
+                          <gml:exterior>
+                            <gml:LinearRing>
+                              <gml:posList>113471.612 502958.677 113478.657 502958.989 113479.206 502944.743 113480.164 502944.793 113480.163 502944.458 113487.448 502944.21 113487.448 502940.129 113487.448 502936.048 113480.269 502936.207 113480.214 502933.494 113480.201 502932.643 113480.199 502932.523 113471.537 502932.65 113471.612 502958.677</gml:posList>
+                            </gml:LinearRing>
+                          </gml:exterior>
+                        </gml:PolygonPatch>
+                      </gml:patches>
+                    </gml:Surface>
+                  </gml:surfaceMember>
+                  <gml:surfaceMember>
+                    <gml:Surface>
+                      <gml:patches>
+                        <gml:PolygonPatch>
+                          <gml:exterior>
+                            <gml:LinearRing>
+                              <gml:posList>113472.172 502975.17 113477.678 502975.544 113478.043 502970.143 113478.991 502970.207 113479.513 502962.272 113471.756 502961.98 113472.172 502975.17</gml:posList>
+                            </gml:LinearRing>
+                          </gml:exterior>
+                        </gml:PolygonPatch>
+                      </gml:patches>
+                    </gml:Surface>
+                  </gml:surfaceMember>
+                  <gml:surfaceMember>
+                    <gml:Surface>
+                      <gml:patches>
+                        <gml:PolygonPatch>
+                          <gml:exterior>
+                            <gml:LinearRing>
+                              <gml:posList>113473.228 502994.2 113476.91 502994.542 113475.926 503002.433 113475.848 503003.068 113473.888 503002.862 113473.228 502994.2</gml:posList>
+                            </gml:LinearRing>
+                          </gml:exterior>
+                        </gml:PolygonPatch>
+                      </gml:patches>
+                    </gml:Surface>
+                  </gml:surfaceMember>
+                  <gml:surfaceMember>
+                    <gml:Surface>
+                      <gml:patches>
+                        <gml:PolygonPatch>
+                          <gml:exterior>
+                            <gml:LinearRing>
+                              <gml:posList>113476.231 502991.652 113476.688 502986.853 113477.634 502986.944 113477.695 502986.299 113478.448 502978.418 113472.349 502978.036 113473.019 502991.319 113476.231 502991.652</gml:posList>
+                            </gml:LinearRing>
+                          </gml:exterior>
+                        </gml:PolygonPatch>
+                      </gml:patches>
+                    </gml:Surface>
+                  </gml:surfaceMember>
+                  <gml:surfaceMember>
+                    <gml:Surface>
+                      <gml:patches>
+                        <gml:PolygonPatch>
+                          <gml:exterior>
+                            <gml:LinearRing>
+                              <gml:posList>113479.636 502909.672 113479.569 502908.223 113479.386 502904.416 113479.202 502900.608 113479.18 502900.299 113472.812 502900.796 113472.426 502907.688 113472.164 502913.936 113478.868 502913.624 113478.695 502909.716 113479.636 502909.672</gml:posList>
+                            </gml:LinearRing>
+                          </gml:exterior>
+                        </gml:PolygonPatch>
+                      </gml:patches>
+                    </gml:Surface>
+                  </gml:surfaceMember>
+                  <gml:surfaceMember>
+                    <gml:Surface>
+                      <gml:patches>
+                        <gml:PolygonPatch>
+                          <gml:exterior>
+                            <gml:LinearRing>
+                              <gml:posList>113480.093 502925.771 113480.08 502924.412 113480.024 502920.592 113479.967 502916.772 113479.952 502916.462 113479.95 502916.419 113472.046 502916.812 113471.681 502929.762 113479.179 502929.692 113479.151 502925.78 113480.093 502925.771</gml:posList>
+                            </gml:LinearRing>
+                          </gml:exterior>
+                        </gml:PolygonPatch>
+                      </gml:patches>
+                    </gml:Surface>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </basisgeo:geometrie>
+            </basisgeo:Geometrie>
+          </geo:geometrie>
+        </geo:Locatie>
+      </geo:locaties>
+    </geo:GeoInformatieObjectVersie>
+  </geo:vastgesteldeVersie>
+</geo:GeoInformatieObjectVaststelling>

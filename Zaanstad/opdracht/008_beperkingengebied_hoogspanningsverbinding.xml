@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+  xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  schemaversie="1.0.4"
+  xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+  <InformatieObjectVersie>
+    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/gm0479/2021/beperkingengebied_hoogspanningsverbinding</FRBRWork>
+      <FRBRExpression>/join/id/regdata/gm0479/2021/beperkingengebied_hoogspanningsverbinding/nld@2021-03-27;1</FRBRExpression>
+      <soortWork>/join/id/stop/work_010</soortWork>
+    </ExpressionIdentificatie>
+    <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <heeftGeboorteregeling>/akn/nl/act/gm0479/2021/ZAAN0001</heeftGeboorteregeling>
+      <heeftBestanden>
+        <heeftBestand>
+          <Bestand>
+            <bestandsnaam>beperkingengebied_hoogspanningsverbinding.gml</bestandsnaam>
+            <hash>6d8176cf43f1a4694da2f256c164a1d8019496ec5eeef6c2bdd80a52f8bc3f945ef3b01e014787551cf6e5b686edd16dc595bf8a3ae8ce5390f39e6807575966</hash>
+          </Bestand>
+        </heeftBestand>
+      </heeftBestanden>
+    </InformatieObjectVersieMetadata>
+    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/gemeente/gm0479</eindverantwoordelijke>
+      <maker>/tooi/id/gemeente/gm0479</maker>
+      <alternatieveTitels>
+        <alternatieveTitel>beperkingengebied hoogspanningsverbinding</alternatieveTitel>
+      </alternatieveTitels>
+      <officieleTitel>/join/id/regdata/gm0479/2021/beperkingengebied_hoogspanningsverbinding</officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <naamInformatieObject>beperkingengebied hoogspanningsverbinding</naamInformatieObject>
+      <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+    </InformatieObjectMetadata>
+  </InformatieObjectVersie>
+</AanleveringInformatieObject>
