@@ -5,15 +5,9 @@
 
   <xsl:param name="opdracht.dir" select="'C:/Werkbestanden/Geonovum/Overzicht/opdracht'"/>
   <xsl:param name="besluit" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))/AanleveringBesluit" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
-  <xsl:param name="regelteksten" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//r:Regeltekst"/>
-  <xsl:param name="regels" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//(r:Instructieregel,r:Omgevingswaarderegel,r:RegelVoorIedereen)"/>
-  <xsl:param name="locaties" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//(l:Gebiedengroep,l:Gebied,l:Lijnengroep,l:Lijn,l:Puntengroep,l:Punt)"/>
-  <xsl:param name="activiteiten" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//rol:Activiteit"/>
-  <xsl:param name="gebiedsaanwijzingen" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//ga:Gebiedsaanwijzing"/>
+  <xsl:param name="aanleveringen" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//Aanlevering" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"/>
   <xsl:param name="omgevingsnormaanduidingen" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//rol:Omgevingsnorm"/>
   <xsl:param name="omgevingswaardeaanduidingen" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//rol:Omgevingswaarde"/>
-  <xsl:param name="divisies" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//vt:Divisie"/>
-  <xsl:param name="tekstdelen" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//vt:Tekstdeel"/>
   <xsl:param name="hoofdlijnaanduidingen" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//vt:Hoofdlijn"/>
   <xsl:param name="kaarten" select="collection(concat('file:/',$opdracht.dir,'?select=*.xml;recurse=yes'))//k:Kaart"/>
   <xsl:param name="gml">
@@ -75,7 +69,9 @@
       </head>
       <body>
         <script type="text/javascript">function ShowHide(obj){var tbody = obj.parentNode.getElementsByTagName("tbody")[0];var old = tbody.style.display;tbody.style.display = (old == "none"?"":"none");}</script>
-        <h1>AanleveringBesluit</h1>
+        <div class="uitleg">
+          <p>Het aangeleverde besluit bestaat uit een besluitdeel en één of meer regelingdelen. Door op onderstaande tekst te klikken wordt de informatie zichtbaar.</p>
+        </div>
         <xsl:apply-templates select="$besluit/BesluitVersie" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
         <xsl:apply-templates select="$besluit/RegelingVersieInformatie" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"/>
       </body>
@@ -83,26 +79,71 @@
   </xsl:template>
 
   <xsl:template match="BesluitVersie" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
-    <h2>Besluit</h2>
-    <xsl:apply-templates select="ExpressionIdentificatie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-    <xsl:apply-templates select="BesluitMetadata" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-    <xsl:apply-templates select="Procedureverloop" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-    <xsl:apply-templates select="ConsolidatieInformatie/BeoogdeRegelgeving" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-    <xsl:apply-templates select="ConsolidatieInformatie/Intrekkingen" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-    <xsl:apply-templates select="ConsolidatieInformatie/Tijdstempels" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+    <xsl:variable name="FRBRWork" select="ExpressionIdentificatie/FRBRWork/text()" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+    <xsl:variable name="FRBRExpression" select="ExpressionIdentificatie/FRBRExpression/text()" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+    <table class="deel">
+      <thead onclick="ShowHide(this)">
+        <tr>
+          <th>
+            <p class="deel">Besluit</p>
+            <p>
+              <xsl:value-of select="$FRBRExpression"/>
+            </p>
+          </th>
+        </tr>
+      </thead>
+      <tbody style="display: none;">
+        <tr>
+          <td>
+            <xsl:apply-templates select="ExpressionIdentificatie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+            <xsl:apply-templates select="BesluitMetadata" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+            <xsl:apply-templates select="Procedureverloop" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+            <xsl:apply-templates select="ConsolidatieInformatie/BeoogdeRegelgeving" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+            <xsl:apply-templates select="ConsolidatieInformatie/Intrekkingen" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+            <xsl:apply-templates select="ConsolidatieInformatie/Tijdstempels" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </xsl:template>
 
   <xsl:template match="RegelingVersieInformatie" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
-    <h2>Regeling</h2>
-    <xsl:apply-templates select="ExpressionIdentificatie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-    <xsl:apply-templates select="RegelingMetadata" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-    <xsl:apply-templates select="$besluit//(BesluitCompact|BesluitKlassiek)//(RegelingCompact|RegelingKlassiek|RegelingTijdelijkdeel|RegelingVrijetekst|RegelingMutatie)" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
+    <xsl:variable name="FRBRWork" select="ExpressionIdentificatie/FRBRWork/text()" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+    <xsl:variable name="FRBRExpression" select="ExpressionIdentificatie/FRBRExpression/text()" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+    <table class="deel">
+      <thead onclick="ShowHide(this)">
+        <tr>
+          <th>
+            <p class="deel">Regeling</p>
+            <p>
+              <xsl:value-of select="$FRBRExpression"/>
+            </p>
+          </th>
+        </tr>
+      </thead>
+      <tbody style="display: none;">
+        <tr>
+          <td>
+            <xsl:apply-templates select="ExpressionIdentificatie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+            <xsl:apply-templates select="RegelingMetadata" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+            <xsl:apply-templates select="$besluit//(BesluitCompact|BesluitKlassiek)//(RegelingCompact|RegelingKlassiek|RegelingTijdelijkdeel|RegelingVrijetekst|RegelingMutatie)[./@wordt=$FRBRExpression]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+              <xsl:with-param name="check">
+                <xsl:for-each select="$aanleveringen[./WorkIDRegeling=$FRBRWork]/Bestand/naam/text()" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">
+                  <xsl:copy-of select="document(concat('file:/',$opdracht.dir,'/',.))//((r:Regeltekst,r:Instructieregel,r:Omgevingswaarderegel,r:RegelVoorIedereen,l:Ambtsgebied,l:Gebiedengroep,l:Gebied,l:Lijnengroep,l:Lijn,l:Puntengroep,l:Punt,rol:Activiteit,ga:Gebiedsaanwijzing,rol:Omgevingsnorm,rol:Omgevingswaarde,vt:Divisie,vt:Tekstdeel,vt:Hoofdlijn,k:Kaart))"/>
+                </xsl:for-each>
+              </xsl:with-param>
+            </xsl:apply-templates>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </xsl:template>
 
   <xsl:template match="RegelingCompact|RegelingKlassiek|RegelingTijdelijkdeel|RegelingVrijetekst|RegelingMutatie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+    <xsl:param name="check" select="null"/>
     <xsl:if test=".//Artikel" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
       <div class="content">
-        <table>
+        <table class="object">
           <colgroup>
             <col width="165px"/>
             <col width="auto"/>
@@ -123,8 +164,8 @@
                   </xsl:element>
                 </xsl:for-each>
               </xsl:variable>
-              <xsl:variable name="regeltekst" select="$regelteksten[@wId=$wId]"/>
-              <xsl:variable name="regel" select="$regels[r:artikelOfLid/r:RegeltekstRef/@xlink:href=$regeltekst/r:identificatie]"/>
+              <xsl:variable name="regeltekst" select="$check/r:Regeltekst[@wId=$wId]"/>
+              <xsl:variable name="regel" select="$check/(r:Instructieregel|r:Omgevingswaarderegel|r:RegelVoorIedereen)[r:artikelOfLid/r:RegeltekstRef/@xlink:href=$regeltekst/r:identificatie]"/>
               <tr>
                 <td>
                   <xsl:choose>
@@ -141,6 +182,7 @@
                     <xsl:with-param name="current" select="ancestor-or-self::Artikel/Kop/Opschrift,@wId,$join-id" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
                   </xsl:call-template>
                   <xsl:call-template name="object">
+                    <xsl:with-param name="check" select="$check"/>
                     <xsl:with-param name="current" select="$regel"/>
                   </xsl:call-template>
                 </td>
@@ -152,7 +194,7 @@
     </xsl:if>
     <xsl:if test=".//Divisie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
       <div class="content">
-        <table>
+        <table class="object">
           <colgroup>
             <col width="165px"/>
             <col width="auto"/>
@@ -164,6 +206,7 @@
           </thead>
           <tbody>
             <xsl:call-template name="divisie">
+              <xsl:with-param name="check" select="$check"/>
               <xsl:with-param name="node-list" select=".//(Bijlage|Toelichting|AlgemeneToelichting|ArtikelgewijzeToelichting|Lichaam/(Divisie|InleidendeTekst|Divisietekst))[string(Kop) ne '']"/>
             </xsl:call-template>
           </tbody>
@@ -173,12 +216,13 @@
   </xsl:template>
 
   <xsl:template name="divisie">
+    <xsl:param name="check" select="null"/>
     <xsl:param name="node-list"/>
     <xsl:for-each select="$node-list" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
       <xsl:variable name="wId" select="@wId"/>
       <xsl:variable name="ref" select=".//IntIoRef[ancestor::element()[Divisie|InleidendeTekst|Divisietekst][1][@wId=$wId]]/@ref"/>
-      <xsl:variable name="divisie" select="$divisies[@wId=$wId]"/>
-      <xsl:variable name="tekstdeel" select="$tekstdelen[vt:divisieaanduiding/vt:DivisieRef/@xlink:href=$divisie/vt:identificatie]"/>
+      <xsl:variable name="divisie" select="$check/vt:Divisie[@wId=$wId]"/>
+      <xsl:variable name="tekstdeel" select="$check/vt:Tekstdeel[vt:divisieaanduiding/vt:DivisieRef/@xlink:href=$divisie/vt:identificatie]"/>
       <tr>
         <td>
           <p class="naam"><xsl:value-of select="fn:string-join((Kop/(Label,Nummer,Opschrift)),' ')"/></p>
@@ -200,11 +244,13 @@
             </xsl:with-param>
           </xsl:call-template>
           <xsl:call-template name="object">
+            <xsl:with-param name="check" select="$check"/>
             <xsl:with-param name="current" select="$tekstdeel"/>
           </xsl:call-template>
         </td>
       </tr>
       <xsl:call-template name="divisie">
+        <xsl:with-param name="check" select="$check"/>
         <xsl:with-param name="node-list" select="./(Divisie|InleidendeTekst|Divisietekst)[string(Kop) ne '']"/>
       </xsl:call-template>
     </xsl:for-each>
@@ -212,11 +258,10 @@
 
   <xsl:template name="waarde">
     <xsl:param name="current"/>
-    <xsl:variable name="test" select="$current/name()"/>
     <xsl:choose>
       <xsl:when test="$current/self::element()|$current/self::attribute()|$current/element()">
         <xsl:attribute name="style" select="string('padding: 0pt;')"/>
-        <table>
+        <table class="object">
           <colgroup>
             <col width="165px"/>
             <col width="auto"/>
@@ -246,7 +291,7 @@
       </xsl:when>
       <xsl:when test="$current/self::text()">
         <xsl:variable name="waarde" select="."/>
-        <xsl:variable name="label" select="$waardelijsten//Waarde[id=$waarde]/label"/>
+        <xsl:variable name="label" select="$waardelijsten//Waarde[./id=$waarde]/label"/>
         <xsl:choose>
           <xsl:when test="$label">
             <p class="waarde"><xsl:value-of select="concat($waarde,' ')"/><span class="label"><xsl:value-of select="concat('(',fn:string-join(fn:distinct-values($label),', '),')')"/></span></p>
@@ -280,9 +325,10 @@
   </xsl:template>
 
   <xsl:template name="object">
+    <xsl:param name="check" select="null"/>
     <xsl:param name="current"/>
     <xsl:for-each select="$current/self::element()">
-      <table>
+      <table class="object">
         <colgroup>
           <col width="165px"/>
           <col width="auto"/>
@@ -309,6 +355,7 @@
                     <xsl:choose>
                       <xsl:when test="$gml/gio/Locatie[geo-id=$id]">
                         <xsl:call-template name="object">
+                          <xsl:with-param name="check" select="$check"/>
                           <xsl:with-param name="current" select="$gml/gio/Locatie[geo-id=$id]"/>
                         </xsl:call-template>
                       </xsl:when>
@@ -321,12 +368,13 @@
                   </xsl:when>
                   <xsl:when test="./self::r:locatieaanduiding|./self::rol:locatieaanduiding|./self::ga:locatieaanduiding|./self::vt:locatieaanduiding">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
-                    <xsl:for-each select="./l:LocatieRef/@xlink:href">
+                    <xsl:for-each select="./(l:AmbtsgebiedRef|l:LocatieRef)/@xlink:href">
                       <xsl:variable name="id" select="."/>
                       <xsl:choose>
-                        <xsl:when test="$locaties[l:identificatie=$id]">
+                        <xsl:when test="$check/(l:Ambtsgebied|l:Gebiedengroep|l:Gebied|l:Lijnengroep|l:Lijn|l:Puntengroep|l:Punt)[l:identificatie=$id]">
                           <xsl:call-template name="object">
-                            <xsl:with-param name="current" select="$locaties[l:identificatie=$id]"/>
+                            <xsl:with-param name="check" select="$check"/>
+                            <xsl:with-param name="current" select="$check/(l:Ambtsgebied|l:Gebiedengroep|l:Gebied|l:Lijnengroep|l:Lijn|l:Puntengroep|l:Punt)[l:identificatie=$id]"/>
                           </xsl:call-template>
                         </xsl:when>
                         <xsl:otherwise>
@@ -341,9 +389,10 @@
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./l:GebiedRef/@xlink:href"/>
                     <xsl:choose>
-                      <xsl:when test="$locaties[l:identificatie=$id]">
+                      <xsl:when test="$check/(l:Ambtsgebied|l:Gebiedengroep|l:Gebied|l:Lijnengroep|l:Lijn|l:Puntengroep|l:Punt)[l:identificatie=$id]">
                         <xsl:call-template name="object">
-                          <xsl:with-param name="current" select="$locaties[l:identificatie=$id]"/>
+                          <xsl:with-param name="check" select="$check"/>
+                          <xsl:with-param name="current" select="$check/(l:Ambtsgebied|l:Gebiedengroep|l:Gebied|l:Lijnengroep|l:Lijn|l:Puntengroep|l:Punt)[l:identificatie=$id]"/>
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
@@ -357,9 +406,10 @@
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./rol:ActiviteitRef/@xlink:href"/>
                     <xsl:choose>
-                      <xsl:when test="$activiteiten[rol:identificatie=$id]">
+                      <xsl:when test="$check/rol:Activiteit[rol:identificatie=$id]">
                         <xsl:call-template name="object">
-                          <xsl:with-param name="current" select="$activiteiten[rol:identificatie=$id]"/>
+                          <xsl:with-param name="check" select="$check"/>
+                          <xsl:with-param name="current" select="$check/rol:Activiteit[rol:identificatie=$id]"/>
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
@@ -369,6 +419,7 @@
                       </xsl:otherwise>
                     </xsl:choose>
                     <xsl:call-template name="object">
+                      <xsl:with-param name="check" select="$check"/>
                       <xsl:with-param name="current" select="./r:ActiviteitLocatieaanduiding"/>
                     </xsl:call-template>
                   </xsl:when>
@@ -378,9 +429,10 @@
                     <xsl:for-each select="$activiteit-id">
                       <xsl:variable name="id" select="string(.)"/>
                       <xsl:choose>
-                        <xsl:when test="$activiteiten[rol:identificatie=$id]">
+                        <xsl:when test="$check/rol:Activiteit[rol:identificatie=$id]">
                           <xsl:call-template name="object">
-                            <xsl:with-param name="current" select="$activiteiten[rol:identificatie=$id]"/>
+                            <xsl:with-param name="check" select="$check"/>
+                            <xsl:with-param name="current" select="$check/rol:Activiteit[rol:identificatie=$id]"/>
                           </xsl:call-template>
                         </xsl:when>
                         <xsl:otherwise>
@@ -393,9 +445,10 @@
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="id" select="./ga:GebiedsaanwijzingRef/@xlink:href"/>
                     <xsl:choose>
-                      <xsl:when test="$gebiedsaanwijzingen[ga:identificatie=$id]">
+                      <xsl:when test="$check/ga:Gebiedsaanwijzing[ga:identificatie=$id]">
                         <xsl:call-template name="object">
-                          <xsl:with-param name="current" select="$gebiedsaanwijzingen[ga:identificatie=$id]"/>
+                          <xsl:with-param name="check" select="$check"/>
+                          <xsl:with-param name="current" select="$check/ga:Gebiedsaanwijzing[ga:identificatie=$id]"/>
                         </xsl:call-template>
                       </xsl:when>
                       <xsl:otherwise>
@@ -411,6 +464,7 @@
                     <xsl:choose>
                       <xsl:when test="$omgevingsnormaanduidingen[rol:identificatie=$id]">
                         <xsl:call-template name="object">
+                          <xsl:with-param name="check" select="$check"/>
                           <xsl:with-param name="current" select="$omgevingsnormaanduidingen[rol:identificatie=$id]"/>
                         </xsl:call-template>
                       </xsl:when>
@@ -427,6 +481,7 @@
                     <xsl:choose>
                       <xsl:when test="$omgevingswaardeaanduidingen[rol:identificatie=$id]">
                         <xsl:call-template name="object">
+                          <xsl:with-param name="check" select="$check"/>
                           <xsl:with-param name="current" select="$omgevingswaardeaanduidingen[rol:identificatie=$id]"/>
                         </xsl:call-template>
                       </xsl:when>
@@ -440,17 +495,19 @@
                   <xsl:when test="./self::rol:normwaarde">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:call-template name="object">
+                      <xsl:with-param name="check" select="$check"/>
                       <xsl:with-param name="current" select="./rol:Normwaarde"/>
                     </xsl:call-template>
                   </xsl:when>
                   <xsl:when test="./self::rol:kwantitatieveWaarde">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:variable name="locatie-id" select="$current//l:LocatieRef/@xlink:href"/>
-                    <xsl:variable name="gebied-id" select="$locaties[l:identificatie=$locatie-id]//l:GeometrieRef/@xlink:href"/>
+                    <xsl:variable name="gebied-id" select="$check/(l:Ambtsgebied|l:Gebiedengroep|l:Gebied|l:Lijnengroep|l:Lijn|l:Puntengroep|l:Punt)[l:identificatie=$locatie-id]//l:GeometrieRef/@xlink:href"/>
                     <xsl:variable name="waarde" select="$gml/gio[Locatie/geo-id=$gebied-id]/Waarde"/>
                     <xsl:choose>
                       <xsl:when test="$waarde">
                         <xsl:call-template name="object">
+                          <xsl:with-param name="check" select="$check"/>
                           <xsl:with-param name="current" select="$waarde"/>
                         </xsl:call-template>
                       </xsl:when>
@@ -465,6 +522,7 @@
                     <xsl:choose>
                       <xsl:when test="$hoofdlijnaanduidingen[vt:identificatie=$id]">
                         <xsl:call-template name="object">
+                          <xsl:with-param name="check" select="$check"/>
                           <xsl:with-param name="current" select="$hoofdlijnaanduidingen[vt:identificatie=$id]"/>
                         </xsl:call-template>
                       </xsl:when>
@@ -481,6 +539,7 @@
                     <xsl:choose>
                       <xsl:when test="$kaarten[k:identificatie=$id]">
                         <xsl:call-template name="object">
+                          <xsl:with-param name="check" select="$check"/>
                           <xsl:with-param name="current" select="$kaarten[k:identificatie=$id]"/>
                         </xsl:call-template>
                       </xsl:when>
@@ -494,12 +553,14 @@
                   <xsl:when test="./self::k:uitsnede">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:call-template name="object">
+                      <xsl:with-param name="check" select="$check"/>
                       <xsl:with-param name="current" select="./k:Kaartextent"/>
                     </xsl:call-template>
                   </xsl:when>
                   <xsl:when test="./self::k:kaartlagen">
                     <xsl:attribute name="style" select="string('padding: 0pt;')"/>
                     <xsl:call-template name="object">
+                      <xsl:with-param name="check" select="$check"/>
                       <xsl:with-param name="current" select="./k:Kaartlaag"/>
                     </xsl:call-template>
                   </xsl:when>
@@ -517,7 +578,7 @@
 
   <xsl:template match="ExpressionIdentificatie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <div class="content">
-      <table>
+      <table class="object">
         <colgroup>
           <col width="165px"/>
           <col width="auto"/>
@@ -547,7 +608,7 @@
 
   <xsl:template match="BesluitMetadata" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <div class="content">
-      <table>
+      <table class="object">
         <colgroup>
           <col width="165px"/>
           <col width="auto"/>
@@ -577,7 +638,7 @@
 
   <xsl:template match="Procedureverloop" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <div class="content">
-      <table>
+      <table class="object">
         <colgroup>
           <col width="165px"/>
           <col width="auto"/>
@@ -607,7 +668,7 @@
   
   <xsl:template match="ConsolidatieInformatie/BeoogdeRegelgeving" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <div class="content">
-      <table>
+      <table class="object">
         <colgroup>
           <col width="165px"/>
           <col width="auto"/>
@@ -637,7 +698,7 @@
 
   <xsl:template match="ConsolidatieInformatie/Intrekkingen" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <div class="content">
-      <table>
+      <table class="object">
         <colgroup>
           <col width="165px"/>
           <col width="auto"/>
@@ -667,7 +728,7 @@
 
   <xsl:template match="ConsolidatieInformatie/Tijdstempels" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <div class="content">
-      <table>
+      <table class="object">
         <colgroup>
           <col width="165px"/>
           <col width="auto"/>
@@ -697,7 +758,7 @@
 
   <xsl:template match="RegelingMetadata" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/">
     <div class="content">
-      <table>
+      <table class="object">
         <colgroup>
           <col width="165px"/>
           <col width="auto"/>

@@ -16,7 +16,7 @@
   </target>
 
   <!-- kopieer css en media naar resultaat -->
-  
+
   <target name="copy" description="Kopieer css en media">
     <copy todir="${resultaat.dir}">
       <fileset dir="${css.dir}"/>

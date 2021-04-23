@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+  xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  schemaversie="1.0.4"
+  xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+  <InformatieObjectVersie>
+    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/pv26/2021/grondwater_gm0344</FRBRWork>
+      <FRBRExpression>/join/id/regdata/pv26/2021/grondwater_gm0344/nld@2021-04-19;1</FRBRExpression>
+      <soortWork>/join/id/stop/work_010</soortWork>
+    </ExpressionIdentificatie>
+    <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <heeftGeboorteregeling>/akn/nl/act/pv26/2021/VBPU0001_gm0344</heeftGeboorteregeling>
+      <heeftBestanden>
+        <heeftBestand>
+          <Bestand>
+            <bestandsnaam>001_grondwater.gml</bestandsnaam>
+            <hash>794d3a9d060ec0e180e413fe701d2ee0b202ab3ca033ee88f88879646390e6e0cc1dbc5cef8df8a799ab89b8bdf91967cd693f28d6a0e5abbd85ae6fabcd6a44</hash>
+          </Bestand>
+        </heeftBestand>
+      </heeftBestanden>
+    </InformatieObjectVersieMetadata>
+    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+      <maker>/tooi/id/provincie/pv26</maker>
+      <alternatieveTitels>
+        <alternatieveTitel>grondwaterbeschermingsgebied</alternatieveTitel>
+      </alternatieveTitels>
+      <officieleTitel>/join/id/regdata/pv26/2021/grondwater_gm0344</officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <naamInformatieObject>grondwaterbeschermingsgebied</naamInformatieObject>
+      <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+    </InformatieObjectMetadata>
+  </InformatieObjectVersie>
+</AanleveringInformatieObject>

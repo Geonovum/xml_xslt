@@ -19,46 +19,53 @@ body {
 p {
   font-family: 'Tahoma', sans-serif;
   font-size: 9pt;
+  font-weight: normal;
   line-height: 14pt;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
 /* specifiek */
 
-h1 {
-  font-family: 'Tahoma', sans-serif;
-  font-size: 18pt;
-  font-weight: bold;
-  line-height: 21pt;
+div.uitleg {
   margin: 0pt 0mm 14pt 0mm;
-}
-h2 {
-  font-family: 'Tahoma', sans-serif;
-  font-size: 12pt;
-  font-weight: bold;
-  line-height: 14pt;
-  margin: 28pt 0mm 14pt 0mm;
 }
 div.content {
   margin: 21pt 0mm 14pt 0mm;
 }
 
-/* tabel */
+/* module */
 
-table {
-  border-collapse: collapse;
-  width: 100%;
+table.deel {
+  margin: 2pt 0mm 2pt 0mm;
 }
-th {
+table.deel th {
+  padding: 7pt 2mm 7pt 2mm;
+  background-color: lightgray;
+}
+p.deel {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+  line-height: 14pt;
+}
+
+/* object */
+
+table.object th {
   background-color: black;
   padding: 5px 2mm 5px 2mm;
 }
-td {
+table.object td {
   padding: 5px 2mm 5px 0mm;
 }
-tr {
+table.object tr {
   border-bottom: 1px solid black;
 }
-table table tr:last-child {
+table.object table.object tr:last-child {
   border-bottom: none;
 }
 p.titel {
@@ -67,7 +74,6 @@ p.titel {
   font-size: 9pt;
   color: white;
   line-height: 14pt;
-  text-align: left;
 }
 p.naam {
   font-family: 'Tahoma', sans-serif;
