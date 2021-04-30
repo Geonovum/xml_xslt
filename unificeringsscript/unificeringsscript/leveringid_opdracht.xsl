@@ -67,13 +67,13 @@
     </xsl:template>
     
     <xsl:template match="lvbb:datumBekendmaking">
-        <xsl:element name="lvbb:datumBekendmaking">
+        <xsl:element name="datumBekendmaking" namespace="{namespace-uri()}">
             <xsl:value-of select="$date"/>
         </xsl:element>
     </xsl:template>
 
     <xsl:template match="lvbb:idLevering">
-        <xsl:element name="lvbb:idLevering">
+        <xsl:element name="idLevering" namespace="{namespace-uri()}">
             <xsl:value-of select="$newId"/>
         </xsl:element>
     </xsl:template>

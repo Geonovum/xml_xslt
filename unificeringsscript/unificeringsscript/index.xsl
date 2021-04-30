@@ -39,10 +39,10 @@
             <xsl:variable name="fullname" select="."/>
             <xsl:variable name="pos1" select="position()"/>
             <!-- Doel Id -->
-            <!-- Haal oorspronkelijk uit manifest-ow -->
-            <xsl:if test="document($fullname)//manifest-ow:Aanleveringen">
+            <!-- Haal oorspronkelijk uit besluit -->
+            <xsl:if test="document($fullname)//data:BeoogdeRegeling/data:doelen/data:doel">
                 <xsl:element name="doelId">
-                    <xsl:value-of select="foo:generateDoelId(document($fullname)//manifest-ow:Aanlevering/manifest-ow:DoelID/text())"/>
+                    <xsl:value-of select="foo:generateDoelId(document($fullname)//data:BeoogdeRegeling/data:doelen/data:doel/text())"/>
                 </xsl:element>
             </xsl:if>
             <!-- BesluitID/RegelingID -->
