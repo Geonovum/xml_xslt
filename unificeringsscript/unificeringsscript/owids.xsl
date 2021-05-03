@@ -71,12 +71,6 @@
             <xsl:value-of select="foo:generateOWId(text())"/>
         </xsl:element>
     </xsl:template>
-    <!-- RegelsOpLocatie -->
-    <xsl:template match="rol:identificatie">
-        <xsl:element name="rol:identificatie">
-            <xsl:value-of select="foo:generateOWId(text())"/>
-        </xsl:element>
-    </xsl:template>
     <!-- References -->
     <xsl:template match="@xlink:href">
         <xsl:attribute name="xlink:href">
