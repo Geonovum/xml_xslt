@@ -354,7 +354,7 @@
 
   <xsl:template name="besluit">
     <xsl:param name="besluit"/>
-    <xsl:for-each-group select="$besluit/element()" group-starting-with="w:p[w:pPr/w:pStyle/@w:val=$heading_6][1]|w:p[w:pPr/w:pStyle/@w:val='Divisiekop1']">
+    <xsl:for-each-group select="$besluit/element()" group-starting-with="w:p[w:pPr/w:pStyle/@w:val=$heading_6][1]|w:p[normalize-space(.)=''][not(./following::w:p[w:pPr/w:pStyle/@w:val=$heading_6])][1]|w:p[w:pPr/w:pStyle/@w:val='Divisiekop1']">
       <xsl:choose>
         <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val=$title]">
           <xsl:for-each-group select="current-group()" group-adjacent="if (self::w:p/w:pPr/w:pStyle/@w:val=$title) then 'RegelingOpschrift' else 'Aanhef'">
@@ -405,8 +405,15 @@
             </xsl:for-each-group>
           </xsl:element>
         </xsl:when>
+        <xsl:when test="current-group()/self::w:p[1][normalize-space(.)='']">
+          <xsl:element name="Sluiting" namespace="{$tekst}">
+            <xsl:call-template name="group_adjacent">
+              <xsl:with-param name="group" select="current-group()"/>
+            </xsl:call-template>
+          </xsl:element>
+        </xsl:when>
         <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Divisiekop1']">
-          <xsl:comment>motivatie</xsl:comment>
+          <!-- deze wordt ergens anders opgepakt -->
         </xsl:when>
       </xsl:choose>
     </xsl:for-each-group>
