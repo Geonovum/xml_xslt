@@ -1,9 +1,8 @@
-<?xml version="1.0" ?>
-<!-- created by OpenOmgevingswet versie 76 -->
-<publicatieOpdracht xmlns="http://www.overheid.nl/2017/lvbb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.overheid.nl/2017/lvbb ../lvbb/lvbb-transport.xsd">
-  <idLevering>VNG15VNG15CascoTilburg015</idLevering>
-  <idBevoegdGezag>00000001001172773000</idBevoegdGezag>
-  <idAanleveraar>00000003560458830000</idAanleveraar>
-  <publicatie>besluit.xml</publicatie>
-  <datumBekendmaking>2020-12-24</datumBekendmaking>
+<?xml version="1.0" encoding="utf-8"?>
+<publicatieOpdracht xmlns="http://www.overheid.nl/2017/lvbb">
+   <idLevering>VBPU0001-001</idLevering>
+   <idBevoegdGezag>00000001001797864000</idBevoegdGezag>
+   <idAanleveraar>00000003560458830000</idAanleveraar>
+   <publicatie>VBPU0001.xml</publicatie>
+   <datumBekendmaking>2021-04-21</datumBekendmaking>
 </publicatieOpdracht>

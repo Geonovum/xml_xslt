@@ -48,5 +48,11 @@
             <xsl:value-of select="$doelId"/>
         </xsl:element>
     </xsl:template>
+    
+    <xsl:template match="data:Tijdstempel/data:doel">
+        <xsl:element name="data:doel">
+            <xsl:value-of select="$doelId"/>
+        </xsl:element>
+    </xsl:template>
 
 </xsl:stylesheet>
