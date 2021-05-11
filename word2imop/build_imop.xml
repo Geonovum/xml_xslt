@@ -22,28 +22,44 @@
     <mkdir dir="${output.dir}"/>
   </target>
 
-  <!-- unzip word-bestanden -->
+  <!-- unzip opdracht.zip en word-document -->
 
-  <target name="unzip" description="Unzip word-bestanden">
-    <unzip dest="${temp.dir}">
+  <target name="unzip" description="Unzip opdracht.zip en word-document">
+    <unzip dest="${temp.dir}/opdracht">
+      <fileset dir="${input.dir}">
+        <include name="**/opdracht.zip"/>
+      </fileset>
+    </unzip>
+    <unzip dest="${temp.dir}/document">
       <fileset dir="${input.dir}">
         <include name="**/*.docx"/>
       </fileset>
     </unzip>
   </target>
 
+  <!-- check de route -->
+
+  <target name="choice" description="Keuze tussen initieel besluit of wijzigingsbesluit">
+    <available file="opdracht" filepath="${temp.dir}" type="dir" property="opdracht.dir"/>
+  </target>
+
   <!-- transformeer van word naar imop -->
 
-  <target name="transform" description="Transformeer van word naar imop">
-    <xslt in="${temp.dir}/word/document.xml" out="${temp.dir}/resultaat.xml" style="word2imop.xsl" processor="trax" force="true"/>
-    <xslt in="${temp.dir}/resultaat.xml" out="${output.dir}/resultaat.xml" style="AKN.xsl" processor="trax" force="true"/>
+  <target name="initieel" depends="choice" unless="${opdracht.dir}" description="Transformeer initieel besluit">
+    <xslt in="${temp.dir}/document/word/document.xml" out="${temp.dir}/stap_1.xml" style="word2imop.xsl" processor="trax" force="true"/>
+    <xslt in="${temp.dir}/stap_1.xml" out="${output.dir}/resultaat.xml" style="AKN.xsl" processor="trax" force="true"/>
     <copy todir="${output.dir}/media" failonerror="false">
-      <fileset dir="${temp.dir}/word/media"/>
+      <fileset dir="${temp.dir}/document/word/media"/>
     </copy>
+  </target>
+
+  <target name="wijziging" depends="choice" if="${opdracht.dir}" description="Transformeer wijzigingsbesluit">
+    <xslt in="${temp.dir}/document/word/document.xml" out="${temp.dir}/stap_1.xml" style="word2imop.xsl" processor="trax" force="true"/>
+    <xslt in="${temp.dir}/stap_1.xml" out="${temp.dir}/stap_2.xml" style="AKN.xsl" processor="trax" force="true"/>
   </target>
 
   <!-- totale transformatie van word naar imop -->
 
-  <target name="word2imop" depends="init,unzip,transform"/>
+  <target name="word2imop" depends="init,unzip,choice,initieel,wijziging"/>
 
 </project>

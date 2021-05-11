@@ -4,6 +4,11 @@
 
   <xsl:param name="basedir" select="fn:substring-before(fn:base-uri(),'document.xml')"/>
 
+  <xsl:param name="comments" select="collection(concat($basedir,'?select=comments.xml'))/w:comments"/>
+  <xsl:param name="footnotes" select="collection(concat($basedir,'?select=footnotes.xml'))/w:footnotes"/>
+  <xsl:param name="relationships" select="collection(concat($basedir,'?select=document.xml.rels;recurse=yes'))/Relationships" xpath-default-namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
+  <xsl:param name="styles" select="collection(concat($basedir,'?select=styles.xml'))/w:styles"/>
+
   <!-- namespaces -->
   <xsl:param name="data" select="string('https://standaarden.overheid.nl/stop/imop/data/')"/>
   <xsl:param name="eigen" select="string('https://www.dso.nl/')"/>
@@ -11,8 +16,8 @@
   <xsl:param name="tekst" select="string('https://standaarden.overheid.nl/stop/imop/tekst/')"/>
 
   <!-- lees stijlen in -->
-  <xsl:param name="title" select="document('styles.xml',.)//w:style[w:name/@w:val='Title']/@w:styleId" as="xs:string"/>
-  <xsl:param name="headings" select="document('styles.xml',.)//w:style[fn:matches(w:name/@w:val,'heading\s[1-7]')]/@w:styleId"/>
+  <xsl:param name="title" select="$styles/w:style[w:name/@w:val='Title']/@w:styleId" as="xs:string"/>
+  <xsl:param name="headings" select="$styles/w:style[fn:matches(w:name/@w:val,'heading\s[1-7]')]/@w:styleId"/>
   <xsl:param name="heading_1" select="$headings[1]" as="xs:string"/>
   <xsl:param name="heading_2" select="$headings[2]" as="xs:string"/>
   <xsl:param name="heading_3" select="$headings[3]" as="xs:string"/>
@@ -22,11 +27,8 @@
   <xsl:param name="heading_7" select="$headings[7]" as="xs:string"/>
   <xsl:param name="heading" select="translate($headings[1],'1','#')"/>
 
-  <!-- lees relations in -->
-  <xsl:variable name="relationships" select="document('_rels/document.xml.rels',.)/Relationships/Relationship" xpath-default-namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
-
   <!-- lees metadata besluit in -->
-  <xsl:variable name="tbl_doc" select="document('comments.xml',.)/w:comments/w:comment/w:tbl[contains(fn:string-join(w:tr[1]/w:tc[1]//w:t),'Document')]"/>
+  <xsl:variable name="tbl_doc" select="$comments/w:comment/w:tbl[contains(fn:string-join(w:tr[1]/w:tc[1]//w:t),'Document')]"/>
   <!-- lees metadata work in -->
   <xsl:variable name="D01" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'idWerk')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="D02" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'versieSTOP')]/w:tc[2]//w:t),'geen')[1]"/>
@@ -44,7 +46,7 @@
   <xsl:variable name="D12" select="tokenize((fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'idOrganisatie')]/w:tc[2]//w:t),'geen')[1],'/')[last()]"/>
   <xsl:variable name="D13" select="(fn:string-join($tbl_doc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'soortBestuursorgaan')]/w:tc[2]//w:t),'geen')[1]"/>
   <!-- lees metadata procedure in -->
-  <xsl:variable name="tbl_proc" select="document('comments.xml',.)/w:comments/w:comment/w:tbl[contains(fn:string-join(w:tr[1]/w:tc[1]//w:t),'Procedure')]"/>
+  <xsl:variable name="tbl_proc" select="$comments/w:comment/w:tbl[contains(fn:string-join(w:tr[1]/w:tc[1]//w:t),'Procedure')]"/>
   <xsl:variable name="P01" select="(fn:string-join($tbl_proc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'bekendOp')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="P02" select="(fn:string-join($tbl_proc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'ontvangenOp')]/w:tc[2]//w:t),'geen')[1]"/>
   <xsl:variable name="P03" select="(fn:string-join($tbl_proc//w:tr[contains(fn:string-join(w:tc[1]//w:t),'inWerkingOp')]/w:tc[2]//w:t),'geen')[1]"/>
@@ -313,7 +315,6 @@
       <xsl:for-each-group select="w:body/element()" group-starting-with="w:p[w:pPr/w:pStyle/@w:val=$title][1]">
         <xsl:if test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val=$title]">
           <xsl:for-each-group select="current-group()" group-starting-with="w:p[w:pPr/w:pStyle/@w:val=$title]">
-            <xsl:variable name="test" select="current-group()"/>
             <xsl:choose>
               <xsl:when test="position() eq 1">
                 <!-- besluitdeel -->
@@ -675,7 +676,7 @@
             <xsl:element name="Lijstaanhef" namespace="{$tekst}">
               <xsl:choose>
                 <xsl:when test="contains(self::w:p/w:pPr/w:pStyle/@w:val,'metnummering')">
-                  <xsl:for-each-group select="current-group()[1]/*" group-starting-with="w:r[w:tab][1]">
+                  <xsl:for-each-group select="current-group()[1]/*" group-starting-with="(w:r[w:tab])[1]">
                     <xsl:choose>
                       <xsl:when test="position()=1">
                         <!-- nummering wordt door lidmetnummering en opsommingmetnummering geplaatst -->
@@ -696,7 +697,7 @@
             <!-- controleer of het een opsommigslid is -->
             <xsl:element name="Li" namespace="{$tekst}">
               <xsl:element name="LiNummer" namespace="{$tekst}">
-                <xsl:for-each-group select="current-group()[1]/*" group-starting-with="w:r[w:tab][1]">
+                <xsl:for-each-group select="current-group()[1]/*" group-starting-with="(w:r[w:tab])[1]">
                   <xsl:choose>
                     <xsl:when test="position()=1">
                       <!-- plaats de nummering -->
@@ -740,7 +741,7 @@
         <xsl:element name="Kop" namespace="{$tekst}">
           <xsl:choose>
             <xsl:when test="w:r[w:tab]">
-              <xsl:for-each-group select="*" group-starting-with="w:r[w:tab][1]">
+              <xsl:for-each-group select="*" group-starting-with="(w:r[w:tab])[1]">
                 <xsl:choose>
                   <xsl:when test="position()=1">
                     <xsl:variable name="nummer" select="fn:tokenize(fn:string-join(current-group()/w:t),'\s+')"/>
@@ -780,7 +781,7 @@
         </xsl:element>
       </xsl:when>
       <xsl:when test="$styleId=('Lidmetnummering')">
-        <xsl:for-each-group select="*" group-starting-with="w:r[w:tab][1]">
+        <xsl:for-each-group select="*" group-starting-with="(w:r[w:tab])[1]">
           <xsl:choose>
             <xsl:when test="position()=1">
               <!-- lidnummer wordt geplaatst door section_lichaam_artikel -->
@@ -794,7 +795,7 @@
         </xsl:for-each-group>
       </xsl:when>
       <xsl:when test="$styleId=('Opsommingmetnummering')">
-        <xsl:for-each-group select="*" group-starting-with="w:r[w:tab][1]">
+        <xsl:for-each-group select="*" group-starting-with="(w:r[w:tab])[1]">
           <xsl:choose>
             <xsl:when test="position()=1">
               <!-- opsommingsnummer wordt geplaatst door lijst -->
@@ -872,7 +873,7 @@
 
   <xsl:template match="w:hyperlink">
     <xsl:variable name="id" select="@r:id"/>
-    <xsl:variable name="relationship" select="$relationships/self::Relationship[@Id=$id]" xpath-default-namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
+    <xsl:variable name="relationship" select="$relationships/Relationship[@Id=$id]" xpath-default-namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
     <xsl:choose>
       <xsl:when test="contains($relationship/@TargetMode,'External')">
         <xsl:element name="ExtRef" namespace="{$tekst}">
@@ -1044,7 +1045,8 @@
     <xsl:variable name="imageId" select=".//a:graphic//@r:embed"/>
     <xsl:choose>
       <xsl:when test="$imageId!=''">
-        <xsl:variable name="imageName" select="document('_rels/document.xml.rels',.)//*[@Id=$imageId]/@Target"/>
+        <xsl:variable name="imageName" select="$relationships/Relationship[@Id=$imageId]/@Target" xpath-default-namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
+        <!--xsl:variable name="imageName" select="document('_rels/document.xml.rels',.)//*[@Id=$imageId]/@Target"/-->
         <!-- waarden in dxa, dat is 1/20 pt -->
         <xsl:element name="Illustratie" namespace="{$tekst}">
           <xsl:attribute name="naam" select="$imageName"/>
@@ -1062,7 +1064,7 @@
 
   <xsl:template match="w:footnoteReference">
     <xsl:variable name="footnoteId" select="@w:id"/>
-    <xsl:variable name="footnote" select="document('footnotes.xml',.)//w:footnote[@w:id=$footnoteId]"/>
+    <xsl:variable name="footnote" select="$footnotes/w:footnote[@w:id=$footnoteId]"/>
     <xsl:variable name="index" select="count(.|preceding::w:footnoteReference)"/>
     <xsl:element name="Noot" namespace="{$tekst}">
       <xsl:attribute name="id" select="concat('N',$footnoteId)"/>
