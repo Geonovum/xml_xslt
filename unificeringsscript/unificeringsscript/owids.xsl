@@ -85,11 +85,25 @@
         </xsl:attribute>
     </xsl:template>
     <!-- Activiteitrefs niet aanraken, worden in aparte routine afgehandeld -->
-    <xsl:template match="rol:ActiviteitRef/@xlink:href">
+<!--    <xsl:template match="r:activiteitaanduiding/rol:ActiviteitRef/@xlink:href">
+        <xsl:message select="concat('r:activiteitaanduiding: ',.)"></xsl:message>
+        <xsl:attribute name="xlink:href">
+            <xsl:value-of select="foo:generateOWId(.)"/>
+        </xsl:attribute>
+    </xsl:template>
+-->    <xsl:template match="rol:bovenliggendeActiviteit/rol:ActiviteitRef/@xlink:href">
+        <xsl:message select="concat('rol:bovenliggendeActiviteit: ',.)"></xsl:message>
         <xsl:attribute name="xlink:href">
             <xsl:value-of select="."/>
         </xsl:attribute>
     </xsl:template>
+    <xsl:template match="rol:gerelateerdeActiviteit/rol:ActiviteitRef/@xlink:href">
+        <xsl:message select="concat('rol:gerelateerdeActiviteit: ',.)"></xsl:message>
+        <xsl:attribute name="xlink:href">
+            <xsl:value-of select="."/>
+        </xsl:attribute>
+    </xsl:template>
+    
 
     <xsl:function name="foo:generateOWId">
         <xsl:param name="owId" as="xs:string"/>

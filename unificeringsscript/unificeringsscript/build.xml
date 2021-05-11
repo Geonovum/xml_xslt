@@ -59,7 +59,7 @@
     <xslt in="${temp.dir}/index1.xml" out="${temp.dir}/index.xml" style="filter-dupes.xsl" processor="trax" force="true">
       <classpath location="saxon9he.jar"/>
     </xslt>
-    <delete file="${temp.dir}/index1.xml"></delete>
+    <delete file="${temp.dir}/index1.xml"/>
   </target>
 
   <target name="guids" description="Creëert een juiste aantal guids benodigd en verwerkt die in GML-bestanden en referenties.">
@@ -117,12 +117,12 @@
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/file[contains(@ow,'true')]">
         <param name="sourceFileName" path="name/text()"/>
-        <param name="dateTime"  path="../dateTime/text()"/>
+        <param name="dateTime" path="../dateTime/text()"/>
         <actions>
-                <xslt in="${output.dir}/@{sourceFileName}" out="${temp.dir}/@{sourceFileName}" extension=".xml" style="owids.xsl" processor="trax" force="true">
-                  <classpath location="saxon9he.jar"/>
-                  <param name="dateTime" expression="@{dateTime}"/>
-                </xslt>
+          <xslt in="${output.dir}/@{sourceFileName}" out="${temp.dir}/@{sourceFileName}" extension=".xml" style="owids.xsl" processor="trax" force="true">
+            <classpath location="saxon9he.jar"/>
+            <param name="dateTime" expression="@{dateTime}"/>
+          </xslt>
           <copy file="${temp.dir}/@{sourceFileName}" tofile="${output.dir}/@{sourceFileName}"/>
         </actions>
       </call>
@@ -131,8 +131,8 @@
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/bovenliggendeActiviteitRelatie">
         <param name="sourceFileName" path="name/text()"/>
-        <param name="bovenliggendeActiviteitIdLokaalAanwezig"  path="bovenliggendeActiviteitIdLokaalAanwezig/text()"/>
-        <param name="dateTime"  path="../dateTime/text()"/>
+        <param name="bovenliggendeActiviteitIdLokaalAanwezig" path="bovenliggendeActiviteitIdLokaalAanwezig/text()"/>
+        <param name="dateTime" path="../dateTime/text()"/>
         <actions>
           <xslt in="${output.dir}/@{sourceFileName}" out="${temp.dir}/@{sourceFileName}" extension=".xml" style="activiteit.xsl" processor="trax" force="true">
             <classpath location="saxon9he.jar"/>
@@ -147,8 +147,8 @@
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/gerelateerdeActiviteitRelatie">
         <param name="sourceFileName" path="name/text()"/>
-        <param name="gerelateerdeActiviteitIdLokaalAanwezig"  path="gerelateerdeActiviteitIdLokaalAanwezig/text()"/>
-        <param name="dateTime"  path="../dateTime/text()"/>
+        <param name="gerelateerdeActiviteitIdLokaalAanwezig" path="gerelateerdeActiviteitIdLokaalAanwezig/text()"/>
+        <param name="dateTime" path="../dateTime/text()"/>
         <actions>
           <xslt in="${output.dir}/@{sourceFileName}" out="${temp.dir}/@{sourceFileName}" extension=".xml" style="activiteit.xsl" processor="trax" force="true">
             <classpath location="saxon9he.jar"/>
