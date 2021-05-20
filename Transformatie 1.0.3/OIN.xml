@@ -448,7 +448,7 @@
    <item>
       <naam>Gemeente Eemsdelta</naam>
       <OIN>00000001826228379000</OIN>
-      <BG>[onbekend]</BG>
+      <BG>/tooi/id/gemeente/gm1979</BG>
    </item>
    <item>
       <naam>Gemeente Eersel</naam>
@@ -683,7 +683,7 @@
    <item>
       <naam>Gemeente Hengelo (O)</naam>
       <OIN>00000001001888730000</OIN>
-      <BG>[onbekend]</BG>
+      <BG>/tooi/id/gemeente/gm0164</BG>
    </item>
    <item>
       <naam>Gemeente Het Hogeland</naam>
@@ -843,7 +843,7 @@
    <item>
       <naam>Gemeente Leerdam</naam>
       <OIN>00000001002008269000</OIN>
-      <BG>[onbekend]</BG>
+      <BG>/tooi/id/gemeente/gm0545</BG>
    </item>
    <item>
       <naam>Gemeente Leeuwarden</naam>
@@ -978,7 +978,7 @@
    <item>
       <naam>Gemeente Mill en Sint Hubert</naam>
       <OIN>00000001001160813000</OIN>
-      <BG>[onbekend]</BG>
+      <BG>/tooi/id/gemeente/gm0815</BG>
    </item>
    <item>
       <naam>Gemeente Moerdijk</naam>
@@ -1043,7 +1043,7 @@
    <item>
       <naam>Gemeente Noardeast-Fryslân</naam>
       <OIN>00000001825753582000</OIN>
-      <BG>[onbekend]</BG>
+      <BG>/tooi/id/gemeente/gm1970</BG>
    </item>
    <item>
       <naam>Gemeente Noord-Beveland</naam>
@@ -1064,6 +1064,11 @@
       <naam>Gemeente Noordwijk</naam>
       <OIN>00000001825792150000</OIN>
       <BG>/tooi/id/gemeente/gm0575</BG>
+   </item>
+   <item>
+      <naam>"Gemeente Nuenen, Gerwen en Nederwetten"</naam>
+      <OIN>00000001001902854000</OIN>
+      <BG>/tooi/id/gemeente/gm0820</BG>
    </item>
    <item>
       <naam>Gemeente Nunspeet</naam>
@@ -1398,7 +1403,7 @@
    <item>
       <naam>Gemeente Súdwest-Fryslân</naam>
       <OIN>00000001823288444000</OIN>
-      <BG>[onbekend]</BG>
+      <BG>/tooi/id/gemeente/gm1900</BG>
    </item>
    <item>
       <naam>Gemeente Terneuzen</naam>
@@ -1434,6 +1439,81 @@
       <naam>Gemeente Tilburg</naam>
       <OIN>00000001001172773000</OIN>
       <BG>/tooi/id/gemeente/gm0855</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_01</naam>
+      <OIN>00000099130854102001</OIN>
+      <BG>/tooi/id/gemeente/gm9901</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_02</naam>
+      <OIN>00000099130854102005</OIN>
+      <BG>/tooi/id/gemeente/gm9902</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_03</naam>
+      <OIN>00000099130854102009</OIN>
+      <BG>/tooi/id/gemeente/gm9903</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_04</naam>
+      <OIN>00000099130854102013</OIN>
+      <BG>/tooi/id/gemeente/gm9904</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_05</naam>
+      <OIN>00000099130854102017</OIN>
+      <BG>/tooi/id/gemeente/gm9905</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_06</naam>
+      <OIN>00000099130854102021</OIN>
+      <BG>/tooi/id/gemeente/gm9906</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_07</naam>
+      <OIN>00000099130854102025</OIN>
+      <BG>/tooi/id/gemeente/gm9907</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_08</naam>
+      <OIN>00000099130854102029</OIN>
+      <BG>/tooi/id/gemeente/gm9908</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_09</naam>
+      <OIN>00000099130854102033</OIN>
+      <BG>/tooi/id/gemeente/gm9909</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_10</naam>
+      <OIN>00000099130854102037</OIN>
+      <BG>/tooi/id/gemeente/gm9910</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_11</naam>
+      <OIN>00000099130854102041</OIN>
+      <BG>/tooi/id/gemeente/gm9911</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_12</naam>
+      <OIN>00000099130854102045</OIN>
+      <BG>/tooi/id/gemeente/gm9912</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_13</naam>
+      <OIN>00000099130854102049</OIN>
+      <BG>/tooi/id/gemeente/gm9913</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_14</naam>
+      <OIN>00000099130854102053</OIN>
+      <BG>/tooi/id/gemeente/gm9914</BG>
+   </item>
+   <item>
+      <naam>gemeente TST_15</naam>
+      <OIN>00000099130854102057</OIN>
+      <BG>/tooi/id/gemeente/gm9915</BG>
    </item>
    <item>
       <naam>Gemeente Tubbergen</naam>
@@ -1781,31 +1861,6 @@
       <BG>/tooi/id/gemeente/gm0193</BG>
    </item>
    <item>
-      <naam>Hoogheemraadschap De Stichtse Rijnlanden</naam>
-      <OIN>00000001802139097000</OIN>
-      <BG>/tooi/id/waterschap/ws0636</BG>
-   </item>
-   <item>
-      <naam>Hoogheemraadschap Hollands Noorderkwartier</naam>
-      <OIN>00000001811336487000</OIN>
-      <BG>/tooi/id/waterschap/ws0651</BG>
-   </item>
-   <item>
-      <naam>Hoogheemraadschap van Delfland</naam>
-      <OIN>00000001001569739000</OIN>
-      <BG>/tooi/id/waterschap/ws0372</BG>
-   </item>
-   <item>
-      <naam>Hoogheemraadschap van Rijnland</naam>
-      <OIN>00000001813766928000</OIN>
-      <BG>/tooi/id/waterschap/ws0616</BG>
-   </item>
-   <item>
-      <naam>Hoogheemraadschap van Schieland en de Krimpenerwaard</naam>
-      <OIN>00000001813648762000</OIN>
-      <BG>/tooi/id/waterschap/ws0656</BG>
-   </item>
-   <item>
       <naam>Ministerie van Algemene Zaken</naam>
       <OIN>00000001003227376000</OIN>
       <BG>/tooi/id/ministerie/mnre1010</BG>
@@ -1836,7 +1891,7 @@
       <BG>/tooi/id/ministerie/mnre1090</BG>
    </item>
    <item>
-      <naam>Ministerie van Infrastructuur en Waterstaat</naam>
+      <naam>Ministerie van Infrastructuur en Waterstaat (LVO - Departement)</naam>
       <OIN>00000001003214321000</OIN>
       <BG>/tooi/id/ministerie/mnre1130</BG>
    </item>
@@ -1846,7 +1901,12 @@
       <BG>/tooi/id/ministerie/mnre1058</BG>
    </item>
    <item>
-      <naam>Ministerie van Onderwijs, Cultuur en Wetenschap</naam>
+      <naam>"Ministerie van Landbouw, Natuur en Voedselkwaliteit"</naam>
+      <OIN>00000001858272854000</OIN>
+      <BG>/tooi/id/ministerie/mnre1153</BG>
+   </item>
+   <item>
+      <naam>"Ministerie van Onderwijs, Cultuur en Wetenschap"</naam>
       <OIN>00000001003214400000</OIN>
       <BG>/tooi/id/ministerie/mnre1109</BG>
    </item>
@@ -1854,6 +1914,11 @@
       <naam>Ministerie van Sociale Zaken en Werkgelegenheid</naam>
       <OIN>00000001003227522000</OIN>
       <BG>/tooi/id/ministerie/mnre1073</BG>
+   </item>
+   <item>
+      <naam>UBR (Proxy)</naam>
+      <OIN>00000004190352321000</OIN>
+      <BG>/tooi/id/ministerie/mnre</BG>
    </item>
    <item>
       <naam>Provincie Drenthe</naam>
@@ -1901,6 +1966,81 @@
       <BG>/tooi/id/provincie/pv23</BG>
    </item>
    <item>
+      <naam>provincie TST_01</naam>
+      <OIN>00000099130854102003</OIN>
+      <BG>/tooi/id/provincie/pv9901</BG>
+   </item>
+   <item>
+      <naam>provincie TST_02</naam>
+      <OIN>00000099130854102007</OIN>
+      <BG>/tooi/id/provincie/pv9902</BG>
+   </item>
+   <item>
+      <naam>provincie TST_03</naam>
+      <OIN>00000099130854102011</OIN>
+      <BG>/tooi/id/provincie/pv9903</BG>
+   </item>
+   <item>
+      <naam>provincie TST_04</naam>
+      <OIN>00000099130854102015</OIN>
+      <BG>/tooi/id/provincie/pv9904</BG>
+   </item>
+   <item>
+      <naam>provincie TST_05</naam>
+      <OIN>00000099130854102019</OIN>
+      <BG>/tooi/id/provincie/pv9905</BG>
+   </item>
+   <item>
+      <naam>provincie TST_06</naam>
+      <OIN>00000099130854102023</OIN>
+      <BG>/tooi/id/provincie/pv9906</BG>
+   </item>
+   <item>
+      <naam>provincie TST_07</naam>
+      <OIN>00000099130854102027</OIN>
+      <BG>/tooi/id/provincie/pv9907</BG>
+   </item>
+   <item>
+      <naam>provincie TST_08</naam>
+      <OIN>00000099130854102031</OIN>
+      <BG>/tooi/id/provincie/pv9908</BG>
+   </item>
+   <item>
+      <naam>provincie TST_09</naam>
+      <OIN>00000099130854102035</OIN>
+      <BG>/tooi/id/provincie/pv9909</BG>
+   </item>
+   <item>
+      <naam>provincie TST_10</naam>
+      <OIN>00000099130854102039</OIN>
+      <BG>/tooi/id/provincie/pv9910</BG>
+   </item>
+   <item>
+      <naam>provincie TST_11</naam>
+      <OIN>00000099130854102043</OIN>
+      <BG>/tooi/id/provincie/pv9911</BG>
+   </item>
+   <item>
+      <naam>provincie TST_12</naam>
+      <OIN>00000099130854102047</OIN>
+      <BG>/tooi/id/provincie/pv9912</BG>
+   </item>
+   <item>
+      <naam>provincie TST_13</naam>
+      <OIN>00000099130854102051</OIN>
+      <BG>/tooi/id/provincie/pv9913</BG>
+   </item>
+   <item>
+      <naam>provincie TST_14</naam>
+      <OIN>00000099130854102055</OIN>
+      <BG>/tooi/id/provincie/pv9914</BG>
+   </item>
+   <item>
+      <naam>provincie TST_15</naam>
+      <OIN>00000099130854102059</OIN>
+      <BG>/tooi/id/provincie/pv9915</BG>
+   </item>
+   <item>
       <naam>Provincie Utrecht</naam>
       <OIN>00000001001797864000</OIN>
       <BG>/tooi/id/provincie/pv26</BG>
@@ -1914,6 +2054,31 @@
       <naam>Provincie Zuid-Holland</naam>
       <OIN>00000001002306608000</OIN>
       <BG>/tooi/id/provincie/pv28</BG>
+   </item>
+   <item>
+      <naam>Hoogheemraadschap De Stichtse Rijnlanden</naam>
+      <OIN>00000001802139097000</OIN>
+      <BG>/tooi/id/waterschap/ws0636</BG>
+   </item>
+   <item>
+      <naam>Hoogheemraadschap Hollands Noorderkwartier</naam>
+      <OIN>00000001811336487000</OIN>
+      <BG>/tooi/id/waterschap/ws0651</BG>
+   </item>
+   <item>
+      <naam>Hoogheemraadschap van Delfland</naam>
+      <OIN>00000001001569739000</OIN>
+      <BG>/tooi/id/waterschap/ws0372</BG>
+   </item>
+   <item>
+      <naam>Hoogheemraadschap van Rijnland</naam>
+      <OIN>00000001813766928000</OIN>
+      <BG>/tooi/id/waterschap/ws0616</BG>
+   </item>
+   <item>
+      <naam>Hoogheemraadschap van Schieland en de Krimpenerwaard</naam>
+      <OIN>00000001813648762000</OIN>
+      <BG>/tooi/id/waterschap/ws0656</BG>
    </item>
    <item>
       <naam>Waterschap Aa en Maas</naam>
@@ -1974,6 +2139,81 @@
       <naam>Waterschap Scheldestromen</naam>
       <OIN>00000001850108275000</OIN>
       <BG>/tooi/id/waterschap/ws0661</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_01</naam>
+      <OIN>00000099130854102002</OIN>
+      <BG>/tooi/id/waterschap/ws9901</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_02</naam>
+      <OIN>00000099130854102006</OIN>
+      <BG>/tooi/id/waterschap/ws9902</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_03</naam>
+      <OIN>00000099130854102010</OIN>
+      <BG>/tooi/id/waterschap/ws9903</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_04</naam>
+      <OIN>00000099130854102014</OIN>
+      <BG>/tooi/id/waterschap/ws9904</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_05</naam>
+      <OIN>00000099130854102018</OIN>
+      <BG>/tooi/id/waterschap/ws9905</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_06</naam>
+      <OIN>00000099130854102022</OIN>
+      <BG>/tooi/id/waterschap/ws9906</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_07</naam>
+      <OIN>00000099130854102026</OIN>
+      <BG>/tooi/id/waterschap/ws9907</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_08</naam>
+      <OIN>00000099130854102030</OIN>
+      <BG>/tooi/id/waterschap/ws9908</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_09</naam>
+      <OIN>00000099130854102034</OIN>
+      <BG>/tooi/id/waterschap/ws9909</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_10</naam>
+      <OIN>00000099130854102038</OIN>
+      <BG>/tooi/id/waterschap/ws9910</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_11</naam>
+      <OIN>00000099130854102042</OIN>
+      <BG>/tooi/id/waterschap/ws9911</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_12</naam>
+      <OIN>00000099130854102046</OIN>
+      <BG>/tooi/id/waterschap/ws9912</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_13</naam>
+      <OIN>00000099130854102050</OIN>
+      <BG>/tooi/id/waterschap/ws9913</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_14</naam>
+      <OIN>00000099130854102054</OIN>
+      <BG>/tooi/id/waterschap/ws9914</BG>
+   </item>
+   <item>
+      <naam>waterschap TST_15</naam>
+      <OIN>00000099130854102058</OIN>
+      <BG>/tooi/id/waterschap/ws9915</BG>
    </item>
    <item>
       <naam>Waterschap Vallei en Veluwe</naam>
