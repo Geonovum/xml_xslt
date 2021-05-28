@@ -448,7 +448,7 @@
    <item>
       <naam>Gemeente Eemsdelta</naam>
       <OIN>00000001826228379000</OIN>
-      <BG>[onbekend]</BG>
+      <BG>/tooi/id/gemeente/gm1979</BG>
    </item>
    <item>
       <naam>Gemeente Eersel</naam>
@@ -683,7 +683,7 @@
    <item>
       <naam>Gemeente Hengelo (O)</naam>
       <OIN>00000001001888730000</OIN>
-      <BG>[onbekend]</BG>
+      <BG>/tooi/id/gemeente/gm0164</BG>
    </item>
    <item>
       <naam>Gemeente Het Hogeland</naam>
@@ -843,7 +843,7 @@
    <item>
       <naam>Gemeente Leerdam</naam>
       <OIN>00000001002008269000</OIN>
-      <BG>[onbekend]</BG>
+      <BG>/tooi/id/gemeente/gm0545</BG>
    </item>
    <item>
       <naam>Gemeente Leeuwarden</naam>
@@ -978,7 +978,7 @@
    <item>
       <naam>Gemeente Mill en Sint Hubert</naam>
       <OIN>00000001001160813000</OIN>
-      <BG>[onbekend]</BG>
+      <BG>/tooi/id/gemeente/gm0815</BG>
    </item>
    <item>
       <naam>Gemeente Moerdijk</naam>
@@ -1043,7 +1043,7 @@
    <item>
       <naam>Gemeente Noardeast-Fryslân</naam>
       <OIN>00000001825753582000</OIN>
-      <BG>[onbekend]</BG>
+      <BG>/tooi/id/gemeente/gm1970</BG>
    </item>
    <item>
       <naam>Gemeente Noord-Beveland</naam>
@@ -1064,6 +1064,11 @@
       <naam>Gemeente Noordwijk</naam>
       <OIN>00000001825792150000</OIN>
       <BG>/tooi/id/gemeente/gm0575</BG>
+   </item>
+   <item>
+      <naam>Gemeente Nuenen, Gerwen en Nederwetten</naam>
+      <OIN>00000001001902854000</OIN>
+      <BG>/tooi/id/gemeente/gm0820</BG>
    </item>
    <item>
       <naam>Gemeente Nunspeet</naam>
@@ -1398,7 +1403,7 @@
    <item>
       <naam>Gemeente Súdwest-Fryslân</naam>
       <OIN>00000001823288444000</OIN>
-      <BG>[onbekend]</BG>
+      <BG>/tooi/id/gemeente/gm1900</BG>
    </item>
    <item>
       <naam>Gemeente Terneuzen</naam>
@@ -1781,31 +1786,6 @@
       <BG>/tooi/id/gemeente/gm0193</BG>
    </item>
    <item>
-      <naam>Hoogheemraadschap De Stichtse Rijnlanden</naam>
-      <OIN>00000001802139097000</OIN>
-      <BG>/tooi/id/waterschap/ws0636</BG>
-   </item>
-   <item>
-      <naam>Hoogheemraadschap Hollands Noorderkwartier</naam>
-      <OIN>00000001811336487000</OIN>
-      <BG>/tooi/id/waterschap/ws0651</BG>
-   </item>
-   <item>
-      <naam>Hoogheemraadschap van Delfland</naam>
-      <OIN>00000001001569739000</OIN>
-      <BG>/tooi/id/waterschap/ws0372</BG>
-   </item>
-   <item>
-      <naam>Hoogheemraadschap van Rijnland</naam>
-      <OIN>00000001813766928000</OIN>
-      <BG>/tooi/id/waterschap/ws0616</BG>
-   </item>
-   <item>
-      <naam>Hoogheemraadschap van Schieland en de Krimpenerwaard</naam>
-      <OIN>00000001813648762000</OIN>
-      <BG>/tooi/id/waterschap/ws0656</BG>
-   </item>
-   <item>
       <naam>Ministerie van Algemene Zaken</naam>
       <OIN>00000001003227376000</OIN>
       <BG>/tooi/id/ministerie/mnre1010</BG>
@@ -1836,7 +1816,7 @@
       <BG>/tooi/id/ministerie/mnre1090</BG>
    </item>
    <item>
-      <naam>Ministerie van Infrastructuur en Waterstaat</naam>
+      <naam>Ministerie van Infrastructuur en Waterstaat (LVO - Departement)</naam>
       <OIN>00000001003214321000</OIN>
       <BG>/tooi/id/ministerie/mnre1130</BG>
    </item>
@@ -1844,6 +1824,11 @@
       <naam>Ministerie van Justitie en Veiligheid</naam>
       <OIN>00000001003214436000</OIN>
       <BG>/tooi/id/ministerie/mnre1058</BG>
+   </item>
+   <item>
+      <naam>Ministerie van Landbouw, Natuur en Voedselkwaliteit</naam>
+      <OIN>00000001858272854000</OIN>
+      <BG>/tooi/id/ministerie/mnre1153</BG>
    </item>
    <item>
       <naam>Ministerie van Onderwijs, Cultuur en Wetenschap</naam>
@@ -1914,6 +1899,31 @@
       <naam>Provincie Zuid-Holland</naam>
       <OIN>00000001002306608000</OIN>
       <BG>/tooi/id/provincie/pv28</BG>
+   </item>
+   <item>
+      <naam>Hoogheemraadschap De Stichtse Rijnlanden</naam>
+      <OIN>00000001802139097000</OIN>
+      <BG>/tooi/id/waterschap/ws0636</BG>
+   </item>
+   <item>
+      <naam>Hoogheemraadschap Hollands Noorderkwartier</naam>
+      <OIN>00000001811336487000</OIN>
+      <BG>/tooi/id/waterschap/ws0651</BG>
+   </item>
+   <item>
+      <naam>Hoogheemraadschap van Delfland</naam>
+      <OIN>00000001001569739000</OIN>
+      <BG>/tooi/id/waterschap/ws0372</BG>
+   </item>
+   <item>
+      <naam>Hoogheemraadschap van Rijnland</naam>
+      <OIN>00000001813766928000</OIN>
+      <BG>/tooi/id/waterschap/ws0616</BG>
+   </item>
+   <item>
+      <naam>Hoogheemraadschap van Schieland en de Krimpenerwaard</naam>
+      <OIN>00000001813648762000</OIN>
+      <BG>/tooi/id/waterschap/ws0656</BG>
    </item>
    <item>
       <naam>Waterschap Aa en Maas</naam>
