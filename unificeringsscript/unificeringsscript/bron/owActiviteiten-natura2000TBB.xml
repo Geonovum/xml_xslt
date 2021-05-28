@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+	xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+	xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+	xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+	<sl:standBestand>
+		<sl:dataset>Natura2000TBB</sl:dataset>
+		<sl:inhoud>
+			<sl:gebied>Natura2000TBB</sl:gebied>
+			<sl:leveringsId>abc-20190221-0801</sl:leveringsId>
+			<sl:objectTypen>
+				<sl:objectType>Activiteit</sl:objectType>
+			</sl:objectTypen>
+		</sl:inhoud>
+		<sl:stand>
+			<ow-dc:owObject>
+				<rol:Activiteit>
+					<!--art1.1-->
+					<rol:identificatie>nl.imow-mnre1045.activiteit.2019000001</rol:identificatie>
+					<rol:naam>toegangsactiviteit</rol:naam>
+					<rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Toegangsactiviteit</rol:groep>
+					<rol:bovenliggendeActiviteit>
+						<rol:ActiviteitRef xlink:href="nl.imow-mnre1045.activiteit.ActGevolgNatuur"/>
+					</rol:bovenliggendeActiviteit>
+				</rol:Activiteit>
+			</ow-dc:owObject>
+		</sl:stand>
+		<sl:stand>
+			<ow-dc:owObject>
+				<rol:Activiteit>
+					<!--art1.2-->
+					<rol:identificatie>nl.imow-mnre1045.activiteit.2019000002</rol:identificatie>
+					<rol:naam>gebruik modelvliegtuigen en modelluchtvaartuigen</rol:naam>
+					<rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Toegangsactiviteit</rol:groep>
+					<rol:bovenliggendeActiviteit>
+						<rol:ActiviteitRef xlink:href="nl.imow-mnre1045.activiteit.ActGevolgNatuur"/>
+					</rol:bovenliggendeActiviteit>
+				</rol:Activiteit>
+			</ow-dc:owObject>
+		</sl:stand>
+		<sl:stand>
+			<ow-dc:owObject>
+				<rol:Activiteit>
+					<!--art1.3-->
+					<rol:identificatie>nl.imow-mnre1045.activiteit.2019000003</rol:identificatie>
+					<rol:naam>gehele jaar wandelen</rol:naam>
+					<rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Toegangsactiviteit</rol:groep>
+					<rol:bovenliggendeActiviteit>
+						<rol:ActiviteitRef xlink:href="nl.imow-mnre1045.activiteit.ActGevolgNatuur"/>
+					</rol:bovenliggendeActiviteit>
+				</rol:Activiteit>
+			</ow-dc:owObject>
+		</sl:stand>
+		<sl:stand>
+			<ow-dc:owObject>
+				<rol:Activiteit>
+					<!--art2-->
+					<rol:identificatie>nl.imow-mnre1045.activiteit.2019000004</rol:identificatie>
+					<rol:naam>wandelen in 16 augustus t/m 14 maart</rol:naam>
+					<rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Toegangsactiviteit</rol:groep>
+					<rol:bovenliggendeActiviteit>
+						<rol:ActiviteitRef xlink:href="nl.imow-mnre1045.activiteit.ActGevolgNatuur"/>
+					</rol:bovenliggendeActiviteit>
+				</rol:Activiteit>
+			</ow-dc:owObject>
+		</sl:stand>
+
+		<sl:stand>
+			<ow-dc:owObject>
+				<rol:Activiteit>
+					<!--art3-->
+					<rol:identificatie>nl.imow-mnre1045.activiteit.2019000005</rol:identificatie>
+					<rol:naam>op paden wandelen</rol:naam>
+					<rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Toegangsactiviteit</rol:groep>
+					<rol:bovenliggendeActiviteit>
+						<rol:ActiviteitRef xlink:href="nl.imow-mnre1045.activiteit.ActGevolgNatuur"/>
+					</rol:bovenliggendeActiviteit>
+				</rol:Activiteit>
+			</ow-dc:owObject>
+		</sl:stand>
+		<sl:stand>
+			<ow-dc:owObject>
+				<rol:Activiteit>
+					<!--art4.1-->
+					<rol:identificatie>nl.imow-mnre1045.activiteit.2019000006</rol:identificatie>
+					<rol:naam>beperkte activiteiten</rol:naam>
+					<rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Toegangsactiviteit</rol:groep>
+					<rol:bovenliggendeActiviteit>
+						<rol:ActiviteitRef xlink:href="nl.imow-mnre1045.activiteit.ActGevolgNatuur"/>
+					</rol:bovenliggendeActiviteit>
+				</rol:Activiteit>
+			</ow-dc:owObject>
+		</sl:stand>
+		<sl:stand>
+			<ow-dc:owObject>
+				<rol:Activiteit>
+					<!--art5-->
+					<rol:identificatie>nl.imow-mnre1045.activiteit.2019000007</rol:identificatie>
+					<rol:naam>toegangsactiviteit</rol:naam>
+					<rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Toegangsactiviteit</rol:groep>
+					<rol:bovenliggendeActiviteit>
+						<rol:ActiviteitRef xlink:href="nl.imow-mnre1045.activiteit.ActGevolgNatuur"/>
+					</rol:bovenliggendeActiviteit>
+				</rol:Activiteit>
+			</ow-dc:owObject>
+		</sl:stand>
+		<sl:stand>
+			<ow-dc:owObject>
+				<rol:Activiteit>
+					<!--art6.1-->
+					<rol:identificatie>nl.imow-mnre1045.activiteit.2019000008</rol:identificatie>
+					<rol:naam>toegang private gronden</rol:naam>
+					<rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Toegangsactiviteit</rol:groep>
+					<rol:bovenliggendeActiviteit>
+						<rol:ActiviteitRef xlink:href="nl.imow-mnre1045.activiteit.ActGevolgNatuur"/>
+					</rol:bovenliggendeActiviteit>
+				</rol:Activiteit>
+			</ow-dc:owObject>
+		</sl:stand>
+	</sl:standBestand>
+</ow-dc:owBestand>
