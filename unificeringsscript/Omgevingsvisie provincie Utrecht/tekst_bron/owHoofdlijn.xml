@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>Omgevingsvisie Utrecht</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Provincie Utrecht</sl:gebied>
+         <sl:leveringsId>OVIUtrecht_001</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Hoofdlijn</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-pv26.hoofdlijn.20200001</vt:identificatie>
+               <vt:soort>Beleidsthema</vt:soort>
+               <vt:naam>Stad en land gezond</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-pv26.hoofdlijn.20200002</vt:identificatie>
+               <vt:soort>Beleidsthema</vt:soort>
+               <vt:naam>Klimaatbestendig en waterrobuust</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-pv26.hoofdlijn.20200003</vt:identificatie>
+               <vt:soort>Beleidsthema</vt:soort>
+               <vt:naam>Duurzame energie</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-pv26.hoofdlijn.20200004</vt:identificatie>
+               <vt:soort>Beleidsthema</vt:soort>
+               <vt:naam>Vitale steden en dorpen</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-pv26.hoofdlijn.20200005</vt:identificatie>
+               <vt:soort>Beleidsthema</vt:soort>
+               <vt:naam>Duurzaam, gezond en veilig bereikbaar</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-pv26.hoofdlijn.20200006</vt:identificatie>
+               <vt:soort>Beleidsthema</vt:soort>
+               <vt:naam>Levend landschap, erfgoed en cultuur</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-pv26.hoofdlijn.20200007</vt:identificatie>
+               <vt:soort>Beleidsthema</vt:soort>
+               <vt:naam>Toekomstbestendige natuur en landbouw</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

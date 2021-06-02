@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" 
+    xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen" 
+    xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" 
+    xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" 
+    xmlns:ow="http://www.geostandaarden.nl/imow/owobject" 
+    xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" 
+    xmlns:l="http://www.geostandaarden.nl/imow/locatie" 
+    xmlns:r="http://www.geostandaarden.nl/imow/regels" 
+    xmlns:k="http://www.geostandaarden.nl/imow/kaart" 
+    xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3-RC/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+    <sl:standBestand>
+        <sl:dataset>Gemeentestad</sl:dataset>
+        <sl:inhoud>
+            <sl:gebied>Gemeentestad</sl:gebied>
+            <sl:leveringsId>abc-20190221-0801</sl:leveringsId>
+            <sl:objectTypen>
+                <sl:objectType>RegelVoorIedereen</sl:objectType>
+            </sl:objectTypen>
+        </sl:inhoud>
+        <sl:stand>
+            <ow-dc:owObject>
+                <r:RegelVoorIedereen>
+                    <r:identificatie>nl.imow-gm0297.juridischeregel.2019000014</r:identificatie>
+                    <r:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</r:idealisatie>
+                    <r:artikelOfLid>
+                        <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.2019000008"/>
+                    </r:artikelOfLid>
+                    <r:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.2019000007"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.2019000008"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.2019000009"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.2019000010"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.2019000011"/>
+                    </r:locatieaanduiding>
+                    <r:gebiedsaanwijzing>
+                        <ga:GebiedsaanwijzingRef xlink:href="nl.imow-gm0297.gebiedsaanwijzing.2020000001"/>
+                    </r:gebiedsaanwijzing>
+                    <r:activiteitaanduiding>
+                        <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.2019000660"/>
+                        <!--exploiteren van een speelautomatenhal-->
+                        <r:ActiviteitLocatieaanduiding>
+                            <r:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000012</r:identificatie>
+                            <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</r:activiteitregelkwalificatie>
+                            <r:locatieaanduiding>
+                                <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.2019000004"/>
+                            </r:locatieaanduiding>
+                        </r:ActiviteitLocatieaanduiding>
+                    </r:activiteitaanduiding>
+                    <r:activiteitaanduiding>
+                        <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.2019000680"/>
+                        <!--exploiteren van een kantoor-->
+                        <r:ActiviteitLocatieaanduiding>
+                            <r:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000014</r:identificatie>
+                            <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</r:activiteitregelkwalificatie>
+                            <r:locatieaanduiding>
+                                <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.2020000001"/>
+                            </r:locatieaanduiding>
+                        </r:ActiviteitLocatieaanduiding>
+                    </r:activiteitaanduiding>
+                </r:RegelVoorIedereen>
+            </ow-dc:owObject>
+        </sl:stand>
+    </sl:standBestand>
+</ow-dc:owBestand>

@@ -1,0 +1,1832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>Omgevingsvisie Utrecht</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Provincie Utrecht</sl:gebied>
+         <sl:leveringsId>OVIUtrecht_001</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebiedengroep</sl:objectType>
+            <sl:objectType>Gebied</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.plangebiedovi</l:identificatie>
+               <l:noemer>Provincie Utrecht</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0d1c3003-9b2a-4090-8b06-65f811dce585"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200001</l:identificatie>
+               <l:noemer>aandachtsgebied bodemdaling – landelijk</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000010001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000010001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="9d16d638-6a3b-49ad-8f1e-d19809170fe9"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200002</l:identificatie>
+               <l:noemer>aandachtsgebied bodemdaling – stedelijk</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000020001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000020001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ff8f8e38-aa58-4e92-be0a-21fd4a0f8ce4"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200003</l:identificatie>
+               <l:noemer>aantrekkelijke en toekomstbestendige dijk</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000030001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000030001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="9696ef1a-3f2f-405d-bc20-7d6bd0f07745"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200004</l:identificatie>
+               <l:noemer>aardkundige waarden</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000040001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000040001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b1dda8eb-3b92-4c73-a50e-ad03671ada07"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200005</l:identificatie>
+               <l:noemer>agrarisch cultuurlandschap</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000050001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000050001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="4a9db54e-b427-439c-bb44-1ca7f9fb0459"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200006</l:identificatie>
+               <l:noemer>archeologisch waardevolle zone</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000060001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000060001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="51a2ace9-c97b-41e4-b5c1-b6f01b00ba5d"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200007</l:identificatie>
+               <l:noemer>beperken bodembewerking</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000070001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000070001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="30b64032-c41c-4b5e-b496-8336784465b2"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200008</l:identificatie>
+               <l:noemer>beschermingszone drinkwaterwinning</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000080001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000080001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0cdd9bb9-0c62-4a86-b74b-cf62751e2276"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200009</l:identificatie>
+               <l:noemer>bestaand winkelgebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000090001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000090001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="522ed738-d124-4277-976d-32c54b33720b"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200010</l:identificatie>
+               <l:noemer>benutten bestaande knooppunten</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000100001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000100001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="54667290-f381-4b96-bd04-ac0bc54cd353"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200011</l:identificatie>
+               <l:noemer>beter benutten van het hoofdwegennet wegennet</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000110001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000110001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="685e3186-5609-4dbd-b75f-0435402709e6"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200012</l:identificatie>
+               <l:noemer>beter benutten van het provinciale wegennet.</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000120001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000120001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="6a38a2f1-ec1e-4410-9807-e16b41f28e2e"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200013</l:identificatie>
+               <l:noemer>beter benutten van het spoor- en hoogwaardig OV-netwerk</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000130001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000130001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="295844c6-6f6b-4934-a546-e9b3e899bea8"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200014</l:identificatie>
+               <l:noemer>binnenstedelijke en binnendorpse ontwikkeling</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000140001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000140001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8fc92749-7b2b-4c27-a8f9-09428e55dfdd"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200015</l:identificatie>
+               <l:noemer>biodiversiteit</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000150001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000150001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="e38b7bf0-6a4f-44c5-b124-a024d43ddde3"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200016</l:identificatie>
+               <l:noemer>bovenlokale dagrecreatieterreinen</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000160001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000160001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="e2b04c32-a803-4aae-b083-fc78f8da2554"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200017</l:identificatie>
+               <l:noemer>concentratiegebied glastuinbouw</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000170001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000170001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b48b77a9-5a12-4d64-ad54-1b9202eb4269"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200018</l:identificatie>
+               <l:noemer>culturele infrastructuur en monumentenzorg</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000180001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000180001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f59ab064-2bdd-4d58-9191-81d45181838e"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200019</l:identificatie>
+               <l:noemer>duurzaam gebruik van de ondergrond</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000190001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000190001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="789512ab-469f-4ccc-9e0b-1a6e4689c3ae"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200020</l:identificatie>
+               <l:noemer>energielandschap tijdelijk</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000200001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000200001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="7fa1bff6-0876-4cac-8d95-4476866e8faa"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200021</l:identificatie>
+               <l:noemer>energieneutrale provincie</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000210001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000210001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="dd73228c-e368-43cb-a282-e56b5aaa9c72"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200022</l:identificatie>
+               <l:noemer>experimenteerruimte</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000220001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000220001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0881cc21-9067-437a-8f90-83dcd46e514f"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200023</l:identificatie>
+               <l:noemer>ganzenrustgebieden</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000230001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000230001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="093f2d21-7a65-49ed-ac22-313357192f1e"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200024</l:identificatie>
+               <l:noemer>geluidscontour 61 dB Lden</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000240001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000240001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="574f766d-edde-400e-89ea-b814924e9fb5"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200025</l:identificatie>
+               <l:noemer>genomineerd UNESCO – Hollandse Waterlinie</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000250001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000250001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="250d3c23-8a7d-4b58-aedf-ac961d684292"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200026</l:identificatie>
+               <l:noemer>genomineerd UNESCO – Neder-Germaanse Limes bufferzone</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000260001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000260001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="be233700-4001-45df-83b3-b17ad23f8eb8"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200027</l:identificatie>
+               <l:noemer>gezonde en veilige leefomgeving</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000270001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000270001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="92ce372e-82a2-4a78-9752-c94602a33d16"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200028</l:identificatie>
+               <l:noemer>groenblauwe structuren</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000280001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000280001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b7a3aef8-7648-40d1-8a51-63480717f833"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200029</l:identificatie>
+               <l:noemer>groene contour</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000290001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000290001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="af6d8d86-1dcf-443f-a519-737e812a6eb4"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200030</l:identificatie>
+               <l:noemer>grondwaterlichamen</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000300001"/>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000300002"/>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000300003"/>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000300004"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000300001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="fc60305d-1740-4cac-aa5a-6a9b826a0c13"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000300002</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="98da9cd3-51a3-44bf-8ae9-17e83b4cb906"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000300003</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8fcb9808-0a1c-4b2b-b549-68e07690a6c8"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000300004</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="3c534c1c-4ae4-478d-a1d2-9db0876310bc"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200031</l:identificatie>
+               <l:noemer>versterken grote natuursystemen</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000310001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000310001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="6641a7cb-809a-4135-997e-55dda3e0daf4"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200032</l:identificatie>
+               <l:noemer>historische buitenplaatszone</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000320001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000320001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8c419f16-0ccb-47f4-ba12-c560dcad3c47"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200033</l:identificatie>
+               <l:noemer>historische infrastructuur</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000330001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000330001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="9f703f62-4baa-4f37-9ee9-cc9777ee835f"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200034</l:identificatie>
+               <l:noemer>nader te verkennen hoogwaardige OV-verbinding</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000340001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000340001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="7ba34d6d-2bd7-470f-8206-482c778ecb75"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200035</l:identificatie>
+               <l:noemer>houtopstanden</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000350001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000350001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b9371c32-f1a7-4759-9f3d-d0627b41539a"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200036</l:identificatie>
+               <l:noemer>kernrandzone</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000360001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000360001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ef5a01b3-e66c-4e41-ab89-95242aaf1c76"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200037</l:identificatie>
+               <l:noemer>klimaatbestendig</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000370001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000370001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="625a2cdb-98a6-4449-bc86-c369bfc3bc16"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200038</l:identificatie>
+               <l:noemer>klimaatbestendige wateraanvoer</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000380001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000380001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="938f546e-0d0e-4ddd-bbdb-49be1d36988d"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200039</l:identificatie>
+               <l:noemer>knooppunten</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000390001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000390001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8d7ba709-7958-49e9-a704-850a8343aaee"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200040</l:identificatie>
+               <l:noemer>landbouwgebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000400001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000400001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8fe5df34-4a8c-4394-aaa5-3def6c233b03"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200041</l:identificatie>
+               <l:noemer>landbouwontwikkelingsgebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000410001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000410001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="38bdb80f-cd0a-4dbe-a50e-7b653d108a3c"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200042</l:identificatie>
+               <l:noemer>landbouwstabiliseringsgebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000420001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000420001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="6e3e9694-6f51-4e30-b025-06bce8ef63e9"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200043</l:identificatie>
+               <l:noemer>landelijk gebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000430001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000430001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="07177208-3ede-4be5-b42f-dad2c5978e64"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200044</l:identificatie>
+               <l:noemer>landschap Eemland</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000440001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000440001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="033b743a-90fb-4d10-b13c-0a9a46b05a67"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200045</l:identificatie>
+               <l:noemer>landschap Gelderse Vallei</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000450001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000450001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="6fc0e744-ec73-496c-a50a-249db9593126"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200046</l:identificatie>
+               <l:noemer>landschap Groene Hart</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000460001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000460001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="522b4eb3-b1d6-499d-9c67-38b8c8bd96d8"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200047</l:identificatie>
+               <l:noemer>landschap Rivierengebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000470001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000470001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="5a37c5dc-fd26-48c3-85fe-ee13b77a52b1"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200048</l:identificatie>
+               <l:noemer>landschap Utrechtse Heuvelrug</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000480001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000480001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0515559a-5639-4c7b-9dc8-490e701fa2a4"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200049</l:identificatie>
+               <l:noemer>lange termijn zoekrichting grootschalige integrale ontwikkeling wonen-werken-bereikbaarheid</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000490001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000490001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="e60f1fbf-ffc2-430c-91ed-f497ad868d2f"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200050</l:identificatie>
+               <l:noemer>militair erfgoed</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000500001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000500001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="58c685da-ef31-4a69-917a-25010b1186b5"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200051</l:identificatie>
+               <l:noemer>militair oefenterrein met natuurwaarden</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000510001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000510001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="a31f0e5a-2d49-43d7-927b-53b297f25936"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200052</l:identificatie>
+               <l:noemer>optimaliseren multimodale knooppunt</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000520001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000520001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b2ac257c-e047-4c50-ad98-b727c77c0ad4"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200053</l:identificatie>
+               <l:noemer>natura 2000-gebieden</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000530001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000530001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="04310d54-be9b-4c12-88d6-adb8b17f6011"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200054</l:identificatie>
+               <l:noemer>natuurnetwerk Nederland</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000540001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000540001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="c7b005a7-5c86-418b-a99c-83b7af6fa50d"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200055</l:identificatie>
+               <l:noemer>ontwikkeling nieuwe knooppunten</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000550001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000550001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="acf8574b-e113-4dd3-8eeb-318ae9d041bd"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200056</l:identificatie>
+               <l:noemer>ontwikkeling groenblauwe en recreatieve structuur</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000560001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000560001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="005abfde-b97a-4934-a631-2025ce630bb2"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200057</l:identificatie>
+               <l:noemer>overstroombaar gebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000570001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000570001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="80ca7c5a-d11d-4264-b4ec-1e7cc64e32c2"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200058</l:identificatie>
+               <l:noemer>potentiële locatie voor integrale ontwikkeling wonen en werken rond knooppunten</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000580001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000580001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="a658001f-79ad-4e84-b543-5cbcd0119b3d"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200059</l:identificatie>
+               <l:noemer>provinciaal OV-netwerk</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000590001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000590001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8eb29999-84ab-4556-b120-90bd35f2b37d"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200060</l:identificatie>
+               <l:noemer>provinciaal wegennet</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000600001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000600001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="78675668-1076-466e-a606-feda49d54047"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200061</l:identificatie>
+               <l:noemer>provincie Utrecht</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000610001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000610001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0d1c3003-9b2a-4090-8b06-65f811dce585"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200062</l:identificatie>
+               <l:noemer>recreatietoervaartnet</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000620001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000620001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="9f34557c-8f63-459f-9990-bb6c09ae3a22"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200063</l:identificatie>
+               <l:noemer>recreatiewoningen</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000630001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000630001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="65546546-5380-4581-b151-cf8474689b91"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200064</l:identificatie>
+               <l:noemer>recreatiezone</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000640001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000640001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="c62996cd-a778-49d2-8dcf-0dfb6c943287"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200065</l:identificatie>
+               <l:noemer>vasthouden en infiltreren regenwater</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000650001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000650001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="4cdf6026-df8a-439d-b383-06b061c249c0"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200066</l:identificatie>
+               <l:noemer>regio Amersfoort</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000660001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000660001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="22819054-9b95-481c-89ec-7895f84dcd5a"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200067</l:identificatie>
+               <l:noemer>regio Foodvalley</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000670001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000670001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f0ce1cc7-e2da-4dab-a212-aeca19cdc316"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200068</l:identificatie>
+               <l:noemer>regio U16</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000680001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000680001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="1f3ea773-ceff-43a6-bb52-0192738b88cd"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200069</l:identificatie>
+               <l:noemer>regionaal (vaar)wegennet</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000690001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000690001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f14ad8f6-a255-4aca-b604-1657363b4860"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200070</l:identificatie>
+               <l:noemer>regionaal fietsnetwerk</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000700001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000700001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="edee5e20-d4a7-4f15-8e7a-087a0710699a"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200071</l:identificatie>
+               <l:noemer>regionale keringen</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000710001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000710001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="aca19ca3-eeba-4009-b256-e7e6fcfb4498"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200072</l:identificatie>
+               <l:noemer>ruimte bieden voor duurzame energie</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000720001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000720001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="79167414-7ff2-4d02-979d-787081a15c04"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200073</l:identificatie>
+               <l:noemer>ruimte voor windenergie en zonnevelden onder voorwaarden</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000730001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000730001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f1c03828-6c39-486a-a8ef-306f66069afa"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200074</l:identificatie>
+               <l:noemer>snelfietsroutes</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000740001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000740001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="071a6ef2-d327-4c9a-8157-fe395d52b1bc"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200075</l:identificatie>
+               <l:noemer>stedelijk gebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000750001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000750001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="541b2eb8-03a7-4a86-8e83-c3215179603a"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200076</l:identificatie>
+               <l:noemer>stiltegebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000760001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000760001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="03b122d8-ecdd-4a2d-814f-167f09dd02d4"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200077</l:identificatie>
+               <l:noemer>tegengaan van bodemdaling</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000770001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000770001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="a995394a-a286-46fe-99d8-8bde7648552f"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200078</l:identificatie>
+               <l:noemer>transitie naar duurzame landbouw</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000780001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000780001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="765c6083-a412-43d3-9bb4-67a7bd0dcea2"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200079</l:identificatie>
+               <l:noemer>versterken stad / land verbinding</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000790001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000790001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="d7a32b4a-faca-4433-906d-d3d56460d0a8"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200080</l:identificatie>
+               <l:noemer>waterberging</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000800001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000800001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="12a561fc-4a56-4bad-8368-bbdc6dbbefe7"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200081</l:identificatie>
+               <l:noemer>weidevogelkerngebieden</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000810001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000810001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="4029dd25-debb-4ca2-bf2e-6956aea98259"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200082</l:identificatie>
+               <l:noemer>zoekgebied drinkwater</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000820001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000820001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="c559cec0-644f-484f-b9a0-b4fbff9971ea"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200083</l:identificatie>
+               <l:noemer>zoekrichting voor grootschalige integrale ontwikkeling wonen-werken-bereikbaarheid</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000830001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000830001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8e256cc6-63f0-4362-9d78-b71bda3739bc"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-pv26.gebiedengroep.20200084</l:identificatie>
+               <l:noemer>zwemwater</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-pv26.gebied.202000840001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv26.gebied.202000840001</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="457ec3df-4070-4e20-8c6b-e8713074628d"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.overheid.nl/2017/lvbb">
+   <bestand>
+      <bestandsnaam>manifest.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>Mutatie_besluit_eerstewijziging.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>opdracht.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>manifest-ow.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>owRegeltekst.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+</manifest>
