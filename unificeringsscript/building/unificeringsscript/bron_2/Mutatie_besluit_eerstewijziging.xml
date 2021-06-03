@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringBesluit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" 
+    schemaversie="1.0.4" 
+    xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering/
+    https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+    <BesluitVersie>
+        <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <FRBRWork>/akn/nl/bill/gm0297/2020/4508</FRBRWork>
+            <FRBRExpression>/akn/nl/bill/gm0297/2020/4508/nld@2020</FRBRExpression>
+            <soortWork>/join/id/stop/work_003</soortWork>
+        </ExpressionIdentificatie>
+        <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <soortBestuursorgaan>/tooi/def/thes/kern/c_2a7d8663</soortBestuursorgaan>
+            <eindverantwoordelijke>/tooi/id/gemeente/gm0297</eindverantwoordelijke>
+            <maker>/tooi/id/gemeente/gm0297</maker>
+            <officieleTitel>Gemeentestad Omgevingsplan wijziging regeltekst (mutatiescenario2)</officieleTitel>
+            <onderwerpen>
+                <onderwerp>/tooi/def/concept/c_a6a9eddd</onderwerp>
+            </onderwerpen>
+            <rechtsgebieden>
+                <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied>
+            </rechtsgebieden>
+            <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
+        </BesluitMetadata>
+        <Procedureverloop xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <bekendOp>2020-03-10</bekendOp>
+            <procedurestappen>
+                <Procedurestap>
+                    <soortStap>/join/id/stop/procedure/stap_002</soortStap>
+                    <voltooidOp>2020-02-25</voltooidOp>
+                </Procedurestap>
+                <Procedurestap>
+                    <soortStap>/join/id/stop/procedure/stap_003</soortStap>
+                    <voltooidOp>2020-02-27</voltooidOp>
+                </Procedurestap>
+            </procedurestappen>
+        </Procedureverloop>
+        <ConsolidatieInformatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <BeoogdeRegelgeving>
+                <BeoogdeRegeling>
+                    <doelen>
+                        <doel>/join/id/proces/gm0297/2020/eerstewijziging</doel>
+                    </doelen>
+                    <instrumentVersie>/akn/nl/act/gm0297/2019/reg456/nld@2</instrumentVersie>
+                    <eId>art_II</eId>
+                </BeoogdeRegeling>
+            </BeoogdeRegelgeving>
+            <Tijdstempels>
+                <Tijdstempel>
+                    <doel>/join/id/proces/gm0297/2020/eerstewijziging</doel>
+                    <soortTijdstempel>juridischWerkendVanaf</soortTijdstempel>
+                    <datum>2020-04-07</datum>
+                    <eId>art_II</eId>
+                </Tijdstempel>
+            </Tijdstempels>
+        </ConsolidatieInformatie>
+        <BesluitCompact xmlns="https://standaarden.overheid.nl/stop/imop/tekst/">
+            <RegelingOpschrift eId="longTitle_o_1" wId="longTitle_o_1">
+                <Al>Gemeentestad Omgevingsplan wijziging regeltekst (mutatiescenario2)</Al>
+            </RegelingOpschrift>
+            <Aanhef wId="formula_1" eId="formula_1">
+                <Al>De raad van de gemeente Gemeenstestad </Al>
+                <Al>gelezen het voorstel van burgemeester en wethouders van 21 januari 2020, nr. 2020-0168;</Al>
+                <Al>Gelet op <ExtRef ref="https://wetten.overheid.nl/jci1.3:c:BWBR0005416&amp;titeldeel=III&amp;hoofdstuk=IX&amp;artikel=149" soort="URL">Gemeentewet, art. 149</ExtRef>.</Al>
+                <Al>besluit:</Al>
+            </Aanhef>
+            <Lichaam eId="body" wId="body">
+                <WijzigArtikel eId="art_I" wId="gm0297_1__art_I">
+                    <Kop>
+                        <Label>Artikel</Label>
+                        <Nummer>I</Nummer>
+                    </Kop>
+                    <Wat>De "Voorbeeldregels met uitbreiding tbv Toepasbare Regels" wordt gewijzigd zoals in <IntRef scope="Bijlage" ref="cmp_A">Bijlage A</IntRef> opgenomen</Wat>
+                </WijzigArtikel>
+                <Artikel eId="art_II" wId="gm0297_1__art_II">
+                    <Kop>
+                        <Label>Artikel</Label>
+                        <Nummer>II</Nummer>
+                    </Kop>
+                    <Inhoud>
+                        <Al>Dit besluit treedt in werking per 7 april 2020.</Al>
+                    </Inhoud>
+                </Artikel>
+            </Lichaam>
+            <Sluiting eId="formula_2_o_1" wId="formula_2_o_1">
+                <Al>Gegeven te Geonovum, Gemeentestad, 27 februari 2020</Al>
+                <Ondertekening>
+                    <Al>Gedeputeerde Raad van Amersfoort tot Den Haag</Al>
+                    <Al>Ikra van der Velde</Al>
+                    <Al>gemeentesecretaris</Al>
+                    <Al>Seymour Racicot</Al>
+                    <Al>burgemeester</Al>
+                </Ondertekening>
+            </Sluiting>
+            <WijzigBijlage eId="cmp_A" wId="gm0297_1__cmp_A">
+                <Kop>
+                    <Label>Bijlage</Label>
+                    <Nummer>A</Nummer>
+                    <Opschrift>Bijlage bij Artikel I</Opschrift>
+                </Kop>
+                <RegelingMutatie componentnaam="wijziging_reg" was="/akn/nl/act/gm0297/2019/reg456/nld@1" wordt="/akn/nl/act/gm0297/2019/reg456/nld@2">
+                    <VoegToe positie="komtVoor" context="gm0297_1__chp_2__subchp_2.2__art_2.5">
+                        <Nummer>A</Nummer>
+                        <Wat>Nieuw artikel 2.5</Wat>
+                        <Artikel eId="chp_2__subchp_2.2__art_2.5" wId="gm0297_2__chp_2__subchp_2.2__art_2.5">
+                            <Kop>
+                                <Label>Artikel</Label>
+                                <Nummer>2.5</Nummer>
+                                <Opschrift>Gebruiksactiviteiten die zijn toegelaten na voorafgaande melding</Opschrift>
+                            </Kop>
+                            <Lid eId="chp_2__subchp_2.2__art_2.5__para_1" wId="gm0297_2__chp_2__subchp_2.2__art_2.5__para_1">
+                                <LidNummer>1.</LidNummer>
+                                <Inhoud>
+                                    <Al>Meldingplichtige gebruiksactiviteiten</Al>
+                                    <Al>Ter plaatse van het werkingsgebied van de functie '<IntIoRef eId="chp_2__subchp_2.2__art_2.5__para_1__ref_o_1" wId="gm0297_2__chp_2__subchp_2.2__art_2.5__para_1__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" >Bedrijf categorie 2</IntIoRef>' is het binnen '<IntIoRef eId="chp_2__subchp_2.2__art_2.5__para_1__ref_o_2" wId="gm0297_2__chp_2__subchp_2.2__art_2.5__para_1__ref_o_2" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1" >Zone B</IntIoRef>' verboden de gebruiksactiviteit 'het uitoefenen van detailhandel in ter plaatse vervaardigde goederen' te verrichten zonder dat daarvoor aan het bevoegd gezag een melding is gedaan</Al>
+                                </Inhoud>
+                            </Lid>
+                            <Lid eId="chp_2__subchp_2.2__art_2.5__para_2" wId="gm0297_2__chp_2__subchp_2.2__art_2.5__para_2">
+                                <LidNummer>2.</LidNummer>
+                                <Inhoud>
+                                    <Al>Indieningsvereisten melding</Al>
+                                    <Al>Bij het doen van de melding dienen de volgende indieningsvereisten in acht te worden genomen:</Al>
+                                    <Lijst eId="chp_2__subchp_2.2__art_2.5__para_2__list_o_1" wId="gm0297_2__chp_2__subchp_2.2__art_2.5__para_2__list_o_1" type="expliciet">
+                                        <Li eId="chp_2__subchp_2.2__art_2.5__para_2__list_o_1__item_a" wId="gm0297_2__chp_2__subchp_2.2__art_2.5__para_2__list_o_1__item_a">
+                                            <LiNummer>a.</LiNummer>
+                                            <Al>de melding dient te worden gedaan door middel van het inzenden van het bij deze regels behorende Formulier Melding;</Al>
+                                        </Li>
+                                        <Li eId="chp_2__subchp_2.2__art_2.5__para_2__list_o_1__item_b" wId="gm0297_2__chp_2__subchp_2.2__art_2.5__para_2__list_o_1__item_b">
+                                            <LiNummer>b.</LiNummer>
+                                            <Al>toegevoegd moet worden een terreininrichtingstekening. </Al>
+                                        </Li>
+                                    </Lijst>
+                                </Inhoud>
+                            </Lid>
+                        </Artikel>
+                    </VoegToe>
+                    <Vervang wat="gm0297_1__chp_2__subchp_2.2__art_2.5">
+                        <Nummer>B1</Nummer>
+                        <Wat>Artikel 2.5 is vernummerd naar 2.6:</Wat>
+                        <!-- NB: bij vernummeren wijzigt de eId wel, maar de wId niet, blijft in dit geval "2.5" -->
+                        <Artikel eId="chp_2__subchp_2.2__art_2.6" wId="gm0297_1__chp_2__subchp_2.2__art_2.5">
+                            <Kop>
+                                <Label>Artikel</Label>
+                                <Nummer>
+                                    <VerwijderdeTekst>2.5</VerwijderdeTekst>
+                                    <NieuweTekst>2.6</NieuweTekst>
+                                </Nummer>
+                                <Opschrift>Gebruiksactiviteiten die verboden zijn</Opschrift>
+                            </Kop>
+                            <Inhoud>
+                                <Al>Ter plaatse van het werkingsgebied van de functie '<IntIoRef ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" eId="chp_2__subchp_2.2__art_2.6__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__ref_o_1">Bedrijf categorie 2</IntIoRef>' is het verboden de locatie en de daarop voorkomende bouwwerken te gebruiken:</Al>
+                                <Lijst eId="chp_2__subchp_2.2__art_2.6__list_o_1" type="expliciet" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1">
+                                    <Li eId="chp_2__subchp_2.2__art_2.6__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_a">
+                                        <LiNummer>a.</LiNummer>
+                                        <Al>voor het exploiteren van inrichtingen als bedoeld in artikel 2.1 lid 3 juncto Bijlage 1 onderdeel D van het Besluit omgevingsrecht;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.2__art_2.6__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_b">
+                                        <LiNummer>b.</LiNummer>
+                                        <Al>voor het exploiteren van risicovolle inrichtingen;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.2__art_2.6__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_c">
+                                        <LiNummer>c.</LiNummer>
+                                        <Al>als opslagterrein, voor zover het betreft het gebied gelegen voor de voorgevels van de bedrijfsgebouwen. </Al>
+                                    </Li>
+                                </Lijst>
+                            </Inhoud>
+                        </Artikel>
+                    </Vervang>
+                    <Verwijder wat="gm0297_1__chp_2__subchp_2.2__art_2.6">
+                        <Nummer>B2</Nummer>
+                        <Wat>Oud artikel 2.6 is verwijderd</Wat>
+                        <Artikel eId="chp_2__subchp_2.2__art_2.6_inst_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.6">
+                            <Kop>
+                                <Label>Artikel</Label>
+                                <Nummer>2.6</Nummer>
+                                <Opschrift>Gebruiksactiviteiten die zijn toegelaten na voorafgaande melding</Opschrift>
+                            </Kop>
+                            <Lid eId="chp_2__subchp_2.2__art_2.6__para_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1">
+                                <LidNummer>1.</LidNummer>
+                                <Inhoud>
+                                    <Al>Meldingplichtige gebruiksactiviteiten</Al>
+                                    <Al>Ter plaatse van het werkingsgebied van de functie '<IntIoRef eId="chp_2__subchp_2.2__art_2.6__para_1__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" >Bedrijf categorie 2</IntIoRef>' is het binnen '<IntIoRef eId="chp_2__subchp_2.2__art_2.6__para_1__ref_o_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1__ref_o_2" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1" >Zone B</IntIoRef>' verboden de gebruiksactiviteit 'het uitoefenen van detailhandel in ter plaatse vervaardigde goederen' te verrichten zonder dat daarvoor aan het bevoegd gezag een melding is gedaan</Al>
+                                </Inhoud>
+                            </Lid>
+                            <Lid eId="chp_2__subchp_2.2__art_2.6__para_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2">
+                                <LidNummer>2.</LidNummer>
+                                <Inhoud>
+                                    <Al>Indieningsvereisten melding</Al>
+                                    <Al>Bij het doen van de melding dienen de volgende indieningsvereisten in acht te worden genomen:</Al>
+                                    <Lijst eId="chp_2__subchp_2.2__art_2.6__para_2__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2__list_o_1" type="expliciet">
+                                        <Li eId="chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_a">
+                                            <LiNummer>a.</LiNummer>
+                                            <Al>de melding dient te worden gedaan door middel van het inzenden van het bij deze regels behorende Formulier Melding;</Al>
+                                        </Li>
+                                        <Li eId="chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_b">
+                                            <LiNummer>b.</LiNummer>
+                                            <Al>toegevoegd moet worden een terreininrichtingstekening. </Al>
+                                        </Li>
+                                    </Lijst>
+                                </Inhoud>
+                            </Lid>
+                        </Artikel>
+                    </Verwijder>
+                    <Vervang wat="gm0297_1__chp_2__subchp_2.2__art_2.7">
+                        <Nummer>C</Nummer>
+                        <Wat>Artikel 2.7 wordt als volgt gewijzigd:</Wat>
+                        <Artikel eId="chp_2__subchp_2.2__art_2.7" wId="gm0297_1__chp_2__subchp_2.2__art_2.7">
+                            <Kop>
+                                <Label>Artikel</Label>
+                                <Nummer>2.7</Nummer>
+                                <Opschrift>Gebruiksactiviteiten die zijn toegelaten nadat daarvoor omgevingsvergunning is verleend</Opschrift>
+                            </Kop>
+                            <Lid eId="chp_2__subchp_2.2__art_2.7__para_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_1">
+                                <LidNummer>1</LidNummer>
+                                <Inhoud>
+                                    <Al>Vergunningplichtige gebruiksactiviteiten</Al>
+                                    <Al>Ter plaatse van het werkingsgebied van de functie '<IntIoRef ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" eId="chp_2__subchp_2.2__art_2.7__para_1__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_1__ref_o_1">Bedrijf categorie 2</IntIoRef>' is het verboden om zonder omgevingsvergunning de gebruiksactiviteit 'het exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg' te verrichten. Daarnaast is het eveneens verboden om deze gebruiksactiviteit uit te voeren zonder een vergunning voor de milieubelastende activiteit ‘het opslaan van motorbrandstoffen niet zijnde lpg’, zoals beschreven in Artikel 13.24.</Al>
+                                </Inhoud>
+                            </Lid>
+                            <!-- NB wId blijft para_3 na hernummering -->
+                            <Lid eId="chp_2__subchp_2.2__art_2.7__para_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3">
+                                <LidNummer>
+                                    <VerwijderdeTekst>3</VerwijderdeTekst>
+                                    <NieuweTekst>2</NieuweTekst>
+                                </LidNummer>
+                                <Inhoud>
+                                    <Al>Beoordelingsregels aanvraag omgevingsvergunning</Al>
+                                    <Al>De omgevingsvergunning wordt alleen verleend als aan de volgende regels wordt voldaan:</Al>
+                                    <Lijst eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1" type="expliciet" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1">
+                                        <Li eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_a">
+                                            <LiNummer>a.</LiNummer>
+                                            <Al>Uit de RisicoEffectRapportage is gebleken dat het gevaar voor de omliggende gevoelige functies ten hoogste 0.1 is.</Al>
+                                        </Li>
+                                        <Li eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_b">
+                                            <LiNummer>b.</LiNummer>
+                                            <Al>Bebouwing wordt uitsluitend gebruikt als technische ruimte, zoals een werkplaats, en als servicegebouw ten dienste van het verkooppunt motorbrandstoffen, waaronder in ieder geval begrepen winkel, magazijn en sanitaire ruimten.</Al>
+                                        </Li>
+                                        <Li eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_c">
+                                            <LiNummer>c.</LiNummer>
+                                            <Al>In het servicegebouw zijn geen afzonderlijke ruimten voor detailhandel.</Al>
+                                        </Li>
+                                        <Li eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_d" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_d">
+                                            <LiNummer>d.</LiNummer>
+                                            <Al>Er zijn geen zelfstandige en onzelfstandige horecaruimten in de zin van café/bar, restaurant, snackbar, et cetera. Buffetverkoop en verkoop uit automatiek zijn, als onderdeel van de winkel, wel toegestaan.</Al>
+                                        </Li>
+                                    </Lijst>
+                                </Inhoud>
+                            </Lid>
+                            <Lid eId="chp_2__subchp_2.2__art_2.7__para_2_inst2" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2" wijzigactie="verwijder">
+                                <LidNummer>2</LidNummer>
+                                <Inhoud>
+                                    <Al>Indieningsvereisten aanvraag omgevingsvergunning</Al>
+                                    <Al>Bij het indienen van de aanvraag om omgevingsvergunning dienen de volgende indieningsvereisten in acht te worden genomen:</Al>
+                                    <Lijst eId="chp_2__subchp_2.2__art_2.7__para_2_inst2__list_o_1" type="expliciet" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1">
+                                        <Li eId="chp_2__subchp_2.2__art_2.7__para_2_inst2__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_a">
+                                            <LiNummer>a.</LiNummer>
+                                            <Al>de aanvraag dient te worden ingediend door middel van het inzenden van het bij deze regels behorende Formulier Aanvraag omgevingsvergunning;</Al>
+                                        </Li>
+                                        <Li eId="chp_2__subchp_2.2__art_2.7__para_2_inst2__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_b">
+                                            <LiNummer>b.</LiNummer>
+                                            <Al>toegevoegd moet worden een terreininrichtingstekening;</Al>
+                                        </Li>
+                                        <Li eId="chp_2__subchp_2.2__art_2.7__para_2_inst2__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_c">
+                                            <LiNummer>c.</LiNummer>
+                                            <Al>toegevoegd moet worden een RisicoEffectRapportage.</Al>
+                                        </Li>
+                                    </Lijst>
+                                </Inhoud>
+                            </Lid>
+                        </Artikel>
+                    </Vervang>
+                    <Verwijder wat="gm0297_1__chp_10__subchp_10.1__art_10.1">
+                        <Nummer>D</Nummer>
+                        <Wat>Artikel 10.1 wordt verwijderd:</Wat>
+                        <Artikel eId="chp_10__subchp_10.1__art_10.1_inst2" wId="gm0297_1__chp_10__subchp_10.1__art_10.1">
+                            <Kop>
+                                <Label>Artikel</Label>
+                                <Nummer>10.1</Nummer>
+                                <Opschrift>Landbouwhuisdieren</Opschrift>
+                            </Kop>
+                            <Inhoud>
+                                <Al>De regels omtrent hygiëne van landbouwhuisdieren is vastgelegd in het werkingsgebied 'landbouwhuisdierenverblijfhygiëne'.</Al>
+                            </Inhoud>
+                        </Artikel>
+                    </Verwijder>
+                    <VoegToe context="gm0297_1__chp_7__subchp_7.1__art_7.2" positie="volgtOp">
+                        <Nummer>E</Nummer>
+                        <Wat>Na artikel 7.2 wordt een artikel ingevoegd, luidende:</Wat>
+                        <Artikel eId="chp_10__subchp_10.1__art_10.1" wId="gm0297_2__chp_10__subchp_10.1__art_10.1">
+                            <Kop>
+                                <Label>Artikel</Label>
+                                <Nummer>10.1</Nummer>
+                                <Opschrift>Landbouwhuisdieren</Opschrift>
+                            </Kop>
+                            <Inhoud>
+                                <Al>Dit is de nieuw toegevoegde versie n.a.v. mutatie 2e. De regels omtrent hygiëne van landbouwhuisdieren is vastgelegd in het werkingsgebied 'landbouwhuisdierenverblijfhygiëne'.</Al>
+                            </Inhoud>
+                        </Artikel>
+                    </VoegToe>
+                </RegelingMutatie>
+            </WijzigBijlage>
+        </BesluitCompact>
+    </BesluitVersie>
+    <RegelingVersieInformatie>
+        <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <FRBRWork>/akn/nl/act/gm0297/2019/reg456</FRBRWork>
+            <FRBRExpression>/akn/nl/act/gm0297/2019/reg456/nld@2</FRBRExpression>
+            <soortWork>/join/id/stop/work_019</soortWork>
+        </ExpressionIdentificatie>
+        <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <versienummer>2</versienummer>
+        </RegelingVersieMetadata>
+    </RegelingVersieInformatie>
+</AanleveringBesluit>
