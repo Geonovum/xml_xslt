@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publicatieOpdracht xmlns="http://www.overheid.nl/2017/lvbb">
+  <idLevering>id-publicatie-1234</idLevering>
+  <!--Om de keten in te krijgen kun je gebruik maken van: 00000001003214345000 
+  Dit is de OIN van ministerie van BZK, de OIN van de gemeente zaltbommel is nog niet gemachtigd.-->
+  <idBevoegdGezag>00000001807288111000</idBevoegdGezag> 
+  <idAanleveraar>00000001807288111000</idAanleveraar>
+  <publicatie>akn_nl_bill_gm0297-3520-01.xml</publicatie>
+  <datumBekendmaking>2019-06-27</datumBekendmaking>
+</publicatieOpdracht>
