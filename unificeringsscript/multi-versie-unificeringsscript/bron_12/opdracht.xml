@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<directeMutatieOpdracht xmlns="http://www.overheid.nl/2017/lvbb" >
+	<idLevering>id-directeMutatie-1234</idLevering>
+  <idBevoegdGezag>00000001807288111000</idBevoegdGezag>
+  <idAanleveraar>00000001807288111000</idAanleveraar>
+  <!-- directe mutatie van OP: element directeMutatie bevat verwijzing naar OP mutatie xml -->
+  <!-- directe mutatie van OW: element directeMutatie weggelaten (element optioneel). Dit volgt de aanpak van de publicatie opdracht, waarbij OW data wel of niet wordt aangeleverd, dit wordt in de opdracht niet benoemd, maar afgeleid uit het feit dat er een manifest-ow wordt meegeleverd -->
+</directeMutatieOpdracht>

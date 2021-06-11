@@ -237,6 +237,6 @@
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
-      </sl:stand>
--->   </sl:standBestand>
+      </sl:stand>-->
+   </sl:standBestand>
 </ow-dc:owBestand>
