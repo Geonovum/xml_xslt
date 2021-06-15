@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-aanlevering-io.sch" uri="lvbb-aanlevering-io.sch.xslt"/>
+  <uri name="https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-aanlevering.sch" uri="lvbb-aanlevering.sch.xslt"/>
+</catalog>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="https://standaarden.overheid.nl/stop/1.1.0/imop-aknjoin.sch" uri="imop-aknjoin.sch.xslt"/>
+  <uri name="https://standaarden.overheid.nl/stop/1.1.0/imop-consolidatie.sch" uri="imop-consolidatie.sch.xslt"/>
+  <uri name="https://standaarden.overheid.nl/stop/1.1.0/imop-geo.sch" uri="imop-geo.sch.xslt"/>
+  <uri name="https://standaarden.overheid.nl/stop/1.1.0/imop-metadata.sch" uri="imop-metadata.sch.xslt"/>
+  <uri name="https://standaarden.overheid.nl/stop/1.1.0/imop-pakbon.sch" uri="imop-pakbon.sch.xslt"/>
+  <uri name="https://standaarden.overheid.nl/stop/1.1.0/imop-procedure.sch" uri="imop-procedure.sch.xslt"/>
+  <uri name="https://standaarden.overheid.nl/stop/1.1.0/imop-se.sch" uri="imop-se.sch.xslt"/>
+  <uri name="https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.sch" uri="imop-tekst.sch.xslt"/>
+  <uri name="https://standaarden.overheid.nl/stop/1.1.0/imop-tekstmutaties.sch" uri="imop-tekstmutaties.sch.xslt"/>
+</catalog>
