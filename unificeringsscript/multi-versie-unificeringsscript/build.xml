@@ -150,22 +150,6 @@
     </for>
   </target>
 
-  <!-- TEMPLATE for convenience, can be deleted if ready 
-          <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
-            <sequential>
-              <if><available file="bron_@{number}" type="dir" /><then>
-                  <if>
-                    <available file="bron_@{number}/@{__.name}"/>
-                    <then>
-                    </then>
-                    </if>
-              </then>
-              </if>
-            </sequential>
-          </for>
-  -->
-
-
   <target name="guids" description="Creëert een juiste aantal guids benodigd en verwerkt die in GML-bestanden en referenties.">
     <!-- Wijzig de GML-files die gerefereerd worden vanuit een OW bestand -->
     <xmltask source="${temp.dir}/index.xml">
@@ -922,11 +906,11 @@
                 <param name="giofile.name" path="name/text()"/>
                 <actions>
                   <if>
-                    <available file="bron_@{number}/@{gioFile}"/>
+                    <available file="bron_@{number}/@{giofile.name}"/>
                     <then>
                       <xslt in="${output_@{number}.dir}/@{giofile.name}" out="${temp_@{number}.dir}/@{giofile.name}" extension=".xml" style="checksum_hash.xsl" processor="trax" force="true">
                         <classpath location="saxon9he.jar"/>
-                        <param name="temp.dir" expression="${temp.dir}"/>
+                        <param name="temp.dir" expression="${temp_@{number}.dir}"/>
                       </xslt>
                       <copy file="${temp_@{number}.dir}/@{giofile.name}" tofile="${output_@{number}.dir}/@{giofile.name}"/>
                     </then>
@@ -945,7 +929,7 @@
   <target name="checksum" description="Maak hash-codes">
     <foreach target="checksum.execute" param="file.fullname">
       <path>
-        <fileset dir="${temp.dir}"/>
+        <fileset dir="${output.dir}"/>
       </path>
     </foreach>
     <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
@@ -953,11 +937,9 @@
         <if>
           <available file="bron_@{number}" type="dir"/>
           <then>
-            <foreach target="checksum.execute.2">
-              <param="file.fullname"/> 
-              <param="@{number}"/>
+            <foreach target="checksum.execute.2" param="file.fullname" >
               <path>
-                <fileset dir="${temp_@{number}.dir}"/>
+                <fileset dir="${output_@{number}.dir}"/>
               </path>
             </foreach>
           </then>
@@ -979,7 +961,11 @@
 
   <target name="checksum.execute.2">
     <basename property="file.name" file="${file.fullname}"/>
-    <basename property="number" file="${number}"/>
+    <dirname property="_dir" file="${file.fullname}"/>
+    <script language="javascript">
+      var before = project.getProperty("_dir");
+      project.setProperty("temp.dir", before.replaceAll("resultaat_", "temp_"));
+    </script>
     <checksum file="${file.fullname}" algorithm="SHA-512" property="file.checksum"/>
     <xslt in="template.xml" out="${temp.dir}/checksum/${file.name}.xml" style="checksum.xsl" processor="trax" force="true">
       <classpath location="saxon9he.jar"/>
