@@ -1,0 +1,207 @@
+# Wijzigingen in waardelijsten 2.0.0-rc:
+- Vervang de inhoud van versie door '2.0.0-rc'.
+- Vervang de inhoud van publicatiedatum door '2021-06-15'.
+- Vervang van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Natuurgroep' de symboolcode van waarde met uri 'http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Habitatrichtlijngebied' door 'vsgt114'.
+- Vervang van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Natuurgroep' de symboolcode van waarde met uri 'http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Toegangsbeperkingsgebied' door 'vsgt002'.
+- Vervang van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Natuurgroep' de symboolcode van waarde met uri 'http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Vogelrichtlijngebied' door 'vsgt123'.
+- Vervang van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitregelkwalificatie' in het domein met uri 'http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Activiteitregelkwalificatie' de inhoud van omschrijving door 'Begrippen die een kwalificatie geven van regels over activiteiten.'.
+- Vervang van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Adressaat' in het domein met uri 'http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Adressaat' de inhoud van omschrijving door 'Begrippen die het type bestuurslaag of organisatie aanduiden.'.
+- Vervang van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Beperkingengebiedgroep' in het domein met uri 'http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Beperkingengebied' de inhoud van omschrijving door 'Begrippen gerelateerd aan het inhoudelijke (thematische/sectorale) domein van beperkingengebieden.'.
+- Vervang van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Eenheid' in het domein met uri 'http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Eenheid' de inhoud van omschrijving door 'Begrippen die eenheden aanduiden waarin een kwantitatieve waarde wordt uitgedrukt.'.
+- Vervang van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Functiegroep' in het domein met uri 'http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Functie' de inhoud van omschrijving door 'Begrippen gerelateerd aan de toedeling van functies aan locaties.'.
+- Vervang van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Landschapgroep' in het domein met uri 'http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Landschap' de inhoud van omschrijving door 'Begrippen gerelateerd aan het inhoudelijke (thematische/sectorale) domein van landschap.'.
+- Vervang van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Luchtgroep' in het domein met uri 'http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Lucht' de inhoud van omschrijving door 'Begrippen gerelateerd aan het inhoudelijke (thematische/sectorale) domein van lucht.'.
+- Vervang van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingsnormgroep' in het domein met uri 'http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Omgevingsnorm' de inhoud van omschrijving door 'Begrippen die een kwalitatieve of kwantitatieve normering voor aspecten van de fysieke leefomgeving aanduiden, die geen omgevingswaarde is.'.
+- Voeg aan waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingsnormgroep' een waarde toe met label 'maatvoering gebruik', term 'MaatvoeringGebruik', uri 'http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringGebruik', definitie 'Waarde voor attribuut groep bij het object Omgevingsnorm voor het vaststellen, geometrisch begrenzen en per locatie waarden vastleggen van een omgevingsnorm voor de maatvoering van (planologisch) gebruik.', toelichting '', bron '', domein 'http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Omgevingsnorm', specialisatie '', symboolcode 'vog014', geldigheid/startdatum '2021-06-15'.
+- Vervang van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema' de inhoud van type door 'limitatief'.
+- Verwijder van waardelijst met uri 'http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema' de waarde met uri:
+  - 'http://standaarden.omgevingswet.overheid.nl/bereikbaarheid/id/concept/Bereikbaarheid',
+  - ‘http://standaarden.omgevingswet.overheid.nl/biodiversiteit/id/concept/Biodiversiteit’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/circulaireeconomie/id/concept/CirculaireEconomie’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/cultureelerfgoedenlandschap/id/concept/CultureelErfgoedEnLandschap’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/duurzaamheid/id/concept/Duurzaamheid’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/economischvestigingsklimaat/id/concept/EconomischVestigingsklimaat’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/energietransitie/id/concept/Energietransitie’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/geur/id/concept/Geur’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/geurvanagrarischeactiviteiten/id/concept/GeurVanAgrarischeActiviteiten’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/geurvanindustrieleactiviteiten/id/concept/GeurVanIndustrieleActiviteiten’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/geurvanrwzis/id/concept/GeurVanRwziS’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/klimaat/id/concept/Klimaat’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/klimaatadaptatie/id/concept/Klimaatadaptatie’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/landbouw/id/concept/Landbouw’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/landelijkefuncties/id/concept/LandelijkeFuncties’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/logistiek/id/concept/Logistiek’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/luchtkwaliteit/id/concept/Luchtkwaliteit’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspecten’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurbescherming/id/concept/Natuurbescherming’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurlijkehulpbronnen/id/concept/NatuurlijkeHulpbronnen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/recreatieentoerisme/id/concept/RecreatieEnToerisme’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/regionalesamenwerking/id/concept/RegionaleSamenwerking’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/regionalewoonagenda/id/concept/RegionaleWoonagenda’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/ruimtelijkekwaliteit/id/concept/RuimtelijkeKwaliteit’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFuncties’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/toegankelijkheid/id/concept/Toegankelijkheid’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/veiligheid/id/concept/Veiligheid’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersysteem/id/concept/WaterEnWatersysteem’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/woonenleefklimaat/id/concept/WoonEnLeefklimaat’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bodem/id/concept/BodemAardkundigeWaarden’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bodem/id/concept/BodemBodemdaling’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bodem/id/concept/BodemBodemkwaliteit’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bodem/id/concept/BodemGeslotenOfVoormaligeStortplaats’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bodem/id/concept/BodemOntgrondingen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bodem/id/concept/BodemOpenStortplaats’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenAsbestverwijdering’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenBestaandeBouw’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenBouwwerkinstallaties’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenBouwwerkzaamheden’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenBrandveiligGebruikBouwwerken’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenBruikbaarheid’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenEnergielabel’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenGebruikVanBouwwerken’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenGebruiksfunctiewijziging’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenGezondheid’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenNieuwbouw’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenRuimtelijkeAspecten’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenSloopwerkzaamheden’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenTijdelijkeBouwwerken’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenToegankelijkheid’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenVeiligheid’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenVerbouw’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/BouwwerkenVerplaatsenVanBouwwerken’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/cultureelerfgoedenlandschap/id/concept/CultureelErfgoedEnLandschapArcheologie’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/cultureelerfgoedenlandschap/id/concept/CultureelErfgoedEnLandschapBeschermdStadsEnDorpsgezicht’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/cultureelerfgoedenlandschap/id/concept/CultureelErfgoedEnLandschapCultureelErfgoed’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/cultureelerfgoedenlandschap/id/concept/CultureelErfgoedEnLandschapCultuurlandschappen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/cultureelerfgoedenlandschap/id/concept/CultureelErfgoedEnLandschapWerelderfgoed’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/duurzaamheid/id/concept/BouwwerkenDuurzaamheid’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/GeluidGeluidVanActiviteiten’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/GeluidGeluidVanIndustrieterreinen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/GeluidGeluidVanLuchthavensEnLuchtvaart’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/GeluidGeluidVanSpoorwegen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/GeluidGeluidVanWegen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurEnergieopwekking’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurFietsinfrastructuurEnWandelpaden’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurHoogspanningsnet’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurKabelsEnLeidingen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurLeidingen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurLuchthavens’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurMilitaireInfrastructuur’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurSpoorwegen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurVaarwegen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/InfrastructuurWegen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/klimaat/id/concept/KlimaatKlimaatmitigatie’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/landbouw/id/concept/LandbouwGlastuinbouw’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/landbouw/id/concept/LandbouwVeehouderij’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/landbouw/id/concept/LandbouwVollegrondteelt’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/landelijkefuncties/id/concept/LandelijkeFunctiesNatuurbegraven’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/landelijkefuncties/id/concept/LandelijkeFunctiesVrijkomendeAgrarischeBebouwing’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/landschap/id/concept/LandschapBijzonderReliefLandschap’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/landschap/id/concept/LandschapKleinschaligBeslotenLandschap’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/landschap/id/concept/LandschapLandschappelijkeWaarden’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/landschap/id/concept/LandschapWaardevolOpenLandschap’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspectenAfval’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspectenAlgemeen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspectenEnergie’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspectenLichthinder’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/milieualgemeenenoverigemilieuaspecten/id/concept/MilieuAlgemeenEnOverigeMilieuaspectenTrillingen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurbescherming/id/concept/NatuurbeschermingEcologie’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurbescherming/id/concept/NatuurbeschermingNatuurbeheer’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurbescherming/id/concept/NatuurbeschermingNatuurgebieden’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurbescherming/id/concept/NatuurbeschermingNatuurnetwerk’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurbescherming/id/concept/NatuurbeschermingOverigeNatuur’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurlijkehulpbronnen/id/concept/NatuurlijkeHulpbronnenBiomassa’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurlijkehulpbronnen/id/concept/NatuurlijkeHulpbronnenBodemenergiesystemen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurlijkehulpbronnen/id/concept/NatuurlijkeHulpbronnenGeothermie’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurlijkehulpbronnen/id/concept/NatuurlijkeHulpbronnenMijnbouw’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurlijkehulpbronnen/id/concept/NatuurlijkeHulpbronnenWaterkracht’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurlijkehulpbronnen/id/concept/NatuurlijkeHulpbronnenWind’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/natuurlijkehulpbronnen/id/concept/NatuurlijkeHulpbronnenZon’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresFinancieleZekerheid’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresHandhavingEnUitvoering’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresHeffingen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresKostenverhaal’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresMilieueffectrapportage’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresMonitoring’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresOvergangsrecht’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresProcedureProjectprocedure’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresProceduresAanwijzingLocatiesRijkstaken’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresProceduresBevoegdGezagEnBetrokkenheidOmgevingsvergunning’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresProceduresDigitaalStelselOmgevingswet’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresSchade’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/ProceduresVoorkeursrechtEnOnteigening’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/recreatieentoerisme/id/concept/RecreatieEnToerismeDagrecreatie’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/recreatieentoerisme/id/concept/RecreatieEnToerismeFietsEnWandelroutes’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/recreatieentoerisme/id/concept/RecreatieEnToerismeJachthaven’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/recreatieentoerisme/id/concept/RecreatieEnToerismeKleinschaligeRecreatie’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/recreatieentoerisme/id/concept/RecreatieEnToerismeLeisure’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/recreatieentoerisme/id/concept/RecreatieEnToerismeRecreatiewoning’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/recreatieentoerisme/id/concept/RecreatieEnToerismeToerisme’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/recreatieentoerisme/id/concept/RecreatieEnToerismeVerblijfsrecreatie’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesBedrijventerreinen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesDetailhandel’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesRuimteVoorToekomstigeFuncties’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesVoorzieningen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/stedelijkefuncties/id/concept/StedelijkeFunctiesWonen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/toegankelijkheid/id/concept/ToegankelijkheidGebouwen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/toegankelijkheid/id/concept/ToegankelijkheidOpenbareBuitenruimte’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/veiligheid/id/concept/VeiligheidExterneVeiligheid’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/veiligheid/id/concept/VeiligheidRisicoSVanBrandenRampenEnCrises’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersysteem/id/concept/WaterEnWatersysteemDrinkwater’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersysteem/id/concept/WaterEnWatersysteemGrondwaterBescherming’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersysteem/id/concept/WaterEnWatersysteemMarien’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersysteem/id/concept/WaterEnWatersysteemOppervlaktewaterBescherming’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersysteem/id/concept/WaterEnWatersysteemWateroverlast’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersysteem/id/concept/WaterEnWatersysteemWaterschaarste’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersysteem/id/concept/WaterEnWatersysteemWatersystemen’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersysteem/id/concept/WaterEnWatersysteemWaterveiligheid’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersysteem/id/concept/WaterEnWatersysteemZwemwaterkwaliteit’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/cultureelerfgoed/id/concept/CultureelErfgoed’,
+  - ‘http://standaarden.omgevingswet.overheid.nl/externeveiligheid/id/concept/ExterneVeiligheid’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/bodem/id/concept/Bodem’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Bodem’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/Bouwwerken’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Bouwwerken’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/energieennatuurlijkehulpbronnen/id/concept/EnergieEnNatuurlijkeHulpbronnen’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/Geluid’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Geluid’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/gezondheid/id/concept/Gezondheid’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Gezondheid’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/Infrastructuur’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/landgebruik/id/concept/Landgebruik’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Landgebruik’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/landschap/id/concept/Landschap’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Landschap’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/lucht/id/concept/Lucht’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Lucht’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/milieualgemeen/id/concept/MilieuAlgemeen’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/MilieuAlgemeen’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Natuur’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Natuur’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/Procedures’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Procedures’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de uri van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersystemen/id/concept/WaterEnWatersystemen’ door ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/WaterEnWatersystemen’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/bodem/id/concept/Bodem’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/Bouwwerken’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/energieennatuurlijkehulpbronnen/id/concept/EnergieEnNatuurlijkeHulpbronnen’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/Geluid’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/gezondheid/id/concept/Gezondheid’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/Infrastructuur’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/landgebruik/id/concept/Landgebruik’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/landschap/id/concept/Landschap’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/lucht/id/concept/Lucht’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/milieualgemeen/id/concept/MilieuAlgemeen’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Natuur’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/Procedures’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersystemen/id/concept/WaterEnWatersystemen’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/CultureelErfgoed’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de toelichting van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/ExterneVeiligheid’ door ‘’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/bodem/id/concept/Bodem’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/bouwwerken/id/concept/Bouwwerken’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/energieennatuurlijkehulpbronnen/id/concept/EnergieEnNatuurlijkeHulpbronnen’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/geluid/id/concept/Geluid’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/gezondheid/id/concept/Gezondheid’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/infrastructuur/id/concept/Infrastructuur’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/landgebruik/id/concept/Landgebruik’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/landschap/id/concept/Landschap’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/lucht/id/concept/Lucht’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/milieualgemeen/id/concept/MilieuAlgemeen’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Natuur’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/procedures/id/concept/Procedures’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/waterenwatersystemen/id/concept/WaterEnWatersystemen’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/CultureelErfgoed’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ het domein van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/thema/id/concept/ExterneVeiligheid’ door ‘http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema’.
+- Vervang van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ de definitie van waarde met uri ‘http://standaarden.omgevingswet.overheid.nl/gezondheid/id/concept/Gezondheid’ door ‘Kenmerk dat aangeeft dat de regels of het beleid gericht zijn op het waarborgen van de gezondheidsaspecten van de leefomgeving.’.
+- Verwijder van waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ alle domeinen.
+- Voeg aan waardelijst met uri ‘http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema’ een domein toe met label 'thema', term 'Thema', uri 'http://standaarden.omgevingswet.overheid.nl/id/conceptscheme/Thema', omschrijving 'De aanduiding van het aspect van de fysieke leefomgeving waar de regel of de beleidstekst over gaat.', toelichting ''.
+
+
