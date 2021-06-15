@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><index>
+   <dateTime>20210614120617</dateTime>
+   <besluit/>
+   <file type="besluit.xml" ow="false">
+      <name>Mutatie_besluit_eerstewijziging.xml</name>
+   </file>
+   <file type="manifest-ow.xml" ow="false">
+      <name>manifest-ow.xml</name>
+   </file>
+   <leveringId sourcefile="opdracht.xml">
+      <referencefile>owRegeltekst.xml</referencefile>
+      <new>id-publicatie-1235-20210614120617</new>
+   </leveringId>
+   <file type="opdracht.xml" ow="false">
+      <name>opdracht.xml</name>
+   </file>
+   
+   <file type="regeltekst.xml" ow="true">
+      <name>owRegeltekst.xml</name>
+   </file>
+</index>

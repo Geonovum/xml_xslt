@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><index>
+   <dateTime>20210614120629</dateTime>
+   <besluit>
+      <informatieobjectRef>
+         <gio>GIO001-Speelhal.xml</gio>
+         <gml>Speelhal.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm0297/2019/Speelhal</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm0297/2019/Speelhal/nld@2020-11-06;4530</oldIoRefId>
+      </informatieobjectRef>
+   </besluit>
+   <file type="besluit.xml" ow="false">
+      <name>Besluit_GIO_wijzigen.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>GIO001-Speelhal.xml</name>
+   </file>
+   <guids>
+      <guidInOw gmlfile="Speelhal.gml" locatiefile="owLocaties-Gemeentestad.xml">
+         <org>265ee0cd-1435-43bc-ba4b-c647b2bd8bd2</org>
+         <new>7bd381f9-7de0-4365-901b-a6df83e2292b</new>
+      </guidInOw>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Speelhal.gml</name>
+   </file>
+   <file type="manifest-ow.xml" ow="false">
+      <name>manifest-ow.xml</name>
+   </file>
+   <leveringId sourcefile="opdracht.xml">
+      <referencefile>owLocaties-Gemeentestad.xml</referencefile>
+      <new>id-publicatie-2345-20210614120629</new>
+   </leveringId>
+   <file type="opdracht.xml" ow="false">
+      <name>opdracht.xml</name>
+   </file>
+   
+   <file type="locatie.xml" ow="true">
+      <name>owLocaties-Gemeentestad.xml</name>
+   </file>
+</index>
