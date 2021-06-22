@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Voor validatie is het noodzakelijk om ook de catalogi van de gepubliceerde versie 1.0.4 te laden.-->
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             schemaversie="1.1.0-rc"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/locatieswindenergieenzonnevelden</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/locatieswindenergieenzonnevelden/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_010</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftGeboorteregeling>/akn/nl/act/pv26/2020/OVPU001</heeftGeboorteregeling>
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Locatieswindenergieenzonnevelden.gml</bestandsnaam>
+                  <hash>fb64a183ff13667e356a678a3eec5d9d150523d3e556a99c096957b5a34dd733616c204644df34b89f8668c3f2aa5c59b613351136c1f9f6145f0eb8fae19262</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>Zonnevelden</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/regdata/pv26/2020/locatieswindenergieenzonnevelden</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <naamInformatieObject>Zonnevelden</naamInformatieObject>
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>

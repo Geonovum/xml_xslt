@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Voor validatie is het noodzakelijk om ook de catalogi van de gepubliceerde versie 1.0.4 te laden.-->
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             schemaversie="1.1.0-rc"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv26/2020/natura2000-gebieden</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv26/2020/natura2000-gebieden/nld@2020-06-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_010</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftGeboorteregeling>/akn/nl/act/pv26/2020/OVPU001</heeftGeboorteregeling>
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>Natura2xxx-gebieden.gml</bestandsnaam>
+                  <hash>566558103b99fe237949599cea44142ad3d0220d1326ba58f77a850ce4ac1f421a05b77b13fa09cf6a0df298208d8517a765dfd40cc7869e66c538f7071daa1a</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv26</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv26</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>Natura 2000-gebieden</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/regdata/pv26/2020/natura2000-gebieden</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <naamInformatieObject>Natura 2000-gebieden</naamInformatieObject>
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>
