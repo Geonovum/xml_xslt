@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Bedrijfsregels xmlns="https://standaarden.overheid.nl/stop/imop/bedrijfsregels/" xmlns:br="https://standaarden.overheid.nl/stop/imop/bedrijfsregels/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaversie="1.1.0" xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/bedrijfsregels/ https://standaarden.overheid.nl/stop/1.1.z/imop-bedrijfsregels.xsd">
+  <Bedrijfsregelgroep>
+    <eigenaar>/join/id/eigenaar/BHKV</eigenaar>
+    <id>Besluit</id>
+    <geldtVoor>
+      <Documenttype>
+        <localName>AanleveringBesluit</localName>
+        <namespace>https://standaarden.overheid.nl/lvbb/stop/aanlevering/</namespace>
+      </Documenttype>
+      <!--
+      <Documenttype>
+        <localName>AanleveringRectificatie</localName>
+        <namespace>https://standaarden.overheid.nl/lvbb/stop/aanlevering/</namespace>
+      </Documenttype>
+      -->
+    </geldtVoor>
+    <geldendeBedrijfsregels>
+      <Bedrijfsregel>
+        <code>BHKV1003</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>De waarde van <codeph>eId</codeph> in  data:BeoogdInformatieobject MOET als
+            attribuutwaarde van een ExtIoRef/@eId voorkomen</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2018</codeRef>        
+        <implementatieDoorEigenaar/>
+        <melding>De eId <var naam="ref"/> van BeoogdInformatieobject komt niet voor als eId van een
+          ExtIoRef, Controleer de referenties naar de ExtIoRef's</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3ABeoogdInformatieobject">data:informatieobjectRef</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3AExtIoRef">tekst:ExtIoRef</link>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1009</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>De <codeph>eId</codeph> van een BeoogdeRegeling MOET voorkomen in het Besluit cq
+            Rectificatie</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <implementatieDoorEigenaar/>
+        <codeRef>STOP2019</codeRef>
+        <melding>In het besluit of rectificatie is de eId <var naam="eId"/> voor de BeoogdeRegeling
+          niet te vinden. Controleer de referentie naar het besluit.</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3ABeoogdeRegeling">data:BeoogdeRegeling</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AeId">data:eId</link>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1010</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>De <codeph>eId</codeph> genoemd in Tijdstempels MOET voorkomen in het besluit</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <implementatieDoorEigenaar/>
+        <codeRef>STOP2020</codeRef>
+        <melding>In het besluit of rectificatie is de eId <var naam="eId"/> voor de tijdstempel
+          niet te vinden. Controleer de referentie naar het besluit.</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3ATijdstempel">data:Tijdstempel</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AeId">data:eId</link>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1011</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>De <codeph>eId</codeph> genoemd in data:Intrekking MOET voorkomen in het besluit</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <implementatieDoorEigenaar/>
+        <codeRef>STOP2021</codeRef>
+        <melding>In het besluit of rectificatie is de eId <var naam="eId"/> voor de data:Intrekking
+          niet te vinden. Controleer de referentie naar het besluit.</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AIntrekking">data:Intrekking</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AeId">data:eId</link>
+        </documentatie>
+      </Bedrijfsregel>
+    </geldendeBedrijfsregels>
+  </Bedrijfsregelgroep>
+<Bedrijfsregelgroep>
+    <eigenaar>/join/id/eigenaar/BHKV</eigenaar>
+    <id>Besluit</id>
+    <geldtVoor>
+      <Documenttype>
+        <localName>AanleveringBesluit</localName>
+        <namespace>https://standaarden.overheid.nl/lvbb/stop/aanlevering/</namespace>
+      </Documenttype>
+    </geldtVoor>
+    <geldendeBedrijfsregels>
+      <Bedrijfsregel>
+        <code>BHKV1004</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>Voor een ontwerpbesluit MAG GEEN tijdstempel worden meegeleverd</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2001</codeRef>
+        <implementatieDoorEigenaar/>
+        <melding>Het ontwerpbesluit heeft tijdstempels, dit is niet toegestaan. Verwijder de
+          tijdstempels.</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AsoortProcedure">data:soortProcedure</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3ABesluitCompact">tekst:BesluitCompact</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3ABesluitKlassiek">tekst:BesluitKlassiek</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3ATijdstempels"/>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1005</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>De identificatie van het aangeleverde besluit moet als soort werk
+              '<codeph>/join/id/stop/work_003</codeph>' hebben</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2002</codeRef>
+        <implementatieDoorEigenaar/>
+        <melding>Het geleverde besluit heeft als soortWork '<var naam="id"/>' , Dit moet zijn:
+          '/join/id/stop/work_003'.</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AsoortWork">data:soortWork</link>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1006</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>De identificatie van een RegelingCompact, RegelingKlassiek of RegelingVrijetekst MOET
+            als soortWork '<codeph>/join/id/stop/work_019</codeph>' hebben</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2003</codeRef>
+        <implementatieDoorEigenaar/>
+        <melding>Het geleverde regelingversie heeft als soortWork '<var naam="id"/>'. Dit moet voor
+          een RegelingCompact, RegelingKlassiek of RegelingVrijetekst zijn
+          '/join/id/stop/work_019'</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AsoortWork">data:soortWork</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3ARegelingCompact">tekst:RegelingCompact</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3ARegelingKlassiek">tekst:RegelingKlassiek</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3ARegelingVrijetekst">tekst:RegelingVrijetekst</link>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1027</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>De identificatie van een RegelingTijdelijkdeel MOET als soortWork
+              '<codeph>/join/id/stop/work_021</codeph>' hebben</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2004</codeRef>
+        <implementatieDoorEigenaar/>
+        <melding>Het geleverde regelingversie heeft als soortWork '<var naam="id"/>'. Dit moet voor
+          een tijdelijk regelingdeel zijn '/join/id/stop/work_021'.</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AsoortWork">data:soortWork</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3ARegelingCompact">tekst:RegelingTijdelijkdeel</link>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1028</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>Een RegelingTijdelijkdeel MOET een isTijdelijkDeelVan hebben</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2005</codeRef>
+        <implementatieDoorEigenaar/>
+        <melding>De RegelingTijdelijkdeel met expressionID '<var naam="eId"/>' heeft geen
+          isTijdelijkDeelVan. Pas dit aan.</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AisTijdelijkDeelVan">data:isTijdelijkDeelVan</link>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1020</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>Elke wId van Toelichtingsrelatie bij een besluit MOET voorkomen in het bijbehorende
+            besluit</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2006</codeRef>
+        <implementatieDoorEigenaar/>
+        <melding>De wId <var naam="wId"/> in toelichtingOp komt niet voor in het besluit, pas dit
+          aan</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AToelichtingsrelatie">data:Toelichtingsrelatie</link>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1036</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>De identifier voor instrumentVersie moet overeenkomen met de identitier in ExtIoRef met
+            het juiste <codeph>eId</codeph>.</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2011</codeRef>        
+        <implementatieDoorEigenaar/>
+        <melding>De identifier van instrumentVersie "<var naam="instrument"/>" komt niet overeen
+          met de ExtIoRef met eId "<var naam="eId"/>". Corrigeer de identifier of de eId zodat deze
+          gelijk zijn.</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3ABeoogdInformatieobject">data:BeoogdInformatieobject</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3AExtIoRef">tekst:ExtIoRef</link>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1037</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>De identifier voor instrumentVersie moet overeenkomen met een identitier in een
+            ExtIoRef</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2012</codeRef>
+        <implementatieDoorEigenaar/>
+        <melding>De identifier van instrumentVersie "<var naam="id"/>" komt niet voor als de join
+          identifier van een ExtIoRef. Controleer de instrumentVersie of voeg een ExtIoRef toe aan
+          de tekst van het besluit.</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3ABeoogdInformatieobject">data:BeoogdInformatieobject</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3AExtIoRef">tekst:ExtIoRef</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3ABeoogdInformatieobject">data:instrumentVersie</link>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1044</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>Een <codeph>@wordt</codeph>-versie in een besluit is gelijk aan de meegeleverde
+            FRBRExpression-identificatie</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2013</codeRef>        
+        <implementatieDoorEigenaar/>
+        <melding>Er moet versieinformatie meegeleverd worden, deze ontbreekt of is niet correct voor
+          component "<var naam="component"/>". Corrigeer de versieinformatie "<var naam="id"/>".</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AFRBRExpression">data:FRBRExpression</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3ARegelingMutatie">tekst:RegelingMutatie</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3ARegelingKlassiek">tekst:RegelingKlassiek</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3ARegelingComp%5Bact">tekst:RegelingCompact</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3ARegelingVrijetekstr">tekst:RegelingVrijetekst</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3ARegelingTijdelijkdeel">tekst:RegelingTijdelijkdeel</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3ARegelingMutatie">tekst:RegelingMutatie</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Atekst%3AagComponentNieuweRegeling">Attribuut @wordt</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd%3Alvbba%3AAanleveringBesluit"/>
+        </documentatie>
+      </Bedrijfsregel>
+    </geldendeBedrijfsregels>
+  </Bedrijfsregelgroep>
+<Bedrijfsregelgroep>
+    <eigenaar>/join/id/eigenaar/BHKV</eigenaar>
+    <groepsnaam>aanlevering van IOs</groepsnaam>
+    <id>aanleveringIO</id>
+    <geldtVoor>
+      <Documenttype>
+        <localName>AanleveringInformatieObject</localName>
+        <namespace>https://standaarden.overheid.nl/lvbb/stop/aanlevering/</namespace>
+      </Documenttype>
+    </geldtVoor>
+    <geldendeBedrijfsregels>
+      <Bedrijfsregel>
+        <code>BHKV1014</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>Het element data:heeftBestanden MOET in aan de LVBB aangeleverde (G)IOs naar precies
+            één bestand verwijzen.</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP1058</codeRef>
+        <implementatieDoorEigenaar/>
+        <melding>Element data:heeftBestanden van <var naam="Expression-ID"/> heeft géén of meer dan
+          één bestand. Dit is niet toegestaan, lever slechts één bestand aan.</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AheeftBestanden">data:heeftBestanden</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd%3Alvbba%3AAanleveringInformatieObject"/>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1015</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>heeftGeboorteregeling MOET aanwezig zijn INDIEN
+              soortWork=<codeph>/join/id/stop/work_010</codeph> èn
+              formaatinformatieobject=<codeph>/join/id/stop/informatieobject/gio_002</codeph></p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP1059</codeRef>
+        <implementatieDoorEigenaar/>
+        <melding>heeftGeboorteregeling voor <var naam="id"/> is niet aanwezig, is verplicht wanneer
+          soortWork=/join/id/stop/work_010 èn
+          formaatinformatieobject=/join/id/stop/informatieobject/gio_002. Voeg de AKN-identificatie
+          voor heeftGeboorteregeling toe.</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AheeftGeboorteregeling">data:heeftGeboorteregeling</link>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd%3Alvbba%3AAanleveringInformatieObject"/>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1016</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>De identificatie van een InformatieObject MOET als soort werk
+              '<codeph>/join/id/stop/work_010</codeph>' zijn</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2024</codeRef>
+        <implementatieDoorEigenaar/>
+        <melding>Het aangeleverde informatieobject <var naam="id"/> heeft als soortWork <var naam="work"/> dit moet '/join/id/stop/work_010' zijn.</melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd%3Alvbba%3AAanleveringInformatieObject"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AformaatInformatieObject"/>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1017</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>De officiele titel van een informatieobject MOET gelijk zijn aan het FRBRWork</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2025</codeRef>
+        <implementatieDoorEigenaar/>
+        <melding>De officiele titel <var naam="titel"/> komt niet overeen met de identifier
+          FRBRWork <var naam="work"/>
+        </melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AFRBRWork"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AofficieleTitel"/>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1018</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>De collectie gebruikt in de AKN identifier van een informatieobject MOET overeenkomen
+            met zijn data:publicatieinstructie</p>
+        </regel>
+        <eigenaarRef>/join/id/eigenaar/STOP</eigenaarRef>
+        <codeRef>STOP2026</codeRef>
+        <implementatieDoorEigenaar/>
+        <melding>De collectie in de FRBRWork identifier <var naam="Work-ID"/> komt niet overeen met
+          de publicatieinstructie <var naam="substring"/>
+        </melding>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3AFRBRWork"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Adata%3ApublicatieInstructie"/>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1030</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>INDIEN een GIO één of meer locatiegroepen bevat MOET voor de GIO symbolisatie worden
+            aangeleverd met verbeeldingsinformatie voor elke locatiegroep in de GIO.</p>
+        </regel>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd%3Alvbba%3AAanleveringInformatieObject"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd%3Alvbba%3AInformatieObjectVersie"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Ase%3AFeatureTypeStyle"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Ageo%3AGeoInformatieObjectVaststelling"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Ageo%3AGroep"/>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1031</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>INDIEN een GIO kwalitatieve normwaarden bevat MOET symbolisatie voor deze GIO worden
+            aangeleverd met verbeeldingsinformatie voor elke kwalitatieve normwaarde in de GIO.</p>
+        </regel>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd%3Alvbba%3AAanleveringInformatieObject"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd%3Alvbba%3AInformatieObjectVersie"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Ase%3AFeatureTypeStyle"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Ageo%3AGeoInformatieObjectVaststelling"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Ageo%3ALocatie"/>
+        </documentatie>
+      </Bedrijfsregel>
+      <Bedrijfsregel>
+        <code>BHKV1032</code>
+        <ernst>fout</ernst>
+        <regel>
+          <p>INDIEN een GIO kwantitatieve normwaarden bevat MOET symbolisatie voor deze GIO worden
+            aangeleverd zodat voor elke kwantitatieve normwaarde in de GIO verbeeldingsinformatie
+            beschikbaar is.</p>
+        </regel>
+        <documentatie>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd%3Alvbba%3AAanleveringInformatieObject"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd%3Alvbba%3AInformatieObjectVersie"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Ase%3AFeatureTypeStyle"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Ageo%3AGeoInformatieObjectVaststelling"/>
+          <link href="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=stop%23xsd%3Ageo%3ALocatie"/>
+        </documentatie>
+      </Bedrijfsregel>
+
+    </geldendeBedrijfsregels>
+  </Bedrijfsregelgroep>
+</Bedrijfsregels>
