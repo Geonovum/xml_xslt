@@ -35,8 +35,8 @@
   <xsl:template match="AanleveringInformatieObject" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
     <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
       <xsl:namespace name="geo" select="string('https://standaarden.overheid.nl/stop/imop/geo/')"/>
-      <xsl:attribute name="schemaversie" select="string('1.1.0-rc')"/>
-      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd')"/>
+      <xsl:attribute name="schemaversie" select="string('1.1.0')"/>
+      <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd')"/>
       <xsl:apply-templates select="node()"/>
     </xsl:element>
   </xsl:template>
