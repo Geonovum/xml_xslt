@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/grondwateronttrekking</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Grondwateronttrekking.gml</bestandsnaam>
-                  <hash>4a54a6f41461d4bc055eeba3af80672aa48a1573448756d674c019ca0dfa1b17ad10b3ed13992a6ba9b1d0cc55e74139c9cad3bb17197ec502ad69cf57835166</hash>
+                  <hash>135aad99f5ce8dac073ecfca60183b098151b3cdb384284503528377acd29f937229573e16f34d939a2e03216486a4dcb29805f89f4710e1ba0b63093330fd95</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

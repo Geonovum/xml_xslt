@@ -3,15 +3,15 @@
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            targetNamespace="https://standaarden.overheid.nl/stop/imop/uitwisseling/"
-           version="1.1.0-rc">
+           version="1.1.0">
    <xs:annotation>
-      <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws">"Uitwissel-schema" van STOP.</xs:documentation>
+      <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws">"Uitwissel-schema" van STOP.</xs:documentation>
       <xs:documentation>Dit schema definieert de "uitwisselingpakbon"-elementen voor STOP</xs:documentation>
-      <xs:documentation>versie 1.1.0-rc</xs:documentation>
+      <xs:documentation>versie 1.1.0</xs:documentation>
    </xs:annotation>
    <xs:element name="Pakbon">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:Pakbon"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:Pakbon"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -22,7 +22,7 @@
    </xs:element>
    <xs:element name="Component">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:Component"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:Component"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -36,22 +36,22 @@
    </xs:element>
    <xs:element name="FRBRExpression" type="uws:dtSTOPidentificatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:FRBRExpression"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:FRBRExpression"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="FRBRWork" type="uws:dtSTOPidentificatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:FRBRWork"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:FRBRWork"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="soortWork" type="uws:dtWaardeRef">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:soortWork"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:soortWork"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="heeftModule">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:heeftModule"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:heeftModule"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -61,7 +61,7 @@
    </xs:element>
    <xs:element name="Module">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:Module"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:Module"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -75,22 +75,22 @@
    </xs:element>
    <xs:element name="localName" type="xs:NCName">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:localName"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:localName"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="namespace" type="uws:dtNamespace">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:namespace"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:namespace"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="schemaversie" type="uws:dtSchemaVersie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:schemaversie"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:schemaversie"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="heeftBestand">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:heeftBestand"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:heeftBestand"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -100,7 +100,7 @@
    </xs:element>
    <xs:element name="Bestand">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:Bestand"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:Bestand"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -111,12 +111,12 @@
    </xs:element>
    <xs:element name="bestandsnaam" type="xs:token">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:bestandsnaam"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:bestandsnaam"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="mediatype" type="xs:token">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:uws:mediatype"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:uws:mediatype"/>
       </xs:annotation>
    </xs:element>
    <!-- attributegroep -->

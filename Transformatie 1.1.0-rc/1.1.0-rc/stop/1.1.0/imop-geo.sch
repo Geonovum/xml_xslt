@@ -8,7 +8,7 @@
    <sch:ns prefix="xsl" uri="http://www.w3.org/1999/XSL/Transform"/>
    <sch:ns prefix="basisgeo" uri="http://www.geostandaarden.nl/basisgeometrie/1.0"/>
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
-   <sch:p>Versie 1.1.0-rc</sch:p>
+   <sch:p>Versie 1.1.0</sch:p>
    <sch:p>Schematron voor aanvullende validatie voor imop-geo.xsd</sch:p>
    <sch:pattern id="sch_geo_001">
       <sch:title>Locatie rules</sch:title>

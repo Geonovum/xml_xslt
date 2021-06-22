@@ -6,7 +6,7 @@
             queryBinding="xslt2">
    <sch:ns prefix="data" uri="https://standaarden.overheid.nl/stop/imop/data/"/>
    <sch:ns prefix="xsl" uri="http://www.w3.org/1999/XSL/Transform"/>
-   <sch:p>Versie 1.1.0-rc</sch:p>
+   <sch:p>Versie 1.1.0</sch:p>
    <sch:p>Schematron voor aanvullende validatie voor consolidatie-informatie</sch:p>
    <sch:pattern id="sch_data_012" see="data:BeoogdeRegeling">
       <sch:title>data:instrumentVersie moet expressionID (AKN/act) zijn</sch:title>

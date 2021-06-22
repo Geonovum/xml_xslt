@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/bufferzonestiltegebied</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Bufferzonestiltegebied.gml</bestandsnaam>
-                  <hash>85e1d336ff638de5812e27fe44eaa7b9eeba36b8c4f758afd2bb98346794fbd8e5f2a851c04b5643f3feaf8be1ceb87d43aec5d776c43be68206335a264d661d</hash>
+                  <hash>59d0fdaedaf1708ccecd7b9a520dc931a267f0d545ba9bd220fd3bc3565f96c9721cb30d8f764a3d799bc9b992ab1f83860f12f5fe30bd35361a3f01e38d64d5</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

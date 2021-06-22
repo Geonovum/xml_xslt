@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/kantorenopknooppuntutrechtcentraal</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Kantooropknooppunt.gml</bestandsnaam>
-                  <hash>73b7a468457f4a5802cfc2346bc9d8f914c4dffb3ddf354210d303deae84ff5b99e7909312f76313038767d52821d3a7c6d75aeff590b381edfad696617a7c6d</hash>
+                  <hash>c2340021a0e13d9744cf525d21ea82b8e3dc30831e540c628ef24a3fbc88b07a02a79900f526cfa342b0f4c5e2a03d00f3d55a2df381aa9b99fcb1af6a95d4b6</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

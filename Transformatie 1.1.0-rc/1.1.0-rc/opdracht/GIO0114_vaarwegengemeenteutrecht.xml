@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/vaarwegengemeenteutrecht</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>VaarwegenGemeenteUtrecht.gml</bestandsnaam>
-                  <hash>7f6535de7c2d540a4e1b2f35bebdd566a803ad172d39d170ebf902b13933418f0e4b5d29950d667c6145814f4b27d0ca6bcf8dd6ba47427b748f8de23d98fd4e</hash>
+                  <hash>52e3aa88dbac118ae2f20f95164c5b6b522f9cb4b6f49717ab7ea9d88a0327b2751b489fc7476c39065b17f4fa747941381534f30a77b55b9096dcd5c789d2f1</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

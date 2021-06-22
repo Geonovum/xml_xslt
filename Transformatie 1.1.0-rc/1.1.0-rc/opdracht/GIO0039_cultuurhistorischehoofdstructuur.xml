@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/cultuurhistorischehoofdstructuur</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>CultuurhistorischeHoofdstructuur.gml</bestandsnaam>
-                  <hash>0fa72714eb25f819f863b950981c29b4ba91b151ea8e87f19ac344e74da81d4742b5421eb28f82e25851c8829b931819e3c943f4466d1d01888af9c31ee2becb</hash>
+                  <hash>ea057592ea371353a478a25d1f7c9934986985ded5174c8f3d742e52003e5f3e047ee35a327070f070e503b350e48c8879c6d1d643abbb9c24cca5b8da27e1d1</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

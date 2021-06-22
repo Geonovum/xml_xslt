@@ -5,15 +5,15 @@
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            targetNamespace="https://standaarden.overheid.nl/stop/imop/resources/"
-           version="1.1.0-rc">
+           version="1.1.0">
    <xs:annotation>
-      <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc">"resources-schema" van STOP. </xs:documentation>
+      <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc">"resources-schema" van STOP. </xs:documentation>
       <xs:documentation>Dit schema definieert de elementen voor de STOP-modules voor resources</xs:documentation>
-      <xs:documentation>versie 1.1.0-rc</xs:documentation>
+      <xs:documentation>versie 1.1.0</xs:documentation>
    </xs:annotation>
    <xs:element name="Waardelijst">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:Waardelijst"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:Waardelijst"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -25,7 +25,7 @@
    </xs:element>
    <xs:element name="WaardelijstInfo">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:WaardelijstInfo"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:WaardelijstInfo"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -37,7 +37,7 @@
    </xs:element>
    <xs:element name="Waarde">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:Waarde"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:Waarde"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -54,52 +54,52 @@
   -->
    <xs:element name="eindverantwoordelijke" type="rsc:dtResourceRef">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:eindverantwoordelijke"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:eindverantwoordelijke"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="url" type="xs:anyURI">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:url"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:url"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="uitbreidbaar" type="xs:boolean">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:uitbreidbaar"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:uitbreidbaar"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="versie" type="xs:token">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:versie"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:versie"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="geldigVanaf" type="xs:date">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:geldigVanaf"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:geldigVanaf"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="geldigTot" type="xs:date">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:geldigTot"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:geldigTot"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="id" type="rsc:dtResourceRef">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:id"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:id"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="label" type="xs:token">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:label"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:label"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="beschrijving" type="xs:token">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:beschrijving"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:beschrijving"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="vindplaatsen">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:vindplaatsen"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:vindplaatsen"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -109,7 +109,7 @@
    </xs:element>
    <xs:element name="heeftVindplaats">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:heeftVindplaats"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:heeftVindplaats"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -119,7 +119,7 @@
    </xs:element>
    <xs:element name="Vindplaats">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:rsc:Vindplaats"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:rsc:Vindplaats"/>
       </xs:annotation>
       <xs:complexType>
          <xs:all>

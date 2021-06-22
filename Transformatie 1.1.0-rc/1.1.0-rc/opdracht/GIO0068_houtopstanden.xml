@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/houtopstanden</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Houtopstanden.gml</bestandsnaam>
-                  <hash>9383319f2782a2aeb331f59dc60db7b129a213a971e7ca9d6108219dddde123203e62cf76c0639da6834b13ca6d3c9225321cb6b28445483ce1a96c36bc139b6</hash>
+                  <hash>72c9c11174db3f2f26a136b9b58aa4d0a08531f4991199ba4e2a096eece5031633ca511288dcbea2dae844aa4bc48b328f5b97a64886b1c8e6d415250128e98d</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

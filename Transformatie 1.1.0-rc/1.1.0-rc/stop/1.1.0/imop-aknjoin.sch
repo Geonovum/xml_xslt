@@ -9,7 +9,7 @@
    <sch:ns prefix="cons"
            uri="https://standaarden.overheid.nl/stop/imop/consolidatie/"/>
    <sch:ns prefix="xsl" uri="http://www.w3.org/1999/XSL/Transform"/>
-   <sch:p>Versie 1.1.0-rc</sch:p>
+   <sch:p>Versie 1.1.0</sch:p>
    <sch:p>Schematron voor aanvullende validatie van de regels voor AKNs en JOINs</sch:p>
    <sch:pattern id="sch_data_001">
       <sch:title>AKN- of JOIN-identificatie mag geen punt bevatten</sch:title>

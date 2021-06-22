@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/plangebied</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>plangebied.gml</bestandsnaam>
-                  <hash>a5aab3a43e3f1101be849e06492eb28a505f8f9f4bec5b14778f2e5fd097680674ce50078548dc64d53c5d5b8d71a905634060541a6756875a06cb154ef92587</hash>
+                  <hash>63eebd6c33a3491308451da4507ed384b80bc8078480b864168c92f9cc24e6f2f859c1970db692a6f11c4ab0b48a28220306d4d49e1025c2f7a0a4328aa0038b</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

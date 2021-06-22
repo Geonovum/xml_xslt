@@ -3,11 +3,11 @@
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            targetNamespace="https://standaarden.overheid.nl/stop/imop/consolidatie/"
-           version="1.1.0-rc">
+           version="1.1.0">
    <xs:annotation>
       <xs:documentation>"consolidatie-schema" van STOP. </xs:documentation>
       <xs:documentation>Dit schema definieert de elementen voor de STOP-modules voor consolidaties</xs:documentation>
-      <xs:documentation>versie 1.1.0-rc</xs:documentation>
+      <xs:documentation>versie 1.1.0</xs:documentation>
    </xs:annotation>
    <!--
   ================================================ 
@@ -16,7 +16,7 @@
   -->
    <xs:element name="ConsolidatieIdentificatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:ConsolidatieIdentificatie"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:ConsolidatieIdentificatie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -30,7 +30,7 @@
    </xs:element>
    <xs:element name="isConsolidatieVan">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:isConsolidatieVan"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:isConsolidatieVan"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -40,7 +40,7 @@
    </xs:element>
    <xs:element name="isTijdelijkDeelVan">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:isTijdelijkDeelVan"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:isTijdelijkDeelVan"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -50,7 +50,7 @@
    </xs:element>
    <xs:element name="WorkIdentificatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:WorkIdentificatie"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:WorkIdentificatie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -61,17 +61,17 @@
    </xs:element>
    <xs:element name="FRBRExpression" type="cons:dtSTOPidentificatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:FRBRExpression"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:FRBRExpression"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="FRBRWork" type="cons:dtSTOPidentificatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:FRBRWork"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:FRBRWork"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="soortWork" type="cons:dtWaardeRef">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:soortWork"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:soortWork"/>
       </xs:annotation>
    </xs:element>
    <!--
@@ -81,7 +81,7 @@
   -->
    <xs:element name="Toestanden">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:Toestanden"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:Toestanden"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -96,7 +96,7 @@
    </xs:element>
    <xs:element name="BekendeToestand">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:BekendeToestand"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:BekendeToestand"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -107,7 +107,7 @@
    </xs:element>
    <xs:element name="ToestandMetSamenloop">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:ToestandMetSamenloop"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:ToestandMetSamenloop"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -126,7 +126,7 @@
    </xs:group>
    <xs:element name="Proefversies">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:Proefversies"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:Proefversies"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -138,7 +138,7 @@
    </xs:element>
    <xs:element name="Proefversie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:Proefversie"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:Proefversie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -155,7 +155,7 @@
    </xs:group>
    <xs:element name="gerealiseerdeDoelen">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:gerealiseerdeDoelen"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:gerealiseerdeDoelen"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -165,17 +165,17 @@
    </xs:element>
    <xs:element name="instrumentVersie" type="cons:dtSTOPidentificatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:instrumentVersie"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:instrumentVersie"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="samenloopstatus" type="cons:wlSamenloopstatus">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:samenloopstatus"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:samenloopstatus"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="geldigheid">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:geldigheid"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:geldigheid"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -185,7 +185,7 @@
    </xs:element>
    <xs:element name="Geldigheidsperiode">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:Geldigheidsperiode"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:Geldigheidsperiode"/>
       </xs:annotation>
       <xs:complexType>
          <xs:all>
@@ -196,7 +196,7 @@
    </xs:element>
    <xs:element name="juridischWerkendOp">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:juridischWerkendOp"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:juridischWerkendOp"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -206,7 +206,7 @@
    </xs:element>
    <xs:element name="geldigOp">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:geldigOp"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:geldigOp"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -216,7 +216,7 @@
    </xs:element>
    <xs:element name="Periode">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:Periode"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:Periode"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -227,17 +227,17 @@
    </xs:element>
    <xs:element name="vanaf" type="xs:date">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:vanaf"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:vanaf"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="tot" type="xs:date">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:tot"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:tot"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="revisies">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:revisies"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:revisies"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -247,7 +247,7 @@
    </xs:element>
    <xs:element name="revisie" type="cons:dtSTOPidentificatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:revisie"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:revisie"/>
       </xs:annotation>
    </xs:element>
    <!--
@@ -257,7 +257,7 @@
   -->
    <xs:element name="JuridischeVerantwoording">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:JuridischeVerantwoording"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:JuridischeVerantwoording"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -279,7 +279,7 @@
    </xs:element>
    <xs:element name="VerantwoordingInstrument">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:VerantwoordingInstrument"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:VerantwoordingInstrument"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -289,7 +289,7 @@
    </xs:element>
    <xs:element name="VerantwoordingElement">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:VerantwoordingElement"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:VerantwoordingElement"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -300,7 +300,7 @@
    </xs:element>
    <xs:element name="heeftVerantwoording">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:heeftVerantwoording"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:heeftVerantwoording"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -310,12 +310,12 @@
    </xs:element>
    <xs:element name="wId" type="xs:token">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:wId"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:wId"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="Verantwoording">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:Verantwoording"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:Verantwoording"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -330,27 +330,27 @@
    </xs:element>
    <xs:element name="soortWijziging" type="cons:wlSoortWijziging">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:soortWijziging"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:soortWijziging"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="juridischWerkendVanaf" type="xs:date">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:juridischWerkendVanaf"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:juridischWerkendVanaf"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="geldigVanaf" type="xs:date">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:geldigVanaf"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:geldigVanaf"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="heeftTijdelijkDeel" type="cons:dtSTOPidentificatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:heeftTijdelijkDeel"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:heeftTijdelijkDeel"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="gepubliceerdIn">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:gepubliceerdIn"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:gepubliceerdIn"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -362,7 +362,7 @@
    </xs:element>
    <xs:element name="JuridischeBronpublicatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:JuridischeBronpublicatie"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:JuridischeBronpublicatie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -379,37 +379,37 @@
    </xs:element>
    <xs:element name="ondertekendOp" type="xs:date">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:ondertekendOp"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:ondertekendOp"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="gepubliceerdOp" type="xs:date">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:gepubliceerdOp"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:gepubliceerdOp"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="publicatieIdentifier" type="xs:token">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:publicatieIdentifier"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:publicatieIdentifier"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="publicatienaam" type="xs:token">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:publicatienaam"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:publicatienaam"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="soortGepubliceerdWork" type="cons:dtWaardeRef">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:soortGepubliceerdWork"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:soortGepubliceerdWork"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="rectificeert" type="cons:dtSTOPidentificatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:rectificeert"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:rectificeert"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="bladwijzers">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:bladwijzers"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:bladwijzers"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -419,7 +419,7 @@
    </xs:element>
    <xs:element name="Bladwijzer">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:Bladwijzer"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:Bladwijzer"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -430,7 +430,7 @@
    </xs:element>
    <xs:element name="relevantVoor" type="cons:wlRelevantVoor">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:relevantVoor"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:relevantVoor"/>
       </xs:annotation>
    </xs:element>
    <!--
@@ -440,7 +440,7 @@
   -->
    <xs:element name="GerechtelijkeProcedureStatus">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:GerechtelijkeProcedureStatus"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:GerechtelijkeProcedureStatus"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -452,7 +452,7 @@
    </xs:element>
    <xs:element name="BesluitStatus">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:BesluitStatus"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:BesluitStatus"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -467,17 +467,17 @@
    </xs:element>
    <xs:element name="onherroepelijkVanaf" type="xs:date">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:onherroepelijkVanaf"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:onherroepelijkVanaf"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="geschorst" type="xs:boolean">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:geschorst"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:geschorst"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="meerInformatie" type="xs:anyURI">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:meerInformatie"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:meerInformatie"/>
       </xs:annotation>
    </xs:element>
    <!--
@@ -488,12 +488,12 @@
    <!-- generieke elementen -->
    <xs:element name="doel" type="cons:dtDoelidentificatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:doel"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:doel"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="url" type="xs:anyURI">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:url"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:url"/>
       </xs:annotation>
    </xs:element>
    <!-- mg -->
@@ -505,12 +505,12 @@
    </xs:group>
    <xs:element name="bekendOp" type="xs:date">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:bekendOp"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:bekendOp"/>
       </xs:annotation>
    </xs:element>
    <xs:element name="ontvangenOp" type="xs:date">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/STOP/standaard/1.1.0-rc/go/go.html?id=xsd:cons:ontvangenOp"/>
+         <xs:documentation source="https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/go/go.html?id=xsd:cons:ontvangenOp"/>
       </xs:annotation>
    </xs:element>
    <!-- ag -->

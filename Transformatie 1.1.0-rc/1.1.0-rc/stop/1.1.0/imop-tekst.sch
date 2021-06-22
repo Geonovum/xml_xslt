@@ -6,7 +6,7 @@
             queryBinding="xslt2">
    <sch:ns prefix="tekst" uri="https://standaarden.overheid.nl/stop/imop/tekst/"/>
    <sch:ns prefix="xsl" uri="http://www.w3.org/1999/XSL/Transform"/>
-   <sch:p>Versie 1.1.0-rc</sch:p>
+   <sch:p>Versie 1.1.0</sch:p>
    <sch:p>Schematron voor aanvullende validatie voor imop-tekst.xsd</sch:p>
    <sch:pattern id="sch_tekst_001">
       <sch:title>Lijst - Nummering lijstitems</sch:title>
@@ -57,8 +57,8 @@
    <sch:pattern id="sch_tekst_032">
       <sch:title>Illustratie - attributen kleur en schaal worden niet ondersteund</sch:title>
       <sch:rule context="tekst:Illustratie | tekst:InlineTekstAfbeelding">
-         <sch:report id="STOP0045" test="@schaal" role="waarschuwing"> {"code": "STOP0045", "ouder": "<sch:value-of select="local-name(ancestor::*[@eId][1])"/>", "eId": "<sch:value-of select="ancestor::*[@eId][1]/@eId"/>", "melding": "De Illustratie binnen <sch:value-of select="local-name(ancestor::*[@eId][1])"/> met eId <sch:value-of select="ancestor::*[@eId][1]/@eId"/> heeft een waarde voor attribuut @schaal. Dit attribuut wordt genegeerd in de publicatie van documenten volgens STOP 1.1.0-rc. In plaats daarvan wordt het attribuut @dpi gebruikt voor de berekening van de afbeeldingsgrootte. Verwijder het attribuut @schaal.", "ernst": "waarschuwing"},</sch:report>
-         <sch:report id="STOP0046" test="@kleur" role="waarschuwing"> {"code": "STOP0046", "ouder": "<sch:value-of select="local-name(ancestor::*[@eId][1])"/>", "eId": "<sch:value-of select="ancestor::*[@eId][1]/@eId"/>", "melding": "De Illustratie binnen <sch:value-of select="local-name(ancestor::*[@eId][1])"/> met eId <sch:value-of select="ancestor::*[@eId][1]/@eId"/> heeft een waarde voor attribuut @kleur. Dit attribuut wordt genegeerd in de publicatie van STOP 1.1.0-rc. Verwijder het attribuut @kleur.", "ernst": "waarschuwing"},</sch:report>
+         <sch:report id="STOP0045" test="@schaal" role="waarschuwing"> {"code": "STOP0045", "ouder": "<sch:value-of select="local-name(ancestor::*[@eId][1])"/>", "eId": "<sch:value-of select="ancestor::*[@eId][1]/@eId"/>", "melding": "De Illustratie binnen <sch:value-of select="local-name(ancestor::*[@eId][1])"/> met eId <sch:value-of select="ancestor::*[@eId][1]/@eId"/> heeft een waarde voor attribuut @schaal. Dit attribuut wordt genegeerd in de publicatie van documenten volgens STOP 1.1.0. In plaats daarvan wordt het attribuut @dpi gebruikt voor de berekening van de afbeeldingsgrootte. Verwijder het attribuut @schaal.", "ernst": "waarschuwing"},</sch:report>
+         <sch:report id="STOP0046" test="@kleur" role="waarschuwing"> {"code": "STOP0046", "ouder": "<sch:value-of select="local-name(ancestor::*[@eId][1])"/>", "eId": "<sch:value-of select="ancestor::*[@eId][1]/@eId"/>", "melding": "De Illustratie binnen <sch:value-of select="local-name(ancestor::*[@eId][1])"/> met eId <sch:value-of select="ancestor::*[@eId][1]/@eId"/> heeft een waarde voor attribuut @kleur. Dit attribuut wordt genegeerd in de publicatie van STOP 1.1.0. Verwijder het attribuut @kleur.", "ernst": "waarschuwing"},</sch:report>
       </sch:rule>
    </sch:pattern>
    <!--

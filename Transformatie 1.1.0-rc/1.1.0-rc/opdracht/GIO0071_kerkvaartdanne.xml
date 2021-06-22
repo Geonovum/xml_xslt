@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/kerkvaartdanne</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>KerkvaartDanne.gml</bestandsnaam>
-                  <hash>dfa747b3f6c384aaef4de7670ed612f8781fde97eaae3e9b213eeac317aeaf15f94d15bf173e8b2c9cec84165fab7aac48ebee188af6614ac8817b4dbddb8d93</hash>
+                  <hash>f0fd1082029d7cb85514ed1c06aaa5d40164d6fd1d70036c35909027f1d5a341c5964fb161e15ce9b2b6726b0ad5eb81c9c0fd3167c2ab8650f1630e5fa98a48</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

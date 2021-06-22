@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/handhavenhuidigprofiel</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Handhavenhuidigprofiel.gml</bestandsnaam>
-                  <hash>3e8f176b7dcf65e72264a4f2b59eb25531215e0c267a3e5b1f0d3818ad1fcd5bb910a23a35cb40579b57b4c52b8bc5ce0e570733597aa30929b15482473dfa3d</hash>
+                  <hash>b12625f41128ef883f718118dc50f8ecba872d73babd0777f68f5a940b215d5f88e54ff684aa099e928117e01c8f92b5e5c131c2e48480559d7789f218a01519</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

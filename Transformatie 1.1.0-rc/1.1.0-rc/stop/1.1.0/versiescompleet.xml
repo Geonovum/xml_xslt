@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Versieoverzicht schemaversie="1.1.0-rc" xmlns="https://standaarden.overheid.nl/stop/imop/schemata/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/schemata/
-  https://standaarden.overheid.nl/stop/1.1.0-rc/imop-schemata.xsd">
-  <versie>1.1.0-rc</versie>
+<Versieoverzicht schemaversie="1.1.0" xmlns="https://standaarden.overheid.nl/stop/imop/schemata/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/schemata/
+  https://standaarden.overheid.nl/stop/1.1.0/imop-schemata.xsd">
+  <versie>1.1.0</versie>
 
   <Module>
     <localName>FeatureTypeStyle</localName>
@@ -9,8 +9,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/se-FeatureStyle-imop.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-se.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/se-FeatureStyle-imop.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-se.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -21,7 +21,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-consolidatie.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-consolidatie.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -32,7 +32,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-consolidatie.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-consolidatie.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -43,7 +43,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-consolidatie.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-consolidatie.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -54,7 +54,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.4</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-consolidatie.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-consolidatie.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -65,7 +65,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.1.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-consolidatie.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-consolidatie.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -76,9 +76,9 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-aknjoin.sch</schematron>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-consolidatie.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-aknjoin.sch</schematron>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-consolidatie.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -89,8 +89,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-aknjoin.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-aknjoin.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -101,7 +101,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.1.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -112,8 +112,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-metadata.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-metadata.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -124,8 +124,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.4</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-metadata.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-metadata.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -136,8 +136,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-metadata.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-metadata.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -148,8 +148,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-metadata.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-metadata.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -160,8 +160,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-metadata.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-metadata.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -172,8 +172,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-metadata.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-metadata.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -189,8 +189,8 @@
       </Moduleversie>
       <Moduleversie>
         <introductieversie>1.1.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-metadata.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-metadata.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -201,7 +201,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -212,8 +212,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.1.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-metadata.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-metadata.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -229,18 +229,18 @@
         <heeftTransformatie>
           <Transformatie>
             <introductieversie>1.1.0</introductieversie>
-            <locatie>https://standaarden.overheid.nl/stop/1.1.0-rc/procedureverloop_104_naar_110.xslt</locatie>
+            <locatie>https://standaarden.overheid.nl/stop/1.1.0/procedureverloop_104_naar_110.xslt</locatie>
           </Transformatie>
         </heeftTransformatie>
       </Moduleversie>
       <Moduleversie>
         <introductieversie>1.1.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-procedure.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-procedure.sch</schematron>
         <heeftTransformatie>
           <Transformatie>
             <introductieversie>1.0.0</introductieversie>         
-            <locatie>https://standaarden.overheid.nl/stop/1.1.0-rc/procedureverloop_110_naar_104.xslt</locatie>
+            <locatie>https://standaarden.overheid.nl/stop/1.1.0/procedureverloop_110_naar_104.xslt</locatie>
           </Transformatie>
         </heeftTransformatie>
       </Moduleversie>
@@ -253,7 +253,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.4</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-data.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -264,7 +264,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-geo.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-geo.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -275,8 +275,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-geo.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-geo.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-geo.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-geo.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -287,7 +287,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-gio.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-gio.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -298,7 +298,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-resources.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-resources.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -309,9 +309,9 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.sch</schematron>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekstmutaties.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.sch</schematron>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-tekstmutaties.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -322,8 +322,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -334,9 +334,9 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.sch</schematron>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekstmutaties.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.sch</schematron>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-tekstmutaties.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -347,8 +347,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -364,18 +364,18 @@
         <heeftTransformatie>
           <Transformatie>
             <introductieversie>1.1.0</introductieversie>
-            <locatie>https://standaarden.overheid.nl/stop/1.1.0-rc/vrijetekst_104_naar_110.xslt</locatie>
+            <locatie>https://standaarden.overheid.nl/stop/1.1.0/vrijetekst_104_naar_110.xslt</locatie>
           </Transformatie>
         </heeftTransformatie>
       </Moduleversie>
       <Moduleversie>
         <introductieversie>1.1.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.sch</schematron>
         <heeftTransformatie>
           <Transformatie>
             <introductieversie>1.0.0</introductieversie>
-            <locatie>https://standaarden.overheid.nl/stop/1.1.0-rc/vrijetekst_110_naar_104.xslt</locatie>
+            <locatie>https://standaarden.overheid.nl/stop/1.1.0/vrijetekst_110_naar_104.xslt</locatie>
           </Transformatie>
         </heeftTransformatie>
       </Moduleversie>
@@ -388,8 +388,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -400,8 +400,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -412,8 +412,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.0.4</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -424,9 +424,9 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.1.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekst.sch</schematron>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-tekstmutaties.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.sch</schematron>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-tekstmutaties.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -437,8 +437,8 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.1.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-uitwisseling.xsd</schema>
-        <schematron>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-pakbon.sch</schematron>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-uitwisseling.xsd</schema>
+        <schematron>https://standaarden.overheid.nl/stop/1.1.0/imop-pakbon.sch</schematron>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -449,7 +449,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.1.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-schemata.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-schemata.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>
@@ -460,7 +460,7 @@
     <implementatie>
       <Moduleversie>
         <introductieversie>1.1.0</introductieversie>
-        <schema>https://standaarden.overheid.nl/stop/1.1.0-rc/imop-bedrijfsregels.xsd</schema>
+        <schema>https://standaarden.overheid.nl/stop/1.1.0/imop-bedrijfsregels.xsd</schema>
       </Moduleversie>
     </implementatie>
   </Module>

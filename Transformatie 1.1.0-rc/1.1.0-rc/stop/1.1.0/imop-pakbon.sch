@@ -10,7 +10,7 @@
    <sch:ns prefix="uws"
            uri="https://standaarden.overheid.nl/stop/imop/uitwisseling/"/>
    <sch:ns prefix="xsl" uri="http://www.w3.org/1999/XSL/Transform"/>
-   <sch:p>Versie 1.1.0-rc</sch:p>
+   <sch:p>Versie 1.1.0</sch:p>
    <sch:p>Schematron voor aanvullende validaties van pakbon</sch:p>
    <sch:let name="nst" value="'https://standaarden.overheid.nl/stop/imop/tekst/'"/>
    <sch:let name="nsd" value="'https://standaarden.overheid.nl/stop/imop/data/'"/>

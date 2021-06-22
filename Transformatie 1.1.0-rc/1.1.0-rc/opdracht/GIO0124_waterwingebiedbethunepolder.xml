@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/waterwingebiedbethunepolder</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>WaterwingebiedBetunepolder.gml</bestandsnaam>
-                  <hash>acc43122ff756dc8b14f2d870dee1de11f62d914c1d5cf1eb316951bcc5fdbd8e75de9790d823057fe1a8373257633a5d8a18a6a3d80b68b71b2b69a75f054e9</hash>
+                  <hash>11ad4156244bfd9b279032340295921c442924928cd030a13effe482524ac6b313061ed02d0f17d4fd028fb3479a0963e34a06c2d43de63485187f89ef304e64</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/stillekern</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Stillekern.gml</bestandsnaam>
-                  <hash>2ed70fc576ca851ace418cc306da960141f4137818593ad728c50c98e203e46212df14376bd3740b56032b03d672c61b584bbb1be9aea7e907e2269a4b7accae</hash>
+                  <hash>ac9407ac990acce9d41d3d78ff853f3eea4c5d3c66655f7d6b9963c84a276adfbb8cc000dbb18b6d84ace6648025114d239e36c70b50da8184486f22f70838a1</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

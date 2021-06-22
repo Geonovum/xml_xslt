@@ -11,7 +11,7 @@
    <sch:ns prefix="xsl" uri="http://www.w3.org/1999/XSL/Transform"/>
    <sch:ns prefix="basisgeo" uri="http://www.geostandaarden.nl/basisgeometrie/1.0"/>
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
-   <sch:p>Versie 1.1.0-rc</sch:p>
+   <sch:p>Versie 1.1.0</sch:p>
    <sch:p>Schematron voor aanvullende validatie voor het STOP-deel van de Symbol Encoding (se)
     standaard.</sch:p>
    <sch:pattern id="sch_se_001" see="se:FeatureTypeStyle">

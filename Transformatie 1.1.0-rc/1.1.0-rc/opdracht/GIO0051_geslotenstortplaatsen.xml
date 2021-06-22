@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/geslotenstortplaatsen</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Geslotenstortplaatsen.gml</bestandsnaam>
-                  <hash>2db2e1df27cd8f7cd66ffc45d49b21acafb8984f4d1e7db6557518fc9db6610f679518e7d19a863d118898bd436dadacd435a8d81eaf6c69268df56247da4f78</hash>
+                  <hash>09082e972e981ead1041e2564f1321c3ae42589ec33762eb560058cbd1ae4121bbedc141e363ecf34c8afee6708f05dbde9c8f8f8bd33302b83db19cda04082e</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

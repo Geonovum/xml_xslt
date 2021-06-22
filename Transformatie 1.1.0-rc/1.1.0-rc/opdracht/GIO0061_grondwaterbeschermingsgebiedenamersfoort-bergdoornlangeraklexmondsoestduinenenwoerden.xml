@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/grondwaterbeschermingsgebiedenamersfoort-bergdoornlangeraklexmondsoestduinenenwoerden</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Grondwaterbeschermingsgebiedenoverig.gml</bestandsnaam>
-                  <hash>5038dad2665652abaa90f7462f453bc60d782fb30ef52b65b61b739d5b8208bc51511546e0751c38579e78e7af4f1b5aa389e55afa1017fd6156999dac25d819</hash>
+                  <hash>f139bcaf575370d344b3436298060eb5645894a6b498e2a38069c27969a2db66edf184e7fb5c79e5057255d5316ccc47997b1d7fd7efc9d6488f00608ee314ff</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

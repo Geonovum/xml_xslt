@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/regionalekeringen</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Regionalekeringen.gml</bestandsnaam>
-                  <hash>b0f3fbcaadae7f462f03111a2782e34459ede4cd5e5350db4e553359d2263902b3e95d8461aecca826d60ada14f12f2a2d5b8a73148a15c6e19951d5f6497c3b</hash>
+                  <hash>daa94724bdc6c359fbee707731f911a1b2bbbc7c942f20f4e76e76b2cce8cba491406b378356af80bdfdd699ed6213ee165fb97529cbf91f9bc8f31104299f5b</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

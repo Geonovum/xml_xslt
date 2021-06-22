@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0-rc"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0-rc/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/landschaputrechtseheuvelrug</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>LandschapUtrechtseHeuvelrug.gml</bestandsnaam>
-                  <hash>34d582334852c20ae8270dc3a4d2c227e0432bed3d79b30325a8d7e0674804e8ddc1450d8bb95c58cadfe3005098bd0fc15df90d1fa66e0c0b0291b47dd8a33b</hash>
+                  <hash>f5351c1c0446ae889bae8ff2b4ee519a312daec10dde2ee66d072fda55c8048c3984c8dbe14fcb0c95da18bbec8b6abedc1be5fa00a9cc71c124d9a0c38b3d4c</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
