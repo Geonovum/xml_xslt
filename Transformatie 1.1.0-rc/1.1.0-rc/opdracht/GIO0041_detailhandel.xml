@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.0.4"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/detailhandel</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Detailhandel.gml</bestandsnaam>
-                  <hash>c4f077e29e821fba80008601954b36b30ec94b3bda28424b7dee6cf91b2b9aabc70b24569f0181ef8a63af8d22d8af8e40df549aa7fa82c10942ae7fa2ce5fbd</hash>
+                  <hash>2a15645308780c257b4bfb8af39d4f619034e94fcffb2d1b7e0d73b1655a3e72b00a612be509c23aee916d51ea274811d099bbcfbce2a129a78bf3b61ab392c0</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

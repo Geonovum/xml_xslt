@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.0.4"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/dijktraject1op10</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Dijktraject1op1x.gml</bestandsnaam>
-                  <hash>dce9ddd5b1858da43bb466e2fbcb5ab6b60ff53d21f3b76687a97b616db73ae0a267b7dd1bc8c3f3f079cd86a97be1b94baee00fa1b19114bac261b704acdeed</hash>
+                  <hash>9b398f66a21d16f1247d29228ea20107059f9cde123766e13e208b811cf8aecbc313ec2fede8f4cf1f2fd6399e763734196d6e892088aac76f65071c9ab14c0c</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

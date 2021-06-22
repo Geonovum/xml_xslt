@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.0.4"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/landbouwontwikkelingsgebied</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Landbouwontwikkelingsgebied.gml</bestandsnaam>
-                  <hash>32f981e68981ecc6144996ed81f24c0e17e71ee033a13bdd112db0fbd82e942d74232041555f501219aeefbdaa1f6722f87b22bcb490f35893dbd44fcee42903</hash>
+                  <hash>8b789decdc5482ee02bb67d9cd64a31de20fe1e7f7d6a35a1be39081450ff2457129bdd321ea41d82140d0849b87c6bfade1e10c67f1d953f4d86883847793a9</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

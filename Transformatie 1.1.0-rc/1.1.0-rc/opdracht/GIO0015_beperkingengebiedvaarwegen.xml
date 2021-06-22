@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.0.4"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/beperkingengebiedvaarwegen</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Beperkingengebiedvaarwegen.gml</bestandsnaam>
-                  <hash>e7338d67053be1ee060b3cff5c779c76c4eead2e288e788aa830e7838da1c37aa68a74444c3f8c76ddfbf7fbe29bcfb2174335adee0ac9547c12f7ed31a09461</hash>
+                  <hash>2e63a271d929704c9bd85d027cccdc3efef106ec04a379a8c8fb2fbf63e04338fbd5f6866ec5a90ece4a77961bcc39a4334c11c638f877b24abc2a85c4534e23</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

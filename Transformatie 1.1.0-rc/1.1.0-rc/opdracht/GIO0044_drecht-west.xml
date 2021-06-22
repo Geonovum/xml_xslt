@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.0.4"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/drecht-west</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Drecht-West.gml</bestandsnaam>
-                  <hash>c69c6def3825e48dc0329aa610769ddf56f3b3d2bdbbe4cae7ba58c991a521c0ae0fa513f39592a20e2b5d9b779ff71c8fd3fa96ee97549b5475a23f235440d4</hash>
+                  <hash>212324e6f835878378b2536c6bbe1f17ca845c87634a49bb3d5ba8ddccce404d5ee4c41ce717f61159dd31256d9c7bbb47fb4e127545bcedce625a0ea84783a1</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

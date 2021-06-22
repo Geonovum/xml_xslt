@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.0.4"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/merwedekanaal</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Merwedekanaal.gml</bestandsnaam>
-                  <hash>40e1b7c7d45f06c2e84aee75ceb34baa5c144afcbb3798b7a25cef147d0c28b6184f8051f23878e34d9c8ff89a710df3203ca93bd7dd0d3455b1c44abdf7b374</hash>
+                  <hash>7a669c2ef56a941589cf054d3e3376beaba61aa695a2562b31d8755df6fe9e5c7708013fe1532f8a9ff4b32104422d3167e629ac7939b30413c1958999fdd2fd</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

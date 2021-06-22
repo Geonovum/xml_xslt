@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.0.4"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/kantoren</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Kantoren.gml</bestandsnaam>
-                  <hash>c2e95ba6adfde0c4f6773a49a758f59a7cb3fdf6f13d5b8d29552105f24af9a4fa4ba39d665f7470f4bafbfe833bba32a446bf665572372a888f09b61e82bb6e</hash>
+                  <hash>9be8dfdb39ed78529a4f3e311cb372c634051d97a647ed038fc6ca9151d387b7527d7297a6b4b557fbabf49ac0bd5c1c5cc1c693f3dae1c2aa99450bc82fe054</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

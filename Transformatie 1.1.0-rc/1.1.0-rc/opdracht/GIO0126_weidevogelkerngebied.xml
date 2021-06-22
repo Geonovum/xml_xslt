@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.0.4"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/weidevogelkerngebied</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Weidevogelkerngebieden.gml</bestandsnaam>
-                  <hash>4f304ff78ed2c34fa48ad68c56150bd884f82520d3089a7db5b22697edf496ac4e378468fd70e35ad920f3346cce07befb9aec7d68f99ddcc31826748c767436</hash>
+                  <hash>e48022981c1103a06fc226237d0407835f3de3f374538dedb55073d9faed7dee63661ea57c4ed46f376f81a8daa165033edeb9ee6820328f0f444f96c99fd4aa</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

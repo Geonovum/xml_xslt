@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.0.4"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv26/2020/boringsvrijezone</FRBRWork>
@@ -17,7 +17,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Boringsvrijezone.gml</bestandsnaam>
-                  <hash>4e1b703b52b5a184c4ca12b54ab949e1a3f923fe540217ba1ef910aec2802dbac6ef3c4362df6fb87e9db6d0a2a0d08a76fbff936e239f62fc4628334bdfab03</hash>
+                  <hash>cb316c55185360fee36c39ea81830cb81e91e78b1b5611eb261a1c4080c70133ef84a460cedcfc93486cbf66b87cd5d9e67434e56a5a660b451e6c88dfbe8e3f</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
