@@ -18,7 +18,7 @@
   <!-- stel manifest-bestand samen -->
 
   <xsl:param name="manifest">
-    <xsl:for-each select="tokenize($file.list,';')">
+    <xsl:for-each select="fn:tokenize($file.list,';')">
       <xsl:variable name="fullname" select="."/>
       <xsl:choose>
         <xsl:when test="document($fullname)/AanleveringBesluit" xpath-default-namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
@@ -28,7 +28,7 @@
               <xsl:value-of select="$fullname"/>
             </xsl:element>
             <xsl:element name="name">
-              <xsl:value-of select="tokenize($fullname,'/')[last()]"/>
+              <xsl:value-of select="fn:tokenize($fullname,'/')[last()]"/>
             </xsl:element>
           </xsl:element>
         </xsl:when>
@@ -39,7 +39,7 @@
               <xsl:value-of select="$fullname"/>
             </xsl:element>
             <xsl:element name="name">
-              <xsl:value-of select="tokenize($fullname,'/')[last()]"/>
+              <xsl:value-of select="fn:tokenize($fullname,'/')[last()]"/>
             </xsl:element>
           </xsl:element>
         </xsl:when>
@@ -50,9 +50,8 @@
   <!-- transformeer OP-bestanden -->
 
   <xsl:param name="besluit" select="document($manifest/file[@name='besluit.xml']/fullname)"/>
-  <xsl:param name="ID01" select="($besluit//RegelingMetadata/soortRegeling)[1]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-  <xsl:param name="ID02" select="tokenize(($besluit//RegelingMetadata/(eindverantwoordelijke,maker))[1],'/')[4]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-  <xsl:param name="ID03" select="$waardelijsten[WaardelijstInfo/id='/join/id/stop/soortregeling']/Waarde[id=$ID01]/label" xpath-default-namespace=""/>
+  <xsl:param name="ID01" select="fn:tokenize(($besluit//RegelingMetadata/(eindverantwoordelijke,maker))[1],'/')[5]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+  <xsl:param name="ID02" select="string($besluit//RegelingVersieMetadata/versienummer)" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
 
   <xsl:template match="/">
     <xsl:call-template name="manifest"/>
@@ -72,7 +71,7 @@
   <!-- transformeer besluit -->
 
   <xsl:template name="besluit">
-    <xsl:result-document href="besluit.xml" method="xml">
+    <xsl:result-document href="stap_1.xml" method="xml">
       <xsl:apply-templates select="$besluit/node()"/>
     </xsl:result-document>
   </xsl:template>
@@ -81,48 +80,32 @@
     <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
       <xsl:attribute name="schemaversie" select="string('1.1.0')"/>
       <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd')"/>
+      <!-- geef informatie door aan AKN.xsl -->
+      <xsl:processing-instruction name="akn">
+        <xsl:value-of select="fn:string-join(($ID01,$ID02),'_')"/>
+      </xsl:processing-instruction>
       <xsl:apply-templates select="node()"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="IntRef" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <xsl:variable name="id" select="@ref"/>
-    <xsl:variable name="context" select="./ancestor::element()[fn:index-of($context.list,name()) gt 0][1]"/>
-    <xsl:variable name="node" select="($context//element()[@eId=$id])[1]"/>
-    <xsl:element name="{name()}" namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+  <!-- loop Divisie[Divisietekst[not(Kop)]] na -->
+
+  <xsl:template match="Divisie[Divisietekst[not(Kop)]]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/" priority="1">
+    <xsl:element name="Divisietekst" namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
+      <xsl:copy-of select="@*"/>
+      <xsl:processing-instruction name="akn" select="@eId"/>
+      <xsl:processing-instruction name="akn" select="Divisietekst/@eId" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
+      <xsl:apply-templates select="Kop" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
+      <xsl:apply-templates select="Divisietekst/node()" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="element()[(@eId,@wId)]">
+    <xsl:element name="{name()}" namespace="{namespace-uri()}">
       <xsl:apply-templates select="@*"/>
-      <xsl:choose>
-        <xsl:when test="$node">
-          <xsl:attribute name="scope" select="local-name($node)"/>
-        </xsl:when>
-        <xsl:otherwise>
-          <!-- doe niets; scope is optioneel -->
-        </xsl:otherwise>
-      </xsl:choose>
+      <xsl:processing-instruction name="akn" select="@eId"/>
       <xsl:apply-templates select="node()"/>
     </xsl:element>
-  </xsl:template>
-
-  <xsl:template match="ExtRef" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <xsl:variable name="ref" select="fn:tokenize(@ref,':')"/>
-    <xsl:choose>
-      <xsl:when test="$ref[1]=('mailto')">
-        <xsl:element name="Contact" namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-          <xsl:attribute name="adres" select="$ref[2]"/>
-          <xsl:attribute name="soort" select="string('e-mail')"/>
-          <xsl:apply-templates select="node()"/>
-        </xsl:element>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:copy-of select="."/>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-
-  <!-- wis lege Kop -->
-
-  <xsl:template match="Kop[normalize-space(fn:string-join((Label,Nummer,Opschrift),''))='']" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
-    <!-- doe niets -->
   </xsl:template>
 
   <!-- enkele controles die nu in de validatie zijn opgenomen -->

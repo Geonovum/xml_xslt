@@ -6,6 +6,11 @@
   <!-- doorgegeven parameters -->
 
   <xsl:param name="file.list"/>
+  <xsl:param name="temp.dir"/>
+
+  <!-- haal mapping akn op -->
+
+  <xsl:param name="akn" select="collection(concat($temp.dir,'?select=akn.xml'))//node[@gewijzigd=true()]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
 
   <!-- stel manifest-bestand samen -->
 
@@ -139,6 +144,7 @@
   </xsl:param>
 
   <xsl:template match="/">
+    <xsl:message select="$file.list"/>
     <xsl:element name="manifest">
       <xsl:for-each select="$manifest/file">
         <xsl:copy-of select="."/>
@@ -173,6 +179,19 @@
     <xsl:element name="Aanleveringen" namespace="{namespace-uri()}">
       <xsl:copy-of select="@*|namespace::*"/>
       <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0-rc/bestanden-ow/generiek/manifest-ow.xsd')"/>
+      <xsl:apply-templates select="node()"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="r:Regeltekst|vt:Divisie">
+    <xsl:element name="{name()}" namespace="{namespace-uri()}">
+      <xsl:apply-templates select="@*"/>
+      <xsl:variable name="wId" select="@wId"/>
+      <!-- voor de omzetting van ow-bestanden is alleen Divisie van belang -->
+      <xsl:variable name="node" select="$akn[fn:ends-with($wId,./fn:tokenize(@oud,'\|')[1])]"/>
+      <xsl:if test="$node">
+        <xsl:attribute name="wId" select="replace(@wId,$node/@oud,$node/@eId)"/>
+      </xsl:if>
       <xsl:apply-templates select="node()"/>
     </xsl:element>
   </xsl:template>

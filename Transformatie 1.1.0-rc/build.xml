@@ -51,9 +51,16 @@
   <!-- transformeer OP-bestanden -->
 
   <target name="OP" description="Transformeer OP-bestanden">
-    <xslt in="template.xml" out="${temp.dir}/manifest.xml" style="transformatie_op.xsl" processor="trax" force="true">
+    <!-- stap_1 maakt een nieuwe indeling voor het divisie-divisietekst probleem -->
+    <xslt in="template.xml" out="${temp.dir}/manifest.xml" style="transformatie_op_stap_1.xsl" processor="trax" force="true">
       <param name="file.list" expression="${file.list}"/>
       <param name="base.dir" expression="${base.dir}"/>
+    </xslt>
+    <!-- stap_2 maakt een bestand temp/akn.xml dat een mapping van de oude naar de nieuwe akn's bevat -->
+    <xslt in="${temp.dir}/stap_1.xml" out="${temp.dir}/stap_2.xml" style="transformatie_op_stap_2.xsl" processor="trax" force="true"/>
+    <!-- stap_3 controleert in interne ref's op basis van temp/akn.xml -->
+    <xslt in="${temp.dir}/stap_2.xml" out="${temp.dir}/besluit.xml" style="transformatie_op_stap_3.xsl" processor="trax" force="true">
+      <param name="temp.dir" expression="${temp.dir}"/>
     </xslt>
     <xmltask source="${temp.dir}/manifest.xml">
       <call path="manifest/file[contains(@name,'besluit.xml')]">
@@ -68,8 +75,10 @@
   <!-- transformeer OW-bestanden -->
 
   <target name="OW" description="Transformeer OW-bestanden">
+    <!-- transformatie_ow controleert alle wId's op basis van temp/akn.xml -->
     <xslt in="template.xml" out="${temp.dir}/manifest.xml" style="transformatie_ow.xsl" processor="trax" force="true">
       <param name="file.list" expression="${file.list}"/>
+      <param name="temp.dir" expression="${base.dir}/${temp.dir}"/>
     </xslt>
     <xmltask source="${temp.dir}/manifest.xml">
       <call path="manifest/file">
