@@ -184,15 +184,60 @@
   </xsl:template>
 
   <xsl:template match="r:Regeltekst|vt:Divisie">
+    <xsl:variable name="wId" select="@wId"/>
+    <!-- voor de omzetting van ow-bestanden is alleen Divisie van belang -->
+    <xsl:variable name="node" select="$akn[fn:ends-with($wId,./fn:tokenize(@oud,'\|')[1])]"/>
+    <xsl:choose>
+      <xsl:when test="$node">
+        <xsl:choose>
+          <xsl:when test="contains($node/@eId,'content')">
+            <xsl:element name="vt:Divisietekst">
+              <xsl:attribute name="wId" select="replace(@wId,$node/@oud,$node/@eId)"/>
+              <xsl:apply-templates select="node()"/>
+            </xsl:element>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:element name="{name()}" namespace="{namespace-uri()}">
+              <xsl:attribute name="wId" select="replace(@wId,$node/@oud,$node/@eId)"/>
+              <xsl:apply-templates select="node()"/>
+            </xsl:element>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:element name="{name()}" namespace="{namespace-uri()}">
+          <xsl:apply-templates select="@*|node()"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="sl:objectTypen[sl:objectType='Divisie']">
+    <xsl:element name="sl:objectTypen">
+      <xsl:element name="sl:objectType">
+        <xsl:value-of select="string('Divisie')"/>
+      </xsl:element>
+      <xsl:element name="sl:objectType">
+        <xsl:value-of select="string('Divisietekst')"/>
+      </xsl:element>
+      <xsl:element name="sl:objectType">
+        <xsl:value-of select="string('Tekstdeel')"/>
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="Bestand[objecttype='Divisie']" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">
     <xsl:element name="{name()}" namespace="{namespace-uri()}">
-      <xsl:apply-templates select="@*"/>
-      <xsl:variable name="wId" select="@wId"/>
-      <!-- voor de omzetting van ow-bestanden is alleen Divisie van belang -->
-      <xsl:variable name="node" select="$akn[fn:ends-with($wId,./fn:tokenize(@oud,'\|')[1])]"/>
-      <xsl:if test="$node">
-        <xsl:attribute name="wId" select="replace(@wId,$node/@oud,$node/@eId)"/>
-      </xsl:if>
-      <xsl:apply-templates select="node()"/>
+      <xsl:apply-templates select="naam" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"/>
+      <xsl:element name="objecttype" namespace="{namespace-uri()}">
+        <xsl:value-of select="string('Divisie')"/>
+      </xsl:element>
+      <xsl:element name="objecttype" namespace="{namespace-uri()}">
+        <xsl:value-of select="string('Divisietekst')"/>
+      </xsl:element>
+      <xsl:element name="objecttype" namespace="{namespace-uri()}">
+        <xsl:value-of select="string('Tekstdeel')"/>
+      </xsl:element>
     </xsl:element>
   </xsl:template>
 
