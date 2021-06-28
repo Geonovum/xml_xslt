@@ -29,6 +29,12 @@
             <xsl:value-of select="foo:generateAKNFRBRExpression(.)"/>
         </xsl:attribute>
     </xsl:template>
+    
+    <xsl:template match="lvbb:breekPublicatieAfOpdracht/lvbb:identificatie">
+        <xsl:element name="identificatie" namespace="{namespace-uri()}">
+            <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
+        </xsl:element>
+    </xsl:template>
 
     <xsl:template match="data:BeoogdeRegelgeving/data:BeoogdeRegeling/data:instrumentVersie">
         <xsl:element name="data:instrumentVersie">
