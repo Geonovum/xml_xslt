@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registreerRegelingVersie xmlns="http://www.overheid.nl/2020/lvbb/intern">
+   <idLevering>id-reg-versie-bs-ws0661--20210414</idLevering>
+   <idBevoegdGezag>00000001003214345000</idBevoegdGezag>
+   <idAanleveraar>00000001003214345000</idAanleveraar>
+   <consolidatie>consolidaties.xml</consolidatie>
+</registreerRegelingVersie>

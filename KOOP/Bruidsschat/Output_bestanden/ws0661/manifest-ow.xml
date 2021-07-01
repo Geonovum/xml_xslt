@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Aanleveringen xmlns="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/generiek/manifest-ow.xsd">
+   <domein>omgevingswet</domein>
+   <Aanlevering>
+      <WorkIDRegeling>/akn/nl/act/ws0661/2020/waterschapsverordening</WorkIDRegeling>
+      <DoelID>/join/id/proces/ws0661/2020/Bruidsschat-InstellingInitieleRegelingVersieDoorRijk</DoelID>
+      <Bestand>
+         <naam>ws0661Regeltekst.xml</naam>
+         <objecttype>Regeltekst</objecttype>
+         <objecttype>RegelVoorIedereen</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>ws0661Activiteiten.xml</naam>
+         <objecttype>Activiteit</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>ws0661Regelingsgebied.xml</naam>
+         <objecttype>Regelingsgebied</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>ws0661Locaties.xml</naam>
+         <objecttype>Ambtsgebied</objecttype>
+      </Bestand>
+   </Aanlevering>
+</Aanleveringen>
