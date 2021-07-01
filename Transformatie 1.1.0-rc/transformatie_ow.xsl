@@ -143,8 +143,9 @@
     </xsl:for-each>
   </xsl:param>
 
+  <!-- verwerk ow-bestanden -->
+
   <xsl:template match="/">
-    <xsl:message select="$file.list"/>
     <xsl:element name="manifest">
       <xsl:for-each select="$manifest/file">
         <xsl:copy-of select="."/>
@@ -191,15 +192,60 @@
       <xsl:when test="$node">
         <xsl:choose>
           <xsl:when test="contains($node/@eId,'content')">
+            <xsl:variable name="wId" select="replace(@wId,$node/@oud,$node/@eId)"/>
             <xsl:element name="vt:Divisietekst">
               <xsl:attribute name="wId" select="replace(@wId,$node/@oud,$node/@eId)"/>
-              <xsl:apply-templates select="node()"/>
+              <xsl:apply-templates select="node()">
+                <xsl:with-param name="wId" select="$wId"/>
+              </xsl:apply-templates>
             </xsl:element>
           </xsl:when>
           <xsl:otherwise>
             <xsl:element name="{name()}" namespace="{namespace-uri()}">
               <xsl:attribute name="wId" select="replace(@wId,$node/@oud,$node/@eId)"/>
               <xsl:apply-templates select="node()"/>
+            </xsl:element>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:element name="{name()}" namespace="{namespace-uri()}">
+          <xsl:apply-templates select="@*|node()"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="vt:identificatie">
+    <xsl:param name="wId"/>
+    <xsl:element name="{name()}" namespace="{namespace-uri()}">
+      <xsl:apply-templates select="@*"/>
+      <xsl:choose>
+        <xsl:when test="contains($wId,'content')">
+          <xsl:value-of select="replace(.,'divisie','divisietekst')"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="."/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="vt:DivisieRef">
+    <xsl:variable name="id" select="@xlink:href"/>
+    <xsl:variable name="wId" select="ancestor::sl:standBestand//vt:Divisie[vt:identificatie=$id]/@wId"/>
+    <xsl:variable name="node" select="$akn[fn:ends-with($wId,./fn:tokenize(@oud,'\|')[1])]"/>
+    <xsl:choose>
+      <xsl:when test="$node">
+        <xsl:choose>
+          <xsl:when test="contains($node/@eId,'content')">
+            <xsl:element name="vt:DivisietekstRef">
+              <xsl:attribute name="xlink:href" select="replace($id,'divisie','divisietekst')"/>
+            </xsl:element>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:element name="{name()}" namespace="{namespace-uri()}">
+              <xsl:apply-templates select="@*|node()"/>
             </xsl:element>
           </xsl:otherwise>
         </xsl:choose>
