@@ -108,7 +108,7 @@
 
   <xsl:template match="/">
     <xsl:result-document href="akn.xml" method="xml">
-      <map>
+      <map wId_bg="{$wId_bg}" wId_versie="{$wId_versie}">
         <xsl:for-each select="$unique_eId//node[@oud]">
           <xsl:variable name="oud" select="@oud"/>
           <xsl:variable name="eId" select="fn:string-join((.|ancestor::node[not(descendant-or-self::node[@eId eq 'body'])])/@eId,'__')"/>
