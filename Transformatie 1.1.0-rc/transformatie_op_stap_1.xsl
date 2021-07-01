@@ -88,9 +88,9 @@
     </xsl:element>
   </xsl:template>
 
-  <!-- loop Divisie[Divisietekst[not(Kop)]] na -->
+  <!-- loop Divisie[Divisietekst[not(Kop)]][count(child::element()) eq 1] na -->
 
-  <xsl:template match="Divisie[Divisietekst[not(Kop)]]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/" priority="1">
+  <xsl:template match="Divisie[Divisietekst[not(Kop)]][count(child::element()) eq 1]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/" priority="1">
     <xsl:element name="Divisietekst" namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
       <xsl:copy-of select="@*"/>
       <xsl:processing-instruction name="akn" select="@eId"/>
