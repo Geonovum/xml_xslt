@@ -78,6 +78,7 @@
     <!-- transformatie_ow controleert alle wId's op basis van temp/akn.xml -->
     <xslt in="template.xml" out="${temp.dir}/manifest.xml" style="transformatie_ow.xsl" processor="trax" force="true">
       <param name="file.list" expression="${file.list}"/>
+      <param name="base.dir" expression="${base.dir}"/>
       <param name="temp.dir" expression="${base.dir}/${temp.dir}"/>
     </xslt>
     <xmltask source="${temp.dir}/manifest.xml">

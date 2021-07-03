@@ -5,13 +5,15 @@
 
   <!-- doorgegeven parameters -->
 
-  <xsl:param name="file.list" select="string('file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_001.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_002.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_003.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_004.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_005.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_006.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_007.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_008.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_009.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_010.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_011.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_012.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_013.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_014.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_015.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_016.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_017.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_018.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_019.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_020.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_021.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_022.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_023.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_024.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_025.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_026.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_027.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_028.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_029.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_030.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_031.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_032.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_033.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_034.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_035.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_036.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_037.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_038.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_039.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_040.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_041.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_042.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_043.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_044.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_045.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_046.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_047.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_048.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_049.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_050.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_051.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_052.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_053.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_054.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_055.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_056.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_057.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_058.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_059.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_060.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_061.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_062.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_063.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_064.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_065.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_066.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_067.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_068.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_069.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_070.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_071.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_072.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_073.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_074.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_075.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_076.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_077.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_078.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_079.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_080.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_081.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_082.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_083.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO_084.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/OVIPU002.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/manifest-ow.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/manifest.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/opdracht.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/owDivisie.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/owGebiedsaanwijzing.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/owHoofdlijn.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/owKaart.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/owLocatie.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/owRegelingsgebied.xml')"/>
-  <xsl:param name="temp.dir" select="string('file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/temp')"/>
+  <xsl:param name="file.list"/>
+  <xsl:param name="base.dir"/>
+  <xsl:param name="temp.dir"/>
 
   <!-- haal mapping akn op -->
 
   <xsl:param name="wId_bg" select="collection(concat($temp.dir,'?select=akn.xml'))/map/@wId_bg" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
   <xsl:param name="wId_versie" select="collection(concat($temp.dir,'?select=akn.xml'))/map/@wId_versie" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
+  <xsl:param name="wId_oin" select="collection(concat($base.dir,'?select=OIN.xml'))//item[fn:ends-with(BG,$wId_bg)]"/>
   <xsl:param name="akn" select="collection(concat($temp.dir,'?select=akn.xml'))//node[@gewijzigd=true()]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/"/>
 
   <!-- stel manifest-bestand samen -->
@@ -186,6 +188,8 @@
     </xsl:element>
   </xsl:template>
 
+  <!-- aanpassing divisie-divisietekst -->
+
   <xsl:template match="r:Regeltekst|vt:Divisie">
     <xsl:variable name="wId" select="@wId"/>
     <!-- voor de omzetting van ow-bestanden is alleen Divisie van belang -->
@@ -286,6 +290,89 @@
       <xsl:element name="objecttype" namespace="{namespace-uri()}">
         <xsl:value-of select="string('Tekstdeel')"/>
       </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
+  <!-- aanpassing ambtsgebied -->
+
+  <xsl:template match="sl:standBestand[descendant::sl:objectType='Gebied']">
+    <xsl:choose>
+      <xsl:when test="descendant::l:Ambtsgebied">
+        <xsl:element name="{name()}" namespace="{namespace-uri()}">
+          <xsl:apply-templates select="node()"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:element name="{name()}" namespace="{namespace-uri()}">
+          <xsl:apply-templates select="sl:dataset"/>
+          <xsl:apply-templates select="sl:inhoud"/>
+          <xsl:element name="sl:stand">
+            <xsl:element name="ow-dc:owObject">
+              <xsl:element name="l:Ambtsgebied">
+                <xsl:element name="l:identificatie">
+                  <xsl:value-of select="concat('nl.imow-',$wId_bg,'.ambtsgebied.',$wId_oin/OIN)"/>
+                </xsl:element>
+                <xsl:element name="l:noemer">
+                  <xsl:value-of select="$wId_oin/naam"/>
+                </xsl:element>
+                <xsl:element name="l:bestuurlijkeGrenzenVerwijzing">
+                  <xsl:element name="l:BestuurlijkeGrenzenVerwijzing">
+                    <xsl:element name="l:bestuurlijkeGrenzenID">
+                      <xsl:value-of select="upper-case($wId_bg)"/>
+                    </xsl:element>
+                    <xsl:element name="l:domein">
+                      <xsl:value-of select="string('NL.BI.BestuurlijkGebied')"/>
+                    </xsl:element>
+                    <xsl:element name="l:geldigOp">
+                      <xsl:value-of select="string('2021-01-01')"/>
+                    </xsl:element>
+                  </xsl:element>
+                </xsl:element>
+              </xsl:element>
+            </xsl:element>
+          </xsl:element>
+          <xsl:apply-templates select="sl:stand"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="l:Ambtsgebied">
+    <xsl:element name="l:Ambtsgebied">
+      <xsl:element name="l:identificatie">
+        <xsl:value-of select="concat('nl.imow-',$wId_bg,'.ambtsgebied.',$wId_oin/OIN)"/>
+      </xsl:element>
+      <xsl:element name="l:noemer">
+        <xsl:value-of select="$wId_oin/naam"/>
+      </xsl:element>
+      <xsl:element name="l:bestuurlijkeGrenzenVerwijzing">
+        <xsl:element name="l:BestuurlijkeGrenzenVerwijzing">
+          <xsl:element name="l:bestuurlijkeGrenzenID">
+            <xsl:value-of select="upper-case($wId_bg)"/>
+          </xsl:element>
+          <xsl:element name="l:domein">
+            <xsl:value-of select="string('NL.BI.BestuurlijkGebied')"/>
+          </xsl:element>
+          <xsl:element name="l:geldigOp">
+            <xsl:value-of select="string('2021-01-01')"/>
+          </xsl:element>
+        </xsl:element>
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="sl:objectTypen[sl:objectType='Gebied']">
+    <xsl:element name="sl:objectTypen">
+      <xsl:element name="sl:objectType">
+        <xsl:value-of select="string('Ambtsgebied')"/>
+      </xsl:element>
+      <xsl:apply-templates select="sl:objectType[.=('Gebied','Gebiedengroep')]"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="l:AmbtsgebiedRef">
+    <xsl:element name="l:LocatieRef">
+      <xsl:attribute name="xlink:href" select="concat('nl.imow-',$wId_bg,'.ambtsgebied.',$wId_oin/OIN)"/>
     </xsl:element>
   </xsl:template>
 
