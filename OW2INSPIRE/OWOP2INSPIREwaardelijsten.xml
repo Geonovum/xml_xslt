@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This list is populated with the categories of the Hierarchical Supplementary Regulation
+Code List (HSRCL)
+http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue
+o.a. juridische regel thema:   
+<waardelijst>
+      <label>thema</label>
+      <titel>Thema</titel>
+      <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema</uri>
+
+ga:Gebiedsaanwijzing type:
+   <waardelijst>
+      <label>type gebiedsaanwijzing</label>
+      <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/TypeGebiedsaanwijzing</uri>
+      
+ga:Gebiedsaanwijzing groep:
+in waardelijst TypeGebiedsaanwijzing komt voor xxxxx
+      ...
+<uri>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/xxxxx</uri>
+          dan zoeken:
+      <waardelijst>
+      <label>xxxxxgroep</label>
+
+Omgevingsnorm type:
+   <waardelijst>
+      <label>type norm</label>
+      <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/TypeNorm</uri>
+      
+Omgevingsnorm groep:
+<waardelijst>
+      <label>omgevingsnormgroep</label>
+            <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingsnormgroep</uri>
+
+
+Omgevingsnorm eenheid:
+   <waardelijst>
+      <label>eenheid</label>
+      <titel>Eenheid</titel>
+      <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Eenheid</uri>
+      <type>uitbreidbaar</type>
+
+Omgevingswaarde type:
+   <waardelijst>
+      <label>type norm</label>
+            <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/TypeNorm</uri>
+
+Omgevingswaarde groep:
+<waardelijst>
+      <label>omgevingsnormgroep</label>
+            <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingsnormgroep</uri>
+
+Omgevingswaarde eenheid:
+   <waardelijst>
+      <label>eenheid</label>
+      <titel>Eenheid</titel>
+      <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Eenheid</uri>
+      <type>uitbreidbaar</type>
+
+
+r:activiteitaanduiding groep:
+    <waardelijst>
+      <label>activiteitengroep</label>
+      <titel>Activiteitengroep</titel>
+      <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitengroep</uri>
+
+activiteitregelkwalificatie
+    <waardelijst>
+      <label>activiteitregelkwalificatie</label>
+      <titel>Activiteitregelkwalificatie</titel>
+      <uri>http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitregelkwalificatie</uri>
+
+
+
+-->
+<OWOP2INSPIRE>
+<begrip>
+	<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Beperkingengebied</owop>
+	<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</Inspire>
+</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Bodem</owop>
+		<Inspire>UNKNOWN</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Defensie</owop>
+		<Inspire>UNKNOWN</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Energievoorziening</owop>
+		<Inspire>UNKNOWN</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Erfgoed</owop>
+		<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/ExterneVeiligheid</owop>
+		<Inspire>UNKNOWN</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</owop>
+		<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Geluid</owop>
+		<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_NoiseManagementZone</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Geur</owop>
+		<Inspire>UNKNOWN</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Landschap</owop>
+		<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Leiding</owop>
+		<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasemen</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Lucht</owop>
+		<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_1_AirQualityManagementZone</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Mijnbouw</owop>
+		<Inspire>mining</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Natuur</owop>
+		<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_NatureProtection</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Recreatie</owop>
+		<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/RuimtelijkGebruik</owop>
+		<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Verkeer</owop>
+		<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</Inspire>
+	</begrip>
+	<begrip>
+		<owop>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/WaterEnWatersysteem</owop>
+		<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</Inspire>
+	</begrip>
+	<begrip> <!--zelf gemaakt-->
+		<owop>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod</owop>
+		<Inspire>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_1_prohibited</Inspire>
+	</begrip>
+</OWOP2INSPIRE>
