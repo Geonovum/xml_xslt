@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
-                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
-                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
-                 xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied"
-                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
-                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+   xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+   xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+   xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+   xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+   xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+   xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+   xmlns:r="http://www.geostandaarden.nl/imow/regels"
+   xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+   xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied"
+   xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
    <sl:standBestand>
-      <sl:dataset>Gemeentestad</sl:dataset>
+      <sl:dataset>Arnhem van swaglord 2k21</sl:dataset>
       <sl:inhoud>
-         <sl:gebied>Gemeentestad</sl:gebied>
-         <sl:leveringsId>abc-20190221-0801</sl:leveringsId>
+         <sl:gebied>Arnhem</sl:gebied>
+         <sl:leveringsId></sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Regelingsgebied</sl:objectType>
          </sl:objectTypen>
       </sl:inhoud>
       <sl:stand>
-         <ow-dc:owObject><!--Met het Regelingsgebied geef je het gebied aan waar de regeling van toepassing is (in dit geval Omgevingsplan Zaltbommel)-->
+         <ow-dc:owObject>
             <rg:Regelingsgebied>
-               <rg:identificatie>nl.imow-gm0297.regelingsgebied.2019000001</rg:identificatie>
+               <rg:identificatie>nl.imow-gm0202.regelingsgebied.ArnhemsOmgevingsplan</rg:identificatie>
                <rg:locatieaanduiding>
-                  <l:AmbtsgebiedRef domein="NL.BI.BestuurlijkGebied" xlink:href="GM0297"/>
+                  <l:LocatieRef xlink:href="GM0202"/>
                </rg:locatieaanduiding>
             </rg:Regelingsgebied>
          </ow-dc:owObject>
