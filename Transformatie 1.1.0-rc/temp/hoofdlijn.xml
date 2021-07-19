@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>/akn/nl/act/mnre1034/2021/NOVI001</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Nederland</sl:gebied>
+         <sl:leveringsId>NOVI001-003</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Hoofdlijn</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210003</vt:identificatie>
+               <vt:soort>01 Toekomstperspectief</vt:soort>
+               <vt:naam>01 Een klimaatbestendige delta</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210004</vt:identificatie>
+               <vt:soort>01 Toekomstperspectief</vt:soort>
+               <vt:naam>02 Duurzaam, concurrerend en circulair</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210005</vt:identificatie>
+               <vt:soort>01 Toekomstperspectief</vt:soort>
+               <vt:naam>03 Kwaliteit van leven in stedelijke en landelijke regio's</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210006</vt:identificatie>
+               <vt:soort>01 Toekomstperspectief</vt:soort>
+               <vt:naam>04 Nabijheid en betrouwbare verbindingen</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210008</vt:identificatie>
+               <vt:soort>01 Toekomstperspectief</vt:soort>
+               <vt:naam>05 Veilig en gezond, herkenbaar en natuurlijk</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210019</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>01 Bevorderen van een duurzame ontwikkeling van Nederland als geheel en van alle onderdelen van de fysieke leefomgeving</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210020</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>02 Realiseren van een goede leefomgevingskwaliteit</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210021</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>03 Waarborgen en versterken van grensoverschrijdende en internationale relaties</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210022</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>04 Waarborgen en bevorderen van een gezonde en veilige fysieke leefomgeving</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210023</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>05 Zorg dragen voor een woningvoorraad die aansluit op de woonbehoeften</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210024</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>06 Waarborgen en realiseren van een veilig, robuust en duurzaam mobiliteitssysteem </vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210026</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>07 In stand houden en ontwikkelen van hoofdinfrastructuur voor mobiliteit</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210028</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>08 Waarborgen van een goede toegankelijkheid van de leefomgeving</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210029</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>09 Zorg dragen voor nationale veiligheid en ruimte bieden voor militaire activiteiten </vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210030</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>10 Beperken van klimaatverandering</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210031</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>11 Realiseren van een betrouwbare, betaalbare en veilige energievoorziening, die in 2050 CO2-arm is, en de daarvoor benodigde hoofdinfrastructuur</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210033</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>12 Waarborgen van de hoofdinfrastructuur voor transport van stoffen via (buis)leidingen</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210035</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>13 Realiseren van een toekomstbestendige, circulaire economie</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210036</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>14 Waarborgen van de waterveiligheid en de klimaatbestendigheid</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210038</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>15 Waarborgen van een goede waterkwaliteit, duurzame drinkwatervoorziening en voldoende beschikbaarheid van zoetwater</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210040</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>16 Waarborgen en versterken van een aantrekkelijk ruimtelijk-economisch vestigingsklimaat</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210041</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>17 Realiseren en behouden van een kwalitatief hoogwaardige digitale connectiviteit</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210042</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>18 Ontwikkelen van een duurzame voedsel- en agroproductie</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210043</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>19 Behouden en versterken van cultureel erfgoed en landschappelijke en natuurlijke kwaliteiten van (inter)nationaal belang</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210046</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>20 Verbeteren en beschermen van natuur en biodiversiteit</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210047</vt:identificatie>
+               <vt:soort>02 Nationale belangen en opgaven</vt:soort>
+               <vt:naam>21 Ontwikkelen van een duurzame visserij</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210048</vt:identificatie>
+               <vt:soort>03 Prioriteit</vt:soort>
+               <vt:naam>1. Ruimte maken voor klimaatadaptatie en energietransitie</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210049</vt:identificatie>
+               <vt:soort>03 Prioriteit</vt:soort>
+               <vt:naam>2. Duurzaam economisch groeipotentieel</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210050</vt:identificatie>
+               <vt:soort>03 Prioriteit</vt:soort>
+               <vt:naam>3. Sterke en gezonde steden en regio’s</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210051</vt:identificatie>
+               <vt:soort>03 Prioriteit</vt:soort>
+               <vt:naam>4. Toekomstbestendige ontwikkeling van het landelijk gebied</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210052</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>1.1. Klimaatbestendig en waterrobuust in 2050</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210054</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>1.2. Maximaal inzetten op wind op zee</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210056</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>1.3. Aanpassen energie-infrastructuur en ruimtereservering</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210059</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>1.4. Inpassing van duurzame energie</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210062</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>2.1. Circulaire economie en reductie van broeikasgasemissies</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210063</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>2.2. Inzetten op duurzame energiebronnen en veranderde productieprocessen</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210064</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>2.3. Inzetten op optimale (inter)nationale bereikbaarheid</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210066</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>2.4. Investeren in leefomgeving en vestigingsklimaat</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210067</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>2.5. Oplossen van grensoverschrijdende belemmeringen</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210069</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>2.6. Inzetten op uitrol van nieuwe netwerken en selectieve groei van datacenters</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210070</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>2.7. Randvoorwaarden voor locaties van nieuwe kantoren en bedrijventerreinen</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210071</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>2.8. Randvoorwaarden voor nieuwe vestiging van toeristische attracties</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210072</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>3.1. Versterken van het Stedelijk Netwerk Nederland</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210073</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>3.2. Duurzame ontwikkeling van steden door integrale aanpak</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210074</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>3.3. Geconcentreerde verstedelijking</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210075</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>3.4. Inzetten op integratie van ontwikkeling en beheer voor bestaande bebouwing</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210076</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>3.5. Bevorderen van leefstijl en participatie door inrichting van de leefomgeving</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210077</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>3.6. Versterken van groen in de stad</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210078</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>3.7. Klimaatbestendige inrichting van steden en regio’s</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210079</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>3.8. Goede bereikbaarheid door mobiliteitssysteem</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210080</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>3.9. Integrale gebiedsgerichte ontwikkelstrategie voor gebieden buiten het Stedelijk Netwerk Nederland</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210081</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>4.1. Realiseren van een betere balans tussen gebruiksfuncties en bodem- en watersystemen</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210082</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>4.2. Beschermen en versterken natuur en biodiversiteit</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210084</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>4.3. Inzetten op natuurinclusieve en kringlooplandbouw</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210085</vt:identificatie>
+               <vt:soort>05 Beleidskeuze</vt:soort>
+               <vt:naam>4.4. Beschermen en versterken van landschapBeschermen en versterken van landschap</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210086</vt:identificatie>
+               <vt:soort>04 Afwegingsprincipe</vt:soort>
+               <vt:naam>Afwegingsprincipe 1: Combinaties van functies gaan voor enkelvoudige functies</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210087</vt:identificatie>
+               <vt:soort>04 Afwegingsprincipe</vt:soort>
+               <vt:naam>Afwegingsprincipe 2: Kenmerken en identiteit van een gebied staan centraal</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <vt:Hoofdlijn>
+               <vt:identificatie>nl.imow-mnre1034.hoofdlijn.20210088</vt:identificatie>
+               <vt:soort>04 Afwegingsprincipe</vt:soort>
+               <vt:naam>Afwegingsprincipe 3: Afwentelen wordt voorkomen</vt:naam>
+            </vt:Hoofdlijn>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

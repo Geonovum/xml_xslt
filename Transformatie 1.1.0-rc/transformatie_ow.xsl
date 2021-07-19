@@ -5,9 +5,9 @@
 
   <!-- doorgegeven parameters -->
 
-  <xsl:param name="file.list"/>
-  <xsl:param name="base.dir"/>
-  <xsl:param name="temp.dir"/>
+  <xsl:param name="file.list" select="string('file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/GIO001.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/NOVI001.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/manifest-ow.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/manifest.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/opdracht.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/owDivisie.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/owHoofdlijn.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/owLocatie.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/1.0.4/opdracht/owRegelingsgebied.xml')"/>
+  <xsl:param name="base.dir" select="string('file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc')"/>
+  <xsl:param name="temp.dir" select="string('file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0-rc/temp')"/>
 
   <!-- haal mapping akn op -->
 
@@ -21,6 +21,20 @@
   <xsl:param name="manifest">
     <xsl:for-each select="tokenize($file.list,';')">
       <xsl:variable name="fullname" select="."/>
+      <xsl:choose>
+        <xsl:when test="document($fullname)//l:AmbtsgebiedRef" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
+          <xsl:element name="ambtsgebied">
+            <xsl:attribute name="type" select="string('verwijzing')"/>
+            <xsl:copy-of select="document($fullname)//l:AmbtsgebiedRef/@xlink:href" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand"/>
+          </xsl:element>
+        </xsl:when>
+        <xsl:when test="document($fullname)//l:Ambtsgebied" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
+          <xsl:element name="ambtsgebied">
+            <xsl:attribute name="type" select="string('object')"/>
+            <xsl:copy-of select="document($fullname)//l:Ambtsgebied/node()" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand" exclude-result-prefixes="#all"/>
+          </xsl:element>
+        </xsl:when>
+      </xsl:choose>
       <xsl:choose>
         <xsl:when test="document($fullname)//r:Regeltekst" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="file">
@@ -297,76 +311,112 @@
 
   <xsl:template match="sl:standBestand[descendant::sl:objectType='Gebied']">
     <xsl:choose>
-      <xsl:when test="descendant::l:Ambtsgebied">
-        <xsl:element name="{name()}" namespace="{namespace-uri()}">
-          <xsl:apply-templates select="node()"/>
-        </xsl:element>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:element name="{name()}" namespace="{namespace-uri()}">
-          <xsl:apply-templates select="sl:dataset"/>
-          <xsl:apply-templates select="sl:inhoud"/>
-          <xsl:element name="sl:stand">
-            <xsl:element name="ow-dc:owObject">
-              <xsl:element name="l:Ambtsgebied">
-                <xsl:element name="l:identificatie">
-                  <xsl:value-of select="concat('nl.imow-',$wId_bg,'.ambtsgebied.',$wId_oin/OIN)"/>
-                </xsl:element>
-                <xsl:element name="l:noemer">
-                  <xsl:value-of select="$wId_oin/naam"/>
-                </xsl:element>
-                <xsl:element name="l:bestuurlijkeGrenzenVerwijzing">
-                  <xsl:element name="l:BestuurlijkeGrenzenVerwijzing">
-                    <xsl:element name="l:bestuurlijkeGrenzenID">
-                      <xsl:value-of select="upper-case($wId_bg)"/>
-                    </xsl:element>
-                    <xsl:element name="l:domein">
-                      <xsl:value-of select="string('NL.BI.BestuurlijkGebied')"/>
-                    </xsl:element>
-                    <xsl:element name="l:geldigOp">
-                      <xsl:value-of select="string('2021-01-01')"/>
-                    </xsl:element>
-                  </xsl:element>
+      <xsl:when test="$manifest/ambtsgebied[@type='verwijzing']">
+        <xsl:choose>
+          <xsl:when test="$manifest/ambtsgebied[@type='object']">
+            <!-- als het ambtsgebied bestaat, deze opnemen -->
+            <xsl:element name="{name()}" namespace="{namespace-uri()}">
+              <xsl:apply-templates select="node()"/>
+            </xsl:element>
+          </xsl:when>
+          <xsl:otherwise>
+            <!-- als het ambtsgebied niet bestaat, deze samenstellen -->
+            <xsl:element name="{name()}" namespace="{namespace-uri()}">
+              <xsl:apply-templates select="node()"/>
+              <xsl:element name="sl:stand">
+                <xsl:element name="ow-dc:owObject">
+                  <xsl:call-template name="l:Ambtsgebied"/>
                 </xsl:element>
               </xsl:element>
             </xsl:element>
-          </xsl:element>
-          <xsl:apply-templates select="sl:stand"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+        <!-- als er niet naar verwezen wordt, dan niet opnemen -->
+        <xsl:element name="{name()}" namespace="{namespace-uri()}">
+          <xsl:apply-templates select="node() except sl:stand[descendant::l:Ambtsgebied]"/>
         </xsl:element>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
 
   <xsl:template match="l:Ambtsgebied">
+    <xsl:call-template name="l:Ambtsgebied"/>
+  </xsl:template>
+
+  <xsl:template name="l:Ambtsgebied">
     <xsl:element name="l:Ambtsgebied">
-      <xsl:element name="l:identificatie">
-        <xsl:value-of select="concat('nl.imow-',$wId_bg,'.ambtsgebied.',$wId_oin/OIN)"/>
-      </xsl:element>
-      <xsl:element name="l:noemer">
-        <xsl:value-of select="$wId_oin/naam"/>
-      </xsl:element>
-      <xsl:element name="l:bestuurlijkeGrenzenVerwijzing">
-        <xsl:element name="l:BestuurlijkeGrenzenVerwijzing">
-          <xsl:element name="l:bestuurlijkeGrenzenID">
-            <xsl:value-of select="upper-case($wId_bg)"/>
+      <xsl:choose>
+        <xsl:when test="fn:starts-with($wId_bg,'mnre')">
+          <!-- ministeries krijgen allemaal ambstgebied 'landsgrens + territoriale wateren + EEZ' -->
+          <xsl:element name="l:identificatie">
+            <xsl:value-of select="concat('nl.imow-',$wId_bg,'.ambtsgebied.',$wId_oin/OIN)"/>
           </xsl:element>
-          <xsl:element name="l:domein">
-            <xsl:value-of select="string('NL.BI.BestuurlijkGebied')"/>
+          <xsl:element name="l:noemer">
+            <xsl:value-of select="string('landsgrens + territoriale wateren + EEZ')"/>
           </xsl:element>
-          <xsl:element name="l:geldigOp">
-            <xsl:value-of select="string('2021-01-01')"/>
+          <xsl:element name="l:bestuurlijkeGrenzenVerwijzing">
+            <xsl:element name="l:BestuurlijkeGrenzenVerwijzing">
+              <xsl:element name="l:bestuurlijkeGrenzenID">
+                <xsl:value-of select="string('LND6030.B')"/>
+              </xsl:element>
+              <xsl:element name="l:domein">
+                <xsl:value-of select="string('NL.BI.BestuurlijkGebied')"/>
+              </xsl:element>
+              <xsl:element name="l:geldigOp">
+                <xsl:value-of select="string('2021-01-01')"/>
+              </xsl:element>
+            </xsl:element>
           </xsl:element>
-        </xsl:element>
-      </xsl:element>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:element name="l:identificatie">
+            <xsl:value-of select="concat('nl.imow-',$wId_bg,'.ambtsgebied.',$wId_oin/OIN)"/>
+          </xsl:element>
+          <xsl:element name="l:noemer">
+            <xsl:value-of select="$wId_oin/naam"/>
+          </xsl:element>
+          <xsl:element name="l:bestuurlijkeGrenzenVerwijzing">
+            <xsl:element name="l:BestuurlijkeGrenzenVerwijzing">
+              <xsl:element name="l:bestuurlijkeGrenzenID">
+                <xsl:value-of select="upper-case($wId_bg)"/>
+              </xsl:element>
+              <xsl:element name="l:domein">
+                <xsl:value-of select="string('NL.BI.BestuurlijkGebied')"/>
+              </xsl:element>
+              <xsl:element name="l:geldigOp">
+                <xsl:value-of select="string('2021-01-01')"/>
+              </xsl:element>
+            </xsl:element>
+          </xsl:element>
+        </xsl:otherwise>
+      </xsl:choose>
     </xsl:element>
   </xsl:template>
 
   <xsl:template match="sl:objectTypen[sl:objectType='Gebied']">
     <xsl:element name="sl:objectTypen">
-      <xsl:element name="sl:objectType">
-        <xsl:value-of select="string('Ambtsgebied')"/>
-      </xsl:element>
+      <!-- ambtsgebied alleen toevoegen als er naar verwezen wordt -->
+      <xsl:if test="$manifest/ambtsgebied[@type='verwijzing']">
+        <xsl:element name="sl:objectType">
+          <xsl:value-of select="string('Ambtsgebied')"/>
+        </xsl:element>
+      </xsl:if>
       <xsl:apply-templates select="sl:objectType[.=('Gebied','Gebiedengroep')]"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="Bestand[objecttype='Gebied']" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">
+    <xsl:element name="{name()}" namespace="{namespace-uri()}">
+      <xsl:apply-templates select="naam" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"/>
+      <!-- ambtsgebied alleen toevoegen als er naar verwezen wordt -->
+      <xsl:if test="$manifest/ambtsgebied[@type='verwijzing']" xpath-default-namespace="">
+        <xsl:element name="objecttype" namespace="{namespace-uri()}">
+          <xsl:value-of select="string('Ambtsgebied')"/>
+        </xsl:element>
+      </xsl:if>
+      <xsl:apply-templates select="objecttype[.=('Gebied','Gebiedengroep')]"/>
     </xsl:element>
   </xsl:template>
 
