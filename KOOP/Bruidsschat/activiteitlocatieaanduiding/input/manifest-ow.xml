@@ -4,24 +4,25 @@
                xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/generiek/manifest-ow.xsd">
    <domein>omgevingswet</domein>
    <Aanlevering>
-      <WorkIDRegeling>/akn/nl/act/gm0762/2020/omgevingsplan</WorkIDRegeling>
-      <DoelID>/join/id/proces/gm0762/2020/Bruidsschat-InstellingInitieleRegelingVersieDoorRijk</DoelID>
+      <WorkIDRegeling>/akn/nl/act/gm0010/2021/omgevingsplandelfzijl</WorkIDRegeling>
+      <DoelID>/join/id/proces/gm0010/2021/omgevingsplandelfzijl_geonovum</DoelID>
       <Bestand>
-         <naam>gm0762Regeltekst.xml</naam>
+         <naam>gm0010Regeltekst_Geonovum.xml</naam>
          <objecttype>Regeltekst</objecttype>
          <objecttype>RegelVoorIedereen</objecttype>
       </Bestand>
       <Bestand>
-         <naam>gm0762Activiteiten.xml</naam>
+         <naam>gm0010Activiteiten_Geonovum.xml</naam>
          <objecttype>Activiteit</objecttype>
       </Bestand>
       <Bestand>
-         <naam>gm0762Regelingsgebied.xml</naam>
+         <naam>gm0010Regelingsgebied_Geonovum.xml</naam>
          <objecttype>Regelingsgebied</objecttype>
       </Bestand>
       <Bestand>
-         <naam>gm0762Locaties.xml</naam>
-         <objecttype>Ambtsgebied</objecttype>
+         <naam>gm0010Locaties_Geonovum.xml</naam>
+         <objecttype>Gebied</objecttype>
+         <objecttype>Gebiedengroep</objecttype>
       </Bestand>
    </Aanlevering>
 </Aanleveringen>
