@@ -1,27 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
-                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
                  xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
-                 xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
                  xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
    <sl:standBestand>
-      <sl:dataset>provincie Utrecht</sl:dataset>
+      <sl:dataset>/akn/nl/act/mnre1034/2021/NOVI001</sl:dataset>
       <sl:inhoud>
-         <sl:gebied>provincie Utrecht</sl:gebied>
-         <sl:leveringsId>OVPU001</sl:leveringsId>
+         <sl:gebied>Nederland</sl:gebied>
+         <sl:leveringsId>NOVI001-003</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Regelingsgebied</sl:objectType>
          </sl:objectTypen>
       </sl:inhoud>
       <sl:stand>
-         <ow-dc:owObject><!--Met het Regelingsgebied geef je het gebied aan waar de regeling van toepassing is (in dit geval Omgevingsverordening Utrecht)-->
+         <ow-dc:owObject>
             <rg:Regelingsgebied>
-               <rg:identificatie>nl.imow-pv26.regelingsgebied.2020000001</rg:identificatie>
+               <rg:identificatie>nl.imow-mnre1034.regelingsgebied.20210001</rg:identificatie>
                <rg:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-pv26.gebied.plangebied"/>
+                  <l:LocatieRef xlink:href="nl.imow-mnre1034.gebied.20210001"/>
                </rg:locatieaanduiding>
             </rg:Regelingsgebied>
          </ow-dc:owObject>

@@ -1,3 +1,6 @@
 # xml_xslt
 
-In deze repo komen de xslt-scripts in beschrijvende directory structuur, om een begin te maken, en een centraal punt om te zoeken heb ik wat xslt-scripts voorzichtig gesorteerd hierin gezet
+In deze repo staan xslt-scripts die gebruikt worden in het kader van de
+omgevingswet. Veel scripts werken op OW of OW bestanden.
+
+ - OW2INSPIRE bevat scripts van Wim de Vries (wspilot) die gebruikt zijn om besluiten om te zetten van STOP/TPOD naar INSPIRE PLU.
