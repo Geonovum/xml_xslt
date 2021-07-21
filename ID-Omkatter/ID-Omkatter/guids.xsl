@@ -6,6 +6,7 @@
     xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" xmlns:aanlevering="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+    xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
     xmlns:foo="http://whatever">
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
 
@@ -20,6 +21,18 @@
 
     <xsl:template match="basisgeo:FeatureCollectionGeometrie/descendant::basisgeo:id[text() = $oldGUID]">
         <xsl:element name="basisgeo:id">
+            <xsl:value-of select="replace(., $oldGUID, $newGUID)"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="/manifest-ow:Aanleveringen/manifest-ow:Aanlevering/manifest-ow:Bestand/manifest-ow:naam[text() = concat($oldGUID,'.gml')]">
+        <xsl:element name="manifest-ow:naam">
+            <xsl:value-of select="replace(., $oldGUID, $newGUID)"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="/lvbb:manifest/lvbb:bestand/lvbb:bestandsnaam[text() = concat($oldGUID,'.gml')]">
+        <xsl:element name="lvbb:bestandsnaam">
             <xsl:value-of select="replace(., $oldGUID, $newGUID)"/>
         </xsl:element>
     </xsl:template>

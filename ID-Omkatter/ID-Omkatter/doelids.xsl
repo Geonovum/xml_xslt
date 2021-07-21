@@ -23,6 +23,7 @@
     xmlns:aanlevering="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
     xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
     xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
+    xmlns:consolidatie="https://standaarden.overheid.nl/stop/imop/consolidatie/"
     
     xmlns:foo="http://whatever"
     >
@@ -48,6 +49,12 @@
         </xsl:element>
     </xsl:template>
     
+    <xsl:template match="consolidatie:doel">
+        <xsl:element name="consolidatie:doel">
+            <xsl:value-of select="foo:generateDoelId(text())"/>
+        </xsl:element>
+    </xsl:template>
+
     <xsl:template match="data:Tijdstempel/data:doel">
         <xsl:element name="data:doel">
             <xsl:value-of select="foo:generateDoelId(text())"/>

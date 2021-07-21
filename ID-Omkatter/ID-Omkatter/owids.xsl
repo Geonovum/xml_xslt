@@ -11,6 +11,7 @@
 
     <xsl:param name="alreadyRetrievedDateTime"/>
 
+
     <xsl:template match="@* | node()">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
@@ -95,7 +96,7 @@
             <xsl:value-of select="."/>
         </xsl:attribute>
     </xsl:template>
-    
+
 
     <xsl:function name="foo:generateOWId">
         <xsl:param name="owId" as="xs:string"/>
