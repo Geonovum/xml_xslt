@@ -468,11 +468,16 @@
         <param name="opdracht.name" path="@sourcefile"/>
         <param name="newId" path="new/text()"/>
         <actions>
-          <xslt in="${output.dir}/@{opdracht.name}" out="${temp.dir}/@{opdracht.name}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax" force="true">
-            <classpath location="saxon9he.jar"/>
-            <param name="newId" expression="@{newId}"/>
-          </xslt>
-          <copy file="${temp.dir}/@{opdracht.name}" tofile="${output.dir}/@{opdracht.name}"/>
+          <if>
+            <available file="${output.dir}/@{opdracht.name}"/>
+            <then>
+              <xslt in="${output.dir}/@{opdracht.name}" out="${temp.dir}/@{opdracht.name}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax" force="true">
+                <classpath location="saxon9he.jar"/>
+                <param name="newId" expression="@{newId}"/>
+              </xslt>
+              <copy file="${temp.dir}/@{opdracht.name}" tofile="${output.dir}/@{opdracht.name}"/>
+            </then>
+          </if>
         </actions>
       </call>
     </xmltask>
@@ -503,7 +508,7 @@
         </if>
       </sequential>
     </for>
-    
+
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/file[contains(@ow,'true')]">
         <param name="sourceFileName" path="name/text()"/>

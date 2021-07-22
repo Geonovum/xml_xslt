@@ -86,7 +86,7 @@
                 </xsl:element>
             </xsl:if>
             <!-- Levering Ids -->
-            <xsl:if test="document($fullname)//lvbb:publicatieOpdracht or document($fullname)//lvbb:validatieOpdracht">
+            <xsl:if test="document($fullname)//lvbb:idLevering">
                 <xsl:element name="leveringId">
                     <xsl:attribute name="sourcefile" select="tokenize($fullname, '/')[last()]"/>
                     <xsl:for-each select="tokenize($file.list, ';')">
