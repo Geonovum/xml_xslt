@@ -47,7 +47,7 @@
     </xsl:template>
     
     <xsl:template match="consolidatie:instrumentVersie">
-        <xsl:element name="data:instrumentVersie">
+        <xsl:element name="consolidatie:instrumentVersie">
             <xsl:value-of select="foo:generateAKNFRBRExpression(text())"/>
         </xsl:element>
     </xsl:template>
