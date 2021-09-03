@@ -7,7 +7,10 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" xmlns:aanlevering="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
     xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
-    xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow" xmlns:foo="http://whatever">
+    xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
+    xmlns:consolidatie="https://standaarden.overheid.nl/stop/imop/consolidatie/"
+    xmlns:lvbbu="https://standaarden.overheid.nl/lvbb/stop/uitlevering/"
+    xmlns:foo="http://whatever">
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
 
     <xsl:param name="alreadyRetrievedDateTime"/>
@@ -28,6 +31,25 @@
         <xsl:attribute name="was">
             <xsl:value-of select="foo:generateAKNFRBRExpression(.)"/>
         </xsl:attribute>
+    </xsl:template>
+    
+    <xsl:template match="consolidatie:FRBRWork">
+        <xsl:message select="'consolidatie:FRBRWork'"></xsl:message>
+        <xsl:element name="consolidatie:FRBRWork">
+            <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="consolidatie:FRBRExpression">
+        <xsl:element name="consolidatie:FRBRExpression">
+            <xsl:value-of select="foo:generateAKNFRBRExpression(text())"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="consolidatie:instrumentVersie">
+        <xsl:element name="consolidatie:instrumentVersie">
+            <xsl:value-of select="foo:generateAKNFRBRExpression(text())"/>
+        </xsl:element>
     </xsl:template>
     
     <xsl:template match="lvbb:breekPublicatieAfOpdracht/lvbb:identificatie">
@@ -60,38 +82,13 @@
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="aanlevering:BesluitVersie/data:ExpressionIdentificatie/data:FRBRWork">
+    <xsl:template match="data:ExpressionIdentificatie/data:FRBRWork">
         <xsl:element name="data:FRBRWork">
             <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="aanlevering:BesluitVersie/data:ExpressionIdentificatie/data:FRBRExpression">
-        <xsl:element name="data:FRBRExpression">
-            <xsl:value-of select="foo:generateAKNFRBRExpression(text())"/>
-        </xsl:element>
-    </xsl:template>
-
-    <xsl:template match="aanlevering:KennisgevingVersie/data:ExpressionIdentificatie/data:FRBRWork">
-        <xsl:element name="data:FRBRWork">
-            <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
-        </xsl:element>
-    </xsl:template>
-
-    <xsl:template match="aanlevering:KennisgevingVersie/data:ExpressionIdentificatie/data:FRBRExpression">
-        <xsl:element name="data:FRBRExpression">
-            <xsl:value-of select="foo:generateAKNFRBRExpression(text())"/>
-        </xsl:element>
-    </xsl:template>
-
-
-    <xsl:template match="aanlevering:RegelingVersieInformatie/data:ExpressionIdentificatie/data:FRBRWork">
-        <xsl:element name="data:FRBRWork">
-            <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
-        </xsl:element>
-    </xsl:template>
-
-    <xsl:template match="aanlevering:RegelingVersieInformatie/data:ExpressionIdentificatie/data:FRBRExpression">
+    <xsl:template match="data:ExpressionIdentificatie/data:FRBRExpression">
         <xsl:element name="data:FRBRExpression">
             <xsl:value-of select="foo:generateAKNFRBRExpression(text())"/>
         </xsl:element>

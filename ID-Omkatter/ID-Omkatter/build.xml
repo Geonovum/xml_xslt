@@ -157,13 +157,42 @@
         <param name="gmlfile.name" path="@gmlfile"/>
         <param name="oldGUID" path="org/text()"/>
         <param name="newGUID" path="new/text()"/>
+        <param name="consolidatie" path="../../consolidatie/text()" default="0"/>
         <actions>
-          <xslt in="${output.dir}/@{gmlfile.name}" out="${temp.dir}/@{gmlfile.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
-            <classpath location="saxon9he.jar"/>
-            <param name="oldGUID" expression="@{oldGUID}"/>
-            <param name="newGUID" expression="@{newGUID}"/>
-          </xslt>
-          <copy file="${temp.dir}/@{gmlfile.name}" tofile="${output.dir}/@{gmlfile.name}"/>
+          <if>
+            <equals arg1="@{consolidatie}" arg2="0"/>
+            <then>
+              <xslt in="${output.dir}/@{gmlfile.name}" out="${temp.dir}/@{gmlfile.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
+                <classpath location="saxon9he.jar"/>
+                <param name="oldGUID" expression="@{oldGUID}"/>
+                <param name="newGUID" expression="@{newGUID}"/>
+              </xslt>
+              <copy file="${temp.dir}/@{gmlfile.name}" tofile="${output.dir}/@{gmlfile.name}"/>
+            </then>
+            <else>
+              <xslt in="${output.dir}/@{oldGUID}.gml" out="${temp.dir}/@{newGUID}.gml" extension=".gml" style="guids.xsl" processor="trax" force="true">
+                <classpath location="saxon9he.jar"/>
+                <param name="oldGUID" expression="@{oldGUID}"/>
+                <param name="newGUID" expression="@{newGUID}"/>
+              </xslt>
+              <delete file="${output.dir}/@{oldGUID}.gml" failonerror="no"/>
+              <copy file="${temp.dir}/@{newGUID}.gml" tofile="${output.dir}/@{newGUID}.gml"/>
+              <!-- manifest-bhkv -->
+              <xslt in="${output.dir}/manifest-bhkv.xml" out="${temp.dir}/manifest-bhkv.xml" extension=".xml" style="guids.xsl" processor="trax" force="true">
+                <classpath location="saxon9he.jar"/>
+                <param name="oldGUID" expression="@{oldGUID}"/>
+                <param name="newGUID" expression="@{newGUID}"/>
+              </xslt>
+              <copy file="${temp.dir}/manifest-bhkv.xml" tofile="${output.dir}/manifest-bhkv.xml"/>
+              <!-- manifest -->
+              <xslt in="${output.dir}/manifest.xml" out="${temp.dir}/manifest.xml" extension=".xml" style="guids.xsl" processor="trax" force="true">
+                <classpath location="saxon9he.jar"/>
+                <param name="oldGUID" expression="@{oldGUID}"/>
+                <param name="newGUID" expression="@{newGUID}"/>
+              </xslt>
+              <copy file="${temp.dir}/manifest.xml" tofile="${output.dir}/manifest.xml"/>
+            </else>
+          </if>
         </actions>
       </call>
     </xmltask>
@@ -182,11 +211,11 @@
                   <if>
                     <available file="bron_@{number}/@{gmlfile.name}"/>
                     <then>
-
                       <xslt in="${output_@{number}.dir}/@{gmlfile.name}" out="${temp_@{number}.dir}/@{gmlfile.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
                         <classpath location="saxon9he.jar"/>
                         <param name="oldGUID" expression="@{oldGUID}"/>
                         <param name="newGUID" expression="@{newGUID}"/>
+                        <param name="consolidaties" expression="0"/>
                       </xslt>
                       <copy file="${temp_@{number}.dir}/@{gmlfile.name}" tofile="${output_@{number}.dir}/@{gmlfile.name}"/>
                     </then>
@@ -204,13 +233,19 @@
         <param name="locatiefile.name" path="@locatiefile"/>
         <param name="oldGUID" path="org/text()"/>
         <param name="newGUID" path="new/text()"/>
+        <param name="consolidatie" path="consolidatie/text()" default="0"/>
         <actions>
-          <xslt in="${output.dir}/@{locatiefile.name}" out="${temp.dir}/@{locatiefile.name}" extension=".xml" style="guids.xsl" processor="trax" force="true">
-            <classpath location="saxon9he.jar"/>
-            <param name="oldGUID" expression="@{oldGUID}"/>
-            <param name="newGUID" expression="@{newGUID}"/>
-          </xslt>
-          <copy file="${temp.dir}/@{locatiefile.name}" tofile="${output.dir}/@{locatiefile.name}"/>
+          <if>
+            <equals arg1="@{consolidatie}" arg2="0"/>
+            <then>
+              <xslt in="${output.dir}/@{locatiefile.name}" out="${temp.dir}/@{locatiefile.name}" extension=".xml" style="guids.xsl" processor="trax" force="true">
+                <classpath location="saxon9he.jar"/>
+                <param name="oldGUID" expression="@{oldGUID}"/>
+                <param name="newGUID" expression="@{newGUID}"/>
+              </xslt>
+              <copy file="${temp.dir}/@{locatiefile.name}" tofile="${output.dir}/@{locatiefile.name}"/>
+            </then>
+          </if>
         </actions>
       </call>
     </xmltask>
@@ -249,13 +284,19 @@
         <param name="gmlfile.name" path="@gmlfile"/>
         <param name="oldGUID" path="org/text()"/>
         <param name="newGUID" path="new/text()"/>
+        <param name="consolidatie" path="consolidatie/text()" default="0"/>
         <actions>
-          <xslt in="${output.dir}/@{gmlfile.name}" out="${temp.dir}/@{gmlfile.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
-            <classpath location="saxon9he.jar"/>
-            <param name="oldGUID" expression="@{oldGUID}"/>
-            <param name="newGUID" expression="@{newGUID}"/>
-          </xslt>
-          <copy file="${temp.dir}/@{gmlfile.name}" tofile="${output.dir}/@{gmlfile.name}"/>
+          <if>
+            <equals arg1="@{consolidatie}" arg2="0"/>
+            <then>
+              <xslt in="${output.dir}/@{gmlfile.name}" out="${temp.dir}/@{gmlfile.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
+                <classpath location="saxon9he.jar"/>
+                <param name="oldGUID" expression="@{oldGUID}"/>
+                <param name="newGUID" expression="@{newGUID}"/>
+              </xslt>
+              <copy file="${temp.dir}/@{gmlfile.name}" tofile="${output.dir}/@{gmlfile.name}"/>
+            </then>
+          </if>
         </actions>
       </call>
     </xmltask>
@@ -312,6 +353,7 @@
             <xmltask source="${temp_@{number}.dir}/index.xml">
               <call path="index/file[contains(@ow,'true')]">
                 <param name="sourceFileName" path="name/text()"/>
+                <param name="consolidatie" path="../consolidatie/text()" default="0"/>
                 <actions>
                   <if>
                     <available file="bron_@{number}/@{sourceFileName}"/>
@@ -319,6 +361,7 @@
                       <xslt in="${output_@{number}.dir}/@{sourceFileName}" out="${temp_@{number}.dir}/@{sourceFileName}" extension=".xml" style="owids.xsl" processor="trax" force="true">
                         <classpath location="saxon9he.jar"/>
                         <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+                        <param name="consolidatie" expression="@{consolidatie}"/>
                       </xslt>
                       <copy file="${temp_@{number}.dir}/@{sourceFileName}" tofile="${output_@{number}.dir}/@{sourceFileName}"/>
                     </then>
@@ -425,11 +468,16 @@
         <param name="opdracht.name" path="@sourcefile"/>
         <param name="newId" path="new/text()"/>
         <actions>
-          <xslt in="${output.dir}/@{opdracht.name}" out="${temp.dir}/@{opdracht.name}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax" force="true">
-            <classpath location="saxon9he.jar"/>
-            <param name="newId" expression="@{newId}"/>
-          </xslt>
-          <copy file="${temp.dir}/@{opdracht.name}" tofile="${output.dir}/@{opdracht.name}"/>
+          <if>
+            <available file="${output.dir}/@{opdracht.name}"/>
+            <then>
+              <xslt in="${output.dir}/@{opdracht.name}" out="${temp.dir}/@{opdracht.name}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax" force="true">
+                <classpath location="saxon9he.jar"/>
+                <param name="newId" expression="@{newId}"/>
+              </xslt>
+              <copy file="${temp.dir}/@{opdracht.name}" tofile="${output.dir}/@{opdracht.name}"/>
+            </then>
+          </if>
         </actions>
       </call>
     </xmltask>
@@ -462,13 +510,30 @@
     </for>
 
     <xmltask source="${temp.dir}/index.xml">
+      <call path="index/file[contains(@ow,'true')]">
+        <param name="sourceFileName" path="name/text()"/>
+        <param name="consolidatie" path="../consolidatie/text()" default="0"/>
+        <actions>
+          <xslt in="${output.dir}/@{sourceFileName}" out="${temp.dir}/@{sourceFileName}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax" force="true">
+            <classpath location="saxon9he.jar"/>
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+            <param name="consolidatie" expression="@{consolidatie}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{sourceFileName}" tofile="${output.dir}/@{sourceFileName}"/>
+        </actions>
+      </call>
+    </xmltask>
+
+    <xmltask source="${temp.dir}/index.xml">
       <call path="index/leveringId/referencefile">
         <param name="referencefile.name" path="text()"/>
+        <param name="consolidatie" path="consolidatie/text()" default="0"/>
         <param name="newId" path="../new/text()"/>
         <actions>
           <xslt in="${output.dir}/@{referencefile.name}" out="${temp.dir}/@{referencefile.name}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax" force="true">
             <classpath location="saxon9he.jar"/>
             <param name="newId" expression="@{newId}"/>
+            <param name="consolidatie" expression="@{consolidatie}"/>
           </xslt>
           <copy file="${temp.dir}/@{referencefile.name}" tofile="${output.dir}/@{referencefile.name}"/>
         </actions>
@@ -505,6 +570,24 @@
   </target>
 
   <target name="doelids" description="Verandert Doelids door er een datum/tijd string achter te zetten.">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index">
+        <param name="consolidatie" path="consolidatie/text()" default="0"/>
+        <actions>
+          <if>
+            <equals arg1="@{consolidatie}" arg2="1"/>
+            <then>
+              <xslt in="${output.dir}/consolidaties.xml" out="${temp.dir}/consolidaties.xml" extension=".xml" style="doelids.xsl" processor="trax" force="true">
+                <classpath location="saxon9he.jar"/>
+                <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+              </xslt>
+              <copy file="${temp.dir}/consolidaties.xml" tofile="${output.dir}/consolidaties.xml"/>
+            </then>
+          </if>
+        </actions>
+      </call>
+    </xmltask>
+
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/file[contains(@type,'manifest-ow.xml')]">
         <param name="file.name" path="name/text()"/>
@@ -590,13 +673,35 @@
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/file[contains(@type,'besluit.xml')]">
         <param name="besluit.name" path="../file[contains(@type,'besluit.xml')]/name/text()"/>
-        <param name="manifest-ow.name" path="../file[contains(@type,'manifest-ow.xml')]/name/text()"/>
         <actions>
           <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
             <classpath location="saxon9he.jar"/>
             <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
           </xslt>
           <copy file="${temp.dir}/@{besluit.name}" tofile="${output.dir}/@{besluit.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index">
+        <param name="manifest-ow.name" path="file[contains(@type,'manifest-ow.xml')]/name/text()"/>
+        <param name="consolidatie" path="consolidatie/text()" default="0"/>
+        <actions>
+          <if>
+            <equals arg1="@{consolidatie}" arg2="1"/>
+            <then>
+              <xslt in="${output.dir}/consolidaties.xml" out="${temp.dir}/consolidaties.xml" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+                <classpath location="saxon9he.jar"/>
+                <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+              </xslt>
+              <copy file="${temp.dir}/consolidaties.xml" tofile="${output.dir}/consolidaties.xml"/>
+              <xslt in="${output.dir}/manifest-bhkv.xml" out="${temp.dir}/manifest-bhkv.xml" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+                <classpath location="saxon9he.jar"/>
+                <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+              </xslt>
+              <copy file="${temp.dir}/manifest-bhkv.xml" tofile="${output.dir}/manifest-bhkv.xml"/>
+            </then>
+          </if>
           <xslt in="${output.dir}/@{manifest-ow.name}" out="${temp.dir}/@{manifest-ow.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
             <classpath location="saxon9he.jar"/>
             <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
@@ -786,7 +891,6 @@
         <param name="oldIoRefId" path="oldIoRefId/text()"/>
         <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
         <param name="gmlFile" path="gml/text()"/>
-        <param name="gioFile" path="gio/text()"/>
         <actions>
           <xslt in="${output.dir}/@{gmlFile}" out="${temp.dir}/@{gmlFile}" extension=".gml" style="informatieobjectRefs.xsl" processor="trax" force="true">
             <classpath location="saxon9he.jar"/>
@@ -809,7 +913,6 @@
                 <param name="oldIoRefId" path="oldIoRefId/text()"/>
                 <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
                 <param name="gmlFile" path="gml/text()"/>
-                <param name="gioFile" path="gio/text()"/>
                 <actions>
                   <if>
                     <available file="bron_@{number}/@{gmlFile}"/>
@@ -835,7 +938,6 @@
         <param name="besluit.name" path="../../file[contains(@type,'besluit.xml')]/name/text()"/>
         <param name="oldIoRefId" path="oldIoRefId/text()"/>
         <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-        <param name="gmlFile" path="gml/text()"/>
         <param name="gioFile" path="gio/text()"/>
         <actions>
           <xslt in="${output.dir}/@{gioFile}" out="${temp.dir}/@{gioFile}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
@@ -858,7 +960,6 @@
                 <param name="besluit.name" path="../../file[contains(@type,'besluit.xml')]/name/text()"/>
                 <param name="oldIoRefId" path="oldIoRefId/text()"/>
                 <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-                <param name="gmlFile" path="gml/text()"/>
                 <param name="gioFile" path="gio/text()"/>
                 <actions>
                   <if>
@@ -887,12 +988,18 @@
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/file[contains(@type,'gio.xml')]">
         <param name="giofile.name" path="name/text()"/>
+        <param name="consolidatie" path="consolidatie/text()" default="0"/>
         <actions>
-          <xslt in="${output.dir}/@{giofile.name}" out="${temp.dir}/@{giofile.name}" extension=".xml" style="checksum_hash.xsl" processor="trax" force="true">
-            <classpath location="saxon9he.jar"/>
-            <param name="temp.dir" expression="${temp.dir}"/>
-          </xslt>
-          <copy file="${temp.dir}/@{giofile.name}" tofile="${output.dir}/@{giofile.name}"/>
+          <if>
+            <equals arg1="@{consolidatie}" arg2="0"/>
+            <then>
+              <xslt in="${output.dir}/@{giofile.name}" out="${temp.dir}/@{giofile.name}" extension=".xml" style="checksum_hash.xsl" processor="trax" force="true">
+                <classpath location="saxon9he.jar"/>
+                <param name="temp.dir" expression="${temp.dir}"/>
+              </xslt>
+              <copy file="${temp.dir}/@{giofile.name}" tofile="${output.dir}/@{giofile.name}"/>
+            </then>
+          </if>
         </actions>
       </call>
     </xmltask>
@@ -927,25 +1034,37 @@
   <!-- maak hash-code -->
 
   <target name="checksum" description="Maak hash-codes">
-    <foreach target="checksum.execute" param="file.fullname">
-      <path>
-        <fileset dir="${output.dir}"/>
-      </path>
-    </foreach>
-    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
-      <sequential>
-        <if>
-          <available file="bron_@{number}" type="dir"/>
-          <then>
-            <foreach target="checksum.execute.2" param="file.fullname" >
-              <path>
-                <fileset dir="${output_@{number}.dir}"/>
-              </path>
-            </foreach>
-          </then>
-        </if>
-      </sequential>
-    </for>
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index">
+        <param name="consolidatie" path="consolidatie/text()" default="0"/>
+        <actions>
+          <if>
+            <equals arg1="@{consolidatie}" arg2="0"/>
+            <then>
+              <foreach target="checksum.execute" param="file.fullname">
+                <path>
+                  <fileset dir="${output.dir}"/>
+                </path>
+              </foreach>
+              <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+                <sequential>
+                  <if>
+                    <available file="bron_@{number}" type="dir"/>
+                    <then>
+                      <foreach target="checksum.execute.2" param="file.fullname">
+                        <path>
+                          <fileset dir="${output_@{number}.dir}"/>
+                        </path>
+                      </foreach>
+                    </then>
+                  </if>
+                </sequential>
+              </for>
+            </then>
+          </if>
+        </actions>
+      </call>
+    </xmltask>
   </target>
 
   <target name="checksum.execute">
@@ -962,10 +1081,7 @@
   <target name="checksum.execute.2">
     <basename property="file.name" file="${file.fullname}"/>
     <dirname property="_dir" file="${file.fullname}"/>
-    <script language="javascript">
-      var before = project.getProperty("_dir");
-      project.setProperty("temp.dir", before.replaceAll("resultaat_", "temp_"));
-    </script>
+    <script language="javascript"> var before = project.getProperty("_dir"); project.setProperty("temp.dir", before.replaceAll("resultaat_", "temp_")); </script>
     <checksum file="${file.fullname}" algorithm="SHA-512" property="file.checksum"/>
     <xslt in="template.xml" out="${temp.dir}/checksum/${file.name}.xml" style="checksum.xsl" processor="trax" force="true">
       <classpath location="saxon9he.jar"/>

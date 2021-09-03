@@ -5,8 +5,9 @@
     xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:p="http://www.geostandaarden.nl/imow/pons" xmlns:r="http://www.geostandaarden.nl/imow/regels"
     xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:gml="http://www.opengis.net/gml/3.2"
-    xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" xmlns:aanlevering="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
-    xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow" xmlns:foo="http://whatever">
+    xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" xmlns:lvbb_intern="http://www.overheid.nl/2020/lvbb/intern" xmlns:aanlevering="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+    xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
+    xmlns:lvbbu="https://standaarden.overheid.nl/lvbb/stop/uitlevering/" xmlns:foo="http://whatever">
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
 
     <!-- file.list bevat alle te verwerken bestanden -->
@@ -39,6 +40,11 @@
         <xsl:for-each select="tokenize($file.list, ';')">
             <xsl:variable name="fullname" select="."/>
             <xsl:variable name="pos1" select="position()"/>
+            <xsl:if test="document($fullname)/lvbbu:Consolidaties">
+                <xsl:element name="consolidatie">
+                    <xsl:value-of select="1"/>
+                </xsl:element>
+            </xsl:if>
             <!-- Doel Id -->
             <!-- Haal oorspronkelijk uit besluit -->
             <!-- BesluitID/RegelingID -->
@@ -80,7 +86,23 @@
                 </xsl:element>
             </xsl:if>
             <!-- Levering Ids -->
-            <xsl:if test="document($fullname)//lvbb:publicatieOpdracht or document($fullname)//lvbb:validatieOpdracht">
+            <xsl:if test="document($fullname)//lvbb_intern:idLevering">
+                <xsl:element name="leveringId">
+                    <xsl:attribute name="sourcefile" select="tokenize($fullname, '/')[last()]"/>
+                    <xsl:for-each select="tokenize($file.list, ';')">
+                        <xsl:variable name="referencefullname" select="."/>
+                        <xsl:if test="document($referencefullname)//sl:leveringsId">
+                            <xsl:element name="referencefile">
+                                <xsl:value-of select="tokenize($referencefullname, '/')[last()]"/>
+                            </xsl:element>
+                        </xsl:if>
+                    </xsl:for-each>
+                    <xsl:element name="new">
+                        <xsl:value-of select="concat(document($fullname)//lvbb_intern:idLevering/text(), '-', $dateTime)"/>
+                    </xsl:element>
+                </xsl:element>
+            </xsl:if>
+            <xsl:if test="document($fullname)//lvbb:idLevering">
                 <xsl:element name="leveringId">
                     <xsl:attribute name="sourcefile" select="tokenize($fullname, '/')[last()]"/>
                     <xsl:for-each select="tokenize($file.list, ';')">
@@ -100,6 +122,47 @@
             <xsl:if test="document($fullname)//geo:GeoInformatieObjectVaststelling">
                 <xsl:element name="guids">
                     <xsl:for-each select="document($fullname)//geo:GeoInformatieObjectVaststelling/descendant::basisgeo:id">
+                        <xsl:variable name="pos2" select="position()"/>
+                        <xsl:variable name="orgGUID" select="text()"/>
+                        <xsl:variable name="locatiefile">
+                            <xsl:for-each select="tokenize($file.list, ';')">
+                                <xsl:variable name="locatieFile" as="xs:string" select="."/>
+                                <xsl:variable name="locatieFileOnly" as="xs:string" select="tokenize($locatieFile, '/')[last()]"/>
+                                <xsl:if test="document($locatieFile)//l:GeometrieRef[@xlink:href = $orgGUID]">
+                                    <xsl:value-of select="$locatieFileOnly"/>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        <xsl:variable name="org" select="$orgGUID"/>
+                        <xsl:variable name="new" select="foo:generateGuid($pos1 + $pos2)"/>
+                        <xsl:variable name="elementName">
+                            <xsl:choose>
+                                <xsl:when test="not($locatiefile = '')">
+                                    <xsl:value-of select="'guidInOw'"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="'guid'"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:variable>
+                        <xsl:element name="{$elementName}">
+                            <xsl:attribute name="gmlfile" select="tokenize($fullname, '/')[last()]"/>
+                            <xsl:if test="not($locatiefile = '')">
+                                <xsl:attribute name="locatiefile" select="$locatiefile"/>
+                            </xsl:if>
+                            <xsl:element name="org">
+                                <xsl:value-of select="$org"/>
+                            </xsl:element>
+                            <xsl:element name="new">
+                                <xsl:value-of select="$new"/>
+                            </xsl:element>
+                        </xsl:element>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+            <xsl:if test="document($fullname)//basisgeo:FeatureCollectionGeometrie">
+                <xsl:element name="guids">
+                    <xsl:for-each select="document($fullname)//basisgeo:FeatureCollectionGeometrie/descendant::basisgeo:id">
                         <xsl:variable name="pos2" select="position()"/>
                         <xsl:variable name="orgGUID" select="text()"/>
                         <xsl:variable name="locatiefile">

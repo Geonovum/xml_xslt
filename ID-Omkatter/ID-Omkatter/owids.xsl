@@ -11,6 +11,7 @@
 
     <xsl:param name="alreadyRetrievedDateTime"/>
 
+
     <xsl:template match="@* | node()">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
@@ -95,23 +96,25 @@
             <xsl:value-of select="."/>
         </xsl:attribute>
     </xsl:template>
-    
+
 
     <xsl:function name="foo:generateOWId">
         <xsl:param name="owId" as="xs:string"/>
         <!-- max length 4th part of Id has a max-length of 32-->
-        <xsl:variable name="maxLength" select="32 - string-length(tokenize($owId, '\.')[4])"/>
+        <xsl:variable name="tokenLength" as="xs:integer" select="string-length(tokenize($owId, '\.')[4])"/>
+        <xsl:variable name="dateLength" as="xs:integer" select="string-length($alreadyRetrievedDateTime)"/>
+        <xsl:variable name="startingloc" as="xs:integer" select="$dateLength - (32 - $tokenLength) + 1"/>
+        <xsl:variable name="lastPart">
+            <xsl:if test="not($startingloc > $dateLength)">
+                <xsl:value-of select="concat(tokenize($owId, '\.')[4], substring($alreadyRetrievedDateTime, $startingloc))"/>
+            </xsl:if>
+        </xsl:variable>
         <xsl:choose>
-            <xsl:when test="$maxLength > 13">
-                <xsl:variable name="dateString" select="$alreadyRetrievedDateTime"/>
-                <xsl:value-of select="concat(tokenize($owId, '\.')[1], '.', tokenize($owId, '\.')[2], '.', tokenize($owId, '\.')[3], '.', tokenize($owId, '\.')[4], $dateString)"/>
-            </xsl:when>
-            <xsl:when test="$maxLength > 0 and $maxLength &lt; 14">
-                <xsl:variable name="dateString" select="substring($alreadyRetrievedDateTime, 14 - $maxLength + 1)"/>
-                <xsl:value-of select="concat(tokenize($owId, '\.')[1], '.', tokenize($owId, '\.')[2], '.', tokenize($owId, '\.')[3], '.', tokenize($owId, '\.')[4], $dateString)"/>
+            <xsl:when test="$startingloc > $dateLength">
+                <xsl:value-of select="'Oorspronkelijke string te lang, niet mogelijk om nieuwe ID-string te berekenen'"/>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="concat(tokenize($owId, '\.')[1], '.', tokenize($owId, '\.')[2], '.', tokenize($owId, '\.')[3], '.', tokenize($owId, '\.')[4])"/>
+                <xsl:value-of select="concat(tokenize($owId, '\.')[1], '.', tokenize($owId, '\.')[2], '.', tokenize($owId, '\.')[3], '.', $lastPart)"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
