@@ -51,7 +51,7 @@
 
   <xsl:param name="besluit" select="document($manifest/file[@name='besluit.xml']/fullname)"/>
   <xsl:param name="ID01" select="fn:tokenize(($besluit//RegelingMetadata/(eindverantwoordelijke,maker))[1],'/')[5]" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
-  <xsl:param name="ID02" select="string($besluit//RegelingVersieMetadata/versienummer)" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
+  <xsl:param name="ID02" select="string(($besluit//RegelingVersieMetadata/versienummer)[1])" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/data/"/>
 
   <xsl:template match="/">
     <xsl:call-template name="manifest"/>
