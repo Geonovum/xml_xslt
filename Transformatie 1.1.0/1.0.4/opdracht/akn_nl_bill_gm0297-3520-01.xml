@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Voor validatie is het noodzakelijk om ook de catalogi van de gepubliceerde versie 1.0.4 te laden.-->
+<AanleveringBesluit xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    schemaversie="1.0.4"
+                    xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+   <BesluitVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0297/2019/STOP</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0297/2019/STOP/nld@2019-06-27</data:FRBRExpression>
+         <soortWork>/join/id/stop/work_003</soortWork>
+      </ExpressionIdentificatie>
+      <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/gemeente/gm0297</eindverantwoordelijke>
+         <maker>/tooi/id/gemeente/gm0297</maker>
+         <!--soortBestuursorgaan is 'gemeenteraad'.-->
+         <soortBestuursorgaan>/tooi/def/thes/kern/c_2a7d8663</soortBestuursorgaan>
+         <officieleTitel>Vaststelling van Omgevingsplan Gemeentestad (Zaltbommel)</officieleTitel>
+         <onderwerpen>
+            <onderwerp>/tooi/def/concept/c_9d1917e9</onderwerp>
+            <!-- werk -->
+         </onderwerpen>
+         <rechtsgebieden>
+            <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied>
+         </rechtsgebieden>
+         <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
+         <informatieobjectRefs>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0297/2019/GoedeGebieden/nld@2019-06-18;3520</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0297/2019/regelingsgebied/nld@2019-06-18;3520</data:informatieobjectRef>
+         </informatieobjectRefs>
+      </BesluitMetadata>
+      <Procedureverloop xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bekendOp>2021-06-27</bekendOp>
+         <procedurestappen><!-- Vaststelling -->
+            <Procedurestap>
+               <soortStap>/join/id/stop/procedure/stap_002</soortStap>
+               <voltooidOp>2019-06-25</voltooidOp>
+            </Procedurestap>
+            <!-- Ondertekening -->
+            <Procedurestap>
+               <soortStap>/join/id/stop/procedure/stap_003</soortStap>
+               <voltooidOp>2019-06-26</voltooidOp>
+            </Procedurestap>
+         </procedurestappen>
+      </Procedureverloop>
+      <ConsolidatieInformatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <BeoogdeRegelgeving>
+            <BeoogdeRegeling>
+               <doelen>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2019/STOP</data:doel>
+               </doelen>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/STOP/nld@2019-06-25;1</data:instrumentVersie>
+               <eId>art_I</eId>
+            </BeoogdeRegeling>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2019/STOP</data:doel>
+               </doelen>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0297/2019/GoedeGebieden/nld@2019-06-18;3520</data:instrumentVersie>
+               <eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2019/STOP</data:doel>
+               </doelen>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0297/2019/regelingsgebied/nld@2019-06-18;3520</data:instrumentVersie>
+               <eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1</eId>
+            </BeoogdInformatieobject>
+         </BeoogdeRegelgeving>
+         <Tijdstempels>
+            <Tijdstempel>
+               <doel>/join/id/proces/gm0297/2019/STOP</doel>
+               <soortTijdstempel>juridischWerkendVanaf</soortTijdstempel>
+               <datum>2019-08-01</datum>
+               <eId>art_II</eId>
+            </Tijdstempel>
+         </Tijdstempels>
+      </ConsolidatieInformatie>
+      <BesluitCompact xmlns="https://standaarden.overheid.nl/stop/imop/tekst/">
+         <RegelingOpschrift eId="longTitle_1" wId="longTitle_1">
+            <Al>Vaststelling van Omgevingsplan Gemeentestad (Zaltbommel)</Al>
+         </RegelingOpschrift>
+         <Aanhef eId="formula_1" wId="formula_1">
+            <Al>De raad van de gemeente Gemeenstestad </Al>
+            <Al>gelezen het voorstel van burgemeester en wethouders van 26 juni 2019, nr. 2019-4542;</Al>
+            <Al>Gelet op <ExtRef ref="https://wetten.overheid.nl/jci1.3:c:BWBR0005416&amp;titeldeel=III&amp;hoofdstuk=IX&amp;artikel=149"
+                       soort="URL">Gemeentewet, art. 149</ExtRef>.</Al>
+            <Al>besluit:</Al>
+         </Aanhef>
+         <Lichaam eId="body_1" wId="body_1">
+            <WijzigArtikel eId="art_I" wId="gm0297_1__art_I">
+               <Kop>
+                  <Label>Artikel</Label>
+                  <Nummer>I</Nummer>
+               </Kop>
+               <Wat>De "Voorbeeldregels met uitbreiding tbv Toepasbare Regels" opgenomen in <IntRef ref="cmp_A" scope="WijzigBijlage">Bijlage A</IntRef> worden vastgesteld.</Wat>
+               <!-- FOUT STOP Een element RegelingMutatie binnen een WijzigArtikel mag alleen voorkomen in een BesluitKlassiek -->
+               <RegelingMutatie componentnaam="gm0297_1__art_I" was="gm0297_0__art_I" wordt="gm0297_1__art_I">
+                  <Vervang wat="deze_niet">
+                     <Artikel wId="gm0297_1__art_I" eId="gm0297_1__art_I">
+                        <Kop><Label>aaa</Label></Kop>
+                        <Gereserveerd/>
+                     </Artikel>
+                  </Vervang>
+               </RegelingMutatie>
+            </WijzigArtikel>
+            <Artikel eId="art_II" wId="gm0297_1__art_II">
+               <Kop>
+                  <Label>Artikel</Label>
+                  <Nummer>II</Nummer>
+               </Kop>
+               <Gereserveerd/>
+            </Artikel>
+            <Artikel eId="art_III" wId="gm0297_1__art_III">
+               <Kop>
+                  <Label>Artikel</Label>
+                  <Nummer>III</Nummer>
+               </Kop>
+               <Gereserveerd/>
+            </Artikel>
+         </Lichaam>
+         <Sluiting eId="formula_2" wId="formula_2">
+            <Al>Gegeven te Kaap Doorn, Gemeentestad, 26 juni 2019</Al>
+            <Ondertekening>
+               <Al>Gedeputeerde Raad van Apeldoorn tot Den Haag</Al>
+            </Ondertekening>
+         </Sluiting>
+         <WijzigBijlage eId="cmp_A" wId="gm0297_1__cmp_A">
+            <Kop>
+               <Label>Bijlage</Label>
+               <Nummer>A</Nummer>
+               <Opschrift>Bijlage bij artikel I</Opschrift>
+            </Kop>
+            <RegelingCompact componentnaam="initieel_reg"
+                             wordt="/akn/nl/act/gm0297/2019/STOP/nld@2019-06-25;1">
+               <RegelingOpschrift eId="longTitle_2" wId="longTitle_2">
+                  <Al>Gemeentestad (omgevingsplan Zaltbommel)</Al>
+               </RegelingOpschrift>
+               <Lichaam eId="body_2" wId="body_2">
+                  <Hoofdstuk eId="chp_1" wId="gm0297_1__chp_1">
+                     <Kop>
+                        <Label>Hoofdstuk</Label>
+                        <Nummer>1</Nummer>
+                        <Opschrift>Algemene bepalingen</Opschrift>
+                     </Kop>
+                     <Artikel wId="gm0297_1__chp_1__art_1.1" eId="chp_1__art_1.1">
+                        <Kop>
+                           <Label>Artikel</Label>
+                           <Nummer>1.1</Nummer>
+                           <Opschrift>Toepassingsgebied</Opschrift>
+                        </Kop>
+                        <Inhoud>
+                           <Al>Dit omgevingsplan is van toepassing in <IntIoRef eId="chp_1__art_1.1__ref_o_1"
+                                        wId="gm0297_1__chp_1__art_1.1__ref_o_1"
+                                        ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1">Gemeentestad</IntIoRef>.</Al>
+                        </Inhoud>
+                     </Artikel>
+                  </Hoofdstuk>
+                  <Hoofdstuk eId="chp_2" wId="gm0297_1__chp_2">
+                     <Kop>
+                        <Label>Hoofdstuk</Label>
+                        <Nummer>2</Nummer>
+                        <Opschrift>Functietoedeling</Opschrift>
+                     </Kop>
+                     <Afdeling eId="chp_2__subchp_2.1" wId="gm0297_1__chp_2__subchp_2.1">
+                        <Kop>
+                           <Label>Afdeling</Label>
+                           <Nummer>2.1</Nummer>
+                           <Opschrift>Foute Gebieden</Opschrift>
+                        </Kop>
+                        <Artikel eId="chp_2__subchp_2.1__art_2.1"
+                                 wId="gm0297_1__chp_2__subchp_2.1__art_2.1">
+                           <Kop>
+                              <Label>Artikel</Label>
+                              <Nummer>2.1</Nummer>
+                              <Opschrift>Gebruiksactiviteiten die zonder vergunning of melding zijn toegestaan</Opschrift>
+                           </Kop>
+                           <Inhoud>
+                              <Lijst eId="chp_2__subchp_2.1__art_2.1__list_o_1"
+                                     wId="gm0297_1__chp_2__subchp_2.1__art_2.1__list_o_1"
+                                     type="expliciet"><!-- BV: Verplichte lijstaanhef toegevoegd, KL: alinea dat voor de lijst stond als lijstaanhef opgenomen -->
+                                 <Lijstaanhef>Ter plaatse van het werkingsgebied van de functie '' '
+												<IntIoRef eId="chp_2__subchp_2.1__art_2.1__list_o_1__ref_o_1"
+                                              wId="gm0297_1__chp_2__subchp_2.1__art_2.1__list_o_1__ref_o_1"
+                                              ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1">GoedeGebieden</IntIoRef>'mogen de locatie en de daarop voorkomende bouwwerken in ieder geval worden gebruikt voor het verrichten van de volgende
+												gebruiksactiviteiten:</Lijstaanhef>
+                                 <Li eId="chp_2__subchp_2.1__art_2.1__list_o_1__item_a"
+                                     wId="gm0297_1__chp_2__subchp_2.1__art_2.1__list_o_1__item_a">
+                                    <LiNummer>a.</LiNummer>
+                                    <Al>;</Al>
+                                 </Li>
+                              </Lijst>
+                           </Inhoud>
+                        </Artikel>
+                     </Afdeling>
+                  </Hoofdstuk>
+               </Lichaam>
+               <Bijlage eId="cmp_I" wId="gm0297_1__cmp_I">
+                  <Kop>
+                     <Label>Bijlage</Label>
+                     <Nummer>I</Nummer>
+                     <Opschrift>Overzicht Informatieobjecten</Opschrift>
+                  </Kop>
+                  <Divisietekst eId="cmp_I__content_o_1" wId="gm0297_1__cmp_I__content_o_1">
+                     <Inhoud>
+                        <Begrippenlijst eId="cmp_I__content_o_1__list_o_1"
+                                        wId="gm0297_1__cmp_I__content_o_1__list_o_1">
+                           <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_1"
+                                   wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1">
+                              <Term>GoedeGebieden</Term>
+                              <Definitie>
+                                 <Al>
+                                    <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+                                                    wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                                    eId="cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                                    ref="/join/id/regdata/gm0297/2019/GoedeGebieden/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/GoedeGebieden/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_2"
+                                   wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2">
+                              <Term>Regelingsgebied</Term>
+                              <Definitie>
+                                 <Al>
+                                    <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+                                                    wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"
+                                                    eId="cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"
+                                                    ref="/join/id/regdata/gm0297/2019/regelingsgebied/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/regelingsgebied/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                        </Begrippenlijst>
+                     </Inhoud>
+                  </Divisietekst>
+               </Bijlage>
+            </RegelingCompact>
+         </WijzigBijlage>
+      </BesluitCompact>
+   </BesluitVersie>
+   <RegelingVersieInformatie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/STOP</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/STOP/nld@2019-06-25;1</data:FRBRExpression>
+         <soortWork>/join/id/stop/work_019</soortWork>
+      </ExpressionIdentificatie>
+      <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <versienummer>1</versienummer>
+      </RegelingVersieMetadata>
+      <RegelingMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/gemeente/gm0297</eindverantwoordelijke>
+         <maker>/tooi/id/gemeente/gm0297</maker>
+         <!--soortBestuursorgaan is 'gemeenteraad'.-->
+         <soortBestuursorgaan>/tooi/def/thes/kern/c_2a7d8663</soortBestuursorgaan>
+         <heeftCiteertitelInformatie>
+            <CiteertitelInformatie>
+               <citeertitel>Gemeentestad (omgevingsplan Zaltbommel)</citeertitel>
+               <isOfficieel>true</isOfficieel>
+            </CiteertitelInformatie>
+         </heeftCiteertitelInformatie>
+         <officieleTitel>Gemeentestad (omgevingsplan Zaltbommel)</officieleTitel>
+         <onderwerpen>
+            <onderwerp>/tooi/def/concept/c_9d1917e9</onderwerp>
+         </onderwerpen>
+         <rechtsgebieden>
+            <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied>
+         </rechtsgebieden>
+         <soortRegeling>/join/id/stop/regelingtype_003</soortRegeling>
+         <!-- Omgevingsplan -->
+      </RegelingMetadata>
+   </RegelingVersieInformatie>
+</AanleveringBesluit>

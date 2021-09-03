@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:fn="http://www.w3.org/2005/xpath-functions"
+     xmlns="https://standaarden.overheid.nl/stop/imop/tekst/"
+     wId_bg="gm0297"
+     wId_versie="1">
+   <node eId="longTitle" oud="longTitle_1" gewijzigd="true"/>
+   <node eId="formula_1" oud="formula_1" gewijzigd="false"/>
+   <node eId="body" oud="body_1" gewijzigd="true"/>
+   <node eId="art_I" oud="art_I" gewijzigd="false"/>
+   <node eId="art_I__art_o_1" oud="gm0297_1__art_I" gewijzigd="true"/>
+   <node eId="art_II" oud="art_II" gewijzigd="false"/>
+   <node eId="art_III" oud="art_III" gewijzigd="false"/>
+   <node eId="formula_2" oud="formula_2" gewijzigd="false"/>
+   <node eId="cmp_A" oud="cmp_A" gewijzigd="false"/>
+   <node eId="longTitle" oud="longTitle_2" gewijzigd="true"/>
+   <node eId="body" oud="body_2" gewijzigd="true"/>
+   <node eId="chp_1" oud="chp_1" gewijzigd="false"/>
+   <node eId="chp_1__art_1.1" oud="chp_1__art_1.1" gewijzigd="false"/>
+   <node eId="chp_1__art_1.1__ref_o_1"
+         oud="chp_1__art_1.1__ref_o_1"
+         gewijzigd="false"/>
+   <node eId="chp_2" oud="chp_2" gewijzigd="false"/>
+   <node eId="chp_2__subchp_2.1" oud="chp_2__subchp_2.1" gewijzigd="false"/>
+   <node eId="chp_2__subchp_2.1__art_2.1"
+         oud="chp_2__subchp_2.1__art_2.1"
+         gewijzigd="false"/>
+   <node eId="chp_2__subchp_2.1__art_2.1__list_o_1"
+         oud="chp_2__subchp_2.1__art_2.1__list_o_1"
+         gewijzigd="false"/>
+   <node eId="chp_2__subchp_2.1__art_2.1__list_o_1__ref_o_1"
+         oud="chp_2__subchp_2.1__art_2.1__list_o_1__ref_o_1"
+         gewijzigd="false"/>
+   <node eId="chp_2__subchp_2.1__art_2.1__list_o_1__item_o_1"
+         oud="chp_2__subchp_2.1__art_2.1__list_o_1__item_a"
+         gewijzigd="true"/>
+   <node eId="cmp_I" oud="cmp_I" gewijzigd="false"/>
+   <node eId="cmp_I__content_o_1" oud="cmp_I__content_o_1" gewijzigd="false"/>
+   <node eId="cmp_I__content_o_1__list_o_1"
+         oud="cmp_I__content_o_1__list_o_1"
+         gewijzigd="false"/>
+   <node eId="cmp_I__content_o_1__list_o_1__item_o_1"
+         oud="cmp_I__content_o_1__list_o_1__item_o_1"
+         gewijzigd="false"/>
+   <node eId="cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"
+         oud="cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"
+         gewijzigd="false"/>
+   <node eId="cmp_I__content_o_1__list_o_1__item_o_2"
+         oud="cmp_I__content_o_1__list_o_1__item_o_2"
+         gewijzigd="false"/>
+   <node eId="cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"
+         oud="cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"
+         gewijzigd="false"/>
+</map>
