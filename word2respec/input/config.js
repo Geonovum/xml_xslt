@@ -79,7 +79,7 @@ var respecConfig =
   authors:
   [
     {
-      name:       "Wim Bakkeren",
+      name:       "Gerard Wolbers",
       company:    "VNG Realisatie",
       companyURL: "https://www.vngrealisatie.nl"
     },
@@ -178,5 +178,5 @@ var respecConfig =
     //height: 20,
     //width: 100,
     url: "https://www.geobasisregistraties.nl/basisregistraties/doorontwikkeling-in-samenhang"
-   }],
-};
+   }]
+}

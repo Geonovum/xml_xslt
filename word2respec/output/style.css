@@ -9,49 +9,56 @@
   padding: 0px;
 }
 body {
-  padding: 0px 12px 0px 0px;
+  font-family: 'Calibri', sans-serif;
+  font-size: 12pt;
+  line-height: 16pt;
   word-wrap: break-word;
 }
-li, p {
-  font-family: 'Calibri', sans-serif;
-  font-size: 12pt;
-  line-height: 16pt;
+p:not(.space-after) {
+  margin-top: 0pt;
+  margin-bottom: 0pt;
 }
-ol + p, ul + p, p + p, div + p {
-  margin-top: 16pt;
+p.space-after {
+  margin-top: 0pt;
+  margin-bottom: 16pt;
 }
-h1 {
+div.head h1, h1 {
   font-family: 'Calibri', sans-serif;
-  font-size: 13pt;
+  font-size: 28pt;
   font-weight: bold;
-  line-height: 16pt;
-  margin: 0pt 0mm 16pt 0mm;
+  color: #005a9c;
+  line-height: 32pt;
+  margin: 0pt 0mm 32pt 0mm;
 }
-h2 {
+div.head h2, h2 {
   font-family: 'Calibri', sans-serif;
-  font-size: 12pt;
+  font-size: 18pt;
   font-weight: bold;
-  line-height: 16pt;
-  margin: 21pt 0mm 7pt 0mm;
+  color: #005a9c;
+  line-height: 24pt;
+  margin: 32pt 0mm 16pt 0mm;
 }
 h3 {
   font-family: 'Calibri', sans-serif;
-  font-size: 12pt;
+  font-size: 14pt;
   font-weight: bold;
-  line-height: 16pt;
-  margin: 16pt 0mm 0pt 0mm;
+  color: #005a9c;
+  line-height: 20pt;
+  margin: 28pt 0mm 16pt 0mm;
 }
 h4 {
   font-family: 'Calibri', sans-serif;
   font-size: 12pt;
   font-weight: bold;
+  color: #005a9c;
   line-height: 16pt;
-  margin: 16pt 0mm 0pt 0mm;
+  margin: 24pt 0mm 8pt 0mm;
 }
 h5 {
   font-family: 'Calibri', sans-serif;
   font-size: 12pt;
   font-weight: bold;
+  color: #005a9c;
   line-height: 16pt;
   margin: 16pt 0mm 0pt 0mm;
 }
@@ -59,20 +66,27 @@ h6 {
   font-family: 'Calibri', sans-serif;
   font-size: 12pt;
   font-weight: bold;
+  color: #005a9c;
   line-height: 16pt;
   margin: 16pt 0mm 0pt 0mm;
 }
-h7 {
+p.heading7 {
   font-family: 'Calibri', sans-serif;
   font-size: 12pt;
   font-weight: bold;
   line-height: 16pt;
   margin: 16pt 0mm 0pt 0mm;
 }
-h8 {
+p.heading8 {
   font-family: 'Calibri', sans-serif;
   font-size: 12pt;
-  font-weight: bold;
+  font-style: italic;
+  line-height: 16pt;
+  margin: 16pt 0mm 0pt 0mm;
+}
+p.heading9 {
+  font-family: 'Calibri', sans-serif;
+  font-size: 12pt;
   line-height: 16pt;
   margin: 16pt 0mm 0pt 0mm;
 }
@@ -80,7 +94,10 @@ h8 {
 /* nummering */
 
 ol,ul li {
-  margin-left: 5mm;
+  margin: 0pt 0mm 0pt 5mm;
+}
+ol,ul {
+  padding: 0pt 0mm 0pt 0mm;
 }
 
 /* inline */
@@ -156,24 +173,39 @@ th {
   height: 16pt;
   padding: 3.5px 1.5mm 3.5px 1.5mm;
   vertical-align: top;
+  word-wrap: break-word;
 }
 td {
   border: 1px solid black;
   height: 16pt;
   padding: 3.5px 1.5mm 3.5px 1.5mm;
   vertical-align: top;
+  word-wrap: break-word;
 }
 table p {
   font-family: 'Calibri', sans-serif;
-  line-height: 16pt;
+  font-size: 10pt;
+  line-height: 14pt;
   margin: 0pt 0mm 0pt 0mm;
+}
+table p.space-after {
+  margin-top: 0pt;
+  margin-bottom: 14pt;
 }
 
 /* figuur */
 
-img {
+section img {
   display: block;
   margin: 16pt 0mm 16pt 0mm;
-  max-height: 100%;
   max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+figcaption {
+  font-family: 'Calibri', sans-serif;
+  font-size: 12pt;
+  line-height: 16pt;
+  text-align: left;
 }
