@@ -5,9 +5,13 @@
 
   <!-- doorgegeven parameters -->
 
-  <xsl:param name="file.list" select="string('file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0/1.0.4/opdracht/GIO001.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0/1.0.4/opdracht/NOVI001.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0/1.0.4/opdracht/manifest-ow.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0/1.0.4/opdracht/manifest.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0/1.0.4/opdracht/opdracht.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0/1.0.4/opdracht/owDivisie.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0/1.0.4/opdracht/owHoofdlijn.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0/1.0.4/opdracht/owLocatie.xml;file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0/1.0.4/opdracht/owRegelingsgebied.xml')"/>
-  <xsl:param name="base.dir" select="string('file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0')"/>
-  <xsl:param name="temp.dir" select="string('file:/C:/Werkbestanden/Geonovum/Transformatie 1.1.0/temp')"/>
+  <xsl:param name="file.list"/>
+  <xsl:param name="base.dir"/>
+  <xsl:param name="temp.dir"/>
+
+  <!-- waardelijsten -->
+
+  <xsl:param name="waardelijsten" select="document(concat($base.dir,'/waardelijsten OW 2.0.0.xml'))//waardelijst"/>
 
   <!-- haal mapping akn op -->
 
@@ -22,7 +26,7 @@
     <xsl:for-each select="tokenize($file.list,';')">
       <xsl:variable name="fullname" select="."/>
       <xsl:choose>
-        <xsl:when test="document($fullname)//l:AmbtsgebiedRef" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
+        <xsl:when test="document($fullname)//(l:AmbtsgebiedRef|l:LocatieRef[fn:matches(@xlink:href,'(GM|PV|WS|LND)[A-Z0-9.]{1,7}')])" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="ambtsgebied">
             <xsl:attribute name="type" select="string('verwijzing')"/>
             <xsl:copy-of select="document($fullname)//l:AmbtsgebiedRef/@xlink:href" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand"/>
@@ -307,6 +311,25 @@
     </xsl:element>
   </xsl:template>
 
+  <!-- mapping thema -->
+
+  <xsl:template match="r:thema|vt:thema">
+    <xsl:variable name="uri" select="fn:tokenize(text(),'/')"/>
+    <xsl:variable name="thema" select="$uri[4]"/>
+    <xsl:variable name="subthema" select="$uri[7]"/>
+    <xsl:variable name="waarde" select="$waardelijsten[./term='Thema']/waarden/waarde[lower-case(./uri)=fn:string-join(($uri[1],'',$uri[3],'thema',$uri[5],$uri[6],$uri[4]),'/')]"/>
+    <xsl:choose>
+      <xsl:when test="$waarde">
+        <xsl:element name="{name()}" namespace="{namespace-uri()}">
+          <xsl:value-of select="$waarde/uri"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:comment><xsl:value-of select="concat('Waarde ''',text(),''' is niet gevonden in waardelijsten 2.0.0.')"/></xsl:comment>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
   <!-- aanpassing ambtsgebied -->
 
   <xsl:template match="sl:standBestand[descendant::sl:objectType='Gebied']">
@@ -420,7 +443,7 @@
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="l:AmbtsgebiedRef">
+  <xsl:template match="l:AmbtsgebiedRef|l:LocatieRef[fn:matches(@xlink:href,'(GM|PV|WS|LND)[A-Z0-9.]{1,7}')]">
     <xsl:element name="l:LocatieRef">
       <xsl:attribute name="xlink:href" select="concat('nl.imow-',$wId_bg,'.ambtsgebied.',$wId_oin/OIN)"/>
     </xsl:element>
