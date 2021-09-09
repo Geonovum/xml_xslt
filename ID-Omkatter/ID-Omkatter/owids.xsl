@@ -10,8 +10,7 @@
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
 
     <xsl:param name="alreadyRetrievedDateTime"/>
-
-
+    
     <xsl:template match="@* | node()">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
@@ -46,12 +45,6 @@
     <xsl:template match="ga:identificatie">
         <xsl:element name="ga:identificatie">
             <xsl:value-of select="foo:generateOWId(text())"/>
-        </xsl:element>
-    </xsl:template>
-    <!-- Locatie -->
-    <xsl:template match="l:Ambtsgebied/l:identificatie">
-        <xsl:element name="l:identificatie">
-            <xsl:value-of select="text()"/>
         </xsl:element>
     </xsl:template>
     <!-- Locatie -->
