@@ -9,7 +9,9 @@
     xmlns:foo="http://whatever">
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
 
-    <xsl:param name="alreadyRetrievedDateTime"/>
+    <!--<xsl:param name="alreadyRetrievedDateTime"/>-->
+    
+    <xsl:variable name="alreadyRetrievedDateTime" select="'220210902083408'"/>
 
 
     <xsl:template match="@* | node()">
@@ -46,12 +48,6 @@
     <xsl:template match="ga:identificatie">
         <xsl:element name="ga:identificatie">
             <xsl:value-of select="foo:generateOWId(text())"/>
-        </xsl:element>
-    </xsl:template>
-    <!-- Locatie -->
-    <xsl:template match="l:Ambtsgebied/l:identificatie">
-        <xsl:element name="l:identificatie">
-            <xsl:value-of select="text()"/>
         </xsl:element>
     </xsl:template>
     <!-- Locatie -->
