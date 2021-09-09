@@ -318,16 +318,19 @@
     <xsl:variable name="thema" select="$uri[4]"/>
     <xsl:variable name="subthema" select="$uri[7]"/>
     <xsl:variable name="waarde" select="$waardelijsten[./term='Thema']/waarden/waarde[lower-case(./uri)=fn:string-join(($uri[1],'',$uri[3],'thema',$uri[5],$uri[6],$uri[4]),'/')]"/>
-    <xsl:choose>
-      <xsl:when test="$waarde">
-        <xsl:element name="{name()}" namespace="{namespace-uri()}">
-          <xsl:value-of select="$waarde/uri"/>
-        </xsl:element>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:comment><xsl:value-of select="concat('Waarde ''',text(),''' is niet gevonden in waardelijsten 2.0.0.')"/></xsl:comment>
-      </xsl:otherwise>
-    </xsl:choose>
+    <!-- alleen de eerste van een thema plaatsen -->
+    <xsl:if test="not((preceding-sibling::r:thema|preceding-sibling::vt:thema)/fn:tokenize(text(),'/')[4]=$thema)">
+      <xsl:choose>
+        <xsl:when test="$waarde">
+          <xsl:element name="{name()}" namespace="{namespace-uri()}">
+            <xsl:value-of select="$waarde/uri"/>
+          </xsl:element>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:comment><xsl:value-of select="concat('Waarde ''',text(),''' is niet gevonden in waardelijsten 2.0.0.')"/></xsl:comment>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:if>
   </xsl:template>
 
   <!-- aanpassing ambtsgebied -->
