@@ -26,7 +26,7 @@
     <xsl:for-each select="tokenize($file.list,';')">
       <xsl:variable name="fullname" select="."/>
       <xsl:choose>
-        <xsl:when test="document($fullname)//(l:AmbtsgebiedRef|l:LocatieRef[fn:matches(@xlink:href,'(GM|PV|WS|LND)[A-Z0-9.]{1,7}')])" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
+        <xsl:when test="document($fullname)//(l:AmbtsgebiedRef|l:GebiedRef|l:GebiedengroepRef|l:LijnRef|l:LijnengroepRef|l:LocatieRef|l:PuntRef|l:PuntengroepRef[fn:matches(@xlink:href,'(GM|PV|WS|LND)[A-Z0-9.]{1,7}')])" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="ambtsgebied">
             <xsl:attribute name="type" select="string('verwijzing')"/>
             <xsl:copy-of select="document($fullname)//l:AmbtsgebiedRef/@xlink:href" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand"/>
@@ -443,9 +443,17 @@
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="l:AmbtsgebiedRef|l:LocatieRef[fn:matches(@xlink:href,'(GM|PV|WS|LND)[A-Z0-9.]{1,7}')]">
+  <xsl:template match="l:AmbtsgebiedRef|l:GebiedRef|l:GebiedengroepRef|l:LijnRef|l:LijnengroepRef|l:LocatieRef|l:PuntRef|l:PuntengroepRef[fn:matches(@xlink:href,'(GM|PV|WS|LND)[A-Z0-9.]{1,7}')]" priority="10">
     <xsl:element name="l:LocatieRef">
       <xsl:attribute name="xlink:href" select="concat('nl.imow-',$wId_bg,'.ambtsgebied.',$wId_oin/OIN)"/>
+    </xsl:element>
+  </xsl:template>
+
+  <!-- aanpassing locatieaanduiding -->
+
+  <xsl:template match="l:AmbtsgebiedRef|l:GebiedRef|l:GebiedengroepRef|l:LijnRef|l:LijnengroepRef|l:LocatieRef|l:PuntRef|l:PuntengroepRef">
+    <xsl:element name="l:LocatieRef">
+      <xsl:copy-of select="@xlink:href"/>
     </xsl:element>
   </xsl:template>
 
