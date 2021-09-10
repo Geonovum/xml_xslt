@@ -446,18 +446,36 @@
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="l:AmbtsgebiedRef|l:GebiedRef|l:GebiedengroepRef|l:LijnRef|l:LijnengroepRef|l:LocatieRef|l:PuntRef|l:PuntengroepRef[fn:matches(@xlink:href,'(GM|PV|WS|LND)[A-Z0-9.]{1,7}')]" priority="10">
-    <xsl:element name="l:LocatieRef">
-      <xsl:attribute name="xlink:href" select="concat('nl.imow-',$wId_bg,'.ambtsgebied.',$wId_oin/OIN)"/>
-    </xsl:element>
+  <xsl:template match="(l:AmbtsgebiedRef|l:GebiedRef|l:GebiedengroepRef|l:LijnRef|l:LijnengroepRef|l:LocatieRef|l:PuntRef|l:PuntengroepRef)[fn:matches(@xlink:href,'(GM|PV|WS|LND)[A-Z0-9.]{1,7}')]" priority="10">
+    <xsl:choose>
+      <xsl:when test="parent::element()/local-name()='locatieaanduiding'">
+        <xsl:element name="l:LocatieRef">
+          <xsl:attribute name="xlink:href" select="concat('nl.imow-',$wId_bg,'.ambtsgebied.',$wId_oin/OIN)"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:element name="{name()}" namespace="{namespace-uri()}">
+          <xsl:attribute name="xlink:href" select="concat('nl.imow-',$wId_bg,'.ambtsgebied.',$wId_oin/OIN)"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!-- aanpassing locatieaanduiding -->
 
   <xsl:template match="l:AmbtsgebiedRef|l:GebiedRef|l:GebiedengroepRef|l:LijnRef|l:LijnengroepRef|l:LocatieRef|l:PuntRef|l:PuntengroepRef">
-    <xsl:element name="l:LocatieRef">
-      <xsl:copy-of select="@xlink:href"/>
-    </xsl:element>
+    <xsl:choose>
+      <xsl:when test="parent::element()/local-name()='locatieaanduiding'">
+        <xsl:element name="l:LocatieRef">
+          <xsl:copy-of select="@xlink:href"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:element name="{name()}" namespace="{namespace-uri()}">
+          <xsl:copy-of select="@xlink:href"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!-- Algemene templates -->
