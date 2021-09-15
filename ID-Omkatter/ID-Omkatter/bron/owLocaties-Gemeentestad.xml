@@ -10,7 +10,7 @@
                  xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
                  xmlns:r="http://www.geostandaarden.nl/imow/regels"
                  xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
-                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.4/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
    <sl:standBestand>
       <sl:dataset>Gemeentestad</sl:dataset>
       <sl:inhoud>
@@ -226,15 +226,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Ambtsgebied>
-               <l:identificatie>nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied</l:identificatie>
+               <l:identificatie>GM0297</l:identificatie>
                <l:noemer>Gemeente Zaltbommel</l:noemer>
-               <l:bestuurlijkeGrenzenVerwijzing>
-                  <l:BestuurlijkeGrenzenVerwijzing>
-                     <l:bestuurlijkeGrenzenID>GM0297</l:bestuurlijkeGrenzenID>
-                     <l:domein>NL.BI.BestuurlijkGebied</l:domein>
-                     <l:geldigOp>2021-01-01</l:geldigOp>
-                  </l:BestuurlijkeGrenzenVerwijzing>
-               </l:bestuurlijkeGrenzenVerwijzing>
+               <l:domein>NL.BI.BestuurlijkGebied</l:domein>
+               <l:geldigOp>2021-01-01</l:geldigOp>
             </l:Ambtsgebied>
          </ow-dc:owObject> 
       </sl:stand>

@@ -123,6 +123,7 @@
       <param name="file.list" expression="${file.list}"/>
       <param name="base.dir" expression="${base.dir}"/>
       <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+      <param name="bronnummer" expression="0"/>
     </xslt>
     <xslt in="${temp.dir}/index1.xml" out="${temp.dir}/index.xml" style="filter-dupes.xsl" processor="trax" force="true">
       <classpath location="saxon9he.jar"/>
@@ -139,6 +140,7 @@
               <param name="file.list" expression="${file_@{number}.list}"/>
               <param name="base.dir" expression="${base.dir}"/>
               <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+              <param name="bronnummer" expression="@{number}"/>
             </xslt>
             <xslt in="${temp_@{number}.dir}/index1.xml" out="${temp_@{number}.dir}/index.xml" style="filter-dupes.xsl" processor="trax" force="true">
               <classpath location="saxon9he.jar"/>
@@ -833,6 +835,56 @@
       </sequential>
     </for>
   </target>
+  
+  <target name="intrekkingopvolgervan" description="Verandert Besluit en RegelingsIds door er een datum/tijd string in het vrij invulbare deel te zetten.">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/Regeling">
+        <param name="besluit.name" path="../file[contains(@type,'besluit.xml')]/name/text()"/>
+        <param name="origineleregelingsFBRWork" path="OrigineleregelingsFBRWork/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+            <classpath location="saxon9he.jar"/>
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+            <param name="origineleregelingsFBRWork" expression="@{origineleregelingsFBRWork}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{besluit.name}" tofile="${output.dir}/@{besluit.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+      <sequential>
+        <if>
+          <available file="bron_@{number}" type="dir"/>
+          <then>
+            <xmltask source="${temp_@{number}.dir}/index.xml">
+              <call path="index/Regeling">
+                <param name="besluit.name" path="../file[contains(@type,'besluit.xml')]/name/text()"/>
+                <param name="origineleregelingsFBRWork" path="OrigineleregelingsFBRWork/text()"/>
+                <actions>
+                  <if>
+                    <available file="bron_@{number}" type="dir"/>
+                    <then>
+                      <if>
+                        <available file="bron_@{number}/@{besluit.name}"/>
+                        <then>
+                          <xslt in="${output_@{number}.dir}/@{besluit.name}" out="${temp_@{number}.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+                            <classpath location="saxon9he.jar"/>
+                            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+                            <param name="origineleregelingsFBRWork" expression="@{origineleregelingsFBRWork}"/>
+                          </xslt>
+                          <copy file="${temp_@{number}.dir}/@{besluit.name}" tofile="${output_@{number}.dir}/@{besluit.name}"/>
+                        </then>
+                      </if>
+                    </then>
+                  </if>
+                </actions>
+              </call>
+            </xmltask>
+          </then>
+        </if>
+      </sequential>
+    </for>
+  </target>
 
   <target name="informatieobjectRefs" description="Vervangt de GIO-objctrefs in besluit, gio's en gml's">
     <xmltask source="${temp.dir}/index.xml">
@@ -1094,7 +1146,7 @@
   <!-- totale transformatie -->
 
   <target name="main" description="Totale transformatie"
-    depends="init, copy, index, besluitregelingids, informatieobjectRefs, guids,  owids, leveringid_opdrachtparameters, doelids, checksum, checksum_gio"/>
-  <!--  -->
+     depends="init, copy, index, besluitregelingids, intrekkingopvolgervan, informatieobjectRefs, guids,  owids, leveringid_opdrachtparameters, doelids, checksum, checksum_gio"/>
+ 
 
 </project>
