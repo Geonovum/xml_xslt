@@ -65,13 +65,13 @@
 
     <xsl:template match="data:opvolging/data:opvolgerVan[text() = $origineleregelingsFBRWork]">
         <xsl:element name="data:opvolgerVan">
-            <xsl:value-of select="text()"/>
+            <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
         </xsl:element>
     </xsl:template>
 
     <xsl:template match="data:Intrekkingen/data:Intrekking/data:instrument[text() = $origineleregelingsFBRWork]">
         <xsl:element name="data:instrument">
-            <xsl:value-of select="text()"/>
+            <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
         </xsl:element>
     </xsl:template>
 
