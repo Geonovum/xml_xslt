@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.overheid.nl/2017/lvbb">
+   <bestand>
+      <bestandsnaam>manifest.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>manifest-ow.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>Mutatie_besluit_verwijderen_artikel_met_GIO.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>opdracht.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand> 
+   <bestand>
+      <bestandsnaam>owRegeltekst-Gemeentestad.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand> 
+   <bestand>
+      <bestandsnaam>owOmgevingsnormOmgevingswaarde.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>owLocatie-Gemeentestad.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+</manifest>

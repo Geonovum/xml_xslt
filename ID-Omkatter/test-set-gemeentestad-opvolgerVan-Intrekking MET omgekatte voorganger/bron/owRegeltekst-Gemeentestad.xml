@@ -10,7 +10,7 @@
                  xmlns:l="http://www.geostandaarden.nl/imow/locatie"
                  xmlns:r="http://www.geostandaarden.nl/imow/regels"
                  xmlns:k="http://www.geostandaarden.nl/imow/kaart"
-                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.4/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
    <sl:standBestand>
       <sl:dataset>Gemeentestad</sl:dataset>
       <sl:inhoud>
@@ -550,7 +550,7 @@
                   <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.2019000113"/>
                </r:artikelOfLid>
                <r:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                  <l:LocatieRef xlink:href="GM0297"/>
                </r:locatieaanduiding>
                <r:activiteitaanduiding>
                   <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.2019000800"/>
@@ -558,7 +558,7 @@
                      <r:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000111</r:identificatie>
                      <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</r:activiteitregelkwalificatie>
                      <r:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                        <l:LocatieRef xlink:href="GM0297"/>
                      </r:locatieaanduiding>
                   </r:ActiviteitLocatieaanduiding>
                </r:activiteitaanduiding>
@@ -568,7 +568,7 @@
                      <r:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000112</r:identificatie>
                      <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht</r:activiteitregelkwalificatie>
                      <r:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                        <l:LocatieRef xlink:href="GM0297"/>
                      </r:locatieaanduiding>
                   </r:ActiviteitLocatieaanduiding>
                </r:activiteitaanduiding>
@@ -578,7 +578,7 @@
                      <r:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000113</r:identificatie>
                      <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht</r:activiteitregelkwalificatie>
                      <r:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                        <l:LocatieRef xlink:href="GM0297"/>
                      </r:locatieaanduiding>
                   </r:ActiviteitLocatieaanduiding>
                </r:activiteitaanduiding>
@@ -601,7 +601,7 @@
                   <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.2019000114"/>
                </r:artikelOfLid>
                <r:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                  <l:LocatieRef xlink:href="GM0297"/>
                </r:locatieaanduiding>
                <r:activiteitaanduiding>
                   <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.2019000810"/>
@@ -609,7 +609,7 @@
                      <r:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000114</r:identificatie>
                      <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht</r:activiteitregelkwalificatie>
                      <r:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                        <l:LocatieRef xlink:href="GM0297"/>
                      </r:locatieaanduiding>
                   </r:ActiviteitLocatieaanduiding>
                </r:activiteitaanduiding>
@@ -632,7 +632,7 @@
                   <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.2019000115"/>
                </r:artikelOfLid>
                <r:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                  <l:LocatieRef xlink:href="GM0297"/>
                </r:locatieaanduiding>
                <r:activiteitaanduiding>
                   <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.2019000810"/>
@@ -640,7 +640,7 @@
                      <r:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000115</r:identificatie>
                      <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</r:activiteitregelkwalificatie>
                      <r:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                        <l:LocatieRef xlink:href="GM0297"/>
                      </r:locatieaanduiding>
                   </r:ActiviteitLocatieaanduiding>
                </r:activiteitaanduiding>
@@ -648,7 +648,7 @@
          </ow-dc:owObject>
       </sl:stand>
       <!--onderstaande is overbodig als er al een topactiviteit aanwezig is in de omgeving-->
-      <sl:stand>
+<!--      <sl:stand>
          <ow-dc:owObject>
             <r:Regeltekst wId="gm0297_1__chp_1__art_1.4">
                <r:identificatie>nl.imow-gm0297.regeltekst.2019000116</r:identificatie>
@@ -664,7 +664,7 @@
                   <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.2019000116"/>
                </r:artikelOfLid>
                <r:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zuilichem"/>
                </r:locatieaanduiding>
                <r:activiteitaanduiding>
                   <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
@@ -672,12 +672,12 @@
                      <r:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000015</r:identificatie>
                      <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/AndersGeduid</r:activiteitregelkwalificatie>
                      <r:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zuilichem"/>
                      </r:locatieaanduiding>
                   </r:ActiviteitLocatieaanduiding>
                </r:activiteitaanduiding>
             </r:RegelVoorIedereen>
          </ow-dc:owObject>
-      </sl:stand>
+      </sl:stand>-->
    </sl:standBestand>
 </ow-dc:owBestand>

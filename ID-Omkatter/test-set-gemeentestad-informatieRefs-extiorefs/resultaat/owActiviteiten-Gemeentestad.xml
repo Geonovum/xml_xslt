@@ -15,7 +15,7 @@
       <sl:dataset>Gemeentestad</sl:dataset>
       <sl:inhoud>
          <sl:gebied>Gemeentestad</sl:gebied>
-         <sl:leveringsId>abc-20190221-0801</sl:leveringsId>
+         <sl:leveringsId>id-publicatie-1250-20210915052807</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Activiteit</sl:objectType>
          </sl:objectTypen>
@@ -24,12 +24,12 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000241</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900024120210915052806</rol:identificatie>
                <!-- Deze activiteit is voor de 1e keer ontstaan/gecreeerd in artikel 2.4 nl.imow-gm0297.Regeltekst.2019000002 -->
                <rol:naam>uitoefenen van bedrijfstypen van categorie 2</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                   <!-- Deze activiteit is van het rijk en zit daarom niet in dit bestand maar is opgenomen in de Functionele Structuur (versie 9) -->
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
@@ -38,11 +38,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000243</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900024320210915052806</rol:identificatie>
                <rol:naam>aanleggen en instandhouden van nutsvoorzieningen</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitTechnisch</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -50,11 +50,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000244</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900024420210915052806</rol:identificatie>
                <rol:naam>aanleggen en instandhouden van voorzieningen voor de waterhuishouding</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitTechnisch</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -62,11 +62,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000245</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900024520210915052806</rol:identificatie>
                <rol:naam>aanleggen en instandhouden van tuin en/of erf</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitTechnisch</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -74,11 +74,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000246</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900024620210915052806</rol:identificatie>
                <rol:naam>uitoefenen van detailhandel in ter plaatse vervaardigde goederen</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -87,11 +87,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000730</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900073020210915052806</rol:identificatie>
                <rol:naam>exploiteren van inrichtingen</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitBedrijf</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -99,11 +99,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000740</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900074020210915052806</rol:identificatie>
                <rol:naam>exploiteren van risicovolle inrichtingen</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitBedrijf</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -111,11 +111,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000750</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900075020210915052806</rol:identificatie>
                <rol:naam>opslagterrein</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Opslagactiviteit</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -124,11 +124,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000590</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900059020210915052806</rol:identificatie>
                <rol:naam>uitoefenen van detailhandel in ter plaatse vervaardigde goederen</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -137,14 +137,14 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000540</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900054020210915052806</rol:identificatie>
                <rol:naam>exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel</rol:groep>
                <rol:gerelateerdeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.2019000760"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.201900076020210915052806"/>
                </rol:gerelateerdeActiviteit>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -152,11 +152,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000760</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900076020210915052806</rol:identificatie>
                <rol:naam>opslaan van motorbrandstoffen niet zijnde lpg</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Opslagactiviteit</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -166,11 +166,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000660</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900066020210915052806</rol:identificatie>
                <rol:naam>exploiteren van een speelautomatenhal</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitHoreca</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -178,11 +178,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000680</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900068020210915052806</rol:identificatie>
                <rol:naam>exploiteren van een kantoor</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitKantoor</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -191,11 +191,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000530</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900053020210915052806</rol:identificatie>
                <rol:naam>wonen in een bedrijfswoning</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Woonactiviteit</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -203,11 +203,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000800</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900080020210915052806</rol:identificatie>
                <rol:naam>bouwen van een bijgebouw</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitRuimtelijk</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -215,11 +215,11 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.2019000810</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.201900081020210915052806</rol:identificatie>
                <rol:naam>boom kappen</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Kapactiviteit</rol:groep>
                <rol:bovenliggendeActiviteit>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806"/>
                </rol:bovenliggendeActiviteit>
             </rol:Activiteit>
          </ow-dc:owObject>
@@ -229,7 +229,7 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Activiteit>
-               <rol:identificatie>nl.imow-gm0297.activiteit.ActInOmgevingsplanGem</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.activiteit.ActInOmgevingsplanGem10915052806</rol:identificatie>
                <rol:naam>Activiteit in omgevingsplan Zaltbommel</rol:naam>
                <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Overig</rol:groep>
                <rol:bovenliggendeActiviteit>
