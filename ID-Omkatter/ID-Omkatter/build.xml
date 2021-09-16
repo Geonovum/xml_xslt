@@ -630,7 +630,7 @@
     </for>
 
     <xmltask source="${temp.dir}/index.xml">
-      <call path="index/file[contains(@type,'besluit.xml')]">
+      <call path="index/file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]">
         <param name="file.name" path="name/text()"/>
         <actions>
           <xslt in="${output.dir}/@{file.name}" out="${temp.dir}/@{file.name}" extension=".xml" style="doelids.xsl" processor="trax" force="true">
@@ -647,7 +647,7 @@
           <available file="bron_@{number}" type="dir"/>
           <then>
             <xmltask source="${temp_@{number}.dir}/index.xml">
-              <call path="index/file[contains(@type,'besluit.xml')]">
+              <call path="index/file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]">
                 <param name="file.name" path="name/text()"/>
                 <actions>
                   <if>
@@ -673,7 +673,7 @@
     <!-- BESLUIT -->
     <!-- REGELING -->
     <xmltask source="${temp.dir}/index.xml">
-      <call path="index/file[contains(@type,'besluit.xml')]">
+      <call path="index/file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]">
         <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <actions>
           <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
@@ -719,7 +719,7 @@
           <available file="bron_@{number}" type="dir"/>
           <then>
             <xmltask source="${temp_@{number}.dir}/index.xml">
-              <call path="index/file[contains(@type,'besluit.xml')]">
+              <call path="index/file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]">
                 <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="manifest-ow.name" path="../file[contains(@type,'manifest-ow.xml')]/name/text()"/>
                 <actions>
@@ -850,7 +850,7 @@
   <target name="informatieobjectRefs" description="Vervangt de GIO-objctrefs in besluit, gio's en gml's">
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/besluit/informatieobjectRef">
-        <param name="besluit.name" path="../../file[contains(@type,'besluit.xml')]/name/text()"/>
+        <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="oldIoRefId" path="oldIoRefId/text()"/>
         <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
         <param name="gmlFile" path="gml/text()"/>
@@ -873,7 +873,7 @@
           <then>
             <xmltask source="${temp_@{number}.dir}/index.xml">
               <call path="index/besluit/informatieobjectRef">
-                <param name="besluit.name" path="../../file[contains(@type,'besluit.xml')]/name/text()"/>
+                <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="oldIoRefId" path="oldIoRefId/text()"/>
                 <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
                 <param name="gmlFile" path="gml/text()"/>
@@ -900,7 +900,7 @@
     </for>
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/besluit/informatieobjectRef">
-        <param name="besluit.name" path="../../file[contains(@type,'besluit.xml')]/name/text()"/>
+        <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="oldIoRefId" path="oldIoRefId/text()"/>
         <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
         <param name="gmlFile" path="gml/text()"/>
@@ -922,7 +922,7 @@
           <then>
             <xmltask source="${temp_@{number}.dir}/index.xml">
               <call path="index/besluit/informatieobjectRef">
-                <param name="besluit.name" path="../../file[contains(@type,'besluit.xml')]/name/text()"/>
+                <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="oldIoRefId" path="oldIoRefId/text()"/>
                 <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
                 <param name="gmlFile" path="gml/text()"/>
@@ -948,7 +948,7 @@
     </for>
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/besluit/informatieobjectRef">
-        <param name="besluit.name" path="../../file[contains(@type,'besluit.xml')]/name/text()"/>
+        <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="oldIoRefId" path="oldIoRefId/text()"/>
         <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
         <param name="gioFile" path="gio/text()"/>
@@ -970,7 +970,7 @@
           <then>
             <xmltask source="${temp_@{number}.dir}/index.xml">
               <call path="index/besluit/informatieobjectRef">
-                <param name="besluit.name" path="../../file[contains(@type,'besluit.xml')]/name/text()"/>
+                <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="oldIoRefId" path="oldIoRefId/text()"/>
                 <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
                 <param name="gioFile" path="gio/text()"/>
@@ -999,7 +999,7 @@
   <target name="historischInformatieobjectRefs" description="Vervangt de GIO-objectrefs in besluit, gio's en gml's">
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/historischInformatieobjectRef">
-        <param name="besluit.name" path="../file[contains(@type,'besluit.xml')]/name/text()"/>
+        <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="oldIoRefId" path="oldIoRefId/text()"/>
         <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
         <actions>
@@ -1020,7 +1020,7 @@
           <then>
             <xmltask source="${temp_@{number}.dir}/index.xml">
               <call path="index/historischInformatieobjectRef">
-                <param name="besluit.name" path="../file[contains(@type,'besluit.xml')]/name/text()"/>
+                <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="oldIoRefId" path="oldIoRefId/text()"/>
                 <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
                 <actions>
