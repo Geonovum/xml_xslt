@@ -674,7 +674,7 @@
     <!-- REGELING -->
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/file[contains(@type,'besluit.xml')]">
-        <param name="besluit.name" path="../file[contains(@type,'besluit.xml')]/name/text()"/>
+        <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <actions>
           <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
             <classpath location="saxon9he.jar"/>
@@ -720,7 +720,7 @@
           <then>
             <xmltask source="${temp_@{number}.dir}/index.xml">
               <call path="index/file[contains(@type,'besluit.xml')]">
-                <param name="besluit.name" path="../file[contains(@type,'besluit.xml')]/name/text()"/>
+                <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="manifest-ow.name" path="../file[contains(@type,'manifest-ow.xml')]/name/text()"/>
                 <actions>
                   <if>
@@ -747,45 +747,6 @@
                           <copy file="${temp_@{number}.dir}/@{manifest-ow.name}" tofile="${output_@{number}.dir}/@{manifest-ow.name}"/>
                         </then>
                       </if>
-                    </then>
-                  </if>
-                </actions>
-              </call>
-            </xmltask>
-          </then>
-        </if>
-      </sequential>
-    </for>
-    <!-- KENNISGEVING -->
-    <xmltask source="${temp.dir}/index.xml">
-      <call path="index/file[contains(@type,'kennisgeving.xml')]">
-        <param name="besluit.name" path="../file[contains(@type,'kennisgeving.xml')]/name/text()"/>
-        <actions>
-          <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
-            <classpath location="saxon9he.jar"/>
-            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
-          </xslt>
-          <copy file="${temp.dir}/@{besluit.name}" tofile="${output.dir}/@{besluit.name}"/>
-        </actions>
-      </call>
-    </xmltask>
-    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
-      <sequential>
-        <if>
-          <available file="bron_@{number}" type="dir"/>
-          <then>
-            <xmltask source="${temp_@{number}.dir}/index.xml">
-              <call path="index/file[contains(@type,'kennisgeving.xml')]">
-                <param name="besluit.name" path="../file[contains(@type,'kennisgeving.xml')]/name/text()"/>
-                <actions>
-                  <if>
-                    <available file="bron_@{number}/@{besluit.name}"/>
-                    <then>
-                      <xslt in="${output_@{number}.dir}/@{besluit.name}" out="${temp_@{number}.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
-                        <classpath location="saxon9he.jar"/>
-                        <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
-                      </xslt>
-                      <copy file="${temp_@{number}.dir}/@{besluit.name}" tofile="${output_@{number}.dir}/@{besluit.name}"/>
                     </then>
                   </if>
                 </actions>
@@ -839,7 +800,7 @@
   <target name="intrekkingopvolgervan" description="Verandert Besluit en RegelingsIds door er een datum/tijd string in het vrij invulbare deel te zetten.">
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/Regeling">
-        <param name="besluit.name" path="../file[contains(@type,'besluit.xml')]/name/text()"/>
+        <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="origineleregelingsFBRWork" path="OrigineleregelingsFBRWork/text()"/>
         <actions>
           <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
@@ -858,7 +819,7 @@
           <then>
             <xmltask source="${temp_@{number}.dir}/index.xml">
               <call path="index/Regeling">
-                <param name="besluit.name" path="../file[contains(@type,'besluit.xml')]/name/text()"/>
+                <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="origineleregelingsFBRWork" path="OrigineleregelingsFBRWork/text()"/>
                 <actions>
                   <if>
@@ -1034,6 +995,55 @@
       </sequential>
     </for>
   </target>
+  
+  <target name="historischInformatieobjectRefs" description="Vervangt de GIO-objectrefs in besluit, gio's en gml's">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/historischInformatieobjectRef">
+        <param name="besluit.name" path="../file[contains(@type,'besluit.xml')]/name/text()"/>
+        <param name="oldIoRefId" path="oldIoRefId/text()"/>
+        <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
+            <classpath location="saxon9he.jar"/>
+            <param name="oldIoRefId" expression="@{oldIoRefId}"/>
+            <param name="oldIoWorkId" expression="@{oldIoWorkId}"/>
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{besluit.name}" tofile="${output.dir}/@{besluit.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+      <sequential>
+        <if>
+          <available file="bron_@{number}" type="dir"/>
+          <then>
+            <xmltask source="${temp_@{number}.dir}/index.xml">
+              <call path="index/historischInformatieobjectRef">
+                <param name="besluit.name" path="../file[contains(@type,'besluit.xml')]/name/text()"/>
+                <param name="oldIoRefId" path="oldIoRefId/text()"/>
+                <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
+                <actions>
+                  <if>
+                    <available file="bron_@{number}/@{besluit.name}"/>
+                    <then>
+                      <xslt in="${output_@{number}.dir}/@{besluit.name}" out="${temp_@{number}.dir}/@{besluit.name}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
+                        <classpath location="saxon9he.jar"/>
+                        <param name="oldIoRefId" expression="@{oldIoRefId}"/>
+                        <param name="oldIoWorkId" expression="@{oldIoWorkId}"/>
+                        <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+                      </xslt>
+                      <copy file="${temp_@{number}.dir}/@{besluit.name}" tofile="${output_@{number}.dir}/@{besluit.name}"/>
+                    </then>
+                  </if>
+                </actions>
+              </call>
+            </xmltask>
+          </then>
+        </if>
+      </sequential>
+    </for>
+  </target>
 
 
   <target name="checksum_gio" description="Gebruikt de informatie van de interne ANT checksum functionaliteit.">
@@ -1146,7 +1156,6 @@
   <!-- totale transformatie -->
 
   <target name="main" description="Totale transformatie"
-     depends="init, copy, index, besluitregelingids, intrekkingopvolgervan, informatieobjectRefs, guids,  owids, leveringid_opdrachtparameters, doelids, checksum, checksum_gio"/>
- 
-
+       depends="init, copy, index, besluitregelingids, intrekkingopvolgervan, informatieobjectRefs, historischInformatieobjectRefs, guids,  owids, leveringid_opdrachtparameters, doelids, checksum, checksum_gio"/>
+    
 </project>

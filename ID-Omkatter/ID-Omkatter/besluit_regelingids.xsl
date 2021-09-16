@@ -63,29 +63,15 @@
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="data:opvolging/data:opvolgerVan">
+    <xsl:template match="data:opvolging/data:opvolgerVan[text() = $origineleregelingsFBRWork]">
         <xsl:element name="data:opvolgerVan">
-            <xsl:choose>
-                <xsl:when test="text() = $origineleregelingsFBRWork">
-                    <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="text()"/>
-                </xsl:otherwise>
-            </xsl:choose>
+            <xsl:value-of select="text()"/>
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="data:Intrekkingen/data:Intrekking/data:instrument">
+    <xsl:template match="data:Intrekkingen/data:Intrekking/data:instrument[text() = $origineleregelingsFBRWork]">
         <xsl:element name="data:instrument">
-            <xsl:choose>
-                <xsl:when test="text() = $origineleregelingsFBRWork">
-                    <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="text()"/>
-                </xsl:otherwise>
-            </xsl:choose>
+            <xsl:value-of select="text()"/>
         </xsl:element>
     </xsl:template>
 

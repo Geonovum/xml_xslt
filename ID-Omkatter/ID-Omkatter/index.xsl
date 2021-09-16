@@ -89,6 +89,59 @@
                     </xsl:choose>
                 </xsl:if>
             </xsl:for-each>
+            <!-- historische informatieobjectRefs voor verwerking in extiorefs die geen informatieobjectRefs in actueel besluit hebben -->
+            <!-- ga directories af -->
+            <xsl:for-each select="$sequence">
+                <xsl:if test="$bronnummer >= position() - 1 and document($fullname)/aanlevering:AanleveringBesluit">
+                    <xsl:choose>
+                        <xsl:when test="position() - 1 = 0">
+                            <!-- kijk of er bestanden bestaan in directory (of directory bestaat) -->
+                            <xsl:if test="doc-available(concat($base.dir, '/bron/opdracht.xml'))">
+                                <!-- scan alle bestanden -->
+                                <xsl:variable name="directory" select="concat($base.dir, '/bron')"/>
+                                <xsl:for-each select="collection(concat($directory, '?select=*.xml'))">
+                                    <xsl:for-each select="document(base-uri(.))//data:BesluitMetadata/data:informatieobjectRefs/data:informatieobjectRef">
+                                        <xsl:element name="historischInformatieobjectRef">
+                                            <xsl:variable name="oldIoRefId" select="text()"/>
+                                            <xsl:variable name="oldIoWorkId"
+                                                select="concat('/', tokenize($oldIoRefId, '/')[2], '/', tokenize($oldIoRefId, '/')[3], '/', tokenize($oldIoRefId, '/')[4], '/', tokenize($oldIoRefId, '/')[5], '/', tokenize($oldIoRefId, '/')[6], '/', tokenize($oldIoRefId, '/')[7])"/>
+                                            <xsl:element name="oldIoWorkId">
+                                                <xsl:value-of select="$oldIoWorkId"/>
+                                            </xsl:element>
+                                            <xsl:element name="oldIoRefId">
+                                                <xsl:value-of select="$oldIoRefId"/>
+                                            </xsl:element>
+                                        </xsl:element>
+                                    </xsl:for-each>
+                                </xsl:for-each>
+                            </xsl:if>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <!-- kijk of er bestanden bestaan in directory (of directory bestaat) -->
+                            <xsl:if test="doc-available(concat($base.dir, '/bron_', position() - 1, '/opdracht.xml'))">
+                                <!-- scan alle bestanden -->
+                                <xsl:variable name="directory" select="concat($base.dir, '/bron_', position() - 1)"/>
+                                <xsl:for-each select="collection(concat($directory, '?select=*.xml'))">
+                                    <xsl:for-each select="document(base-uri(.))//data:BesluitMetadata/data:informatieobjectRefs/data:informatieobjectRef">
+                                        <xsl:element name="historischInformatieobjectRef">
+                                            <xsl:variable name="oldIoRefId" select="text()"/>
+                                            <xsl:variable name="oldIoWorkId"
+                                                select="concat('/', tokenize($oldIoRefId, '/')[2], '/', tokenize($oldIoRefId, '/')[3], '/', tokenize($oldIoRefId, '/')[4], '/', tokenize($oldIoRefId, '/')[5], '/', tokenize($oldIoRefId, '/')[6], '/', tokenize($oldIoRefId, '/')[7])"/>
+                                            <xsl:element name="oldIoWorkId">
+                                                <xsl:value-of select="$oldIoWorkId"/>
+                                            </xsl:element>
+                                            <xsl:element name="oldIoRefId">
+                                                <xsl:value-of select="$oldIoRefId"/>
+                                            </xsl:element>
+                                        </xsl:element>
+                                    </xsl:for-each>
+                                </xsl:for-each>
+                            </xsl:if>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:if>
+            </xsl:for-each>
+            <!-- informatieobjectRefs, gerelateerde gml's, gio's -->
             <xsl:if test="document($fullname)/aanlevering:AanleveringBesluit">
                 <xsl:element name="besluit">
                     <xsl:for-each select="document($fullname)//data:BesluitMetadata/data:informatieobjectRefs/data:informatieobjectRef">

@@ -8,6 +8,7 @@
     <xsl:key name="bovenliggendeActiviteit" match="bovenliggendeActiviteitRelatie" use="bovenliggendeActiviteitIdLokaalAanwezig"/>
     <xsl:key name="gerelateerdeActiviteit" match="gerelateerdeActiviteitRelatie" use="gerelateerdeActiviteitIdLokaalAanwezig"/>
     <xsl:key name="RegelingId" match="Regeling" use="OrigineleregelingsFBRWork"/>
+    <xsl:key name="HistorischInformatieobjectRef" match="historischInformatieobjectRef" use="oldIoRefId"/>
     
     <xsl:template match="@*|node()">
         <xsl:copy>
@@ -28,6 +29,8 @@
     <xsl:template match="gerelateerdeActiviteitRelatie[not(generate-id() = generate-id(key('gerelateerdeActiviteit', gerelateerdeActiviteitIdLokaalAanwezig)[1]))]">
     </xsl:template>
     <xsl:template match="Regeling[not(generate-id() = generate-id(key('RegelingId', OrigineleregelingsFBRWork)[1]))]">
+    </xsl:template>
+    <xsl:template match="historischInformatieobjectRef[not(generate-id() = generate-id(key('HistorischInformatieobjectRef', oldIoRefId)[1]))]">
     </xsl:template>
     
 </xsl:stylesheet>
