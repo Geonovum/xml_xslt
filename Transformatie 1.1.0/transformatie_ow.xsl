@@ -26,7 +26,7 @@
     <xsl:for-each select="tokenize($file.list,';')">
       <xsl:variable name="fullname" select="."/>
       <xsl:choose>
-        <xsl:when test="document($fullname)//(l:AmbtsgebiedRef|l:GebiedRef|l:GebiedengroepRef|l:LijnRef|l:LijnengroepRef|l:LocatieRef|l:PuntRef|l:PuntengroepRef[fn:matches(@xlink:href,'(GM|PV|WS|LND)[A-Z0-9.]{1,7}')])" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
+        <xsl:when test="document($fullname)//(l:AmbtsgebiedRef|l:GebiedRef|l:GebiedengroepRef|l:LijnRef|l:LijnengroepRef|l:LocatieRef|l:PuntRef|l:PuntengroepRef)[fn:matches(@xlink:href,'(GM|PV|WS|LND)[A-Z0-9.]{1,7}')]" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="ambtsgebied">
             <xsl:attribute name="type" select="string('verwijzing')"/>
             <xsl:copy-of select="document($fullname)//l:AmbtsgebiedRef/@xlink:href" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand"/>
