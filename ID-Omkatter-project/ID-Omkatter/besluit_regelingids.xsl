@@ -26,12 +26,6 @@
         </xsl:attribute>
     </xsl:template>
 
-    <xsl:template match="@was">
-        <xsl:attribute name="was">
-            <xsl:value-of select="foo:generateAKNFRBRExpression(.)"/>
-        </xsl:attribute>
-    </xsl:template>
-
     <xsl:template match="consolidatie:FRBRWork">
         <xsl:message select="'consolidatie:FRBRWork'"/>
         <xsl:element name="consolidatie:FRBRWork">
@@ -63,18 +57,6 @@
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="data:opvolging/data:opvolgerVan[text() = $origineleregelingsFBRWork]">
-        <xsl:element name="data:opvolgerVan">
-            <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
-        </xsl:element>
-    </xsl:template>
-
-    <xsl:template match="data:Intrekkingen/data:Intrekking/data:instrument[text() = $origineleregelingsFBRWork]">
-        <xsl:element name="data:instrument">
-            <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
-        </xsl:element>
-    </xsl:template>
-
     <xsl:template match="data:heeftGeboorteregeling">
         <xsl:element name="data:heeftGeboorteregeling">
             <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
@@ -88,6 +70,8 @@
     </xsl:template>
 
     <xsl:template match="data:ExpressionIdentificatie/data:FRBRWork">
+        <xsl:message select="text()"></xsl:message>
+        <xsl:message select="foo:generateAKNFRBRWork(text())"></xsl:message>
         <xsl:element name="data:FRBRWork">
             <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
         </xsl:element>

@@ -7,7 +7,8 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" xmlns:lvbb_intern="http://www.overheid.nl/2020/lvbb/intern"
     xmlns:aanlevering="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
-    xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow" xmlns:lvbbu="https://standaarden.overheid.nl/lvbb/stop/uitlevering/" xmlns:foo="http://whatever">
+    xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow" xmlns:lvbbu="https://standaarden.overheid.nl/lvbb/stop/uitlevering/" 
+    xmlns:s="http://www.geostandaarden.nl/imow/symbolisatie" xmlns:foo="http://whatever">
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
 
     <!-- file.list bevat alle te verwerken bestanden -->
@@ -499,6 +500,13 @@
             <xsl:if test="document($fullname)//vt:Divisie">
                 <xsl:call-template name="file">
                     <xsl:with-param name="type" select="'vrijetekst.xml'"/>
+                    <xsl:with-param name="fullname" select="$fullname"/>
+                    <xsl:with-param name="ow" select="'true'"/>
+                </xsl:call-template>
+            </xsl:if>
+            <xsl:if test="document($fullname)//s:SymbolisatieItem">
+                <xsl:call-template name="file">
+                    <xsl:with-param name="type" select="'symbolisatie.xml'"/>
                     <xsl:with-param name="fullname" select="$fullname"/>
                     <xsl:with-param name="ow" select="'true'"/>
                 </xsl:call-template>

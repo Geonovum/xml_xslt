@@ -676,6 +676,7 @@
       <call path="index/file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]">
         <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <actions>
+          <echo message="besluitregelingids"></echo>
           <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
             <classpath location="saxon9he.jar"/>
             <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
@@ -803,7 +804,7 @@
         <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="origineleregelingsFBRWork" path="OrigineleregelingsFBRWork/text()"/>
         <actions>
-          <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+          <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="intrekkingopvolgervan.xsl" processor="trax" force="true">
             <classpath location="saxon9he.jar"/>
             <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
             <param name="origineleregelingsFBRWork" expression="@{origineleregelingsFBRWork}"/>
@@ -828,7 +829,7 @@
                       <if>
                         <available file="bron_@{number}/@{besluit.name}"/>
                         <then>
-                          <xslt in="${output_@{number}.dir}/@{besluit.name}" out="${temp_@{number}.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+                          <xslt in="${output_@{number}.dir}/@{besluit.name}" out="${temp_@{number}.dir}/@{besluit.name}" extension=".xml" style="intrekkingopvolgervan.xsl" processor="trax" force="true">
                             <classpath location="saxon9he.jar"/>
                             <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
                             <param name="origineleregelingsFBRWork" expression="@{origineleregelingsFBRWork}"/>

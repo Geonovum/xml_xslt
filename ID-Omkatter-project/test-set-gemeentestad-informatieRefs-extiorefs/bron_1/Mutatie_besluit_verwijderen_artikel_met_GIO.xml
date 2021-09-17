@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringBesluit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" schemaversie="1.1.0" xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering/
+    https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
+    <BesluitVersie>
+        <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <FRBRWork>/akn/nl/bill/gm0297/2020/4520</FRBRWork>
+            <FRBRExpression>/akn/nl/bill/gm0297/2020/4520/nld@2020</FRBRExpression>
+            <soortWork>/join/id/stop/work_003</soortWork>
+        </ExpressionIdentificatie>
+        <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <soortBestuursorgaan>/tooi/def/thes/kern/c_2a7d8663</soortBestuursorgaan>
+            <eindverantwoordelijke>/tooi/id/gemeente/gm0297</eindverantwoordelijke>
+            <maker>/tooi/id/gemeente/gm0297</maker>
+            <officieleTitel>Wijziging volgens scenario 3d van "Voorbeeldregels met uitbreiding tbv Toepasbare Regels" voor Gebruiksactiviteiten die zonder vergunning of melding zijn toegestaan</officieleTitel>
+            <onderwerpen>
+                <onderwerp>/tooi/def/concept/c_a6a9eddd</onderwerp>
+            </onderwerpen>
+            <rechtsgebieden>
+                <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied>
+            </rechtsgebieden>
+            <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
+        </BesluitMetadata>
+        <Procedureverloop xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <bekendOp>2020-08-25</bekendOp>
+            <procedurestappen>
+                <Procedurestap>
+                    <soortStap>/join/id/stop/procedure/stap_002</soortStap>
+                    <voltooidOp>2020-08-11</voltooidOp>
+                </Procedurestap>
+                <Procedurestap>
+                    <soortStap>/join/id/stop/procedure/stap_003</soortStap>
+                    <voltooidOp>2020-08-13</voltooidOp>
+                </Procedurestap>
+            </procedurestappen>
+        </Procedureverloop>
+        <ConsolidatieInformatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <BeoogdeRegelgeving>
+                <BeoogdeRegeling>
+                    <doelen>
+                        <doel>/join/id/proces/gm0297/2020/verwijder_artikel_GIO</doel>
+                    </doelen>
+                    <instrumentVersie>/akn/nl/act/gm0297/2019/reg456/nld@6</instrumentVersie>
+                    <eId>art_II</eId>
+                </BeoogdeRegeling>
+            </BeoogdeRegelgeving>
+            <Intrekkingen>
+                <Intrekking>
+                    <doelen>
+                        <doel>/join/id/proces/gm0297/2020/verwijder_artikel_GIO</doel>
+                    </doelen>
+                    <instrument>/join/id/regdata/gm0297/2019/Zuilichem</instrument>
+                    <eId>!verwijder_gio#cmp_I__content_o_1__list_o_1__item_o_9__ref_o_1</eId>
+                </Intrekking>
+            </Intrekkingen>
+            <Tijdstempels>
+                <Tijdstempel>
+                    <doel>/join/id/proces/gm0297/2020/verwijder_artikel_GIO</doel>
+                    <soortTijdstempel>juridischWerkendVanaf</soortTijdstempel>
+                    <datum>2020-09-22</datum>
+                    <eId>art_II</eId>
+                </Tijdstempel>
+            </Tijdstempels>
+        </ConsolidatieInformatie>
+        <BesluitCompact xmlns="https://standaarden.overheid.nl/stop/imop/tekst/">
+            <RegelingOpschrift eId="longTitle_o_1" wId="longTitle_o_1">
+                <Al>Wijziging volgens scenario 3d van "Voorbeeldregels met uitbreiding tbv Toepasbare Regels" voor Gebruiksactiviteiten die zonder vergunning of melding zijn toegestaan</Al>
+            </RegelingOpschrift>
+            <Aanhef wId="formula_1" eId="formula_1">
+                <Al>De raad van de gemeente Gemeenstestad </Al>
+                <Al>gelezen het voorstel van burgemeester en wethouders van 21 januari 2020, nr. 2020-4520;</Al>
+                <Al>Gelet op <ExtRef ref="https://wetten.overheid.nl/jci1.3:c:BWBR0005416&amp;titeldeel=III&amp;hoofdstuk=IX&amp;artikel=149" soort="URL">Gemeentewet, art. 149</ExtRef>.</Al>
+                <Al>besluit:</Al>
+            </Aanhef>
+            <Lichaam eId="body" wId="body">
+                <WijzigArtikel eId="art_I" wId="gm0297_1__art_I">
+                    <Kop>
+                        <Label>Artikel</Label>
+                        <Nummer>I</Nummer>
+                    </Kop>
+                    <Wat>De "Voorbeeldregels met uitbreiding tbv Toepasbare Regels" wordt gewijzigd zoals in <IntRef scope="WijzigBijlage" ref="cmp_A">Bijlage A</IntRef> opgenomen</Wat>
+                </WijzigArtikel>
+                <Artikel eId="art_II" wId="gm0297_1__art_II">
+                    <Kop>
+                        <Label>Artikel</Label>
+                        <Nummer>II</Nummer>
+                    </Kop>
+                    <Inhoud>
+                        <Al>Dit besluit treedt in werking per 22 september 2020.</Al>
+                    </Inhoud>
+                </Artikel>
+            </Lichaam>
+            <Sluiting eId="formula_2_o_1" wId="formula_2_o_1">
+                <Al>Gegeven te Geonovum, Gemeentestad, 11 augustus 2020</Al>
+                <Ondertekening>
+                    <Al>Gedeputeerde Raad van Amersfoort tot Den Haag</Al>
+                    <Al>Ikra van der Velde</Al>
+                    <Al>gemeentesecretaris</Al>
+                    <Al>Seymour Racicot</Al>
+                    <Al>burgemeester</Al>
+                </Ondertekening>
+            </Sluiting>
+            <WijzigBijlage eId="cmp_A" wId="gm037_1__cmp_A">
+                <Kop>
+                    <Label>Bijlage</Label>
+                    <Nummer>A</Nummer>
+                    <Opschrift>Bijlage bij Artikel I</Opschrift>
+                </Kop>
+                <RegelingMutatie componentnaam="verwijder_gio" was="/akn/nl/act/gm0297/2019/reg456/nld@5" wordt="/akn/nl/act/gm0297/2019/reg456/nld@6">
+                    <!-- Artikel 2.12 vervalt, Inhoud en Vervallen hebben geen wijzigactie, dus Artikel verwijderen en toevoegen -->
+                    <!-- vanaf versie 1.04 van STOP hebben Vervallen en Inhoud wel een wijzigactie. Vervallen ka -->
+                    <Vervang wat="gm0297_1__chp_2__subchp_2.4__art_2.12">
+                        <Artikel eId="chp_2__subchp_2.4__art_2.12_inst2" wId="gm0297_1__chp_2__subchp_2.4__art_2.12">
+                            <Kop>
+                                <Label>Artikel</Label>
+                                <Nummer>2.12</Nummer>
+                                <Opschrift>Omgevingswaarde stikstofdioxide</Opschrift>
+                            </Kop>
+                            <Vervallen wijzigactie="voegtoe"/>
+                            <Inhoud wijzigactie="verwijder">
+                                <Lijst eId="chp_2__subchp_2.4__art_2.12_inst2__list_o_1" wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1" type="expliciet">
+                                    <Lijstaanhef>Voor stikstofdioxide geldt in '<IntIoRef eId="chp_2__subchp_2.4__art_2.12_inst2__list_o_1__ref_o_1" wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1">Zuilichem</IntIoRef>' de volgende ten hoogste toelaatbare concentraties:</Lijstaanhef>
+                                    <Li eId="chp_2__subchp_2.4__art_2.12_inst2__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1__item_a">
+                                        <LiNummer>a.</LiNummer>
+                                        <Al>150 μg/m<sup>3</sup> uurgemiddelde, dat ten hoogste twaalf maal per kalenderjaar wordt overschreden; en</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.4__art_2.12_inst2__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1__item_b">
+                                        <LiNummer>b.</LiNummer>
+                                        <Al>30 μg/m<sup>3</sup> als kalenderjaargemiddelde.</Al>
+                                    </Li>
+                                </Lijst>
+                            </Inhoud>
+                        </Artikel>
+                    </Vervang>
+                    <!-- Wijzigen begrippenlijst, verwijderen Begrip met ExtIoRef met GIO 'Zuilichem' -->
+                    <Vervang wat="gm0297_1__cmp_I">
+                        <Bijlage eId="cmp_I" wId="gm0297_1__cmp_I">
+                            <Kop>
+                                <Label>Bijlage</Label>
+                                <Nummer>I</Nummer>
+                                <Opschrift>Overzicht Informatieobjecten</Opschrift>
+                            </Kop>
+                            <Divisietekst eId="cmp_I__content_o_1" wId="gm0297_1__cmp_I__content_o_1">
+                                <Inhoud>
+                                    <Begrippenlijst eId="cmp_I__content_o_1__list_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1">
+                                        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1">
+                                            <Term>Bedrijf categorie 2</Term>
+                                            <Definitie>
+                                                <Al>
+                                                    <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</ExtIoRef>
+                                                </Al>
+                                            </Definitie>
+                                        </Begrip>
+                                        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_2" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2">
+                                            <Term>Centrumgebied</Term>
+                                            <Definitie>
+                                                <Al>
+                                                    <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1" ref="/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520</ExtIoRef>
+                                                </Al>
+                                            </Definitie>
+                                        </Begrip>
+                                        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_3" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3">
+                                            <Term>Exploiteren speelautomatenhal</Term>
+                                            <Definitie>
+                                                <Al>
+                                                    <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1" ref="/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520</ExtIoRef>
+                                                </Al>
+                                            </Definitie>
+                                        </Begrip>
+                                        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_4" wId="gm0297_4__cmp_I__content_o_1__list_o_1__item_o_4">
+                                            <Term>kantoorruimte</Term>
+                                            <Definitie>
+                                                <Al>
+                                                    <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1" wId="gm0297_4__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1" ref="/join/id/regdata/gm0297/2020/Kantoorruimte/nld@2020-09-11;6045">/join/id/regdata/gm0297/2020/Kantoorruimte/nld@2020-09-11;6045</ExtIoRef>
+                                                </Al>
+                                            </Definitie>
+                                        </Begrip>
+                                        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_5" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4">
+                                            <Term>Maximum bouwhoogte bedrijfsgebouw</Term>
+                                            <Definitie>
+                                                <Al>
+                                                    <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1" ref="/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520</ExtIoRef>
+                                                </Al>
+                                            </Definitie>
+                                        </Begrip>
+                                        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_6" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5">
+                                            <Term>Welstandsniveau</Term>
+                                            <Definitie>
+                                                <Al>
+                                                    <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1" ref="/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520</ExtIoRef>
+                                                </Al>
+                                            </Definitie>
+                                        </Begrip>
+                                        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_7" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6">
+                                            <Term>Zone A</Term>
+                                            <Definitie>
+                                                <Al>
+                                                    <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1" ref="/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520</ExtIoRef>
+                                                </Al>
+                                            </Definitie>
+                                        </Begrip>
+                                        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_8" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7">
+                                            <Term>Zone B</Term>
+                                            <Definitie>
+                                                <Al>
+                                                    <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1" ref="/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520</ExtIoRef>
+                                                </Al>
+                                            </Definitie>
+                                        </Begrip>
+                                        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_9" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8" wijzigactie="verwijder">
+                                            <Term>Zuilichem</Term>
+                                            <Definitie>
+                                                <Al>
+                                                    <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_9__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1" ref="/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520</ExtIoRef>
+                                                </Al>
+                                            </Definitie>
+                                        </Begrip>
+                                        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_10" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_9" wijzigactie="verwijder">
+                                            <Term>Zuilichem</Term>
+                                            <Definitie>
+                                                <Al>
+                                                    <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_10__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_9__ref_o_1" ref="/join/id/regdata/gm0297/2019/ObladiOblada/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/ObladiOblada/nld@2019-06-18;3520</ExtIoRef>
+                                                </Al>
+                                            </Definitie>
+                                        </Begrip>
+                                    </Begrippenlijst>
+                                </Inhoud>
+                            </Divisietekst>
+                        </Bijlage>
+                    </Vervang>
+                </RegelingMutatie>
+            </WijzigBijlage>
+        </BesluitCompact>
+    </BesluitVersie>
+    <RegelingVersieInformatie>
+        <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <FRBRWork>/akn/nl/act/gm0297/2019/reg456</FRBRWork>
+            <FRBRExpression>/akn/nl/act/gm0297/2019/reg456/nld@6</FRBRExpression>
+            <soortWork>/join/id/stop/work_019</soortWork>
+        </ExpressionIdentificatie>
+        <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <versienummer>6</versienummer>
+        </RegelingVersieMetadata>
+    </RegelingVersieInformatie>
+</AanleveringBesluit>
