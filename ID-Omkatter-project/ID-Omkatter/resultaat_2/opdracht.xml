@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<breekPublicatieAfOpdracht xmlns="http://www.overheid.nl/2017/lvbb">
-   <idLevering>id-afbreek-1235-20210917124013</idLevering>
+<publicatieOpdracht xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns="http://www.overheid.nl/2017/lvbb"
+                    xsi:schemaLocation="http://www.overheid.nl/2017/lvbb ../lvbb/lvbb-transport.xsd">
+   <idLevering>id-publicatie-1235-20210921121649</idLevering>
    <idBevoegdGezag>00000001807288111000</idBevoegdGezag>
-   <idAanleveraar>00000003560458830000</idAanleveraar>
-   <identificatie>/akn/nl/bill/gm0297/2020/4520</identificatie>
-</breekPublicatieAfOpdracht>
+   <idAanleveraar>00000001807288111000</idAanleveraar>
+   <publicatie>Mutatie_besluit_eerstewijziging.xml</publicatie>
+   <datumBekendmaking>2021-09-22</datumBekendmaking>
+</publicatieOpdracht>

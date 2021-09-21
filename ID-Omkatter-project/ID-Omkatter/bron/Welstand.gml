@@ -6,8 +6,8 @@
                                      xmlns:gml="http://www.opengis.net/gml/3.2"
                                      xmlns:rsc="https://standaarden.overheid.nl/stop/imop/resources/"
                                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                     schemaversie="1.1.0"
-                                     xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/geo/ https://standaarden.overheid.nl/stop/1.1.0/imop-geo.xsd">
+                                     schemaversie="1.0.4"
+                                     xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/geo/ https://standaarden.overheid.nl/stop/1.0.4/imop-geo.xsd">
    <geo:context>
       <gio:GeografischeContext>
          <gio:achtergrondVerwijzing>top10nl</gio:achtergrondVerwijzing>
@@ -21,7 +21,8 @@
          <geo:normlabel>Welstand</geo:normlabel>
          <geo:normID>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/FICTIEF/Welstand</geo:normID>
          <geo:locaties>
-            <geo:Locatie><!--<geo:naam>zone A</geo:naam>-->
+            <geo:Locatie>
+               <geo:naam>zone A</geo:naam>
                <geo:geometrie>
                   <basisgeo:Geometrie gml:id="id-d775e368-6c81-40b9-9a7a-c2acb70831f3-xx">
                      <basisgeo:id>d775e368-6c81-40b9-9a7a-c2acb70831f3</basisgeo:id>
@@ -43,7 +44,8 @@
                </geo:geometrie>
                <geo:kwalitatieveNormwaarde>midden</geo:kwalitatieveNormwaarde>
             </geo:Locatie>
-            <geo:Locatie><!--<geo:naam>zone B</geo:naam>-->               
+            <geo:Locatie>
+               <geo:naam>zone B</geo:naam>
                <geo:geometrie>
                   <basisgeo:Geometrie gml:id="id-3ce37c9c-1721-4eec-9b4a-5380fd30fbac-xx">
                      <basisgeo:id>3ce37c9c-1721-4eec-9b4a-5380fd30fbac</basisgeo:id>
@@ -65,7 +67,8 @@
                </geo:geometrie>
                <geo:kwalitatieveNormwaarde>laag</geo:kwalitatieveNormwaarde>
             </geo:Locatie>
-            <geo:Locatie><!--<geo:naam>Centrumgebied</geo:naam>-->
+            <geo:Locatie>
+               <geo:naam>Centrumgebied</geo:naam>
                <geo:geometrie>
                   <basisgeo:Geometrie gml:id="id-dc57c9d5-a5ca-470c-b9f6-43eb30abdf8a-xx">
                      <basisgeo:id>dc57c9d5-a5ca-470c-b9f6-43eb30abdf8a</basisgeo:id>

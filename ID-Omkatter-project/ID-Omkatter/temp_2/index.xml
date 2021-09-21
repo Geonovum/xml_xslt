@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?><index>
-   <dateTime>20210917124013</dateTime>
+   <dateTime>20210921121649</dateTime>
+   <Regeling>
+      <OrigineleregelingsFBRWork>/akn/nl/act/gm0297/2019/reg456</OrigineleregelingsFBRWork>
+   </Regeling>
+   
+   <Regeling>
+      <OrigineleregelingsFBRWork>/akn/nl/act/gm0297/2020/reg789</OrigineleregelingsFBRWork>
+   </Regeling>
+   
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Centrumgebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Speelhal</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Bouwhoogte</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Welstand</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zone_A</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zone_B</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zuilichem</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Bedrijf_categorie_2</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Bedrijf_categorie_2/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Centrumgebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Centrumgebied/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Speelhal</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Speelhal/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Zone_A</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Zone_A/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Zone_B</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Zone_B/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Bouwhoogte</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Bouwhoogte/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Welstand</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Welstand/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Zuilichem</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Zuilichem/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Zaltbommel</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Zaltbommel/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <besluit/>
+   <file type="besluit.xml" ow="false">
+      <name>Mutatie_besluit_eerstewijziging.xml</name>
+   </file>
+   <file type="manifest-ow.xml" ow="false">
+      <name>manifest-ow.xml</name>
+   </file>
    <leveringId sourcefile="opdracht.xml">
-      <new>id-afbreek-1235-20210917124013</new>
+      <referencefile>owRegeltekst.xml</referencefile>
+      <new>id-publicatie-1235-20210921121649</new>
    </leveringId>
+   <file type="opdracht.xml" ow="false">
+      <name>opdracht.xml</name>
+   </file>
+   
+   <file type="regeltekst.xml" ow="true">
+      <name>owRegeltekst.xml</name>
+   </file>
 </index>

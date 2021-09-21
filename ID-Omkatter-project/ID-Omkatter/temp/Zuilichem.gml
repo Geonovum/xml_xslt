@@ -6,8 +6,8 @@
                                      xmlns:gml="http://www.opengis.net/gml/3.2"
                                      xmlns:rsc="https://standaarden.overheid.nl/stop/imop/resources/"
                                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                     schemaversie="1.1.0"
-                                     xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/geo/ https://standaarden.overheid.nl/stop/1.1.0/imop-geo.xsd">
+                                     schemaversie="1.0.4"
+                                     xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/geo/ https://standaarden.overheid.nl/stop/1.0.4/imop-geo.xsd">
    <geo:context>
       <gio:GeografischeContext>
          <gio:achtergrondVerwijzing>top10nl</gio:achtergrondVerwijzing>
@@ -16,16 +16,16 @@
    </geo:context>
    <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork>/join/id/regdata/gm0297/2019/Zuilichem-20210917124003</geo:FRBRWork>
-         <geo:FRBRExpression>/join/id/regdata/gm0297/2019/Zuilichem-20210917124003/nld@2019-06-18;3520</geo:FRBRExpression>
+         <geo:FRBRWork>/join/id/regdata/gm0297/2019/Zuilichem-20210921121635</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/gm0297/2019/Zuilichem-20210921121635/nld@2019-06-18;3520</geo:FRBRExpression>
          <geo:locaties>
             <geo:Locatie>
                <geo:naam>Zuilichem</geo:naam>
                <geo:geometrie>
-                  <basisgeo:Geometrie gml:id="id-49d98ae4-9a35-43bb-a2fb-2d51b7bddbd2-xx">
-                     <basisgeo:id>49d98ae4-9a35-43bb-a2fb-2d51b7bddbd2</basisgeo:id>
+                  <basisgeo:Geometrie gml:id="id-67b8fb42-a6ab-4857-9740-3366b35fbdbf-xx">
+                     <basisgeo:id>67b8fb42-a6ab-4857-9740-3366b35fbdbf</basisgeo:id>
                      <basisgeo:geometrie>
-                        <gml:MultiSurface gml:id="id-49d98ae4-9a35-43bb-a2fb-2d51b7bddbd2"
+                        <gml:MultiSurface gml:id="id-67b8fb42-a6ab-4857-9740-3366b35fbdbf"
                                           srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>
                               <gml:Polygon>

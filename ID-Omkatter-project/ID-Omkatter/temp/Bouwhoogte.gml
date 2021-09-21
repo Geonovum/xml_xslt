@@ -6,8 +6,8 @@
                                      xmlns:gml="http://www.opengis.net/gml/3.2"
                                      xmlns:rsc="https://standaarden.overheid.nl/stop/imop/resources/"
                                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                     schemaversie="1.1.0"
-                                     xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/geo/ https://standaarden.overheid.nl/stop/1.1.0/imop-geo.xsd">
+                                     schemaversie="1.0.4"
+                                     xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/geo/ https://standaarden.overheid.nl/stop/1.0.4/imop-geo.xsd">
    <geo:context>
       <gio:GeografischeContext>
          <gio:achtergrondVerwijzing>top10nl</gio:achtergrondVerwijzing>
@@ -16,20 +16,20 @@
    </geo:context>
    <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork>/join/id/regdata/gm0297/2019/Bouwhoogte-20210917124003</geo:FRBRWork>
-         <geo:FRBRExpression>/join/id/regdata/gm0297/2019/Bouwhoogte-20210917124003/nld@2019-06-18;3520</geo:FRBRExpression>
-         <geo:eenheidlabel>meters boven maaiveld</geo:eenheidlabel>
-         <geo:eenheidID>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</geo:eenheidID>
-         <geo:normlabel>maximum bouwhoogte bedrijfsgebouw</geo:normlabel>
+         <geo:FRBRWork>/join/id/regdata/gm0297/2019/Bouwhoogte-20210921121635</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/gm0297/2019/Bouwhoogte-20210921121635/nld@2019-06-18;3520</geo:FRBRExpression>
+         <geo:eenheidlabel>meters boven het maaiveld</geo:eenheidlabel>
+         <geo:eenheidID>meters_maaiveld</geo:eenheidID>
+         <geo:normlabel>Maximum bouwhoogte</geo:normlabel>
          <geo:normID>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</geo:normID>
          <geo:locaties>
             <geo:Locatie>
                <geo:naam>Zuilichem industriegebied 1</geo:naam>
                <geo:geometrie>
-                  <basisgeo:Geometrie gml:id="id-1b420e50-1b80-4c3c-9524-fe6565d32926-xx">
-                     <basisgeo:id>1b420e50-1b80-4c3c-9524-fe6565d32926</basisgeo:id>
+                  <basisgeo:Geometrie gml:id="id-5d420845-ab12-40d5-bc6f-0ace2019ff6d-xx">
+                     <basisgeo:id>5d420845-ab12-40d5-bc6f-0ace2019ff6d</basisgeo:id>
                      <basisgeo:geometrie>
-                        <gml:MultiSurface gml:id="id-1b420e50-1b80-4c3c-9524-fe6565d32926"
+                        <gml:MultiSurface gml:id="id-5d420845-ab12-40d5-bc6f-0ace2019ff6d"
                                           srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>
                               <gml:Polygon>
@@ -49,10 +49,10 @@
             <geo:Locatie>
                <geo:naam>Zuilichem industriegebied 2</geo:naam>
                <geo:geometrie>
-                  <basisgeo:Geometrie gml:id="id-8cd8746f-69d9-41eb-b904-3708dcc64d01-xx">
-                     <basisgeo:id>8cd8746f-69d9-41eb-b904-3708dcc64d01</basisgeo:id>
+                  <basisgeo:Geometrie gml:id="id-f0774665-c75a-457c-a404-81c3b2a0510f-xx">
+                     <basisgeo:id>f0774665-c75a-457c-a404-81c3b2a0510f</basisgeo:id>
                      <basisgeo:geometrie>
-                        <gml:MultiSurface gml:id="id-8cd8746f-69d9-41eb-b904-3708dcc64d01-0"
+                        <gml:MultiSurface gml:id="id-f0774665-c75a-457c-a404-81c3b2a0510f-0"
                                           srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>
                               <gml:Polygon>
@@ -72,10 +72,10 @@
             <geo:Locatie>
                <geo:naam>Zuilichem industriegebied 3</geo:naam>
                <geo:geometrie>
-                  <basisgeo:Geometrie gml:id="id-f8db0b68-2caa-4ae6-ae16-24f07f42f424-xx">
-                     <basisgeo:id>f8db0b68-2caa-4ae6-ae16-24f07f42f424</basisgeo:id>
+                  <basisgeo:Geometrie gml:id="id-5e3850e3-ddd3-4ba0-a033-5870d7a928fc-xx">
+                     <basisgeo:id>5e3850e3-ddd3-4ba0-a033-5870d7a928fc</basisgeo:id>
                      <basisgeo:geometrie>
-                        <gml:MultiSurface gml:id="id-f8db0b68-2caa-4ae6-ae16-24f07f42f424-0"
+                        <gml:MultiSurface gml:id="id-5e3850e3-ddd3-4ba0-a033-5870d7a928fc-0"
                                           srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>
                               <gml:Polygon>
@@ -95,10 +95,10 @@
             <geo:Locatie>
                <geo:naam>Zuilichem industriegebied 4</geo:naam>
                <geo:geometrie>
-                  <basisgeo:Geometrie gml:id="id-3ba59e50-a613-4d31-a6af-5e5107a81939-xx">
-                     <basisgeo:id>3ba59e50-a613-4d31-a6af-5e5107a81939</basisgeo:id>
+                  <basisgeo:Geometrie gml:id="id-9dce4536-af4b-4641-8b96-5e74db8e5370-xx">
+                     <basisgeo:id>9dce4536-af4b-4641-8b96-5e74db8e5370</basisgeo:id>
                      <basisgeo:geometrie>
-                        <gml:MultiSurface gml:id="id-3ba59e50-a613-4d31-a6af-5e5107a81939-0"
+                        <gml:MultiSurface gml:id="id-9dce4536-af4b-4641-8b96-5e74db8e5370-0"
                                           srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>
                               <gml:Polygon>

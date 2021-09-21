@@ -9,12 +9,12 @@
                  xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/"
                  xmlns:r="http://www.geostandaarden.nl/imow/regels"
                  xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
-                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
    <sl:standBestand>
       <sl:dataset>Gemeentestad</sl:dataset>
       <sl:inhoud>
          <sl:gebied>Gemeentestad</sl:gebied>
-         <sl:leveringsId>id-publicatie-1250-20210917124004</sl:leveringsId>
+         <sl:leveringsId>id-publicatie-1234-20210921121637</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Omgevingsnorm</sl:objectType>
             <sl:objectType>Omgevingswaarde</sl:objectType>
@@ -23,16 +23,16 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Omgevingswaarde>
-               <rol:identificatie>nl.imow-gm0297.omgevingswaarde.201900000120210917124003</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.omgevingswaarde.201900000120210921121635</rol:identificatie>
                <rol:naam>fijnstof</rol:naam>
                <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Volume</rol:type>
                <!--klopt niet, maar waardelijst bevat gewenste waarde nog niet-->
                <rol:normwaarde>
                   <rol:Normwaarde>
-                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000120210917124003</rol:identificatie>
+                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000120210921121635</rol:identificatie>
                      <rol:waardeInRegeltekst>waarde staat in regeltekst</rol:waardeInRegeltekst>
                      <rol:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zuilichem20210917124003"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001120210921121635"/>
                      </rol:locatieaanduiding>
                   </rol:Normwaarde>
                </rol:normwaarde>
@@ -43,27 +43,26 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Omgevingsnorm>
-               <rol:identificatie>nl.imow-gm0297.omgevingsnorm.201900000220210917124003</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.omgevingsnorm.201900000220210921121635</rol:identificatie>
                <rol:naam>maximum bouwhoogte bedrijfsgebouw</rol:naam>
                <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</rol:type>
                <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
                <rol:normwaarde>
                   <rol:Normwaarde>
-                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000220210917124003</rol:identificatie>
+                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000220210921121635</rol:identificatie>
                      <rol:kwantitatieveWaarde>13</rol:kwantitatieveWaarde>
                      <rol:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001020210917124003"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001020210921121635"/>
                         <!--Z3-->
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001320210917124003"/>
                      </rol:locatieaanduiding>
                   </rol:Normwaarde>
                   <rol:Normwaarde>
-                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000320210917124003</rol:identificatie>
+                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000320210921121635</rol:identificatie>
                      <rol:kwantitatieveWaarde>7</rol:kwantitatieveWaarde>
                      <rol:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000820210917124003"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000820210921121635"/>
                         <!--Z1-->
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000920210917124003"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000920210921121635"/>
                         <!--Z2-->
                      </rol:locatieaanduiding>
                   </rol:Normwaarde>
@@ -75,32 +74,32 @@
       <sl:stand>
          <ow-dc:owObject>
             <rol:Omgevingsnorm>
-               <rol:identificatie>nl.imow-gm0297.omgevingsnorm.201900000320210917124003</rol:identificatie>
+               <rol:identificatie>nl.imow-gm0297.omgevingsnorm.201900000320210921121635</rol:identificatie>
                <rol:naam>welstandsniveau</rol:naam>
                <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</rol:type>
                <!--klopt niet, maar waardelijst bevat gewenste waarde nog niet-->
                <rol:normwaarde>
                   <rol:Normwaarde>
-                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000420210917124003</rol:identificatie>
+                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000420210921121635</rol:identificatie>
                      <rol:kwalitatieveWaarde>laag</rol:kwalitatieveWaarde>
                      <rol:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001520210917124003"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000320210921121635"/>
                         <!--Zone B-->
                      </rol:locatieaanduiding>
                   </rol:Normwaarde>
                   <rol:Normwaarde>
-                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000520210917124003</rol:identificatie>
+                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000520210921121635</rol:identificatie>
                      <rol:kwalitatieveWaarde>midden</rol:kwalitatieveWaarde>
                      <rol:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001420210917124003"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000220210921121635"/>
                         <!--Zone A-->
                      </rol:locatieaanduiding>
                   </rol:Normwaarde>
                   <rol:Normwaarde>
-                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000620210917124003</rol:identificatie>
+                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000620210921121635</rol:identificatie>
                      <rol:kwalitatieveWaarde>hoog</rol:kwalitatieveWaarde>
                      <rol:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001620210917124003"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000420210921121635"/>
                         <!--Centrumgebied-->
                      </rol:locatieaanduiding>
                   </rol:Normwaarde>

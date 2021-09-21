@@ -25,6 +25,12 @@
             <xsl:value-of select="foo:generateAKNFRBRExpression(.)"/>
         </xsl:attribute>
     </xsl:template>
+    
+    <xsl:template match="@was">
+        <xsl:attribute name="was">
+            <xsl:value-of select="foo:generateAKNFRBRExpression(.)"/>
+        </xsl:attribute>
+    </xsl:template>
 
     <xsl:template match="consolidatie:FRBRWork">
         <xsl:message select="'consolidatie:FRBRWork'"/>

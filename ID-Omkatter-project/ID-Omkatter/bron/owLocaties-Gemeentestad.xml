@@ -10,7 +10,7 @@
                  xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
                  xmlns:r="http://www.geostandaarden.nl/imow/regels"
                  xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
-                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
    <sl:standBestand>
       <sl:dataset>Gemeentestad</sl:dataset>
       <sl:inhoud>
@@ -19,14 +19,13 @@
          <sl:objectTypen>
             <sl:objectType>Gebied</sl:objectType>
             <sl:objectType>Gebiedengroep</sl:objectType>
-			   <sl:objectType>Ambtsgebied</sl:objectType>
+			<sl:objectType>Ambtsgebied</sl:objectType>
          </sl:objectTypen>
       </sl:inhoud>
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2</l:identificatie>
-               <l:noemer>Bedrijf categorie 2</l:noemer>
+               <l:identificatie>nl.imow-gm0297.gebiedengroep.2019000001</l:identificatie>
                <l:groepselement>
                   <l:GebiedRef xlink:href="nl.imow-gm0297.gebied.2019000001"/>
                </l:groepselement>
@@ -37,6 +36,7 @@
          <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-gm0297.gebied.2019000001</l:identificatie>
+               <l:noemer>Bedrijf categorie 2</l:noemer>
                <l:geometrie>
                   <l:GeometrieRef xlink:href="50EA019E-3C96-4631-A76C-35BCF4D7AB6D"/>
                </l:geometrie>
@@ -45,19 +45,9 @@
       </sl:stand>
       <sl:stand>
          <ow-dc:owObject>
-            <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0297.gebiedengroep.zoneA</l:identificatie>
-               <l:noemer>zone A</l:noemer>
-               <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0297.gebied.2019000002"/>
-               </l:groepselement>
-            </l:Gebiedengroep>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-gm0297.gebied.2019000002</l:identificatie>
+               <l:noemer>zone A</l:noemer>
                <l:geometrie>
                   <l:GeometrieRef xlink:href="B3AF6AF7-5EFA-4A87-9C66-BFB046DD89AC"/>
                </l:geometrie>
@@ -66,19 +56,9 @@
       </sl:stand>
       <sl:stand>
          <ow-dc:owObject>
-            <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0297.gebiedengroep.zoneB</l:identificatie>
-               <l:noemer>zone B</l:noemer>
-               <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0297.gebied.2019000003"/>
-               </l:groepselement>
-            </l:Gebiedengroep>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-gm0297.gebied.2019000003</l:identificatie>
+               <l:noemer>zone B</l:noemer>
                <l:geometrie>
                   <l:GeometrieRef xlink:href="0868A0B1-DA79-4C33-8305-1BDE0126FA9A"/>
                </l:geometrie>
@@ -87,19 +67,9 @@
       </sl:stand>
       <sl:stand>
          <ow-dc:owObject>
-            <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0297.gebiedengroep.centrumgebied</l:identificatie>
-               <l:noemer>Centrumgebied</l:noemer>
-               <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0297.gebied.2019000004"/>
-               </l:groepselement>
-            </l:Gebiedengroep>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-gm0297.gebied.2019000004</l:identificatie>
+               <l:noemer>Centrumgebied</l:noemer>
                <l:geometrie>
                   <l:GeometrieRef xlink:href="D28AF779-7EDD-4A88-8B11-809798F53636"/>
                </l:geometrie>
@@ -108,19 +78,9 @@
       </sl:stand>
       <sl:stand>
          <ow-dc:owObject>
-            <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0297.gebiedengroep.speelhal</l:identificatie>
-               <l:noemer>exploiteren speelautomatenhal</l:noemer>
-               <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0297.gebied.2019000007"/>
-               </l:groepselement>
-            </l:Gebiedengroep>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-gm0297.gebied.2019000007</l:identificatie>
+               <l:noemer>exploiteren speelautomatenhal</l:noemer>
                <l:geometrie>
                   <l:GeometrieRef xlink:href="33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A"/>
                </l:geometrie>
@@ -173,19 +133,9 @@
       </sl:stand>
       <sl:stand>
          <ow-dc:owObject>
-            <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm0297.gebiedengroep.zuilichem</l:identificatie>
-               <l:noemer>Zuilichem</l:noemer>
-               <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0297.gebied.2019000011"/>
-               </l:groepselement>
-            </l:Gebiedengroep>
-         </ow-dc:owObject>      
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
             <l:Gebied>
                <l:identificatie>nl.imow-gm0297.gebied.2019000011</l:identificatie>
+               <l:noemer>Zuilichem</l:noemer>
                <l:geometrie>
                   <l:GeometrieRef xlink:href="b69221bd-8121-4368-9058-ad4ff7618dcd"/>
                </l:geometrie>
@@ -194,53 +144,6 @@
       </sl:stand>
       <sl:stand>
          <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-gm0297.gebied.2019000014</l:identificatie>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="d775e368-6c81-40b9-9a7a-c2acb70831f3"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-gm0297.gebied.2019000015</l:identificatie>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="3ce37c9c-1721-4eec-9b4a-5380fd30fbac"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Gebied>
-               <l:identificatie>nl.imow-gm0297.gebied.2019000016</l:identificatie>
-               <l:geometrie>
-                  <l:GeometrieRef xlink:href="dc57c9d5-a5ca-470c-b9f6-43eb30abdf8a"/>
-               </l:geometrie>
-            </l:Gebied>
-         </ow-dc:owObject>
-      </sl:stand>
-      <!--Ambtsgebied nieuw-->
-      <sl:stand>
-         <ow-dc:owObject>
-            <l:Ambtsgebied>
-               <l:identificatie>nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied</l:identificatie>
-               <l:noemer>Gemeente Zaltbommel</l:noemer>
-               <l:bestuurlijkeGrenzenVerwijzing>
-                  <l:BestuurlijkeGrenzenVerwijzing>
-                     <l:bestuurlijkeGrenzenID>GM0297</l:bestuurlijkeGrenzenID>
-                     <l:domein>NL.BI.BestuurlijkGebied</l:domein>
-                     <l:geldigOp>2021-01-01</l:geldigOp>
-                  </l:BestuurlijkeGrenzenVerwijzing>
-               </l:bestuurlijkeGrenzenVerwijzing>
-            </l:Ambtsgebied>
-         </ow-dc:owObject> 
-      </sl:stand>
-      <!--Ambtsgebied oud-->
-<!--      <sl:stand>
-         <ow-dc:owObject>
             <l:Ambtsgebied>
                <l:identificatie>GM0297</l:identificatie>
                <l:noemer>Gemeente Zaltbommel</l:noemer>
@@ -248,6 +151,6 @@
                <l:geldigOp>2021-01-01</l:geldigOp>
             </l:Ambtsgebied>
          </ow-dc:owObject> 
-      </sl:stand>-->
+      </sl:stand>
    </sl:standBestand>
 </ow-dc:owBestand>

@@ -6,8 +6,8 @@
                                      xmlns:gml="http://www.opengis.net/gml/3.2"
                                      xmlns:rsc="https://standaarden.overheid.nl/stop/imop/resources/"
                                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                     schemaversie="1.1.0"
-                                     xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/geo/ https://standaarden.overheid.nl/stop/1.1.0/imop-geo.xsd">
+                                     schemaversie="1.0.4"
+                                     xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/geo/ https://standaarden.overheid.nl/stop/1.0.4/imop-geo.xsd">
    <geo:context>
       <gio:GeografischeContext>
          <gio:achtergrondVerwijzing>top10nl</gio:achtergrondVerwijzing>
@@ -16,17 +16,18 @@
    </geo:context>
    <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork>/join/id/regdata/gm0297/2019/Welstand-20210917124003</geo:FRBRWork>
-         <geo:FRBRExpression>/join/id/regdata/gm0297/2019/Welstand-20210917124003/nld@2019-06-18;3520</geo:FRBRExpression>
+         <geo:FRBRWork>/join/id/regdata/gm0297/2019/Welstand-20210921121635</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/gm0297/2019/Welstand-20210921121635/nld@2019-06-18;3520</geo:FRBRExpression>
          <geo:normlabel>Welstand</geo:normlabel>
          <geo:normID>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/FICTIEF/Welstand</geo:normID>
          <geo:locaties>
-            <geo:Locatie><!--<geo:naam>zone A</geo:naam>-->
+            <geo:Locatie>
+               <geo:naam>zone A</geo:naam>
                <geo:geometrie>
-                  <basisgeo:Geometrie gml:id="id-68be5ada-7a0d-467b-995a-255e38dda36f-xx">
-                     <basisgeo:id>68be5ada-7a0d-467b-995a-255e38dda36f</basisgeo:id>
+                  <basisgeo:Geometrie gml:id="id-4d1bbcd9-ec84-4125-b844-b9b84fa16b13-xx">
+                     <basisgeo:id>4d1bbcd9-ec84-4125-b844-b9b84fa16b13</basisgeo:id>
                      <basisgeo:geometrie>
-                        <gml:MultiSurface gml:id="id-68be5ada-7a0d-467b-995a-255e38dda36f"
+                        <gml:MultiSurface gml:id="id-4d1bbcd9-ec84-4125-b844-b9b84fa16b13"
                                           srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>
                               <gml:Polygon>
@@ -43,12 +44,13 @@
                </geo:geometrie>
                <geo:kwalitatieveNormwaarde>midden</geo:kwalitatieveNormwaarde>
             </geo:Locatie>
-            <geo:Locatie><!--<geo:naam>zone B</geo:naam>-->
+            <geo:Locatie>
+               <geo:naam>zone B</geo:naam>
                <geo:geometrie>
-                  <basisgeo:Geometrie gml:id="id-2604836e-39e3-428f-8b2e-646728838cf3-xx">
-                     <basisgeo:id>2604836e-39e3-428f-8b2e-646728838cf3</basisgeo:id>
+                  <basisgeo:Geometrie gml:id="id-7119e44d-8c83-42f1-9a3d-8d303fc8b21a-xx">
+                     <basisgeo:id>7119e44d-8c83-42f1-9a3d-8d303fc8b21a</basisgeo:id>
                      <basisgeo:geometrie>
-                        <gml:MultiSurface gml:id="id-2604836e-39e3-428f-8b2e-646728838cf3"
+                        <gml:MultiSurface gml:id="id-7119e44d-8c83-42f1-9a3d-8d303fc8b21a"
                                           srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>
                               <gml:Polygon>
@@ -65,12 +67,13 @@
                </geo:geometrie>
                <geo:kwalitatieveNormwaarde>laag</geo:kwalitatieveNormwaarde>
             </geo:Locatie>
-            <geo:Locatie><!--<geo:naam>Centrumgebied</geo:naam>-->
+            <geo:Locatie>
+               <geo:naam>Centrumgebied</geo:naam>
                <geo:geometrie>
-                  <basisgeo:Geometrie gml:id="id-2412f3a0-d83c-44da-85ca-5c9a5d7899e6-xx">
-                     <basisgeo:id>2412f3a0-d83c-44da-85ca-5c9a5d7899e6</basisgeo:id>
+                  <basisgeo:Geometrie gml:id="id-7330c451-a397-4052-acca-b40bc04d931c-xx">
+                     <basisgeo:id>7330c451-a397-4052-acca-b40bc04d931c</basisgeo:id>
                      <basisgeo:geometrie>
-                        <gml:MultiSurface gml:id="id-2412f3a0-d83c-44da-85ca-5c9a5d7899e6"
+                        <gml:MultiSurface gml:id="id-7330c451-a397-4052-acca-b40bc04d931c"
                                           srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>
                               <gml:Polygon>

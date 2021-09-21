@@ -11,12 +11,12 @@
                  xmlns:r="http://www.geostandaarden.nl/imow/regels"
                  xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
                  xmlns:s="http://www.geostandaarden.nl/imow/symbolisatie"
-                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
    <sl:standBestand>
       <sl:dataset>Gemeentestad</sl:dataset>
       <sl:inhoud>
          <sl:gebied>Gemeentestad</sl:gebied>
-         <sl:leveringsId>id-publicatie-1250-20210917124004</sl:leveringsId>
+         <sl:leveringsId>id-publicatie-1234-20210921121637</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>SymbolisatieItem</sl:objectType>
          </sl:objectTypen>
@@ -27,7 +27,7 @@
                <s:symboolcode>vsgt201</s:symboolcode>
                <s:normwaardeSymbolisatie> 
                   <!--bouwhoogte 13 meter wordt donkergrijs gevuld met grijze omlijning-->
-                  <rol:NormwaardeRef xlink:href="nl.imow-gm0297.normwaarde.201900000220210917124003"/>
+                  <rol:NormwaardeRef xlink:href="nl.imow-gm0297.normwaarde.201900000220210921121635"/>
                </s:normwaardeSymbolisatie>
             </s:SymbolisatieItem>
          </ow-dc:owObject>
@@ -38,7 +38,7 @@
                <s:symboolcode>vsgt206</s:symboolcode>
                <s:normwaardeSymbolisatie> 
                   <!--bouwhoogte 7 meter wordt lichtgrijs gevuld met grijze omlijning-->
-                  <rol:NormwaardeRef xlink:href="nl.imow-gm0297.normwaarde.201900000320210917124003"/>
+                  <rol:NormwaardeRef xlink:href="nl.imow-gm0297.normwaarde.201900000320210921121635"/>
                </s:normwaardeSymbolisatie>
             </s:SymbolisatieItem>
          </ow-dc:owObject>
@@ -49,7 +49,7 @@
                <s:symboolcode>vsgt307</s:symboolcode>
                <s:normwaardeSymbolisatie> 
                   <!--de kwalitatieve waarde laag bij welstandsniveau wordt wit gevuld met een blauwe omlijning-->
-                  <rol:NormwaardeRef xlink:href="nl.imow-gm0297.normwaarde.201900000420210917124003"/>
+                  <rol:NormwaardeRef xlink:href="nl.imow-gm0297.normwaarde.201900000420210921121635"/>
                </s:normwaardeSymbolisatie>
             </s:SymbolisatieItem>
          </ow-dc:owObject>
@@ -60,7 +60,7 @@
                <s:symboolcode>vsgt304</s:symboolcode>
                <s:normwaardeSymbolisatie> 
                   <!--de kwalitatieve waarde midden bij welstandsniveau wordt lichtblauw gevuld met een blauwe omlijning-->
-                  <rol:NormwaardeRef xlink:href="nl.imow-gm0297.normwaarde.201900000520210917124003"/>
+                  <rol:NormwaardeRef xlink:href="nl.imow-gm0297.normwaarde.201900000520210921121635"/>
                </s:normwaardeSymbolisatie>
             </s:SymbolisatieItem>
          </ow-dc:owObject>
@@ -71,7 +71,7 @@
                <s:symboolcode>vsgt300</s:symboolcode>
                <s:normwaardeSymbolisatie> 
                   <!--de kwalitatieve waarde hoog bij welstandsniveau wordt blauw gevuld met een blauwe omlijning-->
-                  <rol:NormwaardeRef xlink:href="nl.imow-gm0297.normwaarde.201900000620210917124003"/>
+                  <rol:NormwaardeRef xlink:href="nl.imow-gm0297.normwaarde.201900000620210921121635"/>
                </s:normwaardeSymbolisatie>
             </s:SymbolisatieItem>
          </ow-dc:owObject>
@@ -82,11 +82,11 @@
                <s:symboolcode>vag500</s:symboolcode>
                <!--aanleggen en instandhouden van voorzieningen voor de waterhuishouding wordt grijs omlijnd met zwarte stippen-->
                <s:activiteitLocatieaanduidingSymbolisatie>
-                  <r:ActiviteitLocatieaanduidingRef xlink:href="nl.imow-gm0297.activiteitlocatieaanduiding.201900000420210917124003"/>
+                  <r:ActiviteitLocatieaanduidingRef xlink:href="nl.imow-gm0297.activiteitlocatieaanduiding.201900000420210921121635"/>
                </s:activiteitLocatieaanduidingSymbolisatie>
                <!--de gebiedsaanwijzing centrumgebied wordt grijs omlijnd met zwarte stippen-->
                <s:gebiedsaanwijzingSymbolisatie>
-                  <ga:GebiedsaanwijzingRef xlink:href="nl.imow-gm0297.gebiedsaanwijzing.201900000220210917124003"/>
+                  <ga:GebiedsaanwijzingRef xlink:href="nl.imow-gm0297.gebiedsaanwijzing.201900000220210921121635"/>
                </s:gebiedsaanwijzingSymbolisatie>
             </s:SymbolisatieItem>
          </ow-dc:owObject>
@@ -97,9 +97,9 @@
                <s:symboolcode>vag504</s:symboolcode>
                <s:activiteitLocatieaanduidingSymbolisatie>
                   <!--aanleggen nutsvoorzieningen wordt groen omlijnd met groene stippen-->
-                  <r:ActiviteitLocatieaanduidingRef xlink:href="nl.imow-gm0297.activiteitlocatieaanduiding.201900000320210917124003"/>
+                  <r:ActiviteitLocatieaanduidingRef xlink:href="nl.imow-gm0297.activiteitlocatieaanduiding.201900000320210921121635"/>
                   <!--aanleggen en instandhouden van tuin en/of erf wordt groen omlijnd met groene stippen-->
-                  <r:ActiviteitLocatieaanduidingRef xlink:href="nl.imow-gm0297.activiteitlocatieaanduiding.201900000520210917124003"/>
+                  <r:ActiviteitLocatieaanduidingRef xlink:href="nl.imow-gm0297.activiteitlocatieaanduiding.201900000520210921121635"/>
                </s:activiteitLocatieaanduidingSymbolisatie>
             </s:SymbolisatieItem>
          </ow-dc:owObject>
@@ -110,11 +110,11 @@
                <s:symboolcode>vah025</s:symboolcode>
                <s:activiteitLocatieaanduidingSymbolisatie>
                   <!--exploiteren van inrichtingen wordt rood met verticale strepen en onderbroken omlijning-->
-                  <r:ActiviteitLocatieaanduidingRef xlink:href="nl.imow-gm0297.activiteitlocatieaanduiding.201900000720210917124003"/>
+                  <r:ActiviteitLocatieaanduidingRef xlink:href="nl.imow-gm0297.activiteitlocatieaanduiding.201900000720210921121635"/>
                   <!--verboden exploiteren van risicovolle inrichtingen wordt rood met verticale strepen en onderbroken omlijning-->
-                  <r:ActiviteitLocatieaanduidingRef xlink:href="nl.imow-gm0297.activiteitlocatieaanduiding.201900000820210917124003"/>
+                  <r:ActiviteitLocatieaanduidingRef xlink:href="nl.imow-gm0297.activiteitlocatieaanduiding.201900000820210921121635"/>
                   <!--verboden opslagterrein wordt wordt rood met verticale strepen en onderbroken omlijning-->
-                  <r:ActiviteitLocatieaanduidingRef xlink:href="nl.imow-gm0297.activiteitlocatieaanduiding.201900000920210917124003"/>
+                  <r:ActiviteitLocatieaanduidingRef xlink:href="nl.imow-gm0297.activiteitlocatieaanduiding.201900000920210921121635"/>
                </s:activiteitLocatieaanduidingSymbolisatie>
             </s:SymbolisatieItem>
          </ow-dc:owObject>

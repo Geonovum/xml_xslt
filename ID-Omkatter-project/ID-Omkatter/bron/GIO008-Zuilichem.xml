@@ -3,8 +3,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.1.0"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.0.4"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/gm0297/2019/Zuilichem</FRBRWork>
@@ -16,7 +16,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Zuilichem.gml</bestandsnaam>
-                  <hash>7a11557be18d011e53dafd1d572223616dd3e285787a4e00117d38e51450c6120db1919b79743ba2fffb26cbdef6ccde2d874a99ef076392be481e8962a8d4de</hash>
+                  <hash>ea619ab4cc2181705c884b3794d5a81abc951c958dc239b805d3f122077f365c08afa15863eedfaa91efba7410ce6bffcd989fafdd0e6346b3931e0ecfb1c684</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

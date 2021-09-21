@@ -1,9 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?><index>
-   <dateTime>20210917124012</dateTime>
+   <dateTime>20210921121644</dateTime>
+   <guids>
+      <guid gmlfile="Bedrijf_categorie_2.gml">
+         <org>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</org>
+         <new>b43b7cac-fda2-4415-8a79-e42f48b705bc</new>
+      </guid>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Bedrijf_categorie_2.gml</name>
+   </file>
+   <guids>
+      <guid gmlfile="Bouwhoogte.gml">
+         <org>772B4B37-69F8-4671-B92E-3BCED242409D</org>
+         <new>c2ca46fd-4c9b-4bfe-b3fb-84a7c0dd9b01</new>
+      </guid>
+      <guid gmlfile="Bouwhoogte.gml">
+         <org>D24C3416-4790-461C-A4D0-A82BA60CA7D6</org>
+         <new>f02621fe-29af-4d3a-9a2c-ffcc076108ea</new>
+      </guid>
+      <guid gmlfile="Bouwhoogte.gml">
+         <org>954BA8CC-6E90-4698-BEEC-005A65C63E98</org>
+         <new>a9d7d496-abc8-45af-a3b5-305405f3ca33</new>
+      </guid>
+      <guid gmlfile="Bouwhoogte.gml">
+         <org>EFAAD5E9-B181-4C22-9C3B-B290F4586D82</org>
+         <new>9b901dfe-77cc-45ce-ab63-ef178f08f4f3</new>
+      </guid>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Bouwhoogte.gml</name>
+   </file>
+   <guids>
+      <guid gmlfile="Centrumgebied.gml">
+         <org>D28AF779-7EDD-4A88-8B11-809798F53636</org>
+         <new>3836c83b-3748-4f43-b63b-f2d155eee6f4</new>
+      </guid>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Centrumgebied.gml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>GIO001-Bedrijf_categorie_2.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>GIO002-Centrumgebied.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>GIO003-Zone_A.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>GIO004-Zone_B.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>GIO005-Speelhal.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>GIO006-Bouwhoogte.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>GIO007-Welstand.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>GIO008-Zuilichem.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>GIO009-Zaltbommel.xml</name>
+   </file>
+   <guids>
+      <guid gmlfile="Speelhal.gml">
+         <org>33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A</org>
+         <new>9d817234-a266-440b-9465-0cc532a771db</new>
+      </guid>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Speelhal.gml</name>
+   </file>
    <Regeling>
       <OrigineleregelingsFBRWork>/akn/nl/act/gm0297/2019/reg456</OrigineleregelingsFBRWork>
    </Regeling>
    
+   <Regeling>
+      <OrigineleregelingsFBRWork>/akn/nl/act/gm0297/2020/reg789</OrigineleregelingsFBRWork>
+   </Regeling>
    <historischInformatieobjectRef>
       <oldIoWorkId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2</oldIoWorkId>
       <oldIoRefId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</oldIoRefId>
@@ -36,35 +114,176 @@
       <oldIoWorkId>/join/id/regdata/gm0297/2019/Zuilichem</oldIoWorkId>
       <oldIoRefId>/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520</oldIoRefId>
    </historischInformatieobjectRef>
-   <besluit/>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Bedrijf_categorie_2</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Bedrijf_categorie_2/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Centrumgebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Centrumgebied/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Speelhal</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Speelhal/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Zone_A</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Zone_A/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Zone_B</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Zone_B/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Bouwhoogte</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Bouwhoogte/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Welstand</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Welstand/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Zuilichem</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Zuilichem/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Zaltbommel</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Zaltbommel/nld@2020-03-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <besluit>
+      <informatieobjectRef>
+         <gio>GIO001-Bedrijf_categorie_2.xml</gio>
+         <gml>Bedrijf_categorie_2.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm0297/2020/Bedrijf_categorie_2</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm0297/2020/Bedrijf_categorie_2/nld@2020-03-18;3520</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>GIO002-Centrumgebied.xml</gio>
+         <gml>Centrumgebied.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm0297/2020/Centrumgebied</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm0297/2020/Centrumgebied/nld@2020-03-18;3520</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>GIO005-Speelhal.xml</gio>
+         <gml>Speelhal.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm0297/2020/Speelhal</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm0297/2020/Speelhal/nld@2020-03-18;3520</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>GIO003-Zone_A.xml</gio>
+         <gml>Zone_A.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm0297/2020/Zone_A</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm0297/2020/Zone_A/nld@2020-03-18;3520</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>GIO004-Zone_B.xml</gio>
+         <gml>Zone_B.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm0297/2020/Zone_B</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm0297/2020/Zone_B/nld@2020-03-18;3520</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>GIO006-Bouwhoogte.xml</gio>
+         <gml>Bouwhoogte.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm0297/2020/Bouwhoogte</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm0297/2020/Bouwhoogte/nld@2020-03-18;3520</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>GIO007-Welstand.xml</gio>
+         <gml>Welstand.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm0297/2020/Welstand</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm0297/2020/Welstand/nld@2020-03-18;3520</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>GIO008-Zuilichem.xml</gio>
+         <gml>Zuilichem.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm0297/2020/Zuilichem</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm0297/2020/Zuilichem/nld@2020-03-18;3520</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>GIO009-Zaltbommel.xml</gio>
+         <gml>Zaltbommel.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm0297/2020/Zaltbommel</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm0297/2020/Zaltbommel/nld@2020-03-18;3520</oldIoRefId>
+      </informatieobjectRef>
+   </besluit>
    <file type="besluit.xml" ow="false">
-      <name>Mutatie_besluit_verwijderen_artikel_met_GIO.xml</name>
+      <name>Vervangingsbesluit.xml</name>
+   </file>
+   <guids>
+      <guid gmlfile="Welstand.gml">
+         <org>e5ba7061-1ec5-4b74-8b22-9fe7afc93eb9</org>
+         <new>e55b9e76-eea8-4edb-98d8-31ef4ab375f6</new>
+      </guid>
+      <guid gmlfile="Welstand.gml">
+         <org>dad40ef5-69fb-4a50-beed-ab85d899637a</org>
+         <new>de2db843-6cec-4de4-8e1a-7397f9c6052a</new>
+      </guid>
+      <guid gmlfile="Welstand.gml">
+         <org>af82c64a-9c0b-4933-95df-0bf62939ef98</org>
+         <new>171adaf9-acac-468d-85ab-95194a760ecd</new>
+      </guid>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Welstand.gml</name>
+   </file>
+   <guids>
+      <guid gmlfile="Zaltbommel.gml">
+         <org>553df3b9-9115-4b22-80ee-b1056a85acb4</org>
+         <new>748139b0-2142-4011-8f76-35730e211807</new>
+      </guid>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Zaltbommel.gml</name>
+   </file>
+   <guids>
+      <guid gmlfile="Zone_A.gml">
+         <org>B3AF6AF7-5EFA-4A87-9C66-BFB046DD89AC</org>
+         <new>2f5d021f-ce75-42bb-89e5-8a37834bac08</new>
+      </guid>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Zone_A.gml</name>
+   </file>
+   <guids>
+      <guid gmlfile="Zone_B.gml">
+         <org>0868A0B1-DA79-4C33-8305-1BDE0126FA9A</org>
+         <new>6cdd12f1-10ac-4f61-87f1-53a99344bdae</new>
+      </guid>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Zone_B.gml</name>
+   </file>
+   <guids>
+      <guid gmlfile="Zuilichem.gml">
+         <org>b69221bd-8121-4368-9058-ad4ff7618dcd</org>
+         <new>f7040237-930d-4734-8ad5-45fa27a1fb10</new>
+      </guid>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Zuilichem.gml</name>
    </file>
    <file type="manifest-ow.xml" ow="false">
       <name>manifest-ow.xml</name>
    </file>
    <leveringId sourcefile="opdracht.xml">
-      <referencefile>owLocatie-Gemeentestad.xml</referencefile>
-      <referencefile>owOmgevingsnormOmgevingswaarde.xml</referencefile>
+      <referencefile>owActiviteiten-Gemeentestad.xml</referencefile>
+      <referencefile>owRegelingsgebied.xml</referencefile>
       <referencefile>owRegeltekst-Gemeentestad.xml</referencefile>
-      <new>id-validatie-1234-20210917124012</new>
+      <new>id-publicatie-1241-20210921121644</new>
    </leveringId>
    <file type="opdracht.xml" ow="false">
-      <fullname>file:/C:/Users/Default.DESKTOP-NDDI22K/Documents/Geonovum/github/Voorbeeldbestanden/xml_xslt/ID-Omkatter/ID-Omkatter/bron_1/opdracht.xml</fullname>
       <name>opdracht.xml</name>
    </file>
-   <file type="locatie.xml" ow="true">
-      <name>owLocatie-Gemeentestad.xml</name>
-   </file>
    
-   <file type="normwaarde.xml" ow="true">
-      <name>owOmgevingsnormOmgevingswaarde.xml</name>
+   <file type="activiteit.xml" ow="true">
+      <name>owActiviteiten-Gemeentestad.xml</name>
    </file>
-   
+   <file type="regelingsgebied.xml" ow="true">
+      <name>owRegelingsgebied.xml</name>
+   </file>
    <file type="regeltekst.xml" ow="true">
       <name>owRegeltekst-Gemeentestad.xml</name>
    </file>
-   
    
    
 </index>
