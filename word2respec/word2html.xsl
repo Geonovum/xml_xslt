@@ -2,21 +2,20 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:bin="http://expath.org/ns/binary" xmlns:wx="http://schemas.microsoft.com/office/word/2006/auxHint" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:asvg="http://schemas.microsoft.com/office/drawing/2016/SVG/main">
   <xsl:output method="xhtml" encoding="UTF-8" indent="no"/>
 
-  <xsl:param name="base.dir" select="string('C:\Werkbestanden\Geonovum\word2respec')"/>
-  <xsl:param name="unzip.dir" select="fn:string-join((fn:tokenize($base.dir,'\\'),'unzip'),$delimiter)"/>
+  <xsl:param name="unzip.dir" select="fn:substring-before(fn:base-uri(),'word/document.xml')"/>
 
   <!-- scheidingsteken in paden -->
   <xsl:param name="delimiter" select="string('/')"/>
 
   <!-- verwijzingen naar gebruikte documenten -->
-  <xsl:param name="comments" select="fn:string-join(('file:',$unzip.dir,'word','comments.xml'),$delimiter)"/>
-  <xsl:param name="endnotes" select="fn:string-join(('file:',$unzip.dir,'word','endnotes.xml'),$delimiter)"/>
-  <xsl:param name="footnotes" select="fn:string-join(('file:',$unzip.dir,'word','footnotes.xml'),$delimiter)"/>
-  <xsl:param name="numbering" select="fn:string-join(('file:',$unzip.dir,'word','numbering.xml'),$delimiter)"/>
-  <xsl:param name="relations" select="fn:string-join(('file:',$unzip.dir,'word','_rels','document.xml.rels'),$delimiter)"/>
-  <xsl:param name="settings" select="fn:string-join(('file:',$unzip.dir,'word','settings.xml'),$delimiter)"/>
-  <xsl:param name="styles" select="fn:string-join(('file:',$unzip.dir,'word','styles.xml'),$delimiter)"/>
-  <xsl:param name="props" select="fn:string-join(('file:',$unzip.dir,'docProps','core.xml'),$delimiter)"/>
+  <xsl:param name="comments" select="fn:string-join(($unzip.dir,'word','comments.xml'),$delimiter)"/>
+  <xsl:param name="endnotes" select="fn:string-join(($unzip.dir,'word','endnotes.xml'),$delimiter)"/>
+  <xsl:param name="footnotes" select="fn:string-join(($unzip.dir,'word','footnotes.xml'),$delimiter)"/>
+  <xsl:param name="numbering" select="fn:string-join(($unzip.dir,'word','numbering.xml'),$delimiter)"/>
+  <xsl:param name="relations" select="fn:string-join(($unzip.dir,'word','_rels','document.xml.rels'),$delimiter)"/>
+  <xsl:param name="settings" select="fn:string-join(($unzip.dir,'word','settings.xml'),$delimiter)"/>
+  <xsl:param name="styles" select="fn:string-join(($unzip.dir,'word','styles.xml'),$delimiter)"/>
+  <xsl:param name="props" select="fn:string-join(($unzip.dir,'docProps','core.xml'),$delimiter)"/>
 
   <!-- title -->
 
@@ -432,6 +431,21 @@
       </xsl:when>
       <xsl:otherwise>
         <xsl:apply-templates/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <!-- bookmark -->
+
+  <xsl:template match="w:bookmarkStart">
+    <xsl:choose>
+      <xsl:when test="fn:starts-with(./@w:name,'_')">
+        <!-- doe niets, hidden bookmark -->
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:element name="a">
+          <xsl:attribute name="name" select="@w:name"/>
+        </xsl:element>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
