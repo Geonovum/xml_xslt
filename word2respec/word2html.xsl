@@ -23,6 +23,10 @@
     <xsl:value-of select="(document($settings,.)//w:docVar[@w:name='ID01']/@w:val,.//w:body/w:p[w:pPr(.)/w:name/@w:val='Title'][1],document($props,.)//dc:title)[1]"/>
   </xsl:param>
 
+  <!-- references -->
+
+  <xsl:param name="refs" select="fn:distinct-values(//w:instrText[contains(text(),'_Ref')]/following::w:r[w:t][1]/@w:rsidR)"/>
+
   <!-- mappings -->
 
   <xsl:param name="list_word" select="('bullet','decimal','upper-roman','lower-roman','upper-letter','lower-letter')"/>
@@ -439,8 +443,8 @@
 
   <xsl:template match="w:bookmarkStart">
     <xsl:choose>
-      <xsl:when test="fn:starts-with(./@w:name,'_')">
-        <!-- doe niets, hidden bookmark -->
+      <xsl:when test="fn:starts-with(./@w:name,'_Toc')">
+        <!-- doe niets, alleen voor inhoudsopgave -->
       </xsl:when>
       <xsl:otherwise>
         <xsl:element name="a">
@@ -448,6 +452,20 @@
         </xsl:element>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <!-- velden bewerken -->
+
+  <xsl:template match="w:instrText">
+    <!-- tekst niet plaatsen -->
+  </xsl:template>
+
+  <xsl:template match="w:t[parent::w:r/@w:rsidR=$refs]">
+    <xsl:variable name="ref" select="fn:tokenize(preceding::w:instrText[1]/normalize-space(.),'\s+')[2]"/>
+    <xsl:element name="a">
+      <xsl:attribute name="href" select="concat('#',$ref)"/>
+      <xsl:apply-templates/>
+    </xsl:element>
   </xsl:template>
 
   <!-- range bewerken -->
@@ -561,12 +579,6 @@
         <xsl:apply-templates/>
       </xsl:otherwise>
     </xsl:choose>
-  </xsl:template>
-
-  <!-- velden bewerken -->
-
-  <xsl:template match="w:instrText">
-    <!-- tekst niet plaatsen -->
   </xsl:template>
 
   <!-- nootverwijzingen toevoegen -->
