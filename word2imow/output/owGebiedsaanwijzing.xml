@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v1.0.3/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>Omgevingsplan Zaanstad v0.1</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Gemeente Zaanstad</sl:gebied>
+         <sl:leveringsId>ZAAN0003</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebiedsaanwijzing</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.1383684463</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Beperkingengebied</ga:type>
+               <ga:naam>beperkingengebied buisleiding voor gevaarlijke stoffen</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/beperkingengebied/id/concept/Overig</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.3864407133"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.2177454472</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Beperkingengebied</ga:type>
+               <ga:naam>beperkingengebied magneetveldzone</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/beperkingengebied/id/concept/Overig</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.19274895"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.310334403</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Beperkingengebied</ga:type>
+               <ga:naam>beperkingengebied waterkering</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/beperkingengebied/id/concept/Waterstaatswerk</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.675092805"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.800672946</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/RuimtelijkGebruik</ga:type>
+               <ga:naam>bouwvlak</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/ruimtelijkgebruik/id/concept/Bebouwingscontour</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.1607928001"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.187385539</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>bouwvlak</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Hoogspanningsverbinding</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.3700956237"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.230247021</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>buisleiding voor gevaarlijke stoffen</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Overig</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.2662276681"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.2684767486</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>hoogspanningsverbinding</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Hoogspanningsverbinding</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.676992311"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.1713066121</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>bouwvlak hoogspanningsverbinding</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Hoogspanningsverbinding</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.3700956237"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.2013217139</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>brug</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Infrastructuur</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.610272587"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.150685243</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>verplichte aanleg van water</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Water</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.2923173559"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.65881643</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>verplichte aanleg van groen</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Groen</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.2902333095"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.4260448526</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>parkeervoorzieningen verplicht</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Verkeer</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.1972050619"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.1096763752</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>parkeervoorzieningen toegestaan</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Verkeer</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.2844990319"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.2729657421</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>woonwagenstandplaats</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Wonen</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.2984973011"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.2502771387</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>ligplaats woonark</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Wonen</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.956239791"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.652428180</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>ligplaats woonschip</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Wonen</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.2099843425"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.1604602559</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>wonen niet toegestaan op de begane grond</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Wonen</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.1538072503"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.4060497455</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>onzelfstandige woonruimte</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Wonen</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.2028738199"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.3162063992</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>consumentenvuurwerk</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Overig</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.2460291679"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.1875463353</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Beperkingengebied</ga:type>
+               <ga:naam>waterkering</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/beperkingengebied/id/concept/Waterstaatswerk</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.675092805"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-gm0479.gebiedsaanwijzing.4286004932</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+               <ga:naam>opslag</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Overig</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.1047660279"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>
