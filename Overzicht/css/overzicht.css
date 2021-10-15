@@ -1,66 +1,101 @@
 @charset "UTF-8";
 
-.divLinks0{
-  left: 0px;
-  width: 600px;
-  border: solid;
-  border-color: #FF0000;
-  border-width: 2px;
-}
-.divSVG{
-  left: 500px;
-  width: 300px;
-  position: absolute;
-  border: solid;
-  border-color: #00FF00;
-  border-width: 2px;
-}
-.divLinks1{
-  display : 'none';
-  left: 0px;
-  width: 600px;
-  border: solid;
-  border-color: #0000FF;
-  border-width: 2px;
-}
+/* algemeen */
 
-
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 98%;
+  width: 98%;
+  margin: 1%;
+  word-break: break-word;
+}
+p {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  font-weight: normal;
+  line-height: 14pt;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
+/* specifiek */
+
+div.uitleg {
+  margin: 0pt 0mm 14pt 0mm;
+}
+div.content {
+  margin: 21pt 0mm 14pt 0mm;
 }
 
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+/* module */
+
+table.deel {
+  margin: 2pt 0mm 2pt 0mm;
+}
+table.deel th {
+  padding: 7pt 2mm 7pt 2mm;
+  background-color: lightgray;
+}
+p.deel {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+  line-height: 14pt;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+/* object */
+
+table.object th {
+  background-color: black;
+  padding: 5px 2mm 5px 2mm;
+}
+table.object td {
+  padding: 5px 2mm 5px 0mm;
+}
+table.object tr {
+  border-bottom: 1px solid black;
+}
+table.object table.object tr:last-child {
+  border-bottom: none;
+}
+p.titel {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold;
+  font-size: 9pt;
+  color: white;
+  line-height: 14pt;
+}
+p.naam {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  line-height: 14pt;
+}
+p.waarde {
+  font-family: 'Courier', monospace;
+  font-size: 9pt;
+  line-height: 14pt;
+}
+span.label {
+  font-weight: bold;
+  color: red;
+}
+
+/*  error */
+
+table.error:not(:first-child) {
+  border-top: 1px solid black;
+}
+table.error p {
+  font-weight: bold;
+  color: red;
 }

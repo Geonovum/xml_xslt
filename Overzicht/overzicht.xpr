@@ -1,30 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="22.1">
+<project version="20.1">
     <meta>
         <filters directoryPatterns="" filePatterns="Overzicht.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="22.1" xml:space="preserve">
+            <serialized version="20.1" xml:space="preserve">
                 <serializableOrderedMap>
-                    <entry>
-                        <String>catalogs.v5</String>
-                        <String-array>
-                            <String>file:/home/wim/Geonovum/schemasEnWaardelijsten/1.0.4/extern/extern-catalog.xml</String>
-                            <String>file:/home/wim/Geonovum/schemasEnWaardelijsten/1.0.4/lvbb/lvbb-catalog.xml</String>
-                            <String>file:/home/wim/Geonovum/schemasEnWaardelijsten/1.0.4/stop/stop-catalog.xml</String>
-                        </String-array>
-                    </entry>
-                    <entry>
-                        <String>enable.project.master.files.support</String>
-                        <Boolean>true</Boolean>
-                    </entry>
-                    <entry>
-                        <String>key.xml.catalog.option.pane</String>
-                        <Boolean>true</Boolean>
-                    </entry>
-                    <entry>
-                        <String>process.namespaces.through.uri.mapping.for.xml.schema</String>
-                        <Boolean>true</Boolean>
-                    </entry>
                     <entry>
                         <String>scenario.associations</String>
                         <scenarioAssociation-array>
@@ -40,11 +20,6 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>ANT</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -129,6 +104,9 @@
                                 <field name="openInBrowser">
                                     <Boolean>true</Boolean>
                                 </field>
+                                <field name="outputFile">
+                                    <null/>
+                                </field>
                                 <field name="outputResource">
                                     <null/>
                                 </field>
@@ -169,20 +147,16 @@
                                     <String-array>
                                         <String>${oxygenHome}/</String>
                                         <String>${oxygenHome}/classes/</String>
-                                        <String>${oxygenHome}/lib/oxygenCommons.jar</String>
                                         <String>${oxygenHome}/lib/oxygen.jar</String>
                                         <String>${oxygenHome}/lib/oxygenEclipse.jar</String>
                                         <String>${oxygenHome}/lib/oxygenAuthor.jar</String>
                                         <String>${oxygenHome}/lib/oxygenAuthorEclipse.jar</String>
                                         <String>${oxygenHome}/lib/oxygen-basic-utilities.jar</String>
-                                        <String>${oxygenHome}/lib/oxygen-editor-variables-parser.jar</String>
-                                        <String>${oxygenHome}/lib/oxygen-sandbox.jar</String>
-                                        <String>${oxygenHome}/lib/oxygen-license.jar</String>
-                                        <String>${oxygenHome}/lib/*resolver*.jar</String>
-                                        <String>${oxygenHome}/lib/*xerces*.jar</String>
+                                        <String>${oxygenHome}/lib/resolver.jar</String>
+                                        <String>${oxygenHome}/lib/xercesImpl.jar</String>
                                         <String>${oxygenHome}/lib/xml-apis.jar</String>
-                                        <String>${oxygenHome}/lib/*log4j*.jar</String>
-                                        <String>${oxygenHome}/lib/*saxon*9*.jar</String>
+                                        <String>${oxygenHome}/lib/log4j.jar</String>
+                                        <String>${oxygenHome}/lib/saxon9*.jar</String>
                                         <String>${oxygenHome}/lib/guava-*.jar</String>
                                     </String-array>
                                 </field>
@@ -193,9 +167,9 @@
             </serialized>
         </options>
     </meta>
-    <projectTree name="overzicht.xpr">
-        <folder name="files">
-            <folder path="."/>
-        </folder>
+    <projectTree name="Overzicht.xpr">
+        <file name="build.xml"/>
+        <file name="overzicht.xsl"/>
+        <file name="template.xml"/>
     </projectTree>
 </project>

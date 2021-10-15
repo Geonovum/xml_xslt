@@ -1,0 +1,3436 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Waardelijsten>
+  <schemaversie>1.1.0</schemaversie>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/join/id/stop/bekendmakingsblad</id>
+      <label>bekendmakingsblad</label>
+      <beschrijving>officiële bekendmakingsbladen. Deze sublijst is in TOOI beschikbaar als /tooi/def/concept/c_c392702e</beschrijving>
+      <uitbreidbaar>false</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/tooi/def/concept/c_61e3099a</id>
+      <label>Staatsblad</label>
+      <beschrijving>Stb</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_0670bae1</id>
+      <label>Staatscourant</label>
+      <beschrijving>Stcrt</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_bdc265d5</id>
+      <label>Provinciaal blad</label>
+      <beschrijving>Prb</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_b3179555</id>
+      <label>Tractatenblad</label>
+      <beschrijving>Trb</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_81cc2eb5</id>
+      <label>Gemeenteblad</label>
+      <beschrijving>Gmb</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c97b118a</id>
+      <label>Waterschapsblad</label>
+      <beschrijving>Wsb</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_12cd7b9b</id>
+      <label>Blad gemeenschappelijke regeling</label>
+      <beschrijving>Bgr</beschrijving>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/tooi/def/class/Bestuursorgaan</id>
+      <label>Bestuursorganen</label>
+      <beschrijving>Alle bestuursorganen die van belang zijn voor de Omgevingswet</beschrijving>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.0.4</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/tooi/def/thes/kern/c_2c4e7407</id>
+      <label>burgemeester</label>
+      <beschrijving>Behoort tot de groep: bestuursorgaan gemeente (https://identifier.overheid.nl/tooi/def/thes/kern/skosCollection_2a1d64e7)</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/thes/kern/c_28ecfd6d</id>
+      <label>college van burgemeester en wethouders</label>
+      <beschrijving>Behoort tot de groep: bestuursorgaan gemeente (https://identifier.overheid.nl/tooi/def/thes/kern/skosCollection_2a1d64e7)</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/thes/kern/c_2a7d8663</id>
+      <label>gemeenteraad</label>
+      <beschrijving>Behoort tot de groep: bestuursorgaan gemeente (https://identifier.overheid.nl/tooi/def/thes/kern/skosCollection_2a1d64e7)</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/thes/kern/c_e24d39f6</id>
+      <label>commissaris van de Koning</label>
+      <beschrijving>Behoort tot de groep: bestuursorgaan provincie (https://identifier.overheid.nl/tooi/def/thes/kern/skosCollection_3469893d)</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/thes/kern/c_61676cbc</id>
+      <label>gedeputeerde staten</label>
+      <beschrijving>Behoort tot de groep: bestuursorgaan provincie (https://identifier.overheid.nl/tooi/def/thes/kern/skosCollection_3469893d)</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/thes/kern/c_411b4e4a</id>
+      <label>provinciale staten</label>
+      <beschrijving>Behoort tot de groep: bestuursorgaan provincie (https://identifier.overheid.nl/tooi/def/thes/kern/skosCollection_3469893d)</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/thes/kern/c_bcfb7b4e</id>
+      <label>minister</label>
+      <beschrijving>Behoort tot de groep: bestuursorgaan staat (https://identifier.overheid.nl/tooi/def/thes/kern/skosCollection_e3cf586b)</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/thes/kern/c_91fb5e42</id>
+      <label>regering</label>
+      <beschrijving>Behoort tot de groep: bestuursorgaan staat (https://identifier.overheid.nl/tooi/def/thes/kern/skosCollection_e3cf586b)</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/thes/kern/c_3aaa4d12</id>
+      <label>staatssecretaris</label>
+      <beschrijving>Behoort tot de groep: bestuursorgaan staat (https://identifier.overheid.nl/tooi/def/thes/kern/skosCollection_e3cf586b)</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/thes/kern/c_70c87e3d</id>
+      <label>algemeen bestuur</label>
+      <beschrijving>Behoort tot de groep: bestuursorgaan waterschap (https://identifier.overheid.nl/tooi/def/thes/kern/skosCollection_be4c3d94)</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/thes/kern/c_5cc92c89</id>
+      <label>dagelijks bestuur</label>
+      <beschrijving>Behoort tot de groep: bestuursorgaan waterschap (https://identifier.overheid.nl/tooi/def/thes/kern/skosCollection_be4c3d94)</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/thes/kern/c_f70a6113</id>
+      <label>dijkgraaf</label>
+      <beschrijving>Behoort tot de groep: bestuursorgaan waterschap (https://identifier.overheid.nl/tooi/def/thes/kern/skosCollection_be4c3d94)</beschrijving>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/join/id/stop/formaatinformatieobject</id>
+      <label>Typering van informatieobjecten naar dataformaat</label>
+      <beschrijving>De waardelijst beschrijft de typering van het informatieobject aan de hand van het technische uitwisselformaat zoals die door STOP ondersteund worden.</beschrijving>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/join/id/stop/informatieobject/gio_002</id>
+      <label>Geoinformatieobject</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/informatieobject/doc_001</id>
+      <label>PDF-document</label>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/tooi/def/class/Gemeente</id>
+      <label>gemeente Gemeenten</label>
+      <beschrijving>Alle Gemeenten uit GRS </beschrijving>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1680</id>
+      <label>gemeente Aa en Hunze</label>
+      <beschrijving>Gemeente Aa en Hunze</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0358</id>
+      <label>gemeente Aalsmeer</label>
+      <beschrijving>Gemeente Aalsmeer</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0197</id>
+      <label>gemeente Aalten</label>
+      <beschrijving>Gemeente Aalten</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0059</id>
+      <label>gemeente Achtkarspelen</label>
+      <beschrijving>Gemeente Achtkarspelen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0482</id>
+      <label>gemeente Alblasserdam</label>
+      <beschrijving>Gemeente Alblasserdam</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0613</id>
+      <label>gemeente Albrandswaard</label>
+      <beschrijving>Gemeente Albrandswaard</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0361</id>
+      <label>gemeente Alkmaar</label>
+      <beschrijving>Gemeente Alkmaar</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0141</id>
+      <label>gemeente Almelo</label>
+      <beschrijving>Gemeente Almelo</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0034</id>
+      <label>gemeente Almere</label>
+      <beschrijving>Gemeente Almere</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0484</id>
+      <label>gemeente Alphen aan den Rijn</label>
+      <beschrijving>Gemeente Alphen aan den Rijn</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1723</id>
+      <label>gemeente Alphen-Chaam</label>
+      <beschrijving>Gemeente Alphen-Chaam</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1959</id>
+      <label>gemeente Altena</label>
+      <beschrijving>Gemeente Altena</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0060</id>
+      <label>gemeente Ameland</label>
+      <beschrijving>Gemeente Ameland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0307</id>
+      <label>gemeente Amersfoort</label>
+      <beschrijving>Gemeente Amersfoort</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0362</id>
+      <label>gemeente Amstelveen</label>
+      <beschrijving>Gemeente Amstelveen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0363</id>
+      <label>gemeente Amsterdam</label>
+      <beschrijving>Gemeente Amsterdam</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0200</id>
+      <label>gemeente Apeldoorn</label>
+      <beschrijving>Gemeente Apeldoorn</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0003</id>
+      <label>gemeente Appingedam</label>
+      <beschrijving>Gemeente Appingedam</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0202</id>
+      <label>gemeente Arnhem</label>
+      <beschrijving>Gemeente Arnhem</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0106</id>
+      <label>gemeente Assen</label>
+      <beschrijving>Gemeente Assen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0743</id>
+      <label>gemeente Asten</label>
+      <beschrijving>Gemeente Asten</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0744</id>
+      <label>gemeente Baarle-Nassau</label>
+      <beschrijving>Gemeente Baarle-Nassau</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0308</id>
+      <label>gemeente Baarn</label>
+      <beschrijving>Gemeente Baarn</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0489</id>
+      <label>gemeente Barendrecht</label>
+      <beschrijving>Gemeente Barendrecht</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0203</id>
+      <label>gemeente Barneveld</label>
+      <beschrijving>Gemeente Barneveld</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0888</id>
+      <label>gemeente Beek</label>
+      <beschrijving>Gemeente Beek</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1954</id>
+      <label>gemeente Beekdaelen</label>
+      <beschrijving>Gemeente Beekdaelen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0370</id>
+      <label>gemeente Beemster</label>
+      <beschrijving>Gemeente Beemster</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0889</id>
+      <label>gemeente Beesel</label>
+      <beschrijving>Gemeente Beesel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1945</id>
+      <label>gemeente Berg en Dal</label>
+      <beschrijving>Gemeente Berg en Dal</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1724</id>
+      <label>gemeente Bergeijk</label>
+      <beschrijving>Gemeente Bergeijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0893</id>
+      <label>gemeente Bergen (L)</label>
+      <beschrijving>Gemeente Bergen (L)</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0373</id>
+      <label>gemeente Bergen NH</label>
+      <beschrijving>Gemeente Bergen NH</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0748</id>
+      <label>gemeente Bergen op Zoom</label>
+      <beschrijving>Gemeente Bergen op Zoom</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1859</id>
+      <label>gemeente Berkelland</label>
+      <beschrijving>Gemeente Berkelland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1721</id>
+      <label>gemeente Bernheze</label>
+      <beschrijving>Gemeente Bernheze</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0753</id>
+      <label>gemeente Best</label>
+      <beschrijving>Gemeente Best</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0209</id>
+      <label>gemeente Beuningen</label>
+      <beschrijving>Gemeente Beuningen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0375</id>
+      <label>gemeente Beverwijk</label>
+      <beschrijving>Gemeente Beverwijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1728</id>
+      <label>gemeente Bladel</label>
+      <beschrijving>Gemeente Bladel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0376</id>
+      <label>gemeente Blaricum</label>
+      <beschrijving>Gemeente Blaricum</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0377</id>
+      <label>gemeente Bloemendaal</label>
+      <beschrijving>Gemeente Bloemendaal</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1901</id>
+      <label>gemeente Bodegraven-Reeuwijk</label>
+      <beschrijving>Gemeente Bodegraven-Reeuwijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0755</id>
+      <label>gemeente Boekel</label>
+      <beschrijving>Gemeente Boekel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1681</id>
+      <label>gemeente Borger-Odoorn</label>
+      <beschrijving>Gemeente Borger-Odoorn</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0147</id>
+      <label>gemeente Borne</label>
+      <beschrijving>Gemeente Borne</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0654</id>
+      <label>gemeente Borsele</label>
+      <beschrijving>Gemeente Borsele</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0756</id>
+      <label>gemeente Boxmeer</label>
+      <beschrijving>Gemeente Boxmeer</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0757</id>
+      <label>gemeente Boxtel</label>
+      <beschrijving>Gemeente Boxtel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0758</id>
+      <label>gemeente Breda</label>
+      <beschrijving>Gemeente Breda</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0501</id>
+      <label>gemeente Brielle</label>
+      <beschrijving>Gemeente Brielle</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1876</id>
+      <label>gemeente Bronckhorst</label>
+      <beschrijving>Gemeente Bronckhorst</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0213</id>
+      <label>gemeente Brummen</label>
+      <beschrijving>Gemeente Brummen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0899</id>
+      <label>gemeente Brunssum</label>
+      <beschrijving>Gemeente Brunssum</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0312</id>
+      <label>gemeente Bunnik</label>
+      <beschrijving>Gemeente Bunnik</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0313</id>
+      <label>gemeente Bunschoten</label>
+      <beschrijving>Gemeente Bunschoten</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0214</id>
+      <label>gemeente Buren</label>
+      <beschrijving>Gemeente Buren</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0502</id>
+      <label>gemeente Capelle aan den IJssel</label>
+      <beschrijving>Gemeente Capelle aan den IJssel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0383</id>
+      <label>gemeente Castricum</label>
+      <beschrijving>Gemeente Castricum</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0109</id>
+      <label>gemeente Coevorden</label>
+      <beschrijving>Gemeente Coevorden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1706</id>
+      <label>gemeente Cranendonck</label>
+      <beschrijving>Gemeente Cranendonck</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1684</id>
+      <label>gemeente Cuijk</label>
+      <beschrijving>Gemeente Cuijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0216</id>
+      <label>gemeente Culemborg</label>
+      <beschrijving>Gemeente Culemborg</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0148</id>
+      <label>gemeente Dalfsen</label>
+      <beschrijving>Gemeente Dalfsen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1891</id>
+      <label>gemeente Dantumadiel</label>
+      <beschrijving>Gemeente Dantumadiel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0310</id>
+      <label>gemeente De Bilt</label>
+      <beschrijving>Gemeente De Bilt</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1940</id>
+      <label>gemeente De Fryske Marren</label>
+      <beschrijving>Gemeente De Fryske Marren</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0736</id>
+      <label>gemeente De Ronde Venen</label>
+      <beschrijving>Gemeente De Ronde Venen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1690</id>
+      <label>gemeente De Wolden</label>
+      <beschrijving>Gemeente De Wolden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0503</id>
+      <label>gemeente Delft</label>
+      <beschrijving>Gemeente Delft</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0010</id>
+      <label>gemeente Delfzijl</label>
+      <beschrijving>Gemeente Delfzijl</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0518</id>
+      <label>gemeente Den Haag</label>
+      <beschrijving>Gemeente Den Haag</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0400</id>
+      <label>gemeente Den Helder</label>
+      <beschrijving>Gemeente Den Helder</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0762</id>
+      <label>gemeente Deurne</label>
+      <beschrijving>Gemeente Deurne</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0150</id>
+      <label>gemeente Deventer</label>
+      <beschrijving>Gemeente Deventer</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0384</id>
+      <label>gemeente Diemen</label>
+      <beschrijving>Gemeente Diemen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1774</id>
+      <label>gemeente Dinkelland</label>
+      <beschrijving>Gemeente Dinkelland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0221</id>
+      <label>gemeente Doesburg</label>
+      <beschrijving>Gemeente Doesburg</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0222</id>
+      <label>gemeente Doetinchem</label>
+      <beschrijving>Gemeente Doetinchem</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0766</id>
+      <label>gemeente Dongen</label>
+      <beschrijving>Gemeente Dongen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0505</id>
+      <label>gemeente Dordrecht</label>
+      <beschrijving>Gemeente Dordrecht</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0498</id>
+      <label>gemeente Drechterland</label>
+      <beschrijving>Gemeente Drechterland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1719</id>
+      <label>gemeente Drimmelen</label>
+      <beschrijving>Gemeente Drimmelen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0303</id>
+      <label>gemeente Dronten</label>
+      <beschrijving>Gemeente Dronten</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0225</id>
+      <label>gemeente Druten</label>
+      <beschrijving>Gemeente Druten</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0226</id>
+      <label>gemeente Duiven</label>
+      <beschrijving>Gemeente Duiven</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1711</id>
+      <label>gemeente Echt-Susteren</label>
+      <beschrijving>Gemeente Echt-Susteren</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0385</id>
+      <label>gemeente Edam-Volendam</label>
+      <beschrijving>Gemeente Edam-Volendam</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0228</id>
+      <label>gemeente Ede</label>
+      <beschrijving>Gemeente Ede</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0317</id>
+      <label>gemeente Eemnes</label>
+      <beschrijving>Gemeente Eemnes</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1979</id>
+      <label>gemeente Eemsdelta</label>
+      <beschrijving>Gemeente Eemsdelta</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0770</id>
+      <label>gemeente Eersel</label>
+      <beschrijving>Gemeente Eersel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1903</id>
+      <label>gemeente Eijsden-Margraten</label>
+      <beschrijving>Gemeente Eijsden-Margraten</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0772</id>
+      <label>gemeente Eindhoven</label>
+      <beschrijving>Gemeente Eindhoven</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0230</id>
+      <label>gemeente Elburg</label>
+      <beschrijving>Gemeente Elburg</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0114</id>
+      <label>gemeente Emmen</label>
+      <beschrijving>Gemeente Emmen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0388</id>
+      <label>gemeente Enkhuizen</label>
+      <beschrijving>Gemeente Enkhuizen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0153</id>
+      <label>gemeente Enschede</label>
+      <beschrijving>Gemeente Enschede</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0232</id>
+      <label>gemeente Epe</label>
+      <beschrijving>Gemeente Epe</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0233</id>
+      <label>gemeente Ermelo</label>
+      <beschrijving>Gemeente Ermelo</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0777</id>
+      <label>gemeente Etten-Leur</label>
+      <beschrijving>Gemeente Etten-Leur</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0779</id>
+      <label>gemeente Geertruidenberg</label>
+      <beschrijving>Gemeente Geertruidenberg</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1771</id>
+      <label>gemeente Geldrop-Mierlo</label>
+      <beschrijving>Gemeente Geldrop-Mierlo</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1652</id>
+      <label>gemeente Gemert-Bakel</label>
+      <beschrijving>Gemeente Gemert-Bakel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0907</id>
+      <label>gemeente Gennep</label>
+      <beschrijving>Gemeente Gennep</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0784</id>
+      <label>gemeente Gilze en Rijen</label>
+      <beschrijving>Gemeente Gilze en Rijen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1924</id>
+      <label>gemeente Goeree-Overflakkee</label>
+      <beschrijving>Gemeente Goeree-Overflakkee</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0664</id>
+      <label>gemeente Goes</label>
+      <beschrijving>Gemeente Goes</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0785</id>
+      <label>gemeente Goirle</label>
+      <beschrijving>Gemeente Goirle</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1942</id>
+      <label>gemeente Gooise Meren</label>
+      <beschrijving>Gemeente Gooise Meren</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0512</id>
+      <label>gemeente Gorinchem</label>
+      <beschrijving>Gemeente Gorinchem</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0513</id>
+      <label>gemeente Gouda</label>
+      <beschrijving>Gemeente Gouda</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0786</id>
+      <label>gemeente Grave</label>
+      <beschrijving>Gemeente Grave</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0014</id>
+      <label>gemeente Groningen</label>
+      <beschrijving>Gemeente Groningen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1729</id>
+      <label>gemeente Gulpen-Wittem</label>
+      <beschrijving>Gemeente Gulpen-Wittem</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0158</id>
+      <label>gemeente Haaksbergen</label>
+      <beschrijving>Gemeente Haaksbergen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0788</id>
+      <label>gemeente Haaren</label>
+      <beschrijving>Gemeente Haaren</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0392</id>
+      <label>gemeente Haarlem</label>
+      <beschrijving>Gemeente Haarlem</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0394</id>
+      <label>gemeente Haarlemmermeer</label>
+      <beschrijving>Gemeente Haarlemmermeer</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1655</id>
+      <label>gemeente Halderberge</label>
+      <beschrijving>Gemeente Halderberge</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0160</id>
+      <label>gemeente Hardenberg</label>
+      <beschrijving>Gemeente Hardenberg</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0243</id>
+      <label>gemeente Harderwijk</label>
+      <beschrijving>Gemeente Harderwijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0523</id>
+      <label>gemeente Hardinxveld-Giessendam</label>
+      <beschrijving>Gemeente Hardinxveld-Giessendam</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0072</id>
+      <label>gemeente Harlingen</label>
+      <beschrijving>Gemeente Harlingen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0244</id>
+      <label>gemeente Hattem</label>
+      <beschrijving>Gemeente Hattem</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0396</id>
+      <label>gemeente Heemskerk</label>
+      <beschrijving>Gemeente Heemskerk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0397</id>
+      <label>gemeente Heemstede</label>
+      <beschrijving>Gemeente Hdeltede</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0246</id>
+      <label>gemeente Heerde</label>
+      <beschrijving>Gemeente Heerde</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0074</id>
+      <label>gemeente Heerenveen</label>
+      <beschrijving>Gemeente Heerenveen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0398</id>
+      <label>gemeente Heerhugowaard</label>
+      <beschrijving>Gemeente Heerhugowaard</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0917</id>
+      <label>gemeente Heerlen</label>
+      <beschrijving>Gemeente Heerlen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1658</id>
+      <label>gemeente Heeze-Leende</label>
+      <beschrijving>Gemeente Heeze-Leende</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0399</id>
+      <label>gemeente Heiloo</label>
+      <beschrijving>Gemeente Heiloo</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0163</id>
+      <label>gemeente Hellendoorn</label>
+      <beschrijving>Gemeente Hellendoorn</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0530</id>
+      <label>gemeente Hellevoetsluis</label>
+      <beschrijving>Gemeente Hellevoetsluis</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0794</id>
+      <label>gemeente Helmond</label>
+      <beschrijving>Gemeente Helmond</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0531</id>
+      <label>gemeente Hendrik-Ido-Ambacht</label>
+      <beschrijving>Gemeente Hendrik-Ido-Ambacht</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0164</id>
+      <label>gemeente Hengelo</label>
+      <beschrijving>Gemeente Hengelo</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0796</id>
+      <label>gemeente 's-Hertogenbosch</label>
+      <beschrijving>Gemeente 's-Hertogenbosch</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1966</id>
+      <label>gemeente Het Hogeland</label>
+      <beschrijving>Gemeente Het Hogeland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0252</id>
+      <label>gemeente Heumen</label>
+      <beschrijving>Gemeente Heumen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0797</id>
+      <label>gemeente Heusden</label>
+      <beschrijving>Gemeente Heusden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0534</id>
+      <label>gemeente Hillegom</label>
+      <beschrijving>Gemeente Hillegom</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0798</id>
+      <label>gemeente Hilvarenbeek</label>
+      <beschrijving>Gemeente Hilvarenbeek</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0402</id>
+      <label>gemeente Hilversum</label>
+      <beschrijving>Gemeente Hilversum</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1963</id>
+      <label>gemeente Hoeksche Waard</label>
+      <beschrijving>Gemeente Hoeksche Waard</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1735</id>
+      <label>gemeente Hof van Twente</label>
+      <beschrijving>Gemeente Hof van Twente</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1911</id>
+      <label>gemeente Hollands Kroon</label>
+      <beschrijving>Gemeente Hollands Kroon</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0118</id>
+      <label>gemeente Hoogeveen</label>
+      <beschrijving>Gemeente Hoogeveen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0405</id>
+      <label>gemeente Hoorn</label>
+      <beschrijving>Gemeente Hoorn</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1507</id>
+      <label>gemeente Horst aan de Maas</label>
+      <beschrijving>Gemeente Horst aan de Maas</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0321</id>
+      <label>gemeente Houten</label>
+      <beschrijving>Gemeente Houten</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0406</id>
+      <label>gemeente Huizen</label>
+      <beschrijving>Gemeente Huizen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0677</id>
+      <label>gemeente Hulst</label>
+      <beschrijving>Gemeente Hulst</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0353</id>
+      <label>gemeente IJsselstein</label>
+      <beschrijving>Gemeente IJsselstein</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1884</id>
+      <label>gemeente Kaag en Braassem</label>
+      <beschrijving>Gemeente Kaag en Braassem</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0166</id>
+      <label>gemeente Kampen</label>
+      <beschrijving>Gemeente Kampen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0678</id>
+      <label>gemeente Kapelle</label>
+      <beschrijving>Gemeente Kapelle</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0537</id>
+      <label>gemeente Katwijk</label>
+      <beschrijving>Gemeente Katwijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0928</id>
+      <label>gemeente Kerkrade</label>
+      <beschrijving>Gemeente Kerkrade</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1598</id>
+      <label>gemeente Koggenland</label>
+      <beschrijving>Gemeente Koggenland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0542</id>
+      <label>gemeente Krimpen aan den IJssel</label>
+      <beschrijving>Gemeente Krimpen aan den IJssel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1931</id>
+      <label>gemeente Krimpenerwaard</label>
+      <beschrijving>Gemeente Krimpenerwaard</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1659</id>
+      <label>gemeente Laarbeek</label>
+      <beschrijving>Gemeente Laarbeek</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1685</id>
+      <label>gemeente Landerd</label>
+      <beschrijving>Gemeente Landerd</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0882</id>
+      <label>gemeente Landgraaf</label>
+      <beschrijving>Gemeente Landgraaf</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0415</id>
+      <label>gemeente Landsmeer</label>
+      <beschrijving>Gemeente Landsmeer</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0416</id>
+      <label>gemeente Langedijk</label>
+      <beschrijving>Gemeente Langedijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1621</id>
+      <label>gemeente Lansingerland</label>
+      <beschrijving>Gemeente Lansingerland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0417</id>
+      <label>gemeente Laren</label>
+      <beschrijving>Gemeente Laren</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0080</id>
+      <label>gemeente Leeuwarden</label>
+      <beschrijving>Gemeente Leeuwarden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0546</id>
+      <label>gemeente Leiden</label>
+      <beschrijving>Gemeente Leiden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0547</id>
+      <label>gemeente Leiderdorp</label>
+      <beschrijving>Gemeente Leiderdorp</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1916</id>
+      <label>gemeente Leidschendam-Voorburg</label>
+      <beschrijving>Gemeente Leidschendam-Voorburg</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0995</id>
+      <label>gemeente Lelystad</label>
+      <beschrijving>Gemeente Lelystad</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1640</id>
+      <label>gemeente Leudal</label>
+      <beschrijving>Gemeente Leudal</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0327</id>
+      <label>gemeente Leusden</label>
+      <beschrijving>Gemeente Leusden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1705</id>
+      <label>gemeente Lingewaard</label>
+      <beschrijving>Gemeente Lingewaard</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0553</id>
+      <label>gemeente Lisse</label>
+      <beschrijving>Gemeente Lisse</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0262</id>
+      <label>gemeente Lochem</label>
+      <beschrijving>Gemeente Lochem</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0809</id>
+      <label>gemeente Loon op Zand</label>
+      <beschrijving>Gemeente Loon op Zand</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0331</id>
+      <label>gemeente Lopik</label>
+      <beschrijving>Gemeente Lopik</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0024</id>
+      <label>gemeente Loppersum</label>
+      <beschrijving>Gemeente Loppersum</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0168</id>
+      <label>gemeente Losser</label>
+      <beschrijving>Gemeente Losser</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0263</id>
+      <label>gemeente Maasdriel</label>
+      <beschrijving>Gemeente Maasdriel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1641</id>
+      <label>gemeente Maasgouw</label>
+      <beschrijving>Gemeente Maasgouw</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0556</id>
+      <label>gemeente Maassluis</label>
+      <beschrijving>Gemeente Maassluis</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0935</id>
+      <label>gemeente Maastricht</label>
+      <beschrijving>Gemeente Maastricht</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0420</id>
+      <label>gemeente Medemblik</label>
+      <beschrijving>Gemeente Medemblik</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0938</id>
+      <label>gemeente Meerssen</label>
+      <beschrijving>Gemeente Meerssen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1948</id>
+      <label>gemeente Meierijstad</label>
+      <beschrijving>Gemeente Meierijstad</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0119</id>
+      <label>gemeente Meppel</label>
+      <beschrijving>Gemeente Meppel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0687</id>
+      <label>gemeente Middelburg</label>
+      <beschrijving>Gemeente Middelburg</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1842</id>
+      <label>gemeente Midden-Delfland</label>
+      <beschrijving>Gemeente Midden-Delfland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1731</id>
+      <label>gemeente Midden-Drenthe</label>
+      <beschrijving>Gemeente Midden-Drenthe</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1952</id>
+      <label>gemeente Midden-Groningen</label>
+      <beschrijving>Gemeente Midden-Groningen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0815</id>
+      <label>gemeente Mill en St. Hubert</label>
+      <beschrijving>Gemeente Mill en St. Hubert</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1709</id>
+      <label>gemeente Moerdijk</label>
+      <beschrijving>Gemeente Moerdijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1978</id>
+      <label>gemeente Molenlanden</label>
+      <beschrijving>Gemeente Molenlanden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1955</id>
+      <label>gemeente Montferland</label>
+      <beschrijving>Gemeente Montferland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0335</id>
+      <label>gemeente Montfoort</label>
+      <beschrijving>Gemeente Montfoort</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0944</id>
+      <label>gemeente Mook en Middelaar</label>
+      <beschrijving>Gemeente Mook en Middelaar</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1740</id>
+      <label>gemeente Neder-Betuwe</label>
+      <beschrijving>Gemeente Neder-Betuwe</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0946</id>
+      <label>gemeente Nederweert</label>
+      <beschrijving>Gemeente Nederweert</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0356</id>
+      <label>gemeente Nieuwegein</label>
+      <beschrijving>Gemeente Nieuwegein</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0569</id>
+      <label>gemeente Nieuwkoop</label>
+      <beschrijving>Gemeente Nieuwkoop</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0267</id>
+      <label>gemeente Nijkerk</label>
+      <beschrijving>Gemeente Nijkerk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0268</id>
+      <label>gemeente Nijmegen</label>
+      <beschrijving>Gemeente Nijmegen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1930</id>
+      <label>gemeente Nissewaard</label>
+      <beschrijving>Gemeente Nissewaard</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1970</id>
+      <label>gemeente Noardeast-Frysl�n</label>
+      <beschrijving>Gemeente Noardeast-Frysl�n</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1695</id>
+      <label>gemeente Noord-Beveland</label>
+      <beschrijving>Gemeente Noord-Beveland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1699</id>
+      <label>gemeente Noordenveld</label>
+      <beschrijving>Gemeente Noordenveld</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0171</id>
+      <label>gemeente Noordoostpolder</label>
+      <beschrijving>Gemeente Noordoostpolder</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0575</id>
+      <label>gemeente Noordwijk</label>
+      <beschrijving>Gemeente Noordwijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0820</id>
+      <label>gemeente Nuenen c.a.</label>
+      <beschrijving>Gemeente Nuenen c.a.</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0302</id>
+      <label>gemeente Nunspeet</label>
+      <beschrijving>Gemeente Nunspeet</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0579</id>
+      <label>gemeente Oegstgeest</label>
+      <beschrijving>Gemeente Oegstgeest</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0823</id>
+      <label>gemeente Oirschot</label>
+      <beschrijving>Gemeente Oirschot</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0824</id>
+      <label>gemeente Oisterwijk</label>
+      <beschrijving>Gemeente Oisterwijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1895</id>
+      <label>gemeente Oldambt</label>
+      <beschrijving>Gemeente Oldambt</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0269</id>
+      <label>gemeente Oldebroek</label>
+      <beschrijving>Gemeente Oldebroek</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0173</id>
+      <label>gemeente Oldenzaal</label>
+      <beschrijving>Gemeente Oldenzaal</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1773</id>
+      <label>gemeente Olst-Wijhe</label>
+      <beschrijving>Gemeente Olst-Wijhe</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0175</id>
+      <label>gemeente Ommen</label>
+      <beschrijving>Gemeente Ommen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1586</id>
+      <label>gemeente Oost Gelre</label>
+      <beschrijving>Gemeente Oost Gelre</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0826</id>
+      <label>gemeente Oosterhout</label>
+      <beschrijving>Gemeente Oosterhout</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0085</id>
+      <label>gemeente Ooststellingwerf</label>
+      <beschrijving>Gemeente Ooststellingwerf</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0431</id>
+      <label>gemeente Oostzaan</label>
+      <beschrijving>Gemeente Oostzaan</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0432</id>
+      <label>gemeente Opmeer</label>
+      <beschrijving>Gemeente Opmeer</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0086</id>
+      <label>gemeente Opsterland</label>
+      <beschrijving>Gemeente Opsterland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0828</id>
+      <label>gemeente Oss</label>
+      <beschrijving>Gemeente Oss</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1509</id>
+      <label>gemeente Oude IJsselstreek</label>
+      <beschrijving>Gemeente Oude IJsselstreek</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0437</id>
+      <label>gemeente Ouder-Amstel</label>
+      <beschrijving>Gemeente Ouder-Amstel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0589</id>
+      <label>gemeente Oudewater</label>
+      <beschrijving>Gemeente Oudewater</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1734</id>
+      <label>gemeente Overbetuwe</label>
+      <beschrijving>Gemeente Overbetuwe</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0590</id>
+      <label>gemeente Papendrecht</label>
+      <beschrijving>Gemeente Papendrecht</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1894</id>
+      <label>gemeente Peel en Maas</label>
+      <beschrijving>Gemeente Peel en Maas</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0765</id>
+      <label>gemeente Pekela</label>
+      <beschrijving>Gemeente Pekela</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1926</id>
+      <label>gemeente Pijnacker-Nootdorp</label>
+      <beschrijving>Gemeente Pijnacker-Nootdorp</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0439</id>
+      <label>gemeente Purmerend</label>
+      <beschrijving>Gemeente Purmerend</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0273</id>
+      <label>gemeente Putten</label>
+      <beschrijving>Gemeente Putten</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0177</id>
+      <label>gemeente Raalte</label>
+      <beschrijving>Gemeente Raalte</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0703</id>
+      <label>gemeente Reimerswaal</label>
+      <beschrijving>Gemeente Reimerswaal</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0274</id>
+      <label>gemeente Renkum</label>
+      <beschrijving>Gemeente Renkum</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0339</id>
+      <label>gemeente Renswoude</label>
+      <beschrijving>Gemeente Renswoude</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1667</id>
+      <label>gemeente Reusel-De Mierden</label>
+      <beschrijving>Gemeente Reusel-De Mierden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0275</id>
+      <label>gemeente Rheden</label>
+      <beschrijving>Gemeente Rheden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0340</id>
+      <label>gemeente Rhenen</label>
+      <beschrijving>Gemeente Rhenen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0597</id>
+      <label>gemeente Ridderkerk</label>
+      <beschrijving>Gemeente Ridderkerk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1742</id>
+      <label>gemeente Rijssen-Holten</label>
+      <beschrijving>Gemeente Rijssen-Holten</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0603</id>
+      <label>gemeente Rijswijk</label>
+      <beschrijving>Gemeente Rijswijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1669</id>
+      <label>gemeente Roerdalen</label>
+      <beschrijving>Gemeente Roerdalen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0957</id>
+      <label>gemeente Roermond</label>
+      <beschrijving>Gemeente Roermond</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1674</id>
+      <label>gemeente Roosendaal</label>
+      <beschrijving>Gemeente Roosendaal</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0599</id>
+      <label>gemeente Rotterdam</label>
+      <beschrijving>Gemeente Rotterdam</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0277</id>
+      <label>gemeente Rozendaal</label>
+      <beschrijving>Gemeente Rozendaal</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0840</id>
+      <label>gemeente Rucphen</label>
+      <beschrijving>Gemeente Rucphen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0441</id>
+      <label>gemeente Schagen</label>
+      <beschrijving>Gemeente Schagen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0279</id>
+      <label>gemeente Scherpenzeel</label>
+      <beschrijving>Gemeente Scherpenzeel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0606</id>
+      <label>gemeente Schiedam</label>
+      <beschrijving>Gemeente Schiedam</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0088</id>
+      <label>gemeente Schiermonnikoog</label>
+      <beschrijving>Gemeente Schiermonnikoog</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1676</id>
+      <label>gemeente Schouwen-Duiveland</label>
+      <beschrijving>Gemeente Schouwen-Duiveland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0965</id>
+      <label>gemeente Simpelveld</label>
+      <beschrijving>Gemeente Simpelveld</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1702</id>
+      <label>gemeente Sint Anthonis</label>
+      <beschrijving>Gemeente Sint Anthonis</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0845</id>
+      <label>gemeente Sint-Michielsgestel</label>
+      <beschrijving>Gemeente Sint-Michielsgestel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1883</id>
+      <label>gemeente Sittard-Geleen</label>
+      <beschrijving>Gemeente Sittard-Geleen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0610</id>
+      <label>gemeente Sliedrecht</label>
+      <beschrijving>Gemeente Sliedrecht</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1714</id>
+      <label>gemeente Sluis</label>
+      <beschrijving>Gemeente Sluis</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0090</id>
+      <label>gemeente Smallingerland</label>
+      <beschrijving>Gemeente Smallingerland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0342</id>
+      <label>gemeente Soest</label>
+      <beschrijving>Gemeente Soest</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0847</id>
+      <label>gemeente Someren</label>
+      <beschrijving>Gemeente Someren</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0848</id>
+      <label>gemeente Son en Breugel</label>
+      <beschrijving>Gemeente Son en Breugel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0037</id>
+      <label>gemeente Stadskanaal</label>
+      <beschrijving>Gemeente Stadskanaal</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0180</id>
+      <label>gemeente Staphorst</label>
+      <beschrijving>Gemeente Staphorst</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0532</id>
+      <label>gemeente Stede Broec</label>
+      <beschrijving>Gemeente Stede Broec</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0851</id>
+      <label>gemeente Steenbergen</label>
+      <beschrijving>Gemeente Steenbergen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1708</id>
+      <label>gemeente Steenwijkerland</label>
+      <beschrijving>Gemeente Steenwijkerland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0971</id>
+      <label>gemeente Stein</label>
+      <beschrijving>Gemeente Stein</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1904</id>
+      <label>gemeente Stichtse Vecht</label>
+      <beschrijving>Gemeente Stichtse Vecht</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1900</id>
+      <label>gemeente S�dwest Frysl�n</label>
+      <beschrijving>Gemeente S�dwest Frysl�n</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0715</id>
+      <label>gemeente Terneuzen</label>
+      <beschrijving>Gemeente Terneuzen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0093</id>
+      <label>gemeente Terschelling</label>
+      <beschrijving>Gemeente Terschelling</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0448</id>
+      <label>gemeente Texel</label>
+      <beschrijving>Gemeente Texel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1525</id>
+      <label>gemeente Teylingen</label>
+      <beschrijving>Gemeente Teylingen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0716</id>
+      <label>gemeente Tholen</label>
+      <beschrijving>Gemeente Tholen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0281</id>
+      <label>gemeente Tiel</label>
+      <beschrijving>Gemeente Tiel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0855</id>
+      <label>gemeente Tilburg</label>
+      <beschrijving>Gemeente Tilburg</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0183</id>
+      <label>gemeente Tubbergen</label>
+      <beschrijving>Gemeente Tubbergen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1700</id>
+      <label>gemeente Twenterand</label>
+      <beschrijving>Gemeente Twenterand</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1730</id>
+      <label>gemeente Tynaarlo</label>
+      <beschrijving>Gemeente Tynaarlo</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0737</id>
+      <label>gemeente Tytsjerksteradiel</label>
+      <beschrijving>Gemeente Tytsjerksteradiel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0856</id>
+      <label>gemeente Uden</label>
+      <beschrijving>Gemeente Uden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0450</id>
+      <label>gemeente Uitgeest</label>
+      <beschrijving>Gemeente Uitgeest</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0451</id>
+      <label>gemeente Uithoorn</label>
+      <beschrijving>Gemeente Uithoorn</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0184</id>
+      <label>gemeente Urk</label>
+      <beschrijving>Gemeente Urk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0344</id>
+      <label>gemeente Utrecht</label>
+      <beschrijving>Gemeente Utrecht</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1581</id>
+      <label>gemeente Utrechtse Heuvelrug</label>
+      <beschrijving>Gemeente Utrechtse Heuvelrug</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0981</id>
+      <label>gemeente Vaals</label>
+      <beschrijving>Gemeente Vaals</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0994</id>
+      <label>gemeente Valkenburg aan de Geul</label>
+      <beschrijving>Gemeente Valkenburg aan de Geul</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0858</id>
+      <label>gemeente Valkenswaard</label>
+      <beschrijving>Gemeente Valkenswaard</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0047</id>
+      <label>gemeente Veendam</label>
+      <beschrijving>Gemeente Veendam</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0345</id>
+      <label>gemeente Veenendaal</label>
+      <beschrijving>Gemeente Veenendaal</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0717</id>
+      <label>gemeente Veere</label>
+      <beschrijving>Gemeente Veere</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0861</id>
+      <label>gemeente Veldhoven</label>
+      <beschrijving>Gemeente Veldhoven</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0453</id>
+      <label>gemeente Velsen</label>
+      <beschrijving>Gemeente Velsen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0983</id>
+      <label>gemeente Venlo</label>
+      <beschrijving>Gemeente Venlo</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0984</id>
+      <label>gemeente Venray</label>
+      <beschrijving>Gemeente Venray</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1961</id>
+      <label>gemeente Vijfheerenlanden</label>
+      <beschrijving>Gemeente Vijfheerenlanden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0622</id>
+      <label>gemeente Vlaardingen</label>
+      <beschrijving>Gemeente Vlaardingen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0096</id>
+      <label>gemeente Vlieland</label>
+      <beschrijving>Gemeente Vlieland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0718</id>
+      <label>gemeente Vlissingen</label>
+      <beschrijving>Gemeente Vlissingen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0986</id>
+      <label>gemeente Voerendaal</label>
+      <beschrijving>Gemeente Voerendaal</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0626</id>
+      <label>gemeente Voorschoten</label>
+      <beschrijving>Gemeente Voorschoten</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0285</id>
+      <label>gemeente Voorst</label>
+      <beschrijving>Gemeente Voorst</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0865</id>
+      <label>gemeente Vught</label>
+      <beschrijving>Gemeente Vught</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1949</id>
+      <label>gemeente Waadhoeke</label>
+      <beschrijving>Gemeente Waadhoeke</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0866</id>
+      <label>gemeente Waalre</label>
+      <beschrijving>Gemeente Waalre</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0867</id>
+      <label>gemeente Waalwijk</label>
+      <beschrijving>Gemeente Waalwijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0627</id>
+      <label>gemeente Waddinxveen</label>
+      <beschrijving>Gemeente Waddinxveen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0289</id>
+      <label>gemeente Wageningen</label>
+      <beschrijving>Gemeente Wageningen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0629</id>
+      <label>gemeente Wassenaar</label>
+      <beschrijving>Gemeente Wassenaar</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0852</id>
+      <label>gemeente Waterland</label>
+      <beschrijving>Gemeente Waterland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0988</id>
+      <label>gemeente Weert</label>
+      <beschrijving>Gemeente Weert</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0457</id>
+      <label>gemeente Weesp</label>
+      <beschrijving>Gemeente Weesp</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1960</id>
+      <label>gemeente West Betuwe</label>
+      <beschrijving>Gemeente West Betuwe</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0668</id>
+      <label>gemeente West Maas en Waal</label>
+      <beschrijving>Gemeente West Maas en Waal</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1969</id>
+      <label>gemeente Westerkwartier</label>
+      <beschrijving>Gemeente Westerkwartier</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1701</id>
+      <label>gemeente Westerveld</label>
+      <beschrijving>Gemeente Westerveld</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0293</id>
+      <label>gemeente Westervoort</label>
+      <beschrijving>Gemeente Westervoort</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1950</id>
+      <label>gemeente Westerwolde</label>
+      <beschrijving>Gemeente Westerwolde</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1783</id>
+      <label>gemeente Westland</label>
+      <beschrijving>Gemeente Westland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0098</id>
+      <label>gemeente Weststellingwerf</label>
+      <beschrijving>Gemeente Weststellingwerf</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0614</id>
+      <label>gemeente Westvoorne</label>
+      <beschrijving>Gemeente Westvoorne</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0189</id>
+      <label>gemeente Wierden</label>
+      <beschrijving>Gemeente Wierden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0296</id>
+      <label>gemeente Wijchen</label>
+      <beschrijving>Gemeente Wijchen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1696</id>
+      <label>gemeente Wijdemeren</label>
+      <beschrijving>Gemeente Wijdemeren</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0352</id>
+      <label>gemeente Wijk bij Duurstede</label>
+      <beschrijving>Gemeente Wijk bij Duurstede</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0294</id>
+      <label>gemeente Winterswijk</label>
+      <beschrijving>Gemeente Winterswijk</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0873</id>
+      <label>gemeente Woensdrecht</label>
+      <beschrijving>Gemeente Woensdrecht</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0632</id>
+      <label>gemeente Woerden</label>
+      <beschrijving>Gemeente Woerden</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0880</id>
+      <label>gemeente Wormerland</label>
+      <beschrijving>Gemeente Wormerland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0351</id>
+      <label>gemeente Woudenberg</label>
+      <beschrijving>Gemeente Woudenberg</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0479</id>
+      <label>gemeente Zaanstad</label>
+      <beschrijving>Gemeente Zaanstad</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0297</id>
+      <label>gemeente Zaltbommel</label>
+      <beschrijving>Gemeente Zaltbommel</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0473</id>
+      <label>gemeente Zandvoort</label>
+      <beschrijving>Gemeente Zandvoort</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0050</id>
+      <label>gemeente Zeewolde</label>
+      <beschrijving>Gemeente Zeewolde</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0355</id>
+      <label>gemeente Zeist</label>
+      <beschrijving>Gemeente Zeist</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0299</id>
+      <label>gemeente Zevenaar</label>
+      <beschrijving>Gemeente Zevenaar</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0637</id>
+      <label>gemeente Zoetermeer</label>
+      <beschrijving>Gemeente Zoetermeer</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0638</id>
+      <label>gemeente Zoeterwoude</label>
+      <beschrijving>Gemeente Zoeterwoude</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1892</id>
+      <label>gemeente Zuidplas</label>
+      <beschrijving>Gemeente Zuidplas</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0879</id>
+      <label>gemeente Zundert</label>
+      <beschrijving>Gemeente Zundert</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0301</id>
+      <label>gemeente Zutphen</label>
+      <beschrijving>Gemeente Zutphen</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm1896</id>
+      <label>gemeente Zwartewaterland</label>
+      <beschrijving>Gemeente Zwartewaterland</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0642</id>
+      <label>gemeente Zwijndrecht</label>
+      <beschrijving>Gemeente Zwijndrecht</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/gemeente/gm0193</id>
+      <label>gemeente Zwolle</label>
+      <beschrijving>Gemeente Zwolle</beschrijving>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/tooi/def/class/Ministerie</id>
+      <label>Ministeries</label>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/tooi/id/ministerie/mnre1010</id>
+      <label>Ministerie van Algemene Zaken</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/ministerie/mnre1034</id>
+      <label>Ministerie van Binnenlandse Zaken en Koninkrijksrelaties</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/ministerie/mnre1013</id>
+      <label>Ministerie van Buitenlandse Zaken</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/ministerie/mnre1018</id>
+      <label>Ministerie van Defensie</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/ministerie/mnre1045</id>
+      <label>Ministerie van Economische Zaken en Klimaat</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/ministerie/mnre1090</id>
+      <label>Ministerie van Financiën</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/ministerie/mnre1130</id>
+      <label>Ministerie van Infrastructuur en Waterstaat</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/ministerie/mnre1058</id>
+      <label>Ministerie van Justitie en Veiligheid</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/ministerie/mnre1153</id>
+      <label>Ministerie van Landbouw, Natuur en Voedselkwaliteit</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/ministerie/mnre1109</id>
+      <label>Ministerie van Onderwijs, Cultuur en Wetenschap</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/ministerie/mnre1073</id>
+      <label>Ministerie van Sociale Zaken en Werkgelegenheid</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/ministerie/mnre1025</id>
+      <label>Ministerie van Volksgezondheid, Welzijn en Sport</label>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/tooi/def/concept/conceptScheme_7e4501f7</id>
+      <label>TOP-lijst</label>
+      <beschrijving>Deze lijst wordt ook wel de "TOPlijst" genoemd. In versie 1.1.0 is de hiërarchie van de waardelijst genoteerd door in de beschrijving van de subterm te verwijzen naar zijn hoofdterm. Dit zal overbodig worden als de lijsten van TOOI eenmaal publiek beschikbaar zijn.</beschrijving>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/tooi/def/concept/c_d0463fb7</id>
+      <label>zorg en gezondheid</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_124eaf3a</id>
+      <label>wonen</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_9d1917e9</id>
+      <label>werk</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_849842ac</id>
+      <label>verkeer</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_d4890526</id>
+      <label>sociale zekerheid</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_cfc7d5ab</id>
+      <label>ruimte en infrastructuur</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f4679acc</id>
+      <label>recht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_391585db</id>
+      <label>overheidsfinanciën</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_3eb6243b</id>
+      <label>organisatie en bedrijfsvoering</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_d58b78ca</id>
+      <label>openbare orde en veiligheid</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c232ae4a</id>
+      <label>onderwijs en wetenschap</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_afa30a11</id>
+      <label>natuur en milieu</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_399f194b</id>
+      <label>migratie en integratie</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f47ad6ca</id>
+      <label>internationaal</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_d363776f</id>
+      <label>economie</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_0361ffb3</id>
+      <label>cultuur en recreatie</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_341c5bef</id>
+      <label>zorgverzekeringen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d0463fb7</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_9a574af9</id>
+      <label>ziekten en behandelingen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d0463fb7</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f02ce1b3</id>
+      <label>ouderenzorg</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d0463fb7</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_0fe7c5e7</id>
+      <label>jeugdzorg</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d0463fb7</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_8b081a63</id>
+      <label>gezondheidsrisico's</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d0463fb7</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_6b9627b5</id>
+      <label>geneesmiddelen en medische hulpmiddelen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d0463fb7</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_218c52ee</id>
+      <label>ethiek</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d0463fb7</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_17a86a17</id>
+      <label>woningmarkt</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_124eaf3a</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_a6a9eddd</id>
+      <label>bouwen en verbouwen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_124eaf3a</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_7fe16af8</id>
+      <label>werkgelegenheid</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_9d1917e9</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_1f37c612</id>
+      <label>arbeidsverhoudingen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_9d1917e9</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_4e83eca7</id>
+      <label>arbeidsomstandigheden</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_9d1917e9</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_d3b599f8</id>
+      <label>scheepvaart</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_849842ac</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f411e390</id>
+      <label>rail- en wegverkeer</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_849842ac</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_319461d7</id>
+      <label>openbaar vervoer</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_849842ac</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_2835e395</id>
+      <label>luchtvaart</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_849842ac</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_2ee165c4</id>
+      <label>ziekte en arbeidsongeschiktheid</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d4890526</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_1781ce20</id>
+      <label>ouderen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d4890526</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_76136c82</id>
+      <label>gezin en kinderen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d4890526</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_a71dc533</id>
+      <label>waterbeheer</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_cfc7d5ab</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_9af4b880</id>
+      <label>ruimtelijke ordening</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_cfc7d5ab</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_85a72eb3</id>
+      <label>netwerken</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_cfc7d5ab</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_98e03e32</id>
+      <label>strafrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f4679acc</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_1fe409d0</id>
+      <label>staatsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f4679acc</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_72138db9</id>
+      <label>rechtspraak</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f4679acc</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_d2b1338a</id>
+      <label>rechten en vrijheden</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f4679acc</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_824ce7ff</id>
+      <label>privaatrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f4679acc</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_e3d35361</id>
+      <label>bezwaar en klachten</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f4679acc</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_beb01b1c</id>
+      <label>bestuursrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f4679acc</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_01a4140b</id>
+      <label>subsidie</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_391585db</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_68e408ff</id>
+      <label>inkomensbeleid</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_391585db</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_1dd2bcc9</id>
+      <label>financieel toezicht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_391585db</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_25e30d03</id>
+      <label>belasting</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_391585db</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_4348dad1</id>
+      <label>begroting</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_391585db</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f2c9a613</id>
+      <label>overheidspersoneel</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3eb6243b</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f28344a5</id>
+      <label>koninkrijksrelaties</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3eb6243b</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f6d7f591</id>
+      <label>interne organisatie</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3eb6243b</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f37fd49d</id>
+      <label>inrichting van de overheid</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3eb6243b</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_068da9fb</id>
+      <label>inkoop en beheer</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3eb6243b</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_ee06665e</id>
+      <label>informatievoorziening en ICT</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3eb6243b</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_cf421a08</id>
+      <label>dienstverlening</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3eb6243b</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_d772bf06</id>
+      <label>veiligheid</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d58b78ca</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_4872b086</id>
+      <label>terrorisme</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d58b78ca</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_fcac43e4</id>
+      <label>criminaliteit</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d58b78ca</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_980b8db2</id>
+      <label>voortgezet onderwijs</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_c232ae4a</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_08d12aef</id>
+      <label>onderzoek en wetenschap</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_c232ae4a</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_4eb912c1</id>
+      <label>onderwijsvoorzieningen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_c232ae4a</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_516ec027</id>
+      <label>hoger onderwijs</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_c232ae4a</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_b46b92e7</id>
+      <label>beroepsonderwijs</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_c232ae4a</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_7b01f260</id>
+      <label>basisonderwijs</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_c232ae4a</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_389a72e6</id>
+      <label>water</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_afa30a11</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_61d3e636</id>
+      <label>stoffen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_afa30a11</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_db2fbedb</id>
+      <label>natuur- en landschapsbeheer</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_afa30a11</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_28ddcea5</id>
+      <label>lucht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_afa30a11</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_9f410ab6</id>
+      <label>geluid</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_afa30a11</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_a81687f1</id>
+      <label>flora en fauna</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_afa30a11</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f4f1867a</id>
+      <label>energie</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_afa30a11</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_7ce8a10c</id>
+      <label>bodem</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_afa30a11</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_d96f9cd3</id>
+      <label>afval</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_afa30a11</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_2e9944e7</id>
+      <label>migratie</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_399f194b</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_a94e1fa4</id>
+      <label>integratie</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_399f194b</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_8940ed07</id>
+      <label>ontwikkelingssamenwerking</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f47ad6ca</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_576c2bd7</id>
+      <label>internationale betrekkingen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f47ad6ca</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_68609e19</id>
+      <label>Europese zaken</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f47ad6ca</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_daaa67b3</id>
+      <label>defensie</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f47ad6ca</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_195b5b5e</id>
+      <label>transport</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d363776f</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_3afc269f</id>
+      <label>ondernemen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d363776f</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_dc437d00</id>
+      <label>markttoezicht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d363776f</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_989e37d9</id>
+      <label>landbouw, visserij, voedselkwaliteit</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d363776f</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_87d3d66c</id>
+      <label>kenniseconomie</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d363776f</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_83db27fc</id>
+      <label>handel</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d363776f</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_4d1c84a7</id>
+      <label>dienstensector</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_d363776f</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_e277e756</id>
+      <label>religie</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_0361ffb3</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_a6c5e5b8</id>
+      <label>recreatie</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_0361ffb3</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_6b728132</id>
+      <label>media</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_0361ffb3</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_75809540</id>
+      <label>horeca</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_0361ffb3</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_70e03904</id>
+      <label>evenementen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_0361ffb3</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f72b706a</id>
+      <label>cultuur</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_0361ffb3</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_2408fb5a</id>
+      <label>cultureel erfgoed</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_0361ffb3</beschrijving>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/tooi/def/concept/conceptScheme_eb721505</id>
+      <label>BWB-overheidsthema</label>
+      <beschrijving>De lijst met overheidsthema's zoals die op wetten.nl wordt gebruikt. Deze lijst was gebaseerd op de themalijst van Rijksoverheid.nl, en had daarmee in sync moeten blijven, maar dat is niet gebeurd. De Rijksoverheid.nl-thema's zijn gewijzigd, maar deze lijst is hetzelfde gebleven. </beschrijving>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/tooi/def/concept/c_bed49b60</id>
+      <label>belastingen</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_3708ac5e</id>
+      <label>bouwen, wonen en leefomgeving</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c70d3447</id>
+      <label>cultuur, sport, vrije tijd</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_30e85e85</id>
+      <label>werk- en loopbaan</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_9fbcfc19</id>
+      <label>economie en ondernemen</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_6bdc2b89</id>
+      <label>familie, jeugd en gezin</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_dfcf3a97</id>
+      <label>financi\u00EBn</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c95f4dd4</id>
+      <label>gezondheid en zorg</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_56a74243</id>
+      <label>immigratie, integratie en inburgering</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_33cf4691</id>
+      <label>internationale- en ontwikkelingssamenwerking</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_67671688</id>
+      <label>landbouw, natuur en voedsel</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_86b84a9d</id>
+      <label>milieu, ruimte en water</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_a058394a</id>
+      <label>onderwijs en wetenschap</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_e8ff69cb</id>
+      <label>openbare orde en veiligheid</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_fd285f2b</id>
+      <label>overheid, bestuur en koninkrijk</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_1c504a92</id>
+      <label>defensie</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_17f08b1f</id>
+      <label>subsidies, uitkeringen en toeslagen</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_9153c2b4</id>
+      <label>verkeer en vervoer</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_49cf6ea2</id>
+      <label>rechtspraak</label>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/join/id/stop/procedure/definitiefbesluit</id>
+      <label>Stappen uit de besluitvormingsprocedure voor een definitief besluit</label>
+      <beschrijving>De waardelijst beschrijft de stappen die gezet kunnen worden als onderdeel van een besluitvormingsprocedure voor een definitief besluit. De waardelijst beschrijft alleen de stappen vanaf de vaststelling van een besluit. De waarden komen overeen met /join/id/stop/procedure/ontwerpbesluit</beschrijving>
+      <uitbreidbaar>false</uitbreidbaar>
+      <versie>@@@VERSIES@@@</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_002</id>
+      <label>Vaststelling</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_003</id>
+      <label>Ondertekening</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_004</id>
+      <label>Publicatie</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_015</id>
+      <label>Einde bezwaartermijn</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_016</id>
+      <label>Einde beroepstermijn</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_018</id>
+      <label>Beroep(en) ingesteld</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_019</id>
+      <label>Schorsing</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_020</id>
+      <label>Schorsing opgeheven</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_021</id>
+      <label>Beroep(en) definitief afgedaan</label>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/join/id/stop/procedure/ontwerpbesluit</id>
+      <label>Stappen uit de besluitvormingsprocedure voor een ontwerpbesluit</label>
+      <beschrijving>De waardelijst beschrijft de stappen die gezet kunnen worden als onderdeel van een besluitvormingsprocedure voor een ontwerpbesluit. De waardelijst beschrijft alleen de stappen vanaf de vaststelling van een besluit. Sommige waarden uit deze lijst komen ook voor in /join/id/stop/procedure/definitiefbesluit</beschrijving>
+      <uitbreidbaar>false</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_002</id>
+      <label>Vaststelling</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_003</id>
+      <label>Ondertekening</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_004</id>
+      <label>Publicatie</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_005</id>
+      <label>Einde inzagetermijn</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/procedure/stap_014</id>
+      <label>Begin inzagetermijn</label>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/tooi/def/class/Provincie</id>
+      <label>Provincies</label>
+      <beschrijving>Alle provincies uit GRS </beschrijving>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/tooi/id/provincie/pv22</id>
+      <label>provincie Drenthe</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/provincie/pv24</id>
+      <label>provincie Flevoland</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/provincie/pv21</id>
+      <label>provincie Fryslân</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/provincie/pv25</id>
+      <label>provincie Gelderland</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/provincie/pv20</id>
+      <label>provincie Groningen</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/provincie/pv31</id>
+      <label>provincie Limburg</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/provincie/pv30</id>
+      <label>provincie Noord-Brabant</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/provincie/pv27</id>
+      <label>provincie Noord-Holland</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/provincie/pv23</id>
+      <label>provincie Overijssel</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/provincie/pv26</id>
+      <label>provincie Utrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/provincie/pv29</id>
+      <label>provincie Zeeland</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/provincie/pv28</id>
+      <label>provincie Zuid-Holland</label>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/tooi/def/concept/conceptScheme_9108cd9c</id>
+      <label>BWB-rechtgebied</label>
+      <beschrijving>Rechtsgebieden gebruikt op wetten.overheid.nl. De BWB-rechtsgebiedlijst is vastgesteld door de BWB-redactie, en kan daarom niet door KOOP zelfstandig worden gewijzigd. In versie 1.1.0 is de hiërarchie van de waardelijst genoteerd door in de beschrijving van de subterm te verwijzen naar zijn hoofdterm. Dit zal overbodig worden als de lijsten van TOOI eenmaal publiek beschikbaar zijn.</beschrijving>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/tooi/def/concept/c_8054d6b3</id>
+      <label>agrarisch recht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_7cca4bd5</id>
+      <label>arbeidsrecht en sociaal-zekerheidsrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_825c930b</id>
+      <label>arbitrage</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f381106e</id>
+      <label>bank- en effectenrecht, financiering</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_b69dc535</id>
+      <label>ambtenarenrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_7cca4bd5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_50a06faa</id>
+      <label>arbeidsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_7cca4bd5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_b24639c1</id>
+      <label>militaire ambtenarenrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_7cca4bd5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_e77951d0</id>
+      <label>pensioenrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_7cca4bd5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_9a7dd375</id>
+      <label>sociaal zekerheidsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_7cca4bd5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c05c1523</id>
+      <label>bankrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f381106e</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c7ca5138</id>
+      <label>effectenrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f381106e</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_459e5366</id>
+      <label>financiering en zekerheden</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f381106e</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_a93f5f66</id>
+      <label>toezicht bank- en kredietwezen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_f381106e</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_ba9504e5</id>
+      <label>belastingrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_47a56149</id>
+      <label>BTW en accijns</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_ba9504e5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_771aa828</id>
+      <label>dividendbelasting</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_ba9504e5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_49a0d743</id>
+      <label>formeel belastingrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_ba9504e5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_4921283c</id>
+      <label>heffingen lokale overheden</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_ba9504e5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_8173a6ff</id>
+      <label>inkomstenbelasting</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_ba9504e5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_149a4823</id>
+      <label>internationale regelingen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_ba9504e5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_a1d2e8d4</id>
+      <label>invoer en douane</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_ba9504e5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_4b09a861</id>
+      <label>invorderingsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_ba9504e5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_5090ae6f</id>
+      <label>loonbelasting en premieheffing</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_ba9504e5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_e79db34a</id>
+      <label>milieubelasting</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_ba9504e5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_6e38f3bc</id>
+      <label>successie- en schenkingsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_ba9504e5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c4534511</id>
+      <label>vennootschapsbelastingrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_ba9504e5</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_3405e4a1</id>
+      <label>contracten, schade en aansprakelijkheid</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c531a512</id>
+      <label>aansprakelijkheidsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3405e4a1</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_a11eaa90</id>
+      <label>consumentenrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3405e4a1</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_cf521795</id>
+      <label>internationaal contractrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3405e4a1</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_69b82af6</id>
+      <label>verbintenissenrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3405e4a1</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_63c42465</id>
+      <label>verzekeringsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3405e4a1</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_79f2c282</id>
+      <label>cultureel recht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_5bbb3a9b</id>
+      <label>financieel en economisch recht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f4d3b2e1</id>
+      <label>gezondheidsrecht en farmaceutisch recht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_e98c35be</id>
+      <label>goederenrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_8e783db5</id>
+      <label>eigendomsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_e98c35be</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_d14a17d5</id>
+      <label>erfpacht, vruchtgebruik</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_e98c35be</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c43a7334</id>
+      <label>hypotheekrecht en pandrecht (zekerheidsrechten)</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_e98c35be</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_5092de31</id>
+      <label>informatierecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_8fbe4664</id>
+      <label>ICT-recht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5092de31</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_4a3402ad</id>
+      <label>telecomrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5092de31</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_674c0ac7</id>
+      <label>insolventierecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_3d087471</id>
+      <label>faillissement</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_674c0ac7</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_4361689d</id>
+      <label>schuldsanering</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_674c0ac7</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_65b2367c</id>
+      <label>surseance</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_674c0ac7</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_a9160582</id>
+      <label>intellectuele eigendom</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_8b3782ea</id>
+      <label>auteursrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_a9160582</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c220f66c</id>
+      <label>intellectueel eigendomsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_a9160582</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_bc9292d4</id>
+      <label>octrooirecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_a9160582</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_ef8758fb</id>
+      <label>internationaal privaatrecht Inclusief internationaal procesrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_b26c78e3</id>
+      <label>internationaal publiekrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_ea564774</id>
+      <label>mensenrechten</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_b26c78e3</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_003c1dd9</id>
+      <label>ontwikkelingssamenwerking</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_b26c78e3</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_cc3cbecb</id>
+      <label>volkenrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_b26c78e3</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_96ed7748</id>
+      <label>levensmiddelenrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_ee165cc3</id>
+      <label>mededingingsrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_6755aa64</id>
+      <label>migratierecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_3c8b7fa0</id>
+      <label>nationaliteitsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_6755aa64</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_0f0673b6</id>
+      <label>vreemdelingenrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_6755aa64</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_1dbae688</id>
+      <label>ondernemingspraktijk</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_0c246a16</id>
+      <label>fusies en overnames</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_1dbae688</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_e80b3672</id>
+      <label>ondernemingsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_1dbae688</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_8285b37e</id>
+      <label>stichtingen en verenigingen</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_1dbae688</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f3405203</id>
+      <label>vennootschapsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_1dbae688</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_84d3929c</id>
+      <label>onderwijsrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c06fcca1</id>
+      <label>openbare orde en veiligheidsrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_5d8350bb</id>
+      <label>personen- en familierecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_02a7f1c4</id>
+      <label>echtscheiding</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5d8350bb</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_6ac30ccf</id>
+      <label>erfrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5d8350bb</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_e49bce03</id>
+      <label>familierecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5d8350bb</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_21e7f286</id>
+      <label>jeugdrecht (m.u.v. jeugdstrafrecht)</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5d8350bb</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_d05d9921</id>
+      <label>personenrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5d8350bb</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_66ad74bd</id>
+      <label>privacy</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_82b0ce3b</id>
+      <label>procesrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_b52af7e9</id>
+      <label>bestuursprocesrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_82b0ce3b</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c60b9092</id>
+      <label>burgerlijk procesrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_82b0ce3b</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_093f785e</id>
+      <label>strafprocesrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_82b0ce3b</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_8ad05f6d</id>
+      <label>ruimtelijke ordening en milieu</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_0aa457e4</id>
+      <label>milieurecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_8ad05f6d</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_638d8062</id>
+      <label>omgevingsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_8ad05f6d</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_b47c724c</id>
+      <label>waterrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_8ad05f6d</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f3d7c872</id>
+      <label>sportrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_da370768</id>
+      <label>staats- en bestuursrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_052899f0</id>
+      <label>bestuursrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_da370768</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_c2b43841</id>
+      <label>militair recht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_da370768</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_77eb3af8</id>
+      <label>staatsrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_da370768</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_5f2f0b55</id>
+      <label>strafrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_f0f885e5</id>
+      <label>financieel-economisch strafrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5f2f0b55</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_dd17dae0</id>
+      <label>internationaal strafrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5f2f0b55</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_e1b8b455</id>
+      <label>jeugdstrafrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5f2f0b55</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_b84f1591</id>
+      <label>milieustrafrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5f2f0b55</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_8a460f2d</id>
+      <label>penitentiair recht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5f2f0b55</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_4641d131</id>
+      <label>strafrecht (algemeen)</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5f2f0b55</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_03d15325</id>
+      <label>verkeersrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_5f2f0b55</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_ff938556</id>
+      <label>tuchtrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_7ed87355</id>
+      <label>vervoersrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_3e6b35e2</id>
+      <label>wonen, onroerend goed, bouwrecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_8a8c5620</id>
+      <label>bouwrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3e6b35e2</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_3dbe5325</id>
+      <label>huurrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3e6b35e2</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/def/concept/c_43c42162</id>
+      <label>onroerend goedrecht</label>
+      <beschrijving>subterm van: /tooi/def/concept/c_3e6b35e2</beschrijving>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/join/id/stop/soorteenheid</id>
+      <label>Typering van de eenheid </label>
+      <beschrijving>De waardelijst beschrijft de typering van eenheden voor waarden, zoals die bijvoorbeeld gebruikt wordt voor kwantitatieve normwaarden.</beschrijving>
+      <uitbreidbaar>1</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/join/id/stop/soortgepubliceerdwork</id>
+      <label>soorten gepubliceerd work zoals gebruikt in de juridische verantwoording</label>
+      <beschrijving>De juridische verantwoording verwijst naar de publicatie; deze publicaties kunnen worden getypeerd met het soort word dat is gepubliceerd.</beschrijving>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/join/id/stop/gepubliceerdwork_001</id>
+      <label>Besluit</label>
+      <beschrijving>Een gepubliceerd besluit</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/gepubliceerdwork_002</id>
+      <label>Ontwerpbesluit</label>
+      <beschrijving>Een gepubliceerd ontwerpbesluit</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/gepubliceerdwork_003</id>
+      <label>Rectificatie</label>
+      <beschrijving>Een gepubliceerde rectificatie</beschrijving>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/join/id/stop/soortnorm</id>
+      <label>Typering van normen</label>
+      <beschrijving>De waardelijst beschrijft de typering van normen.</beschrijving>
+      <uitbreidbaar>1</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/join/id/stop/soortprocedure</id>
+      <label>Besluitvormingsprocedures</label>
+      <beschrijving>De waardelijst beschrijft onderkende besluitvormingsprocedures.</beschrijving>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/join/id/stop/proceduretype_ontwerp</id>
+      <label>Ontwerpbesluit</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/proceduretype_definitief</id>
+      <label>Definitief besluit</label>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/join/id/stop/soortpublicatie</id>
+      <label>Typering van publicaties</label>
+      <beschrijving>De waardelijst beschrijft de typering van officiële publicaties</beschrijving>
+      <uitbreidbaar>false</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/join/id/stop/soortpublicatie_001</id>
+      <label>Bekendmaking</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/soortpublicatie_002</id>
+      <label>Kennisgeving</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/soortpublicatie_003</id>
+      <label>Rectificatie</label>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/join/id/stop/soortregeling</id>
+      <label>Typering van regelingen</label>
+      <beschrijving>De waardelijst beschrijft de regelingtypen die door STOP onderkend worden. Dat is inclusief domein-specifieke besluiten uit in toepassingsprofielen voor zover het onderscheiden daarvan het STOP domein raakt. Dat laatste is bijvoorbeeld het geval als bepaalde tijdstempels van rechtswege bepaald worden.</beschrijving>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_001</id>
+      <label>AMvB</label>
+      <beschrijving>Algemene Maatregel van Bestuur</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_002</id>
+      <label>Ministeriële Regeling</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_003</id>
+      <label>Omgevingsplan</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_004</id>
+      <label>Omgevingsverordening</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_005</id>
+      <label>Waterschapsverordening</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_006</id>
+      <label>Omgevingsvisie</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_007</id>
+      <label>Projectbesluit</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_008</id>
+      <label>Instructie</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_009</id>
+      <label>Voorbeschermingsregels</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_010</id>
+      <label>Programma</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_011</id>
+      <label>Reactieve interventie</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_012</id>
+      <label>Aanwijzingsbesluit N2000</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/regelingtype_013</id>
+      <label>Toegangsbeperkingsbesluit</label>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/join/id/stop/soortwork</id>
+      <label>worktypes</label>
+      <beschrijving>Alle worktypes zoals gedefinieerd in het Informatiemodel STOP</beschrijving>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/join/id/stop/work_003</id>
+      <label>Besluit</label>
+      <beschrijving>Een generiek besluit</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/work_005</id>
+      <label>Geconsolideerd informatieobject</label>
+      <beschrijving>Consolidatie van een informatieobject</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/work_006</id>
+      <label>Geconsolideerde regeling</label>
+      <beschrijving>Consolidatie van een Regeling</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/work_010</id>
+      <label>Informatieobject</label>
+      <beschrijving>Een informatieobject. Het formaat van het informatieobject wordt vastgelegd middels waardenlijst /join/id/stop/formaatinformatieobject. </beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/work_015</id>
+      <label>Officiële Publicatie</label>
+      <beschrijving>Officiële publicatie. Verdere typering van officiele publicaties wordt vastgelegd middels waardelijst /join/id/stop/soortpublicatie.</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/work_018</id>
+      <label>Rectificatie</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/work_019</id>
+      <label>Regeling</label>
+      <beschrijving>Een Regeling. Verdere typering van regelingen wordt vastgelegd middels waardelijst /join/id/stop/soortregeling.</beschrijving>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/work_021</id>
+      <label>Tijdelijk regelingdeel</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/work_022</id>
+      <label>Consolidatie van een tijdelijk regelingdeel</label>
+    </Waarde>
+    <Waarde>
+      <id>/join/id/stop/work_023</id>
+      <label>Kennisgeving</label>
+    </Waarde>
+  </Waardelijst>
+  <Waardelijst>
+    <WaardelijstInfo>
+      <id>/tooi/def/class/Waterschap</id>
+      <label>Waterschappen</label>
+      <beschrijving>Alle waterschappen uit GRS </beschrijving>
+      <uitbreidbaar>0</uitbreidbaar>
+      <versie>1.1.0</versie>
+    </WaardelijstInfo>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0654</id>
+      <label>waterschap Aa en Maas</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0155</id>
+      <label>waterschap Amstel, Gooi en Vecht</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0652</id>
+      <label>waterschap Brabantse Delta</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0539</id>
+      <label>waterschap De Dommel</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0664</id>
+      <label>waterschap Drents Overijsselse Delta</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0655</id>
+      <label>waterschap Hollandse Delta</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0636</id>
+      <label>Hoogheemraadschap De Stichtse Rijnlanden</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0651</id>
+      <label>Hoogheemraadschap Hollands Noorderkwartier</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0372</id>
+      <label>Hoogheemraadschap van Delfland</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0616</id>
+      <label>Hoogheemraadschap van Rijnland</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0656</id>
+      <label>Hoogheemraadschap van Schieland en de Krimpenerwaard</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0646</id>
+      <label>waterschap Hunze en Aa's</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0647</id>
+      <label>waterschap Noorderzijlvest</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0152</id>
+      <label>waterschap Rijn en IJssel</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0621</id>
+      <label>waterschap Rivierenland</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0661</id>
+      <label>waterschap Scheldestromen</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0662</id>
+      <label>waterschap Vallei en Veluwe</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0663</id>
+      <label>waterschap Vechtstromen</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0665</id>
+      <label>waterschap Limburg</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0653</id>
+      <label>Wetterskip Fryslân</label>
+    </Waarde>
+    <Waarde>
+      <id>/tooi/id/waterschap/ws0650</id>
+      <label>waterschap Zuiderzeeland</label>
+    </Waarde>
+  </Waardelijst>
+</Waardelijsten>
