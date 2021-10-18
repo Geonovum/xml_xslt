@@ -3,7 +3,7 @@
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            targetNamespace="http://www.overheid.nl/2017/stop"
-           version="1.0.4"><!--===========================================================================
+           version="1.1.0"><!--===========================================================================
 	
 	Uitbreidingen van het STOP schema om meldingen te modelleren
 
@@ -12,37 +12,37 @@
 	============================================================================-->
    <xs:complexType name="melding">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbm:melding"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbm:melding"/>
       </xs:annotation>
       <xs:sequence>
          <xs:element name="code" type="xs:string">
             <xs:annotation>
-               <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbm:code:melding"/>
+               <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbm:code:melding"/>
             </xs:annotation>
          </xs:element>
          <xs:element name="ernst" type="stop:MeldingErnstType">
             <xs:annotation>
-               <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbm:ernst:melding"/>
+               <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbm:ernst:melding"/>
             </xs:annotation>
          </xs:element>
          <xs:element name="soort" type="stop:MeldingSoortCode">
             <xs:annotation>
-               <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbm:soort:melding"/>
+               <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbm:soort:melding"/>
             </xs:annotation>
          </xs:element>
          <xs:element name="categorie" type="xs:string" minOccurs="0">
             <xs:annotation>
-               <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbm:categorie:melding"/>
+               <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbm:categorie:melding"/>
             </xs:annotation>
          </xs:element>
          <xs:element name="beschrijving" type="xs:string">
             <xs:annotation>
-               <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbm:beschrijving:melding"/>
+               <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbm:beschrijving:melding"/>
             </xs:annotation>
          </xs:element>
          <xs:element name="metadata" minOccurs="0">
             <xs:annotation>
-               <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbm:metadata:melding"/>
+               <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbm:metadata:melding"/>
             </xs:annotation>
             <!--
 				Hier verwijzing naar STOP metadata type opnemen
@@ -51,7 +51,7 @@
                <xs:sequence>
                   <xs:element name="uitspraak" minOccurs="0" maxOccurs="unbounded">
                      <xs:annotation>
-                        <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbm:uitspraak:melding"/>
+                        <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbm:uitspraak:melding"/>
                      </xs:annotation>
                      <xs:complexType mixed="true">
                         <xs:attribute name="property" type="xs:string" use="required"/>

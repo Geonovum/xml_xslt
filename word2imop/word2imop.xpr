@@ -8,9 +8,9 @@
                     <entry>
                         <String>catalogs.v5</String>
                         <String-array>
-                            <String>file:/C:/Werkbestanden/Geonovum/word2imop/lvbb/lvbb-catalog.xml</String>
-                            <String>file:/C:/Werkbestanden/Geonovum/word2imop/stop/stop-catalog.xml</String>
                             <String>file:/C:/Werkbestanden/Geonovum/word2imop/extern/extern-catalog.xml</String>
+                            <String>file:/C:/Werkbestanden/Geonovum/word2imop/lvbb/lvbb-catalog.xml</String>
+                            <String>file:/C:/Werkbestanden/Geonovum/word2imop/stop/1.1.0/stop-catalog.xml</String>
                         </String-array>
                     </entry>
                     <entry>

@@ -7,29 +7,29 @@
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            targetNamespace="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
-           version="1.0.4">
+           version="1.1.0">
    <xs:annotation>
       <xs:documentation>LVBB-Aanlevering-schema</xs:documentation>
-      <xs:documentation>versie 1.0.4</xs:documentation>
+      <xs:documentation>versie 1.1.0</xs:documentation>
    </xs:annotation>
    <!-- xs:appinfo om geincludeerde STOP-versie vast te leggen -->
    <xs:annotation>
       <xs:appinfo>
-         <imop:STOPversie>1.0.4</imop:STOPversie>
+         <imop:STOPversie>1.1.0</imop:STOPversie>
       </xs:appinfo>
    </xs:annotation>
    <xs:import namespace="https://standaarden.overheid.nl/stop/imop/data/"
-              schemaLocation="https://standaarden.overheid.nl/stop/1.0.4/imop-data.xsd"/>
+              schemaLocation="https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd"/>
    <xs:import namespace="https://standaarden.overheid.nl/stop/imop/tekst/"
-              schemaLocation="https://standaarden.overheid.nl/stop/1.0.4/imop-tekst.xsd"/>
+              schemaLocation="https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.xsd"/>
    <xs:import namespace="http://www.opengis.net/se"
-              schemaLocation="https://standaarden.overheid.nl/stop/1.0.4/se-FeatureStyle-imop.xsd"/>
+              schemaLocation="https://standaarden.overheid.nl/stop/1.1.0/se-FeatureStyle-imop.xsd"/>
    <!--
     AANLEVEREN BESLUIT
   -->
    <xs:element name="AanleveringBesluit">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbba:AanleveringBesluit"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbba:AanleveringBesluit"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -46,7 +46,7 @@
   -->
    <xs:element name="AanleveringInformatieObject">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbba:AanleveringInformatieObject"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbba:AanleveringInformatieObject"/>
       </xs:annotation>
       <xs:complexType>
          <xs:choice>
@@ -60,7 +60,7 @@
   -->
    <xs:element name="AanleveringKennisgeving">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbba:AanleveringKennisgeving"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbba:AanleveringKennisgeving"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -69,12 +69,37 @@
          <xs:attributeGroup ref="lvbba:agSchemaversie"/>
       </xs:complexType>
    </xs:element>
+   <!-- 
+    AANLEVEREN REGELINGVERSIE (RENVOOISERVICE)
+  -->
+   <xs:element name="RegelingVersie">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbba:RegelingVersie"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:sequence>
+               <xs:element maxOccurs="1" minOccurs="1" ref="data:ExpressionIdentificatie"/>
+               <xs:element maxOccurs="1" minOccurs="1" ref="data:RegelingVersieMetadata"/>
+               <xs:element maxOccurs="1" minOccurs="0" ref="data:RegelingMetadata"/>
+            </xs:sequence>
+            <xs:choice>
+               <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingKlassiek"/>
+               <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingCompact"/>
+               <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingTijdelijkdeel"/>
+               <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingVrijetekst"/>
+            </xs:choice>
+            <xs:element maxOccurs="1" minOccurs="0" ref="data:Toelichtingsrelaties"/>
+         </xs:sequence>
+         <xs:attributeGroup ref="lvbba:agSchemaversie"/>
+      </xs:complexType>
+   </xs:element>
    <!--
-    INSTRUMENT SPECIFIEKE INCLUSIES
+    INSTRUMENT-SPECIFIEKE INCLUSIES
   -->
    <xs:element name="BesluitVersie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbba:BesluitVersie"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbba:BesluitVersie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -86,63 +111,26 @@
                <xs:element maxOccurs="1" minOccurs="1" ref="tekst:BesluitKlassiek"/>
                <xs:element maxOccurs="1" minOccurs="1" ref="tekst:BesluitCompact"/>
             </xs:choice>
+            <xs:element maxOccurs="1" minOccurs="0" ref="data:Toelichtingsrelaties"/>
          </xs:sequence>
       </xs:complexType>
    </xs:element>
    <xs:element name="KennisgevingVersie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbba:KennisgevingVersie"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbba:KennisgevingVersie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
             <xs:element maxOccurs="1" minOccurs="1" ref="data:ExpressionIdentificatie"/>
-            <xs:element minOccurs="1" maxOccurs="1" ref="data:KennisgevingMetadata"/>
+            <xs:element maxOccurs="1" minOccurs="1" ref="data:KennisgevingMetadata"/>
             <xs:element maxOccurs="1" minOccurs="1" ref="data:Procedureverloopmutatie"/>
             <xs:element maxOccurs="1" minOccurs="1" ref="tekst:Kennisgeving"/>
          </xs:sequence>
       </xs:complexType>
    </xs:element>
-   <!-- 
-    OPVRAGEN INSTRUMENT DOOR BG
-  -->
-   <xs:element name="RegelingVersie">
-      <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbba:RegelingVersie"/>
-      </xs:annotation>
-      <xs:complexType>
-         <xs:sequence>
-            <xs:group ref="lvbba:mgRegelingVersieInformatie"/>
-            <xs:choice>
-               <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingKlassiek"/>
-               <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingCompact"/>
-               <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingTijdelijkdeel"/>
-               <xs:element maxOccurs="1" minOccurs="1" ref="tekst:RegelingVrijetekst"/>
-            </xs:choice>
-         </xs:sequence>
-         <xs:attributeGroup ref="lvbba:agSchemaversie"/>
-      </xs:complexType>
-   </xs:element>
-   <!--  -->
-   <xs:element name="RegelingVersieInformatie">
-      <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbba:RegelingVersieInformatie"/>
-      </xs:annotation>
-      <xs:complexType>
-         <xs:group ref="lvbba:mgRegelingVersieInformatie"/>
-      </xs:complexType>
-   </xs:element>
-   <!--  -->
-   <xs:group name="mgRegelingVersieInformatie">
-      <xs:sequence>
-         <xs:element maxOccurs="1" minOccurs="1" ref="data:ExpressionIdentificatie"/>
-         <xs:element maxOccurs="1" minOccurs="1" ref="data:RegelingVersieMetadata"/>
-         <xs:element maxOccurs="1" minOccurs="0" ref="data:RegelingMetadata"/>
-      </xs:sequence>
-   </xs:group>
-   <!--  -->
    <xs:element name="InformatieObjectVersie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbba:InformatieObjectVersie"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbba:InformatieObjectVersie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -152,6 +140,18 @@
                         ref="data:InformatieObjectVersieMetadata"/>
             <xs:element maxOccurs="1" minOccurs="0" ref="data:InformatieObjectMetadata"/>
             <xs:element maxOccurs="1" minOccurs="0" ref="se:FeatureTypeStyle"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="RegelingVersieInformatie">
+      <xs:annotation>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbba:RegelingVersieInformatie"/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="1" ref="data:ExpressionIdentificatie"/>
+            <xs:element maxOccurs="1" minOccurs="1" ref="data:RegelingVersieMetadata"/>
+            <xs:element maxOccurs="1" minOccurs="0" ref="data:RegelingMetadata"/>
          </xs:sequence>
       </xs:complexType>
    </xs:element>

@@ -8,31 +8,31 @@
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            targetNamespace="https://standaarden.overheid.nl/lvbb/stop/uitlevering/"
-           version="1.0.4">
+           version="1.1.0">
    <xs:annotation>
       <xs:documentation>LVBB-Uitlevering-schema</xs:documentation>
-      <xs:documentation>versie 1.0.4</xs:documentation>
+      <xs:documentation>versie 1.1.0</xs:documentation>
    </xs:annotation>
    <!-- xs:appinfo om geincludeerde STOP-versie vast te leggen -->
    <xs:annotation>
       <xs:appinfo>
-         <imop:STOPversie>1.0.4</imop:STOPversie>
+         <imop:STOPversie>1.1</imop:STOPversie>
       </xs:appinfo>
    </xs:annotation>
    <xs:import namespace="https://standaarden.overheid.nl/stop/imop/data/"
-              schemaLocation="https://standaarden.overheid.nl/stop/1.0.4/imop-data.xsd"/>
+              schemaLocation="https://standaarden.overheid.nl/stop/1.1.0/imop-data.xsd"/>
    <xs:import namespace="https://standaarden.overheid.nl/stop/imop/consolidatie/"
-              schemaLocation="https://standaarden.overheid.nl/stop/1.0.4/imop-consolidatie.xsd"/>
+              schemaLocation="https://standaarden.overheid.nl/stop/1.1.0/imop-consolidatie.xsd"/>
    <xs:import namespace="https://standaarden.overheid.nl/stop/imop/tekst/"
-              schemaLocation="https://standaarden.overheid.nl/stop/1.0.4/imop-tekst.xsd"/>
+              schemaLocation="https://standaarden.overheid.nl/stop/1.1.0/imop-tekst.xsd"/>
    <xs:import namespace="http://www.opengis.net/se"
-              schemaLocation="https://standaarden.overheid.nl/stop/1.0.4/se-FeatureStyle-imop.xsd"/>
+              schemaLocation="https://standaarden.overheid.nl/stop/1.1.0/se-FeatureStyle-imop.xsd"/>
    <!--
     UITLEVEREN CONSOLIDATIE MET TOESTANDEN 
   -->
    <xs:element name="Consolidaties">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbu:Consolidaties"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbu:Consolidaties"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -43,7 +43,7 @@
    </xs:element>
    <xs:element name="Consolidatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbu:Consolidatie"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbu:Consolidatie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -63,7 +63,7 @@
    </xs:element>
    <xs:element name="WettechnischeInformatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbu:WettechnischeInformatie"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbu:WettechnischeInformatie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -81,7 +81,7 @@
   -->
    <xs:element name="UitleveringProefversieBesluit">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbu:UitleveringProefversieBesluit"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbu:UitleveringProefversieBesluit"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -106,7 +106,7 @@
   -->
    <xs:element name="RegelingVersie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbu:RegelingVersie"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbu:RegelingVersie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -123,7 +123,7 @@
    </xs:element>
    <xs:element name="RegelingVersieInformatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbu:RegelingVersieInformatie"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbu:RegelingVersieInformatie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:group ref="lvbbu:mgRegelingVersieInformatie"/>
@@ -137,7 +137,7 @@
    </xs:group>
    <xs:element name="InformatieObjectVersie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbu:InformatieObjectVersie"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbu:InformatieObjectVersie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -150,7 +150,7 @@
    </xs:element>
    <xs:element name="AnnotatieBijToestand">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbu:AnnotatieBijToestand"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbu:AnnotatieBijToestand"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -165,7 +165,7 @@
    </xs:element>
    <xs:element name="AnnotatieBijProefversie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbu:AnnotatieBijProefversie"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbu:AnnotatieBijProefversie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
@@ -183,7 +183,7 @@
   -->
    <xs:element name="OfficielePublicatie">
       <xs:annotation>
-         <xs:documentation source="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/1.0.4/go/go.html?id=xsd:lvbbu:OfficielePublicatie"/>
+         <xs:documentation source="https://koop.gitlab.io/lvbb/voorinzage/bronhouderkoppelvlak-preview-b/go/go.html?id=xsd:lvbbu:OfficielePublicatie"/>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>

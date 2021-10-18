@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE catalog PUBLIC "-//OASIS//DTD XML Catalogs V1.1//EN" "http://www.oasis-open.org/committees/entity/release/1.1/catalog.dtd">
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-  
-  <!--<uri name="http://www.logius.nl/digikoppeling/gb/2010/10/gb-meta.xsd" uri="logius/gb-meta.xsd" />-->
 
   <uri name="https://register.geostandaarden.nl/gmlapplicatieschema/basisgeometrie/1.0.0/basisgeometrie.xsd" uri="geonovum/basisgeometrie.xsd" />
 
@@ -35,36 +33,6 @@
   <uri name="http://schemas.opengis.net/gml/3.2.1/topology.xsd" uri="opengis/gml/3.2.1/topology.xsd" />
   <uri name="http://schemas.opengis.net/gml/3.2.1/units.xsd" uri="opengis/gml/3.2.1/units.xsd" />
   <uri name="http://schemas.opengis.net/gml/3.2.1/valueObjects.xsd" uri="opengis/gml/3.2.1/valueObjects.xsd" />
-
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/basicTypes.xsd" uri="opengis/gml/3.1.1/base/basicTypes.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/coordinateOperations.xsd" uri="opengis/gml/3.1.1/base/coordinateOperations.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/coordinateReferenceSystems.xsd" uri="opengis/gml/3.1.1/base/coordinateReferenceSystems.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/coordinateSystems.xsd" uri="opengis/gml/3.1.1/base/coordinateSystems.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/coverage.xsd" uri="opengis/gml/3.1.1/base/coverage.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/dataQuality.xsd" uri="opengis/gml/3.1.1/base/dataQuality.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/datums.xsd" uri="opengis/gml/3.1.1/base/datums.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/defaultStyle.xsd" uri="opengis/gml/3.1.1/base/defaultStyle.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/dictionary.xsd" uri="opengis/gml/3.1.1/base/dictionary.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/direction.xsd" uri="opengis/gml/3.1.1/base/direction.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/dynamicFeature.xsd" uri="opengis/gml/3.1.1/base/dynamicFeature.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/feature.xsd" uri="opengis/gml/3.1.1/base/feature.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/geometryAggregates.xsd" uri="opengis/gml/3.1.1/base/geometryAggregates.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/geometryBasic0d1d.xsd" uri="opengis/gml/3.1.1/base/geometryBasic0d1d.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/geometryBasic2d.xsd" uri="opengis/gml/3.1.1/base/geometryBasic2d.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/geometryComplexes.xsd" uri="opengis/gml/3.1.1/base/geometryComplexes.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/geometryPrimitives.xsd" uri="opengis/gml/3.1.1/base/geometryPrimitives.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" uri="opengis/gml/3.1.1/base/gml.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/gmlBase.xsd" uri="opengis/gml/3.1.1/base/gmlBase.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/grids.xsd" uri="opengis/gml/3.1.1/base/grids.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/measures.xsd" uri="opengis/gml/3.1.1/base/measures.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/observation.xsd" uri="opengis/gml/3.1.1/base/observation.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/referenceSystems.xsd" uri="opengis/gml/3.1.1/base/referenceSystems.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/temporal.xsd" uri="opengis/gml/3.1.1/base/temporal.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/temporalReferenceSystems.xsd" uri="opengis/gml/3.1.1/base/temporalReferenceSystems.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/temporalTopology.xsd" uri="opengis/gml/3.1.1/base/temporalTopology.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/topology.xsd" uri="opengis/gml/3.1.1/base/topology.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/units.xsd" uri="opengis/gml/3.1.1/base/units.xsd" />
-  <uri name="http://schemas.opengis.net/gml/3.1.1/base/valueObjects.xsd" uri="opengis/gml/3.1.1/base/valueObjects.xsd" />
 
   <uri name="http://schemas.opengis.net/gml/3.1.1/smil/smil20.xsd" uri="opengis/gml/3.1.1/smil/smil20.xsd"/>
   <uri name="http://schemas.opengis.net/gml/3.1.1/smil/smil20-language.xsd" uri="opengis/gml/3.1.1/smil/smil20-language.xsd"/>
@@ -99,15 +67,6 @@
 
   <uri name="http://schemas.opengis.net/iso/19139/20070417/gts/gts.xsd" uri="opengis/gml/20070417/gts/gts.xsd"/>
   <uri name="http://schemas.opengis.net/iso/19139/20070417/gts/temporalObjects.xsd" uri="opengis/gml/20070417/gts/temporalObjects.xsd"/>
-
-  <uri name="http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd" uri="opengis/se/1.1.0/FeatureStyle.xsd"/>
-  <uri name="http://schemas.opengis.net/se/1.1.0/Symbolizer.xsd" uri="opengis/se/1.1.0/Symbolizer.xsd"/>
-  <uri name="http://schemas.opengis.net/se/1.1.0/common.xsd" uri="opengis/se/1.1.0/common.xsd"/>
-
-  <uri name="http://schemas.opengis.net/filter/1.1.0/filter.xsd" uri="opengis/filter/1.1.0/filter.xsd"/>
-  <uri name="http://schemas.opengis.net/filter/1.1.0/expr.xsd" uri="opengis/filter/1.1.0/expr.xsd"/>
-  <uri name="http://schemas.opengis.net/filter/1.1.0/sort.xsd" uri="opengis/filter/1.1.0/sort.xsd"/>
-  <uri name="http://schemas.opengis.net/filter/1.1.0/filterCapabilities.xsd" uri="opengis/filter/1.1.0/filterCapabilities.xsd"/>
 
   <uri name="http://www.w3.org/1999/xlink.xsd" uri="w3c/xlink.xsd"/>
 
