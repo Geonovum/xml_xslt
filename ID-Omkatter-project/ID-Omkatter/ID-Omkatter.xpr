@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="21.1">
+<project version="20.1">
     <meta>
         <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
         <options/>
     </meta>
-    <projectTree name="ID-Omkatter.xpr">
-        <folder path="../../unificeringsscript/"/>
+    <projectTree name="ID-omkatter.xpr">
+        <folder path="."/>
     </projectTree>
 </project>

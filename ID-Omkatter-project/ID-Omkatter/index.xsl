@@ -8,7 +8,7 @@
     xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" xmlns:lvbb_intern="http://www.overheid.nl/2020/lvbb/intern"
     xmlns:aanlevering="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
     xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow" xmlns:lvbbu="https://standaarden.overheid.nl/lvbb/stop/uitlevering/" 
-    xmlns:s="http://www.geostandaarden.nl/imow/symbolisatie" xmlns:foo="http://whatever">
+    xmlns:s="http://www.geostandaarden.nl/imow/symbolisatie" xmlns:foo="http://whatever" xmlns:uuid="java.util.UUID" exclude-result-prefixes="uuid">
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
 
     <!-- file.list bevat alle te verwerken bestanden -->
@@ -229,7 +229,8 @@
                             </xsl:for-each>
                         </xsl:variable>
                         <xsl:variable name="org" select="$orgGUID"/>
-                        <xsl:variable name="new" select="foo:generateGuid($pos1 + $pos2)"/>
+                        <!--xsl:variable name="new" select="foo:generateGuid($pos1 + $pos2)"/-->
+                        <xsl:variable name="new" select="uuid:randomUUID()"/>
                         <xsl:variable name="elementName">
                             <xsl:choose>
                                 <xsl:when test="not($locatiefile = '')">
@@ -270,7 +271,8 @@
                             </xsl:for-each>
                         </xsl:variable>
                         <xsl:variable name="org" select="$orgGUID"/>
-                        <xsl:variable name="new" select="foo:generateGuid($pos1 + $pos2)"/>
+                        <!--xsl:variable name="new" select="foo:generateGuid($pos1 + $pos2)"/-->
+                        <xsl:variable name="new" select="uuid:randomUUID()"/>
                         <xsl:variable name="elementName">
                             <xsl:choose>
                                 <xsl:when test="not($locatiefile = '')">

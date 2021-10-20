@@ -10,7 +10,7 @@
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
 
     <xsl:param name="alreadyRetrievedDateTime"/>
-    
+
     <xsl:template match="@* | node()">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
