@@ -5,7 +5,7 @@
 
   <xsl:template match="geo:GeoInformatieObjectVaststelling">
     <xsl:element name="{name()}">
-      <xsl:copy-of select="@*"/>
+      <xsl:copy-of select="@*|namespace::*"/>
       <xsl:attribute name="schemaversie" select="string('1.1.0')"/>
       <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('https://standaarden.overheid.nl/stop/imop/geo/ https://standaarden.overheid.nl/stop/1.1.0/imop-geo.xsd')"/>
       <xsl:apply-templates select="node()"/>
