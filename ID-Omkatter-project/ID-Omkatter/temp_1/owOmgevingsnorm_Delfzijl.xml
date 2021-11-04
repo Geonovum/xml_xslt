@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>Delfzijl</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Delfzijl</sl:gebied>
+         <sl:leveringsId>abc-20190221-0801-</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Omgevingsnorm</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm1979.omgevingsnorm.Geluidsproductieplafond104040730</rol:identificatie>
+               <rol:naam>Geluidproductieplafond</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/NogToeTeVoegen</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Decibel</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm1979.normwaarde.Geluidproductieplafond7004040730</rol:identificatie>
+                     <rol:kwantitatieveWaarde>70</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc111104040730"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm1979.normwaarde.Geluidproductieplafond6004040730</rol:identificatie>
+                     <rol:kwantitatieveWaarde>60</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc211104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc311104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc411104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc511104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc611104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc711104040730"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm1979.normwaarde.Geluidproductieplafond5004040730</rol:identificatie>
+                     <rol:kwantitatieveWaarde>50</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc811104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc911104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc101104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc111104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc121104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc131104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc141104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc151104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc161104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc171104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc181104040730"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm1979.normwaarde.Geluidproductieplafond3004040730</rol:identificatie>
+                     <rol:kwantitatieveWaarde>30</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc191104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc201104040730"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebied.GeluidProdPlafondLoc211104040730"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Geluid</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm1979.omgevingsnorm.Rooilijn20211104040730</rol:identificatie>
+               <rol:naam>rooilijn</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/NogToeTeVoegen</rol:type>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm1979.normwaarde.Rooilijn20211104040730</rol:identificatie>
+                     <rol:kwalitatieveWaarde>rooilijn</rol:kwalitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.lijn.RooilijnLandelijkGebied104040730"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

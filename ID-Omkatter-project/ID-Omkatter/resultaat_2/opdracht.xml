@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<publicatieOpdracht xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    xmlns="http://www.overheid.nl/2017/lvbb"
-                    xsi:schemaLocation="http://www.overheid.nl/2017/lvbb ../lvbb/lvbb-transport.xsd">
-   <idLevering>id-publicatie-1235-20210921121649</idLevering>
-   <idBevoegdGezag>00000001807288111000</idBevoegdGezag>
-   <idAanleveraar>00000001807288111000</idAanleveraar>
-   <publicatie>Mutatie_besluit_eerstewijziging.xml</publicatie>
-   <datumBekendmaking>2021-09-22</datumBekendmaking>
+<publicatieOpdracht xmlns="http://www.overheid.nl/2017/lvbb">
+  <idLevering>delfzijl_definitievewijziging_regdataPDF_poging_007-20211104040734</idLevering>
+  <idBevoegdGezag>00000001009301914000</idBevoegdGezag>
+  <idAanleveraar>00000003560458830000</idAanleveraar>
+  <publicatie>akn_nl_bill_gm1979_5.xml</publicatie>
+  <datumBekendmaking>2021-11-05</datumBekendmaking>
 </publicatieOpdracht>

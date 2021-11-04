@@ -757,6 +757,43 @@
         </if>
       </sequential>
     </for>
+    <!-- PDF's -->
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/file[contains(@type,'doc.pdf')]">
+        <param name="pdffile.name" path="name/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{pdffile.name}" out="${temp.dir}/@{pdffile.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{pdffile.name}" tofile="${output.dir}/@{pdffile.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+      <sequential>
+        <if>
+          <available file="bron_@{number}" type="dir"/>
+          <then>
+            <xmltask source="${temp_@{number}.dir}/index.xml">
+              <call path="index/file[contains(@type,'doc.pdf')]">
+                <param name="pdffile.name" path="name/text()"/>
+                <actions>
+                  <if>
+                    <available file="bron_@{number}/@{pdffile.name}"/>
+                    <then>
+                      <xslt in="${output_@{number}.dir}/@{pdffile.name}" out="${temp_@{number}.dir}/@{pdffile.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+                        <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+                      </xslt>
+                      <copy file="${temp_@{number}.dir}/@{pdffile.name}" tofile="${output_@{number}.dir}/@{pdffile.name}"/>
+                    </then>
+                  </if>
+                </actions>
+              </call>
+            </xmltask>
+          </then>
+        </if>
+      </sequential>
+    </for>
   </target>
   
   <target name="intrekkingopvolgervan" description="Verandert Besluit en RegelingsIds door er een datum/tijd string in het vrij invulbare deel te zetten.">
@@ -813,8 +850,8 @@
         <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="oldIoRefId" path="oldIoRefId/text()"/>
         <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-        <param name="gmlFile" path="gml/text()"/>
-        <param name="gioFile" path="gio/text()"/>
+        <param name="gmlFile" path="(gml/text(),'')[1]"/>
+        <param name="gioFile" path="(gio/text(),'')[1]"/>
         <actions>
           <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
             <param name="oldIoRefId" expression="@{oldIoRefId}"/>
@@ -835,8 +872,8 @@
                 <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="oldIoRefId" path="oldIoRefId/text()"/>
                 <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-                <param name="gmlFile" path="gml/text()"/>
-                <param name="gioFile" path="gio/text()"/>
+                <param name="gmlFile" path="(gml/text(),'')[1]"/>
+                <param name="gioFile" path="(gio/text(),'')[1]"/>
                 <actions>
                   <if>
                     <available file="bron_@{number}/@{besluit.name}"/>
@@ -861,7 +898,7 @@
         <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="oldIoRefId" path="oldIoRefId/text()"/>
         <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-        <param name="gmlFile" path="gml/text()"/>
+        <param name="gmlFile" path="(gml/text(),'')[1]"/>
         <actions>
           <xslt in="${output.dir}/@{gmlFile}" out="${temp.dir}/@{gmlFile}" extension=".gml" style="informatieobjectRefs.xsl" processor="trax" force="true">
             <param name="oldIoRefId" expression="@{oldIoRefId}"/>
@@ -882,7 +919,7 @@
                 <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="oldIoRefId" path="oldIoRefId/text()"/>
                 <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-                <param name="gmlFile" path="gml/text()"/>
+                <param name="gmlFile" path="(gml/text(),'')[1]"/>
                 <actions>
                   <if>
                     <available file="bron_@{number}/@{gmlFile}"/>
@@ -907,7 +944,7 @@
         <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="oldIoRefId" path="oldIoRefId/text()"/>
         <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-        <param name="gioFile" path="gio/text()"/>
+        <param name="gioFile" path="(gio/text(),'')[1]"/>
         <actions>
           <xslt in="${output.dir}/@{gioFile}" out="${temp.dir}/@{gioFile}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
             <param name="oldIoRefId" expression="@{oldIoRefId}"/>
@@ -928,7 +965,7 @@
                 <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="oldIoRefId" path="oldIoRefId/text()"/>
                 <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-                <param name="gioFile" path="gio/text()"/>
+                <param name="gioFile" path="(gio/text(),'')[1]"/>
                 <actions>
                   <if>
                     <available file="bron_@{number}/@{gioFile}"/>

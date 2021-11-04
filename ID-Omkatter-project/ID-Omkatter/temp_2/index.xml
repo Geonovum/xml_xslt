@@ -1,97 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?><index>
-   <dateTime>20210921121649</dateTime>
+   <dateTime>20211104040734</dateTime>
+   <guids>
+      <guidInOw gmlfile="Delfzijl_Hoofdinfrastructuur.gml" locatiefile="owLocaties.xml">
+         <org>aeb4b12c-c68b-4f98-83ec-2ab64c598a3d</org>
+         <new>1a76ee3d-c518-44ad-a671-7ac81eabdbd0</new>
+      </guidInOw>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijl_Hoofdinfrastructuur.gml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijl_Hoofdinfrastructuur.xml</name>
+   </file>
+   <guids>
+      <guidInOw gmlfile="Delfzijl_Punt.gml" locatiefile="owLocaties.xml">
+         <org>943BEE47-AEB2-4268-8A0D-35E5FF56A5BC</org>
+         <new>133621d2-5512-41fc-aa35-0db465f5955c</new>
+      </guidInOw>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijl_Punt.gml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijl_Punt.xml</name>
+   </file>
+   <guids>
+      <guidInOw gmlfile="Functieaanduiding_casino_geometrie_3.gml" locatiefile="owLocaties.xml">
+         <org>186485eb-a3fc-4916-92fe-30833a876817</org>
+         <new>e33c5d4c-279b-47d4-8a13-69c0b5cc73ea</new>
+      </guidInOw>
+   </guids>
+   <file type="gml.xml" ow="false">
+      <name>Functieaanduiding_casino_geometrie_3.gml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Functieaanduiding_casino_geometrie_3.xml</name>
+   </file>
    <Regeling>
-      <OrigineleregelingsFBRWork>/akn/nl/act/gm0297/2019/reg456</OrigineleregelingsFBRWork>
+      <OrigineleregelingsFBRWork>/akn/nl/act/gm1979/2021/omgevingsplandelfzijl</OrigineleregelingsFBRWork>
    </Regeling>
    
-   <Regeling>
-      <OrigineleregelingsFBRWork>/akn/nl/act/gm0297/2020/reg789</OrigineleregelingsFBRWork>
-   </Regeling>
    
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl/nld@2021-04-10;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2019/Centrumgebied</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2019/Speelhal</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2019/Bouwhoogte</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2019/Welstand</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Centrum</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Centrum/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zone_A</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zone_B</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zuilichem</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2020/Bedrijf_categorie_2</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2020/Bedrijf_categorie_2/nld@2020-03-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2020/Centrumgebied</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2020/Centrumgebied/nld@2020-03-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2020/Speelhal</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2020/Speelhal/nld@2020-03-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2020/Zone_A</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2020/Zone_A/nld@2020-03-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2020/Zone_B</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2020/Zone_B/nld@2020-03-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Punt</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Punt/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2020/Bouwhoogte</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2020/Bouwhoogte/nld@2020-03-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn/nld@2021-08-02;1</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2020/Welstand</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2020/Welstand/nld@2020-03-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur/nld@2021-10-12;2</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2020/Zuilichem</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2020/Zuilichem/nld@2020-03-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Punt</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Punt/nld@2021-10-12;2</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm0297/2020/Zaltbommel</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm0297/2020/Zaltbommel/nld@2020-03-18;3520</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/casino</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/casino/nld@2021-10-12;2</oldIoRefId>
    </historischInformatieobjectRef>
-   <besluit/>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/regdata</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/regdata/nld@2021-10-11;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/pubdata/gm1979/2021/pubdata</oldIoWorkId>
+      <oldIoRefId>/join/id/pubdata/gm1979/2021/pubdata/nld@2021-10-11;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <besluit>
+      <informatieobjectRef>
+         <gio>Delfzijl_Hoofdinfrastructuur.xml</gio>
+         <gml>Delfzijl_Hoofdinfrastructuur.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur/nld@2021-10-12;2</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Delfzijl_Punt.xml</gio>
+         <gml>Delfzijl_Punt.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Punt</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Punt/nld@2021-10-12;2</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Functieaanduiding_casino_geometrie_3.xml</gio>
+         <gml>Functieaanduiding_casino_geometrie_3.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/casino</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/casino/nld@2021-10-12;2</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <doc>regdata.xml</doc>
+         <pdf>regdata.pdf</pdf>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/regdata</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/regdata/nld@2021-10-11;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <doc>pubdata.xml</doc>
+         <pdf>pubdata.pdf</pdf>
+         <oldIoWorkId>/join/id/pubdata/gm1979/2021/pubdata</oldIoWorkId>
+         <oldIoRefId>/join/id/pubdata/gm1979/2021/pubdata/nld@2021-10-11;1</oldIoRefId>
+      </informatieobjectRef>
+   </besluit>
    <file type="besluit.xml" ow="false">
-      <name>Mutatie_besluit_eerstewijziging.xml</name>
+      <name>akn_nl_bill_gm1979_5.xml</name>
    </file>
    <file type="manifest-ow.xml" ow="false">
       <name>manifest-ow.xml</name>
    </file>
    <leveringId sourcefile="opdracht.xml">
+      <referencefile>owActiviteiten.xml</referencefile>
+      <referencefile>owGebiedsaanwijzing_Delfzijl.xml</referencefile>
+      <referencefile>owLocaties.xml</referencefile>
       <referencefile>owRegeltekst.xml</referencefile>
-      <new>id-publicatie-1235-20210921121649</new>
+      <new>delfzijl_definitievewijziging_regdataPDF_poging_007-20211104040734</new>
    </leveringId>
    <file type="opdracht.xml" ow="false">
       <name>opdracht.xml</name>
    </file>
    
+   <file type="activiteit.xml" ow="true">
+      <name>owActiviteiten.xml</name>
+   </file>
+   <file type="gebiedsaanwijzing.xml" ow="true">
+      <name>owGebiedsaanwijzing_Delfzijl.xml</name>
+   </file>
+   <file type="locatie.xml" ow="true">
+      <name>owLocaties.xml</name>
+   </file>
+   
+   
+   
    <file type="regeltekst.xml" ow="true">
       <name>owRegeltekst.xml</name>
+   </file>
+   
+   
+   <file type="doc.pdf" ow="false">
+      <name>pubdata.xml</name>
+   </file>
+   <file type="doc.pdf" ow="false">
+      <name>regdata.xml</name>
    </file>
 </index>
