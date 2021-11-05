@@ -846,12 +846,12 @@
 
   <target name="informatieobjectRefs" description="Vervangt de GIO-objctrefs in besluit, gio's en gml's">
     <xmltask source="${temp.dir}/index.xml">
-      <call path="index/besluit/informatieobjectRef">
+      <call path="index/besluit/informatieobjectRef[gio]">
         <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="oldIoRefId" path="oldIoRefId/text()"/>
         <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-        <param name="gmlFile" path="(gml/text(),'')[1]"/>
-        <param name="gioFile" path="(gio/text(),'')[1]"/>
+        <param name="gmlFile" path="gml/text()"/>
+        <param name="gioFile" path="gio/text()"/>
         <actions>
           <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
             <param name="oldIoRefId" expression="@{oldIoRefId}"/>
@@ -868,12 +868,12 @@
           <available file="bron_@{number}" type="dir"/>
           <then>
             <xmltask source="${temp_@{number}.dir}/index.xml">
-              <call path="index/besluit/informatieobjectRef">
+              <call path="index/besluit/informatieobjectRef[gio]">
                 <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="oldIoRefId" path="oldIoRefId/text()"/>
                 <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-                <param name="gmlFile" path="(gml/text(),'')[1]"/>
-                <param name="gioFile" path="(gio/text(),'')[1]"/>
+                <param name="gmlFile" path="gml/text()"/>
+                <param name="gioFile" path="gio/text()"/>
                 <actions>
                   <if>
                     <available file="bron_@{number}/@{besluit.name}"/>
@@ -894,11 +894,11 @@
       </sequential>
     </for>
     <xmltask source="${temp.dir}/index.xml">
-      <call path="index/besluit/informatieobjectRef">
+      <call path="index/besluit/informatieobjectRef[gio]">
         <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="oldIoRefId" path="oldIoRefId/text()"/>
         <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-        <param name="gmlFile" path="(gml/text(),'')[1]"/>
+        <param name="gmlFile" path="gml/text()"/>
         <actions>
           <xslt in="${output.dir}/@{gmlFile}" out="${temp.dir}/@{gmlFile}" extension=".gml" style="informatieobjectRefs.xsl" processor="trax" force="true">
             <param name="oldIoRefId" expression="@{oldIoRefId}"/>
@@ -915,11 +915,11 @@
           <available file="bron_@{number}" type="dir"/>
           <then>
             <xmltask source="${temp_@{number}.dir}/index.xml">
-              <call path="index/besluit/informatieobjectRef">
+              <call path="index/besluit/informatieobjectRef[gio]">
                 <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="oldIoRefId" path="oldIoRefId/text()"/>
                 <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-                <param name="gmlFile" path="(gml/text(),'')[1]"/>
+                <param name="gmlFile" path="gml/text()"/>
                 <actions>
                   <if>
                     <available file="bron_@{number}/@{gmlFile}"/>
@@ -940,11 +940,11 @@
       </sequential>
     </for>
     <xmltask source="${temp.dir}/index.xml">
-      <call path="index/besluit/informatieobjectRef">
+      <call path="index/besluit/informatieobjectRef[gio]">
         <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="oldIoRefId" path="oldIoRefId/text()"/>
         <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-        <param name="gioFile" path="(gio/text(),'')[1]"/>
+        <param name="gioFile" path="gio/text()"/>
         <actions>
           <xslt in="${output.dir}/@{gioFile}" out="${temp.dir}/@{gioFile}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
             <param name="oldIoRefId" expression="@{oldIoRefId}"/>
@@ -961,11 +961,11 @@
           <available file="bron_@{number}" type="dir"/>
           <then>
             <xmltask source="${temp_@{number}.dir}/index.xml">
-              <call path="index/besluit/informatieobjectRef">
+              <call path="index/besluit/informatieobjectRef[gio]">
                 <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="oldIoRefId" path="oldIoRefId/text()"/>
                 <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
-                <param name="gioFile" path="(gio/text(),'')[1]"/>
+                <param name="gioFile" path="gio/text()"/>
                 <actions>
                   <if>
                     <available file="bron_@{number}/@{gioFile}"/>
@@ -976,6 +976,52 @@
                         <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
                       </xslt>
                       <copy file="${temp_@{number}.dir}/@{gioFile}" tofile="${output_@{number}.dir}/@{gioFile}"/>
+                    </then>
+                  </if>
+                </actions>
+              </call>
+            </xmltask>
+          </then>
+        </if>
+      </sequential>
+    </for>
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/besluit/informatieobjectRef[doc]">
+        <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
+        <param name="oldIoRefId" path="oldIoRefId/text()"/>
+        <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
+        <param name="docFile" path="doc/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{docFile}" out="${temp.dir}/@{docFile}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
+            <param name="oldIoRefId" expression="@{oldIoRefId}"/>
+            <param name="oldIoWorkId" expression="@{oldIoWorkId}"/>
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{docFile}" tofile="${output.dir}/@{docFile}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+      <sequential>
+        <if>
+          <available file="bron_@{number}" type="dir"/>
+          <then>
+            <xmltask source="${temp_@{number}.dir}/index.xml">
+              <call path="index/besluit/informatieobjectRef[doc]">
+                <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
+                <param name="oldIoRefId" path="oldIoRefId/text()"/>
+                <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
+                <param name="docFile" path="doc/text()"/>
+                <actions>
+                  <if>
+                    <available file="bron_@{number}/@{docFile}"/>
+                    <then>
+                      <xslt in="${output_@{number}.dir}/@{docFile}" out="${temp_@{number}.dir}/@{docFile}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
+                        <param name="oldIoRefId" expression="@{oldIoRefId}"/>
+                        <param name="oldIoWorkId" expression="@{oldIoWorkId}"/>
+                        <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+                      </xslt>
+                      <copy file="${temp_@{number}.dir}/@{docFile}" tofile="${output_@{number}.dir}/@{docFile}"/>
                     </then>
                   </if>
                 </actions>
