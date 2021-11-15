@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="20.1">
+    <meta>
+        <filters directoryPatterns="" filePatterns="word2stoptpod.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options>
+            <serialized version="20.1" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>catalogs.v5</String>
+                        <String-array>
+                            <String>file:/C:/Werkbestanden/Geonovum/word2stoptpod/extern/extern-catalog.xml</String>
+                            <String>file:/C:/Werkbestanden/Geonovum/word2stoptpod/lvbb/lvbb-catalog.xml</String>
+                            <String>file:/C:/Werkbestanden/Geonovum/word2stoptpod/stop/1.1.0/stop-catalog.xml</String>
+                        </String-array>
+                    </entry>
+                    <entry>
+                        <String>key.xml.catalog.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>process.namespaces.through.uri.mapping.for.xml.schema</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
+    </meta>
+    <projectTree name="word2stoptpod.xpr">
+        <folder path="."/>
+    </projectTree>
+</project>

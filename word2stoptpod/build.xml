@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<project basedir="." name="stoptpod" default="word2stoptpod">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+
+  <!-- properties voor de transformatie -->
+
+  <property name="input.dir" value="input"/>
+  <property name="output.dir" value="output"/>
+  <property name="temp.dir" value="temp"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${temp.dir}"/>
+    </delete>
+    <mkdir dir="${temp.dir}"/>
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${output.dir}"/>
+    </delete>
+    <mkdir dir="${output.dir}"/>
+  </target>
+
+  <!-- unzip opdracht.zip en word-document -->
+
+  <target name="unzip" description="Unzip opdracht.zip en word-document">
+    <unzip dest="${temp.dir}/opdracht">
+      <fileset dir="${input.dir}">
+        <include name="**/opdracht.zip"/>
+      </fileset>
+    </unzip>
+    <unzip dest="${temp.dir}/document">
+      <fileset dir="${input.dir}">
+        <include name="**/*.docx"/>
+      </fileset>
+    </unzip>
+  </target>
+
+  <!-- check de route -->
+
+  <target name="choice" description="Keuze tussen initieel besluit of wijzigingsbesluit">
+    <available file="opdracht" filepath="${temp.dir}" type="dir" property="opdracht.dir"/>
+  </target>
+
+  <!-- transformeer van word naar imop -->
+
+  <target name="initieel" depends="choice" unless="${opdracht.dir}" description="Transformeer initieel besluit">
+    <xslt in="${temp.dir}/document/word/document.xml" out="${temp.dir}/stap_1.xml" style="word2temp.xsl" processor="trax" force="true"/>
+    <xslt in="${temp.dir}/stap_1.xml" out="${temp.dir}/stap_2.xml" style="AKN.xsl" processor="trax" force="true"/>
+    <xslt in="${temp.dir}/stap_2.xml" out="${output.dir}/opdracht.xml" style="temp2stoptpod.xsl" processor="trax" force="true"/>
+    <copy todir="${output.dir}" failonerror="false">
+      <fileset dir="${temp.dir}/document/word/media"/>
+    </copy>
+  </target>
+
+  <target name="wijziging" depends="choice" if="${opdracht.dir}" description="Transformeer wijzigingsbesluit">
+    <xslt in="${temp.dir}/document/word/document.xml" out="${temp.dir}/stap_1.xml" style="word2temp.xsl" processor="trax" force="true"/>
+    <xslt in="${temp.dir}/stap_1.xml" out="${temp.dir}/stap_2.xml" style="AKN.xsl" processor="trax" force="true"/>
+    <xslt in="${temp.dir}/stap_2.xml" out="${output.dir}/opdracht.xml" style="temp2stoptpod.xsl" processor="trax" force="true"/>
+  </target>
+
+  <!-- totale transformatie van word naar imop -->
+
+  <target name="word2stoptpod" depends="init,unzip,choice,initieel,wijziging"/>
+
+</project>
