@@ -20,17 +20,26 @@
          <sl:gebied>/tooi/def/thes/kern/c_28ecfd6d</sl:gebied>
          <sl:leveringsId>ZAAN0003_2021-11-22</sl:leveringsId>
          <sl:objectTypen>
-            <sl:objectType>Regelingsgebied</sl:objectType>
+            <sl:objectType>Omgevingswaarde</sl:objectType>
          </sl:objectTypen>
       </sl:inhoud>
       <sl:stand>
          <ow-dc:owObject>
-            <rg:Regelingsgebied>
-               <rg:identificatie>nl.imow-gm0479.regelingsgebied.20211122000001</rg:identificatie>
-               <rg:locatieaanduiding>
-                  <l:AmbtsgebiedRef domein="NL.BI.BestuurlijkGebied" xlink:href="GM0479"/>
-               </rg:locatieaanduiding>
-            </rg:Regelingsgebied>
+            <rol:Omgevingswaarde>
+               <rol:identificatie>nl.imow-gm0479.omgevingswaarde.3801701066</rol:identificatie>
+               <rol:naam>test</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/AantalBouwlagen</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Bouwlaag</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0479.normwaarde.311821243</rol:identificatie>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0479.gebied.317457372"/>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingswaarde/id/concept/Geluid</rol:groep>
+            </rol:Omgevingswaarde>
          </ow-dc:owObject>
       </sl:stand>
    </sl:standBestand>

@@ -6,7 +6,7 @@
    <BesluitVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/akn/nl/bill/gm0479/2021/ZAAN0003</FRBRWork>
-         <FRBRExpression>/akn/nl/bill/gm0479/2021/ZAAN0003/nld@2021-11-15;1</FRBRExpression>
+         <FRBRExpression>/akn/nl/bill/gm0479/2021/ZAAN0003/nld@2021-11-22;1</FRBRExpression>
          <soortWork>/join/id/stop/work_003</soortWork>
       </ExpressionIdentificatie>
       <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -28,6 +28,18 @@
             <rechtsgebied>/tooi/def/concept/c_638d8062</rechtsgebied>
          </rechtsgebieden>
          <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
+         <informatieobjectRefs>
+            <informatieobjectRef>/join/id/regdata/gm0479/2021/3118337024/nld@2021-11-22</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0479/2021/2879855207/nld@2021-11-22</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0479/2021/2882411113/nld@2021-11-22</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0479/2021/56692309/nld@2021-11-22</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0479/2021/2902333095/nld@2021-11-22</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0479/2021/2923173559/nld@2021-11-22</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0479/2021/3864407133/nld@2021-11-22</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0479/2021/19274895/nld@2021-11-22</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0479/2021/675092805/nld@2021-11-22</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0479/2021/2071467547/nld@2021-11-22</informatieobjectRef>
+         </informatieobjectRefs>
       </BesluitMetadata>
       <Procedureverloop xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <bekendOp>2021-05-04</bekendOp>
@@ -53,9 +65,79 @@
                <doelen>
                   <doel>/join/id/proces/gm0479/2021/Instelling</doel>
                </doelen>
-               <instrumentVersie>/akn/nl/act/gm0479/2021/ZAAN0003/nld@2021-11-15;1</instrumentVersie>
+               <instrumentVersie>/akn/nl/act/gm0479/2021/ZAAN0003/nld@2021-11-22;1</instrumentVersie>
                <eId/>
             </BeoogdeRegeling>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0479/2021/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0479/2021/3118337024/nld@2021-11-22</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_3__content_o_1__list_o_1__item_o_1__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0479/2021/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0479/2021/2879855207/nld@2021-11-22</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_3__content_o_1__list_o_1__item_o_2__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0479/2021/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0479/2021/2882411113/nld@2021-11-22</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_3__content_o_1__list_o_1__item_o_3__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0479/2021/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0479/2021/56692309/nld@2021-11-22</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_3__content_o_1__list_o_1__item_o_4__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0479/2021/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0479/2021/2902333095/nld@2021-11-22</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_3__content_o_1__list_o_1__item_o_5__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0479/2021/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0479/2021/2923173559/nld@2021-11-22</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_3__content_o_1__list_o_1__item_o_6__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0479/2021/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0479/2021/3864407133/nld@2021-11-22</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_3__content_o_1__list_o_1__item_o_7__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0479/2021/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0479/2021/19274895/nld@2021-11-22</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_3__content_o_1__list_o_1__item_o_8__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0479/2021/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0479/2021/675092805/nld@2021-11-22</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_3__content_o_1__list_o_1__item_o_9__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0479/2021/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0479/2021/2071467547/nld@2021-11-22</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_3__content_o_1__list_o_1__item_o_10__ref_o_1</eId>
+            </BeoogdInformatieobject>
          </BeoogdeRegelgeving>
          <Tijdstempels>
             <Tijdstempel>
@@ -101,7 +183,7 @@
                <Opschrift>[Optioneel opschrift]</Opschrift>
             </Kop>
             <RegelingCompact componentnaam="initieel_reg"
-                             wordt="/akn/nl/act/gm0479/2021/ZAAN0003/nld@2021-11-15;1">
+                             wordt="/akn/nl/act/gm0479/2021/ZAAN0003/nld@2021-11-22;1">
                <RegelingOpschrift eId="longTitle" wId="longTitle">
                   <Al>Omgevingsplan Zaanstad</Al>
                </RegelingOpschrift>
@@ -361,7 +443,9 @@
                                     <Lijst eId="chp_5__subchp_5.2__subsec_5.2.1__subsec_5.2.1.1__art_5.6__list_o_1"
                                            wId="gm0479_1__chp_5__subchp_5.2__subsec_5.2.1__subsec_5.2.1.1__art_5.6__list_o_1"
                                            type="expliciet">
-                                       <Lijstaanhef>In het werkingsgebied ‘gebiedstype woongebied variant 1’ zijn de volgende regels van toepassing:</Lijstaanhef>
+                                       <Lijstaanhef>In het werkingsgebied ‘<IntIoRef eId="chp_5__subchp_5.2__subsec_5.2.1__subsec_5.2.1.1__art_5.6__list_o_1__ref_o_1"
+                                                    wId="gm0479_1__chp_5__subchp_5.2__subsec_5.2.1__subsec_5.2.1.1__art_5.6__list_o_1__ref_o_1"
+                                                    ref="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_2__ref_o_1">gebiedstype woongebied variant 1</IntIoRef>’ zijn de volgende regels van toepassing:</Lijstaanhef>
                                        <Li eId="chp_5__subchp_5.2__subsec_5.2.1__subsec_5.2.1.1__art_5.6__list_o_1__item_a"
                                            wId="gm0479_1__chp_5__subchp_5.2__subsec_5.2.1__subsec_5.2.1.1__art_5.6__list_o_1__item_a">
                                           <LiNummer>a.</LiNummer>
@@ -10909,6 +10993,129 @@
                      </Divisietekst>
                   </Divisie>
                </Bijlage>
+               <Bijlage eId="cmp_o_3" wId="gm0479_1__cmp_o_3">
+                  <Kop>
+                     <Label>Bijlage</Label>
+                     <Opschrift>Overzicht van informatieobjecten</Opschrift>
+                  </Kop>
+                  <Divisietekst eId="cmp_o_3__content_o_1" wId="gm0479_1__cmp_o_3__content_o_1">
+                     <Inhoud><!--diagnose: controleer dat elke ExtIoRef een bijbehorend IntIoRef heeft-->
+                        <Begrippenlijst eId="cmp_o_3__content_o_1__list_o_1"
+                                        wId="gm0479_1__cmp_o_3__content_o_1__list_o_1">
+                           <Begrip eId="cmp_o_3__content_o_1__list_o_1__item_o_1"
+                                   wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_1"><!--gemeente_Zaanstad.gml-->
+                              <Term>Zaanstad</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_3__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0479/2021/3118337024/nld@2021-11-22">/join/id/regdata/gm0479/2021/3118337024/nld@2021-11-22</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_3__content_o_1__list_o_1__item_o_2"
+                                   wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_2"><!--gebiedstype woongebied variant 1.gml-->
+                              <Term>gebiedstype woongebied variant 1</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_3__content_o_1__list_o_1__item_o_2__ref_o_1"
+                                              wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_2__ref_o_1"
+                                              ref="/join/id/regdata/gm0479/2021/2879855207/nld@2021-11-22">/join/id/regdata/gm0479/2021/2879855207/nld@2021-11-22</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_3__content_o_1__list_o_1__item_o_3"
+                                   wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_3"><!--gebiedstype woongebied variant 2.gml-->
+                              <Term>gebiedstype woongebied variant 2</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_3__content_o_1__list_o_1__item_o_3__ref_o_1"
+                                              wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_3__ref_o_1"
+                                              ref="/join/id/regdata/gm0479/2021/2882411113/nld@2021-11-22">/join/id/regdata/gm0479/2021/2882411113/nld@2021-11-22</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_3__content_o_1__list_o_1__item_o_4"
+                                   wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_4"><!--welstandsgebied.gml-->
+                              <Term>welstandsgebied</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_3__content_o_1__list_o_1__item_o_4__ref_o_1"
+                                              wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_4__ref_o_1"
+                                              ref="/join/id/regdata/gm0479/2021/56692309/nld@2021-11-22">/join/id/regdata/gm0479/2021/56692309/nld@2021-11-22</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_3__content_o_1__list_o_1__item_o_5"
+                                   wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_5"><!--verplichte aanleg van groen.gml-->
+                              <Term>verplichte aanleg van groen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_3__content_o_1__list_o_1__item_o_5__ref_o_1"
+                                              wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_5__ref_o_1"
+                                              ref="/join/id/regdata/gm0479/2021/2902333095/nld@2021-11-22">/join/id/regdata/gm0479/2021/2902333095/nld@2021-11-22</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_3__content_o_1__list_o_1__item_o_6"
+                                   wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_6"><!--verplichte aanleg van water.gml-->
+                              <Term>verplichte aanleg van water</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_3__content_o_1__list_o_1__item_o_6__ref_o_1"
+                                              wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_6__ref_o_1"
+                                              ref="/join/id/regdata/gm0479/2021/2923173559/nld@2021-11-22">/join/id/regdata/gm0479/2021/2923173559/nld@2021-11-22</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_3__content_o_1__list_o_1__item_o_7"
+                                   wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_7"><!--beperkingengebied buisleiding voor gevaarlijke stoffen.gml-->
+                              <Term>beperkingengebied buisleiding voor gevaarlijke stoffen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_3__content_o_1__list_o_1__item_o_7__ref_o_1"
+                                              wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_7__ref_o_1"
+                                              ref="/join/id/regdata/gm0479/2021/3864407133/nld@2021-11-22">/join/id/regdata/gm0479/2021/3864407133/nld@2021-11-22</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_3__content_o_1__list_o_1__item_o_8"
+                                   wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_8"><!--beperkingengebied magneetveldzone.gml-->
+                              <Term>beperkingengebied magneetveldzone</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_3__content_o_1__list_o_1__item_o_8__ref_o_1"
+                                              wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_8__ref_o_1"
+                                              ref="/join/id/regdata/gm0479/2021/19274895/nld@2021-11-22">/join/id/regdata/gm0479/2021/19274895/nld@2021-11-22</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_3__content_o_1__list_o_1__item_o_9"
+                                   wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_9"><!--beperkingengebied waterkering.gml-->
+                              <Term>beperkingengebied waterkering</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_3__content_o_1__list_o_1__item_o_9__ref_o_1"
+                                              wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_9__ref_o_1"
+                                              ref="/join/id/regdata/gm0479/2021/675092805/nld@2021-11-22">/join/id/regdata/gm0479/2021/675092805/nld@2021-11-22</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_3__content_o_1__list_o_1__item_o_10"
+                                   wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_10"><!--nog nergens van toepassing.gml-->
+                              <Term>nog nergens van toepassing</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_3__content_o_1__list_o_1__item_o_10__ref_o_1"
+                                              wId="gm0479_1__cmp_o_3__content_o_1__list_o_1__item_o_10__ref_o_1"
+                                              ref="/join/id/regdata/gm0479/2021/2071467547/nld@2021-11-22">/join/id/regdata/gm0479/2021/2071467547/nld@2021-11-22</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                        </Begrippenlijst>
+                     </Inhoud>
+                  </Divisietekst>
+               </Bijlage>
             </RegelingCompact>
          </WijzigBijlage>
       </BesluitCompact>
@@ -10916,7 +11123,7 @@
    <RegelingVersieInformatie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/akn/nl/act/gm0479/2021/ZAAN0003</FRBRWork>
-         <FRBRExpression>/akn/nl/act/gm0479/2021/ZAAN0003/nld@2021-11-15;1</FRBRExpression>
+         <FRBRExpression>/akn/nl/act/gm0479/2021/ZAAN0003/nld@2021-11-22;1</FRBRExpression>
          <soortWork>/join/id/stop/work_019</soortWork>
       </ExpressionIdentificatie>
       <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">

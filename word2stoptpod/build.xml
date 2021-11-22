@@ -43,7 +43,7 @@
     <available file="opdracht" filepath="${temp.dir}" type="dir" property="opdracht.dir"/>
   </target>
 
-  <!-- transformeer van word naar imop -->
+  <!-- transformeer van word naar stoptpod -->
 
   <target name="initieel" depends="choice" unless="${opdracht.dir}" description="Transformeer initieel besluit">
     <xslt in="${temp.dir}/document/word/document.xml" out="${temp.dir}/stap_1.xml" style="word2temp.xsl" processor="trax" force="true"/>
@@ -60,8 +60,20 @@
     <xslt in="${temp.dir}/stap_2.xml" out="${output.dir}/opdracht.xml" style="temp2stoptpod.xsl" processor="trax" force="true"/>
   </target>
 
-  <!-- totale transformatie van word naar imop -->
+  <!-- stel de manifest-bestanden samen -->
 
-  <target name="word2stoptpod" depends="init,unzip,choice,initieel,wijziging"/>
+  <target name="manifest" description="Stel de manifest-bestanden samen">
+    <path id="output.list">
+      <fileset dir="${output.dir}"/>
+    </path>
+    <pathconvert property="file.list" refid="output.list" dirsep="/" pathsep=";"/>
+    <xslt in="template.xml" out="${output.dir}/manifest.xml" style="manifest.xsl" processor="trax" force="true">
+      <param name="file.list" expression="${file.list}"/>
+    </xslt>
+  </target>
+
+  <!-- totale transformatie van word naar stoptpod -->
+
+  <target name="word2stoptpod" depends="init,unzip,choice,initieel,wijziging,manifest"/>
 
 </project>
