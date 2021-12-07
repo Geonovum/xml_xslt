@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>Delfzijl</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Delfzijl</sl:gebied>
+         <sl:leveringsId>maaktnietuit-</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebied</sl:objectType>
+            <sl:objectType>Gebiedengroep</sl:objectType>
+            <sl:objectType>Puntengroep</sl:objectType>
+            <sl:objectType>Punt</sl:objectType>
+            <sl:objectType>Lijnengroep</sl:objectType>
+            <sl:objectType>Lijn</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm1979.gebiedengroep.kamerverhuur20211207083824</l:identificatie>
+               <l:noemer>kamerverhuur</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.kamerverhuur20211207083824"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm1979.gebied.kamerverhuur20211207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="76a7cc07-64c6-421e-9e26-574683fe07f1"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <!--      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm1979.gebiedengroep.Delfzijl</l:identificatie>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.Delfzijl"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>-->
+      <!--      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm1979.gebied.Delfzijl</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="d1fc3632-1f57-4081-9bf9-c3d3e2047598"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>-->
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm1979.gebiedengroep.LandelijkGebied20211207083824</l:identificatie>
+               <l:noemer>Delfzijl Landelijk Gebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.LandelijkGebied20211207083824"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm1979.gebied.LandelijkGebied20211207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0d619c25-37bd-4ffa-bb50-b00c13dd23be"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm1979.gebiedengroep.BouwvlakLandelijkGebied207083824</l:identificatie>
+               <l:noemer>Bouwvlak Delfzijl Landelijk Gebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.BouwvlakLandelijkGebied207083824"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm1979.gebied.BouwvlakLandelijkGebied207083824</l:identificatie>
+                <l:geometrie>
+                  <l:GeometrieRef xlink:href="e217089d-d9b5-4214-95d9-cac8cdc8c157"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm1979.gebiedengroep.DelfzijlIndustrieterrein07083824</l:identificatie>
+               <l:noemer>Delfzijl Industrieterrein</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.DelfzijlIndustrieterrein07083824"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm1979.gebied.DelfzijlIndustrieterrein07083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="62bd9273-e02c-46f6-b977-d945092d8fde"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm1979.gebiedengroep.DelfzijlCentrum20211207083824</l:identificatie>
+               <l:noemer>Delfzijl Centrum</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.DelfzijlCentrum20211207083824"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm1979.gebied.DelfzijlCentrum20211207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="6cb22f9f-8358-4de3-997a-b521c3119cf5"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm1979.gebiedengroep.BouwvlakDelfzijlCentrum207083824</l:identificatie>
+               <l:noemer>Bouwvlak Delfzijl Centrum</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.BouwvlakDelfzijlCentrum207083824"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm1979.gebied.BouwvlakDelfzijlCentrum207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="6b2e455a-cb76-408c-b9c7-ccb9aff66272"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Lijnengroep>
+               <l:identificatie>nl.imow-gm1979.lijnengroep.Hoofdinfrastructuur0211207083824</l:identificatie>
+               <l:noemer>Hoofdinfrastructuur</l:noemer>
+               <l:groepselement>
+                  <l:LijnRef xlink:href="nl.imow-gm1979.lijn.Hoofdinfrastructuur0211207083824"/>
+               </l:groepselement>
+            </l:Lijnengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Lijn>
+               <l:identificatie>nl.imow-gm1979.lijn.Hoofdinfrastructuur0211207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="541d4b6c-9155-474c-afad-9bc33ae4048c"/>
+               </l:geometrie>
+            </l:Lijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Puntengroep>
+               <l:identificatie>nl.imow-gm1979.puntengroep.DelfzijlPunt20211207083824</l:identificatie>
+               <l:noemer>Delfzijl Punt</l:noemer>
+               <l:groepselement>
+                  <l:PuntRef xlink:href="nl.imow-gm1979.punt.DelfzijlPunt20211207083824"/>
+               </l:groepselement>
+            </l:Puntengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.punt.DelfzijlPunt20211207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ce280400-d43f-434a-9d09-412ab5de457d"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Lijn>
+               <l:identificatie>nl.imow-gm1979.lijn.RooilijnLandelijkGebied207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="1f47bafc-4442-47aa-a98e-9a92824126ec"/>
+               </l:geometrie>
+            </l:Lijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm1979.gebiedengroep.BouwvlakVoorgeschrRooilijn083824</l:identificatie>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.BouwvlakVoorgeschrRooilijn083824"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm1979.gebied.BouwvlakVoorgeschrRooilijn083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="46c60836-e6bd-4e9f-a0b0-183f747cc021"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Lijnengroep>
+               <l:identificatie>nl.imow-gm1979.lijnengroep.CentrumBouwvlakRooilijn207083824</l:identificatie>
+               <l:noemer>rooilijn</l:noemer>
+               <l:groepselement>
+                  <l:LijnRef xlink:href="nl.imow-gm1979.lijn.CentrumBouwvlakRooilijn207083824"/>
+               </l:groepselement>
+            </l:Lijnengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Lijn>
+               <l:identificatie>nl.imow-gm1979.lijn.CentrumBouwvlakRooilijn207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ce060ff5-e176-40a2-88ae-d94db2c2d5a5"/>
+               </l:geometrie>
+            </l:Lijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc111207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="bf0420dc-a7c6-4ede-9e08-d5ad94d488e5"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc211207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f10d42f0-8ca4-463c-9e19-adba19122be6"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc311207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="5a597faa-0b56-4141-abf6-7ce3e1eb2fbf"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc411207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0bfc9802-6abd-4c48-a370-0688ad8740f2"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc511207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="314a6c58-da6c-4466-9e3e-9bf290377206"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc611207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="49c3cee0-e5c2-4aa9-bc14-1278a9bc3782"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc711207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8f3e846a-067c-466c-ac9c-41394fba678d"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc811207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="8812e83e-f058-4c1e-bff0-169a06d2fbf3"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc911207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="db5f589f-96ec-4043-873b-7bbeae3f094c"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc101207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="a6f427e3-c030-453c-97d8-3a4573819f53"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc111207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="a30c72ea-9a6a-4958-aebe-07e9f81e382e"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc121207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="7588413a-27e9-43f0-9469-eba8d39275b6"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc131207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="e919b033-c317-489a-b199-d9192f06546d"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc141207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="6c128de2-ec99-4c33-9f89-beae688c278f"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc151207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="52ef7db0-c820-45c7-837d-1967485fc231"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc161207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="03903da3-dc4d-487f-bb80-e9c08b74c5c9"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc171207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0044dba9-f6ad-45b7-99a5-868a86a0f16d"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc181207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="282721ce-e298-4441-9874-72617d3800e2"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc191207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f1a0bc80-fa8d-4342-a11f-ff66f0bb235a"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc201207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="2ce93397-6bdc-4b1c-9a8c-87a75d806293"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.gebied.GeluidProdPlafondLoc211207083824</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="2723dfc9-dc26-4780-a6c1-22d4ff4608dc"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

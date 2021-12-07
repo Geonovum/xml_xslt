@@ -1,0 +1,2279 @@
+<?xml version="1.0" encoding="UTF-8"?><index>
+   <dateTime>20211207083829</dateTime>
+   <regeling>
+      <origineleregelingFBRWork>/akn/nl/act/gm1979/2021/omgevingsplandelfzijl</origineleregelingFBRWork>
+   </regeling>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Centrum</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Centrum/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Punt</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Punt/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn/nld@2021-08-02;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <besluit>
+      <informatieobjectRef>
+         <gio>Bouwvlak_Delfzijl_Landelijk_Gebied.xml</gio>
+         <gml>Bouwvlak_Delfzijl_Landelijk_Gebied.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Bouwvlak_Delfzijl_Landelijk_Gebied_Rooilijn.xml</gio>
+         <gml>Bouwvlak_Delfzijl_Landelijk_Gebied_Rooilijn.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Delfzijl.xml</gio>
+         <gml>Delfzijl.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Delfzijl_Centrum.xml</gio>
+         <gml>Delfzijl_Centrum.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Centrum</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Centrum/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Delfzijl_Centrum_Bouwvlak.xml</gio>
+         <gml>Delfzijl_Centrum_Bouwvlak.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Delfzijl_Centrum_Bouwvlak_Rooilijn.xml</gio>
+         <gml>Delfzijl_Centrum_Bouwvlak_Rooilijn.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Delfzijl_GeluidProductiePlafonds.xml</gio>
+         <gml>Delfzijl_GeluidProductiePlafonds.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Delfzijl_Hoofdinfrastructuur.xml</gio>
+         <gml>Delfzijl_Hoofdinfrastructuur.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Delfzijl_Industrieterrein.xml</gio>
+         <gml>Delfzijl_Industrieterrein.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Delfzijlkamerverhuur.xml</gio>
+         <gml>Delfzijlkamerverhuur.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Delfzijl_Landelijk_Gebied.xml</gio>
+         <gml>Delfzijl_Landelijk_Gebied.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Delfzijl_Punt.xml</gio>
+         <gml>Delfzijl_Punt.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Punt</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Punt/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+      <informatieobjectRef>
+         <gio>Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn.xml</gio>
+         <gml>Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn/nld@2021-08-02;1</oldIoRefId>
+      </informatieobjectRef>
+   </besluit>
+   <leveringId sourcefile="opdracht.xml">
+      <referencefile>owActiviteiten.xml</referencefile>
+      <referencefile>owGebiedsaanwijzing_Delfzijl.xml</referencefile>
+      <referencefile>owLocaties.xml</referencefile>
+      <referencefile>owOmgevingsnorm_Delfzijl.xml</referencefile>
+      <referencefile>owRegelingsgebied.xml</referencefile>
+      <referencefile>owRegeltekst.xml</referencefile>
+      <new>delfzijl_integraletekstvervanging_poging_uniek_002-20211207083829</new>
+   </leveringId>
+   <guids>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Bouwvlak_Delfzijl_Landelijk_Gebied.gml">
+         <org>1AB34AB2-A676-4955-A2A4-CB74ADEF996F</org>
+         <new>e217089d-d9b5-4214-95d9-cac8cdc8c157</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Bouwvlak_Delfzijl_Landelijk_Gebied_Rooilijn.gml">
+         <org>6A79909B-F804-44C1-B170-F9EF8CD62F20</org>
+         <new>1f47bafc-4442-47aa-a98e-9a92824126ec</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl.gml">
+         <org>d1fc3632-1f57-4081-9bf9-c3d3e2047598</org>
+         <new>76a7cc07-64c6-421e-9e26-574683fe07f1</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijlkamerverhuur.gml">
+         <org>d1fc3632-1f57-4081-9bf9-c3d3e2047598</org>
+         <new>a9e889c7-8d91-4529-8f14-6326bf2850ed</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_Centrum.gml">
+         <org>f20d81ab-5937-4c0b-a262-8d156972ee3b</org>
+         <new>6cb22f9f-8358-4de3-997a-b521c3119cf5</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_Centrum_Bouwvlak.gml">
+         <org>0E8B2E55-D033-430B-8C9F-782C2DC2FA0A</org>
+         <new>6b2e455a-cb76-408c-b9c7-ccb9aff66272</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn.gml">
+         <org>bd6a66ec-f6a1-45f2-a318-ae90d8f1b0d1</org>
+         <new>46c60836-e6bd-4e9f-a0b0-183f747cc021</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_Centrum_Bouwvlak_Rooilijn.gml">
+         <org>8B7B84C9-B49A-4534-8C8A-EEC41BA45352</org>
+         <new>ce060ff5-e176-40a2-88ae-d94db2c2d5a5</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>7C3D9C7A-1C33-461B-AEA4-DFC51399B031</org>
+         <new>bf0420dc-a7c6-4ede-9e08-d5ad94d488e5</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>76A9B542-9079-4900-8CEE-480F9EF83D2B</org>
+         <new>f10d42f0-8ca4-463c-9e19-adba19122be6</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>22006FC8-34F9-49F5-8466-132C36313C9F</org>
+         <new>5a597faa-0b56-4141-abf6-7ce3e1eb2fbf</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>87224033-EE8F-4A33-A016-AC8C01A19C92</org>
+         <new>0bfc9802-6abd-4c48-a370-0688ad8740f2</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>46035C0E-0FA4-40E6-AFBC-A4F033523116</org>
+         <new>314a6c58-da6c-4466-9e3e-9bf290377206</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>F1C38694-5AB7-47C7-BC94-283F6F646621</org>
+         <new>49c3cee0-e5c2-4aa9-bc14-1278a9bc3782</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>C61C4783-ABEB-4041-A7FC-E6C5E53EF490</org>
+         <new>8f3e846a-067c-466c-ac9c-41394fba678d</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>F3515C46-6A16-4BFB-89D7-940A415DD0FA</org>
+         <new>8812e83e-f058-4c1e-bff0-169a06d2fbf3</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>BC31BCE0-4F0E-41EC-B38D-6CC4A5C55273</org>
+         <new>db5f589f-96ec-4043-873b-7bbeae3f094c</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>183626D4-0A15-4762-B3CD-417C2C8DA5B5</org>
+         <new>a6f427e3-c030-453c-97d8-3a4573819f53</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>37E3D77D-A887-4E4B-8126-79A8A9BD4AF4</org>
+         <new>a30c72ea-9a6a-4958-aebe-07e9f81e382e</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>27C994F5-B4DC-4390-B3B4-18F0537E0766</org>
+         <new>7588413a-27e9-43f0-9469-eba8d39275b6</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>47EC4482-26B8-400E-BA2F-B0642F85CBE2</org>
+         <new>e919b033-c317-489a-b199-d9192f06546d</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>854D36A3-C7F2-4A35-9668-3933C08696EA</org>
+         <new>6c128de2-ec99-4c33-9f89-beae688c278f</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>9E18F5CD-DF19-41FE-A145-FC3F780DDFC3</org>
+         <new>52ef7db0-c820-45c7-837d-1967485fc231</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>89341135-5347-47C6-969C-0DCB8C4855FF</org>
+         <new>03903da3-dc4d-487f-bb80-e9c08b74c5c9</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>18153A78-EAD0-4905-BDAA-84CAC8161221</org>
+         <new>0044dba9-f6ad-45b7-99a5-868a86a0f16d</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>293BE7A5-0F8F-4597-A426-40E9EFFF6A6A</org>
+         <new>282721ce-e298-4441-9874-72617d3800e2</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>40BAB0F1-81F4-47B4-92E0-DE7BB7712F85</org>
+         <new>f1a0bc80-fa8d-4342-a11f-ff66f0bb235a</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>D90C1A99-AFDA-4581-8376-031255769487</org>
+         <new>2ce93397-6bdc-4b1c-9a8c-87a75d806293</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_GeluidProductiePlafonds.gml">
+         <org>1AECEBCC-CEAD-45AE-BC40-D518BBDC5E0E</org>
+         <new>2723dfc9-dc26-4780-a6c1-22d4ff4608dc</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_Hoofdinfrastructuur.gml">
+         <org>DDFF05CA-47E1-4F53-A688-E872B2337F54</org>
+         <new>541d4b6c-9155-474c-afad-9bc33ae4048c</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_Industrieterrein.gml">
+         <org>DB221143-B228-49CF-A677-B0E15CCCC42C</org>
+         <new>62bd9273-e02c-46f6-b977-d945092d8fde</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_Landelijk_Gebied.gml">
+         <org>95DEC033-6C72-43E1-9D5E-296DC118E2B1</org>
+         <new>0d619c25-37bd-4ffa-bb50-b00c13dd23be</new>
+      </guidInOw>
+      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_Punt.gml">
+         <org>73643287-A4AA-47D9-8A16-284B674169F7</org>
+         <new>ce280400-d43f-434a-9d09-412ab5de457d</new>
+      </guidInOw>
+   </guids>
+   <file type="besluit.xml" ow="false">
+      <name>akn_nl_bill_gm1979_2.xml</name>
+   </file>
+   <file type="opdracht.xml" ow="false">
+      <name>opdracht.xml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Bouwvlak_Delfzijl_Landelijk_Gebied.gml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Bouwvlak_Delfzijl_Landelijk_Gebied_Rooilijn.gml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijl.gml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijlkamerverhuur.gml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijl_Centrum.gml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijl_Centrum_Bouwvlak.gml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn.gml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijl_Centrum_Bouwvlak_Rooilijn.gml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijl_GeluidProductiePlafonds.gml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijl_Hoofdinfrastructuur.gml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijl_Industrieterrein.gml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijl_Landelijk_Gebied.gml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Delfzijl_Punt.gml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Bouwvlak_Delfzijl_Landelijk_Gebied.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Bouwvlak_Delfzijl_Landelijk_Gebied_Rooilijn.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijl.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijlkamerverhuur.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijl_Centrum.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijl_Centrum_Bouwvlak.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijl_Centrum_Bouwvlak_Rooilijn.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijl_GeluidProductiePlafonds.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijl_Hoofdinfrastructuur.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijl_Industrieterrein.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijl_Landelijk_Gebied.xml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>Delfzijl_Punt.xml</name>
+   </file>
+   <file type="gebiedsaanwijzing.xml" ow="true">
+      <name>owGebiedsaanwijzing_Delfzijl.xml</name>
+   </file>
+   
+   <file type="locatie.xml" ow="true">
+      <name>owLocaties.xml</name>
+   </file>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <file type="regelingsgebied.xml" ow="true">
+      <name>owRegelingsgebied.xml</name>
+   </file>
+   <file type="regeltekst.xml" ow="true">
+      <name>owRegeltekst.xml</name>
+   </file>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <file type="activiteit.xml" ow="true">
+      <name>owActiviteiten.xml</name>
+   </file>
+   <file type="normwaarde.xml" ow="true">
+      <name>owOmgevingsnorm_Delfzijl.xml</name>
+   </file>
+   
+   
+   
+   
+   
+   
+   <file type="manifest-ow.xml" ow="false">
+      <name>manifest-ow.xml</name>
+   </file>
+</index>

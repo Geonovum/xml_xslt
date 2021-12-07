@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Aanleveringen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
+               xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/generiek/manifest-ow.xsd">
+   <domein>omgevingswet</domein>
+   <Aanlevering>
+      <WorkIDRegeling>/akn/nl/act/gm1979/2021/omgevingsplandelfzijl</WorkIDRegeling>
+      <DoelID>/join/id/proces/gm1979/2021/Nummer5PDFbestand</DoelID>
+      <Bestand>
+         <naam>owActiviteiten.xml</naam>
+         <objecttype>Activiteit</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owGebiedsaanwijzing_Delfzijl.xml</naam>
+         <objecttype>Gebiedsaanwijzing</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owLocaties.xml</naam>
+         <objecttype>Gebiedengroep</objecttype>
+         <objecttype>Gebied</objecttype>
+         <objecttype>Punt</objecttype>
+         <objecttype>Lijn</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owRegeltekst.xml</naam>
+         <objecttype>Regeltekst</objecttype>
+         <objecttype>RegelVoorIedereen</objecttype>
+      </Bestand>
+   </Aanlevering>
+</Aanleveringen>

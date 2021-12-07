@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.overheid.nl/2017/lvbb"
+   xmlns:stop="http://www.overheid.nl/2017/stop"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.overheid.nl/2017/lvbb https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-transport.xsd">
+   <bestand>
+      <bestandsnaam>manifest.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>manifest-ow.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>akn_nl_bill_gm1979_1.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>gm1979Regeltekst_Geonovum.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>gm1979Activiteiten_Geonovum.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>gm1979Regelingsgebied_Geonovum.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>opdracht.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>gm1979Locaties_Geonovum.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>Delfzijl.gml</bestandsnaam>
+      <contentType>application/gml+xml</contentType>
+   </bestand>
+   <bestand>
+      <bestandsnaam>GIO-Delfzijl.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
+   </bestand>
+</manifest>

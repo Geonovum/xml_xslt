@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>Delfzijl</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Delfzijl</sl:gebied>
+         <sl:leveringsId>maaktnietuit</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebied</sl:objectType>
+            <sl:objectType>Gebiedengroep</sl:objectType>
+            <sl:objectType>Punt</sl:objectType>
+            <sl:objectType>Lijn</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <ow:status>beëindigen</ow:status>
+               <l:identificatie>nl.imow-gm1979.gebiedengroep.BouwvlakDelfzijlCentrum</l:identificatie>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.BouwvlakDelfzijlCentrum"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <ow:status>beëindigen</ow:status>
+               <ow:procedurestatus>ontwerp</ow:procedurestatus>
+               <l:identificatie>nl.imow-gm1979.gebied.BouwvlakDelfzijlCentrum</l:identificatie>
+               <l:noemer>Bouwvlak Delfzijl Centrum</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="0E8B2E55-D033-430B-8C9F-782C2DC2FA0A"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Punt>
+               <l:identificatie>nl.imow-gm1979.punt.DelfzijlPunt</l:identificatie>
+               <l:noemer>Delfzijl Punt</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="943BEE47-AEB2-4268-8A0D-35E5FF56A5BC"/>
+               </l:geometrie>
+            </l:Punt>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Lijn>
+               <l:identificatie>nl.imow-gm1979.lijn.Hoofdinfrastructuur</l:identificatie>
+               <l:noemer>Hoofdinfrastructuur</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="aeb4b12c-c68b-4f98-83ec-2ab64c598a3d"/>
+               </l:geometrie>
+            </l:Lijn>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm1979.gebiedengroep.casino</l:identificatie>
+               <l:noemer>Casino</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.casino"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm1979.gebied.casino</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="186485eb-a3fc-4916-92fe-30833a876817"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>
