@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><index>
-   <dateTime>20211207083832</dateTime>
+   <dateTime>20211210092550</dateTime>
    <regeling>
       <origineleregelingFBRWork>/akn/nl/act/gm1979/2021/omgevingsplandelfzijl</origineleregelingFBRWork>
    </regeling>
@@ -56,24 +56,24 @@
       </informatieobjectRef>
    </besluit>
    <leveringId sourcefile="opdracht.xml">
-      <referencefile>owGebiedsaanwijzing_Delfzijl.xml</referencefile>
       <referencefile>owActiviteiten.xml</referencefile>
+      <referencefile>owGebiedsaanwijzing_Delfzijl.xml</referencefile>
       <referencefile>owLocaties.xml</referencefile>
       <referencefile>owRegeltekst.xml</referencefile>
-      <new>delfzijl_definitievewijziging_regdataPDF_poging_007-20211207083832</new>
+      <new>delfzijl_definitievewijziging_regdataPDF_poging_007-20211210092550</new>
    </leveringId>
    <guids>
       <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_Hoofdinfrastructuur.gml">
          <org>aeb4b12c-c68b-4f98-83ec-2ab64c598a3d</org>
-         <new>3c3b1771-5f76-4aaf-8885-8dc9c45d8026</new>
+         <new>34808802-014e-47fa-b812-fab267446ec3</new>
       </guidInOw>
       <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_Punt.gml">
          <org>943BEE47-AEB2-4268-8A0D-35E5FF56A5BC</org>
-         <new>6beb9e97-efe6-4107-9bd6-36c1b3b22edb</new>
+         <new>c71da802-dd6a-4e8b-b1a1-c7f1c00548a3</new>
       </guidInOw>
       <guidInOw locatiefile="owLocaties.xml" gmlfile="Functieaanduiding_casino_geometrie_3.gml">
          <org>186485eb-a3fc-4916-92fe-30833a876817</org>
-         <new>329e2247-0423-4878-9a4a-aa580a020423</new>
+         <new>4a2b1449-f6cb-40f0-9a56-5c74e9371a1b</new>
       </guidInOw>
    </guids>
    <file type="besluit.xml" ow="false">

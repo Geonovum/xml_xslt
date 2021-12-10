@@ -6,8 +6,8 @@
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl-20211207083824</data:FRBRWork>
-         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl-20211207083824/nld@2021-08-02;1</data:FRBRExpression>
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl-20211210092543</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl-20211210092543/nld@2021-08-02;1</data:FRBRExpression>
          <soortWork>/join/id/stop/work_010</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -15,11 +15,11 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Delfzijl.gml</bestandsnaam>
-                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">f90a4ba7bd3e19a1a504a9cfc195d40ff21178ce253d7493e4f37f35f583ee1dcca6c0cd71eb5e0a39e8f1a5dfa087624bc94cfa33d09e707294fd6d4d46a787</data:hash>
+                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">46a9fcbeae425db15cdc43de03440673d53cf29e40f4e70ec1356958b3a58ebfef05fb2ff552375c636866da038a596911b141434b806bd7f3f9c81d3abd546f</data:hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
-         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211207083824</data:heeftGeboorteregeling>
+         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211210092543</data:heeftGeboorteregeling>
       </InformatieObjectVersieMetadata>
       <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <eindverantwoordelijke>/tooi/id/gemeente/gm1979</eindverantwoordelijke>
@@ -27,7 +27,7 @@
          <alternatieveTitels>
             <alternatieveTitel>Delfzijl ambtsgebied</alternatieveTitel>
          </alternatieveTitels>
-         <data:officieleTitel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl-20211207083824</data:officieleTitel>
+         <data:officieleTitel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl-20211210092543</data:officieleTitel>
          <publicatieinstructie>TeConsolideren</publicatieinstructie>
          <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
          <naamInformatieObject>Delfzijl ambtsgebied</naamInformatieObject>

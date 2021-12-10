@@ -14,14 +14,14 @@
    </geo:context>
    <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork>/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn-20211207083824</geo:FRBRWork>
-         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn-20211207083824/nld@2021-08-02;1</geo:FRBRExpression>
+         <geo:FRBRWork>/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn-20211210092543</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn-20211210092543/nld@2021-08-02;1</geo:FRBRExpression>
          <geo:locaties>
             <geo:Locatie>
                <geo:naam>BouwvlakMetVoorgeschrevenRooilijn</geo:naam>
                <geo:geometrie>
                   <basisgeo:Geometrie>
-                     <basisgeo:id>46c60836-e6bd-4e9f-a0b0-183f747cc021</basisgeo:id>
+                     <basisgeo:id>55bebbf8-7d35-441f-b339-bd1ba6859f93</basisgeo:id>
                      <basisgeo:geometrie>
                         <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>

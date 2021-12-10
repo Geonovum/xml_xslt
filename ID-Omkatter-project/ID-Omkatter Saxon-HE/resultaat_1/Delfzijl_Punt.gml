@@ -14,14 +14,14 @@
    </geo:context>
    <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork>/join/id/regdata/gm1979/2021/Delfzijl_Punt-20211207083824</geo:FRBRWork>
-         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/Delfzijl_Punt-20211207083824/nld@2021-08-02;1</geo:FRBRExpression>
+         <geo:FRBRWork>/join/id/regdata/gm1979/2021/Delfzijl_Punt-20211210092543</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/Delfzijl_Punt-20211210092543/nld@2021-08-02;1</geo:FRBRExpression>
          <geo:locaties>
             <geo:Locatie>
                <geo:naam>Delfzijl Punt</geo:naam>
                <geo:geometrie>
                   <basisgeo:Geometrie>
-                     <basisgeo:id>ce280400-d43f-434a-9d09-412ab5de457d</basisgeo:id>
+                     <basisgeo:id>7f23b29c-33a3-4386-a104-59cd57d441e9</basisgeo:id>
                      <basisgeo:geometrie>
                         <gml:MultiPoint srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:pointMember>

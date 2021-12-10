@@ -7,8 +7,8 @@
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211207083824</data:FRBRWork>
-         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211207083824/nld@2021-08-02;1</data:FRBRExpression>
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211210092543</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211210092543/nld@2021-08-02;1</data:FRBRExpression>
          <soortWork>/join/id/stop/work_010</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -16,11 +16,11 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Bouwvlak_Delfzijl_Landelijk_Gebied_Rooilijn.gml</bestandsnaam>
-                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">2496d4f064b463c585c6ce3ad7bc98164f592dfc5e721f054031361e92a0a96d16f01abf0a8ef62ba7e5b0034fc97eede46c59d85276b3796445fdac0e0c05f9</data:hash>
+                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">1860763fa5f39cb301762f119f12d32a6a5a4ff34d604838b1902f6890da1f3875ad8025f3384e976c581f28922abce1671e32bc7fb67a9cf9d96a66287e35bc</data:hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
-         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211207083824</data:heeftGeboorteregeling>
+         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211210092543</data:heeftGeboorteregeling>
       </InformatieObjectVersieMetadata>
       <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <eindverantwoordelijke>/tooi/id/gemeente/gm1979</eindverantwoordelijke>
@@ -28,7 +28,7 @@
          <alternatieveTitels>
             <alternatieveTitel>Bouwvlak Delfzijl Landelijk Gebied</alternatieveTitel>
          </alternatieveTitels>
-         <data:officieleTitel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211207083824</data:officieleTitel>
+         <data:officieleTitel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211210092543</data:officieleTitel>
          <publicatieinstructie>TeConsolideren</publicatieinstructie>
          <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
          <naamInformatieObject>Bouwvlak Delfzijl Landelijk Gebied Rooilijn</naamInformatieObject>

@@ -30,7 +30,7 @@
          <ow-dc:owObject>
             <r:Regeltekst wId="gm1979_2__chp_13__subsec_13.1__art_13.X.2">
                <op:status>beëindigen</op:status>
-                <r:identificatie>nl.imow-gm1979.regeltekst.art13x220211207083824</r:identificatie>
+                <r:identificatie>nl.imow-gm1979.regeltekst.art13x220211210092543</r:identificatie>
             </r:Regeltekst>
          </ow-dc:owObject>
       </sl:stand>
@@ -38,21 +38,21 @@
          <ow-dc:owObject>
             <r:RegelVoorIedereen>
                <ow:status>beëindigen</ow:status>
-               <r:identificatie>nl.imow-gm1979.juridischeregel.art13x220211207083824</r:identificatie>
+               <r:identificatie>nl.imow-gm1979.juridischeregel.art13x220211210092543</r:identificatie>
                <r:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</r:idealisatie>
                <r:artikelOfLid>
-                  <r:RegeltekstRef xlink:href="nl.imow-gm1979.regeltekst.art13x220211207083824"/>
+                  <r:RegeltekstRef xlink:href="nl.imow-gm1979.regeltekst.art13x220211210092543"/>
                </r:artikelOfLid>
                <r:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.DelfzijlCentrum20211207083824"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.DelfzijlCentrum20211210092543"/>
                </r:locatieaanduiding>
                <r:activiteitaanduiding>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm1979.activiteit.BouwwerkBouwenNw20211207083824"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm1979.activiteit.BouwwerkBouwenNw20211210092543"/>
                   <r:ActiviteitLocatieaanduiding>
-                     <r:identificatie>nl.imow-gm1979.activiteitlocatieaanduiding.bouwwerkbouwenart13x211207083824</r:identificatie>
+                     <r:identificatie>nl.imow-gm1979.activiteitlocatieaanduiding.bouwwerkbouwenart13x211210092543</r:identificatie>
                      <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</r:activiteitregelkwalificatie>
                      <r:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.BouwvlakDelfzijlCentrum207083824"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.BouwvlakDelfzijlCentrum210092543"/>
                      </r:locatieaanduiding>
                   </r:ActiviteitLocatieaanduiding>
                </r:activiteitaanduiding>
@@ -63,31 +63,31 @@
       <sl:stand>
          <ow-dc:owObject>
             <r:Regeltekst wId="gm1979_3__chp_14__art_14.1">
-               <r:identificatie>nl.imow-gm1979.regeltekst.art14punt120211207083824</r:identificatie>
+               <r:identificatie>nl.imow-gm1979.regeltekst.art14punt120211210092543</r:identificatie>
             </r:Regeltekst>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
          <ow-dc:owObject>
             <r:RegelVoorIedereen>
-               <r:identificatie>nl.imow-gm1979.juridischeregel.art14punt120211207083824</r:identificatie>
+               <r:identificatie>nl.imow-gm1979.juridischeregel.art14punt120211210092543</r:identificatie>
                <r:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</r:idealisatie>
                <r:artikelOfLid>
-                  <r:RegeltekstRef xlink:href="nl.imow-gm1979.regeltekst.art14punt120211207083824"/>
+                  <r:RegeltekstRef xlink:href="nl.imow-gm1979.regeltekst.art14punt120211210092543"/>
                </r:artikelOfLid>
                <r:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.casino20211207083824"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.casino20211210092543"/>
                </r:locatieaanduiding>
                <r:gebiedsaanwijzing>
-                  <ga:GebiedsaanwijzingRef xlink:href="nl.imow-gm1979.gebiedsaanwijzing.Casino20211207083824"/>
+                  <ga:GebiedsaanwijzingRef xlink:href="nl.imow-gm1979.gebiedsaanwijzing.Casino20211210092543"/>
                </r:gebiedsaanwijzing>
                <r:activiteitaanduiding>
-                  <rol:ActiviteitRef xlink:href="nl.imow-gm1979.activiteit.Valsspelen20211207083824"/>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm1979.activiteit.Valsspelen20211210092543"/>
                   <r:ActiviteitLocatieaanduiding>
-                     <r:identificatie>nl.imow-gm1979.activiteitlocatieaanduiding.casinonietvalsspelen211207083824</r:identificatie>
+                     <r:identificatie>nl.imow-gm1979.activiteitlocatieaanduiding.casinonietvalsspelen211210092543</r:identificatie>
                      <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod</r:activiteitregelkwalificatie>
                      <r:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.casino20211207083824"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.casino20211210092543"/>
                      </r:locatieaanduiding>
                   </r:ActiviteitLocatieaanduiding>
                </r:activiteitaanduiding>
@@ -98,20 +98,20 @@
       <sl:stand>
          <ow-dc:owObject>
             <r:Regeltekst wId="gm1979_3__chp_14__art_14.2">
-               <r:identificatie>nl.imow-gm1979.regeltekst.art14punt220211207083824</r:identificatie>
+               <r:identificatie>nl.imow-gm1979.regeltekst.art14punt220211210092543</r:identificatie>
             </r:Regeltekst>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
          <ow-dc:owObject>
             <r:RegelVoorIedereen>
-               <r:identificatie>nl.imow-gm1979.juridischeregel.art14punt220211207083824</r:identificatie>
+               <r:identificatie>nl.imow-gm1979.juridischeregel.art14punt220211210092543</r:identificatie>
                <r:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</r:idealisatie>
                <r:artikelOfLid>
-                  <r:RegeltekstRef xlink:href="nl.imow-gm1979.regeltekst.art14punt220211207083824"/>
+                  <r:RegeltekstRef xlink:href="nl.imow-gm1979.regeltekst.art14punt220211210092543"/>
                </r:artikelOfLid>
                <r:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm1979.puntengroep.DelfzijlPunt20211207083824"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm1979.puntengroep.DelfzijlPunt20211210092543"/>
                </r:locatieaanduiding>
             </r:RegelVoorIedereen>
          </ow-dc:owObject>

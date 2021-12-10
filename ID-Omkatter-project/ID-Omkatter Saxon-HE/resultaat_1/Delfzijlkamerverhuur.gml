@@ -16,14 +16,14 @@
    </geo:context>
    <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork>/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur-20211207083824</geo:FRBRWork>
-         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur-20211207083824/nld@2021-08-02;1</geo:FRBRExpression>
+         <geo:FRBRWork>/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur-20211210092543</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur-20211210092543/nld@2021-08-02;1</geo:FRBRExpression>
          <geo:locaties>
             <geo:Locatie>
                <geo:naam>Delfzijl kamerverhuur</geo:naam>
                <geo:geometrie>
-                  <basisgeo:Geometrie gml:id="a9e889c7-8d91-4529-8f14-6326bf2850ed">
-                     <basisgeo:id>a9e889c7-8d91-4529-8f14-6326bf2850ed</basisgeo:id>
+                  <basisgeo:Geometrie gml:id="673d97ec-dbbb-4a3d-9269-f34b5b8a2fe3">
+                     <basisgeo:id>673d97ec-dbbb-4a3d-9269-f34b5b8a2fe3</basisgeo:id>
                      <basisgeo:geometrie>
                         <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>

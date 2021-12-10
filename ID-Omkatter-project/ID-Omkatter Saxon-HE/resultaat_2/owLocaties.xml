@@ -27,9 +27,9 @@
          <ow-dc:owObject>
             <l:Gebiedengroep>
                <ow:status>beëindigen</ow:status>
-               <l:identificatie>nl.imow-gm1979.gebiedengroep.BouwvlakDelfzijlCentrum207083824</l:identificatie>
+               <l:identificatie>nl.imow-gm1979.gebiedengroep.BouwvlakDelfzijlCentrum210092543</l:identificatie>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.BouwvlakDelfzijlCentrum207083824"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.BouwvlakDelfzijlCentrum210092543"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -39,7 +39,7 @@
             <l:Gebied>
                <ow:status>beëindigen</ow:status>
                <ow:procedurestatus>ontwerp</ow:procedurestatus>
-               <l:identificatie>nl.imow-gm1979.gebied.BouwvlakDelfzijlCentrum207083824</l:identificatie>
+               <l:identificatie>nl.imow-gm1979.gebied.BouwvlakDelfzijlCentrum210092543</l:identificatie>
                <l:noemer>Bouwvlak Delfzijl Centrum</l:noemer>
                <l:geometrie>
                   <l:GeometrieRef xlink:href="0E8B2E55-D033-430B-8C9F-782C2DC2FA0A"/>
@@ -50,10 +50,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Punt>
-               <l:identificatie>nl.imow-gm1979.punt.DelfzijlPunt20211207083824</l:identificatie>
+               <l:identificatie>nl.imow-gm1979.punt.DelfzijlPunt20211210092543</l:identificatie>
                <l:noemer>Delfzijl Punt</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="6beb9e97-efe6-4107-9bd6-36c1b3b22edb"/>
+                  <l:GeometrieRef xlink:href="c71da802-dd6a-4e8b-b1a1-c7f1c00548a3"/>
                </l:geometrie>
             </l:Punt>
          </ow-dc:owObject>
@@ -61,10 +61,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Lijn>
-               <l:identificatie>nl.imow-gm1979.lijn.Hoofdinfrastructuur0211207083824</l:identificatie>
+               <l:identificatie>nl.imow-gm1979.lijn.Hoofdinfrastructuur0211210092543</l:identificatie>
                <l:noemer>Hoofdinfrastructuur</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="3c3b1771-5f76-4aaf-8885-8dc9c45d8026"/>
+                  <l:GeometrieRef xlink:href="34808802-014e-47fa-b812-fab267446ec3"/>
                </l:geometrie>
             </l:Lijn>
          </ow-dc:owObject>
@@ -72,10 +72,10 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebiedengroep>
-               <l:identificatie>nl.imow-gm1979.gebiedengroep.casino20211207083824</l:identificatie>
+               <l:identificatie>nl.imow-gm1979.gebiedengroep.casino20211210092543</l:identificatie>
                <l:noemer>Casino</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.casino20211207083824"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm1979.gebied.casino20211210092543"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -83,9 +83,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <l:Gebied>
-               <l:identificatie>nl.imow-gm1979.gebied.casino20211207083824</l:identificatie>
+               <l:identificatie>nl.imow-gm1979.gebied.casino20211210092543</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="329e2247-0423-4878-9a4a-aa580a020423"/>
+                  <l:GeometrieRef xlink:href="4a2b1449-f6cb-40f0-9a56-5c74e9371a1b"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>

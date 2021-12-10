@@ -14,8 +14,8 @@
    </geo:context>
    <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211207083824</geo:FRBRWork>
-         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211207083824/nld@2021-08-02;1</geo:FRBRExpression>
+         <geo:FRBRWork>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211210092543</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211210092543/nld@2021-08-02;1</geo:FRBRExpression>
          <geo:normlabel>Rooilijn</geo:normlabel>
          <geo:normID>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/NogToeTeVoegen</geo:normID>
          <geo:locaties>
@@ -23,7 +23,7 @@
                <geo:naam>rooilijn</geo:naam>
                <geo:geometrie>
                   <basisgeo:Geometrie>
-                     <basisgeo:id>1f47bafc-4442-47aa-a98e-9a92824126ec</basisgeo:id>
+                     <basisgeo:id>c343e452-4db2-49e3-bd4f-96135ce55a67</basisgeo:id>
                      <basisgeo:geometrie>
                         <gml:MultiCurve srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:curveMember>

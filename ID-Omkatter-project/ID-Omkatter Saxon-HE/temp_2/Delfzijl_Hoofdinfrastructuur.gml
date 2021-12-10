@@ -14,14 +14,14 @@
    </geo:context>
    <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur-20211207083824</geo:FRBRWork>
-         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur-20211207083824/nld@2021-10-12;2</geo:FRBRExpression>
+         <geo:FRBRWork>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur-20211210092543</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur-20211210092543/nld@2021-10-12;2</geo:FRBRExpression>
          <geo:locaties>
             <geo:Locatie>
                <geo:naam>Delfzijl Hoofdinfrastructuur</geo:naam>
                <geo:geometrie>
-                  <basisgeo:Geometrie gml:id="id-3c3b1771-5f76-4aaf-8885-8dc9c45d8026-xx">
-                     <basisgeo:id>3c3b1771-5f76-4aaf-8885-8dc9c45d8026</basisgeo:id>
+                  <basisgeo:Geometrie gml:id="id-34808802-014e-47fa-b812-fab267446ec3-xx">
+                     <basisgeo:id>34808802-014e-47fa-b812-fab267446ec3</basisgeo:id>
                      <basisgeo:geometrie>
                         <gml:MultiCurve srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:curveMember>

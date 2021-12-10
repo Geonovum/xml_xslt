@@ -14,14 +14,14 @@
    </geo:context>
    <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork>/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein-20211207083824</geo:FRBRWork>
-         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein-20211207083824/nld@2021-08-02;1</geo:FRBRExpression>
+         <geo:FRBRWork>/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein-20211210092543</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein-20211210092543/nld@2021-08-02;1</geo:FRBRExpression>
          <geo:locaties>
             <geo:Locatie>
                <geo:naam>Delfzijl Industrieterrein</geo:naam>
                <geo:geometrie>
                   <basisgeo:Geometrie>
-                     <basisgeo:id>62bd9273-e02c-46f6-b977-d945092d8fde</basisgeo:id>
+                     <basisgeo:id>78b0b3b1-2d7b-41bb-acdf-7781f6a77572</basisgeo:id>
                      <basisgeo:geometrie>
                         <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>

@@ -21,11 +21,11 @@
   <xsl:param name="guid.list"/>
   <xsl:param name="bronnummer" as="xs:double"/>
 
-  <xsl:variable name="dateTime" select="format-dateTime(current-dateTime(),'[Y0001][M01][D01][h01][m01][s01]')"/>
+  <xsl:variable name="dateTime" select="format-dateTime(current-dateTime(),'[Y0001][M01][D01][H01][m01][s01]')"/>
 
   <xsl:template match="/">
     <!-- deze kan weg als bron vervangen is door bron_0 -->
-    <xsl:variable name="directory" select="concat($base.dir,'/bron_',$bronnummer)"/>
+    <xsl:variable name="directory" select="if ($bronnummer gt 0) then concat($base.dir,'/bron_',$bronnummer) else concat($base.dir,'/bron')"/>
     <xsl:element name="index">
       <xsl:element name="dateTime">
         <xsl:value-of select="$dateTime"/>

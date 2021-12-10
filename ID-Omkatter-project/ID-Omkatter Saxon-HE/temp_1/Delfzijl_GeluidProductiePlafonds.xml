@@ -7,8 +7,8 @@
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211207083824</data:FRBRWork>
-         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211207083824/nld@2021-08-02;1</data:FRBRExpression>
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211210092543</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211210092543/nld@2021-08-02;1</data:FRBRExpression>
          <soortWork>/join/id/stop/work_010</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -16,11 +16,11 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Delfzijl_GeluidProductiePlafonds.gml</bestandsnaam>
-                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">799d90fb0d650a5b40a08cbae7cfb6298faaefad2a2d0c27417d8ceefa798aaec641938042c3261b3a0feda6a07de7c3e7800d462ccdf14da0974223a3ad9955</data:hash>
+                  <data:hash xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">9ed18f31e03d807ab367baf852203c8ce492f86f4ebb6a8f9e0fb484fa7bf0c55aa2e1bc862dbda46c0c92a8e34bdaf430755d853993ca0d60e5dbbe958ced65</data:hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
-         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211207083824</data:heeftGeboorteregeling>
+         <data:heeftGeboorteregeling xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211210092543</data:heeftGeboorteregeling>
       </InformatieObjectVersieMetadata>
       <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <eindverantwoordelijke>/tooi/id/gemeente/gm1979</eindverantwoordelijke>
@@ -28,7 +28,7 @@
          <alternatieveTitels>
             <alternatieveTitel>Geluidproductieplafond</alternatieveTitel>
          </alternatieveTitels>
-         <data:officieleTitel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211207083824</data:officieleTitel>
+         <data:officieleTitel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211210092543</data:officieleTitel>
          <publicatieinstructie>TeConsolideren</publicatieinstructie>
          <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
          <naamInformatieObject>Geluidproductieplafond</naamInformatieObject>

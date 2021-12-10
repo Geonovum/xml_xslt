@@ -14,14 +14,14 @@
   </geo:context>
   <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork>/join/id/regdata/gm1979/2021/casino-20211207083824</geo:FRBRWork>
-         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/casino-20211207083824/nld@2021-10-12;2</geo:FRBRExpression>
+         <geo:FRBRWork>/join/id/regdata/gm1979/2021/casino-20211210092543</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/gm1979/2021/casino-20211210092543/nld@2021-10-12;2</geo:FRBRExpression>
          <geo:locaties>
             <geo:Locatie>
                <geo:naam>Functieaanduiding_casino geometrie</geo:naam>
                <geo:geometrie>
-                  <basisgeo:Geometrie gml:id="id-329e2247-0423-4878-9a4a-aa580a020423-xx">
-                     <basisgeo:id>329e2247-0423-4878-9a4a-aa580a020423</basisgeo:id>
+                  <basisgeo:Geometrie gml:id="id-4a2b1449-f6cb-40f0-9a56-5c74e9371a1b-xx">
+                     <basisgeo:id>4a2b1449-f6cb-40f0-9a56-5c74e9371a1b</basisgeo:id>
                      <basisgeo:geometrie>
                         <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>

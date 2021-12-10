@@ -5,8 +5,8 @@
                     xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <BesluitVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm1979/2021/omgevingsplandelfzijl_uniek_2-20211207083824</data:FRBRWork>
-         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm1979/2021/omgevingsplandelfzijl_uniek_2-20211207083824/nld@2021-03-15;2</data:FRBRExpression>
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm1979/2021/omgevingsplandelfzijl_uniek_2-20211210092543</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm1979/2021/omgevingsplandelfzijl_uniek_2-20211210092543/nld@2021-03-15;2</data:FRBRExpression>
          <soortWork>/join/id/stop/work_003</soortWork>
       </ExpressionIdentificatie>
       <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -22,19 +22,19 @@
          </rechtsgebieden>
          <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
          <informatieobjectRefs>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Centrum-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Punt-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
-            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn-20211207083824/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Centrum-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Punt-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
+            <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn-20211210092543/nld@2021-08-02;1</data:informatieobjectRef>
          </informatieobjectRefs>
       </BesluitMetadata>
       <Procedureverloop xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -51,107 +51,107 @@
          <BeoogdeRegelgeving>
             <BeoogdeRegeling>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                   <!--handmatig vervangen-->
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211207083824/nld@2</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211210092543/nld@2</data:instrumentVersie>
                <eId>art_I</eId>
             </BeoogdeRegeling>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_1__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_2__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_3__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Centrum-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Centrum-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_4__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_5__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_6__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_7__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_8__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_9__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_10__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_11__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Punt-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Punt-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_12__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+                  <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                </doelen>
-               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn-20211207083824/nld@2021-08-02;1</data:instrumentVersie>
+               <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn-20211210092543/nld@2021-08-02;1</data:instrumentVersie>
                <eId>!integraletekstvervanging#cmp_II__content_o_1__list_o_1__item_o_13__ref_o_1</eId>
             </BeoogdInformatieobject>
          </BeoogdeRegelgeving>
          <Tijdstempels>
             <Tijdstempel>
-               <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211207083824</data:doel>
+               <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm1979/2021/IntegraleTekstVervangingBruidsschatDelfzijl-20211210092543</data:doel>
                <soortTijdstempel>juridischWerkendVanaf</soortTijdstempel>
                <datum>2021-04-15</datum>
                <eId>art_II</eId>
@@ -195,8 +195,8 @@
                <Opschrift>Bijlage bij artikel I</Opschrift>
             </Kop>
             <RegelingMutatie componentnaam="integraletekstvervanging"
-                             was="/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211207083824/nld@1"
-                             wordt="/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211207083824/nld@2">
+                             was="/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211210092543/nld@1"
+                             wordt="/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211210092543/nld@2">
                <Vervang wat="body">
                    <Lichaam eId="body" wId="body">
                      <Hoofdstuk eId="chp_1" wId="gm1979_2__chp_1">
@@ -15131,7 +15131,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_1__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_1__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Bouwvlak_Delfzijl_Landelijk_Gebied-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15143,7 +15143,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_2__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_2__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied_Rooilijn-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15155,7 +15155,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_3__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_3__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15167,7 +15167,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_4__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_4__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Centrum-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Centrum-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Centrum-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Centrum-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15179,7 +15179,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_5__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_5__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15191,7 +15191,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_6__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_6__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/bouwvlak_Delfzijl_Centrum_Rooilijn-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15203,7 +15203,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_7__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_7__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_GeluidProductiePlafonds-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15215,7 +15215,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_8__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_8__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15227,7 +15227,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_9__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_9__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Industrieterrein-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15239,7 +15239,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_10__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_10__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijlkamerverhuur-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15251,7 +15251,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_11__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_11__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Landelijk_Gebied-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15263,7 +15263,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_12__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_12__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Punt-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Punt-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Punt-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Punt-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15275,7 +15275,7 @@
                                        <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                        wId="gm1979_2__cmp_II__content_o_1__list_o_1__item_o_13__ref_o_1"
                                                        eId="cmp_II__content_o_1__list_o_1__item_o_13__ref_o_1"
-                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn-20211207083824/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn-20211207083824/nld@2021-08-02;1</tekst:ExtIoRef>
+                                                       ref="/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn-20211210092543/nld@2021-08-02;1">/join/id/regdata/gm1979/2021/Delfzijl_Centrum_BouwvlakMetVoorgeschrevenRooilijn-20211210092543/nld@2021-08-02;1</tekst:ExtIoRef>
                                     </Al>
                                  </Definitie>
                               </Begrip>
@@ -15290,8 +15290,8 @@
    </BesluitVersie>
    <RegelingVersieInformatie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211207083824</data:FRBRWork>
-         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211207083824/nld@2</data:FRBRExpression>
+         <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211210092543</data:FRBRWork>
+         <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211210092543/nld@2</data:FRBRExpression>
          <soortWork>/join/id/stop/work_019</soortWork>
       </ExpressionIdentificatie>
       <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">

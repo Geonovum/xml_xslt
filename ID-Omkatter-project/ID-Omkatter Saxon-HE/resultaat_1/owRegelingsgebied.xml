@@ -19,9 +19,9 @@
       <sl:stand>
          <ow-dc:owObject><!--Met het Regelingsgebied geef je het gebied aan waar de regeling van toepassing is (in dit geval Omgevingsplan Zaltbommel)-->
             <rg:Regelingsgebied>
-               <rg:identificatie>nl.imow-gm1979.regelingsgebied.202100000120211207083824</rg:identificatie>
+               <rg:identificatie>nl.imow-gm1979.regelingsgebied.202100000120211210092543</rg:identificatie>
                <rg:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.Delfzijl20211207083824"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.Delfzijl20211210092543"/>
                </rg:locatieaanduiding>
             </rg:Regelingsgebied>
          </ow-dc:owObject>

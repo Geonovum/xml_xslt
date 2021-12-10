@@ -23,12 +23,12 @@
       <sl:stand>
          <ow-dc:owObject>
             <ga:Gebiedsaanwijzing>
-               <ga:identificatie>nl.imow-gm1979.gebiedsaanwijzing.Casino20211207083824</ga:identificatie>
+               <ga:identificatie>nl.imow-gm1979.gebiedsaanwijzing.Casino20211210092543</ga:identificatie>
                <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
                <ga:naam>Casino</ga:naam>
                <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Recreatie</ga:groep>
                <ga:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.casino20211207083824"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.casino20211210092543"/>
                </ga:locatieaanduiding>
             </ga:Gebiedsaanwijzing>
          </ow-dc:owObject>

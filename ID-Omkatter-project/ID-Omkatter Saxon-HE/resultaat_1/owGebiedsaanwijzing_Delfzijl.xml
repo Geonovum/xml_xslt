@@ -23,12 +23,12 @@
       <sl:stand>
          <ow-dc:owObject>
             <ga:Gebiedsaanwijzing>
-               <ga:identificatie>nl.imow-gm1979.gebiedsaanwijzing.Landelijkgebied20211207083824</ga:identificatie>
+               <ga:identificatie>nl.imow-gm1979.gebiedsaanwijzing.Landelijkgebied20211210092543</ga:identificatie>
                <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
                <ga:naam>Landelijk gebied</ga:naam>
                <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/LandelijkGebied</ga:groep>
                <ga:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.LandelijkGebied20211207083824"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.LandelijkGebied20211210092543"/>
                </ga:locatieaanduiding>
             </ga:Gebiedsaanwijzing>
          </ow-dc:owObject>
@@ -36,12 +36,12 @@
       <sl:stand>
          <ow-dc:owObject>
             <ga:Gebiedsaanwijzing>
-               <ga:identificatie>nl.imow-gm1979.gebiedsaanwijzing.FunctieCentrumgebied211207083824</ga:identificatie>
+               <ga:identificatie>nl.imow-gm1979.gebiedsaanwijzing.FunctieCentrumgebied211210092543</ga:identificatie>
                <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
                <ga:naam>Centrumgebied</ga:naam>
                <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Centrumgebied</ga:groep>
                <ga:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.DelfzijlCentrum20211207083824"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm1979.gebiedengroep.DelfzijlCentrum20211210092543"/>
                </ga:locatieaanduiding>
             </ga:Gebiedsaanwijzing>
          </ow-dc:owObject>

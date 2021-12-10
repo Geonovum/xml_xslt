@@ -4,7 +4,11 @@
   <taskdef resource="net/sf/antcontrib/antlib.xml"/>
   <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"/>
 
-  <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+  <property name="input.dir" value="bron"/>
+  <property name="output.dir" value="resultaat"/>
+  <property name="temp.dir" value="temp"/>
+
+  <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
     <sequential>
       <property name="input_@{number}.dir" value="bron_@{number}"/>
       <property name="output_@{number}.dir" value="resultaat_@{number}"/>
@@ -27,7 +31,11 @@
   <!-- initialiseer mappen -->
 
   <target name="init" description="Initialiseer mappen">
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number" keepgoing="true">
+    <delete dir="${output.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${output.dir}"/>
+    <delete dir="${temp.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${temp.dir}"/>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number" keepgoing="true">
       <sequential>
         <delete dir="temp_@{number}" failonerror="no" includeemptydirs="true"/>
         <delete dir="resultaat_@{number}" failonerror="no" includeemptydirs="true"/>
@@ -48,7 +56,10 @@
   <!-- kopieer bestanden naar resultaat -->
 
   <target name="copy" description="Kopieer bestanden">
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <copy todir="${output.dir}">
+      <fileset dir="${input.dir}"/>
+    </copy>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -64,7 +75,28 @@
 
   <!-- maak parameters -->
 
-  <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+  <path id="input.list">
+    <fileset dir="${input.dir}" includes="*.xml *.gml"/>
+  </path>
+  <path id="basedir" path="${basedir}"/>
+
+  <if>
+    <os family="unix"/>
+    <then>
+      <pathconvert property="base.dir" refid="basedir" dirsep="/" targetos="unix"/>
+      <pathconvert property="file.list" refid="input.list" dirsep="/" pathsep=";" targetos="unix"/>
+    </then>
+    <else>
+      <pathconvert property="base.dir" refid="basedir" dirsep="/" targetos="windows">
+        <map from="${basedir}" to="file:/${basedir}"/>
+      </pathconvert>
+      <pathconvert property="file.list" refid="input.list" dirsep="/" pathsep=";" targetos="windows">
+        <map from="${basedir}" to="file:/${basedir}"/>
+      </pathconvert>
+    </else>
+  </if>
+
+  <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
     <sequential>
       <if>
         <available file="bron_@{number}" type="dir"/>
@@ -96,7 +128,19 @@
   
   <!-- Deze wordt alleen voor de "bron" uitgevoerd, de overigen ook voor de bron_* -->
   <target name="index" description="Creëert een index van de soorten bestanden waaruit de dataset bestaat.">
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <generate_guid_list property="guid_list"/>
+    <xslt in="template.xml" out="${temp.dir}/index1.xml" style="index.xsl" processor="trax" force="true">
+      <param name="file.list" expression="${file.list}"/>
+      <param name="base.dir" expression="${base.dir}"/>
+      <param name="bron.dir" expression="${input.dir}"/>
+      <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+      <param name="guid.list" expression="${guid_list}"/>
+      <param name="bronnummer" expression="0"/>
+    </xslt>
+    <xslt in="${temp.dir}/index1.xml" out="${temp.dir}/index.xml" style="filter-dupes.xsl" processor="trax" force="true"/>
+    <delete file="${temp.dir}/index1.xml"/>
+
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -120,7 +164,7 @@
 
   <target name="guids" description="Creëert een juiste aantal guids benodigd en verwerkt die in GML-bestanden en referenties.">
     <!-- Wijzig de GML-files die gerefereerd worden vanuit een OW bestand -->
-    <xmltask source="${temp_0.dir}/index.xml">
+    <xmltask source="${temp.dir}/index.xml">
       <call path="index/guids/guidInOw">
         <param name="gmlfile.name" path="@gmlfile"/>
         <param name="oldGUID" path="org/text()"/>
@@ -130,31 +174,31 @@
           <if>
             <equals arg1="@{consolidatie}" arg2="0"/>
             <then>
-              <xslt in="${output_0.dir}/@{gmlfile.name}" out="${temp_0.dir}/@{gmlfile.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
+              <xslt in="${output.dir}/@{gmlfile.name}" out="${temp.dir}/@{gmlfile.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
                 <param name="oldGUID" expression="@{oldGUID}"/>
                 <param name="newGUID" expression="@{newGUID}"/>
               </xslt>
-              <copy file="${temp_0.dir}/@{gmlfile.name}" tofile="${output_0.dir}/@{gmlfile.name}"/>
+              <copy file="${temp.dir}/@{gmlfile.name}" tofile="${output.dir}/@{gmlfile.name}"/>
             </then>
             <else>
-              <xslt in="${output_0.dir}/@{oldGUID}.gml" out="${temp_0.dir}/@{newGUID}.gml" extension=".gml" style="guids.xsl" processor="trax" force="true">
+              <xslt in="${output.dir}/@{oldGUID}.gml" out="${temp.dir}/@{newGUID}.gml" extension=".gml" style="guids.xsl" processor="trax" force="true">
                 <param name="oldGUID" expression="@{oldGUID}"/>
                 <param name="newGUID" expression="@{newGUID}"/>
               </xslt>
-              <delete file="${output_0.dir}/@{oldGUID}.gml" failonerror="no"/>
-              <copy file="${temp_0.dir}/@{newGUID}.gml" tofile="${output_0.dir}/@{newGUID}.gml"/>
+              <delete file="${output.dir}/@{oldGUID}.gml" failonerror="no"/>
+              <copy file="${temp.dir}/@{newGUID}.gml" tofile="${output.dir}/@{newGUID}.gml"/>
               <!-- manifest-bhkv -->
-              <xslt in="${output_0.dir}/manifest-bhkv.xml" out="${temp_0.dir}/manifest-bhkv.xml" extension=".xml" style="guids.xsl" processor="trax" force="true">
+              <xslt in="${output.dir}/manifest-bhkv.xml" out="${temp.dir}/manifest-bhkv.xml" extension=".xml" style="guids.xsl" processor="trax" force="true">
                 <param name="oldGUID" expression="@{oldGUID}"/>
                 <param name="newGUID" expression="@{newGUID}"/>
               </xslt>
-              <copy file="${temp_0.dir}/manifest-bhkv.xml" tofile="${output_0.dir}/manifest-bhkv.xml"/>
+              <copy file="${temp.dir}/manifest-bhkv.xml" tofile="${output.dir}/manifest-bhkv.xml"/>
               <!-- manifest -->
-              <xslt in="${output_0.dir}/manifest.xml" out="${temp_0.dir}/manifest.xml" extension=".xml" style="guids.xsl" processor="trax" force="true">
+              <xslt in="${output.dir}/manifest.xml" out="${temp.dir}/manifest.xml" extension=".xml" style="guids.xsl" processor="trax" force="true">
                 <param name="oldGUID" expression="@{oldGUID}"/>
                 <param name="newGUID" expression="@{newGUID}"/>
               </xslt>
-              <copy file="${temp_0.dir}/manifest.xml" tofile="${output_0.dir}/manifest.xml"/>
+              <copy file="${temp.dir}/manifest.xml" tofile="${output.dir}/manifest.xml"/>
             </else>
           </if>
         </actions>
@@ -191,7 +235,27 @@
       </sequential>
     </for>
     <!-- Wijzig de OW-locatie bestanden -->
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/guids/guidInOw">
+        <param name="locatiefile.name" path="@locatiefile"/>
+        <param name="oldGUID" path="org/text()"/>
+        <param name="newGUID" path="new/text()"/>
+        <param name="consolidatie" path="consolidatie/text()" default="0"/>
+        <actions>
+          <if>
+            <equals arg1="@{consolidatie}" arg2="0"/>
+            <then>
+              <xslt in="${output.dir}/@{locatiefile.name}" out="${temp.dir}/@{locatiefile.name}" extension=".xml" style="guids.xsl" processor="trax" force="true">
+                <param name="oldGUID" expression="@{oldGUID}"/>
+                <param name="newGUID" expression="@{newGUID}"/>
+              </xslt>
+              <copy file="${temp.dir}/@{locatiefile.name}" tofile="${output.dir}/@{locatiefile.name}"/>
+            </then>
+          </if>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -201,7 +265,6 @@
                 <param name="locatiefile.name" path="@locatiefile"/>
                 <param name="oldGUID" path="org/text()"/>
                 <param name="newGUID" path="new/text()"/>
-                <param name="consolidatie" path="consolidatie/text()" default="0"/>
                 <actions>
                   <if>
                     <available file="bron_@{number}/@{locatiefile.name}"/>
@@ -221,7 +284,27 @@
       </sequential>
     </for>
     <!-- Wijzig de GML-files die NIET gerefereerd worden vanuit een OW bestand -->
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/guids/guid">
+        <param name="gmlfile.name" path="@gmlfile"/>
+        <param name="oldGUID" path="org/text()"/>
+        <param name="newGUID" path="new/text()"/>
+        <param name="consolidatie" path="consolidatie/text()" default="0"/>
+        <actions>
+          <if>
+            <equals arg1="@{consolidatie}" arg2="0"/>
+            <then>
+              <xslt in="${output.dir}/@{gmlfile.name}" out="${temp.dir}/@{gmlfile.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
+                <param name="oldGUID" expression="@{oldGUID}"/>
+                <param name="newGUID" expression="@{newGUID}"/>
+              </xslt>
+              <copy file="${temp.dir}/@{gmlfile.name}" tofile="${output.dir}/@{gmlfile.name}"/>
+            </then>
+          </if>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -231,11 +314,11 @@
                 <param name="gmlfile.name" path="@gmlfile"/>
                 <param name="oldGUID" path="org/text()"/>
                 <param name="newGUID" path="new/text()"/>
-                <param name="consolidatie" path="consolidatie/text()" default="0"/>
                 <actions>
                   <if>
                     <available file="bron_@{number}/@{gmlfile.name}"/>
                     <then>
+
                       <xslt in="${output_@{number}.dir}/@{gmlfile.name}" out="${temp_@{number}.dir}/@{gmlfile.name}" extension=".gml" style="guids.xsl" processor="trax" force="true">
                         <param name="oldGUID" expression="@{oldGUID}"/>
                         <param name="newGUID" expression="@{newGUID}"/>
@@ -253,7 +336,18 @@
   </target>
 
   <target name="owids" description="Verandert owids door er een datum/tijd string achter te zetten.">
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/file[contains(@ow,'true')]">
+        <param name="sourceFileName" path="name/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{sourceFileName}" out="${temp.dir}/@{sourceFileName}" extension=".xml" style="owids.xsl" processor="trax" force="true">
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{sourceFileName}" tofile="${output.dir}/@{sourceFileName}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -282,7 +376,20 @@
     </for>
 
     <!-- bovenliggende activiteiten -->
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/bovenliggendeActiviteitRelatie">
+        <param name="sourceFileName" path="name/text()"/>
+        <param name="bovenliggendeActiviteitIdLokaalAanwezig" path="bovenliggendeActiviteitIdLokaalAanwezig/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{sourceFileName}" out="${temp.dir}/@{sourceFileName}" extension=".xml" style="activiteit.xsl" processor="trax" force="true">
+            <param name="lokaleActiviteitRelatie" expression="@{bovenliggendeActiviteitIdLokaalAanwezig}"/>
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{sourceFileName}" tofile="${output.dir}/@{sourceFileName}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -310,7 +417,20 @@
       </sequential>
     </for>
     <!-- gerelateerde activiteiten -->
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/gerelateerdeActiviteitRelatie">
+        <param name="sourceFileName" path="name/text()"/>
+        <param name="gerelateerdeActiviteitIdLokaalAanwezig" path="gerelateerdeActiviteitIdLokaalAanwezig/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{sourceFileName}" out="${temp.dir}/@{sourceFileName}" extension=".xml" style="activiteit.xsl" processor="trax" force="true">
+            <param name="lokaleActiviteitRelatie" expression="@{gerelateerdeActiviteitIdLokaalAanwezig}"/>
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{sourceFileName}" tofile="${output.dir}/@{sourceFileName}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -340,7 +460,24 @@
   </target>
 
   <target name="leveringid_opdrachtparameters" description="Verandert leveringid en enkele andere parameters in opdracht en ow-bestanden door er een datum/tijd string achter te zetten.">
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/leveringId">
+        <param name="opdracht.name" path="@sourcefile"/>
+        <param name="newId" path="new/text()"/>
+        <actions>
+          <if>
+            <available file="${output.dir}/@{opdracht.name}"/>
+            <then>
+              <xslt in="${output.dir}/@{opdracht.name}" out="${temp.dir}/@{opdracht.name}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax" force="true">
+                <param name="newId" expression="@{newId}"/>
+              </xslt>
+              <copy file="${temp.dir}/@{opdracht.name}" tofile="${output.dir}/@{opdracht.name}"/>
+            </then>
+          </if>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -367,21 +504,35 @@
       </sequential>
     </for>
 
-    <!--xmltask source="${temp_0.dir}/index.xml">
+    <xmltask source="${temp.dir}/index.xml">
       <call path="index/file[contains(@ow,'true')]">
         <param name="sourceFileName" path="name/text()"/>
         <param name="consolidatie" path="../consolidatie/text()" default="0"/>
         <actions>
-          <xslt in="${output_0.dir}/@{sourceFileName}" out="${temp_0.dir}/@{sourceFileName}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax" force="true">
+          <xslt in="${output.dir}/@{sourceFileName}" out="${temp.dir}/@{sourceFileName}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax" force="true">
             <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
             <param name="consolidatie" expression="@{consolidatie}"/>
           </xslt>
-          <copy file="${temp_0.dir}/@{sourceFileName}" tofile="${output_0.dir}/@{sourceFileName}"/>
+          <copy file="${temp.dir}/@{sourceFileName}" tofile="${output.dir}/@{sourceFileName}"/>
         </actions>
       </call>
-    </xmltask-->
+    </xmltask>
 
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/leveringId/referencefile">
+        <param name="referencefile.name" path="text()"/>
+        <param name="consolidatie" path="consolidatie/text()" default="0"/>
+        <param name="newId" path="../new/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{referencefile.name}" out="${temp.dir}/@{referencefile.name}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax" force="true">
+            <param name="newId" expression="@{newId}"/>
+            <param name="consolidatie" expression="@{consolidatie}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{referencefile.name}" tofile="${output.dir}/@{referencefile.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -411,24 +562,35 @@
   </target>
 
   <target name="doelids" description="Verandert Doelids door er een datum/tijd string achter te zetten.">
-    <xmltask source="${temp_0.dir}/index.xml">
+    <xmltask source="${temp.dir}/index.xml">
       <call path="index">
         <param name="consolidatie" path="consolidatie/text()" default="0"/>
         <actions>
           <if>
             <equals arg1="@{consolidatie}" arg2="1"/>
             <then>
-              <xslt in="${output_0.dir}/consolidaties.xml" out="${temp_0.dir}/consolidaties.xml" extension=".xml" style="doelids.xsl" processor="trax" force="true">
+              <xslt in="${output.dir}/consolidaties.xml" out="${temp.dir}/consolidaties.xml" extension=".xml" style="doelids.xsl" processor="trax" force="true">
                 <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
               </xslt>
-              <copy file="${temp_0.dir}/consolidaties.xml" tofile="${output_0.dir}/consolidaties.xml"/>
+              <copy file="${temp.dir}/consolidaties.xml" tofile="${output.dir}/consolidaties.xml"/>
             </then>
           </if>
         </actions>
       </call>
     </xmltask>
 
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/file[contains(@type,'manifest-ow.xml')]">
+        <param name="file.name" path="name/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{file.name}" out="${temp.dir}/@{file.name}" extension=".xml" style="doelids.xsl" processor="trax" force="true">
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{file.name}" tofile="${output.dir}/@{file.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -454,7 +616,18 @@
       </sequential>
     </for>
 
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]">
+        <param name="file.name" path="name/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{file.name}" out="${temp.dir}/@{file.name}" extension=".xml" style="doelids.xsl" processor="trax" force="true">
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{file.name}" tofile="${output.dir}/@{file.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -484,19 +657,19 @@
   <target name="besluitregelingids" description="Verandert Besluit en RegelingsIds door er een datum/tijd string in het vrij invulbare deel te zetten.">
     <!-- BESLUIT -->
     <!-- REGELING -->
-    <xmltask source="${temp_0.dir}/index.xml">
+    <xmltask source="${temp.dir}/index.xml">
       <call path="index/file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]">
         <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <actions>
           <echo message="besluitregelingids"></echo>
-          <xslt in="${output_0.dir}/@{besluit.name}" out="${temp_0.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+          <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
             <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
           </xslt>
-          <copy file="${temp_0.dir}/@{besluit.name}" tofile="${output_0.dir}/@{besluit.name}"/>
+          <copy file="${temp.dir}/@{besluit.name}" tofile="${output.dir}/@{besluit.name}"/>
         </actions>
       </call>
     </xmltask>
-    <xmltask source="${temp_0.dir}/index.xml">
+    <xmltask source="${temp.dir}/index.xml">
       <call path="index">
         <param name="manifest-ow.name" path="file[contains(@type,'manifest-ow.xml')]/name/text()"/>
         <param name="consolidatie" path="consolidatie/text()" default="0"/>
@@ -504,20 +677,20 @@
           <if>
             <equals arg1="@{consolidatie}" arg2="1"/>
             <then>
-              <xslt in="${output_0.dir}/consolidaties.xml" out="${temp_0.dir}/consolidaties.xml" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+              <xslt in="${output.dir}/consolidaties.xml" out="${temp.dir}/consolidaties.xml" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
                 <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
               </xslt>
-              <copy file="${temp_0.dir}/consolidaties.xml" tofile="${output_0.dir}/consolidaties.xml"/>
-              <xslt in="${output_0.dir}/manifest-bhkv.xml" out="${temp_0.dir}/manifest-bhkv.xml" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+              <copy file="${temp.dir}/consolidaties.xml" tofile="${output.dir}/consolidaties.xml"/>
+              <xslt in="${output.dir}/manifest-bhkv.xml" out="${temp.dir}/manifest-bhkv.xml" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
                 <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
               </xslt>
-              <copy file="${temp_0.dir}/manifest-bhkv.xml" tofile="${output_0.dir}/manifest-bhkv.xml"/>
+              <copy file="${temp.dir}/manifest-bhkv.xml" tofile="${output.dir}/manifest-bhkv.xml"/>
             </then>
           </if>
-          <xslt in="${output_0.dir}/@{manifest-ow.name}" out="${temp_0.dir}/@{manifest-ow.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+          <xslt in="${output.dir}/@{manifest-ow.name}" out="${temp.dir}/@{manifest-ow.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
             <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
           </xslt>
-          <copy file="${temp_0.dir}/@{manifest-ow.name}" tofile="${output_0.dir}/@{manifest-ow.name}"/>
+          <copy file="${temp.dir}/@{manifest-ow.name}" tofile="${output.dir}/@{manifest-ow.name}"/>
         </actions>
       </call>
     </xmltask>
@@ -564,7 +737,18 @@
       </sequential>
     </for>
     <!-- GIO's -->
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/file[contains(@type,'gio.xml')]">
+        <param name="giofile.name" path="name/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{giofile.name}" out="${temp.dir}/@{giofile.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{giofile.name}" tofile="${output.dir}/@{giofile.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -590,7 +774,18 @@
       </sequential>
     </for>
     <!-- PDF's -->
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/file[contains(@type,'doc.pdf')]">
+        <param name="pdffile.name" path="name/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{pdffile.name}" out="${temp.dir}/@{pdffile.name}" extension=".xml" style="besluit_regelingids.xsl" processor="trax" force="true">
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{pdffile.name}" tofile="${output.dir}/@{pdffile.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -618,7 +813,20 @@
   </target>
   
   <target name="intrekkingopvolgervan" description="Verandert Besluit en RegelingsIds door er een datum/tijd string in het vrij invulbare deel te zetten.">
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/Regeling">
+        <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
+        <param name="origineleregelingsFBRWork" path="OrigineleregelingsFBRWork/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="intrekkingopvolgervan.xsl" processor="trax" force="true">
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+            <param name="origineleregelingsFBRWork" expression="@{origineleregelingsFBRWork}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{besluit.name}" tofile="${output.dir}/@{besluit.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -626,7 +834,7 @@
             <xmltask source="${temp_@{number}.dir}/index.xml">
               <call path="index/Regeling">
                 <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
-                <param name="origineleregelingFBRWork" path="origineleregelingFBRWork/text()"/>
+                <param name="origineleregelingsFBRWork" path="OrigineleregelingsFBRWork/text()"/>
                 <actions>
                   <if>
                     <available file="bron_@{number}" type="dir"/>
@@ -636,7 +844,7 @@
                         <then>
                           <xslt in="${output_@{number}.dir}/@{besluit.name}" out="${temp_@{number}.dir}/@{besluit.name}" extension=".xml" style="intrekkingopvolgervan.xsl" processor="trax" force="true">
                             <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
-                            <param name="origineleregelingFBRWork" expression="@{origineleregelingFBRWork}"/>
+                            <param name="origineleregelingsFBRWork" expression="@{origineleregelingsFBRWork}"/>
                           </xslt>
                           <copy file="${temp_@{number}.dir}/@{besluit.name}" tofile="${output_@{number}.dir}/@{besluit.name}"/>
                         </then>
@@ -653,7 +861,24 @@
   </target>
 
   <target name="informatieobjectRefs" description="Vervangt de GIO-objctrefs in besluit, gio's en gml's">
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/besluit/informatieobjectRef[gio]">
+        <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
+        <param name="oldIoRefId" path="oldIoRefId/text()"/>
+        <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
+        <param name="gmlFile" path="gml/text()"/>
+        <param name="gioFile" path="gio/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
+            <param name="oldIoRefId" expression="@{oldIoRefId}"/>
+            <param name="oldIoWorkId" expression="@{oldIoWorkId}"/>
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{besluit.name}" tofile="${output.dir}/@{besluit.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -684,7 +909,23 @@
         </if>
       </sequential>
     </for>
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/besluit/informatieobjectRef[gio]">
+        <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
+        <param name="oldIoRefId" path="oldIoRefId/text()"/>
+        <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
+        <param name="gmlFile" path="gml/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{gmlFile}" out="${temp.dir}/@{gmlFile}" extension=".gml" style="informatieobjectRefs.xsl" processor="trax" force="true">
+            <param name="oldIoRefId" expression="@{oldIoRefId}"/>
+            <param name="oldIoWorkId" expression="@{oldIoWorkId}"/>
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{gmlFile}" tofile="${output.dir}/@{gmlFile}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -714,7 +955,23 @@
         </if>
       </sequential>
     </for>
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/besluit/informatieobjectRef[gio]">
+        <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
+        <param name="oldIoRefId" path="oldIoRefId/text()"/>
+        <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
+        <param name="gioFile" path="gio/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{gioFile}" out="${temp.dir}/@{gioFile}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
+            <param name="oldIoRefId" expression="@{oldIoRefId}"/>
+            <param name="oldIoWorkId" expression="@{oldIoWorkId}"/>
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{gioFile}" tofile="${output.dir}/@{gioFile}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -744,7 +1001,23 @@
         </if>
       </sequential>
     </for>
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/besluit/informatieobjectRef[doc]">
+        <param name="besluit.name" path="../../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
+        <param name="oldIoRefId" path="oldIoRefId/text()"/>
+        <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
+        <param name="docFile" path="doc/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{docFile}" out="${temp.dir}/@{docFile}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
+            <param name="oldIoRefId" expression="@{oldIoRefId}"/>
+            <param name="oldIoWorkId" expression="@{oldIoWorkId}"/>
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{docFile}" tofile="${output.dir}/@{docFile}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -777,7 +1050,22 @@
   </target>
   
   <target name="historischInformatieobjectRefs" description="Vervangt de GIO-objectrefs in besluit, gio's en gml's">
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/historischInformatieobjectRef">
+        <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
+        <param name="oldIoRefId" path="oldIoRefId/text()"/>
+        <param name="oldIoWorkId" path="oldIoWorkId/text()"/>
+        <actions>
+          <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="informatieobjectRefs.xsl" processor="trax" force="true">
+            <param name="oldIoRefId" expression="@{oldIoRefId}"/>
+            <param name="oldIoWorkId" expression="@{oldIoWorkId}"/>
+            <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
+          </xslt>
+          <copy file="${temp.dir}/@{besluit.name}" tofile="${output.dir}/@{besluit.name}"/>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -810,7 +1098,24 @@
 
 
   <target name="checksum_gio" description="Gebruikt de informatie van de interne ANT checksum functionaliteit.">
-    <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+    <xmltask source="${temp.dir}/index.xml">
+      <call path="index/file[contains(@type,'gio.xml')]">
+        <param name="giofile.name" path="name/text()"/>
+        <param name="consolidatie" path="consolidatie/text()" default="0"/>
+        <actions>
+          <if>
+            <equals arg1="@{consolidatie}" arg2="0"/>
+            <then>
+              <xslt in="${output.dir}/@{giofile.name}" out="${temp.dir}/@{giofile.name}" extension=".xml" style="checksum_hash.xsl" processor="trax" force="true">
+                <param name="temp.dir" expression="${temp.dir}"/>
+              </xslt>
+              <copy file="${temp.dir}/@{giofile.name}" tofile="${output.dir}/@{giofile.name}"/>
+            </then>
+          </if>
+        </actions>
+      </call>
+    </xmltask>
+    <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
       <sequential>
         <if>
           <available file="bron_@{number}" type="dir"/>
@@ -840,14 +1145,19 @@
   <!-- maak hash-code -->
 
   <target name="checksum" description="Maak hash-codes">
-    <xmltask source="${temp_0.dir}/index.xml">
+    <xmltask source="${temp.dir}/index.xml">
       <call path="index">
         <param name="consolidatie" path="consolidatie/text()" default="0"/>
         <actions>
           <if>
             <equals arg1="@{consolidatie}" arg2="0"/>
             <then>
-              <for list="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
+              <foreach target="checksum.execute" param="file.fullname">
+                <path>
+                  <fileset dir="${output.dir}"/>
+                </path>
+              </foreach>
+              <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
                 <sequential>
                   <if>
                     <available file="bron_@{number}" type="dir"/>
@@ -871,7 +1181,7 @@
   <target name="checksum.execute">
     <basename property="file.name" file="${file.fullname}"/>
     <checksum file="${file.fullname}" algorithm="SHA-512" property="file.checksum"/>
-    <xslt in="template.xml" out="${temp_0.dir}/checksum/${file.name}.xml" style="checksum.xsl" processor="trax" force="true">
+    <xslt in="template.xml" out="${temp.dir}/checksum/${file.name}.xml" style="checksum.xsl" processor="trax" force="true">
       <param name="file.name" expression="${file.name}"/>
       <param name="file.fullname" expression="${file.fullname}"/>
       <param name="file.checksum" expression="${file.checksum}"/>
@@ -881,9 +1191,9 @@
   <target name="checksum.execute.2">
     <basename property="file.name" file="${file.fullname}"/>
     <dirname property="_dir" file="${file.fullname}"/>
-    <script language="javascript"> var before = project.getProperty("_dir"); project.setProperty("temp_0.dir", before.replaceAll("resultaat_", "temp_")); </script>
+    <script language="javascript"> var before = project.getProperty("_dir"); project.setProperty("temp.dir", before.replaceAll("resultaat_", "temp_")); </script>
     <checksum file="${file.fullname}" algorithm="SHA-512" property="file.checksum"/>
-    <xslt in="template.xml" out="${temp_0.dir}/checksum/${file.name}.xml" style="checksum.xsl" processor="trax" force="true">
+    <xslt in="template.xml" out="${temp.dir}/checksum/${file.name}.xml" style="checksum.xsl" processor="trax" force="true">
       <param name="file.name" expression="${file.name}"/>
       <param name="file.fullname" expression="${file.fullname}"/>
       <param name="file.checksum" expression="${file.checksum}"/>
