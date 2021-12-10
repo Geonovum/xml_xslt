@@ -25,7 +25,7 @@
 
     <!-- maak manifest-bestand waarin is aangegeven wat de functie van een bestand is -->
 
-    <xsl:variable name="dateTime" select="format-dateTime(current-dateTime(), '[Y0001][M01][D01][h01][m01][s01]')"/>
+    <xsl:variable name="dateTime" select="format-dateTime(current-dateTime(), '[Y0001][M01][D01][H01][m01][s01]')"/>
 
     <xsl:template name="index">
         <xsl:element name="index">
