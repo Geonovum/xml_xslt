@@ -1,28 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Aanleveringen xmlns="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
-               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<Aanleveringen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
                xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/generiek/manifest-ow.xsd">
    <domein>omgevingswet</domein>
    <Aanlevering>
-      <manifest-ow:WorkIDRegeling xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211104040730</manifest-ow:WorkIDRegeling>
-      <manifest-ow:DoelID xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">/join/id/proces/gm1979/2021/omgevingsplandelfzijl_geonovum-20211104040730</manifest-ow:DoelID>
+      <manifest-ow:WorkIDRegeling xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">/akn/nl/act/gm0297/2019/reg456-20211211085336</manifest-ow:WorkIDRegeling>
+      <manifest-ow:DoelID xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">/join/id/proces/gm0297/2019/Instelling-20211211085336</manifest-ow:DoelID>
       <Bestand>
-         <naam>gm1979Regeltekst_Geonovum.xml</naam>
-         <objecttype>Regeltekst</objecttype>
-         <objecttype>RegelVoorIedereen</objecttype>
-      </Bestand>
-      <Bestand>
-         <naam>gm1979Activiteiten_Geonovum.xml</naam>
+         <naam>owActiviteiten-Gemeentestad.xml</naam>
          <objecttype>Activiteit</objecttype>
       </Bestand>
       <Bestand>
-         <naam>gm1979Regelingsgebied_Geonovum.xml</naam>
-         <objecttype>Regelingsgebied</objecttype>
+         <naam>owGebiedsaanwijzingen-Gemeentestad.xml</naam>
+         <objecttype>Gebiedsaanwijzing</objecttype>
       </Bestand>
       <Bestand>
-         <naam>gm1979Locaties_Geonovum.xml</naam>
-         <objecttype>Gebied</objecttype>
-         <objecttype>Gebiedengroep</objecttype>
+         <naam>owKaart.xml</naam>
+         <objecttype>Kaart</objecttype>
       </Bestand>
+      <Bestand>
+         <naam>owPons-Gemeentestad.xml</naam>
+         <objecttype>Pons</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owOmgevingsnormOmgevingswaarde.xml</naam>
+         <objecttype>Omgevingsnorm</objecttype>
+         <objecttype>Omgevingswaarde</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owLocaties-Gemeentestad.xml</naam>
+         <objecttype>Gebiedengroep</objecttype>
+         <objecttype>Gebied</objecttype>
+		       <objecttype>Ambtsgebied</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owRegeltekst-Gemeentestad.xml</naam>
+         <objecttype>Regeltekst</objecttype>
+         <objecttype>RegelVoorIedereen</objecttype>
+         <objecttype>Omgevingswaarderegel</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owRegelingsgebied.xml</naam>
+         <objecttype>Regelingsgebied</objecttype>
+      </Bestand>
+     <Bestand>
+         <naam>owSymbolisatieItem.xml</naam>
+         <objecttype>SymbolisatieItem</objecttype>
+     </Bestand>
    </Aanlevering>
 </Aanleveringen>

@@ -3,6 +3,8 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
     version="2.0">
+    <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
+    <xsl:strip-space elements="*"/>
     
     <xsl:key name="owFile" match="file" use="name"/>
     <xsl:key name="bovenliggendeActiviteit" match="bovenliggendeActiviteitRelatie" use="bovenliggendeActiviteitIdLokaalAanwezig"/>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+	  <sl:standBestand>
+		    <sl:dataset>Gemeentestad</sl:dataset>
+		    <sl:inhoud>
+			      <sl:gebied>Gemeentestad</sl:gebied>
+			      <sl:leveringsId>id-directeMutatie-1234-</sl:leveringsId>
+			      <sl:objectTypen>
+				        <sl:objectType>Activiteit</sl:objectType>
+			      </sl:objectTypen>
+		    </sl:inhoud>
+		    <!-- artikel 2.4 -->
+		    <sl:stand>
+			      <ow-dc:owObject>
+				        <rol:Activiteit>
+					          <rol:identificatie>nl.imow-gm0297.activiteit.201900024120211211085336</rol:identificatie>
+					          <rol:naam>uitoefenen van bedrijfstypen van categorie 3</rol:naam>
+               <!-- 10a: Gewijzigd van 2 naar 3 -->
+					          <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Standplaatsactiviteit</rol:groep>
+					          <rol:gerelateerdeActiviteit>
+						            <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.201900024620211211085336"/> 
+                  <!--10d gerelateerd aan uitoefenen van detailhandel in ter plaatse vervaardigde goederen-->
+					          </rol:gerelateerdeActiviteit>
+					          <rol:bovenliggendeActiviteit>
+						            <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+					          </rol:bovenliggendeActiviteit>
+				        </rol:Activiteit>
+			      </ow-dc:owObject>
+		    </sl:stand>
+		    <sl:stand>
+			      <ow-dc:owObject>
+				        <rol:Activiteit>
+					          <rol:identificatie>nl.imow-gm0297.activiteit.201900024620211211085336</rol:identificatie>
+					          <rol:naam>uitoefenen van detailhandel in ter plaatse vervaardigde goederen</rol:naam>
+					          <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Standplaatsactiviteit</rol:groep>
+               <!-- 10f: was http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel -->
+					          <rol:bovenliggendeActiviteit>
+						            <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+					          </rol:bovenliggendeActiviteit>
+				        </rol:Activiteit>
+			      </ow-dc:owObject>
+		    </sl:stand>
+		    <!-- artikel 2.7 -->
+		    <sl:stand>
+			      <ow-dc:owObject>
+				        <rol:Activiteit>
+					          <rol:identificatie>nl.imow-gm0297.activiteit.201900054020211211085336</rol:identificatie>
+					          <rol:naam>exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg</rol:naam>
+					          <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</rol:groep>
+					          <rol:gerelateerdeActiviteit>
+						            <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.201900076020211211085336"/>
+					          </rol:gerelateerdeActiviteit>
+					          <rol:bovenliggendeActiviteit>
+						            <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.201900024120211211085336"/>
+                  <!-- 10c: was nl.imow-mn002.activiteit.ActiviteitGevolgenFysiekeLeefomg -->
+					          </rol:bovenliggendeActiviteit>
+				        </rol:Activiteit>
+			      </ow-dc:owObject>
+		    </sl:stand>
+		    <sl:stand>
+			      <ow-dc:owObject>
+				        <rol:Activiteit>
+					          <ow:status>beëindigen</ow:status> 
+               <!--10b verwijderde activiteit-->
+					          <rol:identificatie>nl.imow-gm0297.activiteit.201900076020211211085336</rol:identificatie>
+					          <rol:naam>opslaan van motorbrandstoffen niet zijnde lpg</rol:naam>
+					          <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Opslagactiviteit</rol:groep>
+					          <rol:bovenliggendeActiviteit>
+						            <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+					          </rol:bovenliggendeActiviteit>
+				        </rol:Activiteit>
+			      </ow-dc:owObject>
+		    </sl:stand>
+		    <!-- artikel 2.10 -->
+        <sl:stand><!-- 10e: sporten -->
+        	<ow-dc:owObject>
+        		  <rol:Activiteit>
+        			    <rol:identificatie>nl.imow-gm0297.activiteit.201900069020211211085336</rol:identificatie>
+        			    <rol:naam>sporten</rol:naam>
+        			    <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Sportactiviteit</rol:groep>
+        			    <rol:bovenliggendeActiviteit>
+        				      <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+        			    </rol:bovenliggendeActiviteit>
+        		  </rol:Activiteit>
+        	</ow-dc:owObject>
+        </sl:stand>
+		    <sl:stand>
+			      <ow-dc:owObject><!-- 10e: wonen -->
+				        <rol:Activiteit>
+					          <rol:identificatie>nl.imow-gm0297.activiteit.201900070020211211085336</rol:identificatie>
+					          <rol:naam>wonen</rol:naam>
+					          <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Woonactiviteit</rol:groep>
+					          <rol:bovenliggendeActiviteit>
+						            <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+					          </rol:bovenliggendeActiviteit>
+				        </rol:Activiteit>
+			      </ow-dc:owObject>
+		    </sl:stand>
+		    <sl:stand>
+			      <ow-dc:owObject><!-- 10e: uitoefenen van een beroep aan huis -->
+				        <rol:Activiteit>
+					          <rol:identificatie>nl.imow-gm0297.activiteit.201900071020211211085336</rol:identificatie>
+					          <rol:naam>uitoefenen van een beroep aan huis</rol:naam>
+					          <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteitMetBeperktEffect</rol:groep>
+					          <rol:bovenliggendeActiviteit>
+						            <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+					          </rol:bovenliggendeActiviteit>
+				        </rol:Activiteit>
+				     </ow-dc:owObject>
+		    </sl:stand>
+		    <sl:stand>
+			      <ow-dc:owObject><!-- 10e: exploiteren van een aan de woonfunctie ondergeschikt bedrijf aan huis -->
+				        <rol:Activiteit>
+					          <rol:identificatie>nl.imow-gm0297.activiteit.201900072020211211085336</rol:identificatie>
+					          <rol:naam>exploiteren van een aan de woonfunctie ondergeschikt bedrijf aan huis</rol:naam>
+					          <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteitMetBeperktEffect</rol:groep>
+					          <rol:bovenliggendeActiviteit>
+						            <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+					          </rol:bovenliggendeActiviteit>
+				        </rol:Activiteit>
+				     </ow-dc:owObject>
+		    </sl:stand>
+	  </sl:standBestand>
+</ow-dc:owBestand>

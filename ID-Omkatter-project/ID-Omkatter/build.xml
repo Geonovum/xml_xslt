@@ -444,6 +444,7 @@
   </target>
 
   <target name="leveringid_opdrachtparameters" description="Verandert leveringid en enkele andere parameters in opdracht en ow-bestanden door er een datum/tijd string achter te zetten.">
+    <!-- GW: vreemd dat de opdracht.xml uit output-map wordt genomen en niet uit bron-map -->
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/leveringId">
         <param name="opdracht.name" path="@sourcefile"/>
@@ -472,7 +473,7 @@
                 <param name="newId" path="new/text()"/>
                 <actions>
                   <if>
-                    <available file="bron_@{number}/@{opdracht.name}"/>
+                    <available file="${output_@{number}.dir}/@{opdracht.name}"/>
                     <then>
                       <xslt in="${output_@{number}.dir}/@{opdracht.name}" out="${temp_@{number}.dir}/@{opdracht.name}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax" force="true">
                         <param name="newId" expression="@{newId}"/>
@@ -487,7 +488,7 @@
         </if>
       </sequential>
     </for>
-
+    
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/file[contains(@ow,'true')]">
         <param name="sourceFileName" path="name/text()"/>
@@ -501,7 +502,7 @@
         </actions>
       </call>
     </xmltask>
-
+    
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/leveringId/referencefile">
         <param name="referencefile.name" path="text()"/>
@@ -527,10 +528,9 @@
                 <param name="newId" path="../new/text()"/>
                 <actions>
                   <if>
-                    <available file="bron_@{number}/@{referencefile.name}"/>
+                    <available file="${output_@{number}.dir}/@{referencefile.name}"/>
                     <then>
-                      <xslt in="${output_@{number}.dir}/@{referencefile.name}" out="${temp_@{number}.dir}/@{referencefile.name}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax"
-                        force="true">
+                      <xslt in="${output_@{number}.dir}/@{referencefile.name}" out="${temp_@{number}.dir}/@{referencefile.name}" extension=".xml" style="leveringid_opdracht.xsl" processor="trax" force="true">
                         <param name="newId" expression="@{newId}"/>
                       </xslt>
                       <copy file="${temp_@{number}.dir}/@{referencefile.name}" tofile="${output_@{number}.dir}/@{referencefile.name}"/>

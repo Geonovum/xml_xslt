@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringBesluit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                    schemaversie="1.1.0"
+                    xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering/     https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
+    <BesluitVersie>
+        <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0297/2020/4530-20211211085336</data:FRBRWork>
+            <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0297/2020/4530-20211211085336/nld@2020</data:FRBRExpression>
+            <soortWork>/join/id/stop/work_003</soortWork>
+        </ExpressionIdentificatie>
+        <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <soortBestuursorgaan>/tooi/def/thes/kern/c_2a7d8663</soortBestuursorgaan>
+            <eindverantwoordelijke>/tooi/id/gemeente/gm0297</eindverantwoordelijke>
+            <maker>/tooi/id/gemeente/gm0297</maker>
+            <officieleTitel>Wijzigen GIO</officieleTitel>
+            <alternatieveTitels>
+                <alternatieveTitel>Wijzing volgens scenario 4a</alternatieveTitel>
+            </alternatieveTitels>
+            <onderwerpen>
+                <onderwerp>/tooi/def/concept/c_3afc269f</onderwerp>
+                <!-- ondernemen -->
+            </onderwerpen>
+            <rechtsgebieden>
+                <rechtsgebied>/tooi/def/concept/c_5bbb3a9b</rechtsgebied>
+                <!-- financieel en economisch recht -->
+            </rechtsgebieden>
+            <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
+            <informatieobjectRefs>
+                <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0297/2019/Speelhal-20211211085336/nld@2020-11-06;4530</data:informatieobjectRef>
+            </informatieobjectRefs>
+        </BesluitMetadata>
+        <Procedureverloop xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <bekendOp>2020-10-06</bekendOp>
+            <procedurestappen>
+                <Procedurestap>
+                    <soortStap>/join/id/stop/procedure/stap_002</soortStap>
+                    <!-- Vaststelling -->
+                    <voltooidOp>2020-09-22</voltooidOp>
+                </Procedurestap>
+                <Procedurestap>
+                    <soortStap>/join/id/stop/procedure/stap_003</soortStap>
+                    <!-- Ondertekening -->
+                    <voltooidOp>2020-09-24</voltooidOp>
+                </Procedurestap>
+            </procedurestappen>
+        </Procedureverloop>
+        <ConsolidatieInformatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <BeoogdeRegelgeving>
+                <BeoogdeRegeling>
+                    <doelen>
+                        <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_4a-20211211085336</data:doel>
+                    </doelen>
+                    <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211211085336/nld@7</data:instrumentVersie>
+                    <eId>art_I</eId>
+                </BeoogdeRegeling>
+                <BeoogdInformatieobject>
+                    <doelen>
+                        <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_4a-20211211085336</data:doel>
+                    </doelen>
+                    <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0297/2019/Speelhal-20211211085336/nld@2020-11-06;4530</data:instrumentVersie>
+                    <eId>!wijzig_gio#cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1</eId>
+                </BeoogdInformatieobject>
+            </BeoogdeRegelgeving>
+            <Tijdstempels>
+                <Tijdstempel>
+                    <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_4a-20211211085336</data:doel>
+                    <soortTijdstempel>juridischWerkendVanaf</soortTijdstempel>
+                    <datum>2020-11-03</datum>
+                    <eId>art_II</eId>
+                </Tijdstempel>
+            </Tijdstempels>
+        </ConsolidatieInformatie>
+        <BesluitCompact xmlns="https://standaarden.overheid.nl/stop/imop/tekst/">
+            <RegelingOpschrift wId="longTitle_o_1" eId="longTitle_o_1">
+                <Al>Wijzigen GIO</Al>
+            </RegelingOpschrift>
+            <Aanhef eId="formula_1" wId="formula_1">
+                <Al>De raad van de gemeente Gemeentestad </Al>
+                <Al>gelezen het voorstel van burgemeester en wethouders van 7 september 2020, nr. 2020-4530;</Al>
+                <Al>Gelet op <ExtRef ref="https://wetten.overheid.nl/jci1.3:c:BWBR0005416&amp;titeldeel=III&amp;hoofdstuk=IX&amp;artikel=149"
+                       soort="URL">Gemeentewet, art. 149</ExtRef>.</Al>
+                <Al>in overeenstemming met <b>mutatiescenario 4a</b> verstrekt door <i>de kenniswerksessie van 26 februari 2020;</i>
+                </Al>
+                <Al>overwegende dat het noodzakelijk is gebleken om het werkingsgebied "Exploiteren speelautomatenhal" behorend bij artikel 2.10 te wijzigen.</Al>
+                <Al>besluit:</Al>
+            </Aanhef>
+            <Lichaam wId="body" eId="body">
+                <WijzigArtikel eId="art_I" wId="gm0297_1__art_I">
+                    <Kop>
+                        <Label>Artikel</Label>
+                        <Nummer>I</Nummer>
+                    </Kop>
+                    <Wat>De regeling "Voorbeeldregels met uitbreiding tbv Toepasbare Regels" wordt gewijzigd zoals gegeven in <IntRef scope="WijzigBijlage" ref="cmp_A">Bijlage A</IntRef>.</Wat>
+                </WijzigArtikel>
+                <Artikel eId="art_II" wId="gm0297_1__art_II">
+                    <Kop>
+                        <Label>Artikel</Label>
+                        <Nummer>II</Nummer>
+                    </Kop>
+                    <Inhoud>
+                        <Al>Dit besluit treedt in werking per 3 november 2020</Al>
+                    </Inhoud>
+                </Artikel>
+            </Lichaam>
+            <Sluiting eId="formula_2" wId="formula_2">
+                <Al>Gegeven te Kaap Doorn, Gemeentestad, 22 september 2020</Al>
+                <Ondertekening>
+                    <Al>Gedeputeerde Raad van Apeldoorn tot Den Haag</Al>
+                    <Al>Yue Wan Fan</Al>
+                    <Al>gemeentesecretaris</Al>
+                    <Al>Nadine Bauer</Al>
+                    <Al>Burgemeester</Al>
+                </Ondertekening>
+            </Sluiting>
+            <WijzigBijlage wId="gm0297_1__cmp_A" eId="cmp_A">
+                <Kop>
+                    <Label>Bijlage</Label>
+                    <Nummer>A</Nummer>
+                    <Opschrift>Bijlage bij artikel I</Opschrift>
+                </Kop>
+                <RegelingMutatie componentnaam="wijzig_gio"
+                             was="/akn/nl/act/gm0297/2019/reg456-20211211085336/nld@6"
+                             wordt="/akn/nl/act/gm0297/2019/reg456-20211211085336/nld@7">
+                    <Vervang wat="gm0297_1__cmp_I">
+                        <Nummer>A</Nummer>
+                        <Wat>In Bijlage I Overzicht Geografische Informatieobjecten van de Regeling Omgevingsplan Gemeentestad wordt de GIO Exploiteren speelautomatenhal gewijzigd</Wat>
+                        <Bijlage eId="cmp_I" wId="gm0297_1__cmp_I">
+                            <Kop>
+                                <Label>Bijlage</Label>
+                                <Nummer>I</Nummer>
+                                <Opschrift>Overzicht Informatieobjecten</Opschrift>
+                            </Kop>
+                        <Divisietekst eId="cmp_I__content_o_1" wId="gm0297_1__cmp_I__content_o_1">
+                            <Inhoud>
+                                <Begrippenlijst eId="cmp_I__content_o_1__list_o_1"
+                                           wId="gm0297_1__cmp_I__content_o_1__list_o_1">
+                                    <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_1"
+                                      wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1">
+                                        <Term>Bedrijf categorie 2</Term>
+                                        <Definitie>
+                                            <Al>
+                                                <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+                                                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                                       eId="cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                                       ref="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Bedrijf_categorie_2-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                            </Al>
+                                        </Definitie>
+                                    </Begrip>
+                                    <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_2"
+                                      wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2">
+                                        <Term>Centrumgebied</Term>
+                                        <Definitie>
+                                            <Al>
+                                                <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+                                                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"
+                                                       eId="cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"
+                                                       ref="/join/id/regdata/gm0297/2019/Centrumgebied-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Centrumgebied-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                            </Al>
+                                        </Definitie>
+                                    </Begrip>
+                                    <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_3"
+                                      wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3">
+                                        <Term>Exploiteren speelautomatenhal</Term>
+                                        <Definitie>
+                                            <Al wijzigactie="verwijder">
+                                                <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+                                                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1"
+                                                       eId="cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1_inst2"
+                                                       ref="/join/id/regdata/gm0297/2019/Speelhal-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Speelhal-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                            </Al>
+                                            <Al wijzigactie="voegtoe">
+                                                <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+                                                       wId="gm0297_7__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1"
+                                                       eId="cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1"
+                                                       ref="/join/id/regdata/gm0297/2019/Speelhal-20211211085336/nld@2020-11-06;4530">/join/id/regdata/gm0297/2019/Speelhal-20211211085336/nld@2020-11-06;4530</tekst:ExtIoRef>
+                                            </Al>
+                                        </Definitie>
+                                    </Begrip>
+                                    <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_4"
+                                      wId="gm0297_4__cmp_I__content_o_1__list_o_1__item_o_4">
+                                        <Term>kantoorruimte</Term>
+                                        <Definitie>
+                                            <Al>
+                                                <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+                                                       wId="gm0297_4__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1"
+                                                       eId="cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1"
+                                                       ref="/join/id/regdata/gm0297/2020/Kantoorruimte-20211211085336/nld@2020-09-11;6045">/join/id/regdata/gm0297/2020/Kantoorruimte-20211211085336/nld@2020-09-11;6045</tekst:ExtIoRef>
+                                            </Al>
+                                        </Definitie>
+                                    </Begrip>
+                                    <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_5"
+                                      wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4">
+                                        <Term>Maximum bouwhoogte bedrijfsgebouw</Term>
+                                        <Definitie>
+                                            <Al>
+                                                <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+                                                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1"
+                                                       eId="cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1"
+                                                       ref="/join/id/regdata/gm0297/2019/Bouwhoogte-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Bouwhoogte-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                            </Al>
+                                        </Definitie>
+                                    </Begrip>
+                                    <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_6"
+                                      wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5">
+                                        <Term>Welstandsniveau</Term>
+                                        <Definitie>
+                                            <Al>
+                                                <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+                                                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1"
+                                                       eId="cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1"
+                                                       ref="/join/id/regdata/gm0297/2019/Welstand-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Welstand-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                            </Al>
+                                        </Definitie>
+                                    </Begrip>
+                                    <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_7"
+                                      wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6">
+                                        <Term>Zone A</Term>
+                                        <Definitie>
+                                            <Al>
+                                                <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+                                                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1"
+                                                       eId="cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1"
+                                                       ref="/join/id/regdata/gm0297/2019/Zone_A-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zone_A-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                            </Al>
+                                        </Definitie>
+                                    </Begrip>
+                                    <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_8"
+                                      wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7">
+                                        <Term>Zone B</Term>
+                                        <Definitie>
+                                            <Al>
+                                                <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+                                                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1"
+                                                       eId="cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1"
+                                                       ref="/join/id/regdata/gm0297/2019/Zone_B-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zone_B-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                            </Al>
+                                        </Definitie>
+                                    </Begrip>
+                              <!--                                    <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_9" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8">
+                                        <Term>Zuilichem</Term>
+                                        <Definitie>
+                                            <Al>
+                                                <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_9__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1" ref="/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520</ExtIoRef>
+                                            </Al>
+                                        </Definitie>
+                                    </Begrip>-->
+                                </Begrippenlijst>
+                            </Inhoud>
+                        </Divisietekst>
+                        </Bijlage>
+                    </Vervang>
+                    <!--revisie om te zorgen dat het niet meekomt in de bekendmakingen-PDF, maar wel aangepast wordt.-->
+                    <Vervang wat="gm0297_1__chp_2__subchp_2.3__art_2.10" revisie="1">
+                        <Nummer>B</Nummer>
+                        <Wat>Artikel 2.10 lijst item i wordt gewijzigd vanwege een GIO wijziging</Wat>
+                        <Artikel eId="chp_2__subchp_2.3__art_2.10"
+                           wId="gm0297_1__chp_2__subchp_2.3__art_2.10">
+                            <Kop>
+                                <Label>Artikel</Label>
+                                <Nummer>2.10</Nummer>
+                                <Opschrift>Gebruiksactiviteiten die zonder vergunning of melding zijn toegestaan</Opschrift>
+                            </Kop>
+                            <Inhoud>
+                                <Lijst eId="chp_2__subchp_2.3__art_2.10__list_o_1"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1"
+                               type="expliciet">
+                                    <Lijstaanhef>Ter plaatse van het werkingsgebied van de functie '<IntIoRef eId="chp_2__subchp_2.3__art_2.10__list_o_1__ref_o_1"
+                                        wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__ref_o_1"
+                                        ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1">Centrumgebied</IntIoRef>' mag de locatie in ieder geval worden gebruikt voor het verrichten van de volgende gebruiksactiviteiten:</Lijstaanhef>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_a"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_a">
+                                        <LiNummer>a.</LiNummer>
+                                        <Al>het exploiteren van een bedrijf;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_b"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_b">
+                                        <LiNummer>b.</LiNummer>
+                                        <Al>het exploiteren van een instelling voor cultuur en ontspanning;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_c"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_c">
+                                        <LiNummer>c.</LiNummer>
+                                        <Al>het uitoefenen van detailhandel;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_d"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_d">
+                                        <LiNummer>d.</LiNummer>
+                                        <Al>het uitoefenen van dienstverlening;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_e"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_e">
+                                        <LiNummer>e.</LiNummer>
+                                        <Al>het exploiteren van een horeca-inrichting;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_f"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_f">
+                                        <LiNummer>f.</LiNummer>
+                                        <Al>het exploiteren van een kantoor;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_g"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_g">
+                                        <LiNummer>g.</LiNummer>
+                                        <Al>het exploiteren van een instelling voor maatschappelijke voorzieningen;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_h"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_h">
+                                        <LiNummer>h.</LiNummer>
+                                        <Al>het exploiteren van een centrale voor het verwerken van huishoudelijk afval;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_i"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_i">
+                                        <LiNummer>i.</LiNummer>
+                                        <Al>het exploiteren van een speelautomatenhal, uitsluitend ter plaatse van het werkingsgebied '<VerwijderdeTekst>
+                                    <IntIoRef eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_i__ref_o_1_inst2"
+                                              wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_i__ref_o_1"
+                                              ref="gm0297_7__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1">exploiteren speelautomatenhal</IntIoRef>
+                                 </VerwijderdeTekst>
+                                 <NieuweTekst>
+                                    <IntIoRef eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_i__ref_o_1"
+                                              wId="gm0297_2__chp_2__subchp_2.3__art_2.10__list_o_1__item_i__ref_o_1"
+                                              ref="gm0297_7__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1">exploiteren speelautomatenhal</IntIoRef>
+                                 </NieuweTekst>'; </Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_j"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_j">
+                                        <LiNummer>j.</LiNummer>
+                                        <Al>het aanleggen en instandhouden van openbaar groen;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_k"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_k">
+                                        <LiNummer>k.</LiNummer>
+                                        <Al>het recreëren;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_l"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_l">
+                                        <LiNummer>l.</LiNummer>
+                                        <Al>het sporten;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_m"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_m">
+                                        <LiNummer>m.</LiNummer>
+                                        <Al>het wonen;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_n"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_n">
+                                        <LiNummer>n.</LiNummer>
+                                        <Al>het uitoefenen van een beroep aan huis;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_o"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_o">
+                                        <LiNummer>o.</LiNummer>
+                                        <Al>het exploiteren van een aan de woonfunctie ondergeschikt bedrijf aan huis;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_p"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_p">
+                                        <LiNummer>p.</LiNummer>
+                                        <Al>het aanleggen en instandhouden van tuin en/of erf;</Al>
+                                    </Li>
+                                    <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_q"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_q">
+                                        <LiNummer>q.</LiNummer>
+                                        <Al>het aanleggen en instandhouden van de openbare ruimte , waaronder in ieder geval worden begrepen voorzieningen voor de waterhuishouding, voetpaden, fietspaden, wegen en voorzieningen die het verblijf in de openbare ruimte vergemakkelijken, zoals verlichting,</Al>
+                                    </Li>
+                                </Lijst>
+                            </Inhoud>
+                        </Artikel>
+                    </Vervang>
+                </RegelingMutatie>
+            </WijzigBijlage>
+        </BesluitCompact>
+    </BesluitVersie>
+    <RegelingVersieInformatie>
+        <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211211085336</data:FRBRWork>
+            <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211211085336/nld@7</data:FRBRExpression>
+            <soortWork>/join/id/stop/work_019</soortWork>
+        </ExpressionIdentificatie>
+        <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <versienummer>7</versienummer>
+        </RegelingVersieMetadata>
+    </RegelingVersieInformatie>
+</AanleveringBesluit>
