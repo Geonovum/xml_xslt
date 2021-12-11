@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Aanleveringen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
+               xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/generiek/manifest-ow.xsd">
+  <domein>omgevingswet</domein>
+  <Aanlevering>
+      <manifest-ow:WorkIDRegeling xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">/akn/nl/act/gm0297/2019/reg456-20211211113347</manifest-ow:WorkIDRegeling>
+      <manifest-ow:DoelID xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">/join/id/proces/gm0297/2020/mutatie_opdracht_3b-20211211113347</manifest-ow:DoelID>
+      <Bestand>
+         <naam>owActiviteiten-Gemeentestad.xml</naam>
+         <objecttype>Activiteit</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owRegelingsgebied.xml</naam>
+         <objecttype>Regelingsgebied</objecttype>
+      </Bestand>
+  </Aanlevering>
+</Aanleveringen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Aanleveringen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
+  xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/generiek/manifest-ow.xsd">
+  <domein>omgevingswet</domein>
+  <Aanlevering>
+    <WorkIDRegeling>/akn/nl/act/gm0297/2019/reg456</WorkIDRegeling>
+    <DoelID>/join/id/proces/gm0297/2020/mutatie_opdracht_4b</DoelID>
+    <Bestand>
+      <naam>owOmgevingsnormOmgevingswaarde.xml</naam>
+      <objecttype>Omgevingsnorm</objecttype>
+    </Bestand>
+  </Aanlevering>
+</Aanleveringen>

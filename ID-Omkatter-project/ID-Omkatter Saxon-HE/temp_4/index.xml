@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+   <alreadyRetrievedDateTime>20211211113347</alreadyRetrievedDateTime>
+   <regeling>
+      <origineleregelingFRBRWork>/akn/nl/act/gm0297/2019/reg456</origineleregelingFRBRWork>
+   </regeling>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Centrumgebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Speelhal</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Bouwhoogte</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Welstand</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zone_A</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zone_B</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zuilichem</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/PDF</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/PDF/nld@2020-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2021/Ponsgebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2021/Ponsgebied/nld@2021-01-01;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Kantoorruimte</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Kantoorruimte/nld@2020-09-11;6045</oldIoRefId>
+   </historischInformatieobjectRef>
+   <besluit>
+      <informatieobjectRef>
+         <gio>GIO011-Kantoorruimte.xml</gio>
+         <gml>kantoorruimte.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm0297/2020/Kantoorruimte</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm0297/2020/Kantoorruimte/nld@2020-09-11;6045</oldIoRefId>
+      </informatieobjectRef>
+   </besluit>
+   <leveringId sourcefile="opdracht.xml">
+      <referencefile>owGebiedsaanwijzingen-Gemeentestad.xml</referencefile>
+      <referencefile>owLocaties-Gemeentestad.xml</referencefile>
+      <referencefile>owRegeltekst-Gemeentestad.xml</referencefile>
+      <new>id-publicatie-1234-20211211113347</new>
+   </leveringId>
+   <guids>
+      <guidInOw locatiefile="owLocaties-Gemeentestad.xml" gmlfile="kantoorruimte.gml">
+         <org>7168bb47-4839-433d-a8d6-8ae7f22c4fb9</org>
+         <new>6cba43da-28d1-4c67-8060-1309ab37df77</new>
+      </guidInOw>
+   </guids>
+   <file type="besluit.xml" ow="false">
+      <name>Besluit_wijzigen_exploiteren_kantoorruimte.xml</name>
+   </file>
+   <file type="opdracht.xml" ow="false">
+      <name>opdracht.xml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>kantoorruimte.gml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>GIO011-Kantoorruimte.xml</name>
+   </file>
+   <file type="gebiedsaanwijzing.xml" ow="true">
+      <name>owGebiedsaanwijzingen-Gemeentestad.xml</name>
+   </file>
+   <file type="locatie.xml" ow="true">
+      <name>owLocaties-Gemeentestad.xml</name>
+   </file>
+   <file type="regeltekst.xml" ow="true">
+      <name>owRegeltekst-Gemeentestad.xml</name>
+   </file>
+   <file type="manifest-ow.xml" ow="false">
+      <name>manifest-ow.xml</name>
+   </file>
+</index>

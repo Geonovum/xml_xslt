@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+   <alreadyRetrievedDateTime>20211211113347</alreadyRetrievedDateTime>
+   <leveringId sourcefile="opdracht.xml">
+      <referencefile>owActiviteiten-Gemeentestad.xml</referencefile>
+      <referencefile>owRegeltekst-Gemeentestad.xml</referencefile>
+      <new>id-directeMutatie-1234-20211211113347</new>
+   </leveringId>
+   <file type="regeltekst.xml" ow="true">
+      <name>owRegeltekst-Gemeentestad.xml</name>
+   </file>
+   <file type="activiteit.xml" ow="true">
+      <name>owActiviteiten-Gemeentestad.xml</name>
+   </file>
+   <file type="manifest-ow.xml" ow="false">
+      <name>manifest-ow.xml</name>
+   </file>
+   <bovenliggendeActiviteitRelatie>
+      <name>owActiviteiten-Gemeentestad.xml</name>
+      <bovenliggendeActiviteitIdLokaalAanwezig>nl.imow-gm0297.activiteit.2019000241</bovenliggendeActiviteitIdLokaalAanwezig>
+   </bovenliggendeActiviteitRelatie>
+   <gerelateerdeActiviteitRelatie>
+      <name>owActiviteiten-Gemeentestad.xml</name>
+      <gerelateerdeActiviteitIdLokaalAanwezig>nl.imow-gm0297.activiteit.2019000246</gerelateerdeActiviteitIdLokaalAanwezig>
+   </gerelateerdeActiviteitRelatie>
+   <gerelateerdeActiviteitRelatie>
+      <name>owActiviteiten-Gemeentestad.xml</name>
+      <gerelateerdeActiviteitIdLokaalAanwezig>nl.imow-gm0297.activiteit.2019000760</gerelateerdeActiviteitIdLokaalAanwezig>
+   </gerelateerdeActiviteitRelatie>
+</index>

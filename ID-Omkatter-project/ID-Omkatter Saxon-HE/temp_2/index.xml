@@ -1,134 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?><index>
-   <dateTime>20211210092550</dateTime>
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+   <alreadyRetrievedDateTime>20211211113347</alreadyRetrievedDateTime>
    <regeling>
-      <origineleregelingFBRWork>/akn/nl/act/gm1979/2021/omgevingsplandelfzijl</origineleregelingFBRWork>
+      <origineleregelingFRBRWork>/akn/nl/act/gm0297/2019/reg456</origineleregelingFRBRWork>
    </regeling>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur/nld@2021-10-12;2</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Punt</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Punt/nld@2021-10-12;2</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Centrumgebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm1979/2021/casino</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm1979/2021/casino/nld@2021-10-12;2</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Speelhal</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/regdata/gm1979/2021/regdata</oldIoWorkId>
-      <oldIoRefId>/join/id/regdata/gm1979/2021/regdata/nld@2021-10-11;1</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Bouwhoogte</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520</oldIoRefId>
    </historischInformatieobjectRef>
    <historischInformatieobjectRef>
-      <oldIoWorkId>/join/id/pubdata/gm1979/2021/pubdata</oldIoWorkId>
-      <oldIoRefId>/join/id/pubdata/gm1979/2021/pubdata/nld@2021-10-11;1</oldIoRefId>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Welstand</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520</oldIoRefId>
    </historischInformatieobjectRef>
-   <besluit>
-      <informatieobjectRef>
-         <gio>Delfzijl_Hoofdinfrastructuur.xml</gio>
-         <gml>Delfzijl_Hoofdinfrastructuur.gml</gml>
-         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur</oldIoWorkId>
-         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Hoofdinfrastructuur/nld@2021-10-12;2</oldIoRefId>
-      </informatieobjectRef>
-      <informatieobjectRef>
-         <gio>Delfzijl_Punt.xml</gio>
-         <gml>Delfzijl_Punt.gml</gml>
-         <oldIoWorkId>/join/id/regdata/gm1979/2021/Delfzijl_Punt</oldIoWorkId>
-         <oldIoRefId>/join/id/regdata/gm1979/2021/Delfzijl_Punt/nld@2021-10-12;2</oldIoRefId>
-      </informatieobjectRef>
-      <informatieobjectRef>
-         <gio>Functieaanduiding_casino_geometrie_3.xml</gio>
-         <gml>Functieaanduiding_casino_geometrie_3.gml</gml>
-         <oldIoWorkId>/join/id/regdata/gm1979/2021/casino</oldIoWorkId>
-         <oldIoRefId>/join/id/regdata/gm1979/2021/casino/nld@2021-10-12;2</oldIoRefId>
-      </informatieobjectRef>
-      <informatieobjectRef>
-         <doc>regdata.xml</doc>
-         <pdf>regdata.pdf</pdf>
-         <oldIoWorkId>/join/id/regdata/gm1979/2021/regdata</oldIoWorkId>
-         <oldIoRefId>/join/id/regdata/gm1979/2021/regdata/nld@2021-10-11;1</oldIoRefId>
-      </informatieobjectRef>
-      <informatieobjectRef>
-         <doc>pubdata.xml</doc>
-         <pdf>pubdata.pdf</pdf>
-         <oldIoWorkId>/join/id/pubdata/gm1979/2021/pubdata</oldIoWorkId>
-         <oldIoRefId>/join/id/pubdata/gm1979/2021/pubdata/nld@2021-10-11;1</oldIoRefId>
-      </informatieobjectRef>
-   </besluit>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zone_A</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zone_B</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zuilichem</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/PDF</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/PDF/nld@2020-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2021/Ponsgebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2021/Ponsgebied/nld@2021-01-01;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <besluit/>
    <leveringId sourcefile="opdracht.xml">
-      <referencefile>owActiviteiten.xml</referencefile>
-      <referencefile>owGebiedsaanwijzing_Delfzijl.xml</referencefile>
-      <referencefile>owLocaties.xml</referencefile>
-      <referencefile>owRegeltekst.xml</referencefile>
-      <new>delfzijl_definitievewijziging_regdataPDF_poging_007-20211210092550</new>
+      <new>id-wijzigig-4527-1-20211211113347</new>
    </leveringId>
-   <guids>
-      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_Hoofdinfrastructuur.gml">
-         <org>aeb4b12c-c68b-4f98-83ec-2ab64c598a3d</org>
-         <new>34808802-014e-47fa-b812-fab267446ec3</new>
-      </guidInOw>
-      <guidInOw locatiefile="owLocaties.xml" gmlfile="Delfzijl_Punt.gml">
-         <org>943BEE47-AEB2-4268-8A0D-35E5FF56A5BC</org>
-         <new>c71da802-dd6a-4e8b-b1a1-c7f1c00548a3</new>
-      </guidInOw>
-      <guidInOw locatiefile="owLocaties.xml" gmlfile="Functieaanduiding_casino_geometrie_3.gml">
-         <org>186485eb-a3fc-4916-92fe-30833a876817</org>
-         <new>4a2b1449-f6cb-40f0-9a56-5c74e9371a1b</new>
-      </guidInOw>
-   </guids>
    <file type="besluit.xml" ow="false">
-      <name>akn_nl_bill_gm1979_5.xml</name>
+      <name>Wijzigingsbesluit-4527-1.xml</name>
    </file>
    <file type="opdracht.xml" ow="false">
       <name>opdracht.xml</name>
-   </file>
-   <file type="gml.xml" ow="false">
-      <name>Delfzijl_Hoofdinfrastructuur.gml</name>
-   </file>
-   <file type="gml.xml" ow="false">
-      <name>Delfzijl_Punt.gml</name>
-   </file>
-   <file type="gml.xml" ow="false">
-      <name>Functieaanduiding_casino_geometrie_3.gml</name>
-   </file>
-   <file type="gio.xml" ow="false">
-      <name>Delfzijl_Hoofdinfrastructuur.xml</name>
-   </file>
-   <file type="gio.xml" ow="false">
-      <name>Delfzijl_Punt.xml</name>
-   </file>
-   <file type="gio.xml" ow="false">
-      <name>Functieaanduiding_casino_geometrie_3.xml</name>
-   </file>
-   <file type="doc.pdf" ow="false">
-      <name>pubdata.xml</name>
-   </file>
-   <file type="doc.pdf" ow="false">
-      <name>regdata.xml</name>
-   </file>
-   <file type="gebiedsaanwijzing.xml" ow="true">
-      <name>owGebiedsaanwijzing_Delfzijl.xml</name>
-   </file>
-   <file type="locatie.xml" ow="true">
-      <name>owLocaties.xml</name>
-   </file>
-   
-   
-   
-   
-   
-   <file type="regeltekst.xml" ow="true">
-      <name>owRegeltekst.xml</name>
-   </file>
-   
-   
-   
-   
-   
-   
-   
-   <file type="activiteit.xml" ow="true">
-      <name>owActiviteiten.xml</name>
    </file>
    <file type="manifest-ow.xml" ow="false">
       <name>manifest-ow.xml</name>

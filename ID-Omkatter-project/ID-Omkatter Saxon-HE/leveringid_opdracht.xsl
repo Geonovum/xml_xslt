@@ -8,9 +8,10 @@
     xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" xmlns:lvbb_intern="http://www.overheid.nl/2020/lvbb/intern"  xmlns:aanlevering="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
     xmlns:foo="http://whatever">
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
+    <xsl:strip-space elements="*"/>
 
     <xsl:param name="newId"/>
-    <xsl:param name="consolidatie"/>
+    <xsl:param name="consolidatie" select="0" as="xs:integer"/>
     <xsl:param name="alreadyRetrievedDateTime"/>
 
     <!-- Datum voor template datum-bekendmaking -->
@@ -38,7 +39,6 @@
     </xsl:template>
     -->
 
-
     <xsl:template match="@* | node()">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
@@ -47,7 +47,7 @@
 
     <xsl:template match="sl:leveringsId">
         <xsl:choose>
-            <xsl:when test="$consolidatie = '0'">
+            <xsl:when test="$consolidatie eq 0">
                 <xsl:element name="sl:leveringsId">
                     <xsl:value-of select="$newId"/>
                 </xsl:element>

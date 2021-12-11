@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+   <alreadyRetrievedDateTime>20211211113347</alreadyRetrievedDateTime>
+   <regeling>
+      <origineleregelingFRBRWork>/akn/nl/act/gm0297/2019/reg456</origineleregelingFRBRWork>
+   </regeling>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Centrumgebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Speelhal</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Bouwhoogte</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Welstand</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zone_A</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zone_B</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Zuilichem</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/PDF</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/PDF/nld@2020-06-18;3520</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2021/Ponsgebied</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2021/Ponsgebied/nld@2021-01-01;1</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2020/Kantoorruimte</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2020/Kantoorruimte/nld@2020-09-11;6045</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Speelhal</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Speelhal/nld@2020-11-06;4530</oldIoRefId>
+   </historischInformatieobjectRef>
+   <historischInformatieobjectRef>
+      <oldIoWorkId>/join/id/regdata/gm0297/2019/Bouwhoogte</oldIoWorkId>
+      <oldIoRefId>/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2020-11-13;4540</oldIoRefId>
+   </historischInformatieobjectRef>
+   <besluit>
+      <informatieobjectRef>
+         <gio>GIO001-Bouwhoogte.xml</gio>
+         <gml>Bouwhoogte.gml</gml>
+         <oldIoWorkId>/join/id/regdata/gm0297/2019/Bouwhoogte</oldIoWorkId>
+         <oldIoRefId>/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2020-11-13;4540</oldIoRefId>
+      </informatieobjectRef>
+   </besluit>
+   <leveringId sourcefile="opdracht.xml">
+      <referencefile>owOmgevingsnormOmgevingswaarde.xml</referencefile>
+      <new>id-publicatie-2345-20211211113347</new>
+   </leveringId>
+   <guids>
+      <guid gmlfile="Bouwhoogte.gml">
+         <org>772B4B37-69F8-4671-B92E-3BCED242409D</org>
+         <new>b8e9082e-d9f8-4bf5-85a3-76f20edbdb5d</new>
+      </guid>
+      <guid gmlfile="Bouwhoogte.gml">
+         <org>D24C3416-4790-461C-A4D0-A82BA60CA7D6</org>
+         <new>dbaf9fc0-d330-4a7d-a230-4f45782fdf84</new>
+      </guid>
+      <guid gmlfile="Bouwhoogte.gml">
+         <org>16BFFFFE-7E0B-4E33-98AA-A0914EB9B7E3</org>
+         <new>57c8f820-f7e7-4ba0-acd3-663d83e8512e</new>
+      </guid>
+      <guid gmlfile="Bouwhoogte.gml">
+         <org>EFAAD5E9-B181-4C22-9C3B-B290F4586D82</org>
+         <new>bcd7da84-ffb9-4acf-8359-91d40b5c54cc</new>
+      </guid>
+   </guids>
+   <file type="besluit.xml" ow="false">
+      <name>Besluit_GIO_wijzigen.xml</name>
+   </file>
+   <file type="opdracht.xml" ow="false">
+      <name>opdracht.xml</name>
+   </file>
+   <file type="gml.xml" ow="false">
+      <name>Bouwhoogte.gml</name>
+   </file>
+   <file type="gio.xml" ow="false">
+      <name>GIO001-Bouwhoogte.xml</name>
+   </file>
+   <file type="normwaarde.xml" ow="true">
+      <name>owOmgevingsnormOmgevingswaarde.xml</name>
+   </file>
+   <file type="manifest-ow.xml" ow="false">
+      <name>manifest-ow.xml</name>
+   </file>
+</index>

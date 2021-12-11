@@ -19,16 +19,14 @@
   <xsl:param name="bron.dir"/>
   <xsl:param name="alreadyRetrievedDateTime"/>
   <xsl:param name="guid.list"/>
-  <xsl:param name="bronnummer" as="xs:double"/>
-
-  <xsl:variable name="dateTime" select="format-dateTime(current-dateTime(),'[Y0001][M01][D01][H01][m01][s01]')"/>
+  <xsl:param name="bronnummer" as="xs:integer"/>
 
   <xsl:template match="/">
-    <!-- deze kan weg als bron vervangen is door bron_0 -->
-    <xsl:variable name="directory" select="if ($bronnummer gt 0) then concat($base.dir,'/bron_',$bronnummer) else concat($base.dir,'/bron')"/>
+    <!-- 'bron' is vervangen door 'bron_0' -->
+    <xsl:variable name="directory" select="concat($base.dir,'/bron_',$bronnummer)"/>
     <xsl:element name="index">
-      <xsl:element name="dateTime">
-        <xsl:value-of select="$dateTime"/>
+      <xsl:element name="alreadyRetrievedDateTime">
+        <xsl:value-of select="$alreadyRetrievedDateTime"/>
       </xsl:element>
       <!-- controleer op consolidaties -->
       <xsl:if test="collection(concat($directory,'?select=*.xml'))/lvbbu:Consolidaties">
@@ -37,26 +35,36 @@
         </xsl:element>
       </xsl:if>
       <!-- plaats FRBRWork van originele regeling -->
-      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))/aanlevering:AanleveringBesluit/aanlevering:RegelingVersieInformatie/data:ExpressionIdentificatie/data:FRBRWork">
-        <xsl:variable name="object" select="."/>
-        <xsl:element name="regeling">
-          <xsl:element name="origineleregelingFBRWork">
-            <xsl:value-of select="$object/text()"/>
-          </xsl:element>
-        </xsl:element>
-      </xsl:for-each>
+      <xsl:if test="collection(concat($directory,'?select=*.xml'))/aanlevering:AanleveringBesluit">
+        <xsl:for-each select="for $index in 0 to $bronnummer return $index">
+          <xsl:variable name="directory" select="concat($base.dir,'/bron_',.)"/>
+          <xsl:for-each select="collection(concat($directory,'?select=*.xml'))/aanlevering:AanleveringBesluit/aanlevering:RegelingVersieInformatie/data:ExpressionIdentificatie/data:FRBRWork">
+            <xsl:variable name="object" select="."/>
+            <xsl:element name="regeling">
+              <xsl:element name="origineleregelingFRBRWork">
+                <xsl:value-of select="$object/text()"/>
+              </xsl:element>
+            </xsl:element>
+          </xsl:for-each>
+        </xsl:for-each>
+      </xsl:if>
       <!-- historische informatieobjectRefs voor verwerking in extiorefs die geen informatieobjectRefs in actueel besluit hebben -->
-      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//data:BesluitMetadata/data:informatieobjectRefs/data:informatieobjectRef">
-        <xsl:variable name="object" select="."/>
-        <xsl:element name="historischInformatieobjectRef">
-          <xsl:element name="oldIoWorkId">
-            <xsl:value-of select="concat('/',tokenize($object/text(),'/')[2],'/',tokenize($object/text(),'/')[3],'/',tokenize($object/text(),'/')[4],'/',tokenize($object/text(),'/')[5],'/',tokenize($object/text(),'/')[6],'/',tokenize($object/text(),'/')[7])"/>
-          </xsl:element>
-          <xsl:element name="oldIoRefId">
-            <xsl:value-of select="$object/text()"/>
-          </xsl:element>
-        </xsl:element>
-      </xsl:for-each>
+      <xsl:if test="collection(concat($directory,'?select=*.xml'))/aanlevering:AanleveringBesluit">
+        <xsl:for-each select="for $index in 0 to $bronnummer return $index">
+          <xsl:variable name="directory" select="concat($base.dir,'/bron_',.)"/>
+          <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//data:BesluitMetadata/data:informatieobjectRefs/data:informatieobjectRef">
+            <xsl:variable name="object" select="."/>
+            <xsl:element name="historischInformatieobjectRef">
+              <xsl:element name="oldIoWorkId">
+                <xsl:value-of select="concat('/',tokenize($object/text(),'/')[2],'/',tokenize($object/text(),'/')[3],'/',tokenize($object/text(),'/')[4],'/',tokenize($object/text(),'/')[5],'/',tokenize($object/text(),'/')[6],'/',tokenize($object/text(),'/')[7])"/>
+              </xsl:element>
+              <xsl:element name="oldIoRefId">
+                <xsl:value-of select="$object/text()"/>
+              </xsl:element>
+            </xsl:element>
+          </xsl:for-each>
+        </xsl:for-each>
+      </xsl:if>
       <!-- informatieobjectRefs en gerelateerde bestanden -->
       <xsl:for-each select="collection(concat($directory,'?select=*.xml'))/aanlevering:AanleveringBesluit">
         <xsl:variable name="besluit" select="."/>
@@ -108,7 +116,7 @@
             </xsl:element>
           </xsl:for-each>
           <xsl:element name="new">
-            <xsl:value-of select="concat($levering/text(),'-',$dateTime)"/>
+            <xsl:value-of select="concat($levering/text(),'-',$alreadyRetrievedDateTime)"/>
           </xsl:element>
         </xsl:element>
       </xsl:for-each>

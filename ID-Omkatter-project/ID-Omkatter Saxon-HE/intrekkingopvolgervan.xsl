@@ -12,7 +12,7 @@
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
 
     <xsl:param name="alreadyRetrievedDateTime"/>
-    <xsl:param name="origineleregelingFBRWork"/>
+    <xsl:param name="origineleregelingFRBRWork"/>
 
     <xsl:template match="@* | node()">
         <xsl:copy>
@@ -20,19 +20,19 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template match="@was[. = $origineleregelingFBRWork]">
+    <xsl:template match="@was[. = $origineleregelingFRBRWork]">
         <xsl:attribute name="was">
             <xsl:value-of select="foo:generateAKNFRBRExpression(.)"/>
         </xsl:attribute>
     </xsl:template>
     
-    <xsl:template match="data:opvolging/data:opvolgerVan[text() = $origineleregelingFBRWork]">
+    <xsl:template match="data:opvolging/data:opvolgerVan[text() = $origineleregelingFRBRWork]">
         <xsl:element name="data:opvolgerVan">
             <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="data:Intrekkingen/data:Intrekking/data:instrument[text() = $origineleregelingFBRWork]">
+    <xsl:template match="data:Intrekkingen/data:Intrekking/data:instrument[text() = $origineleregelingFRBRWork]">
         <xsl:element name="data:instrument">
             <xsl:value-of select="foo:generateAKNFRBRWork(text())"/>
         </xsl:element>

@@ -1,30 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Aanleveringen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
-               xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/generiek/manifest-ow.xsd">
-   <domein>omgevingswet</domein>
-   <Aanlevering>
-      <manifest-ow:WorkIDRegeling xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">/akn/nl/act/gm1979/2021/omgevingsplandelfzijl-20211210092543</manifest-ow:WorkIDRegeling>
-      <manifest-ow:DoelID xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">/join/id/proces/gm1979/2021/Nummer5PDFbestand-20211210092543</manifest-ow:DoelID>
-      <Bestand>
-         <naam>owActiviteiten.xml</naam>
-         <objecttype>Activiteit</objecttype>
-      </Bestand>
-      <Bestand>
-         <naam>owGebiedsaanwijzing_Delfzijl.xml</naam>
-         <objecttype>Gebiedsaanwijzing</objecttype>
-      </Bestand>
-      <Bestand>
-         <naam>owLocaties.xml</naam>
-         <objecttype>Gebiedengroep</objecttype>
-         <objecttype>Gebied</objecttype>
-         <objecttype>Punt</objecttype>
-         <objecttype>Lijn</objecttype>
-      </Bestand>
-      <Bestand>
-         <naam>owRegeltekst.xml</naam>
-         <objecttype>Regeltekst</objecttype>
-         <objecttype>RegelVoorIedereen</objecttype>
-      </Bestand>
-   </Aanlevering>
+               xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v1.0.2/bestanden-ow/generiek/manifest-ow.xsd">
+  <domein>omgevingswet</domein>
+  <Aanlevering>
+      <manifest-ow:WorkIDRegeling xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">/akn/nl/act/gm0297/2019/reg456-20211211113347</manifest-ow:WorkIDRegeling>
+      <manifest-ow:DoelID xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">/join/id/proces/gm0297/2020/mutatie_opdracht_3a-20211211113347</manifest-ow:DoelID>
+  </Aanlevering>
 </Aanleveringen>
