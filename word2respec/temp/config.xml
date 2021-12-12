@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+   <item><!--respec-->
+      <pubDomain>tpod</pubDomain>
+      <specStatus>GN-DEF</specStatus>
+      <specType>ST</specType>
+      <license>cc-by-nd</license>
+      <publishDate>2021-11-30</publishDate>
+      <previousPublishDate>2021-06-01</previousPublishDate>
+      <previousMaturity>GN-VV</previousMaturity>
+      <authors>
+         <item>
+            <name>Nienke Jansen</name>
+            <company>Geonovum</company>
+            <companyURL>https://www.geonovum.nl</companyURL>
+         </item>
+      </authors>
+      <editors>
+         <item>
+            <name>Gerard Wolbers</name>
+            <company>Geonovum</company>
+            <companyURL>https://www.geonovum.nl</companyURL>
+         </item>
+         <item>
+            <name>Jan van Gelder</name>
+            <company>Geonovum</company>
+            <companyURL>https://www.geonovum.nl/</companyURL>
+         </item>
+      </editors>
+      <shortName>TPOD-OP</shortName>
+      <format>markdown</format>
+      <github>https://github.com/Geonovum/tpod-TPOD-OP</github>
+      <issueBase>https://github.com/Geonovum/tpod-TPOD-OP/issues</issueBase>
+      <edDraftURI>https://Geonovum.github.io/tpod-TPOD-OP</edDraftURI>
+      <publishISODate>2021-11-30T00:00:00.000Z</publishISODate>
+      <generatedSubtitle>Vastgestelde versie 30 november 2021</generatedSubtitle>
+   </item>
+   <item><!--github-->
+      <repository>tpod-TPOD-OP</repository>
+   </item>
+   <item><!--snapshot-->
+      <company>
+         <name>Geonovum</name>
+         <url>https://www.geonovum.nl</url>
+         <docs>https://docs.geostandaarden.nl</docs>
+         <tools>https://tools.geostandaarden.nl</tools>
+      </company>
+      <document>
+         <title>Toepassingsprofiel omgevingsplan</title>
+      </document>
+   </item>
+</config>
