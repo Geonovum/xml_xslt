@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<respec>
+  <list id="pubDomain">
+    <item id="geen">Geen</item>
+    <item id="disgeo">Energietransitie</item>
+    <item id="mim">Metamodel informatiemodellering</item>
+    <item id="bor">Beheer openbare ruimte</item>
+    <item id="bro">Basisregistratie ondergrond</item>
+    <item id="imgeo">IMGeo/BGT</item>
+    <item id="kl">Kabels en leidingen</item>
+    <item id="liv">Landelijke informatievoorziening vastgoedgebruik</item>
+    <item id="md">Metadata</item>
+    <item id="nen3610">Basismodel NEN3610</item>
+    <item id="oov">Openbare orde en veiligheid</item>
+    <item id="ro">Ruimtelijke ordening</item>
+    <item id="serv">Services</item>
+    <item id="visu">Visualisatie</item>
+    <item id="wp">Whitepaper</item>
+    <item id="ow">Omgevingswet</item>
+    <item id="tpod">Toepassingsprofiel</item>
+  </list>
+  <list id="specStatus">
+    <item id="geen">Geen</item>
+    <item id="GN-BASIS">Basisdocument</item>
+    <item id="GN-WV">Werkversie</item>
+    <item id="GN-CV">Consultatieversie</item>
+    <item id="GN-VV">Vaststellingsversie</item>
+    <item id="GN-DEF">Vastgestelde versie</item>
+  </list>
+  <list id="specType">
+    <item id="geen">Geen</item>
+    <item id="NO">Norm</item>
+    <item id="ST">Standaard</item>
+    <item id="IM">Informatiemodel</item>
+    <item id="PR">Praktijkrichtlijn</item>
+    <item id="HR">Handreiking</item>
+    <item id="WA">Werkafspraak</item>
+    <item id="BD">Beheerdocumentatie</item>
+    <item id="AL">Algemeen</item>
+  </list>
+  <list id="license">
+    <item id="geen">Geen</item>
+    <item id="cc-by-nd">Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal</item>
+    <item id="cc0">Creative Commons 0 Public Domain Dedication</item>
+    <item id="cc-by">Creative Commons Attribution 4.0 International Public License</item>
+  </list>
+</respec>

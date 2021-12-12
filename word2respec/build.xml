@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<project basedir="." name="respec" default="word2respec">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+
+  <!-- properties voor de transformatie -->
+
+  <property name="css.dir" value="css"/>
+  <property name="input.dir" value="input"/>
+  <property name="js.dir" value="js"/>
+  <property name="media.dir" value="media"/>
+  <property name="respec.dir" value="respec"/>
+  <property name="snapshot.dir" value="snapshot"/>
+  <property name="temp.dir" value="temp"/>
+  <property name="unzip.dir" value="temp/unzip"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${temp.dir}"/>
+    </delete>
+    <mkdir dir="${temp.dir}"/>
+    <mkdir dir="${unzip.dir}"/>
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${respec.dir}"/>
+    </delete>
+    <mkdir dir="${respec.dir}"/>
+    <copy todir="${respec.dir}/media" failonerror="false">
+      <fileset dir="${media.dir}"/>
+    </copy>
+    <copy file="${css.dir}/style.css" todir="${respec.dir}/css"/>
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${snapshot.dir}"/>
+    </delete>
+    <mkdir dir="${snapshot.dir}"/>
+    <copy todir="${snapshot.dir}/media" failonerror="false">
+      <fileset dir="${media.dir}"/>
+    </copy>
+    <copy file="${css.dir}/style.css" todir="${snapshot.dir}/css"/>
+  </target>
+
+  <!-- unzip word-bestanden -->
+
+  <target name="unzip" description="Unzip word-bestanden">
+    <unzip dest="${unzip.dir}">
+      <fileset dir="${input.dir}">
+        <include name="**/*.docx"/>
+      </fileset>
+    </unzip>
+  </target>
+
+  <!-- transformeer van word naar respec -->
+
+  <target name="respec" description="Transformeer van word naar respec">
+    <xslt in="${unzip.dir}/word/document.xml" out="${respec.dir}/index.html" style="word2respec.xsl" processor="trax" force="true"/>
+    <xslt in="${unzip.dir}/word/settings.xml" out="${temp.dir}/config.xml" style="word2config.xsl" processor="trax" force="true"/>
+    <xslt in="${temp.dir}/config.xml" out="${respec.dir}/js/config.js" style="config2respec.xsl" processor="trax" force="true"/>
+    <copy todir="${respec.dir}/media" failonerror="false">
+      <fileset dir="${unzip.dir}/word/media"/>
+    </copy>
+  </target>
+
+  <!-- transformeer van respec naar snapshot -->
+
+  <target name="snapshot" description="Transformeer van respec naar snapshot">
+    <xslt in="${respec.dir}/index.html" out="${snapshot.dir}/index.html" style="snapshot.xsl" processor="trax" force="true"/>
+    <copy todir="${snapshot.dir}/media" failonerror="false">
+      <fileset dir="${unzip.dir}/word/media"/>
+    </copy>
+  </target>
+
+  <!-- totale transformatie van word naar respec -->
+
+  <target name="word2respec" depends="init,unzip,respec,snapshot"/>
+
+</project>
