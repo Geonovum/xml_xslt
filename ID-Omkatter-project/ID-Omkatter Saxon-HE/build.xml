@@ -22,7 +22,7 @@
     <attribute name="property"/>
     var guid=java.util.UUID;
     var guid_list=[];
-    for (var i = 0; i &lt; 10000; i++) {
+    for (var i = 0; i &lt; 100000; i++) {
       guid_list.push(guid.randomUUID());
     }
     project.setProperty(attributes.get("property"),guid_list);
