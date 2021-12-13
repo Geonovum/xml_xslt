@@ -5,8 +5,8 @@
                     xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering/     https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
     <BesluitVersie>
         <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-            <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0297/2020/4540-20211211085336</data:FRBRWork>
-            <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0297/2020/4540-20211211085336/nld@2020</data:FRBRExpression>
+            <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0297/2020/4540-20211213182730</data:FRBRWork>
+            <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0297/2020/4540-20211213182730/nld@2020</data:FRBRExpression>
             <soortWork>/join/id/stop/work_003</soortWork>
         </ExpressionIdentificatie>
         <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -27,7 +27,7 @@
             </rechtsgebieden>
             <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
             <informatieobjectRefs>
-                <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0297/2019/Bouwhoogte-20211211085336/nld@2020-11-13;4540</data:informatieobjectRef>
+                <data:informatieobjectRef xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0297/2019/Bouwhoogte-20211213182730/nld@2020-11-13;4540</data:informatieobjectRef>
             </informatieobjectRefs>
         </BesluitMetadata>
         <Procedureverloop xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -49,22 +49,22 @@
             <BeoogdeRegelgeving>
                 <BeoogdeRegeling>
                     <doelen>
-                        <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_4b-20211211085336</data:doel>
+                        <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_4b-20211213182730</data:doel>
                     </doelen>
-                    <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211211085336/nld@8</data:instrumentVersie>
+                    <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211213182730/nld@8</data:instrumentVersie>
                     <eId>art_I</eId>
                 </BeoogdeRegeling>
                 <BeoogdInformatieobject>
                     <doelen>
-                        <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_4b-20211211085336</data:doel>
+                        <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_4b-20211213182730</data:doel>
                     </doelen>
-                    <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0297/2019/Bouwhoogte-20211211085336/nld@2020-11-13;4540</data:instrumentVersie>
+                    <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/regdata/gm0297/2019/Bouwhoogte-20211213182730/nld@2020-11-13;4540</data:instrumentVersie>
                     <eId>!wijzig_gio#cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1</eId>
                 </BeoogdInformatieobject>
             </BeoogdeRegelgeving>
             <Tijdstempels>
                 <Tijdstempel>
-                    <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_4b-20211211085336</data:doel>
+                    <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_4b-20211213182730</data:doel>
                     <soortTijdstempel>juridischWerkendVanaf</soortTijdstempel>
                     <datum>2020-12-15</datum>
                     <eId>art_II</eId>
@@ -120,8 +120,8 @@
                     <Opschrift>Bijlage bij artikel I</Opschrift>
                 </Kop>
                 <RegelingMutatie componentnaam="wijzig_gio"
-                             was="/akn/nl/act/gm0297/2019/reg456-20211211085336/nld@7"
-                             wordt="/akn/nl/act/gm0297/2019/reg456-20211211085336/nld@8">
+                             was="/akn/nl/act/gm0297/2019/reg456-20211213182730/nld@7"
+                             wordt="/akn/nl/act/gm0297/2019/reg456-20211213182730/nld@8">
                     <Vervang wat="gm0297_1__cmp_I__content_o_1">
                         <Nummer>A</Nummer>
                         <Wat>Begrip Maximum Bouwhoogte bedrijfsgebouw wordt gewijzigd</Wat>
@@ -137,7 +137,7 @@
                                                 <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                     wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"
                                                     eId="cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"
-                                                    ref="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Bedrijf_categorie_2-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                                    ref="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2-20211213182730/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Bedrijf_categorie_2-20211213182730/nld@2019-06-18;3520</tekst:ExtIoRef>
                                             </Al>
                                         </Definitie>
                                     </Begrip>
@@ -149,7 +149,7 @@
                                                 <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                     wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"
                                                     eId="cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"
-                                                    ref="/join/id/regdata/gm0297/2019/Centrumgebied-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Centrumgebied-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                                    ref="/join/id/regdata/gm0297/2019/Centrumgebied-20211213182730/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Centrumgebied-20211213182730/nld@2019-06-18;3520</tekst:ExtIoRef>
                                             </Al>
                                         </Definitie>
                                     </Begrip>
@@ -161,7 +161,7 @@
                                                 <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                     wId="gm0297_7__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1"
                                                     eId="cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1"
-                                                    ref="/join/id/regdata/gm0297/2019/Speelhal-20211211085336/nld@2020-11-06;4530">/join/id/regdata/gm0297/2019/Speelhal-20211211085336/nld@2020-11-06;4530</tekst:ExtIoRef>
+                                                    ref="/join/id/regdata/gm0297/2019/Speelhal-20211213182730/nld@2020-11-06;4530">/join/id/regdata/gm0297/2019/Speelhal-20211213182730/nld@2020-11-06;4530</tekst:ExtIoRef>
                                             </Al>
                                         </Definitie>
                                     </Begrip>
@@ -173,7 +173,7 @@
                                                 <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                     wId="gm0297_4__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1"
                                                     eId="cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1"
-                                                    ref="/join/id/regdata/gm0297/2020/Kantoorruimte-20211211085336/nld@2020-09-11;6045">/join/id/regdata/gm0297/2020/Kantoorruimte-20211211085336/nld@2020-09-11;6045</tekst:ExtIoRef>
+                                                    ref="/join/id/regdata/gm0297/2020/Kantoorruimte-20211213182730/nld@2020-09-11;6045">/join/id/regdata/gm0297/2020/Kantoorruimte-20211213182730/nld@2020-09-11;6045</tekst:ExtIoRef>
                                             </Al>
                                         </Definitie>
                                     </Begrip>
@@ -185,13 +185,13 @@
                                                 <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                     wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1"
                                                     eId="cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1"
-                                                    ref="/join/id/regdata/gm0297/2019/Bouwhoogte-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Bouwhoogte-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                                    ref="/join/id/regdata/gm0297/2019/Bouwhoogte-20211213182730/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Bouwhoogte-20211213182730/nld@2019-06-18;3520</tekst:ExtIoRef>
                                             </Al>
                                             <Al wijzigactie="voegtoe">
                                                 <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                     wId="gm0297_8__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1"
                                                     eId="cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1"
-                                                    ref="/join/id/regdata/gm0297/2019/Bouwhoogte-20211211085336/nld@2020-11-13;4540">/join/id/regdata/gm0297/2019/Bouwhoogte-20211211085336/nld@2020-11-13;4540</tekst:ExtIoRef>
+                                                    ref="/join/id/regdata/gm0297/2019/Bouwhoogte-20211213182730/nld@2020-11-13;4540">/join/id/regdata/gm0297/2019/Bouwhoogte-20211213182730/nld@2020-11-13;4540</tekst:ExtIoRef>
                                             </Al>
                                         </Definitie>
                                     </Begrip>
@@ -203,7 +203,7 @@
                                                 <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                     wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1"
                                                     eId="cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1"
-                                                    ref="/join/id/regdata/gm0297/2019/Welstand-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Welstand-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                                    ref="/join/id/regdata/gm0297/2019/Welstand-20211213182730/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Welstand-20211213182730/nld@2019-06-18;3520</tekst:ExtIoRef>
                                             </Al>
                                         </Definitie>
                                     </Begrip>
@@ -215,7 +215,7 @@
                                                 <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                     wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1"
                                                     eId="cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1"
-                                                    ref="/join/id/regdata/gm0297/2019/Zone_A-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zone_A-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                                    ref="/join/id/regdata/gm0297/2019/Zone_A-20211213182730/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zone_A-20211213182730/nld@2019-06-18;3520</tekst:ExtIoRef>
                                             </Al>
                                         </Definitie>
                                     </Begrip>
@@ -227,7 +227,7 @@
                                                 <tekst:ExtIoRef xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
                                                     wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1"
                                                     eId="cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1"
-                                                    ref="/join/id/regdata/gm0297/2019/Zone_B-20211211085336/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zone_B-20211211085336/nld@2019-06-18;3520</tekst:ExtIoRef>
+                                                    ref="/join/id/regdata/gm0297/2019/Zone_B-20211213182730/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zone_B-20211213182730/nld@2019-06-18;3520</tekst:ExtIoRef>
                                             </Al>
                                         </Definitie>
                                     </Begrip>
@@ -302,8 +302,8 @@
     </BesluitVersie>
     <RegelingVersieInformatie>
         <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-            <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211211085336</data:FRBRWork>
-            <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211211085336/nld@8</data:FRBRExpression>
+            <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211213182730</data:FRBRWork>
+            <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211213182730/nld@8</data:FRBRExpression>
             <soortWork>/join/id/stop/work_019</soortWork>
         </ExpressionIdentificatie>
         <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">

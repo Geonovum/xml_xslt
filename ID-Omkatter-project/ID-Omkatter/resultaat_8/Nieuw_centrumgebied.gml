@@ -14,16 +14,16 @@
   </geo:context>
   <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork>/join/id/regdata/gm0297/2020/Nieuw_centrumgebied-20211211085336</geo:FRBRWork>
-         <geo:FRBRExpression>/join/id/regdata/gm0297/2020/Nieuw_centrumgebied-20211211085336/nld@2020-11-20;4550</geo:FRBRExpression>
+         <geo:FRBRWork>/join/id/regdata/gm0297/2020/Nieuw_centrumgebied-20211213182730</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/gm0297/2020/Nieuw_centrumgebied-20211213182730/nld@2020-11-20;4550</geo:FRBRExpression>
          <geo:locaties>
             <geo:Locatie>
                <geo:naam>Nieuw centrumgebied</geo:naam>
                <geo:geometrie>
-                  <basisgeo:Geometrie gml:id="id-5fb270bd-8978-413f-a9b2-01a67193a0c7-xx">
-                     <basisgeo:id>5fb270bd-8978-413f-a9b2-01a67193a0c7</basisgeo:id>
+                  <basisgeo:Geometrie gml:id="id-84213a73-95ee-4116-9de5-38a064d14d51-xx">
+                     <basisgeo:id>84213a73-95ee-4116-9de5-38a064d14d51</basisgeo:id>
                      <basisgeo:geometrie>
-                        <gml:MultiSurface gml:id="id-5fb270bd-8978-413f-a9b2-01a67193a0c7"
+                        <gml:MultiSurface gml:id="id-84213a73-95ee-4116-9de5-38a064d14d51"
                                           srsName="urn:ogc:def:crs:EPSG::28992">
                            <gml:surfaceMember>
                               <gml:Polygon>

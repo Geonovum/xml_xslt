@@ -15,7 +15,7 @@
       <sl:dataset>Gemeentestad</sl:dataset>
       <sl:inhoud>
          <sl:gebied>Gemeentestad</sl:gebied>
-         <sl:leveringsId>abc-20190221-0801-</sl:leveringsId>
+         <sl:leveringsId>id-publicatie-1234-20211213182730</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Gebied</sl:objectType>
             <sl:objectType>Gebiedengroep</sl:objectType>
@@ -25,10 +25,10 @@
          <ow-dc:owObject>
             <l:Gebiedengroep>
                <ow:status>beëindigen</ow:status>
-               <l:identificatie>nl.imow-gm0297.gebiedengroep.zuilichem20211211085336</l:identificatie>
+               <l:identificatie>nl.imow-gm0297.gebiedengroep.zuilichem20211213182730</l:identificatie>
                <l:noemer>Zuilichem</l:noemer>
                <l:groepselement>
-                  <l:GebiedRef xlink:href="nl.imow-gm0297.gebied.201900001120211211085336"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0297.gebied.201900001120211213182730"/>
                </l:groepselement>
             </l:Gebiedengroep>
          </ow-dc:owObject>
@@ -37,7 +37,7 @@
          <ow-dc:owObject>
             <l:Gebied>
                <ow:status>beëindigen</ow:status>
-               <l:identificatie>nl.imow-gm0297.gebied.201900001120211211085336</l:identificatie>
+               <l:identificatie>nl.imow-gm0297.gebied.201900001120211213182730</l:identificatie>
                <l:geometrie>
                   <l:GeometrieRef xlink:href="b69221bd-8121-4368-9058-ad4ff7618dcd"/>
                </l:geometrie>

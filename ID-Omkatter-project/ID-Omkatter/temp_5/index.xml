@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><index>
-   <dateTime>20211211085340</dateTime>
-   <Regeling>
-      <OrigineleregelingsFBRWork>/akn/nl/act/gm0297/2019/reg456</OrigineleregelingsFBRWork>
-   </Regeling>
-   
-   
-   
-   
-   
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+   <alreadyRetrievedDateTime>20211213182730</alreadyRetrievedDateTime>
+   <regeling>
+      <origineleregelingFRBRWork>/akn/nl/act/gm0297/2019/reg456</origineleregelingFRBRWork>
+   </regeling>
    <historischInformatieobjectRef>
       <oldIoWorkId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2</oldIoWorkId>
       <oldIoRefId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</oldIoRefId>
@@ -53,34 +49,28 @@
       <oldIoRefId>/join/id/regdata/gm0297/2020/Kantoorruimte/nld@2020-09-11;6045</oldIoRefId>
    </historischInformatieobjectRef>
    <besluit/>
-   <file type="besluit.xml" ow="false">
-      <name>Mutatie_besluit_verwijderen_artikel_met_GIO.xml</name>
-   </file>
-   <file type="manifest-ow.xml" ow="false">
-      <name>manifest-ow.xml</name>
-   </file>
    <leveringId sourcefile="opdracht.xml">
       <referencefile>owLocatie-Gemeentestad.xml</referencefile>
       <referencefile>owOmgevingsnormOmgevingswaarde.xml</referencefile>
       <referencefile>owRegeltekst-Gemeentestad.xml</referencefile>
-      <new>id-publicatie-1234-20211211085340</new>
+      <new>id-publicatie-1234-20211213182730</new>
    </leveringId>
+   <file type="besluit.xml" ow="false">
+      <name>Mutatie_besluit_verwijderen_artikel_met_GIO.xml</name>
+   </file>
    <file type="opdracht.xml" ow="false">
       <name>opdracht.xml</name>
    </file>
-   
    <file type="locatie.xml" ow="true">
       <name>owLocatie-Gemeentestad.xml</name>
    </file>
-   
-   <file type="normwaarde.xml" ow="true">
-      <name>owOmgevingsnormOmgevingswaarde.xml</name>
-   </file>
-   
    <file type="regeltekst.xml" ow="true">
       <name>owRegeltekst-Gemeentestad.xml</name>
    </file>
-   
-   
-   
+   <file type="normwaarde.xml" ow="true">
+      <name>owOmgevingsnormOmgevingswaarde.xml</name>
+   </file>
+   <file type="manifest-ow.xml" ow="false">
+      <name>manifest-ow.xml</name>
+   </file>
 </index>

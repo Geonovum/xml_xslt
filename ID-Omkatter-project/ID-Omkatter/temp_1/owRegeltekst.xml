@@ -15,7 +15,7 @@
       <sl:dataset>Gemeentestad</sl:dataset>
       <sl:inhoud>
          <sl:gebied>Gemeentestad</sl:gebied>
-         <sl:leveringsId>id-wijziging-2-</sl:leveringsId>
+         <sl:leveringsId>id-publicatie-1235-20211213182730</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Regeltekst</sl:objectType>
          </sl:objectTypen>
@@ -23,7 +23,7 @@
       <sl:stand>
          <ow-dc:owObject>
             <r:Regeltekst wId="gm0297_2__chp_2__subchp_2.2__art_2.5__para_1">
-               <r:identificatie>nl.imow-gm0297.regeltekst.201900000420211211085336</r:identificatie>
+               <r:identificatie>nl.imow-gm0297.regeltekst.201900000420211213182730</r:identificatie>
             </r:Regeltekst>
          </ow-dc:owObject>
       </sl:stand>

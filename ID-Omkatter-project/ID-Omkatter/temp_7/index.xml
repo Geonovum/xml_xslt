@@ -1,15 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><index>
-   <dateTime>20211211085340</dateTime>
-   <Regeling>
-      <OrigineleregelingsFBRWork>/akn/nl/act/gm0297/2019/reg456</OrigineleregelingsFBRWork>
-   </Regeling>
-   
-   
-   
-   
-   
-   
-   
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+   <alreadyRetrievedDateTime>20211213182730</alreadyRetrievedDateTime>
+   <regeling>
+      <origineleregelingFRBRWork>/akn/nl/act/gm0297/2019/reg456</origineleregelingFRBRWork>
+   </regeling>
    <historischInformatieobjectRef>
       <oldIoWorkId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2</oldIoWorkId>
       <oldIoRefId>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</oldIoRefId>
@@ -70,46 +64,44 @@
          <oldIoRefId>/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2020-11-13;4540</oldIoRefId>
       </informatieobjectRef>
    </besluit>
-   <file type="besluit.xml" ow="false">
-      <name>Besluit_GIO_wijzigen.xml</name>
-   </file>
+   <leveringId sourcefile="opdracht.xml">
+      <referencefile>owOmgevingsnormOmgevingswaarde.xml</referencefile>
+      <new>id-publicatie-2345-20211213182730</new>
+   </leveringId>
    <guids>
       <guid gmlfile="Bouwhoogte.gml">
          <org>772B4B37-69F8-4671-B92E-3BCED242409D</org>
-         <new>77b9b313-6aa2-4a79-b60f-875ec9de5759</new>
+         <new>23dfbb01-8118-47b0-8361-608da3469c64</new>
       </guid>
       <guid gmlfile="Bouwhoogte.gml">
          <org>D24C3416-4790-461C-A4D0-A82BA60CA7D6</org>
-         <new>38addb1b-1c90-452e-9403-c684c04abbb2</new>
+         <new>2d78a102-926d-44ba-a88c-93c7ebcb0441</new>
       </guid>
       <guid gmlfile="Bouwhoogte.gml">
          <org>16BFFFFE-7E0B-4E33-98AA-A0914EB9B7E3</org>
-         <new>c5f10003-05ba-415f-8d10-1788807aeeac</new>
+         <new>f4c0aaf1-35a4-4d23-8f0f-d1a61a4fb93e</new>
       </guid>
       <guid gmlfile="Bouwhoogte.gml">
          <org>EFAAD5E9-B181-4C22-9C3B-B290F4586D82</org>
-         <new>976d88b3-29ff-44ef-be65-2e7ff038afb9</new>
+         <new>821c798e-75d1-4f98-b033-a2aa00160d62</new>
       </guid>
    </guids>
+   <file type="besluit.xml" ow="false">
+      <name>Besluit_GIO_wijzigen.xml</name>
+   </file>
+   <file type="opdracht.xml" ow="false">
+      <name>opdracht.xml</name>
+   </file>
    <file type="gml.xml" ow="false">
       <name>Bouwhoogte.gml</name>
    </file>
    <file type="gio.xml" ow="false">
       <name>GIO001-Bouwhoogte.xml</name>
    </file>
-   <file type="manifest-ow.xml" ow="false">
-      <name>manifest-ow.xml</name>
-   </file>
-   <leveringId sourcefile="opdracht.xml">
-      <referencefile>owOmgevingsnormOmgevingswaarde.xml</referencefile>
-      <new>id-publicatie-2345-20211211085340</new>
-   </leveringId>
-   <file type="opdracht.xml" ow="false">
-      <name>opdracht.xml</name>
-   </file>
-   
    <file type="normwaarde.xml" ow="true">
       <name>owOmgevingsnormOmgevingswaarde.xml</name>
    </file>
-   
+   <file type="manifest-ow.xml" ow="false">
+      <name>manifest-ow.xml</name>
+   </file>
 </index>

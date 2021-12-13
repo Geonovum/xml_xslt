@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<publicatieOpdracht xmlns="http://www.overheid.nl/2017/lvbb">
+   <idLevering>Geonovum-Omgevingsplan-Zaltbommel_004-20211213182730</idLevering>
+   <!--Om de keten in te krijgen kun je gebruik maken van: 00000001003214345000 
+  Dit is de OIN van ministerie van BZK, de OIN van de gemeente zaltbommel is nog niet gemachtigd.-->
+   <idBevoegdGezag>00000001807288111000</idBevoegdGezag>
+   <idAanleveraar>00000003560458830000</idAanleveraar>
+   <!--voor landgoed IT 00000003560458830000-->
+   <publicatie>akn_nl_bill_gm0297-3520-01.xml</publicatie>
+   <datumBekendmaking>2021-12-14</datumBekendmaking>
+</publicatieOpdracht>

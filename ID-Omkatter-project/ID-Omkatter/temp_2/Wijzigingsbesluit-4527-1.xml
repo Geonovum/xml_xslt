@@ -5,8 +5,8 @@
                     xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering/     https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
     <BesluitVersie>
         <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-            <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0297/2020/besluit4527-20211211085336</data:FRBRWork>
-            <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0297/2020/besluit4527-20211211085336/nld@2020</data:FRBRExpression>
+            <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0297/2020/besluit4527-20211213182730</data:FRBRWork>
+            <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/bill/gm0297/2020/besluit4527-20211213182730/nld@2020</data:FRBRExpression>
             <soortWork>/join/id/stop/work_003</soortWork>
         </ExpressionIdentificatie>
         <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -42,15 +42,15 @@
             <BeoogdeRegelgeving>
                 <BeoogdeRegeling>
                     <doelen>
-                        <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_3a-20211211085336</data:doel>
+                        <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_3a-20211213182730</data:doel>
                     </doelen>
-                    <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211211085336/nld@3</data:instrumentVersie>
+                    <data:instrumentVersie xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211213182730/nld@3</data:instrumentVersie>
                     <eId>art_I</eId>
                 </BeoogdeRegeling>
             </BeoogdeRegelgeving>
             <Tijdstempels>
                 <Tijdstempel>
-                    <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_3a-20211211085336</data:doel>
+                    <data:doel xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/join/id/proces/gm0297/2020/mutatie_opdracht_3a-20211213182730</data:doel>
                     <soortTijdstempel>juridischWerkendVanaf</soortTijdstempel>
                     <datum>2020-05-19</datum>
                     <eId>art_II</eId>
@@ -106,8 +106,8 @@
                     <Opschrift>Bijlage bij Artikel I</Opschrift>
                 </Kop>
                 <RegelingMutatie componentnaam="wijziging_reg"
-                             was="/akn/nl/act/gm0297/2019/reg456-20211211085336/nld@2"
-                             wordt="/akn/nl/act/gm0297/2019/reg456-20211211085336/nld@3">
+                             was="/akn/nl/act/gm0297/2019/reg456-20211213182730/nld@2"
+                             wordt="/akn/nl/act/gm0297/2019/reg456-20211213182730/nld@3">
                     <Vervang wat="gm0297_1__chp_2__subchp_2.3__art_2.10">
                         <Nummer>A</Nummer>
                         <Wat>Artikel 2.10 wordt als volgt gewijzigd</Wat>
@@ -223,8 +223,8 @@
     </BesluitVersie>
     <RegelingVersieInformatie>
         <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-            <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211211085336</data:FRBRWork>
-            <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211211085336/nld@3</data:FRBRExpression>
+            <data:FRBRWork xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211213182730</data:FRBRWork>
+            <data:FRBRExpression xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">/akn/nl/act/gm0297/2019/reg456-20211213182730/nld@3</data:FRBRExpression>
             <soortWork>/join/id/stop/work_019</soortWork>
             <!-- Een Regeling -->
         </ExpressionIdentificatie>

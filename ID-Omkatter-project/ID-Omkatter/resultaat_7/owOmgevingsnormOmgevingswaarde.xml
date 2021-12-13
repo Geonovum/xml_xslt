@@ -10,53 +10,53 @@
                  xmlns:r="http://www.geostandaarden.nl/imow/regels"
                  xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
                  xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
-	  <sl:standBestand>
-		    <sl:dataset>Gemeentestad</sl:dataset>
-		    <sl:inhoud>
-			      <sl:gebied>Gemeentestad</sl:gebied>
-			      <sl:leveringsId>abc-20190221-0801-</sl:leveringsId>
-			      <sl:objectTypen>
-				        <sl:objectType>Omgevingsnorm</sl:objectType>
-			      </sl:objectTypen>
-		    </sl:inhoud>
-		    <sl:stand>
-			      <ow-dc:owObject>
-				        <rol:Omgevingsnorm>
-					          <rol:identificatie>nl.imow-gm0297.omgevingsnorm.201900000220211211085336</rol:identificatie>
-					          <rol:naam>maximum bouwhoogte bedrijfsgebouw</rol:naam>
-					          <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</rol:type>
-					          <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
-					          <rol:normwaarde>
-						            <rol:Normwaarde>
-							              <rol:identificatie>nl.imow-gm0297.normwaarde.202000000120211211085336</rol:identificatie>
-							              <rol:kwantitatieveWaarde>15</rol:kwantitatieveWaarde>
-							              <rol:locatieaanduiding>
-								                <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001020211211085336"/> 
+   <sl:standBestand>
+      <sl:dataset>Gemeentestad</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Gemeentestad</sl:gebied>
+         <sl:leveringsId>id-publicatie-2345-20211213182730</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Omgevingsnorm</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Omgevingsnorm>
+               <rol:identificatie>nl.imow-gm0297.omgevingsnorm.201900000220211213182730</rol:identificatie>
+               <rol:naam>maximum bouwhoogte bedrijfsgebouw</rol:naam>
+               <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</rol:type>
+               <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
+               <rol:normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0297.normwaarde.202000000120211213182730</rol:identificatie>
+                     <rol:kwantitatieveWaarde>15</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001020211213182730"/>
                         <!--Z3-->
-							              </rol:locatieaanduiding>
-						            </rol:Normwaarde>
-						            <rol:Normwaarde>
-							              <rol:identificatie>nl.imow-gm0297.normwaarde.201900000220211211085336</rol:identificatie>
-							              <rol:kwantitatieveWaarde>13</rol:kwantitatieveWaarde>
-							              <rol:locatieaanduiding>
-								                <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001320211211085336"/> 
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000220211213182730</rol:identificatie>
+                     <rol:kwantitatieveWaarde>13</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001320211213182730"/>
                         <!--Z4-->
-							              </rol:locatieaanduiding>
-						            </rol:Normwaarde>
-						            <rol:Normwaarde>
-							              <rol:identificatie>nl.imow-gm0297.normwaarde.201900000320211211085336</rol:identificatie>
-							              <rol:kwantitatieveWaarde>7</rol:kwantitatieveWaarde>	
-							              <rol:locatieaanduiding>
-								                <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000820211211085336"/> 
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+                  <rol:Normwaarde>
+                     <rol:identificatie>nl.imow-gm0297.normwaarde.201900000320211213182730</rol:identificatie>
+                     <rol:kwantitatieveWaarde>7</rol:kwantitatieveWaarde>
+                     <rol:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000820211213182730"/>
                         <!--Z1-->
-								                <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000920211211085336"/> 
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000920211213182730"/>
                         <!--Z2-->
-							              </rol:locatieaanduiding>
-						            </rol:Normwaarde>
-					          </rol:normwaarde>
-					          <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
-				        </rol:Omgevingsnorm>
-			      </ow-dc:owObject>
-		    </sl:stand>
-	  </sl:standBestand>
+                     </rol:locatieaanduiding>
+                  </rol:Normwaarde>
+               </rol:normwaarde>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+            </rol:Omgevingsnorm>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
 </ow-dc:owBestand>

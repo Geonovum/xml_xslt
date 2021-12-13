@@ -11,36 +11,36 @@
                  xmlns:r="http://www.geostandaarden.nl/imow/regels"
                  xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
                  xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
-    <sl:standBestand>
-        <sl:dataset>Gemeentestad</sl:dataset>
-        <sl:inhoud>
-            <sl:gebied>Gemeentestad</sl:gebied>
-            <sl:leveringsId>abc-20190221-0801-</sl:leveringsId>
-            <sl:objectTypen>
-                <sl:objectType>Gebiedengroep</sl:objectType>
-                <sl:objectType>Gebied</sl:objectType>
-            </sl:objectTypen>
-        </sl:inhoud>
-        <sl:stand>
-            <ow-dc:owObject>
-                <l:Gebiedengroep>
-                    <l:identificatie>nl.imow-gm0297.gebiedengroep.kantoorruimte20211211085336</l:identificatie>
-                    <l:noemer>Kantoorruimte</l:noemer>
-                    <l:groepselement>
-                        <l:GebiedRef xlink:href="nl.imow-gm0297.gebied.202000000120211211085336"/>
-                    </l:groepselement>
-                </l:Gebiedengroep>
-            </ow-dc:owObject>
-        </sl:stand>
-        <sl:stand>
-            <ow-dc:owObject>
-                <l:Gebied>
-                    <l:identificatie>nl.imow-gm0297.gebied.202000000120211211085336</l:identificatie>
-                    <l:geometrie>
-                        <l:GeometrieRef xlink:href="8f402bf1-a76f-41a5-a270-91067a76d753"/>
-                    </l:geometrie>
-                </l:Gebied>
-            </ow-dc:owObject>
-        </sl:stand>
-    </sl:standBestand>
+   <sl:standBestand>
+      <sl:dataset>Gemeentestad</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Gemeentestad</sl:gebied>
+         <sl:leveringsId>id-publicatie-1234-20211213182730</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebiedengroep</sl:objectType>
+            <sl:objectType>Gebied</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0297.gebiedengroep.kantoorruimte20211213182730</l:identificatie>
+               <l:noemer>Kantoorruimte</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0297.gebied.202000000120211213182730"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0297.gebied.202000000120211213182730</l:identificatie>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b26d3ce9-0593-46b4-b576-cc52d7ce8035"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
 </ow-dc:owBestand>

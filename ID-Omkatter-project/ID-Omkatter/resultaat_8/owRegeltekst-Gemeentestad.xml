@@ -11,118 +11,118 @@
                  xmlns:r="http://www.geostandaarden.nl/imow/regels"
                  xmlns:k="http://www.geostandaarden.nl/imow/kaart"
                  xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
-	  <sl:standBestand>
-		    <sl:dataset>Gemeentestad</sl:dataset>
-		    <sl:inhoud>
-			      <sl:gebied>Gemeentestad</sl:gebied>
-			      <sl:leveringsId>abc-20190221-0801-</sl:leveringsId>
-			      <sl:objectTypen>
-				        <sl:objectType>RegelVoorIedereen</sl:objectType>
-			      </sl:objectTypen>
-		    </sl:inhoud>
-		    <sl:stand>
-			      <ow-dc:owObject>
-				        <r:RegelVoorIedereen>
-					          <r:identificatie>nl.imow-gm0297.juridischeregel.201900001320211211085336</r:identificatie>
-					          <r:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</r:idealisatie>
-					          <r:artikelOfLid>
-						            <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.201900001220211211085336"/>
-					          </r:artikelOfLid>
-					          <r:locatieaanduiding>
-						            <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.centrumgebied220211211085336"/>
-					          </r:locatieaanduiding>
-					          <r:gebiedsaanwijzing>
-					             <ga:GebiedsaanwijzingRef xlink:href="nl.imow-gm0297.gebiedsaanwijzing.201900000220211211085336"/> 
+   <sl:standBestand>
+      <sl:dataset>Gemeentestad</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Gemeentestad</sl:gebied>
+         <sl:leveringsId>id-publicatie-2345-20211213182730</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>RegelVoorIedereen</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <r:RegelVoorIedereen>
+               <r:identificatie>nl.imow-gm0297.juridischeregel.201900001320211213182730</r:identificatie>
+               <r:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</r:idealisatie>
+               <r:artikelOfLid>
+                  <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.201900001220211213182730"/>
+               </r:artikelOfLid>
+               <r:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.centrumgebied220211213182730"/>
+               </r:locatieaanduiding>
+               <r:gebiedsaanwijzing>
+                  <ga:GebiedsaanwijzingRef xlink:href="nl.imow-gm0297.gebiedsaanwijzing.201900000220211213182730"/>
                   <!--Centrumgebied-->
-					          </r:gebiedsaanwijzing>
-				        </r:RegelVoorIedereen>
-			      </ow-dc:owObject>
-		    </sl:stand>
-		    <sl:stand>
-			      <ow-dc:owObject>
-				        <r:RegelVoorIedereen>
-					          <r:identificatie>nl.imow-gm0297.juridischeregel.201900001420211211085336</r:identificatie>
-					          <r:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</r:idealisatie>
-					          <r:artikelOfLid>
-						            <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.201900000820211211085336"/>
-					          </r:artikelOfLid>
-					          <r:locatieaanduiding>
-						            <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.speelhal20211211085336"/> 
-						            <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000820211211085336"/>
-						            <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000920211211085336"/>
-						            <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001020211211085336"/>
-						            <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zuilichem20211211085336"/>
-					          </r:locatieaanduiding>
-					          <r:activiteitaanduiding>
-					             <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.201900066020211211085336"/> 
+               </r:gebiedsaanwijzing>
+            </r:RegelVoorIedereen>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <r:RegelVoorIedereen>
+               <r:identificatie>nl.imow-gm0297.juridischeregel.201900001420211213182730</r:identificatie>
+               <r:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</r:idealisatie>
+               <r:artikelOfLid>
+                  <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.201900000820211213182730"/>
+               </r:artikelOfLid>
+               <r:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.speelhal20211213182730"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000820211213182730"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900000920211213182730"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebied.201900001020211213182730"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zuilichem20211213182730"/>
+               </r:locatieaanduiding>
+               <r:activiteitaanduiding>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.201900066020211213182730"/>
                   <!--exploiteren van een speelautomatenhal-->
-						            <r:ActiviteitLocatieaanduiding>
-							              <r:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.201900001220211211085336</r:identificatie>
-							              <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</r:activiteitregelkwalificatie>
-							              <r:locatieaanduiding>
-								                <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.speelhal20211211085336"/>
-							              </r:locatieaanduiding>
-						            </r:ActiviteitLocatieaanduiding>
-					          </r:activiteitaanduiding>
-					          <r:activiteitaanduiding>
-						            <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.201900068020211211085336"/> 
+                  <r:ActiviteitLocatieaanduiding>
+                     <r:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.201900001220211213182730</r:identificatie>
+                     <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</r:activiteitregelkwalificatie>
+                     <r:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.speelhal20211213182730"/>
+                     </r:locatieaanduiding>
+                  </r:ActiviteitLocatieaanduiding>
+               </r:activiteitaanduiding>
+               <r:activiteitaanduiding>
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0297.activiteit.201900068020211213182730"/>
                   <!--exploiteren van een kantoor-->
-						            <r:ActiviteitLocatieaanduiding>
-							              <r:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.201900001420211211085336</r:identificatie>
-							              <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</r:activiteitregelkwalificatie>
-							              <r:locatieaanduiding>
-								                <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.kantoorruimte20211211085336"/>
-							              </r:locatieaanduiding>
-						            </r:ActiviteitLocatieaanduiding>
-					          </r:activiteitaanduiding>
-				        </r:RegelVoorIedereen>
-			      </ow-dc:owObject>
-		    </sl:stand>
-		    <sl:stand>
-			      <ow-dc:owObject>
-				        <r:RegelVoorIedereen>
-					          <r:identificatie>nl.imow-gm0297.juridischeregel.201900001720211211085336</r:identificatie>
-					          <r:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</r:idealisatie>
-					          <r:artikelOfLid>
-						            <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.201900001520211211085336"/>
-					          </r:artikelOfLid>
-					          <r:locatieaanduiding>
-						            <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zoneA20211211085336"/>
-						            <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zoneB20211211085336"/>
-						            <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.centrumgebied220211211085336"/>
-					          </r:locatieaanduiding>
-					          <r:kaartaanduiding>
-						            <k:KaartRef xlink:href="nl.imow-gm0297.kaart.201900000120211211085336"/>
-					          </r:kaartaanduiding>
-					          <r:omgevingsnormaanduiding>
-					             <rol:OmgevingsnormRef xlink:href="nl.imow-gm0297.omgevingsnorm.201900000320211211085336"/> 
+                  <r:ActiviteitLocatieaanduiding>
+                     <r:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.201900001420211213182730</r:identificatie>
+                     <r:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</r:activiteitregelkwalificatie>
+                     <r:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.kantoorruimte20211213182730"/>
+                     </r:locatieaanduiding>
+                  </r:ActiviteitLocatieaanduiding>
+               </r:activiteitaanduiding>
+            </r:RegelVoorIedereen>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <r:RegelVoorIedereen>
+               <r:identificatie>nl.imow-gm0297.juridischeregel.201900001720211213182730</r:identificatie>
+               <r:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</r:idealisatie>
+               <r:artikelOfLid>
+                  <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.201900001520211213182730"/>
+               </r:artikelOfLid>
+               <r:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zoneA20211213182730"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zoneB20211213182730"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.centrumgebied220211213182730"/>
+               </r:locatieaanduiding>
+               <r:kaartaanduiding>
+                  <k:KaartRef xlink:href="nl.imow-gm0297.kaart.201900000120211213182730"/>
+               </r:kaartaanduiding>
+               <r:omgevingsnormaanduiding>
+                  <rol:OmgevingsnormRef xlink:href="nl.imow-gm0297.omgevingsnorm.201900000320211213182730"/>
                   <!--welstandsniveau-->
-					          </r:omgevingsnormaanduiding>
-				        </r:RegelVoorIedereen>
-			      </ow-dc:owObject>
-		    </sl:stand>
-		    <sl:stand>
-			      <ow-dc:owObject>
-				        <r:RegelVoorIedereen>
-					          <r:identificatie>nl.imow-gm0297.juridischeregel.201900001820211211085336</r:identificatie>
-					          <r:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</r:idealisatie>
-					          <r:artikelOfLid>
-						            <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.201900001520211211085336"/>
-					          </r:artikelOfLid>
-					          <r:locatieaanduiding>
-						            <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zoneA20211211085336"/>
-						            <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zoneB20211211085336"/>
-						            <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.centrumgebied220211211085336"/>
-					          </r:locatieaanduiding>
-					          <r:kaartaanduiding>
-						            <k:KaartRef xlink:href="nl.imow-gm0297.kaart.201900000120211211085336"/>
-					          </r:kaartaanduiding>
-					          <r:omgevingsnormaanduiding>
-						            <rol:OmgevingsnormRef xlink:href="nl.imow-gm0297.omgevingsnorm.201900000320211211085336"/> 
+               </r:omgevingsnormaanduiding>
+            </r:RegelVoorIedereen>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <r:RegelVoorIedereen>
+               <r:identificatie>nl.imow-gm0297.juridischeregel.201900001820211213182730</r:identificatie>
+               <r:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</r:idealisatie>
+               <r:artikelOfLid>
+                  <r:RegeltekstRef xlink:href="nl.imow-gm0297.regeltekst.201900001520211213182730"/>
+               </r:artikelOfLid>
+               <r:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zoneA20211213182730"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.zoneB20211213182730"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm0297.gebiedengroep.centrumgebied220211213182730"/>
+               </r:locatieaanduiding>
+               <r:kaartaanduiding>
+                  <k:KaartRef xlink:href="nl.imow-gm0297.kaart.201900000120211213182730"/>
+               </r:kaartaanduiding>
+               <r:omgevingsnormaanduiding>
+                  <rol:OmgevingsnormRef xlink:href="nl.imow-gm0297.omgevingsnorm.201900000320211213182730"/>
                   <!--welstandsniveau-->
-					          </r:omgevingsnormaanduiding>
-				        </r:RegelVoorIedereen>
-			      </ow-dc:owObject>
-		    </sl:stand>
-	  </sl:standBestand>
+               </r:omgevingsnormaanduiding>
+            </r:RegelVoorIedereen>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
 </ow-dc:owBestand>

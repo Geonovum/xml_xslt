@@ -14,16 +14,16 @@
     </geo:context>
     <geo:vastgesteldeVersie>
         <geo:GeoInformatieObjectVersie>
-            <geo:FRBRWork>/join/id/regdata/gm0297/2019/Speelhal-20211211085336</geo:FRBRWork>
-            <geo:FRBRExpression>/join/id/regdata/gm0297/2019/Speelhal-20211211085336/nld@2020-11-06;4530</geo:FRBRExpression>
+            <geo:FRBRWork>/join/id/regdata/gm0297/2019/Speelhal-20211213182730</geo:FRBRWork>
+            <geo:FRBRExpression>/join/id/regdata/gm0297/2019/Speelhal-20211213182730/nld@2020-11-06;4530</geo:FRBRExpression>
             <geo:locaties>
                 <geo:Locatie>
                     <geo:naam>Speelhal</geo:naam>
                     <geo:geometrie>
-                        <basisgeo:Geometrie gml:id="id-069365cf-e1bb-443f-acbb-92cfe6601d91-xx">
-                            <basisgeo:id>069365cf-e1bb-443f-acbb-92cfe6601d91</basisgeo:id>
+                        <basisgeo:Geometrie gml:id="id-81cbc7e1-ff29-45cc-bf60-d31f4078be35-xx">
+                            <basisgeo:id>81cbc7e1-ff29-45cc-bf60-d31f4078be35</basisgeo:id>
                             <basisgeo:geometrie>
-                                <gml:Polygon gml:id="id-069365cf-e1bb-443f-acbb-92cfe6601d91"
+                                <gml:Polygon gml:id="id-81cbc7e1-ff29-45cc-bf60-d31f4078be35"
                                      srsName="urn:ogc:def:crs:EPSG::28992">
                                     <gml:exterior>
                                         <gml:LinearRing>

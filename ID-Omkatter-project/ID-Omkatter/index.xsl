@@ -1,654 +1,431 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-    xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
-    xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:k="http://www.geostandaarden.nl/imow/kaart"
-    xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:p="http://www.geostandaarden.nl/imow/pons" xmlns:r="http://www.geostandaarden.nl/imow/regels"
-    xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
-    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:gml="http://www.opengis.net/gml/3.2"
-    xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" xmlns:lvbb_intern="http://www.overheid.nl/2020/lvbb/intern"
-    xmlns:aanlevering="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
-    xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow" xmlns:lvbbu="https://standaarden.overheid.nl/lvbb/stop/uitlevering/" 
-    xmlns:s="http://www.geostandaarden.nl/imow/symbolisatie" xmlns:foo="http://whatever" xmlns:uuid="java.util.UUID" exclude-result-prefixes="uuid">
-    <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
-    <xsl:strip-space elements="*"/>
+  xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+  xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+  xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:p="http://www.geostandaarden.nl/imow/pons" xmlns:r="http://www.geostandaarden.nl/imow/regels"
+  xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:basisgeo="http://www.geostandaarden.nl/basisgeometrie/1.0" xmlns:lvbb="http://www.overheid.nl/2017/lvbb" xmlns:lvbb_intern="http://www.overheid.nl/2020/lvbb/intern"
+  xmlns:aanlevering="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" xmlns:data="https://standaarden.overheid.nl/stop/imop/data/"
+  xmlns:manifest-ow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow" xmlns:lvbbu="https://standaarden.overheid.nl/lvbb/stop/uitlevering/" 
+  xmlns:s="http://www.geostandaarden.nl/imow/symbolisatie" xmlns:uuid="java.util.UUID" exclude-result-prefixes="uuid">
+  <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
+  <xsl:strip-space elements="*"/>
 
-    <!-- file.list bevat alle te verwerken bestanden -->
+  <!-- file.list bevat alle te verwerken bestanden -->
 
-    <xsl:param name="file.list" as="xs:string*"/>
-    <xsl:param name="base.dir"/>
-    <xsl:param name="alreadyRetrievedDateTime"/>
-    <xsl:param name="bronnummer"/>
+  <xsl:param name="file.list" as="xs:string*"/>
+  <xsl:param name="base.dir"/>
+  <xsl:param name="alreadyRetrievedDateTime"/>
+  <xsl:param name="bronnummer" as="xs:integer"/>
 
-    <xsl:template match="/">
-        <xsl:call-template name="index"/>
-    </xsl:template>
-
-    <!-- maak manifest-bestand waarin is aangegeven wat de functie van een bestand is -->
-
-    <xsl:variable name="dateTime" select="format-dateTime(current-dateTime(), '[Y0001][M01][D01][H01][m01][s01]')"/>
-
-    <xsl:template name="index">
-        <xsl:element name="index">
-            <xsl:for-each select="$index/*">
-                <xsl:copy-of select="."/>
-            </xsl:for-each>
+  <xsl:template match="/">
+    <!-- 'bron' is vervangen door 'bron_0' -->
+    <xsl:variable name="directory" select="concat($base.dir,'/bron_',$bronnummer)"/>
+    <xsl:element name="index">
+      <xsl:element name="alreadyRetrievedDateTime">
+        <xsl:value-of select="$alreadyRetrievedDateTime"/>
+      </xsl:element>
+      <!-- controleer op consolidaties -->
+      <xsl:if test="collection(concat($directory,'?select=*.xml'))/lvbbu:Consolidaties">
+        <xsl:element name="consolidatie">
+          <xsl:value-of select="1"/>
         </xsl:element>
-    </xsl:template>
-
-    <!-- stel index-bestand samen -->
-    <xsl:param name="index">
-        <xsl:element name="dateTime">
-            <xsl:value-of select="$dateTime"/>
-        </xsl:element>
-        <xsl:for-each select="tokenize($file.list, ';')">
-            <xsl:variable name="fullname" select="."/>
-            <xsl:variable name="name" select="tokenize($fullname, '/')[last()]"/>
-            <xsl:variable name="document" select="document($fullname)"/>
-            <xsl:if test="$document/lvbbu:Consolidaties">
-                <xsl:element name="consolidatie">
-                    <xsl:value-of select="1"/>
-                </xsl:element>
-            </xsl:if>
-            <!-- Doel Id -->
-            <!-- Haal oorspronkelijk uit besluit -->
-            <!-- BesluitID/RegelingID -->
-            <!-- ga directories af -->
-            <xsl:variable name="sequence" select="(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)"/>
-            <xsl:for-each select="$sequence">
-                <xsl:if test="$bronnummer >= position() - 1 and $document/aanlevering:AanleveringBesluit">
-                    <xsl:choose>
-                        <xsl:when test="position() - 1 = 0">
-                            <!-- kijk of er bestanden bestaan in directory (of directory bestaat) -->
-                            <xsl:if test="doc-available(concat($base.dir, '/bron/opdracht.xml'))">
-                                <!-- scan alle bestanden -->
-                                <xsl:variable name="directory" select="concat($base.dir, '/bron')"/>
-                                <xsl:for-each select="collection(concat($directory, '?select=*.xml'))">
-                                    <xsl:for-each select="document(base-uri(.))/aanlevering:AanleveringBesluit/aanlevering:RegelingVersieInformatie/data:ExpressionIdentificatie/data:FRBRWork">
-                                        <xsl:element name="Regeling">
-                                            <xsl:element name="OrigineleregelingsFBRWork">
-                                                <xsl:value-of select="text()"/>
-                                            </xsl:element>
-                                        </xsl:element>
-                                    </xsl:for-each>
-                                </xsl:for-each>
-                            </xsl:if>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <!-- kijk of er bestanden bestaan in directory (of directory bestaat) -->
-                            <xsl:if test="doc-available(concat($base.dir, '/bron_', position() - 1, '/opdracht.xml'))">
-                                <!-- scan alle bestanden -->
-                                <xsl:variable name="directory" select="concat($base.dir, '/bron_', position() - 1)"/>
-                                <xsl:for-each select="collection(concat($directory, '?select=*.xml'))">
-                                    <xsl:for-each select="document(base-uri(.))/aanlevering:AanleveringBesluit/aanlevering:RegelingVersieInformatie/data:ExpressionIdentificatie/data:FRBRWork">
-                                        <xsl:element name="Regeling">
-                                            <xsl:element name="OrigineleregelingsFBRWork">
-                                                <xsl:value-of select="text()"/>
-                                            </xsl:element>
-                                        </xsl:element>
-                                    </xsl:for-each>
-                                </xsl:for-each>
-                            </xsl:if>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:if>
-            </xsl:for-each>
-            <!-- historische informatieobjectRefs voor verwerking in extiorefs die geen informatieobjectRefs in actueel besluit hebben -->
-            <!-- ga directories af -->
-            <xsl:for-each select="$sequence">
-                <xsl:if test="$bronnummer >= position() - 1 and $document/aanlevering:AanleveringBesluit">
-                    <xsl:choose>
-                        <xsl:when test="position() - 1 = 0">
-                            <!-- kijk of er bestanden bestaan in directory (of directory bestaat) -->
-                            <xsl:if test="doc-available(concat($base.dir, '/bron/opdracht.xml'))">
-                                <!-- scan alle bestanden -->
-                                <xsl:variable name="directory" select="concat($base.dir, '/bron')"/>
-                                <xsl:for-each select="collection(concat($directory, '?select=*.xml'))">
-                                    <xsl:for-each select="document(base-uri(.))//data:BesluitMetadata/data:informatieobjectRefs/data:informatieobjectRef">
-                                        <xsl:element name="historischInformatieobjectRef">
-                                            <xsl:variable name="oldIoRefId" select="text()"/>
-                                            <xsl:variable name="oldIoWorkId"
-                                                select="concat('/', tokenize($oldIoRefId, '/')[2], '/', tokenize($oldIoRefId, '/')[3], '/', tokenize($oldIoRefId, '/')[4], '/', tokenize($oldIoRefId, '/')[5], '/', tokenize($oldIoRefId, '/')[6], '/', tokenize($oldIoRefId, '/')[7])"/>
-                                            <xsl:element name="oldIoWorkId">
-                                                <xsl:value-of select="$oldIoWorkId"/>
-                                            </xsl:element>
-                                            <xsl:element name="oldIoRefId">
-                                                <xsl:value-of select="$oldIoRefId"/>
-                                            </xsl:element>
-                                        </xsl:element>
-                                    </xsl:for-each>
-                                </xsl:for-each>
-                            </xsl:if>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <!-- kijk of er bestanden bestaan in directory (of directory bestaat) -->
-                            <xsl:if test="doc-available(concat($base.dir, '/bron_', position() - 1, '/opdracht.xml'))">
-                                <!-- scan alle bestanden -->
-                                <xsl:variable name="directory" select="concat($base.dir, '/bron_', position() - 1)"/>
-                                <xsl:for-each select="collection(concat($directory, '?select=*.xml'))">
-                                    <xsl:for-each select="document(base-uri(.))//data:BesluitMetadata/data:informatieobjectRefs/data:informatieobjectRef">
-                                        <xsl:element name="historischInformatieobjectRef">
-                                            <xsl:variable name="oldIoRefId" select="text()"/>
-                                            <xsl:variable name="oldIoWorkId"
-                                                select="concat('/', tokenize($oldIoRefId, '/')[2], '/', tokenize($oldIoRefId, '/')[3], '/', tokenize($oldIoRefId, '/')[4], '/', tokenize($oldIoRefId, '/')[5], '/', tokenize($oldIoRefId, '/')[6], '/', tokenize($oldIoRefId, '/')[7])"/>
-                                            <xsl:element name="oldIoWorkId">
-                                                <xsl:value-of select="$oldIoWorkId"/>
-                                            </xsl:element>
-                                            <xsl:element name="oldIoRefId">
-                                                <xsl:value-of select="$oldIoRefId"/>
-                                            </xsl:element>
-                                        </xsl:element>
-                                    </xsl:for-each>
-                                </xsl:for-each>
-                            </xsl:if>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:if>
-            </xsl:for-each>
-            <!-- informatieobjectRefs, gerelateerde gml's, gio's -->
-            <xsl:if test="$document/aanlevering:AanleveringBesluit">
-                <xsl:element name="besluit">
-                    <xsl:for-each select="$document//data:BesluitMetadata/data:informatieobjectRefs/data:informatieobjectRef">
-                        <xsl:element name="informatieobjectRef">
-                            <xsl:variable name="oldIoRefId" select="text()"/>
-                            <xsl:variable name="oldIoWorkId" select="concat('/', tokenize($oldIoRefId, '/')[2], '/', tokenize($oldIoRefId, '/')[3], '/', tokenize($oldIoRefId, '/')[4], '/', tokenize($oldIoRefId, '/')[5], '/', tokenize($oldIoRefId, '/')[6], '/', tokenize($oldIoRefId, '/')[7])"/>
-                            <xsl:for-each select="tokenize($file.list, ';')">
-                                <xsl:variable name="iofullname" select="."/>
-                                <xsl:for-each select="document($iofullname)//data:FRBRExpression">
-                                    <xsl:if test="text() = $oldIoRefId">
-                                        <xsl:variable name="type" select="document($iofullname)//data:InformatieObjectMetadata/data:formaatInformatieobject"/>
-                                        <xsl:choose>
-                                            <xsl:when test="$type = '/join/id/stop/informatieobject/gio_002'">
-                                                <xsl:element name="gio">
-                                                    <xsl:value-of select="tokenize($iofullname, '/')[last()]"/>
-                                                </xsl:element>
-                                                <xsl:element name="gml">
-                                                    <xsl:value-of select="document($iofullname)//data:Bestand/data:bestandsnaam"/>
-                                                </xsl:element>
-                                            </xsl:when>
-                                            <xsl:when test="$type = '/join/id/stop/informatieobject/doc_001'">
-                                                <xsl:element name="doc">
-                                                    <xsl:value-of select="tokenize($iofullname, '/')[last()]"/>
-                                                </xsl:element>
-                                                <xsl:element name="pdf">
-                                                    <xsl:value-of select="document($iofullname)//data:Bestand/data:bestandsnaam"/>
-                                                </xsl:element>
-                                            </xsl:when>
-                                        </xsl:choose>
-                                    </xsl:if>
-                                </xsl:for-each>
-                            </xsl:for-each>
-                            <xsl:element name="oldIoWorkId">
-                                <xsl:value-of select="$oldIoWorkId"/>
-                            </xsl:element>
-                            <xsl:element name="oldIoRefId">
-                                <xsl:value-of select="$oldIoRefId"/>
-                            </xsl:element>
-                        </xsl:element>
-                    </xsl:for-each>
-                </xsl:element>
-            </xsl:if>
-            <!-- Levering Ids -->
-            <xsl:if test="$document//lvbb_intern:idLevering">
-                <xsl:element name="leveringId">
-                    <xsl:attribute name="sourcefile" select="$name"/>
-                    <xsl:for-each select="tokenize($file.list, ';')">
-                        <xsl:variable name="referencefullname" select="."/>
-                        <xsl:if test="document($referencefullname)//sl:leveringsId">
-                            <xsl:element name="referencefile">
-                                <xsl:value-of select="tokenize($referencefullname, '/')[last()]"/>
-                            </xsl:element>
-                        </xsl:if>
-                    </xsl:for-each>
-                    <xsl:element name="new">
-                        <xsl:value-of select="concat($document//lvbb_intern:idLevering/text(), '-', $dateTime)"/>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:if>
-            <xsl:if test="$document//lvbb:idLevering">
-                <xsl:element name="leveringId">
-                    <xsl:attribute name="sourcefile" select="$name"/>
-                    <xsl:for-each select="tokenize($file.list, ';')">
-                        <xsl:variable name="referencefullname" select="."/>
-                        <xsl:if test="document($referencefullname)//sl:leveringsId">
-                            <xsl:element name="referencefile">
-                                <xsl:value-of select="tokenize($referencefullname, '/')[last()]"/>
-                            </xsl:element>
-                        </xsl:if>
-                    </xsl:for-each>
-                    <xsl:element name="new">
-                        <xsl:value-of select="concat($document//lvbb:idLevering/text(), '-', $dateTime)"/>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:if>
-            <!-- GUIDS -->
-            <xsl:if test="$document//geo:GeoInformatieObjectVaststelling">
-                <xsl:element name="guids">
-                    <xsl:for-each select="$document//geo:GeoInformatieObjectVaststelling/descendant::basisgeo:id">
-                        <xsl:variable name="pos2" select="position()"/>
-                        <xsl:variable name="orgGUID" select="text()"/>
-                        <xsl:variable name="locatiefile">
-                            <xsl:for-each select="tokenize($file.list, ';')">
-                                <xsl:variable name="locatieFile" as="xs:string" select="."/>
-                                <xsl:variable name="locatieFileOnly" as="xs:string" select="tokenize($locatieFile, '/')[last()]"/>
-                                <xsl:if test="document($locatieFile)//l:GeometrieRef[@xlink:href = $orgGUID]">
-                                    <xsl:value-of select="$locatieFileOnly"/>
-                                </xsl:if>
-                            </xsl:for-each>
-                        </xsl:variable>
-                        <xsl:variable name="org" select="$orgGUID"/>
-                        <!--xsl:variable name="new" select="foo:generateGuid($pos1 + $pos2)"/-->
-                        <xsl:variable name="new" select="uuid:randomUUID()"/>
-                        <xsl:variable name="elementName">
-                            <xsl:choose>
-                                <xsl:when test="not($locatiefile = '')">
-                                    <xsl:value-of select="'guidInOw'"/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="'guid'"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:variable>
-                        <xsl:element name="{$elementName}">
-                            <xsl:attribute name="gmlfile" select="$name"/>
-                            <xsl:if test="not($locatiefile = '')">
-                                <xsl:attribute name="locatiefile" select="$locatiefile"/>
-                            </xsl:if>
-                            <xsl:element name="org">
-                                <xsl:value-of select="$org"/>
-                            </xsl:element>
-                            <xsl:element name="new">
-                                <xsl:value-of select="$new"/>
-                            </xsl:element>
-                        </xsl:element>
-                    </xsl:for-each>
-                </xsl:element>
-            </xsl:if>
-            <xsl:if test="$document//basisgeo:FeatureCollectionGeometrie">
-                <xsl:element name="guids">
-                    <xsl:for-each select="$document//basisgeo:FeatureCollectionGeometrie/descendant::basisgeo:id">
-                        <xsl:variable name="pos2" select="position()"/>
-                        <xsl:variable name="orgGUID" select="text()"/>
-                        <xsl:variable name="locatiefile">
-                            <xsl:for-each select="tokenize($file.list, ';')">
-                                <xsl:variable name="locatieFile" as="xs:string" select="."/>
-                                <xsl:variable name="locatieFileOnly" as="xs:string" select="tokenize($locatieFile, '/')[last()]"/>
-                                <xsl:if test="document($locatieFile)//l:GeometrieRef[@xlink:href = $orgGUID]">
-                                    <xsl:value-of select="$locatieFileOnly"/>
-                                </xsl:if>
-                            </xsl:for-each>
-                        </xsl:variable>
-                        <xsl:variable name="org" select="$orgGUID"/>
-                        <!--xsl:variable name="new" select="foo:generateGuid($pos1 + $pos2)"/-->
-                        <xsl:variable name="new" select="uuid:randomUUID()"/>
-                        <xsl:variable name="elementName">
-                            <xsl:choose>
-                                <xsl:when test="not($locatiefile = '')">
-                                    <xsl:value-of select="'guidInOw'"/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="'guid'"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:variable>
-                        <xsl:element name="{$elementName}">
-                            <xsl:attribute name="gmlfile" select="$name"/>
-                            <xsl:if test="not($locatiefile = '')">
-                                <xsl:attribute name="locatiefile" select="$locatiefile"/>
-                            </xsl:if>
-                            <xsl:element name="org">
-                                <xsl:value-of select="$org"/>
-                            </xsl:element>
-                            <xsl:element name="new">
-                                <xsl:value-of select="$new"/>
-                            </xsl:element>
-                        </xsl:element>
-                    </xsl:for-each>
-                </xsl:element>
-            </xsl:if>
-            <!-- BESLUIT -->
-            <xsl:if test="$document/aanlevering:AanleveringBesluit">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'besluit.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'false'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <!-- OPDRACHT -->
-            <xsl:if test="$document/lvbb:publicatieOpdracht">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'opdracht.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'false'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <!-- GML -->
-            <xsl:if test="$document//geo:GeoInformatieObjectVaststelling">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'gml.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'false'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <!-- GIO -->
-            <xsl:if test="$document//data:InformatieObjectMetadata/data:formaatInformatieobject = '/join/id/stop/informatieobject/gio_002'">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'gio.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'false'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <!-- PDF -->
-            <xsl:if test="$document//data:InformatieObjectMetadata/data:formaatInformatieobject = '/join/id/stop/informatieobject/doc_001'">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'doc.pdf'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'false'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <!-- OW       -->
-            <xsl:if test="$document//ga:Gebiedsaanwijzing">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'gebiedsaanwijzing.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//k:Kaart">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'kaart.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//k:Kaartlaag">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'kaart.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//l:Ambtsgebied">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'locatie.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//l:Gebied">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'locatie.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//l:Gebiedengroep">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'locatie.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//l:Lijn">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'locatie.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//l:Lijnengroep">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'locatie.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//l:Punt">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'locatie.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//l:Puntengroep">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'locatie.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//l:Locatie">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'locatie.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//p:Pons">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'pons.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//rg:Regelingsgebied">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'regelingsgebied.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//r:ActiviteitLocatieaanduiding">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'regeltekst.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//r:Regeltekst">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'regeltekst.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//r:Instructieregel">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'regeltekst.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//r:Omgevingswaarderegel">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'regeltekst.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//r:RegelVoorIedereen">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'regeltekst.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//rol:Activiteit">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'activiteit.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//rol:Normwaarde">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'normwaarde.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//rol:Omgevingswaarde">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'normwaarde.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//rol:Omgevingsnorm">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'normwaarde.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//vt:Hoofdlijn">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'hoofdlijn.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//vt:Tekstdeel">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'tekstdeel.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//vt:Divisie">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'vrijetekst.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//s:SymbolisatieItem">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'symbolisatie.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'true'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//Aanleveringen" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">
-                <xsl:call-template name="file">
-                    <xsl:with-param name="type" select="'manifest-ow.xml'"/>
-                    <xsl:with-param name="fullname" select="$fullname"/>
-                    <xsl:with-param name="ow" select="'false'"/>
-                </xsl:call-template>
-            </xsl:if>
-            <xsl:if test="$document//lvbb:publicatieOpdracht">
-                <xsl:element name="file">
-                    <xsl:attribute name="type" select="'opdracht.xml'"/>
-                    <xsl:attribute name="ow" select="'false'"/>
-                    <xsl:element name="fullname">
-                        <xsl:value-of select="$fullname"/>
-                    </xsl:element>
-                    <xsl:element name="name">
-                        <xsl:value-of select="$name"/>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:if>
-            <xsl:if test="$document//lvbb:validatieOpdracht">
-                <xsl:element name="file">
-                    <xsl:attribute name="type" select="'opdracht.xml'"/>
-                    <xsl:attribute name="ow" select="'false'"/>
-                    <xsl:element name="fullname">
-                        <xsl:value-of select="$fullname"/>
-                    </xsl:element>
-                    <xsl:element name="name">
-                        <xsl:value-of select="$name"/>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:if>
-            <xsl:if test="$document//rol:Activiteit/rol:bovenliggendeActiviteit or $document//rol:Activiteit/rol:gerelateerdeActiviteit">
-                <xsl:for-each select="$document//rol:Activiteit">
-                    <xsl:variable name="bovenligendeActiviteitId" select="rol:bovenliggendeActiviteit/rol:ActiviteitRef/@xlink:href"/>
-                    <xsl:for-each select="tokenize($file.list, ';')">
-                        <xsl:variable name="activiteitBestand" select="."/>
-                        <xsl:for-each select="document($activiteitBestand)//rol:Activiteit">
-                            <xsl:if test="$bovenligendeActiviteitId = rol:identificatie/text()">
-                                <xsl:element name="bovenliggendeActiviteitRelatie">
-                                    <xsl:element name="name">
-                                        <xsl:value-of select="$name"/>
-                                    </xsl:element>
-                                    <xsl:element name="bovenliggendeActiviteitIdLokaalAanwezig">
-                                        <xsl:value-of select="$bovenligendeActiviteitId"/>
-                                    </xsl:element>
-                                </xsl:element>
-                            </xsl:if>
-                        </xsl:for-each>
-                    </xsl:for-each>
-                    <xsl:variable name="gerelateerdeActiviteitId" select="rol:gerelateerdeActiviteit/rol:ActiviteitRef/@xlink:href"/>
-                    <xsl:for-each select="tokenize($file.list, ';')">
-                        <xsl:variable name="activiteitBestand" select="."/>
-                        <xsl:for-each select="document($activiteitBestand)//rol:Activiteit">
-                            <xsl:if test="$gerelateerdeActiviteitId = rol:identificatie/text()">
-                                <xsl:element name="gerelateerdeActiviteitRelatie">
-                                    <xsl:element name="name">
-                                        <xsl:value-of select="$name"/>
-                                    </xsl:element>
-                                    <xsl:element name="gerelateerdeActiviteitIdLokaalAanwezig">
-                                        <xsl:value-of select="$gerelateerdeActiviteitId"/>
-                                    </xsl:element>
-                                </xsl:element>
-                            </xsl:if>
-                        </xsl:for-each>
-                    </xsl:for-each>
-                </xsl:for-each>
-            </xsl:if>
-        </xsl:for-each>
-    </xsl:param>
-
-    <xsl:function name="foo:generateGuid">
-        <xsl:param name="seed" as="xs:integer"/>
-        <xsl:value-of select="translate(translate(translate(unparsed-text(concat('https://uuidgen.org/api/v/4?x=', string($seed))), '[', ''), ']', ''), '&quot;', '')"/>
-    </xsl:function>
-
-    <xsl:function name="foo:generateDoelId">
-        <xsl:param name="oldId" as="xs:string"/>
-        <xsl:value-of
-            select="concat('/', tokenize($oldId, '/')[2], '/', tokenize($oldId, '/')[3], '/', tokenize($oldId, '/')[4], '/', tokenize($oldId, '/')[5], '/', tokenize($oldId, '/')[6], '/', concat(tokenize($oldId, '/')[7], $dateTime))"
-        />
-    </xsl:function>
-
-    <xsl:function name="foo:generateFRBRWork">
-        <xsl:param name="oldId" as="xs:string"/>
-        <xsl:value-of
-            select="concat('/', tokenize($oldId, '/')[2], '/', tokenize($oldId, '/')[3], '/', tokenize($oldId, '/')[4], '/', tokenize($oldId, '/')[5], '/', tokenize($oldId, '/')[6], '/', concat(tokenize($oldId, '/')[7], $dateTime))"
-        />
-    </xsl:function>
-
-    <xsl:function name="foo:generateFRBRExpression">
-        <xsl:param name="oldId" as="xs:string"/>
-        <xsl:value-of
-            select="concat('/', tokenize($oldId, '/')[2], '/', tokenize($oldId, '/')[3], '/', tokenize($oldId, '/')[4], '/', tokenize($oldId, '/')[5], '/', tokenize($oldId, '/')[6], '/', concat(tokenize($oldId, '/')[7], $dateTime), '/', tokenize($oldId, '/')[8])"
-        />
-    </xsl:function>
-
-    <xsl:template name="references">
-        <xsl:param name="orgOWId"/>
-        <xsl:for-each select="tokenize($file.list, ';')">
-            <xsl:variable name="referencefullname" select="."/>
-            <xsl:for-each select="document($referencefullname)//@xlink:href">
-                <xsl:if test="$orgOWId = string(.)">
-                    <xsl:element name="referencefile">
-                        <xsl:value-of select="tokenize($referencefullname, '/')[last()]"/>
-                    </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:for-each>
-    </xsl:template>
-
-    <xsl:template name="file">
-        <xsl:param name="type" as="xs:string"/>
-        <xsl:param name="fullname" as="xs:string"/>
-        <xsl:param name="ow" as="xs:string"/>
-        <xsl:element name="file">
-            <xsl:attribute name="type" select="$type"/>
-            <xsl:attribute name="ow" select="$ow"/>
-            <xsl:element name="name">
-                <xsl:value-of select="tokenize($fullname, '/')[last()]"/>
+      </xsl:if>
+      <!-- plaats FRBRWork van originele regeling -->
+      <xsl:if test="collection(concat($directory,'?select=*.xml'))/aanlevering:AanleveringBesluit">
+        <xsl:for-each select="for $index in 0 to $bronnummer return $index">
+          <xsl:variable name="directory" select="concat($base.dir,'/bron_',.)"/>
+          <xsl:for-each select="collection(concat($directory,'?select=*.xml'))/aanlevering:AanleveringBesluit/aanlevering:RegelingVersieInformatie/data:ExpressionIdentificatie/data:FRBRWork">
+            <xsl:variable name="object" select="."/>
+            <xsl:element name="regeling">
+              <xsl:element name="origineleregelingFRBRWork">
+                <xsl:value-of select="$object/text()"/>
+              </xsl:element>
             </xsl:element>
+          </xsl:for-each>
+        </xsl:for-each>
+      </xsl:if>
+      <!-- historische informatieobjectRefs voor verwerking in extiorefs die geen informatieobjectRefs in actueel besluit hebben -->
+      <xsl:if test="collection(concat($directory,'?select=*.xml'))/aanlevering:AanleveringBesluit">
+        <xsl:for-each select="for $index in 0 to $bronnummer return $index">
+          <xsl:variable name="directory" select="concat($base.dir,'/bron_',.)"/>
+          <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//data:BesluitMetadata/data:informatieobjectRefs/data:informatieobjectRef">
+            <xsl:variable name="object" select="."/>
+            <xsl:element name="historischInformatieobjectRef">
+              <xsl:element name="oldIoWorkId">
+                <xsl:value-of select="concat('/',tokenize($object/text(),'/')[2],'/',tokenize($object/text(),'/')[3],'/',tokenize($object/text(),'/')[4],'/',tokenize($object/text(),'/')[5],'/',tokenize($object/text(),'/')[6],'/',tokenize($object/text(),'/')[7])"/>
+              </xsl:element>
+              <xsl:element name="oldIoRefId">
+                <xsl:value-of select="$object/text()"/>
+              </xsl:element>
+            </xsl:element>
+          </xsl:for-each>
+        </xsl:for-each>
+      </xsl:if>
+      <!-- informatieobjectRefs en gerelateerde bestanden -->
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))/aanlevering:AanleveringBesluit">
+        <xsl:variable name="besluit" select="."/>
+        <xsl:element name="besluit">
+          <xsl:for-each select="$besluit//data:BesluitMetadata/data:informatieobjectRefs/data:informatieobjectRef">
+            <xsl:variable name="object" select="."/>
+            <xsl:element name="informatieobjectRef">
+              <xsl:for-each select="collection(concat($directory,'?select=*.xml'))/aanlevering:AanleveringInformatieObject[//data:FRBRExpression=$object/text()]">
+                <xsl:variable name="object" select="."/>
+                <xsl:variable name="type" select="$object//data:InformatieObjectMetadata/data:formaatInformatieobject"/>
+                <xsl:choose>
+                  <xsl:when test="$type='/join/id/stop/informatieobject/gio_002'">
+                    <xsl:element name="gio">
+                      <xsl:value-of select="tokenize(base-uri($object),'/')[last()]"/>
+                    </xsl:element>
+                    <xsl:element name="gml">
+                      <xsl:value-of select="$object//data:Bestand/data:bestandsnaam"/>
+                    </xsl:element>
+                  </xsl:when>
+                  <xsl:when test="$type='/join/id/stop/informatieobject/doc_001'">
+                    <xsl:element name="doc">
+                      <xsl:value-of select="tokenize(base-uri($object),'/')[last()]"/>
+                    </xsl:element>
+                    <xsl:element name="pdf">
+                      <xsl:value-of select="$object//data:Bestand/data:bestandsnaam"/>
+                    </xsl:element>
+                  </xsl:when>
+                </xsl:choose>
+              </xsl:for-each>
+              <xsl:element name="oldIoWorkId">
+                <xsl:value-of select="concat('/',tokenize($object/text(),'/')[2],'/',tokenize($object/text(),'/')[3],'/',tokenize($object/text(),'/')[4],'/',tokenize($object/text(),'/')[5],'/',tokenize($object/text(),'/')[6],'/',tokenize($object/text(),'/')[7])"/>
+              </xsl:element>
+              <xsl:element name="oldIoRefId">
+                <xsl:value-of select="$object/text()"/>
+              </xsl:element>
+            </xsl:element>
+          </xsl:for-each>
         </xsl:element>
-    </xsl:template>
+      </xsl:for-each>
+      <!-- Levering Ids -->
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//(lvbb:idLevering|lvbb_intern:idLevering)">
+        <xsl:variable name="levering" select="."/>
+        <xsl:element name="leveringId">
+          <xsl:attribute name="sourcefile" select="tokenize(base-uri($levering),'/')[last()]"/>
+          <xsl:for-each select="collection(concat($directory,'?select=*.xml'))/ow-dc:owBestand[//sl:leveringsId]">
+            <xsl:variable name="object" select="."/>
+            <xsl:element name="referencefile">
+              <xsl:value-of select="tokenize(base-uri($object),'/')[last()]"/>
+            </xsl:element>
+          </xsl:for-each>
+          <xsl:element name="new">
+            <xsl:value-of select="concat($levering/text(),'-',$alreadyRetrievedDateTime)"/>
+          </xsl:element>
+        </xsl:element>
+      </xsl:for-each>
+      <!-- GUIDS -->
+      <xsl:variable name="guids" select="collection(concat($directory,'?select=*.gml'))/geo:GeoInformatieObjectVaststelling//basisgeo:id"/>
+      <xsl:if test="$guids">
+        <xsl:element name="guids">
+          <xsl:for-each select="$guids">
+            <xsl:variable name="guid" select="."/>
+            <xsl:variable name="new_guid" select="uuid:randomUUID()"/>
+            <xsl:variable name="locatiefile" select="collection(concat($directory,'?select=*.xml'))//l:GeometrieRef[@xlink:href = $guid/text()]/base-uri(.)"/>
+            <xsl:choose>
+              <xsl:when test="$locatiefile ne ''">
+                <xsl:element name="guidInOw">
+                  <xsl:attribute name="locatiefile" select="tokenize($locatiefile,'/')[last()]"/>
+                  <xsl:attribute name="gmlfile" select="tokenize(base-uri($guid),'/')[last()]"/>
+                  <xsl:element name="org">
+                    <xsl:value-of select="$guid/text()"/>
+                  </xsl:element>
+                  <xsl:element name="new">
+                    <xsl:value-of select="$new_guid"/>
+                  </xsl:element>
+                </xsl:element>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:element name="guid">
+                  <xsl:attribute name="gmlfile" select="tokenize(base-uri($guid),'/')[last()]"/>
+                  <xsl:element name="org">
+                    <xsl:value-of select="$guid/text()"/>
+                  </xsl:element>
+                  <xsl:element name="new">
+                    <xsl:value-of select="$new_guid"/>
+                  </xsl:element>
+                </xsl:element>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:for-each>
+        </xsl:element>
+      </xsl:if>
+      <!-- BESLUIT -->
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))/aanlevering:AanleveringBesluit">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'besluit.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'false'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <!-- OPDRACHT -->
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))/lvbb:publicatieOpdracht">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'opdracht.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'false'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <!-- GML -->
+      <xsl:for-each select="collection(concat($directory,'?select=*.gml'))//geo:GeoInformatieObjectVaststelling">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'gml.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'false'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <!-- GIO -->
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//data:InformatieObjectMetadata[data:formaatInformatieobject='/join/id/stop/informatieobject/gio_002']">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'gio.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'false'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <!-- PDF -->
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//data:InformatieObjectMetadata[data:formaatInformatieobject='/join/id/stop/informatieobject/doc_001']">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'doc.pdf'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'false'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <!-- OW -->
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//ga:Gebiedsaanwijzing">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'gebiedsaanwijzing.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//k:Kaart">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'kaart.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//k:Kaartlaag">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'kaart.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//l:Ambtsgebied">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'locatie.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//l:Gebied">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'locatie.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//l:Gebiedengroep">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'locatie.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//l:Lijn">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'locatie.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//l:Lijnengroep">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'locatie.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//l:Punt">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'locatie.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//l:Puntengroep">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'locatie.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//l:Locatie">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'locatie.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//p:Pons">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'pons.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//rg:Regelingsgebied">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'regelingsgebied.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//r:ActiviteitLocatieaanduiding">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'regeltekst.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//r:Regeltekst">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'regeltekst.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//r:Instructieregel">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'regeltekst.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//r:Omgevingswaarderegel">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'regeltekst.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//r:RegelVoorIedereen">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'regeltekst.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//rol:Activiteit">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'activiteit.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//rol:Normwaarde">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'normwaarde.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//rol:Omgevingswaarde">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'normwaarde.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//rol:Omgevingsnorm">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'normwaarde.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//vt:Hoofdlijn">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'hoofdlijn.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//vt:Tekstdeel">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'tekstdeel.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//vt:Divisie">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'vrijetekst.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//s:SymbolisatieItem">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'symbolisatie.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'true'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//Aanleveringen" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">
+        <xsl:call-template name="file">
+          <xsl:with-param name="type" select="'manifest-ow.xml'"/>
+          <xsl:with-param name="fullname" select="base-uri(.)"/>
+          <xsl:with-param name="ow" select="'false'"/>
+        </xsl:call-template>
+      </xsl:for-each>
+      <xsl:for-each select="distinct-values(collection(concat($directory,'?select=*.xml'))//rol:Activiteit/rol:bovenliggendeActiviteit/rol:ActiviteitRef/@xlink:href)">
+        <xsl:variable name="id" select="."/>
+        <xsl:variable name="activiteit" select="collection(concat($directory,'?select=*.xml'))//rol:Activiteit[rol:identificatie=$id]"/>
+        <xsl:if test="$activiteit/self::rol:Activiteit">
+          <xsl:element name="bovenliggendeActiviteitRelatie">
+            <xsl:element name="name">
+              <xsl:value-of select="tokenize(base-uri($activiteit),'/')[last()]"/>
+            </xsl:element>
+            <xsl:element name="bovenliggendeActiviteitIdLokaalAanwezig">
+              <xsl:value-of select="$id"/>
+            </xsl:element>
+          </xsl:element>
+        </xsl:if>
+      </xsl:for-each>
+      <xsl:for-each select="collection(concat($directory,'?select=*.xml'))//rol:Activiteit/rol:gerelateerdeActiviteit/rol:ActiviteitRef/@xlink:href">
+        <xsl:variable name="id" select="."/>
+        <xsl:variable name="activiteit" select="collection(concat($directory,'?select=*.xml'))//rol:Activiteit[rol:identificatie=$id]"/>
+        <xsl:if test="$activiteit/self::rol:Activiteit">
+          <xsl:element name="gerelateerdeActiviteitRelatie">
+            <xsl:element name="name">
+              <xsl:value-of select="tokenize(base-uri($activiteit),'/')[last()]"/>
+            </xsl:element>
+            <xsl:element name="gerelateerdeActiviteitIdLokaalAanwezig">
+              <xsl:value-of select="$id"/>
+            </xsl:element>
+          </xsl:element>
+        </xsl:if>
+      </xsl:for-each>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template name="file">
+    <xsl:param name="type" as="xs:string"/>
+    <xsl:param name="fullname" as="xs:string"/>
+    <xsl:param name="ow" as="xs:string"/>
+    <xsl:element name="file">
+      <xsl:attribute name="type" select="$type"/>
+      <xsl:attribute name="ow" select="$ow"/>
+      <xsl:element name="name">
+        <xsl:value-of select="tokenize($fullname,'/')[last()]"/>
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
 
 </xsl:stylesheet>

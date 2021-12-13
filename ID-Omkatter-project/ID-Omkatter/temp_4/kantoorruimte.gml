@@ -14,16 +14,16 @@
     </geo:context>
     <geo:vastgesteldeVersie>
         <geo:GeoInformatieObjectVersie>
-            <geo:FRBRWork>/join/id/regdata/gm0297/2020/Kantoorruimte-20211211085336</geo:FRBRWork>
-            <geo:FRBRExpression>/join/id/regdata/gm0297/2020/Kantoorruimte-20211211085336/nld@2020-09-11;6045</geo:FRBRExpression>
+            <geo:FRBRWork>/join/id/regdata/gm0297/2020/Kantoorruimte-20211213182730</geo:FRBRWork>
+            <geo:FRBRExpression>/join/id/regdata/gm0297/2020/Kantoorruimte-20211213182730/nld@2020-09-11;6045</geo:FRBRExpression>
             <geo:locaties>
                 <geo:Locatie>
                     <geo:geometrie>
-                        <basisgeo:Geometrie gml:id="id-8f402bf1-a76f-41a5-a270-91067a76d753-xx">
-                            <basisgeo:id>8f402bf1-a76f-41a5-a270-91067a76d753</basisgeo:id>
+                        <basisgeo:Geometrie gml:id="id-b26d3ce9-0593-46b4-b576-cc52d7ce8035-xx">
+                            <basisgeo:id>b26d3ce9-0593-46b4-b576-cc52d7ce8035</basisgeo:id>
                             <basisgeo:geometrie>
                                 <gml:MultiSurface srsName="urn:ogc:def:crs:EPSG::28992"
-                                          gml:id="id-8f402bf1-a76f-41a5-a270-91067a76d753">
+                                          gml:id="id-b26d3ce9-0593-46b4-b576-cc52d7ce8035">
                                     <gml:surfaceMember>
                                         <gml:Polygon>
                                             <gml:exterior>

@@ -4,9 +4,9 @@
   <taskdef resource="net/sf/antcontrib/antlib.xml"/>
   <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"/>
 
-  <property name="input.dir" value="bron"/>
-  <property name="output.dir" value="resultaat"/>
-  <property name="temp.dir" value="temp"/>
+  <property name="input.dir" value="bron_0"/>
+  <property name="output.dir" value="resultaat_0"/>
+  <property name="temp.dir" value="temp_0"/>
 
   <for list="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" param="number">
     <sequential>
@@ -38,7 +38,7 @@
       </sequential>
     </for>
     <tstamp>
-      <format property="build.currentDate" pattern="yyyyMMddhhmmss"/>
+      <format property="build.currentDate" pattern="yyyyMMddkkmmss"/>
     </tstamp>
   </target>
 
@@ -800,11 +800,11 @@
     <xmltask source="${temp.dir}/index.xml">
       <call path="index/Regeling">
         <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
-        <param name="origineleregelingsFBRWork" path="OrigineleregelingsFBRWork/text()"/>
+        <param name="origineleregelingFRBRWork" path="origineleregelingFRBRWork/text()"/>
         <actions>
           <xslt in="${output.dir}/@{besluit.name}" out="${temp.dir}/@{besluit.name}" extension=".xml" style="intrekkingopvolgervan.xsl" processor="trax" force="true">
             <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
-            <param name="origineleregelingsFBRWork" expression="@{origineleregelingsFBRWork}"/>
+            <param name="origineleregelingFRBRWork" expression="@{origineleregelingFRBRWork}"/>
           </xslt>
           <copy file="${temp.dir}/@{besluit.name}" tofile="${output.dir}/@{besluit.name}"/>
         </actions>
@@ -818,7 +818,7 @@
             <xmltask source="${temp_@{number}.dir}/index.xml">
               <call path="index/Regeling">
                 <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
-                <param name="origineleregelingsFBRWork" path="OrigineleregelingsFBRWork/text()"/>
+                <param name="origineleregelingFRBRWork" path="origineleregelingFRBRWork/text()"/>
                 <actions>
                   <if>
                     <available file="bron_@{number}" type="dir"/>
@@ -828,7 +828,7 @@
                         <then>
                           <xslt in="${output_@{number}.dir}/@{besluit.name}" out="${temp_@{number}.dir}/@{besluit.name}" extension=".xml" style="intrekkingopvolgervan.xsl" processor="trax" force="true">
                             <param name="alreadyRetrievedDateTime" expression="${build.currentDate}"/>
-                            <param name="origineleregelingsFBRWork" expression="@{origineleregelingsFBRWork}"/>
+                            <param name="origineleregelingFRBRWork" expression="@{origineleregelingFRBRWork}"/>
                           </xslt>
                           <copy file="${temp_@{number}.dir}/@{besluit.name}" tofile="${output_@{number}.dir}/@{besluit.name}"/>
                         </then>
