@@ -31,11 +31,16 @@
   <xsl:param name="border_word" select="('single','dashDotStroked','dashed','dashSmallGap','dotDash','dotDotDash','dotted','double','doubleWave','inset','nil','none','outset','thick','thickThinLargeGap','thickThinMediumGap','thickThinSmallGap','thinThickLargeGap','thinThickMediumGap','thinThickSmallGap','thinThickThinLargeGap','thinThickThinMediumGap','thinThickThinSmallGap','threeDEmboss','threeDEngrave','triple','wave')"/>
   <xsl:param name="border_html" select="('solid','dashed','dashed','dashed','dashed','dashed','dotted','double','double','inset','none','none','outset','solid','dashed','dashed','dashed','dashed','dashed','dashed','dashed','dashed','dashed','ridge','groove','double','solid')"/>
 
+  <!-- opmaakprofielen voor figuurbijschrift en tabeltitel -->
+
+  <xsl:param name="figure_caption" select="('caption','Figuurbijschrift')"/>
+  <xsl:param name="table_caption" select="('caption','Tabeltitel')"/>
+
   <!-- maak de inhoudsopgave -->
 
   <xsl:param name="body">
     <xsl:call-template name="body">
-      <xsl:with-param name="group" select="//w:body/w:p"/>
+      <xsl:with-param name="group" select="//w:body/element()"/>
       <xsl:with-param name="index" select="1"/>
       <xsl:with-param name="level" select="1"/>
     </xsl:call-template>
@@ -211,10 +216,10 @@
 
   <xsl:template name="group_adjacent">
     <xsl:param name="group"/>
-    <xsl:for-each-group select="$group" group-adjacent="if (self::w:p[w:r/w:drawing]|self::w:p[w:pPr(.)/w:name/@w:val='caption'][preceding-sibling::w:p[1][w:r/w:drawing]]) then 'figuur' else if (self::w:tbl|self::w:p[w:pPr(.)/w:name/@w:val='caption'][following-sibling::element()[1][w:tbl]]) then 'tabel' else if (w:lvl(w:pPr(self::w:p[descendant::w:t])/w:numPr)[w:numFmt/@w:val=$list_word]) then 'lijst' else if (self::w:p[w:r/w:rPr/w:highlight/@w:val]) then fn:distinct-values(self::w:p/w:r/w:rPr/w:highlight/@w:val) else if (self::w:p[w:sdt/w:sdtPr/w14:checkbox]) then 'check' else 'standaard'">
+    <xsl:for-each-group select="$group" group-adjacent="if (self::w:p[w:r/w:drawing]|self::w:p[w:pPr(.)/w:name/@w:val=$figure_caption][preceding-sibling::w:p[1][w:r/w:drawing]]) then 'figuur' else if (self::w:tbl|self::w:p[w:pPr(.)/w:name/@w:val=$table_caption][following-sibling::element()[1][w:tbl]]) then 'tabel' else if (w:lvl(w:pPr(self::w:p[descendant::w:t])/w:numPr)[w:numFmt/@w:val=$list_word]) then 'lijst' else if (self::w:p[w:r/w:rPr/w:highlight/@w:val]) then fn:distinct-values(self::w:p/w:r/w:rPr/w:highlight/@w:val) else if (self::w:p[w:sdt/w:sdtPr/w14:checkbox]) then 'check' else 'standaard'">
       <xsl:choose>
         <xsl:when test="current-grouping-key()='figuur'">
-          <xsl:for-each-group select="current-group()" group-ending-with="self::w:p[w:pPr(.)/w:name/@w:val='caption']">
+          <xsl:for-each-group select="current-group()" group-ending-with="self::w:p[w:pPr(.)/w:name/@w:val=$figure_caption]">
             <xsl:element name="figure">
               <xsl:attribute name="id" select="generate-id(.)"/>
               <xsl:for-each select="current-group()">
@@ -222,7 +227,7 @@
                   <xsl:when test="self::w:p[w:r/w:drawing]">
                     <xsl:apply-templates select="./w:r/w:drawing"/>
                   </xsl:when>
-                  <xsl:when test="self::w:p[w:pPr(.)/w:name/@w:val='caption']">
+                  <xsl:when test="self::w:p[w:pPr(.)/w:name/@w:val=$figure_caption]">
                     <xsl:element name="figcaption">
                       <xsl:apply-templates select="node()"/>
                     </xsl:element>
@@ -236,6 +241,7 @@
           </xsl:for-each-group>
         </xsl:when>
         <xsl:when test="current-grouping-key()='tabel'">
+          <xsl:comment>[Tabel]</xsl:comment>
           <xsl:apply-templates select="current-group()"/>
         </xsl:when>
         <xsl:when test="current-grouping-key()='lijst'">

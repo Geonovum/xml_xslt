@@ -3,9 +3,10 @@
   <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
   <xsl:strip-space elements="*"/>
 
+  <!-- de configuratie is specifiek voor organisatie Geonovum -->
+
   <!-- parameters ten behoeve van url's -->
   <xsl:param name="delimiter" select="string('/')"/>
-  <xsl:param name="organisatie" select="string('Geonovum')"/>
 
   <!-- options -->
   <xsl:param name="options" select="document('options.xml')/respec"/>
@@ -138,14 +139,14 @@
         </xsl:element>
         <xsl:if test="w:settings/w:docVars/w:docVar[@w:name='ID011']/@w:val = ('Waar','True')">
           <xsl:element name="github">
-            <xsl:value-of select="fn:string-join(('https:','','github.com',$organisatie,fn:string-join(((w:settings/w:docVars/w:docVar[@w:name='ID004']/@w:val,'Geen')[1],$id),'-')),$delimiter)"/>
+            <xsl:value-of select="fn:string-join(('https:','','github.com','Geonovum',fn:string-join(((w:settings/w:docVars/w:docVar[@w:name='ID004']/@w:val,'Geen')[1],$id),'-')),$delimiter)"/>
           </xsl:element>
           <xsl:element name="issueBase">
-            <xsl:value-of select="fn:string-join(('https:','','github.com',$organisatie,fn:string-join(((w:settings/w:docVars/w:docVar[@w:name='ID004']/@w:val,'Geen')[1],$id),'-'),'issues'),$delimiter)"/>
+            <xsl:value-of select="fn:string-join(('https:','','github.com','Geonovum',fn:string-join(((w:settings/w:docVars/w:docVar[@w:name='ID004']/@w:val,'Geen')[1],$id),'-'),'issues'),$delimiter)"/>
           </xsl:element>
         </xsl:if>
         <xsl:element name="edDraftURI">
-          <xsl:value-of select="fn:string-join(('https:','',fn:string-join(($organisatie,'github','io'),'.'),fn:string-join(((w:settings/w:docVars/w:docVar[@w:name='ID004']/@w:val,'Geen')[1],$id),'-')),$delimiter)"/>
+          <xsl:value-of select="fn:string-join(('https:','',fn:string-join(('Geonovum','github','io'),'.'),fn:string-join(((w:settings/w:docVars/w:docVar[@w:name='ID004']/@w:val,'Geen')[1],$id),'-')),$delimiter)"/>
         </xsl:element>
         <xsl:choose>
           <xsl:when test="$specStatus='GN-WV'">
