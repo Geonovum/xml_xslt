@@ -29,7 +29,7 @@
   <!-- langauge -->
   <xsl:param name="language" select="html/@lang"/>
 
-  <!-- TOC -->
+  <!-- nummering -->
 
   <xsl:param name="TOC">
     <xsl:for-each select="//(h1|h2|h3|h4|h5)">
@@ -45,6 +45,46 @@
         </xsl:element>
         <xsl:element name="text">
           <xsl:copy-of select="node()"/>
+        </xsl:element>
+      </xsl:element>
+    </xsl:for-each>
+  </xsl:param>
+
+  <xsl:param name="TOF">
+    <xsl:for-each select="//figure">
+      <xsl:element name="image">
+        <xsl:attribute name="id" select="generate-id(figcaption)"/>
+        <xsl:element name="number">
+          <!-- we gaan ervan uit dat figuren in het hele document doortellen -->
+          <xsl:element name="label">
+            <xsl:value-of select="string('Figuur ')"/>
+          </xsl:element>
+          <xsl:element name="item">
+            <xsl:value-of select="count(.|preceding::img)"/>
+          </xsl:element>
+        </xsl:element>
+        <xsl:element name="text">
+          <xsl:copy-of select="figcaption/node()"/>
+        </xsl:element>
+      </xsl:element>
+    </xsl:for-each>
+  </xsl:param>
+  
+  <xsl:param name="TOT">
+    <xsl:for-each select="//table">
+      <xsl:element name="table">
+        <xsl:attribute name="id" select="generate-id(caption)"/>
+        <xsl:element name="number">
+          <!-- we gaan ervan uit dat tabellen in het hele document doortellen -->
+          <xsl:element name="label">
+            <xsl:value-of select="string('Tabel ')"/>
+          </xsl:element>
+          <xsl:element name="item">
+            <xsl:value-of select="count(.|preceding::table)"/>
+          </xsl:element>
+        </xsl:element>
+        <xsl:element name="text">
+          <xsl:copy-of select="caption/node()"/>
         </xsl:element>
       </xsl:element>
     </xsl:for-each>
@@ -613,6 +653,46 @@
     <xsl:element name="{name()}">
       <xsl:attribute name="class" select="string('heading10')"/>
       <xsl:apply-templates select="node()"/>
+    </xsl:element>
+  </xsl:template>
+
+  <!-- figuren -->
+
+  <xsl:template match="figcaption">
+    <xsl:variable name="id" select="generate-id(.)"/>
+    <xsl:variable name="number" select="$TOF/image[@id=$id]/number"/>
+    <xsl:element name="{name()}">
+      <xsl:attribute name="id" select="$id"/>
+      <xsl:value-of select="$number/label"/>
+      <xsl:element name="span">
+        <xsl:attribute name="class" select="string('figno')"/>
+        <xsl:value-of select="fn:string-join($number/item,'.')"/>
+      </xsl:element>
+      <xsl:value-of select="string('&#8194;')"/>
+      <xsl:element name="span">
+        <xsl:attribute name="class" select="string('fig-title')"/>
+        <xsl:apply-templates select="node()"/>
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
+
+  <!-- tabellen -->
+
+  <xsl:template match="caption">
+    <xsl:variable name="id" select="generate-id(.)"/>
+    <xsl:variable name="number" select="$TOT/table[@id=$id]/number"/>
+    <xsl:element name="{name()}">
+      <xsl:attribute name="id" select="$id"/>
+      <xsl:value-of select="$number/label"/>
+      <xsl:element name="span">
+        <xsl:attribute name="class" select="string('tblno')"/>
+        <xsl:value-of select="fn:string-join($number/item,'.')"/>
+      </xsl:element>
+      <xsl:value-of select="string('&#8194;')"/>
+      <xsl:element name="span">
+        <xsl:attribute name="class" select="string('tbl-title')"/>
+        <xsl:apply-templates select="node()"/>
+      </xsl:element>
     </xsl:element>
   </xsl:template>
 

@@ -184,6 +184,7 @@ caption {
   font-size: 12pt;
   font-weight: bold;
   line-height: 16pt;
+  margin-bottom: 4pt;
 }
 th {
   background-color: black;
@@ -237,4 +238,10 @@ div.copyright div {
   display: inline-block;
   margin: 3.5pt 3.5pt 3.5pt 0mm;
   vertical-align: top;
+}
+
+/* textbox */
+
+div.textbox {
+  margin: 16pt 0mm 16pt 0mm;
 }

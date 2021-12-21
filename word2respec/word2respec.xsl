@@ -39,11 +39,18 @@
   <!-- maak de inhoudsopgave -->
 
   <xsl:param name="body">
-    <xsl:call-template name="body">
-      <xsl:with-param name="group" select="//w:body/element()"/>
-      <xsl:with-param name="index" select="1"/>
-      <xsl:with-param name="level" select="1"/>
-    </xsl:call-template>
+    <!-- body bevat alles na de eerste heading 1 -->
+    <xsl:for-each-group select="//w:body/node()" group-starting-with="w:p[w:pPr(.)/w:name/@w:val='heading 1'][1]">
+      <xsl:choose>
+        <xsl:when test="current-group()[1][w:pPr(.)/w:name/@w:val='heading 1']">
+          <xsl:call-template name="body">
+            <xsl:with-param name="group" select="current-group()"/>
+            <xsl:with-param name="index" select="1"/>
+            <xsl:with-param name="level" select="1"/>
+          </xsl:call-template>
+        </xsl:when>
+      </xsl:choose>
+    </xsl:for-each-group>
   </xsl:param>
 
   <xsl:template name="body">
@@ -82,6 +89,7 @@
     </xsl:for-each-group>
   </xsl:template>
 
+  <!-- Table Of Content -->
   <xsl:param name="TOC">
     <xsl:for-each select="$body//heading">
       <xsl:element name="heading">
@@ -96,6 +104,52 @@
         </xsl:element>
         <xsl:element name="text">
           <xsl:copy-of select="w:p/node()"/>
+        </xsl:element>
+      </xsl:element>
+    </xsl:for-each>
+  </xsl:param>
+
+  <!-- Table Of Figure -->
+  <xsl:param name="TOF">
+    <xsl:for-each select="$body//w:p/w:r/w:drawing">
+      <xsl:element name="image">
+        <xsl:attribute name="id" select="w:imageId(.)"/>
+        <xsl:element name="number">
+          <!-- we gaan ervan uit dat figuren in het hele document doortellen -->
+          <xsl:element name="label">
+            <xsl:value-of select="string('Figuur')"/>
+          </xsl:element>
+          <xsl:element name="item">
+            <xsl:value-of select="count(.|preceding::w:p/w:r/w:drawing)"/>
+          </xsl:element>
+        </xsl:element>
+        <xsl:element name="text">
+          <xsl:for-each select="ancestor::w:p[1]/(.|following-sibling::element()[1][w:pPr(self::w:p)/w:name/@w:val=$figure_caption])//w:bookmarkStart">
+            <xsl:copy-of select="."/>
+          </xsl:for-each>
+        </xsl:element>
+      </xsl:element>
+    </xsl:for-each>
+  </xsl:param>
+
+  <!-- Table Of Table -->
+  <xsl:param name="TOT">
+    <xsl:for-each select="$body//w:tbl">
+      <xsl:element name="table">
+        <xsl:attribute name="id" select="generate-id(.)"/>
+        <xsl:element name="number">
+          <!-- we gaan ervan uit dat tabellen in het hele document doortellen -->
+          <xsl:element name="label">
+            <xsl:value-of select="string('Tabel')"/>
+          </xsl:element>
+          <xsl:element name="item">
+            <xsl:value-of select="count(.|preceding::w:tbl)"/>
+          </xsl:element>
+        </xsl:element>
+        <xsl:element name="text">
+          <xsl:for-each select="preceding-sibling::element()[1][w:pPr(self::w:p)/w:name/@w:val=$table_caption]//w:bookmarkStart">
+            <xsl:copy-of select="."/>
+          </xsl:for-each>
         </xsl:element>
       </xsl:element>
     </xsl:for-each>
@@ -216,33 +270,29 @@
 
   <xsl:template name="group_adjacent">
     <xsl:param name="group"/>
-    <xsl:for-each-group select="$group" group-adjacent="if (self::w:p[w:r/w:drawing]|self::w:p[w:pPr(.)/w:name/@w:val=$figure_caption][preceding-sibling::w:p[1][w:r/w:drawing]]) then 'figuur' else if (self::w:tbl|self::w:p[w:pPr(.)/w:name/@w:val=$table_caption][following-sibling::element()[1][w:tbl]]) then 'tabel' else if (w:lvl(w:pPr(self::w:p[descendant::w:t])/w:numPr)[w:numFmt/@w:val=$list_word]) then 'lijst' else if (self::w:p[w:r/w:rPr/w:highlight/@w:val]) then fn:distinct-values(self::w:p/w:r/w:rPr/w:highlight/@w:val) else if (self::w:p[w:sdt/w:sdtPr/w14:checkbox]) then 'check' else 'standaard'">
+    <xsl:for-each-group select="$group" group-adjacent="if (self::w:p[w:r/w:drawing]|self::w:p[w:pPr(.)/w:name/@w:val=$figure_caption][preceding-sibling::w:p[1][w:r/w:drawing]]) then 'figuur' else if (self::w:tbl|self::w:p[w:pPr(.)/w:name/@w:val=$table_caption][following-sibling::element()[1][self::w:tbl]]) then 'tabel' else if (w:lvl(w:pPr(self::w:p[descendant::w:t])/w:numPr)[w:numFmt/@w:val=$list_word]) then 'lijst' else if (self::w:p[w:r/w:rPr/w:highlight/@w:val]) then fn:distinct-values(self::w:p/w:r/w:rPr/w:highlight/@w:val) else if (self::w:p[w:sdt/w:sdtPr/w14:checkbox]) then 'check' else 'standaard'">
       <xsl:choose>
         <xsl:when test="current-grouping-key()='figuur'">
-          <xsl:for-each-group select="current-group()" group-ending-with="self::w:p[w:pPr(.)/w:name/@w:val=$figure_caption]">
+          <xsl:for-each-group select="current-group()" group-starting-with="self::w:p[w:r/w:drawing]">
+            <xsl:variable name="imageId" select="w:imageId(current-group()/self::w:p/w:r/w:drawing)"/>
             <xsl:element name="figure">
-              <xsl:attribute name="id" select="generate-id(.)"/>
-              <xsl:for-each select="current-group()">
-                <xsl:choose>
-                  <xsl:when test="self::w:p[w:r/w:drawing]">
-                    <xsl:apply-templates select="./w:r/w:drawing"/>
-                  </xsl:when>
-                  <xsl:when test="self::w:p[w:pPr(.)/w:name/@w:val=$figure_caption]">
-                    <xsl:element name="figcaption">
-                      <xsl:apply-templates select="node()"/>
-                    </xsl:element>
-                  </xsl:when>
-                  <xsl:otherwise>
-                    <xsl:apply-templates select="."/>
-                  </xsl:otherwise>
-                </xsl:choose>
-              </xsl:for-each>
+              <!-- plaats de bookmarks voor img, niet voor figcaption -->
+              <xsl:apply-templates select="$TOF/image[@id=$imageId]/text/w:bookmarkStart"/>
+              <xsl:apply-templates select="current-group()/self::w:p/w:r/w:drawing">
+                <xsl:with-param name="imageId" select="$imageId"/>
+              </xsl:apply-templates>
+              <xsl:element name="figcaption">
+                <xsl:apply-templates select="current-group()/self::w:p[w:pPr(.)/w:name/@w:val=$figure_caption]/node() except w:bookmarkStart"/>
+              </xsl:element>
             </xsl:element>
           </xsl:for-each-group>
         </xsl:when>
         <xsl:when test="current-grouping-key()='tabel'">
-          <xsl:comment>[Tabel]</xsl:comment>
-          <xsl:apply-templates select="current-group()"/>
+          <xsl:for-each-group select="current-group()" group-ending-with="self::w:tbl">
+            <xsl:apply-templates select="current-group()/self::w:tbl">
+              <xsl:with-param name="caption" select="current-group()/self::w:p[w:pPr(.)/w:name/@w:val=$table_caption]/node()"/>
+            </xsl:apply-templates>
+          </xsl:for-each-group>
         </xsl:when>
         <xsl:when test="current-grouping-key()='lijst'">
           <xsl:call-template name="lijst">
@@ -424,7 +474,8 @@
       </xsl:when>
       <xsl:otherwise>
         <xsl:element name="a">
-          <xsl:attribute name="name" select="@w:name"/>
+          <xsl:attribute name="id" select="@w:name"/>
+          <!-- @name wordt niet ondersteund in HTML5, daarom is @id gebruikt -->
         </xsl:element>
       </xsl:otherwise>
     </xsl:choose>
@@ -441,12 +492,12 @@
     <xsl:choose>
       <xsl:when test="fn:tokenize($instrText,'\s+')[1]='REF'">
         <xsl:variable name="ref" select="fn:tokenize($instrText,'\s+')[2]"/>
-        <xsl:variable name="number" select="$TOC/heading[text/w:bookmarkStart/@w:name=$ref]/number"/>
+        <xsl:variable name="number" select="($TOC/heading[text/w:bookmarkStart/@w:name=$ref]/number,$TOF/image[text/w:bookmarkStart/@w:name=$ref]/number,$TOT/table[text/w:bookmarkStart/@w:name=$ref]/number)[1]"/>
         <xsl:element name="a">
           <xsl:attribute name="href" select="concat('#',$ref)"/>
           <xsl:choose>
             <xsl:when test="$number">
-              <xsl:value-of select="fn:string-join($number/item,'.')"/>
+              <xsl:value-of select="fn:string-join(($number/label,fn:string-join($number/item,'.')),' ')"/>
             </xsl:when>
             <xsl:otherwise>
               <xsl:apply-templates/>
@@ -470,23 +521,32 @@
   <xsl:template match="w:r">
     <!-- als onderliggende w:t begin- en eindspaties bevatten, moeten die buiten w:r geplaatst worden -->
     <xsl:variable name="check" select="fn:tokenize(w:t,'\s+')"/>
-    <xsl:if test="$check[1] eq ''">
-      <xsl:text> </xsl:text>
-    </xsl:if>
     <xsl:choose>
-      <xsl:when test="w:rPr">
-        <xsl:call-template name="range">
-          <xsl:with-param name="node" select="."/>
-          <xsl:with-param name="index" select="1"/>
-        </xsl:call-template>
+      <xsl:when test="($check[1] eq '') and ($check[2] eq '')">
+        <!-- alleen een spatie -->
+        <xsl:text> </xsl:text>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:apply-templates/>
+        <!-- w:t bevat normalize-space -->
+        <xsl:if test="$check[1] eq ''">
+          <xsl:text> </xsl:text>
+        </xsl:if>
+        <xsl:choose>
+          <xsl:when test="w:rPr">
+            <xsl:call-template name="range">
+              <xsl:with-param name="node" select="."/>
+              <xsl:with-param name="index" select="1"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:apply-templates/>
+          </xsl:otherwise>
+        </xsl:choose>
+        <xsl:if test="$check[last()] eq ''">
+          <xsl:text> </xsl:text>
+        </xsl:if>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:if test="$check[last()] eq ''">
-      <xsl:text> </xsl:text>
-    </xsl:if>
   </xsl:template>
 
   <!--routine om elementen in w:rPr af te splitsen-->
@@ -494,9 +554,9 @@
     <xsl:param name="node"/>
     <xsl:param name="index"/>
     <xsl:choose>
-      <xsl:when test="w:rPr/*[$index]">
+      <xsl:when test="w:rPr/element()[$index]">
         <xsl:choose>
-          <xsl:when test="name($node/w:rPr/*[$index])='w:rStyle'">
+          <xsl:when test="name($node/w:rPr/element()[$index])='w:rStyle'">
             <xsl:variable name="styleId" select="$node/w:rPr/w:rStyle/@w:val"/>
             <xsl:variable name="styleName" select="document($styles,.)/w:styles/w:style[@w:styleId=$styleId]/w:name/@w:val"/>
             <!-- hier kan een choose op basis van styleName -->
@@ -505,7 +565,7 @@
               <xsl:with-param name="index" select="$index+1"/>
             </xsl:call-template>
           </xsl:when>
-          <xsl:when test="name($node/w:rPr/*[$index])='w:highlight'">
+          <xsl:when test="name($node/w:rPr/element()[$index])='w:highlight'">
             <!-- geldt alleen binnen alinea -->
             <xsl:choose>
               <xsl:when test="$node/ancestor::w:p/w:r[not(w:rPr/w:highlight)]">
@@ -525,7 +585,7 @@
               </xsl:otherwise>
             </xsl:choose>
           </xsl:when>
-          <xsl:when test="name($node/w:rPr/*[$index])='w:color'">
+          <xsl:when test="name($node/w:rPr/element()[$index])='w:color'">
             <xsl:element name="span">
               <xsl:attribute name="style" select="concat('color: #',$node/w:rPr/w:color/@w:val,';')"/>
               <xsl:call-template name="range">
@@ -534,13 +594,13 @@
               </xsl:call-template>
             </xsl:element>
           </xsl:when>
-          <!--xsl:when test="name(w:rPr/*[$index]) = 'w:rFonts'">
+          <!--xsl:when test="name(w:rPr/element()[$index]) = 'w:rFonts'">
             <xsl:call-template name="range">
               <xsl:with-param name="node" select="$node"/>
               <xsl:with-param name="index" select="$index+1"/>
             </xsl:call-template>
           </xsl:when-->
-          <xsl:when test="name($node/w:rPr/*[$index])='w:b'">
+          <xsl:when test="name($node/w:rPr/element()[$index])='w:b'">
             <xsl:element name="b">
               <xsl:call-template name="range">
                 <xsl:with-param name="node" select="$node"/>
@@ -548,7 +608,7 @@
               </xsl:call-template>
             </xsl:element>
           </xsl:when>
-          <xsl:when test="name($node/w:rPr/*[$index])='w:i'">
+          <xsl:when test="name($node/w:rPr/element()[$index])='w:i'">
             <xsl:element name="i">
               <xsl:call-template name="range">
                 <xsl:with-param name="node" select="$node"/>
@@ -556,7 +616,7 @@
               </xsl:call-template>
             </xsl:element>
           </xsl:when>
-          <xsl:when test="name($node/w:rPr/*[$index])='w:u'">
+          <xsl:when test="name($node/w:rPr/element()[$index])='w:u'">
             <xsl:element name="u">
               <xsl:call-template name="range">
                 <xsl:with-param name="node" select="$node"/>
@@ -564,7 +624,7 @@
               </xsl:call-template>
             </xsl:element>
           </xsl:when>
-          <xsl:when test="name($node/w:rPr/*[$index])='w:vertAlign'">
+          <xsl:when test="name($node/w:rPr/element()[$index])='w:vertAlign'">
             <xsl:element name="{fn:substring($node/w:rPr/w:vertAlign/@w:val,1,3)}">
               <xsl:call-template name="range">
                 <xsl:with-param name="node" select="$node"/>
@@ -653,10 +713,14 @@
   <!-- tabel -->
 
   <xsl:template match="w:tbl">
+    <xsl:param name="caption"/>
     <xsl:variable name="cols" select="w:tblGrid/w:gridCol"/>
     <xsl:variable name="tablewidth" select="sum($cols/@w:w)"/>
     <xsl:element name="table">
       <xsl:attribute name="style" select="if ($tablewidth gt 6500) then string('width: 100%;') else concat('width: ',string($tablewidth div 20),'pt;')"/>
+      <xsl:element name="caption">
+        <xsl:apply-templates select="$caption"/>
+      </xsl:element>
       <xsl:element name="colgroup">
         <xsl:for-each select="$cols">
           <xsl:variable name="index" select="position()"/>
@@ -772,14 +836,14 @@
   <xsl:template name="margin">
     <xsl:param name="check"/>
     <!-- controleer of w:tc een marge heeft -->
-    <xsl:variable name="tcMar" select="w:tcPr/w:tcMar/*[name()=concat('w:', $check)]/@w:w"/>
+    <xsl:variable name="tcMar" select="w:tcPr/w:tcMar/element()[name()=concat('w:', $check)]/@w:w"/>
     <xsl:choose>
       <xsl:when test="$tcMar">
         <xsl:value-of select="concat(string(number($tcMar) div 20), 'pt')"/>
       </xsl:when>
       <xsl:otherwise>
         <!-- controleer of w:tbl een marge heeft -->
-        <xsl:variable name="tblCellMar" select="ancestor::w:tbl[1]/w:tblPr/w:tblCellMar/*[name()=concat('w:', $check)]/@w:w"/>
+        <xsl:variable name="tblCellMar" select="ancestor::w:tbl[1]/w:tblPr/w:tblCellMar/element()[name()=concat('w:', $check)]/@w:w"/>
         <xsl:choose>
           <xsl:when test="$tblCellMar">
             <xsl:value-of select="concat(string(number($tblCellMar) div 20), 'pt')"/>
@@ -810,7 +874,7 @@
           </xsl:call-template>
         </xsl:variable>
         <!-- controleer of w:tc een rand heeft -->
-        <xsl:variable name="tcBorder" select="w:tcPr/w:tcBorders/*[local-name()=$check[$index]]"/>
+        <xsl:variable name="tcBorder" select="w:tcPr/w:tcBorders/element()[local-name()=$check[$index]]"/>
         <xsl:choose>
           <xsl:when test="$tcBorder">
             <xsl:call-template name="props">
@@ -846,7 +910,7 @@
           </xsl:call-template>
         </xsl:variable>
         <!-- controleer of w:tc een rand heeft -->
-        <xsl:variable name="tcBorder" select="w:tcPr/w:tcBorders/*[name()=concat('w:',$check[$index])]"/>
+        <xsl:variable name="tcBorder" select="w:tcPr/w:tcBorders/element()[name()=concat('w:',$check[$index])]"/>
         <xsl:choose>
           <xsl:when test="$tcBorder">
             <xsl:call-template name="props">
@@ -896,7 +960,7 @@
               <w:tcStylePr w:type="band1Vert"><xsl:value-of select="$tblLook/@w:noVBand and sum($tcLook/@w:oddVBand)"/></w:tcStylePr>
               <w:tcStylePr w:type="band1Horz"><xsl:value-of select="$tblLook/@w:noHBand and sum($tcLook/@w:oddHBand)"/></w:tcStylePr>
             </xsl:variable>
-            <xsl:variable name="tblBackground" select="$style/w:tblStylePr[@w:type=$cnfStyle/*[.=true()]/@w:type[1]]/w:tcPr/w:shd/@w:fill"/>
+            <xsl:variable name="tblBackground" select="$style/w:tblStylePr[@w:type=$cnfStyle/element()[.=true()]/@w:type[1]]/w:tcPr/w:shd/@w:fill"/>
             <xsl:choose>
               <xsl:when test="$tblBackground">
                 <xsl:call-template name="props">
@@ -948,13 +1012,13 @@
 
   <!-- illustraties toevoegen -->
 
-  <xsl:template match="w:drawing">
-    <xsl:variable name="imageId" select=".//a:graphic/(descendant::asvg:svgBlip/@r:embed,descendant::a:blip/@r:embed)[1]"/>
+  <xsl:template match="w:p/w:r/w:drawing">
+    <xsl:param name="imageId"/>
     <xsl:choose>
       <xsl:when test="$imageId!=''">
-        <xsl:variable name="imageName" select="document($relations,.)//*[@Id=$imageId]/@Target"/>
+        <xsl:variable name="imageName" select="document($relations,.)//element()[@Id=$imageId]/@Target"/>
         <xsl:variable name="width">
-          <xsl:variable name="sum" select="(wp:anchor/wp:extent|wp:inline/a:graphic/a:graphicData/pic:pic/pic:spPr/a:xfrm/a:ext)[1]/@cx div 6.35 div preceding::w:sectPr[1]/(w:pgSz/@w:w - w:pgMar/@w:left - w:pgMar/@w:right)"/>
+          <xsl:variable name="sum" select="(wp:anchor/wp:extent|wp:inline/a:graphic/a:graphicData/pic:pic/pic:spPr/a:xfrm/a:ext)[1]/@cx div 6.35 div (ancestor::w:tc[1]/w:tcPr/w:tcW/@w:w,preceding::w:sectPr[1]/(w:pgSz/@w:w - w:pgMar/@w:left - w:pgMar/@w:right))[1]"/>
           <xsl:choose>
             <xsl:when test="$sum lt 90">
               <xsl:value-of select="$sum"/>
@@ -973,6 +1037,17 @@
     </xsl:choose>
   </xsl:template>
 
+  <!-- textbox toevoegen -->
+
+  <xsl:template match="w:txbxContent">
+    <xsl:element name="div">
+      <xsl:attribute name="class" select="string('textbox')"/>
+      <xsl:apply-templates/>
+    </xsl:element>
+  </xsl:template>
+
+  <!-- functies -->
+
   <!-- functie om w:pPr van de alinea en van toegepaste opmaakprofielen te 'resolven' in één w:pPr -->
   <xsl:function name="w:pPr">
     <xsl:param name="w:p"/>
@@ -988,6 +1063,12 @@
     <xsl:variable name="abstractNumId" select="document($numbering)/w:numbering/w:num[@w:numId=$w:numPr/w:numId/@w:val]/w:abstractNumId/@w:val"/>
     <xsl:variable name="abstractNum" select="document($numbering)/w:numbering/w:abstractNum[@w:abstractNumId=$abstractNumId]"/>
     <xsl:sequence select="$abstractNum/w:lvl[@w:ilvl=($w:numPr/w:ilvl/@w:val,'0')[1]]"/>
+  </xsl:function>
+
+  <!-- functie om imageId van een w:drawing op te vragen -->
+  <xsl:function name="w:imageId">
+    <xsl:param name="w:drawing"/>
+    <xsl:value-of select="$w:drawing//a:graphic/(descendant::asvg:svgBlip/@r:embed,descendant::a:blip/@r:embed,null)[1]"/>
   </xsl:function>
 
 </xsl:stylesheet>
