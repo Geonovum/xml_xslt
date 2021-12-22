@@ -40,7 +40,7 @@
 
   <xsl:param name="body">
     <!-- body bevat alles na de eerste heading 1 -->
-    <xsl:for-each-group select="//w:body/node()" group-starting-with="w:p[w:pPr(.)/w:name/@w:val='heading 1'][1]">
+    <xsl:for-each-group select="//w:body/node()" group-starting-with="(w:p[w:pPr(.)/w:name/@w:val='heading 1'])[1]">
       <xsl:choose>
         <xsl:when test="current-group()[1][w:pPr(.)/w:name/@w:val='heading 1']">
           <xsl:call-template name="body">
@@ -474,8 +474,7 @@
       </xsl:when>
       <xsl:otherwise>
         <xsl:element name="a">
-          <xsl:attribute name="id" select="@w:name"/>
-          <!-- @name wordt niet ondersteund in HTML5, daarom is @id gebruikt -->
+          <xsl:attribute name="name" select="@w:name"/>
         </xsl:element>
       </xsl:otherwise>
     </xsl:choose>
