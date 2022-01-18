@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<project basedir="." name="html" default="word2html">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+
+  <!-- properties voor de transformatie -->
+
+  <property name="css.dir" value="css"/>
+  <property name="input.dir" value="input"/>
+  <property name="js.dir" value="js"/>
+  <property name="media.dir" value="media"/>
+  <property name="output.dir" value="output"/>
+  <property name="temp.dir" value="temp"/>
+  <property name="unzip.dir" value="temp/unzip"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${temp.dir}"/>
+    </delete>
+    <mkdir dir="${temp.dir}"/>
+    <mkdir dir="${unzip.dir}"/>
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${output.dir}"/>
+    </delete>
+    <mkdir dir="${output.dir}"/>
+    <copy todir="${output.dir}/media" failonerror="false">
+      <fileset dir="${media.dir}"/>
+    </copy>
+    <copy file="${css.dir}/style.css" todir="${output.dir}/css"/>
+  </target>
+
+  <!-- unzip word-bestanden -->
+
+  <target name="unzip" description="Unzip word-bestanden">
+    <unzip dest="${unzip.dir}">
+      <fileset dir="${input.dir}">
+        <include name="**/*.docx"/>
+      </fileset>
+    </unzip>
+  </target>
+
+  <!-- maak het configuratiebestand -->
+
+  <target name="config" description="Maak het configuratiebestand">
+    <xslt in="${unzip.dir}/word/settings.xml" out="${temp.dir}/config.xml" style="word2config.xsl" processor="trax" force="true"/>
+  </target>
+
+  <!-- transformeer van word naar html -->
+
+  <target name="html" description="Transformeer van word naar html">
+    <xslt in="${unzip.dir}/word/document.xml" out="${output.dir}/index.html" style="word2html.xsl" processor="trax" force="true"/>
+    <copy todir="${output.dir}/media" failonerror="false">
+      <fileset dir="${unzip.dir}/word/media"/>
+    </copy>
+  </target>
+
+  <!-- totale transformatie van word naar html -->
+
+  <target name="word2html" depends="init,unzip,config,html"/>
+
+</project>
