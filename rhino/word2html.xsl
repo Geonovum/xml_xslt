@@ -85,7 +85,7 @@
     <xsl:param name="group"/>
     <xsl:param name="index"/>
     <xsl:param name="level"/>
-    <xsl:for-each-group select="$group" group-starting-with="w:p[w:pPr(.)/w:name/@w:val=fn:format-number($index,'heading #')]">
+    <xsl:for-each-group select="$group" group-starting-with="w:p[w:pPr(.)/w:name/@w:val=(fn:format-number($index,'heading #'),fn:format-number($index,'Kop # bijlage'))]">
       <xsl:choose>
         <xsl:when test="$index gt 9">
           <xsl:element name="content">
@@ -96,6 +96,22 @@
           <xsl:element name="section">
             <xsl:attribute name="id" select="current-group()[1]/@w14:paraId"/>
             <xsl:attribute name="level" select="$level"/>
+            <xsl:attribute name="class" select="string('body')"/>
+            <xsl:element name="heading">
+              <xsl:copy-of select="current-group()[1]"/>
+            </xsl:element>
+            <xsl:call-template name="body">
+              <xsl:with-param name="group" select="subsequence(current-group(),2)"/>
+              <xsl:with-param name="index" select="$index+1"/>
+              <xsl:with-param name="level" select="$level+1"/>
+            </xsl:call-template>
+          </xsl:element>
+        </xsl:when>
+        <xsl:when test="current-group()[1][w:pPr(.)/w:name/@w:val=fn:format-number($index,'Kop # bijlage')]">
+          <xsl:element name="section">
+            <xsl:attribute name="id" select="current-group()[1]/@w14:paraId"/>
+            <xsl:attribute name="level" select="$level"/>
+            <xsl:attribute name="class" select="string('appendix')"/>
             <xsl:element name="heading">
               <xsl:copy-of select="current-group()[1]"/>
             </xsl:element>
@@ -121,15 +137,17 @@
   <xsl:param name="TOC">
     <xsl:for-each select="$body//heading">
       <xsl:variable name="lvl" select="parent::section/@level"/>
+      <xsl:variable name="class" select="parent::section/@class"/>
       <xsl:variable name="lvlText" select="$TOC_numbering/w:lvl[@w:val=$lvl]/w:lvlText/@w:val"/>
       <xsl:variable name="numFmt" select="$TOC_numbering/w:lvl[@w:val=$lvl]/w:numFmt/@w:val"/>
       <xsl:element name="heading">
         <xsl:attribute name="id" select="parent::section/@id"/>
         <xsl:attribute name="level" select="$lvl"/>
+        <xsl:attribute name="class" select="$class"/>
         <xsl:element name="number">
           <xsl:for-each select="ancestor::section[heading]">
             <xsl:variable name="lvl" select="number(@level)"/>
-            <xsl:variable name="count" select="if ($TOC_numbering/w:lvl[@w:val=$lvl]/w:lvlRestart/@w:val='0') then count(.|preceding::section[heading][@level=$lvl]) else count(.|preceding-sibling::section[heading][@level=$lvl])"/>
+            <xsl:variable name="count" select="if ($TOC_numbering/w:lvl[@w:val=$lvl]/w:lvlRestart/@w:val='0') then count(.|preceding::section[heading][@class=$class][@level=$lvl]) else count(.|preceding-sibling::section[heading][@class=$class][@level=$lvl])"/>
             <xsl:element name="item">
               <xsl:attribute name="count" select="$count"/>
               <xsl:if test="contains($lvlText,concat('%',$lvl))">
@@ -670,14 +688,14 @@
       <xsl:when test="number(@level) lt 6">
         <xsl:element name="section">
           <xsl:attribute name="id" select="@id"/>
-          <xsl:attribute name="class" select="string('body')"/>
+          <xsl:attribute name="class" select="@class"/>
           <xsl:apply-templates select="node()"/>
         </xsl:element>
       </xsl:when>
       <xsl:otherwise>
         <xsl:element name="div">
           <xsl:attribute name="id" select="@id"/>
-          <xsl:attribute name="class" select="string('body')"/>
+          <xsl:attribute name="class" select="@class"/>
           <xsl:apply-templates select="node()"/>
         </xsl:element>
       </xsl:otherwise>
