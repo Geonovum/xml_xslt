@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>Omgevingsplan Zaanstad v0.1</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Gemeente Zaanstad</sl:gebied>
+         <sl:leveringsId>ZAAN0003</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Ambtsgebied</sl:objectType>
+            <sl:objectType>Gebiedengroep</sl:objectType>
+            <sl:objectType>Gebied</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <!--sl:stand>
+         <ow-dc:owObject>
+            <l:Ambtsgebied>
+               <l:identificatie>GM0479</l:identificatie>
+               <l:noemer>Gemeente Zaanstad</l:noemer>
+               <l:domein>NL.BI.BestuurlijkGebied</l:domein>
+               <l:geldigOp>2021-01-01</l:geldigOp>
+            </l:Ambtsgebied>
+         </ow-dc:owObject>
+      </sl:stand-->
+      <sl:stand>
+         <ow-dc:owObject><!--gemeente_Zaanstad.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.3118337024</l:identificatie>
+               <l:noemer>Zaanstad</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="2eafad5c-98c2-4bff-867d-670f9d969224"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--gebiedstype woongebied variant 1.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.2879855207</l:identificatie>
+               <l:noemer>gebiedstype woongebied variant 1</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="15a3b0a5-ecd2-48ef-abd3-efa29b01404e"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--gebiedstype woongebied variant 2.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.2882411113</l:identificatie>
+               <l:noemer>gebiedstype woongebied variant 2</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="d3175fcb-dc25-4c38-8937-b501f1082966"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--welstandsgebied.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.56692309</l:identificatie>
+               <l:noemer>welstandsgebied</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="18446068-e0bc-4b21-89d3-90cbab00968c"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--verplichte aanleg van groen.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.2902333095</l:identificatie>
+               <l:noemer>verplichte aanleg van groen</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="86a432ce-ef24-48d2-b8af-2602dab9586e"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--verplichte aanleg van water.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.2923173559</l:identificatie>
+               <l:noemer>verplichte aanleg van water</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="3bf96433-9b6d-4827-ac89-58f6efaa91a0"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--beperkingengebied buisleiding voor gevaarlijke stoffen.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.3864407133</l:identificatie>
+               <l:noemer>beperkingengebied buisleiding voor gevaarlijke stoffen</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b14e30e9-75d8-4a96-a448-d66ff7236e1b"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--beperkingengebied magneetveldzone.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.19274895</l:identificatie>
+               <l:noemer>beperkingengebied magneetveldzone</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="092dd093-5534-4868-a881-7dc8c56aeff2"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--beperkingengebied waterkering.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.675092805</l:identificatie>
+               <l:noemer>beperkingengebied waterkering</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="2a1152af-084a-48c3-a99d-4f22bf33f82f"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--nog nergens van toepassing.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.2071467547</l:identificatie>
+               <l:noemer>nog nergens van toepassing</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f820649d-3ffd-425c-83ac-cf62a1d45078"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--parkeervoorzieningen verplicht.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.1972050619</l:identificatie>
+               <l:noemer>parkeervoorzieningen verplicht</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ca9b53c0-d4bc-4f7a-a3c7-de172b0e47f0"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--bouwvlak.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.1607928001</l:identificatie>
+               <l:noemer>bouwvlak</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="02a7aa87-6b6e-4f72-9066-d7c9eaf20df4"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--maximum_goothoogte_6_m-->
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0479.gebiedengroep.20210706000001</l:identificatie>
+               <l:noemer>maximum bouwhoogte X m</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0479.gebied.20210706000001"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--maximum goothoogte 6 m-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.20210706000001</l:identificatie>
+               <l:noemer>maximum goothoogte 6 m</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="3df89ab3-53d1-4ea8-b4c3-02286b8b1d87"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--maximum_bouwhoogte_X_m-->
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0479.gebiedengroep.20210706000002</l:identificatie>
+               <l:noemer>maximum bouwhoogte X m</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0479.gebied.20210706000002"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0479.gebied.20210706000003"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--maximum bouwhoogte 7 m-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.20210706000002</l:identificatie>
+               <l:noemer>maximum bouwhoogte 7 m</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="a9a395f6-c6f2-41f0-9db2-9356cd76ce4b"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--maximum bouwhoogte 8 m-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.20210706000003</l:identificatie>
+               <l:noemer>maximum bouwhoogte 8 m</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="aa117cdc-f106-412f-93bc-28265596678a"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--X_woningen.gml-->
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0479.gebiedengroep.20210706000003</l:identificatie>
+               <l:noemer>X woningen(en)</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0479.gebied.20210706000004"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0479.gebied.20210706000005"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0479.gebied.20210706000006"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0479.gebied.20210706000007"/>
+                  <l:GebiedRef xlink:href="nl.imow-gm0479.gebied.20210706000008"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--1 woning(en)-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.20210706000004</l:identificatie>
+               <l:noemer>1 woning(en)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f6a66ff7-3a7a-4a0b-843a-7dc489a6ba95"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--3 woning(en)-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.20210706000005</l:identificatie>
+               <l:noemer>3 woning(en)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="6e2cdfe7-64da-441d-8ef8-cb8b85138302"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--4 woning(en)-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.20210706000006</l:identificatie>
+               <l:noemer>4 woning(en)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="96d8aa3a-aa9f-44bf-83f4-5e63e3283695"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--6 woning(en)-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.20210706000007</l:identificatie>
+               <l:noemer>6 woning(en)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="505a404e-79dc-43ac-a5a2-cf07696ae045"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--8 woning(en)-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.20210706000008</l:identificatie>
+               <l:noemer>8 woning(en)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="fb63808e-485c-4827-a3ac-12dcb5d5e563"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--hoogspanningsverbinding.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.676992311</l:identificatie>
+               <l:noemer>hoogspanningsverbinding</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="7a4eb4b5-a2cd-4c75-9ad4-afb002c593f8"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <!-- de volgende gml-en ontbreken en zijn vervangen door het ambtsgebied -->
+      <!--sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.2662276681</l:identificatie>
+               <l:noemer>buisleiding voor gevaarlijke stoffen</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="[guid]"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.3700956237</l:identificatie>
+               <l:noemer>bouwvlak hoogspanningsverbinding</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="[guid]"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.610272587</l:identificatie>
+               <l:noemer>brug</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="[guid]"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.2844990319</l:identificatie>
+               <l:noemer>parkeervoorzieningen toegestaan</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="[guid]"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.2984973011</l:identificatie>
+               <l:noemer>woonwagenstandplaats</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="[guid]"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.956239791</l:identificatie>
+               <l:noemer>ligplaats woonark</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="[guid]"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.2099843425</l:identificatie>
+               <l:noemer>ligplaats woonschip</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="[guid]"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.1538072503</l:identificatie>
+               <l:noemer>wonen niet toegestaan op de begane grond</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="[guid]"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.2028738199</l:identificatie>
+               <l:noemer>onzelfstandige woonruimte</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="[guid]"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.2460291679</l:identificatie>
+               <l:noemer>consumentenvuurwerk</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="[guid]"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0479.gebied.1047660279</l:identificatie>
+               <l:noemer>opslag</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="[guid]"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand-->
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Ambtsgebied>
+               <l:identificatie>nl.imow-gm0479.ambtsgebied.00000001003148889000</l:identificatie>
+               <l:noemer>Gemeente Zaanstad</l:noemer>
+               <l:bestuurlijkeGrenzenVerwijzing>
+                  <l:BestuurlijkeGrenzenVerwijzing>
+                     <l:bestuurlijkeGrenzenID>GM0479</l:bestuurlijkeGrenzenID>
+                     <l:domein>NL.BI.BestuurlijkGebied</l:domein>
+                     <l:geldigOp>2021-01-01</l:geldigOp>
+                  </l:BestuurlijkeGrenzenVerwijzing>
+               </l:bestuurlijkeGrenzenVerwijzing>
+            </l:Ambtsgebied>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>
