@@ -25,6 +25,7 @@
   <xsl:param name="manifest">
     <xsl:for-each select="tokenize($file.list,';')">
       <xsl:variable name="fullname" select="."/>
+      <xsl:variable name="index" select="position()"/>
       <xsl:choose>
         <xsl:when test="document($fullname)//(l:AmbtsgebiedRef|l:GebiedRef|l:GebiedengroepRef|l:LijnRef|l:LijnengroepRef|l:LocatieRef|l:PuntRef|l:PuntengroepRef)[fn:matches(@xlink:href,'(GM|PV|WS|LND)[A-Z0-9.]{1,7}')]" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="ambtsgebied">
@@ -42,7 +43,7 @@
       <xsl:choose>
         <xsl:when test="document($fullname)//r:Regeltekst" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="file">
-            <xsl:attribute name="name" select="string('regeltekst.xml')"/>
+            <xsl:attribute name="name" select="concat(fn:format-number($index,'000'),'_regeltekst.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="$fullname"/>
             </xsl:element>
@@ -53,7 +54,7 @@
         </xsl:when>
         <xsl:when test="document($fullname)//vt:Divisie" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="file">
-            <xsl:attribute name="name" select="string('vrijetekst.xml')"/>
+            <xsl:attribute name="name" select="concat(fn:format-number($index,'000'),'_vrijetekst.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="$fullname"/>
             </xsl:element>
@@ -64,7 +65,7 @@
         </xsl:when>
         <xsl:when test="document($fullname)//rol:Activiteit" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="file">
-            <xsl:attribute name="name" select="string('activiteit.xml')"/>
+            <xsl:attribute name="name" select="concat(fn:format-number($index,'000'),'_activiteit.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="$fullname"/>
             </xsl:element>
@@ -75,7 +76,7 @@
         </xsl:when>
         <xsl:when test="document($fullname)//ga:Gebiedsaanwijzing" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="file">
-            <xsl:attribute name="name" select="string('gebiedsaanwijzing.xml')"/>
+            <xsl:attribute name="name" select="concat(fn:format-number($index,'000'),'_gebiedsaanwijzing.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="$fullname"/>
             </xsl:element>
@@ -86,7 +87,7 @@
         </xsl:when>
         <xsl:when test="document($fullname)//rol:Normwaarde" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="file">
-            <xsl:attribute name="name" select="string('normwaarde.xml')"/>
+            <xsl:attribute name="name" select="concat(fn:format-number($index,'000'),'_normwaarde.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="$fullname"/>
             </xsl:element>
@@ -97,7 +98,7 @@
         </xsl:when>
         <xsl:when test="document($fullname)//l:Gebied" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="file">
-            <xsl:attribute name="name" select="string('locatie.xml')"/>
+            <xsl:attribute name="name" select="concat(fn:format-number($index,'000'),'_locatie.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="$fullname"/>
             </xsl:element>
@@ -108,7 +109,7 @@
         </xsl:when>
         <xsl:when test="document($fullname)//p:Pons" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="file">
-            <xsl:attribute name="name" select="string('pons.xml')"/>
+            <xsl:attribute name="name" select="concat(fn:format-number($index,'000'),'_pons.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="$fullname"/>
             </xsl:element>
@@ -119,7 +120,7 @@
         </xsl:when>
         <xsl:when test="document($fullname)//k:Kaart" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="file">
-            <xsl:attribute name="name" select="string('kaart.xml')"/>
+            <xsl:attribute name="name" select="concat(fn:format-number($index,'000'),'_kaart.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="$fullname"/>
             </xsl:element>
@@ -130,7 +131,7 @@
         </xsl:when>
         <xsl:when test="document($fullname)//rg:Regelingsgebied" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="file">
-            <xsl:attribute name="name" select="string('regelingsgebied.xml')"/>
+            <xsl:attribute name="name" select="concat(fn:format-number($index,'000'),'_regelingsgebied.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="$fullname"/>
             </xsl:element>
@@ -141,7 +142,7 @@
         </xsl:when>
         <xsl:when test="document($fullname)//vt:Hoofdlijn" xpath-default-namespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand">
           <xsl:element name="file">
-            <xsl:attribute name="name" select="string('hoofdlijn.xml')"/>
+            <xsl:attribute name="name" select="concat(fn:format-number($index,'000'),'_hoofdlijn.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="$fullname"/>
             </xsl:element>
@@ -152,7 +153,7 @@
         </xsl:when>
         <xsl:when test="document($fullname)//Aanleveringen" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow">
           <xsl:element name="file">
-            <xsl:attribute name="name" select="string('manifest_ow.xml')"/>
+            <xsl:attribute name="name" select="concat(fn:format-number($index,'000'),'_manifest_ow.xml')"/>
             <xsl:element name="fullname">
               <xsl:value-of select="$fullname"/>
             </xsl:element>
