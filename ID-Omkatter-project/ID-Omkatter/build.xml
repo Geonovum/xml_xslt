@@ -798,7 +798,7 @@
   
   <target name="intrekkingopvolgervan" description="Verandert Besluit en RegelingsIds door er een datum/tijd string in het vrij invulbare deel te zetten.">
     <xmltask source="${temp.dir}/index.xml">
-      <call path="index/Regeling">
+      <call path="index/regeling">
         <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
         <param name="origineleregelingFRBRWork" path="origineleregelingFRBRWork/text()"/>
         <actions>
@@ -816,7 +816,7 @@
           <available file="bron_@{number}" type="dir"/>
           <then>
             <xmltask source="${temp_@{number}.dir}/index.xml">
-              <call path="index/Regeling">
+              <call path="index/regeling">
                 <param name="besluit.name" path="../file[contains(@type,'besluit.xml') or contains(@type,'kennisgeving.xml')]/name/text()"/>
                 <param name="origineleregelingFRBRWork" path="origineleregelingFRBRWork/text()"/>
                 <actions>
