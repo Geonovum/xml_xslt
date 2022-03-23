@@ -6,11 +6,6 @@
     <xsl:param name="element_ref" select="('formula_1','subchp','genrecital','art','artrecital','item','list','cmp','book','cit','part','div','content','ref','img','chp','toc','ref','recital','item','body','para','list','acc','subsec','longTitle','recital','formula_2','subsec','subsec','table','title','recital','art','cmp')"/>
     <xsl:param name="element_wId_eId" select="('waar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','waar','onwaar','onwaar','onwaar','waar','onwaar','onwaar','onwaar','onwaar','waar','onwaar','waar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar')"/>
 
-    <!-- Vul hieronder de identifier voor het bevoegd gezag en het versienummer in. -->
-
-    <xsl:param name="wId_bg" select="tokenize(//processing-instruction('akn'),'_')[1]"/>
-    <xsl:param name="wId_versie" select="tokenize(//processing-instruction('akn'),'_')[2]"/>
-
     <!-- Variabelen eId en unique_eId bevatten een mapping van alle elementen in het voorbeeldbestand naar hun eId. -->
 
     <xsl:variable name="eId">
@@ -108,6 +103,8 @@
 
     <xsl:template match="element()">
         <xsl:variable name="id" select="generate-id()"/>
+        <xsl:variable name="wId_bg" select="tokenize((preceding::processing-instruction('akn'))[last()],'_')[1]"/>
+        <xsl:variable name="wId_versie" select="tokenize((preceding::processing-instruction('akn'))[last()],'_')[2]"/>
         <xsl:element name="{name()}" namespace="{namespace-uri()}">
             <xsl:if test="$unique_eId//node[@id eq $id]">
                 <xsl:variable name="eId" select="fn:string-join($unique_eId//node[@id eq $id]/(.|ancestor::node[not(descendant-or-self::node[@eId eq 'body'])])/@eId,'__')"/>
@@ -148,12 +145,6 @@
                         <xsl:copy/>
                     </xsl:otherwise>
                 </xsl:choose>
-            </xsl:when>
-            <xsl:when test="name() eq 'onderwerp'">
-                <xsl:variable name="onderwerp" select="."/>
-                <xsl:variable name="id" select="generate-id(ancestor::Metadata/../(.|.//*[@id eq $onderwerp])[last()])"/>
-                <xsl:variable name="eId" select="fn:string-join($unique_eId//node[@id eq $id]/(.|ancestor::node[not(descendant-or-self::node[@eId eq 'body'])])/@eId,'__')"/>
-                <xsl:attribute name="onderwerp" select="if ($eId ne '') then $eId else concat('[',$onderwerp,']')"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:copy/>

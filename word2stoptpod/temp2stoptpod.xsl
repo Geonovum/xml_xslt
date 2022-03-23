@@ -53,15 +53,48 @@
     <xsl:copy-of select="//lvbb:publicatieOpdracht"/>
     <!-- OW -->
     <xsl:call-template name="manifest"/>
-    <xsl:call-template name="owRegeltekst"/>
-    <xsl:call-template name="owDivisie"/>
-    <xsl:call-template name="owActiviteit"/>
-    <xsl:call-template name="owGebiedsaanwijzing"/>
-    <xsl:call-template name="owHoofdlijn"/>
-    <xsl:call-template name="owOmgevingsnorm"/>
-    <xsl:call-template name="owOmgevingswaarde"/>
-    <xsl:call-template name="owLocatie"/>
-    <xsl:call-template name="owRegelingsgebied"/>
+    <xsl:for-each select=".//ow-dc:owBestand">
+      <xsl:variable name="index" select="position()"/>
+      <xsl:call-template name="owActiviteit">
+        <xsl:with-param name="index" select="$index"/>
+        <xsl:with-param name="objects" select=".//sl:stand[descendant::rol:Activiteit]"/>
+      </xsl:call-template>
+      <xsl:call-template name="owGebiedsaanwijzing">
+        <xsl:with-param name="index" select="$index"/>
+        <xsl:with-param name="objects" select=".//sl:stand[descendant::ga:Gebiedsaanwijzing]"/>
+      </xsl:call-template>
+      <xsl:call-template name="owHoofdlijn">
+        <xsl:with-param name="index" select="$index"/>
+        <xsl:with-param name="objects" select=".//sl:stand[descendant::vt:Hoofdlijn]"/>
+      </xsl:call-template>
+      <xsl:call-template name="owOmgevingsnorm">
+        <xsl:with-param name="index" select="$index"/>
+        <xsl:with-param name="objects" select=".//sl:stand[descendant::rol:Omgevingsnorm]"/>
+      </xsl:call-template>
+      <xsl:call-template name="owOmgevingswaarde">
+        <xsl:with-param name="index" select="$index"/>
+        <xsl:with-param name="objects" select=".//sl:stand[descendant::rol:Omgevingswaarde]"/>
+      </xsl:call-template>
+      <xsl:call-template name="owLocatie">
+        <xsl:with-param name="index" select="$index"/>
+        <xsl:with-param name="objects" select=".//sl:stand[descendant::l:Ambtsgebied,descendant::l:Gebied]"/>
+      </xsl:call-template>
+      <xsl:call-template name="owRegelingsgebied">
+        <xsl:with-param name="index" select="$index"/>
+        <xsl:with-param name="objects" select=".//sl:stand[descendant::rg:Regelingsgebied]"/>
+      </xsl:call-template>
+    </xsl:for-each>
+    <xsl:for-each select=".//(tekst:RegelingCompact,tekst:RegelingKlassiek,tekst:RegelingTijdelijkdeel,tekst:RegelingVrijetekst)">
+      <xsl:variable name="index" select="position()"/>
+      <xsl:call-template name="owRegeltekst">
+        <xsl:with-param name="index" select="$index"/>
+        <xsl:with-param name="objects" select=".//sl:stand[descendant::r:Regeltekst|descendant::r:RegelVoorIedereen]"/>
+      </xsl:call-template>
+      <xsl:call-template name="owDivisie">
+        <xsl:with-param name="index" select="$index"/>
+        <xsl:with-param name="objects" select=".//sl:stand[descendant::vt:Divisie|descendant::vt:Divisietekst|descendant::vt:Tekstdeel]"/>
+      </xsl:call-template>
+    </xsl:for-each>
     <!-- OP -->
     <xsl:call-template name="AanleveringBesluit"/>
   </xsl:template>
@@ -78,140 +111,142 @@
         <xsl:element name="domein" namespace="{$manifest}">
           <xsl:value-of select="string('omgevingswet')"/>
         </xsl:element>
-        <xsl:element name="Aanlevering" namespace="{$manifest}">
-          <xsl:element name="WorkIDRegeling" namespace="{$manifest}">
-            <xsl:value-of select="fn:tokenize(//data:ConsolidatieInformatie/data:BeoogdeRegelgeving/data:BeoogdeRegeling/data:instrumentVersie,'/nld')[1]"/>
+        <xsl:for-each select="//data:ConsolidatieInformatie/data:BeoogdeRegelgeving/data:BeoogdeRegeling">
+          <xsl:element name="Aanlevering" namespace="{$manifest}">
+            <xsl:element name="WorkIDRegeling" namespace="{$manifest}">
+              <xsl:value-of select="fn:tokenize(./data:instrumentVersie,'/nld')[1]"/>
+            </xsl:element>
+            <xsl:element name="DoelID" namespace="{$manifest}">
+              <xsl:value-of select="(./data:doelen/data:doel)[1]"/>
+            </xsl:element>
+            <!-- owRegeltekst -->
+            <xsl:variable name="objects" select="root()//sl:stand[descendant::r:Regeltekst|descendant::r:RegelVoorIedereen]"/>
+            <xsl:if test="$objects">
+              <xsl:element name="Bestand" namespace="{$manifest}">
+                <xsl:element name="naam" namespace="{$manifest}">
+                  <xsl:value-of select="string('owRegeltekst.xml')"/>
+                </xsl:element>
+                <xsl:for-each select="('Regeltekst','RegelVoorIedereen')">
+                  <xsl:element name="objecttype" namespace="{$manifest}">
+                    <xsl:value-of select="."/>
+                  </xsl:element>
+                </xsl:for-each>
+              </xsl:element>
+            </xsl:if>
+            <!-- owDivisie -->
+            <xsl:variable name="objects" select="root()//sl:stand[descendant::vt:Divisie|descendant::vt:Divisietekst|descendant::vt:Tekstdeel]"/>
+            <xsl:if test="$objects">
+              <xsl:element name="Bestand" namespace="{$manifest}">
+                <xsl:element name="naam" namespace="{$manifest}">
+                  <xsl:value-of select="string('owDivisie.xml')"/>
+                </xsl:element>
+                <xsl:for-each select="('Divisie','Divisietekst','Tekstdeel')">
+                  <xsl:element name="objecttype" namespace="{$manifest}">
+                    <xsl:value-of select="."/>
+                  </xsl:element>
+                </xsl:for-each>
+              </xsl:element>
+            </xsl:if>
+            <!-- owActiviteit -->
+            <xsl:variable name="objects" select="root()//sl:stand[descendant::rol:Activiteit]"/>
+            <xsl:if test="$objects">
+              <xsl:element name="Bestand" namespace="{$manifest}">
+                <xsl:element name="naam" namespace="{$manifest}">
+                  <xsl:value-of select="string('owActiviteit.xml')"/>
+                </xsl:element>
+                <xsl:for-each select="('Activiteit')">
+                  <xsl:element name="objecttype" namespace="{$manifest}">
+                    <xsl:value-of select="."/>
+                  </xsl:element>
+                </xsl:for-each>
+              </xsl:element>
+            </xsl:if>
+            <!-- owGebiedsaanwijzing -->
+            <xsl:variable name="objects" select="root()//sl:stand[descendant::ga:Gebiedsaanwijzing]"/>
+            <xsl:if test="$objects">
+              <xsl:element name="Bestand" namespace="{$manifest}">
+                <xsl:element name="naam" namespace="{$manifest}">
+                  <xsl:value-of select="string('owGebiedsaanwijzing.xml')"/>
+                </xsl:element>
+                <xsl:for-each select="('Gebiedsaanwijzing')">
+                  <xsl:element name="objecttype" namespace="{$manifest}">
+                    <xsl:value-of select="."/>
+                  </xsl:element>
+                </xsl:for-each>
+              </xsl:element>
+            </xsl:if>
+            <!-- owHoofdlijn -->
+            <xsl:variable name="objects" select="root()//sl:stand[descendant::vt:Hoofdlijn]"/>
+            <xsl:if test="$objects">
+              <xsl:element name="Bestand" namespace="{$manifest}">
+                <xsl:element name="naam" namespace="{$manifest}">
+                  <xsl:value-of select="string('owHoofdlijn.xml')"/>
+                </xsl:element>
+                <xsl:for-each select="('Hoofdlijn')">
+                  <xsl:element name="objecttype" namespace="{$manifest}">
+                    <xsl:value-of select="."/>
+                  </xsl:element>
+                </xsl:for-each>
+              </xsl:element>
+            </xsl:if>
+            <!-- owOmgevingsnorm -->
+            <xsl:variable name="objects" select="root()//sl:stand[descendant::rol:Omgevingsnorm]"/>
+            <xsl:if test="$objects">
+              <xsl:element name="Bestand" namespace="{$manifest}">
+                <xsl:element name="naam" namespace="{$manifest}">
+                  <xsl:value-of select="string('owOmgevingsnorm.xml')"/>
+                </xsl:element>
+                <xsl:for-each select="('Omgevingsnorm')">
+                  <xsl:element name="objecttype" namespace="{$manifest}">
+                    <xsl:value-of select="."/>
+                  </xsl:element>
+                </xsl:for-each>
+              </xsl:element>
+            </xsl:if>
+            <!-- owOmgevingswaarde -->
+            <xsl:variable name="objects" select="root()//sl:stand[descendant::rol:Omgevingswaarde]"/>
+            <xsl:if test="$objects">
+              <xsl:element name="Bestand" namespace="{$manifest}">
+                <xsl:element name="naam" namespace="{$manifest}">
+                  <xsl:value-of select="string('owOmgevingswaarde.xml')"/>
+                </xsl:element>
+                <xsl:for-each select="('Omgevingswaarde')">
+                  <xsl:element name="objecttype" namespace="{$manifest}">
+                    <xsl:value-of select="."/>
+                  </xsl:element>
+                </xsl:for-each>
+              </xsl:element>
+            </xsl:if>
+            <!-- owLocatie -->
+            <xsl:variable name="objects" select="root()//sl:stand[descendant::l:Ambtsgebied,descendant::l:Gebied]"/>
+            <xsl:if test="$objects">
+              <xsl:element name="Bestand" namespace="{$manifest}">
+                <xsl:element name="naam" namespace="{$manifest}">
+                  <xsl:value-of select="string('owLocatie.xml')"/>
+                </xsl:element>
+                <xsl:for-each select="('Ambtsgebied','Gebied')">
+                  <xsl:element name="objecttype" namespace="{$manifest}">
+                    <xsl:value-of select="."/>
+                  </xsl:element>
+                </xsl:for-each>
+              </xsl:element>
+            </xsl:if>
+            <!-- owRegelingsgebied -->
+            <xsl:variable name="objects" select="root()//sl:stand[descendant::rg:Regelingsgebied]"/>
+            <xsl:if test="$objects">
+              <xsl:element name="Bestand" namespace="{$manifest}">
+                <xsl:element name="naam" namespace="{$manifest}">
+                  <xsl:value-of select="string('owRegelingsgebied.xml')"/>
+                </xsl:element>
+                <xsl:for-each select="('Regelingsgebied')">
+                  <xsl:element name="objecttype" namespace="{$manifest}">
+                    <xsl:value-of select="."/>
+                  </xsl:element>
+                </xsl:for-each>
+              </xsl:element>
+            </xsl:if>
           </xsl:element>
-          <xsl:element name="DoelID" namespace="{$manifest}">
-            <xsl:value-of select="(//data:ConsolidatieInformatie/data:BeoogdeRegelgeving/data:BeoogdeRegeling/data:doelen/data:doel)[1]"/>
-          </xsl:element>
-          <!-- owRegeltekst -->
-          <xsl:variable name="objects" select="//sl:stand[descendant::r:Regeltekst|descendant::r:RegelVoorIedereen]"/>
-          <xsl:if test="$objects">
-            <xsl:element name="Bestand" namespace="{$manifest}">
-              <xsl:element name="naam" namespace="{$manifest}">
-                <xsl:value-of select="string('owRegelingsgebied.xml')"/>
-              </xsl:element>
-              <xsl:for-each select="('Regeltekst','RegelVoorIedereen')">
-                <xsl:element name="objecttype" namespace="{$manifest}">
-                  <xsl:value-of select="."/>
-                </xsl:element>
-              </xsl:for-each>
-            </xsl:element>
-          </xsl:if>
-          <!-- owDivisie -->
-          <xsl:variable name="objects" select="//sl:stand[descendant::vt:Divisie|descendant::vt:Divisietekst|descendant::vt:Tekstdeel]"/>
-          <xsl:if test="$objects">
-            <xsl:element name="Bestand" namespace="{$manifest}">
-              <xsl:element name="naam" namespace="{$manifest}">
-                <xsl:value-of select="string('owDivisie.xml')"/>
-              </xsl:element>
-              <xsl:for-each select="('Divisie','Divisietekst','Tekstdeel')">
-                <xsl:element name="objecttype" namespace="{$manifest}">
-                  <xsl:value-of select="."/>
-                </xsl:element>
-              </xsl:for-each>
-            </xsl:element>
-          </xsl:if>
-          <!-- owActiviteit -->
-          <xsl:variable name="objects" select="//sl:stand[descendant::rol:Activiteit]"/>
-          <xsl:if test="$objects">
-            <xsl:element name="Bestand" namespace="{$manifest}">
-              <xsl:element name="naam" namespace="{$manifest}">
-                <xsl:value-of select="string('owActiviteit.xml')"/>
-              </xsl:element>
-              <xsl:for-each select="('Activiteit')">
-                <xsl:element name="objecttype" namespace="{$manifest}">
-                  <xsl:value-of select="."/>
-                </xsl:element>
-              </xsl:for-each>
-            </xsl:element>
-          </xsl:if>
-          <!-- owGebiedsaanwijzing -->
-          <xsl:variable name="objects" select="//sl:stand[descendant::ga:Gebiedsaanwijzing]"/>
-          <xsl:if test="$objects">
-            <xsl:element name="Bestand" namespace="{$manifest}">
-              <xsl:element name="naam" namespace="{$manifest}">
-                <xsl:value-of select="string('owGebiedsaanwijzing.xml')"/>
-              </xsl:element>
-              <xsl:for-each select="('Gebiedsaanwijzing')">
-                <xsl:element name="objecttype" namespace="{$manifest}">
-                  <xsl:value-of select="."/>
-                </xsl:element>
-              </xsl:for-each>
-            </xsl:element>
-          </xsl:if>
-          <!-- owHoofdlijn -->
-          <xsl:variable name="objects" select="//sl:stand[descendant::vt:Hoofdlijn]"/>
-          <xsl:if test="$objects">
-            <xsl:element name="Bestand" namespace="{$manifest}">
-              <xsl:element name="naam" namespace="{$manifest}">
-                <xsl:value-of select="string('owHoofdlijn.xml')"/>
-              </xsl:element>
-              <xsl:for-each select="('Hoofdlijn')">
-                <xsl:element name="objecttype" namespace="{$manifest}">
-                  <xsl:value-of select="."/>
-                </xsl:element>
-              </xsl:for-each>
-            </xsl:element>
-          </xsl:if>
-          <!-- owOmgevingsnorm -->
-          <xsl:variable name="objects" select="//sl:stand[descendant::rol:Omgevingsnorm]"/>
-          <xsl:if test="$objects">
-            <xsl:element name="Bestand" namespace="{$manifest}">
-              <xsl:element name="naam" namespace="{$manifest}">
-                <xsl:value-of select="string('owOmgevingsnorm.xml')"/>
-              </xsl:element>
-              <xsl:for-each select="('Omgevingsnorm')">
-                <xsl:element name="objecttype" namespace="{$manifest}">
-                  <xsl:value-of select="."/>
-                </xsl:element>
-              </xsl:for-each>
-            </xsl:element>
-          </xsl:if>
-          <!-- owomgevingswaarde -->
-          <xsl:variable name="objects" select="//sl:stand[descendant::rol:Omgevingswaarde]"/>
-          <xsl:if test="$objects">
-            <xsl:element name="Bestand" namespace="{$manifest}">
-              <xsl:element name="naam" namespace="{$manifest}">
-                <xsl:value-of select="string('owOmgevingswaarde.xml')"/>
-              </xsl:element>
-              <xsl:for-each select="('Omgevingswaarde')">
-                <xsl:element name="objecttype" namespace="{$manifest}">
-                  <xsl:value-of select="."/>
-                </xsl:element>
-              </xsl:for-each>
-            </xsl:element>
-          </xsl:if>
-          <!-- owLocatie -->
-          <xsl:variable name="objects" select="//sl:stand[descendant::l:Ambtsgebied,descendant::l:Gebied]"/>
-          <xsl:if test="$objects">
-            <xsl:element name="Bestand" namespace="{$manifest}">
-              <xsl:element name="naam" namespace="{$manifest}">
-                <xsl:value-of select="string('owLocatie.xml')"/>
-              </xsl:element>
-              <xsl:for-each select="('Ambtsgebied','Gebied')">
-                <xsl:element name="objecttype" namespace="{$manifest}">
-                  <xsl:value-of select="."/>
-                </xsl:element>
-              </xsl:for-each>
-            </xsl:element>
-          </xsl:if>
-          <!-- owRegelingsgebied -->
-          <xsl:variable name="objects" select="//sl:stand[descendant::rg:Regelingsgebied]"/>
-          <xsl:if test="$objects">
-            <xsl:element name="Bestand" namespace="{$manifest}">
-              <xsl:element name="naam" namespace="{$manifest}">
-                <xsl:value-of select="string('owRegelingsgebied.xml')"/>
-              </xsl:element>
-              <xsl:for-each select="('Regelingsgebied')">
-                <xsl:element name="objecttype" namespace="{$manifest}">
-                  <xsl:value-of select="."/>
-                </xsl:element>
-              </xsl:for-each>
-            </xsl:element>
-          </xsl:if>
-        </xsl:element>
+        </xsl:for-each>
       </xsl:element>
     </xsl:result-document>
   </xsl:template>
@@ -219,9 +254,11 @@
   <!-- owRegeltekst -->
 
   <xsl:template name="owRegeltekst">
-    <xsl:variable name="objects" select="//sl:stand[descendant::r:Regeltekst|descendant::r:RegelVoorIedereen]"/>
+    <xsl:param name="index"/>
+    <xsl:param name="objects"/>
+    <xsl:variable name="test" select="."/>
     <xsl:if test="$objects">
-      <xsl:result-document href="owRegeltekst.xml" method="xml">
+      <xsl:result-document href="{concat(fn:format-number($index,'000'),'-owRegeltekst.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:namespace name="da" select="$da"/>
           <xsl:namespace name="ga" select="$ga"/>
@@ -239,10 +276,10 @@
           <xsl:namespace name="xsi" select="$xsi"/>
           <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
           <xsl:element name="sl:standBestand">
-            <xsl:apply-templates select="//sl:standBestand/sl:dataset"/>
+            <xsl:apply-templates select="(.//sl:standBestand/sl:dataset)[1]"/>
             <xsl:element name="sl:inhoud">
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:gebied"/>
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:leveringsId"/>
+              <xsl:apply-templates select="(.//sl:standBestand/sl:inhoud/sl:gebied)[1]"/>
+              <xsl:apply-templates select="(.//sl:standBestand/sl:inhoud/sl:leveringsId)[1]"/>
               <xsl:element name="sl:objectTypen">
                 <xsl:element name="sl:objectType">
                   <xsl:value-of select="string('Regeltekst')"/>
@@ -269,9 +306,10 @@
   <!-- owDivisie -->
 
   <xsl:template name="owDivisie">
-    <xsl:variable name="objects" select="//sl:stand[descendant::vt:Divisie|descendant::vt:Divisietekst|descendant::vt:Tekstdeel]"/>
+    <xsl:param name="index"/>
+    <xsl:param name="objects"/>
     <xsl:if test="$objects">
-      <xsl:result-document href="owDivisie.xml" method="xml">
+      <xsl:result-document href="{concat(fn:format-number($index,'000'),'-owDivisie.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:namespace name="da" select="$da"/>
           <xsl:namespace name="ga" select="$ga"/>
@@ -289,10 +327,10 @@
           <xsl:namespace name="xsi" select="$xsi"/>
           <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
           <xsl:element name="sl:standBestand">
-            <xsl:apply-templates select="//sl:standBestand/sl:dataset"/>
+            <xsl:apply-templates select="(.//sl:standBestand/sl:dataset)[1]"/>
             <xsl:element name="sl:inhoud">
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:gebied"/>
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:leveringsId"/>
+              <xsl:apply-templates select="(.//sl:standBestand/sl:inhoud/sl:gebied)[1]"/>
+              <xsl:apply-templates select="(.//sl:standBestand/sl:inhoud/sl:leveringsId)[1]"/>
               <xsl:element name="sl:objectTypen">
                 <xsl:element name="sl:objectType">
                   <xsl:value-of select="string('Divisie')"/>
@@ -329,9 +367,10 @@
   <!-- owActiviteit -->
 
   <xsl:template name="owActiviteit">
-    <xsl:variable name="objects" select="//sl:stand[descendant::rol:Activiteit]"/>
+    <xsl:param name="index"/>
+    <xsl:param name="objects"/>
     <xsl:if test="$objects">
-      <xsl:result-document href="owActiviteit.xml" method="xml">
+      <xsl:result-document href="{concat(fn:format-number($index,'000'),'-owActiviteit.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:namespace name="da" select="$da"/>
           <xsl:namespace name="ga" select="$ga"/>
@@ -349,10 +388,10 @@
           <xsl:namespace name="xsi" select="$xsi"/>
           <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
           <xsl:element name="sl:standBestand">
-            <xsl:apply-templates select="//sl:standBestand/sl:dataset"/>
+            <xsl:apply-templates select=".//sl:standBestand/sl:dataset"/>
             <xsl:element name="sl:inhoud">
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:gebied"/>
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:leveringsId"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:gebied"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:leveringsId"/>
               <xsl:element name="sl:objectTypen">
                 <xsl:element name="sl:objectType">
                   <xsl:value-of select="string('Activiteit')"/>
@@ -369,9 +408,10 @@
   <!-- owGebiedsaanwijzing -->
 
   <xsl:template name="owGebiedsaanwijzing">
-    <xsl:variable name="objects" select="//sl:stand[descendant::ga:Gebiedsaanwijzing]"/>
+    <xsl:param name="index"/>
+    <xsl:param name="objects"/>
     <xsl:if test="$objects">
-      <xsl:result-document href="owGebiedsaanwijzing.xml" method="xml">
+      <xsl:result-document href="{concat(fn:format-number($index,'000'),'-owGebiedsaanwijzing.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:namespace name="da" select="$da"/>
           <xsl:namespace name="ga" select="$ga"/>
@@ -389,10 +429,10 @@
           <xsl:namespace name="xsi" select="$xsi"/>
           <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
           <xsl:element name="sl:standBestand">
-            <xsl:apply-templates select="//sl:standBestand/sl:dataset"/>
+            <xsl:apply-templates select=".//sl:standBestand/sl:dataset"/>
             <xsl:element name="sl:inhoud">
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:gebied"/>
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:leveringsId"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:gebied"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:leveringsId"/>
               <xsl:element name="sl:objectTypen">
                 <xsl:element name="sl:objectType">
                   <xsl:value-of select="string('Gebiedsaanwijzing')"/>
@@ -409,9 +449,10 @@
   <!-- owHoofdlijn -->
 
   <xsl:template name="owHoofdlijn">
-    <xsl:variable name="objects" select="//sl:stand[descendant::vt:Hoofdlijn]"/>
+    <xsl:param name="index"/>
+    <xsl:param name="objects"/>
     <xsl:if test="$objects">
-      <xsl:result-document href="owHoofdlijn.xml" method="xml">
+      <xsl:result-document href="{concat(fn:format-number($index,'000'),'-owHoofdlijn.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:namespace name="da" select="$da"/>
           <xsl:namespace name="ga" select="$ga"/>
@@ -429,10 +470,10 @@
           <xsl:namespace name="xsi" select="$xsi"/>
           <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
           <xsl:element name="sl:standBestand">
-            <xsl:apply-templates select="//sl:standBestand/sl:dataset"/>
+            <xsl:apply-templates select=".//sl:standBestand/sl:dataset"/>
             <xsl:element name="sl:inhoud">
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:gebied"/>
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:leveringsId"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:gebied"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:leveringsId"/>
               <xsl:element name="sl:objectTypen">
                 <xsl:element name="sl:objectType">
                   <xsl:value-of select="string('Hoofdlijn')"/>
@@ -449,9 +490,10 @@
   <!-- owOmgevingsnorm -->
 
   <xsl:template name="owOmgevingsnorm">
-    <xsl:variable name="objects" select="//sl:stand[descendant::rol:Omgevingsnorm]"/>
+    <xsl:param name="index"/>
+    <xsl:param name="objects"/>
     <xsl:if test="$objects">
-      <xsl:result-document href="owOmgevingsnorm.xml" method="xml">
+      <xsl:result-document href="{concat(fn:format-number($index,'000'),'-owOmgevingsnorm.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:namespace name="da" select="$da"/>
           <xsl:namespace name="ga" select="$ga"/>
@@ -469,10 +511,10 @@
           <xsl:namespace name="xsi" select="$xsi"/>
           <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
           <xsl:element name="sl:standBestand">
-            <xsl:apply-templates select="//sl:standBestand/sl:dataset"/>
+            <xsl:apply-templates select=".//sl:standBestand/sl:dataset"/>
             <xsl:element name="sl:inhoud">
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:gebied"/>
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:leveringsId"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:gebied"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:leveringsId"/>
               <xsl:element name="sl:objectTypen">
                 <xsl:element name="sl:objectType">
                   <xsl:value-of select="string('Omgevingsnorm')"/>
@@ -489,9 +531,10 @@
   <!-- owOmgevingswaarde -->
 
   <xsl:template name="owOmgevingswaarde">
-    <xsl:variable name="objects" select="//sl:stand[descendant::rol:Omgevingswaarde]"/>
+    <xsl:param name="index"/>
+    <xsl:param name="objects"/>
     <xsl:if test="$objects">
-      <xsl:result-document href="owOmgevingswaarde.xml" method="xml">
+      <xsl:result-document href="{concat(fn:format-number($index,'000'),'-owOmgevingswaarde.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:namespace name="da" select="$da"/>
           <xsl:namespace name="ga" select="$ga"/>
@@ -509,10 +552,10 @@
           <xsl:namespace name="xsi" select="$xsi"/>
           <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
           <xsl:element name="sl:standBestand">
-            <xsl:apply-templates select="//sl:standBestand/sl:dataset"/>
+            <xsl:apply-templates select=".//sl:standBestand/sl:dataset"/>
             <xsl:element name="sl:inhoud">
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:gebied"/>
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:leveringsId"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:gebied"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:leveringsId"/>
               <xsl:element name="sl:objectTypen">
                 <xsl:element name="sl:objectType">
                   <xsl:value-of select="string('Omgevingswaarde')"/>
@@ -529,9 +572,10 @@
   <!-- owLocatie -->
 
   <xsl:template name="owLocatie">
-    <xsl:variable name="objects" select="//sl:stand[descendant::l:Ambtsgebied,descendant::l:Gebied]"/>
+    <xsl:param name="index"/>
+    <xsl:param name="objects"/>
     <xsl:if test="$objects">
-      <xsl:result-document href="owLocatie.xml" method="xml">
+      <xsl:result-document href="{concat(fn:format-number($index,'000'),'-owLocatie.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:namespace name="da" select="$da"/>
           <xsl:namespace name="ga" select="$ga"/>
@@ -549,10 +593,10 @@
           <xsl:namespace name="xsi" select="$xsi"/>
           <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
           <xsl:element name="sl:standBestand">
-            <xsl:apply-templates select="//sl:standBestand/sl:dataset"/>
+            <xsl:apply-templates select=".//sl:standBestand/sl:dataset"/>
             <xsl:element name="sl:inhoud">
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:gebied"/>
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:leveringsId"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:gebied"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:leveringsId"/>
               <xsl:element name="sl:objectTypen">
                 <xsl:element name="sl:objectType">
                   <xsl:value-of select="string('Ambtsgebied')"/>
@@ -572,9 +616,10 @@
   <!-- owRegelingsgebied -->
 
   <xsl:template name="owRegelingsgebied">
-    <xsl:variable name="objects" select="//sl:stand[descendant::rg:Regelingsgebied]"/>
+    <xsl:param name="index"/>
+    <xsl:param name="objects"/>
     <xsl:if test="$objects">
-      <xsl:result-document href="owRegelingsgebied.xml" method="xml">
+      <xsl:result-document href="{concat(fn:format-number($index,'000'),'-owRegelingsgebied.xml')}" method="xml">
         <xsl:element name="ow-dc:owBestand">
           <xsl:namespace name="da" select="$da"/>
           <xsl:namespace name="ga" select="$ga"/>
@@ -592,10 +637,10 @@
           <xsl:namespace name="xsi" select="$xsi"/>
           <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
           <xsl:element name="sl:standBestand">
-            <xsl:apply-templates select="//sl:standBestand/sl:dataset"/>
+            <xsl:apply-templates select=".//sl:standBestand/sl:dataset"/>
             <xsl:element name="sl:inhoud">
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:gebied"/>
-              <xsl:apply-templates select="//sl:standBestand/sl:inhoud/sl:leveringsId"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:gebied"/>
+              <xsl:apply-templates select=".//sl:standBestand/sl:inhoud/sl:leveringsId"/>
               <xsl:element name="sl:objectTypen">
                 <xsl:element name="sl:objectType">
                   <xsl:value-of select="string('Regelingsgebied')"/>
@@ -645,8 +690,8 @@
     <xsl:variable name="join" select="parent::data:BeoogdInformatieobject/data:instrumentVersie"/>
     <xsl:element name="{name()}" namespace="{namespace-uri()}">
       <xsl:choose>
-        <xsl:when test="$unique_geometrie/gio[./join=$join]/eId ne ''">
-          <xsl:value-of select="concat('!initieel_reg#',$unique_geometrie/gio[./join=$join]/eId)"/>
+        <xsl:when test="($unique_geometrie/gio[./join=$join]/eId)[1] ne ''">
+          <xsl:value-of select="concat('!initieel_reg#',($unique_geometrie/gio[./join=$join]/eId)[1])"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:comment><xsl:text>diagnose: controleer de koppeling naar ExtIoRef</xsl:text></xsl:comment>
