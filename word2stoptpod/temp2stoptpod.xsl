@@ -112,6 +112,7 @@
           <xsl:value-of select="string('omgevingswet')"/>
         </xsl:element>
         <xsl:for-each select="//data:ConsolidatieInformatie/data:BeoogdeRegelgeving/data:BeoogdeRegeling">
+          <xsl:variable name="index" select="position()"/>
           <xsl:element name="Aanlevering" namespace="{$manifest}">
             <xsl:element name="WorkIDRegeling" namespace="{$manifest}">
               <xsl:value-of select="fn:tokenize(./data:instrumentVersie,'/nld')[1]"/>
@@ -124,7 +125,7 @@
             <xsl:if test="$objects">
               <xsl:element name="Bestand" namespace="{$manifest}">
                 <xsl:element name="naam" namespace="{$manifest}">
-                  <xsl:value-of select="string('owRegeltekst.xml')"/>
+                  <xsl:value-of select="concat(fn:format-number($index,'000'),'-owRegeltekst.xml')"/>
                 </xsl:element>
                 <xsl:for-each select="('Regeltekst','RegelVoorIedereen')">
                   <xsl:element name="objecttype" namespace="{$manifest}">
@@ -138,7 +139,7 @@
             <xsl:if test="$objects">
               <xsl:element name="Bestand" namespace="{$manifest}">
                 <xsl:element name="naam" namespace="{$manifest}">
-                  <xsl:value-of select="string('owDivisie.xml')"/>
+                  <xsl:value-of select="concat(fn:format-number($index,'000'),'-owDivisie.xml')"/>
                 </xsl:element>
                 <xsl:for-each select="('Divisie','Divisietekst','Tekstdeel')">
                   <xsl:element name="objecttype" namespace="{$manifest}">
@@ -152,7 +153,7 @@
             <xsl:if test="$objects">
               <xsl:element name="Bestand" namespace="{$manifest}">
                 <xsl:element name="naam" namespace="{$manifest}">
-                  <xsl:value-of select="string('owActiviteit.xml')"/>
+                  <xsl:value-of select="concat(fn:format-number($index,'000'),'-owActiviteit.xml')"/>
                 </xsl:element>
                 <xsl:for-each select="('Activiteit')">
                   <xsl:element name="objecttype" namespace="{$manifest}">
@@ -166,7 +167,7 @@
             <xsl:if test="$objects">
               <xsl:element name="Bestand" namespace="{$manifest}">
                 <xsl:element name="naam" namespace="{$manifest}">
-                  <xsl:value-of select="string('owGebiedsaanwijzing.xml')"/>
+                  <xsl:value-of select="concat(fn:format-number($index,'000'),'-owGebiedsaanwijzing.xml')"/>
                 </xsl:element>
                 <xsl:for-each select="('Gebiedsaanwijzing')">
                   <xsl:element name="objecttype" namespace="{$manifest}">
@@ -180,7 +181,7 @@
             <xsl:if test="$objects">
               <xsl:element name="Bestand" namespace="{$manifest}">
                 <xsl:element name="naam" namespace="{$manifest}">
-                  <xsl:value-of select="string('owHoofdlijn.xml')"/>
+                  <xsl:value-of select="concat(fn:format-number($index,'000'),'-owHoofdlijn.xml')"/>
                 </xsl:element>
                 <xsl:for-each select="('Hoofdlijn')">
                   <xsl:element name="objecttype" namespace="{$manifest}">
@@ -194,7 +195,7 @@
             <xsl:if test="$objects">
               <xsl:element name="Bestand" namespace="{$manifest}">
                 <xsl:element name="naam" namespace="{$manifest}">
-                  <xsl:value-of select="string('owOmgevingsnorm.xml')"/>
+                  <xsl:value-of select="concat(fn:format-number($index,'000'),'-owOmgevingsnorm.xml')"/>
                 </xsl:element>
                 <xsl:for-each select="('Omgevingsnorm')">
                   <xsl:element name="objecttype" namespace="{$manifest}">
@@ -208,7 +209,7 @@
             <xsl:if test="$objects">
               <xsl:element name="Bestand" namespace="{$manifest}">
                 <xsl:element name="naam" namespace="{$manifest}">
-                  <xsl:value-of select="string('owOmgevingswaarde.xml')"/>
+                  <xsl:value-of select="concat(fn:format-number($index,'000'),'-owOmgevingswaarde.xml')"/>
                 </xsl:element>
                 <xsl:for-each select="('Omgevingswaarde')">
                   <xsl:element name="objecttype" namespace="{$manifest}">
@@ -222,7 +223,7 @@
             <xsl:if test="$objects">
               <xsl:element name="Bestand" namespace="{$manifest}">
                 <xsl:element name="naam" namespace="{$manifest}">
-                  <xsl:value-of select="string('owLocatie.xml')"/>
+                  <xsl:value-of select="concat(fn:format-number($index,'000'),'-owLocatie.xml')"/>
                 </xsl:element>
                 <xsl:for-each select="('Ambtsgebied','Gebied')">
                   <xsl:element name="objecttype" namespace="{$manifest}">
@@ -236,7 +237,7 @@
             <xsl:if test="$objects">
               <xsl:element name="Bestand" namespace="{$manifest}">
                 <xsl:element name="naam" namespace="{$manifest}">
-                  <xsl:value-of select="string('owRegelingsgebied.xml')"/>
+                  <xsl:value-of select="concat(fn:format-number($index,'000'),'-owRegelingsgebied.xml')"/>
                 </xsl:element>
                 <xsl:for-each select="('Regelingsgebied')">
                   <xsl:element name="objecttype" namespace="{$manifest}">
