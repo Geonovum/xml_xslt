@@ -364,7 +364,7 @@
       </xsl:element>
     </xsl:element>
     <!-- gebiedsaanwijzing -->
-    <xsl:for-each-group select="$LOC/comment[@parent_id=$id]/object[@type='gebiedsaanwijzing']" group-by="(waarde[@naam='gebiedsaanwijzing'],'geen')[1]">
+    <xsl:for-each-group select="$LOC/comment[@parent_id=$id]/object[@type='gebiedsaanwijzing']" group-by="(waarde[@naam='waarde'],'geen')[1]">
       <xsl:variable name="index_1" select="current-grouping-key()"/>
       <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='type'],'geen')[1]">
         <xsl:variable name="index_2" select="current-grouping-key()"/>
@@ -391,7 +391,7 @@
                   <xsl:value-of select="string($index_3)"/>
                 </xsl:element>
                 <xsl:element name="ga:locatieaanduiding" namespace="{$ga}">
-                  <xsl:for-each-group select="current-group()/object[@type='locatie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
+                  <xsl:for-each-group select="current-group()/object[@type='geometrie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
                     <xsl:variable name="index_1" select="current-grouping-key()"/>
                     <xsl:for-each-group select="current-group()" group-by="waarde[@naam='noemer']">
                       <xsl:variable name="index_2" select="current-grouping-key()"/>
@@ -413,7 +413,7 @@
       </xsl:for-each-group>
     </xsl:for-each-group>
     <!-- geometrie -->
-    <xsl:for-each-group select="$LOC/comment[@parent_id=$id]/(object[@type='geometrie'],descendant::object[@type='locatie'])" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
+    <xsl:for-each-group select="$LOC/comment[@parent_id=$id]/(object[@type='geometrie'],descendant::object[@type='geometrie'])" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
       <xsl:variable name="index_1" select="current-grouping-key()"/>
       <xsl:for-each-group select="current-group()" group-by="waarde[@naam='noemer']">
         <xsl:variable name="index_2" select="current-grouping-key()"/>
@@ -525,7 +525,7 @@
                             </xsl:element>
                           </xsl:if>
                           <xsl:element name="rol:locatieaanduiding" namespace="{$rol}">
-                            <xsl:for-each-group select="current-group()/object[@type='locatie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
+                            <xsl:for-each-group select="current-group()/object[@type='geometrie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
                               <xsl:variable name="index_1" select="current-grouping-key()"/>
                               <xsl:for-each-group select="current-group()" group-by="waarde[@naam='noemer']">
                                 <xsl:variable name="index_2" select="current-grouping-key()"/>
@@ -610,7 +610,7 @@
                             </xsl:element>
                           </xsl:if>
                           <xsl:element name="rol:locatieaanduiding" namespace="{$rol}">
-                            <xsl:for-each-group select="current-group()/object[@type='locatie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
+                            <xsl:for-each-group select="current-group()/object[@type='geometrie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
                               <xsl:variable name="index_1" select="current-grouping-key()"/>
                               <xsl:for-each-group select="current-group()" group-by="waarde[@naam='noemer']">
                                 <xsl:variable name="index_2" select="current-grouping-key()"/>
@@ -739,7 +739,7 @@
                   </xsl:for-each>
                 </xsl:if>
                 <xsl:element name="r:locatieaanduiding" namespace="{$r}">
-                  <xsl:for-each-group select="$objects/(object[@type='geometrie'],descendant::object[@type='locatie'])" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
+                  <xsl:for-each-group select="$objects/(object[@type='geometrie'],descendant::object[@type='geometrie'])" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
                     <xsl:variable name="index_1" select="current-grouping-key()"/>
                     <xsl:for-each-group select="current-group()" group-by="waarde[@naam='noemer']">
                       <xsl:variable name="index_2" select="current-grouping-key()"/>
@@ -806,7 +806,7 @@
                                 <xsl:value-of select="$index_4"/>
                               </xsl:element>
                               <xsl:element name="r:locatieaanduiding" namespace="{$r}">
-                                <xsl:for-each-group select="current-group()/object[@type='locatie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
+                                <xsl:for-each-group select="current-group()/object[@type='geometrie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
                                   <xsl:variable name="index_1" select="current-grouping-key()"/>
                                   <xsl:for-each-group select="current-group()" group-by="waarde[@naam='noemer']">
                                     <xsl:variable name="index_2" select="current-grouping-key()"/>
@@ -1232,6 +1232,7 @@
           <!-- RegelingMetadata -->
           <xsl:element name="RegelingMetadata" namespace="{$data}">
             <xsl:element name="soortRegeling" namespace="{$data}">
+              <xsl:variable name="test" select="$metadata[@type=('regeling')]"/>
               <xsl:value-of select="$metadata[@type=('regeling')]/waarde[@naam='soortRegeling_wordt']"/>
             </xsl:element>
             <xsl:element name="eindverantwoordelijke" namespace="{$data}">
