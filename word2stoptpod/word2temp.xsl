@@ -13,6 +13,8 @@
   <xsl:param name="w:footnotes" select="collection(concat($basedir,'?select=footnotes.xml'))/w:footnotes"/>
   <xsl:param name="w:relationships" select="collection(concat($basedir,'?select=document.xml.rels;recurse=yes'))/Relationships" xpath-default-namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
 
+  <!-- namespace opdracht -->
+  <xsl:param name="opdracht" select="string('http://www.overheid.nl/2017/lvbb')"/>
   <!-- namespaces OP -->
   <xsl:param name="data" select="string('https://standaarden.overheid.nl/stop/imop/data/')"/>
   <xsl:param name="dso" select="string('https://www.dso.nl/')"/>
@@ -230,20 +232,20 @@
   <xsl:template name="lvbb_opdracht">
     <xsl:variable name="id" select="./@id"/>
     <xsl:variable name="metadata" select="$LOC/comment[@parent_id=$id]/object[@type=('besluit','procedure')]"/>
-    <xsl:element name="publicatieOpdracht" namespace="{$lvbb}">
-      <xsl:element name="idLevering" namespace="{$lvbb}">
+    <xsl:element name="publicatieOpdracht" namespace="{$opdracht}">
+      <xsl:element name="idLevering" namespace="{$opdracht}">
         <xsl:value-of select="fn:string-join(($metadata[@type=('besluit')]/waarde[@naam='idWerk'],format-date(current-date(),'[Y0001]-[M01]-[D01]')),'_')"/>
       </xsl:element>
-      <xsl:element name="idBevoegdGezag" namespace="{$lvbb}">
+      <xsl:element name="idBevoegdGezag" namespace="{$opdracht}">
         <xsl:value-of select="$OIN/item[fn:ends-with(BG,$metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'])]/OIN"/>
       </xsl:element>
-      <xsl:element name="idAanleveraar" namespace="{$lvbb}">
+      <xsl:element name="idAanleveraar" namespace="{$opdracht}">
         <xsl:value-of select="$OIN/item[fn:ends-with(BG,$metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'])]/OIN"/>
       </xsl:element>
-      <xsl:element name="publicatie" namespace="{$lvbb}">
+      <xsl:element name="publicatie" namespace="{$opdracht}">
         <xsl:value-of select="fn:string-join((fn:string-join(($metadata[@type=('besluit')]/waarde[@naam='idWerk'],format-date(current-date(),'[Y0001]-[M01]-[D01]')),'_'),'xml'),'.')"/>
       </xsl:element>
-      <xsl:element name="datumBekendmaking" namespace="{$lvbb}">
+      <xsl:element name="datumBekendmaking" namespace="{$opdracht}">
         <xsl:value-of select="$metadata[@type=('procedure')]/waarde[@naam='inWerkingOp']"/>
         <!--xsl:value-of select="fn:format-date(current-date() + xs:dayTimeDuration('P1D'),'[Y0001]-[M01]-[D01]')"/-->
       </xsl:element>
@@ -894,6 +896,8 @@
     <xsl:variable name="metadata" select="($LOC/comment[@parent_id=$id]/object[@type=('regeling')],$LOC/comment/object[@type=('besluit')])"/>
     <xsl:variable name="bg_code_besluit" select="(fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'geen')[1]"/>
     <xsl:variable name="bg_code_regeling" select="(fn:tokenize($metadata[@type=('regeling')]/waarde[@naam='idOrganisatie'],'/')[last()],$bg_code_besluit,'geen')[1]"/>
+    <xsl:variable name="oin_code_regeling" select="$OIN/item[fn:ends-with(BG,$bg_code_regeling)]/OIN"/>
+    <xsl:variable name="oin_naam_regeling" select="$OIN/item[fn:ends-with(BG,$bg_code_regeling)]/naam"/>
     <xsl:if test="$objects/object">
       <xsl:variable name="index_divisie" select="count(fn:distinct-values(($LOC/comment[@para=$para])[1]/preceding-sibling::comment/@para))"/>
       <xsl:element name="ow-dc:owBestand" namespace="{$ow-dc}">
@@ -954,6 +958,24 @@
                     <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.',fn:lower-case($objecttype),'.',fn:format-date(current-date(),'[Y0001][M01][D01]'),fn:format-number($index_divisie,'000000'))" namespace="{$xlink}"/>
                   </xsl:element>
                 </xsl:element>
+                <xsl:if test="$objects/object[@type='hoofdlijn']">
+                  <xsl:element name="vt:hoofdlijnaanduiding" namespace="{$vt}">
+                    <xsl:for-each-group select="$LOC/comment/object[@type='hoofdlijn']" group-by="(waarde[@naam='soort'],'geen')[1]">
+                      <xsl:variable name="index_1" select="current-grouping-key()"/>
+                      <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='naam'],'geen')[1]">
+                        <xsl:variable name="index_2" select="current-grouping-key()"/>
+                        <xsl:variable name="hash_hoofdlijn">
+                          <xsl:call-template name="adler32">
+                            <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2),'|')"/>
+                          </xsl:call-template>
+                        </xsl:variable>
+                        <xsl:element name="vt:HoofdlijnRef" namespace="{$vt}">
+                          <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.hoofdlijn.',$oin_code_regeling,$hash_hoofdlijn)" namespace="{$xlink}"/>
+                        </xsl:element>
+                      </xsl:for-each-group>
+                    </xsl:for-each-group>
+                  </xsl:element>
+                </xsl:if>
                 <xsl:if test="$objects/object[@type='geometrie']">
                   <xsl:element name="vt:locatieaanduiding" namespace="{$vt}">
                     <xsl:for-each-group select="$objects/object[@type='geometrie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
@@ -966,7 +988,7 @@
                           </xsl:call-template>
                         </xsl:variable>
                         <xsl:element name="l:LocatieRef" namespace="{$l}">
-                          <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebied.',$hash_geometrie)" namespace="{$xlink}"/>
+                          <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebied.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/>
                         </xsl:element>
                       </xsl:for-each-group>
                     </xsl:for-each-group>
@@ -986,27 +1008,9 @@
                             </xsl:call-template>
                           </xsl:variable>
                           <xsl:element name="ga:GebiedsaanwijzingRef" namespace="{$ga}">
-                            <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebiedsaanwijzing.',$hash_gebiedsaanwijzing)" namespace="{$xlink}"/>
+                            <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebiedsaanwijzing.',$oin_code_regeling,$hash_gebiedsaanwijzing)" namespace="{$xlink}"/>
                           </xsl:element>
                         </xsl:for-each-group>
-                      </xsl:for-each-group>
-                    </xsl:for-each-group>
-                  </xsl:element>
-                </xsl:if>
-                <xsl:if test="$objects/object[@type='hoofdlijn']">
-                  <xsl:element name="vt:hoofdlijnaanduiding" namespace="{$vt}">
-                    <xsl:for-each-group select="$LOC/comment/object[@type='hoofdlijn']" group-by="(waarde[@naam='soort'],'geen')[1]">
-                      <xsl:variable name="index_1" select="current-grouping-key()"/>
-                      <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='naam'],'geen')[1]">
-                        <xsl:variable name="index_2" select="current-grouping-key()"/>
-                        <xsl:variable name="hash_hoofdlijn">
-                          <xsl:call-template name="adler32">
-                            <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2),'|')"/>
-                          </xsl:call-template>
-                        </xsl:variable>
-                        <xsl:element name="vt:HoofdlijnRef" namespace="{$vt}">
-                          <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.hoofdlijn.',$hash_hoofdlijn)" namespace="{$xlink}"/>
-                        </xsl:element>
                       </xsl:for-each-group>
                     </xsl:for-each-group>
                   </xsl:element>

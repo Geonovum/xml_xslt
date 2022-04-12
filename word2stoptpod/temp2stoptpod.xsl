@@ -50,7 +50,7 @@
 
   <xsl:template match="/">
     <!-- LVBB -->
-    <xsl:copy-of select="//lvbb:publicatieOpdracht"/>
+    <xsl:copy-of select="//publicatieOpdracht" xpath-default-namespace="http://www.overheid.nl/2017/lvbb"/>
     <!-- OW -->
     <xsl:call-template name="manifest"/>
     <xsl:for-each select=".//ow-dc:owBestand">
@@ -659,7 +659,7 @@
 
   <xsl:template name="AanleveringBesluit">
     <xsl:if test="//lvbb:AanleveringBesluit">
-      <xsl:variable name="resultaat" select="//lvbb:publicatieOpdracht/lvbb:publicatie"/>
+      <xsl:variable name="resultaat" select="//publicatieOpdracht/publicatie" xpath-default-namespace="http://www.overheid.nl/2017/lvbb"/>
       <xsl:result-document href="{$resultaat}" method="xml">
         <xsl:apply-templates select="//lvbb:AanleveringBesluit"/>
       </xsl:result-document>

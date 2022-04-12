@@ -5,7 +5,7 @@
   <xsl:param name="file.list"/>
 
   <!-- namespaces -->
-  <xsl:param name="lvbb" select="string('https://standaarden.overheid.nl/lvbb/stop/aanlevering/')"/>
+  <xsl:param name="lvbb" select="string('http://www.overheid.nl/2017/lvbb')"/>
 
   <!-- mapping -->
   <xsl:param name="extensions" select="('gml','jpeg','jpg','xml','pdf','png')"/>
@@ -15,6 +15,14 @@
 
   <xsl:template match="/">
     <xsl:element name="manifest" namespace="{$lvbb}">
+      <xsl:element name="bestand" namespace="{$lvbb}">
+        <xsl:element name="bestandsnaam" namespace="{$lvbb}">
+          <xsl:value-of select="string('manifest.xml')"/>
+        </xsl:element>
+        <xsl:element name="contentType" namespace="{$lvbb}">
+          <xsl:value-of select="$type[fn:index-of($extensions,'xml')]"/>
+        </xsl:element>
+      </xsl:element>
       <xsl:for-each select="fn:tokenize($file.list,';')">
         <xsl:variable name="file" select="fn:tokenize(.,'/')[last()]"/>
         <xsl:variable name="extension" select="fn:tokenize(.,'\.')[last()]"/>
