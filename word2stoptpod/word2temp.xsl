@@ -232,15 +232,18 @@
   <xsl:template name="lvbb_opdracht">
     <xsl:variable name="id" select="./@id"/>
     <xsl:variable name="metadata" select="$LOC/comment[@parent_id=$id]/object[@type=('besluit','procedure')]"/>
+    <xsl:variable name="bg_code_besluit" select="(fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'geen')[1]"/>
+    <xsl:variable name="oin_code_besluit" select="$OIN/item[fn:ends-with(BG,$bg_code_besluit)]/OIN"/>
+    <xsl:variable name="oin_naam_besluit" select="$OIN/item[fn:ends-with(BG,$bg_code_besluit)]/naam"/>
     <xsl:element name="publicatieOpdracht" namespace="{$opdracht}">
       <xsl:element name="idLevering" namespace="{$opdracht}">
         <xsl:value-of select="fn:string-join(($metadata[@type=('besluit')]/waarde[@naam='idWerk'],format-date(current-date(),'[Y0001]-[M01]-[D01]')),'_')"/>
       </xsl:element>
       <xsl:element name="idBevoegdGezag" namespace="{$opdracht}">
-        <xsl:value-of select="$OIN/item[fn:ends-with(BG,$metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'])]/OIN"/>
+        <xsl:value-of select="$oin_code_besluit"/>
       </xsl:element>
       <xsl:element name="idAanleveraar" namespace="{$opdracht}">
-        <xsl:value-of select="$OIN/item[fn:ends-with(BG,$metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'])]/OIN"/>
+        <xsl:value-of select="$oin_code_besluit"/>
       </xsl:element>
       <xsl:element name="publicatie" namespace="{$opdracht}">
         <xsl:value-of select="fn:string-join((fn:string-join(($metadata[@type=('besluit')]/waarde[@naam='idWerk'],format-date(current-date(),'[Y0001]-[M01]-[D01]')),'_'),'xml'),'.')"/>
@@ -257,6 +260,10 @@
   <xsl:template name="ow_bestand">
     <xsl:variable name="id" select="./@id"/>
     <xsl:variable name="metadata" select="($LOC/comment[@parent_id=$id]/object[@type=('regeling')],$LOC/comment/object[@type=('besluit')])"/>
+    <xsl:variable name="bg_code_besluit" select="(fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'geen')[1]"/>
+    <xsl:variable name="bg_code_regeling" select="(fn:tokenize($metadata[@type=('regeling')]/waarde[@naam='idOrganisatie'],'/')[last()],$bg_code_besluit,'geen')[1]"/>
+    <xsl:variable name="oin_code_regeling" select="$OIN/item[fn:ends-with(BG,$bg_code_regeling)]/OIN"/>
+    <xsl:variable name="oin_naam_regeling" select="$OIN/item[fn:ends-with(BG,$bg_code_regeling)]/naam"/>
     <xsl:element name="ow-dc:owBestand" namespace="{$ow-dc}">
       <xsl:namespace name="da" select="$da"/>
       <xsl:namespace name="ga" select="$ga"/>
@@ -279,7 +286,7 @@
         </xsl:element>
         <xsl:element name="sl:inhoud" namespace="{$sl}">
           <xsl:element name="sl:gebied" namespace="{$sl}">
-            <xsl:value-of select="($metadata[@type=('besluit')]/waarde[@naam='soortBestuursorgaan'],'geen')[1]"/>
+            <xsl:value-of select="($oin_naam_regeling,'geen')[1]"/>
           </xsl:element>
           <xsl:element name="sl:leveringsId" namespace="{$sl}">
             <xsl:value-of select="fn:string-join((($metadata[@type=('besluit')]/waarde[@naam='idWerk'],'geen')[1],format-date(current-date(),'[Y0001]-[M01]-[D01]')),'_')"/>
@@ -680,6 +687,8 @@
     <xsl:variable name="metadata" select="($LOC/comment[@parent_id=$id]/object[@type=('regeling')],$LOC/comment/object[@type=('besluit')])"/>
     <xsl:variable name="bg_code_besluit" select="(fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'geen')[1]"/>
     <xsl:variable name="bg_code_regeling" select="(fn:tokenize($metadata[@type=('regeling')]/waarde[@naam='idOrganisatie'],'/')[last()],$bg_code_besluit,'geen')[1]"/>
+    <xsl:variable name="oin_code_regeling" select="$OIN/item[fn:ends-with(BG,$bg_code_regeling)]/OIN"/>
+    <xsl:variable name="oin_naam_regeling" select="$OIN/item[fn:ends-with(BG,$bg_code_regeling)]/naam"/>
     <xsl:if test="$objects/object">
       <xsl:variable name="index_regeltekst" select="count(fn:distinct-values(($LOC/comment[@para=$para])[1]/preceding-sibling::comment/@para))"/>
       <xsl:element name="ow-dc:owBestand" namespace="{$ow-dc}">
@@ -704,7 +713,7 @@
           </xsl:element>
           <xsl:element name="sl:inhoud" namespace="{$sl}">
             <xsl:element name="sl:gebied" namespace="{$sl}">
-              <xsl:value-of select="($metadata[@type=('besluit')]/waarde[@naam='soortBestuursorgaan'],'geen')[1]"/>
+              <xsl:value-of select="($oin_naam_regeling,'geen')[1]"/>
             </xsl:element>
             <xsl:element name="sl:leveringsId" namespace="{$sl}">
               <xsl:value-of select="fn:string-join((($metadata[@type=('besluit')]/waarde[@naam='idWerk'],'geen')[1],format-date(current-date(),'[Y0001]-[M01]-[D01]')),'_')"/>
@@ -918,11 +927,11 @@
         <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
         <xsl:element name="sl:standBestand" namespace="{$sl}">
           <xsl:element name="sl:dataset" namespace="{$sl}">
-            <xsl:value-of select="($metadata[@type=('regeling')]/waarde[@naam='officieleTitel'],$metadata[@type=('besluit')]/waarde[@naam='officieleTitel'],'geen')[1]"/>
+            <xsl:value-of select="($metadata[@type=('regeling')]/waarde[@naam='officieleTitel_wordt'],$metadata[@type=('besluit')]/waarde[@naam='officieleTitel'],'geen')[1]"/>
           </xsl:element>
           <xsl:element name="sl:inhoud" namespace="{$sl}">
             <xsl:element name="sl:gebied" namespace="{$sl}">
-              <xsl:value-of select="($metadata[@type=('besluit')]/waarde[@naam='soortBestuursorgaan'],'geen')[1]"/>
+              <xsl:value-of select="($oin_naam_regeling,'geen')[1]"/>
             </xsl:element>
             <xsl:element name="sl:leveringsId" namespace="{$sl}">
               <xsl:value-of select="fn:string-join((($metadata[@type=('besluit')]/waarde[@naam='idWerk'],'geen')[1],format-date(current-date(),'[Y0001]-[M01]-[D01]')),'_')"/>
