@@ -4645,7 +4645,7 @@
 	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" wId="gm0772_ab1cd908898044a78223b502459d837d__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/79e31a114b5d4043a6784d10900f3193/nld@2022-03-02">/join/id/regdata/gm0772/2022/79e31a114b5d4043a6784d10900f3193/nld@2022-03-02</ExtIoRef></Al>
 	    </Definitie>
 	  </Begrip>
-	  <!--Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_2" wId="gm0772_d91aa88d8dd642d7b93dd691486462ec__cmp_o_1__content_o_1__list_o_1__item_o_1">
+	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_2" wId="gm0772_d91aa88d8dd642d7b93dd691486462ec__cmp_o_1__content_o_1__list_o_1__item_o_1">
 	    <Term>activiteiten ten dienste van maatschappelijk</Term>
 	    <Definitie>
 	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_2__ref_o_1" wId="gm0772_3509f10b23824e8f849567f616382891__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/361944446527476b88d4b45a883c5233/nld@2022-03-02">/join/id/regdata/gm0772/2022/361944446527476b88d4b45a883c5233/nld@2022-03-02</ExtIoRef></Al>
@@ -5124,7 +5124,7 @@
 	    <Definitie>
 	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_81__ref_o_1" wId="gm0772_2d9ab8deb16047ed84fdabca22603588__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/2a019ad0903f4201adeb07e6b2906fb7/nld@2022-03-02">/join/id/regdata/gm0772/2022/2a019ad0903f4201adeb07e6b2906fb7/nld@2022-03-02</ExtIoRef></Al>
 	    </Definitie>
-	  </Begrip-->
+	  </Begrip>
 	</Begrippenlijst>
       </Inhoud>
     </Divisietekst>

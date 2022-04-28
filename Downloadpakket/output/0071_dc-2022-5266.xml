@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             schemaversie="1.2.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/gm0772/2022/a12d55ee9372444e90fe8b2339c355ea</FRBRWork>
+         <FRBRExpression>/join/id/regdata/gm0772/2022/a12d55ee9372444e90fe8b2339c355ea/nld@2022-03-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_010</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>0071_dc-2022-5266.gml</bestandsnaam>
+                  <hash>d8f54b9277ed3d9cb838eeaf8b2a9ae0d6b0701f56984c27dbcaef7e113e27bb1dd4e519d29d5c3886458420e4ba6760342d5c23765170c4fab5419238fec9f4</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+         <heeftGeboorteregeling>/akn/nl/act/gm0772/2022/Regeling1328b39d633442539f149239029b380c</heeftGeboorteregeling>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/gemeente/gm0772</eindverantwoordelijke>
+         <maker>/tooi/id/gemeente/gm0772</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>sport en sportieve recreatie</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/regdata/gm0772/2022/a12d55ee9372444e90fe8b2339c355ea</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+         <naamInformatieObject>sport en sportieve recreatie</naamInformatieObject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>

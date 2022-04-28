@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             schemaversie="1.2.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/gm0772/2022/8b2385751d0b4e19a34a9686455e928e</FRBRWork>
+         <FRBRExpression>/join/id/regdata/gm0772/2022/8b2385751d0b4e19a34a9686455e928e/nld@2022-03-02</FRBRExpression>
+         <soortWork>/join/id/stop/work_010</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>0040_dc-2022-5256.gml</bestandsnaam>
+                  <hash>54d6a2bd467d6840eafbf27485d88da9e74d18cf482f5f160f5bf5d33a8d05b5fbaf5b18618425f64e0fd14536f400e7bc35a71f7b7d4c21cbae1aa02b519386</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+         <heeftGeboorteregeling>/akn/nl/act/gm0772/2022/Regeling1328b39d633442539f149239029b380c</heeftGeboorteregeling>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/gemeente/gm0772</eindverantwoordelijke>
+         <maker>/tooi/id/gemeente/gm0772</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>horeca categorie 6 begane grond</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/regdata/gm0772/2022/8b2385751d0b4e19a34a9686455e928e</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+         <naamInformatieObject>horeca categorie 6 begane grond</naamInformatieObject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>

@@ -61,6 +61,7 @@
   <target name="copy" description="Kopieer de bestanden">
     <copy todir="${temp.dir}/ow" failonerror="false">
       <fileset dir="${input.dir}/OW-bestanden">
+        <include name="*.xml"/>
         <exclude name="manifest-bhkv.xml"/>
       </fileset>
     </copy>

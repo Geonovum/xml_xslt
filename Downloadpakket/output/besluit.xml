@@ -6,8 +6,8 @@
                     xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
    <BesluitVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <FRBRWork>/akn/nl/bill/gm0772/2022/5a0cb2546a93dec73096d1713bf0b390</FRBRWork>
-         <FRBRExpression>/akn/nl/bill/gm0772/2022/5a0cb2546a93dec73096d1713bf0b390/nld@2022-04-28;1</FRBRExpression>
+         <FRBRWork>/akn/nl/bill/gm0772/2022/26803e838b29323be957923517dac78b</FRBRWork>
+         <FRBRExpression>/akn/nl/bill/gm0772/2022/26803e838b29323be957923517dac78b/nld@2022-04-28;1</FRBRExpression>
          <soortWork>/join/id/stop/work_003</soortWork>
       </ExpressionIdentificatie>
       <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -24,6 +24,86 @@
          <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
          <informatieobjectRefs>
             <informatieobjectRef>/join/id/regdata/gm0772/2022/79e31a114b5d4043a6784d10900f3193/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/361944446527476b88d4b45a883c5233/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/4cc5d8c4a0b74f9a95e45feee5c72228/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/ae0bb2fa9f3f455e928e7849465851a8/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/aeee3aa81b8944d7b884e72c0e7a0267/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/2bc177af1fc141b18696f8c25ad8695a/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/7431f4f98f0a44eb9a9341db3d948d9e/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/c8a0326a40ff41a7b4544ebdf19bc5d9/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/3c4abb5c5c194aa084f7e2685db3953c/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/b79367a2edf042d8be79a63ba88e3d9c/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/f9a8ca4635c843b18aed8e701a94f651/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/cdcc9ca5a0004d4495ef2a9a575f9bce/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/93747d64f127417dbf3860fd3cffa565/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/27a912f70f8744578a30d095e5382c11/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/af7ceb95c70c46ddad12a51f6c513277/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/660f79bb34b049b0b5fbacc7d4cc83c2/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/524565accc724469b0e0a7b59fbc7e38/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/ad1673d30fa047ff81e14f7519eac6da/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/0e6d45fb010049ecb30f10dddefea817/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/7ddf11b997574bd9b214f037016c2d13/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/41b32b7a449145c2a0786edf2f8e16d6/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/e657d69f58a14bd3bfa931625e395967/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/80970f69790f4c61ac732bfea8674f81/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/60f7ed5ac0f74a0483a4a241a8a743a4/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/55b0ef6fd2b7412583e3658fee5094bc/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/f6dfdfd749d642ad9750ae88bd258319/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/bf0ac6d90b2e4e1b8b8d9cf621b39e65/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/8770a784842542609ec3b593b49a093b/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/f997413eabe14e0aac4b17f06b348a90/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/91fa889148fa47e3831e9edc40904b71/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/8932da703cd9448687984f2ffc9d935b/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/0f3255ab195447ef87088267a45951fc/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/bcbf3a743dad4268a9a8d3f7855ecf13/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/1e548c22270140d883f6fa31573412bb/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/b881d8645122468d84c933bd282fe750/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/0ec6c0d51fac4def8b2bf608e77e60a1/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/9d0a03b69de0443c8de0bc13fcb5a037/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/4eeaee0816fe45cd867df06b1ab81fe4/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/5153053937fa48aaae754cd79c8309c8/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/8b2385751d0b4e19a34a9686455e928e/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/18fbab513827485dbf6bac6349abf3b8/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/2f34598882c242c39586571ee728d7ea/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/b5aeecbcb7334296b28f4a4909895196/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/e1af57aaba7e49dc83abd1315ce53581/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/80ac97d5cc77401bb66e8bd64bb61c65/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/b15023d9710840d7bd6d6ae7e8be29be/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/e0e7f074ca5940b88855694f9428c394/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/dde6ae9fad314f6caa5912f30ef933a4/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/6d8863ce16354fb1959dee2d8a2f8306/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/147b798ecf8d439c88018935a411e854/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/6713a42cf4bc4e0ca9314871850a698e/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/f893602ff4344ada9c9a7354b1b17861/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/0b9b0f095ca84b028996403d8fbfff81/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/cef4c10385e64814ac42e74d373b91dc/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/5395cad95aec46fb896618105fc35aac/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/2083997ae5fe4a7cac04be8725d0c399/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/96866e1adc3a43d6beb1c4c2f0ef9440/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/933825e1bb6a4710aa8ec88eb49584de/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/9834b64b4c704597aeeda688c91c5e3a/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/e942abb35895425391fb3fed6ccad3d0/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/4766765dcb084b909b46fc51452b113b/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/a2beab241d974050880b2536e4f3379b/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/ff0f11adfb414cb3adadcef197977974/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/e4da04cf58434fc18a83678fa4654018/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/4098b3b5b1424388bc57eb7cfdceaba3/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/5ff036e6a67b4091833573c1efea94d4/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/f318404017934117afc815a4ddb9463a/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/9410e58576b446f0b91dfde7cec10823/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/22c6dcdb8a474cdeae81cf323b8bb2b8/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/4f75df30dae0492f9f863feb6159092e/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/a12d55ee9372444e90fe8b2339c355ea/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/9926eb3a34f549f59a51e26016327bdd/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/9ecdee5356af4a77948e0e09d4726145/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/5047f4a52b0f47c1bc20893b581da2b4/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/b611a8edfd5d4d4a971fd168d309628a/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/a69515585df74e9daf5b11338fc5de8f/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/b7e96cd96aa14ed5a24554f9265c58ee/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/8a981217e2c444dba58f65cd6208da64/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/143d8f2777a641bda7e799f85e623e5a/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/5b7a33b1d966426993f0cf05b42f0743/nld@2022-03-02</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/gm0772/2022/2a019ad0903f4201adeb07e6b2906fb7/nld@2022-03-02</informatieobjectRef>
          </informatieobjectRefs>
       </BesluitMetadata>
       <Procedureverloop xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -55,6 +135,566 @@
                </doelen>
                <instrumentVersie>/join/id/regdata/gm0772/2022/79e31a114b5d4043a6784d10900f3193/nld@2022-03-02</instrumentVersie>
                <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/361944446527476b88d4b45a883c5233/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_2__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/4cc5d8c4a0b74f9a95e45feee5c72228/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_3__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/ae0bb2fa9f3f455e928e7849465851a8/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_4__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/aeee3aa81b8944d7b884e72c0e7a0267/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_5__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/2bc177af1fc141b18696f8c25ad8695a/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_6__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/7431f4f98f0a44eb9a9341db3d948d9e/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_7__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/c8a0326a40ff41a7b4544ebdf19bc5d9/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_8__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/3c4abb5c5c194aa084f7e2685db3953c/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_9__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/b79367a2edf042d8be79a63ba88e3d9c/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_10__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/f9a8ca4635c843b18aed8e701a94f651/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_11__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/cdcc9ca5a0004d4495ef2a9a575f9bce/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_12__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/93747d64f127417dbf3860fd3cffa565/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_13__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/27a912f70f8744578a30d095e5382c11/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_14__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/af7ceb95c70c46ddad12a51f6c513277/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_15__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/660f79bb34b049b0b5fbacc7d4cc83c2/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_16__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/524565accc724469b0e0a7b59fbc7e38/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_17__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/ad1673d30fa047ff81e14f7519eac6da/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_18__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/0e6d45fb010049ecb30f10dddefea817/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_19__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/7ddf11b997574bd9b214f037016c2d13/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_20__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/41b32b7a449145c2a0786edf2f8e16d6/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_21__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/e657d69f58a14bd3bfa931625e395967/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_22__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/80970f69790f4c61ac732bfea8674f81/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_23__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/60f7ed5ac0f74a0483a4a241a8a743a4/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_24__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/55b0ef6fd2b7412583e3658fee5094bc/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_25__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/f6dfdfd749d642ad9750ae88bd258319/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_26__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/bf0ac6d90b2e4e1b8b8d9cf621b39e65/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_27__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/8770a784842542609ec3b593b49a093b/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_28__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/f997413eabe14e0aac4b17f06b348a90/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_29__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/91fa889148fa47e3831e9edc40904b71/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_30__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/8932da703cd9448687984f2ffc9d935b/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_31__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/0f3255ab195447ef87088267a45951fc/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_32__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/bcbf3a743dad4268a9a8d3f7855ecf13/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_33__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/1e548c22270140d883f6fa31573412bb/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_34__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/b881d8645122468d84c933bd282fe750/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_35__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/0ec6c0d51fac4def8b2bf608e77e60a1/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_36__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/9d0a03b69de0443c8de0bc13fcb5a037/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_37__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/4eeaee0816fe45cd867df06b1ab81fe4/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_38__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/5153053937fa48aaae754cd79c8309c8/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_39__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/8b2385751d0b4e19a34a9686455e928e/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_40__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/18fbab513827485dbf6bac6349abf3b8/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_41__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/2f34598882c242c39586571ee728d7ea/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_42__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/b5aeecbcb7334296b28f4a4909895196/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_43__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/e1af57aaba7e49dc83abd1315ce53581/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_44__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/80ac97d5cc77401bb66e8bd64bb61c65/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_45__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/b15023d9710840d7bd6d6ae7e8be29be/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_46__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/e0e7f074ca5940b88855694f9428c394/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_47__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/dde6ae9fad314f6caa5912f30ef933a4/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_48__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/6d8863ce16354fb1959dee2d8a2f8306/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_49__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/147b798ecf8d439c88018935a411e854/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_50__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/6713a42cf4bc4e0ca9314871850a698e/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_51__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/f893602ff4344ada9c9a7354b1b17861/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_52__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/0b9b0f095ca84b028996403d8fbfff81/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_53__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/cef4c10385e64814ac42e74d373b91dc/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_54__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/5395cad95aec46fb896618105fc35aac/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_55__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/2083997ae5fe4a7cac04be8725d0c399/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_56__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/96866e1adc3a43d6beb1c4c2f0ef9440/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_57__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/933825e1bb6a4710aa8ec88eb49584de/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_58__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/9834b64b4c704597aeeda688c91c5e3a/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_59__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/e942abb35895425391fb3fed6ccad3d0/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_60__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/4766765dcb084b909b46fc51452b113b/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_61__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/a2beab241d974050880b2536e4f3379b/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_62__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/ff0f11adfb414cb3adadcef197977974/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_63__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/e4da04cf58434fc18a83678fa4654018/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_64__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/4098b3b5b1424388bc57eb7cfdceaba3/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_65__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/5ff036e6a67b4091833573c1efea94d4/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_66__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/f318404017934117afc815a4ddb9463a/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_67__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/9410e58576b446f0b91dfde7cec10823/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_68__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/22c6dcdb8a474cdeae81cf323b8bb2b8/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_69__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/4f75df30dae0492f9f863feb6159092e/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_70__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/a12d55ee9372444e90fe8b2339c355ea/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_71__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/9926eb3a34f549f59a51e26016327bdd/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_72__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/9ecdee5356af4a77948e0e09d4726145/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_73__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/5047f4a52b0f47c1bc20893b581da2b4/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_74__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/b611a8edfd5d4d4a971fd168d309628a/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_75__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/a69515585df74e9daf5b11338fc5de8f/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_76__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/b7e96cd96aa14ed5a24554f9265c58ee/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_77__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/8a981217e2c444dba58f65cd6208da64/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_78__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/143d8f2777a641bda7e799f85e623e5a/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_79__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/5b7a33b1d966426993f0cf05b42f0743/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_80__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/gm0772/2022/Instelling</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/gm0772/2022/2a019ad0903f4201adeb07e6b2906fb7/nld@2022-03-02</instrumentVersie>
+               <eId>!initieel_reg#cmp_o_1__content_o_1__list_o_1__item_o_81__ref_o_1</eId>
             </BeoogdInformatieobject>
          </BeoogdeRegelgeving>
          <Tijdstempels>
@@ -6165,486 +6805,886 @@
                                  </Al>
                               </Definitie>
                            </Begrip>
-                           <!--Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_2" wId="gm0772_d91aa88d8dd642d7b93dd691486462ec__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>activiteiten ten dienste van maatschappelijk</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_2__ref_o_1" wId="gm0772_3509f10b23824e8f849567f616382891__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/361944446527476b88d4b45a883c5233/nld@2022-03-02">/join/id/regdata/gm0772/2022/361944446527476b88d4b45a883c5233/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_3" wId="gm0772_6cb5b0a936c64ad69b6130925799f27e__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>agrarisch met detailhandel</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_3__ref_o_1" wId="gm0772_5fdc282eb1944e5fbb424aae88c8345e__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/4cc5d8c4a0b74f9a95e45feee5c72228/nld@2022-03-02">/join/id/regdata/gm0772/2022/4cc5d8c4a0b74f9a95e45feee5c72228/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_4" wId="gm0772_76b42f04c3274cd7a6ca0869637a8930__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>archeologisch verwachtingsgebied</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_4__ref_o_1" wId="gm0772_468025828f704fb9982a6ef4a55995d8__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/ae0bb2fa9f3f455e928e7849465851a8/nld@2022-03-02">/join/id/regdata/gm0772/2022/ae0bb2fa9f3f455e928e7849465851a8/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_5" wId="gm0772_61a5af75e22548f6940474ac3538f493__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>Bedrijf</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_5__ref_o_1" wId="gm0772_2973f970480b4371baa2fa21cfa2f1f9__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/aeee3aa81b8944d7b884e72c0e7a0267/nld@2022-03-02">/join/id/regdata/gm0772/2022/aeee3aa81b8944d7b884e72c0e7a0267/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_6" wId="gm0772_73ada65e02e44425b743c64c707cb09a__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>bedrijf categorie 1 en 2</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_6__ref_o_1" wId="gm0772_0d15c41a7a4b46b19e14dd575d1a1e1c__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/2bc177af1fc141b18696f8c25ad8695a/nld@2022-03-02">/join/id/regdata/gm0772/2022/2bc177af1fc141b18696f8c25ad8695a/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_7" wId="gm0772_076e79f1bd9243d1bcf31708f7d42e66__cmp_o_1__content_o_1__list_o_1__item_o_2">
-	    <Term>bedrijf categorie 1 en 2 op begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_7__ref_o_1" wId="gm0772_198a758c5d7a4f39a1770b114a779d94__cmp_o_1__content_o_1__list_o_1__item_o_2__ref_o_1" ref="/join/id/regdata/gm0772/2022/7431f4f98f0a44eb9a9341db3d948d9e/nld@2022-03-02">/join/id/regdata/gm0772/2022/7431f4f98f0a44eb9a9341db3d948d9e/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_8" wId="gm0772_672270006e5247c1b47b2772c3cd8c4b__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>beschermd en/of verzorgd wonen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_8__ref_o_1" wId="gm0772_e57f0ae025ff450d8b1537480757a5e9__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/c8a0326a40ff41a7b4544ebdf19bc5d9/nld@2022-03-02">/join/id/regdata/gm0772/2022/c8a0326a40ff41a7b4544ebdf19bc5d9/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_9" wId="gm0772_778dbdf14c384ace8bc9789a35d8cea7__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>beschermd en/of verzorgd wonen begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_9__ref_o_1" wId="gm0772_6ee7f94b043141639b759c03729af4a4__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/3c4abb5c5c194aa084f7e2685db3953c/nld@2022-03-02">/join/id/regdata/gm0772/2022/3c4abb5c5c194aa084f7e2685db3953c/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_10" wId="gm0772_3da4142baf7548648c764c03f1f71304__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>beschermd monument</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_10__ref_o_1" wId="gm0772_be86151bbe1545bcba8af3b39adfad39__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/b79367a2edf042d8be79a63ba88e3d9c/nld@2022-03-02">/join/id/regdata/gm0772/2022/b79367a2edf042d8be79a63ba88e3d9c/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_11" wId="gm0772_6596a6791e7145b793509a108009eb10__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>bouwhoogte</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_11__ref_o_1" wId="gm0772_ef08fc1de4014501846e61cb3f31b13c__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/f9a8ca4635c843b18aed8e701a94f651/nld@2022-03-02">/join/id/regdata/gm0772/2022/f9a8ca4635c843b18aed8e701a94f651/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_12" wId="gm0772_877a8e78cce94578b63b814416fa6946__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>bouwvlak</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_12__ref_o_1" wId="gm0772_34eb7a607fcb407394297d5b9be92ab3__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/cdcc9ca5a0004d4495ef2a9a575f9bce/nld@2022-03-02">/join/id/regdata/gm0772/2022/cdcc9ca5a0004d4495ef2a9a575f9bce/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_13" wId="gm0772_d073acd2b9aa4e619cc6158dcfd95b72__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>cafe</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_13__ref_o_1" wId="gm0772_3650d5bcb71f4b96901f36a86982194e__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/93747d64f127417dbf3860fd3cffa565/nld@2022-03-02">/join/id/regdata/gm0772/2022/93747d64f127417dbf3860fd3cffa565/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_14" wId="gm0772_9fb3ff798fa04195b3bd8a90dfd9c72a__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>casino</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_14__ref_o_1" wId="gm0772_8c5be423256f42829652cadccc63e6e4__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/27a912f70f8744578a30d095e5382c11/nld@2022-03-02">/join/id/regdata/gm0772/2022/27a912f70f8744578a30d095e5382c11/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_15" wId="gm0772_b929eb0144bb4d49a788a4e09dc87051__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>centrumgebied</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_15__ref_o_1" wId="gm0772_f59cdca6d09547bc969e4902346599bc__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/af7ceb95c70c46ddad12a51f6c513277/nld@2022-03-02">/join/id/regdata/gm0772/2022/af7ceb95c70c46ddad12a51f6c513277/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_16" wId="gm0772_120edfe38766438092518a176e431a17__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>dakterrassen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_16__ref_o_1" wId="gm0772_5e99fe9522434987b7c8cd4f10f433b2__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/660f79bb34b049b0b5fbacc7d4cc83c2/nld@2022-03-02">/join/id/regdata/gm0772/2022/660f79bb34b049b0b5fbacc7d4cc83c2/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_17" wId="gm0772_4bc249b69c7b479788b0674447f4f53e__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>detailhandel</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_17__ref_o_1" wId="gm0772_fb8a7e458cae41e5b1664ffa2dc900ce__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/524565accc724469b0e0a7b59fbc7e38/nld@2022-03-02">/join/id/regdata/gm0772/2022/524565accc724469b0e0a7b59fbc7e38/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_18" wId="gm0772_8afc39344b4c46509308affc67b94c99__cmp_o_1__content_o_1__list_o_1__item_o_4">
-	    <Term>detailhandel begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_18__ref_o_1" wId="gm0772_d91590804b86414a8fc2dd569c2a8ecb__cmp_o_1__content_o_1__list_o_1__item_o_4__ref_o_1" ref="/join/id/regdata/gm0772/2022/ad1673d30fa047ff81e14f7519eac6da/nld@2022-03-02">/join/id/regdata/gm0772/2022/ad1673d30fa047ff81e14f7519eac6da/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_19" wId="gm0772_9d21ffff7fa647e78f71dcb2eb418f81__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>detailhandel begane grond en op verdiepingingen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_19__ref_o_1" wId="gm0772_a8f60bc4da1b4b149ee7f55e25db83a9__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/0e6d45fb010049ecb30f10dddefea817/nld@2022-03-02">/join/id/regdata/gm0772/2022/0e6d45fb010049ecb30f10dddefea817/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_20" wId="gm0772_cf10106dc17c40be9c6761b085eeabc5__cmp_o_1__content_o_1__list_o_1__item_o_6">
-	    <Term>detailhandel volumineus</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_20__ref_o_1" wId="gm0772_a657b07cacd74e4b8626c2aeb1ebdd23__cmp_o_1__content_o_1__list_o_1__item_o_6__ref_o_1" ref="/join/id/regdata/gm0772/2022/7ddf11b997574bd9b214f037016c2d13/nld@2022-03-02">/join/id/regdata/gm0772/2022/7ddf11b997574bd9b214f037016c2d13/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_21" wId="gm0772_d7013c4cd940425cb4d38484a790f79e__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>detailhandelsgebied</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_21__ref_o_1" wId="gm0772_8c895c730e8940d48c6b068ae8d02dc6__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/41b32b7a449145c2a0786edf2f8e16d6/nld@2022-03-02">/join/id/regdata/gm0772/2022/41b32b7a449145c2a0786edf2f8e16d6/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_22" wId="gm0772_6003173017854e2ca07fd1cb626a8ade__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>dienstverlening</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_22__ref_o_1" wId="gm0772_28723ff2e33342e3a2c965f3e788a715__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/e657d69f58a14bd3bfa931625e395967/nld@2022-03-02">/join/id/regdata/gm0772/2022/e657d69f58a14bd3bfa931625e395967/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_23" wId="gm0772_29a0ff6a900a4b35917c6b1a20cd600a__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>dienstverlening begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_23__ref_o_1" wId="gm0772_8a831ed0951645b3809ea958efd453ba__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/80970f69790f4c61ac732bfea8674f81/nld@2022-03-02">/join/id/regdata/gm0772/2022/80970f69790f4c61ac732bfea8674f81/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_24" wId="gm0772_a6e65afbe9154174816b0673c3e4a57d__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>dienstverlening begane grond en eerste verdieping</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_24__ref_o_1" wId="gm0772_b6c0ee0ae94a4196b7462957f2ce040f__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/60f7ed5ac0f74a0483a4a241a8a743a4/nld@2022-03-02">/join/id/regdata/gm0772/2022/60f7ed5ac0f74a0483a4a241a8a743a4/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_25" wId="gm0772_5654b4e51b12415994954ea7ecdb09a4__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>educatieve voorzieningen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_25__ref_o_1" wId="gm0772_fc56b7809b5b44dca98f3dce07eafc69__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/55b0ef6fd2b7412583e3658fee5094bc/nld@2022-03-02">/join/id/regdata/gm0772/2022/55b0ef6fd2b7412583e3658fee5094bc/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_26" wId="gm0772_df6f81c0199247e0a20b20bf145b5fd1__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>educatieve voorzieningen begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_26__ref_o_1" wId="gm0772_9942b56f730e40168cb0e8e174ba7167__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/f6dfdfd749d642ad9750ae88bd258319/nld@2022-03-02">/join/id/regdata/gm0772/2022/f6dfdfd749d642ad9750ae88bd258319/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_27" wId="gm0772_e5b934f2629d4768bba757a5c2d97ab6__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>erven en terreinen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_27__ref_o_1" wId="gm0772_143a65df7e844312bcff6ec4d42f1b80__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/bf0ac6d90b2e4e1b8b8d9cf621b39e65/nld@2022-03-02">/join/id/regdata/gm0772/2022/bf0ac6d90b2e4e1b8b8d9cf621b39e65/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_28" wId="gm0772_a17f34219b914c9fa6b7ca210385eb63__cmp_o_1__content_o_1__list_o_1__item_o_7">
-	    <Term>garagebox</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_28__ref_o_1" wId="gm0772_faa691b8ac0e4565886f085045b32297__cmp_o_1__content_o_1__list_o_1__item_o_7__ref_o_1" ref="/join/id/regdata/gm0772/2022/8770a784842542609ec3b593b49a093b/nld@2022-03-02">/join/id/regdata/gm0772/2022/8770a784842542609ec3b593b49a093b/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_29" wId="gm0772_8fd175076bec4f059fbbac1e0a9ebbb7__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>geen bijbehorende bouwwerken</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_29__ref_o_1" wId="gm0772_2e333c5c82d14915a1a080ff79948276__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/f997413eabe14e0aac4b17f06b348a90/nld@2022-03-02">/join/id/regdata/gm0772/2022/f997413eabe14e0aac4b17f06b348a90/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_30" wId="gm0772_18f381d2bc304cd2b754ac00d74011b6__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>geluidwerende voorzieningen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_30__ref_o_1" wId="gm0772_430522f438594c82bd7db7a2b9c6e510__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/91fa889148fa47e3831e9edc40904b71/nld@2022-03-02">/join/id/regdata/gm0772/2022/91fa889148fa47e3831e9edc40904b71/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_31" wId="gm0772_bccdcb2fc650424b9e60526f86759e77__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>Gemeentelijk monument</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_31__ref_o_1" wId="gm0772_1a2a539cbdda468799494ef9633e1b5d__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/8932da703cd9448687984f2ffc9d935b/nld@2022-03-02">/join/id/regdata/gm0772/2022/8932da703cd9448687984f2ffc9d935b/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_32" wId="gm0772_243964d265ba45cfa46041e392ea88ee__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>goothoogte</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_32__ref_o_1" wId="gm0772_e5d50283112c4021983f747454dc1927__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/0f3255ab195447ef87088267a45951fc/nld@2022-03-02">/join/id/regdata/gm0772/2022/0f3255ab195447ef87088267a45951fc/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_33" wId="gm0772_5dc5c90e100442a6bb6e6284ee7fc72a__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>groentest2</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_33__ref_o_1" wId="gm0772_88615969d04c4016a4574b7de7b49ffd__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/bcbf3a743dad4268a9a8d3f7855ecf13/nld@2022-03-02">/join/id/regdata/gm0772/2022/bcbf3a743dad4268a9a8d3f7855ecf13/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_34" wId="gm0772_a580f083253d4ab79981db2503f41e5f__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>groenvoorzieningen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_34__ref_o_1" wId="gm0772_4a96387bfd9849b29a06ca1057f04ca3__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/1e548c22270140d883f6fa31573412bb/nld@2022-03-02">/join/id/regdata/gm0772/2022/1e548c22270140d883f6fa31573412bb/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_35" wId="gm0772_b2d6e553f29642a984e3042f8c7376ac__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>horeca categorie 1a begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_35__ref_o_1" wId="gm0772_114328ab4f7043c4a43dbab3b4ef59c9__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/b881d8645122468d84c933bd282fe750/nld@2022-03-02">/join/id/regdata/gm0772/2022/b881d8645122468d84c933bd282fe750/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_36" wId="gm0772_76984071e83147ccb84ea929e97b1adc__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>horeca categorie 1b begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_36__ref_o_1" wId="gm0772_8fb844f99cdb4072a5a4ef2f8cbbd74e__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/0ec6c0d51fac4def8b2bf608e77e60a1/nld@2022-03-02">/join/id/regdata/gm0772/2022/0ec6c0d51fac4def8b2bf608e77e60a1/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_37" wId="gm0772_ca6176ebadbb4a68b8051a3fa6715132__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>horeca categorie 2b begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_37__ref_o_1" wId="gm0772_71fadea4085946b6affc31539881a487__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/9d0a03b69de0443c8de0bc13fcb5a037/nld@2022-03-02">/join/id/regdata/gm0772/2022/9d0a03b69de0443c8de0bc13fcb5a037/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_38" wId="gm0772_6daa318b9a2c433696d9f475619c9bf4__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>horeca categorie 3 begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_38__ref_o_1" wId="gm0772_0ce7a799140c40ed9a74c3a607ced3d2__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/4eeaee0816fe45cd867df06b1ab81fe4/nld@2022-03-02">/join/id/regdata/gm0772/2022/4eeaee0816fe45cd867df06b1ab81fe4/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_39" wId="gm0772_38cb6db73a744b2dbe4103f0bee4ccb4__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>horeca categorie 5 begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_39__ref_o_1" wId="gm0772_23c58070804a4c0fb180296caa79dc60__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/5153053937fa48aaae754cd79c8309c8/nld@2022-03-02">/join/id/regdata/gm0772/2022/5153053937fa48aaae754cd79c8309c8/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_40" wId="gm0772_02088239ff314e92b4e8cb5b9bd280e7__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>horeca categorie 6 begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_40__ref_o_1" wId="gm0772_76e16196cfe445f689ee798d17a98147__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/8b2385751d0b4e19a34a9686455e928e/nld@2022-03-02">/join/id/regdata/gm0772/2022/8b2385751d0b4e19a34a9686455e928e/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_41" wId="gm0772_8e2ef35779f341d2be731fd4020edbcc__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>kantoor</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_41__ref_o_1" wId="gm0772_97ba1b25510245cbb6bf53a1a31722f8__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/18fbab513827485dbf6bac6349abf3b8/nld@2022-03-02">/join/id/regdata/gm0772/2022/18fbab513827485dbf6bac6349abf3b8/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_42" wId="gm0772_326f541fa0704ded98f6232a5177b98d__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>kantoorgebied</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_42__ref_o_1" wId="gm0772_0cc7d430a8d249d296c944d615760250__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/2f34598882c242c39586571ee728d7ea/nld@2022-03-02">/join/id/regdata/gm0772/2022/2f34598882c242c39586571ee728d7ea/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_43" wId="gm0772_20b7211f9473466b8de441aedf5888a2__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>kantoren begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_43__ref_o_1" wId="gm0772_8ff1f4896028428093472d78b2371ddb__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/b5aeecbcb7334296b28f4a4909895196/nld@2022-03-02">/join/id/regdata/gm0772/2022/b5aeecbcb7334296b28f4a4909895196/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_44" wId="gm0772_2e20739dc9274959ae8693e49ed64e07__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>kantoren begane grond en eerste verdieping</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_44__ref_o_1" wId="gm0772_289c4bc91f134a889e65dbf8b92191cc__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/e1af57aaba7e49dc83abd1315ce53581/nld@2022-03-02">/join/id/regdata/gm0772/2022/e1af57aaba7e49dc83abd1315ce53581/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_45" wId="gm0772_537b6da08ff245cbbb950044899989c1__cmp_o_1__content_o_1__list_o_1__item_o_8">
-	    <Term>karakteristiek</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_45__ref_o_1" wId="gm0772_64725f6c98be428987f0039ca9c0481b__cmp_o_1__content_o_1__list_o_1__item_o_8__ref_o_1" ref="/join/id/regdata/gm0772/2022/80ac97d5cc77401bb66e8bd64bb61c65/nld@2022-03-02">/join/id/regdata/gm0772/2022/80ac97d5cc77401bb66e8bd64bb61c65/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_46" wId="gm0772_8bdf0e839f2540c393f432d12200e7bc__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>kinderopvang</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_46__ref_o_1" wId="gm0772_e449689d228a4037a13b78e315a9e4af__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/b15023d9710840d7bd6d6ae7e8be29be/nld@2022-03-02">/join/id/regdata/gm0772/2022/b15023d9710840d7bd6d6ae7e8be29be/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_47" wId="gm0772_6aefdaa3e347456f94563fa3629a2e6f__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>kinderopvang begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_47__ref_o_1" wId="gm0772_924a5465c815412289d433c662a9eb52__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/e0e7f074ca5940b88855694f9428c394/nld@2022-03-02">/join/id/regdata/gm0772/2022/e0e7f074ca5940b88855694f9428c394/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_48" wId="gm0772_02b6785b8ceb4b379816bf9e8c421f94__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>Lage verwachting</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_48__ref_o_1" wId="gm0772_9f7cb8b12b394101a863e97b30f40c5a__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/dde6ae9fad314f6caa5912f30ef933a4/nld@2022-03-02">/join/id/regdata/gm0772/2022/dde6ae9fad314f6caa5912f30ef933a4/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_49" wId="gm0772_58c1858f8c2f4df28b33a3f67f1bd167__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>levensbeschouwelijke voorzieningen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_49__ref_o_1" wId="gm0772_a2cafe6e24bd4e69ac7465080b0a1f4f__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/6d8863ce16354fb1959dee2d8a2f8306/nld@2022-03-02">/join/id/regdata/gm0772/2022/6d8863ce16354fb1959dee2d8a2f8306/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_50" wId="gm0772_b80a8b7b046f445bb056d5899a914c2c__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>levensbeschouwelijke voorzieningen begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_50__ref_o_1" wId="gm0772_96b1b2dfa87d455896453aa404e05e71__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/147b798ecf8d439c88018935a411e854/nld@2022-03-02">/join/id/regdata/gm0772/2022/147b798ecf8d439c88018935a411e854/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_51" wId="gm0772_82fd199e0aa041f3a302e5d05f3e2f3e__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>maatschappelijk begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_51__ref_o_1" wId="gm0772_c0ec9e047d544ecea2732f592e0fc8e7__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/6713a42cf4bc4e0ca9314871850a698e/nld@2022-03-02">/join/id/regdata/gm0772/2022/6713a42cf4bc4e0ca9314871850a698e/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_52" wId="gm0772_6a4f58013f65465dbecd4a36ed32537f__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>maatschappelijk begane grond en eerste verdieping</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_52__ref_o_1" wId="gm0772_d0a9daf62ec745fda233cec5e5cec4d0__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/f893602ff4344ada9c9a7354b1b17861/nld@2022-03-02">/join/id/regdata/gm0772/2022/f893602ff4344ada9c9a7354b1b17861/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_53" wId="gm0772_ac6e61e4c4914703ae7f0fae8f06a0ad__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>maatschappelijk gebied</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_53__ref_o_1" wId="gm0772_daddc10ad7e74032b26d0891a626bdfa__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/0b9b0f095ca84b028996403d8fbfff81/nld@2022-03-02">/join/id/regdata/gm0772/2022/0b9b0f095ca84b028996403d8fbfff81/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_54" wId="gm0772_9358acfe0a554479aef253d0f092c517__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>maximum bouwhoogte 9 meter</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_54__ref_o_1" wId="gm0772_3266bb1f491a48c4a9c80aec9799aab4__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/cef4c10385e64814ac42e74d373b91dc/nld@2022-03-02">/join/id/regdata/gm0772/2022/cef4c10385e64814ac42e74d373b91dc/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_55" wId="gm0772_ac1b724c80db47ceb255043e5719fc57__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>medische voorzieningen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_55__ref_o_1" wId="gm0772_8e237b402d794247b6ae012df7d937b9__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/5395cad95aec46fb896618105fc35aac/nld@2022-03-02">/join/id/regdata/gm0772/2022/5395cad95aec46fb896618105fc35aac/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_56" wId="gm0772_36724451651846b585e95e0f98bc0642__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>medische voorzieningen begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_56__ref_o_1" wId="gm0772_4bbd5bdad6a747939efae4556d7aacab__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/2083997ae5fe4a7cac04be8725d0c399/nld@2022-03-02">/join/id/regdata/gm0772/2022/2083997ae5fe4a7cac04be8725d0c399/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_57" wId="gm0772_19dac5eb8bc849aba610d72b35c47d2d__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>natuur</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_57__ref_o_1" wId="gm0772_31bfc6be341b4643b7c65bda99a86259__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/96866e1adc3a43d6beb1c4c2f0ef9440/nld@2022-03-02">/join/id/regdata/gm0772/2022/96866e1adc3a43d6beb1c4c2f0ef9440/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_58" wId="gm0772_0fe0b656733e44eaa21afd054f4582ba__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>nutsvoorzieningen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_58__ref_o_1" wId="gm0772_2fe127eeb7e648da8676beb2d9c617b0__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/933825e1bb6a4710aa8ec88eb49584de/nld@2022-03-02">/join/id/regdata/gm0772/2022/933825e1bb6a4710aa8ec88eb49584de/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_59" wId="gm0772_a39440e6dbda4e8e83458833cf0b0ff7__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>onzelfstandige woonruimte</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_59__ref_o_1" wId="gm0772_9a12dc99ff5a4c8abbd3d872249ac4a0__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/9834b64b4c704597aeeda688c91c5e3a/nld@2022-03-02">/join/id/regdata/gm0772/2022/9834b64b4c704597aeeda688c91c5e3a/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_60" wId="gm0772_c6206910b2c8492f990698121deb0b87__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>op slot gebieden</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_60__ref_o_1" wId="gm0772_c9daf221446d4d01b2822515200b8268__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/e942abb35895425391fb3fed6ccad3d0/nld@2022-03-02">/join/id/regdata/gm0772/2022/e942abb35895425391fb3fed6ccad3d0/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_61" wId="gm0772_8c7543ac46b243ca96b9386c90b2bb38__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>openbaar gebied</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_61__ref_o_1" wId="gm0772_2d237669284c4a4e83d10dc6eb73315f__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/4766765dcb084b909b46fc51452b113b/nld@2022-03-02">/join/id/regdata/gm0772/2022/4766765dcb084b909b46fc51452b113b/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_62" wId="gm0772_07725f98e7374775bfe4bf9041b755d9__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>openbare dienstverlening en openbaar bestuur</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_62__ref_o_1" wId="gm0772_1624387c06e248729774ec66932ba59e__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/a2beab241d974050880b2536e4f3379b/nld@2022-03-02">/join/id/regdata/gm0772/2022/a2beab241d974050880b2536e4f3379b/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_63" wId="gm0772_5dd66298066e41278f718bdc07a74b13__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>openbare dienstverlening en openbaar bestuur begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_63__ref_o_1" wId="gm0772_c351ea090f8b4117ba7d9c65a65cd52b__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/ff0f11adfb414cb3adadcef197977974/nld@2022-03-02">/join/id/regdata/gm0772/2022/ff0f11adfb414cb3adadcef197977974/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_64" wId="gm0772_8f8ec2b7234c4a51a0b9fd0dc915708d__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>religie</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_64__ref_o_1" wId="gm0772_80ca79449c734183b75c5dea3d57ccfb__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/e4da04cf58434fc18a83678fa4654018/nld@2022-03-02">/join/id/regdata/gm0772/2022/e4da04cf58434fc18a83678fa4654018/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_65" wId="gm0772_a8799d557d5e45dfb1305233bd6dba8a__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>seksinrichting</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_65__ref_o_1" wId="gm0772_cb0357c9580b45a089162a4132cd7204__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/4098b3b5b1424388bc57eb7cfdceaba3/nld@2022-03-02">/join/id/regdata/gm0772/2022/4098b3b5b1424388bc57eb7cfdceaba3/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_66" wId="gm0772_9103494736a048038b5f8a444bdcbe28__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>sociaal-culturele voorzieningen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_66__ref_o_1" wId="gm0772_446f7c99f60641a88eeaa41480410561__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/5ff036e6a67b4091833573c1efea94d4/nld@2022-03-02">/join/id/regdata/gm0772/2022/5ff036e6a67b4091833573c1efea94d4/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_67" wId="gm0772_40f52f5ab379467596cc138250ceea45__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>sociaal-culturele voorzieningen begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_67__ref_o_1" wId="gm0772_1cac85d11b3e4a07b4e57b683adb7a5b__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/f318404017934117afc815a4ddb9463a/nld@2022-03-02">/join/id/regdata/gm0772/2022/f318404017934117afc815a4ddb9463a/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_68" wId="gm0772_faee37ba60854ddba52f0e803b0f2e82__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>sociaal-medische voorzieningen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_68__ref_o_1" wId="gm0772_803090a340f2494aaaa559bd712fe5ee__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/9410e58576b446f0b91dfde7cec10823/nld@2022-03-02">/join/id/regdata/gm0772/2022/9410e58576b446f0b91dfde7cec10823/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_69" wId="gm0772_20df6f64ee174d4a9b8411bf8e184fc4__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>sociaal-medische voorzieningen begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_69__ref_o_1" wId="gm0772_9675a979bed147adaf4824d62dcccdd1__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/22c6dcdb8a474cdeae81cf323b8bb2b8/nld@2022-03-02">/join/id/regdata/gm0772/2022/22c6dcdb8a474cdeae81cf323b8bb2b8/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_70" wId="gm0772_0135377fd14b4eef8b016152f0f35bf0__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>speelvoorzieningen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_70__ref_o_1" wId="gm0772_206a7c8910164ce3b39ad620b6a43861__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/4f75df30dae0492f9f863feb6159092e/nld@2022-03-02">/join/id/regdata/gm0772/2022/4f75df30dae0492f9f863feb6159092e/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_71" wId="gm0772_2d1910ddb47d41daa1cc429d584c4133__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>sport en sportieve recreatie</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_71__ref_o_1" wId="gm0772_53260ffbdca54db68479d171ad2bcaf7__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/a12d55ee9372444e90fe8b2339c355ea/nld@2022-03-02">/join/id/regdata/gm0772/2022/a12d55ee9372444e90fe8b2339c355ea/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_72" wId="gm0772_5b3b1266d3e24cf4a41214f4e17be4fc__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>sport en sportieve recreatie begane grond</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_72__ref_o_1" wId="gm0772_7f6520dcdb64467bb32920f40e48020d__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/9926eb3a34f549f59a51e26016327bdd/nld@2022-03-02">/join/id/regdata/gm0772/2022/9926eb3a34f549f59a51e26016327bdd/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_73" wId="gm0772_c0d85884fcd54a9eb8a03c3814d1bc4b__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>tuinen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_73__ref_o_1" wId="gm0772_1d3d8132570040ad9d7a10d6a0a2abf7__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/9ecdee5356af4a77948e0e09d4726145/nld@2022-03-02">/join/id/regdata/gm0772/2022/9ecdee5356af4a77948e0e09d4726145/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_74" wId="gm0772_aa87441e52a342b9a4cbed55ab298221__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>Verkeer</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_74__ref_o_1" wId="gm0772_48926deb2601467bb7dfda405a712a11__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/5047f4a52b0f47c1bc20893b581da2b4/nld@2022-03-02">/join/id/regdata/gm0772/2022/5047f4a52b0f47c1bc20893b581da2b4/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_75" wId="gm0772_2ec4e1294fe94a07b051d3c0acd921cd__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>verkeer uitgesloten</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_75__ref_o_1" wId="gm0772_49f9fd6cd7c242498a05555eedab64d5__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/b611a8edfd5d4d4a971fd168d309628a/nld@2022-03-02">/join/id/regdata/gm0772/2022/b611a8edfd5d4d4a971fd168d309628a/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_76" wId="gm0772_146941a81129443ea83ef3abe26d1c73__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>voorzieningen voor opwekken duurzame energie</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_76__ref_o_1" wId="gm0772_b985de4b8a9f465a834f8b90a7ea8db4__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/a69515585df74e9daf5b11338fc5de8f/nld@2022-03-02">/join/id/regdata/gm0772/2022/a69515585df74e9daf5b11338fc5de8f/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_77" wId="gm0772_f507864f012b4d76b68b7c00ffbea5a4__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>water en waterhuishoudkundige voorzieningen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_77__ref_o_1" wId="gm0772_c62192e7c78142a1a9a4d7e6ad086310__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/b7e96cd96aa14ed5a24554f9265c58ee/nld@2022-03-02">/join/id/regdata/gm0772/2022/b7e96cd96aa14ed5a24554f9265c58ee/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_78" wId="gm0772_e7a711a75ca6493c82ddb7f5129cabb1__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>wegen en paden</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_78__ref_o_1" wId="gm0772_dbc1164f5359434ba974b683100fc1f0__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/8a981217e2c444dba58f65cd6208da64/nld@2022-03-02">/join/id/regdata/gm0772/2022/8a981217e2c444dba58f65cd6208da64/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_79" wId="gm0772_b02ef6e1bc7d464fb82736e42372db6f__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>wonen</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_79__ref_o_1" wId="gm0772_6799dc5e3efc4c5c8bee4401a87449ad__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/143d8f2777a641bda7e799f85e623e5a/nld@2022-03-02">/join/id/regdata/gm0772/2022/143d8f2777a641bda7e799f85e623e5a/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_80" wId="gm0772_d081c105edea4ec3a1406811b547188f__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>wonen toegestaan</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_80__ref_o_1" wId="gm0772_d76c66e98c464cc8a6ff64c18788c088__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/5b7a33b1d966426993f0cf05b42f0743/nld@2022-03-02">/join/id/regdata/gm0772/2022/5b7a33b1d966426993f0cf05b42f0743/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip>
-	  <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_81" wId="gm0772_bbaf24c63a2f4d0aa596a4006cb88a47__cmp_o_1__content_o_1__list_o_1__item_o_1">
-	    <Term>woongebied</Term>
-	    <Definitie>
-	      <Al><ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_81__ref_o_1" wId="gm0772_2d9ab8deb16047ed84fdabca22603588__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0772/2022/2a019ad0903f4201adeb07e6b2906fb7/nld@2022-03-02">/join/id/regdata/gm0772/2022/2a019ad0903f4201adeb07e6b2906fb7/nld@2022-03-02</ExtIoRef></Al>
-	    </Definitie>
-	  </Begrip-->
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_2"
+                                   wId="gm0772_d91aa88d8dd642d7b93dd691486462ec__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>activiteiten ten dienste van maatschappelijk</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_2__ref_o_1"
+                                              wId="gm0772_3509f10b23824e8f849567f616382891__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/361944446527476b88d4b45a883c5233/nld@2022-03-02">/join/id/regdata/gm0772/2022/361944446527476b88d4b45a883c5233/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_3"
+                                   wId="gm0772_6cb5b0a936c64ad69b6130925799f27e__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>agrarisch met detailhandel</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_3__ref_o_1"
+                                              wId="gm0772_5fdc282eb1944e5fbb424aae88c8345e__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/4cc5d8c4a0b74f9a95e45feee5c72228/nld@2022-03-02">/join/id/regdata/gm0772/2022/4cc5d8c4a0b74f9a95e45feee5c72228/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_4"
+                                   wId="gm0772_76b42f04c3274cd7a6ca0869637a8930__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>archeologisch verwachtingsgebied</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_4__ref_o_1"
+                                              wId="gm0772_468025828f704fb9982a6ef4a55995d8__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/ae0bb2fa9f3f455e928e7849465851a8/nld@2022-03-02">/join/id/regdata/gm0772/2022/ae0bb2fa9f3f455e928e7849465851a8/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_5"
+                                   wId="gm0772_61a5af75e22548f6940474ac3538f493__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>Bedrijf</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_5__ref_o_1"
+                                              wId="gm0772_2973f970480b4371baa2fa21cfa2f1f9__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/aeee3aa81b8944d7b884e72c0e7a0267/nld@2022-03-02">/join/id/regdata/gm0772/2022/aeee3aa81b8944d7b884e72c0e7a0267/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_6"
+                                   wId="gm0772_73ada65e02e44425b743c64c707cb09a__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>bedrijf categorie 1 en 2</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_6__ref_o_1"
+                                              wId="gm0772_0d15c41a7a4b46b19e14dd575d1a1e1c__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/2bc177af1fc141b18696f8c25ad8695a/nld@2022-03-02">/join/id/regdata/gm0772/2022/2bc177af1fc141b18696f8c25ad8695a/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_7"
+                                   wId="gm0772_076e79f1bd9243d1bcf31708f7d42e66__cmp_o_1__content_o_1__list_o_1__item_o_2">
+                              <Term>bedrijf categorie 1 en 2 op begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_7__ref_o_1"
+                                              wId="gm0772_198a758c5d7a4f39a1770b114a779d94__cmp_o_1__content_o_1__list_o_1__item_o_2__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/7431f4f98f0a44eb9a9341db3d948d9e/nld@2022-03-02">/join/id/regdata/gm0772/2022/7431f4f98f0a44eb9a9341db3d948d9e/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_8"
+                                   wId="gm0772_672270006e5247c1b47b2772c3cd8c4b__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>beschermd en/of verzorgd wonen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_8__ref_o_1"
+                                              wId="gm0772_e57f0ae025ff450d8b1537480757a5e9__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/c8a0326a40ff41a7b4544ebdf19bc5d9/nld@2022-03-02">/join/id/regdata/gm0772/2022/c8a0326a40ff41a7b4544ebdf19bc5d9/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_9"
+                                   wId="gm0772_778dbdf14c384ace8bc9789a35d8cea7__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>beschermd en/of verzorgd wonen begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_9__ref_o_1"
+                                              wId="gm0772_6ee7f94b043141639b759c03729af4a4__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/3c4abb5c5c194aa084f7e2685db3953c/nld@2022-03-02">/join/id/regdata/gm0772/2022/3c4abb5c5c194aa084f7e2685db3953c/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_10"
+                                   wId="gm0772_3da4142baf7548648c764c03f1f71304__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>beschermd monument</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_10__ref_o_1"
+                                              wId="gm0772_be86151bbe1545bcba8af3b39adfad39__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/b79367a2edf042d8be79a63ba88e3d9c/nld@2022-03-02">/join/id/regdata/gm0772/2022/b79367a2edf042d8be79a63ba88e3d9c/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_11"
+                                   wId="gm0772_6596a6791e7145b793509a108009eb10__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>bouwhoogte</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_11__ref_o_1"
+                                              wId="gm0772_ef08fc1de4014501846e61cb3f31b13c__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/f9a8ca4635c843b18aed8e701a94f651/nld@2022-03-02">/join/id/regdata/gm0772/2022/f9a8ca4635c843b18aed8e701a94f651/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_12"
+                                   wId="gm0772_877a8e78cce94578b63b814416fa6946__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>bouwvlak</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_12__ref_o_1"
+                                              wId="gm0772_34eb7a607fcb407394297d5b9be92ab3__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/cdcc9ca5a0004d4495ef2a9a575f9bce/nld@2022-03-02">/join/id/regdata/gm0772/2022/cdcc9ca5a0004d4495ef2a9a575f9bce/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_13"
+                                   wId="gm0772_d073acd2b9aa4e619cc6158dcfd95b72__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>cafe</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_13__ref_o_1"
+                                              wId="gm0772_3650d5bcb71f4b96901f36a86982194e__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/93747d64f127417dbf3860fd3cffa565/nld@2022-03-02">/join/id/regdata/gm0772/2022/93747d64f127417dbf3860fd3cffa565/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_14"
+                                   wId="gm0772_9fb3ff798fa04195b3bd8a90dfd9c72a__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>casino</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_14__ref_o_1"
+                                              wId="gm0772_8c5be423256f42829652cadccc63e6e4__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/27a912f70f8744578a30d095e5382c11/nld@2022-03-02">/join/id/regdata/gm0772/2022/27a912f70f8744578a30d095e5382c11/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_15"
+                                   wId="gm0772_b929eb0144bb4d49a788a4e09dc87051__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>centrumgebied</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_15__ref_o_1"
+                                              wId="gm0772_f59cdca6d09547bc969e4902346599bc__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/af7ceb95c70c46ddad12a51f6c513277/nld@2022-03-02">/join/id/regdata/gm0772/2022/af7ceb95c70c46ddad12a51f6c513277/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_16"
+                                   wId="gm0772_120edfe38766438092518a176e431a17__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>dakterrassen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_16__ref_o_1"
+                                              wId="gm0772_5e99fe9522434987b7c8cd4f10f433b2__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/660f79bb34b049b0b5fbacc7d4cc83c2/nld@2022-03-02">/join/id/regdata/gm0772/2022/660f79bb34b049b0b5fbacc7d4cc83c2/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_17"
+                                   wId="gm0772_4bc249b69c7b479788b0674447f4f53e__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>detailhandel</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_17__ref_o_1"
+                                              wId="gm0772_fb8a7e458cae41e5b1664ffa2dc900ce__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/524565accc724469b0e0a7b59fbc7e38/nld@2022-03-02">/join/id/regdata/gm0772/2022/524565accc724469b0e0a7b59fbc7e38/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_18"
+                                   wId="gm0772_8afc39344b4c46509308affc67b94c99__cmp_o_1__content_o_1__list_o_1__item_o_4">
+                              <Term>detailhandel begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_18__ref_o_1"
+                                              wId="gm0772_d91590804b86414a8fc2dd569c2a8ecb__cmp_o_1__content_o_1__list_o_1__item_o_4__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/ad1673d30fa047ff81e14f7519eac6da/nld@2022-03-02">/join/id/regdata/gm0772/2022/ad1673d30fa047ff81e14f7519eac6da/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_19"
+                                   wId="gm0772_9d21ffff7fa647e78f71dcb2eb418f81__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>detailhandel begane grond en op verdiepingingen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_19__ref_o_1"
+                                              wId="gm0772_a8f60bc4da1b4b149ee7f55e25db83a9__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/0e6d45fb010049ecb30f10dddefea817/nld@2022-03-02">/join/id/regdata/gm0772/2022/0e6d45fb010049ecb30f10dddefea817/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_20"
+                                   wId="gm0772_cf10106dc17c40be9c6761b085eeabc5__cmp_o_1__content_o_1__list_o_1__item_o_6">
+                              <Term>detailhandel volumineus</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_20__ref_o_1"
+                                              wId="gm0772_a657b07cacd74e4b8626c2aeb1ebdd23__cmp_o_1__content_o_1__list_o_1__item_o_6__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/7ddf11b997574bd9b214f037016c2d13/nld@2022-03-02">/join/id/regdata/gm0772/2022/7ddf11b997574bd9b214f037016c2d13/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_21"
+                                   wId="gm0772_d7013c4cd940425cb4d38484a790f79e__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>detailhandelsgebied</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_21__ref_o_1"
+                                              wId="gm0772_8c895c730e8940d48c6b068ae8d02dc6__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/41b32b7a449145c2a0786edf2f8e16d6/nld@2022-03-02">/join/id/regdata/gm0772/2022/41b32b7a449145c2a0786edf2f8e16d6/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_22"
+                                   wId="gm0772_6003173017854e2ca07fd1cb626a8ade__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>dienstverlening</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_22__ref_o_1"
+                                              wId="gm0772_28723ff2e33342e3a2c965f3e788a715__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/e657d69f58a14bd3bfa931625e395967/nld@2022-03-02">/join/id/regdata/gm0772/2022/e657d69f58a14bd3bfa931625e395967/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_23"
+                                   wId="gm0772_29a0ff6a900a4b35917c6b1a20cd600a__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>dienstverlening begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_23__ref_o_1"
+                                              wId="gm0772_8a831ed0951645b3809ea958efd453ba__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/80970f69790f4c61ac732bfea8674f81/nld@2022-03-02">/join/id/regdata/gm0772/2022/80970f69790f4c61ac732bfea8674f81/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_24"
+                                   wId="gm0772_a6e65afbe9154174816b0673c3e4a57d__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>dienstverlening begane grond en eerste verdieping</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_24__ref_o_1"
+                                              wId="gm0772_b6c0ee0ae94a4196b7462957f2ce040f__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/60f7ed5ac0f74a0483a4a241a8a743a4/nld@2022-03-02">/join/id/regdata/gm0772/2022/60f7ed5ac0f74a0483a4a241a8a743a4/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_25"
+                                   wId="gm0772_5654b4e51b12415994954ea7ecdb09a4__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>educatieve voorzieningen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_25__ref_o_1"
+                                              wId="gm0772_fc56b7809b5b44dca98f3dce07eafc69__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/55b0ef6fd2b7412583e3658fee5094bc/nld@2022-03-02">/join/id/regdata/gm0772/2022/55b0ef6fd2b7412583e3658fee5094bc/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_26"
+                                   wId="gm0772_df6f81c0199247e0a20b20bf145b5fd1__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>educatieve voorzieningen begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_26__ref_o_1"
+                                              wId="gm0772_9942b56f730e40168cb0e8e174ba7167__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/f6dfdfd749d642ad9750ae88bd258319/nld@2022-03-02">/join/id/regdata/gm0772/2022/f6dfdfd749d642ad9750ae88bd258319/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_27"
+                                   wId="gm0772_e5b934f2629d4768bba757a5c2d97ab6__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>erven en terreinen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_27__ref_o_1"
+                                              wId="gm0772_143a65df7e844312bcff6ec4d42f1b80__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/bf0ac6d90b2e4e1b8b8d9cf621b39e65/nld@2022-03-02">/join/id/regdata/gm0772/2022/bf0ac6d90b2e4e1b8b8d9cf621b39e65/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_28"
+                                   wId="gm0772_a17f34219b914c9fa6b7ca210385eb63__cmp_o_1__content_o_1__list_o_1__item_o_7">
+                              <Term>garagebox</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_28__ref_o_1"
+                                              wId="gm0772_faa691b8ac0e4565886f085045b32297__cmp_o_1__content_o_1__list_o_1__item_o_7__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/8770a784842542609ec3b593b49a093b/nld@2022-03-02">/join/id/regdata/gm0772/2022/8770a784842542609ec3b593b49a093b/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_29"
+                                   wId="gm0772_8fd175076bec4f059fbbac1e0a9ebbb7__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>geen bijbehorende bouwwerken</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_29__ref_o_1"
+                                              wId="gm0772_2e333c5c82d14915a1a080ff79948276__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/f997413eabe14e0aac4b17f06b348a90/nld@2022-03-02">/join/id/regdata/gm0772/2022/f997413eabe14e0aac4b17f06b348a90/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_30"
+                                   wId="gm0772_18f381d2bc304cd2b754ac00d74011b6__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>geluidwerende voorzieningen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_30__ref_o_1"
+                                              wId="gm0772_430522f438594c82bd7db7a2b9c6e510__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/91fa889148fa47e3831e9edc40904b71/nld@2022-03-02">/join/id/regdata/gm0772/2022/91fa889148fa47e3831e9edc40904b71/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_31"
+                                   wId="gm0772_bccdcb2fc650424b9e60526f86759e77__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>Gemeentelijk monument</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_31__ref_o_1"
+                                              wId="gm0772_1a2a539cbdda468799494ef9633e1b5d__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/8932da703cd9448687984f2ffc9d935b/nld@2022-03-02">/join/id/regdata/gm0772/2022/8932da703cd9448687984f2ffc9d935b/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_32"
+                                   wId="gm0772_243964d265ba45cfa46041e392ea88ee__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>goothoogte</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_32__ref_o_1"
+                                              wId="gm0772_e5d50283112c4021983f747454dc1927__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/0f3255ab195447ef87088267a45951fc/nld@2022-03-02">/join/id/regdata/gm0772/2022/0f3255ab195447ef87088267a45951fc/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_33"
+                                   wId="gm0772_5dc5c90e100442a6bb6e6284ee7fc72a__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>groentest2</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_33__ref_o_1"
+                                              wId="gm0772_88615969d04c4016a4574b7de7b49ffd__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/bcbf3a743dad4268a9a8d3f7855ecf13/nld@2022-03-02">/join/id/regdata/gm0772/2022/bcbf3a743dad4268a9a8d3f7855ecf13/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_34"
+                                   wId="gm0772_a580f083253d4ab79981db2503f41e5f__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>groenvoorzieningen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_34__ref_o_1"
+                                              wId="gm0772_4a96387bfd9849b29a06ca1057f04ca3__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/1e548c22270140d883f6fa31573412bb/nld@2022-03-02">/join/id/regdata/gm0772/2022/1e548c22270140d883f6fa31573412bb/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_35"
+                                   wId="gm0772_b2d6e553f29642a984e3042f8c7376ac__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>horeca categorie 1a begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_35__ref_o_1"
+                                              wId="gm0772_114328ab4f7043c4a43dbab3b4ef59c9__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/b881d8645122468d84c933bd282fe750/nld@2022-03-02">/join/id/regdata/gm0772/2022/b881d8645122468d84c933bd282fe750/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_36"
+                                   wId="gm0772_76984071e83147ccb84ea929e97b1adc__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>horeca categorie 1b begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_36__ref_o_1"
+                                              wId="gm0772_8fb844f99cdb4072a5a4ef2f8cbbd74e__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/0ec6c0d51fac4def8b2bf608e77e60a1/nld@2022-03-02">/join/id/regdata/gm0772/2022/0ec6c0d51fac4def8b2bf608e77e60a1/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_37"
+                                   wId="gm0772_ca6176ebadbb4a68b8051a3fa6715132__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>horeca categorie 2b begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_37__ref_o_1"
+                                              wId="gm0772_71fadea4085946b6affc31539881a487__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/9d0a03b69de0443c8de0bc13fcb5a037/nld@2022-03-02">/join/id/regdata/gm0772/2022/9d0a03b69de0443c8de0bc13fcb5a037/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_38"
+                                   wId="gm0772_6daa318b9a2c433696d9f475619c9bf4__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>horeca categorie 3 begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_38__ref_o_1"
+                                              wId="gm0772_0ce7a799140c40ed9a74c3a607ced3d2__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/4eeaee0816fe45cd867df06b1ab81fe4/nld@2022-03-02">/join/id/regdata/gm0772/2022/4eeaee0816fe45cd867df06b1ab81fe4/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_39"
+                                   wId="gm0772_38cb6db73a744b2dbe4103f0bee4ccb4__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>horeca categorie 5 begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_39__ref_o_1"
+                                              wId="gm0772_23c58070804a4c0fb180296caa79dc60__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/5153053937fa48aaae754cd79c8309c8/nld@2022-03-02">/join/id/regdata/gm0772/2022/5153053937fa48aaae754cd79c8309c8/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_40"
+                                   wId="gm0772_02088239ff314e92b4e8cb5b9bd280e7__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>horeca categorie 6 begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_40__ref_o_1"
+                                              wId="gm0772_76e16196cfe445f689ee798d17a98147__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/8b2385751d0b4e19a34a9686455e928e/nld@2022-03-02">/join/id/regdata/gm0772/2022/8b2385751d0b4e19a34a9686455e928e/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_41"
+                                   wId="gm0772_8e2ef35779f341d2be731fd4020edbcc__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>kantoor</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_41__ref_o_1"
+                                              wId="gm0772_97ba1b25510245cbb6bf53a1a31722f8__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/18fbab513827485dbf6bac6349abf3b8/nld@2022-03-02">/join/id/regdata/gm0772/2022/18fbab513827485dbf6bac6349abf3b8/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_42"
+                                   wId="gm0772_326f541fa0704ded98f6232a5177b98d__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>kantoorgebied</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_42__ref_o_1"
+                                              wId="gm0772_0cc7d430a8d249d296c944d615760250__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/2f34598882c242c39586571ee728d7ea/nld@2022-03-02">/join/id/regdata/gm0772/2022/2f34598882c242c39586571ee728d7ea/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_43"
+                                   wId="gm0772_20b7211f9473466b8de441aedf5888a2__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>kantoren begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_43__ref_o_1"
+                                              wId="gm0772_8ff1f4896028428093472d78b2371ddb__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/b5aeecbcb7334296b28f4a4909895196/nld@2022-03-02">/join/id/regdata/gm0772/2022/b5aeecbcb7334296b28f4a4909895196/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_44"
+                                   wId="gm0772_2e20739dc9274959ae8693e49ed64e07__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>kantoren begane grond en eerste verdieping</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_44__ref_o_1"
+                                              wId="gm0772_289c4bc91f134a889e65dbf8b92191cc__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/e1af57aaba7e49dc83abd1315ce53581/nld@2022-03-02">/join/id/regdata/gm0772/2022/e1af57aaba7e49dc83abd1315ce53581/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_45"
+                                   wId="gm0772_537b6da08ff245cbbb950044899989c1__cmp_o_1__content_o_1__list_o_1__item_o_8">
+                              <Term>karakteristiek</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_45__ref_o_1"
+                                              wId="gm0772_64725f6c98be428987f0039ca9c0481b__cmp_o_1__content_o_1__list_o_1__item_o_8__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/80ac97d5cc77401bb66e8bd64bb61c65/nld@2022-03-02">/join/id/regdata/gm0772/2022/80ac97d5cc77401bb66e8bd64bb61c65/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_46"
+                                   wId="gm0772_8bdf0e839f2540c393f432d12200e7bc__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>kinderopvang</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_46__ref_o_1"
+                                              wId="gm0772_e449689d228a4037a13b78e315a9e4af__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/b15023d9710840d7bd6d6ae7e8be29be/nld@2022-03-02">/join/id/regdata/gm0772/2022/b15023d9710840d7bd6d6ae7e8be29be/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_47"
+                                   wId="gm0772_6aefdaa3e347456f94563fa3629a2e6f__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>kinderopvang begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_47__ref_o_1"
+                                              wId="gm0772_924a5465c815412289d433c662a9eb52__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/e0e7f074ca5940b88855694f9428c394/nld@2022-03-02">/join/id/regdata/gm0772/2022/e0e7f074ca5940b88855694f9428c394/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_48"
+                                   wId="gm0772_02b6785b8ceb4b379816bf9e8c421f94__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>Lage verwachting</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_48__ref_o_1"
+                                              wId="gm0772_9f7cb8b12b394101a863e97b30f40c5a__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/dde6ae9fad314f6caa5912f30ef933a4/nld@2022-03-02">/join/id/regdata/gm0772/2022/dde6ae9fad314f6caa5912f30ef933a4/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_49"
+                                   wId="gm0772_58c1858f8c2f4df28b33a3f67f1bd167__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>levensbeschouwelijke voorzieningen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_49__ref_o_1"
+                                              wId="gm0772_a2cafe6e24bd4e69ac7465080b0a1f4f__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/6d8863ce16354fb1959dee2d8a2f8306/nld@2022-03-02">/join/id/regdata/gm0772/2022/6d8863ce16354fb1959dee2d8a2f8306/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_50"
+                                   wId="gm0772_b80a8b7b046f445bb056d5899a914c2c__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>levensbeschouwelijke voorzieningen begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_50__ref_o_1"
+                                              wId="gm0772_96b1b2dfa87d455896453aa404e05e71__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/147b798ecf8d439c88018935a411e854/nld@2022-03-02">/join/id/regdata/gm0772/2022/147b798ecf8d439c88018935a411e854/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_51"
+                                   wId="gm0772_82fd199e0aa041f3a302e5d05f3e2f3e__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>maatschappelijk begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_51__ref_o_1"
+                                              wId="gm0772_c0ec9e047d544ecea2732f592e0fc8e7__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/6713a42cf4bc4e0ca9314871850a698e/nld@2022-03-02">/join/id/regdata/gm0772/2022/6713a42cf4bc4e0ca9314871850a698e/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_52"
+                                   wId="gm0772_6a4f58013f65465dbecd4a36ed32537f__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>maatschappelijk begane grond en eerste verdieping</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_52__ref_o_1"
+                                              wId="gm0772_d0a9daf62ec745fda233cec5e5cec4d0__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/f893602ff4344ada9c9a7354b1b17861/nld@2022-03-02">/join/id/regdata/gm0772/2022/f893602ff4344ada9c9a7354b1b17861/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_53"
+                                   wId="gm0772_ac6e61e4c4914703ae7f0fae8f06a0ad__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>maatschappelijk gebied</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_53__ref_o_1"
+                                              wId="gm0772_daddc10ad7e74032b26d0891a626bdfa__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/0b9b0f095ca84b028996403d8fbfff81/nld@2022-03-02">/join/id/regdata/gm0772/2022/0b9b0f095ca84b028996403d8fbfff81/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_54"
+                                   wId="gm0772_9358acfe0a554479aef253d0f092c517__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>maximum bouwhoogte 9 meter</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_54__ref_o_1"
+                                              wId="gm0772_3266bb1f491a48c4a9c80aec9799aab4__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/cef4c10385e64814ac42e74d373b91dc/nld@2022-03-02">/join/id/regdata/gm0772/2022/cef4c10385e64814ac42e74d373b91dc/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_55"
+                                   wId="gm0772_ac1b724c80db47ceb255043e5719fc57__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>medische voorzieningen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_55__ref_o_1"
+                                              wId="gm0772_8e237b402d794247b6ae012df7d937b9__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/5395cad95aec46fb896618105fc35aac/nld@2022-03-02">/join/id/regdata/gm0772/2022/5395cad95aec46fb896618105fc35aac/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_56"
+                                   wId="gm0772_36724451651846b585e95e0f98bc0642__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>medische voorzieningen begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_56__ref_o_1"
+                                              wId="gm0772_4bbd5bdad6a747939efae4556d7aacab__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/2083997ae5fe4a7cac04be8725d0c399/nld@2022-03-02">/join/id/regdata/gm0772/2022/2083997ae5fe4a7cac04be8725d0c399/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_57"
+                                   wId="gm0772_19dac5eb8bc849aba610d72b35c47d2d__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>natuur</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_57__ref_o_1"
+                                              wId="gm0772_31bfc6be341b4643b7c65bda99a86259__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/96866e1adc3a43d6beb1c4c2f0ef9440/nld@2022-03-02">/join/id/regdata/gm0772/2022/96866e1adc3a43d6beb1c4c2f0ef9440/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_58"
+                                   wId="gm0772_0fe0b656733e44eaa21afd054f4582ba__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>nutsvoorzieningen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_58__ref_o_1"
+                                              wId="gm0772_2fe127eeb7e648da8676beb2d9c617b0__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/933825e1bb6a4710aa8ec88eb49584de/nld@2022-03-02">/join/id/regdata/gm0772/2022/933825e1bb6a4710aa8ec88eb49584de/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_59"
+                                   wId="gm0772_a39440e6dbda4e8e83458833cf0b0ff7__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>onzelfstandige woonruimte</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_59__ref_o_1"
+                                              wId="gm0772_9a12dc99ff5a4c8abbd3d872249ac4a0__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/9834b64b4c704597aeeda688c91c5e3a/nld@2022-03-02">/join/id/regdata/gm0772/2022/9834b64b4c704597aeeda688c91c5e3a/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_60"
+                                   wId="gm0772_c6206910b2c8492f990698121deb0b87__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>op slot gebieden</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_60__ref_o_1"
+                                              wId="gm0772_c9daf221446d4d01b2822515200b8268__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/e942abb35895425391fb3fed6ccad3d0/nld@2022-03-02">/join/id/regdata/gm0772/2022/e942abb35895425391fb3fed6ccad3d0/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_61"
+                                   wId="gm0772_8c7543ac46b243ca96b9386c90b2bb38__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>openbaar gebied</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_61__ref_o_1"
+                                              wId="gm0772_2d237669284c4a4e83d10dc6eb73315f__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/4766765dcb084b909b46fc51452b113b/nld@2022-03-02">/join/id/regdata/gm0772/2022/4766765dcb084b909b46fc51452b113b/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_62"
+                                   wId="gm0772_07725f98e7374775bfe4bf9041b755d9__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>openbare dienstverlening en openbaar bestuur</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_62__ref_o_1"
+                                              wId="gm0772_1624387c06e248729774ec66932ba59e__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/a2beab241d974050880b2536e4f3379b/nld@2022-03-02">/join/id/regdata/gm0772/2022/a2beab241d974050880b2536e4f3379b/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_63"
+                                   wId="gm0772_5dd66298066e41278f718bdc07a74b13__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>openbare dienstverlening en openbaar bestuur begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_63__ref_o_1"
+                                              wId="gm0772_c351ea090f8b4117ba7d9c65a65cd52b__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/ff0f11adfb414cb3adadcef197977974/nld@2022-03-02">/join/id/regdata/gm0772/2022/ff0f11adfb414cb3adadcef197977974/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_64"
+                                   wId="gm0772_8f8ec2b7234c4a51a0b9fd0dc915708d__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>religie</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_64__ref_o_1"
+                                              wId="gm0772_80ca79449c734183b75c5dea3d57ccfb__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/e4da04cf58434fc18a83678fa4654018/nld@2022-03-02">/join/id/regdata/gm0772/2022/e4da04cf58434fc18a83678fa4654018/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_65"
+                                   wId="gm0772_a8799d557d5e45dfb1305233bd6dba8a__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>seksinrichting</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_65__ref_o_1"
+                                              wId="gm0772_cb0357c9580b45a089162a4132cd7204__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/4098b3b5b1424388bc57eb7cfdceaba3/nld@2022-03-02">/join/id/regdata/gm0772/2022/4098b3b5b1424388bc57eb7cfdceaba3/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_66"
+                                   wId="gm0772_9103494736a048038b5f8a444bdcbe28__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>sociaal-culturele voorzieningen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_66__ref_o_1"
+                                              wId="gm0772_446f7c99f60641a88eeaa41480410561__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/5ff036e6a67b4091833573c1efea94d4/nld@2022-03-02">/join/id/regdata/gm0772/2022/5ff036e6a67b4091833573c1efea94d4/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_67"
+                                   wId="gm0772_40f52f5ab379467596cc138250ceea45__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>sociaal-culturele voorzieningen begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_67__ref_o_1"
+                                              wId="gm0772_1cac85d11b3e4a07b4e57b683adb7a5b__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/f318404017934117afc815a4ddb9463a/nld@2022-03-02">/join/id/regdata/gm0772/2022/f318404017934117afc815a4ddb9463a/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_68"
+                                   wId="gm0772_faee37ba60854ddba52f0e803b0f2e82__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>sociaal-medische voorzieningen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_68__ref_o_1"
+                                              wId="gm0772_803090a340f2494aaaa559bd712fe5ee__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/9410e58576b446f0b91dfde7cec10823/nld@2022-03-02">/join/id/regdata/gm0772/2022/9410e58576b446f0b91dfde7cec10823/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_69"
+                                   wId="gm0772_20df6f64ee174d4a9b8411bf8e184fc4__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>sociaal-medische voorzieningen begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_69__ref_o_1"
+                                              wId="gm0772_9675a979bed147adaf4824d62dcccdd1__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/22c6dcdb8a474cdeae81cf323b8bb2b8/nld@2022-03-02">/join/id/regdata/gm0772/2022/22c6dcdb8a474cdeae81cf323b8bb2b8/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_70"
+                                   wId="gm0772_0135377fd14b4eef8b016152f0f35bf0__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>speelvoorzieningen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_70__ref_o_1"
+                                              wId="gm0772_206a7c8910164ce3b39ad620b6a43861__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/4f75df30dae0492f9f863feb6159092e/nld@2022-03-02">/join/id/regdata/gm0772/2022/4f75df30dae0492f9f863feb6159092e/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_71"
+                                   wId="gm0772_2d1910ddb47d41daa1cc429d584c4133__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>sport en sportieve recreatie</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_71__ref_o_1"
+                                              wId="gm0772_53260ffbdca54db68479d171ad2bcaf7__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/a12d55ee9372444e90fe8b2339c355ea/nld@2022-03-02">/join/id/regdata/gm0772/2022/a12d55ee9372444e90fe8b2339c355ea/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_72"
+                                   wId="gm0772_5b3b1266d3e24cf4a41214f4e17be4fc__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>sport en sportieve recreatie begane grond</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_72__ref_o_1"
+                                              wId="gm0772_7f6520dcdb64467bb32920f40e48020d__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/9926eb3a34f549f59a51e26016327bdd/nld@2022-03-02">/join/id/regdata/gm0772/2022/9926eb3a34f549f59a51e26016327bdd/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_73"
+                                   wId="gm0772_c0d85884fcd54a9eb8a03c3814d1bc4b__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>tuinen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_73__ref_o_1"
+                                              wId="gm0772_1d3d8132570040ad9d7a10d6a0a2abf7__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/9ecdee5356af4a77948e0e09d4726145/nld@2022-03-02">/join/id/regdata/gm0772/2022/9ecdee5356af4a77948e0e09d4726145/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_74"
+                                   wId="gm0772_aa87441e52a342b9a4cbed55ab298221__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>Verkeer</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_74__ref_o_1"
+                                              wId="gm0772_48926deb2601467bb7dfda405a712a11__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/5047f4a52b0f47c1bc20893b581da2b4/nld@2022-03-02">/join/id/regdata/gm0772/2022/5047f4a52b0f47c1bc20893b581da2b4/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_75"
+                                   wId="gm0772_2ec4e1294fe94a07b051d3c0acd921cd__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>verkeer uitgesloten</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_75__ref_o_1"
+                                              wId="gm0772_49f9fd6cd7c242498a05555eedab64d5__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/b611a8edfd5d4d4a971fd168d309628a/nld@2022-03-02">/join/id/regdata/gm0772/2022/b611a8edfd5d4d4a971fd168d309628a/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_76"
+                                   wId="gm0772_146941a81129443ea83ef3abe26d1c73__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>voorzieningen voor opwekken duurzame energie</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_76__ref_o_1"
+                                              wId="gm0772_b985de4b8a9f465a834f8b90a7ea8db4__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/a69515585df74e9daf5b11338fc5de8f/nld@2022-03-02">/join/id/regdata/gm0772/2022/a69515585df74e9daf5b11338fc5de8f/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_77"
+                                   wId="gm0772_f507864f012b4d76b68b7c00ffbea5a4__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>water en waterhuishoudkundige voorzieningen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_77__ref_o_1"
+                                              wId="gm0772_c62192e7c78142a1a9a4d7e6ad086310__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/b7e96cd96aa14ed5a24554f9265c58ee/nld@2022-03-02">/join/id/regdata/gm0772/2022/b7e96cd96aa14ed5a24554f9265c58ee/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_78"
+                                   wId="gm0772_e7a711a75ca6493c82ddb7f5129cabb1__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>wegen en paden</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_78__ref_o_1"
+                                              wId="gm0772_dbc1164f5359434ba974b683100fc1f0__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/8a981217e2c444dba58f65cd6208da64/nld@2022-03-02">/join/id/regdata/gm0772/2022/8a981217e2c444dba58f65cd6208da64/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_79"
+                                   wId="gm0772_b02ef6e1bc7d464fb82736e42372db6f__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>wonen</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_79__ref_o_1"
+                                              wId="gm0772_6799dc5e3efc4c5c8bee4401a87449ad__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/143d8f2777a641bda7e799f85e623e5a/nld@2022-03-02">/join/id/regdata/gm0772/2022/143d8f2777a641bda7e799f85e623e5a/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_80"
+                                   wId="gm0772_d081c105edea4ec3a1406811b547188f__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>wonen toegestaan</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_80__ref_o_1"
+                                              wId="gm0772_d76c66e98c464cc8a6ff64c18788c088__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/5b7a33b1d966426993f0cf05b42f0743/nld@2022-03-02">/join/id/regdata/gm0772/2022/5b7a33b1d966426993f0cf05b42f0743/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_81"
+                                   wId="gm0772_bbaf24c63a2f4d0aa596a4006cb88a47__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>woongebied</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_81__ref_o_1"
+                                              wId="gm0772_2d9ab8deb16047ed84fdabca22603588__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/gm0772/2022/2a019ad0903f4201adeb07e6b2906fb7/nld@2022-03-02">/join/id/regdata/gm0772/2022/2a019ad0903f4201adeb07e6b2906fb7/nld@2022-03-02</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
                         </Begrippenlijst>
                      </Inhoud>
                   </Divisietekst>
