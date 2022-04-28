@@ -1,0 +1,16 @@
+<data:RegelingMetadata schemaversie="1.1.0" xmlns:data="https://standaarden.overheid.nl/stop/imop/data/">
+  <data:eindverantwoordelijke>/tooi/id/gemeente/gm0772</data:eindverantwoordelijke>
+  <data:maker>/tooi/id/gemeente/gm0772</data:maker>
+  <data:officieleTitel>Omgevingsplan_Eindhoven</data:officieleTitel>
+  <data:onderwerpen>
+    <data:onderwerp>/tooi/def/concept/c_cfc7d5ab</data:onderwerp>
+  </data:onderwerpen>
+  <data:opvolging>
+    <data:opvolgerVan>/akn/nl/act/gm0772/2022/Regeling65f29b3ba0614736bff0e39e5a3e501a</data:opvolgerVan>
+  </data:opvolging>
+  <data:rechtsgebieden>
+    <data:rechtsgebied>/tooi/def/concept/c_8ad05f6d</data:rechtsgebied>
+  </data:rechtsgebieden>
+  <data:soortRegeling>/join/id/stop/regelingtype_003</data:soortRegeling>
+  <data:soortBestuursorgaan>/tooi/def/thes/kern/c_2a7d8663</data:soortBestuursorgaan>
+</data:RegelingMetadata>

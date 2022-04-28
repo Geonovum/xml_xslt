@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<project basedir="." name="consolidatie" default="main">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+
+  <!-- properties voor de transformatie -->
+
+  <property name="input.dir" value="input"/>
+  <property name="temp.dir" value="temp"/>
+  <property name="output.dir" value="output"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${temp.dir}"/>
+    </delete>
+    <mkdir dir="${temp.dir}"/>
+    <delete failonerror="no" includeemptydirs="true">
+      <fileset dir="${output.dir}"/>
+    </delete>
+    <mkdir dir="${output.dir}"/>
+  </target>
+
+  <!-- maak gml-bestanden -->
+
+  <target name="gml" description="Maak gml-bestanden">
+    <xslt in="${input.dir}/pakbon.xml" out="${temp.dir}/filelist.txt" style="filelist.xsl" processor="trax" force="true"/>
+    <loadfile property="filelist" srcfile="${temp.dir}/filelist.txt"/>
+    <record name="${temp.dir}/log_filelist.txt" action="start" append="true"/>
+      <for param="file" list="${filelist}" delimiter="&#10;">
+        <sequential>
+          <get src="@{file}" dest="${temp.dir}/file.html" ignoreerrors="true" maxtime="2"/>
+        </sequential>
+      </for>
+    <record name="${temp.dir}/log_filelist.txt" action="stop"/>
+    <xslt in="${input.dir}/pakbon.xml" out="${temp.dir}/filelist.xml" style="gml_bestanden.xsl" processor="trax" force="true"/>
+  </target>
+
+  <!-- maak hash-code -->
+  
+  <target name="checksum" description="Maak hash-codes">
+    <if>
+      <available file="${temp.dir}/gml" type="dir"/>
+      <then>
+        <checksum algorithm="SHA-512" fileext=".txt" todir="${temp.dir}/checksum">
+          <fileset dir="${temp.dir}/gml"/>
+        </checksum>
+      </then>
+    </if>
+  </target>
+
+  <!-- maak gio-bestanden -->
+
+  <target name="gio" description="Maak gio-bestanden">
+    <xslt in="${input.dir}/pakbon.xml" out="${temp.dir}/filelist.xml" style="gio_bestanden.xsl" processor="trax" force="true"/>
+  </target>
+
+  <!-- kopieer de bestanden -->
+  
+  <target name="copy" description="Kopieer de bestanden">
+    <copy todir="${temp.dir}/ow" failonerror="false">
+      <fileset dir="${input.dir}/OW-bestanden">
+        <exclude name="manifest-bhkv.xml"/>
+      </fileset>
+    </copy>
+    <copy todir="${output.dir}" failonerror="false">
+      <fileset dir="${input.dir}/Regeling">
+        <exclude name="Regeling-*.xml"/>
+      </fileset>
+    </copy>
+    <copy todir="${output.dir}" failonerror="false">
+      <fileset dir="${temp.dir}/gml"/>
+    </copy>
+  </target>
+  
+  <!-- voer de op-transformatie uit -->
+
+  <target name="op" description="Voer de op-transformatie uit">
+    <xslt in="${input.dir}/pakbon.xml" out="${output.dir}/opdracht.xml" style="op_bestanden.xsl" processor="trax" force="true"/>
+  </target>
+
+  <!-- voer de ow-transformatie uit -->
+
+  <target name="ow" description="Voer de ow-transformatie uit">
+    <xslt basedir="${temp.dir}/ow" destdir="${output.dir}" style="ow_bestanden.xsl" processor="trax" force="true">
+      <globmapper from="*.xml" to="*.xml"/>
+    </xslt>
+  </target>
+
+  <!-- stel de manifest-bestanden samen -->
+
+  <target name="manifest" description="Stel de manifest-bestanden samen">
+    <path id="output.list">
+      <fileset dir="${output.dir}"/>
+    </path>
+    <pathconvert property="file.list" refid="output.list" dirsep="/" pathsep=";"/>
+    <xslt in="template.xml" out="${output.dir}/manifest.xml" style="manifest.xsl" processor="trax" force="true">
+      <param name="file.list" expression="${file.list}"/>
+    </xslt>
+  </target>
+
+  <!-- totale transformatie van consolidatie naar besluit -->
+
+  <target name="main" depends="init,gml,checksum,gio,copy,op,ow,manifest"/>
+
+</project>

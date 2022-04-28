@@ -1,0 +1,3 @@
+      [get] Getting: https://identifier-eto.officielebekendmakingen.nl/join/id/regdata/gm0772/2022/79e31a114b5d4043a6784d10900f3193/nld@2022-03-02
+      [get] To: C:\Werkbestanden\Geonovum\Downloadpakket\temp\file.html
+      [get] The GET operation took longer than 2 seconds, stopping it.
