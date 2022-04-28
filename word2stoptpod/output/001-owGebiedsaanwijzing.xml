@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>Werkplaats Natuurbeheerplan Wieden voor TPOD-programma</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Provincie Overijssel</sl:gebied>
+         <sl:leveringsId>WiedenWeerribben_2022-04-28</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Gebiedsaanwijzing</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-pv23.gebiedsaanwijzing.000000010019003280001867792838</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Natuur</ga:type>
+               <ga:naam>De Wieden</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Natura2000Gebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-pv23.gebied.000000010019003280001350371212"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-pv23.gebiedsaanwijzing.000000010019003280002398045039</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Natuur</ga:type>
+               <ga:naam>De Weerribben</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Natura2000Gebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-pv23.gebied.000000010019003280002671053534"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-pv23.gebiedsaanwijzing.000000010019003280001807107605</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Natuur</ga:type>
+               <ga:naam>Wieden en Weerribben</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Natura2000Gebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-pv23.gebied.000000010019003280003002536370"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-pv23.gebiedsaanwijzing.00000001001900328000456677000</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Natuur</ga:type>
+               <ga:naam>de effectafstand van 300 meter vanaf het Natura 2000-gebied Wieden</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Maatregelengebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-pv23.gebied.000000010019003280001644109449"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-pv23.gebiedsaanwijzing.00000001001900328000140138818</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Natuur</ga:type>
+               <ga:naam>invloedzone aggrarische grondwateronttrekkingen voor beregening</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Maatregelengebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-pv23.gebied.000000010019003280001644109449"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-pv23.gebiedsaanwijzing.00000001001900328000909919562</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Natuur</ga:type>
+               <ga:naam>Grote Karekiet</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Maatregelengebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-pv23.gebied.000000010019003280003808890144"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-pv23.gebiedsaanwijzing.00000001001900328000343099718</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Natuur</ga:type>
+               <ga:naam>Leefgebied Grote Karekiet</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Maatregelengebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-pv23.gebied.00000001001900328000931346210"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-pv23.gebiedsaanwijzing.00000001001900328000804481219</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Natuur</ga:type>
+               <ga:naam>beschikbaarheid van voldoende kruidenrijke, lage vegetaties en plaatselijk wilgenstruwelen (insecten)</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Habitatrichtlijngebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-pv23.gebied.000000010019003280004054723567"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-pv23.gebiedsaanwijzing.000000010019003280002784905048</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Natuur</ga:type>
+               <ga:naam>omgeving rietzones</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Maatregelengebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-pv23.gebied.000000010019003280001105989638"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <ga:Gebiedsaanwijzing>
+               <ga:identificatie>nl.imow-pv23.gebiedsaanwijzing.000000010019003280002608810505</ga:identificatie>
+               <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Natuur</ga:type>
+               <ga:naam>Rietzones Vollenhofermeer</ga:naam>
+               <ga:groep>http://standaarden.omgevingswet.overheid.nl/natuur/id/concept/Maatregelengebied</ga:groep>
+               <ga:locatieaanduiding>
+                  <l:LocatieRef xlink:href="nl.imow-pv23.gebied.000000010019003280002110396042"/>
+               </ga:locatieaanduiding>
+            </ga:Gebiedsaanwijzing>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

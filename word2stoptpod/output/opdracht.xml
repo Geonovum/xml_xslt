@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<publicatieOpdracht xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/">
-   <idLevering>ZAAN0003_2021-11-22</idLevering>
-   <idBevoegdGezag>00000001003148889000</idBevoegdGezag>
-   <idAanleveraar>00000001003148889000</idAanleveraar>
-   <publicatie>ZAAN0003_2021-11-22.xml</publicatie>
-   <datumBekendmaking>2021-11-23</datumBekendmaking>
+<publicatieOpdracht xmlns="http://www.overheid.nl/2017/lvbb">
+   <idLevering>WiedenWeerribben_2022-04-28</idLevering>
+   <idBevoegdGezag>00000001001900328000</idBevoegdGezag>
+   <idAanleveraar>00000001001900328000</idAanleveraar>
+   <publicatie>WiedenWeerribben_2022-04-28.xml</publicatie>
+   <datumBekendmaking>2022-04-07</datumBekendmaking>
 </publicatieOpdracht>

@@ -1043,8 +1043,8 @@
     <xsl:variable name="id_bill_expression" select="concat('/akn/nl/bill/',$idOrganisatie,'/',format-date(current-date(),'[Y0001]'),'/',$metadata[@type=('besluit')]/waarde[@naam='idWerk'],'/nld@',format-date(current-date(),'[Y0001]-[M01]-[D01]'),';',$idVersie)"/>
     <xsl:element name="AanleveringBesluit" namespace="{$lvbb}">
       <xsl:namespace name="dso" select="string('https://www.dso.nl/')"/>
-      <xsl:attribute name="schemaversie" select="string('1.1.0')"/>
-      <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd')"/>
+      <xsl:attribute name="schemaversie" select="string('1.2.0')"/>
+      <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd')"/>
       <!-- geef informatie door aan AKN.xsl -->
       <xsl:processing-instruction name="akn">
         <xsl:value-of select="fn:string-join(($idOrganisatie,$idVersie),'_')"/>

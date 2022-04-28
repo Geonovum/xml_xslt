@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>Werkplaats Natuurbeheerplan Wieden voor TPOD-programma</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Provincie Overijssel</sl:gebied>
+         <sl:leveringsId>WiedenWeerribben_2022-04-28</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Ambtsgebied</sl:objectType>
+            <sl:objectType>Gebied</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Ambtsgebied>
+               <l:identificatie>nl.imow-pv23.ambtsgebied.00000001001900328000</l:identificatie>
+               <l:noemer>Provincie Overijssel</l:noemer>
+               <l:bestuurlijkeGrenzenVerwijzing>
+                  <l:BestuurlijkeGrenzenVerwijzing>
+                     <l:bestuurlijkeGrenzenID>PV23</l:bestuurlijkeGrenzenID>
+                     <l:domein>NL.BI.BestuurlijkGebied</l:domein>
+                     <l:geldigOp>2021-01-01</l:geldigOp>
+                  </l:BestuurlijkeGrenzenVerwijzing>
+               </l:bestuurlijkeGrenzenVerwijzing>
+            </l:Ambtsgebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--wieden.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv23.gebied.000000010019003280001350371212</l:identificatie>
+               <l:noemer>De Wieden</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="c2354085-6327-49f4-a815-a78217940a6d"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--weerribben.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv23.gebied.000000010019003280002671053534</l:identificatie>
+               <l:noemer>De Weerribben</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="392043ef-ebd8-49b3-819b-a7df30b1f84d"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--wiedenweerribben.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv23.gebied.000000010019003280003002536370</l:identificatie>
+               <l:noemer>De Wieden en de Weerribben</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="55e30ecd-bade-4154-b23d-edc11f35b2f5"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Effectzone300Wieden.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv23.gebied.000000010019003280001644109449</l:identificatie>
+               <l:noemer>effectafstand van 300 meter vanaf het Natura 2000-gebied Wieden</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="6c019253-9907-4c92-992a-8bb0b0ccfba6"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--vogelrichtlijn.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv23.gebied.000000010019003280003808890144</l:identificatie>
+               <l:noemer>Grote Karekiet</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ea366d8d-862a-416d-9221-6fd3868a92bf"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Grotekarekiet.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv23.gebied.00000001001900328000931346210</l:identificatie>
+               <l:noemer>verbinding Wieden-Vollenhovermeer, de rietzone langs het Vollenhovermeer, in de Beulakerpolder (al ingericht) en Polder Giethoorn</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="106c0173-1961-469c-8cae-8edf9c9fac93"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Grotekarekiet.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv23.gebied.000000010019003280001858418498</l:identificatie>
+               <l:noemer>verbinding Wieden-Vollenhovermeer, de rietzone langs het Vollenhovermeer, in de Beulakerpolder (al ingericht) en Polder Giethoorn </l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f1dff473-29df-4f4b-be7b-140394a138c8"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--insecten.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv23.gebied.000000010019003280004054723567</l:identificatie>
+               <l:noemer>beschikbaarheid van voldoende kruidenrijke, lage vegetaties en plaatselijk wilgenstruwelen (insecten)</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="48a42ad3-0d28-44bd-a18a-db86b41197ac"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--rietzones_buffer.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv23.gebied.000000010019003280001105989638</l:identificatie>
+               <l:noemer>omgeving rietzones</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="b3ea29ed-9715-43c2-98eb-e2a32210b7a7"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--rietzones_buffer.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv23.gebied.000000010019003280001916084414</l:identificatie>
+               <l:noemer>directe omgeving van de potentiële broedlocaties in waterriet </l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="57dee952-9597-4362-8024-9cd44cc1cdfa"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--rietzones_vollenhofermeer.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv23.gebied.000000010019003280002110396042</l:identificatie>
+               <l:noemer>Rietzones Vollenhofermeer</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f5987728-7960-4c0c-98d2-ca16e5d369c2"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--rietzones_vollenhofermeer.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-pv23.gebied.000000010019003280002145524246</l:identificatie>
+               <l:noemer>de rietzone van het Vollenhovermeer </l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="ec710818-c203-4a29-84b4-249f6346794c"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>
