@@ -43,13 +43,14 @@
   <xsl:param name="regeling_metadata" select="document(concat($input.dir,'Regeling/Regeling-Metadata.xml'))/element()"/>
   <xsl:param name="regeling_tekst" select="document(concat($input.dir,'Regeling/Regeling-Tekst.xml'))/element()"/>
   <xsl:param name="regeling_versieMetadata" select="document(concat($input.dir,'Regeling/Regeling-VersieMetadata.xml'))/element()"/>
+  <xsl:param name="regeling_ow" select="document(concat($input.dir,'OW-bestanden/manifest-ow.xml'))/element()"/>
 
   <!-- parameters -->
   <xsl:param name="id_bg_code" select="fn:tokenize($regeling_metadata/data:eindverantwoordelijke,'/')[last()]"/>
   <xsl:param name="id_levering" select="digest:md5Hex(fn:string-join($regeling_tekst//text()))"/>
   <xsl:param name="id_bill_work" select="fn:string-join(('','akn','nl','bill',$id_bg_code,fn:format-date(current-date(),'[Y0001]'),$id_levering),'/')"/>
   <xsl:param name="id_bill_expression" select="fn:string-join(($id_bill_work,concat('nld@',format-date(current-date(),'[Y0001]-[M01]-[D01]'),';1')),'/')"/>
-  <xsl:param name="id_doel" select="fn:string-join(('','join','id','proces',$id_bg_code,fn:format-date(current-date(),'[Y0001]'),'Instelling'),'/')"/>
+  <xsl:param name="id_doel" select="$regeling_ow//(DoelID)[1]" as="xs:string" xpath-default-namespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"/>
 
   <!-- oin -->
   <xsl:param name="oin" select="document('OIN.xml')/lijst"/>
@@ -59,7 +60,6 @@
   <!-- bouw de ow-bestanden op -->
 
   <xsl:template match="ow-dc:owBestand">
-    <xsl:message><xsl:value-of select="concat('[GW] ',$base.dir,$id_bg_code)"/></xsl:message>
     <xsl:element name="ow-dc:owBestand" namespace="{$ow-dc}">
       <xsl:namespace name="da" select="$da"/>
       <xsl:namespace name="ga" select="$ga"/>
