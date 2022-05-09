@@ -4,9 +4,10 @@ De transformatie voor het transformeren van downloadpakketjes naar initieel besl
 ## Installatie
 De opbouw van de transformatie gaat uit van verwerking vanuit Oxygen. De xslt-processor is Saxon-pe of Saxon-ee. Vooraf is het nodig om het certificaat van '*.officiele-overheidspublicaties.nl' op te slaan in de keystore van Oxygen. Doe dat als volgt:
 1. Download en installeer de toepassing 'KeyStore Explorer' van https://keystore-explorer.org/downloads.html
-2. Open de applicatie en open keystore 'cacert' in de oxygen-map '[Oxygen]/jre/lib/security/cacert'.
+2. Open de applicatie en open keystore 'cacert' in de oxygen-map '[Oxygen]/jre/lib/security/cacert'. Wachtwoord voor cacerts is 'changeit'.
 3. Importeer het bijgevoegde certificaat 'overheid.cer'. Let erop, deze is geldig tot 5-5-2023, dus daarna moet deze opnieuw toegevoegd worden.
 4. Sla de keystore op.
+5. kijk of de commons.jar (in ons geval: commons-codec-1.9.jar) in de library zit, zo niet voeg deze toe bij het project.
 
 Nu moet het mogelijk zijn om vanuit het build-script gml-bestanden te downloaden van de downloadpagina. Let erop, dat dit dient te gebeuren voordat de pre/eto-omgeving is leeggehaald.
 
