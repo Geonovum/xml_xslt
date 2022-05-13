@@ -202,7 +202,7 @@
             </xsl:element>
           </xsl:element>
           <xsl:choose>
-            <xsl:when test="fn:tokenize($regeling_metadata/data:soortRegeling,'/')[last()]=('regelingtype_003')">
+            <xsl:when test="fn:tokenize($regeling_metadata/data:soortRegeling,'/')[last()]=('regelingtype_003','regelingtype_005')">
               <xsl:element name="BesluitCompact" namespace="{$tekst}">
                 <xsl:element name="RegelingOpschrift" namespace="{$tekst}">
                   <xsl:attribute name="eId" select="string('longTitle')"/>
