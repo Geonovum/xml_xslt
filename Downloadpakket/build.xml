@@ -101,8 +101,14 @@
     </xslt>
   </target>
 
+  <!-- maak het test-bestand -->
+
+  <target name="test" description="Maak het test-bestand">
+    <xslt in="${input.dir}/pakbon.xml" out="${temp.dir}/test.xml" style="gml_test.xsl" processor="trax" force="true"/>
+  </target>
+
   <!-- totale transformatie van consolidatie naar besluit -->
 
-  <target name="main" depends="init,gml,checksum,gio,copy,op,ow,manifest"/>
+  <target name="main" depends="init,gml,checksum,gio,copy,op,ow,manifest,test"/>
 
 </project>

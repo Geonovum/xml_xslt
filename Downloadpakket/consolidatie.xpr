@@ -42,7 +42,7 @@
                                     <list/>
                                 </field>
                                 <field name="jvmArgs">
-                                    <String>-Xmx256m -Dxml.catalog.files=${xmlCatalogFilesList}</String>
+                                    <String>-Xmx5000m -Dxml.catalog.files=${xmlCatalogFilesList}</String>
                                 </field>
                                 <field name="useCustomJavaHome">
                                     <Boolean>false</Boolean>
