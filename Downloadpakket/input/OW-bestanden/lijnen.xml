@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ow-dc:owBestand xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:sym="http://www.geostandaarden.nl/imow/symbolisatie" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:regels="http://www.geostandaarden.nl/imow/regels" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst" xmlns:kaart="http://www.geostandaarden.nl/imow/kaart" xmlns:p="http://www.geostandaarden.nl/imow/pons" xmlns:op="http://www.geostandaarden.nl/imow/opobject" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd" xmlns:owObject="https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <sl:standBestand>
+        <sl:dataset>Onbekend</sl:dataset>
+        <sl:inhoud>
+            <sl:gebied>Onbekend</sl:gebied>
+            <sl:leveringsId>Onbekend</sl:leveringsId>
+            <sl:objectTypen>
+                <sl:objectType>Lijn</sl:objectType>
+            </sl:objectTypen>
+        </sl:inhoud>
+        <sl:stand>
+            <ow-dc:owObject>
+                <l:Lijn>
+                    <l:identificatie>nl.imow-gm0363.lijn.ATR4bmngggmbm</l:identificatie>
+                    <l:noemer>aanduiding 'bouwlaag met niet-geluidgevoelige gevel met bouwkundige maatregelen'</l:noemer>
+                    <l:geometrie>
+                        <l:GeometrieRef xlink:href="123099ad-6381-4962-9890-2afebbce9049"/>
+                    </l:geometrie>
+                </l:Lijn>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <l:Lijn>
+                    <l:identificatie>nl.imow-gm0363.lijn.ATR4d52589358de73ef4741c85c8</l:identificatie>
+                    <l:noemer>bouwlaag met niet-geluidgevoelige gevel met bouwkundige maatregelen: 2e tot en met de 4e bouwlaag</l:noemer>
+                    <l:geometrie>
+                        <l:GeometrieRef xlink:href="8d8e686a-cb4a-4e5f-afae-7543b5c035cd"/>
+                    </l:geometrie>
+                </l:Lijn>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <l:Lijn>
+                    <l:identificatie>nl.imow-gm0363.lijn.ATR4xbc9aaa3xxa71c3791d551x4</l:identificatie>
+                    <l:noemer>bouwlaag met niet-geluidgevoelige gevel met bouwkundige maatregelen: 4e tot en met de 8e bouwlaag</l:noemer>
+                    <l:geometrie>
+                        <l:GeometrieRef xlink:href="b3698259-f643-4dbb-b338-7d05c44b9827"/>
+                    </l:geometrie>
+                </l:Lijn>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <l:Lijn>
+                    <l:identificatie>nl.imow-gm0363.lijn.ATR4c6xe73f58f55c56cafx3d93d</l:identificatie>
+                    <l:noemer>gezamenlijk geluid: 65.0 decibel met a weging</l:noemer>
+                    <l:geometrie>
+                        <l:GeometrieRef xlink:href="7ee76921-4104-43c4-b4d1-0dcadc8f2e93"/>
+                    </l:geometrie>
+                </l:Lijn>
+            </ow-dc:owObject>
+        </sl:stand>
+    </sl:standBestand>
+</ow-dc:owBestand>

@@ -12,7 +12,7 @@
 
   <xsl:param name="guids">
     <xsl:element name="ow">
-      <xsl:for-each select="collection(concat($input.dir,'/OW-bestanden','?select=*.gml'))">
+      <xsl:for-each select="collection(concat($input.dir,'OW-bestanden','?select=*.gml'))">
         <xsl:variable name="document" select="fn:tokenize(document-uri(.),'/')[last()]"/>
         <xsl:for-each select=".//basisgeo:Geometrie">
           <xsl:variable name="geometrie" select="."/>
@@ -32,7 +32,7 @@
             <xsl:element name="document">
               <xsl:value-of select="$document"/>
             </xsl:element>
-            <xsl:for-each select="collection(concat($input.dir,'/OW-bestanden','?select=*.xml'))//(l:Gebied[descendant::element()/@xlink:href=$geometrie/basisgeo:id],l:Ambtsgebied[descendant::l:bestuurlijkeGrenzenID=$geometrie/basisgeo:id])">
+            <xsl:for-each select="collection(concat($input.dir,'OW-bestanden','?select=*.xml'))//(l:Gebied[descendant::element()/@xlink:href=$geometrie/basisgeo:id],l:Ambtsgebied[descendant::l:bestuurlijkeGrenzenID=$geometrie/basisgeo:id])">
               <xsl:element name="noemer">
                 <xsl:value-of select="./l:noemer"/>
               </xsl:element>
@@ -42,7 +42,7 @@
       </xsl:for-each>
     </xsl:element>
     <xsl:element name="op">
-      <xsl:for-each select="collection(concat($temp.dir,'gml','?select=*.gml'))">
+      <xsl:for-each select="collection(concat($temp.dir,'?select=*.gml',';recurse=yes'))">
         <xsl:variable name="document" select="fn:tokenize(document-uri(.),'/')[last()]"/>
         <xsl:for-each select=".//basisgeo:Geometrie">
           <xsl:variable name="geometrie" select="."/>
@@ -74,7 +74,7 @@
   </xsl:param>
 
   <xsl:param name="refs">
-    <xsl:for-each select="fn:distinct-values(collection(concat($input.dir,'/OW-bestanden','?select=gebieden.xml'))//element()/@xlink:href)">
+    <xsl:for-each select="fn:distinct-values(collection(concat($input.dir,'OW-bestanden','?select=gebieden.xml'))//element()/@xlink:href)">
       <xsl:element name="ref">
         <xsl:attribute name="index" select="position()"/>
         <xsl:value-of select="."/>

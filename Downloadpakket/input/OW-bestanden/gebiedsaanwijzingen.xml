@@ -12,12 +12,38 @@
         <sl:stand>
             <ow-dc:owObject>
                 <ga:Gebiedsaanwijzing>
-                    <ga:identificatie>nl.imow-gm0772.gebiedsaanwijzing.9f0667b6a6cb45a0b21fa03cebc4df60</ga:identificatie>
+                    <ga:identificatie>nl.imow-gm0363.gebiedsaanwijzing.ATR4functieGroen</ga:identificatie>
                     <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
-                    <ga:naam>woongebied</ga:naam>
+                    <ga:naam>functie 'groen'</ga:naam>
+                    <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Groen</ga:groep>
+                    <ga:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4functieGroen"/>
+                    </ga:locatieaanduiding>
+                </ga:Gebiedsaanwijzing>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <ga:Gebiedsaanwijzing>
+                    <ga:identificatie>nl.imow-gm0363.gebiedsaanwijzing.ATR4functieDienstverl</ga:identificatie>
+                    <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+                    <ga:naam>functie 'zakelijke en administratieve dienstverlening'</ga:naam>
+                    <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Dienstverlening</ga:groep>
+                    <ga:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4fZakAdminDienstverl"/>
+                    </ga:locatieaanduiding>
+                </ga:Gebiedsaanwijzing>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <ga:Gebiedsaanwijzing>
+                    <ga:identificatie>nl.imow-gm0363.gebiedsaanwijzing.ATR4functieWonen</ga:identificatie>
+                    <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+                    <ga:naam>functie 'wonen'</ga:naam>
                     <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Wonen</ga:groep>
                     <ga:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0772.gebied.6eba07bd2c154cb1a603d0145bb5e270"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4functieWonen"/>
                     </ga:locatieaanduiding>
                 </ga:Gebiedsaanwijzing>
             </ow-dc:owObject>
@@ -25,12 +51,12 @@
         <sl:stand>
             <ow-dc:owObject>
                 <ga:Gebiedsaanwijzing>
-                    <ga:identificatie>nl.imow-gm0772.gebiedsaanwijzing.c279755326cd4235a582af1c5c3b1437</ga:identificatie>
+                    <ga:identificatie>nl.imow-gm0363.gebiedsaanwijzing.ATR4functieVerkeer</ga:identificatie>
                     <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
-                    <ga:naam>beschermd monument</ga:naam>
-                    <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/BeschermdMonument</ga:groep>
+                    <ga:naam>functie 'verkeer'</ga:naam>
+                    <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Verkeer</ga:groep>
                     <ga:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0772.gebied.c8e93ed716d14135ac45a643722c9e9f"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4functieVerkeer"/>
                     </ga:locatieaanduiding>
                 </ga:Gebiedsaanwijzing>
             </ow-dc:owObject>
@@ -38,15 +64,12 @@
         <sl:stand>
             <ow-dc:owObject>
                 <ga:Gebiedsaanwijzing>
-                    <ga:identificatie>nl.imow-gm0772.gebiedsaanwijzing.47e2de1e34f54ea0a0a970ddf5209140</ga:identificatie>
-                    <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
-                    <ga:naam>detailhandelsgebied</ga:naam>
-                    <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Detailhandel</ga:groep>
+                    <ga:identificatie>nl.imow-gm0363.gebiedsaanwijzing.ATR4beschZoneArch</ga:identificatie>
+                    <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Erfgoed</ga:type>
+                    <ga:naam>beschermingszone archeologie'</ga:naam>
+                    <ga:groep>http://standaarden.omgevingswet.overheid.nl/erfgoed/id/concept/Archeologie</ga:groep>
                     <ga:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0772.gebied.5be8189b9b244211a704bdbcd8988c65"/>
-                        <l:LocatieRef xlink:href="nl.imow-gm0772.gebied.9b45d631863b47fab6240dac20f7bd8f"/>
-                        <l:LocatieRef xlink:href="nl.imow-gm0772.gebied.aff6536350f141a1af68005510061d7e"/>
-                        <l:LocatieRef xlink:href="nl.imow-gm0772.gebied.9bcc2b99e6c2467da03da795c393892f"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4beschZoneArch"/>
                     </ga:locatieaanduiding>
                 </ga:Gebiedsaanwijzing>
             </ow-dc:owObject>
@@ -54,13 +77,12 @@
         <sl:stand>
             <ow-dc:owObject>
                 <ga:Gebiedsaanwijzing>
-                    <ga:identificatie>nl.imow-gm0772.gebiedsaanwijzing.00c30a6622ed4bca835103cc6773e84b</ga:identificatie>
-                    <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
-                    <ga:naam>kantoorgebied</ga:naam>
-                    <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Kantoorlocatie</ga:groep>
+                    <ga:identificatie>nl.imow-gm0363.gebiedsaanwijzing.ATR4functieGemMonument</ga:identificatie>
+                    <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Erfgoed</ga:type>
+                    <ga:naam>functie-aanduiding gemeentelijk monument</ga:naam>
+                    <ga:groep>http://standaarden.omgevingswet.overheid.nl/erfgoed/id/concept/BeschermdMonument</ga:groep>
                     <ga:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0772.gebied.1d6624b0faa54a86a0a5686c7c917bfe"/>
-                        <l:LocatieRef xlink:href="nl.imow-gm0772.gebied.ed24cc649d5a43fba8ee00cb55becb66"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4functieGemMonument"/>
                     </ga:locatieaanduiding>
                 </ga:Gebiedsaanwijzing>
             </ow-dc:owObject>
@@ -68,14 +90,51 @@
         <sl:stand>
             <ow-dc:owObject>
                 <ga:Gebiedsaanwijzing>
-                    <ga:identificatie>nl.imow-gm0772.gebiedsaanwijzing.a4cf8e798cb94d6f973b4fad3c663a89</ga:identificatie>
+                    <ga:identificatie>nl.imow-gm0363.gebiedsaanwijzing.ATR4functieWater</ga:identificatie>
                     <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
-                    <ga:naam>maatschappelijk gebied</ga:naam>
+                    <ga:naam>functie 'water'</ga:naam>
+                    <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Water</ga:groep>
+                    <ga:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4functieWater"/>
+                    </ga:locatieaanduiding>
+                </ga:Gebiedsaanwijzing>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <ga:Gebiedsaanwijzing>
+                    <ga:identificatie>nl.imow-gm0363.gebiedsaanwijzing.ATR4functieBasisonderwijs</ga:identificatie>
+                    <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+                    <ga:naam>functie 'maatschappelijk - basisonderwijs'</ga:naam>
                     <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Maatschappelijk</ga:groep>
                     <ga:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0772.gebied.ade61d27e1f346f4bb2067fb491389e2"/>
-                        <l:LocatieRef xlink:href="nl.imow-gm0772.gebied.797dc3425afa4aa2a669fa240d7ea2a3"/>
-                        <l:LocatieRef xlink:href="nl.imow-gm0772.gebied.894765663ad84e538785c9be61baca22"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4functieBasisonderwijs"/>
+                    </ga:locatieaanduiding>
+                </ga:Gebiedsaanwijzing>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <ga:Gebiedsaanwijzing>
+                    <ga:identificatie>nl.imow-gm0363.gebiedsaanwijzing.ATR4functieKinderOpvang</ga:identificatie>
+                    <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+                    <ga:naam>functie 'maatschappelijk - kinderopvang'</ga:naam>
+                    <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Maatschappelijk</ga:groep>
+                    <ga:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4functieKinderOpvang"/>
+                    </ga:locatieaanduiding>
+                </ga:Gebiedsaanwijzing>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <ga:Gebiedsaanwijzing>
+                    <ga:identificatie>nl.imow-gm0363.gebiedsaanwijzing.ATR4functieVoortgOnderwijs</ga:identificatie>
+                    <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ga:type>
+                    <ga:naam>functie 'maatschappelijk - voortgezet onderwijs'</ga:naam>
+                    <ga:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Maatschappelijk</ga:groep>
+                    <ga:locatieaanduiding>
+                        <l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4functieVoortgOnderwijs"/>
                     </ga:locatieaanduiding>
                 </ga:Gebiedsaanwijzing>
             </ow-dc:owObject>

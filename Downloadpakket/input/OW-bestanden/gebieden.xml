@@ -12,10 +12,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.aeebe501a3e54a22a22ed26d0ef1c283</l:identificatie>
-                    <l:noemer>bedrijf categorie 1 en 2</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4aantalWonen</l:identificatie>
+                    <l:noemer>aanduiding 'aantal woonruimten'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="b57f4d44-3397-4872-9222-f2352986a181"/>
+                        <l:GeometrieRef xlink:href="e391a39f-dabd-4584-9da9-1ad3ab467f73"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -23,10 +23,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.80dc1ef3987e415fb15bf8af312efc35</l:identificatie>
-                    <l:noemer>bedrijf categorie 1 en 2 op begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4bouwlaagWonen</l:identificatie>
+                    <l:noemer>aanduiding 'bouwlaag waarin wonen is toegestaan'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="e30539fb-a049-425a-b60e-c00e53aa9963"/>
+                        <l:GeometrieRef xlink:href="894daa96-583e-4ba1-a11d-568173f5b1ee"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -34,10 +34,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.25fdf3d51e314d9cb552b48eba7847a9</l:identificatie>
-                    <l:noemer>cafe</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4bouwlaagNietWonen</l:identificatie>
+                    <l:noemer>aanduiding 'bouwlaag waarin wonen niet is toegestaan'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="f35c4bf4-6b53-4489-bbd9-6aafb1e6cf37"/>
+                        <l:GeometrieRef xlink:href="f3d5eee5-007b-42bd-be73-83ea1451c0f3"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -45,10 +45,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.3d09f83df0d44467a60d62fc2a380dcf</l:identificatie>
-                    <l:noemer>casino</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4BouwvlVoorgeschrRooilijn</l:identificatie>
+                    <l:noemer>aanduiding 'bouwvlak met voorgeschreven rooilijn'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="9d738533-f3b0-4040-8c1f-d97765e1cf5f"/>
+                        <l:GeometrieRef xlink:href="45d1f17a-a6da-4d47-af25-5ed8a4144faa"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -56,10 +56,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.5be8189b9b244211a704bdbcd8988c65</l:identificatie>
-                    <l:noemer>detailhandel</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4maxBouwhoogteMeter</l:identificatie>
+                    <l:noemer>aanduiding 'maximum bouwhoogte'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="ffa57e46-49f5-4a47-ad18-242d9923c93a"/>
+                        <l:GeometrieRef xlink:href="12af0fca-c1a1-40c0-982a-83d288209aed"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -67,10 +67,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.9b45d631863b47fab6240dac20f7bd8f</l:identificatie>
-                    <l:noemer>detailhandel begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4LmaxBvoWonen</l:identificatie>
+                    <l:noemer>aanduiding 'maximum bruto-vloeroppervlakte wonen'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="d6166ab8-aada-486d-b537-0a1c57446d3d"/>
+                        <l:GeometrieRef xlink:href="08e3c277-2dcb-439d-92e5-5e9d0a7eb9b1"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -78,10 +78,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.aff6536350f141a1af68005510061d7e</l:identificatie>
-                    <l:noemer>detailhandel begane grond en op verdiepingingen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR49ca28xc127x62a1cad987b47</l:identificatie>
+                    <l:noemer>aantal woonruimten: 0</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="49940098-6e7b-46e7-aad2-3233b777a1b7"/>
+                        <l:GeometrieRef xlink:href="1f9ed023-2df8-4b0a-9c62-c7e200f3cfa0"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -89,10 +89,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.9bcc2b99e6c2467da03da795c393892f</l:identificatie>
-                    <l:noemer>detailhandel volumineus</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4e3a352f5f6fd9cab19922339</l:identificatie>
+                    <l:noemer>aantal woonruimten: 1</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="a095c487-51f0-498f-86b2-6ecda30c5c99"/>
+                        <l:GeometrieRef xlink:href="eaf37041-5503-4737-94df-e3415561558d"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -100,10 +100,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.121c5e8b3dad4b9c8952c91fe4c50460</l:identificatie>
-                    <l:noemer>dienstverlening begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR499c4af4e3e6ab4b14b4x8464</l:identificatie>
+                    <l:noemer>aantal woonruimten: 10</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="c10e5ca1-06be-49c3-b8df-ceb2258e237b"/>
+                        <l:GeometrieRef xlink:href="cbbce8b5-00c9-406d-b902-cb9158dd7b41"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -111,10 +111,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.aa204ad838e84aa3b138f9e981bd7a42</l:identificatie>
-                    <l:noemer>dienstverlening begane grond en eerste verdieping</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR42514dx27ce259dx4c5a5ed32</l:identificatie>
+                    <l:noemer>aantal woonruimten: 11</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="de643956-d6ad-4b46-9f50-a34f0d33a5a8"/>
+                        <l:GeometrieRef xlink:href="78e9a119-7a2d-4fe8-96fb-b0a307118c37"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -122,10 +122,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.3c6597d763a4425fb709d4af74542972</l:identificatie>
-                    <l:noemer>garagebox</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR468763e3dc88cf4x7cx81cd7c</l:identificatie>
+                    <l:noemer>aantal woonruimten: 12</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="21af98a1-240c-4910-af6f-53e7bc996d6e"/>
+                        <l:GeometrieRef xlink:href="e35baa99-f89d-4b0a-acbe-fdd3716c2e39"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -133,10 +133,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.137b53153a524733a1b0e75b463071d4</l:identificatie>
-                    <l:noemer>geen bijbehorende bouwwerken</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4335d93ff2d38ad2ea5aef58x</l:identificatie>
+                    <l:noemer>aantal woonruimten: 13</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="75a87788-8621-49c2-8d59-b42c9006fee2"/>
+                        <l:GeometrieRef xlink:href="adaab9ee-d870-4a79-aa27-24454df0599a"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -144,10 +144,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.c8e93ed716d14135ac45a643722c9e9f</l:identificatie>
-                    <l:noemer>Gemeentelijk monument</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4adx933ded93ex42d65dafa6e</l:identificatie>
+                    <l:noemer>aantal woonruimten: 14</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="8ceeed04-61f4-4d30-8286-9743497ef4d2"/>
+                        <l:GeometrieRef xlink:href="435facdb-7f4b-449d-9e78-7330187f9f10"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -155,10 +155,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.1d6624b0faa54a86a0a5686c7c917bfe</l:identificatie>
-                    <l:noemer>kantoren begane grond en eerste verdieping</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4d837c4x1771b7c34ff43f737</l:identificatie>
+                    <l:noemer>aantal woonruimten: 2</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="de643956-d6ad-4b46-9f50-a34f0d33a5a8"/>
+                        <l:GeometrieRef xlink:href="88526f2d-8274-4393-8d35-26c2515a1a84"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -166,10 +166,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.ed24cc649d5a43fba8ee00cb55becb66</l:identificatie>
-                    <l:noemer>kantoren begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR42dd95b3f45d7ebded2dc3669</l:identificatie>
+                    <l:noemer>aantal woonruimten: 3</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="b962f047-14f1-44eb-89c9-bc1834ff59a3"/>
+                        <l:GeometrieRef xlink:href="b3c1b34d-ea3b-446d-ac0a-fd3e95db6497"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -177,10 +177,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.4e8f655a849c4003861e46c47c433e7d</l:identificatie>
-                    <l:noemer>karakteristiek</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR477f8af33x88b75c5e5f9e5x8</l:identificatie>
+                    <l:noemer>aantal woonruimten: 4</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="2ce081a1-67f0-4736-91e5-98d38307e2e9"/>
+                        <l:GeometrieRef xlink:href="e265672c-1259-4884-8692-4996ce63c089"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -188,10 +188,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.db8ca2dc2d694c15939212c0970ac51d</l:identificatie>
-                    <l:noemer>Lage verwachting</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR43xe7b44cx36c5b4d21374159</l:identificatie>
+                    <l:noemer>aantal woonruimten: 5</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="18d11ef7-97d8-43a2-be80-71d9a4875cb0"/>
+                        <l:GeometrieRef xlink:href="de62390a-608a-430e-8902-9ce5798014c0"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -199,10 +199,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.ade61d27e1f346f4bb2067fb491389e2</l:identificatie>
-                    <l:noemer>maatschappelijk begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4xe6xx694765xf95bc5x3759a</l:identificatie>
+                    <l:noemer>aantal woonruimten: 6</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="a284e0fa-978c-4340-ba3a-2a65d5228d68"/>
+                        <l:GeometrieRef xlink:href="c2f8c5dd-0486-4599-ae6c-d3f39ec3113d"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -210,10 +210,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.797dc3425afa4aa2a669fa240d7ea2a3</l:identificatie>
-                    <l:noemer>maatschappelijk begane grond en eerste verdieping</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR413adc7ada8becx3c27ed5ef7</l:identificatie>
+                    <l:noemer>aantal woonruimten: 7</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="c5406512-793b-4f99-b419-b7fd90ff8e1b"/>
+                        <l:GeometrieRef xlink:href="32669bef-5372-4e2a-b43d-749a30e7da96"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -221,10 +221,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.07fbf564b3184c9e9f1a32e5515cef56</l:identificatie>
-                    <l:noemer>onzelfstandige woonruimte</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR49xexaf228x1dc2df7x62b232</l:identificatie>
+                    <l:noemer>aantal woonruimten: 8</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="3e19f2b1-6692-404f-9a21-de0f744c5003"/>
+                        <l:GeometrieRef xlink:href="9e98e1ef-26b4-4a1d-91b4-b2591d27e4ab"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -232,10 +232,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.8c70aa3afe794ad3a9894c44e5fcaeb4</l:identificatie>
-                    <l:noemer>openbaar gebied</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4b53bdxdc9f58841c3366x691</l:identificatie>
+                    <l:noemer>aantal woonruimten: 9</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="cf820277-7baa-4280-a435-3e693264bc81"/>
+                        <l:GeometrieRef xlink:href="d95899a6-62ad-4509-a1d8-a173a7b63afb"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -243,10 +243,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.894765663ad84e538785c9be61baca22</l:identificatie>
-                    <l:noemer>religie</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4ambtsgebied</l:identificatie>
+                    <l:noemer>ambtsgebied</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="0c49bb18-c022-4f48-b63e-79f4ddfac186"/>
+                        <l:GeometrieRef xlink:href="e4f6dce6-8d15-48a6-908f-1cc5407c4143"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -254,10 +254,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.f1c9597449704f4db8f5c4a90d8d7740</l:identificatie>
-                    <l:noemer>seksinrichting</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4beschZoneArch</l:identificatie>
+                    <l:noemer>beschermingszone archeologie</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="1fb492ac-19c7-49bd-b6d0-190af3fb4053"/>
+                        <l:GeometrieRef xlink:href="a3a0f31a-6129-4438-804a-353c98644e04"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -265,10 +265,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.150784fb6c1f4d9c9a78da11ef85d8f8</l:identificatie>
-                    <l:noemer>verkeer uitgesloten</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR48bd2cf8xaea7f6f122759667</l:identificatie>
+                    <l:noemer>bouwlaag waarin wonen is toegestaan: 1e bouwlaag</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="9836ffe4-8668-42bc-905a-c74a794daed1"/>
+                        <l:GeometrieRef xlink:href="4c40272e-a809-42ed-82e0-3fc22e5d5133"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -276,10 +276,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.6eba07bd2c154cb1a603d0145bb5e270</l:identificatie>
-                    <l:noemer>wonen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR418abf7ccbbbeff4315c99de5</l:identificatie>
+                    <l:noemer>bouwlaag waarin wonen is toegestaan: 1e en 2e bouwlaag</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="7d8b75bd-5111-4530-9400-a708f2aa020d"/>
+                        <l:GeometrieRef xlink:href="3ba38900-5940-4961-8b68-40397128d47c"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -287,10 +287,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.ae533ca54bd84aae8efd8f1992c289a3</l:identificatie>
-                    <l:noemer>maximum bouwhoogte 9 meter</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR424baa1e89fe7f59c7845xcde</l:identificatie>
+                    <l:noemer>bouwlaag waarin wonen is toegestaan: 1e tot en met 4e bouwlaag</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="db38b7a9-8a52-4867-b087-df3a7f37d5b9"/>
+                        <l:GeometrieRef xlink:href="35d797f5-4ba9-4820-b069-ad93e5ad2096"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -298,10 +298,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.052df372f5974fbc8696e0916ecc8e39</l:identificatie>
-                    <l:noemer>Verkeer</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR47697cc36742379311adfx8x5</l:identificatie>
+                    <l:noemer>bouwlaag waarin wonen is toegestaan: 2e bouwlaag</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="6becebe7-a955-42d2-9997-99c72c82f92d"/>
+                        <l:GeometrieRef xlink:href="7603e1b5-68b0-4625-9c4f-4fd6599fb372"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -309,10 +309,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.3eb7318fae2948af87954377eb9c4505</l:identificatie>
-                    <l:noemer>Bedrijf</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR47836a55a88xcece277c5b181</l:identificatie>
+                    <l:noemer>bouwlaag waarin wonen niet is toegestaan: 0e bouwlaag</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="2cee8c21-df22-46b0-aaa0-0121dbf3fd5a"/>
+                        <l:GeometrieRef xlink:href="1dbcd4a3-818f-4794-8fd8-f7d9e440e820"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -320,10 +320,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.2c1b8c9604ae422b8cfbd4abf48faa7f</l:identificatie>
-                    <l:noemer>bouwvlak</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4cacxf93c6b92bf1e3f5xb7e1</l:identificatie>
+                    <l:noemer>bouwlaag waarin wonen niet is toegestaan: 0e en 1e bouwlaag</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="d6a3acfd-16b9-49e1-9dda-54b77c7f2333"/>
+                        <l:GeometrieRef xlink:href="bfd8e7ab-6660-47f8-a5bd-3b4c324c9931"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -331,10 +331,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.972a67bef2754fb2ba961b6704ce692d</l:identificatie>
-                    <l:noemer>dienstverlening</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR47ae5545899x7445f282f1cac</l:identificatie>
+                    <l:noemer>bouwlaag waarin wonen niet is toegestaan: 0e tot en met 3e bouwlaag</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="f97f54ac-12b3-485d-80e4-a2d81aa9a0ad"/>
+                        <l:GeometrieRef xlink:href="9661161d-4e84-44d8-a667-46656c8e3836"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -342,10 +342,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.0a0b302d2efa4ef5b51f0a7fea9ada91</l:identificatie>
-                    <l:noemer>erven en terreinen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4862136525a56dd787446827f</l:identificatie>
+                    <l:noemer>bouwlaag waarin wonen niet is toegestaan: 1e bouwlaag ondergronds tot en met 4e bouwlaag</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="aa0919fa-0a77-42b0-8e97-6086122c49b1"/>
+                        <l:GeometrieRef xlink:href="40503518-9d65-4dc8-9b16-85fab6ff39e7"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -353,10 +353,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.a0bd8f2c462f4c62a64fd98e9a63669a</l:identificatie>
-                    <l:noemer>groentest2</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4functieGroen</l:identificatie>
+                    <l:noemer>functie 'groen'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="b519ce5a-467b-489c-8365-849a0b051aaa"/>
+                        <l:GeometrieRef xlink:href="5135a2c3-fffb-40b5-990f-5f302c4686db"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -364,10 +364,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.70bd52df14a6474cbd7521b3a8a1f41d</l:identificatie>
-                    <l:noemer>horeca categorie 1a begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4functieBasisonderwijs</l:identificatie>
+                    <l:noemer>functie 'maatschappelijk - basisonderwijs'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="374382dd-7e0d-469a-8222-29244ba3d29b"/>
+                        <l:GeometrieRef xlink:href="f1fec9f6-c9da-40a3-97d2-8a2d918cb470"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -375,10 +375,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.9bada88d96724f58b3dd65151ad65a50</l:identificatie>
-                    <l:noemer>horeca categorie 1b begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4functieKinderOpvang</l:identificatie>
+                    <l:noemer>functie 'maatschappelijk - kinderopvang'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="88ff617b-5ea5-40ba-9e1b-4fb14e20da08"/>
+                        <l:GeometrieRef xlink:href="3af4a937-1423-4b2e-9ae4-23e8a136529f"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -386,10 +386,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.0aeafd8ade8f470299130dd9b2f962c2</l:identificatie>
-                    <l:noemer>horeca categorie 2b begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4functieVoortgOnderwijs</l:identificatie>
+                    <l:noemer>functie 'maatschappelijk - voortgezet onderwijs'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="5321a779-b256-4f26-9856-aa513e7ab3a8"/>
+                        <l:GeometrieRef xlink:href="cfbc9ab8-3c83-4af5-9f6d-b762e756021d"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -397,10 +397,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.50cc34719c83417e801656e06aa169f0</l:identificatie>
-                    <l:noemer>horeca categorie 3 begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4functieVerkeer</l:identificatie>
+                    <l:noemer>functie 'verkeer'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="9a197170-8f43-46ae-90ac-cedeb4da958a"/>
+                        <l:GeometrieRef xlink:href="ee8dee6a-3d4b-44da-b314-6817e6400340"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -408,10 +408,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.d0f230d55d7849c5b45ea7fb233a06f4</l:identificatie>
-                    <l:noemer>horeca categorie 5 begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4functieWater</l:identificatie>
+                    <l:noemer>functie 'water'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="faca7244-c78a-4251-a6bc-bd99c5fca192"/>
+                        <l:GeometrieRef xlink:href="24936394-8dc6-4e0a-9954-fadc95575abf"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -419,10 +419,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.3bb669ebd288478789b3b69cfbce079a</l:identificatie>
-                    <l:noemer>horeca categorie 6 begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4functieWonen</l:identificatie>
+                    <l:noemer>functie 'wonen'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="0881a1d9-4ce8-4905-bdde-ff0d2828b9d0"/>
+                        <l:GeometrieRef xlink:href="8161fb00-a1ef-4e9b-a636-a5cb5e1d5d32"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -430,10 +430,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.762dc5c4a9e048f7a8a1e1599625e518</l:identificatie>
-                    <l:noemer>kantoor</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4functieGemMonument</l:identificatie>
+                    <l:noemer>functie-aanduiding 'gemeentelijk monument'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="b545c576-9ee2-4e7a-84c2-13d31863e4a1"/>
+                        <l:GeometrieRef xlink:href="f388d763-ef40-44b2-9ad8-802ee3794dcc"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -441,10 +441,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.afb9cfa1e79a4ba3a7085f0a2f8d2732</l:identificatie>
-                    <l:noemer>wegen en paden</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4gereserveerd</l:identificatie>
+                    <l:noemer>gereserveerd 'puntlocatie'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="d3f6ffa3-dfd0-4f45-a2a6-e1cd807a1576"/>
+                        <l:GeometrieRef xlink:href="c1436f4a-9593-4823-980d-dbd4bb3f737a"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -452,10 +452,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.2838b94c070e4e7fbbc83c1f44d10988</l:identificatie>
-                    <l:noemer>(ondergrondse) parkeervoorzieningen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4168d2cebf25566bcdac26cex</l:identificatie>
+                    <l:noemer>maximum bouwhoogte: 10 meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="ae5f6c88-6709-46c1-98d3-bd449bf2b789"/>
+                        <l:GeometrieRef xlink:href="21b7f076-194c-408f-a537-b848e8820b3b"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -463,10 +463,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.483c99f51d3f4bba9f3c60a3e03387a8</l:identificatie>
-                    <l:noemer>activiteiten ten dienste van maatschappelijk</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4fb7682x9x4ccx22ecexx7f7d</l:identificatie>
+                    <l:noemer>maximum bouwhoogte: 12 meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="57c2c0c1-3ea6-4858-94eb-a86cda16021b"/>
+                        <l:GeometrieRef xlink:href="308be4aa-98ad-4fb0-beff-045bc7960eaa"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -474,10 +474,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.b6fa9f387f14462d8b994277531b92fa</l:identificatie>
-                    <l:noemer>beschermd en/of verzorgd wonen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR465b191a4a1afcx6e4464bxcf</l:identificatie>
+                    <l:noemer>maximum bouwhoogte: 15 meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="242a5188-0e71-4045-95c3-2656eac28397"/>
+                        <l:GeometrieRef xlink:href="2c980cad-6e55-4bc3-b2c3-1e7ff392134f"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -485,10 +485,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.785d4b7bc1184d2fb8f6effbc9b2563e</l:identificatie>
-                    <l:noemer>beschermd en/of verzorgd wonen begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4af6fb5564dx5c33x96a19359</l:identificatie>
+                    <l:noemer>maximum bouwhoogte: 25 meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="3e194f7a-9b6a-456e-bdc4-c13f1752a674"/>
+                        <l:GeometrieRef xlink:href="6557b773-9805-4c3b-87c1-342fe10b31c1"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -496,10 +496,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.1156a34a9db24d3ab905a47d9a3ea59f</l:identificatie>
-                    <l:noemer>dakterrassen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4f21b772c2e5a17864c6x9455</l:identificatie>
+                    <l:noemer>maximum bouwhoogte: 35 meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="d78b7174-edec-41ec-9bf2-d93fc291536d"/>
+                        <l:GeometrieRef xlink:href="5d660e47-e753-4238-8eb2-c5e04346acdc"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -507,10 +507,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.9f8e6f2b9fba410bb9c71d985208294e</l:identificatie>
-                    <l:noemer>educatieve voorzieningen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR491ae37x46918ce6926bx65af</l:identificatie>
+                    <l:noemer>maximum bouwhoogte: 36 meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="6a85dc33-3d8e-4f6b-8339-dadf9fc4d546"/>
+                        <l:GeometrieRef xlink:href="9dff6db5-e013-4f44-8272-a9262341d0ea"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -518,10 +518,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.6f2b751aeaa74a69bd9ce86c45e51185</l:identificatie>
-                    <l:noemer>educatieve voorzieningen begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4b5b453x2f988a5136xecaf71</l:identificatie>
+                    <l:noemer>maximum bouwhoogte: 45 meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="608fa890-6b2e-4c62-afb9-aeb5fcb7a2be"/>
+                        <l:GeometrieRef xlink:href="f6b15373-c912-4cef-b5f0-193b5836b795"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -529,10 +529,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.7cfee6931e464ffca023c0a34d640b04</l:identificatie>
-                    <l:noemer>geluidwerende voorzieningen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR427a7x26ff399951988ex2c4d</l:identificatie>
+                    <l:noemer>maximum bouwhoogte: 55 meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="3dc111bc-df49-4d90-a176-6cb3ce7458f7"/>
+                        <l:GeometrieRef xlink:href="33a46f4a-5498-4d42-b4d4-8124da996607"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -540,10 +540,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.d03ffe9c96bb454f9e14f91e3af8aaa4</l:identificatie>
-                    <l:noemer>groenvoorzieningen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4x1a7412c2ax45859afcx4c5f</l:identificatie>
+                    <l:noemer>maximum bouwhoogte: 65 meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="b1b12977-eac4-4c17-b2e7-068b1d8fcc2e"/>
+                        <l:GeometrieRef xlink:href="97150d3d-37bd-4ad5-946e-86f136db4678"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -551,10 +551,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.da4f822dce58403085c01c59266ba311</l:identificatie>
-                    <l:noemer>kinderopvang</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR41513x8edd6e38fe57b9dbdbe</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte wonen: 10000 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="0c5f3419-eb67-46eb-bee6-217e5d038cf3"/>
+                        <l:GeometrieRef xlink:href="ed76b1b1-a2d9-4ff1-9c5a-476c072e575c"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -562,10 +562,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.2f6a1bbe98b844f0a272c111df52c0b4</l:identificatie>
-                    <l:noemer>kinderopvang begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4fax15bex6a2cbfc95x731dx9</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte wonen: 1600 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="3c056b6f-22f7-43db-92c5-0dbeed4586fb"/>
+                        <l:GeometrieRef xlink:href="f9d0e52b-67cc-4376-9a02-f7fe2f6a7f0a"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -573,10 +573,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.2940299d4cb24ca9b273d59760cf8f6c</l:identificatie>
-                    <l:noemer>levensbeschouwelijke voorzieningen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4c1e246x92d37fx59xb95814c</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte wonen: 20000 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="bb9e7308-f68c-491e-a4b2-42f103c8cc3c"/>
+                        <l:GeometrieRef xlink:href="c91e5ff0-d57a-4bc1-a92b-ba536422a190"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -584,10 +584,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.82b4c6a2c5a74776bfd508678ffc228d</l:identificatie>
-                    <l:noemer>levensbeschouwelijke voorzieningen begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR413e9291c7e3fdeaa8496a575</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte wonen: 25000 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="1cda3859-a20b-41af-8a66-876b340b871d"/>
+                        <l:GeometrieRef xlink:href="d859ee81-8cfa-4b4c-8186-17bdd3468f0e"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -595,10 +595,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.e6ed9e923f494ede8e7eca4c2f3e9070</l:identificatie>
-                    <l:noemer>medische voorzieningen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR47684fc8678a4b16xf2317c7b</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte wonen: 25500 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="e89ce22a-6e75-48a8-b0fb-4e482f09e0fc"/>
+                        <l:GeometrieRef xlink:href="08711092-0c49-40f8-827e-955439f610b7"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -606,10 +606,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.c349d2a4723f4bfca4864c783d7f7158</l:identificatie>
-                    <l:noemer>medische voorzieningen begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4c73exx45b9d288e99fbb6dd7</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte wonen: 35600 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="97b87f0f-0e62-4b32-8def-c1868893cf06"/>
+                        <l:GeometrieRef xlink:href="fe511cc2-7cd0-47dd-ba40-6102acff0883"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -617,10 +617,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.2fdb8b73bf8d45fb998ade5b518841bf</l:identificatie>
-                    <l:noemer>nutsvoorzieningen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR41172bc7d2efb1x8cbe3da4a2</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte wonen: 5000 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="3169bf17-00a9-4524-b9df-668193775d66"/>
+                        <l:GeometrieRef xlink:href="943ffa78-898a-4eda-96b5-28f9a5ded914"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -628,10 +628,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.1b02e03f4d9d424fa31d4a2f600c1b18</l:identificatie>
-                    <l:noemer>openbare dienstverlening en openbaar bestuur</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR44a546cxe5c1bb78919d72aad</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte wonen: 5500 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="3f9fbe3f-068d-440a-8513-79b1519a53fd"/>
+                        <l:GeometrieRef xlink:href="c7436c29-b4b8-42b4-9b43-d8fb9b6ff3e2"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -639,10 +639,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.328ee707648c4eae86c5aba00d859a3b</l:identificatie>
-                    <l:noemer>openbare dienstverlening en openbaar bestuur begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4346xdb3c277223b765dba892</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte wonen: 5600 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="3a8ab447-cb6e-4f47-afa4-4af63fbbbd78"/>
+                        <l:GeometrieRef xlink:href="c6288613-3a24-48cc-b58b-6d8f96597eb2"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -650,10 +650,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.e858ab119e8743f38aa121d5767cd510</l:identificatie>
-                    <l:noemer>sociaal-culturele voorzieningen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4b54f92e63cf749b1c14d43bc</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte wonen: 600 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="4f361eaf-1527-42fb-bb20-cd9bb09c34a7"/>
+                        <l:GeometrieRef xlink:href="98a85341-0e88-47a6-ad39-6598f50da1bd"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -661,10 +661,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.82975ee5297c494d9358477f31f9c072</l:identificatie>
-                    <l:noemer>sociaal-culturele voorzieningen begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR48cd259858a5a4841cc4fc489</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte wonen: 6300 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="ff04b60f-fe2a-486c-bcba-a83564254c3b"/>
+                        <l:GeometrieRef xlink:href="88a58897-fe39-4e4a-b5a5-fd4ee9978ba7"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -672,10 +672,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.bc6fa74f13d441d89457c7348eeb07dd</l:identificatie>
-                    <l:noemer>sociaal-medische voorzieningen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR48df88c5c923af93xdbfx99x9</l:identificatie>
+                    <l:noemer>maximum diepte van bodemverstoring die is vrijgesteld van archeologisch onderzoek: 2 meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="c232e605-5e3c-4559-9fe3-d8dcc5bea571"/>
+                        <l:GeometrieRef xlink:href="172ed568-ec6a-4e61-8507-04e227bbb78b"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -683,10 +683,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.87b01ec536404b168cf6e01d978da49a</l:identificatie>
-                    <l:noemer>sociaal-medische voorzieningen begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR44226399ca78xxefa39b9bx2f</l:identificatie>
+                    <l:noemer>maximum diepte van bodemverstoring die is vrijgesteld van archeologisch onderzoek: 5 meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="40eac2ae-6601-474f-9374-113885ba9ebc"/>
+                        <l:GeometrieRef xlink:href="333e4a8c-46a8-46b7-bd16-13d4ba5fc8be"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -694,10 +694,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.47b91ee11ef540eda70b72d8abf05de6</l:identificatie>
-                    <l:noemer>speelvoorzieningen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR43ac6aaf5e2dxae6f34ce4f6d</l:identificatie>
+                    <l:noemer>maximum oppervlak van bodemverstoring die is vrijgesteld van archeologisch onderzoek: 100 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="3e8b60e4-51ce-4563-8075-64379a9ea12f"/>
+                        <l:GeometrieRef xlink:href="9527fb1c-a2e6-4427-906b-4a20813d4de4"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -705,10 +705,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.c78c8ce4b5a64440be18609cd4935739</l:identificatie>
-                    <l:noemer>sport en sportieve recreatie</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4fed49a9894256dcb8c4bde69</l:identificatie>
+                    <l:noemer>maximum oppervlak van bodemverstoring die is vrijgesteld van archeologisch onderzoek: 500 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="bc1599d8-9743-40b6-8bd3-8ccd830b0153"/>
+                        <l:GeometrieRef xlink:href="2650b1e2-4b24-44c5-b0ea-675af2b8aca9"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -716,10 +716,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.433fd13931e54000af5e253c3b1a8099</l:identificatie>
-                    <l:noemer>sport en sportieve recreatie begane grond</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4bouwlZakAdminDienstverl</l:identificatie>
+                    <l:noemer>aanduiding 'bouwlaag waarin zakelijke en administratieve dienstverlening is toegestaan'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="f694d931-2546-4dd4-adac-c7b4727a8694"/>
+                        <l:GeometrieRef xlink:href="db458467-8000-45f2-8c61-81343589ec57"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -727,10 +727,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.5e0fb711049e49b69bc590da70f4c53c</l:identificatie>
-                    <l:noemer>tuinen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4maxbezoekersvcc</l:identificatie>
+                    <l:noemer>aanduiding 'maximum aantal bezoekers vergader- en congrescentrum'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="77f0312c-4285-43f9-9d9c-56959d3d13f7"/>
+                        <l:GeometrieRef xlink:href="17b62342-5fff-41ca-8615-0e8e17dfc73c"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -738,10 +738,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.24aed99ae44b4a4db7fdc90bf06ab680</l:identificatie>
-                    <l:noemer>voorzieningen voor opwekken duurzame energie</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4LmaxBvoVergCongresCntrm</l:identificatie>
+                    <l:noemer>aanduiding 'maximum bruto-vloeroppervlakte vergader- en congrescentrum'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="b2fa0c3f-742b-4637-be3d-ba19d44658a8"/>
+                        <l:GeometrieRef xlink:href="274051f8-33d2-4828-a43a-edbe3147f5c0"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -749,10 +749,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.5ee21db5fdb04170adaa90f7f5c4149f</l:identificatie>
-                    <l:noemer>water en waterhuishoudkundige voorzieningen</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4LmaxBvoZakAdminDienstverl</l:identificatie>
+                    <l:noemer>aanduiding 'maximum bruto-vloeroppervlakte zakelijke en administratieve dienstverlening '</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="ec49e596-b109-4995-8985-3be8034abf89"/>
+                        <l:GeometrieRef xlink:href="e1fae270-7556-4088-b535-092af51f8178"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -760,10 +760,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.2d1088e7453b4440a28bfdc8b32ffbe7</l:identificatie>
-                    <l:noemer>maximum goothoogte (m) : 6</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR46848637x88ax595x4853441a</l:identificatie>
+                    <l:noemer>bouwlaag waarin zakelijke en administratieve dienstverlening is toegestaan': 1e bouwlaag</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="ff3f9a97-6825-4b5a-aca5-1251a73e5bb1"/>
+                        <l:GeometrieRef xlink:href="8ededf09-8f9f-4a57-a212-c86a99c60402"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -771,10 +771,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.b779ff9767a44e8e9f2d8b542576a40d</l:identificatie>
-                    <l:noemer>maximum goothoogte (m) : 10</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4e9dx123c67dc7861b7284b16</l:identificatie>
+                    <l:noemer>bouwlaag waarin zakelijke en administratieve dienstverlening is toegestaan': 1e tot 5e bouwlaag</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="6fba34d5-d0e6-460a-9a2a-cf068c327820"/>
+                        <l:GeometrieRef xlink:href="fb7a5fce-e52f-452e-a7f1-da92ddb6a098"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -782,10 +782,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.903451d122c148ba90ad92ecfa5c6ee9</l:identificatie>
-                    <l:noemer>maximum bouwhoogte (m) : 10</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR457bea5fcfade7c6a72b4dc31</l:identificatie>
+                    <l:noemer>bouwlaag waarin zakelijke en administratieve dienstverlening is toegestaan': 2e bouwlaag</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="3784853c-7ec5-4ffc-9f8e-46a5e1d2da28"/>
+                        <l:GeometrieRef xlink:href="85b8283f-039b-4639-8350-d855da55174b"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -793,10 +793,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.2b3ea21bf28e4f06920f6c89271f1ec2</l:identificatie>
-                    <l:noemer>maximum bouwhoogte (m) : 12</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4e2461aa23ad4d5aadcae29c8</l:identificatie>
+                    <l:noemer>bouwlaag waarin zakelijke en administratieve dienstverlening is toegestaan': 2e en 3e bouwlaag</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="38f9a00e-d1d2-45f4-8edf-583682e99912"/>
+                        <l:GeometrieRef xlink:href="2fa516f0-75c3-4d4c-90c7-4d4dd61b58a1"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -804,10 +804,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.269b704321b644e9bff45f9aad1be8c5</l:identificatie>
-                    <l:noemer>centrumgebied</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4fZakAdminDienstverl</l:identificatie>
+                    <l:noemer>functie 'zakelijke en administratieve dienstverlening'</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="242a6763-39df-48ca-a54c-090edd77c39f"/>
+                        <l:GeometrieRef xlink:href="440a573c-a7be-4e5a-81d8-351b5cf996f7"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -815,10 +815,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.148e799b80504e109010cca78399ad6a</l:identificatie>
-                    <l:noemer>op slot gebieden</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4a2bcee63f655796a6b3e81be</l:identificatie>
+                    <l:noemer>maximum aantal bezoekers vergader- en congrescentrum: 200</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="0eac0b0e-45bc-45ca-a37f-bb3ba70bc773"/>
+                        <l:GeometrieRef xlink:href="b84c0a98-5f4f-4426-ad44-aa3510fbf8cd"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -826,10 +826,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.caa00d075e1d4944b19fb9498262e4eb</l:identificatie>
-                    <l:noemer>agrarisch met detailhandel</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4x83d3f6bb4e18c9b54dx9188</l:identificatie>
+                    <l:noemer>maximum aantal bezoekers vergader- en congrescentrum: 25</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="5bcf96ed-04dc-46f8-910c-564ce90ae0c8"/>
+                        <l:GeometrieRef xlink:href="e7ca3586-65e8-49bd-b9f5-9d644153b922"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -837,10 +837,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.c120ed170f0d4705a85a15ad54915246</l:identificatie>
-                    <l:noemer>natuur</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR48xc8cfc9xa2x6d14e5b2aa64</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte vergader- en congrescentrum: 250 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="776f0ba1-9d3d-4b75-b538-c0a113dea866"/>
+                        <l:GeometrieRef xlink:href="51168968-2a17-482d-80f2-1f5677496c80"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -848,10 +848,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.4bf8bf31fe714b938eef60322b3742ef</l:identificatie>
-                    <l:noemer>Middelhoge verwachting</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4b36fec51fe53xd3c62d261aa</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte vergader- en congrescentrum: 3000 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="85bcb4ee-a222-4d97-bab0-4770ad8a0170"/>
+                        <l:GeometrieRef xlink:href="c556abef-a354-4cb5-ba57-79aaf60dfe08"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -859,10 +859,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.7488a0f974a84dbaa2c2ca27e88a51c4</l:identificatie>
-                    <l:noemer>Hoge verwachting</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4d949c8c8334cd7c667e3f15f</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte zakelijke en administratieve dienstverlening: 0 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="5ecf244b-a6e5-4d51-840d-d30ddd001d16"/>
+                        <l:GeometrieRef xlink:href="bd15d15a-f22f-4473-9d00-40584a197585"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -870,10 +870,10 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.96ab42341d5844daaf0ec71cc5d2fa64</l:identificatie>
-                    <l:noemer>wonen Hemelrijken</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4457d7aaddd58c9a3x6x7c951</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte zakelijke en administratieve dienstverlening: 1 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="6b4d3d5f-02fd-4dea-8899-9c7509e1c22c"/>
+                        <l:GeometrieRef xlink:href="003cee0d-0c2c-4afd-9d45-7b4bb805202c"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
@@ -881,10 +881,43 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied>
-                    <l:identificatie>nl.imow-gm0772.gebied.38ae215f109d417faad092051e3cab14</l:identificatie>
-                    <l:noemer>wonen Prinsejagt-Driehoeksbos</l:noemer>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4e9cx3f882f47xbx7ecce8f9e</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte zakelijke en administratieve dienstverlening: 2 vierkante meter</l:noemer>
                     <l:geometrie>
-                        <l:GeometrieRef xlink:href="12cabbe9-195b-413c-a0c4-914f4c3eb89f"/>
+                        <l:GeometrieRef xlink:href="480d687a-9d21-44b5-bf0d-f52d0f372672"/>
+                    </l:geometrie>
+                </l:Gebied>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <l:Gebied>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4465ce6adb6683fbd47db6a9x</l:identificatie>
+                    <l:noemer>maximum bruto-vloeroppervlakte zakelijke en administratieve dienstverlening: 3 vierkante meter</l:noemer>
+                    <l:geometrie>
+                        <l:GeometrieRef xlink:href="6592fdba-c235-4350-913a-16dbd12bbaa9"/>
+                    </l:geometrie>
+                </l:Gebied>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <l:Gebied>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4gggmgg</l:identificatie>
+                    <l:noemer>aanduiding 'geluidgevoelig gebouw met gezamenlijk geluid'</l:noemer>
+                    <l:geometrie>
+                        <l:GeometrieRef xlink:href="7bd88102-3d35-43bf-bb2a-bd26dcb866a1"/>
+                    </l:geometrie>
+                </l:Gebied>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <l:Gebied>
+                    <l:identificatie>nl.imow-gm0363.gebied.ATR4gggmnggg</l:identificatie>
+                    <l:noemer>aanduiding 'geluidgevoelig gebouw met niet-geluidgevoelige gevel'</l:noemer>
+                    <l:geometrie>
+                        <l:GeometrieRef xlink:href="8215b078-c48a-4f34-82e3-9d3524432c50"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>

@@ -3,27 +3,23 @@
   <domein>omgevingswet</domein>
   <IMOWversie>2.0.0</IMOWversie>
   <Aanlevering>
-    <WorkIDRegeling>/akn/nl/act/gm0772/2022/Regeling1328b39d633442539f149239029b380c</WorkIDRegeling>
-    <DoelID>/join/id/proces/gm0772/2022/ed0b18e0-9ab2-460f-ba71-3e2a780fe2c7</DoelID>
+    <WorkIDRegeling>/akn/nl/act/gm0363/2021/OOWATR4Reg</WorkIDRegeling>
+    <DoelID>/join/id/proces/gm0363/2022/mutatie_9</DoelID>
     <Bestand>
       <naam>activiteiten.xml</naam>
       <objecttype>Activiteit</objecttype>
-    </Bestand>
-    <Bestand>
-      <naam>ambtsgebieden.xml</naam>
-      <objecttype>Ambtsgebied</objecttype>
     </Bestand>
     <Bestand>
       <naam>gebieden.xml</naam>
       <objecttype>Gebied</objecttype>
     </Bestand>
     <Bestand>
-      <naam>gebiedengroepen.xml</naam>
-      <objecttype>Gebiedengroep</objecttype>
-    </Bestand>
-    <Bestand>
       <naam>gebiedsaanwijzingen.xml</naam>
       <objecttype>Gebiedsaanwijzing</objecttype>
+    </Bestand>
+    <Bestand>
+      <naam>lijnen.xml</naam>
+      <objecttype>Lijn</objecttype>
     </Bestand>
     <Bestand>
       <naam>omgevingsnormen.xml</naam>

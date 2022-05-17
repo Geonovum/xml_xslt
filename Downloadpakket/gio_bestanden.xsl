@@ -5,7 +5,7 @@
 
   <xsl:param name="base.dir" select="fn:tokenize(fn:base-uri(.),'input')[1]"/>
   <xsl:param name="input.dir" select="concat($base.dir,'input/')"/>
-  <xsl:param name="temp.dir" select="concat($base.dir,'temp')"/>
+  <xsl:param name="temp.dir" select="concat($base.dir,'temp/')"/>
   <xsl:param name="output.dir" select="concat($base.dir,'output/')"/>
 
   <!-- namespaces LVBB -->
@@ -60,7 +60,7 @@
   <!-- filelist -->
 
   <xsl:param name="filelist">
-    <xsl:analyze-string select="unparsed-text(concat($temp.dir,'/log_filelist.txt'))" regex="nl(.*) moved to (.*)">
+    <xsl:analyze-string select="unparsed-text(concat($temp.dir,'log_filelist.txt'))" regex="nl(.*) moved to (.*)">
       <xsl:matching-substring>
         <xsl:element name="informatieobject">
           <xsl:element name="join">
@@ -88,7 +88,7 @@
         <xsl:variable name="informatieobject" select="."/>
         <xsl:variable name="index" select="position()"/>
         <xsl:variable name="naam" select="concat(fn:format-number($index,'0000'),'_',$informatieobject/dc-id)"/>
-        <xsl:variable name="hash" select="normalize-space(unparsed-text(concat($temp.dir,'/checksum/',$naam,'.gml.txt')))"/>
+        <xsl:variable name="hash" select="normalize-space(unparsed-text(concat($temp.dir,'checksum/',$naam,'.gml.txt')))"/>
         <xsl:variable name="FRBRExpression" select="$informatieobject/join"/>
         <xsl:variable name="FRBRWork" select="fn:tokenize($FRBRExpression,'/nld@')[1]"/>
         <xsl:variable name="ExtIoRef" select="($regeling_tekst//tekst:ExtIoRef[@ref=$FRBRExpression])[1]"/>

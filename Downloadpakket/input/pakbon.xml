@@ -1,7 +1,7 @@
 <Pakbon schemaversie="1.1.0" xmlns="https://standaarden.overheid.nl/stop/imop/uitwisseling/">
   <Component>
-    <FRBRWork>/akn/nl/act/gm0772/2022/Regeling1328b39d633442539f149239029b380c</FRBRWork>
-    <FRBRExpression>/akn/nl/act/gm0772/2022/Regeling1328b39d633442539f149239029b380c/nld@2022-03-02</FRBRExpression>
+    <FRBRWork>/akn/nl/act/gm0363/2021/OOWATR4Reg</FRBRWork>
+    <FRBRExpression>/akn/nl/act/gm0363/2021/OOWATR4Reg/nld@2022-04-04;9</FRBRExpression>
     <soortWork>/join/id/stop/work_019</soortWork>
     <heeftModule>
       <Module>
@@ -35,13 +35,55 @@
     </heeftModule>
     <heeftBestand>
       <Bestand>
-	<bestandsnaam>Regeling/Presenteren2.png</bestandsnaam>
+	<bestandsnaam>Regeling/groen_was.png</bestandsnaam>
 	<mediatype>image/png</mediatype>
       </Bestand>
     </heeftBestand>
     <heeftBestand>
       <Bestand>
-	<bestandsnaam>Regeling/Bijlage_lijst_van_bedrijfsactiviteiten_1.png</bestandsnaam>
+	<bestandsnaam>Regeling/groen.png</bestandsnaam>
+	<mediatype>image/png</mediatype>
+      </Bestand>
+    </heeftBestand>
+    <heeftBestand>
+      <Bestand>
+	<bestandsnaam>Regeling/wonen_wordt.png</bestandsnaam>
+	<mediatype>image/png</mediatype>
+      </Bestand>
+    </heeftBestand>
+    <heeftBestand>
+      <Bestand>
+	<bestandsnaam>Regeling/wonen.png</bestandsnaam>
+	<mediatype>image/png</mediatype>
+      </Bestand>
+    </heeftBestand>
+    <heeftBestand>
+      <Bestand>
+	<bestandsnaam>Regeling/verkeer.png</bestandsnaam>
+	<mediatype>image/png</mediatype>
+      </Bestand>
+    </heeftBestand>
+    <heeftBestand>
+      <Bestand>
+	<bestandsnaam>Regeling/verkeer_was.png</bestandsnaam>
+	<mediatype>image/png</mediatype>
+      </Bestand>
+    </heeftBestand>
+    <heeftBestand>
+      <Bestand>
+	<bestandsnaam>Regeling/verkeer_wordt.png</bestandsnaam>
+	<mediatype>image/png</mediatype>
+      </Bestand>
+    </heeftBestand>
+    <heeftBestand>
+      <Bestand>
+	<bestandsnaam>Regeling/groen_wordt.png</bestandsnaam>
+	<mediatype>image/png</mediatype>
+      </Bestand>
+    </heeftBestand>
+    <heeftBestand>
+      <Bestand>
+	<bestandsnaam>Regeling/wonen_was.png</bestandsnaam>
 	<mediatype>image/png</mediatype>
       </Bestand>
     </heeftBestand>

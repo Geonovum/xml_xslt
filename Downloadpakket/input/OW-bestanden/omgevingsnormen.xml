@@ -12,23 +12,116 @@
         <sl:stand>
             <ow-dc:owObject>
                 <rol:Omgevingsnorm>
-                    <rol:identificatie>nl.imow-gm0772.omgevingsnorm.a009e9c8fe49429887929b86f39039b6</rol:identificatie>
-                    <rol:naam>goothoogte</rol:naam>
-                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumGoothoogte</rol:type>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4maxDiepteBodemvVergVrij</rol:identificatie>
+                    <rol:naam>maximum diepte van bodemverstoring die is vrijgesteld van archeologisch onderzoek</rol:naam>
+                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Diepte</rol:type>
                     <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
                     <rol:normwaarde>
                         <rol:Normwaarde>
-                            <rol:identificatie>nl.imow-gm0772.normwaarde.804d51551efe473aa40667fde1e9dead</rol:identificatie>
-                            <rol:kwantitatieveWaarde>6</rol:kwantitatieveWaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR48df88c5c923af93xdbfx99x9</rol:identificatie>
+                            <rol:kwantitatieveWaarde>2</rol:kwantitatieveWaarde>
                             <rol:locatieaanduiding>
-<l:LocatieRef xlink:href="nl.imow-gm0772.gebied.2d1088e7453b4440a28bfdc8b32ffbe7"/>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR48df88c5c923af93xdbfx99x9"/>
                             </rol:locatieaanduiding>
                         </rol:Normwaarde>
                         <rol:Normwaarde>
-                            <rol:identificatie>nl.imow-gm0772.normwaarde.cfa76b28499044a5b2bc4ee4e1195985</rol:identificatie>
-                            <rol:kwantitatieveWaarde>10</rol:kwantitatieveWaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR44226399ca78xxefa39b9bx2f</rol:identificatie>
+                            <rol:kwantitatieveWaarde>5</rol:kwantitatieveWaarde>
                             <rol:locatieaanduiding>
-<l:LocatieRef xlink:href="nl.imow-gm0772.gebied.b779ff9767a44e8e9f2d8b542576a40d"/>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR44226399ca78xxefa39b9bx2f"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                    </rol:normwaarde>
+                    <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+                </rol:Omgevingsnorm>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <rol:Omgevingsnorm>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4maxOppBodemvVergVrij</rol:identificatie>
+                    <rol:naam>maximum oppervlak van bodemverstoring die is vrijgesteld van archeologisch onderzoek</rol:naam>
+                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Oppervlakte</rol:type>
+                    <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/VierkanteMeter</rol:eenheid>
+                    <rol:normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4fed49a9894256dcb8c4bde69</rol:identificatie>
+                            <rol:kwantitatieveWaarde>500</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4fed49a9894256dcb8c4bde69"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR43ac6aaf5e2dxae6f34ce4f6d</rol:identificatie>
+                            <rol:kwantitatieveWaarde>100</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR43ac6aaf5e2dxae6f34ce4f6d"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                    </rol:normwaarde>
+                    <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+                </rol:Omgevingsnorm>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <rol:Omgevingsnorm>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4maxAantBzkVergCongresCntrm</rol:identificatie>
+                    <rol:naam>maximum aantal bezoekers vergader- en congrescentrum</rol:naam>
+                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/AantalBezoekers</rol:type>
+                    <rol:normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4a2bcee63f655796a6b3e81be</rol:identificatie>
+                            <rol:kwantitatieveWaarde>200</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4a2bcee63f655796a6b3e81be"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4x83d3f6bb4e18c9b54dx9188</rol:identificatie>
+                            <rol:kwantitatieveWaarde>25</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4x83d3f6bb4e18c9b54dx9188"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                    </rol:normwaarde>
+                    <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Overig</rol:groep>
+                </rol:Omgevingsnorm>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <rol:Omgevingsnorm>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4bouwlaagGeenWonen</rol:identificatie>
+                    <rol:naam>bouwlaag waarin wonen niet is toegestaan</rol:naam>
+                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Hoogte</rol:type>
+                    <rol:normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4862136525a56dd787446827f</rol:identificatie>
+                            <rol:kwalitatieveWaarde>1e bouwlaag ondergronds tot en met 4e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4862136525a56dd787446827f"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR47ae5545899x7445f282f1cac</rol:identificatie>
+                            <rol:kwalitatieveWaarde>0e tot en met 3e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR47ae5545899x7445f282f1cac"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4cacxf93c6b92bf1e3f5xb7e1</rol:identificatie>
+                            <rol:kwalitatieveWaarde>0e en 1e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4cacxf93c6b92bf1e3f5xb7e1"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR47836a55a88xcece277c5b181</rol:identificatie>
+                            <rol:kwalitatieveWaarde>0e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR47836a55a88xcece277c5b181"/>
                             </rol:locatieaanduiding>
                         </rol:Normwaarde>
                     </rol:normwaarde>
@@ -39,30 +132,473 @@
         <sl:stand>
             <ow-dc:owObject>
                 <rol:Omgevingsnorm>
-                    <rol:identificatie>nl.imow-gm0772.omgevingsnorm.f9d691b889ba472bad83274500234fe4</rol:identificatie>
-                    <rol:naam>bouwhoogte</rol:naam>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4bouwlaagWelWonen</rol:identificatie>
+                    <rol:naam>bouwlaag waarin wonen is toegestaan</rol:naam>
+                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Hoogte</rol:type>
+                    <rol:normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR47697cc36742379311adfx8x5</rol:identificatie>
+                            <rol:kwalitatieveWaarde>2e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR47697cc36742379311adfx8x5"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR424baa1e89fe7f59c7845xcde</rol:identificatie>
+                            <rol:kwalitatieveWaarde>1e tot en met 4e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR424baa1e89fe7f59c7845xcde"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR418abf7ccbbbeff4315c99de5</rol:identificatie>
+                            <rol:kwalitatieveWaarde>1e en 2e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR418abf7ccbbbeff4315c99de5"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR48bd2cf8xaea7f6f122759667</rol:identificatie>
+                            <rol:kwalitatieveWaarde>1e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR48bd2cf8xaea7f6f122759667"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                    </rol:normwaarde>
+                    <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+                </rol:Omgevingsnorm>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <rol:Omgevingsnorm>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4bouwlWelZakAdminDienstverl</rol:identificatie>
+                    <rol:naam>bouwlaag waarin zakelijke en administratieve dienstverlening is toegestaan'</rol:naam>
+                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Hoogte</rol:type>
+                    <rol:normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR457bea5fcfade7c6a72b4dc31</rol:identificatie>
+                            <rol:kwalitatieveWaarde>2e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR457bea5fcfade7c6a72b4dc31"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4e2461aa23ad4d5aadcae29c8</rol:identificatie>
+                            <rol:kwalitatieveWaarde>2e en 3e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4e2461aa23ad4d5aadcae29c8"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR46848637x88ax595x4853441a</rol:identificatie>
+                            <rol:kwalitatieveWaarde>1e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR46848637x88ax595x4853441a"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4e9dx123c67dc7861b7284b16</rol:identificatie>
+                            <rol:kwalitatieveWaarde>1e tot 5e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4e9dx123c67dc7861b7284b16"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                    </rol:normwaarde>
+                    <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+                </rol:Omgevingsnorm>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <rol:Omgevingsnorm>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4bouwlaagNietGeluidgevGevel</rol:identificatie>
+                    <rol:naam>bouwlaag met niet-geluidgevoelige gevel met bouwkundige maatregelen</rol:naam>
+                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Hoogte</rol:type>
+                    <rol:normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4xbc9aaa3xxa71c3791d551x4</rol:identificatie>
+                            <rol:kwalitatieveWaarde>4e tot en met de 8e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.lijn.ATR4xbc9aaa3xxa71c3791d551x4"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4d52589358de73ef4741c85c8</rol:identificatie>
+                            <rol:kwalitatieveWaarde>2e tot en met de 4e bouwlaag</rol:kwalitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.lijn.ATR4d52589358de73ef4741c85c8"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                    </rol:normwaarde>
+                    <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</rol:groep>
+                </rol:Omgevingsnorm>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <rol:Omgevingsnorm>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4gezamenlijkGeluid</rol:identificatie>
+                    <rol:naam>gezamenlijk geluid</rol:naam>
+                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/NogToeTeVoegen</rol:type>
+                    <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/DecibelMetAWeging</rol:eenheid>
+                    <rol:normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4c6xe73f58f55c56cafx3d93d</rol:identificatie>
+                            <rol:kwantitatieveWaarde>65</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.lijn.ATR4c6xe73f58f55c56cafx3d93d"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                    </rol:normwaarde>
+                    <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Geluid</rol:groep>
+                </rol:Omgevingsnorm>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <rol:Omgevingsnorm>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4aantalWoonruimten</rol:identificatie>
+                    <rol:naam>aantal woonruimten</rol:naam>
+                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/AantalWooneenheden</rol:type>
+                    <rol:normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR43xe7b44cx36c5b4d21374159</rol:identificatie>
+                            <rol:kwantitatieveWaarde>5</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR43xe7b44cx36c5b4d21374159"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR49xexaf228x1dc2df7x62b232</rol:identificatie>
+                            <rol:kwantitatieveWaarde>8</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR49xexaf228x1dc2df7x62b232"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR42dd95b3f45d7ebded2dc3669</rol:identificatie>
+                            <rol:kwantitatieveWaarde>3</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR42dd95b3f45d7ebded2dc3669"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR477f8af33x88b75c5e5f9e5x8</rol:identificatie>
+                            <rol:kwantitatieveWaarde>4</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR477f8af33x88b75c5e5f9e5x8"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR468763e3dc88cf4x7cx81cd7c</rol:identificatie>
+                            <rol:kwantitatieveWaarde>12</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR468763e3dc88cf4x7cx81cd7c"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4335d93ff2d38ad2ea5aef58x</rol:identificatie>
+                            <rol:kwantitatieveWaarde>13</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4335d93ff2d38ad2ea5aef58x"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4b53bdxdc9f58841c3366x691</rol:identificatie>
+                            <rol:kwantitatieveWaarde>9</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4b53bdxdc9f58841c3366x691"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4xe6xx694765xf95bc5x3759a</rol:identificatie>
+                            <rol:kwantitatieveWaarde>6</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4xe6xx694765xf95bc5x3759a"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR499c4af4e3e6ab4b14b4x8464</rol:identificatie>
+                            <rol:kwantitatieveWaarde>10</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR499c4af4e3e6ab4b14b4x8464"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4e3a352f5f6fd9cab19922339</rol:identificatie>
+                            <rol:kwantitatieveWaarde>1</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4e3a352f5f6fd9cab19922339"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR42514dx27ce259dx4c5a5ed32</rol:identificatie>
+                            <rol:kwantitatieveWaarde>11</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR42514dx27ce259dx4c5a5ed32"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4adx933ded93ex42d65dafa6e</rol:identificatie>
+                            <rol:kwantitatieveWaarde>14</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4adx933ded93ex42d65dafa6e"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR413adc7ada8becx3c27ed5ef7</rol:identificatie>
+                            <rol:kwantitatieveWaarde>7</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR413adc7ada8becx3c27ed5ef7"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4d837c4x1771b7c34ff43f737</rol:identificatie>
+                            <rol:kwantitatieveWaarde>2</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4d837c4x1771b7c34ff43f737"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR49ca28xc127x62a1cad987b47</rol:identificatie>
+                            <rol:kwantitatieveWaarde>0</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR49ca28xc127x62a1cad987b47"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                    </rol:normwaarde>
+                    <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+                </rol:Omgevingsnorm>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <rol:Omgevingsnorm>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4maximumBouwhoogte</rol:identificatie>
+                    <rol:naam>maximum bouwhoogte</rol:naam>
                     <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</rol:type>
                     <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</rol:eenheid>
                     <rol:normwaarde>
                         <rol:Normwaarde>
-                            <rol:identificatie>nl.imow-gm0772.normwaarde.277387353d1e492596d511cba396eca5</rol:identificatie>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR465b191a4a1afcx6e4464bxcf</rol:identificatie>
+                            <rol:kwantitatieveWaarde>15</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR465b191a4a1afcx6e4464bxcf"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4b5b453x2f988a5136xecaf71</rol:identificatie>
+                            <rol:kwantitatieveWaarde>45</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4b5b453x2f988a5136xecaf71"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4af6fb5564dx5c33x96a19359</rol:identificatie>
+                            <rol:kwantitatieveWaarde>25</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4af6fb5564dx5c33x96a19359"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4168d2cebf25566bcdac26cex</rol:identificatie>
                             <rol:kwantitatieveWaarde>10</rol:kwantitatieveWaarde>
                             <rol:locatieaanduiding>
-<l:LocatieRef xlink:href="nl.imow-gm0772.gebied.903451d122c148ba90ad92ecfa5c6ee9"/>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4168d2cebf25566bcdac26cex"/>
                             </rol:locatieaanduiding>
                         </rol:Normwaarde>
                         <rol:Normwaarde>
-                            <rol:identificatie>nl.imow-gm0772.normwaarde.1a6235f4899b48aaaa8497f79c77a5e5</rol:identificatie>
-                            <rol:kwantitatieveWaarde>9</rol:kwantitatieveWaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4x1a7412c2ax45859afcx4c5f</rol:identificatie>
+                            <rol:kwantitatieveWaarde>65</rol:kwantitatieveWaarde>
                             <rol:locatieaanduiding>
-<l:LocatieRef xlink:href="nl.imow-gm0772.gebied.ae533ca54bd84aae8efd8f1992c289a3"/>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4x1a7412c2ax45859afcx4c5f"/>
                             </rol:locatieaanduiding>
                         </rol:Normwaarde>
                         <rol:Normwaarde>
-                            <rol:identificatie>nl.imow-gm0772.normwaarde.4c8fc94dd134438bb6c05a130b8de7b0</rol:identificatie>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR491ae37x46918ce6926bx65af</rol:identificatie>
+                            <rol:kwantitatieveWaarde>36</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR491ae37x46918ce6926bx65af"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR427a7x26ff399951988ex2c4d</rol:identificatie>
+                            <rol:kwantitatieveWaarde>55</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR427a7x26ff399951988ex2c4d"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4fb7682x9x4ccx22ecexx7f7d</rol:identificatie>
                             <rol:kwantitatieveWaarde>12</rol:kwantitatieveWaarde>
                             <rol:locatieaanduiding>
-<l:LocatieRef xlink:href="nl.imow-gm0772.gebied.2b3ea21bf28e4f06920f6c89271f1ec2"/>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4fb7682x9x4ccx22ecexx7f7d"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4f21b772c2e5a17864c6x9455</rol:identificatie>
+                            <rol:kwantitatieveWaarde>35</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4f21b772c2e5a17864c6x9455"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                    </rol:normwaarde>
+                    <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+                </rol:Omgevingsnorm>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <rol:Omgevingsnorm>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4maximumBvoWonen</rol:identificatie>
+                    <rol:naam>maximum bruto-vloeroppervlakte wonen</rol:naam>
+                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumVloeroppervlakteBruto</rol:type>
+                    <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/VierkanteMeter</rol:eenheid>
+                    <rol:normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR48cd259858a5a4841cc4fc489</rol:identificatie>
+                            <rol:kwantitatieveWaarde>6300</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR48cd259858a5a4841cc4fc489"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4c1e246x92d37fx59xb95814c</rol:identificatie>
+                            <rol:kwantitatieveWaarde>20000</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4c1e246x92d37fx59xb95814c"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4346xdb3c277223b765dba892</rol:identificatie>
+                            <rol:kwantitatieveWaarde>5600</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4346xdb3c277223b765dba892"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR47684fc8678a4b16xf2317c7b</rol:identificatie>
+                            <rol:kwantitatieveWaarde>25500</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR47684fc8678a4b16xf2317c7b"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4b54f92e63cf749b1c14d43bc</rol:identificatie>
+                            <rol:kwantitatieveWaarde>600</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4b54f92e63cf749b1c14d43bc"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR413e9291c7e3fdeaa8496a575</rol:identificatie>
+                            <rol:kwantitatieveWaarde>25000</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR413e9291c7e3fdeaa8496a575"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4fax15bex6a2cbfc95x731dx9</rol:identificatie>
+                            <rol:kwantitatieveWaarde>1600</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4fax15bex6a2cbfc95x731dx9"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR44a546cxe5c1bb78919d72aad</rol:identificatie>
+                            <rol:kwantitatieveWaarde>5500</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR44a546cxe5c1bb78919d72aad"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR41513x8edd6e38fe57b9dbdbe</rol:identificatie>
+                            <rol:kwantitatieveWaarde>10000</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR41513x8edd6e38fe57b9dbdbe"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4c73exx45b9d288e99fbb6dd7</rol:identificatie>
+                            <rol:kwantitatieveWaarde>35600</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4c73exx45b9d288e99fbb6dd7"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR41172bc7d2efb1x8cbe3da4a2</rol:identificatie>
+                            <rol:kwantitatieveWaarde>5000</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR41172bc7d2efb1x8cbe3da4a2"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                    </rol:normwaarde>
+                    <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+                </rol:Omgevingsnorm>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <rol:Omgevingsnorm>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4maxBvoVergCongresCntrm</rol:identificatie>
+                    <rol:naam>maximum bruto-vloeroppervlakte vergader- en congrescentrum</rol:naam>
+                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumVloeroppervlakteBruto</rol:type>
+                    <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/VierkanteMeter</rol:eenheid>
+                    <rol:normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4b36fec51fe53xd3c62d261aa</rol:identificatie>
+                            <rol:kwantitatieveWaarde>3000</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4b36fec51fe53xd3c62d261aa"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR48xc8cfc9xa2x6d14e5b2aa64</rol:identificatie>
+                            <rol:kwantitatieveWaarde>250</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR48xc8cfc9xa2x6d14e5b2aa64"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                    </rol:normwaarde>
+                    <rol:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/MaatvoeringBouwen</rol:groep>
+                </rol:Omgevingsnorm>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <rol:Omgevingsnorm>
+                    <rol:identificatie>nl.imow-gm0363.omgevingsnorm.ATR4maxBvoZakAdminDienstverl</rol:identificatie>
+                    <rol:naam>maximum bruto-vloeroppervlakte zakelijke en administratieve dienstverlening</rol:naam>
+                    <rol:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumVloeroppervlakteBruto</rol:type>
+                    <rol:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/VierkanteMeter</rol:eenheid>
+                    <rol:normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4e9cx3f882f47xbx7ecce8f9e</rol:identificatie>
+                            <rol:kwantitatieveWaarde>2</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4e9cx3f882f47xbx7ecce8f9e"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4d949c8c8334cd7c667e3f15f</rol:identificatie>
+                            <rol:kwantitatieveWaarde>0</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4d949c8c8334cd7c667e3f15f"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4465ce6adb6683fbd47db6a9x</rol:identificatie>
+                            <rol:kwantitatieveWaarde>3</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4465ce6adb6683fbd47db6a9x"/>
+                            </rol:locatieaanduiding>
+                        </rol:Normwaarde>
+                        <rol:Normwaarde>
+                            <rol:identificatie>nl.imow-gm0363.normwaarde.ATR4457d7aaddd58c9a3x6x7c951</rol:identificatie>
+                            <rol:kwantitatieveWaarde>1</rol:kwantitatieveWaarde>
+                            <rol:locatieaanduiding>
+<l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4457d7aaddd58c9a3x6x7c951"/>
                             </rol:locatieaanduiding>
                         </rol:Normwaarde>
                     </rol:normwaarde>

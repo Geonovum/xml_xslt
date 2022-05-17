@@ -12,9 +12,9 @@
         <sl:stand>
             <ow-dc:owObject>
                 <rg:Regelingsgebied>
-                    <rg:identificatie>nl.imow-gm0772.regelingsgebied.ambtsgebied</rg:identificatie>
+                    <rg:identificatie>nl.imow-gm0363.regelingsgebied.ATR4OOWATR4Regrgb</rg:identificatie>
                     <rg:locatieaanduiding>
-                        <l:LocatieRef xlink:href="nl.imow-gm0772.ambtsgebied.59d50e4d56b74e9c846a5beaed5c2562"/>
+                        <l:LocatieRef xlink:href="nl.imow-gm0363.gebied.ATR4ambtsgebied"/>
                     </rg:locatieaanduiding>
                 </rg:Regelingsgebied>
             </ow-dc:owObject>
