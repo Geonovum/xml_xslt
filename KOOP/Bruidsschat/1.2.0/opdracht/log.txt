@@ -1,0 +1,18 @@
+[Controle op mapping tussen wId's in consolidatie en wIdJurCon.xml]
+Er zijn geen fouten gevonden in de mapping tussen wId in consolidatie en wIdJurCon.xml.
+
+[Controle op mapping tussen wId's en juriconnectId's]
+Er zijn geen fouten gevonden in de mapping tussen wId in owRegeltekst.xml en juriconnectId.
+
+[Controle op ontbrekende pseudo-activiteiten]
+Alle pseudo-activiteiten komen voor in owActiviteit.xml.
+
+[Controle op activiteiten die gekoppeld zijn aan artikelen met onderliggende leden]
+Er zijn geen activiteiten gevonden die niet opgenomen kunnen worden in owRegeltekst.xml, omdat het artikel onderliggende leden bevat.
+
+[Controle op ontbrekende waarden in de waardelijsten]
+Alle waarden komen voor in de waardelijsten.
+
+[Controle op ontbrekende verwijzingen]
+Er zijn 1 verwijzingen gevonden die ontbreken in owActiviteit.xml:
+1: verwijzing 'nl.imow-mnre1034.activiteit.ActInWaterschapsverordening' ontbreekt in rol:Activiteit nl.imow-ws0661.activiteit.ActInWaterschapsVerordWs.
