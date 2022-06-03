@@ -228,8 +228,8 @@
                <!-- verwerk alle juriconnectId's -->
                <xsl:for-each select="$wId2JuriconnectId//(artikel[not(lid)],lid)">
                   <xsl:variable name="id" select="."/>
-                  <xsl:variable name="id.regeltekst" select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'regeltekst',concat('2022',fn:format-number(count((.,preceding::artikel[not(lid)],preceding::lid)),'000000'))),'.')),'-')"/>
-                  <xsl:variable name="id.juridischeregel" select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'juridischeregel',concat('2022',fn:format-number(count((.,preceding::artikel[not(lid)],preceding::lid)),'000000'))),'.')),'-')"/>
+                  <xsl:variable name="id.regeltekst" select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'regeltekst',concat('2020',fn:format-number(count((.,preceding::artikel[not(lid)],preceding::lid)),'000000'))),'.')),'-')"/>
+                  <xsl:variable name="id.juridischeregel" select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'juridischeregel',concat('2020',fn:format-number(count((.,preceding::artikel[not(lid)],preceding::lid)),'000000'))),'.')),'-')"/>
                   <xsl:element name="sl:stand">
                      <xsl:element name="ow-dc:owObject">
                         <xsl:element name="r:Regeltekst">
@@ -270,7 +270,7 @@
                                        </xsl:element>
                                        <xsl:element name="r:ActiviteitLocatieaanduiding">
                                           <xsl:element name="r:identificatie">
-                                             <xsl:value-of select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'activiteitlocatieaanduiding',concat('2022',fn:format-number($index.activiteit,'000000'))),'.')),'-')"/>
+                                             <xsl:value-of select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'activiteitlocatieaanduiding',concat('2020',fn:format-number($index.activiteit,'000000'))),'.')),'-')"/>
                                           </xsl:element>
                                           <xsl:element name="r:activiteitregelkwalificatie">
                                              <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/AndersGeduid')"/>
@@ -373,7 +373,7 @@
                   <xsl:element name="ow-dc:owObject">
                      <xsl:element name="rg:Regelingsgebied">
                         <xsl:element name="rg:identificatie">
-                           <xsl:value-of select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'regelingsgebied','2022000001'),'.')),'-')"/>
+                           <xsl:value-of select="fn:string-join(('nl.imow',fn:string-join(($idBevoegdGezag,'regelingsgebied','2020000001'),'.')),'-')"/>
                         </xsl:element>
                         <xsl:element name="rg:locatieaanduiding">
                            <xsl:element name="l:LocatieRef">
@@ -452,7 +452,7 @@
                <xsl:value-of select="$FRBRWork"/>
             </xsl:element>
             <xsl:element name="DoelID" namespace="{$namespace}">
-               <xsl:value-of select="concat('/join/id/proces/',$idBevoegdGezag,'/2022/Bruidsschat-InstellingInitieleRegelingVersieDoorRijk')"/>
+               <xsl:value-of select="concat('/join/id/proces/',$idBevoegdGezag,'/2020/Bruidsschat-InstellingInitieleRegelingVersieDoorRijk')"/>
             </xsl:element>
             <xsl:element name="Bestand" namespace="{$namespace}">
                <xsl:element name="naam" namespace="{$namespace}">
