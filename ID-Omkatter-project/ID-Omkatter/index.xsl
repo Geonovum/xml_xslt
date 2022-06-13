@@ -125,7 +125,7 @@
           <xsl:for-each select="$guids">
             <xsl:variable name="guid" select="."/>
             <xsl:variable name="new_guid" select="uuid:randomUUID()"/>
-            <xsl:variable name="locatiefile" select="collection(concat($directory,'?select=*.xml'))//l:GeometrieRef[@xlink:href = $guid/text()]/base-uri(.)"/>
+            <xsl:variable name="locatiefile" select="fn:distinct-values(collection(concat($directory,'?select=*.xml'))//l:GeometrieRef[@xlink:href = $guid/text()]/base-uri(.))"/>
             <xsl:choose>
               <xsl:when test="$locatiefile ne ''">
                 <xsl:element name="guidInOw">
