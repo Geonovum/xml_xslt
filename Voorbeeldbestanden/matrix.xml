@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matrix>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_001</id>
+    <label>AMvB</label>
+    <structuur>artikelstructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Ministerie"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitKlassiek" regeling="RegelingKlassiek"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingCompact"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingMutatie"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="true"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="true"/>
+      <object naam="Ambtsgebied" waarde="true"/>
+      <object naam="Divisie" waarde="false"/>
+      <object naam="Divisietekst" waarde="false"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="true"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="false"/>
+      <object naam="Instructieregel" waarde="true"/>
+      <object naam="Kaart" waarde="true"/>
+      <object naam="Kaartlaag" waarde="true"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="true"/>
+      <object naam="Omgevingswaarde" waarde="true"/>
+      <object naam="Omgevingswaarderegel" waarde="true"/>
+      <object naam="Pons" waarde="false"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="true"/>
+      <object naam="RegelVoorIedereen" waarde="true"/>
+      <object naam="SymbolisatieItem" waarde="true"/>
+      <object naam="Tekstdeel" waarde="false"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="true"/>
+      <gebiedsaanwijzing type="bodem" waarde="true"/>
+      <gebiedsaanwijzing type="bouw" waarde="false"/>
+      <gebiedsaanwijzing type="defensie" waarde="true"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="true"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="true"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="true"/>
+      <gebiedsaanwijzing type="functie" waarde="false"/>
+      <gebiedsaanwijzing type="geluid" waarde="true"/>
+      <gebiedsaanwijzing type="geur" waarde="true"/>
+      <gebiedsaanwijzing type="landschap" waarde="true"/>
+      <gebiedsaanwijzing type="leiding" waarde="true"/>
+      <gebiedsaanwijzing type="lucht" waarde="true"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="true"/>
+      <gebiedsaanwijzing type="natuur" waarde="true"/>
+      <gebiedsaanwijzing type="recreatie" waarde="true"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="true"/>
+      <gebiedsaanwijzing type="verkeer" waarde="true"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="true"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_002</id>
+    <label>Ministeriële Regeling</label>
+    <structuur>artikelstructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Ministerie"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitKlassiek" regeling="RegelinKlassiek"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingCompact"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingMutatie"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="true"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="true"/>
+      <object naam="Ambtsgebied" waarde="true"/>
+      <object naam="Divisie" waarde="false"/>
+      <object naam="Divisietekst" waarde="false"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="true"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="false"/>
+      <object naam="Instructieregel" waarde="true"/>
+      <object naam="Kaart" waarde="true"/>
+      <object naam="Kaartlaag" waarde="true"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="true"/>
+      <object naam="Omgevingswaarde" waarde="true"/>
+      <object naam="Omgevingswaarderegel" waarde="true"/>
+      <object naam="Pons" waarde="false"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="true"/>
+      <object naam="RegelVoorIedereen" waarde="true"/>
+      <object naam="SymbolisatieItem" waarde="true"/>
+      <object naam="Tekstdeel" waarde="false"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="true"/>
+      <gebiedsaanwijzing type="bodem" waarde="true"/>
+      <gebiedsaanwijzing type="bouw" waarde="false"/>
+      <gebiedsaanwijzing type="defensie" waarde="true"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="true"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="true"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="true"/>
+      <gebiedsaanwijzing type="functie" waarde="false"/>
+      <gebiedsaanwijzing type="geluid" waarde="true"/>
+      <gebiedsaanwijzing type="geur" waarde="true"/>
+      <gebiedsaanwijzing type="landschap" waarde="true"/>
+      <gebiedsaanwijzing type="leiding" waarde="true"/>
+      <gebiedsaanwijzing type="lucht" waarde="true"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="true"/>
+      <gebiedsaanwijzing type="natuur" waarde="true"/>
+      <gebiedsaanwijzing type="recreatie" waarde="true"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="true"/>
+      <gebiedsaanwijzing type="verkeer" waarde="true"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="true"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_003</id>
+    <label>Omgevingsplan</label>
+    <structuur>artikelstructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Gemeente"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitCompact" regeling="RegelingCompact"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingMutatie"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="true"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="true"/>
+      <object naam="Ambtsgebied" waarde="true"/>
+      <object naam="Divisie" waarde="false"/>
+      <object naam="Divisietekst" waarde="false"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="true"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="false"/>
+      <object naam="Instructieregel" waarde="false"/>
+      <object naam="Kaart" waarde="true"/>
+      <object naam="Kaartlaag" waarde="true"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="true"/>
+      <object naam="Omgevingswaarde" waarde="true"/>
+      <object naam="Omgevingswaarderegel" waarde="true"/>
+      <object naam="Pons" waarde="true"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="true"/>
+      <object naam="RegelVoorIedereen" waarde="true"/>
+      <object naam="SymbolisatieItem" waarde="true"/>
+      <object naam="Tekstdeel" waarde="false"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="true"/>
+      <gebiedsaanwijzing type="bodem" waarde="true"/>
+      <gebiedsaanwijzing type="bouw" waarde="true"/>
+      <gebiedsaanwijzing type="defensie" waarde="true"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="true"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="true"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="true"/>
+      <gebiedsaanwijzing type="functie" waarde="true"/>
+      <gebiedsaanwijzing type="geluid" waarde="true"/>
+      <gebiedsaanwijzing type="geur" waarde="true"/>
+      <gebiedsaanwijzing type="landschap" waarde="true"/>
+      <gebiedsaanwijzing type="leiding" waarde="true"/>
+      <gebiedsaanwijzing type="lucht" waarde="true"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="true"/>
+      <gebiedsaanwijzing type="natuur" waarde="true"/>
+      <gebiedsaanwijzing type="recreatie" waarde="true"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="true"/>
+      <gebiedsaanwijzing type="verkeer" waarde="true"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="true"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_004</id>
+    <label>Omgevingsverordening</label>
+    <structuur>artikelstructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Provincie"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitCompact" regeling="RegelingCompact"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingMutatie"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="true"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="true"/>
+      <object naam="Ambtsgebied" waarde="true"/>
+      <object naam="Divisie" waarde="false"/>
+      <object naam="Divisietekst" waarde="false"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="true"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="false"/>
+      <object naam="Instructieregel" waarde="true"/>
+      <object naam="Kaart" waarde="true"/>
+      <object naam="Kaartlaag" waarde="true"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="true"/>
+      <object naam="Omgevingswaarde" waarde="true"/>
+      <object naam="Omgevingswaarderegel" waarde="true"/>
+      <object naam="Pons" waarde="false"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="true"/>
+      <object naam="RegelVoorIedereen" waarde="true"/>
+      <object naam="SymbolisatieItem" waarde="true"/>
+      <object naam="Tekstdeel" waarde="false"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="true"/>
+      <gebiedsaanwijzing type="bodem" waarde="true"/>
+      <gebiedsaanwijzing type="bouw" waarde="false"/>
+      <gebiedsaanwijzing type="defensie" waarde="true"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="true"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="true"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="true"/>
+      <gebiedsaanwijzing type="functie" waarde="true"/>
+      <gebiedsaanwijzing type="geluid" waarde="true"/>
+      <gebiedsaanwijzing type="geur" waarde="true"/>
+      <gebiedsaanwijzing type="landschap" waarde="true"/>
+      <gebiedsaanwijzing type="leiding" waarde="true"/>
+      <gebiedsaanwijzing type="lucht" waarde="true"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="true"/>
+      <gebiedsaanwijzing type="natuur" waarde="true"/>
+      <gebiedsaanwijzing type="recreatie" waarde="true"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="true"/>
+      <gebiedsaanwijzing type="verkeer" waarde="true"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="true"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_005</id>
+    <label>Waterschapsverordening</label>
+    <structuur>artikelstructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Waterschap"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitCompact" regeling="RegelingCompact"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingMutatie"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="true"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="true"/>
+      <object naam="Ambtsgebied" waarde="true"/>
+      <object naam="Divisie" waarde="false"/>
+      <object naam="Divisietekst" waarde="false"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="true"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="false"/>
+      <object naam="Instructieregel" waarde="false"/>
+      <object naam="Kaart" waarde="true"/>
+      <object naam="Kaartlaag" waarde="true"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="true"/>
+      <object naam="Omgevingswaarde" waarde="true"/>
+      <object naam="Omgevingswaarderegel" waarde="true"/>
+      <object naam="Pons" waarde="false"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="true"/>
+      <object naam="RegelVoorIedereen" waarde="true"/>
+      <object naam="SymbolisatieItem" waarde="true"/>
+      <object naam="Tekstdeel" waarde="false"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="true"/>
+      <gebiedsaanwijzing type="bodem" waarde="true"/>
+      <gebiedsaanwijzing type="bouw" waarde="false"/>
+      <gebiedsaanwijzing type="defensie" waarde="false"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="true"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="true"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="false"/>
+      <gebiedsaanwijzing type="functie" waarde="false"/>
+      <gebiedsaanwijzing type="geluid" waarde="true"/>
+      <gebiedsaanwijzing type="geur" waarde="false"/>
+      <gebiedsaanwijzing type="landschap" waarde="true"/>
+      <gebiedsaanwijzing type="leiding" waarde="true"/>
+      <gebiedsaanwijzing type="lucht" waarde="false"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="false"/>
+      <gebiedsaanwijzing type="natuur" waarde="true"/>
+      <gebiedsaanwijzing type="recreatie" waarde="false"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="false"/>
+      <gebiedsaanwijzing type="verkeer" waarde="true"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="false"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_006</id>
+    <label>Omgevingsvisie</label>
+    <structuur>vrijetekststructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Ministerie"/>
+      <waardelijst id="/tooi/def/class/Provincie"/>
+      <waardelijst id="/tooi/def/class/Gemeente"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitCompact" regeling="RegelingVrijetekst"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingMutatie"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="false"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="false"/>
+      <object naam="Ambtsgebied" waarde="true"/>
+      <object naam="Divisie" waarde="true"/>
+      <object naam="Divisietekst" waarde="true"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="true"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="true"/>
+      <object naam="Instructieregel" waarde="false"/>
+      <object naam="Kaart" waarde="true"/>
+      <object naam="Kaartlaag" waarde="true"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="false"/>
+      <object naam="Omgevingswaarde" waarde="false"/>
+      <object naam="Omgevingswaarderegel" waarde="false"/>
+      <object naam="Pons" waarde="false"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="false"/>
+      <object naam="RegelVoorIedereen" waarde="false"/>
+      <object naam="SymbolisatieItem" waarde="true"/>
+      <object naam="Tekstdeel" waarde="true"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="false"/>
+      <gebiedsaanwijzing type="bodem" waarde="true"/>
+      <gebiedsaanwijzing type="bouw" waarde="false"/>
+      <gebiedsaanwijzing type="defensie" waarde="true"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="true"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="true"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="true"/>
+      <gebiedsaanwijzing type="functie" waarde="false"/>
+      <gebiedsaanwijzing type="geluid" waarde="true"/>
+      <gebiedsaanwijzing type="geur" waarde="true"/>
+      <gebiedsaanwijzing type="landschap" waarde="true"/>
+      <gebiedsaanwijzing type="leiding" waarde="true"/>
+      <gebiedsaanwijzing type="lucht" waarde="true"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="true"/>
+      <gebiedsaanwijzing type="natuur" waarde="true"/>
+      <gebiedsaanwijzing type="recreatie" waarde="true"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="true"/>
+      <gebiedsaanwijzing type="verkeer" waarde="true"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="true"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_007</id>
+    <label>Projectbesluit</label>
+    <structuur>vrijetekststructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Ministerie"/>
+      <waardelijst id="/tooi/def/class/Provincie"/>
+      <waardelijst id="/tooi/def/class/Waterschap"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitCompact" regeling="RegelingVrijetekst"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingMutatie"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="false"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="false"/>
+      <object naam="Ambtsgebied" waarde="true"/>
+      <object naam="Divisie" waarde="true"/>
+      <object naam="Divisietekst" waarde="true"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="true"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="true"/>
+      <object naam="Instructieregel" waarde="false"/>
+      <object naam="Kaart" waarde="true"/>
+      <object naam="Kaartlaag" waarde="true"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="false"/>
+      <object naam="Omgevingswaarde" waarde="false"/>
+      <object naam="Omgevingswaarderegel" waarde="false"/>
+      <object naam="Pons" waarde="false"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="false"/>
+      <object naam="RegelVoorIedereen" waarde="false"/>
+      <object naam="SymbolisatieItem" waarde="true"/>
+      <object naam="Tekstdeel" waarde="true"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="false"/>
+      <gebiedsaanwijzing type="bodem" waarde="true"/>
+      <gebiedsaanwijzing type="bouw" waarde="false"/>
+      <gebiedsaanwijzing type="defensie" waarde="true"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="true"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="true"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="true"/>
+      <gebiedsaanwijzing type="functie" waarde="false"/>
+      <gebiedsaanwijzing type="geluid" waarde="true"/>
+      <gebiedsaanwijzing type="geur" waarde="true"/>
+      <gebiedsaanwijzing type="landschap" waarde="true"/>
+      <gebiedsaanwijzing type="leiding" waarde="true"/>
+      <gebiedsaanwijzing type="lucht" waarde="true"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="true"/>
+      <gebiedsaanwijzing type="natuur" waarde="true"/>
+      <gebiedsaanwijzing type="recreatie" waarde="true"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="true"/>
+      <gebiedsaanwijzing type="verkeer" waarde="true"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="true"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_008</id>
+    <label>Instructie</label>
+    <structuur>vrijetekststructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Ministerie"/>
+      <waardelijst id="/tooi/def/class/Provincie"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitCompact" regeling="RegelingVrijetekst"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingMutatie"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="false"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="false"/>
+      <object naam="Ambtsgebied" waarde="true"/>
+      <object naam="Divisie" waarde="true"/>
+      <object naam="Divisietekst" waarde="true"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="false"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="true"/>
+      <object naam="Instructieregel" waarde="false"/>
+      <object naam="Kaart" waarde="true"/>
+      <object naam="Kaartlaag" waarde="true"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="false"/>
+      <object naam="Omgevingswaarde" waarde="false"/>
+      <object naam="Omgevingswaarderegel" waarde="false"/>
+      <object naam="Pons" waarde="false"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="false"/>
+      <object naam="RegelVoorIedereen" waarde="false"/>
+      <object naam="SymbolisatieItem" waarde="false"/>
+      <object naam="Tekstdeel" waarde="true"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="false"/>
+      <gebiedsaanwijzing type="bodem" waarde="false"/>
+      <gebiedsaanwijzing type="bouw" waarde="false"/>
+      <gebiedsaanwijzing type="defensie" waarde="false"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="false"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="false"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="false"/>
+      <gebiedsaanwijzing type="functie" waarde="false"/>
+      <gebiedsaanwijzing type="geluid" waarde="false"/>
+      <gebiedsaanwijzing type="geur" waarde="false"/>
+      <gebiedsaanwijzing type="landschap" waarde="false"/>
+      <gebiedsaanwijzing type="leiding" waarde="false"/>
+      <gebiedsaanwijzing type="lucht" waarde="false"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="false"/>
+      <gebiedsaanwijzing type="natuur" waarde="false"/>
+      <gebiedsaanwijzing type="recreatie" waarde="false"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="false"/>
+      <gebiedsaanwijzing type="verkeer" waarde="false"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="false"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_009</id>
+    <label>Voorbeschermingsregels</label>
+    <structuur>artikelstructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Ministerie"/>
+      <waardelijst id="/tooi/def/class/Provincie"/>
+      <waardelijst id="/tooi/def/class/Gemeente"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitCompact" regeling="RegelingTijdelijkdeel"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingMutatie"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="true"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="true"/>
+      <object naam="Ambtsgebied" waarde="true"/>
+      <object naam="Divisie" waarde="false"/>
+      <object naam="Divisietekst" waarde="false"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="true"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="false"/>
+      <object naam="Instructieregel" waarde="false"/>
+      <object naam="Kaart" waarde="true"/>
+      <object naam="Kaartlaag" waarde="true"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="true"/>
+      <object naam="Omgevingswaarde" waarde="false"/>
+      <object naam="Omgevingswaarderegel" waarde="false"/>
+      <object naam="Pons" waarde="false"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="true"/>
+      <object naam="RegelVoorIedereen" waarde="true"/>
+      <object naam="SymbolisatieItem" waarde="true"/>
+      <object naam="Tekstdeel" waarde="false"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="true"/>
+      <gebiedsaanwijzing type="bodem" waarde="true"/>
+      <gebiedsaanwijzing type="bouw" waarde="true"/>
+      <gebiedsaanwijzing type="defensie" waarde="true"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="true"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="true"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="true"/>
+      <gebiedsaanwijzing type="functie" waarde="true"/>
+      <gebiedsaanwijzing type="geluid" waarde="true"/>
+      <gebiedsaanwijzing type="geur" waarde="true"/>
+      <gebiedsaanwijzing type="landschap" waarde="true"/>
+      <gebiedsaanwijzing type="leiding" waarde="true"/>
+      <gebiedsaanwijzing type="lucht" waarde="true"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="true"/>
+      <gebiedsaanwijzing type="natuur" waarde="true"/>
+      <gebiedsaanwijzing type="recreatie" waarde="true"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="true"/>
+      <gebiedsaanwijzing type="verkeer" waarde="true"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="true"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_010</id>
+    <label>Programma</label>
+    <structuur>vrijetekststructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Ministerie"/>
+      <waardelijst id="/tooi/def/class/Provincie"/>
+      <waardelijst id="/tooi/def/class/Gemeente"/>
+      <waardelijst id="/tooi/def/class/Waterschap"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitCompact" regeling="RegelingVrijetekst"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingMutatie"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="false"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="false"/>
+      <object naam="Ambtsgebied" waarde="true"/>
+      <object naam="Divisie" waarde="true"/>
+      <object naam="Divisietekst" waarde="true"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="true"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="true"/>
+      <object naam="Instructieregel" waarde="false"/>
+      <object naam="Kaart" waarde="true"/>
+      <object naam="Kaartlaag" waarde="true"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="false"/>
+      <object naam="Omgevingswaarde" waarde="false"/>
+      <object naam="Omgevingswaarderegel" waarde="false"/>
+      <object naam="Pons" waarde="false"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="false"/>
+      <object naam="RegelVoorIedereen" waarde="false"/>
+      <object naam="SymbolisatieItem" waarde="true"/>
+      <object naam="Tekstdeel" waarde="true"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="false"/>
+      <gebiedsaanwijzing type="bodem" waarde="true"/>
+      <gebiedsaanwijzing type="bouw" waarde="false"/>
+      <gebiedsaanwijzing type="defensie" waarde="true"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="true"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="true"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="true"/>
+      <gebiedsaanwijzing type="functie" waarde="false"/>
+      <gebiedsaanwijzing type="geluid" waarde="true"/>
+      <gebiedsaanwijzing type="geur" waarde="true"/>
+      <gebiedsaanwijzing type="landschap" waarde="true"/>
+      <gebiedsaanwijzing type="leiding" waarde="true"/>
+      <gebiedsaanwijzing type="lucht" waarde="true"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="true"/>
+      <gebiedsaanwijzing type="natuur" waarde="true"/>
+      <gebiedsaanwijzing type="recreatie" waarde="true"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="true"/>
+      <gebiedsaanwijzing type="verkeer" waarde="true"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="true"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_011</id>
+    <label>Reactieve interventie</label>
+    <structuur>artikelstructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Provincie"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitCompact" regeling="RegelingTijdelijkdeel"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="false"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="false"/>
+      <object naam="Ambtsgebied" waarde="true"/>
+      <object naam="Divisie" waarde="false"/>
+      <object naam="Divisietekst" waarde="false"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="false"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="false"/>
+      <object naam="Instructieregel" waarde="false"/>
+      <object naam="Kaart" waarde="false"/>
+      <object naam="Kaartlaag" waarde="false"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="false"/>
+      <object naam="Omgevingswaarde" waarde="false"/>
+      <object naam="Omgevingswaarderegel" waarde="false"/>
+      <object naam="Pons" waarde="false"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="true"/>
+      <object naam="RegelVoorIedereen" waarde="true"/>
+      <object naam="SymbolisatieItem" waarde="false"/>
+      <object naam="Tekstdeel" waarde="false"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="false"/>
+      <gebiedsaanwijzing type="bodem" waarde="false"/>
+      <gebiedsaanwijzing type="bouw" waarde="false"/>
+      <gebiedsaanwijzing type="defensie" waarde="false"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="false"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="false"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="false"/>
+      <gebiedsaanwijzing type="functie" waarde="false"/>
+      <gebiedsaanwijzing type="geluid" waarde="false"/>
+      <gebiedsaanwijzing type="geur" waarde="false"/>
+      <gebiedsaanwijzing type="landschap" waarde="false"/>
+      <gebiedsaanwijzing type="leiding" waarde="false"/>
+      <gebiedsaanwijzing type="lucht" waarde="false"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="false"/>
+      <gebiedsaanwijzing type="natuur" waarde="false"/>
+      <gebiedsaanwijzing type="recreatie" waarde="false"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="false"/>
+      <gebiedsaanwijzing type="verkeer" waarde="false"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="false"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_012</id>
+    <label>Aanwijzingsbesluit N2000</label>
+    <structuur>artikelstructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Ministerie"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitKlassiek" regeling="RegelingKlassiek"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingCompact"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingMutatie"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="false"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="false"/>
+      <object naam="Ambtsgebied" waarde="false"/>
+      <object naam="Divisie" waarde="false"/>
+      <object naam="Divisietekst" waarde="false"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="true"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="false"/>
+      <object naam="Instructieregel" waarde="false"/>
+      <object naam="Kaart" waarde="true"/>
+      <object naam="Kaartlaag" waarde="true"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="false"/>
+      <object naam="Omgevingswaarde" waarde="false"/>
+      <object naam="Omgevingswaarderegel" waarde="false"/>
+      <object naam="Pons" waarde="false"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="true"/>
+      <object naam="RegelVoorIedereen" waarde="true"/>
+      <object naam="SymbolisatieItem" waarde="true"/>
+      <object naam="Tekstdeel" waarde="false"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="false"/>
+      <gebiedsaanwijzing type="bodem" waarde="false"/>
+      <gebiedsaanwijzing type="bouw" waarde="false"/>
+      <gebiedsaanwijzing type="defensie" waarde="false"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="false"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="false"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="false"/>
+      <gebiedsaanwijzing type="functie" waarde="false"/>
+      <gebiedsaanwijzing type="geluid" waarde="false"/>
+      <gebiedsaanwijzing type="geur" waarde="false"/>
+      <gebiedsaanwijzing type="landschap" waarde="false"/>
+      <gebiedsaanwijzing type="leiding" waarde="false"/>
+      <gebiedsaanwijzing type="lucht" waarde="false"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="false"/>
+      <gebiedsaanwijzing type="natuur" waarde="true"/>
+      <gebiedsaanwijzing type="recreatie" waarde="false"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="false"/>
+      <gebiedsaanwijzing type="verkeer" waarde="false"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="false"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+  <soortRegeling>
+    <id>/join/id/stop/regelingtype_013</id>
+    <label>Toegangsbeperkingsbesluit</label>
+    <structuur>artikelstructuur</structuur>
+    <eindverantwoordelijke>
+      <waardelijst id="/tooi/def/class/Ministerie"/>
+      <waardelijst id="/tooi/def/class/Provincie"/>
+    </eindverantwoordelijke>
+    <opbouw>
+      <indeling besluit="BesluitKlassiek" regeling="RegelinKlassiek"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingCompact"/>
+      <indeling besluit="BesluitCompact" regeling="RegelingMutatie"/>
+    </opbouw>
+    <objecten>
+      <object naam="Activiteit" waarde="true"/>
+      <object naam="ActiviteitLocatieaanduiding" waarde="true"/>
+      <object naam="Ambtsgebied" waarde="true"/>
+      <object naam="Divisie" waarde="false"/>
+      <object naam="Divisietekst" waarde="false"/>
+      <object naam="Gebied" waarde="true"/>
+      <object naam="Gebiedengroep" waarde="true"/>
+      <object naam="Gebiedsaanwijzing" waarde="true"/>
+      <object naam="Geometrie" waarde="true"/>
+      <object naam="Hoofdlijn" waarde="false"/>
+      <object naam="Instructieregel" waarde="false"/>
+      <object naam="Kaart" waarde="true"/>
+      <object naam="Kaartlaag" waarde="true"/>
+      <object naam="Lijn" waarde="true"/>
+      <object naam="Lijnengroep" waarde="true"/>
+      <object naam="Omgevingsnorm" waarde="false"/>
+      <object naam="Omgevingswaarde" waarde="false"/>
+      <object naam="Omgevingswaarderegel" waarde="false"/>
+      <object naam="Pons" waarde="false"/>
+      <object naam="Punt" waarde="true"/>
+      <object naam="Puntengroep" waarde="true"/>
+      <object naam="Regelingsgebied" waarde="true"/>
+      <object naam="Regeltekst" waarde="true"/>
+      <object naam="RegelVoorIedereen" waarde="true"/>
+      <object naam="SymbolisatieItem" waarde="true"/>
+      <object naam="Tekstdeel" waarde="false"/>
+    </objecten>
+    <gebiedsaanwijzingen>
+      <gebiedsaanwijzing type="beperkingengebied" waarde="false"/>
+      <gebiedsaanwijzing type="bodem" waarde="false"/>
+      <gebiedsaanwijzing type="bouw" waarde="false"/>
+      <gebiedsaanwijzing type="defensie" waarde="false"/>
+      <gebiedsaanwijzing type="energievoorziening" waarde="false"/>
+      <gebiedsaanwijzing type="erfgoed" waarde="false"/>
+      <gebiedsaanwijzing type="externe veiligheid" waarde="false"/>
+      <gebiedsaanwijzing type="functie" waarde="false"/>
+      <gebiedsaanwijzing type="geluid" waarde="false"/>
+      <gebiedsaanwijzing type="geur" waarde="false"/>
+      <gebiedsaanwijzing type="landschap" waarde="false"/>
+      <gebiedsaanwijzing type="leiding" waarde="false"/>
+      <gebiedsaanwijzing type="lucht" waarde="false"/>
+      <gebiedsaanwijzing type="mijnbouw" waarde="false"/>
+      <gebiedsaanwijzing type="natuur" waarde="true"/>
+      <gebiedsaanwijzing type="recreatie" waarde="false"/>
+      <gebiedsaanwijzing type="ruimtelijk gebruik" waarde="false"/>
+      <gebiedsaanwijzing type="verkeer" waarde="false"/>
+      <gebiedsaanwijzing type="water en watersysteem" waarde="false"/>
+    </gebiedsaanwijzingen>
+  </soortRegeling>
+</matrix>

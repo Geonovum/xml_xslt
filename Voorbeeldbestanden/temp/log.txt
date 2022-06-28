@@ -1,0 +1,55 @@
+check_op.xsl:
+
+[Controle op de structuur van het besluit]
+- Het soort regeling is Omgevingsplan.
+- Het type besluit is BesluitCompact.
+- Het type regeling is RegelingCompact.
+
+[InleidendeTekst is depricated]
+- wId van InleidendeTekst is niet gevonden.
+
+[Controle op AlgemeneToelichting en ArtikelgewijzeToelichting]
+- wId van Bijlage met Kop 'toelichting' is gm0297_1__artrecital_o_1.
+
+[Controle op Hoofdstuk/Kop]
+- wId van Hoofdstuk met onjuist Kop/Label is niet gevonden.
+- wId van Hoofdstuk met onjuist Kop/Nummer is niet gevonden.
+
+[Controle op Titel/Kop]
+- wId van Titel met onjuist Kop/Label is niet gevonden.
+- wId van Titel met onjuist Kop/Nummer is niet gevonden.
+
+[Controle op Afdeling/Kop]
+- wId van Afdeling met onjuist Kop/Label is niet gevonden.
+- wId van Afdeling met onjuist Kop/Nummer is niet gevonden.
+
+[Controle op Paragraaf/Kop]
+- wId van Paragraaf met onjuist Kop/Label is niet gevonden.
+- wId van Paragraaf met onjuist Kop/Nummer is niet gevonden.
+
+[Controle op Subparagraaf/Kop]
+- wId van Subparagraaf met onjuist Kop/Label is niet gevonden.
+- wId van Subparagraaf met onjuist Kop/Nummer is niet gevonden.
+
+[Controle op Subsubparagraaf/Kop]
+- wId van Subsubparagraaf met onjuist Kop/Label is niet gevonden.
+- wId van Subsubparagraaf met onjuist Kop/Nummer is niet gevonden.
+
+[Controle op Artikel/Kop]
+- wId van Artikel met onjuist Kop/Label is niet gevonden.
+- wId van Artikel met onjuist Kop/Nummer is niet gevonden.
+
+[Controle op Lid/Nummer]
+- wId van Lid met onjuist LidNummer is niet gevonden.
+
+[Controle op LiNummer van genummerde lijsten, niveau 1]
+- wId van Li met onjuist LiNummer is gm0297_1__cmp_III__content_o_1__list_o_1__item_o_1, gm0297_1__cmp_III__content_o_1__list_o_1__item_o_2, gm0297_1__cmp_III__content_o_1__list_o_1__item_o_3, gm0297_1__cmp_III__content_o_1__list_o_1__item_o_4, gm0297_1__cmp_III__content_o_1__list_o_1__item_o_5.
+
+[Controle op LiNummer van genummerde lijsten, niveau 2]
+- wId van Li met onjuist LiNummer is niet gevonden.
+
+[Controle op LiNummer van genummerde lijsten, niveau 3]
+- wId van Li met onjuist LiNummer is niet gevonden.
+- Begrippenlijst met wId gm0297_1__cmp_I__content_o_1__list_o_1 is niet gesorteerd.
+- Begrippenlijst met wId gm0297_1__cmp_II__content_o_1__list_o_1 is wel gesorteerd.
+- Begrippenlijst met wId gm0297_1__cmp_IV__content_o_1__list_o_1 is wel gesorteerd.

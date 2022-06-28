@@ -1,0 +1,1671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<check>
+   <RegelingOpschrift pad="AanleveringBesluit/BesluitVersie/BesluitCompact/RegelingOpschrift"
+                      hash="cbddd026feb0a4bdf2628d50ea042b01"
+                      eId="longTitle"
+                      wId="longTitle"/>
+   <Aanhef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/Aanhef"
+           hash="704a3b8844bc45fb67642d79ad9c0a59"
+           eId="formula_1"
+           wId="formula_1"/>
+   <Lichaam pad="AanleveringBesluit/BesluitVersie/BesluitCompact/Lichaam"
+            hash="9e30b9b4b8ab5f6d464edf6642a78351"
+            eId="body"
+            wId="body">
+      <WijzigArtikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/Lichaam/WijzigArtikel"
+                     hash="ef046052cf9419622c304cd80759590c"
+                     eId="art_I"
+                     wId="gm0297_1__art_I"/>
+      <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/Lichaam/Artikel"
+               hash="f0b802f188fbac6ae1094dc59e05a3d9"
+               eId="art_II"
+               wId="gm0297_1__art_II"/>
+      <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/Lichaam/Artikel"
+               hash="3a268a125b2172f6e60d0a5bd8d0011e"
+               eId="art_III"
+               wId="gm0297_1__art_III">
+         <ExtIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/Lichaam/Artikel/Inhoud/Al/ExtIoRef"
+                   hash="a855717cdb912e7f98b586d068c2ab6f"
+                   eId="art_III__ref_o_1"
+                   wId="gm0297_1__art_III__ref_o_1"
+                   ref="/join/id/regdata/gm0297/2021/Ponsgebied/nld@2021-01-01;1"/>
+      </Artikel>
+   </Lichaam>
+   <Sluiting pad="AanleveringBesluit/BesluitVersie/BesluitCompact/Sluiting"
+             hash="1e9c8b1370384bb6703f7a6722896fd5"
+             eId="formula_2"
+             wId="formula_2"/>
+   <WijzigBijlage pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage"
+                  hash="2233c1b675669d07fc551c55837f24fa"
+                  eId="cmp_A"
+                  wId="gm0297_1__cmp_A">
+      <RegelingOpschrift pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/RegelingOpschrift"
+                         hash="6d4e329ddd103718db3b955ed32a4ba5"
+                         eId="longTitle"
+                         wId="longTitle"/>
+      <Lichaam pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam"
+               hash="abc49652958168ed51471db157693d4d"
+               eId="body"
+               wId="body">
+         <Hoofdstuk pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk"
+                    hash="3347482ae369461dde555bf800a0f6f1"
+                    eId="chp_1"
+                    wId="gm0297_1__chp_1">
+            <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Artikel"
+                     hash="60a86ca6a41d4b862dca3f312243999c"
+                     eId="chp_1__art_1.4"
+                     wId="gm0297_1__chp_1__art_1.4">
+               <Regeltekst id="nl.imow-gm0297.regeltekst.2019000116"
+                           wId="gm0297_1__chp_1__art_1.4">
+                  <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000019">
+                     <artikelOfLid>nl.imow-gm0297.regeltekst.2019000116</artikelOfLid>
+                     <locatieaanduiding>
+                        <Ambtsgebied id="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                     </locatieaanduiding>
+                     <activiteitaanduiding>
+                        <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                           <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                        </Activiteit>
+                        <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000015">
+                           <locatieaanduiding>
+                              <Ambtsgebied id="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                           </locatieaanduiding>
+                        </ActiviteitLocatieaanduiding>
+                     </activiteitaanduiding>
+                  </RegelVoorIedereen>
+               </Regeltekst>
+            </Artikel>
+         </Hoofdstuk>
+         <Hoofdstuk pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk"
+                    hash="e608ca6c6cc1e71563e6ede28dfbc3b0"
+                    eId="chp_2"
+                    wId="gm0297_1__chp_2">
+            <Afdeling pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling"
+                      hash="433ab83d2c61d1376edcf0cce9f1e745"
+                      eId="chp_2__subchp_2.2"
+                      wId="gm0297_1__chp_2__subchp_2.2">
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="a10ea108c013281f9878c58ff69daa43"
+                        eId="chp_2__subchp_2.2__art_2.3"
+                        wId="gm0297_1__chp_2__subchp_2.2__art_2.3">
+                  <Regeltekst id="nl.imow-gm0297.regeltekst.2019000001"
+                              wId="gm0297_1__chp_2__subchp_2.2__art_2.3">
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000001">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000001</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                    <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <gebiedsaanwijzing>
+                           <Gebiedsaanwijzing id="nl.imow-gm0297.gebiedsaanwijzing.2019000001">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                          <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </Gebiedsaanwijzing>
+                        </gebiedsaanwijzing>
+                     </RegelVoorIedereen>
+                  </Regeltekst>
+                  <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Al/IntIoRef"
+                            hash="5f1ea3bd76eedc6af9ba4dadf7600900"
+                            eId="chp_2__subchp_2.2__art_2.3__ref_o_1"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.3__ref_o_1"
+                            ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"/>
+               </Artikel>
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="065642efc094e3235cf17027f4e6de0c"
+                        eId="chp_2__subchp_2.2__art_2.4"
+                        wId="gm0297_1__chp_2__subchp_2.2__art_2.4">
+                  <Regeltekst id="nl.imow-gm0297.regeltekst.2019000002"
+                              wId="gm0297_1__chp_2__subchp_2.2__art_2.4">
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000002">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000002</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                    <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000241">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000001">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                          <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                     </RegelVoorIedereen>
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000003">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000002</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                    <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000530">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000002">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                          <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                     </RegelVoorIedereen>
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000004">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000002</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                    <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000243">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000003">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                          <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                     </RegelVoorIedereen>
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000005">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000002</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                    <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000244">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000004">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                          <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                     </RegelVoorIedereen>
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000006">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000002</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                    <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000245">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000005">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                          <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                     </RegelVoorIedereen>
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000007">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000002</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                    <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000246">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000006">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.zoneA">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000002">
+                                          <geometrie>B3AF6AF7-5EFA-4A87-9C66-BFB046DD89AC</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                     </RegelVoorIedereen>
+                  </Regeltekst>
+                  <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Al/IntIoRef"
+                            hash="5f1ea3bd76eedc6af9ba4dadf7600900"
+                            eId="chp_2__subchp_2.2__art_2.4__ref_o_1"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.4__ref_o_1"
+                            ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"/>
+                  <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst"
+                         hash="d3e9bf0341499d5e27381ce007c99a74"
+                         eId="chp_2__subchp_2.2__art_2.4__list_o_1"
+                         wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1"
+                         type="expliciet">
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="7fb5f7fe599647b1b57ff19e26c33bad"
+                         eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_a"
+                         wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_a"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="de3c5595a3a9498ecf403cd5f5d3e958"
+                         eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_b"
+                         wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_b"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="1ffd5cf8a5732a98231cb262dfddd74f"
+                         eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_c"
+                         wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_c"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="569ec9409834770908aacd1eb64c5baa"
+                         eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_d"
+                         wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_d"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="4ad5efcf304f625c53ab0569bb986701"
+                         eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_e"
+                         wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_e"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="b6ffc6ef1a408a9853e2768b592f68e7"
+                         eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_f"
+                         wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_f">
+                        <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li/Al/IntIoRef"
+                                  hash="ba2b1d585994bf865695b5f6c22ea51a"
+                                  eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_f__ref_o_1"
+                                  wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_f__ref_o_1"
+                                  ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1"/>
+                        <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li/Al/IntIoRef"
+                                  hash="5f1ea3bd76eedc6af9ba4dadf7600900"
+                                  eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_f__ref_o_2"
+                                  wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_f__ref_o_2"
+                                  ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"/>
+                     </Li>
+                  </Lijst>
+               </Artikel>
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="3526c2cb8bf50e33297327a56a0ac3f4"
+                        eId="chp_2__subchp_2.2__art_2.5"
+                        wId="gm0297_1__chp_2__subchp_2.2__art_2.5">
+                  <Regeltekst id="nl.imow-gm0297.regeltekst.2019000003"
+                              wId="gm0297_1__chp_2__subchp_2.2__art_2.5">
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000008">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000003</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                    <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000730">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000007">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                          <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                     </RegelVoorIedereen>
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000009">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000003</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                    <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000740">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000008">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                          <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                     </RegelVoorIedereen>
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000010">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000003</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                    <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000750">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000009">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                          <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                     </RegelVoorIedereen>
+                  </Regeltekst>
+                  <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Al/IntIoRef"
+                            hash="5f1ea3bd76eedc6af9ba4dadf7600900"
+                            eId="chp_2__subchp_2.2__art_2.5__ref_o_1"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.5__ref_o_1"
+                            ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"/>
+                  <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst"
+                         hash="293dc47189992dd1d294c9804680264e"
+                         eId="chp_2__subchp_2.2__art_2.5__list_o_1"
+                         wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1"
+                         type="expliciet">
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="46ab47a9172c3734c03aa646a3e536f8"
+                         eId="chp_2__subchp_2.2__art_2.5__list_o_1__item_a"
+                         wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_a"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="b6b342cee4df689205a027a2e30ad5bc"
+                         eId="chp_2__subchp_2.2__art_2.5__list_o_1__item_b"
+                         wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_b"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="cf51735b3ea2c6ef84117ba8b261dfd4"
+                         eId="chp_2__subchp_2.2__art_2.5__list_o_1__item_c"
+                         wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_c"/>
+                  </Lijst>
+               </Artikel>
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="570a2e81fb8113dbdc701786a71dcd03"
+                        eId="chp_2__subchp_2.2__art_2.6"
+                        wId="gm0297_1__chp_2__subchp_2.2__art_2.6">
+                  <Lid pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid"
+                       hash="b70d889d9b280f116684eab2d8bbaa4b"
+                       eId="chp_2__subchp_2.2__art_2.6__para_1"
+                       wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1">
+                     <Regeltekst id="nl.imow-gm0297.regeltekst.2019000004"
+                                 wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1">
+                        <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000011">
+                           <artikelOfLid>nl.imow-gm0297.regeltekst.2019000004</artikelOfLid>
+                           <locatieaanduiding>
+                              <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.zoneB">
+                                 <groepselement>
+                                    <Gebied id="nl.imow-gm0297.gebied.2019000003">
+                                       <geometrie>0868A0B1-DA79-4C33-8305-1BDE0126FA9A</geometrie>
+                                    </Gebied>
+                                 </groepselement>
+                              </Gebiedengroep>
+                           </locatieaanduiding>
+                           <activiteitaanduiding>
+                              <Activiteit id="nl.imow-gm0297.activiteit.2019000590">
+                                 <bovenliggendeActiviteit>
+                                    <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                       <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                    </Activiteit>
+                                 </bovenliggendeActiviteit>
+                              </Activiteit>
+                              <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000010">
+                                 <locatieaanduiding>
+                                    <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.zoneB">
+                                       <groepselement>
+                                          <Gebied id="nl.imow-gm0297.gebied.2019000003">
+                                             <geometrie>0868A0B1-DA79-4C33-8305-1BDE0126FA9A</geometrie>
+                                          </Gebied>
+                                       </groepselement>
+                                    </Gebiedengroep>
+                                 </locatieaanduiding>
+                              </ActiviteitLocatieaanduiding>
+                           </activiteitaanduiding>
+                        </RegelVoorIedereen>
+                     </Regeltekst>
+                     <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Al/IntIoRef"
+                               hash="5f1ea3bd76eedc6af9ba4dadf7600900"
+                               eId="chp_2__subchp_2.2__art_2.6__para_1__ref_o_1"
+                               wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1__ref_o_1"
+                               ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"/>
+                     <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Al/IntIoRef"
+                               hash="e59cd23f8204eed3c14eaa090ce01a36"
+                               eId="chp_2__subchp_2.2__art_2.6__para_1__ref_o_2"
+                               wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1__ref_o_2"
+                               ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1"/>
+                  </Lid>
+                  <Lid pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid"
+                       hash="e3d0c631b00ce639f3cc2291be302d73"
+                       eId="chp_2__subchp_2.2__art_2.6__para_2"
+                       wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2">
+                     <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst"
+                            hash="840f983d4b69f0b9a59350338b752eba"
+                            eId="chp_2__subchp_2.2__art_2.6__para_2__list_o_1"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2__list_o_1"
+                            type="expliciet">
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="07760eb4efa23c091876fb7e7306a1a1"
+                            eId="chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_a"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_a"/>
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="fab67771a225987e5b4860a21909272d"
+                            eId="chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_b"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_b"/>
+                     </Lijst>
+                  </Lid>
+               </Artikel>
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="d5cc7076168b7ee86ce2ced586968574"
+                        eId="chp_2__subchp_2.2__art_2.7"
+                        wId="gm0297_1__chp_2__subchp_2.2__art_2.7">
+                  <Lid pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid"
+                       hash="bd39f11c6e76fd1eca40a98948fb74ff"
+                       eId="chp_2__subchp_2.2__art_2.7__para_1"
+                       wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_1">
+                     <Regeltekst id="nl.imow-gm0297.regeltekst.2019000007"
+                                 wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_1">
+                        <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000012">
+                           <artikelOfLid>nl.imow-gm0297.regeltekst.2019000007</artikelOfLid>
+                           <locatieaanduiding>
+                              <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                                 <groepselement>
+                                    <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                       <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                    </Gebied>
+                                 </groepselement>
+                              </Gebiedengroep>
+                           </locatieaanduiding>
+                           <activiteitaanduiding>
+                              <Activiteit id="nl.imow-gm0297.activiteit.2019000540">
+                                 <gerelateerdeActiviteit>
+                                    <Activiteit id="nl.imow-gm0297.activiteit.2019000760">
+                                       <bovenliggendeActiviteit>
+                                          <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                             <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                          </Activiteit>
+                                       </bovenliggendeActiviteit>
+                                    </Activiteit>
+                                 </gerelateerdeActiviteit>
+                                 <bovenliggendeActiviteit>
+                                    <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                       <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                    </Activiteit>
+                                 </bovenliggendeActiviteit>
+                              </Activiteit>
+                              <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000011">
+                                 <locatieaanduiding>
+                                    <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                                       <groepselement>
+                                          <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                             <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                          </Gebied>
+                                       </groepselement>
+                                    </Gebiedengroep>
+                                 </locatieaanduiding>
+                              </ActiviteitLocatieaanduiding>
+                           </activiteitaanduiding>
+                           <activiteitaanduiding>
+                              <Activiteit id="nl.imow-gm0297.activiteit.2019000760">
+                                 <bovenliggendeActiviteit>
+                                    <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                       <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                    </Activiteit>
+                                 </bovenliggendeActiviteit>
+                              </Activiteit>
+                              <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000013">
+                                 <locatieaanduiding>
+                                    <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+                                       <groepselement>
+                                          <Gebied id="nl.imow-gm0297.gebied.2019000001">
+                                             <geometrie>50EA019E-3C96-4631-A76C-35BCF4D7AB6D</geometrie>
+                                          </Gebied>
+                                       </groepselement>
+                                    </Gebiedengroep>
+                                 </locatieaanduiding>
+                              </ActiviteitLocatieaanduiding>
+                           </activiteitaanduiding>
+                        </RegelVoorIedereen>
+                     </Regeltekst>
+                     <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Al/IntIoRef"
+                               hash="5f1ea3bd76eedc6af9ba4dadf7600900"
+                               eId="chp_2__subchp_2.2__art_2.7__para_1__ref_o_1"
+                               wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_1__ref_o_1"
+                               ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"/>
+                  </Lid>
+                  <Lid pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid"
+                       hash="146c39621b9424c06b0a2ba50b72c65e"
+                       eId="chp_2__subchp_2.2__art_2.7__para_2"
+                       wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2">
+                     <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst"
+                            hash="24706083158fb8f050d8173c2fa23b34"
+                            eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1"
+                            type="expliciet">
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="90aef50c3a2977abdbee52bfc6eb533f"
+                            eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_a"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_a"/>
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="51f2d49c3ec2821ecb4627f857273c8c"
+                            eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_b"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_b"/>
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="16b8e7580579f0a6fc5d33557e96c37c"
+                            eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_c"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_c"/>
+                     </Lijst>
+                  </Lid>
+                  <Lid pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid"
+                       hash="88887b0038dd01a571acbcfe4e60521c"
+                       eId="chp_2__subchp_2.2__art_2.7__para_3"
+                       wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3">
+                     <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst"
+                            hash="16324731ef3ed7812d31df3f22d320f6"
+                            eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1"
+                            type="expliciet">
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="19b0bc777a758c41d4145d7c70f1078b"
+                            eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_a"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_a"/>
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="a9355ab518fb8858ece4b5bfc0792a51"
+                            eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_b"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_b"/>
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="e2c59c88907deca6ce7d98a82b438116"
+                            eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_c"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_c"/>
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="cd065ab989d9a7a62682f28089c4e859"
+                            eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_d"
+                            wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_d"/>
+                     </Lijst>
+                  </Lid>
+               </Artikel>
+            </Afdeling>
+            <Afdeling pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling"
+                      hash="d35d63f1b69f1872b41632dd78e215a8"
+                      eId="chp_2__subchp_2.3"
+                      wId="gm0297_1__chp_2__subchp_2.3">
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="5cf7ec5700e684ec87452f88c2066b56"
+                        eId="chp_2__subchp_2.3__art_2.9"
+                        wId="gm0297_1__chp_2__subchp_2.3__art_2.9">
+                  <Regeltekst id="nl.imow-gm0297.regeltekst.2019000012"
+                              wId="gm0297_1__chp_2__subchp_2.3__art_2.9">
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000013">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000012</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.centrumgebied">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000004">
+                                    <geometrie>D28AF779-7EDD-4A88-8B11-809798F53636</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <gebiedsaanwijzing>
+                           <Gebiedsaanwijzing id="nl.imow-gm0297.gebiedsaanwijzing.2019000002">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.centrumgebied">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000004">
+                                          <geometrie>D28AF779-7EDD-4A88-8B11-809798F53636</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </Gebiedsaanwijzing>
+                        </gebiedsaanwijzing>
+                     </RegelVoorIedereen>
+                     <Regeltekst id="nl.imow-gm0297.regeltekst.2019000008"
+                                 wId="gm0297_1__chp_2__subchp_2.3__art_2.10">
+                        <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000014">
+                           <artikelOfLid>nl.imow-gm0297.regeltekst.2019000008</artikelOfLid>
+                           <locatieaanduiding>
+                              <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.speelhal">
+                                 <groepselement>
+                                    <Gebied id="nl.imow-gm0297.gebied.2019000007">
+                                       <geometrie>33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A</geometrie>
+                                    </Gebied>
+                                 </groepselement>
+                              </Gebiedengroep>
+                              <Gebied id="nl.imow-gm0297.gebied.2019000008">
+                                 <geometrie>772B4B37-69F8-4671-B92E-3BCED242409D</geometrie>
+                              </Gebied>
+                              <Gebied id="nl.imow-gm0297.gebied.2019000009">
+                                 <geometrie>D24C3416-4790-461C-A4D0-A82BA60CA7D6</geometrie>
+                              </Gebied>
+                              <Gebied id="nl.imow-gm0297.gebied.2019000010">
+                                 <geometrie>954BA8CC-6E90-4698-BEEC-005A65C63E98</geometrie>
+                              </Gebied>
+                              <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.zuilichem">
+                                 <groepselement>
+                                    <Gebied id="nl.imow-gm0297.gebied.2019000011">
+                                       <geometrie>b69221bd-8121-4368-9058-ad4ff7618dcd</geometrie>
+                                    </Gebied>
+                                 </groepselement>
+                              </Gebiedengroep>
+                           </locatieaanduiding>
+                           <activiteitaanduiding>
+                              <Activiteit id="nl.imow-gm0297.activiteit.2019000660">
+                                 <bovenliggendeActiviteit>
+                                    <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                       <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                    </Activiteit>
+                                 </bovenliggendeActiviteit>
+                              </Activiteit>
+                              <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000012">
+                                 <locatieaanduiding>
+                                    <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.speelhal">
+                                       <groepselement>
+                                          <Gebied id="nl.imow-gm0297.gebied.2019000007">
+                                             <geometrie>33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A</geometrie>
+                                          </Gebied>
+                                       </groepselement>
+                                    </Gebiedengroep>
+                                 </locatieaanduiding>
+                              </ActiviteitLocatieaanduiding>
+                           </activiteitaanduiding>
+                           <activiteitaanduiding>
+                              <Activiteit id="nl.imow-gm0297.activiteit.2019000680">
+                                 <bovenliggendeActiviteit>
+                                    <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                       <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                    </Activiteit>
+                                 </bovenliggendeActiviteit>
+                              </Activiteit>
+                              <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000014">
+                                 <locatieaanduiding>
+                                    <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.centrumgebied">
+                                       <groepselement>
+                                          <Gebied id="nl.imow-gm0297.gebied.2019000004">
+                                             <geometrie>D28AF779-7EDD-4A88-8B11-809798F53636</geometrie>
+                                          </Gebied>
+                                       </groepselement>
+                                    </Gebiedengroep>
+                                 </locatieaanduiding>
+                              </ActiviteitLocatieaanduiding>
+                           </activiteitaanduiding>
+                        </RegelVoorIedereen>
+                     </Regeltekst>
+                  </Regeltekst>
+                  <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Al/IntIoRef"
+                            hash="120271cae131fbd340dd118ae8f56117"
+                            eId="chp_2__subchp_2.3__art_2.9__ref_o_1"
+                            wId="gm0297_1__chp_2__subchp_2.3__art_2.9__ref_o_1"
+                            ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"/>
+               </Artikel>
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="7139043be0725cb05735d4586f6b5b16"
+                        eId="chp_2__subchp_2.3__art_2.10"
+                        wId="gm0297_1__chp_2__subchp_2.3__art_2.10">
+                  <Regeltekst id="nl.imow-gm0297.regeltekst.2019000008"
+                              wId="gm0297_1__chp_2__subchp_2.3__art_2.10">
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000014">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000008</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.speelhal">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000007">
+                                    <geometrie>33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                           <Gebied id="nl.imow-gm0297.gebied.2019000008">
+                              <geometrie>772B4B37-69F8-4671-B92E-3BCED242409D</geometrie>
+                           </Gebied>
+                           <Gebied id="nl.imow-gm0297.gebied.2019000009">
+                              <geometrie>D24C3416-4790-461C-A4D0-A82BA60CA7D6</geometrie>
+                           </Gebied>
+                           <Gebied id="nl.imow-gm0297.gebied.2019000010">
+                              <geometrie>954BA8CC-6E90-4698-BEEC-005A65C63E98</geometrie>
+                           </Gebied>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.zuilichem">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000011">
+                                    <geometrie>b69221bd-8121-4368-9058-ad4ff7618dcd</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000660">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000012">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.speelhal">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000007">
+                                          <geometrie>33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000680">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.2019000014">
+                              <locatieaanduiding>
+                                 <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.centrumgebied">
+                                    <groepselement>
+                                       <Gebied id="nl.imow-gm0297.gebied.2019000004">
+                                          <geometrie>D28AF779-7EDD-4A88-8B11-809798F53636</geometrie>
+                                       </Gebied>
+                                    </groepselement>
+                                 </Gebiedengroep>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                     </RegelVoorIedereen>
+                  </Regeltekst>
+                  <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Al/IntIoRef"
+                            hash="120271cae131fbd340dd118ae8f56117"
+                            eId="chp_2__subchp_2.3__art_2.10__ref_o_1"
+                            wId="gm0297_1__chp_2__subchp_2.3__art_2.10__ref_o_1"
+                            ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"/>
+                  <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst"
+                         hash="b6e4577385412d5dac13c7514ba6fdfa"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1"
+                         type="expliciet">
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="067b5c868fa0b869fe8d3700a3353bf3"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_a"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_a"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="f51545d25b2cd9b63b1f912d90759b62"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_b"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_b"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="95c0f1b97adef96ba9491c217d28dfa3"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_c"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_c"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="bdf94a8806c107a213c8bd1a211ddcbf"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_d"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_d"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="f9039a25d2e494c34cf3af220997cf4a"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_e"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_e"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="8d56fa0f4640b1d73d32ec7bce794d16"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_f"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_f"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="92b5e5dc0de264a4aa10786af0db2fc8"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_g"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_g"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="4c4010a5fca855899fccff031ad1c80b"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_h"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_h"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="986077a4ce8ee656263e651b82541285"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_i"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_i">
+                        <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li/Al/IntIoRef"
+                                  hash="7bfea7246b7820354ece592a6e3c5e38"
+                                  eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_i__ref_o_1"
+                                  wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_i__ref_o_1"
+                                  ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1"/>
+                     </Li>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="a3f58d7f1deb94246ebfeded035fc14e"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_j"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_j"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="75b136d378027477e9139afb0c4130bb"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_k"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_k"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="251d0f3e7119fbb085f118b9f3a5cac0"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_l"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_l"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="a2a19617a5193fc1e2a38703d124d7cb"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_m"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_m"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="519f253f4b6a01680215f9c62016eea7"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_n"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_n"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="3a1a1ff28b870e692624ae9492d76cfe"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_o"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_o"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="f8e208c72c504851297f62a2186870c8"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_p"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_p"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="8289157c4e6a76f64ff2a9c2d464941e"
+                         eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_q"
+                         wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_q"/>
+                  </Lijst>
+               </Artikel>
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="bc9a401913de7788e30bc2da419d6a33"
+                        eId="chp_2__subchp_2.3__art_2.11"
+                        wId="gm0297_1__chp_2__subchp_2.3__art_2.11">
+                  <Lid pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid"
+                       hash="52f7ce1c8a70308192a8ba15997ef5b6"
+                       eId="chp_2__subchp_2.3__art_2.11__para_1"
+                       wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_1">
+                     <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Al/IntIoRef"
+                               hash="120271cae131fbd340dd118ae8f56117"
+                               eId="chp_2__subchp_2.3__art_2.11__para_1__ref_o_1"
+                               wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_1__ref_o_1"
+                               ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"/>
+                  </Lid>
+                  <Lid pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid"
+                       hash="dab122f707e8ce93249e07bc4c566e51"
+                       eId="chp_2__subchp_2.3__art_2.11__para_2"
+                       wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_2">
+                     <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst"
+                            hash="dbc193160a229304e3df4ef371217557"
+                            eId="chp_2__subchp_2.3__art_2.11__para_2__list_o_1"
+                            wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_2__list_o_1"
+                            type="expliciet">
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="07760eb4efa23c091876fb7e7306a1a1"
+                            eId="chp_2__subchp_2.3__art_2.11__para_2__list_o_1__item_o_1"
+                            wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_2__list_o_1__item_o_1"/>
+                     </Lijst>
+                  </Lid>
+               </Artikel>
+            </Afdeling>
+            <Afdeling pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling"
+                      hash="5a5b3303dec85400714a9418962d7b5f"
+                      eId="chp_2__subchp_2.4"
+                      wId="gm0297_1__chp_2__subchp_2.4">
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="400d68eb63356dcb3f556ac97880ed40"
+                        eId="chp_2__subchp_2.4__art_2.12"
+                        wId="gm0297_1__chp_2__subchp_2.4__art_2.12">
+                  <Regeltekst id="nl.imow-gm0297.regeltekst.2019000009"
+                              wId="gm0297_1__chp_2__subchp_2.4__art_2.12">
+                     <Omgevingswaarderegel id="nl.imow-gm0297.juridischeregel.2019000015">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000009</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.zuilichem">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000011">
+                                    <geometrie>b69221bd-8121-4368-9058-ad4ff7618dcd</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <omgevingswaardeaanduiding>
+                           <Omgevingswaarde id="nl.imow-gm0297.omgevingswaarde.2019000001"/>
+                        </omgevingswaardeaanduiding>
+                     </Omgevingswaarderegel>
+                  </Regeltekst>
+                  <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Al/IntIoRef"
+                            hash="f47bc2acfdb0959ead399f1beec1787a"
+                            eId="chp_2__subchp_2.4__art_2.12__ref_o_1"
+                            wId="gm0297_1__chp_2__subchp_2.4__art_2.12__ref_o_1"
+                            ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1"/>
+                  <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst"
+                         hash="957ef55934952a66d9fb0e270aa2493f"
+                         eId="chp_2__subchp_2.4__art_2.12__list_o_1"
+                         wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1"
+                         type="expliciet">
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="b628224e335cc9f2e75de8fcc6db91dc"
+                         eId="chp_2__subchp_2.4__art_2.12__list_o_1__item_a"
+                         wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1__item_a"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="f8ae1d46d448251d3e201fabb7041daf"
+                         eId="chp_2__subchp_2.4__art_2.12__list_o_1__item_b"
+                         wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1__item_b"/>
+                  </Lijst>
+               </Artikel>
+            </Afdeling>
+            <Afdeling pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling"
+                      hash="235292e72df5508f2aa0b3f6fba5ffa8"
+                      eId="chp_2__subchp_2.5"
+                      wId="gm0297_1__chp_2__subchp_2.5">
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="c18f3d338e953adc4f512d44d5dbf236"
+                        eId="chp_2__subchp_2.5__art_2.13"
+                        wId="gm0297_1__chp_2__subchp_2.5__art_2.13">
+                  <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst"
+                         hash="91bc39fe41864b755861ce6687ae7672"
+                         eId="chp_2__subchp_2.5__art_2.13__list_o_1"
+                         wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1"
+                         type="expliciet">
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="3fae9e8d50a97f881bfbfbfeb43fea0e"
+                         eId="chp_2__subchp_2.5__art_2.13__list_o_1__item_a"
+                         wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1__item_a"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="15c815e35ab3483a776f967f2ad64b0f"
+                         eId="chp_2__subchp_2.5__art_2.13__list_o_1__item_b"
+                         wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1__item_b"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="eac7358c7ef60bd049a3723dcdbfb5bb"
+                         eId="chp_2__subchp_2.5__art_2.13__list_o_1__item_c"
+                         wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1__item_c"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="57c5d580a2894d1004ec19c46e4993fe"
+                         eId="chp_2__subchp_2.5__art_2.13__list_o_1__item_d"
+                         wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1__item_d"/>
+                  </Lijst>
+               </Artikel>
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="61f3387eef29a6589da9c236ca8f24cb"
+                        eId="chp_2__subchp_2.5__art_2.14"
+                        wId="gm0297_1__chp_2__subchp_2.5__art_2.14">
+                  <Regeltekst id="nl.imow-gm0297.regeltekst.2019000010"
+                              wId="gm0297_1__chp_2__subchp_2.5__art_2.14">
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000016">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000010</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.speelhal">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000007">
+                                    <geometrie>33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                           <Gebied id="nl.imow-gm0297.gebied.2019000008">
+                              <geometrie>772B4B37-69F8-4671-B92E-3BCED242409D</geometrie>
+                           </Gebied>
+                           <Gebied id="nl.imow-gm0297.gebied.2019000009">
+                              <geometrie>D24C3416-4790-461C-A4D0-A82BA60CA7D6</geometrie>
+                           </Gebied>
+                           <Gebied id="nl.imow-gm0297.gebied.2019000010">
+                              <geometrie>954BA8CC-6E90-4698-BEEC-005A65C63E98</geometrie>
+                           </Gebied>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.zuilichem">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000011">
+                                    <geometrie>b69221bd-8121-4368-9058-ad4ff7618dcd</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                           <Gebied id="nl.imow-gm0297.gebied.2019000013">
+                              <geometrie>EFAAD5E9-B181-4C22-9C3B-B290F4586D82</geometrie>
+                           </Gebied>
+                        </locatieaanduiding>
+                        <omgevingsnormaanduiding>
+                           <Omgevingsnorm id="nl.imow-gm0297.omgevingsnorm.2019000002"/>
+                        </omgevingsnormaanduiding>
+                     </RegelVoorIedereen>
+                  </Regeltekst>
+                  <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst"
+                         hash="f5afa764b3d2b86825b1ee98bcd0a8de"
+                         eId="chp_2__subchp_2.5__art_2.14__list_o_1"
+                         wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1"
+                         type="expliciet">
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="e3a8b9538541948b9f8f2269a96e18c0"
+                         eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_a"
+                         wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_a"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="b3f4c80f4da5963abdec788685a8ef51"
+                         eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_b"
+                         wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_b"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="962590f7d25f05ab5fba9666f78ee0cf"
+                         eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_c"
+                         wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_c"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="ad1b032272a58846f71541b2a71a9a16"
+                         eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_d"
+                         wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_d">
+                        <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li/Al/IntIoRef"
+                                  hash="48032921a0797f3369baa25636a046c7"
+                                  eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_d__ref_o_1"
+                                  wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_d__ref_o_1"
+                                  ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1"/>
+                     </Li>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="d4b78ba10cf1128f25f34584fedcfeb1"
+                         eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_e"
+                         wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_e"/>
+                  </Lijst>
+               </Artikel>
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="72352d2af135e731c2b0d9d6e0e035d2"
+                        eId="chp_2__subchp_2.5__art_2.15"
+                        wId="gm0297_1__chp_2__subchp_2.5__art_2.15">
+                  <Regeltekst id="nl.imow-gm0297.regeltekst.2019000015"
+                              wId="gm0297_1__chp_2__subchp_2.5__art_2.15">
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000017">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000015</artikelOfLid>
+                        <locatieaanduiding>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.zoneA">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000002">
+                                    <geometrie>B3AF6AF7-5EFA-4A87-9C66-BFB046DD89AC</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.zoneB">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000003">
+                                    <geometrie>0868A0B1-DA79-4C33-8305-1BDE0126FA9A</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                           <Gebiedengroep id="nl.imow-gm0297.gebiedengroep.centrumgebied">
+                              <groepselement>
+                                 <Gebied id="nl.imow-gm0297.gebied.2019000004">
+                                    <geometrie>D28AF779-7EDD-4A88-8B11-809798F53636</geometrie>
+                                 </Gebied>
+                              </groepselement>
+                           </Gebiedengroep>
+                        </locatieaanduiding>
+                        <kaartaanduiding>
+                           <Kaart id="nl.imow-gm0297.kaart.2019000001"/>
+                        </kaartaanduiding>
+                        <omgevingsnormaanduiding>
+                           <Omgevingsnorm id="nl.imow-gm0297.omgevingsnorm.2019000003"/>
+                        </omgevingsnormaanduiding>
+                     </RegelVoorIedereen>
+                  </Regeltekst>
+                  <IntIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Al/IntIoRef"
+                            hash="3cb56346d5636382a8164833e2e66d59"
+                            eId="chp_2__subchp_2.5__art_2.15__ref_o_1"
+                            wId="gm0297_1__chp_2__subchp_2.5__art_2.15__ref_o_1"
+                            ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1"/>
+               </Artikel>
+            </Afdeling>
+            <Afdeling pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling"
+                      hash="d523a9d8838bf4ad73ea95aa1b856398"
+                      eId="chp_2__subchp_2.6"
+                      wId="gm0297_1__chp_2__subchp_2.6">
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="91c78a4152ac34eeb448944d8e6e1c8c"
+                        eId="chp_2__subchp_2.6__art_2.16"
+                        wId="gm0297_1__chp_2__subchp_2.6__art_2.16"/>
+            </Afdeling>
+         </Hoofdstuk>
+         <Hoofdstuk pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk"
+                    hash="642c3bc2c7562980c1be21285ab3dad1"
+                    eId="chp_5"
+                    wId="gm0297_1__chp_5">
+            <Afdeling pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling"
+                      hash="76f51d870d57cac690c447a8dc042cd1"
+                      eId="chp_5__subchp_5.1"
+                      wId="gm0297_1__chp_5__subchp_5.1">
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="2c9e9f927d34976507926babf06e332c"
+                        eId="chp_5__subchp_5.1__art_5.1"
+                        wId="gm0297_1__chp_5__subchp_5.1__art_5.1">
+                  <Regeltekst id="nl.imow-gm0297.regeltekst.2019000113"
+                              wId="gm0297_1__chp_5__subchp_5.1__art_5.1">
+                     <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000113">
+                        <artikelOfLid>nl.imow-gm0297.regeltekst.2019000113</artikelOfLid>
+                        <locatieaanduiding>
+                           <Ambtsgebied id="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                        </locatieaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000800">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.20190000111">
+                              <locatieaanduiding>
+                                 <Ambtsgebied id="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000800">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.20190000112">
+                              <locatieaanduiding>
+                                 <Ambtsgebied id="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                        <activiteitaanduiding>
+                           <Activiteit id="nl.imow-gm0297.activiteit.2019000800">
+                              <bovenliggendeActiviteit>
+                                 <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                    <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                 </Activiteit>
+                              </bovenliggendeActiviteit>
+                           </Activiteit>
+                           <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.20190000113">
+                              <locatieaanduiding>
+                                 <Ambtsgebied id="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                              </locatieaanduiding>
+                           </ActiviteitLocatieaanduiding>
+                        </activiteitaanduiding>
+                     </RegelVoorIedereen>
+                  </Regeltekst>
+                  <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst"
+                         hash="f6a0c69f30bedc2aadf8e6aaaa39f2fa"
+                         eId="chp_5__subchp_5.1__art_5.1__list_o_1"
+                         wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1"
+                         type="expliciet">
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="d005f76e13800c591671a7db6b9254f7"
+                         eId="chp_5__subchp_5.1__art_5.1__list_o_1__item_a"
+                         wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1__item_a"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="b64f825cdaf73fe16124b469faaa534d"
+                         eId="chp_5__subchp_5.1__art_5.1__list_o_1__item_b"
+                         wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1__item_b"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="6a65c6a7f3083a81218002b34c134a0f"
+                         eId="chp_5__subchp_5.1__art_5.1__list_o_1__item_c"
+                         wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1__item_c"/>
+                  </Lijst>
+               </Artikel>
+            </Afdeling>
+         </Hoofdstuk>
+         <Hoofdstuk pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk"
+                    hash="d074ee687aea827f99d858030c7b410f"
+                    eId="chp_6"
+                    wId="gm0297_1__chp_6">
+            <Afdeling pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling"
+                      hash="93f47f6f852d86b8f633756fd167606e"
+                      eId="chp_6__subchp_6.1"
+                      wId="gm0297_1__chp_6__subchp_6.1">
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="fa7dc3bf777bd597911874bad65b514c"
+                        eId="chp_6__subchp_6.1__art_6.1"
+                        wId="gm0297_1__chp_6__subchp_6.1__art_6.1">
+                  <Lid pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid"
+                       hash="4b0f96a67158547cf2bbbb2f5c12e333"
+                       eId="chp_6__subchp_6.1__art_6.1__para_1"
+                       wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_1">
+                     <Regeltekst id="nl.imow-gm0297.regeltekst.2019000114"
+                                 wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_1">
+                        <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000114">
+                           <artikelOfLid>nl.imow-gm0297.regeltekst.2019000114</artikelOfLid>
+                           <locatieaanduiding>
+                              <Ambtsgebied id="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                           </locatieaanduiding>
+                           <activiteitaanduiding>
+                              <Activiteit id="nl.imow-gm0297.activiteit.2019000810">
+                                 <bovenliggendeActiviteit>
+                                    <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                       <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                    </Activiteit>
+                                 </bovenliggendeActiviteit>
+                              </Activiteit>
+                              <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.20190000114">
+                                 <locatieaanduiding>
+                                    <Ambtsgebied id="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                                 </locatieaanduiding>
+                              </ActiviteitLocatieaanduiding>
+                           </activiteitaanduiding>
+                        </RegelVoorIedereen>
+                     </Regeltekst>
+                  </Lid>
+                  <Lid pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid"
+                       hash="a7a6a14eeb1441a1a192529b918e74f4"
+                       eId="chp_6__subchp_6.1__art_6.1__para_2"
+                       wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2">
+                     <Regeltekst id="nl.imow-gm0297.regeltekst.2019000115"
+                                 wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2">
+                        <RegelVoorIedereen id="nl.imow-gm0297.juridischeregel.2019000115">
+                           <artikelOfLid>nl.imow-gm0297.regeltekst.2019000115</artikelOfLid>
+                           <locatieaanduiding>
+                              <Ambtsgebied id="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                           </locatieaanduiding>
+                           <activiteitaanduiding>
+                              <Activiteit id="nl.imow-gm0297.activiteit.2019000810">
+                                 <bovenliggendeActiviteit>
+                                    <Activiteit id="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+                                       <bovenliggendeActiviteit>nl.imow-mnre1034.activiteit.ActInOmgevingsplan</bovenliggendeActiviteit>
+                                    </Activiteit>
+                                 </bovenliggendeActiviteit>
+                              </Activiteit>
+                              <ActiviteitLocatieaanduiding id="nl.imow-gm0297.activiteitlocatieaanduiding.20190000115">
+                                 <locatieaanduiding>
+                                    <Ambtsgebied id="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+                                 </locatieaanduiding>
+                              </ActiviteitLocatieaanduiding>
+                           </activiteitaanduiding>
+                        </RegelVoorIedereen>
+                     </Regeltekst>
+                     <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst"
+                            hash="3d56cbd09be568b3b14a23798580f728"
+                            eId="chp_6__subchp_6.1__art_6.1__para_2__list_o_1"
+                            wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2__list_o_1"
+                            type="expliciet">
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="5601727029b83fa3e4675afe53f0337e"
+                            eId="chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_a"
+                            wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_a"/>
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="9ee5aec54ca5d81ae0dbc0af5f60a42d"
+                            eId="chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_b"
+                            wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_b"/>
+                        <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Lid/Inhoud/Lijst/Li"
+                            hash="4372b8ba801be1b29deb6a44bfa3af53"
+                            eId="chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_c"
+                            wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_c"/>
+                     </Lijst>
+                  </Lid>
+               </Artikel>
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="e0f592838ee09abce714d10b80a2c0dc"
+                        eId="chp_6__subchp_6.1__art_6.2"
+                        wId="gm0297_1__chp_6__subchp_6.1__art_6.2">
+                  <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst"
+                         hash="3513295e3620ebf5cbe55def02d51192"
+                         eId="chp_6__subchp_6.1__art_6.2__list_o_1"
+                         wId="gm0297_1__chp_6__subchp_6.1__art_6.2__list_o_1"
+                         type="expliciet">
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="30f47f701b30e0bc7c6f0f366eab7e8f"
+                         eId="chp_6__subchp_6.1__art_6.2__list_o_1__item_a"
+                         wId="gm0297_1__chp_6__subchp_6.1__art_6.2__list_o_1__item_a"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="dfbfa5b24221461304c613bf21b75acc"
+                         eId="chp_6__subchp_6.1__art_6.2__list_o_1__item_b"
+                         wId="gm0297_1__chp_6__subchp_6.1__art_6.2__list_o_1__item_b"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="b77f8ea312f3822c69de32eddc9831bf"
+                         eId="chp_6__subchp_6.1__art_6.2__list_o_1__item_c"
+                         wId="gm0297_1__chp_6__subchp_6.1__art_6.2__list_o_1__item_c"/>
+                  </Lijst>
+               </Artikel>
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="c695e9d2f4ee50189602a5ae7eb75aa9"
+                        eId="chp_6__subchp_6.1__art_6.3"
+                        wId="gm0297_1__chp_6__subchp_6.1__art_6.3">
+                  <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst"
+                         hash="0554a63acf6eb4680d95e747c55c6147"
+                         eId="chp_6__subchp_6.1__art_6.3__list_o_1"
+                         wId="gm0297_1__chp_6__subchp_6.1__art_6.3__list_o_1"
+                         type="expliciet">
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="352f5ab9990db618301f235073bd3e00"
+                         eId="chp_6__subchp_6.1__art_6.3__list_o_1__item_a"
+                         wId="gm0297_1__chp_6__subchp_6.1__art_6.3__list_o_1__item_a"/>
+                     <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel/Inhoud/Lijst/Li"
+                         hash="d234ad6fc9127de0ab66719196590728"
+                         eId="chp_6__subchp_6.1__art_6.3__list_o_1__item_b"
+                         wId="gm0297_1__chp_6__subchp_6.1__art_6.3__list_o_1__item_b"/>
+                  </Lijst>
+               </Artikel>
+            </Afdeling>
+         </Hoofdstuk>
+         <Hoofdstuk pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk"
+                    hash="9fe29e178ab10adae75fd18b035de5c2"
+                    eId="chp_7"
+                    wId="gm0297_1__chp_7">
+            <Afdeling pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling"
+                      hash="2675052dcdb33907c3e49c413a89fc61"
+                      eId="chp_7__subchp_7.1"
+                      wId="gm0297_1__chp_7__subchp_7.1">
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="e40187cf23731a05643492f17bcb647b"
+                        eId="chp_7__subchp_7.1__art_7.1"
+                        wId="gm0297_1__chp_7__subchp_7.1__art_7.1"/>
+               <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Artikel"
+                        hash="d6a8c34848fd91c638583d9cf8f5a604"
+                        eId="chp_7__subchp_7.1__art_7.2"
+                        wId="gm0297_1__chp_7__subchp_7.1__art_7.2"/>
+            </Afdeling>
+         </Hoofdstuk>
+         <Hoofdstuk pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk"
+                    hash="d90fdc45020f9aad9881d3d13a04971e"
+                    eId="chp_10"
+                    wId="gm0297_1__chp_10">
+            <Afdeling pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling"
+                      hash="f65eb4107f4977b3b8df49a1c43ccb31"
+                      eId="chp_10__subchp_10.1"
+                      wId="gm0297_1__chp_10__subchp_10.1">
+               <Paragraaf pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Paragraaf"
+                          hash="06eac9bc0b37789db09097d6654afc2c"
+                          wId="iets"
+                          eId="iets">
+                  <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Paragraaf/Artikel"
+                           hash="936d9c19467586a92b1010a2ce8ac895"
+                           eId="chp_10__subchp_10.1__art_10.1"
+                           wId="gm0297_1__chp_10__subchp_10.1__art_10.1"/>
+                  <Artikel pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Paragraaf/Artikel"
+                           hash="2a34a5806ea3b63f623fd1ebc8434299"
+                           eId="chp_10__subchp_10.1__art_10.2"
+                           wId="gm0297_1__chp_10__subchp_10.1__art_10.2">
+                     <Lid pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Paragraaf/Artikel/Lid"
+                          hash="4fd41bbe6fdf24e84a5d1d55ed7203cd"
+                          eId="chp_10__subchp_10.1__art_10.2__para_1"
+                          wId="gm0297_1__chp_10__subchp_10.1__art_10.2__para_1"/>
+                     <Lid pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Lichaam/Hoofdstuk/Afdeling/Paragraaf/Artikel/Lid"
+                          hash="c2f1510fb8116ec8d36423ebca7bfd76"
+                          eId="chp_10__subchp_10.1__art_10.2__para_2"
+                          wId="gm0297_1__chp_10__subchp_10.1__art_10.2__para_2"/>
+                  </Artikel>
+               </Paragraaf>
+            </Afdeling>
+         </Hoofdstuk>
+      </Lichaam>
+      <Bijlage pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage"
+               hash="27dbb75f7cc3bc5aa1d4085dddd5941c"
+               eId="cmp_I"
+               wId="gm0297_1__cmp_I">
+         <Divisietekst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst"
+                       hash="c40a1c53036da8c7e7c0386650525e5b"
+                       eId="cmp_I__content_o_1"
+                       wId="gm0297_1__cmp_I__content_o_1">
+            <Begrippenlijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst"
+                            hash="9544b9c8c7da7a37f142edf56eb461ad"
+                            eId="cmp_I__content_o_1__list_o_1"
+                            wId="gm0297_1__cmp_I__content_o_1__list_o_1">
+               <Begrip pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip"
+                       hash="8aeab41992cd6de02712c9c1f2363e57"
+                       eId="cmp_I__content_o_1__list_o_1__item_o_2"
+                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2">
+                  <ExtIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip/Definitie/Al/ExtIoRef"
+                            hash="d85c52c38e6d40865f43b86b5201a7af"
+                            eId="cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"
+                            wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"
+                            ref="/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520"/>
+               </Begrip>
+               <Begrip pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip"
+                       hash="491e0abf2628c641b9d4e21b1d7ce8c5"
+                       eId="cmp_I__content_o_1__list_o_1__item_o_1"
+                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1">
+                  <ExtIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip/Definitie/Al/ExtIoRef"
+                            hash="64e12b6951605980e10e290731a436da"
+                            eId="cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"
+                            wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"
+                            ref="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520"/>
+               </Begrip>
+               <Begrip pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip"
+                       hash="2534f342966b1a3cdef3a10a1800ab28"
+                       eId="cmp_I__content_o_1__list_o_1__item_o_3"
+                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3">
+                  <ExtIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip/Definitie/Al/ExtIoRef"
+                            hash="55b11dad32e0ca05eb1ca77757dba58f"
+                            eId="cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1"
+                            wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1"
+                            ref="/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520"/>
+               </Begrip>
+               <Begrip pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip"
+                       hash="30c672f92898272d7bc481c17e78882a"
+                       eId="cmp_I__content_o_1__list_o_1__item_o_4"
+                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4">
+                  <ExtIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip/Definitie/Al/ExtIoRef"
+                            hash="3950fa7d3f9a156ac8634c78a512e3e5"
+                            eId="cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1"
+                            wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1"
+                            ref="/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520"/>
+               </Begrip>
+               <Begrip pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip"
+                       hash="64916749d7ea2df7857fca6679a39068"
+                       eId="cmp_I__content_o_1__list_o_1__item_o_5"
+                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5">
+                  <ExtIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip/Definitie/Al/ExtIoRef"
+                            hash="391afa5409d9ce8760292879926954cc"
+                            eId="cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1"
+                            wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1"
+                            ref="/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520"/>
+               </Begrip>
+               <Begrip pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip"
+                       hash="5ce8196db36b1f85421e666075efb090"
+                       eId="cmp_I__content_o_1__list_o_1__item_o_6"
+                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6">
+                  <ExtIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip/Definitie/Al/ExtIoRef"
+                            hash="e405e0ec1949b44e8aac94121fa50d1f"
+                            eId="cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1"
+                            wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1"
+                            ref="/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520"/>
+               </Begrip>
+               <Begrip pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip"
+                       hash="3d37764be90d75eaef998c453dcfbf5d"
+                       eId="cmp_I__content_o_1__list_o_1__item_o_7"
+                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7">
+                  <ExtIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip/Definitie/Al/ExtIoRef"
+                            hash="21fd0d5d7a7d6cc2c25f61d26482667d"
+                            eId="cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1"
+                            wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1"
+                            ref="/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520"/>
+               </Begrip>
+               <Begrip pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip"
+                       hash="1b6e9591c6056681af8fe2ac7ac59fae"
+                       eId="cmp_I__content_o_1__list_o_1__item_o_8"
+                       wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8">
+                  <ExtIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip/Definitie/Al/ExtIoRef"
+                            hash="e83475584e60923c27c802921b76f992"
+                            eId="cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1"
+                            wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1"
+                            ref="/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520"/>
+               </Begrip>
+            </Begrippenlijst>
+         </Divisietekst>
+      </Bijlage>
+      <Bijlage pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage"
+               hash="bd47c1588a5534470ba2bb5bd55e3459"
+               eId="cmp_II"
+               wId="gm0297_1__cmp_II">
+         <Divisietekst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst"
+                       hash="ff54fcea146278bc6e2b2cb1818dc546"
+                       eId="cmp_II__content_o_1"
+                       wId="gm0297_1__cmp_II__content_o_1">
+            <Begrippenlijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst"
+                            hash="5cb64cab5476da60d7e60b1d07b22a5c"
+                            eId="cmp_II__content_o_1__list_o_1"
+                            wId="gm0297_1__cmp_II__content_o_1__list_o_1">
+               <Begrip pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip"
+                       hash="1fcb274496a7515241c193a8b1d5ac87"
+                       eId="cmp_II__content_o_1__list_o_1__item_o_1"
+                       wId="gm0297_1__cmp_II__content_o_1__list_o_1__item_o_1"/>
+            </Begrippenlijst>
+         </Divisietekst>
+      </Bijlage>
+      <Bijlage pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage"
+               hash="5efc75b6eb5553f1ffb4e7977edada9a"
+               eId="cmp_III"
+               wId="gm0297_1__cmp_III">
+         <Divisietekst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst"
+                       hash="a774d32a15dceb5f4977948a649d32f0"
+                       eId="cmp_III__content_o_1"
+                       wId="gm0297_1__cmp_III__content_o_1">
+            <Lijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Lijst"
+                   hash="c1bd3200ea9c395a44890698e1a44ef9"
+                   eId="cmp_III__content_o_1__list_o_1"
+                   wId="gm0297_1__cmp_III__content_o_1__list_o_1"
+                   type="ongemarkeerd">
+               <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Lijst/Li"
+                   hash="d9f5f3c8b734f23a791988e5cc7a1d2b"
+                   eId="cmp_III__content_o_1__list_o_1__item_o_1"
+                   wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_1"/>
+               <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Lijst/Li"
+                   hash="a8ce74cc6877740fffb3220d0a203598"
+                   eId="cmp_III__content_o_1__list_o_1__item_o_2"
+                   wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_2"/>
+               <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Lijst/Li"
+                   hash="9000334cbc723a8b6661bf2dabdf05d4"
+                   eId="cmp_III__content_o_1__list_o_1__item_o_3"
+                   wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_3"/>
+               <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Lijst/Li"
+                   hash="e00c1c22e115299864db8201ed2b9a6d"
+                   eId="cmp_III__content_o_1__list_o_1__item_o_4"
+                   wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_4"/>
+               <Li pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Lijst/Li"
+                   hash="ece2aadd001865c5bd7ed053b78fc39f"
+                   eId="cmp_III__content_o_1__list_o_1__item_o_5"
+                   wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_5"/>
+            </Lijst>
+         </Divisietekst>
+      </Bijlage>
+      <Bijlage pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage"
+               hash="a084a50c6734689aa293f97a9bf2b4a4"
+               eId="cmp_IV"
+               wId="gm0297_1__cmp_IV">
+         <Divisietekst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst"
+                       hash="d1aeb5f392da0e53cbd3561eed0199a3"
+                       eId="cmp_IV__content_o_1"
+                       wId="gm0297_1__cmp_IV__content_o_1">
+            <Begrippenlijst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst"
+                            hash="8a94018fe551a958069abc608f721191"
+                            eId="cmp_IV__content_o_1__list_o_1"
+                            wId="gm0297_1__cmp_IV__content_o_1__list_o_1">
+               <Begrip pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip"
+                       hash="51479cf9efac1dfdc7490bcb22d412c1"
+                       eId="cmp_IV__content_o_1__list_o_1__item_o_1"
+                       wId="gm0297_1__cmp_IV__content_o_1__list_o_1__item_o_1">
+                  <ExtIoRef pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisietekst/Inhoud/Begrippenlijst/Begrip/Definitie/Al/ExtIoRef"
+                            hash="473ea503fa2914474b0c62ff6b8cb9e6"
+                            eId="cmp_IV__content_o_1__list_o_1__item_o_1__ref_o_1"
+                            wId="gm0297_1__cmp_IV__content_o_1__list_o_1__item_o_1__ref_o_1"
+                            ref="/join/id/regdata/gm0297/2020/PDF/nld@2020-06-18;3520"/>
+               </Begrip>
+            </Begrippenlijst>
+         </Divisietekst>
+      </Bijlage>
+      <Bijlage pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage"
+               hash="07340fdb4c5d744c47fdf14574c3e8af"
+               eId="artrecital_o_1"
+               wId="gm0297_1__artrecital_o_1">
+         <Divisie pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisie"
+                  hash="9a23b38f5c6420d348d68e8790649210"
+                  eId="artrecital_o_1__div_o_1"
+                  wId="gm0297_1__artrecital_o_1__div_o_1">
+            <Divisietekst pad="AanleveringBesluit/BesluitVersie/BesluitCompact/WijzigBijlage/RegelingCompact/Bijlage/Divisie/Divisietekst"
+                          hash="030e205b9eda2daaaa7b7094c5a89f76"
+                          eId="artrecital_o_1__div_o_1__content_o_1"
+                          wId="gm0297_1__artrecital_o_1__div_o_1__content_o_1"/>
+         </Divisie>
+      </Bijlage>
+   </WijzigBijlage>
+</check>

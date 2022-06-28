@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project basedir="." name="check" default="main">
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+  <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"/>
+
+  <property name="input.dir" value="input"/>
+  <property name="output.dir" value="output"/>
+  <property name="temp.dir" value="temp"/>
+
+  <!-- initialiseer mappen -->
+
+  <target name="init" description="Initialiseer mappen">
+    <delete dir="${temp.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${temp.dir}"/>
+    <delete dir="${output.dir}" failonerror="no" includeemptydirs="true"/>
+    <mkdir dir="${output.dir}"/>
+  </target>
+
+  <!-- check akn -->
+
+  <target name="akn" description="Check akn">
+    <xslt in="template.xml" out="${temp.dir}/check.xml" style="check.xsl" processor="trax" force="true"/>
+  </target>
+
+  <!-- check de op-besstanden -->
+
+  <target name="op" description="Check de op-bestanden">
+    <xslt in="template.xml" out="${temp.dir}/stap_1.xml" style="check_op.xsl" processor="trax" force="true"/>
+  </target>
+
+  <!-- totale transformatie -->
+
+  <target name="main" description="Totale transformatie" depends="init,akn,op"/>
+
+</project>
