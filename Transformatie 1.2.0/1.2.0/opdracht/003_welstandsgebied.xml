@@ -2,8 +2,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.2.0"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/gm0479/2021/welstandsgebied</FRBRWork>
@@ -16,7 +16,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>welstandsgebied.gml</bestandsnaam>
-                  <hash>a0a0776e32a75f5b9aec731d106eebd0cc06d04a9221042b5af2cbcff7f68a6dc90d54549a287c43c835af1b71951097d161f67371e0f0e3551778ff8b944cbc</hash>
+                  <hash>b7574300431e83128c73a2b59fe58590acc59ace47896d038cc8dda55f36fbbb9819e88bb63d17ff91fb19d648d0f766bc78c8501f680f0ffab448f355ddbc8e</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

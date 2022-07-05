@@ -2,8 +2,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.2.0"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/gm0479/2021/Verplichte_aanleg_van_groen</FRBRWork>
@@ -16,7 +16,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Verplichte_aanleg_van_groen.gml</bestandsnaam>
-                  <hash>a48bccc091957414a8336a8443e46668111eb9bc050d4a863d790d0865904c4305ffb535c8f7e7244473594428f5bdc1dc635a9d1f29beb4e54f1730bd0944f5</hash>
+                  <hash>bf0b803aad6e7567def91327b87afa6e611d5e9bd38e6d092ec348bd0ce40393c0e0909e4e4525b8adf56dc09336bac31cc43cc938fefe4597358c6f701ea637</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

@@ -2,8 +2,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.2.0"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/gm0479/2021/beperkingengebied_magneetveldzone</FRBRWork>
@@ -16,7 +16,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>beperkingengebied_magneetveldzone.gml</bestandsnaam>
-                  <hash>d56368707b936bb6bc71941d011bc004abcbe8d5b3d0445d2cf65cd1661592dfb7780dc482e5558532b5c8545f8e9372c1001705cc8f338790f7c3813a3b2205</hash>
+                  <hash>a13a30e30314d5757130faa9df4076a9bf067e39ba840543260aff3cbd20b5f11d60eea33dd3d2360ea959856939c60b35b1aa0372ae34885b832850562bb6e4</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

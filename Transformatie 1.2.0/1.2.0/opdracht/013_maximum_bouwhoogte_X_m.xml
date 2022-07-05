@@ -2,8 +2,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.2.0"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/gm0479/2021/maximum_bouwhoogte_X_m</FRBRWork>
@@ -16,7 +16,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>maximum_bouwhoogte_X_m.gml</bestandsnaam>
-                  <hash>6b6039627cedc62c977cbf79e3a8154cc79c4429cb32858f64adcbbaa41c8523dca4474b1b34a6623e25da72ec2068b8a19a54f969ca76ac12748086a2fffb9a</hash>
+                  <hash>91d8f788f797625b620c27e85b6a9d166e846b8ab9465bf2e79e4b0cc43028654aae1c892ec50adadaaefd82780e29d019933aaae72fb1e9ad132b91acde4993</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

@@ -2,8 +2,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.2.0"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/gm0479/2021/beperkingengebied_buisleiding_voor_gevaarlijke_stoffen</FRBRWork>
@@ -16,7 +16,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>beperkingengebied_buisleiding_voor_gevaarlijke_stoffen.gml</bestandsnaam>
-                  <hash>a6bd3a65627a399bd5fb4751fe24665e8c16afd7b4640a4d460dda7ff7e33ac6da6e8b2c3b8fbfc4ecf93ba65a2dded8defe5b6aee6c5b45aa0c2f3ca2a35a79</hash>
+                  <hash>ed51f8e756f710b90451c25b27f774a8ec8fc381263488487ac24644fbf6d9190959d006bbaa6b7e97c5ec2f5acbd5dd646d2c3133df96f874e28134d1f1e75b</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

@@ -2,8 +2,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.2.0"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/gm0479/2021/Verplichte_aanleg_van_water</FRBRWork>
@@ -16,7 +16,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Verplichte_aanleg_van_water.gml</bestandsnaam>
-                  <hash>3f7954f338542e14b2fec22eafff24a65d4dea12f93ee64b2430bea089b7600ce992dbc839643de3ffac32c1f1ac0b20a5fca715530151396908fe2d27821a16</hash>
+                  <hash>1019b21488fc9a208e14e7063e509b42bac7706ef5ed53cde9c346814cfdaffefd3d06a1857e67f884c2601f9a1e823da25c712572bf62140c02ac2984552309</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

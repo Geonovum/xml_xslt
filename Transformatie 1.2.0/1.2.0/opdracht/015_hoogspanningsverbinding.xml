@@ -2,8 +2,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.2.0"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/gm0479/2021/hoogspanningsverbinding</FRBRWork>
@@ -16,7 +16,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>hoogspanningsverbinding.gml</bestandsnaam>
-                  <hash>e2b756f6982f1685144d4d15ceeab3dc33371e5b17bc03671358a22bddddd4b5467072f272d2e655e3dca431b8bbf586581bd974a94cd33074666822ce2cd547</hash>
+                  <hash>951c4a3d08de6b3f2b2d483d2add4d15d83b43e128ae10e326654bd6d3fb11067845b6dfe146dead6a87f7546e2b81f8f3f3b6cdb7c32913540e9d32763a0eb8</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>

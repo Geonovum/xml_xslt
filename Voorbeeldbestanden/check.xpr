@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="20.1">
+<project version="21.1">
     <meta>
         <filters directoryPatterns="" filePatterns="check.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="20.1" xml:space="preserve">
+            <serialized version="21.1" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>scenario.associations</String>
@@ -14,7 +14,7 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>ANT (with Saxon 9 EE XSLT support) - hash</String>
+                                        <String>ANT (with Saxon 9 EE XSLT support) - Copy</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -42,7 +42,7 @@
                                     <list/>
                                 </field>
                                 <field name="jvmArgs">
-                                    <String>-Xmx256m -Dxml.catalog.files=${xmlCatalogFilesList}</String>
+                                    <String>-Xmx1024m -Dxml.catalog.files=${xmlCatalogFilesList}</String>
                                 </field>
                                 <field name="useCustomJavaHome">
                                     <Boolean>false</Boolean>
@@ -66,7 +66,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>ANT (with Saxon 9 EE XSLT support) - hash</String>
+                                    <String>ANT (with Saxon 9 EE XSLT support) - Copy</String>
                                 </field>
                                 <field name="baseURL">
                                     <null/>
@@ -103,9 +103,6 @@
                                 </field>
                                 <field name="openInBrowser">
                                     <Boolean>true</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <null/>
                                 </field>
                                 <field name="outputResource">
                                     <null/>
@@ -152,11 +149,14 @@
                                         <String>${oxygenHome}/lib/oxygenAuthor.jar</String>
                                         <String>${oxygenHome}/lib/oxygenAuthorEclipse.jar</String>
                                         <String>${oxygenHome}/lib/oxygen-basic-utilities.jar</String>
-                                        <String>${oxygenHome}/lib/resolver.jar</String>
-                                        <String>${oxygenHome}/lib/xercesImpl.jar</String>
+                                        <String>${oxygenHome}/lib/oxygen-editor-variables-parser.jar</String>
+                                        <String>${oxygenHome}/lib/oxygen-sandbox.jar</String>
+                                        <String>${oxygenHome}/lib/oxygen-license.jar</String>
+                                        <String>${oxygenHome}/lib/*resolver*.jar</String>
+                                        <String>${oxygenHome}/lib/*xerces*.jar</String>
                                         <String>${oxygenHome}/lib/xml-apis.jar</String>
                                         <String>${oxygenHome}/lib/log4j.jar</String>
-                                        <String>${oxygenHome}/lib/saxon9*.jar</String>
+                                        <String>${oxygenHome}/lib/*saxon*9*.jar</String>
                                         <String>${oxygenHome}/lib/guava-*.jar</String>
                                         <String>${oxygenHome}/lib/commons-codec-1.9.jar</String>
                                     </String-array>
@@ -170,6 +170,7 @@
     </meta>
     <projectTree name="check.xpr">
         <file name="build.xml"/>
+        <file name="check.xsl"/>
         <file name="check_op.xsl"/>
     </projectTree>
 </project>

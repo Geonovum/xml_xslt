@@ -20,6 +20,7 @@
          <sl:gebied>Gemeente Zaanstad</sl:gebied>
          <sl:leveringsId>ZAAN0003</sl:leveringsId>
          <sl:objectTypen>
+            <sl:objectType>Ambtsgebied</sl:objectType>
             <sl:objectType>Gebiedengroep</sl:objectType>
             <sl:objectType>Gebied</sl:objectType>
          </sl:objectTypen>
@@ -425,5 +426,20 @@
             </l:Gebied>
          </ow-dc:owObject>
       </sl:stand-->
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Ambtsgebied>
+               <l:identificatie>nl.imow-gm0479.ambtsgebied.00000001003148889000</l:identificatie>
+               <l:noemer>Gemeente Zaanstad</l:noemer>
+               <l:bestuurlijkeGrenzenVerwijzing>
+                  <l:BestuurlijkeGrenzenVerwijzing>
+                     <l:bestuurlijkeGrenzenID>GM0479</l:bestuurlijkeGrenzenID>
+                     <l:domein>NL.BI.BestuurlijkGebied</l:domein>
+                     <l:geldigOp>2021-01-01</l:geldigOp>
+                  </l:BestuurlijkeGrenzenVerwijzing>
+               </l:bestuurlijkeGrenzenVerwijzing>
+            </l:Ambtsgebied>
+         </ow-dc:owObject>
+      </sl:stand>
    </sl:standBestand>
 </ow-dc:owBestand>

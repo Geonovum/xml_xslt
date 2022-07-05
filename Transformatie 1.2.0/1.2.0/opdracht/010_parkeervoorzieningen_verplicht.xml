@@ -2,8 +2,8 @@
 <AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
                              xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             schemaversie="1.2.0"
-                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+                             schemaversie="1.1.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/gm0479/2021/parkeervoorzieningen_verplicht</FRBRWork>
@@ -16,7 +16,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>parkeervoorzieningen_verplicht.gml</bestandsnaam>
-                  <hash>07a664ac8ba4f747d61e7355fc602e0cd24c03e061ed3cfce133173d92876dd1e11e291385b4d32aff8119f60b6559ddcf03a6089a6d3b78f7a9b3d415955dd2</hash>
+                  <hash>404fdd2beb53dbe14c48b61eee71f7f0e2f1b105a90d7067bc9c54c24d3f935e384eda3bac6753cb130ff5f8735029fe52d4913ce124d4694bc0d72136cb807f</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
