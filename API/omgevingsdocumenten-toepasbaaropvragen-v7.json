@@ -1,0 +1,1834 @@
+{
+	"openapi": "3.0.0",
+	"info": {
+		"title": "Omgevingsdocumenten-Toepasbaar",
+		"description": "De Omgevingsdocumenten Toepasbaar API ontsluit  juridische activiteiten in onderlinge samenhang, aangevuld met bijbehorende informatie zoals locaties. Dit ten behoeve van gebruik voor in het bijzonder Toepasbare Regels (DSO-LV) en de functionele structuur. Deze samenhang tussen de juridische activiteiten vormt de basis voor deze functionele structuur.\nOp de Ontwikkel, Test, Acceptatie en Pre-productieomgeving worden ook omgevingsdocumenten toegevoegd en verwijderd door beheerders voor testdoeleinden binnen en buiten de voorziening.<br/>\nDe Omgevingsdocumenten Toepasbaar API volgt de standaarden zoals beschreven in de DSO API-strategie versie 1.1. Zo is het standaard mediatype HAL (`application/hal+json`). Dit is een mediatype voor het weergeven van resources en hun relaties via hyperlinks.\n",
+		"version": "7.0.2"
+	},
+	"servers": [
+		{
+			"url": "/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7",
+			"description": "basePath"
+		}
+	],
+	"tags": [
+		{
+			"name": "Activiteiten",
+			"description": "Activiteiten bevat activiteit uitspraken die in omgevingsdocumenten staan."
+		},
+		{
+			"name": "Locaties",
+			"description": "Locaties van Omgevingdocumentobjecten."
+		},
+		{
+			"name": "Meta",
+			"description": "Operaties die niet domeinspecifiek zijn, maar over de applicatie gaan."
+		}
+	],
+	"paths": {
+		"/activiteiten/levenscyclus": {
+			"get": {
+				"tags": [
+					"Activiteiten"
+				],
+				"summary": "Alle versies van activiteiten opvragen. Als extra comfort informatie wordt ook het OIN geleverd. Ozon biedt geen garanties over -en is ook niet verantwoordelijk voor- de juistheid en/of compleetheid van het OIN dat door externe services wordt geboden.\n",
+				"operationId": "getActiviteitenLevenscyclus",
+				"parameters": [
+					{
+						"$ref": "#/components/parameters/Page"
+					},
+					{
+						"$ref": "#/components/parameters/Size"
+					},
+					{
+						"$ref": "#/components/parameters/Sort"
+					},
+					{
+						"name": "gemuteerdSinds",
+						"in": "query",
+						"description": "Deze parameter geeft een filtermogelijkheid\nwaardoor alleen activiteiten teruggegeven worden die\nop of na deze datum gemuteerd (d.w.z. opgevoerd, gewijzigd, of beëindigd) zijn, en daarvan alle versies.\nDatum in ISO 8601 formaat (yyyy-mm-dd).\n",
+						"required": false,
+						"style": "form",
+						"explode": false,
+						"schema": {
+							"type": "string",
+							"format": "date"
+						},
+						"example": "2019-01-01"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"headers": {
+							"X-Total-Count": {
+								"$ref": "#/components/headers/X-Total-Count"
+							},
+							"X-Pagination-Count": {
+								"$ref": "#/components/headers/X-Pagination-Count"
+							},
+							"X-Pagination-Page": {
+								"$ref": "#/components/headers/X-Pagination-Page"
+							},
+							"X-Pagination-Limit": {
+								"$ref": "#/components/headers/X-Pagination-Limit"
+							}
+						},
+						"content": {
+							"application/hal+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Activiteiten"
+								}
+							}
+						}
+					},
+					"default": {
+						"description": "Onverwacht probleem",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/locaties/{identificatie}": {
+			"get": {
+				"tags": [
+					"Locaties"
+				],
+				"summary": "Een enkele locatie opvragen",
+				"operationId": "getLocatie",
+				"parameters": [
+					{
+						"$ref": "#/components/parameters/geldigOp"
+					},
+					{
+						"$ref": "#/components/parameters/inWerkingOp"
+					},
+					{
+						"$ref": "#/components/parameters/beschikbaarOp"
+					},
+					{
+						"name": "identificatie",
+						"in": "path",
+						"required": true,
+						"style": "simple",
+						"explode": false,
+						"schema": {
+							"type": "string"
+						},
+						"example": "nl.imow-gm0037.gebied.2019000001example"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Locatie",
+						"content": {
+							"application/hal+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Locatie"
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "Er is geen locatie met deze identificatie.",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					},
+					"default": {
+						"description": "Onverwacht probleem",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/activiteiten/{identificatie}/levenscyclus": {
+			"get": {
+				"tags": [
+					"Activiteiten"
+				],
+				"summary": "Een enkele activiteit opvragen. Ozon biedt geen garanties over -en is ook niet verantwoordelijk voor- de juistheid en/of compleetheid van het OIN dat door externe services wordt geboden.\n",
+				"operationId": "getActiviteitLevenscyclus",
+				"parameters": [
+					{
+						"$ref": "#/components/parameters/Page"
+					},
+					{
+						"$ref": "#/components/parameters/Size"
+					},
+					{
+						"$ref": "#/components/parameters/Sort"
+					},
+					{
+						"name": "identificatie",
+						"in": "path",
+						"required": true,
+						"style": "simple",
+						"explode": false,
+						"schema": {
+							"type": "string"
+						},
+						"example": "nl.imow-gm0037.activiteit.2019000242example"
+					},
+					{
+						"name": "gemuteerdSinds",
+						"in": "query",
+						"description": "Deze parameter geeft een filtermogelijkheid waardoor alleen versies van activiteiten teruggegeven worden die op of na deze datum gemuteerd (d.w.z. opgevoerd, gewijzigd, of beëindigd) zijn. Datumtijd in ISO 8601 formaat (yyyy-mm-dd).\n",
+						"required": false,
+						"style": "form",
+						"explode": false,
+						"schema": {
+							"type": "string",
+							"format": "date"
+						},
+						"example": "2019-01-01"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"application/hal+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Activiteiten"
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "Er is geen activiteit met deze identificatie.",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					},
+					"default": {
+						"description": "Onverwacht probleem",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/activiteiten/{identificatie}/juridischebron": {
+			"get": {
+				"tags": [
+					"Activiteiten"
+				],
+				"summary": "De juridische bron van een activiteit opvragen. De juridische bron is het artikel/lid of de artikelen/leden waar de activiteit als eerste genoemd wordt.\n",
+				"operationId": "getActiviteitJuridischeBron",
+				"parameters": [
+					{
+						"$ref": "#/components/parameters/geldigOp"
+					},
+					{
+						"$ref": "#/components/parameters/inWerkingOp"
+					},
+					{
+						"$ref": "#/components/parameters/beschikbaarOp"
+					},
+					{
+						"name": "identificatie",
+						"in": "path",
+						"required": true,
+						"style": "simple",
+						"explode": false,
+						"schema": {
+							"type": "string"
+						},
+						"example": "nl.imow-gm0037.activiteit.2019000242example"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"application/hal+json": {
+								"schema": {
+									"$ref": "#/components/schemas/JuridischeBron"
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "Er is geen activiteit met deze identificatie.",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					},
+					"default": {
+						"description": "Onverwacht probleem",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/activiteiten/{identificatie}/regelteksten": {
+			"get": {
+				"tags": [
+					"Activiteiten"
+				],
+				"summary": "De regelteksten van een activiteit opvragen. De regeltekten van een activiteit zijn alle regelteksten waarin de activiteit genoemd wordt op het moment van de tijdreisvraag.\n",
+				"operationId": "getActiviteitRegelteksten",
+				"parameters": [
+					{
+						"$ref": "#/components/parameters/geldigOp"
+					},
+					{
+						"$ref": "#/components/parameters/inWerkingOp"
+					},
+					{
+						"$ref": "#/components/parameters/beschikbaarOp"
+					},
+					{
+						"$ref": "#/components/parameters/Page"
+					},
+					{
+						"$ref": "#/components/parameters/Size"
+					},
+					{
+						"$ref": "#/components/parameters/Sort"
+					},
+					{
+						"name": "identificatie",
+						"in": "path",
+						"required": true,
+						"style": "simple",
+						"explode": false,
+						"schema": {
+							"type": "string"
+						},
+						"example": "nl.imow-gm0037.activiteit.2019000242example"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"application/hal+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Regelteksten"
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "Er is geen activiteit met deze identificatie.",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					},
+					"default": {
+						"description": "Onverwacht probleem",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/locaties/_zoek": {
+			"post": {
+				"tags": [
+					"Locaties"
+				],
+				"summary": "Locaties opvragen die voldoen aan zoekobject-parameters.",
+				"operationId": "zoekLocaties",
+				"parameters": [
+					{
+						"$ref": "#/components/parameters/geldigOp"
+					},
+					{
+						"$ref": "#/components/parameters/inWerkingOp"
+					},
+					{
+						"$ref": "#/components/parameters/beschikbaarOp"
+					},
+					{
+						"$ref": "#/components/parameters/Page"
+					},
+					{
+						"$ref": "#/components/parameters/Size"
+					},
+					{
+						"$ref": "#/components/parameters/ContentCrsHeader"
+					}
+				],
+				"requestBody": {
+					"description": "LocatieZoekobject",
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/LocatieZoekobject"
+							},
+							"examples": {
+								"locatieZoekobjectVoorbeeld": {
+									"$ref": "#/components/examples/locatieZoekobjectVoorbeeld"
+								}
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Locaties",
+						"headers": {
+							"X-Total-Count": {
+								"$ref": "#/components/headers/X-Total-Count"
+							},
+							"X-Pagination-Count": {
+								"$ref": "#/components/headers/X-Pagination-Count"
+							},
+							"X-Pagination-Page": {
+								"$ref": "#/components/headers/X-Pagination-Page"
+							},
+							"X-Pagination-Limit": {
+								"$ref": "#/components/headers/X-Pagination-Limit"
+							}
+						},
+						"content": {
+							"application/hal+json": {
+								"schema": {
+									"$ref": "#/components/schemas/LocatiesMetSpatialOperator"
+								}
+							}
+						}
+					},
+					"default": {
+						"description": "Onverwacht probleem",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/primairelocaties/_zoek": {
+			"post": {
+				"tags": [
+					"Locaties"
+				],
+				"summary": "PrimaireLocaties opvragen die voldoen aan zoekobject-parameters ten behoeve van Vector Tile bevraging.",
+				"operationId": "zoekPrimaireLocaties",
+				"parameters": [
+					{
+						"$ref": "#/components/parameters/geldigOp"
+					},
+					{
+						"$ref": "#/components/parameters/inWerkingOp"
+					},
+					{
+						"$ref": "#/components/parameters/beschikbaarOp"
+					},
+					{
+						"$ref": "#/components/parameters/Page"
+					},
+					{
+						"$ref": "#/components/parameters/Size"
+					},
+					{
+						"$ref": "#/components/parameters/ContentCrsHeader"
+					}
+				],
+				"requestBody": {
+					"description": "PrimaireLocatieZoekobject",
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/PrimaireLocatieZoekobject"
+							},
+							"examples": {
+								"primaireLocatieZoekobjectVoorbeeld": {
+									"$ref": "#/components/examples/primaireLocatieZoekobjectVoorbeeld"
+								}
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Primaire Locaties",
+						"headers": {
+							"X-Total-Count": {
+								"$ref": "#/components/headers/X-Total-Count"
+							},
+							"X-Pagination-Count": {
+								"$ref": "#/components/headers/X-Pagination-Count"
+							},
+							"X-Pagination-Page": {
+								"$ref": "#/components/headers/X-Pagination-Page"
+							},
+							"X-Pagination-Limit": {
+								"$ref": "#/components/headers/X-Pagination-Limit"
+							}
+						},
+						"content": {
+							"application/hal+json": {
+								"schema": {
+									"$ref": "#/components/schemas/PrimaireLocaties"
+								}
+							}
+						}
+					},
+					"default": {
+						"description": "Onverwacht probleem",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/health": {
+			"get": {
+				"tags": [
+					"Meta"
+				],
+				"summary": "health info",
+				"operationId": "getHealth",
+				"responses": {
+					"200": {
+						"description": "Health",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Health"
+								}
+							}
+						}
+					},
+					"default": {
+						"description": "Onverwacht probleem",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/app-info": {
+			"get": {
+				"tags": [
+					"Meta"
+				],
+				"summary": "applicatie info",
+				"operationId": "getInfo",
+				"responses": {
+					"200": {
+						"description": "Info",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Info"
+								}
+							}
+						}
+					},
+					"default": {
+						"description": "Onverwacht probleem",
+						"content": {
+							"application/problem+json": {
+								"schema": {
+									"$ref": "#/components/schemas/Problem"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"components": {
+		"schemas": {
+			"Health": {
+				"type": "object",
+				"properties": {
+					"status": {
+						"type": "string",
+						"enum": [
+							"UP",
+							"DOWN"
+						]
+					}
+				},
+				"description": "Health"
+			},
+			"Info": {
+				"required": [
+					"app"
+				],
+				"type": "object",
+				"properties": {
+					"app": {
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string"
+							},
+							"version": {
+								"type": "string"
+							},
+							"description": {
+								"type": "string"
+							},
+							"stopVersion": {
+								"type": "string"
+							},
+							"cimowVersion": {
+								"type": "string"
+							},
+							"imopVersion": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"description": "Info"
+			},
+			"Locatie": {
+				"title": "Locatie",
+				"required": [
+					"_links",
+					"geregistreerdMet",
+					"identificatie"
+				],
+				"type": "object",
+				"properties": {
+					"identificatie": {
+						"$ref": "#/components/schemas/Identificatie"
+					},
+					"geregistreerdMet": {
+						"$ref": "#/components/schemas/Registratiegegevens"
+					},
+					"noemer": {
+						"title": "noemer",
+						"type": "string"
+					},
+					"status": {
+						"type": "string",
+						"description": "De status van een object is een aanduiding waarmee aangegeven kan worden dat de OW-informatie, in deze versie van het object, niet meer geldig is. Dit geeft bijvoorbeeld aan of deze activiteit beeindigd ('B') is.\n",
+						"enum": [
+							"B",
+							null
+						]
+					},
+					"_links": {
+						"$ref": "#/components/schemas/HalCollectionLinks"
+					}
+				}
+			},
+			"LocatieMetSpatialOperator": {
+				"title": "Locatie",
+				"required": [
+					"_links",
+					"geregistreerdMet",
+					"identificatie"
+				],
+				"type": "object",
+				"properties": {
+					"identificatie": {
+						"$ref": "#/components/schemas/Identificatie"
+					},
+					"geregistreerdMet": {
+						"$ref": "#/components/schemas/Registratiegegevens"
+					},
+					"noemer": {
+						"title": "noemer",
+						"type": "string"
+					},
+					"spatialOperator": {
+						"type": "string",
+						"description": "Een metagegeven dat aangeeft wat de relatie is tussen het opgegeven zoekgebied (de geometrie in het request van de API) en de gevonden Locaties, zoals geredeneerd vanuit de Locatie (de resource in de response van de API).",
+						"enum": [
+							"intersects",
+							"within"
+						]
+					},
+					"_links": {
+						"$ref": "#/components/schemas/HalCollectionLinks"
+					}
+				}
+			},
+			"PrimaireLocatie": {
+				"title": "PrimaireLocatie",
+				"required": [
+					"_links",
+					"geregistreerdMet",
+					"identificatie"
+				],
+				"type": "object",
+				"properties": {
+					"identificatie": {
+						"$ref": "#/components/schemas/Identificatie"
+					},
+					"geregistreerdMet": {
+						"$ref": "#/components/schemas/Registratiegegevens"
+					},
+					"noemer": {
+						"title": "noemer",
+						"type": "string"
+					},
+					"_links": {
+						"$ref": "#/components/schemas/HalCollectionLinks"
+					}
+				}
+			},
+			"ActiviteitLocatie": {
+				"title": "Locatie",
+				"required": [
+					"geregistreerdMet",
+					"identificatie",
+					"juridischeRegelIdentificatie"
+				],
+				"type": "object",
+				"properties": {
+					"identificatie": {
+						"$ref": "#/components/schemas/Identificatie"
+					},
+					"geregistreerdMet": {
+						"$ref": "#/components/schemas/Registratiegegevens"
+					},
+					"juridischeRegelIdentificatie": {
+						"$ref": "#/components/schemas/Identificatie"
+					}
+				},
+				"description": "De Locatie van de ActiviteitVersie, afgeleid via de ActiviteitLocatieaanduiding van de Juridische Regel. De tijdslijnen opgenomen in deze relatie zijn de tijdslijnen van de Juridische Regel, voorzover deze binnen de tijdslijnen van deze ActiviteitVersie vallen.\n"
+			},
+			"Activiteit": {
+				"title": "Activiteit",
+				"required": [
+					"_links",
+					"bevoegdGezag",
+					"geregistreerdMet",
+					"identificatie",
+					"naam",
+					"oin",
+					"procedurestatus"
+				],
+				"type": "object",
+				"properties": {
+					"identificatie": {
+						"$ref": "#/components/schemas/Identificatie"
+					},
+					"geregistreerdMet": {
+						"$ref": "#/components/schemas/Registratiegegevens"
+					},
+					"naam": {
+						"type": "string",
+						"example": "Vellen van een houtopstand"
+					},
+					"oin": {
+						"type": "string",
+						"description": "Extra gegeven (niet van een activiteit). Het OrganisatieIdentificatieNummer van het bevoegd gezag van deze activiteit op het moment van opvragen. Het OIN is ongeversioneerd, en Ozon garandeert niet dat dit juist is op het moment van opvragen.\n",
+						"example": "1.807288111E+12",
+						"deprecated": true
+					},
+					"bevoegdGezag": {
+						"$ref": "#/components/schemas/BevoegdGezag"
+					},
+					"procedurestatus": {
+						"$ref": "#/components/schemas/Procedurestatus"
+					},
+					"is": {
+						"$ref": "#/components/schemas/Identificatie"
+					},
+					"gerelateerd": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/Identificatie"
+						}
+					},
+					"isGereguleerdVoor": {
+						"type": "array",
+						"description": "Deze specifieke activiteit is gereguleerd voor deze specifieke locatie(s). Deze locaties zijn afgeleide gegevens, afgeleid van ActiviteitLocatieaanduidingen (zie CIMOW). Om de specifiek geldige versie van de locatie te verkrijgen kan een aparte (tijdreis)vraag gedaan worden op de locatie-resource.\n",
+						"items": {
+							"$ref": "#/components/schemas/ActiviteitLocatie"
+						}
+					},
+					"_links": {
+						"$ref": "#/components/schemas/HalCollectionLinks"
+					}
+				},
+				"description": "De versie van een Activiteit zoals bedoeld in CIMOW. Een versie is een voorkomen van de activiteit in een periode waarin deze ongewijzigd is gebleven.\n"
+			},
+			"BevoegdGezag": {
+				"required": [
+					"bestuurslaag",
+					"code",
+					"naam"
+				],
+				"type": "object",
+				"properties": {
+					"naam": {
+						"title": "naam",
+						"type": "string"
+					},
+					"bestuurslaag": {
+						"title": "bestuurslaag",
+						"type": "string",
+						"enum": [
+							"gemeente",
+							"provincie",
+							"waterschap",
+							"ministerie"
+						]
+					},
+					"code": {
+						"title": "code",
+						"type": "string",
+						"description": "De code van het bevoegd gezag dat deze activiteit indiende, bestaand uit twee letters en twee tot en met vier cijfers.\n",
+						"example": "pv24"
+					}
+				},
+				"description": "Extra gegeven (niet van een activiteit). Dit wordt afgeleid van het omgevingsdocument ten tijde van muteren van de activiteit (geen rekening houdend met een bv. gemeentelijke herindeling).\n"
+			},
+			"Activiteiten": {
+				"required": [
+					"_embedded",
+					"_links",
+					"page"
+				],
+				"type": "object",
+				"properties": {
+					"_embedded": {
+						"required": [
+							"activiteiten"
+						],
+						"type": "object",
+						"properties": {
+							"activiteiten": {
+								"type": "array",
+								"items": {
+									"$ref": "#/components/schemas/Activiteit"
+								}
+							}
+						}
+					},
+					"_links": {
+						"$ref": "#/components/schemas/HalPaginationLinks"
+					},
+					"page": {
+						"$ref": "#/components/schemas/Page"
+					}
+				}
+			},
+			"LocatiesMetSpatialOperator": {
+				"required": [
+					"_links",
+					"page"
+				],
+				"type": "object",
+				"properties": {
+					"_embedded": {
+						"required": [
+							"locaties"
+						],
+						"type": "object",
+						"properties": {
+							"locaties": {
+								"type": "array",
+								"items": {
+									"$ref": "#/components/schemas/LocatieMetSpatialOperator"
+								}
+							}
+						}
+					},
+					"_links": {
+						"$ref": "#/components/schemas/HalPaginationLinks"
+					},
+					"page": {
+						"$ref": "#/components/schemas/Page"
+					}
+				}
+			},
+			"PrimaireLocaties": {
+				"required": [
+					"_links",
+					"page"
+				],
+				"type": "object",
+				"properties": {
+					"_embedded": {
+						"required": [
+							"primairelocaties"
+						],
+						"type": "object",
+						"properties": {
+							"primairelocaties": {
+								"type": "array",
+								"items": {
+									"$ref": "#/components/schemas/PrimaireLocatie"
+								}
+							}
+						}
+					},
+					"_links": {
+						"$ref": "#/components/schemas/HalPaginationLinks"
+					},
+					"page": {
+						"$ref": "#/components/schemas/Page"
+					}
+				}
+			},
+			"Registratiegegevens": {
+				"title": "Registratiegegevens",
+				"required": [
+					"beginGeldigheid",
+					"beginInwerking",
+					"tijdstipRegistratie"
+				],
+				"type": "object",
+				"properties": {
+					"versie": {
+						"type": "integer"
+					},
+					"beginInwerking": {
+						"type": "string",
+						"format": "date",
+						"example": "2020-05-08"
+					},
+					"beginGeldigheid": {
+						"type": "string",
+						"format": "date",
+						"example": "2020-05-05"
+					},
+					"eindGeldigheid": {
+						"type": "string",
+						"format": "date",
+						"example": "2020-07-05"
+					},
+					"tijdstipRegistratie": {
+						"pattern": "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{6}",
+						"type": "string",
+						"description": "Moment vanaf wanneer deze versie bekend is bij Ozon. Deze versie is actief totdat er een nieuwe versie beschikbaar komt. Datumtijd in ISO 8601 formaat (yyyy-mm-dd'T'hh:mm:ss.SSSSSS).\n",
+						"example": "2020-05-08T10:00:01.987654"
+					},
+					"eindRegistratie": {
+						"pattern": "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{6}",
+						"type": "string",
+						"description": "Moment vanaf wanneer er een nieuwere versie dan deze versie bekend is bij Ozon. Deze versie is vanaf dit moment niet meer actief. Datumtijd in ISO 8601 formaat (yyyy-mm-dd'T'hh:mm:ss.SSSSSS).\n",
+						"example": "2020-05-08T10:00:01.987654"
+					},
+					"status": {
+						"type": "string",
+						"description": "De status van een object is een aanduiding waarmee aangegeven kan worden dat de OW-informatie, in deze versie van het object, niet meer geldig is. Dit geeft bijvoorbeeld aan of deze activiteit beeindigd ('B') is.\n",
+						"enum": [
+							"B",
+							null
+						]
+					},
+					"subType": {
+						"title": "subType",
+						"type": "string"
+					}
+				},
+				"description": "De registratiegegevens bevatten de tijdslijnen van dit object conform NEN3610:2021, alsmede het veld 'beginInwerking', dat DSO-specifiek is.\n",
+				"discriminator": {
+					"propertyName": "subType",
+					"mapping": {
+						"activiteit": "Activiteit",
+						"locatie": "Locatie",
+						"locatiemetspatialoperator": "LocatieMetSpatialOperator"
+					}
+				}
+			},
+			"Identificatie": {
+				"title": "Identificatie",
+				"type": "string"
+			},
+			"Point": {
+				"title": "GeoJSON Point",
+				"required": [
+					"coordinates",
+					"type"
+				],
+				"type": "object",
+				"properties": {
+					"type": {
+						"type": "string",
+						"enum": [
+							"Point"
+						]
+					},
+					"coordinates": {
+						"minItems": 2,
+						"type": "array",
+						"items": {
+							"multipleOf": 0.001,
+							"type": "number"
+						}
+					},
+					"bbox": {
+						"minItems": 4,
+						"type": "array",
+						"items": {
+							"multipleOf": 0.001,
+							"type": "number"
+						}
+					}
+				}
+			},
+			"GeoJsonZoekobject": {
+				"type": "object",
+				"properties": {
+					"geometrie": {
+						"$ref": "#/components/schemas/GeoJsonGeometry"
+					},
+					"spatialOperator": {
+						"type": "string",
+						"description": "Een uit de set van spatial operators die gedefinieerd zijn in ISO 19125-1",
+						"enum": [
+							"intersects"
+						]
+					}
+				},
+				"description": "Zoekobject om te zoeken op geometrie."
+			},
+			"JuridischeBron": {
+				"title": "Juridische bron",
+				"required": [
+					"documentIdentificatie",
+					"regelteksten"
+				],
+				"type": "object",
+				"properties": {
+					"documentIdentificatie": {
+						"type": "string",
+						"description": "Een verwijzing naar de regeling waarin de juridische bron te vinden is. De verwijzing is in deze de identificatie van een omgevingsdocument (een zogenaamde AKN identificatie)",
+						"example": "/akn/nl/act/gm0106/2019/reg456RGL-20201125-112022"
+					},
+					"regelteksten": {
+						"type": "array",
+						"description": "Een lijst van verwijzingen naar regelteksten waarin de eerste versie van de activiteit benoemt wordt. De verwijzing is in deze de identificatie van een regeltekst (een zogenaamde IMOW identificatie).",
+						"items": {
+							"$ref": "#/components/schemas/Regeltekst"
+						}
+					}
+				},
+				"description": "De juridische bron van een activiteit is altijd de regeling waar de definitie van de activiteit in is benoemd. De juridische bron kan als een begripsbepaling opgenomen zijn bij de begripsbepalingen of in de lopende tekst van een regeltekst."
+			},
+			"Regelteksten": {
+				"required": [
+					"_embedded",
+					"_links",
+					"page"
+				],
+				"type": "object",
+				"properties": {
+					"_embedded": {
+						"required": [
+							"regelteksten"
+						],
+						"type": "object",
+						"properties": {
+							"regelteksten": {
+								"type": "array",
+								"items": {
+									"$ref": "#/components/schemas/Regeltekst"
+								}
+							}
+						}
+					},
+					"_links": {
+						"$ref": "#/components/schemas/HalPaginationLinks"
+					},
+					"page": {
+						"$ref": "#/components/schemas/Page"
+					}
+				}
+			},
+			"Regeltekst": {
+				"title": "Regeltekst",
+				"required": [
+					"documentIdentificatie",
+					"identificatie",
+					"omschrijving",
+					"procedurestatus",
+					"wId"
+				],
+				"type": "object",
+				"properties": {
+					"identificatie": {
+						"$ref": "#/components/schemas/Identificatie"
+					},
+					"wId": {
+						"title": "wId",
+						"type": "string",
+						"description": "Het WorkID (conform FRBR) van het corresponderende artikel in IMOP"
+					},
+					"omschrijving": {
+						"title": "omschrijving",
+						"type": "string",
+						"description": "De letterlijke tekst waarmee de Regeltekst is omschreven, in een artikel of een lid. Een Regeltekst is altijd één doorlopend stuk juridische tekst, welke juridische regels bevat."
+					},
+					"label": {
+						"title": "label",
+						"type": "string",
+						"description": "Het label (bijvoorbeeld 'Artikel') van het bijbehorende documentcomponent."
+					},
+					"nummer": {
+						"title": "nummer",
+						"type": "string",
+						"description": "Het nummer (bijvoorbeeld '1.1') van het bijbehorende documentcomponent."
+					},
+					"opschrift": {
+						"title": "opschrift",
+						"type": "string",
+						"description": "Het opschrift van het bijbehorende documentcomponent."
+					},
+					"documentIdentificatie": {
+						"type": "string"
+					},
+					"procedurestatus": {
+						"$ref": "#/components/schemas/Procedurestatus"
+					}
+				},
+				"description": "Een Regeltekst is de kleinste zelfstandige eenheid van (een of meer) bij elkaar behorende juridische regels. Deze regels horen onlosmakelijk bij elkaar en hebben gezamenlijk één werkingsgebied."
+			},
+			"LocatieZoekobject": {
+				"required": [
+					"geo"
+				],
+				"type": "object",
+				"properties": {
+					"geo": {
+						"$ref": "#/components/schemas/GeoJsonZoekobject"
+					},
+					"locatieIdentificaties": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						}
+					}
+				},
+				"description": "Zoekobject voor specifieke locatie-bevragingen. Het locatiezoekobject bevat ofwel alleen een geo bestaande uit een geometrie en een spatialOperator, ofwel een geo en een lijst locatie-identificaties. Wanneer het locatiezoekobject alleen GeoJSON bevat met de spatialOperator intersects, dan retourneert de zoekopdracht alle locaties die intersecten met de geometrie, locaties die het zoekgebied omvatten geven 'within' in de spatialOperator in de response overige locaties die intersecten geven 'intersects' in de response voor spatialOperator. Wanneer het locatiezoekobject zowel GeoJSON bevat, dan retourneert de zoekopdracht alleen de locaties waarvan de identificatie voorkomt in de gegeven lijst met identificaties, die ook gevonden zijn op of binnen de gegeven geometrie.\n",
+				"example": {
+					"geo": {
+						"geometrie": {
+							"type": "Point",
+							"coordinates": [
+								188193,
+								503793
+							]
+						},
+						"spatialOperator": "intersects"
+					},
+					"locatieIdentificaties": [
+						"nl.imow-gm0000.gebied.test"
+					]
+				}
+			},
+			"PrimaireLocatieZoekobject": {
+				"required": [
+					"geo",
+					"locatieIdentificaties"
+				],
+				"type": "object",
+				"properties": {
+					"geo": {
+						"$ref": "#/components/schemas/GeoJsonZoekobject"
+					},
+					"locatieIdentificaties": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						}
+					}
+				},
+				"description": "Zoekobject voor primairelocatie-bevragingen ten behoeve van het bevragen van Vector Tiles. Het primaireLocatieZoekobject bevat alleen geo en een lijst locatie-identificaties. Wanneer met het PrimaireLocatieZoekobject wordt gezocht retourneert de zoekopdracht de locaties waarvan de identificatie voorkomt in de gegeven lijst met identificaties, die ook gevonden zijn op of binnen de gegeven geometrie. In het geval dat een gevonden locatie van het type gebiedengroep/lijnengroep/puntengroep is, worden alle onderliggende gebieden/lijnen/punten uitgeleverd die binnen de gegeven geometrie vallen.\n",
+				"example": {
+					"geo": {
+						"geometrie": {
+							"type": "Point",
+							"coordinates": [
+								188193,
+								503793
+							]
+						},
+						"spatialOperator": "intersects"
+					},
+					"locatieIdentificaties": [
+						"nl.imow-gm0000.gebied.test"
+					]
+				}
+			},
+			"Procedurestatus": {
+				"type": "string",
+				"description": "De status in de procedure; vastgesteld of ontwerp",
+				"enum": [
+					"vastgesteld",
+					"ontwerp"
+				]
+			},
+			"Page": {
+				"required": [
+					"number",
+					"size",
+					"totalElements",
+					"totalPages"
+				],
+				"type": "object",
+				"properties": {
+					"size": {
+						"type": "integer",
+						"format": "int32",
+						"example": 20
+					},
+					"totalElements": {
+						"type": "integer",
+						"format": "int32",
+						"example": 1
+					},
+					"totalPages": {
+						"type": "integer",
+						"format": "int32",
+						"example": 1
+					},
+					"number": {
+						"type": "integer",
+						"format": "int32",
+						"example": 0
+					}
+				},
+				"description": "Info voor paginering"
+			},
+			"HalCollectionLinks": {
+				"type": "object",
+				"properties": {
+					"self": {
+						"type": "object",
+						"properties": {
+							"href": {
+								"$ref": "#/components/schemas/Href"
+							}
+						},
+						"description": "uri van de api aanroep die tot dit resultaat heeft geleid"
+					}
+				}
+			},
+			"HalPaginationLinks": {
+				"allOf": [
+					{
+						"$ref": "#/components/schemas/HalCollectionLinks"
+					},
+					{
+						"type": "object",
+						"properties": {
+							"first": {
+								"type": "object",
+								"properties": {
+									"href": {
+										"$ref": "#/components/schemas/Href"
+									},
+									"title": {
+										"type": "string",
+										"example": "Eerste pagina"
+									}
+								},
+								"description": "uri voor het opvragen van de eerste pagina van deze collectie"
+							},
+							"last": {
+								"type": "object",
+								"properties": {
+									"href": {
+										"$ref": "#/components/schemas/Href"
+									},
+									"title": {
+										"type": "string",
+										"example": "Laatste pagina"
+									}
+								},
+								"description": "uri voor het opvragen van de laatste pagina van deze collectie"
+							},
+							"prev": {
+								"type": "object",
+								"properties": {
+									"href": {
+										"$ref": "#/components/schemas/Href"
+									},
+									"title": {
+										"type": "string",
+										"example": "Vorige pagina"
+									}
+								},
+								"description": "uri voor het opvragen van de vorige pagina van deze collectie"
+							},
+							"next": {
+								"type": "object",
+								"properties": {
+									"href": {
+										"$ref": "#/components/schemas/Href"
+									},
+									"title": {
+										"type": "string",
+										"example": "Volgende pagina"
+									}
+								},
+								"description": "uri voor het opvragen van de volgende pagina van deze collectie"
+							}
+						}
+					}
+				]
+			},
+			"Href": {
+				"type": "string",
+				"format": "uri",
+				"example": "datapunt.voorbeeldgemeente.nl/api/resourcename/123456789"
+			},
+			"Problem": {
+				"type": "object",
+				"properties": {
+					"type": {
+						"type": "string",
+						"description": "Absolute URI dat het probleemtype identificeert.",
+						"format": "uri",
+						"default": "about:blank"
+					},
+					"title": {
+						"type": "string",
+						"description": "Een korte samenvatting van het probleemtype bedoeld voor ontwikkelaars."
+					},
+					"status": {
+						"maximum": 600,
+						"exclusiveMaximum": true,
+						"minimum": 100,
+						"type": "integer",
+						"description": "De HTTP statuscode gegenereerd door de server waar het probleem zich voordoet.",
+						"format": "int32",
+						"example": 503
+					},
+					"detail": {
+						"type": "string",
+						"description": "Mens-leesbare uitleg van dit specifieke probleem.",
+						"example": "Geen verbinding met de database"
+					},
+					"instance": {
+						"type": "string",
+						"description": "Absolute URI dat dit specifieke probleem identificeert.",
+						"format": "uri"
+					}
+				},
+				"description": "Standaardformaat (`application/problem+json`) voor probleemdetails in HTTP API''s (RFC 7807)."
+			},
+			"GeoJsonGeometry": {
+				"title": "GeoJSON Geometry",
+				"description": "Geometrie in GeoJSON formaat (RFC 7946).",
+				"externalDocs": {
+					"description": "RFC 7946 - The GeoJSON Format",
+					"url": "https://tools.ietf.org/html/rfc7946"
+				},
+				"oneOf": [
+					{
+						"$ref": "#/components/schemas/GeometryCollection"
+					},
+					{
+						"$ref": "#/components/schemas/Point"
+					},
+					{
+						"$ref": "#/components/schemas/LineString"
+					},
+					{
+						"$ref": "#/components/schemas/Polygon"
+					},
+					{
+						"$ref": "#/components/schemas/MultiPoint"
+					},
+					{
+						"$ref": "#/components/schemas/MultiLineString"
+					},
+					{
+						"$ref": "#/components/schemas/MultiPolygon"
+					}
+				]
+			},
+			"GeometryCollection": {
+				"title": "GeoJSON GeometryCollection",
+				"required": [
+					"geometries",
+					"type"
+				],
+				"type": "object",
+				"properties": {
+					"type": {
+						"type": "string",
+						"enum": [
+							"GeometryCollection"
+						]
+					},
+					"geometries": {
+						"type": "array",
+						"items": {
+							"anyOf": [
+								{
+									"$ref": "#/components/schemas/Point"
+								},
+								{
+									"$ref": "#/components/schemas/LineString"
+								},
+								{
+									"$ref": "#/components/schemas/Polygon"
+								},
+								{
+									"$ref": "#/components/schemas/MultiPoint"
+								},
+								{
+									"$ref": "#/components/schemas/MultiLineString"
+								},
+								{
+									"$ref": "#/components/schemas/MultiPolygon"
+								}
+							]
+						}
+					}
+				}
+			},
+			"Polygon": {
+				"title": "GeoJSON Polygon",
+				"required": [
+					"coordinates",
+					"type"
+				],
+				"type": "object",
+				"properties": {
+					"type": {
+						"type": "string",
+						"enum": [
+							"Polygon"
+						]
+					},
+					"coordinates": {
+						"type": "array",
+						"items": {
+							"minItems": 4,
+							"type": "array",
+							"items": {
+								"minItems": 2,
+								"type": "array",
+								"items": {
+									"multipleOf": 0.001,
+									"type": "number"
+								}
+							}
+						}
+					},
+					"bbox": {
+						"minItems": 4,
+						"type": "array",
+						"items": {
+							"multipleOf": 0.001,
+							"type": "number"
+						}
+					}
+				}
+			},
+			"MultiPolygon": {
+				"title": "GeoJSON MultiPolygon",
+				"required": [
+					"coordinates",
+					"type"
+				],
+				"type": "object",
+				"properties": {
+					"type": {
+						"type": "string",
+						"enum": [
+							"MultiPolygon"
+						]
+					},
+					"coordinates": {
+						"type": "array",
+						"items": {
+							"type": "array",
+							"items": {
+								"minItems": 4,
+								"type": "array",
+								"items": {
+									"minItems": 2,
+									"type": "array",
+									"items": {
+										"multipleOf": 0.001,
+										"type": "number"
+									}
+								}
+							}
+						}
+					},
+					"bbox": {
+						"minItems": 4,
+						"type": "array",
+						"items": {
+							"multipleOf": 0.001,
+							"type": "number"
+						}
+					}
+				}
+			},
+			"LineString": {
+				"title": "GeoJSON LineString",
+				"required": [
+					"coordinates",
+					"type"
+				],
+				"type": "object",
+				"properties": {
+					"type": {
+						"type": "string",
+						"enum": [
+							"LineString"
+						]
+					},
+					"coordinates": {
+						"minItems": 2,
+						"type": "array",
+						"items": {
+							"minItems": 2,
+							"type": "array",
+							"items": {
+								"multipleOf": 0.001,
+								"type": "number"
+							}
+						}
+					},
+					"bbox": {
+						"minItems": 4,
+						"type": "array",
+						"items": {
+							"multipleOf": 0.001,
+							"type": "number"
+						}
+					}
+				}
+			},
+			"MultiPoint": {
+				"title": "GeoJSON MultiPoint",
+				"required": [
+					"coordinates",
+					"type"
+				],
+				"type": "object",
+				"properties": {
+					"type": {
+						"type": "string",
+						"enum": [
+							"MultiPoint"
+						]
+					},
+					"coordinates": {
+						"type": "array",
+						"items": {
+							"minItems": 2,
+							"type": "array",
+							"items": {
+								"multipleOf": 0.001,
+								"type": "number"
+							}
+						}
+					},
+					"bbox": {
+						"minItems": 4,
+						"type": "array",
+						"items": {
+							"multipleOf": 0.001,
+							"type": "number"
+						}
+					}
+				}
+			},
+			"MultiLineString": {
+				"title": "GeoJSON MultiLineString",
+				"required": [
+					"coordinates",
+					"type"
+				],
+				"type": "object",
+				"properties": {
+					"type": {
+						"type": "string",
+						"enum": [
+							"MultiLineString"
+						]
+					},
+					"coordinates": {
+						"type": "array",
+						"items": {
+							"minItems": 2,
+							"type": "array",
+							"items": {
+								"minItems": 2,
+								"type": "array",
+								"items": {
+									"multipleOf": 0.001,
+									"type": "number"
+								}
+							}
+						}
+					},
+					"bbox": {
+						"minItems": 4,
+						"type": "array",
+						"items": {
+							"multipleOf": 0.001,
+							"type": "number"
+						}
+					}
+				}
+			}
+		},
+		"parameters": {
+			"geldigOp": {
+				"name": "geldigOp",
+				"in": "query",
+				"description": "Een tijdreisparameter langs de geldigheids-tijdsas. Deze tijdreis toont de versie van het object die op dat moment geldig is. Wanneer deze parameter niet opgegeven wordt, dan wordt een tijdreisvraag gesteld met als parameter 'vandaag'.\n",
+				"required": false,
+				"style": "form",
+				"explode": true,
+				"schema": {
+					"type": "string",
+					"format": "date",
+					"example": "2021-01-20"
+				}
+			},
+			"inWerkingOp": {
+				"name": "inWerkingOp",
+				"in": "query",
+				"description": "Een tijdreisparameter langs de juridische-werking-tijdsas. Deze tijdreis toont de versie van het object die op dat moment juridisch in werking is. Wanneer deze parameter niet opgegeven wordt, dan wordt een tijdreisvraag gesteld met als parameter 'vandaag'.\n",
+				"required": false,
+				"style": "form",
+				"explode": true,
+				"schema": {
+					"type": "string",
+					"format": "date",
+					"example": "2021-01-20"
+				}
+			},
+			"beschikbaarOp": {
+				"name": "beschikbaarOp",
+				"in": "query",
+				"description": "Een tijdreisparameter langs de 'beschikbaar'-tijdsas. Deze tijdreis toont de versie van het object die op dat moment beschikbaar is. Wanneer deze parameter niet opgegeven wordt, dan wordt een tijdreisvraag gesteld met als parameter 'nu'.\n",
+				"required": false,
+				"style": "form",
+				"explode": true,
+				"schema": {
+					"pattern": "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{6}",
+					"type": "string",
+					"example": "2020-05-08T10:00:01.987654"
+				}
+			},
+			"ContentCrsHeader": {
+				"name": "Content-Crs",
+				"in": "header",
+				"description": "Content-Crs",
+				"required": true,
+				"style": "simple",
+				"explode": false,
+				"schema": {
+					"type": "string",
+					"example": "EPSG:28992",
+					"enum": [
+						"EPSG:28992"
+					],
+					"default": "EPSG:28992"
+				}
+			},
+			"Page": {
+				"name": "page",
+				"in": "query",
+				"required": false,
+				"style": "form",
+				"explode": true,
+				"schema": {
+					"type": "integer",
+					"format": "int32",
+					"example": 0
+				}
+			},
+			"Size": {
+				"name": "size",
+				"in": "query",
+				"required": false,
+				"style": "form",
+				"explode": true,
+				"schema": {
+					"type": "integer",
+					"format": "int32",
+					"example": 20,
+					"enum": [
+						10,
+						20,
+						50,
+						100,
+						200
+					],
+					"default": 20
+				}
+			},
+			"Sort": {
+				"name": "sort",
+				"in": "query",
+				"required": false,
+				"style": "form",
+				"explode": true,
+				"schema": {
+					"type": "string",
+					"example": "desc"
+				}
+			}
+		},
+		"examples": {
+			"locatieZoekobjectVoorbeeld": {
+				"summary": "Zoekobject voor locatie",
+				"value": {
+					"geo": {
+						"geometrie": {
+							"type": "Point",
+							"coordinates": [
+								188193,
+								503793
+							]
+						},
+						"spatialOperator": "intersects"
+					},
+					"locatieIdentificaties": [
+						"nl.imow-gm0000.gebied.test"
+					]
+				}
+			},
+			"primaireLocatieZoekobjectVoorbeeld": {
+				"summary": "Zoekobject voor primairelocatie",
+				"value": {
+					"geo": {
+						"geometrie": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										136859,
+										423253
+									],
+									[
+										136880,
+										423811
+									],
+									[
+										138214,
+										423627
+									],
+									[
+										138186,
+										423627
+									],
+									[
+										136859,
+										423253
+									]
+								]
+							]
+						}
+					},
+					"locatieIdentificaties": [
+						"nl.imow-gm0000.gebied.test",
+						"nl.imow-gm0000.gebiedengroep.test"
+					]
+				}
+			}
+		},
+		"headers": {
+			"X-Total-Count": {
+				"description": "Totaal aantal objecten.",
+				"required": false,
+				"style": "simple",
+				"explode": false,
+				"schema": {
+					"type": "integer",
+					"example": 100
+				}
+			},
+			"X-Pagination-Count": {
+				"description": "Totaal aantal pagina's.",
+				"required": false,
+				"style": "simple",
+				"explode": false,
+				"schema": {
+					"type": "integer",
+					"example": 3
+				}
+			},
+			"X-Pagination-Page": {
+				"description": "Huidige pagina.",
+				"required": false,
+				"style": "simple",
+				"explode": false,
+				"schema": {
+					"type": "integer",
+					"example": 1
+				}
+			},
+			"X-Pagination-Limit": {
+				"description": "Objecten per pagina.",
+				"required": false,
+				"style": "simple",
+				"explode": false,
+				"schema": {
+					"type": "integer",
+					"example": 3
+				}
+			}
+		}
+	}
+}
