@@ -1,28 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Aanleveringen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
+<Aanleveringen xmlns="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/generiek/manifest-ow.xsd">
    <domein>omgevingswet</domein>
    <Aanlevering>
-      <WorkIDRegeling>/akn/nl/act/mnre1034/2021/NOVI004</WorkIDRegeling>
-      <DoelID>/join/id/proces/mnre1034/2021/Instelling</DoelID>
+      <WorkIDRegeling>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0654</WorkIDRegeling>
+      <DoelID>/join/id/proces/mnre1045/2022/Instelling_gemeente</DoelID>
       <Bestand>
-         <naam>owHoofdlijn.xml</naam>
-         <objecttype>Hoofdlijn</objecttype>
+         <naam>owRegeltekst_gm0654.xml</naam>
+         <objecttype>Regeltekst</objecttype>
+         <objecttype>RegelVoorIedereen</objecttype>
       </Bestand>
       <Bestand>
-         <naam>owRegelingsgebied.xml</naam>
+         <naam>owActiviteit_gm0654.xml</naam>
+         <objecttype>Activiteit</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owGebiedsaanwijzing_gm0654.xml</naam>
+         <objecttype>Gebiedsaanwijzing</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owLocatie_gm0654.xml</naam>
+         <objecttype>Gebiedengroep</objecttype>
+         <objecttype>Gebied</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owRegelingsgebied_gm0654.xml</naam>
          <objecttype>Regelingsgebied</objecttype>
       </Bestand>
+   </Aanlevering>
+   <Aanlevering>
+      <WorkIDRegeling>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0678</WorkIDRegeling>
+      <DoelID>/join/id/proces/mnre1045/2022/Instelling_gemeente</DoelID>
       <Bestand>
-         <naam>owDivisie.xml</naam>
-         <objecttype>Divisie</objecttype>
-         <objecttype>Divisietekst</objecttype>
-         <objecttype>Tekstdeel</objecttype>
+         <naam>owRegeltekst_gm0678.xml</naam>
+         <objecttype>Regeltekst</objecttype>
+         <objecttype>RegelVoorIedereen</objecttype>
       </Bestand>
       <Bestand>
-         <naam>owLocatie.xml</naam>
+         <naam>owActiviteit_gm0678.xml</naam>
+         <objecttype>Activiteit</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owGebiedsaanwijzing_gm0678.xml</naam>
+         <objecttype>Gebiedsaanwijzing</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owLocatie_gm0678.xml</naam>
          <objecttype>Gebied</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owRegelingsgebied_gm0678.xml</naam>
+         <objecttype>Regelingsgebied</objecttype>
+      </Bestand>
+   </Aanlevering>
+   <Aanlevering>
+      <WorkIDRegeling>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0703</WorkIDRegeling>
+      <DoelID>/join/id/proces/mnre1045/2022/Instelling_gemeente</DoelID>
+      <Bestand>
+         <naam>owRegeltekst_gm0703.xml</naam>
+         <objecttype>Regeltekst</objecttype>
+         <objecttype>RegelVoorIedereen</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owActiviteit_gm0703.xml</naam>
+         <objecttype>Activiteit</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owGebiedsaanwijzing_gm0703.xml</naam>
+         <objecttype>Gebiedsaanwijzing</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owLocatie_gm0703.xml</naam>
+         <objecttype>Gebied</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>owRegelingsgebied_gm0703.xml</naam>
+         <objecttype>Regelingsgebied</objecttype>
       </Bestand>
    </Aanlevering>
 </Aanleveringen>

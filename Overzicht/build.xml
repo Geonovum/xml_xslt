@@ -35,7 +35,7 @@
     <xslt in="template.xml" out="${resultaat.dir}/overzicht.html" style="overzicht.xsl" processor="trax" force="true">
       <param name="opdracht.dir" expression="${basedir}\${opdracht.dir}"/>
     </xslt>
-    <xslt in="template.xml" out="${resultaat.dir}/regeling.html" style="regeling.xsl" processor="trax" force="true">
+    <xslt in="template.xml" out="${resultaat.dir}/besluit.html" style="besluit.xsl" processor="trax" force="true">
       <param name="opdracht.dir" expression="${basedir}\${opdracht.dir}"/>
     </xslt>
   </target>

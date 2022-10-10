@@ -168,6 +168,7 @@
         </options>
     </meta>
     <projectTree name="Overzicht.xpr">
+        <file name="besluit.xsl"/>
         <file name="build.xml"/>
         <file name="overzicht.xsl"/>
         <file name="template.xml"/>

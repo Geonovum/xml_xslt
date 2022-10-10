@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringBesluit xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    schemaversie="1.2.0"
+                    xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+   <BesluitVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/akn/nl/bill/mnre1045/2022/EZvb17ZW380-3001</FRBRWork>
+         <FRBRExpression>/akn/nl/bill/mnre1045/2022/EZvb17ZW380-3001/nld@2022-03-01;1</FRBRExpression>
+         <soortWork>/join/id/stop/work_003</soortWork>
+      </ExpressionIdentificatie>
+      <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/ministerie/mnre1045</eindverantwoordelijke>
+         <maker>/tooi/id/ministerie/mnre1045</maker>
+         <soortBestuursorgaan>/tooi/def/thes/kern/c_bcfb7b4e</soortBestuursorgaan>
+         <officieleTitel>Voorbereidingsbesluit Zuid-West 380 kV Oost (Rilland-Tilburg)</officieleTitel>
+         <heeftCiteertitelInformatie>
+            <CiteertitelInformatie>
+               <citeertitel>Voorbereidingsbesluit Zuid-West 380 kV Oost (Rilland-Tilburg)</citeertitel>
+               <isOfficieel>true</isOfficieel>
+            </CiteertitelInformatie>
+         </heeftCiteertitelInformatie>
+         <grondslagen>
+            <grondslag>
+               <TekstReferentie>
+                  <uri>jcil.31:c:BWBR0037885&amp;artikel=5.44</uri>
+                  <label>Artikel 5.44 Omgevingswet</label>
+                  <soortRef>JCI</soortRef>
+               </TekstReferentie>
+            </grondslag>
+         </grondslagen>
+         <onderwerpen>
+            <onderwerp>/tooi/def/concept/c_f4f1867a</onderwerp>
+         </onderwerpen>
+         <rechtsgebieden>
+            <rechtsgebied>/tooi/def/concept/c_638d8062</rechtsgebied>
+         </rechtsgebieden>
+         <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
+         <informatieobjectRefs>
+            <informatieobjectRef>/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Borsele/nld@2022-03-01;1</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Kapelle/nld@2022-03-01;1</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Reimerswaal/nld@2022-03-01;1</informatieobjectRef>
+         </informatieobjectRefs>
+      </BesluitMetadata>
+      <Procedureverloop xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bekendOp>2017-04-01</bekendOp>
+         <ontvangenOp>2017-04-01</ontvangenOp>
+         <procedurestappen>
+            <Procedurestap>
+               <soortStap>/join/id/stop/procedure/stap_002</soortStap>
+               <voltooidOp>2017-04-01</voltooidOp>
+            </Procedurestap>
+            <Procedurestap>
+               <soortStap>/join/id/stop/procedure/stap_003</soortStap>
+               <voltooidOp>2017-04-01</voltooidOp>
+            </Procedurestap>
+         </procedurestappen>
+      </Procedureverloop>
+      <ConsolidatieInformatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <BeoogdeRegelgeving>
+            <BeoogdeRegeling>
+               <doelen>
+                  <doel>/join/id/proces/mnre1045/2022/Instelling_gemeente</doel>
+               </doelen>
+               <instrumentVersie>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0654/nld@2022-03-01;1</instrumentVersie>
+               <eId>art_II</eId>
+            </BeoogdeRegeling>
+            <BeoogdeRegeling>
+               <doelen>
+                  <doel>/join/id/proces/mnre1045/2022/Instelling_gemeente</doel>
+               </doelen>
+               <instrumentVersie>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0678/nld@2022-03-01;1</instrumentVersie>
+               <eId>art_II</eId>
+            </BeoogdeRegeling>
+            <BeoogdeRegeling>
+               <doelen>
+                  <doel>/join/id/proces/mnre1045/2022/Instelling_gemeente</doel>
+               </doelen>
+               <instrumentVersie>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0703/nld@2022-03-01;1</instrumentVersie>
+               <eId>art_II</eId>
+            </BeoogdeRegeling>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/mnre1045/2022/Instelling_gemeente</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Borsele/nld@2022-03-01;1</instrumentVersie>
+               <eId>!initieel_gm0654#cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/mnre1045/2022/Instelling_gemeente</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Kapelle/nld@2022-03-01;1</instrumentVersie>
+               <eId>
+!initieel_gm0678#cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/mnre1045/2022/Instelling_gemeente</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Reimerswaal/nld@2022-03-01;1</instrumentVersie>
+               <eId>
+!initieel_gm0703#cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1</eId>
+            </BeoogdInformatieobject>
+         </BeoogdeRegelgeving>
+         <Tijdstempels>
+            <Tijdstempel>
+               <doel>/join/id/proces/mnre1045/2022/Instelling_gemeente</doel>
+               <soortTijdstempel>juridischWerkendVanaf</soortTijdstempel>
+               <datum>2017-04-02</datum>
+               <eId>art_V</eId>
+            </Tijdstempel>
+         </Tijdstempels>
+      </ConsolidatieInformatie>
+      <BesluitCompact xmlns="https://standaarden.overheid.nl/stop/imop/tekst/">
+         <RegelingOpschrift eId="longTitle" wId="longTitle">
+            <Al>Voorbereidingsbesluit Zuid-West 380 kV Oost (Rilland-Tilburg)</Al>
+         </RegelingOpschrift>
+         <Aanhef eId="formula_1" wId="formula_1">
+            <Al>De Minister van Economische Zaken en De Minister van Infrastructuur en Milieu</Al>
+            <Al>
+               <b>Overwegende dat:</b>
+            </Al>
+            <Al>het wenselijk is te voorkomen dat zich in het gebied van het projectbesluit voor het tracé van de voorgenomen hoogspanningsverbinding Zuid-West 380 kV (hoogspanningsverbinding Borssele-Tilburg) gericht op het stellen van regels in de omgevingsplannen van de gemeenten Borsele, Kapelle en Reimerswaal, ruimtelijke ontwikkelingen voordoen die het gebied minder geschikt maken voor de verwezenlijking van het doel van die regels;</Al>
+            <Al>hiertoe in de Omgevingswet de mogelijkheid wordt geboden een voorbereidingsbesluit te nemen;</Al>
+            <Al>Gelet op de artikelen 4.14 en 4.16 van de Omgevingswet in samenhang met artikel 10.1 van het Omgevingsbesluit;</Al>
+            <Al>
+               <b>Besluiten:</b>
+            </Al>
+         </Aanhef>
+         <Lichaam eId="body" wId="body">
+            <Artikel eId="art_I" wId="mnre1045_1__art_I">
+               <Kop>
+                  <Label>Artikel</Label>
+                  <Nummer>I</Nummer>
+               </Kop>
+               <Inhoud>
+                  <Al>Te verklaren dat voor het werkingsgebied, zoals aangegeven op de bij dit besluit behorende kaart, een projectbesluit als bedoeld in artikel 5.44, eerste lid, van de Omgevingswet wordt voorbereid gericht op het stellen van regels in de omgevingsplannen van de gemeenten Borsele, Kapelle en Reimerswaal voor het tracédeel Zuid-West 380 kV west van een 380 kilovolt hoogspanningsverbinding tussen Borssele en Tilburg, enkele daarmee samenhangende ondergrondse 150 kV hoogspanningsverbindingen, alsmede de in verband met de aanleg van de nieuwe 380 kV verbinding noodzakelijke tijdelijke 150 kV en 380 kV verbindingen ('noodlijnen').Dit voorbereidingsbesluit heeft betrekking op het gedeelte Zuid-West 380 kV west van de 380 kV verbinding (van 380 kV station Borssele tot aan 380 kV station Rilland). De ruimtelijke inpassing van het deel Zuid-West 380 kV oost wordt met een separate projectprocedure geregeld.</Al>
+               </Inhoud>
+            </Artikel>
+            <WijzigArtikel eId="art_II" wId="mnre1045_1__art_II">
+               <Kop>
+                  <Label>Artikel</Label>
+                  <Nummer>II</Nummer>
+               </Kop>
+               <Wat>Voor het omgevingsplan van de gemeente Borsele gelden de voorbeschermingsregels die zijn vastgelegd in <IntRef ref="cmp_A">bijlage A</IntRef>. </Wat>
+            </WijzigArtikel>
+            <WijzigArtikel eId="art_III" wId="mnre1045_1__art_III">
+               <Kop>
+                  <Label>Artikel</Label>
+                  <Nummer>III</Nummer>
+               </Kop>
+               <Wat>Voor het omgevingsplan van de gemeente Kapelle gelden de voorbeschermingsregels die zijn vastgelegd in <IntRef ref="cmp_B">bijlage B</IntRef>.</Wat>
+            </WijzigArtikel>
+            <WijzigArtikel eId="art_IV" wId="mnre1045_1__art_IV">
+               <Kop>
+                  <Label>Artikel</Label>
+                  <Nummer>IV</Nummer>
+               </Kop>
+               <Wat>Voor het omgevingsplan van de gemeente Reimerswaal gelden de voorbeschermingsregels die zijn vastgelegd in <IntRef ref="cmp_C">bijlage C</IntRef>.</Wat>
+            </WijzigArtikel>
+            <Artikel eId="art_V" wId="mnre1045_1__art_V">
+               <Kop>
+                  <Label>Artikel</Label>
+                  <Nummer>V</Nummer>
+               </Kop>
+               <Inhoud>
+                  <Al>Dit voorbereidingsbesluit wordt bekendgemaakt en beschikbaar gesteld op <ExtRef ref="https://www.officielebekendmakingen.nl" soort="URL">https://www.officielebekendmakingen.nl</ExtRef>. Het besluit wordt tevens ter inzage gelegd en is te raadplegen via het Omgevingsloket van de landelijke voorziening digitaal stelsel omgevingswet.</Al>
+                  <Al>Dit besluit treedt in werking op de dag waarop het bekend wordt gemaakt.</Al>
+               </Inhoud>
+            </Artikel>
+         </Lichaam>
+         <Sluiting eId="formula_2" wId="formula_2">
+            <Al>'s-Gravenhage,</Al>
+            <Ondertekening>
+               <Al>w.g. …………………</Al>
+               <Al>H.G.J. Kamp</Al>
+               <Al>Minister van Economische Zaken,</Al>
+            </Ondertekening>
+            <Ondertekening>
+               <Al>w.g………………….</Al>
+               <Al>Mw. drs. M.H. Schultz van Haegen</Al>
+               <Al>Minister van Infrastructuur en Milieu</Al>
+            </Ondertekening>
+         </Sluiting>
+         <WijzigBijlage eId="cmp_A" wId="mnre1045_1__cmp_A">
+            <Kop>
+               <Label>Bijlage</Label>
+               <Nummer>A</Nummer>
+               <Opschrift>Voorbeschermingsregels uit voorbereidingsbesluit Zuid-West 380 kV Oost - Borsele</Opschrift>
+            </Kop>
+            <RegelingTijdelijkdeel componentnaam="initieel_gm0654"
+                                   wordt="/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0654/nld@2022-03-01;1">
+               <RegelingOpschrift eId="longTitle" wId="longTitle">
+                  <Al>Voorbeschermingsregels uit voorbereidingsbesluit Zuid-West 380 kV Oost - Borsele</Al>
+               </RegelingOpschrift>
+               <Lichaam eId="body" wId="body">
+                  <Conditie>
+                     <Artikel eId="art_o_1" wId="mnre1045_1__art_o_1">
+                        <Kop>
+                           <Opschrift>Voorrangsbepaling</Opschrift>
+                        </Kop>
+                        <Inhoud>
+                           <Al>Voor zover de regels in de hoofdregeling van het omgevingsplan afwijken van deze voorbeschermingsregels gelden alleen de voorbeschermingsregels.</Al>
+                        </Inhoud>
+                     </Artikel>
+                  </Conditie>
+                  <Hoofdstuk eId="chp_1" wId="mnre1045_1__chp_1">
+                     <Kop>
+                        <Label>Hoofdstuk</Label>
+                        <Nummer>1</Nummer>
+                        <Opschrift>Voorbeschermingsregels</Opschrift>
+                     </Kop>
+                     <Artikel eId="chp_1__art_1.1" wId="mnre1045_1__chp_1__art_1.1">
+                        <Kop>
+                           <Label>Artikel</Label>
+                           <Nummer>1.1</Nummer>
+                           <Opschrift>Uitvoeren van werken, geen bouwwerken zijnde</Opschrift>
+                        </Kop>
+                        <Lid eId="chp_1__art_1.1__para_1" wId="mnre1045_1__chp_1__art_1.1__para_1">
+                           <LidNummer>1.</LidNummer>
+                           <Inhoud>
+                              <Lijst eId="chp_1__art_1.1__para_1__list_o_1"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1"
+                                     type="expliciet">
+                                 <Lijstaanhef>Ter plaatse van de locatie <IntIoRef eId="chp_1__art_1.1__para_1__list_o_1__ref_o_1" wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__ref_o_1" ref="mnre1045_1__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1">Hoogspanningsverbinding 380 kV Oost - Borsele</IntIoRef> is het verboden om zonder omgevingsvergunning de volgende werken, geen bouwwerken zijnde, en werkzaamheden uit te voeren:</Lijstaanhef>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_a"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_a">
+                                    <LiNummer>a.</LiNummer>
+                                    <Al>het aanbrengen van beplantingen en bomen;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_b"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_b">
+                                    <LiNummer>b.</LiNummer>
+                                    <Al>het aanleggen van wegen of paden en het aanbrengen van andere oppervlakteverhardingen;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_c"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_c">
+                                    <LiNummer>c.</LiNummer>
+                                    <Al>het indrijven van voorwerpen in de bodem;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_d"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_d">
+                                    <LiNummer>d.</LiNummer>
+                                    <Al>het permanent opslaan van goederen;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_e"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_e">
+                                    <LiNummer>e.</LiNummer>
+                                    <Al>het uitvoeren van grondbewerkingen, waartoe worden gerekend afgraven, woelen, mengen, diepploegen, egaliseren, ontginnen, ophogen en aanleggen van drainage;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_f"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_f">
+                                    <LiNummer>f.</LiNummer>
+                                    <Al>het aanleggen, vergraven, verruimen of dempen van sloten, vijvers en andere wateren.</Al>
+                                 </Li>
+                              </Lijst>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.1__para_2" wId="mnre1045_1__chp_1__art_1.1__para_2">
+                           <LidNummer>2.</LidNummer>
+                           <Inhoud>
+                              <Al>De vergunning, bedoeld in het eerste lid, wordt geweigerd indien de werken en werkzaamheden naar het oordeel van het bevoegd gezag de grond in het gebied, waarvoor deze voorbeschermingsregels gelden, minder geschikt maakt voor de verwezenlijking van de bij het in voorbereiding zijnde projectbesluit daaraan te geven regels in het omgevingsplan.</Al>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.1__para_3" wId="mnre1045_1__chp_1__art_1.1__para_3">
+                           <LidNummer>3.</LidNummer>
+                           <Inhoud>
+                              <Al>Het bevoegd gezag raadpleegt ten behoeve van het oordeel, bedoeld in het tweede lid, de minister van Economische Zaken alsmede de beheerder van de hoogspanningsverbinding.</Al>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.1__para_4" wId="mnre1045_1__chp_1__art_1.1__para_4">
+                           <LidNummer>4.</LidNummer>
+                           <Inhoud>
+                              <Al>Het verbod, bedoeld in het eerste lid, is niet van toepassing op werken of</Al>
+                              <Lijst eId="chp_1__art_1.1__para_4__list_o_1"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_4__list_o_1"
+                                     type="expliciet">
+                                 <Lijstaanhef>werkzaamheden die:</Lijstaanhef>
+                                 <Li eId="chp_1__art_1.1__para_4__list_o_1__item_a"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_4__list_o_1__item_a">
+                                    <LiNummer>a.</LiNummer>
+                                    <Al>betreffen het normale onderhoud en beheer ten dienste van de functies en activiteiten die op grond van het omgevingsplan zijn toegelaten;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_4__list_o_1__item_b"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_4__list_o_1__item_b">
+                                    <LiNummer>b.</LiNummer>
+                                    <Al>reeds in uitvoering zijn op het tijdstip van inwerkingtreding van deze voorbeschermingsregels in overeenstemming met de op dat moment geldende toepasselijke regelgeving;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_4__list_o_1__item_c"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_4__list_o_1__item_c">
+                                    <LiNummer>c.</LiNummer>
+                                    <Al>worden uitgevoerd ten behoeve van de aanleg en onderhoud van buisleidingen in de buisleidingenstrook door Zeeland (vanaf de buisleidingenstraat Rotterdam - Antwerpen naar het Sloegebied) op basis van en conform de Structuurvisie Buisleidingen.</Al>
+                                 </Li>
+                              </Lijst>
+                           </Inhoud>
+                        </Lid>
+                     </Artikel>
+                     <Artikel eId="chp_1__art_1.2" wId="mnre1045_1__chp_1__art_1.2">
+                        <Kop>
+                           <Label>Artikel</Label>
+                           <Nummer>1.2</Nummer>
+                           <Opschrift>Wijziging gebruik</Opschrift>
+                        </Kop>
+                        <Lid eId="chp_1__art_1.2__para_1" wId="mnre1045_1__chp_1__art_1.2__para_1">
+                           <LidNummer>1.</LidNummer>
+                           <Inhoud>
+                              <Lijst eId="chp_1__art_1.2__para_1__list_o_1"
+                                     wId="mnre1045_1__chp_1__art_1.2__para_1__list_o_1"
+                                     type="expliciet">
+                                 <Lijstaanhef>Ter plaatse van de locatie <IntIoRef eId="chp_1__art_1.2__para_1__list_o_1__ref_o_1" wId="mnre1045_1__chp_1__art_1.2__para_1__list_o_1__ref_o_1" ref="mnre1045_1__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1">Hoogspanningsverbinding 380 kV Oost - Borsele</IntIoRef> is het verboden om zonder of in afwijking van een omgevingsvergunning het bestaande gebruik van gronden en bouwwerken te wijzigen ten behoeve van:</Lijstaanhef>
+                                 <Li eId="chp_1__art_1.2__para_1__list_o_1__item_a"
+                                     wId="mnre1045_1__chp_1__art_1.2__para_1__list_o_1__item_a">
+                                    <LiNummer>a.</LiNummer>
+                                    <Al>het verrichten van activiteiten met en/of opslag van stoffen die bij of krachtens het bepaalde in hoofdstuk 9 van de Wet milieubeheer aangeduid zijn als milieugevaarlijk of één of meer van de volgende eigenschappen hebben: ontplofbaar, oxiderend, (zeer) licht ontvlambaar, (zeer) giftig, bijtend, irriterend of schadelijk;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.2__para_1__list_o_1__item_b"
+                                     wId="mnre1045_1__chp_1__art_1.2__para_1__list_o_1__item_b">
+                                    <LiNummer>b.</LiNummer>
+                                    <Al>het realiseren van beperkt kwetsbare gebouwen, kwetsbare gebouwen en zeer kwetsbare gebouwen ten behoeve van een woonfunctie, een onderwijsfunctie of een bijeenkomstfunctie voor kinderopvang.</Al>
+                                 </Li>
+                              </Lijst>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.2__para_2" wId="mnre1045_1__chp_1__art_1.2__para_2">
+                           <LidNummer>2.</LidNummer>
+                           <Inhoud>
+                              <Al>De vergunning, bedoeld in het eerste lid, wordt geweigerd indien het voorgenomen gebruik naar het oordeel van het bevoegd gezag de locatie als bedoeld in het eerste lid, minder geschikt maakt voor de verwezenlijking van deze voorbeschermingsregels en het in voorbereiding zijnde projectbesluit.</Al>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.2__para_3" wId="mnre1045_1__chp_1__art_1.2__para_3">
+                           <LidNummer>3.</LidNummer>
+                           <Inhoud>
+                              <Al>Het bevoegd gezag vraagt, voorafgaande aan de beslissing omtrent de in het eerste lid bedoelde vergunning, schriftelijk advies aan de minister van Economische Zaken.</Al>
+                           </Inhoud>
+                        </Lid>
+                     </Artikel>
+                  </Hoofdstuk>
+               </Lichaam>
+               <Bijlage eId="cmp_o_1" wId="mnre1045_1__cmp_o_1">
+                  <Kop>
+                     <Label>Bijlage</Label>
+                     <Opschrift>Overzicht van informatieobjecten</Opschrift>
+                  </Kop>
+                  <Divisietekst eId="cmp_o_1__content_o_1" wId="mnre1045_1__cmp_o_1__content_o_1">
+                     <Inhoud>
+                        <Al>Onderstaande lijst bevat de in dit document gebruikte termen waarmee in de tekst wordt verwezen naar de locatie(s) waar de betreffende regel of annotatie geldt. Bij iedere term staat de identificatie van het geografische informatieobject waarmee de bij de regels horende locaties en waarden juridisch authentiek zijn vastgelegd:</Al>
+                        <Begrippenlijst eId="cmp_o_1__content_o_1__list_o_1"
+                                        wId="mnre1045_1__cmp_o_1__content_o_1__list_o_1">
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_1"
+                                   wId="mnre1045_1__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>Hoogspanningsverbinding 380 kV Oost – Borsele</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              wId="mnre1045_1__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Borsele/nld@2022-03-01;1">/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Borsele/nld@2022-03-01;1</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                        </Begrippenlijst>
+                     </Inhoud>
+                  </Divisietekst>
+               </Bijlage>
+            </RegelingTijdelijkdeel>
+         </WijzigBijlage>
+         <WijzigBijlage eId="cmp_B" wId="mnre1045_1__cmp_B">
+            <Kop>
+               <Label>Bijlage</Label>
+               <Nummer>B</Nummer>
+               <Opschrift>Voorbeschermingsregels uit voorbereidingsbesluit Zuid-West 380 kV Oost - Kapelle</Opschrift>
+            </Kop>
+            <RegelingTijdelijkdeel componentnaam="initieel_gm0678"
+                                   wordt="/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0678/nld@2022-03-01;1">
+               <RegelingOpschrift eId="longTitle" wId="longTitle">
+                  <Al>Voorbeschermingsregels uit voorbereidingsbesluit Zuid-West 380 kV Oost - Kapelle</Al>
+               </RegelingOpschrift>
+               <Lichaam eId="body" wId="body">
+                  <Conditie>
+                     <Artikel eId="art_o_1" wId="mnre1045_1__art_o_1">
+                        <Kop>
+                           <Opschrift>Voorrangsbepaling</Opschrift>
+                        </Kop>
+                        <Inhoud>
+                           <Al>Voor zover de regels in de hoofdregeling van het omgevingsplan afwijken van deze voorbeschermingsregels gelden alleen de voorbeschermingsregels.</Al>
+                        </Inhoud>
+                     </Artikel>
+                  </Conditie>
+                  <Hoofdstuk eId="chp_1" wId="mnre1045_1__chp_1">
+                     <Kop>
+                        <Label>Hoofdstuk</Label>
+                        <Nummer>1</Nummer>
+                        <Opschrift>Voorbeschermingsregels</Opschrift>
+                     </Kop>
+                     <Artikel eId="chp_1__art_1.1" wId="mnre1045_1__chp_1__art_1.1">
+                        <Kop>
+                           <Label>Artikel</Label>
+                           <Nummer>1.1</Nummer>
+                           <Opschrift>Uitvoeren van werken, geen bouwwerken zijnde</Opschrift>
+                        </Kop>
+                        <Lid eId="chp_1__art_1.1__para_1" wId="mnre1045_1__chp_1__art_1.1__para_1">
+                           <LidNummer>1.</LidNummer>
+                           <Inhoud>
+                              <Lijst eId="chp_1__art_1.1__para_1__list_o_1"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1"
+                                     type="expliciet">
+                                 <Lijstaanhef>Ter plaatse van de locatie <IntIoRef eId="chp_1__art_1.1__para_1__list_o_1__ref_o_1" wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__ref_o_1" ref="mnre1045_1__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1">Hoogspanningsverbinding 380 kV Oost - Kapelle</IntIoRef> is het verboden om zonder omgevingsvergunning de volgende werken, geen bouwwerken zijnde, en werkzaamheden uit te voeren:</Lijstaanhef>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_a"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_a">
+                                    <LiNummer>a.</LiNummer>
+                                    <Al>het aanbrengen van beplantingen en bomen;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_b"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_b">
+                                    <LiNummer>b.</LiNummer>
+                                    <Al>het aanleggen van wegen of paden en het aanbrengen van andere oppervlakteverhardingen;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_c"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_c">
+                                    <LiNummer>c.</LiNummer>
+                                    <Al>het indrijven van voorwerpen in de bodem;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_d"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_d">
+                                    <LiNummer>d.</LiNummer>
+                                    <Al>het permanent opslaan van goederen;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_e"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_e">
+                                    <LiNummer>e.</LiNummer>
+                                    <Al>het uitvoeren van grondbewerkingen, waartoe worden gerekend afgraven, woelen, mengen, diepploegen, egaliseren, ontginnen, ophogen en aanleggen van drainage;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_f"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_f">
+                                    <LiNummer>f.</LiNummer>
+                                    <Al>het aanleggen, vergraven, verruimen of dempen van sloten, vijvers en andere wateren.</Al>
+                                 </Li>
+                              </Lijst>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.1__para_2" wId="mnre1045_1__chp_1__art_1.1__para_2">
+                           <LidNummer>2.</LidNummer>
+                           <Inhoud>
+                              <Al>De vergunning, bedoeld in het eerste lid, wordt geweigerd indien de werken en werkzaamheden naar het oordeel van het bevoegd gezag de grond in het gebied, waarvoor deze voorbeschermingsregels gelden, minder geschikt maakt voor de verwezenlijking van de bij het in voorbereiding zijnde projectbesluit daaraan te geven regels in het omgevingsplan.</Al>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.1__para_3" wId="mnre1045_1__chp_1__art_1.1__para_3">
+                           <LidNummer>3.</LidNummer>
+                           <Inhoud>
+                              <Al>Het bevoegd gezag raadpleegt ten behoeve van het oordeel, bedoeld in het tweede lid, de minister van Economische Zaken alsmede de beheerder van de hoogspanningsverbinding.</Al>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.1__para_4" wId="mnre1045_1__chp_1__art_1.1__para_4">
+                           <LidNummer>4.</LidNummer>
+                           <Inhoud>
+                              <Lijst eId="chp_1__art_1.1__para_4__list_o_1"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_4__list_o_1"
+                                     type="expliciet">
+                                 <Lijstaanhef>Het verbod, bedoeld in het eerste lid, is niet van toepassing op werken of werkzaamheden die:</Lijstaanhef>
+                                 <Li eId="chp_1__art_1.1__para_4__list_o_1__item_a"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_4__list_o_1__item_a">
+                                    <LiNummer>a.</LiNummer>
+                                    <Al>betreffen het normale onderhoud en beheer ten dienste van de functies en activiteiten die op grond van het omgevingsplan zijn toegelaten;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_4__list_o_1__item_b"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_4__list_o_1__item_b">
+                                    <LiNummer>b.</LiNummer>
+                                    <Al>reeds in uitvoering zijn op het tijdstip van inwerkingtreding van deze voorbeschermingsregels in overeenstemming met de op dat moment geldende toepasselijke regelgeving;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_4__list_o_1__item_c"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_4__list_o_1__item_c">
+                                    <LiNummer>c.</LiNummer>
+                                    <Al>worden uitgevoerd ten behoeve van de aanleg en onderhoud van buisleidingen in de buisleidingenstrook door Zeeland (vanaf de buisleidingenstraat Rotterdam - Antwerpen naar het Sloegebied) op basis van en conform de Structuurvisie Buisleidingen.</Al>
+                                 </Li>
+                              </Lijst>
+                           </Inhoud>
+                        </Lid>
+                     </Artikel>
+                     <Artikel eId="chp_1__art_1.2" wId="mnre1045_1__chp_1__art_1.2">
+                        <Kop>
+                           <Label>Artikel</Label>
+                           <Nummer>1.2</Nummer>
+                           <Opschrift>Wijziging gebruik</Opschrift>
+                        </Kop>
+                        <Lid eId="chp_1__art_1.2__para_1" wId="mnre1045_1__chp_1__art_1.2__para_1">
+                           <LidNummer>1.</LidNummer>
+                           <Inhoud>
+                              <Lijst eId="chp_1__art_1.2__para_1__list_o_1"
+                                     wId="mnre1045_1__chp_1__art_1.2__para_1__list_o_1"
+                                     type="expliciet">
+                                 <Lijstaanhef>Ter plaatse van de locatie <IntIoRef eId="chp_1__art_1.2__para_1__list_o_1__ref_o_1" wId="mnre1045_1__chp_1__art_1.2__para_1__list_o_1__ref_o_1" ref="mnre1045_1__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1">Hoogspanningsverbinding 380 kV Oost - Kapelle</IntIoRef> is het verboden om zonder of in afwijking van een omgevingsvergunning het bestaande gebruik van gronden en bouwwerken te wijzigen ten behoeve van:</Lijstaanhef>
+                                 <Li eId="chp_1__art_1.2__para_1__list_o_1__item_a"
+                                     wId="mnre1045_1__chp_1__art_1.2__para_1__list_o_1__item_a">
+                                    <LiNummer>a.</LiNummer>
+                                    <Al>het verrichten van activiteiten met en/of opslag van stoffen die bij of krachtens het bepaalde in hoofdstuk 9 van de Wet milieubeheer aangeduid zijn als milieugevaarlijk of één of meer van de volgende eigenschappen hebben: ontplofbaar, oxiderend, (zeer) licht ontvlambaar, (zeer) giftig, bijtend, irriterend of schadelijk;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.2__para_1__list_o_1__item_b"
+                                     wId="mnre1045_1__chp_1__art_1.2__para_1__list_o_1__item_b">
+                                    <LiNummer>b.</LiNummer>
+                                    <Al>het realiseren van beperkt kwetsbare gebouwen, kwetsbare gebouwen en zeer kwetsbare gebouwen ten behoeve van een woonfunctie, een onderwijsfunctie of een bijeenkomstfunctie voor kinderopvang.</Al>
+                                 </Li>
+                              </Lijst>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.2__para_2" wId="mnre1045_1__chp_1__art_1.2__para_2">
+                           <LidNummer>2.</LidNummer>
+                           <Inhoud>
+                              <Al>De vergunning, bedoeld in het eerste lid, wordt geweigerd indien het voorgenomen gebruik naar het oordeel van het bevoegd gezag de locatie als bedoeld in het eerste lid, minder geschikt maakt voor de verwezenlijking van deze voorbeschermingsregels en het in voorbereiding zijnde projectbesluit.</Al>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.2__para_3" wId="mnre1045_1__chp_1__art_1.2__para_3">
+                           <LidNummer>3.</LidNummer>
+                           <Inhoud>
+                              <Al>Het bevoegd gezag vraagt, voorafgaande aan de beslissing omtrent de in het eerste lid bedoelde vergunning, schriftelijk advies aan de minister van Economische Zaken.</Al>
+                           </Inhoud>
+                        </Lid>
+                     </Artikel>
+                  </Hoofdstuk>
+               </Lichaam>
+               <Bijlage eId="cmp_o_1" wId="mnre1045_1__cmp_o_1">
+                  <Kop>
+                     <Label>Bijlage</Label>
+                     <Opschrift>Overzicht van informatieobjecten</Opschrift>
+                  </Kop>
+                  <Divisietekst eId="cmp_o_1__content_o_1" wId="mnre1045_1__cmp_o_1__content_o_1">
+                     <Inhoud>
+                        <Al>Onderstaande lijst bevat de in dit document gebruikte termen waarmee in de tekst wordt verwezen naar de locatie(s) waar de betreffende regel of annotatie geldt. Bij iedere term staat de identificatie van het geografische informatieobject waarmee de bij de regels horende locaties en waarden juridisch authentiek zijn vastgelegd:</Al>
+                        <Begrippenlijst eId="cmp_o_1__content_o_1__list_o_1"
+                                        wId="mnre1045_1__cmp_o_1__content_o_1__list_o_1">
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_1"
+                                   wId="mnre1045_1__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>Hoogspanningsverbinding 380 kV Oost – Kapelle</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              wId="mnre1045_1__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Kapelle/nld@2022-03-01;1">/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Kapelle/nld@2022-03-01;1</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                        </Begrippenlijst>
+                     </Inhoud>
+                  </Divisietekst>
+               </Bijlage>
+            </RegelingTijdelijkdeel>
+         </WijzigBijlage>
+         <WijzigBijlage eId="cmp_C" wId="mnre1045_1__cmp_C">
+            <Kop>
+               <Label>Bijlage</Label>
+               <Nummer>C</Nummer>
+               <Opschrift>Voorbeschermingsregels uit voorbereidingsbesluit Zuid-West 380 kV Oost - Reimerswaal</Opschrift>
+            </Kop>
+            <RegelingTijdelijkdeel componentnaam="initieel_gm0703"
+                                   wordt="/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0703/nld@2022-03-01;1">
+               <RegelingOpschrift eId="longTitle" wId="longTitle">
+                  <Al>Voorbeschermingsregels uit voorbereidingsbesluit Zuid-West 380 kV Oost - Reimerswaal</Al>
+               </RegelingOpschrift>
+               <Lichaam eId="body" wId="body">
+                  <Conditie>
+                     <Artikel eId="art_o_1" wId="mnre1045_1__art_o_1">
+                        <Kop>
+                           <Opschrift>Voorrangsbepaling</Opschrift>
+                        </Kop>
+                        <Inhoud>
+                           <Al>Voor zover de regels in de hoofdregeling van het omgevingsplan afwijken van deze voorbeschermingsregels gelden alleen de voorbeschermingsregels.</Al>
+                        </Inhoud>
+                     </Artikel>
+                  </Conditie>
+                  <Hoofdstuk eId="chp_1" wId="mnre1045_1__chp_1">
+                     <Kop>
+                        <Label>Hoofdstuk</Label>
+                        <Nummer>1</Nummer>
+                        <Opschrift>Voorbeschermingsregels</Opschrift>
+                     </Kop>
+                     <Artikel eId="chp_1__art_1.1" wId="mnre1045_1__chp_1__art_1.1">
+                        <Kop>
+                           <Label>Artikel</Label>
+                           <Nummer>1.1</Nummer>
+                           <Opschrift>Uitvoeren van werken, geen bouwwerken zijnde</Opschrift>
+                        </Kop>
+                        <Lid eId="chp_1__art_1.1__para_1" wId="mnre1045_1__chp_1__art_1.1__para_1">
+                           <LidNummer>1.</LidNummer>
+                           <Inhoud>
+                              <Lijst eId="chp_1__art_1.1__para_1__list_o_1"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1"
+                                     type="expliciet">
+                                 <Lijstaanhef>Ter plaatse van de locatie <IntIoRef eId="chp_1__art_1.1__para_1__list_o_1__ref_o_1" wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__ref_o_1" ref="mnre1045_1__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1">Hoogspanningsverbinding 380 kV Oost - Reimerswaal</IntIoRef> is het verboden om zonder omgevingsvergunning de volgende werken, geen bouwwerken zijnde, en werkzaamheden uit te voeren:</Lijstaanhef>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_a"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_a">
+                                    <LiNummer>a.</LiNummer>
+                                    <Al>het aanbrengen van beplantingen en bomen;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_b"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_b">
+                                    <LiNummer>b.</LiNummer>
+                                    <Al>het aanleggen van wegen of paden en het aanbrengen van andere oppervlakteverhardingen;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_c"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_c">
+                                    <LiNummer>c.</LiNummer>
+                                    <Al>het indrijven van voorwerpen in de bodem;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_d"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_d">
+                                    <LiNummer>d.</LiNummer>
+                                    <Al>het permanent opslaan van goederen;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_e"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_e">
+                                    <LiNummer>e.</LiNummer>
+                                    <Al>het uitvoeren van grondbewerkingen, waartoe worden gerekend afgraven, woelen, mengen, diepploegen, egaliseren, ontginnen, ophogen en aanleggen van drainage;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_1__list_o_1__item_f"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_1__list_o_1__item_f">
+                                    <LiNummer>f.</LiNummer>
+                                    <Al>het aanleggen, vergraven, verruimen of dempen van sloten, vijvers en andere wateren.</Al>
+                                 </Li>
+                              </Lijst>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.1__para_2" wId="mnre1045_1__chp_1__art_1.1__para_2">
+                           <LidNummer>2.</LidNummer>
+                           <Inhoud>
+                              <Al>De vergunning, bedoeld in het eerste lid, wordt geweigerd indien de werken en werkzaamheden naar het oordeel van het bevoegd gezag de grond in het gebied, waarvoor deze voorbeschermingsregels gelden, minder geschikt maakt voor de verwezenlijking van de bij het in voorbereiding zijnde projectbesluit daaraan te geven regels in het omgevingsplan.</Al>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.1__para_3" wId="mnre1045_1__chp_1__art_1.1__para_3">
+                           <LidNummer>3.</LidNummer>
+                           <Inhoud>
+                              <Al>Het bevoegd gezag raadpleegt ten behoeve van het oordeel, bedoeld in het tweede lid, de minister van Economische Zaken alsmede de beheerder van de hoogspanningsverbinding.</Al>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.1__para_4" wId="mnre1045_1__chp_1__art_1.1__para_4">
+                           <LidNummer>4.</LidNummer>
+                           <Inhoud>
+                              <Lijst eId="chp_1__art_1.1__para_4__list_o_1"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_4__list_o_1"
+                                     type="expliciet">
+                                 <Lijstaanhef>Het verbod, bedoeld in het eerste lid, is niet van toepassing op werken of werkzaamheden die:</Lijstaanhef>
+                                 <Li eId="chp_1__art_1.1__para_4__list_o_1__item_a"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_4__list_o_1__item_a">
+                                    <LiNummer>a.</LiNummer>
+                                    <Al>betreffen het normale onderhoud en beheer ten dienste van de functies en activiteiten die op grond van het omgevingsplan zijn toegelaten;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_4__list_o_1__item_b"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_4__list_o_1__item_b">
+                                    <LiNummer>b.</LiNummer>
+                                    <Al>reeds in uitvoering zijn op het tijdstip van inwerkingtreding van deze voorbeschermingsregels in overeenstemming met de op dat moment geldende toepasselijke regelgeving;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.1__para_4__list_o_1__item_c"
+                                     wId="mnre1045_1__chp_1__art_1.1__para_4__list_o_1__item_c">
+                                    <LiNummer>c.</LiNummer>
+                                    <Al>worden uitgevoerd ten behoeve van de aanleg en onderhoud van buisleidingen in de buisleidingenstrook door Zeeland (vanaf de buisleidingenstraat Rotterdam - Antwerpen naar het Sloegebied) op basis van en conform de Structuurvisie Buisleidingen.</Al>
+                                 </Li>
+                              </Lijst>
+                           </Inhoud>
+                        </Lid>
+                     </Artikel>
+                     <Artikel eId="chp_1__art_1.2" wId="mnre1045_1__chp_1__art_1.2">
+                        <Kop>
+                           <Label>Artikel</Label>
+                           <Nummer>1.2</Nummer>
+                           <Opschrift>Wijziging gebruik</Opschrift>
+                        </Kop>
+                        <Lid eId="chp_1__art_1.2__para_1" wId="mnre1045_1__chp_1__art_1.2__para_1">
+                           <LidNummer>1.</LidNummer>
+                           <Inhoud>
+                              <Lijst eId="chp_1__art_1.2__para_1__list_o_1"
+                                     wId="mnre1045_1__chp_1__art_1.2__para_1__list_o_1"
+                                     type="expliciet">
+                                 <Lijstaanhef>Ter plaatse van de locatie <IntIoRef eId="chp_1__art_1.2__para_1__list_o_1__ref_o_1" wId="mnre1045_1__chp_1__art_1.2__para_1__list_o_1__ref_o_1" ref="mnre1045_1__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1">Hoogspanningsverbinding 380 kV Oost - Reimerswaal</IntIoRef> is het verboden om zonder of in afwijking van een omgevingsvergunning het bestaande gebruik van gronden en bouwwerken te wijzigen ten behoeve van:</Lijstaanhef>
+                                 <Li eId="chp_1__art_1.2__para_1__list_o_1__item_a"
+                                     wId="mnre1045_1__chp_1__art_1.2__para_1__list_o_1__item_a">
+                                    <LiNummer>a.</LiNummer>
+                                    <Al>het verrichten van activiteiten met en/of opslag van stoffen die bij of krachtens het bepaalde in hoofdstuk 9 van de Wet milieubeheer aangeduid zijn als milieugevaarlijk of één of meer van de volgende eigenschappen hebben: ontplofbaar, oxiderend, (zeer) licht ontvlambaar, (zeer) giftig, bijtend, irriterend of schadelijk;</Al>
+                                 </Li>
+                                 <Li eId="chp_1__art_1.2__para_1__list_o_1__item_b"
+                                     wId="mnre1045_1__chp_1__art_1.2__para_1__list_o_1__item_b">
+                                    <LiNummer>b.</LiNummer>
+                                    <Al>het realiseren van beperkt kwetsbare gebouwen, kwetsbare gebouwen en zeer kwetsbare gebouwen ten behoeve van een woonfunctie, een onderwijsfunctie of een bijeenkomstfunctie voor kinderopvang.</Al>
+                                 </Li>
+                              </Lijst>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.2__para_2" wId="mnre1045_1__chp_1__art_1.2__para_2">
+                           <LidNummer>2.</LidNummer>
+                           <Inhoud>
+                              <Al>De vergunning, bedoeld in het eerste lid, wordt geweigerd indien het voorgenomen gebruik naar het oordeel van het bevoegd gezag de locatie als bedoeld in het eerste lid, minder geschikt maakt voor de verwezenlijking van deze voorbeschermingsregels en het in voorbereiding zijnde projectbesluit.</Al>
+                           </Inhoud>
+                        </Lid>
+                        <Lid eId="chp_1__art_1.2__para_3" wId="mnre1045_1__chp_1__art_1.2__para_3">
+                           <LidNummer>3.</LidNummer>
+                           <Inhoud>
+                              <Al>Het bevoegd gezag vraagt, voorafgaande aan de beslissing omtrent de in het eerste lid bedoelde vergunning, schriftelijk advies aan de minister van Economische Zaken.</Al>
+                           </Inhoud>
+                        </Lid>
+                     </Artikel>
+                  </Hoofdstuk>
+               </Lichaam>
+               <Bijlage eId="cmp_o_1" wId="mnre1045_1__cmp_o_1">
+                  <Kop>
+                     <Label>Bijlage</Label>
+                     <Opschrift>Overzicht van informatieobjecten</Opschrift>
+                  </Kop>
+                  <Divisietekst eId="cmp_o_1__content_o_1" wId="mnre1045_1__cmp_o_1__content_o_1">
+                     <Inhoud>
+                        <Al>Onderstaande lijst bevat de in dit document gebruikte termen waarmee in de tekst wordt verwezen naar de locatie(s) waar de betreffende regel of annotatie geldt. Bij iedere term staat de identificatie van het geografische informatieobject waarmee de bij de regels horende locaties en waarden juridisch authentiek zijn vastgelegd:</Al>
+                        <Begrippenlijst eId="cmp_o_1__content_o_1__list_o_1"
+                                        wId="mnre1045_1__cmp_o_1__content_o_1__list_o_1">
+                           <Begrip eId="cmp_o_1__content_o_1__list_o_1__item_o_1"
+                                   wId="mnre1045_1__cmp_o_1__content_o_1__list_o_1__item_o_1">
+                              <Term>Hoogspanningsverbinding 380 kV Oost – Reimerswaal</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              wId="mnre1045_1__cmp_o_1__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Reimerswaal/nld@2022-03-01;1">/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Reimerswaal/nld@2022-03-01;1</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                        </Begrippenlijst>
+                     </Inhoud>
+                  </Divisietekst>
+               </Bijlage>
+            </RegelingTijdelijkdeel>
+         </WijzigBijlage>
+         <Bijlage xmlns:dso="https://www.dso.nl/"
+                  eId="cmp_1"
+                  wId="mnre1045_1__cmp_1"
+                  dso:niveau="1">
+            <Kop>
+               <Label>Deel</Label>
+               <Nummer>1</Nummer>
+               <Opschrift>Motivering</Opschrift>
+            </Kop>
+            <Divisietekst eId="cmp_1__content_1"
+                          wId="mnre1045_1__cmp_1__content_1"
+                          dso:niveau="2">
+               <Kop>
+                  <Nummer>1</Nummer>
+                  <Opschrift>Inleiding</Opschrift>
+               </Kop>
+               <Inhoud>
+                  <Al>Om in de toekomst voldoende capaciteit te hebben voor elektriciteitstransport moet tussen Borssele en Tilburg een nieuwe 380 kilovolt hoogspanningsverbinding worden aangelegd. In de Startnotitie voor de milieueffectrapportage "Zuid-West 380 kV verbinding Borssele - de landelijke ring" is onderzocht binnen welk gebied de verbinding kan worden aangelegd. Het besluit over het tracé van de verbinding wordt genomen door de minister van Economische Zaken (EZ) en de minister van Infrastructuur en Milieu (IenM). Dit volgt uit artikel 20a van de Elektriciteitswet 1998, waarin is bepaald dat bij die besluitvorming de rijkscoördinatieregeling (artikel 3.35 van de Wet ruimtelijke ordening) wordt toegepast. Het besluit over het tracé wordt door de ministers (het bevoegd gezag) neergelegd in twee inpassingsplannen (Zuid-West 380 kV west en Zuid-West 380 kV oost) als bedoeld in artikel 3.28 van de Wet ruimtelijke ordening. Op grond van artikel 3.35, tweede lid, gelezen in samenhang met artikel 3.28, tweede lid, van de Wet ruimtelijke ordening (Wro) zijn de beide ministers ook bevoegd gezamenlijk een voorbereidingsbesluit te nemen. In een voorbereidingsbesluit verklaren de ministers dat voor een bepaald gebied een inpassingsplan wordt voorbereid. Doel van het voorbereidingsbesluit is dat gebied te vrijwaren van andere ontwikkelingen die aan realisatie van het inpassingsplan in de weg kunnen staan.</Al>
+               </Inhoud>
+            </Divisietekst>
+            <Divisietekst eId="cmp_1__content_2"
+                          wId="mnre1045_1__cmp_1__content_2"
+                          dso:niveau="2">
+               <Kop>
+                  <Nummer>2</Nummer>
+                  <Opschrift>Het gebied</Opschrift>
+               </Kop>
+               <Inhoud>
+                  <Al>Het gebied waarvoor dit voorbereidingsbesluit geldt, ligt binnen het zoekgebied dat daarvoor was aangewezen in voornoemde Startnotitie. Het gebied is nader afgebakend tot een smallere zone. Dit voorbereidingsbesluit heeft betrekking op het gedeelte van de 380 kV verbinding van 380 kV station Borssele tot 380 kV station Rilland (Zuid--West 380 kV west). De ruimtelijke inpassing van het deel Zuid-West 380 kV oost wordt met een separate procedure geregeld.</Al>
+                  <Al>Een eerder voorbereidingsbesluit voor het gedeelte tussen 380 kV station Borssele en 380 kV station Rilland trad op 19 juni 2015 in werking en is inmiddels vervallen.</Al>
+                  <Tussenkop>Voorgenomen tracé maart 2011</Tussenkop>
+                  <Al>In maart 2011 hebben de betrokken ministers een voorkeur voor een tracé uitgesproken. Dit beoogd tracé is onder meer op informatieavonden in de regio toegelicht. Dit tracé is naderhand, naar aanleiding van overleg met betrokken partijen, door optimalisaties of op grond van aangepaste technische eisen, op een aantal punten enigszins aangepast of uitgewerkt en nader gedetailleerd op het niveau van mastposities. Deze wijzigingen zijn opgenomen in de eerder genomen voorbereidingsbesluiten.</Al>
+                  <Tussenkop>Motivering tracékeuze en besluitvorming</Tussenkop>
+                  <Al>Een complete motivering van het uiteindelijke definitieve tracé is door het bevoegd gezag neergelegd in de toelichting bij het ontwerp-inpassingsplan Zuid­ West 380 kV west. Het ontwerp-inpassingsplan heeft van 4 maart tot en met 14 april 2016 ter inzage gelegen. Een ieder heeft op alle aspecten van het tracé en de gemaakte keuzes zijn zienswijze kunnen indienen. Mede gezien de aard en hoeveelheid van de ingediende zienswijzen is het niet mogelijk gebleken binnen 12 weken een definitief inpassingsplan ter inzage te leggen. Daarmee is ook de beschermende werking vervallen. Eind 2016 zal het definitieve inpassingsplan ter inzage worden gelegd. Het is dan ook onwenselijk als in de zone ten behoeve van de nieuwe hoogspanningsverbinding ontwikkelingen plaats vinden die hiervoor een beperking of belemmering betekenen. Daarom wordt voor de periode tot de terinzagelegging van het definitieve inpassingsplan alsnog een nieuw voorbereidingsbesluit genomen. Ook nu dient de zone in dit voorbereidingsbesluit als reservering en worden, vooruitlopend op het definitieve inpassingsplan, hiermee geen onomkeerbare beslissingen over het tracé genomen.</Al>
+               </Inhoud>
+            </Divisietekst>
+            <Divisietekst eId="cmp_1__content_3"
+                          wId="mnre1045_1__cmp_1__content_3"
+                          dso:niveau="2">
+               <Kop>
+                  <Nummer>3</Nummer>
+                  <Opschrift>De zone</Opschrift>
+               </Kop>
+               <Inhoud>
+                  <Al>Het plangebied van het voorbereidingsbesluit omvat het plangebied van het vast te stellen inpassingsplan en bestaat uit een aantal zones met verschillende breedtes.</Al>
+                  <Lijst eId="cmp_1__content_3__list_o_1"
+                         wId="mnre1045_1__cmp_1__content_3__list_o_1"
+                         type="expliciet">
+                     <Lijstaanhef>Standaard:</Lijstaanhef>
+                     <Li eId="cmp_1__content_3__list_o_1__item_o_1"
+                         wId="mnre1045_1__cmp_1__content_3__list_o_1__item_o_1">
+                        <LiNummer></LiNummer>
+                        <Al>69 meter voor het gedeelte tussen Borsele en station Willem-Annapolder (34,5 m aan weerszijden van het hart van de verbinding);</Al>
+                     </Li>
+                     <Li eId="cmp_1__content_3__list_o_1__item_o_2"
+                         wId="mnre1045_1__cmp_1__content_3__list_o_1__item_o_2">
+                        <LiNummer></LiNummer>
+                        <Al>63 meter voor het gedeelte tussen station Willem-Annapolder en station Rilland (31,5 m aan weerszijden van het hart van de verbinding);</Al>
+                     </Li>
+                     <Li eId="cmp_1__content_3__list_o_1__item_o_3"
+                         wId="mnre1045_1__cmp_1__content_3__list_o_1__item_o_3">
+                        <LiNummer></LiNummer>
+                        <Al>17 meter ter plaatse van ondergrondse 150 kV-verbindingen (2 x 8,5 m).</Al>
+                     </Li>
+                  </Lijst>
+                  <Tussenkop>Breder:</Tussenkop>
+                  <Al>Uitzondering op deze breedtes gelden bij bijzondere maatregelen, zoals de kruising met het kanaal door Zuid-Beveland. Daar is de zone 72 meter breed. Daarnaast is er sprake van een bredere zone voor de kruising met de bestaande 150 kV naar Terneuzen ten noorden van Ovezande. Hier geldt een zone van 206 meter, omdat hier de kruising en de benodigde verbinding nog nader uitgewerkt moeten worden.</Al>
+                  <Tussenkop>Overig:</Tussenkop>
+                  <Al>Tenslotte omvat het plangebied ook nog enkele losse 'vlekken' met een doorsnede van enkele tientallen meters (maximaal ca. 35m bij 100 m) naast de strook van de beoogde nieuwe hoogspanningsverbinding. Het gaat hier om 6 niet gerealiseerde mogelijke 'gevoelige bestemmingen'. Op deze wijze wordt voorkomen dat er voorafgaand aan de vaststelling van het inpassingsplan extra gevoelige bestemmingen kunnen ontstaan in de voorziene magneetveldzone. Deze gevallen waren in het ontwerp-inpassingsplan zoals dat recent ter inzage heeft gelegen opgenomen op de bij het ontwerp-inpassingsplan horende verbeelding.</Al>
+               </Inhoud>
+            </Divisietekst>
+            <Divisietekst eId="cmp_1__content_4"
+                          wId="mnre1045_1__cmp_1__content_4"
+                          dso:niveau="2">
+               <Kop>
+                  <Nummer>4</Nummer>
+                  <Opschrift>Gevolgen van het voorbereidingsbesluit</Opschrift>
+               </Kop>
+               <Inhoud>
+                  <Tussenkop>Omgevingsvergunningen (bouwen, aanleggen)</Tussenkop>
+                  <Lijst eId="cmp_1__content_4__list_o_1"
+                         wId="mnre1045_1__cmp_1__content_4__list_o_1"
+                         type="expliciet">
+                     <Lijstaanhef>In het gebied waarvoor het voorbereidingsbesluit geldt, zijn er beperkingen aan het bouwen van nieuwe bouwwerken en het uitvoeren van bepaalde werken en werkzaamheden. Als na het in werking treden van het voorbereidingsbesluit een aanvraag wordt gedaan voor een omgevingsvergunning voor het bouwen van een bouwwerk of het uitvoeren van een ander werk of van werkzaamheden in het gebied waarvoor het voorbereidingsbesluit geldt, worden de volgende stappen gezet (zie artikel 3.3 van Wet algemene bepalingen omgevingsrecht):</Lijstaanhef>
+                     <Li eId="cmp_1__content_4__list_o_1__item_o_1"
+                         wId="mnre1045_1__cmp_1__content_4__list_o_1__item_o_1">
+                        <LiNummer></LiNummer>
+                        <Al>Er wordt getoetst of er, los van het voorbereidingsbesluit, een grond is de vergunning te weigeren. Als dit zo is, dan wordt de aanvraag afgewezen.</Al>
+                     </Li>
+                     <Li eId="cmp_1__content_4__list_o_1__item_o_2"
+                         wId="mnre1045_1__cmp_1__content_4__list_o_1__item_o_2">
+                        <LiNummer></LiNummer>
+                        <Al>Als dat niet zo is, dan wordt de aanvraag aangehouden. Dat betekent dat er in beginsel geen besluit wordt genomen totdat het inpassingsplan is vastgesteld en in werking is getreden.<sup>1</sup> De aanvraag wordt dan vervolgens getoetst aan het bestemmingsplan zoals dat na inwerkingtreding van het inpassingsplan is komen te luiden.</Al>
+                     </Li>
+                     <Li eId="cmp_1__content_4__list_o_1__item_o_3"
+                         wId="mnre1045_1__cmp_1__content_4__list_o_1__item_o_3">
+                        <LiNummer></LiNummer>
+                        <Al>Bij wijze van uitzondering kan de vergunning toch worden verleend, als blijkt dat de activiteit waarvoor hij wordt aangevraagd niet in strijd is met het inpassingsplan dat wordt voorbereid.</Al>
+                     </Li>
+                  </Lijst>
+                  <Tussenkop>Vergunningstelsel in het voorbereidingsbesluit</Tussenkop>
+                  <Al>In dit voorbereidingsbesluit is bepaald dat het verboden is om zonder omgevingsvergunning bepaalde werken of werkzaamheden uit te voeren in het gebied waarvoor dit voorbereidingsbesluit geldt. De werken en werkzaamheden waarvoor dit verbod geldt, zijn opgesomd in artikel 2, eerste lid, onder a tot en met f, van het besluit. In artikel 2, vierde lid, is een uitzondering op het verbod opgenomen (zie ook hierna). De omgevingsvergunning zal in de regel worden aangevraagd bij het college van burgemeester en wethouders (hierna: college), via de normale regels voor een omgevingsvergunning. Voordat het college de vergunning verleent, moet de minister van Economische Zaken en de beheerder van de hoogspanningsverbinding (TenneT) worden geraadpleegd (artikel 2, derde lid). De minister zal advies geven over de vraag of uitvoering van het werk of de werkzaamheden waarop de aanvraag betrekking heeft de grond in het gebied waarvoor dit voorbereidingsbesluit geldt minder geschikt maakt voor het verwezenlijken van de hoogspanningsverbinding. Dit vergunningstelsel geldt zolang de werking van het voorbereidingsbesluit voortduurt (zie hierna).</Al>
+                  <Tussenkop>Overlap omgevingsvergunningen</Tussenkop>
+                  <Lijst eId="cmp_1__content_4__list_o_2"
+                         wId="mnre1045_1__cmp_1__content_4__list_o_2"
+                         type="expliciet">
+                     <Lijstaanhef>Als gevolg van dit voorbereidingsbesluit ontstaat de mogelijkheid dat voor dezelfde activiteit twee omgevingsvergunningen nodig zijn:</Lijstaanhef>
+                     <Li eId="cmp_1__content_4__list_o_2__item_o_1"
+                         wId="mnre1045_1__cmp_1__content_4__list_o_2__item_o_1">
+                        <LiNummer></LiNummer>
+                        <Al>een omgevingsvergunning voor 'overige werken en werkzaamheden' op grond van het gemeentelijke bestemmingsplan; én</Al>
+                     </Li>
+                     <Li eId="cmp_1__content_4__list_o_2__item_o_2"
+                         wId="mnre1045_1__cmp_1__content_4__list_o_2__item_o_2">
+                        <LiNummer></LiNummer>
+                        <Al>een omgevingsvergunning voor 'overige werken en werkzaamheden' op grond van het voorbereidingsbesluit.</Al>
+                     </Li>
+                  </Lijst>
+                  <Al>Voor beide vergunningen is het bevoegd gezag hetzelfde; in beginsel is dit het college van burgemeester en wethouders. Het toetsingskader voor beide vergunningen is op zichzelf verschillend. Dat voor de eerste omgevingsvergunning ligt besloten in het bestemmingsplan; dat voor de tweede in het onderhavige voorbereidingsbesluit. Echter, voor beide vergunningen geldt dat deze slechts kan worden verleend als de activiteit geen belemmering vormt voor realisatie van de hoogspanningsverbinding. De vergunning op grond van het bestemmingsplan moet immers worden aangehouden als niet aan die eis is voldaan, en die op grond van het voorbereidingsbesluit wordt in dat geval geweigerd. De omgevingsvergunning op grond van dit voorbereidingsbesluit heeft echter als 'toegevoegde waarde' dat de minister van Economische Zaken en de beheerder van de hoogspanningsverbinding (TenneT) om advies moet worden gevraagd over de mogelijke belemmering die de activiteit voor de hoogspanningslijn kan vormen. Die advisering acht het Rijk van belang om het gebied zo goed mogelijk te vrijwaren van ongewenste ontwikkelingen die in de weg kunnen staan aan realisatie van de hoogspanningsverbinding. Daarom is het toch wenselijk geacht het vergunningstelsel op te nemen, ook al betekent dat soms - in het geval dat het gemeentelijke bestemmingsplan ook een omgevingsvergunning vereist - dat een 'dubbel' vergunningstelsel ontstaat. Op grond van de Wabo (artikel 2.1, eerste lid onder b, in samenhang met artikel 2.7) .kunnen beide omgevingsvergunningen overigens in één aanvraag worden vervat. Hoewel de Wabo hiervoor geen expliciete regeling kent, gaan wij ervan uit dat als de omgevingsvergunning volgens het gemeentelijk bestemmingsplan moet worden aangehouden (zoals hiervoor beschreven) dit niet belemmert dat een weigeringsbesluit wordt genomen ten aanzien van de vergunning die zijn grondslag vindt in dit voorbereidingsbesluit.</Al>
+                  <Tussenkop>Werkzaamheden in de buisleidingenstrook door Zeeland</Tussenkop>
+                  <Al>(vanaf de buisleidingenstraat Rotterdam Antwerpen naar het Sloegebied)</Al>
+                  <Al>De hoogspanningsverbinding Zuid-West 380 kV loopt voor een deel parallel met de buisleidingenstrook door Zeeland die vanaf het Sleegebied naar de buisleidingenstraat Rotterdam-Antwerpen loopt. Op enkele plaatsen kruist de hoogspanningsverbinding deze buisleidingenstrook. De buisleidingenstrook is van nationaal belang, zoals aangegeven in de Structuurvisie Buisleidingen 2012-2035. De voorgenomen hoogspanningsverbinding zal geen ruimtelijke obstakels plaatsen in deze buisleidingenstrook. Bij het aanleggen van buisleidingen in deze buisleidingenstraat is, conform de Structuurvisie, het streven erop gericht om nadelige gevolgen voor andere belangen zoveel mogelijk te voorkomen.</Al>
+                  <Al>Het aanleggen van buisleidingen in de buisleidingenstrook is van het verbod in dit voorbereidingsbesluit uitgezonderd. Bij de interferentie tussen buisleidingen en hoogspanningsleidingen wordt de NEN-norm uit de Nederlandse Praktijkrichtlijn (NPR 2760) toegepast. Overleg tussen de beheerder van een reeds aanwezige leiding en/of de initiatiefnemer van de nieuw aan te leggen buisleiding en TenneT zal plaatsvinden om tot een gezamenlijke oplossing te komen ter voorkoming van interferentie of voor het nemen van mitigerende maatregelen.</Al>
+                  <Tussenkop>Omgevingsvergunningen (gebruikswijziging)</Tussenkop>
+                  <Al>In dit voorbereidingsbesluit is voorts bepaald dat het verboden is om zonder omgevingsvergunning bepaalde gebruikswijzigingen te realiseren in het gebied waarvoor dit voorbereidingsbesluit geldt.</Al>
+                  <Tussenkop>Opslag van gevaarlijke stoffen</Tussenkop>
+                  <Al>Met artikel 3, eerste lid, onder a, van het voorbereidingsbesluit is aangegeven dat de uitvoering van activiteiten met en/of opslag van gevaarlijke stoffen die beperkend kunnen zijn voor de realisatie van de verbinding niet wenselijk zijn. Per situatie, waar sprake is of kan zijn van de uitvoering van activiteiten met en/of opslag van gevaarlijke stoffen die beperkend kunnen zijn voor realisatie van de verbinding, wordt bekeken of dit het geval is en wordt door het bevoegd gezag de minister van Economische Zaken geraadpleegd (artikel 3, derde lid). Deze minister zal in het kader van deze advisering zijn ambtgenoot van Infrastructuur en Milieu en de beheerder van de hoogspanningsverbinding (TenneT) raadplegen. Het betreft hier in ieder geval situaties waarbij wordt gewerkt met stoffen of deze stoffen worden opgeslagen die één of meer van de volgende eigenschappen<sup>2</sup> bezitten: ontplofbaar, oxiderend, (zeer) licht ontvlambaar, (zeer) giftig, bijtend,</Al>
+                  <Al>irriterend of schadelijk. Hierbij moet bedacht worden dat een gevaarlijke stof ook een bestanddeel kan zijn van een product, bijvoorbeeld van een lijm, verf of schoonmaakmiddel (veelal is het product dan geëtiketteerd als gevaarlijk) en kunnen dit zowel gassen, vloeistoffen als vaste stoffen zijn. Daarnaast moet bedacht worden dat ook de opslag van brandgevaarlijke producten (waaronder bijv. papier of hout) beperkend kan zijn voor de realisatie van de nieuwe verbinding.</Al>
+                  <Tussenkop>Voorzorgsbeginsel magnetische velden</Tussenkop>
+                  <Al>Een belangrijk thema bij de ontwikkeling van hoogspanningsverbindingen zijn de magneetvelden van de verbinding. Hiervoor wordt het advies van de staatssecretaris van het toenmalige Ministerie van Volkshuisvesting, Ruimtelijke Ordening en Milieu als algemeen uitgangspunt aangehouden. Dit advies is gebaseerd op de beschikbare wetenschappelijke informatie en het voorzorgsbeginsel. Het advies houdt, kort gezegd, in dat nieuwe situaties waarbij kinderen (0 -15 jaar) langdurig verblijven in het gebied rond bovengrondse hoogspanningslijnen met een magneetveldzone waarbinnen het jaargemiddelde magneetveld hoger is dan 0.4 microTesla (de magneetveldzone), zo veel als redelijkerwijs, vermeden worden. De gevoelige bestemmingen zijn woningen, scholen, crèches en kinderopvangplaatsen.<sup>3</sup>
+                  </Al>
+                  <Al>Met het oog op dit beleid is in artikel 3, eerste lid, sub b, van dit voorbereidingsbesluit bepaald dat een omgevingsvergunning nodig is voor gebruikswijzigingen waardoor een gevoelige bestemming wordt gerealiseerd in het gebied waarvoor dit besluit geldt. Ook over deze vergunning raadpleegt het bevoegd gezag de minister van Economische Zaken (artikel 3, derde lid). Deze minister zal ook in dit kader zijn ambtgenoot van Infrastructuur en Milieu en de beheerder van de verbinding (TenneT) raadplegen.</Al>
+               </Inhoud>
+            </Divisietekst>
+            <Divisietekst eId="cmp_1__content_5"
+                          wId="mnre1045_1__cmp_1__content_5"
+                          dso:niveau="2">
+               <Kop>
+                  <Nummer>5</Nummer>
+                  <Opschrift>Gevolgen voor ontwikkelingen in het gebied</Opschrift>
+               </Kop>
+               <Inhoud>
+                  <Al>Dit voorbereidingsbesluit heeft tot gevolg dat in het gebied waarvoor het voorbereidingsbesluit is genomen, beperkingen gelden voor de bouw en aanleg van (bouw)werken. Naar het oordeel van het bevoegd gezag zijn deze beperkingen redelijkerwijs noodzakelijk om te voorkomen dat het gebied minder geschikt wordt voor de verwezenlijking van de Zuid-West 380 kV hoogspanningsverbinding.</Al>
+               </Inhoud>
+            </Divisietekst>
+            <Divisietekst eId="cmp_1__content_6"
+                          wId="mnre1045_1__cmp_1__content_6"
+                          dso:niveau="2">
+               <Kop>
+                  <Nummer>6</Nummer>
+                  <Opschrift>Werkingsduur van het voorbereidingsbesluit</Opschrift>
+               </Kop>
+               <Inhoud>
+                  <Al>Het voorbereidingsbesluit vervalt op het moment dat het inpassingsplan in werking treedt. Echter, als niet binnen een jaar na de inwerkingtreding van het voorbereidingsbesluit een (ontwerp)-inpassingsplan ter inzage wordt gelegd, vervalt het voorbereidingsbesluit op dat moment. Het vergunningstelsel dat in het voorbereidingsbesluit is opgenomen, vervalt dan ook.</Al>
+                  <Al>Het eerder genomen voorbereidingsbesluit voor het gedeelte tussen 380 kV station Borssele en 380 kV station Rilland dateert van 19 juni 2015 en is inmiddels vervallen.</Al>
+                  <Lijst eId="cmp_1__content_6__list_o_1"
+                         wId="mnre1045_1__cmp_1__content_6__list_o_1"
+                         type="expliciet">
+                     <Li eId="cmp_1__content_6__list_o_1__item_1"
+                         wId="mnre1045_1__cmp_1__content_6__list_o_1__item_1">
+                        <LiNummer>1</LiNummer>
+                        <Al>In artikel 3.3,tweede lid, van de Wabo is in detail aangegeven hoe lang de aanhouding, afhankelijk van de precieze omstandigheden van het geval, duurt.</Al>
+                     </Li>
+                     <Li eId="cmp_1__content_6__list_o_1__item_2"
+                         wId="mnre1045_1__cmp_1__content_6__list_o_1__item_2">
+                        <LiNummer>2</LiNummer>
+                        <Al>In dit voorbereidingsbesluit worden onder gevaarlijke stoffen en activiteiten verstaan stoffen die bij of krachtens hoofdstuk 9 van Wet milieubeheer aangeduid zijn als milieugevaarlijk of één of meer van de volgende eigenschappen hebben: ontplofbaar, oxiderend, (zeer) licht ontvlambaar, (zeer) giftig, bijtend, irriterend of schadelijk.</Al>
+                     </Li>
+                     <Li eId="cmp_1__content_6__list_o_1__item_3"
+                         wId="mnre1045_1__cmp_1__content_6__list_o_1__item_3">
+                        <LiNummer>3</LiNummer>
+                        <Al>Brief van staatssecretaris Van Geel van VROM, gedateerd op 3 oktober 2005, kenmerk: SAS/2005183118. Ministerie van Volkshuisvesting, Ruimtelijke Ordening en Milieu, Den Haag, verduidelijkt door de brief van minister Cramer van VROM, gedateerd op 4 november 2008, kenmerk: DGM\2008105664, Ministerie van Volkshuisvesting, Ruimtelijke Ordening en Milieu, Den Haag.</Al>
+                     </Li>
+                  </Lijst>
+               </Inhoud>
+            </Divisietekst>
+         </Bijlage>
+      </BesluitCompact>
+   </BesluitVersie>
+   <RegelingVersieInformatie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0654</FRBRWork>
+         <FRBRExpression>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0654/nld@2022-03-01;1</FRBRExpression>
+         <soortWork>/join/id/stop/work_021</soortWork>
+         <isTijdelijkDeelVan>
+            <WorkIdentificatie>
+               <FRBRWork>/akn/nl/act/gm0654/2020/omgevingsplan</FRBRWork>
+               <soortWork>/join/id/stop/work_019</soortWork>
+            </WorkIdentificatie>
+         </isTijdelijkDeelVan>
+      </ExpressionIdentificatie>
+      <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <versienummer>1</versienummer>
+      </RegelingVersieMetadata>
+      <RegelingMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <soortRegeling>/join/id/stop/regelingtype_015</soortRegeling>
+         <eindverantwoordelijke>/tooi/id/ministerie/mnre1045</eindverantwoordelijke>
+         <maker>/tooi/id/ministerie/mnre1045</maker>
+         <soortBestuursorgaan>/tooi/def/thes/kern/c_bcfb7b4e</soortBestuursorgaan>
+         <officieleTitel>Voorbeschermingsregels omgevingsplan Borsele uit voorbereidingsbesluit Zuid-West 380 kV Oost</officieleTitel>
+         <heeftCiteertitelInformatie>
+            <CiteertitelInformatie>
+               <citeertitel>Voorbeschermingsregels uit voorbereidingsbesluit Zuid-West 380 kV Oost</citeertitel>
+               <isOfficieel>true</isOfficieel>
+            </CiteertitelInformatie>
+         </heeftCiteertitelInformatie>
+         <grondslagen>
+            <grondslag>
+               <TekstReferentie>
+                  <uri>jcil.31:c:BWBR0037885&amp;artikel=5.44</uri>
+                  <label>Artikel 5.44 Omgevingswet</label>
+                  <soortRef>JCI</soortRef>
+               </TekstReferentie>
+            </grondslag>
+         </grondslagen>
+         <overheidsdomeinen>
+            <overheidsdomein>/tooi/def/concept/c_3708ac5e</overheidsdomein>
+         </overheidsdomeinen>
+         <onderwerpen>
+            <onderwerp>/tooi/def/concept/c_f4f1867a</onderwerp>
+         </onderwerpen>
+         <rechtsgebieden>
+            <rechtsgebied>/tooi/def/concept/c_638d8062</rechtsgebied>
+         </rechtsgebieden>
+      </RegelingMetadata>
+   </RegelingVersieInformatie>
+   <RegelingVersieInformatie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0678</FRBRWork>
+         <FRBRExpression>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0678/nld@2022-03-01;1</FRBRExpression>
+         <soortWork>/join/id/stop/work_021</soortWork>
+         <isTijdelijkDeelVan>
+            <WorkIdentificatie>
+               <FRBRWork>/akn/nl/act/gm0678/2020/omgevingsplan</FRBRWork>
+               <soortWork>/join/id/stop/work_019</soortWork>
+            </WorkIdentificatie>
+         </isTijdelijkDeelVan>
+      </ExpressionIdentificatie>
+      <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <versienummer>1</versienummer>
+      </RegelingVersieMetadata>
+      <RegelingMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <soortRegeling>/join/id/stop/regelingtype_015</soortRegeling>
+         <eindverantwoordelijke>/tooi/id/ministerie/mnre1045</eindverantwoordelijke>
+         <maker>/tooi/id/ministerie/mnre1045</maker>
+         <soortBestuursorgaan>/tooi/def/thes/kern/c_bcfb7b4e</soortBestuursorgaan>
+         <officieleTitel>Voorbeschermingsregels omgevingsplan Kapelle uit voorbereidingsbesluit Zuid-West 380 kV Oost</officieleTitel>
+         <heeftCiteertitelInformatie>
+            <CiteertitelInformatie>
+               <citeertitel>Voorbeschermingsregels uit voorbereidingsbesluit Zuid-West 380 kV Oost</citeertitel>
+               <isOfficieel>true</isOfficieel>
+            </CiteertitelInformatie>
+         </heeftCiteertitelInformatie>
+         <grondslagen>
+            <grondslag>
+               <TekstReferentie>
+                  <uri>jcil.31:c:BWBR0037885&amp;artikel=5.44</uri>
+                  <label>Artikel 5.44 Omgevingswet</label>
+                  <soortRef>JCI</soortRef>
+               </TekstReferentie>
+            </grondslag>
+         </grondslagen>
+         <overheidsdomeinen>
+            <overheidsdomein>/tooi/def/concept/c_3708ac5e</overheidsdomein>
+         </overheidsdomeinen>
+         <onderwerpen>
+            <onderwerp>/tooi/def/concept/c_f4f1867a</onderwerp>
+         </onderwerpen>
+         <rechtsgebieden>
+            <rechtsgebied>/tooi/def/concept/c_638d8062</rechtsgebied>
+         </rechtsgebieden>
+      </RegelingMetadata>
+   </RegelingVersieInformatie>
+   <RegelingVersieInformatie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0703</FRBRWork>
+         <FRBRExpression>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0703/nld@2022-03-01;1</FRBRExpression>
+         <soortWork>/join/id/stop/work_021</soortWork>
+         <isTijdelijkDeelVan>
+            <WorkIdentificatie>
+               <FRBRWork>/akn/nl/act/gm0703/2020/omgevingsplan</FRBRWork>
+               <soortWork>/join/id/stop/work_019</soortWork>
+            </WorkIdentificatie>
+         </isTijdelijkDeelVan>
+      </ExpressionIdentificatie>
+      <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <versienummer>1</versienummer>
+      </RegelingVersieMetadata>
+      <RegelingMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <soortRegeling>/join/id/stop/regelingtype_015</soortRegeling>
+         <eindverantwoordelijke>/tooi/id/ministerie/mnre1045</eindverantwoordelijke>
+         <maker>/tooi/id/ministerie/mnre1045</maker>
+         <soortBestuursorgaan>/tooi/def/thes/kern/c_bcfb7b4e</soortBestuursorgaan>
+         <officieleTitel>Voorbeschermingsregels omgevingsplan Reimerswaal uit voorbereidingsbesluit Zuid-West 380 kV Oost</officieleTitel>
+         <heeftCiteertitelInformatie>
+            <CiteertitelInformatie>
+               <citeertitel>Voorbeschermingsregels uit voorbereidingsbesluit Zuid-West 380 kV Oost</citeertitel>
+               <isOfficieel>true</isOfficieel>
+            </CiteertitelInformatie>
+         </heeftCiteertitelInformatie>
+         <grondslagen>
+            <grondslag>
+               <TekstReferentie>
+                  <uri>jcil.31:c:BWBR0037885&amp;artikel=5.44</uri>
+                  <label>Artikel 5.44 Omgevingswet</label>
+                  <soortRef>JCI</soortRef>
+               </TekstReferentie>
+            </grondslag>
+         </grondslagen>
+         <overheidsdomeinen>
+            <overheidsdomein>/tooi/def/concept/c_3708ac5e</overheidsdomein>
+         </overheidsdomeinen>
+         <onderwerpen>
+            <onderwerp>/tooi/def/concept/c_f4f1867a</onderwerp>
+         </onderwerpen>
+         <rechtsgebieden>
+            <rechtsgebied>/tooi/def/concept/c_638d8062</rechtsgebied>
+         </rechtsgebieden>
+      </RegelingMetadata>
+   </RegelingVersieInformatie>
+</AanleveringBesluit>

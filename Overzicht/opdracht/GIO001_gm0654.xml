@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             schemaversie="1.2.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Borsele</FRBRWork>
+         <FRBRExpression>/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Borsele/nld@2022-03-01;1</FRBRExpression>
+         <soortWork>/join/id/stop/work_010</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftGeboorteregeling>/akn/nl/act/mnre1045/2022/EZvb17ZW380-3001-gm0654</heeftGeboorteregeling>
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>gm0654_besluitgebied.gml</bestandsnaam>
+                  <hash>041c13e7c0539cc9a6904948a15e5df1fcfc15b22bea2cf7ec3beb500b8d7075be5f1e74a660255fc5a573eda540b2e87a43ef5a61d35bba3173eb433a988a44</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/ministerie/mnre1045</eindverantwoordelijke>
+         <maker>/tooi/id/ministerie/mnre1045</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>Voorbeschermingsregels gemeente Borsele</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/regdata/mnre1045/2022/Hoogspanningsverbinding_380_kV_Oost_–_Borsele</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <naamInformatieObject>Voorbeschermingsregels gemeente Borsele</naamInformatieObject>
+         <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>

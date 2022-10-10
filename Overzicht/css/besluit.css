@@ -1,0 +1,405 @@
+@charset "UTF-8";
+
+/* scherm */
+
+html {
+  height: 100%;
+}
+body {
+  background-color: lightgrey;
+  height: 100%;
+  word-wrap: break-word;
+}
+div.content {
+  background-color: white;
+  min-height: 98%;
+  margin: 0pt auto 0pt auto;
+  padding: 2mm;
+  position: relative;
+  width: 1000px;
+}
+div.uitleg {
+  margin: 0pt 1pt 14pt 1pt;
+}
+
+/* module */
+
+table.deel {
+  width: 100%;
+}
+table.deel th {
+  padding: 7pt 2mm 7pt 2mm;
+  background-color: lightgray;
+}
+table.deel td {
+  padding: 14pt 0mm 14pt 35mm;
+}
+p.deel {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+  line-height: 14pt;
+}
+
+/* object */
+
+div.show_object {
+  border-bottom: 1px solid red;
+  display: block;
+  margin: 14pt 0mm 14pt 0mm;
+}
+div.show_object:before {
+  color: red;
+  content: 'annotatie';
+  font-family: 'Tahoma', sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+}
+div.show_object:hover div.object {
+  visibility: visible;
+  z-index: 1;
+}
+div.object {
+  background-color: #FEF6BB;
+  border: 1px solid #DCA;
+  left: 0px;
+  margin: 2mm;
+  padding: 7px;
+  position: absolute;
+  transition: all 1s ease;
+  visibility: hidden;
+}
+table.object {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+table.object th {
+  background-color: black;
+  padding: 4px 1.5mm 4px 1.5mm;
+}
+table.object td {
+  padding: 4px 1.5mm 4px 0mm;
+}
+table.object tr {
+  border-bottom: 1px solid black;
+}
+table.object table.object tr:last-child {
+  border-bottom: none;
+}
+p.object {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold;
+  font-size: 8pt;
+  color: white;
+  line-height: 12pt;
+}
+p.naam {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 8pt;
+  line-height: 12pt;
+}
+p.waarde {
+  font-family: 'Courier', monospace;
+  font-size: 8pt;
+  line-height: 12pt;
+}
+span.label {
+  font-weight: bold;
+  color: red;
+}
+
+/*  error */
+
+table.error:not(:first-child) {
+  border-top: 1px solid black;
+}
+table.error p {
+  font-weight: bold;
+  color: red;
+}
+
+/* algemeen */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+li, p {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  font-weight: normal;
+  line-height: 14pt;
+  text-align: left;
+}
+ol + p.standaard, ul + p.standaard, p.standaard + p.standaard {
+  margin-top: 14pt;
+}
+p.titel {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  line-height: 21pt;
+  margin: 14pt 0mm 14pt 0mm;
+}
+span.nummer {
+   float: left;
+   margin: 0mm 0mm 0mm -35mm;
+   width: 30mm;
+}
+section.hoofdstuk > p.kop, section.divisie > p.kop_1 {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  line-height: 14pt;
+  margin: 28pt 0mm 14pt 0mm;
+}
+section.afdeling > p.kop, section.divisie > p.kop_2 {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 11pt;
+  font-weight: bold;
+  line-height: 14pt;
+  margin: 28pt 0mm 14pt 0mm;
+}
+section.paragraaf > p.kop, section.divisie > p.kop_3 {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  line-height: 14pt;
+  margin: 21pt 0mm 7pt 0mm;
+}
+section.subparagraaf > p.kop, section.divisie > p.kop_4 {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  line-height: 14pt;
+  margin: 14pt 0mm 0pt 0mm;
+}
+section.divisie > p.kop_5 {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  line-height: 14pt;
+  margin: 14pt 0mm 0pt 0mm;
+}
+section.artikel > p.kop, section.wijzigartikel > p.kop, section.divisie > p.kop_6 {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  line-height: 14pt;
+  margin: 14pt 0mm 0pt 0mm;
+}
+section.divisie > p.kop_7 {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  line-height: 14pt;
+  margin: 14pt 0mm 0pt 0mm;
+}
+section.divisie > p.kop_8 {
+  font-size: 9pt;
+  font-weight: bold;
+  line-height: 14pt;
+  margin: 14pt 0mm 0pt 0mm;
+}
+p.tussenkop {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  font-style: italic;
+  line-height: 14pt;
+  margin: 14pt 0mm 0pt 0mm;
+}
+
+/* lidnummer */
+
+div.lidnummer {
+   float: left;
+   margin: 0mm 0mm 0mm -35mm;
+   width: 30mm;
+}
+p.lidnummer {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  line-height: 14pt;
+  text-align: right;
+}
+section.lid p, section.lid div.nummering {
+  margin-bottom: 0pt;
+}
+
+/* inline */
+
+a {
+  text-decoration: none;
+}
+
+span.vet {
+  font-weight: bold;
+}
+span.cursief {
+  font-style: italic;
+}
+span.onderstreept {
+  text-decoration: underline;
+}
+span.superscript {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.4em;
+  vertical-align: baseline;
+}
+span.subscript {
+  bottom: -0.3em;
+  font-size: 0.8em;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* nummering */
+
+div.nummering {
+  margin-bottom: 14pt;
+}
+div.nummering div.nummering {
+  margin-bottom: 0pt;
+}
+div.item {
+  margin-left: 5mm;
+}
+div.nummer {
+  display: block;
+  float: left;
+  margin-left: -5mm;
+}
+div.item p {
+  margin-bottom: 0pt;
+}
+
+/* begrip */
+
+p.term {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  line-height: 14pt;
+  margin-top: 14pt;
+}
+div.begrip p {
+  margin-bottom: 0pt;
+}
+
+/* tabel */
+
+table.standaard {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 14pt 0mm 14pt 0mm;
+  table-layout: fixed;
+  width: 100%;
+}
+table.standaard caption {
+  text-align: left;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  line-height: 14pt;
+}
+table.standaard th {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  height: 14pt;
+  padding: 3.5px 1.5mm 3.5px 1.5mm;
+  vertical-align: top;
+}
+table.standaard td {
+  border: 1px solid black;
+  height: 14pt;
+  padding: 3.5px 1.5mm 3.5px 1.5mm;
+  vertical-align: top;
+}
+table.standaard p {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 8pt;
+  line-height: 14pt;
+}
+table.standaard div.item {
+  margin-left: 4mm;
+}
+table.standaard div.nummer {
+  display: block;
+  float: left;
+  margin-left: -4mm;
+}
+
+/* figuur */
+
+div.figuur {
+  display: inline-block;
+  margin: 14pt 0mm 14pt 0mm;
+}
+div.links {
+  float: left;
+  margin-right: 5mm;
+}
+div.rechts {
+  float: right;
+  margin-left: 5mm;
+}
+div.geen {
+  display: block;
+}
+img.figuur {
+  max-height: 100%;
+  max-width: 100%;
+}
+p.figuur {
+  color: red;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  line-height: 14pt;
+}
+p.bijschrift {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  font-style: italic;
+  line-height: 14pt;
+  margin-top: 7pt;
+}
+
+/* box */
+
+div.box {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 9pt;
+  line-height: 14pt;
+  margin: 14pt 0mm 14pt 0mm;
+  background-color: rgba(121,183,41,0.5);
+  padding: 7px;
+}
+div.box p.box_kop {
+  font-weight: bold;
+  margin-bottom: 14pt;
+}
+
+/* noot */
+
+a.noot {
+  text-decoration: none;
+  background-color: #FEF6BB;
+} 
+a.noot span.noottekst {
+  position: fixed;
+  left: 14px; 
+  bottom: 14px;
+  margin: 14px;
+  padding: 7px;
+  border: 1px solid #DCA;
+  background-color: #FEF6BB;
+  visibility: hidden;
+}
+a.noot:hover span.noottekst {
+  visibility: visible;
+  z-index: 1;
+}
