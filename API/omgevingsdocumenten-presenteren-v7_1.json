@@ -1,0 +1,119 @@
+{
+ "openapi": "3.0.0",
+ "info": {
+  "title": "Omgevingsdocumenten-Presenteren",
+  "description": "De Omgevingsdocumenten Presenteren API ontsluit beschikbaar gestelde omgevingsdocumenten op zo'n manier dat deze eenvoudig visueel te verbeelden zijn. Op de Ontwikkel, Test, Acceptatie en Pre-productieomgeving worden ook omgevingsdocumenten toegevoegd en verwijderd door beheerders voor testdoeleinden binnen en buiten de voorziening.<br/>\n<br/>\nDe Omgevingsdocumenten Presenteren API volgt de standaarden zoals beschreven in de DSO API-strategie versie 1.1. Zo is het standaard mediatype HAL (`application/hal+json`). Dit is een mediatype voor het weergeven van resources en hun relaties via hyperlinks.",
+  "version": "7.1.1"
+ },
+ "servers": [
+  {
+   "url": "/publiek/omgevingsdocumenten/api/presenteren/v7",
+   "description": "basePath"
+  }
+ ],
+ "security": [
+  {
+   "default": []
+  }
+ ],
+ "tags": [
+  {
+   "name": "Afbeeldingen",
+   "description": "Afbeeldingen uit omgevingsdocumenten."
+  },
+  {
+   "name": "Activiteiten",
+   "description": "Activiteiten bevat activiteit uitspraken die in omgevingsdocumenten staan."
+  },
+  {
+   "name": "Regelingen",
+   "description": "Regelingen en hun structuur."
+  },
+  {
+   "name": "Omgevingsvergunningen",
+   "description": "Omgevingsvergunningen en hun structuur."
+  },
+  {
+   "name": "Regelteksten",
+   "description": "Regelteksten bevatten JuridischeRegels die beschreven zijn in omgevingsdocumenten."
+  },
+  {
+   "name": "Kaarten",
+   "description": "Kaarten bevatten aparte visualisaties van informatie over CIMOW-objecten."
+  },
+  {
+   "name": "Gebiedsaanwijzingen",
+   "description": "Gebiedsaanwijzingen zijn gebieden waar een regel betrekking op heeft."
+  },
+  {
+   "name": "Omgevingsnormen",
+   "description": "Omgevingsnormen zoals beschreven in de omgevingswet."
+  },
+  {
+   "name": "Omgevingswaarden",
+   "description": "Omgevingswaarden zoals beschreven in de omgevingswet."
+  },
+  {
+   "name": "Meta",
+   "description": "Operaties die niet domeinspecifiek zijn, maar over de applicatie gaan."
+  }
+ ],
+ "paths": {
+  "/activiteiten": {
+   "get": {
+    "tags": [
+     "Activiteiten"
+    ],
+    "summary": "Alle activiteiten opvragen",
+    "operationId": "getActiviteiten",
+    "parameters": [
+     {
+      "name": "gerelateerdeActiviteitIdentificatie",
+      "in": "query",
+      "description": "Activiteiten ophalen die gerelateerd zijn aan deze activiteit",
+      "required": false,
+      "style": "form",
+      "explode": true,
+      "schema": {
+       "type": "string"
+      },
+      "example": "nl.imow-gm0037.activiteit.2019000242example"
+     },
+     {
+      "name": "regeltekstIdentificatie",
+      "in": "query",
+      "description": "Alleen activiteiten opvragen die opgenomen zijn in de gegeven regeltekst",
+      "required": false,
+      "style": "form",
+      "explode": true,
+      "schema": {
+       "type": "string"
+      },
+      "example": "nl.imow-gm0037.regeltekst.2019000242example"
+     },
+     {
+      "name": "ontwerpRegeltekstTechnischId",
+      "in": "query",
+      "description": "Alleen activiteiten opvragen die opgenomen zijn in de gegeven regeltekst",
+      "required": false,
+      "style": "form",
+      "explode": true,
+      "schema": {
+       "type": "string"
+      },
+      "example": "nl.imow-pv26.regeltekst.2019000046example_akn_nl_bill_pv26_2020_example"
+     },
+     {
+      "name": "ontwerpgerelateerdeActiviteitTechnischId",
+      "in": "query",
+      "description": "Activiteiten ophalen die gerelateerd zijn aan deze ontwerp activiteit",
+      "required": false,
+      "style": "form",
+      "explode": true,
+      "schema": {
+       "type": "string"
+      },
+      "example": "nl.imow-gm0037.activiteit.2019000242example"
+     },
+     {
+      "$ref": "
