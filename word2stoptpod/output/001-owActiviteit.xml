@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ow-dc:owBestand xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen"
+                 xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"
+                 xmlns:k="http://www.geostandaarden.nl/imow/kaart"
+                 xmlns:l="http://www.geostandaarden.nl/imow/locatie"
+                 xmlns:ow="http://www.geostandaarden.nl/imow/owobject"
+                 xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand"
+                 xmlns:p="http://www.geostandaarden.nl/imow/pons"
+                 xmlns:r="http://www.geostandaarden.nl/imow/regels"
+                 xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied"
+                 xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
+                 xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek"
+                 xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+   <sl:standBestand>
+      <sl:dataset>Basismodel Correctlocatie Rotterdam</sl:dataset>
+      <sl:inhoud>
+         <sl:gebied>Gemeente Rotterdam</sl:gebied>
+         <sl:leveringsId>CORRECT001_2022-10-25_002</sl:leveringsId>
+         <sl:objectTypen>
+            <sl:objectType>Activiteit</sl:objectType>
+         </sl:objectTypen>
+      </sl:inhoud>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-gm0599.activiteit.000000010018763870002254127922</rol:identificatie>
+               <rol:naam>Activiteiten met betrekking tot bouwwerken en andere werken</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitRuimtelijk</rol:groep>
+               <rol:bovenliggendeActiviteit><!--ActInOmgevingsplanGem-->
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0599.activiteit.000000010018763870001604784261"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-gm0599.activiteit.000000010018763870001237463992</rol:identificatie>
+               <rol:naam>Hoofdgebouw bouwen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitRuimtelijk</rol:groep>
+               <rol:bovenliggendeActiviteit><!--ActInOmgevingsplanGem-->
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0599.activiteit.000000010018763870001604784261"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-gm0599.activiteit.00000001001876387000166144636</rol:identificatie>
+               <rol:naam>Wonen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Woonactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit><!--ActInOmgevingsplanGem-->
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0599.activiteit.000000010018763870001604784261"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-gm0599.activiteit.000000010018763870001395475891</rol:identificatie>
+               <rol:naam>Beroep, bedrijf of activiteit aan huis uitoefenen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteitMetBeperktEffect</rol:groep>
+               <rol:bovenliggendeActiviteit><!--ActInOmgevingsplanGem-->
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0599.activiteit.000000010018763870001604784261"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-gm0599.activiteit.000000010018763870003487707290</rol:identificatie>
+               <rol:naam>Woonruimte toevoegen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Woonactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit><!--ActInOmgevingsplanGem-->
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0599.activiteit.000000010018763870001604784261"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-gm0599.activiteit.000000010018763870003367645322</rol:identificatie>
+               <rol:naam>Woonruimte gebruiken</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Woonactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit><!--ActInOmgevingsplanGem-->
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0599.activiteit.000000010018763870001604784261"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-gm0599.activiteit.00000001001876387000184961429</rol:identificatie>
+               <rol:naam>Verrichten van activiteiten in een gebied met archeologische verwachtingen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/CultureelErfgoedactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit><!--ActInOmgevingsplanGem-->
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0599.activiteit.000000010018763870001604784261"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-gm0599.activiteit.0000000100187638700091699387</rol:identificatie>
+               <rol:naam>Horeca-activiteit verrichten</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitHoreca</rol:groep>
+               <rol:bovenliggendeActiviteit><!--ActInOmgevingsplanGem-->
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0599.activiteit.000000010018763870001604784261"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-gm0599.activiteit.000000010018763870002066167715</rol:identificatie>
+               <rol:naam>Gebouw met parkeerbehoefte toevoegen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Parkeeractiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit><!--ActInOmgevingsplanGem-->
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0599.activiteit.000000010018763870001604784261"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-gm0599.activiteit.00000001001876387000227818134</rol:identificatie>
+               <rol:naam>Gebouw met parkeerbehoefte toevoegen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitRuimtelijk</rol:groep>
+               <rol:bovenliggendeActiviteit><!--ActInOmgevingsplanGem-->
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0599.activiteit.000000010018763870001604784261"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-gm0599.activiteit.000000010018763870002662480791</rol:identificatie>
+               <rol:naam>Geluidgevoelig gebouw toevoegen</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/PlanologischeGebruiksactiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit><!--ActInOmgevingsplanGem-->
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0599.activiteit.000000010018763870001604784261"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <rol:Activiteit>
+               <rol:identificatie>nl.imow-gm0599.activiteit.000000010018763870002222603504</rol:identificatie>
+               <rol:naam>Geurveroorzakende activiteit verrichten</rol:naam>
+               <rol:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</rol:groep>
+               <rol:bovenliggendeActiviteit><!--ActInOmgevingsplanGem-->
+                  <rol:ActiviteitRef xlink:href="nl.imow-gm0599.activiteit.000000010018763870001604784261"/>
+               </rol:bovenliggendeActiviteit>
+            </rol:Activiteit>
+         </ow-dc:owObject>
+      </sl:stand>
+   </sl:standBestand>
+</ow-dc:owBestand>

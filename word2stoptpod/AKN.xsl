@@ -2,9 +2,9 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns="https://standaarden.overheid.nl/stop/imop/tekst/" xpath-default-namespace="https://standaarden.overheid.nl/stop/imop/tekst/">
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
 
-    <xsl:param name="element" select="('Aanhef','Afdeling','AlgemeneToelichting','Artikel','ArtikelgewijzeToelichting','Begrip','Begrippenlijst','Bijlage','Boek','Citaat','Deel','Divisie','Divisietekst','ExtIoRef','Figuur','Hoofdstuk','Inhoudsopgave','IntIoRef','Kadertekst','Li','Lichaam','Lid','Lijst','Motivering','Paragraaf','RegelingOpschrift','Samenvatting','Sluiting','Subparagraaf','Subsubparagraaf','table','Titel','Toelichting','WijzigArtikel','WijzigBijlage')"/>
-    <xsl:param name="element_ref" select="('formula_1','subchp','genrecital','art','artrecital','item','list','cmp','book','cit','part','div','content','ref','img','chp','toc','ref','recital','item','body','para','list','acc','subsec','longTitle','recital','formula_2','subsec','subsec','table','title','recital','art','cmp')"/>
-    <xsl:param name="element_wId_eId" select="('waar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','waar','onwaar','onwaar','onwaar','waar','onwaar','onwaar','onwaar','onwaar','waar','onwaar','waar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar')"/>
+    <xsl:param name="element" select="('Aanhef','Afdeling','AlgemeneToelichting','Artikel','ArtikelgewijzeToelichting','Begrip','Begrippenlijst','Bijlage','Boek','Citaat','Deel','Divisie','Divisietekst','ExtIoRef','Figuur','Formule','Hoofdstuk','Inhoudsopgave','InleidendeTekst','IntIoRef','Kadertekst','Li','Lichaam','Lid','Lijst','Motivering','Paragraaf','Rectificatietekst','RegelingOpschrift','Sluiting','Subparagraaf','Subsubparagraaf','table','Titel','Toelichting','WijzigArtikel','WijzigBijlage')"/>
+    <xsl:param name="element_ref" select="('formula_1','subchp','genrecital','art','artrecital','item','list','cmp','book','cit','part','div','content','ref','img','math','chp','toc','intro','ref','recital','item','body','para','list','acc','subsec','content','longTitle','formula_2','subsec','subsec','table','title','recital','art','cmp')"/>
+    <xsl:param name="element_wId_eId" select="('waar','onwaar','waar','onwaar','waar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','waar','onwaar','onwaar','onwaar','onwaar','waar','onwaar','onwaar','waar','onwaar','onwaar','waar','waar','onwaar','onwaar','onwaar','onwaar','waar','onwaar','onwaar')"/>
 
     <!-- Variabelen eId en unique_eId bevatten een mapping van alle elementen in het voorbeeldbestand naar hun eId. -->
 
@@ -17,20 +17,28 @@
         <xsl:variable name="count" select="if ($element_wId_eId[$index] eq 'onwaar') then fn:string-join(('o',string(count(.|preceding-sibling::*[local-name() eq $element[$index]]))),'_') else null"/>
         <xsl:choose>
             <xsl:when test="$index gt 0">
-                <node id="{generate-id()}" wId_eId="{$element_wId_eId[$index]}">
+                <xsl:element name="node">
+                    <xsl:attribute name="id" select="generate-id()"/>
+                    <xsl:attribute name="name" select="local-name()"/>
+                    <xsl:attribute name="wId_eId" select="$element_wId_eId[$index]"/>
                     <!-- Een opsomming is genummerd als binnen Lijst onderliggende LiNummer onderling verschilt -->
                     <xsl:attribute name="eId">
                         <xsl:call-template name="check_string">
                             <xsl:with-param name="string" select="fn:string-join(($element_ref[$index],(Kop/Nummer,LiNummer[count(fn:distinct-values(ancestor::Lijst[1]/Li/LiNummer)) ne 1],LidNummer,$count)[1]),'_')"/>
                         </xsl:call-template>
                     </xsl:attribute>
+                    <xsl:apply-templates select="processing-instruction('marker')" mode="eId"/>
                     <xsl:apply-templates select="element()" mode="eId"/>
-                </node>
+                </xsl:element>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates select="element()" mode="eId"/>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+
+    <xsl:template match="processing-instruction('marker')" mode="eId">
+        <xsl:attribute name="marker" select="string(.)"/>
     </xsl:template>
 
     <xsl:template name="check_string">
@@ -87,16 +95,15 @@
         <!-- Controleer of element inst_1 krijgt -->
         <xsl:variable name="test_inst1" select="$eId//node[@id eq $node/@id]/preceding-sibling::node[@eId eq $node/@eId]"/>
         <xsl:variable name="count" select="if (($test_inst) and ($test_inst1)) then concat('inst',count($eId//node[@id eq $node/@id]/(.|preceding-sibling::node[@eId eq $node/@eId]))) else null"/>
-        <node id="{$node/@id}" wId_eId="{$node/@wId_eId}">
-            <xsl:attribute name="eId">
-                <xsl:value-of select="fn:string-join(($node/@eId,$count),'_')"/>
-            </xsl:attribute>
+        <xsl:element name="node">
+            <xsl:copy-of select="$node/@*"/>
+            <xsl:attribute name="eId" select="fn:string-join(($node/@eId,$count),'_')"/>
             <xsl:for-each select="$node/node">
                 <xsl:call-template name="check_eId">
                     <xsl:with-param name="id" select="@id"/>
                 </xsl:call-template>
             </xsl:for-each>
-        </node>
+        </xsl:element>
     </xsl:template>
 
     <!-- elementen verwerken -->
@@ -121,35 +128,45 @@
                 </xsl:attribute>
             </xsl:if>
             <xsl:apply-templates select="namespace::*"/>
-            <xsl:apply-templates select="@*">
-                <xsl:with-param name="id" select="$id"/>
-            </xsl:apply-templates>
+            <xsl:apply-templates select="@*"/>
             <xsl:apply-templates select="node()"/>
         </xsl:element>
     </xsl:template>
 
     <!-- attributen verwerken -->
 
-    <xsl:template match="@*">
-        <xsl:param name="id"/>
+    <xsl:template match="@eId|@wId">
+        <!-- doe niets -->
+    </xsl:template>
+
+    <xsl:template match="@ref">
+        <xsl:variable name="marker" select="."/>
+        <xsl:variable name="ref" select="$unique_eId//node[@marker eq $marker]/@eId"/>
         <xsl:choose>
-            <xsl:when test="fn:index-of(('eId','wId'),name()) gt 0">
-                <!-- doe niets -->
-            </xsl:when>
-            <xsl:when test="name() eq 'id'">
-                <xsl:choose>
-                    <xsl:when test="$unique_eId//node[@id eq $id]">
-                        <!-- wis id -->
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:copy/>
-                    </xsl:otherwise>
-                </xsl:choose>
+            <xsl:when test="$ref">
+                <xsl:attribute name="ref" select="$ref"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:copy/>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+
+    <xsl:template match="@scope">
+        <xsl:variable name="marker" select="."/>
+        <xsl:variable name="scope" select="$unique_eId//node[@marker eq $marker]/@name"/>
+        <xsl:choose>
+            <xsl:when test="$scope">
+                <xsl:attribute name="scope" select="$scope"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:copy/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <xsl:template match="@*">
+        <xsl:copy/>
     </xsl:template>
 
     <xsl:template match="namespace::*">

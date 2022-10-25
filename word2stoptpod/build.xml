@@ -22,12 +22,17 @@
     <mkdir dir="${output.dir}"/>
   </target>
 
-  <!-- unzip opdracht.zip en word-document -->
+  <!-- unzip opdracht.zip, gml.zip en word-document -->
 
-  <target name="unzip" description="Unzip opdracht.zip en word-document">
+  <target name="unzip" description="Unzip opdracht.zip, gml.zip en word-document">
     <unzip dest="${temp.dir}/opdracht">
       <fileset dir="${input.dir}">
         <include name="**/opdracht.zip"/>
+      </fileset>
+    </unzip>
+    <unzip dest="${temp.dir}/gml">
+      <fileset dir="${input.dir}">
+        <include name="**/gml.zip"/>
       </fileset>
     </unzip>
     <unzip dest="${temp.dir}/document">

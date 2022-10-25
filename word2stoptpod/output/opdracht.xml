@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <publicatieOpdracht xmlns="http://www.overheid.nl/2017/lvbb">
-   <idLevering>WiedenWeerribben_2022-04-28</idLevering>
-   <idBevoegdGezag>00000001001900328000</idBevoegdGezag>
-   <idAanleveraar>00000001001900328000</idAanleveraar>
-   <publicatie>WiedenWeerribben_2022-04-28.xml</publicatie>
-   <datumBekendmaking>2022-04-07</datumBekendmaking>
+   <idLevering>CORRECT001_2022-10-25_002</idLevering>
+   <idBevoegdGezag>00000001001876387000</idBevoegdGezag>
+   <idAanleveraar>00000001001876387000</idAanleveraar>
+   <publicatie>CORRECT001_2022-10-25.xml</publicatie>
+   <datumBekendmaking>2022-10-17</datumBekendmaking>
 </publicatieOpdracht>

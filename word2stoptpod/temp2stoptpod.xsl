@@ -42,6 +42,9 @@
         <xsl:element name="wId">
           <xsl:value-of select=".//tekst:ExtIoRef/@wId"/>
         </xsl:element>
+        <xsl:element name="componentnaam">
+          <xsl:value-of select="./(ancestor::tekst:RegelingCompact|ancestor::tekst:RegelingKlassiek)/@componentnaam"/>
+        </xsl:element>
       </xsl:element>
     </xsl:for-each>
   </xsl:param>
@@ -77,7 +80,7 @@
       </xsl:call-template>
       <xsl:call-template name="owLocatie">
         <xsl:with-param name="index" select="$index"/>
-        <xsl:with-param name="objects" select=".//sl:stand[descendant::l:Ambtsgebied,descendant::l:Gebied]"/>
+        <xsl:with-param name="objects" select=".//sl:stand[descendant::l:Ambtsgebied,descendant::l:Gebiedengroep,descendant::l:Gebied]"/>
       </xsl:call-template>
       <xsl:call-template name="owRegelingsgebied">
         <xsl:with-param name="index" select="$index"/>
@@ -219,13 +222,13 @@
               </xsl:element>
             </xsl:if>
             <!-- owLocatie -->
-            <xsl:variable name="objects" select="root()//sl:stand[descendant::l:Ambtsgebied,descendant::l:Gebied]"/>
+            <xsl:variable name="objects" select="root()//sl:stand[descendant::l:Ambtsgebied,descendant::l:Gebiedengroep,descendant::l:Gebied]"/>
             <xsl:if test="$objects">
               <xsl:element name="Bestand" namespace="{$manifest}">
                 <xsl:element name="naam" namespace="{$manifest}">
                   <xsl:value-of select="concat(fn:format-number($index,'000'),'-owLocatie.xml')"/>
                 </xsl:element>
-                <xsl:for-each select="('Ambtsgebied','Gebied')">
+                <xsl:for-each select="('Ambtsgebied','Gebiedengroep','Gebied')">
                   <xsl:element name="objecttype" namespace="{$manifest}">
                     <xsl:value-of select="."/>
                   </xsl:element>
@@ -603,6 +606,9 @@
                   <xsl:value-of select="string('Ambtsgebied')"/>
                 </xsl:element>
                 <xsl:element name="sl:objectType">
+                  <xsl:value-of select="string('Gebiedengroep')"/>
+                </xsl:element>
+                <xsl:element name="sl:objectType">
                   <xsl:value-of select="string('Gebied')"/>
                 </xsl:element>
               </xsl:element>
@@ -691,8 +697,8 @@
     <xsl:variable name="join" select="parent::data:BeoogdInformatieobject/data:instrumentVersie"/>
     <xsl:element name="{name()}" namespace="{namespace-uri()}">
       <xsl:choose>
-        <xsl:when test="($unique_geometrie/gio[./join=$join]/eId)[1] ne ''">
-          <xsl:value-of select="concat('!initieel_reg#',($unique_geometrie/gio[./join=$join]/eId)[1])"/>
+        <xsl:when test="($unique_geometrie/gio[./join=$join])[1]/eId ne ''">
+          <xsl:value-of select="concat('!',($unique_geometrie/gio[./join=$join])[1]/componentnaam,'#',($unique_geometrie/gio[./join=$join])[1]/eId)"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:comment><xsl:text>diagnose: controleer de koppeling naar ExtIoRef</xsl:text></xsl:comment>

@@ -52,7 +52,10 @@
   <xsl:param name="heading_7" select="$headings[7]" as="xs:string"/>
   <xsl:param name="heading" select="translate($headings[1],'1','#')"/>
 
-  <xsl:param name="check" select="($title,$heading_1,$heading_2,$heading_3,$heading_4,$heading_5,$heading_6,'Lidmetnummering','Divisiekop1','Divisiekop2','Divisiekop3','Divisiekop4','Divisiekop5','Divisiekop6','Divisiekop7','Divisiekop8','Divisiekop9','Wijziging')"/>
+  <xsl:param name="check" select="($title,$heading_1,$heading_2,$heading_3,$heading_4,$heading_5,$heading_6,'Lidmetnummering','Divisiekop1','Divisiekop1nawerk','Divisiekop2','Divisiekop3','Divisiekop4','Divisiekop5','Divisiekop6','Divisiekop7','Divisiekop8','Divisiekop9','Wijziging')"/>
+
+  <!-- beschikbare typen kadertekst -->
+  <xsl:param name="type_kadertekst" select="('standaard','ambitie','beleidskeuze','casus','citaat','doelstelling','inleiding','intermezzo','samenvatting','toelichting','voorbeeld')"/>
 
   <!-- document bevat de tekst van het besluit in relevante onderdelen -->
   <xsl:param name="document">
@@ -133,6 +136,7 @@
             </xsl:otherwise>
           </xsl:choose>
           <xsl:element name="object">
+            <xsl:attribute name="id" select="fn:upper-case(generate-id($w:tbl))"/>
             <xsl:attribute name="type" select="$w:tbl/w:tr[1]/w:tc[1]/lower-case(fn:string-join(descendant::w:t))"/>
             <xsl:for-each select="$w:tbl/w:tr[not(w:trPr)]">
               <xsl:choose>
@@ -180,7 +184,7 @@
   <xsl:param name="unique_geometrie">
     <xsl:variable name="metadata" select="$LOC/comment/object[@type=('besluit')]"/>
     <xsl:variable name="bg_code_besluit" select="(fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'geen')[1]"/>
-    <xsl:for-each-group select="$LOC/comment/object[@type='geometrie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
+    <xsl:for-each-group select="$LOC/comment//object[@type='geometrie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
       <xsl:variable name="index_1" select="current-grouping-key()"/>
       <xsl:for-each-group select="current-group()" group-by="waarde[@naam='noemer']">
         <xsl:variable name="index_2" select="current-grouping-key()"/>
@@ -198,7 +202,7 @@
             <xsl:value-of select="$index_2"/>
           </xsl:element>
           <xsl:element name="join">
-            <xsl:value-of select="concat('/join/id/regdata/',$bg_code_besluit,'/',format-date(current-date(),'[Y0001]'),'/',$hash_geometrie,'/nld@',format-date(current-date(),'[Y0001]-[M01]-[D01]'))"/>
+            <xsl:value-of select="concat('/join/id/regdata/',$bg_code_besluit,'/',format-date(current-date(),'[Y0001]'),'/',$hash_geometrie,'/nld@',format-date(current-date(),'[Y0001]-[M01]-[D01]'),';',($metadata[@type=('besluit')]/waarde[@naam='versieBesluit'],1)[1])"/>
           </xsl:element>
         </xsl:element>
       </xsl:for-each-group>
@@ -237,7 +241,7 @@
     <xsl:variable name="oin_naam_besluit" select="$OIN/item[fn:ends-with(BG,$bg_code_besluit)]/naam"/>
     <xsl:element name="publicatieOpdracht" namespace="{$opdracht}">
       <xsl:element name="idLevering" namespace="{$opdracht}">
-        <xsl:value-of select="fn:string-join(($metadata[@type=('besluit')]/waarde[@naam='idWerk'],format-date(current-date(),'[Y0001]-[M01]-[D01]')),'_')"/>
+        <xsl:value-of select="fn:string-join(($metadata[@type=('besluit')]/waarde[@naam='idWerk'],format-date(current-date(),'[Y0001]-[M01]-[D01]'),fn:format-number(($metadata[@type=('besluit')]/waarde[@naam='versieBesluit'],1)[1],'000')),'_')"/>
       </xsl:element>
       <xsl:element name="idBevoegdGezag" namespace="{$opdracht}">
         <xsl:value-of select="$oin_code_besluit"/>
@@ -289,7 +293,7 @@
             <xsl:value-of select="($oin_naam_regeling,'geen')[1]"/>
           </xsl:element>
           <xsl:element name="sl:leveringsId" namespace="{$sl}">
-            <xsl:value-of select="fn:string-join((($metadata[@type=('besluit')]/waarde[@naam='idWerk'],'geen')[1],format-date(current-date(),'[Y0001]-[M01]-[D01]')),'_')"/>
+            <xsl:value-of select="fn:string-join((($metadata[@type=('besluit')]/waarde[@naam='idWerk'],'geen')[1],format-date(current-date(),'[Y0001]-[M01]-[D01]'),fn:format-number(($metadata[@type=('besluit')]/waarde[@naam='versieBesluit'],1)[1],'000')),'_')"/>
           </xsl:element>
         </xsl:element>
         <xsl:call-template name="ow_objecten"/>
@@ -373,7 +377,7 @@
       </xsl:element>
     </xsl:element>
     <!-- gebiedsaanwijzing -->
-    <xsl:for-each-group select="$LOC/comment[@parent_id=$id]/object[@type='gebiedsaanwijzing']" group-by="(waarde[@naam='waarde'],'geen')[1]">
+    <xsl:for-each-group select="$LOC/comment[@parent_id=$id]/object[@type='gebiedsaanwijzing']" group-by="(waarde[@naam='gebiedsaanwijzing'],'geen')[1]">
       <xsl:variable name="index_1" select="current-grouping-key()"/>
       <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='type'],'geen')[1]">
         <xsl:variable name="index_2" select="current-grouping-key()"/>
@@ -410,7 +414,7 @@
                         </xsl:call-template>
                       </xsl:variable>
                       <xsl:element name="l:LocatieRef" namespace="{$l}">
-                        <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebied.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/>
+                        <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebiedengroep.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/>
                       </xsl:element>
                     </xsl:for-each-group>
                   </xsl:for-each-group>
@@ -433,6 +437,23 @@
         </xsl:variable>
         <xsl:element name="sl:stand" namespace="{$sl}">
           <xsl:element name="ow-dc:owObject" namespace="{$ow-dc}">
+            <xsl:element name="l:Gebiedengroep" namespace="{$l}">
+              <xsl:element name="l:identificatie" namespace="{$l}">
+                <xsl:value-of select="concat('nl.imow-',$bg_code_besluit,'.gebiedengroep.',$oin_code_regeling,$hash_geometrie)"/>
+              </xsl:element>
+              <xsl:element name="l:noemer" namespace="{$l}">
+                <xsl:value-of select="string($index_2)"/>
+              </xsl:element>
+              <xsl:element name="l:groepselement" namespace="{$l}">
+                <xsl:element name="l:GebiedRef" namespace="{$l}">
+                  <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebied.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/>
+                </xsl:element>
+              </xsl:element>
+            </xsl:element>
+          </xsl:element>
+        </xsl:element>
+        <xsl:element name="sl:stand" namespace="{$sl}">
+          <xsl:element name="ow-dc:owObject" namespace="{$ow-dc}">
             <xsl:comment><xsl:value-of select="string($index_1)"/></xsl:comment>
             <xsl:element name="l:Gebied" namespace="{$l}">
               <xsl:element name="l:identificatie" namespace="{$l}">
@@ -443,6 +464,7 @@
               </xsl:element>
               <xsl:element name="l:geometrie" namespace="{$l}">
                 <xsl:element name="l:GeometrieRef" namespace="{$l}">
+                  <!-- haal de guid uit de gml-bestanden en voeg gebiedengroep toe -->
                   <xsl:attribute name="xlink:href" select="uuid:randomUUID()" namespace="{$xlink}"/>
                 </xsl:element>
               </xsl:element>
@@ -485,7 +507,7 @@
         <xsl:variable name="index_2" select="current-grouping-key()"/>
         <xsl:for-each-group select="current-group()" group-by="(object[@type='waarde']/waarde[@naam='typeNorm'],'geen')[1]">
           <xsl:variable name="index_3" select="current-grouping-key()"/>
-          <xsl:for-each-group select="current-group()" group-by="(object[@type='waarde']/waarde[@naam='eenheid'],'geen')[1]">
+          <xsl:for-each-group select="current-group()" group-by="(fn:tokenize(object[@type='waarde']/waarde[@naam='waarde'],'\|')[2],'geen')[1]">
             <xsl:variable name="index_4" select="current-grouping-key()"/>
             <xsl:variable name="hash_omgevingsnorm">
               <xsl:call-template name="adler32">
@@ -506,22 +528,22 @@
                   </xsl:element>
                   <xsl:if test="$index_4 ne 'geen'">
                     <xsl:element name="rol:eenheid" namespace="{$rol}">
-                      <xsl:value-of select="string($index_4)"/>
+                      <xsl:value-of select="$index_4"/>
                     </xsl:element>
                   </xsl:if>
                   <xsl:element name="rol:normwaarde" namespace="{$rol}">
                     <xsl:for-each-group select="current-group()" group-by="(object[@type='waarde']/waarde[@naam='kwalitatieveWaarde'],'geen')[1]">
                       <xsl:variable name="index_1" select="current-grouping-key()"/>
-                      <xsl:for-each-group select="current-group()" group-by="(object[@type='waarde']/waarde[@naam='kwantitatieveWaarde'],'geen')[1]">
+                      <xsl:for-each-group select="current-group()" group-by="(fn:tokenize(object[@type='waarde']/waarde[@naam='waarde'],'\|')[1],'geen')[1]">
                         <xsl:variable name="index_2" select="current-grouping-key()"/>
-                        <xsl:variable name="hash_omgevingsnorm">
+                        <xsl:variable name="hash_normwaarde">
                           <xsl:call-template name="adler32">
                             <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2),'|')"/>
                           </xsl:call-template>
                         </xsl:variable>
                         <xsl:element name="rol:Normwaarde" namespace="{$rol}">
                           <xsl:element name="rol:identificatie" namespace="{$rol}">
-                            <xsl:value-of select="concat('nl.imow-',$bg_code_besluit,'.normwaarde.',$oin_code_regeling,$hash_omgevingsnorm)"/>
+                            <xsl:value-of select="concat('nl.imow-',$bg_code_besluit,'.normwaarde.',$oin_code_regeling,$hash_normwaarde)"/>
                           </xsl:element>
                           <xsl:if test="$index_1 ne 'geen'">
                             <xsl:element name="rol:kwalitatieveWaarde" namespace="{$rol}">
@@ -544,7 +566,7 @@
                                   </xsl:call-template>
                                 </xsl:variable>
                                 <xsl:element name="l:LocatieRef" namespace="{$l}">
-                                  <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebied.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/>
+                                  <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebiedengroep.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/>
                                 </xsl:element>
                               </xsl:for-each-group>
                             </xsl:for-each-group>
@@ -629,7 +651,7 @@
                                   </xsl:call-template>
                                 </xsl:variable>
                                 <xsl:element name="l:LocatieRef" namespace="{$l}">
-                                  <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebied.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/>
+                                  <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebiedengroep.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/>
                                 </xsl:element>
                               </xsl:for-each-group>
                             </xsl:for-each-group>
@@ -661,7 +683,7 @@
             <xsl:choose>
               <xsl:when test="$index_geometrie gt 0">
                 <xsl:element name="l:LocatieRef" namespace="{$l}">
-                  <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebied.',fn:format-date(current-date(),'[Y0001][M01][D01]'),fn:format-number($index_geometrie,'000000'))" namespace="{$xlink}"/>
+                  <!--xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebiedengroep.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/-->
                 </xsl:element>
               </xsl:when>
               <xsl:otherwise>
@@ -689,210 +711,218 @@
     <xsl:variable name="bg_code_regeling" select="(fn:tokenize($metadata[@type=('regeling')]/waarde[@naam='idOrganisatie'],'/')[last()],$bg_code_besluit,'geen')[1]"/>
     <xsl:variable name="oin_code_regeling" select="$OIN/item[fn:ends-with(BG,$bg_code_regeling)]/OIN"/>
     <xsl:variable name="oin_naam_regeling" select="$OIN/item[fn:ends-with(BG,$bg_code_regeling)]/naam"/>
-    <xsl:if test="$objects/object">
-      <xsl:variable name="index_regeltekst" select="count(fn:distinct-values(($LOC/comment[@para=$para])[1]/preceding-sibling::comment/@para))"/>
-      <xsl:element name="ow-dc:owBestand" namespace="{$ow-dc}">
-        <xsl:namespace name="da" select="$da"/>
-        <xsl:namespace name="ga" select="$ga"/>
-        <xsl:namespace name="k" select="$k"/>
-        <xsl:namespace name="l" select="$l"/>
-        <xsl:namespace name="ow" select="$ow"/>
-        <xsl:namespace name="ow-dc" select="$ow-dc"/>
-        <xsl:namespace name="p" select="$p"/>
-        <xsl:namespace name="r" select="$r"/>
-        <xsl:namespace name="rg" select="$rg"/>
-        <xsl:namespace name="rol" select="$rol"/>
-        <xsl:namespace name="sl" select="$sl"/>
-        <xsl:namespace name="vt" select="$vt"/>
-        <xsl:namespace name="xlink" select="$xlink"/>
-        <xsl:namespace name="xsi" select="$xsi"/>
-        <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
-        <xsl:element name="sl:standBestand" namespace="{$sl}">
-          <xsl:element name="sl:dataset" namespace="{$sl}">
-            <xsl:value-of select="($metadata[@type=('regeling')]/waarde[@naam='officieleTitel'],$metadata[@type=('besluit')]/waarde[@naam='officieleTitel'],'geen')[1]"/>
-          </xsl:element>
-          <xsl:element name="sl:inhoud" namespace="{$sl}">
-            <xsl:element name="sl:gebied" namespace="{$sl}">
-              <xsl:value-of select="($oin_naam_regeling,'geen')[1]"/>
+    <xsl:choose>
+      <xsl:when test="$objects/object">
+        <xsl:element name="ow-dc:owBestand" namespace="{$ow-dc}">
+          <xsl:namespace name="da" select="$da"/>
+          <xsl:namespace name="ga" select="$ga"/>
+          <xsl:namespace name="k" select="$k"/>
+          <xsl:namespace name="l" select="$l"/>
+          <xsl:namespace name="ow" select="$ow"/>
+          <xsl:namespace name="ow-dc" select="$ow-dc"/>
+          <xsl:namespace name="p" select="$p"/>
+          <xsl:namespace name="r" select="$r"/>
+          <xsl:namespace name="rg" select="$rg"/>
+          <xsl:namespace name="rol" select="$rol"/>
+          <xsl:namespace name="sl" select="$sl"/>
+          <xsl:namespace name="vt" select="$vt"/>
+          <xsl:namespace name="xlink" select="$xlink"/>
+          <xsl:namespace name="xsi" select="$xsi"/>
+          <xsl:attribute name="xsi:schemaLocation" namespace="{$xsi}" select="string('http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd')"/>
+          <xsl:element name="sl:standBestand" namespace="{$sl}">
+            <xsl:element name="sl:dataset" namespace="{$sl}">
+              <xsl:value-of select="($metadata[@type=('regeling')]/waarde[@naam='officieleTitel'],$metadata[@type=('besluit')]/waarde[@naam='officieleTitel'],'geen')[1]"/>
             </xsl:element>
-            <xsl:element name="sl:leveringsId" namespace="{$sl}">
-              <xsl:value-of select="fn:string-join((($metadata[@type=('besluit')]/waarde[@naam='idWerk'],'geen')[1],format-date(current-date(),'[Y0001]-[M01]-[D01]')),'_')"/>
+            <xsl:element name="sl:inhoud" namespace="{$sl}">
+              <xsl:element name="sl:gebied" namespace="{$sl}">
+                <xsl:value-of select="($oin_naam_regeling,'geen')[1]"/>
+              </xsl:element>
+              <xsl:element name="sl:leveringsId" namespace="{$sl}">
+                <xsl:value-of select="fn:string-join((($metadata[@type=('besluit')]/waarde[@naam='idWerk'],'geen')[1],format-date(current-date(),'[Y0001]-[M01]-[D01]')),'_')"/>
+              </xsl:element>
             </xsl:element>
-          </xsl:element>
-          <xsl:element name="sl:stand" namespace="{$sl}">
-            <xsl:element name="ow-dc:owObject" namespace="{$ow-dc}">
-              <xsl:element name="r:Regeltekst" namespace="{$r}">
-                <xsl:element name="r:identificatie" namespace="{$r}">
-                  <xsl:value-of select="concat('nl.imow-',$bg_code_besluit,'.regeltekst.',fn:format-date(current-date(),'[Y0001][M01][D01]'),fn:format-number($index_regeltekst,'000000'))"/>
+            <xsl:element name="sl:stand" namespace="{$sl}">
+              <xsl:element name="ow-dc:owObject" namespace="{$ow-dc}">
+                <xsl:element name="r:Regeltekst" namespace="{$r}">
+                  <xsl:element name="r:identificatie" namespace="{$r}">
+                    <xsl:value-of select="concat('nl.imow-',$bg_code_besluit,'.regeltekst.',$oin_code_regeling,$para)"/>
+                  </xsl:element>
                 </xsl:element>
               </xsl:element>
             </xsl:element>
-          </xsl:element>
-          <xsl:element name="sl:stand" namespace="{$sl}">
-            <xsl:element name="ow-dc:owObject" namespace="{$ow-dc}">
-              <xsl:element name="r:RegelVoorIedereen" namespace="{$r}">
-                <xsl:element name="r:identificatie" namespace="{$r}">
-                  <xsl:value-of select="concat('nl.imow-',$bg_code_besluit,'.juridischeregel.',fn:format-date(current-date(),'[Y0001][M01][D01]'),fn:format-number($index_regeltekst,'000000'))"/>
-                </xsl:element>
-                <xsl:element name="r:idealisatie" namespace="{$r}">
-                  <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact')"/>
-                </xsl:element>
-                <xsl:element name="r:artikelOfLid" namespace="{$r}">
-                  <xsl:element name="r:RegeltekstRef" namespace="{$r}">
-                    <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.regeltekst.',fn:format-date(current-date(),'[Y0001][M01][D01]'),fn:format-number($index_regeltekst,'000000'))" namespace="{$xlink}"/>
+            <xsl:element name="sl:stand" namespace="{$sl}">
+              <xsl:element name="ow-dc:owObject" namespace="{$ow-dc}">
+                <xsl:element name="r:RegelVoorIedereen" namespace="{$r}">
+                  <xsl:element name="r:identificatie" namespace="{$r}">
+                    <xsl:value-of select="concat('nl.imow-',$bg_code_besluit,'.juridischeregel.',$oin_code_regeling,$para)"/>
                   </xsl:element>
-                </xsl:element>
-                <xsl:if test="$objects/object[@type='thema']">
-                  <xsl:for-each select="fn:distinct-values($objects/object[@type='thema']/waarde[@naam='thema'])">
-                    <xsl:element name="r:thema" namespace="{$r}">
-                      <xsl:value-of select="string(.)"/>
+                  <xsl:element name="r:idealisatie" namespace="{$r}">
+                    <xsl:value-of select="string('http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact')"/>
+                  </xsl:element>
+                  <xsl:element name="r:artikelOfLid" namespace="{$r}">
+                    <xsl:element name="r:RegeltekstRef" namespace="{$r}">
+                      <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.regeltekst.',$oin_code_regeling,$para)" namespace="{$xlink}"/>
                     </xsl:element>
-                  </xsl:for-each>
-                </xsl:if>
-                <xsl:element name="r:locatieaanduiding" namespace="{$r}">
-                  <xsl:for-each-group select="$objects/(object[@type='geometrie'],descendant::object[@type='geometrie'])" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
-                    <xsl:variable name="index_1" select="current-grouping-key()"/>
-                    <xsl:for-each-group select="current-group()" group-by="waarde[@naam='noemer']">
-                      <xsl:variable name="index_2" select="current-grouping-key()"/>
-                      <xsl:variable name="hash_geometrie">
-                        <xsl:call-template name="adler32">
-                          <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2),'|')"/>
-                        </xsl:call-template>
-                      </xsl:variable>
-                      <xsl:element name="l:LocatieRef" namespace="{$l}">
-                        <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebied.',$hash_geometrie)" namespace="{$xlink}"/>
+                  </xsl:element>
+                  <xsl:if test="$objects/object[@type='thema']">
+                    <xsl:for-each select="fn:distinct-values($objects/object[@type='thema']/waarde[@naam='thema'])">
+                      <xsl:element name="r:thema" namespace="{$r}">
+                        <xsl:value-of select="string(.)"/>
                       </xsl:element>
-                    </xsl:for-each-group>
-                  </xsl:for-each-group>
-                </xsl:element>
-                <xsl:if test="$objects/object[@type='gebiedsaanwijzing']">
-                  <xsl:element name="r:gebiedsaanwijzing" namespace="{$r}">
-                    <xsl:for-each-group select="$objects/object[@type='gebiedsaanwijzing']" group-by="(waarde[@naam='gebiedsaanwijzing'],'geen')[1]">
+                    </xsl:for-each>
+                  </xsl:if>
+                  <xsl:element name="r:locatieaanduiding" namespace="{$r}">
+                    <xsl:for-each-group select="$objects/(object[@type='geometrie'],descendant::object[@type='geometrie'])" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
                       <xsl:variable name="index_1" select="current-grouping-key()"/>
-                      <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='type'],'geen')[1]">
+                      <xsl:for-each-group select="current-group()" group-by="waarde[@naam='noemer']">
                         <xsl:variable name="index_2" select="current-grouping-key()"/>
-                        <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='groep'],'geen')[1]">
-                          <xsl:variable name="index_3" select="current-grouping-key()"/>
-                          <xsl:variable name="hash_gebiedsaanwijzing">
-                            <xsl:call-template name="adler32">
-                              <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2,$index_3),'|')"/>
-                            </xsl:call-template>
-                          </xsl:variable>
-                          <xsl:element name="ga:GebiedsaanwijzingRef" namespace="{$ga}">
-                            <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebiedsaanwijzing.',$hash_gebiedsaanwijzing)" namespace="{$xlink}"/>
-                          </xsl:element>
-                        </xsl:for-each-group>
+                        <xsl:variable name="hash_geometrie">
+                          <xsl:call-template name="adler32">
+                            <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2),'|')"/>
+                          </xsl:call-template>
+                        </xsl:variable>
+                        <xsl:element name="l:LocatieRef" namespace="{$l}">
+                          <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebiedengroep.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/>
+                        </xsl:element>
                       </xsl:for-each-group>
                     </xsl:for-each-group>
                   </xsl:element>
-                </xsl:if>
-                <xsl:if test="$objects/object[@type='activiteit']">
-                  <xsl:for-each-group select="$objects/object[@type='activiteit']" group-by="((waarde[@naam='activiteiten'],waarde[@naam='bovenliggendeActiviteit']),'geen')[1]">
-                    <xsl:variable name="index_1" select="current-grouping-key()"/>
-                    <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='bovenliggendeActiviteit'],'ActInOmgevingsplanGem')[1]">
-                      <xsl:variable name="index_2" select="current-grouping-key()"/>
-                      <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='activiteitengroep'],'geen')[1]">
-                        <xsl:variable name="index_3" select="current-grouping-key()"/>
-                        <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='activiteitregelkwalificatie'],'geen')[1]">
-                          <xsl:variable name="index_4" select="current-grouping-key()"/>
-                          <xsl:variable name="hash_activiteit">
-                            <xsl:call-template name="adler32">
-                              <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2,$index_3),'|')"/>
-                            </xsl:call-template>
-                          </xsl:variable>
-                          <xsl:variable name="hash_activiteit_locatieaanduiding">
-                            <xsl:call-template name="adler32">
-                              <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2,$index_3,$index_4),'|')"/>
-                            </xsl:call-template>
-                          </xsl:variable>
-                          <xsl:element name="r:activiteitaanduiding" namespace="{$r}">
-                            <xsl:element name="rol:ActiviteitRef" namespace="{$rol}">
-                              <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.activiteit.',$hash_activiteit)" namespace="{$xlink}"/>
+                  <xsl:if test="$objects/object[@type='gebiedsaanwijzing']">
+                    <xsl:element name="r:gebiedsaanwijzing" namespace="{$r}">
+                      <xsl:for-each-group select="$objects/object[@type='gebiedsaanwijzing']" group-by="(waarde[@naam='gebiedsaanwijzing'],'geen')[1]">
+                        <xsl:variable name="index_1" select="current-grouping-key()"/>
+                        <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='type'],'geen')[1]">
+                          <xsl:variable name="index_2" select="current-grouping-key()"/>
+                          <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='groep'],'geen')[1]">
+                            <xsl:variable name="index_3" select="current-grouping-key()"/>
+                            <xsl:variable name="hash_gebiedsaanwijzing">
+                              <xsl:call-template name="adler32">
+                                <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2,$index_3),'|')"/>
+                              </xsl:call-template>
+                            </xsl:variable>
+                            <xsl:element name="ga:GebiedsaanwijzingRef" namespace="{$ga}">
+                              <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebiedsaanwijzing.',$oin_code_regeling,$hash_gebiedsaanwijzing)" namespace="{$xlink}"/>
                             </xsl:element>
-                            <xsl:element name="r:ActiviteitLocatieaanduiding" namespace="{$r}">
-                              <xsl:element name="r:identificatie" namespace="{$r}">
-                                <xsl:value-of select="concat('nl.imow-',$bg_code_besluit,'.activiteitlocatieaanduiding.',$hash_activiteit_locatieaanduiding)"/>
+                          </xsl:for-each-group>
+                        </xsl:for-each-group>
+                      </xsl:for-each-group>
+                    </xsl:element>
+                  </xsl:if>
+                  <xsl:if test="$objects/object[@type='activiteit']">
+                    <xsl:for-each-group select="$objects/object[@type='activiteit']" group-by="((waarde[@naam='activiteiten'],waarde[@naam='bovenliggendeActiviteit']),'geen')[1]">
+                      <xsl:variable name="index_1" select="current-grouping-key()"/>
+                      <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='bovenliggendeActiviteit'],'ActInOmgevingsplanGem')[1]">
+                        <xsl:variable name="index_2" select="current-grouping-key()"/>
+                        <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='activiteitengroep'],'geen')[1]">
+                          <xsl:variable name="index_3" select="current-grouping-key()"/>
+                          <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='activiteitregelkwalificatie'],'geen')[1]">
+                            <xsl:variable name="index_4" select="current-grouping-key()"/>
+                            <xsl:variable name="hash_activiteit">
+                              <xsl:call-template name="adler32">
+                                <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2,$index_3),'|')"/>
+                              </xsl:call-template>
+                            </xsl:variable>
+                            <xsl:variable name="hash_activiteit_locatieaanduiding">
+                              <xsl:call-template name="adler32">
+                                <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2,$index_3,$index_4),'|')"/>
+                              </xsl:call-template>
+                            </xsl:variable>
+                            <xsl:element name="r:activiteitaanduiding" namespace="{$r}">
+                              <xsl:element name="rol:ActiviteitRef" namespace="{$rol}">
+                                <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.activiteit.',$oin_code_regeling,$hash_activiteit)" namespace="{$xlink}"/>
                               </xsl:element>
-                              <xsl:element name="r:activiteitregelkwalificatie" namespace="{$r}">
-                                <xsl:value-of select="$index_4"/>
-                              </xsl:element>
-                              <xsl:element name="r:locatieaanduiding" namespace="{$r}">
-                                <xsl:for-each-group select="current-group()/object[@type='geometrie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
-                                  <xsl:variable name="index_1" select="current-grouping-key()"/>
-                                  <xsl:for-each-group select="current-group()" group-by="waarde[@naam='noemer']">
-                                    <xsl:variable name="index_2" select="current-grouping-key()"/>
-                                    <xsl:variable name="hash_geometrie">
-                                      <xsl:call-template name="adler32">
-                                        <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2),'|')"/>
-                                      </xsl:call-template>
-                                    </xsl:variable>
-                                    <xsl:element name="l:LocatieRef" namespace="{$l}">
-                                      <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebied.',$hash_geometrie)" namespace="{$xlink}"/>
-                                    </xsl:element>
+                              <xsl:element name="r:ActiviteitLocatieaanduiding" namespace="{$r}">
+                                <xsl:comment>
+                                <xsl:value-of select="$hash_activiteit_locatieaanduiding"/>
+                              </xsl:comment>
+                                <xsl:element name="r:identificatie" namespace="{$r}">
+                                  <xsl:value-of select="concat('nl.imow-',$bg_code_besluit,'.activiteitlocatieaanduiding.',$oin_code_regeling,current-group()/@id)"/>
+                                </xsl:element>
+                                <xsl:element name="r:activiteitregelkwalificatie" namespace="{$r}">
+                                  <xsl:value-of select="$index_4"/>
+                                </xsl:element>
+                                <xsl:element name="r:locatieaanduiding" namespace="{$r}">
+                                  <xsl:for-each-group select="current-group()/object[@type='geometrie']" group-by="(waarde[@naam='bestandsnaam'],'geen')[1]">
+                                    <xsl:variable name="index_1" select="current-grouping-key()"/>
+                                    <xsl:for-each-group select="current-group()" group-by="waarde[@naam='noemer']">
+                                      <xsl:variable name="index_2" select="current-grouping-key()"/>
+                                      <xsl:variable name="hash_geometrie">
+                                        <xsl:call-template name="adler32">
+                                          <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2),'|')"/>
+                                        </xsl:call-template>
+                                      </xsl:variable>
+                                      <xsl:element name="l:LocatieRef" namespace="{$l}">
+                                        <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebiedengroep.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/>
+                                      </xsl:element>
+                                    </xsl:for-each-group>
                                   </xsl:for-each-group>
-                                </xsl:for-each-group>
+                                </xsl:element>
                               </xsl:element>
                             </xsl:element>
-                          </xsl:element>
-                        </xsl:for-each-group>
-                      </xsl:for-each-group>
-                    </xsl:for-each-group>
-                  </xsl:for-each-group>
-                </xsl:if>
-                <xsl:if test="$objects/object[@type='omgevingsnorm']">
-                  <xsl:element name="r:omgevingsnormaanduiding" namespace="{$r}">
-                    <xsl:for-each-group select="$objects/object[@type='omgevingsnorm']" group-by="(waarde[@naam='omgevingsnorm'],'geen')[1]">
-                      <xsl:variable name="index_1" select="current-grouping-key()"/>
-                      <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='omgevingsnormgroep'],'geen')[1]">
-                        <xsl:variable name="index_2" select="current-grouping-key()"/>
-                        <xsl:for-each-group select="current-group()" group-by="(object[@type='waarde']/waarde[@naam='typeNorm'],'geen')[1]">
-                          <xsl:variable name="index_3" select="current-grouping-key()"/>
-                          <xsl:for-each-group select="current-group()" group-by="(object[@type='waarde']/waarde[@naam='eenheid'],'geen')[1]">
-                            <xsl:variable name="index_4" select="current-grouping-key()"/>
-                            <xsl:variable name="hash_omgevingsnorm">
-                              <xsl:call-template name="adler32">
-                                <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2,$index_3,$index_4),'|')"/>
-                              </xsl:call-template>
-                            </xsl:variable>
-                            <xsl:element name="rol:OmgevingsnormRef" namespace="{$rol}">
-                              <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.omgevingsnorm.',$hash_omgevingsnorm)" namespace="{$xlink}"/>
-                            </xsl:element>
                           </xsl:for-each-group>
                         </xsl:for-each-group>
                       </xsl:for-each-group>
                     </xsl:for-each-group>
-                  </xsl:element>
-                </xsl:if>
-                <xsl:if test="$objects/object[@type='omgevingswaarde']">
-                  <xsl:element name="r:omgevingswaardeaanduiding" namespace="{$r}">
-                    <xsl:for-each-group select="$objects/object[@type='omgevingswaarde']" group-by="(waarde[@naam='omgevingswaarde'],'geen')[1]">
-                      <xsl:variable name="index_1" select="current-grouping-key()"/>
-                      <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='omgevingswaardegroep'],'geen')[1]">
-                        <xsl:variable name="index_2" select="current-grouping-key()"/>
-                        <xsl:for-each-group select="current-group()" group-by="(object[@type='waarde']/waarde[@naam='typeNorm'],'geen')[1]">
-                          <xsl:variable name="index_3" select="current-grouping-key()"/>
-                          <xsl:for-each-group select="current-group()" group-by="(object[@type='waarde']/waarde[@naam='eenheid'],'geen')[1]">
-                            <xsl:variable name="index_4" select="current-grouping-key()"/>
-                            <xsl:variable name="hash_omgevingswaarde">
-                              <xsl:call-template name="adler32">
-                                <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2,$index_3,$index_4),'|')"/>
-                              </xsl:call-template>
-                            </xsl:variable>
-                            <xsl:element name="rol:OmgevingswaardeRef" namespace="{$rol}">
-                              <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.omgevingswaarde.',$hash_omgevingswaarde)" namespace="{$xlink}"/>
-                            </xsl:element>
+                  </xsl:if>
+                  <xsl:if test="$objects/object[@type='omgevingsnorm']">
+                    <xsl:element name="r:omgevingsnormaanduiding" namespace="{$r}">
+                      <!-- hierheen -->
+                      <xsl:for-each-group select="$objects/object[@type='omgevingsnorm']" group-by="(waarde[@naam='omgevingsnorm'],'geen')[1]">
+                        <xsl:variable name="index_1" select="current-grouping-key()"/>
+                        <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='omgevingsnormgroep'],'geen')[1]">
+                          <xsl:variable name="index_2" select="current-grouping-key()"/>
+                          <xsl:for-each-group select="current-group()" group-by="(object[@type='waarde']/waarde[@naam='typeNorm'],'geen')[1]">
+                            <xsl:variable name="index_3" select="current-grouping-key()"/>
+                            <xsl:for-each-group select="current-group()" group-by="(fn:tokenize(object[@type='waarde']/waarde[@naam='waarde'],'\|')[2],'geen')[1]">
+                              <xsl:variable name="index_4" select="current-grouping-key()"/>
+                              <xsl:variable name="hash_omgevingsnorm">
+                                <xsl:call-template name="adler32">
+                                  <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2,$index_3,$index_4),'|')"/>
+                                </xsl:call-template>
+                              </xsl:variable>
+                              <xsl:element name="rol:OmgevingsnormRef" namespace="{$rol}">
+                                <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.omgevingsnorm.',$oin_code_regeling,$hash_omgevingsnorm)" namespace="{$xlink}"/>
+                              </xsl:element>
+                            </xsl:for-each-group>
                           </xsl:for-each-group>
                         </xsl:for-each-group>
                       </xsl:for-each-group>
-                    </xsl:for-each-group>
-                  </xsl:element>
-                </xsl:if>
+                    </xsl:element>
+                  </xsl:if>
+                  <xsl:if test="$objects/object[@type='omgevingswaarde']">
+                    <xsl:element name="r:omgevingswaardeaanduiding" namespace="{$r}">
+                      <xsl:for-each-group select="$objects/object[@type='omgevingswaarde']" group-by="(waarde[@naam='omgevingswaarde'],'geen')[1]">
+                        <xsl:variable name="index_1" select="current-grouping-key()"/>
+                        <xsl:for-each-group select="current-group()" group-by="(waarde[@naam='omgevingswaardegroep'],'geen')[1]">
+                          <xsl:variable name="index_2" select="current-grouping-key()"/>
+                          <xsl:for-each-group select="current-group()" group-by="(object[@type='waarde']/waarde[@naam='typeNorm'],'geen')[1]">
+                            <xsl:variable name="index_3" select="current-grouping-key()"/>
+                            <xsl:for-each-group select="current-group()" group-by="(object[@type='waarde']/waarde[@naam='eenheid'],'geen')[1]">
+                              <xsl:variable name="index_4" select="current-grouping-key()"/>
+                              <xsl:variable name="hash_omgevingswaarde">
+                                <xsl:call-template name="adler32">
+                                  <xsl:with-param name="text" select="fn:string-join(($index_1,$index_2,$index_3,$index_4),'|')"/>
+                                </xsl:call-template>
+                              </xsl:variable>
+                              <xsl:element name="rol:OmgevingswaardeRef" namespace="{$rol}">
+                                <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.omgevingswaarde.',$oin_code_regeling,$hash_omgevingswaarde)" namespace="{$xlink}"/>
+                              </xsl:element>
+                            </xsl:for-each-group>
+                          </xsl:for-each-group>
+                        </xsl:for-each-group>
+                      </xsl:for-each-group>
+                    </xsl:element>
+                  </xsl:if>
+                </xsl:element>
               </xsl:element>
             </xsl:element>
           </xsl:element>
         </xsl:element>
-      </xsl:element>
-    </xsl:if>
+      </xsl:when>
+      <xsl:otherwise>
+        <!-- default regeltekst-object -->
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template name="ow_vrijetekst">
@@ -934,7 +964,7 @@
               <xsl:value-of select="($oin_naam_regeling,'geen')[1]"/>
             </xsl:element>
             <xsl:element name="sl:leveringsId" namespace="{$sl}">
-              <xsl:value-of select="fn:string-join((($metadata[@type=('besluit')]/waarde[@naam='idWerk'],'geen')[1],format-date(current-date(),'[Y0001]-[M01]-[D01]')),'_')"/>
+              <xsl:value-of select="fn:string-join((($metadata[@type=('besluit')]/waarde[@naam='idWerk'],'geen')[1],format-date(current-date(),'[Y0001]-[M01]-[D01]'),fn:format-number(($metadata[@type=('besluit')]/waarde[@naam='versieBesluit'],1)[1],'000')),'_')"/>
             </xsl:element>
           </xsl:element>
           <xsl:element name="sl:stand" namespace="{$sl}">
@@ -997,7 +1027,7 @@
                           </xsl:call-template>
                         </xsl:variable>
                         <xsl:element name="l:LocatieRef" namespace="{$l}">
-                          <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebied.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/>
+                          <xsl:attribute name="xlink:href" select="concat('nl.imow-',$bg_code_besluit,'.gebiedengroep.',$oin_code_regeling,$hash_geometrie)" namespace="{$xlink}"/>
                         </xsl:element>
                       </xsl:for-each-group>
                     </xsl:for-each-group>
@@ -1038,7 +1068,7 @@
     <xsl:variable name="id" select="./@id"/>
     <xsl:variable name="metadata" select="$LOC/comment[@parent_id=$id]/object[@type=('besluit','procedure')]"/>
     <xsl:variable name="idOrganisatie" select="fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()]"/>
-    <xsl:variable name="idVersie" select="$metadata[@type=('besluit')]/waarde[@naam='versieBesluit']"/>
+    <xsl:variable name="idVersie" select="($metadata[@type=('besluit')]/waarde[@naam='versieBesluit'],1)[1]"/>
     <xsl:variable name="id_bill_work" select="concat('/akn/nl/bill/',$idOrganisatie,'/',format-date(current-date(),'[Y0001]'),'/',$metadata[@type=('besluit')]/waarde[@naam='idWerk'])"/>
     <xsl:variable name="id_bill_expression" select="concat('/akn/nl/bill/',$idOrganisatie,'/',format-date(current-date(),'[Y0001]'),'/',$metadata[@type=('besluit')]/waarde[@naam='idWerk'],'/nld@',format-date(current-date(),'[Y0001]-[M01]-[D01]'),';',$idVersie)"/>
     <xsl:element name="AanleveringBesluit" namespace="{$lvbb}">
@@ -1089,15 +1119,30 @@
               </xsl:element>
             </xsl:element>
           </xsl:if>
+          <xsl:element name="grondslagen" namespace="{$data}">
+            <xsl:element name="grondslag" namespace="{$data}">
+              <xsl:element name="TekstReferentie" namespace="{$data}">
+                <xsl:element name="uri" namespace="{$data}">
+                  <xsl:value-of select="string('jcil.31:c:BWBR0037885&amp;artikel=5.44')"/>
+                </xsl:element>
+                <xsl:element name="label" namespace="{$data}">
+                  <xsl:value-of select="string('Artikel 5.44 Omgevingswet')"/>
+                </xsl:element>
+                <xsl:element name="soortRef" namespace="{$data}">
+                  <xsl:value-of select="string('JCI')"/>
+                </xsl:element>
+              </xsl:element>
+            </xsl:element>
+          </xsl:element>
           <xsl:element name="onderwerpen" namespace="{$data}">
-            <xsl:for-each select="$metadata[@type=('besluit')]/waarde[@naam='onderwerpen']">
+            <xsl:for-each select="fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='onderwerpen'],'\|')">
               <xsl:element name="onderwerp" namespace="{$data}">
                 <xsl:value-of select="."/>
               </xsl:element>
             </xsl:for-each>
           </xsl:element>
           <xsl:element name="rechtsgebieden" namespace="{$data}">
-            <xsl:for-each select="$metadata[@type=('besluit')]/waarde[@naam='rechtsgebieden']">
+            <xsl:for-each select="fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='rechtsgebieden'],'\|')">
               <xsl:element name="rechtsgebied" namespace="{$data}">
                 <xsl:value-of select="."/>
               </xsl:element>
@@ -1143,14 +1188,15 @@
             <xsl:for-each select="$document/regeling">
               <xsl:variable name="id" select="./@id"/>
               <xsl:variable name="index" select="./@index"/>
+              <xsl:variable name="idVersie" select="($LOC/comment[@parent_id=$id]/object[@type=('regeling')]/waarde[@naam='versieRegeling_wordt'],1)[1]"/>
               <xsl:element name="BeoogdeRegeling" namespace="{$data}">
                 <xsl:element name="doelen" namespace="{$data}">
                   <xsl:element name="doel" namespace="{$data}">
-                    <xsl:value-of select="concat('/join/id/proces/',fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'/',format-date(current-date(),'[Y0001]'),'/Instelling')"/>
+                    <xsl:value-of select="concat('/join/id/proces/',fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'/',format-date(current-date(),'[Y0001]'),'/instellen')"/>
                   </xsl:element>
                 </xsl:element>
                 <xsl:element name="instrumentVersie" namespace="{$data}">
-                  <xsl:value-of select="concat('/akn/nl/act/',fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'/',format-date(current-date(),'[Y0001]'),'/',$metadata[@type=('besluit')]/waarde[@naam='idWerk'],'-',fn:format-number($index,'000'),'/nld@',format-date(current-date(),'[Y0001]-[M01]-[D01]'),';',$LOC/comment[@parent_id=$id]/object[@type=('regeling')]/waarde[@naam='versieRegeling_wordt'])"/>
+                  <xsl:value-of select="concat('/akn/nl/act/',fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'/',format-date(current-date(),'[Y0001]'),'/',$metadata[@type=('besluit')]/waarde[@naam='idWerk'],'-',fn:format-number($index,'000'),'/nld@',format-date(current-date(),'[Y0001]-[M01]-[D01]'),';',$idVersie)"/>
                 </xsl:element>
                 <xsl:element name="eId" namespace="{$data}">
                   <xsl:comment>Geef aan welk artikel van het besluit verwijst naar de beoogde regeling. Let erop dat het artikel een IntRef naar de WijzigBijlage bevat.</xsl:comment>
@@ -1161,7 +1207,7 @@
               <xsl:element name="BeoogdInformatieobject" namespace="{$data}">
                 <xsl:element name="doelen" namespace="{$data}">
                   <xsl:element name="doel" namespace="{$data}">
-                    <xsl:value-of select="concat('/join/id/proces/',fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'/',format-date(current-date(),'[Y0001]'),'/Instelling')"/>
+                    <xsl:value-of select="concat('/join/id/proces/',fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'/',format-date(current-date(),'[Y0001]'),'/instellen')"/>
                   </xsl:element>
                 </xsl:element>
                 <xsl:element name="instrumentVersie" namespace="{$data}">
@@ -1174,7 +1220,7 @@
           <xsl:element name="Tijdstempels" namespace="{$data}">
             <xsl:element name="Tijdstempel" namespace="{$data}">
               <xsl:element name="doel" namespace="{$data}">
-                <xsl:value-of select="concat('/join/id/proces/',fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'/',format-date(current-date(),'[Y0001]'),'/Instelling')"/>
+                <xsl:value-of select="concat('/join/id/proces/',fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()],'/',format-date(current-date(),'[Y0001]'),'/instellen')"/>
               </xsl:element>
               <xsl:element name="soortTijdstempel" namespace="{$data}">
                 <xsl:value-of select="string('juridischWerkendVanaf')"/>
@@ -1272,20 +1318,35 @@
                 </xsl:element>
               </xsl:element>
             </xsl:if>
+            <xsl:element name="grondslagen" namespace="{$data}">
+              <xsl:element name="grondslag" namespace="{$data}">
+                <xsl:element name="TekstReferentie" namespace="{$data}">
+                  <xsl:element name="uri" namespace="{$data}">
+                    <xsl:value-of select="string('jcil.31:c:BWBR0037885&amp;artikel=5.44')"/>
+                  </xsl:element>
+                  <xsl:element name="label" namespace="{$data}">
+                    <xsl:value-of select="string('Artikel 5.44 Omgevingswet')"/>
+                  </xsl:element>
+                  <xsl:element name="soortRef" namespace="{$data}">
+                    <xsl:value-of select="string('JCI')"/>
+                  </xsl:element>
+                </xsl:element>
+              </xsl:element>
+            </xsl:element>
             <xsl:element name="overheidsdomeinen" namespace="{$data}">
               <xsl:element name="overheidsdomein" namespace="{$data}">
                 <xsl:value-of select="$metadata[@type=('besluit')]/waarde[@naam='overheidsdomein']"/>
               </xsl:element>
             </xsl:element>
             <xsl:element name="onderwerpen" namespace="{$data}">
-              <xsl:for-each select="$metadata[@type=('besluit')]/waarde[@naam='onderwerpen']">
+              <xsl:for-each select="fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='onderwerpen'],'\|')">
                 <xsl:element name="onderwerp" namespace="{$data}">
                   <xsl:value-of select="."/>
                 </xsl:element>
               </xsl:for-each>
             </xsl:element>
             <xsl:element name="rechtsgebieden" namespace="{$data}">
-              <xsl:for-each select="$metadata[@type=('besluit')]/waarde[@naam='rechtsgebieden']">
+              <xsl:for-each select="fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='rechtsgebieden'],'\|')">
                 <xsl:element name="rechtsgebied" namespace="{$data}">
                   <xsl:value-of select="."/>
                 </xsl:element>
@@ -1318,7 +1379,7 @@
               <xsl:value-of select="string('Bijlage')"/>
             </xsl:element>
             <xsl:element name="Nummer" namespace="{$tekst}">
-              <xsl:number format="I"/>
+              <xsl:number format="A"/>
             </xsl:element>
             <xsl:element name="Opschrift" namespace="{$tekst}">
               <xsl:value-of select="string('[Optioneel opschrift]')"/>
@@ -1387,6 +1448,8 @@
         </xsl:when>
         <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Divisiekop1nawerk']">
           <xsl:for-each-group select="current-group()" group-starting-with="w:p[w:pPr/w:pStyle/@w:val='Divisiekop1nawerk']">
+            <!-- sort zet bijlage, toelichting, motivering in de juiste volgorde -->
+            <xsl:sort select="if (contains(lower-case(current-group()[1]),'motivering')) then 3 else if (contains(lower-case(current-group()[1]),'toelichting')) then 2 else 1"/>
             <!-- section_nawerk plaatst de vrijtekststructuur -->
             <xsl:call-template name="section_nawerk">
               <xsl:with-param name="group" select="current-group()"/>
@@ -1440,13 +1503,24 @@
     <xsl:variable name="id" select="./@id"/>
     <xsl:variable name="index" select="./@index"/>
     <xsl:variable name="metadata" select="($LOC/comment/object[@type=('besluit')],$LOC/comment[@parent_id=$id]/object[@type=('regeling')],$LOC/comment[@parent_id=$id]/object[@type=('mutatie')])"/>
+    <xsl:variable name="soortRegeling">
+      <!-- bepaal het soort regeling -->
+      <xsl:choose>
+        <xsl:when test="$metadata[@type=('besluit')]/waarde[@naam='soortBesluit'] eq 'BesluitCompact'">
+          <xsl:value-of select="string('RegelingCompact')"/>
+        </xsl:when>
+        <xsl:when test="$metadata[@type=('besluit')]/waarde[@naam='soortBesluit'] eq 'BesluitKlassiek'">
+          <xsl:value-of select="string('RegelingKlassiek')"/>
+        </xsl:when>
+      </xsl:choose>
+    </xsl:variable>
     <xsl:choose>
       <!-- regeling -->
       <xsl:when test="$metadata[@type='regeling']">
         <xsl:variable name="idOrganisatie" select="fn:tokenize($metadata[@type=('besluit')]/waarde[@naam='idOrganisatie'],'/')[last()]"/>
-        <xsl:variable name="idVersie" select="$metadata[@type=('regeling')]/waarde[@naam='versieRegeling_wordt']"/>
-        <xsl:element name="{$metadata[@type=('regeling')]/waarde[@naam='soortRegeling_wordt']}" namespace="{$tekst}">
-          <xsl:attribute name="componentnaam" select="string('initieel_reg')"/>
+        <xsl:variable name="idVersie" select="($metadata[@type=('regeling')]/waarde[@naam='versieRegeling_wordt'],1)[1]"/>
+        <xsl:element name="{$soortRegeling}" namespace="{$tekst}">
+          <xsl:attribute name="componentnaam" select="fn:string-join(('regeling',fn:format-number($idVersie,'000')),'_')"/>
           <xsl:attribute name="wordt" select="concat('/akn/nl/act/',$idOrganisatie,'/',format-date(current-date(),'[Y0001]'),'/',$metadata[@type=('besluit')]/waarde[@naam='idWerk'],'-',fn:format-number($index,'000'),'/nld@',format-date(current-date(),'[Y0001]-[M01]-[D01]'),';',$idVersie)"/>
           <!-- geef informatie door aan AKN.xsl -->
           <xsl:processing-instruction name="akn">
@@ -1464,6 +1538,8 @@
                   <xsl:choose>
                     <xsl:when test="current-group()/self::w:p[1][w:pPr/w:pStyle/@w:val='Divisiekop1nawerk']">
                       <xsl:for-each-group select="current-group()" group-starting-with="w:p[w:pPr/w:pStyle/@w:val='Divisiekop1nawerk']">
+                        <!-- sort zet bijlage, toelichting, motivering in de juiste volgorde -->
+                        <xsl:sort select="if (contains(lower-case(current-group()[1]),'motivering')) then 3 else if (contains(lower-case(current-group()[1]),'toelichting')) then 2 else 1"/>
                         <!-- section_nawerk plaatst de vrijtekststructuur -->
                         <xsl:call-template name="section_nawerk">
                           <xsl:with-param name="group" select="current-group()"/>
@@ -1501,15 +1577,15 @@
                           </xsl:choose>
                         </xsl:for-each-group>
                       </xsl:element>
+                      <xsl:if test="$unique_geometrie/gio">
+                        <xsl:call-template name="ExtIoRef"/>
+                      </xsl:if>
                     </xsl:otherwise>
                   </xsl:choose>
                 </xsl:for-each-group>
               </xsl:otherwise>
             </xsl:choose>
           </xsl:for-each-group>
-          <xsl:if test="$unique_geometrie/gio">
-            <xsl:call-template name="ExtIoRef"/>
-          </xsl:if>
         </xsl:element>
       </xsl:when>
       <!-- mutatie -->
@@ -1558,6 +1634,7 @@
       <xsl:choose>
         <xsl:when test="$styleId=fn:format-number($index,$heading)">
           <xsl:element name="{$section_lichaam_artikel_imop[$index]}" namespace="{$tekst}">
+            <xsl:apply-templates select="current-group()[1]/w:bookmarkStart"/>
             <xsl:call-template name="ow_regeltekst">
               <xsl:with-param name="para" select="$para"/>
             </xsl:call-template>
@@ -1570,6 +1647,7 @@
         </xsl:when>
         <xsl:when test="$styleId=$section_lichaam_artikel_word[$index]">
           <xsl:element name="Lid" namespace="{$tekst}">
+            <xsl:apply-templates select="current-group()[1]/w:bookmarkStart"/>
             <xsl:call-template name="ow_regeltekst">
               <xsl:with-param name="para" select="$para"/>
             </xsl:call-template>
@@ -1664,7 +1742,7 @@
   </xsl:template>
 
   <xsl:param name="section_nawerk_word" select="('Divisiekop1nawerk','Divisiekop2','Divisiekop3','Divisiekop4','Divisiekop5','Divisiekop6','Divisiekop7','Divisiekop8','Divisiekop9')"/>
-  <xsl:param name="section_nawerk_imop" select="('Bijlage|Motivering|Toelichting','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie')"/>
+  <xsl:param name="section_nawerk_imop" select="('Bijlage|Toelichting|Motivering','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie','Divisie')"/>
 
   <xsl:template name="section_nawerk">
     <xsl:param name="group"/>
@@ -1673,8 +1751,8 @@
       <xsl:variable name="styleId" select="(current-group()[1]/w:pPr/w:pStyle/@w:val,'Geen')[1]"/>
       <xsl:choose>
         <xsl:when test="$styleId='Divisiekop1nawerk'">
-          <!-- aanpassen, deze selecteert altijd 'Bijlage' -->
-          <xsl:element name="{fn:tokenize($section_nawerk_imop[$index],'\|')[1]}" namespace="{$tekst}">
+          <xsl:variable name="type" select="if (contains(lower-case(current-group()[1]),'motivering')) then 3 else if (contains(lower-case(current-group()[1]),'toelichting')) then 2 else 1"/>
+          <xsl:element name="{fn:tokenize($section_nawerk_imop[$index],'\|')[$type]}" namespace="{$tekst}">
             <xsl:attribute name="dso:niveau" namespace="{$dso}" select="$index"/>
             <xsl:apply-templates select="current-group()[1]"/>
             <xsl:call-template name="section_nawerk">
@@ -1792,12 +1870,30 @@
 
   <xsl:template name="group_adjacent">
     <xsl:param name="group"/>
-    <xsl:for-each-group select="$group" group-adjacent="if (self::w:p[w:r/w:drawing]|self::w:p[contains(w:pPr/w:pStyle/@w:val,'Figuurbijschrift')]) then 'figuur' else if (self::w:tbl|self::w:p[contains(w:pPr/w:pStyle/@w:val,'Tabeltitel')]) then 'tabel' else if (self::w:p[fn:ends-with(fn:string-join(w:r/w:t),':')][contains(following-sibling::*[1]/w:pPr/w:pStyle/@w:val,'Opsommingmetnummering')]|self::w:p[contains(w:pPr/w:pStyle/@w:val,'Opsomming')]) then 'lijst' else 'standaard'">
+    <xsl:for-each-group select="$group" group-adjacent="if (self::w:p[w:r/w:drawing]|self::w:p[contains(w:pPr/w:pStyle/@w:val,'Figuurbijschrift')]) then 'figuur' else if (self::w:tbl[w:tblPr/w:tblStyle/@w:val='Kadertekst']) then 'kadertekst' else if (self::w:tbl|self::w:p[contains(w:pPr/w:pStyle/@w:val,'Tabeltitel')]) then 'tabel' else if (self::w:p[fn:ends-with(fn:string-join(w:r/w:t),':')][contains(following-sibling::*[1]/w:pPr/w:pStyle/@w:val,'Opsommingmetnummering')]|self::w:p[contains(w:pPr/w:pStyle/@w:val,'Opsomming')]) then 'lijst' else 'standaard'">
       <xsl:choose>
         <xsl:when test="current-grouping-key()='figuur'">
           <xsl:element name="Figuur" namespace="{$tekst}">
             <xsl:apply-templates select="current-group()/w:r/w:drawing"/>
             <xsl:apply-templates select="current-group()/self::w:p[not(w:r/w:drawing)]"/>
+          </xsl:element>
+        </xsl:when>
+        <xsl:when test="current-grouping-key()='kadertekst'">
+          <xsl:element name="Kadertekst" namespace="{$tekst}">
+            <xsl:for-each select="w:tr">
+              <xsl:choose>
+                <xsl:when test="position() eq 1">
+                  <xsl:variable name="type" select="(fn:index-of($type_kadertekst,lower-case(fn:string-join(descendant::w:t,''))),1)[1]"/>
+                  <xsl:attribute name="dso:type" namespace="{$dso}" select="$type"/>
+                  <xsl:comment>
+                    <xsl:value-of select="concat('Het gekozen type is ''',$type_kadertekst[$type],'''.')"/>
+                  </xsl:comment>
+                </xsl:when>
+                <xsl:when test="position() gt 1">
+                  <xsl:apply-templates select="w:tc/node()"/>
+                </xsl:when>
+              </xsl:choose>
+            </xsl:for-each>
           </xsl:element>
         </xsl:when>
         <xsl:when test="current-grouping-key()='tabel'">
@@ -2061,20 +2157,47 @@
   </xsl:template>
 
   <xsl:template match="w:hyperlink">
-    <xsl:variable name="id" select="@r:id"/>
-    <xsl:variable name="relationship" select="$w:relationships/Relationship[@Id=$id]" xpath-default-namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
     <xsl:choose>
-      <xsl:when test="contains($relationship/@TargetMode,'External')">
-        <xsl:element name="ExtRef" namespace="{$tekst}">
-          <xsl:attribute name="ref" select="$relationship/@Target"/>
-          <xsl:attribute name="soort" select="string('URL')"/>
-          <xsl:apply-templates/>
-        </xsl:element>
+      <xsl:when test="./@r:id">
+        <xsl:variable name="id" select="./@r:id"/>
+        <xsl:variable name="relationship" select="$w:relationships/Relationship[@Id=$id]" xpath-default-namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
+        <xsl:choose>
+          <xsl:when test="contains($relationship/@TargetMode,'External')">
+            <xsl:element name="ExtRef" namespace="{$tekst}">
+              <xsl:attribute name="ref" select="$relationship/@Target"/>
+              <xsl:attribute name="soort" select="string('URL')"/>
+              <xsl:apply-templates/>
+            </xsl:element>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:apply-templates/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:when test="./@w:anchor">
+        <xsl:variable name="anchor" select="./@w:anchor"/>
+        <xsl:choose>
+          <xsl:when test="$anchor">
+            <xsl:element name="IntRef" namespace="{$tekst}">
+              <xsl:attribute name="ref" select="$anchor"/>
+              <xsl:attribute name="scope" select="$anchor"/>
+              <xsl:apply-templates/>
+            </xsl:element>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:apply-templates/>
+          </xsl:otherwise>
+        </xsl:choose>
       </xsl:when>
       <xsl:otherwise>
         <xsl:apply-templates/>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="w:bookmarkStart">
+    <xsl:processing-instruction name="marker" select="./@w:name"/>
+    <xsl:apply-templates select="node()"/>
   </xsl:template>
 
   <!--tekst doorgeven-->

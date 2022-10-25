@@ -4,25 +4,29 @@
                xsi:schemaLocation="http://www.geostandaarden.nl/bestanden-ow/manifest-ow https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/generiek/manifest-ow.xsd">
    <domein>omgevingswet</domein>
    <Aanlevering>
-      <WorkIDRegeling>/akn/nl/act/pv23/2022/WiedenWeerribben-001</WorkIDRegeling>
-      <DoelID>/join/id/proces/pv23/2022/Instelling</DoelID>
+      <WorkIDRegeling>/akn/nl/act/gm0599/2022/CORRECT001-001</WorkIDRegeling>
+      <DoelID>/join/id/proces/gm0599/2022/instellen</DoelID>
       <Bestand>
-         <naam>001-owDivisie.xml</naam>
-         <objecttype>Divisie</objecttype>
-         <objecttype>Divisietekst</objecttype>
-         <objecttype>Tekstdeel</objecttype>
+         <naam>001-owRegeltekst.xml</naam>
+         <objecttype>Regeltekst</objecttype>
+         <objecttype>RegelVoorIedereen</objecttype>
+      </Bestand>
+      <Bestand>
+         <naam>001-owActiviteit.xml</naam>
+         <objecttype>Activiteit</objecttype>
       </Bestand>
       <Bestand>
          <naam>001-owGebiedsaanwijzing.xml</naam>
          <objecttype>Gebiedsaanwijzing</objecttype>
       </Bestand>
       <Bestand>
-         <naam>001-owHoofdlijn.xml</naam>
-         <objecttype>Hoofdlijn</objecttype>
+         <naam>001-owOmgevingsnorm.xml</naam>
+         <objecttype>Omgevingsnorm</objecttype>
       </Bestand>
       <Bestand>
          <naam>001-owLocatie.xml</naam>
          <objecttype>Ambtsgebied</objecttype>
+         <objecttype>Gebiedengroep</objecttype>
          <objecttype>Gebied</objecttype>
       </Bestand>
       <Bestand>

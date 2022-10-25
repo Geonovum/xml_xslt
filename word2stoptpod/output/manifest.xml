@@ -5,7 +5,7 @@
       <contentType>application/xml</contentType>
    </bestand>
    <bestand>
-      <bestandsnaam>001-owDivisie.xml</bestandsnaam>
+      <bestandsnaam>001-owActiviteit.xml</bestandsnaam>
       <contentType>application/xml</contentType>
    </bestand>
    <bestand>
@@ -13,11 +13,11 @@
       <contentType>application/xml</contentType>
    </bestand>
    <bestand>
-      <bestandsnaam>001-owHoofdlijn.xml</bestandsnaam>
+      <bestandsnaam>001-owLocatie.xml</bestandsnaam>
       <contentType>application/xml</contentType>
    </bestand>
    <bestand>
-      <bestandsnaam>001-owLocatie.xml</bestandsnaam>
+      <bestandsnaam>001-owOmgevingsnorm.xml</bestandsnaam>
       <contentType>application/xml</contentType>
    </bestand>
    <bestand>
@@ -25,12 +25,12 @@
       <contentType>application/xml</contentType>
    </bestand>
    <bestand>
-      <bestandsnaam>WiedenWeerribben_2022-04-28.xml</bestandsnaam>
+      <bestandsnaam>001-owRegeltekst.xml</bestandsnaam>
       <contentType>application/xml</contentType>
    </bestand>
    <bestand>
-      <bestandsnaam>image1.png</bestandsnaam>
-      <contentType>image/png</contentType>
+      <bestandsnaam>CORRECT001_2022-10-25.xml</bestandsnaam>
+      <contentType>application/xml</contentType>
    </bestand>
    <bestand>
       <bestandsnaam>manifest-ow.xml</bestandsnaam>

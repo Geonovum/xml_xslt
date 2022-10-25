@@ -15,23 +15,24 @@
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
    <sl:standBestand>
-      <sl:dataset>Werkplaats Natuurbeheerplan Wieden voor TPOD-programma</sl:dataset>
+      <sl:dataset>Basismodel Correctlocatie Rotterdam</sl:dataset>
       <sl:inhoud>
-         <sl:gebied>Provincie Overijssel</sl:gebied>
-         <sl:leveringsId>WiedenWeerribben_2022-04-28</sl:leveringsId>
+         <sl:gebied>Gemeente Rotterdam</sl:gebied>
+         <sl:leveringsId>CORRECT001_2022-10-25_002</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Ambtsgebied</sl:objectType>
+            <sl:objectType>Gebiedengroep</sl:objectType>
             <sl:objectType>Gebied</sl:objectType>
          </sl:objectTypen>
       </sl:inhoud>
       <sl:stand>
          <ow-dc:owObject>
             <l:Ambtsgebied>
-               <l:identificatie>nl.imow-pv23.ambtsgebied.00000001001900328000</l:identificatie>
-               <l:noemer>Provincie Overijssel</l:noemer>
+               <l:identificatie>nl.imow-gm0599.ambtsgebied.00000001001876387000</l:identificatie>
+               <l:noemer>Gemeente Rotterdam</l:noemer>
                <l:bestuurlijkeGrenzenVerwijzing>
                   <l:BestuurlijkeGrenzenVerwijzing>
-                     <l:bestuurlijkeGrenzenID>PV23</l:bestuurlijkeGrenzenID>
+                     <l:bestuurlijkeGrenzenID>GM0599</l:bestuurlijkeGrenzenID>
                      <l:domein>NL.BI.BestuurlijkGebied</l:domein>
                      <l:geldigOp>2021-01-01</l:geldigOp>
                   </l:BestuurlijkeGrenzenVerwijzing>
@@ -40,133 +41,287 @@
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
-         <ow-dc:owObject><!--wieden.gml-->
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.000000010018763870001021646139</l:identificatie>
+               <l:noemer>Woongebied-Transformatie</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.000000010018763870001021646139"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Woongebied_Transformatie.gml-->
             <l:Gebied>
-               <l:identificatie>nl.imow-pv23.gebied.000000010019003280001350371212</l:identificatie>
-               <l:noemer>De Wieden</l:noemer>
+               <l:identificatie>nl.imow-gm0599.gebied.000000010018763870001021646139</l:identificatie>
+               <l:noemer>Woongebied-Transformatie</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="c2354085-6327-49f4-a815-a78217940a6d"/>
+                  <l:GeometrieRef xlink:href="cdab42a8-5f13-4d5d-a6b8-dba41bf3945b"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
-         <ow-dc:owObject><!--weerribben.gml-->
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.000000010018763870002715101595</l:identificatie>
+               <l:noemer>Gebieden met een archeologische verwachtingswaarde</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.000000010018763870002715101595"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Gebieden_met_een_archeologische_verwachtingswaarde.gml-->
             <l:Gebied>
-               <l:identificatie>nl.imow-pv23.gebied.000000010019003280002671053534</l:identificatie>
-               <l:noemer>De Weerribben</l:noemer>
+               <l:identificatie>nl.imow-gm0599.gebied.000000010018763870002715101595</l:identificatie>
+               <l:noemer>Gebieden met een archeologische verwachtingswaarde</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="392043ef-ebd8-49b3-819b-a7df30b1f84d"/>
+                  <l:GeometrieRef xlink:href="5df36fec-04c0-4958-9866-a38d71b91a08"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
-         <ow-dc:owObject><!--wiedenweerribben.gml-->
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.000000010018763870002188709968</l:identificatie>
+               <l:noemer>Horeca - Categorie I</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.000000010018763870002188709968"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Horeca___Categorie_I.gml-->
             <l:Gebied>
-               <l:identificatie>nl.imow-pv23.gebied.000000010019003280003002536370</l:identificatie>
-               <l:noemer>De Wieden en de Weerribben</l:noemer>
+               <l:identificatie>nl.imow-gm0599.gebied.000000010018763870002188709968</l:identificatie>
+               <l:noemer>Horeca - Categorie I</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="55e30ecd-bade-4154-b23d-edc11f35b2f5"/>
+                  <l:GeometrieRef xlink:href="49358548-57a8-463f-87e6-b213ada473f8"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
-         <ow-dc:owObject><!--Effectzone300Wieden.gml-->
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.000000010018763870001547110529</l:identificatie>
+               <l:noemer>Bouwvlak</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.000000010018763870001547110529"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Bouwvlak.gml-->
             <l:Gebied>
-               <l:identificatie>nl.imow-pv23.gebied.000000010019003280001644109449</l:identificatie>
-               <l:noemer>effectafstand van 300 meter vanaf het Natura 2000-gebied Wieden</l:noemer>
+               <l:identificatie>nl.imow-gm0599.gebied.000000010018763870001547110529</l:identificatie>
+               <l:noemer>Bouwvlak</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="6c019253-9907-4c92-992a-8bb0b0ccfba6"/>
+                  <l:GeometrieRef xlink:href="270207c1-b739-40dc-a330-c5aa1598bdaf"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
-         <ow-dc:owObject><!--vogelrichtlijn.gml-->
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.00000001001876387000807083199</l:identificatie>
+               <l:noemer>Maximum aantal te bouwen woningen</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.00000001001876387000807083199"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Maximum___Aantal_te_bouwen_woningen.gml-->
             <l:Gebied>
-               <l:identificatie>nl.imow-pv23.gebied.000000010019003280003808890144</l:identificatie>
-               <l:noemer>Grote Karekiet</l:noemer>
+               <l:identificatie>nl.imow-gm0599.gebied.00000001001876387000807083199</l:identificatie>
+               <l:noemer>Maximum aantal te bouwen woningen</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="ea366d8d-862a-416d-9221-6fd3868a92bf"/>
+                  <l:GeometrieRef xlink:href="f11fbab1-43b5-49ce-9e76-dd111fd1f4cc"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
-         <ow-dc:owObject><!--Grotekarekiet.gml-->
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.000000010018763870002042171722</l:identificatie>
+               <l:noemer>Maximum bouwhoogte</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.000000010018763870002042171722"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Maximum___Bouwhoogte.gml-->
             <l:Gebied>
-               <l:identificatie>nl.imow-pv23.gebied.00000001001900328000931346210</l:identificatie>
-               <l:noemer>verbinding Wieden-Vollenhovermeer, de rietzone langs het Vollenhovermeer, in de Beulakerpolder (al ingericht) en Polder Giethoorn</l:noemer>
+               <l:identificatie>nl.imow-gm0599.gebied.000000010018763870002042171722</l:identificatie>
+               <l:noemer>Maximum bouwhoogte</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="106c0173-1961-469c-8cae-8edf9c9fac93"/>
+                  <l:GeometrieRef xlink:href="0af0c247-d402-4e4c-8e27-beae3d88eecf"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
-         <ow-dc:owObject><!--Grotekarekiet.gml-->
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.000000010018763870001464484456</l:identificatie>
+               <l:noemer>Beroep, bedrijf of activiteit aan huis uitoefenen - Maximum bruto vloeroppervlakte</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.000000010018763870001464484456"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Beroep__bedrijf_of_activiteit_aan_huis_uitoefenen___Maximum_bruto_vloeroppervlakte.gml-->
             <l:Gebied>
-               <l:identificatie>nl.imow-pv23.gebied.000000010019003280001858418498</l:identificatie>
-               <l:noemer>verbinding Wieden-Vollenhovermeer, de rietzone langs het Vollenhovermeer, in de Beulakerpolder (al ingericht) en Polder Giethoorn </l:noemer>
+               <l:identificatie>nl.imow-gm0599.gebied.000000010018763870001464484456</l:identificatie>
+               <l:noemer>Beroep, bedrijf of activiteit aan huis uitoefenen - Maximum bruto vloeroppervlakte</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="f1dff473-29df-4f4b-be7b-140394a138c8"/>
+                  <l:GeometrieRef xlink:href="5d27abbd-0f73-4770-9822-17c29f40e9ba"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
-         <ow-dc:owObject><!--insecten.gml-->
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.000000010018763870002982034973</l:identificatie>
+               <l:noemer>Beroep, bedrijf of activiteit aan huis uitoefenen - Maximum verkeersgeneratie</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.000000010018763870002982034973"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Beroep__bedrijf_of_activiteit_aan_huis_uitoefenen___Maximum_verkeersgeneratie.gml-->
             <l:Gebied>
-               <l:identificatie>nl.imow-pv23.gebied.000000010019003280004054723567</l:identificatie>
-               <l:noemer>beschikbaarheid van voldoende kruidenrijke, lage vegetaties en plaatselijk wilgenstruwelen (insecten)</l:noemer>
+               <l:identificatie>nl.imow-gm0599.gebied.000000010018763870002982034973</l:identificatie>
+               <l:noemer>Beroep, bedrijf of activiteit aan huis uitoefenen - Maximum verkeersgeneratie</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="48a42ad3-0d28-44bd-a18a-db86b41197ac"/>
+                  <l:GeometrieRef xlink:href="db2cd51e-2394-46f3-bebe-6f91c08cfd31"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
-         <ow-dc:owObject><!--rietzones_buffer.gml-->
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.000000010018763870001748702702</l:identificatie>
+               <l:noemer>Graafwerkzaamheden diepte</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.000000010018763870001748702702"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Graafwerkzaamheden_diepte.gml-->
             <l:Gebied>
-               <l:identificatie>nl.imow-pv23.gebied.000000010019003280001105989638</l:identificatie>
-               <l:noemer>omgeving rietzones</l:noemer>
+               <l:identificatie>nl.imow-gm0599.gebied.000000010018763870001748702702</l:identificatie>
+               <l:noemer>Graafwerkzaamheden diepte</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="b3ea29ed-9715-43c2-98eb-e2a32210b7a7"/>
+                  <l:GeometrieRef xlink:href="e11736d1-7b62-4eef-8a64-f826b0781a8d"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
-         <ow-dc:owObject><!--rietzones_buffer.gml-->
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.000000010018763870001678776914</l:identificatie>
+               <l:noemer>Graafwerkzaamheden oppervlakte</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.000000010018763870001678776914"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Graafwerkzaamheden_oppervlakte.gml-->
             <l:Gebied>
-               <l:identificatie>nl.imow-pv23.gebied.000000010019003280001916084414</l:identificatie>
-               <l:noemer>directe omgeving van de potentiële broedlocaties in waterriet </l:noemer>
+               <l:identificatie>nl.imow-gm0599.gebied.000000010018763870001678776914</l:identificatie>
+               <l:noemer>Graafwerkzaamheden oppervlakte</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="57dee952-9597-4362-8024-9cd44cc1cdfa"/>
+                  <l:GeometrieRef xlink:href="428e70a8-8f51-4e08-b0f4-e940817a790f"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
-         <ow-dc:owObject><!--rietzones_vollenhofermeer.gml-->
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.000000010018763870003185382061</l:identificatie>
+               <l:noemer>Geluidaandachtsgebied</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.000000010018763870003185382061"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Geluidaandachtsgebied.gml-->
             <l:Gebied>
-               <l:identificatie>nl.imow-pv23.gebied.000000010019003280002110396042</l:identificatie>
-               <l:noemer>Rietzones Vollenhofermeer</l:noemer>
+               <l:identificatie>nl.imow-gm0599.gebied.000000010018763870003185382061</l:identificatie>
+               <l:noemer>Geluidaandachtsgebied</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="f5987728-7960-4c0c-98d2-ca16e5d369c2"/>
+                  <l:GeometrieRef xlink:href="ed57d3f2-94e9-4e8e-bf58-aa5bbbca30a2"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
       </sl:stand>
       <sl:stand>
-         <ow-dc:owObject><!--rietzones_vollenhofermeer.gml-->
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.000000010018763870002937326535</l:identificatie>
+               <l:noemer>Openingstijd</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.000000010018763870002937326535"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Openingstijd.gml-->
             <l:Gebied>
-               <l:identificatie>nl.imow-pv23.gebied.000000010019003280002145524246</l:identificatie>
-               <l:noemer>de rietzone van het Vollenhovermeer </l:noemer>
+               <l:identificatie>nl.imow-gm0599.gebied.000000010018763870002937326535</l:identificatie>
+               <l:noemer>Openingstijd</l:noemer>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="ec710818-c203-4a29-84b4-249f6346794c"/>
+                  <l:GeometrieRef xlink:href="b2cee4fd-7030-4741-ad6e-1b3fde4fb377"/>
+               </l:geometrie>
+            </l:Gebied>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject>
+            <l:Gebiedengroep>
+               <l:identificatie>nl.imow-gm0599.gebiedengroep.000000010018763870003408661701</l:identificatie>
+               <l:noemer>Sluitingstijd</l:noemer>
+               <l:groepselement>
+                  <l:GebiedRef xlink:href="nl.imow-gm0599.gebied.000000010018763870003408661701"/>
+               </l:groepselement>
+            </l:Gebiedengroep>
+         </ow-dc:owObject>
+      </sl:stand>
+      <sl:stand>
+         <ow-dc:owObject><!--Sluitingstijd.gml-->
+            <l:Gebied>
+               <l:identificatie>nl.imow-gm0599.gebied.000000010018763870003408661701</l:identificatie>
+               <l:noemer>Sluitingstijd</l:noemer>
+               <l:geometrie>
+                  <l:GeometrieRef xlink:href="f34f4fcf-3e00-4c97-99fe-34b1eebcfd4c"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>

@@ -15,10 +15,10 @@
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
    <sl:standBestand>
-      <sl:dataset>Werkplaats Natuurbeheerplan Wieden voor TPOD-programma</sl:dataset>
+      <sl:dataset>Basismodel Correctlocatie Rotterdam</sl:dataset>
       <sl:inhoud>
-         <sl:gebied>Provincie Overijssel</sl:gebied>
-         <sl:leveringsId>WiedenWeerribben_2022-04-28</sl:leveringsId>
+         <sl:gebied>Gemeente Rotterdam</sl:gebied>
+         <sl:leveringsId>CORRECT001_2022-10-25_002</sl:leveringsId>
          <sl:objectTypen>
             <sl:objectType>Regelingsgebied</sl:objectType>
          </sl:objectTypen>
@@ -26,9 +26,9 @@
       <sl:stand>
          <ow-dc:owObject>
             <rg:Regelingsgebied>
-               <rg:identificatie>nl.imow-pv23.regelingsgebied.00000001001900328000</rg:identificatie>
+               <rg:identificatie>nl.imow-gm0599.regelingsgebied.00000001001876387000</rg:identificatie>
                <rg:locatieaanduiding>
-                  <l:LocatieRef xlink:href="nl.imow-pv23.ambtsgebied.00000001001900328000"/>
+                  <l:LocatieRef xlink:href="nl.imow-gm0599.ambtsgebied.00000001001876387000"/>
                </rg:locatieaanduiding>
             </rg:Regelingsgebied>
          </ow-dc:owObject>
