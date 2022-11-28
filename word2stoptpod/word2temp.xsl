@@ -57,6 +57,9 @@
   <!-- beschikbare typen kadertekst -->
   <xsl:param name="type_kadertekst" select="('standaard','ambitie','beleidskeuze','casus','citaat','doelstelling','inleiding','intermezzo','samenvatting','toelichting','voorbeeld')"/>
 
+  <!-- beschikbare soorten regeling -->
+  <xsl:param name="soort_regeling" select="('RegelingCompact','RegelingCompact','RegelingCompact','RegelingCompact','RegelingCompact','RegelingVrijetekst','RegelingVrijetekst','RegelingVrijetekst','RegelingTijdelijkdeel','RegelingVrijetekst','RegelingTijdelijkdeel','Onbekend','Onbekend','RegelingTijdelijkdeel','RegelingTijdelijkdeel','RegelingTijdelijkdeel')"/>
+
   <!-- document bevat de tekst van het besluit in relevante onderdelen -->
   <xsl:param name="document">
     <!-- de eerste sectie is de tekst van het besluit, overige secties zijn teksten van één of meer regelingen -->
@@ -1264,7 +1267,7 @@
               <xsl:value-of select="string('/join/id/stop/work_019')"/>
             </xsl:element>
             <xsl:choose>
-              <xsl:when test="$metadata[@type=('regeling')]/waarde[@naam='soortRegeling_wordt']='RegelingTijdelijkdeel'">
+              <xsl:when test="$soort_regeling[number(fn:tokenize($metadata[@type=('regeling')]/waarde[@naam='soortRegeling_wordt'],'_')[last()])] eq 'RegelingTijdelijkdeel'">
                 <xsl:element name="isTijdelijkDeelVan" namespace="{$data}">
                   <xsl:element name="WorkIdentificatie" namespace="{$data}">
                     <xsl:element name="FRBRWork" namespace="{$data}">
@@ -1507,7 +1510,7 @@
       <!-- bepaal het soort regeling -->
       <xsl:choose>
         <xsl:when test="$metadata[@type=('besluit')]/waarde[@naam='soortBesluit'] eq 'BesluitCompact'">
-          <xsl:value-of select="string('RegelingCompact')"/>
+          <xsl:value-of select="$soort_regeling[number(fn:tokenize($metadata[@type=('regeling')]/waarde[@naam='soortRegeling_wordt'],'_')[last()])]"/>
         </xsl:when>
         <xsl:when test="$metadata[@type=('besluit')]/waarde[@naam='soortBesluit'] eq 'BesluitKlassiek'">
           <xsl:value-of select="string('RegelingKlassiek')"/>
