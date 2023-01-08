@@ -37,9 +37,9 @@
   </xsl:param>
   <xsl:param name="respec_previousPublishDate" select="w:settings/w:docVars/w:docVar[@w:name='ID009']/@w:val"/>
   <xsl:param name="respec_previousMaturity" select="(w:settings/w:docVars/w:docVar[@w:name='ID010']/@w:val,'Geen')[1]"/>
-  <xsl:param name="respec_github" select="fn:string-join(('https:','','github.com',$workflow_company_name,fn:string-join(($respec_pubDomain,$respec_shortName),'-')),$delimiter)"/>
-  <xsl:param name="respec_issueBase" select="fn:string-join(('https:','','github.com',$workflow_company_name,fn:string-join(($respec_pubDomain,$respec_shortName),'-'),'issues'),$delimiter)"/>
-  <xsl:param name="respec_edDraftURI" select="fn:string-join(('https:','',fn:string-join(($workflow_company_name,'github','io'),'.'),fn:string-join(($respec_pubDomain,$respec_shortName),'-')),$delimiter)"/>
+  <xsl:param name="respec_github" select="my:url(('https:','','github.com',$workflow_company_name,fn:string-join(($respec_pubDomain,$respec_shortName),'-')))"/>
+  <xsl:param name="respec_issueBase" select="my:url(('https:','','github.com',$workflow_company_name,fn:string-join(($respec_pubDomain,$respec_shortName),'-'),'issues'))"/>
+  <xsl:param name="respec_edDraftURI" select="my:url(('https:','',fn:string-join(($workflow_company_name,'github','io'),'.'),fn:string-join(($respec_pubDomain,$respec_shortName),'-')))"/>
 
   <!-- document -->
 
@@ -49,11 +49,6 @@
       <xsl:element name="item">
         <xsl:comment>respec</xsl:comment>
         <!-- ingevulde velden -->
-        <xsl:if test="normalize-space($respec_subtitle) ne ''">
-          <xsl:element name="subtitle">
-            <xsl:value-of select="$respec_subtitle"/>
-          </xsl:element>
-        </xsl:if>
         <xsl:element name="pubDomain">
           <xsl:value-of select="$respec_pubDomain"/>
         </xsl:element>
@@ -77,45 +72,35 @@
             <xsl:value-of select="$respec_previousMaturity"/>
           </xsl:element>
         </xsl:if>
+        <xsl:element name="authors">
+          <xsl:element name="item">
+            <xsl:element name="name">
+              <xsl:value-of select="string('TPOD-Team')"/>
+            </xsl:element>
+            <xsl:element name="company">
+              <xsl:value-of select="string('Geonovum')"/>
+            </xsl:element>
+            <xsl:element name="companyURL">
+              <xsl:value-of select="my:url('https://www.geonovum.nl')"/>
+            </xsl:element>
+          </xsl:element>
+        </xsl:element>
+        <xsl:element name="editors">
+          <xsl:element name="item">
+            <xsl:element name="name">
+              <xsl:value-of select="string('TPOD-Team')"/>
+            </xsl:element>
+            <xsl:element name="company">
+              <xsl:value-of select="string('Geonovum')"/>
+            </xsl:element>
+            <xsl:element name="companyURL">
+              <xsl:value-of select="my:url('https://www.geonovum.nl')"/>
+            </xsl:element>
+          </xsl:element>
+        </xsl:element>
         <xsl:if test="number(w:settings/w:docVars/w:docVar[@w:name='ID012']/@w:val) gt 0">
-          <xsl:element name="authors">
-            <xsl:for-each select="for $index in 1 to w:settings/w:docVars/w:docVar[@w:name='ID012']/@w:val return w:settings/w:docVars/w:docVar[@w:name=concat('ID012',fn:format-number($index,'00'))]/@w:val">
-              <xsl:variable name="item" select="fn:tokenize(.,'\|')"/>
-              <xsl:element name="item">
-                <xsl:element name="name">
-                  <xsl:value-of select="$item[1]"/>
-                </xsl:element>
-                <xsl:element name="company">
-                  <xsl:value-of select="$item[2]"/>
-                </xsl:element>
-                <xsl:element name="companyURL">
-                  <xsl:value-of select="my:url($item[3])"/>
-                </xsl:element>
-              </xsl:element>
-            </xsl:for-each>
-          </xsl:element>
-        </xsl:if>
-        <xsl:if test="number(w:settings/w:docVars/w:docVar[@w:name='ID013']/@w:val) gt 0">
-          <xsl:element name="editors">
-            <xsl:for-each select="for $index in 1 to w:settings/w:docVars/w:docVar[@w:name='ID013']/@w:val return w:settings/w:docVars/w:docVar[@w:name=concat('ID013',fn:format-number($index,'00'))]/@w:val">
-              <xsl:variable name="item" select="fn:tokenize(.,'\|')"/>
-              <xsl:element name="item">
-                <xsl:element name="name">
-                  <xsl:value-of select="$item[1]"/>
-                </xsl:element>
-                <xsl:element name="company">
-                  <xsl:value-of select="$item[2]"/>
-                </xsl:element>
-                <xsl:element name="companyURL">
-                  <xsl:value-of select="my:url($item[3])"/>
-                </xsl:element>
-              </xsl:element>
-            </xsl:for-each>
-          </xsl:element>
-        </xsl:if>
-        <xsl:if test="number(w:settings/w:docVars/w:docVar[@w:name='ID014']/@w:val) gt 0">
           <xsl:element name="localBiblio">
-            <xsl:for-each select="for $index in 1 to w:settings/w:docVars/w:docVar[@w:name='ID014']/@w:val return w:settings/w:docVars/w:docVar[@w:name=concat('ID014',fn:format-number($index,'00'))]/@w:val">
+            <xsl:for-each select="for $index in 1 to w:settings/w:docVars/w:docVar[@w:name='ID012']/@w:val return w:settings/w:docVars/w:docVar[@w:name=concat('ID012',fn:format-number($index,'00'))]/@w:val">
               <xsl:variable name="item" select="fn:tokenize(.,'\|')"/>
               <xsl:element name="{my:check_string($item[1])}">
                 <xsl:element name="title">
@@ -176,7 +161,11 @@
           </xsl:otherwise>
         </xsl:choose>
         <xsl:element name="generatedSubtitle">
-          <xsl:value-of select="concat($options/list[@id='specStatus']/item[@id=$respec_specStatus],' ',fn:format-date($respec_publishDate,'[D1] [Mn] [Y1]','nl','AD','nl'))"/>
+          <xsl:choose>
+            <xsl:when test="$respec_pubDomain=('ow','tpod')">
+              <xsl:value-of select="string('STandaard Officiële Publicaties met ToepassingsProfielen voor OmgevingsDocumenten (STOP/TPOD)')"/>
+            </xsl:when>
+          </xsl:choose>
         </xsl:element>
       </xsl:element>
       <!-- workflow -->
@@ -187,18 +176,21 @@
             <xsl:value-of select="$workflow_company_name"/>
           </xsl:element>
           <xsl:element name="url">
-            <xsl:value-of select="$workflow_company_url"/>
+            <xsl:value-of select="my:url($workflow_company_url)"/>
           </xsl:element>
           <xsl:element name="docs">
-            <xsl:value-of select="$workflow_company_docs"/>
+            <xsl:value-of select="my:url($workflow_company_docs)"/>
           </xsl:element>
           <xsl:element name="tools">
-            <xsl:value-of select="$workflow_company_tools"/>
+            <xsl:value-of select="my:url($workflow_company_tools)"/>
           </xsl:element>
         </xsl:element>
         <xsl:element name="document">
           <xsl:element name="title">
             <xsl:value-of select="(w:settings/w:docVars/w:docVar[@w:name='ID001']/@w:val,'Geen')[1]"/>
+          </xsl:element>
+          <xsl:element name="version">
+            <xsl:value-of select="(w:settings/w:docVars/w:docVar[@w:name='ID002']/@w:val,'Geen')[1]"/>
           </xsl:element>
           <xsl:element name="currentVersion">
             <xsl:choose>
@@ -206,18 +198,27 @@
                 <xsl:value-of select="$respec_edDraftURI"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:value-of select="fn:string-join(($workflow_company_docs,$respec_pubDomain,fn:string-join((lower-case(fn:substring-after($respec_specStatus,'GN-')),lower-case($respec_specType),$respec_shortName,fn:format-date($respec_publishDate,'[Y0001][M01][D01]','nl','AD','nl')),'-')),$delimiter)"/>
+                <xsl:value-of select="my:url(($workflow_company_docs,$respec_pubDomain,fn:string-join((lower-case(fn:substring-after($respec_specStatus,'GN-')),lower-case($respec_specType),$respec_shortName,fn:format-date($respec_publishDate,'[Y0001][M01][D01]','nl','AD','nl')),'-')))"/>
               </xsl:otherwise>
             </xsl:choose>
           </xsl:element>
           <xsl:element name="lastPublishedVersion">
-            <xsl:value-of select="fn:string-join(($workflow_company_docs,$respec_pubDomain,$respec_shortName),$delimiter)"/>
+            <xsl:value-of select="my:url(($workflow_company_docs,$respec_pubDomain,$respec_shortName))"/>
           </xsl:element>
           <xsl:if test="$respec_previousPublishDate">
             <xsl:element name="lastVersion">
-              <xsl:value-of select="fn:string-join(($workflow_company_docs,$respec_pubDomain,fn:string-join((lower-case(fn:substring-after($respec_previousMaturity,'GN-')),lower-case($respec_specType),$respec_shortName,fn:format-date($respec_previousPublishDate,'[Y0001][M01][D01]','nl','AD','nl')),'-')),$delimiter)"/>
+              <xsl:value-of select="my:url(($workflow_company_docs,$respec_pubDomain,fn:string-join((lower-case(fn:substring-after($respec_previousMaturity,'GN-')),lower-case($respec_specType),$respec_shortName,fn:format-date($respec_previousPublishDate,'[Y0001][M01][D01]','nl','AD','nl')),'-')))"/>
             </xsl:element>
           </xsl:if>
+        </xsl:element>
+        <xsl:element name="domain">
+          <xsl:comment> Deze informatie moet straks uit configuratie op basis van pubDomain kommen. Denk aan zaken als 'samenvatting j/n', 'sotd j/n', 'niveau inhoudsopgave' etc.</xsl:comment>
+          <xsl:element name="name">
+            <xsl:value-of select="$respec_pubDomain"/>
+          </xsl:element>
+          <xsl:element name="contact">
+            <xsl:value-of select="string('omgevingswet@geonovum.nl')"/>
+          </xsl:element>
         </xsl:element>
         <xsl:element name="github">
           <xsl:element name="organization">
@@ -228,6 +229,20 @@
           </xsl:element>
           <xsl:element name="url">
             <xsl:value-of select="$respec_github"/>
+          </xsl:element>
+        </xsl:element>
+        <xsl:element name="ftp">
+          <xsl:element name="server">
+            <xsl:value-of select="if (w:settings/w:docVars/w:docVar[@w:name='ID013']/@w:val = ('Waar','True')) then 'docs.geostandaarden.nl' else 'test.docs.geostandaarden.nl'"/>
+          </xsl:element>
+          <xsl:element name="username">
+            <xsl:value-of select="if (w:settings/w:docVars/w:docVar[@w:name='ID013']/@w:val = ('Waar','True')) then 'documenten' else 'documenten-test'"/>
+          </xsl:element>
+          <xsl:element name="currentVersion">
+            <xsl:value-of select="my:url(('.',$respec_pubDomain,fn:string-join((lower-case(fn:substring-after($respec_specStatus,'GN-')),lower-case($respec_specType),$respec_shortName,fn:format-date($respec_publishDate,'[Y0001][M01][D01]','nl','AD','nl')),'-')))"/>
+          </xsl:element>
+          <xsl:element name="lastPublishedVersion">
+            <xsl:value-of select="my:url(('.',$respec_pubDomain,$respec_shortName))"/>
           </xsl:element>
         </xsl:element>
       </xsl:element>
@@ -331,10 +346,44 @@
   <!-- functies -->
 
   <!-- functie om url's te uniformeren -->
+  <!-- parameter url is een string of sequence of string -->
   <xsl:function name="my:url">
     <xsl:param name="url"/>
-    <xsl:variable name="list" select="fn:tokenize($url,'/')[. ne '']"/>
-    <xsl:value-of select="fn:string-join(($list[1],'',fn:subsequence($list,2)),'/')"/>
+    <xsl:variable name="list" as="xs:string*">
+      <xsl:for-each select="$url">
+        <xsl:for-each select="fn:tokenize(.,$delimiter)[. ne '']">
+          <xsl:value-of select="."/>
+        </xsl:for-each>
+      </xsl:for-each>
+    </xsl:variable>
+    <xsl:choose>
+      <xsl:when test="fn:ends-with($list[1],':')">
+        <!-- absoluut -->
+        <xsl:choose>
+          <xsl:when test="matches(fn:subsequence($list,3)[last()],'.+[\.][a-zA-Z]+[a-zA-Z0-9]+')">
+            <!-- bestand -->
+            <xsl:value-of select="fn:string-join(($list[1],'',fn:subsequence($list,2)),$delimiter)"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <!-- map -->
+            <xsl:value-of select="fn:string-join(($list[1],'',fn:subsequence($list,2),''),$delimiter)"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+        <!-- relatief -->
+        <xsl:choose>
+          <xsl:when test="matches($list[last()],'.+[\.][a-zA-Z]+[a-zA-Z0-9]+')">
+            <!-- bestand -->
+            <xsl:value-of select="fn:string-join($list,$delimiter)"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <!-- map -->
+            <xsl:value-of select="fn:string-join(($list,''),$delimiter)"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:function>
 
 </xsl:stylesheet>

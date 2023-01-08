@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:my="http://www.eigen.nl" xmlns:wx="http://schemas.microsoft.com/office/word/2006/auxHint" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:asvg="http://schemas.microsoft.com/office/drawing/2016/SVG/main">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:my="http://www.eigen.nl" xmlns:wx="http://schemas.microsoft.com/office/word/2006/auxHint" xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:asvg="http://schemas.microsoft.com/office/drawing/2016/SVG/main">
   <xsl:output method="xhtml" encoding="UTF-8" indent="no"/>
 
   <xsl:param name="temp.dir" select="fn:substring-before(fn:base-uri(),'unzip/word/document.xml')"/>
+
+  <!-- domeinspecifieke instellingen -->
+  <xsl:param name="nav_max_level" select="5"/>
+
+  <!-- verkleiningsfactor van illustraties -->
+  <xsl:param name="scale" select="0.75"/>
 
   <!-- scheidingsteken in paden -->
   <xsl:param name="delimiter" select="string('/')"/>
@@ -58,7 +64,7 @@
   <xsl:param name="numFmt_word" select="('bullet','decimal','lowerLetter','upperLetter','lowerRoman','upperRoman')"/>
   <xsl:param name="numFmt_html" select="('&#8226;','1','a','A','i','I')"/>
 
-  <xsl:param name="list_word" select="('bullet','decimal','upper-roman','lower-roman','upper-letter','lower-letter')"/>
+  <xsl:param name="list_word" select="('bullet','decimal','lowerLetter','upperLetter','lowerRoman','upperRoman')"/>
   <xsl:param name="list_html" select="('ul','ol','ol','ol','ol','ol')"/>
 
   <xsl:param name="border_word" select="('single','dashDotStroked','dashed','dashSmallGap','dotDash','dotDotDash','dotted','double','doubleWave','inset','nil','none','outset','thick','thickThinLargeGap','thickThinMediumGap','thickThinSmallGap','thinThickLargeGap','thinThickMediumGap','thinThickSmallGap','thinThickThinLargeGap','thinThickThinMediumGap','thinThickThinSmallGap','threeDEmboss','threeDEngrave','triple','wave')"/>
@@ -97,6 +103,9 @@
             <xsl:attribute name="id" select="current-group()[1]/@w14:paraId"/>
             <xsl:attribute name="level" select="$level"/>
             <xsl:attribute name="class" select="string('body')"/>
+            <xsl:element name="properties">
+              <xsl:copy-of select="current-group()[1]/preceding::w:sectPr[1]"/>
+            </xsl:element>
             <xsl:element name="heading">
               <xsl:copy-of select="current-group()[1]"/>
             </xsl:element>
@@ -225,12 +234,12 @@
           <xsl:value-of select="$language"/>
         </xsl:element>
         <xsl:element name="foaf">
-          <xsl:value-of select="my:url('http://xmlns.com/foaf/0.1')"/>
+          <xsl:value-of select="string('http://xmlns.com/foaf/0.1')"/>
         </xsl:element>
         <xsl:element name="datePublished">
           <xsl:element name="keyword">
             <xsl:attribute name="name" select="string('@type')"/>
-            <xsl:value-of select="my:url('http://www.w3.org/2001/XMLSchema#date')"/>
+            <xsl:value-of select="string('http://www.w3.org/2001/XMLSchema#date')"/>
           </xsl:element>
         </xsl:element>
         <xsl:element name="inLanguage">
@@ -289,7 +298,7 @@
       <xsl:value-of select="$respec/subtitle"/>
     </xsl:element>
     <xsl:element name="isBasedOn">
-      <xsl:value-of select="concat(my:url($workflow/company/docs),'/',$respec/pubDomain,'/',fn:string-join((lower-case(fn:substring-after($respec/previousMaturity,'GN-')),$respec/shortName,fn:format-date($respec/previousPublishDate,'[Y0001][M01][D01]','nl','AD','nl')),'-'))"/>
+      <xsl:value-of select="my:url(($workflow/company/docs,$respec/pubDomain,fn:string-join((lower-case(fn:substring-after($respec/previousMaturity,'GN-')),$respec/shortName,fn:format-date($respec/previousPublishDate,'[Y0001][M01][D01]','nl','AD','nl')),'-')))"/>
     </xsl:element>
     <xsl:element name="editor">
       <xsl:for-each select="$respec/editors/item">
@@ -357,7 +366,7 @@
         <xsl:element name="link">
           <xsl:attribute name="rel" select="string('stylesheet')"/>
           <xsl:attribute name="type" select="string('text/css')"/>
-          <xsl:attribute name="href" select="concat(my:url($workflow/company/tools),'/respec/style/',$respec/specStatus,'.css')"/>
+          <xsl:attribute name="href" select="my:url(($workflow/company/tools,'respec/style',concat($respec/specStatus,'.css')))"/>
         </xsl:element>
         <xsl:element name="link">
           <xsl:attribute name="rel" select="string('stylesheet')"/>
@@ -367,7 +376,7 @@
         <xsl:element name="link">
           <xsl:attribute name="rel" select="string('shortcut icon')"/>
           <xsl:attribute name="type" select="string('image/x-icon')"/>
-          <xsl:attribute name="href" select="concat(my:url($workflow/company/tools),'/respec/style/logos/',$workflow/company/name,'.svg')"/>
+          <xsl:attribute name="href" select="my:url(($workflow/company/tools,'respec/style/logos',concat($workflow/company/name,'.svg')))"/>
         </xsl:element>
         <xsl:element name="script">
           <xsl:attribute name="id" select="string('initialUserConfig')"/>
@@ -467,13 +476,13 @@
     <xsl:element name="div">
       <xsl:attribute name="class" select="string('head')"/>
       <xsl:element name="a">
-        <xsl:attribute name="href" select="my:url($workflow/company/url)"/>
+        <!--xsl:attribute name="href" select="my:url($workflow/company/url)"/-->
         <xsl:element name="img">
           <xsl:attribute name="id" select="$workflow/company/name"/>
           <xsl:attribute name="alt" select="$workflow/company/name"/>
-          <xsl:attribute name="width" select="string('132')"/>
-          <xsl:attribute name="height" select="string('67')"/>
-          <xsl:attribute name="src" select="concat(my:url($workflow/company/tools),'/respec/style/logos/',$workflow/company/name,'.svg')"/>
+          <xsl:attribute name="width" select="string('240')"/>
+          <xsl:attribute name="height" select="string('44')"/>
+          <xsl:attribute name="src" select="my:url(($workflow/company/tools,'respec/style/logos',concat($workflow/domain/name,'.svg')))"/>
         </xsl:element>
       </xsl:element>
       <xsl:element name="h1">
@@ -482,15 +491,61 @@
         <xsl:value-of select="$title"/>
       </xsl:element>
       <xsl:element name="h2">
-        <xsl:value-of select="$workflow/company/name"/>
-        <xsl:text> </xsl:text>
-        <xsl:value-of select="$options/list[@id='specType']/item[@id=$respec/specType]"/>
-        <xsl:text disable-output-escaping="yes">&lt;br/&gt;</xsl:text>
         <xsl:value-of select="$respec/generatedSubtitle"/>
       </xsl:element>
       <xsl:element name="dl">
         <xsl:element name="dt">
-          <xsl:text>Deze versie:</xsl:text>
+          <xsl:text>Versie:</xsl:text>
+        </xsl:element>
+        <xsl:element name="dd">
+          <xsl:value-of select="$workflow/document/version"/>
+        </xsl:element>
+        <xsl:element name="dt">
+          <xsl:text>Datum:</xsl:text>
+        </xsl:element>
+        <xsl:element name="dd">
+          <xsl:value-of select="fn:format-date($respec/publishDate,'[D1] [Mn] [Y1]','nl','AD','nl')"/>
+        </xsl:element>
+        <xsl:element name="dt">
+          <xsl:value-of select="if (count($respec/authors/item) eq 1) then 'Auteur:' else 'Auteurs:'"/>
+        </xsl:element>
+        <xsl:for-each select="$respec/authors/item">
+          <xsl:variable name="item" select="."/>
+          <xsl:element name="dd">
+            <xsl:attribute name="class" select="string('p-author h-card vcard')"/>
+            <xsl:element name="span">
+              <xsl:attribute name="class" select="string('p-name fn')"/>
+              <xsl:value-of select="$item/name"/>
+              <xsl:text>, </xsl:text>
+              <xsl:element name="a">
+                <xsl:attribute name="class" select="string('p-org org h-org h-card')"/>
+                <xsl:attribute name="href" select="my:url($item/companyURL)"/>
+                <xsl:value-of select="$item/company"/>
+              </xsl:element>
+            </xsl:element>
+          </xsl:element>
+        </xsl:for-each>
+        <xsl:element name="dt">
+          <xsl:value-of select="if (count($respec/editors/item) eq 1) then 'Redacteur:' else 'Redacteurs:'"/>
+        </xsl:element>
+        <xsl:for-each select="$respec/editors/item">
+          <xsl:variable name="item" select="."/>
+          <xsl:element name="dd">
+            <xsl:attribute name="class" select="string('p-editor h-card vcard')"/>
+            <xsl:element name="span">
+              <xsl:attribute name="class" select="string('p-name fn')"/>
+              <xsl:value-of select="$item/name"/>
+              <xsl:text>, </xsl:text>
+              <xsl:element name="a">
+                <xsl:attribute name="class" select="string('p-org org h-org h-card')"/>
+                <xsl:attribute name="href" select="my:url($item/companyURL)"/>
+                <xsl:value-of select="$item/company"/>
+              </xsl:element>
+            </xsl:element>
+          </xsl:element>
+        </xsl:for-each>
+        <xsl:element name="dt">
+          <xsl:text>Geldende versie:</xsl:text>
         </xsl:element>
         <xsl:element name="dd">
           <xsl:element name="a">
@@ -499,7 +554,8 @@
             <xsl:value-of select="my:url($workflow/document/currentVersion)"/>
           </xsl:element>
         </xsl:element>
-        <xsl:element name="dt">
+        <!-- laatst gepubliceerde versie is niet zichtbaar -->
+        <!--xsl:element name="dt">
           <xsl:text>Laatst gepubliceerde versie:</xsl:text>
         </xsl:element>
         <xsl:element name="dd">
@@ -507,7 +563,7 @@
             <xsl:attribute name="href" select="my:url($workflow/document/lastPublishedVersion)"/>
             <xsl:value-of select="my:url($workflow/document/lastPublishedVersion)"/>
           </xsl:element>
-        </xsl:element>
+        </xsl:element-->
         <xsl:if test="$workflow/document/lastVersion">
           <xsl:element name="dt">
             <xsl:text>Vorige versie:</xsl:text>
@@ -519,7 +575,8 @@
             </xsl:element>
           </xsl:element>
         </xsl:if>
-        <xsl:element name="dt">
+        <!-- laatste werkversie is niet zichtbaar -->
+        <!--xsl:element name="dt">
           <xsl:text>Laatste werkversie:</xsl:text>
         </xsl:element>
         <xsl:element name="dd">
@@ -527,78 +584,16 @@
             <xsl:attribute name="href" select="my:url($respec/edDraftURI)"/>
             <xsl:value-of select="my:url($respec/edDraftURI)"/>
           </xsl:element>
+        </xsl:element-->
+        <xsl:element name="dt">
+          <xsl:text>Contact:</xsl:text>
         </xsl:element>
-        <xsl:if test="$respec/editors/item">
-          <xsl:element name="dt">
-            <xsl:value-of select="if (count($respec/editors/item) eq 1) then 'Redacteur:' else 'Redacteurs:'"/>
-            <xsl:for-each select="$respec/editors/item">
-              <xsl:variable name="item" select="."/>
-              <xsl:element name="dd">
-                <xsl:attribute name="class" select="string('p-author h-card vcard')"/>
-                <xsl:element name="span">
-                  <xsl:attribute name="class" select="string('p-name fn')"/>
-                  <xsl:value-of select="$item/name"/>
-                  <xsl:text>, </xsl:text>
-                  <xsl:element name="a">
-                    <xsl:attribute name="class" select="string('p-org org h-org h-card')"/>
-                    <xsl:attribute name="href" select="my:url($item/companyURL)"/>
-                    <xsl:value-of select="$item/company"/>
-                  </xsl:element>
-                </xsl:element>
-              </xsl:element>
-            </xsl:for-each>
+        <xsl:element name="dd">
+          <xsl:element name="a">
+            <xsl:attribute name="href" select="concat('mailto:',$workflow/domain/contact)"/>
+            <xsl:value-of select="$workflow/domain/contact"/>
           </xsl:element>
-        </xsl:if>
-        <xsl:if test="$respec/authors/item">
-          <xsl:element name="dt">
-            <xsl:value-of select="if (count($respec/authors/item) eq 1) then 'Auteur:' else 'Auteurs:'"/>
-            <xsl:for-each select="$respec/authors/item">
-              <xsl:variable name="item" select="."/>
-              <xsl:element name="dd">
-                <xsl:attribute name="class" select="string('p-author h-card vcard')"/>
-                <xsl:element name="span">
-                  <xsl:attribute name="class" select="string('p-name fn')"/>
-                  <xsl:value-of select="$item/name"/>
-                  <xsl:text>, </xsl:text>
-                  <xsl:element name="a">
-                    <xsl:attribute name="class" select="string('p-org org h-org h-card')"/>
-                    <xsl:attribute name="href" select="my:url($item/companyURL)"/>
-                    <xsl:value-of select="$item/company"/>
-                  </xsl:element>
-                </xsl:element>
-              </xsl:element>
-            </xsl:for-each>
-          </xsl:element>
-        </xsl:if>
-        <xsl:if test="$respec/github">
-          <xsl:element name="dt">
-            <xsl:text>Doe mee:</xsl:text>
-          </xsl:element>
-          <xsl:element name="dd">
-            <xsl:element name="a">
-              <xsl:attribute name="href" select="my:url($respec/github)"/>
-              <xsl:value-of select="replace(my:url($respec/github),'https://github.com/','GitHub ')"/>
-            </xsl:element>
-          </xsl:element>
-          <xsl:element name="dd">
-            <xsl:element name="a">
-              <xsl:attribute name="href" select="my:url($respec/issueBase)"/>
-              <xsl:text>Dien een melding in</xsl:text>
-            </xsl:element>
-          </xsl:element>
-          <xsl:element name="dd">
-            <xsl:element name="a">
-              <xsl:attribute name="href" select="concat(my:url($respec/github),'/commits/gh-pages')"/>
-              <xsl:text>Revisiehistorie</xsl:text>
-            </xsl:element>
-          </xsl:element>
-          <xsl:element name="dd">
-            <xsl:element name="a">
-              <xsl:attribute name="href" select="concat(my:url($respec/github),'/pulls')"/>
-              <xsl:text>Pull requests</xsl:text>
-            </xsl:element>
-          </xsl:element>
-        </xsl:if>
+        </xsl:element>
         <xsl:element name="dt">
           <xsl:text>Rechtenbeleid:</xsl:text>
         </xsl:element>
@@ -613,7 +608,7 @@
                   <xsl:element name="img">
                     <xsl:attribute name="width" select="115"/>
                     <xsl:attribute name="height" select="40"/>
-                    <xsl:attribute name="src" select="concat(my:url($workflow/company/tools),'/respec/style/logos/',$respec/license,'.svg')"/>
+                    <xsl:attribute name="src" select="my:url(($workflow/company/tools,'respec/style/logos',concat($respec/license,'.svg')))"/>
                     <xsl:attribute name="alt" select="$options/list[@id='license']/item[@id=$respec/license]"/>
                   </xsl:element>
                 </xsl:element>
@@ -656,10 +651,14 @@
     <xsl:element name="li">
       <xsl:attribute name="class" select="string('tocline')"/>
       <xsl:apply-templates select="heading" mode="nav"/>
-      <xsl:element name="ol">
-        <xsl:attribute name="class" select="string('toc')"/>
-        <xsl:apply-templates select="section" mode="nav"/>
-      </xsl:element>
+      <xsl:choose>
+        <xsl:when test="number(@level) lt $nav_max_level">
+          <xsl:element name="ol">
+            <xsl:attribute name="class" select="string('toc')"/>
+            <xsl:apply-templates select="section" mode="nav"/>
+          </xsl:element>
+        </xsl:when>
+      </xsl:choose>
     </xsl:element>
   </xsl:template>
 
@@ -840,13 +839,13 @@
     <xsl:variable name="id" select="fn:string-join(w:lvl(w:pPr($group[1])/w:numPr)/element()/@w:val)"/>
     <xsl:variable name="type" select="($list_html[fn:index-of($list_word,w:lvl(w:pPr($group[1])/w:numPr)/w:numFmt/@w:val)],'ul')[1]"/>
     <xsl:element name="{$type}">
-      <xsl:for-each-group select="$group" group-starting-with="self::w:p[fn:string-join(w:lvl(w:pPr(.)/w:numPr)/element()/@w:val)=$id]">
+      <xsl:for-each-group select="$group" group-starting-with="self::w:p[(fn:string-join(w:lvl(w:pPr(.)/w:numPr)/element()/@w:val)=$id) and not(w:pPr(.)/w:numPr/w:numId/@w:val=0)]">
         <xsl:element name="li">
           <!-- verwerk geneste opsommingen -->
           <xsl:for-each-group select="current-group()" group-adjacent="if (fn:string-join(w:lvl(w:pPr(self::w:p)/w:numPr)/element()/@w:val)=$id) then 'item' else 'lijst'">
             <xsl:choose>
               <xsl:when test="current-grouping-key() eq 'item'">
-                <xsl:apply-templates select="current-group()[1]/self::w:p"/>
+                <xsl:apply-templates select="current-group()/self::w:p"/>
               </xsl:when>
               <xsl:when test="current-grouping-key() eq 'lijst'">
                 <xsl:call-template name="lijst">
@@ -896,8 +895,8 @@
               <!-- geen witregel -->
             </xsl:otherwise>
           </xsl:choose>
-          <!-- plaats indentation, alleen van w:p -->
-          <xsl:if test="self::w:p/w:pPr/w:ind/@w:left">
+          <!-- plaats indentation, alleen van w:p zonder nummering -->
+          <xsl:if test="self::w:p/w:pPr[not(w:numPr)]/w:ind/@w:left">
             <xsl:attribute name="style" select="concat('margin-left: ',fn:format-number(number(self::w:p/w:pPr/w:ind/@w:left) * 0.0176388889,'#.#'),'mm;')"/>
           </xsl:if>
           <xsl:apply-templates select="node()"/>
@@ -1264,7 +1263,7 @@
         <xsl:attribute name="rowspan" select="$rowspan"/>
       </xsl:if>
       <xsl:call-template name="group_adjacent">
-        <xsl:with-param name="group" select="*"/>
+        <xsl:with-param name="group" select="node()"/>
       </xsl:call-template>
     </xsl:element>
   </xsl:template>
@@ -1290,7 +1289,7 @@
         <xsl:attribute name="rowspan" select="$rowspan"/>
       </xsl:if>
       <xsl:call-template name="group_adjacent">
-        <xsl:with-param name="group" select="*"/>
+        <xsl:with-param name="group" select="node()"/>
       </xsl:call-template>
     </xsl:element>
   </xsl:template>
@@ -1507,7 +1506,7 @@
           <xsl:variable name="sum" select="(wp:anchor/wp:extent|wp:inline/a:graphic/a:graphicData/pic:pic/pic:spPr/a:xfrm/a:ext)[1]/@cx div 6.35 div (ancestor::w:tc[1]/w:tcPr/w:tcW/@w:w,preceding::w:sectPr[1]/(w:pgSz/@w:w - w:pgMar/@w:left - w:pgMar/@w:right))[1]"/>
           <xsl:choose>
             <xsl:when test="$sum lt 90">
-              <xsl:value-of select="$sum"/>
+              <xsl:value-of select="$sum * $scale"/>
             </xsl:when>
             <xsl:otherwise>
               <xsl:value-of select="100"/>
@@ -1528,8 +1527,14 @@
   <xsl:template match="w:txbxContent">
     <xsl:element name="div">
       <xsl:attribute name="class" select="string('textbox')"/>
-      <xsl:apply-templates/>
+      <xsl:call-template name="group_adjacent">
+        <xsl:with-param name="group" select="node()"/>
+      </xsl:call-template>
     </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="mc:Fallback">
+    <!-- gebruik mc:Choice en negeer mc:Fallback -->
   </xsl:template>
 
   <!-- algemeen -->
@@ -1571,10 +1576,44 @@
   </xsl:function>
 
   <!-- functie om url's te uniformeren -->
+  <!-- parameter url is een string of sequence of string -->
   <xsl:function name="my:url">
     <xsl:param name="url"/>
-    <xsl:variable name="list" select="fn:tokenize($url,'/')[. ne '']"/>
-    <xsl:value-of select="fn:string-join(($list[1],'',fn:subsequence($list,2)),'/')"/>
+    <xsl:variable name="list" as="xs:string*">
+      <xsl:for-each select="$url">
+        <xsl:for-each select="fn:tokenize(.,$delimiter)[. ne '']">
+          <xsl:value-of select="."/>
+        </xsl:for-each>
+      </xsl:for-each>
+    </xsl:variable>
+    <xsl:choose>
+      <xsl:when test="fn:ends-with($list[1],':')">
+        <!-- absoluut -->
+        <xsl:choose>
+          <xsl:when test="matches(fn:subsequence($list,3)[last()],'.+[\.][a-zA-Z]+[a-zA-Z0-9]+')">
+            <!-- bestand -->
+            <xsl:value-of select="fn:string-join(($list[1],'',fn:subsequence($list,2)),$delimiter)"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <!-- map -->
+            <xsl:value-of select="fn:string-join(($list[1],'',fn:subsequence($list,2),''),$delimiter)"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+        <!-- relatief -->
+        <xsl:choose>
+          <xsl:when test="matches($list[last()],'.+[\.][a-zA-Z]+[a-zA-Z0-9]+')">
+            <!-- bestand -->
+            <xsl:value-of select="fn:string-join($list,$delimiter)"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <!-- map -->
+            <xsl:value-of select="fn:string-join(($list,''),$delimiter)"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:function>
 
 </xsl:stylesheet>
