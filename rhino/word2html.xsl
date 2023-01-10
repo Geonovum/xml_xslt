@@ -176,14 +176,15 @@
   <xsl:param name="TOF">
     <xsl:for-each select="$body//w:p/w:r/w:drawing">
       <xsl:element name="image">
-        <xsl:attribute name="id" select="w:imageId(.)"/>
+        <xsl:attribute name="id" select="generate-id(.)"/>
+        <xsl:attribute name="imageId" select="w:imageId(.)"/>
         <xsl:element name="number">
           <!-- we gaan ervan uit dat figuren in het hele document doortellen -->
           <xsl:element name="label">
-            <xsl:value-of select="string('Figuur ')"/>
+            <xsl:value-of select="string('Figuur')"/>
           </xsl:element>
           <xsl:element name="item">
-            <xsl:value-of select="count(.|preceding::w:p/w:r/w:drawing)"/>
+            <xsl:value-of select="position()"/>
           </xsl:element>
         </xsl:element>
         <xsl:element name="text">
@@ -203,10 +204,10 @@
         <xsl:element name="number">
           <!-- we gaan ervan uit dat tabellen in het hele document doortellen -->
           <xsl:element name="label">
-            <xsl:value-of select="string('Tabel ')"/>
+            <xsl:value-of select="string('Tabel')"/>
           </xsl:element>
           <xsl:element name="item">
-            <xsl:value-of select="count(.|preceding::w:tbl)"/>
+            <xsl:value-of select="position()"/>
           </xsl:element>
         </xsl:element>
         <xsl:element name="text">
@@ -725,6 +726,10 @@
       <xsl:otherwise>
         <xsl:element name="p">
           <xsl:attribute name="class" select="concat('heading',$heading/@level+1)"/>
+          <xsl:element name="span">
+            <xsl:attribute name="class" select="string('secno')"/>
+            <xsl:value-of select="concat(fn:string-join($heading/number/item[. ne ''],'.'),'&#8194;')"/>
+          </xsl:element>
           <xsl:apply-templates select="$heading/text"/>
         </xsl:element>
       </xsl:otherwise>
@@ -739,19 +744,18 @@
       <xsl:choose>
         <xsl:when test="current-grouping-key()='figuur'">
           <xsl:for-each-group select="current-group()" group-starting-with="self::w:p[w:r/w:drawing]">
-            <xsl:variable name="imageId" select="w:imageId(current-group()/self::w:p/w:r/w:drawing)"/>
+            <xsl:variable name="id" select="current-group()/self::w:p/w:r/w:drawing/generate-id(.)"/>
+            <xsl:variable name="image" select="$TOF/image[@id=$id]"/>
             <xsl:element name="figure">
               <!-- plaats de bookmarks voor img, niet voor figcaption -->
-              <xsl:apply-templates select="$TOF/image[@id=$imageId]/text/w:bookmarkStart"/>
-              <xsl:apply-templates select="current-group()/self::w:p/w:r/w:drawing">
-                <xsl:with-param name="imageId" select="$imageId"/>
-              </xsl:apply-templates>
+              <xsl:apply-templates select="$image/text/w:bookmarkStart"/>
+              <xsl:apply-templates select="current-group()/self::w:p/w:r/w:drawing"/>
               <xsl:element name="figcaption">
-                <xsl:attribute name="id" select="$imageId"/>
-                <xsl:value-of select="$TOF/image[@id=$imageId]/number/label"/>
+                <xsl:attribute name="id" select="$image/@id"/>
+                <xsl:value-of select="concat($image/number/label,' ')"/>
                 <xsl:element name="span">
                   <xsl:attribute name="class" select="string('figno')"/>
-                  <xsl:value-of select="fn:string-join($TOF/image[@id=$imageId]/number/item[. ne ''],'.')"/>
+                  <xsl:value-of select="fn:string-join($image/number/item[. ne ''],'.')"/>
                 </xsl:element>
                 <xsl:value-of select="string('&#8194;')"/>
                 <xsl:element name="span">
@@ -1195,7 +1199,7 @@
       <xsl:attribute name="style" select="if ($tablewidth gt 6500) then string('width: 100%;') else concat('width: ',string($tablewidth div 20),'pt;')"/>
       <xsl:element name="caption">
         <xsl:attribute name="id" select="$id"/>
-        <xsl:value-of select="$TOT/table[@id=$id]/number/label"/>
+        <xsl:value-of select="concat($TOT/table[@id=$id]/number/label,' ')"/>
         <xsl:element name="span">
           <xsl:attribute name="class" select="string('tblno')"/>
           <xsl:value-of select="fn:string-join($TOT/table[@id=$id]/number/item[. ne ''],'.')"/>
@@ -1498,10 +1502,11 @@
   <!-- illustraties toevoegen -->
 
   <xsl:template match="w:p/w:r/w:drawing">
-    <xsl:param name="imageId"/>
+    <xsl:variable name="id" select="generate-id(.)"/>
+    <xsl:variable name="image" select="$TOF/image[@id=$id]"/>
     <xsl:choose>
-      <xsl:when test="$imageId!=''">
-        <xsl:variable name="imageName" select="document($relations,.)//element()[@Id=$imageId]/@Target"/>
+      <xsl:when test="$image/@imageId!=''">
+        <xsl:variable name="imageName" select="document($relations,.)//element()[@Id=$image/@imageId]/@Target"/>
         <xsl:variable name="width">
           <xsl:variable name="sum" select="(wp:anchor/wp:extent|wp:inline/a:graphic/a:graphicData/pic:pic/pic:spPr/a:xfrm/a:ext)[1]/@cx div 6.35 div (ancestor::w:tc[1]/w:tcPr/w:tcW/@w:w,preceding::w:sectPr[1]/(w:pgSz/@w:w - w:pgMar/@w:left - w:pgMar/@w:right))[1]"/>
           <xsl:choose>
