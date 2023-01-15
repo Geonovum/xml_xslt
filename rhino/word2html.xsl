@@ -1508,7 +1508,7 @@
       <xsl:when test="$image/@imageId!=''">
         <xsl:variable name="imageName" select="document($relations,.)//element()[@Id=$image/@imageId]/@Target"/>
         <xsl:variable name="width">
-          <xsl:variable name="sum" select="(wp:anchor/wp:extent|wp:inline/a:graphic/a:graphicData/pic:pic/pic:spPr/a:xfrm/a:ext)[1]/@cx div 6.35 div (ancestor::w:tc[1]/w:tcPr/w:tcW/@w:w,preceding::w:sectPr[1]/(w:pgSz/@w:w - w:pgMar/@w:left - w:pgMar/@w:right))[1]"/>
+          <xsl:variable name="sum" select="(wp:anchor/wp:extent,wp:inline/wp:extent,wp:inline/a:graphic/a:graphicData/pic:pic/pic:spPr/a:xfrm/a:ext)[1]/@cx div 6.35 div (ancestor::w:tc[1]/w:tcPr/w:tcW/@w:w,following::w:sectPr[1]/(w:pgSz/@w:w - w:pgMar/@w:left - w:pgMar/@w:right))[1]"/>
           <xsl:choose>
             <xsl:when test="$sum lt 90">
               <xsl:value-of select="$sum * $scale"/>
